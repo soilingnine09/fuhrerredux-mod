@@ -1,0 +1,4 @@
+UWP = "countries/Asian.txt"
+ICR = "countries/Asian.txt"
+SHN = "countries/Asian.txt"
+MNS = "countries/Asian.txt"

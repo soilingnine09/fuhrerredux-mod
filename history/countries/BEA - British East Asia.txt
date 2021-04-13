@@ -1,0 +1,243 @@
+﻿
+capital = 335
+
+oob = "BEA"
+
+IF = {
+    limit = { 
+		has_dlc = "Man the Guns" 
+	}
+		set_naval_oob = "BEA_1936_naval_mtg"
+    ELSE = {
+        set_naval_oob = "BEA_1936_naval_legacy"
+    }
+}
+
+set_stability = 0.40
+set_war_support = 0.15
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_recon = 1
+	early_fighter = 1
+	early_bomber = 1
+	fuel_silos = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		mtg_transport = 1
+	}
+}
+
+add_ideas = {
+	party_pop_0_30
+	volunteer_only
+	
+	BEA_disputes_between_british_and_dutch_idea
+	BEA_colonial_nation_idea
+	GEN_HOG_Pau
+	GEN_FOR_Pau
+	GEN_ECO_Pau
+	GEN_SEC_Pau
+	colonial_government
+}
+
+set_politics = {	
+	ruling_party = paternal_autocrat
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+
+}
+
+set_popularities = {
+    vanguardist = 3
+    collectivist = 8
+    libertarian_socialist = 7
+    social_democrat = 4
+    social_liberal = 2
+    market_liberal = 3
+    social_conservative = 4
+    authoritarian_democrat = 25
+    paternal_autocrat = 34
+    national_populist = 10
+    valkist = 0
+}
+
+create_country_leader = {
+	name = "Amir Sjarifuddin"
+	desc = "POLITICS_AMIR_SJARIFUDDIN_DESC"
+	picture = "gfx/leaders/INS/Portrait_Amir_Sjarifuddin.tga"
+	expire = "1965.1.1"
+	ideology = vanguardist_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Amir Sjarifuddin"
+	desc = "POLITICS_AMIR_SJARIFUDDIN_DESC"
+	picture = "gfx/leaders/INS/Portrait_Amir_Sjarifuddin.tga"
+	expire = "1965.1.1"
+	ideology = collectivist_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "The Volksraad"
+	desc = "POLITICS_VOLKSRAAD_DESC"
+	picture = "Portrait_Volksraad.tga"
+	expire = "1965.1.1"
+	ideology = libertarian_socialist_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "The Volksraad"
+	desc = "POLITICS_VOLKSRAAD_DESC"
+	picture = "Portrait_Volksraad.tga"
+	expire = "1965.1.1"
+	ideology = social_democrat_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "The Volksraad"
+	desc = "POLITICS_VOLKSRAAD_DESC"
+	picture = "Portrait_Volksraad.tga"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "The Volksraad"
+	desc = "POLITICS_VOLKSRAAD_DESC"
+	picture = "Portrait_Volksraad.tga"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "The Volksraad"
+	desc = "POLITICS_VOLKSRAAD_DESC"
+	picture = "Portrait_Volksraad.tga"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Bonifacius Cornelis de Jonge"
+	desc = "POLITICS_BONIFACIUS_CORNELIS_JONGE_DESC"
+	picture = "Portrait_BC_de_Jonge.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "JFC Fuller"
+	desc = "POLITICS_JFC_FULLER_DESC"
+	picture = "Portrait_JFC_Fuller.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Ernst Herman van Rappard"
+	desc = "POLITICS_ERNST_HERMAN_RAPPARD_DESC"
+	picture = "Portrait_Ernst_Herman_van_Rappard.tga"
+	expire = "1965.1.1"
+	ideology = national_populist_subtype
+	traits = {
+		
+	}
+}
+
+create_field_marshal = {
+	name = "JFC Fuller"
+	picture = "Portrait_JFC_Fuller.tga"
+	traits = { politically_connected organisational_leader armor_officer }
+	skill = 3 
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Henri Nicolas Alfred Swart"
+	portrait_path = "gfx/leaders/BEA/Portrait_BEA_Henri_Nicolas_Alfred_Swart.tga"
+	traits = { old_guard adaptable }
+	skill = 4
+	attack_skill = 3
+    defense_skill = 3
+    planning_skill = 3
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Hein ter Poorten"
+	portrait_path = "gfx/leaders/BEA/Portrait_BEA_Hein_ter_Poorten.tga"
+	traits = { bearer_of_artillery }
+	skill = 3
+	attack_skill = 3
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Gerardus Johannes Berenschot"
+	portrait_path = "gfx/leaders/BEA/Portrait_BEA_Gerardus_Johannes_Berenschot.tga"
+	traits = { infantry_leader }
+	skill = 3
+	attack_skill = 2
+    defense_skill = 3
+    planning_skill = 3
+    logistics_skill = 2
+}
+
+
+create_country_leader = {
+	name = "Lennie Wallis"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = valkist_subtype
+}

@@ -1,0 +1,169 @@
+bookmarks = {
+	bookmark = {
+		name = "FUHRERREICH_NAME"
+		desc = "FUHRERREICH_DESC"
+		date = 1936.1.1.1
+		picture = "GFX_select_date_1936"
+		default_country = "SIA"
+		default = yes
+
+		"USA"={
+			history = "USA_FUHRERREICH_DESC"
+			ideology = market_liberal
+			ideas = {
+				USA_failed_offensive
+				USA_malnourished_populace
+				USA_sick_man_america
+			}
+			focuses = {
+
+			}
+		}
+	
+
+		"SOV"={
+			history = "SOV_FUHRERREICH_DESC"
+			ideology = collectivist
+			ideas = {
+				unpopular_conscription
+				SOV_lacking_industrialization
+				unbalanced_economy
+			}
+			focuses = {
+				SOV_kickstart_industrialization
+				SOV_red_army
+				SOV_Premier_Lenin
+			}
+		}
+
+		"GER"={
+			history = "GER_FUHRERREICH_DESC"
+			ideology = valkist
+			ideas = {
+				GER_nation_reborn
+				GER_naval_treaty
+				GER_army_treaty
+			}
+			focuses = {
+				GER_pangerman
+				GER_great_purge
+				GER_legacy_of_the_weltkrieg
+			}
+		}
+
+		"FRA"={
+			history = "FRA_FUHRERREICH_DESC"
+			ideology = social_conservative
+			ideas = {
+				FRA_great_war_legacy
+				FRA_somme
+				FRA_divided_military_staff
+			}
+			focuses = {
+				fra_restore_chin
+				fra_legacy_begone
+				fra_air_navy_coop
+			}
+		}
+
+		"ITA"={
+			history = "ITA_FUHRERREICH_DESC"
+			ideology = social_democrat
+			ideas = {
+				ITA_ppi_stagnation
+				ITA_political_radicalization
+				ITA_colonial_administration
+			}
+			focuses = {
+				ITA_future_ppi
+				ITA_france_conference
+				ITA_balkan_focus
+			}
+		}
+
+		"ENG"={
+			history = "ENG_FUHRERREICH_DESC"
+			ideology = social_conservative
+			ideas = {
+				ENG_col_unrest
+				ENG_irb
+				ENG_war_fatigue
+			}
+			focuses = {
+				ENG_imp_fed
+				ENG_absolutism
+				ENG_dip_usa
+			}
+		}
+		"JAP"={
+			history = "JAP_FUHRERREICH_DESC"
+			ideology = social_conservative
+			ideas = {
+				JAP_gunbatsu
+				jap_wnt
+			    JAP_interservice_rivalry_balanced
+			}
+			focuses = {
+				jap_nanshinron
+				jap_the_admiral_plot
+				JAP_the_yamato
+			}
+		}
+		#Others
+
+		"---"={
+			history = "OTHER_FUHRERREICH_DESC"
+		}
+
+		# minors
+		"SIA" = {
+			minor = yes
+			history = "SIA_FUHRERREICH_DESC"
+			ideology = social_democrat
+			ideas = {
+				foreign_company_investment
+				parliament_with_officers
+				stable_bureaucrat
+			}
+			focuses = {
+				SIA_third_industrial_revolution
+				SIA_recovery_from_great_depression
+				SIA_balance_in_power
+			}
+		}
+		"PHI"={
+			minor = yes
+			history = "PHI_FUHRERREICH_DESC"
+			ideology = authoritarian_democrat
+			ideas = {
+				PHI_thirst_for_democracy
+				PHI_agriculture_economy
+				PHI_marxist_professors
+			}
+			focuses = {
+				PHI_aguinaldo_coup
+				PHI_finish_industrialization_program
+				PHI_asean_focus
+			}
+		}
+		#"BRA"={
+		#	minor = yes
+		#	history = "BRA_FUHRERREICH_DESC"
+		#	ideology = market_liberal
+		#	ideas = {
+		#		BRA_political_instability
+		#	}
+		#	focuses = {
+		#		BRA_civil_war
+		#		BRA_standing_for_the_union
+		#		BRA_our_republic_reborn
+		#	}
+		#}
+
+
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

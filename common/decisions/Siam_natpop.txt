@@ -1,0 +1,373 @@
+SIA_rattaniyom = {
+	Rattaniyom_phase_one = {
+		visible = {
+			SIA = {
+				NOT = { has_country_flag = rattaniyom_act_2 }
+			}
+		}
+		available = {
+			has_country_flag = rattaniyom_act
+			has_political_power > 0
+			has_country_leader = {
+				name = "Plaek Phibunsongkhram"
+				ruling_only = yes
+			}
+		}
+		cost = 100
+		days_remove = 150
+		fire_only_once = yes
+		remove_effect = {
+			set_cosmetic_tag = SIA_Thailand
+			hidden_effect = {
+				set_country_flag = rattaniyom_act_2
+				set_country_flag = thailand
+			}
+		}
+	}
+	Rattaniyom_phase_two = { ##National Anthem
+		visible = {
+			SIA = {
+				has_country_flag = rattaniyom_act_2
+				NOT = { has_country_flag = rattaniyom_act_3 }
+			}
+		}
+		available = {
+			has_country_flag = rattaniyom_act_2
+			has_political_power > 0
+			has_country_leader = {
+				name = "Plaek Phibunsongkhram"
+				ruling_only = yes
+			}
+		}
+		cost = 50
+		days_remove = 50
+		fire_only_once = yes
+		remove_effect = {
+			add_stability = 0.1
+			add_popularity = { ideology = national_populist popularity = 0.1 }
+			hidden_effect = { 
+				set_country_flag = rattaniyom_act_3
+			}
+		}
+	}
+	Rattaniyom_phase_three = { #Made in Thailand, Use the Thai-made Goods
+		visible = {
+			SIA = {
+				has_country_flag = rattaniyom_act_3
+				NOT = { has_country_flag = rattaniyom_act_4 }
+			}
+		}
+		available = {
+			has_country_flag = rattaniyom_act_3
+			has_political_power > 0
+			has_country_leader = {
+				name = "Plaek Phibunsongkhram"
+				ruling_only = yes
+			}
+		}
+		cost = 50
+		days_remove = 50
+		fire_only_once = yes
+		remove_effect = {
+			add_ideas = made_in_thailand
+			hidden_effect = {
+				set_country_flag = rattaniyom_act_4
+			}
+		}
+	}
+	Rattaniyom_phase_final = {
+		visible = {
+			SIA = {
+				has_country_flag = rattaniyom_act_4
+				NOT = { has_country_flag = finish_rattaniyom }
+			}
+		}
+		available = {
+			has_country_flag = rattaniyom_act_4
+			has_political_power > 0
+			has_country_leader = {
+				name = "Plaek Phibunsongkhram"
+				ruling_only = yes
+			}
+		}
+		cost = 50
+		days_remove = 50
+		fire_only_once = yes
+		remove_effect = {
+			add_ideas = siamese_nation_shall_not_fall
+			hidden_effect = {
+				set_country_flag = finish_rattaniyom
+			}
+		}
+	}
+}
+SIA_south_annam_plan = {
+	send_the_guns = {
+		visible = {
+			has_government = national_populist
+			ICR = { exists = no }
+			check_variable = {
+				var = infantry_eq
+				value = 16000
+				compare = greater_than_or_equals
+			}
+		}
+		available = {
+			has_equipment = {
+				infantry_equipment_0 > 4000
+			}
+		}
+		cost = 0
+		days_remove = 45
+		complete_effect = {
+			set_temp_variable = { inf = 4000 }
+			multiply_temp_variable = { inf = -1 }
+			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = inf producer = SIA } 
+		}
+		remove_effect = {
+			custom_effect_tooltip = "4000 Infantry Equipments from stockpile give to Vietnamese Rebel"
+			hidden_effect = {
+				if = {
+					limit = { NOT = { has_variable = infantry_eq } }
+					set_variable = { infantry_eq = 0 }
+				}
+				if = {
+					limit = { has_variable = infantry_eq }
+					add_to_variable = { infantry_eq = 4000 }
+				}
+			}
+		}
+	}
+	give_the_professional_men = {
+		visible = {
+			has_government = national_populist
+			ICR = { exists = no }
+			check_variable = {
+				var = manp
+				value = 10000
+				compare = greater_than_or_equals
+			}
+		}
+		available = {
+			has_army_manpower > { size > 4999 }
+		}
+		cost = 0
+		days_remove = 45
+		complete_effect = {
+			add_manpower = -1000
+		}
+		remove_effect = {
+			custom_effect_tooltip = "1000 men from our army shall join Vietnamese Rebel"
+			hidden_effect = {
+				if = {
+					limit = { NOT = { has_variable = manp } }
+					set_variable = { manp = 0 }
+				}
+				if = {
+					limit = { has_variable = manp }
+					add_to_variable = { manp = 1000 }
+				}
+			}
+		}
+	}
+	military_trainer_to_south_annam = {
+		visible = {
+			has_government = national_populist
+			ICR = { exists = no }
+			NOT = { has_country_flag = military_trainer }
+		}
+		available = {
+			has_political_power > 50
+			command_power > 25
+		}
+		cost = 50
+		days_remove = 150
+		remove_effect = {
+			custom_effect_tooltip = "Military trainers from military department send to Vietnamese Rebel's headquarter"
+			hidden_effect = {
+				set_country_flag = military_trainer
+			}
+		}
+	}
+	spread_the_influence_in_french_indochina = {
+		visible = {
+			has_government = national_populist
+			ICR = { exists = no }
+		}
+		available = {
+			FIC = { is_puppet_of = FRA }
+			has_political_power > 100
+		}
+		cost = 100
+		days_remove = 200
+		complete_effect = {
+			FIC = { 
+				add_timed_idea = {
+					idea = national_populist_drifting
+					days = 200
+				}
+			}
+		}
+		remove_effect = {
+			FIC = {
+				set_temp_variable = { natup = FIC.party_popularity@national_populist }
+				multiply_temp_variable = { natup = 0.35 }
+				add_popularity = { ideology = national_populist popularity = natup }
+			}
+		}
+	}
+	ignition_the_rebel = {
+		visible = {
+			FIC = { national_populist > 0.45 }
+		}
+		allowed = { tag = SIA }
+		available = {
+			FIC = { NOT = { has_government = national_populist } }
+		}
+		cost = 150
+		days_remove = 10
+		remove_effect = {
+			FIC = { country_event = { id = indrep.1 days = 1 } }
+			hidden_effect = {
+				ICR = {
+					every_state = {
+						limit = { is_core_of = FIC }
+						add_core_of = ICR
+					}
+				}
+			}
+		}
+	}
+	demand_our_claiming_territory = {
+		allowed = { tag = SIA }
+		visible = {
+			FIC = {
+				national_populist > 0.5
+			}
+		}
+		available = {
+			GER = {
+				any_country = {
+					OR = {
+						is_in_faction_with = THIS
+						is_puppet_of = THIS
+						tag = THIS
+					}
+					THIS = { has_war_with = FRA }
+				}
+			}
+			FRA = {
+				NOT = { 
+					has_full_control_of_state = 16 
+					has_full_control_of_state = 19
+				}
+			}
+			ICR = {
+				is_puppet = no
+				has_full_control_of_state = 958
+			}
+			FIC = { exists = no } 
+		}
+		cost = 100
+		days_remove = 50
+		remove_effect = {
+			ICR = { country_event = siamww.1 }
+		}
+	}
+	demand_the_subjugation = {
+		visible = { 
+			ICR = { has_war = no }
+			NOT = {
+				is_puppet = yes
+			}
+		}
+		available = {
+			ICR = { has_war = no }
+			ICR = { has_full_control_of_state = 958 }
+		}
+		cost = 100
+		days_remove = 50
+		remove_effect = {
+			ICR = { country_event = siamww.1 }
+		}
+	}
+}
+SIA_fading_empire = {
+	fading_empire_in_siamese_agressive_in_burma = {
+		allowed = { tag = SIA }
+		activation = {
+			NOT = { ENG = { has_country_flag = ENG_fading_empire } }
+			if = {
+				limit = { tag = ENG }
+				has_war = yes
+			}
+			else = {
+				is_ai = no
+				has_war_with = ENG
+			}
+			OR = {
+				1007 = { is_fully_controlled_by_ENG_or_war_ally = yes }
+				1022 = { is_fully_controlled_by_ENG_or_war_ally = yes }
+				288 = { is_fully_controlled_by_ENG_or_war_ally = yes }
+				812 = { is_fully_controlled_by_ENG_or_war_ally = yes }
+			}
+			if = {
+				limit = {
+					1007 = { is_fully_controlled_by_ENG_or_war_ally = yes }
+				}
+				1007 = {
+					owner = {
+						NOT = { has_full_control_of_state = PREV }
+					}
+				}
+			}
+			if = {
+				limit = {
+					1022 = { is_fully_controlled_by_ENG_or_war_ally = yes }
+				}
+				1022 = {
+					owner = {
+						NOT = { has_full_control_of_state = PREV }
+					}
+				}
+			}
+			if = {
+				limit = {
+					288 = { is_fully_controlled_by_ENG_or_war_ally = yes }
+				}
+				288 = {
+					owner = {
+						NOT = { has_full_control_of_state = PREV }
+					}
+				}
+			}
+			if = {
+				limit = {
+					812 = { is_fully_controlled_by_ENG_or_war_ally = yes }
+				}
+				812 = {
+					owner = {
+						NOT = { has_full_control_of_state = PREV }
+					}
+				}
+			}
+		}
+		available = {
+			SIA = {
+				NOT = {
+					has_full_control_of_state = 1007
+					has_full_control_of_state = 1022
+					has_full_control_of_state = 288
+					has_full_control_of_state = 812
+				}
+			}
+		}
+		days_mission_timeout = 150
+		fire_only_once = yes
+		timeout_effect = {
+			ENG = {
+				country_event = { id = siamww.6 hours = 8 }
+			}
+		}
+	}
+}

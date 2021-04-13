@@ -1,0 +1,96 @@
+﻿capital = 670 
+
+oob = "LAO_1936"
+
+set_research_slots = 2
+set_stability = 0.50
+set_war_support = 0.50
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	improved_light_tank = 1
+	early_fighter = 1
+	naval_bomber1 = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	CAS1 = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	basic_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	transport = 1
+	fuel_silos = 1
+}
+
+add_ideas = {
+	party_pop_0_40
+	GEN_HOG_Ade
+	GEN_FOR_Ade
+	GEN_ECO_Ade
+	GEN_SEC_Ade
+
+	presidential_republic
+}
+
+set_politics = {	
+	ruling_party = authoritarian_democrat
+	last_election = "1934.3.26"
+	election_frequency = 60
+	elections_allowed = no
+}
+
+set_popularities = {
+    vanguardist = 0
+    collectivist = 35
+    libertarian_socialist = 0
+    social_democrat = 0
+    social_liberal = 0
+    market_liberal = 0
+    social_conservative = 25
+    authoritarian_democrat = 40
+    paternal_autocrat = 0
+    national_populist = 0
+    valkist = 0
+}
+
+create_country_leader = {
+	name = "Souphanouvong"
+	desc = "POLTICS_SOUPHANAOUVONG_DESC"
+	picture = "Portrait_Laos_Souphanouvong.tga"
+	expire = "1953.3.1"
+	ideology = collectivist_subtype
+	traits = {}
+}
+create_country_leader = {
+	name = "Sisavang Vong"
+	desc = "POLTICS_SISAVANG_VONG_DESC"
+	picture = "Portrait_Laos_Sisavang_Vong.tga"
+	expire = "1953.3.1"
+	ideology = authoritarian_democrat_subtype
+	traits = {}
+}
+create_country_leader = {
+	name = "Kou Voragong" 
+	desc = "POLITICS_KOU_VORAGONG_DESC"
+	picture = "Portrait_Laos_Kou_Voravong.tga"
+	expire = "1953.3.1"
+	ideology = social_conservative_subtype
+	traits = {}
+}

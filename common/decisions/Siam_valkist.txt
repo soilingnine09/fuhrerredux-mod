@@ -1,0 +1,320 @@
+SIA_valkist_committee_influence = {
+	start_propaganda = {
+		available = {
+			original_tag = SIA
+		}
+		fire_only_once = yes
+		visible = { 
+			AND = {
+				has_country_flag = valkists_preparing_coup 
+				has_country_flag = coalition_valkist
+			}
+			NOT = {
+				has_country_flag = start_propaganda
+			}
+		}
+		cost = 10
+		days_remove = 15
+		remove_effect = {
+			hidden_effect = {
+				SIA_recalc_for_idea = yes
+				set_country_flag = start_propaganda
+			}
+		}
+	}
+	propaganda_in_esan = {
+		available = {
+			original_tag = SIA
+			NOT = { has_decision = propaganda_in_lanna }
+			hidden_trigger = {
+				has_country_flag = valkist_committee
+				has_country_flag = start_propaganda
+			}
+		}
+		visible = { has_country_flag = start_propaganda }
+		cost = 30
+		modifier = {
+			valkist_drift = 0.03
+			consumer_goods_factor = 0.02
+		}
+		days_remove = 50
+		fire_only_once = yes
+		remove_effect = {
+			custom_effect_tooltip = "Council of Tai's Unificationist Party is starting the promoting in Esan"
+			hidden_effect = {
+				add_popularity = { ideology = valkist popularity = 0.05 }
+				SIA_recalc_for_idea = yes
+				set_country_flag = valkist_committee_in_esan
+			}
+		}
+	}
+	propaganda_in_lanna = {
+		available = {
+			original_tag = SIA
+			NOT = { has_decision = propaganda_in_esan }
+			hidden_trigger = {
+				has_country_flag = valkist_committee
+				has_country_flag = start_propaganda
+			}
+		}
+		visible = { has_country_flag = start_propaganda }
+		cost = 30
+		modifier = {
+			valkist_drift = 0.03
+			consumer_goods_factor = 0.02
+		}
+		days_remove = 50
+		fire_only_once = yes
+		remove_effect = {
+			custom_effect_tooltip = "Council of Tai's Unificationist Party is starting the promoting in Lanna"
+			add_popularity = { ideology = valkist popularity = 0.05 }
+			hidden_effect = {
+				SIA_recalc_for_idea = yes
+				set_country_flag = valkist_committee_in_lanna
+			}
+		}
+	}
+	increase_party_member = {
+		available = {
+			original_tag = SIA
+			NOT = { 
+				OR = { 
+					has_idea = Valkist_influence_in_Siam4 
+					has_idea = Valkist_influence_in_Siam5 
+					has_idea = Valkist_influence_in_Siam6 
+				} 
+			}
+		}
+		visible = { 
+			OR = { 
+				has_country_flag = valkist_committee_in_esan 
+				has_country_flag = valkist_committee_in_lanna 
+			}
+		}
+		days_remove = 60
+		modifier = {
+			valkist_drift = 0.03
+		}
+		cost = 60
+		remove_effect = {
+			custom_effect_tooltip = "Increase the number of party members"
+			hidden_effect = {
+				add_popularity = { ideology = valkist popularity = 0.15 }
+				SIA_recalc_for_idea = yes
+			}
+		}
+	}
+	stop_influencing = {
+		available = {
+			original_tag =  SIA
+		}
+		visible = { 
+			OR = { 
+				has_country_flag = valkist_committee_in_esan 
+				has_country_flag = valkist_committee_in_lanna 
+			} 
+		}
+		cost = 0
+		complete_effect = {
+			custom_effect_tooltip = "We will stop our influencing"
+			hidden_effect = {
+				set_temp_variable = {
+					var = valkist_end
+					value = ROOT.party_popularity@valkist
+				}
+				multiply_temp_variable = {
+					var = valkist_end
+					value = -1
+				}
+				add_popularity = { ideology = valkist popularity = valkist_end }
+				set_temp_variable = {
+					var = market_supr
+					value = ROOT.party_popularity@market_liberal
+				}
+				multiply_temp_variable = {
+					var = market_supr
+					value = 0.5
+				}
+				add_popularity = { ideology = market_liberal popularity = market_supr }
+				clr_country_flag = valkist_committee_in_esan
+				clr_country_flag = valkist_committee_in_lanna
+				clr_country_flag = valkists_preparing_coup
+				clr_country_flag = valkist_committee
+				clr_country_flag = coalition_valkist
+				set_country_flag = marlib_supremacy
+				SIA_remove_valkist_idea = yes
+				SP_NS_clear_coalition_effect = yes
+			}
+		}
+	}
+}
+SIA_valkist_border_conflict = {
+	start_the_vientiane_border_conflict = {
+		available = {
+			original_tag = SIA
+			OR = {
+				divisions_in_border_state = {
+					type = infantry
+					size > 3
+					state = 804
+					border_state = 670
+				}
+				divisions_in_border_state = {
+					type = motorized
+					size > 3
+					state = 804
+					border_state = 670
+				}
+			}
+		}
+		visible = { 
+			has_country_flag = border_escalation 
+			NOT = {
+				OR = {
+					has_country_flag = win_vientiane_campaign
+					has_country_flag = lose_vientiane_campaign
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 7
+		remove_effect = {
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 804
+					num_provinces = 4
+					on_win = siam_border_conflict.1
+					on_lose = siam_border_conflict.2
+				}
+				defender = {
+					state = 670
+					num_provinces = 4
+				}
+			}
+		}
+	}
+	start_the_battambang_border_conflict = {
+		available = {
+			original_tag = SIA
+			OR = {
+				divisions_in_border_state = {
+					type = infantry
+					size > 3
+					state = 804
+					border_state = 962
+				}
+				divisions_in_border_state = {
+					type = motorized
+					size > 3
+					state = 804
+					border_state = 962
+				}
+				divisions_in_border_state = {
+					type = artillery
+					size > 3
+					state = 804
+					border_state = 962
+				}
+			}
+		}
+		visible = { 
+			has_country_flag = border_escalation 
+			NOT = {
+				OR = {
+					has_country_flag = win_battambang_campaign
+					has_country_flag = lose_battambang_campaign
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 7
+		remove_effect = {
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 804
+					num_provinces = 2
+					on_win = siam_border_conflict.3
+					on_lose = siam_border_conflict.4
+				}
+				defender = {
+					state = 962
+					num_provinces = 2
+				}
+			}
+		}
+	}
+	end_of_questionable_indochina_statue = {
+		allowed = {
+			tag = SIA
+		}
+		activation = {
+			original_tag = SIA 
+			custom_trigger_tooltip = {
+				tooltip = "Has the flawless victory against French Indochinese in 2 campaigns"
+				SIA = {
+					AND = {
+						has_country_flag = win_battambang_campaign
+						has_country_flag = win_vientiane_campaign
+					}
+				}
+			}
+		}
+		available = { 
+			SIA = {
+				has_full_control_of_state = 741
+				has_full_control_of_state = 963
+				has_full_control_of_state = 670
+				has_full_control_of_state = 1009
+			}
+		}
+		days_mission_timeout = 100
+		fire_only_once = yes
+		timeout_effect = {
+			FRA = {
+				country_event = { id = siam_border_conflict.5 days = 15 }
+			}
+		}
+	}
+	escalate_the_border = {
+		available = {
+			original_tag = SIA
+		}
+		visible = {
+			NOT = { has_country_flag = border_escalation }
+		}
+		cost = 100
+		days_remove = 150
+		modifier = {
+			civilian_factory_use = 6
+		}
+		remove_effect = {
+			hidden_effect = { set_country_flag = border_escalation }
+			every_owned_state = {
+				limit = {
+					is_in_home_area = yes
+					is_core_of = SIA
+					any_neighbor_state = { 
+						OR = {
+							is_core_of = FIC
+							is_core_of = ICR
+						}
+					}
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+
+		}
+	}
+}

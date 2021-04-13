@@ -1,0 +1,417 @@
+SIA_unificationist_major_faction_challenge = {
+	start_the_major_faction_challenge_campaign = {
+		allowed = { tag = SIA }
+		activation = {
+			#has_completed_focus = SIA_unificationist_win_election
+			custom_trigger_tooltip = {
+				tooltip = "The Faction Leader Challenge is not started"
+				NOT = { has_country_flag = finish_faction_leader_challenge }
+			}
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "The Faction Leader Challenge is started"
+				has_country_flag = finish_faction_leader_challenge
+			}
+		}
+		days_mission_timeout = 7
+		fire_only_once = yes
+		timeout_effect = {
+			add_political_power = 100
+			hidden_effect = { 
+				set_country_flag = finish_faction_leader_challenge 
+				set_variable = { market_inf = ROOT.party_popularity@market_liberal }
+				set_variable = { natpop_inf = ROOT.party_popularity@national_populist }
+				set_variable = { valkist_inf = ROOT.party_popularity@valkist }
+			}
+		}
+	}
+	unificationist_leadership_election = {
+		activation = {
+			custom_trigger_tooltip = {
+				tooltip = "Faction Leadership Election has been not held by something"
+				NOT = { has_country_flag = end_of_faction_leadership_election }
+				has_country_flag = finish_faction_leader_challenge
+			}
+		}
+		available = {
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = "Faction Leadership Election is finished"
+					has_country_flag = end_of_faction_leadership_election
+				}
+				has_completed_focus = SIA_royalist_win_election
+				has_completed_focus = SIA_centrist_win_election
+			}
+		}
+		days_mission_timeout = 700
+		fire_only_once = yes
+		timeout_effect = {
+			add_political_power = 200
+			country_event = {
+				id = siamchallenge.18
+				days = 7
+			}
+			hidden_effect = {
+				set_country_flag = end_of_faction_leadership_election
+			}
+		}
+	}
+	first_phase_is_finished = {
+		allowed = { tag = SIA }
+		activation = {
+			custom_trigger_tooltip = {
+				tooltip = "The first phase has not completed on 120 days"
+				NOT = { has_country_flag = end_of_first_phase }
+			}
+			custom_trigger_tooltip = {
+				tooltip = "The Faction Leader Challenge is started"
+				has_country_flag = finish_faction_leader_challenge
+			}
+		}
+		available = {
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = "The first phase has completed on 210 days"
+					has_country_flag = end_of_first_phase
+				}
+				has_completed_focus = SIA_royalist_win_election
+				has_completed_focus = SIA_centrist_win_election
+			}
+		}
+		days_mission_timeout = 210
+		fire_only_once = yes
+		timeout_effect = {
+			add_political_power = 50
+			hidden_effect = { 
+				set_country_flag = end_of_first_phase 
+			}
+		}
+	}
+	##Kit Sangkom's 1st Phase
+	open_the_talad_krungthep_plod_pasee = {
+		allowed = { tag = SIA }
+		available = {
+			tag = SIA
+			#has_completed_focus = SIA_unificationist_win_election
+		}
+		visible = {
+			custom_trigger_tooltip = {
+				tooltip = "The Faction Leader Challenge is completed"
+				has_country_flag = finish_faction_leader_challenge
+			}
+			NOT = { has_country_flag = end_of_first_phase }
+		}
+		cost = 50
+		days_remove = 30
+		modifier = {
+			consumer_goods_factor = -0.05
+		}
+		remove_effect = {
+			add_popularity = { ideology = market_liberal popularity = 0.05 }
+			hidden_effect = {
+				if = {
+					limit = { NOT = { has_country_flag = market_first_phase } }
+					ROOT = { set_country_flag = market_first_phase }
+				} 
+				random_list = {
+					50 = { country_event = siamchallenge.1 }
+					50 = { country_event = siamchallenge.2 }
+				}
+			}
+		}
+	}
+	##Seri Manang's 1st Phase
+	give_the_speech_at_party_meeting_hall = {
+		allowed = { tag = SIA }
+		available = {
+			tag = SIA
+			#has_completed_focus = SIA_unificationist_win_election
+		}
+		visible = {
+			custom_trigger_tooltip = {
+				tooltip = "The Faction Leader Challenge is completed"
+				has_country_flag = finish_faction_leader_challenge
+			}
+			NOT = { has_country_flag = end_of_first_phase }
+		}
+		cost = 50
+		days_remove = 30
+		modifier = {
+			political_power_factor = 0.03
+		}
+		remove_effect = {
+			add_popularity = { ideology = national_populist popularity = 0.05 }
+			hidden_effect = {
+				if = {
+					limit = { NOT = { has_country_flag = natpop_first_phase } }
+					ROOT = { set_country_flag = natpop_first_phase }
+				}
+				random_list = {
+					50 = { country_event = siamchallenge.3 }
+					50 = { country_event = siamchallenge.4 }
+				}
+			}
+		}
+	}
+	##Ruam Chon Phao Tai's 1st Phase
+	promote_wichit_book = {
+		allowed = { tag = SIA }
+		available = {
+			tag = SIA
+			#has_completed_focus = SIA_unificationist_win_election
+		}
+		visible = {
+			custom_trigger_tooltip = {
+				tooltip = "The Faction Leader Challenge is completed"
+				has_country_flag = finish_faction_leader_challenge
+			}
+			NOT = { has_country_flag = end_of_first_phase }
+		}
+		cost = 50
+		days_remove = 30
+		modifier = {
+			stability_weekly_factor = 0.03
+		}
+		remove_effect = {
+			add_popularity = { ideology = valkist popularity = 0.05 }
+			hidden_effect = {
+				if = {
+					limit = { NOT = { has_country_flag = valkist_first_phase } }
+					ROOT = { set_country_flag = valkist_first_phase }
+				}
+				random_list = {
+					50 = { country_event = siamchallenge.5 }
+					50 = { country_event = siamchallenge.6 }
+				}
+			}
+		}
+	}
+	###Second Phase
+	second_phase_is_finished = {
+		allowed = { tag = SIA }
+		activation = {
+			custom_trigger_tooltip = {
+				tooltip = "The second phase has not completed on 210 days"
+				NOT = { has_country_flag = end_of_second_phase }
+			}
+			custom_trigger_tooltip = {
+				tooltip = "The first phase has completed"
+				has_country_flag = end_of_first_phase
+			}
+		}
+		available = {
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = "The second phase has completed on 210 days"
+					has_country_flag = end_of_second_phase
+				}
+				has_completed_focus = SIA_royalist_win_election
+				has_completed_focus = SIA_centrist_win_election
+			}
+		}
+		days_mission_timeout = 210
+		fire_only_once = yes
+		timeout_effect = {
+			add_political_power = 50
+			hidden_effect = { 
+				set_country_flag = end_of_second_phase 
+			}
+		}
+	}
+	##Kit Sangkom 2nd Phase
+	subsidies_free_trade_market = {
+		allowed = { tag = SIA }
+		available = { tag = SIA }
+		visible = {
+			has_country_flag = end_of_first_phase
+			NOT = { has_country_flag = end_of_second_phase }
+		}
+		cost = 50
+		days_remove = 30
+		modifier = {
+			production_factory_efficiency_gain_factor = 0.03
+		}
+		remove_effect = {
+			add_political_power = 120
+			add_popularity = { ideology = market_liberal popularity = 0.05 }
+			hidden_effect = {
+				if = {
+					limit = { NOT = { has_country_flag = market_second_phase } }
+					ROOT = { set_country_flag = market_second_phase }
+				}
+				random_list = {
+					50 = { country_event = siamchallenge.1 }
+					50 = { country_event = siamchallenge.2 }
+				}
+			}
+		}
+	}
+	##Seri Manang 2nd Phase
+	royal_fellowship = {
+		allowed = { tag = SIA }
+		available = { tag = SIA }
+		visible = {
+			has_country_flag = end_of_first_phase
+			NOT = { has_country_flag = end_of_second_phase }
+		}
+		cost = 50
+		days_remove = 30
+		modifier = {
+			paternal_autocrat_drift = 0.03
+		}
+		remove_effect = {
+			add_popularity = { ideology = paternal_autocrat popularity = 0.05 }
+			hidden_effect = {
+				if = {
+					limit = { NOT = { has_country_flag = natpop_second_phase } }
+					ROOT = { set_country_flag = natpop_second_phase }
+				}
+				random_list = {
+					50 = { country_event = siamchallenge.3 }
+					50 = { country_event = siamchallenge.4 }
+				}
+			}
+		}
+	}
+	##Ruam Chon Phao Tai 2nd Phase
+	promote_magical_things = {
+		allowed = { tag = SIA }
+		available = { tag = SIA }
+		visible = { 
+			has_country_flag = end_of_first_phase
+			NOT = { has_country_flag = end_of_second_phase }
+		}
+		cost = 50
+		days_remove = 30
+		modifier = {
+			political_power_factor = 0.05
+		}
+		remove_effect = {
+			add_popularity = { ideology = valkist popularity = 0.05 }
+			hidden_effect = {
+				if = { 
+					limit = { NOT = { has_country_flag = valkist_second_phase } } 
+					ROOT = { set_country_flag = valkist_second_phase }
+				}
+				random_list = {
+					51 = { country_event = siamchallenge.5 }
+					49 = { country_event = siamchallenge.6 }
+				}
+			}
+		}
+	}
+	##Third Phase
+	third_phase_is_finished = {
+		allowed = { tag = SIA }
+		activation = {
+			custom_trigger_tooltip = {
+				tooltip = "The third phase has not completed on 210 days"
+				NOT = { has_country_flag = end_of_third_phase }
+			}
+			custom_trigger_tooltip = {
+				tooltip = "The second phase has completed"
+				has_country_flag = end_of_second_phase
+			}
+		}
+		available = {
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = "The third phase has completed on 210 days"
+					has_country_flag = end_of_third_phase
+				}
+				has_completed_focus = SIA_royalist_win_election
+				has_completed_focus = SIA_centrist_win_election
+			}
+		}
+		days_mission_timeout = 210
+		fire_only_once = yes
+		timeout_effect = {
+			add_political_power = 50
+			hidden_effect = { 
+				set_country_flag = end_of_third_phase 
+			}
+		}
+	}
+	#Kit Sangkom 3rd Phase
+	rattanakosin_era_112_revanchism_promoting = {
+		allowed = { tag = SIA }
+		available = { tag = SIA }
+		visible = { 
+			has_country_flag = end_of_second_phase
+			NOT = { has_country_flag = end_of_third_phase }
+		}
+		cost = 50
+		days_remove = 30
+		modifier = {
+			market_liberal_drift = 0.01
+		}
+		remove_effect = {
+			add_stability = 0.03
+			hidden_effect = {
+				if = { 
+					limit = { NOT = { has_country_flag = market_third_phase } } 
+					ROOT = { set_country_flag = market_third_phase }
+				}
+				random_list = {
+					55 = { country_event = siamchallenge.1 }
+					45 = { country_event = siamchallenge.2 }
+				}
+			}
+		}
+	}
+	#Seri Manang 3rd Phase
+	ayudhaya_kingdom_restoration = {
+		allowed = { tag = SIA }
+		available = { tag = SIA }
+		visible = { 
+			has_country_flag = end_of_second_phase
+			NOT = { has_country_flag = end_of_third_phase }
+		}
+		cost = 50
+		days_remove = 30
+		modifier = {
+			national_populist_drift = 0.01
+		}
+		remove_effect = {
+			add_war_support = 0.03
+			hidden_effect = {
+				if = { 
+					limit = { NOT = { has_country_flag = natpop_third_phase } }
+					ROOT = { set_country_flag = natpop_third_phase }
+				}
+				random_list = {
+					55 = { country_event = siamchallenge.3 }
+					45 = { country_event = siamchallenge.4 }
+				}
+			}
+		}
+	}
+	#Valkist 3rd Phase
+	tai_tribe_confederacy_promoting = {
+		allowed = { tag = SIA }
+		available = { tag = SIA }
+		visible = { 
+			has_country_flag = end_of_second_phase
+			NOT = { has_country_flag = end_of_third_phase }
+		}
+		cost = 50
+		days_remove = 30
+		modifier = {
+			political_power_factor = 0.05
+		}
+		remove_effect = {
+			add_popularity = { ideology = valkist popularity = 0.05 }
+			hidden_effect = {
+				if = { 
+					limit = { NOT = { has_country_flag = valkist_third_phase } } 
+					ROOT = { set_country_flag = valkist_third_phase }
+				}
+				random_list = {
+					79 = { country_event = siamchallenge.5 }
+					21 = { country_event = siamchallenge.6 }
+				}
+			}
+		}
+	}
+}

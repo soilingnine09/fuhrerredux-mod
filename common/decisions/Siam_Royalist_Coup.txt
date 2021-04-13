@@ -1,0 +1,168 @@
+SIA_royalist_coup = {
+	SIA_royalist_final_conclusion = {
+		activation = {
+			has_variable = prayool_influence
+		}
+		available = {
+			OR = {
+				has_completed_focus = SIA_successful_of_radical
+				has_completed_focus = SIA_failed_coup
+			}
+		}
+		days_mission_timeout = 150
+		fire_only_once = yes
+		timeout_effect = {
+			if = {
+				limit = {
+					check_variable = { 
+						var = royalist_lev
+						value = 4
+						compare = equals
+					}
+				}
+				country_event = {
+					id = siam.74
+					hours = 12
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						check_variable = { 
+							var = royalist_lev
+							value = 3
+							compare = equals
+						}
+						check_variable = { 
+							var = royalist_lev
+							value = 2
+							compare = equals
+						}
+					}
+				}
+				country_event = {
+					id = siam.75
+					hours = 12
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						var = royalist_lev
+						value = 1
+						compare = equals
+					}
+				}
+				country_event = {
+					id = siam.73
+					hours = 12
+				}
+			}
+		}
+	}
+	time_is_moving = {
+		activation = {
+			focus_progress = {
+				focus = SIA_spread_the_democratic_system_to_countryside
+				progress > 0.05
+			}
+		}
+		available = {
+			OR = {
+				has_completed_focus = SIA_successful_of_radical
+				has_completed_focus = SIA_failed_coup
+			}
+		}
+		days_mission_timeout = 3
+		fire_only_once = yes
+		timeout_effect = {
+			custom_effect_tooltip = "This decision shall set level for Royalist Situation"
+			activate_mission = time_is_moving
+			hidden_effect = {
+				prayool_influence_level = yes
+			}
+		}
+	}
+	prayool_is_moving_one = {
+		activation = {
+			focus_progress = {
+				focus = SIA_spread_the_democratic_system_to_countryside
+				progress > 0.2
+			}
+			NOT = {
+				has_completed_focus = SIA_spread_the_democratic_system_to_countryside
+			}
+		}
+		available = {
+			has_completed_focus = SIA_spread_the_democratic_system_to_countryside
+		}
+		visible = {
+			NOT = { has_variable = prayool_influence }
+		}
+		days_mission_timeout = 10
+		fire_only_once = yes
+		timeout_effect = {
+			country_event = {
+				id = siam.69
+				hours = 12
+			}
+			hidden_effect = {
+				activate_mission = prayool_is_moving_two
+			}
+		}
+	}
+	prayool_is_moving_two = {
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		days_mission_timeout = 10
+		fire_only_once = yes
+		timeout_effect = {
+			country_event = {
+				id = siam.70
+				hours = 12
+			}
+			hidden_effect = {
+				activate_mission = prayool_is_moving_three
+			}
+		}
+	}
+	prayool_is_moving_three = {
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		days_mission_timeout = 10
+		fire_only_once = yes
+		timeout_effect = {
+			country_event = {
+				id = siam.71
+				hours = 20
+			}
+			hidden_effect = {
+				activate_mission = prayool_final_moving
+			}
+		}
+	}
+	prayool_final_moving = {
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		days_mission_timeout = 10
+		fire_only_once = yes
+		timeout_effect = {
+			country_event = {
+				id = siam.72
+				hours = 20
+			}
+		}
+	}
+}

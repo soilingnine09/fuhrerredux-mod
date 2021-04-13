@@ -1,0 +1,39 @@
+on_actions = {
+
+    on_startup = {
+        effect = {
+            PHI = {
+                if = {
+                    limit = {
+                        has_game_rule = {
+                            rule = PHI_AI_BEHAVIOR
+                            option = BROTHERS_UNITED
+                        }
+                    }
+                    set_country_flag = PHI_AI_CHOSEN
+                    set_country_flag = PHI_BROTHERS_UNITED_BEHAVIOR
+                }
+                if = {
+                    limit = {
+                        has_game_rule = {
+                            rule = PHI_AI_BEHAVIOR
+                            option = PRUSSIA_OF_THE_EAST
+                        }
+                    }
+                    set_country_flag = PHI_AI_CHOSEN
+                    set_country_flag = PHI_PRUSSIA_OF_THE_EAST_BEHAVIOR
+                }
+                if = {
+                    limit = {
+                        has_game_rule = {
+                            rule = PHI_AI_BEHAVIOR
+                            option = TESTING_IMPERIALISM
+                        }
+                    }
+                    set_country_flag = PHI_AI_CHOSEN
+                    set_country_flag = PHI_TESTING_IMPERIALISM
+                }
+            }
+        }
+    }
+}

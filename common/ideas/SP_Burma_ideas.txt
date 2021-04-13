@@ -1,0 +1,179 @@
+ideas = {
+    country = {
+        BRM_unstable_state = {
+            allowed = { original_tag = BRM }
+
+            picture = FRA_scw_intervention_republicans_focus
+
+            modifier = {
+                political_power_gain = -0.15
+                trade_laws_cost_factor = 0.25
+                mobilization_laws_cost_factor = 0.25
+                economy_cost_factor = 0.25
+            }
+        }
+
+        BRM_untrained_army = {
+            allowed = { original_tag = BRM }
+
+            picture = tfv_can_conscription_crisis
+
+            modifier = {
+                army_attack_factor = -0.25
+                army_defence_factor = -0.25
+            }
+        }
+
+        BRM_economic_reliance_on_exports = {
+            allowed = { original_tag = BRM }
+
+            picture = generic_trade
+
+            modifier = {
+                consumer_goods_factor = -0.05
+                production_factory_max_efficiency_factor = -0.15
+                industrial_capacity_factory = -0.15
+                industrial_capacity_dockyard = -0.15
+            }
+        }
+
+        BRM_economic_boom_idea = {
+            allowed = { original_tag = BRM }
+
+            picture = generic_goods_red_bonus
+
+            modifier = {
+                industrial_capacity_factory = 0.05
+                industrial_capacity_dockyard = 0.05
+            }
+        }
+
+        BRM_army_enhanced_training = {
+            allowed = { original_tag = BRM }
+
+            picture = HUN_secret_rearmament
+
+            modifier = {
+                army_attack_factor = 0.05
+                army_defence_factor = 0.05
+            }
+        }
+
+        BRM_naval_air_coordination_idea = {
+            allowed = { original_tag = BRM }
+
+            picture = combined_bomber_offensive
+
+            modifier = {
+                naval_strike_attack_factor = 0.1
+                naval_strike_targeting_factor = 0.1
+                naval_strike_agility_factor = 0.1
+            }
+        }
+
+        BRM_air_academy_idea = {
+            allowed = { original_tag = BRM }
+
+            picture = generic_army_war_college
+
+            modifier = {
+                air_range_factor = 0.10
+                air_accidents_factor = -0.10
+                army_bonus_air_superiority_factor = 0.05
+            }
+        }
+
+        BRM_worker_subsidies_idea = {
+            allowed = { original_tag = BRM }
+
+            picture = generic_production_bonus
+
+            modifier = {
+                production_factory_max_efficiency_factor = 0.1
+                industrial_capacity_factory = 0.05
+                industrial_capacity_dockyard = 0.05
+            }
+        }
+
+        BRM_consumer_protection_act_idea = {
+            allowed = { original_tag = BRM }
+            
+            picture = generic_goods_red_bonus
+
+            modifier = {
+                consumer_goods_factor = -0.05
+                political_power_gain = 0.05
+            }
+        }
+
+        BRM_investments = {
+            allowed = { original_tag = BRM }
+
+            picture = generic_political_support
+
+            modifier = {
+                consumer_goods_factor = 0.02
+                production_speed_buildings_factor = 0.15
+                production_oil_factor = 0.15
+            }
+        }
+
+        BRM_research_subsidies_idea = {
+            allowed = { original_tag = BRM }
+
+            picture = generic_research_bonus
+
+            modifier = {
+                research_speed_factor = 0.15
+            }
+        }
+
+        BRM_economic_protectionism_idea = {
+            allowed = { original_tag = BRM }
+
+            picture = generic_foreign_capital
+
+            modifier = {
+                production_factory_start_efficiency_factor = 0.15
+                line_change_production_efficiency_factor = 0.15
+            }
+        }
+
+        BRM_open_markets = {
+            allowed = { original_tag = BRM }
+
+            picture = can_wartime_prices_and_trade_board
+
+            modifier = {
+                consumer_goods_factor = -0.05
+                local_building_slots_factor = 0.05
+                local_resources_factor = 0.05
+                
+            }
+        }
+
+        BRM_subsidized_corporations = {
+            allowed = { original_tag = BRM }
+
+            picture = ger_mefo_bills_payment
+
+            modifier = {
+                production_speed_buildings_factor = 0.1
+                conversion_cost_civ_to_mil_factor = 0.1
+                industry_repair_factor = 0.05
+                production_factory_max_efficiency_factor = 0.05
+            }
+        }
+
+        BRM_immigration = {
+            allowed = { original_tag = BRM }
+
+            picture = prc_low_popular_support3
+
+            modifier = {
+                monthly_population = 0.25
+                weekly_manpower = 2000
+            }
+        }
+    }
+}

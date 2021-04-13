@@ -1,0 +1,312 @@
+﻿capital = 303
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "PRU_1936_naval_mtg"
+	else = {
+		set_naval_oob = "PRU_1936_naval_legacy"
+	}
+}
+
+oob = "PRU_1936"
+set_research_slots = 3
+add_ideas = {
+	civilian_economy
+	export_focus
+	volunteer_only
+	PRU_weak_constitution
+	PRU_damaged_democracy
+	PRU_proud_and_victorious
+	COL_reparations_from_colombia
+	PRU_Manuel_Esteban_Rodriguez_hog_ade
+	PRU_Alberto_Ulloa_Sotomayor_for_ade
+	PRU_Ernesto_Scroth_eco_ade
+	PRU_Rocas_Sanchez_Mapas_sec_ade
+	presidential_republic
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	early_bomber = 1
+	CAS1 = 1
+	gwtank = 1
+	tech_mountaineers = 1
+	fuel_silos = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		coastal_defense_ships = 1
+	}
+}
+set_convoys = 5
+set_stability = 0.65
+set_war_support = 0.31
+
+set_politics = {	
+	ruling_party = authoritarian_democrat
+	last_election = "1931.10.11"
+	election_frequency = 96
+	elections_allowed = no
+}
+
+set_popularities = {
+    social_conservative = 12
+    social_democrat = 4
+    social_liberal = 6
+    market_liberal = 8
+    authoritarian_democrat = 31
+    paternal_autocrat = 11
+    valkist = 3
+    national_populist = 5
+    collectivist = 3
+    vanguardist = 15
+    libertarian_socialist = 2
+}
+
+create_country_leader = {
+	name = "Luis Miguel Sánchez Cerro"
+	desc = "POLITICS_LUIS_SANCHEZ_DESC"
+	picture = "LuisSanchez.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "José Bustamante y Rivero"
+	desc = "POLITICS_LUIS_SANCHEZ_DESC"
+	picture = "GFX_Portrait_peru_oscar_benavides"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Luis Antonio Eguiguren"
+	desc = "POLITICS_LUIS_SANCHEZ_DESC"
+	picture = "LuisEguiguren.tga"
+	expire = "1965.1.1"
+	ideology = social_democrat_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Víctor Raúl Haya de la Torre"
+	desc = "POLITICS_OSCAR_BENAVIDES_DESC"
+	picture = "VictorHaya.tga"
+	expire = "1965.1.1"
+	ideology = vanguardist_subtype
+	traits = {
+		#
+	}
+}
+
+
+create_country_leader = {
+	name = "Manuel Prado Ugarteche"
+	desc = "POLITICS_OSCAR_BENAVIDES_DESC"
+	picture = "GFX_Portrait_peru_oscar_benavides"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "José de la Riva"
+	desc = "POLITICS_OSCAR_BENAVIDES_DESC"
+	picture = "GFX_Portrait_peru_oscar_benavides"
+	expire = "1965.1.1"
+	ideology = national_populist_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Luis A. Flores"
+	desc = "POLITICS_OSCAR_BENAVIDES_DESC"
+	picture = "GFX_Portrait_peru_oscar_benavides"
+	expire = "1965.1.1"
+	ideology = valkist_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Luis Miguel Sánchez Cerro"
+	desc = "POLITICS_OSCAR_BENAVIDES_DESC"
+	picture = "LuisSanchez.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {
+		#
+	}
+}
+create_field_marshal = {
+	name = "Luis Sánchez"
+	portrait_path = "gfx/leaders/PRU/LuisSanchez.tga"
+	traits = { }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 2
+}
+create_field_marshal = {
+	name = "Manuel María Ponce Brousset"
+	portrait_path = "gfx/leaders/PRU/PRU_Manuel_Maria_Ponce_Brousset.tga"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Oscar Benavides"
+	picture = "gfx/leaders/PRU/PRU_Oscar_Benavides.tga"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Ernesto Montagne Markholz"
+	portrait_path = "gfx/leaders/PRU/PRU_Ernesto_Montagne_Markholz.tga"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Antonio Rodríguez Ramírez"
+	portrait_path = "gfx/leaders/PRU/PRU_Antonio_Rodriguez_Ramirez.tga"
+	traits = { }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 4
+	logistics_skill = 2
+}
+create_navy_leader = {
+	name = "Julio Goicochea Álvarez"
+	portrait_path = "gfx/leaders/PRU/PRU_Julio_Victor_Goicochea.tga"
+	traits = { }
+	skill = 2
+}
+create_navy_leader = {
+	name = "César Bielich"
+	portrait_path = "gfx/leaders/PRU/PRU_Cesar_Bielich"
+	traits = { }
+	skill = 2
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	### Ship Variants ###
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Submarines #
+	create_equipment_variant = {
+		name = "R1 Class"				
+		type = ship_hull_submarine_1
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+	}
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Almirante Villar Class"				
+		type = ship_hull_light_1
+		name_group = PRU_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_torpedo_1
+		}
+	}
+	# Heavy Cruisers #
+	create_equipment_variant = {
+		name = "Almirante Grau Class"				
+		type = ship_hull_cruiser_coastal_defense_ship
+		name_group = PRU_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = empty
+			fixed_ship_secondaries_slot = empty
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+}
+
+create_country_leader = {
+	name = "Durans Doyle"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = vanguardist_subtype
+}
+
+create_country_leader = {
+	name = "Nethaneel Idowu"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = libertarian_socialist_subtype
+}
+
+create_country_leader = {
+	name = "Ratimir McAlister"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+}
+
+create_country_leader = {
+	name = "Slamet Jefferson"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = collectivist_subtype
+}

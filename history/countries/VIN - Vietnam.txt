@@ -1,0 +1,199 @@
+﻿capital = 958 #Hanoi
+
+oob = "VIN_1936"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "VIN_1936_naval_mtg"
+	else = {
+		set_naval_oob = "VIN_1936_naval_legacy"
+	}
+}
+
+set_research_slots = 2
+set_stability = 0.70
+set_war_support = 0.20
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1
+	early_fighter = 1
+	CAS1 = 1
+	fuel_silos = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_light_cruiser = 1
+		early_destroyer = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		basic_battery = 1
+		basic_secondary_battery = 1
+		basic_torpedo = 1
+		coastal_defense_ships = 1
+		mtg_transport = 1
+	}
+}
+
+add_ideas = {
+	GEN_HOG_Col
+	GEN_FOR_Col
+	GEN_ECO_Col
+	GEN_SEC_Col
+	VIN_unstable_state
+	VIN_bandits
+
+	presidential_republic
+}
+
+set_popularities = {
+	vanguardist = 11
+	collectivist = 21
+	libertarian_socialist = 5
+	social_democrat = 27
+	social_liberal = 4
+	market_liberal = 4
+	social_conservative = 15
+	authoritarian_democrat = 9
+	paternal_autocrat = 3
+	national_populist = 1
+	valkist = 0
+}
+
+set_politics = {
+	ruling_party = collectivist
+	last_election = "1933.2.16"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Nguyen Thai Hoc"
+	desc = “POLITICS_NGUYEN_THAI_HOC_DESC”
+	picture = "Portrait_VIN_Nguyen_Thai_Hoc.tga"
+	expire = "1953.3.1"
+	ideology = social_democrat_subtype
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Ngo Dinh Diem"
+	desc = “POLITICS_NGO_DINH_DIEM_DESC”
+	picture = "Portrait_VIN_Ngo_Dinh_Diem.tga"
+	expire = "1953.3.1"
+	ideology = national_populist_subtype
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Tran Trong Kim"
+	desc = “POLITICS_TRANG_TRONG_KIM_DESC”
+	picture = "Portrait_VIN_Tran_Trong_Kim.tga"
+	expire = "1953.3.1"
+	ideology = paternal_autocrat_subtype
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Truong Tu Anh"
+	desc = “POLITICS_TRUONG_TU_ANH_DESC”
+	picture = "Portrait_VIN_Truong_Tu_Anh.tga"
+	expire = "1953.3.1"
+	ideology = valkist_subtype
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Nguyen Ai Quoc"
+	desc = “POLITICS_NGUYEN_AI_QUOC_DESC”
+	picture = "Portrait_VIN_Nguyen_Ai_Quoc.tga"
+	expire = "1953.3.1"
+	ideology = vanguardist_subtype
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Nguyen Ai Quoc"
+	desc = “POLITICS_NGUYEN_AI_QUOC_DESC”
+	picture = "Portrait_VIN_Nguyen_Ai_Quoc.tga"
+	expire = "1953.3.1"
+	ideology = collectivist_subtype
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Bui Bang Doan"
+	desc = “POLITICS_BUI_BANG_DOAN_DESC”
+	picture = "Portrait_VIN_Bui_Bang_Doan.tga"
+	expire = "1953.3.1"
+	ideology = social_conservative_subtype
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Vu Hong Khanh"
+	desc = “POLITICS_VU_HONG_KHANH_DESC”
+	picture = "Portrait_VIN_Vu_Hong_Khanh.tga"
+	expire = "1953.3.1"
+	ideology = authoritarian_democrat_subtype
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Hoang Dao"
+	desc = “POLITICS_HOANG_DAO_DESC”
+	picture = "Portrait_VIN_Hoang_Dao.tga"
+	expire = "1953.3.1"
+	ideology = social_liberal_subtype
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Nguyen Phan Long"
+	desc = “POLITICS_NGUYEN_PHAN_LONG_DESC”
+	picture = "Portrait_VIN_Nguyen_Phan_Long.tga"
+	expire = "1953.3.1"
+	ideology = market_liberal_subtype
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Nethaneel Idowu"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = libertarian_socialist_subtype
+}

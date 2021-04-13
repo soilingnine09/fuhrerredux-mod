@@ -1,0 +1,138 @@
+SIA_foreign_policy = {
+	join_stahlpakt = {
+		visible = {
+			tag = SIA
+			has_government = valkist
+			NOT = { 
+				OR = {
+					is_in_faction_with = GER 
+					is_in_faction = yes
+				}
+			}
+			GER = { is_faction_leader = yes }
+		}
+		available = {
+			tag = SIA
+			has_government = valkist
+		}
+		cost = 50
+		complete_effect = {
+			GER = { add_to_faction = SIA }
+		}
+	}
+	join_continental_entente = {
+		visible = {
+			tag = SIA
+			NOT = { 
+				OR = {
+					is_in_faction_with = FRA 
+					is_in_faction = yes
+					has_war_with = FRA
+				}
+			}
+			FRA = { is_faction_leader = yes }
+		}
+		available = {
+			NOT = { 
+				OR = {
+					is_in_faction_with = FRA 
+					is_in_faction = yes
+					has_relation_modifier = {
+						target = FRA
+						modifier = SIA_fra_rival_forever
+					}
+				}
+			}
+		}
+		cost = 50
+		complete_effect = {
+			FRA = { add_to_faction = SIA }
+		}
+	}
+	join_pact_of_london = {
+		visible = {
+			tag = SIA
+			NOT = { 
+				OR = {
+					is_in_faction_with = ENG 
+					is_in_faction = yes
+					has_war_with = ENG
+				}
+			}
+			ENG = { is_faction_leader = yes }
+		}
+		available = {
+			NOT = { 
+				OR = {
+					is_in_faction_with = ENG 
+					is_in_faction = yes
+				}
+			}
+		}
+		cost = 50
+		complete_effect = {
+			ENG = { add_to_faction = SIA }
+		}
+	}
+	join_our_eastern_friend = {
+		visible = {
+			tag = SIA
+			NOT = { 
+				OR = {
+					is_in_faction_with = JAP
+					is_in_faction = yes
+					has_war_with = JAP
+				}
+			}
+			JAP = { is_faction_leader = yes }
+		}
+		available = {
+			NOT = { 
+				OR = {
+					is_in_faction_with = JAP 
+					is_in_faction = yes
+				}
+			}
+		}
+		cost = 50
+		complete_effect = {
+			JAP = { add_to_faction = SIA }
+		}
+	}
+	transfer_rule_to_supreme_ruler = {
+		visible = {
+			tag = SIA
+			is_in_faction = yes
+		}
+		available = {
+			any_country = { 
+				is_puppet = yes
+				NOT = { is_puppet_of = SIA }
+				OVERLORD = {
+					is_puppet_of = SIA 
+				}
+			}
+		}
+		complete_effect = {
+			SIA = {
+				every_country = {
+					limit = {
+						AND = {
+							is_puppet = yes
+							NOT = { is_puppet_of = SIA }
+							OVERLORD = {
+								is_puppet_of = SIA 
+							}
+						}
+					}
+					ROOT = {
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_puppet
+						}
+					}
+				}
+			}
+		}
+	}
+}

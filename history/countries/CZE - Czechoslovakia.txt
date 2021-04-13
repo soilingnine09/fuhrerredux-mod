@@ -1,0 +1,272 @@
+﻿capital = 9
+
+oob = "CZE_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1
+	improved_light_tank = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	early_bomber = 1
+	CAS1 = 1
+	fuel_silos = 1
+}
+add_ideas = {
+	GEN_entente_member
+	CZE_suspended_democracy
+	CZE_memories_of_the_revolution
+	CZE_ethnic_tensions
+	CZE_Jan_Syrovy_hog_pau
+	CZE_Alois_Liska_for_pau
+	CZE_Ludvik_Svoboda_eco_pau
+	CZE_Karel_Klapalek_sec_pau
+	military_junta
+}	
+set_research_slots = 3
+set_stability = 0.50
+set_war_support = 0.50
+
+set_politics = {	
+	ruling_party = paternal_autocrat
+	last_election = "1934.6.12"
+	election_frequency = 48
+	elections_allowed = no
+
+}
+
+set_popularities = {
+    vanguardist = 3
+    collectivist = 3
+    libertarian_socialist = 3
+    social_democrat = 13
+    social_liberal = 11
+    market_liberal = 8
+    social_conservative = 9
+    authoritarian_democrat = 9
+    paternal_autocrat = 39
+    national_populist = 2
+    valkist = 0
+}
+
+create_country_leader = {
+	name = "Josef Šnejdárek"
+	desc = "POLITICS_JOSEF_SNEJDAREK_DESC"
+	picture = "JosefSnejdarek.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Edvard Beneš"
+	desc = "POLITICS_EDVARD_BENES_DESC"
+	picture = "Portrait_Czech_Edvard_Benes.dds"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Radola Gajda"
+	desc = "POLITICS_JAROSLAV_KREJCI_DESC"
+	picture = "Portrait_CEN_Radola_Gajda.tga"
+	expire = "1965.1.1"
+	ideology = national_populist_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Rudolf Beran"
+	desc = "POLITICS_JAROSLAV_KREJCI_DESC"
+	picture = "RudolfBeran.dds"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Jaroslav Krejčí"
+	desc = "POLITICS_JAROSLAV_KREJCI_DESC"
+	picture = "Portrait_Czech_Jaroslav_Krejci.dds"
+	expire = "1965.1.1"
+	ideology = valkist_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Klement Gottwald"
+	desc = "POLITICS_KLEMENT_GOTTWALD_DESC"
+	picture = "Portrait_Czech_Klement_Gottwald.dds"
+	expire = "1965.1.1"
+	ideology = collectivist_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Antonín Hampl"
+	desc = "POLITICS_Antonin_Hampl_DESC"
+	picture = "AntoninHampl.tga"
+	expire = "1965.1.1"
+	ideology = social_democrat_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Viktor Dyk"
+	desc = "POLITICS_Antonin_Hampl_DESC"
+	picture = "ViktorDyk.tga"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Vojtěch Luža"
+	picture = "VojtechLuza.tga"
+	traits = { fast_planner offensive_doctrine }
+	skill = 3
+	attack_skill = 3
+    	defense_skill = 2
+   	planning_skill = 3
+  	logistics_skill = 2
+	id = 6806
+}
+
+create_field_marshal = {
+	name = "Josef Šnejdárek"
+	picture = "JosefSnejdarek.tga"
+	traits = { thorough_planner defensive_doctrine }
+	skill = 3
+	attack_skill = 2
+    	defense_skill = 4
+   	planning_skill = 2
+  	logistics_skill = 2
+	id = 6805
+}
+create_field_marshal = {
+	name = "Ludvík Svoboda"
+	picture = "Svoboda.tga"
+	traits = {  }
+	skill = 3
+	attack_skill = 4
+    	defense_skill = 3
+   	planning_skill = 1
+  	logistics_skill = 2
+	id = 6804
+}
+create_corps_commander = {
+	name = "Karel Klapálek"
+	picture = "KarelKlapalek.tga"
+	traits = { panzer_leader }
+	skill = 2
+	attack_skill = 2
+    	defense_skill = 1
+   	planning_skill = 1
+  	logistics_skill = 3
+	id = 6803
+}
+create_corps_commander = {
+	name = "Richard Tesařík"
+	picture = "Tesarik.tga"
+	traits = { panzer_leader }
+	skill = 2
+	attack_skill = 2
+    	defense_skill = 1
+   	planning_skill = 3
+  	logistics_skill = 1
+	id = 6802
+}
+
+create_corps_commander = {
+	name = "Sergej Vojcechovský"
+	picture = "Vojcechovsky.tga"
+	traits = { winter_specialist }
+	skill = 3
+	attack_skill = 3
+    	defense_skill = 2
+   	planning_skill = 2
+  	logistics_skill = 3
+	id = 6801
+}
+create_corps_commander = {
+	name = "Radola Gajda"
+	picture = "Portrait_CEN_Radola_Gajda.tga"
+	traits = { panzer_leader scavenger trait_reckless commando }
+	skill = 2
+	attack_skill = 2
+    	defense_skill = 1
+   	planning_skill = 3
+  	logistics_skill = 1
+	id = 6807
+}
+create_corps_commander = {
+	name = "Emanuel Moravec"
+	picture = "EmanuelMoravec.tga"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+    	defense_skill = 2
+   	planning_skill = 1
+  	logistics_skill = 2
+	id = 6808
+}
+#if = {
+#	limit = {
+#		has_dlc = "Death or Dishonor"
+#	}
+#	add_ideas = {
+#		CZE_skoda_works
+#		CZE_divided_nation
+#}
+#	give_guarantee = YUG
+#	give_guarantee = ROM
+#}
+#
+#if = {
+#	limit = {
+#		NOT = { has_dlc = "Death or Dishonor" }
+#	}
+#	add_ideas = {
+#		CZE_fortification_focus
+#	}
+#
+
+create_country_leader = {
+	name = "Durans Doyle"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = vanguardist_subtype
+}
+
+create_country_leader = {
+	name = "Arkadios Merricks"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+}
+
+create_country_leader = {
+	name = "Nethaneel Idowu"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = libertarian_socialist_subtype
+}

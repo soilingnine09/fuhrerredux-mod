@@ -1,0 +1,140 @@
+﻿capital = 458
+
+OOB = "ALG_1936"
+
+set_research_slots = 2
+set_stability = 0.55
+set_war_support = 0.51
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+
+add_ideas = {
+	GEN_HOG_Pau
+	GEN_FOR_Pau
+	GEN_ECO_Pau
+	GEN_SEC_Pau
+	absolute_monarchy
+}
+
+if = {
+	limit = {
+		TUN = {
+			is_puppet_of = FRA
+		}
+	}
+	TUN = {
+		set_cosmetic_tag = TUN_FRA_subject
+	}
+}
+
+set_popularities = {
+	vanguardist = 10
+
+	collectivist = 8
+
+	libertarian_socialist = 8
+
+	social_democrat = 15
+
+	social_liberal = 15
+
+	market_liberal = 0
+
+	social_conservative = 12
+
+	authoritarian_democrat = 4
+
+	paternal_autocrat = 20
+
+	national_populist = 8
+
+	valkist = 0
+}
+
+set_politics = {
+	ruling_party = paternal_autocrat
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Ahmad II"
+	picture = "Portrait_TUN_Ahmed_II.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+}
+
+create_country_leader = {
+	name = "Durans Doyle"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = vanguardist_subtype
+}
+
+create_country_leader = {
+	name = "Slamet Jefferson"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = collectivist_subtype
+}
+
+create_country_leader = {
+	name = "Nethaneel Idowu"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = libertarian_socialist_subtype
+}
+
+create_country_leader = {
+	name = "Arne Narang"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = social_democrat_subtype
+}
+
+create_country_leader = {
+	name = "Firuz Kohout"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+}
+
+create_country_leader = {
+	name = "Ratimir McAlister"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+}
+
+create_country_leader = {
+	name = "Oved Elwes"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+}
+
+create_country_leader = {
+	name = "Arkadios Merricks"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+}
+
+create_country_leader = {
+	name = "Ramazan Chavez"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = national_populist_subtype
+}
+
+create_country_leader = {
+	name = "Lennie Wallis"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = valkist_subtype
+}

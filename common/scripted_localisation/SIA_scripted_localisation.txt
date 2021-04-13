@@ -1,0 +1,318 @@
+defined_text = {
+	name = GetArmyName
+	text = {
+		trigger = {
+			AND = {
+				has_country_leader = {
+					name = "Phao Sriyanong"
+					ruling_only = yes
+				}
+				has_country_flag = thailand
+			}
+		}
+		localization_key = SIA_thai_republican_army 
+	}
+	text = {
+		trigger = {
+			AND = {
+				has_country_leader = {
+					name = "Phao Sriyanong"
+					ruling_only = yes
+				}
+				NOT = { has_country_flag = thailand }
+			}
+		}
+		localization_key = SIA_siamese_republican_army 
+	}
+	text = {
+		trigger = {
+			has_country_flag = thailand
+		}
+		localization_key = SIA_royal_thai_army
+	}
+	text = {
+		localization_key = SIA_royal_army
+	}
+}
+defined_text = {
+	name = GetNavyName
+	text = {
+		trigger = {
+			AND = {
+				has_country_leader = {
+					name = "Phao Sriyanong"
+					ruling_only = yes
+				}
+				has_country_flag = thailand
+			}
+		}
+		localization_key = SIA_thai_republican_navy
+	}
+	text = {
+		trigger = {
+			AND = {
+				has_country_leader = {
+					name = "Phao Sriyanong"
+					ruling_only = yes
+				}
+				NOT = { has_country_flag = thailand }
+			}
+		}
+		localization_key = SIA_siamese_republican_navy
+	}
+	text = {
+		trigger = {
+			has_country_flag = thailand
+		}
+		localization_key = SIA_royal_thai_navy
+	}
+	text = {
+		localization_key = SIA_royal_navy
+	}
+}
+defined_text = {
+	name = GetAirName
+	text = {
+		trigger = {
+			AND = {
+				has_country_leader = {
+					name = "Phao Sriyanong"
+					ruling_only = yes
+				}
+				has_country_flag = thailand
+			}
+		}
+		localization_key = SIA_thai_republican_air_force
+	}
+	text = {
+		trigger = {
+			AND = {
+				has_country_leader = {
+					name = "Phao Sriyanong"
+					ruling_only = yes
+				}
+				NOT = { has_country_flag = thailand }
+			}
+		}
+		localization_key = SIA_siamese_republican_air_force
+	}
+	text = {
+		trigger = {
+			has_country_flag = thailand
+		}
+		localization_key = SIA_royal_thai_air_force
+	}
+	text = {
+		localization_key = SIA_royal_air_force
+	}
+}
+defined_text = {
+	name = GetShan_Influence
+	text = {
+		localization_key = Shan_influence
+	}
+}
+defined_text = {
+	name = GetMon_Influence
+	text = {
+		localization_key = Mon_influence
+	}
+}
+defined_text = {
+	name = GetMarLibStatus
+	text = {
+		trigger = {
+			ROOT = { 
+				OR = {
+					has_country_flag = coalition_market_liberal
+					has_country_flag = marlib_membership
+				} 
+			}
+		}
+		localization_key = SIA_unificationist_coalition
+	}
+	text = {
+		trigger = {
+			ROOT = { has_government = market_liberal }
+		}
+		localization_key = SIA_unificationist_gov
+	}
+	text = {
+		trigger = {
+			ROOT = { has_country_flag = marlib_unificationist_leader }
+		}
+		localization_key = SIA_unificationist_leadership
+	}
+	text = {
+		localization_key = SIA_inactive_member
+	}
+}
+defined_text = {
+	name = GetNatPopStatus
+	text = {
+		trigger = {
+			ROOT = { 
+				OR = {
+					has_country_flag = coalition_national_populist
+					has_country_flag = natpop_membership
+				}
+			}
+		}
+		localization_key = SIA_unificationist_coalition
+	}
+	text = {
+		trigger = {
+			ROOT = { has_government = national_populist }
+		}
+		localization_key = SIA_unificationist_gov
+	}
+	text = {
+		trigger = {
+			ROOT = { has_country_flag = natpop_unificationist_leader }
+		}
+		localization_key = SIA_unificationist_leadership
+	}
+	text = {
+		localization_key = SIA_inactive_member
+	}
+}
+defined_text = {
+	name = GetValkistStatus
+	text = {
+		trigger = {
+			ROOT = { 
+				OR = {
+					has_country_flag = coalition_valkist
+					has_country_flag = valkist_membership
+				}
+			}
+		}
+		localization_key = SIA_unificationist_coalition
+	}
+	text = {
+		trigger = {
+			ROOT = { has_government = valkist }
+		}
+		localization_key = SIA_unificationist_gov
+	}
+	text = {
+		trigger = {
+			ROOT = { has_country_flag = valkist_unificationist_leader }
+		}
+		localization_key = SIA_unificationist_leadership
+	}
+	text = {
+		localization_key = SIA_inactive_member
+	}
+}
+defined_text = {
+	name = GetMarLibPop
+	text = { localization_key = SIA_marlibpop }
+}
+defined_text = {
+	name = GetNatPopPop
+	text = { localization_key = SIA_natpoppop }
+}
+defined_text = {
+	name = GetValkistPop
+	text = { localization_key = SIA_valkistpop }
+}
+defined_text = {
+	name = GetResLevRank 
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = {
+					var = reslev
+					value = 45
+					compare = greater_than
+				}
+			}
+		}
+		localization_key = SIA_resistance_level_dangerous
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				AND = {
+					check_variable = {
+						var = reslev
+						value = 45
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = reslev 
+						value = 20
+						compare = greater_than
+					}
+				}
+			}
+		}
+		localization_key = SIA_resistance_level_high
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				AND = {
+					check_variable = {
+						var = reslev
+						value = 20
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = reslev 
+						value = 10
+						compare = greater_than
+					}
+				}
+			}
+		}
+		localization_key = SIA_resistance_level_moderate
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				AND = {
+					check_variable = {
+						var = reslev
+						value = 10
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = reslev 
+						value = 0
+						compare = greater_than_or_equals
+					}
+				}
+			}
+		}
+		localization_key = SIA_resistance_level_secure
+	}
+}
+defined_text = {
+	name = GetRolLevel
+	text = {
+		trigger = {
+			check_variable = { royalist_lev = 4 }
+		}
+		localization_key = SIA_royalist_risky
+	}
+	text = {
+		trigger = {
+			check_variable = { royalist_lev = 3 }
+		}
+		localization_key = SIA_royalist_quarantine
+	}
+	text = {
+		trigger = {
+			check_variable = { royalist_lev = 2 }
+		}
+		localization_key = SIA_royalist_suspicious
+	}
+	text = {
+		trigger = {
+			check_variable = { royalist_lev = 1 }
+		}
+		localization_key = SIA_royalist_secure
+	}
+}

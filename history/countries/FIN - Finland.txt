@@ -1,0 +1,409 @@
+﻿capital = 111
+
+oob = "FIN"
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "FIN_1936_naval_mtg"
+	else = {
+		set_naval_oob = "FIN_1936_naval_legacy"
+	}
+}
+
+set_research_slots = 3
+
+country_event = { id = finland.0 days = 2 } # Intro event
+country_event = { id = finland.3 days = 254 } # London crash event
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1			
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	fuel_silos = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_heavy_cruiser = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_secondary_battery = 1
+		coastal_defense_ships = 1
+	}
+}
+
+add_manpower = 50000
+set_convoys = 25
+set_stability = 0.75
+set_war_support = 0.40
+
+
+add_ideas = {
+	party_pop_0_40
+	limited_conscription
+	FIN_Juho_Sunila_hog_sli
+	FIN_Eljas_Erkko_for_mli
+	FIN_Juho_Niukkanen_eco_sli
+	FIN_Oskari_Lehtonen_sec_sco
+	parliamentary_republic
+	
+	FIN_finland_marches_on_idea
+	FIN_agrarian_society_idea
+	FIN_legacy_civil_war_idea
+	FIN_silver_decade_idea
+}
+
+set_country_flag = coalition_market_liberal
+set_country_flag = coalition_social_conservative
+
+set_politics = {	
+	ruling_party = social_liberal
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+
+}
+
+set_popularities = {
+    vanguardist = 2
+    collectivist = 2
+    libertarian_socialist = 4
+    social_democrat = 37
+    social_liberal = 19
+    market_liberal = 5
+    social_conservative = 19
+    authoritarian_democrat = 0
+    paternal_autocrat = 8
+    national_populist = 2
+    valkist = 2
+}
+
+create_country_leader = {
+	name = "Otto Wille Kuusinen"
+	desc = "POLITICS_OTTO_WILLE_KUUSINEN_DESC"
+	picture = "Portrait_Finland_Otto_Wille_Kuusinen.tga"
+	expire = "1965.1.1"
+	ideology = vanguardist_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Kullervo Manner"
+	desc = "POLITICS_KULLERVO_MANNER_DESC"
+	picture = "Portrait_Finland_Kullervo_Manner.tga"
+	expire = "1965.1.1"
+	ideology = collectivist_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Oskari Tokoi"
+	desc = "POLITICS_OSKARI_TOKOI_DESC"
+	picture = "Portrait_Finland_Oskari_Tokoi.tga"
+	expire = "1965.1.1"
+	ideology = libertarian_socialist_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Väinö Tanner"
+	desc = "POLITICS_VAINO_TANNER_DESC"
+	picture = "Portrait_Finland_Vaino_Tanner.tga"
+	expire = "1965.1.1"
+	ideology = social_democrat_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Pehr Evind Svinhufvud"
+	desc = "POLITICS_PER_EVIND_SVINHUFVUD_DESC"
+	picture = "Portrait_Finland_Pehr_Evind_Svinhufvud.tga"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Risto Heikki Ryti"
+	desc = "POLITICS_RISTO_HEIKKI_RYTI_DESC"
+	picture = "Portrait_Finland_Risto_Heikki_Ryti.tga"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Pehr Evind Svinhufvud"
+	desc = "POLITICS_PER_EVIND_SVINHUFVUD_DESC"
+	picture = "Portrait_Finland_Pehr_Evind_Svinhufvud.tga"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Carl Gustav Mannerheim"
+	desc = "POLITICS_CARL_GUSTAV_MANNERHEIM_DESC"
+	picture = "Portrait_Finland_Carl_Gustav_Mannerheim.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+	traits = {
+		hog_field_marshal_baron
+	}
+}
+
+create_country_leader = {
+	name = "Vihtori Kosola"
+	desc = "POLITICS_VIHTORI_KOSOLA_DESC"
+	picture = "Portrait_Finland_Vihtori_Kosola.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Vilho Annala"
+	desc = "POLITICS_VILHO_ANNALA_DESC"
+	picture = "Portrait_Finland_Vilho_Annala.tga"
+	expire = "1965.1.1"
+	ideology = national_populist_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Vilho Helanen"
+	desc = "POLITICS_VILHO_HELANEN_DESC"
+	picture = "Portrait_Finland_Vilho_Helanen.tga"
+	expire = "1965.1.1"
+	ideology = valkist_subtype
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Carl Gustav Mannerheim"
+	picture = "Portrait_Finland_Carl_Gustav_Mannerheim.tga"
+	traits = { war_hero defensive_doctrine logistics_wizard }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 4
+}
+
+create_field_marshal = {
+	name = "Karl Lennart Oesch"
+	picture = "Portrait_Finland_Karl_Lennart_Oesch.tga"
+	traits = { organisational_leader brilliant_strategist skilled_staffer organizer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Erik Heinrichs"
+	picture = "Portrait_Finland_Erik_Heinrichs.tga"
+	traits = { career_officer ranger politically_connected }
+	skill = 4
+	attack_skill = 3
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Vilho Petter Nenonen"
+	picture = "Portrait_Finland_Vilho_Petter_Nenonen.tga"
+	traits = { winter_specialist commando bearer_of_artillery }
+	skill = 3
+	attack_skill = 2
+    defense_skill = 2
+    planning_skill = 4
+    logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Lauri Malmberg"
+	picture = "Portrait_Finland_Lauri_Malmberg.tga"
+	traits = { career_officer skilled_staffer }
+	skill = 3
+	attack_skill = 2
+    defense_skill = 2
+    planning_skill = 4
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Aarne Sihvo"
+	picture = "Portrait_Finland_Aarne_Sihvo.tga"
+	traits = { career_officer skilled_staffer infantry_leader }
+	skill = 3
+	attack_skill = 3
+    defense_skill = 2
+    planning_skill = 4
+    logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Aksel Airo"
+	picture = "Portrait_Finland_Aksel_Airo.tga"
+	traits = { skilled_staffer bearer_of_artillery }
+	skill = 3
+	attack_skill = 3
+    defense_skill = 1
+    planning_skill = 3
+    logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Ruben Lagus"
+	picture = "Portrait_Finland_Ruben_Lagus.tga"
+	traits = { infantry_officer }
+	skill = 2
+	attack_skill = 1
+    defense_skill = 1
+    planning_skill = 2
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Hjalmar Siilasvuo"
+	picture = "Portrait_Finland_Hjalmar_Siilasvuo.tga"
+	traits = { cavalry_officer skilled_staffer }
+	skill = 2
+	attack_skill = 2
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Väinö Valve"
+	picture = "Portrait_Finland_Vaino_Valve.tga"
+	traits = { blockade_runner }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "Eero Rahola"
+	picture = "Portrait_Finland_Eero_Rahola.tga"
+	traits = { spotter }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Svante Sundman"
+	picture = "Portrait_Finland_Svante_Sundman.tga"
+	traits = {  }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 1
+}
+
+create_navy_leader = {
+	name = "Eino Iisakki Järvinen"
+	picture = "Portrait_Finland_Eino_Iisakki_Jarvinen.tga"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 1
+}
+
+### VARIANTS ###
+# 1936 Start #
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	### Ship Variants ###
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Submarines #
+	create_equipment_variant = {
+		name = "Vetehinen Class"								
+		type = ship_hull_submarine_1
+		name_group = FIN_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = ship_mine_layer_sub
+		}
+	}
+	create_equipment_variant = {
+		name = "Vesikko Class"								
+		type = ship_hull_submarine_1
+		name_group = FIN_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+	}
+	# Heavy Cruisers #
+	create_equipment_variant = {
+		name = "Väinämöinen Class"				
+		type = ship_hull_cruiser_coastal_defense_ship
+		name_group = FIN_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+}

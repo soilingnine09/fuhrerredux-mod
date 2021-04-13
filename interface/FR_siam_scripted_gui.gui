@@ -1,0 +1,225 @@
+guiTypes = {
+	######
+	##Royal Market
+	######
+	containerWindowType = {
+		name = "royal_market_board_decision_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 92 }
+		instantTextboxType = {
+			name = "royal_market_board_describe"
+			position = { x=200 y =-165}
+			font = "hoi_16mbs"
+			text = "SIA_supervisory_board_of_royal_market_bureau_desc"
+			maxWidth = 300
+			maxHeight = 23
+		}
+		instantTextboxType = {
+			name = "TradeUnionInf_name"
+			position = { x=150 y =-0}
+			font = "hoi_16mbs"
+			text = "TradeUnionInf"
+			maxWidth = 300
+			maxHeight = 23
+		}
+		instantTextboxType = {
+			name = "CentralizedInf_name"
+			position = { x=150 y =20}
+			font = "hoi_16mbs"
+			text = "CentralizedInf"
+			maxWidth = 300
+			maxHeight = 23
+		}
+		instantTextboxType = {
+			name = "CapitalismInf_name"
+			position = { x=150 y =40}
+			font = "hoi_16mbs"
+			text = "CapitalismInf"
+			maxWidth = 300
+			maxHeight = 23
+		}
+	}
+	######
+	##Anarchy Schism
+	######
+	containerWindowType = {
+		name = "anarchy_natcol_controlling_zone_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 270 }
+		instantTextboxType = {
+			name = "anarchy_natcol_controlling_zone_description"
+			position = { x = 10 y = 0 }
+			font = "hoi_16mb"
+			text = "SIA_anarchy_natcol_controlling_zone_desc"
+			maxWidth = 480
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "gov_level_rank"
+			position = { x = 10 y = 170 }
+			font = "hoi_16mb"
+			text = "SIA_gov_zone"
+			pdx_tooltip = "SIA_gov_zone"
+			maxWidth = 200
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "status"
+			position = { x = 9 y = 220 }
+			font = "hoi_36header"
+			text = "SIA_status_showing"
+			pdx_tooltip = "SIA_resistance_zone_influence"
+			maxWidth = 500
+			maxHeight = 20
+		}
+	}
+	####
+	#Seperatist Burma
+	####
+	containerWindowType = {
+		name = "shan_state_influence_map_decision_ui"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 300 }
+		iconType = {
+			name = "shan_state_icon"
+			spriteType = "GFX_shan_state_influence"
+			position = { x = 30 y = -30 }
+			pdx_tooltip  = "Shan_influence"
+		}
+	}
+	containerWindowType = {
+		name = "mon_state_influence_map_decision_ui"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 300 }
+		iconType = {
+			name = "mon_state_icon"
+			spriteType = "GFX_mon_state_influence"
+			position = { x = 30 y = -30 }
+			pdx_tooltip  = "Mon_influence"
+		}
+	}
+	############
+	#Unificationist
+	############
+	containerWindowType = {
+		name = "unificationist_persuasion_in_national_assembly_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 550 }
+		instantTextboxType = {
+			name = "unificationist_persuasion_assembly_desc"
+			position = { x=5 y =0 }
+			font = "hoi_16mbs"
+			text = "SIA_unificationist_persuasion_assembly_desc"
+			maxWidth = 900
+			maxHeight = 23
+		}
+		containerWindowType = {
+			name = "unificationist_coalition_window"
+			size = { width = 500 height = 400 }
+			position = { x = 5 y = 80 }
+			instantTextboxType = {
+				name = "unificationist_coalition_text"
+				position = { x=25 y =0 }
+				font = "hoi_30header"
+				text = "SIA_unificationist_coalition_title_text"
+				maxWidth = 900
+				maxHeight = 23
+			}
+			containerWindowType = {
+				name = "market_liberalist_window"
+				size = { width = 100% height = 600 }
+				position = { x = 0 y = 0 }
+				iconType = {
+					name = "Market_Liberalist"
+					position = { x = 70 y = 60 }
+					quadTextureSprite = "GFX_ideology_market_liberal_group"
+				}
+				instantTextboxType = {
+					name = "market_liberal_faction_status"
+					position = { x = 50 y = 130 }
+					font = "hoi_18mbs"
+					text = "[ROOT.GetMarLibStatus]"
+					maxHeight = 23
+					maxWidth = 900
+				}
+				instantTextboxType = {
+					name = "market_liberal_popular_status"
+					position = { x = 50 y = 150 }
+					font = "hoi_18mbs"
+					text = "[ROOT.GetMarLibPop]"
+					maxWidth = 900
+					maxHeight = 23
+				}
+			}
+			containerWindowType = {
+				name = "national_populist_window"
+				size = { width = 100% height = 600 }
+				position = { x = 0 y = 0 }
+				iconType = {
+					name = "Nationalist"
+					position = { x = 345 y = 60 }
+					quadTextureSprite = "GFX_ideology_national_populist_group"
+				}
+				instantTextboxType = {
+					name = "national_populist_faction_status"
+					position = { x = 315 y = 130 }
+					font = "hoi_18mbs"
+					text = "[ROOT.GetNatPopStatus]"
+					maxHeight = 23
+					maxWidth = 900
+				}
+				instantTextboxType = {
+					name = "national_populist_popular_status"
+					position = { x = 315 y = 150 }
+					font = "hoi_18mbs"
+					text = "[ROOT.GetNatPopPop]"
+					maxWidth = 900
+					maxHeight = 23
+				}
+			}
+			containerWindowType = {
+				name = "valkist_window"
+				size = { width = 100% height = 600 }
+				position = { x = 0 y = 0 }
+				iconType = {
+					name = "Valkist"
+					position = { x = 215 y = 300 }
+					quadTextureSprite = "GFX_ideology_valkist_group"
+				}
+				instantTextboxType = {
+					name = "valkist_faction_status"
+					position = { x = 180 y = 370 }
+					font = "hoi_18mbs"
+					text = "[ROOT.GetValkistStatus]"
+					maxHeight = 23
+					maxWidth = 900
+				}
+				instantTextboxType = {
+					name = "valkist_popular_status"
+					position = { x = 180 y = 390 }
+					font = "hoi_18mbs"
+					text = "[ROOT.GetValkistPop]"
+					maxWidth = 900
+					maxHeight = 23
+				}
+			}
+			
+		}
+	}
+	##############
+	#Royalist Coup
+	##############
+	containerWindowType = {
+		name = "royalist_coup_decision_ui"
+		size = { width = 100% height = 30 }
+		position = { x = 0 y = 0 }
+		instantTextboxType = {
+			name = "level_of_royalist"
+			position = { x = 5 y = 4 }
+			font = "hoi_18mbs"
+			text = "SIA_Royalist_status"
+			maxHeight = 30
+			maxWidth = 700
+		}
+	}
+}

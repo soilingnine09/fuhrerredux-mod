@@ -1,0 +1,348 @@
+SIA_establish_administrative_division = {
+	Kengtung_province = {
+		visible = {
+			SIA = { has_full_control_of_state = 1021 }
+			NOT = { 1021 = { is_core_of = SIA } }
+		}
+		available = {
+			SIA = { has_full_control_of_state = 1021 }
+		}
+		cost = 15
+		days_remove = 15
+		remove_effect = {
+			1021 = { integration_by_siam = yes }
+		}
+	}
+	Taunggyi_province = {
+		visible = {
+			SIA = { has_full_control_of_state = 1007 }
+			NOT = { 1007 = { is_core_of = SIA } }
+		}
+		available = {
+			SIA = { has_full_control_of_state = 1007 }
+		}
+		cost = 15
+		days_remove = 15
+		remove_effect = {
+			1007 = { integration_by_siam = yes }
+		}
+	}
+	Hanthawaddy_autonomous_province = {
+		visible = {
+			1020 = {
+				is_valid_claimed_state = yes
+			}
+			NOT = { 1020 = { is_core_of = SIA } }
+		}
+		available = {
+			SIA = { has_full_control_of_state = 1020 }
+			SIA = { has_full_control_of_state = 1022 }
+		}
+		cost = 20
+		days_remove = 20
+		remove_effect = {
+			1020 = { integration_by_siam = yes  }
+			1022 = { integration_by_siam = yes  }
+		}
+	}
+	Mandalay_autonomous_province = {
+		visible = {
+			812 = { is_valid_claimed_state = yes }
+			NOT = {	812 = { is_core_of = SIA } }
+		}
+		available = {
+			SIA = { has_full_control_of_state = 812 }
+		}
+		cost = 15
+		days_remove = 15
+		remove_effect = {
+			812 = {
+				integration_by_siam = yes 
+			}
+		}
+	}
+	Maritime_Burma_autonomous_monthon = {
+		visible = {
+			288 = { is_valid_claimed_state = yes }
+			NOT = { 288 = { is_core_of = SIA } }
+		}
+		available = {
+			SIA = { has_full_control_of_state = 288 }
+		}
+		cost = 15
+		days_remove = 15
+		remove_effect = {
+			288 = {
+				integration_by_siam = yes 
+			}
+		}
+	}
+	Sagaing_autonomous_province = {
+		visible = {
+			640 = { is_valid_claimed_state = yes }
+			NOT = { 640 = { is_core_of = SIA } }
+		}
+		available = {
+			SIA = { has_full_control_of_state = 640 }
+		}
+		cost = 15
+		days_remove = 15
+		remove_effect = {
+			640 = {
+				integration_by_siam = yes 
+			}
+		}
+	}
+	##Indochina
+	Phra_tabong_province = {
+		visible = {
+			SIA = { has_full_control_of_state = 962 }
+			NOT = { 962 = { is_core_of = SIA } }
+		}
+		available = {
+			SIA = { has_full_control_of_state = 962 }
+		}
+		cost = 15
+		days_remove = 15
+		remove_effect = {
+			962 = {
+				integration_by_siam = yes 
+			}
+		}
+	}
+	Khmer_nok_province = {
+		visible = {
+			1023 = { is_valid_claimed_state = yes }
+			NOT = { 1023 = { is_core_of = SIA } }
+		}
+		available = {
+			SIA = { has_full_control_of_state = 1023 }
+		}
+		cost = 15
+		days_remove = 15
+		remove_effect = {
+			1023 = {
+				integration_by_siam = yes 
+			}
+		}
+	}
+	Strung_treng_province = {
+		visible = {
+			741 = { is_valid_claimed_state = yes }
+			NOT = { 741 = { is_core_of = SIA } }
+		}
+		available = {
+			SIA = { has_full_control_of_state = 741 }
+		}
+		cost = 15
+		days_remove = 15
+		remove_effect = {
+			741 = {
+				integration_by_siam = yes 
+			}
+		}
+	}
+	Luang_phrabang_province = {
+		visible = {
+			SIA = { 
+				OR = {
+					has_full_control_of_state = 959
+				} 
+				has_full_control_of_state = 960
+				has_full_control_of_state = 1009
+			}
+			NOT = { 960 = { is_core_of = SIA } }
+			OR = {
+				959 = { is_valid_claimed_state = yes }
+				1009 = { is_valid_claimed_state = yes }
+			}
+		}
+		available = {
+			SIA = { 
+				OR = {
+					has_full_control_of_state = 959
+				} 
+				has_full_control_of_state = 960
+				has_full_control_of_state = 1009
+			}
+		}
+		cost = 15
+		days_remove = 15
+		remove_effect = {
+			if = {
+				limit = {
+					959 = { NOT = { is_core_of = SIA } }
+				}
+				959 = { integration_by_siam = yes }
+			}
+			960 = { integration_by_siam = yes }
+			1009 = { integration_by_siam = yes }
+		}
+	}
+	Viang_chan_province = {
+		visible = {
+			670 = { is_valid_claimed_state = yes }
+			NOT = { 670 = { is_core_of = SIA } }
+		}
+		available = {
+			SIA = { has_full_control_of_state = 670 }
+		}
+		cost = 15
+		days_remove = 15
+		remove_effect = {
+			670 = {
+				integration_by_siam = yes 
+			}
+		}
+	}
+	Champasak_province = {
+		visible = {
+			963 = { is_valid_claimed_state = yes }
+			NOT = { 963 = { is_core_of = SIA } }
+		}
+		available = {
+			SIA = { has_full_control_of_state = 963 }
+		}
+		cost = 15
+		days_remove = 15
+		remove_effect = {
+			963 = {
+				integration_by_siam = yes 
+			}
+		}
+	}
+	Yunnan_province = {
+		visible = {
+			any_controlled_state = {
+				is_core_of = YUN
+				SIA = { has_full_control_of_state = PREV }
+				is_valid_claimed_state = yes
+			}
+			NOT = {
+				325 = { is_core_of = SIA }
+			}
+		}
+		available = {
+			any_controlled_state = {
+				is_core_of = YUN
+			}
+		}
+		cost = 30
+		days_remove = 30
+		remove_effect = {
+			every_state = {
+				limit = { is_core_of = YUN }
+				integration_by_siam = yes
+			}
+		}
+	}
+	##Vietnam Provincial Government
+	Vietnam_provincial_government = {
+		visible	=  {
+			SIA = {
+				has_full_control_of_state = 958
+				has_full_control_of_state = 671
+				has_full_control_of_state = 286
+				has_full_control_of_state = 961
+			}
+			958 = { is_valid_claimed_state = yes }
+			NOT = { 958 = { is_core_of = SIA } }
+		}
+		available	=  {
+			SIA = {
+				has_full_control_of_state = 958
+				has_full_control_of_state = 671
+				has_full_control_of_state = 286
+				has_full_control_of_state = 961
+			}
+		}
+		cost = 45
+		days_remove = 30
+		remove_effect = {
+			958 = { integration_by_siam = yes }
+			671 = { integration_by_siam = yes }
+			286 = { integration_by_siam = yes }
+			961 = { integration_by_siam = yes }
+		}
+	}
+	##Chinese Provincial Government
+	Chinese_provincial_government = {
+		visible = {
+			SIA = {
+				any_controlled_state = {
+					AND = {
+						is_valid_claimed_state = yes
+						is_core_of = CHI
+					}
+				}
+			}
+			NOT = {
+				any_controlled_state = {
+					AND = {
+						is_core_of = CHI
+						is_core_of = SIA
+					}
+				}
+			}
+		}
+		available = {
+			any_controlled_state = {
+				AND = {
+					is_core_of = CHI
+					is_claimed_by = SIA
+				}
+			}
+		}
+		cost = 200
+		days_remove = 200
+		remove_effect = {
+			every_state = {
+				limit = {
+					AND = {
+						is_core_of = CHI
+						OR = {
+							is_controlled_by = SIA
+							is_claimed_by = SIA
+						}
+					}
+				}
+				integration_by_siam = yes 
+			}
+		}
+	}
+	#Bengali Provincial Government
+	bengali_provincial_government = {
+		visible = {
+			SIA = {
+				430 = {
+					is_valid_claimed_state = yes 
+				}
+			}
+			NOT = {
+				430 = {
+					is_core_of = SIA
+				}
+			}
+		}
+		available = {
+			any_controlled_state = {
+				OR = {
+					is_core_of = RAJ
+					is_core_of = INC
+				}
+				region = 141
+			}
+		}
+		cost = 100
+		days_remove = 100
+		remove_effect = {
+			every_state = {
+				limit = {
+					is_core_of = RAJ
+					is_valid_claimed_state = yes
+				}
+				integration_by_siam = yes
+			}
+		}
+	}
+}

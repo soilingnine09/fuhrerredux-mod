@@ -1,0 +1,200 @@
+﻿add_namespace = china
+
+# Warlord Chiang
+country_event = {
+    id = china.1
+    title = china.1.t
+    desc = china.1.d
+    picture = GFX_report_event_german_troops_paris
+    
+    is_triggered_only = yes
+
+    option = {
+        name = china.1.a
+
+        add_ideas = CHI_socialist_opposition1
+        add_ideas = CHI_bsb_opposition1
+
+        create_country_leader = {
+            name = "Chiang Kai-Shek"
+            desc = "POLITICS_CHIANG_KAI_SHEK_DESC"
+            picture = "Portrait_China_Jiang_Jieshi.tga"
+            expire = "1965.1.1"
+            ideology = paternal_autocrat_subtype
+            traits = {}
+        }
+        set_politics = {
+            ruling_party = paternal_autocrat
+            elections_allowed = no
+        }
+        hidden_effect = {
+            add_popularity = {
+                ideology = authoritarian_democrat
+                popularity = -0.2
+            }
+
+            add_popularity = {
+                ideology = paternal_autocrat
+                popularity = 0.15
+            }
+
+            swap_ideas = {
+                remove_idea = GEN_HOG_Ade
+                add_idea = GEN_HOG_Pau
+            }
+            swap_ideas = {
+                remove_idea = GEN_FOR_Ade
+                add_idea = GEN_FOR_Pau
+            }
+            swap_ideas = {
+                remove_idea = GEN_ECO_Ade
+                add_idea = GEN_ECO_Pau
+            }
+            swap_ideas = {
+                remove_idea = GEN_SEC_Ade
+                add_idea = GEN_SEC_Pau
+            }
+        }
+    }
+}
+
+# Subjugate the warlords
+country_event = {
+    id = china.2
+    title = china.2.t
+    desc = china.2.d
+    picture = GFX_report_event_german_troops_paris
+    
+    is_triggered_only = yes
+
+    option = {
+        name = china.2.a
+
+        CHI = {
+            annex_country = {
+                target = PREV
+                transfer_troops = yes
+            }
+        }
+    }
+
+    option = {
+        name = china.2.b
+
+        CHI = { country_event = { id = china.3 } }
+    }
+}
+
+# Warlord rejects demands
+country_event = {
+    id = china.3
+    title = china.3.t
+    desc = china.3.a
+    picture = GFX_report_event_german_troops_paris
+
+    is_triggered_only = yes
+
+    option = {
+        name = china.3.a
+
+        create_wargoal = {
+            target = FROM
+            type = annex_everything
+        }
+    }
+}
+
+# Foreign Claims (HK, Macau, Taiwan)
+country_event = {
+    id = china.4
+    title = china.4.t
+    desc = china.4.d
+    picture = GFX_report_event_german_troops_paris
+
+    is_triggered_only = yes
+
+    option = {
+        name = china.4.a
+
+        if = {
+            limit = { PREV = { tag = ENG } }
+            CHI = { transfer_state = 326 }
+        }
+        if = {
+            limit = { PREV = { tag = POR } }
+            CHI = { transfer_state = 729 }
+        }
+        if = {
+            limit = { PREV = { tag = PRR } }
+            CHI = { transfer_state = 729 }
+        }
+        if = {
+            limit = { PREV = { tag = JAP } }
+            CHI = { transfer_state = 524 }
+        }
+    }
+
+    option = {
+        name = china.4.b
+
+        CHI = { country_event = { id = china.5 } }
+    }
+}
+
+# Westerners Reject demands
+country_event = {
+    id = china.5
+    title = china.5.t
+    desc = china.5.d
+    picture = GFX_report_event_german_troops_paris
+
+    is_triggered_only = yes
+
+    option = {
+        name = china.5.a
+
+        if = {
+            limit = { FROM = { tag = ENG } }
+            CHI = { transfer_state = 326 }
+            ENG = { country_event = { id = china.6 } }
+        }
+        if = {
+            limit = { FROM = { tag = POR } }
+            CHI = { transfer_state = 729 }
+            POR = { country_event = { id = china.6 } }
+        }
+        if = {
+            limit = { FROM = { tag = PRR } }
+            CHI = { transfer_state = 729 }
+            PRR = { country_event = { id = china.6 } }
+        }
+        if = {
+            limit = { FROM = { tag = JAP } }
+            CHI = { transfer_state = 524 }
+            JAP = { country_event = { id = china.6 } }
+        }
+    }
+}
+
+# China steals territories
+country_event = {
+    id = china.6
+    title = china.6.t
+    desc = china.6.d
+    is_triggered_only = yes
+
+    option = {
+        name = china.6.a
+
+        add_political_power = -100
+    }
+
+    option = {
+        name = china.6.b
+
+        declare_war_on = {
+            target = CHI
+            type = annex_everything
+        }
+    }
+}

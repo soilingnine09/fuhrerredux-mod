@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_decision_icon_sia_valkist"
+		texturefile = "gfx/interface/decisions/decision_valkist_boot.dds"
+	}
+}

@@ -1,0 +1,286 @@
+ideas = {
+	head_of_government = {
+		BRM_Than_Tun_hog_van = {
+			allowed = { original_tag = BRM }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = hog_cant_change
+					always = no
+				}
+			}
+			traits = {
+				head_of_government
+				vanguardist
+				hog_underground_figurehead
+			}
+		}
+		BRM_Thakin_Lwin_hog_col = {
+			allowed = { original_tag = BRM }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = hog_cant_change
+					always = no 
+				}
+			}
+			traits = {
+				head_of_government 
+				collectivist
+				hog_red_chairmen
+			}
+		}
+		BRM_U_Nu_hog_libsoc = {
+			allowed = { original_tag = BRM }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = hog_cant_change
+					always = no
+				}
+			}
+			traits = {
+				head_of_government
+				libertarian_socialist
+				hog_old_compromiser
+			}
+		}
+		BRM_U_Razak_hog_marlib = {
+			allowed = { original_tag = BRM }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = hog_cant_change
+					always = no
+				}
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_silent_workhorse
+			}
+		}
+		BRM_U_Razak_hog_socdem = {
+			allowed = { original_tag = BRM }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = hog_cant_change
+					always = no
+				}
+			}
+			traits = {
+				head_of_government
+				social_democrat
+				hog_silent_workhorse
+			}
+		}
+		BRM_Sao_Shwe_Thaik_hog_soclib = {
+			allowed = { original_tag = BRM }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = hog_cant_change
+					always = no 
+				}
+			}
+			traits = {
+				head_of_government 
+				social_liberal
+				hog_charismatic_charmer
+			}
+		}
+		BRM_Soe_Thein_hog_soccon = {
+			allowed = { original_tag = BRM }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = hog_cant_change
+					always = no 
+				}
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_pragmatic_statesman
+			}
+		}
+		BRM_Prince_George_Taw_Phya_Gyi_hog_authdem = {
+			allowed = { original_tag = BRM }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = hog_cant_change
+					always = no 
+				}
+			}
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_political_protege
+			}
+		}
+		BRM_U_Chit_Hlaing_hog_authdem = {
+			allowed = { original_tag = BRM }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = hog_cant_change
+					always = no 
+				}
+			}
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_pragmatic_statesman
+			}
+		}
+		BRM_Prince_Maung_Maung_Gyi_hog_pataut = {
+			allowed = { original_tag = BRM }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = hog_cant_change
+					always = no 
+				}
+			}
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_revanchist_conspirator
+			}
+		}
+		BRM_Ba_Maw_hog_natpop = {
+			allowed = { original_tag = BRM }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = hog_cant_change
+					always = no 
+				}
+			}
+			traits = {
+				head_of_government
+				national_populist
+				hog_revanchist_conspirator
+			}
+		}
+		BRM_Sao_San_Htun_hog_valkist = {
+			allowed = { original_tag = BRM }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = hog_cant_change
+					always = no 
+				}
+			}
+			traits = {
+				head_of_government
+				valkist
+				hog_flamboyant_tough_guy
+			}
+		}
+	}
+	foreign_minister = {
+		BRM_Thakin_Zin_for_van = {
+			allowed = { original_tag = BRM }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				}
+			}
+			traits = {
+				foreign_minister
+				vanguardist
+				for_ideological_crusader
+			}
+		}
+		BRM_Aung_San_for_col = {
+			allowed = { original_tag = BRM }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				}
+			}
+			traits = {
+				foreign_minister
+				collectivist
+				for_great_compromiser
+			}
+		}
+		BRM_Tin_Tut_for_libsoc = {
+			allowed = { original_tag = BRM }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				}
+			}
+			traits = {
+				foreign_minister
+				libertarian_socialist
+				for_relations_expert
+			}
+		}
+		BRM_Khin_Kyi_for_marlib = {
+			allowed = { original_tag = BRM }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				}
+			}
+			traits = {
+				foreign_minister
+				market_liberal
+				for_foreign_sympathizer
+			}
+		}
+		BRM_Kyaw_U_Chit_Maung_for_soclib = {
+			allowed = { original_tag = BRM }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				}
+			}
+			traits = {
+				foreign_minister
+				social_liberal
+				for_apologetic_clerk
+			}
+		}
+		BRM_May_Oung_for_soccon = {
+			allowed = { original_tag = BRM }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				}
+			}
+			traits = {
+				foreign_minister
+				social_conservative
+				for_relations_expert
+			}
+		}
+		BRM_Sultan_Mahmud_for_socdem = {
+			allowed = { original_tag = BRM }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				}
+			}
+			traits = {
+				foreign_minister 
+				social_democrat
+				for_great_compromiser
+			}
+		}
+		BRM_J_A_Maung_Gyi_for_authdem = {
+			allowed = { original_tag = BRM }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				}
+			}
+			traits = {
+				foreign_minister
+				authoritarian_democrat
+				for_ideological_crusader
+			}
+		}
+	}
+}

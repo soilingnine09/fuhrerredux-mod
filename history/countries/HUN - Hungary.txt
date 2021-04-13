@@ -1,0 +1,286 @@
+﻿capital = 43
+
+# I am well aware that there is no oob in this file, that is intentional
+
+set_research_slots = 3
+set_stability = 0.30
+set_war_support = 0.90
+
+set_technology = {
+	gwtank = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	tech_support = 1
+	tech_recon = 1
+	gw_artillery = 1
+	early_fighter = 1
+	CAS1 = 1
+	naval_bomber1 = 1
+	basic_light_tank = 1
+	fuel_silos = 1
+}
+
+set_politics = {	
+	ruling_party = national_populist
+	last_election = "1920.1.25"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    vanguardist = 1
+    collectivist = 2
+    libertarian_socialist = 8
+    social_democrat = 9
+    social_liberal = 3
+    market_liberal = 7
+    social_conservative = 10
+    authoritarian_democrat = 7
+    paternal_autocrat = 1
+    national_populist = 51
+    valkist = 1
+}
+
+add_ideas = {
+	party_pop_0_00
+   	 hun_trianon
+   	 hun_economic_ruin
+    disarmed_nation
+	GEN_HOG_Ade
+	GEN_FOR_Ade
+	GEN_ECO_Ade
+	GEN_SEC_Ade
+	parliamentary_republic
+}
+
+create_country_leader = {
+	name = "Mihály Károlyi"
+	desc = "POLITICS_MIHALY_KAROLYI_DESC"
+	picture = "Portrait_HUN_Marklib.tga"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Mátyás Rákosi"
+	desc = "POLITICS_MATYAS_RAKOSI_DESC"
+	picture = "Portrait_HUN_Vang.tga"
+	expire = "1965.1.1"
+	ideology = vanguardist_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "György Lukács"
+	desc = "POLITICS_BELA_KUN_DESC"
+	picture = "Portrait_HUN_BelaKun.tga"
+	expire = "1965.1.1"
+	ideology = collectivist_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Imre Nagy"
+	desc = "POLITICS_IMRE_NAGY_DESC"
+	picture = "Portrait_HUN_nagy.tga"
+	expire = "1965.1.1"
+	ideology = libertarian_socialist_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "István Friedrich"
+	desc = "POLITICS_ISTVAN_FRIEDRICH_DESC"
+	picture = "Portrait_Istvan_Friedrich.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Tibor Eckhardt"
+	desc = "POLITICS_Tibor_eckhardt_DESC"
+	picture = "Portrait_HUN_Tibor.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Ferenc Nagy"
+	desc = "POLITICS_FERENC_NAGY_DESC"
+	picture = "Portrait_HUN_soccon.tga"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Ferenc Szálasi"
+	desc = "POLITICS_FERENC_SZALASI_DESC"
+	picture = "Portrait_HUN_Ferenc.tga"
+	expire = "1965.1.1"
+	ideology = national_populist_subtype
+	traits = {
+	}
+}
+#######################
+### Field Marshalls ###
+#######################
+
+create_field_marshal = { 
+	name = "Ferenc Feketehalmy-Czeydner"
+	gfx = GFX_Portrait_hungary_ferenc_feketehalmy_czeydner
+	traits = { }
+	skill = 2
+}
+################
+### Generals ###
+################
+
+
+create_corps_commander = {
+	name = "Géza Lakatos" 
+	gfx = GFX_Portrait_hungary_geza_lakatos
+	traits = {  }
+	skill = 3
+}
+
+create_corps_commander = {
+	name = "Iván Hindy" 
+	gfx = GFX_Portrait_hungary_ivan_hindy
+	traits = {  trickster }
+	skill = 4
+}
+
+create_corps_commander = {
+	name = "Károly Beregfy" 
+	gfx = GFX_Portrait_hungary_karoly_beregfy
+	traits = { }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Lajos Veress" 
+	gfx = GFX_Portrait_hungary_lajos_veress
+	traits = { panzer_leader }
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Vilmos Nagy de Nagybaczon"
+	picture = "Portrait_Vilmos_Nagybaczon.tga"
+	traits = { }
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Béla Király"
+	picture = "Portrait_Bela_Kiraly.tga"
+	traits = { }
+	skill = 4
+}
+
+create_corps_commander = {
+	name = "Gusztáv Hennyey"
+	picture = "Portrait_Gusztav_Hennyey.tga"
+	traits = { }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "András Littay"
+	picture = "Portrait_Andras_Littay.tga"
+	traits = { }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Ferenc Szombathelyi"
+	picture = ""
+	traits = { }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Döme Sztójay"
+	picture = ""
+	traits = { }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Dezső László"
+	picture = ""
+	traits = { }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Jenő Rátz"
+	picture = ""
+	traits = { }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Henrik Werth"
+	picture = ""
+	traits = { }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "János Vörös"
+	picture = ""
+	traits = { }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "István Schweitzer"
+	picture = ""
+	traits = { }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Béla Miklós"
+	picture = ""
+	traits = { }
+	skill = 1
+}
+
+
+
+
+
+create_country_leader = {
+	name = "Arne Narang"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = social_democrat_subtype
+}
+
+create_country_leader = {
+	name = "Firuz Kohout"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+}
+
+create_country_leader = {
+	name = "Lennie Wallis"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = valkist_subtype
+}

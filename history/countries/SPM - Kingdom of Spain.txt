@@ -1,0 +1,324 @@
+﻿capital = 169
+
+oob = "SPM_1936"
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	early_bomber = 1
+	naval_bomber1 = 1
+	fuel_silos = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battleship = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_medium_battery = 1
+		basic_secondary_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		mtg_transport = 1
+	}
+}
+
+add_ideas = {
+	party_pop_0_70
+	SPR_SPM_SPF_SPA_spanish_civil_war_idea
+	SPM_internal_strifes_monarchist_movement_idea
+	SPR_SPM_SPF_SPA_prolonged_recession_idea
+	
+	extensive_conscription
+	low_economic_mobilisation
+	SPM_Jose_Sanjurjo_Sacanell_hog_ade
+	GEN_FOR_Pau
+	GEN_ECO_Pau
+	GEN_SEC_Pau
+	absolute_monarchy
+}
+
+set_politics = {
+	ruling_party = authoritarian_democrat
+	last_election = "1935.11.14"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	vanguardist = 0
+	collectivist = 3
+	libertarian_socialist = 0
+	social_democrat = 4
+	social_liberal = 6
+	market_liberal = 5
+	social_conservative = 8
+	authoritarian_democrat = 40
+	paternal_autocrat = 30
+	national_populist = 4
+	valkist = 0
+}
+
+set_country_flag = coalition_social_conservative
+set_country_flag = coalition_paternal_autocrat
+
+set_convoys = 150
+set_stability = 0.55
+set_war_support = 0.75
+
+declare_war_on = {
+	target = SPR
+	type = annex_everything
+}
+
+declare_war_on = {
+	target = SPA
+	type = annex_everything
+}
+
+create_country_leader = {
+	name = "Ramiro Ledesma Ramos"
+	desc = "POLITICS_RAMIRO_LEDESMA_DESC"
+	picture = "gfx/leaders/SPF/Portrait_SPF_Ramiro_Ledesma.tga"
+	expire = "1965.1.1"
+	ideology = valkist_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "HM Alfonso XIII"
+	desc = "POLITICS_ALFONSO_XIII_DESC"
+	picture = "Portrait_SPM_Alfonso_XIII.tga"
+	expire = "1965.1.1"
+	ideology = national_populist_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "HM Alfonso XIII"
+	desc = "POLITICS_ALFONSO_XIII_DESC"
+	picture = "Portrait_SPM_Alfonso_XIII.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "HM Alfonso XIII"
+	desc = "POLITICS_ALFONSO_XIII_DESC"
+	picture = "Portrait_SPM_Alfonso_XIII.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "HM Alfonso XIII"
+	desc = "POLITICS_ALFONSO_XIII_DESC"
+	picture = "Portrait_SPM_Alfonso_XIII.tga"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "HM Alfonso XIII"
+	desc = "POLITICS_ALFONSO_XIII_DESC"
+	picture = "Portrait_SPM_Alfonso_XIII.tga"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "HM Alfonso XIII"
+	desc = "POLITICS_ALFONSO_XIII_DESC"
+	picture = "Portrait_SPM_Alfonso_XIII.tga"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "HM Alfonso XIII"
+	desc = "POLITICS_ALFONSO_XIII_DESC"
+	picture = "Portrait_SPM_Alfonso_XIII.tga"
+	expire = "1965.1.1"
+	ideology = social_democrat_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Francisco Largo Caballero"
+	desc = "POLITICS_FRANCISCO_LARGO_CABALLERO_DESC"
+	picture = "gfx/leaders/SPA/Portrait_SPA_Francisco_Largo_Caballero.tga"
+	expire = "1965.1.1"
+	ideology = libertarian_socialist_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "José Díaz Ramos"
+	desc = "POLITICS_JOSE_DIAZ_RAMOS_DESC"
+	picture = "gfx/leaders/SPA/Portrait_SPA_Jose_Diaz_Ramos.tga"
+	expire = "1965.1.1"
+	ideology = collectivist_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "José Cazorla Maure"
+	desc = "POLITICS_JOSE_CAZORLA_MAURE_DESC"
+	picture = "gfx/leaders/SPA/Portrait_SPA_Jose_Cazorla_Maure.tga"
+	expire = "1965.1.1"
+	ideology = vanguardist_subtype
+	traits = {
+		#
+	}
+}
+
+### Field Marshals ###
+
+create_field_marshal = {
+	name = "José Sanjurjo"
+	picture = "Portrait_SPM_Jose_Sanjurjo.tga"
+	traits = {
+		logistics_wizard
+		old_guard
+	}
+	skill = 2
+	attack_skill = 2
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 2
+}
+
+### Generals ###
+
+create_corps_commander = {
+	name = "Francisco Franco"
+	picture = "Portrait_SPM_Francisco_Franco.tga"
+	traits = {
+		infantry_leader
+	}
+	skill = 3
+	attack_skill = 4
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Manuel Goded Llopis"
+	picture = "Portrait_SPM_Manuel_Goded_Llopis.tga"
+	traits = {
+		infantry_leader
+		ambusher
+	}
+	skill = 1
+	attack_skill = 2
+    defense_skill = 1
+    planning_skill = 2
+    logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Miguel Cabanellas"
+	picture = "Portrait_SPM_Miguel_Cabanellas.tga"
+	traits = {
+		old_guard
+		brilliant_strategist
+	}
+	skill = 3
+	attack_skill = 3
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Leopoldo Saro"
+	picture = "Portrait_SPM_Leopoldo_Saro.tga"
+	traits = {
+		old_guard
+		infantry_leader
+	}
+	skill = 2
+	attack_skill = 1
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 2
+}
+
+### Ship Variants ###
+
+create_equipment_variant = {
+	name = "C Class"
+	type = submarine_1
+	upgrades = {
+		ship_reliability_upgrade = 1
+		sub_engine_upgrade = 1
+		sub_stealth_upgrade = 1
+		sub_torpedo_upgrade = 1
+	}
+}
+
+create_equipment_variant = {
+	name = "Príncipe Alfonso Class"
+	type = light_cruiser_1
+	upgrades = {
+		ship_reliability_upgrade = 1
+		ship_engine_upgrade = 1
+		ship_gun_upgrade = 1
+		ship_anti_air_upgrade = 1
+	}
+}

@@ -1,0 +1,172 @@
+SIA_set_influence_to_zero = {
+	if = {
+		limit = {
+			ROOT = { has_variable = market_inf }
+		}
+		clear_variable = market_inf 
+	}
+	if = {
+		limit = {
+			ROOT = { has_variable = natpop_inf }
+		}
+		clear_variable = natpop_inf 
+	}
+	if = {
+		limit = {
+			ROOT = { has_variable = valkist_inf }
+		}
+		clear_variable = valkist_inf 
+	}
+}
+SIA_set_influence_by_pop = {
+	if = {
+		limit = {
+			ROOT = {
+				check_variable = {
+					var = market_inf
+					value = 0
+					compare = less_than_or_equals
+				}
+			}
+		}
+		set_temp_variable = { marlib_temp = ROOT.party_popularity@market_liberal }
+		multiply_temp_variable = { marlib_temp = 100 }
+		multiply_temp_variable = { marlib_temp = 156 }
+		divide_temp_variable = { marlib_temp = 100 }
+		add_to_variable = { market_inf = marlib_temp }
+		round_variable = market_inf
+		clamp_variable { var = market_inf max = 156 min = 1 }
+	}
+	if = {
+		limit = {
+			ROOT = {
+				check_variable = {
+					var = natpop_inf
+					value = 0
+					compare = less_than_or_equals
+				}
+			}
+		}
+		set_temp_variable = { natpop_temp = ROOT.party_popularity@national_populist }
+		multiply_temp_variable = { natpop_temp = 100 }
+		multiply_temp_variable = { natpop_temp = 156 }
+		divide_temp_variable = { natpop_temp = 100 }
+		add_to_variable = { natpop_inf = natpop_temp }
+		round_variable = natpop_inf
+		clamp_variable { var = natpop_inf max = 156 min = 1 }
+	}
+	if = {
+		limit = {
+			ROOT = {
+				check_variable = {
+					var = valkist_inf
+					value = 0
+					compare = less_than_or_equals
+				}
+			}
+		}
+		set_temp_variable = { valkist_temp = ROOT.party_popularity@valkist }
+		multiply_temp_variable = { valkist_temp = 100 }
+		multiply_temp_variable = { valkist_temp = 156 }
+		divide_temp_variable = { valkist_temp = 100 }
+		add_to_variable = { valkist_inf = valkist_temp }
+		round_variable = valkist_inf
+		clamp_variable { var = valkist_inf max = 156 min = 1 }
+	}
+}
+SIA_people_pop_calc = {
+	if = {
+		limit = {
+			ROOT = {
+				check_variable = {
+					var = market_people_pop
+					value = 0
+					compare = less_than_or_equals
+				}
+			}
+		}
+		set_temp_variable = { market_temp_pop = ROOT.party_popularity@market_liberal }
+		multiply_temp_variable = { market_temp_pop = 100 }
+		multiply_temp_variable = { market_temp_pop = market_pop }
+		divide_temp_variable = { market_temp_pop = 100 }
+		add_to_variable = { market_people_pop = market_temp_pop }
+		round_variable = market_people_pop
+		clamp_variable = {
+			var = market_people_pop
+			max = 100
+			min = 1
+		}
+	}
+	if = {
+		limit = {
+			ROOT = {
+				check_variable = {
+					var = natpop_people_pop
+					value = 0
+					compare = less_than_or_equals
+				}
+			}
+		}
+		set_temp_variable = { natpop_temp_pop = ROOT.party_popularity@national_populist }
+		multiply_temp_variable = { natpop_temp_pop = 100 }
+		multiply_temp_variable = { natpop_temp_pop = natpop_pop }
+		divide_temp_variable = { natpop_temp_pop = 100 }
+		add_to_variable = { natpop_people_pop = natpop_temp_pop }
+		round_variable = natpop_people_pop
+		clamp_variable = {
+			var = natpop_people_pop
+			max = 100
+			min = 1
+		}
+	}
+	if = {
+		limit = {
+			ROOT = {
+				check_variable = {
+					var = valkist_people_pop
+					value = 0
+					compare = less_than_or_equals
+				}
+			}
+		}
+		set_temp_variable = { valkist_temp_pop = ROOT.party_popularity@valkist }
+		multiply_temp_variable = { valkist_temp_pop = 100 }
+		multiply_temp_variable = { valkist_temp_pop = valkist_pop }
+		divide_temp_variable = { valkist_temp_pop = 100 }
+		add_to_variable = { valkist_people_pop = valkist_temp_pop }
+		round_variable = valkist_people_pop
+		clamp_variable = {
+			var = valkist_people_pop
+			max = 100
+			min = 1
+		}
+	}
+}
+SIA_people_pop_zero = {
+	if = {
+		limit = {
+			has_variable = market_people_pop 
+		}
+		clear_variable = market_people_pop
+	}
+	if = {
+		limit = {
+			has_variable = natpop_people_pop 
+		}
+		clear_variable = natpop_people_pop
+	}
+	if = {
+		limit = {
+			has_variable = valkist_people_pop
+		}
+		clear_variable = valkist_people_pop
+	}
+}
+SIA_recalc_party_inf = {
+	SIA_set_influence_to_zero = yes
+	SIA_set_influence_by_pop = yes
+}
+SIA_recalc_pop_point = {
+	SIA_people_pop_zero = yes
+	SIA_people_pop_calc = yes
+}

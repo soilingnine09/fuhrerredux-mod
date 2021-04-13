@@ -1,0 +1,24 @@
+integration_by_siam = {
+	random_country = {
+		limit = {
+			tag = SIA
+			has_full_control_of_state = PREV
+		}
+		add_state_core = PREV
+		remove_state_claim = PREV
+	}
+}
+integration_by_owner = {
+	random_country = {
+		limit = {
+			owner = {
+				has_full_control_of_state = THIS
+				OR = {
+					tag = PREV
+					NOT = { tag = SIA }
+				}
+			}
+		}
+		add_state_core = THIS
+	}
+}

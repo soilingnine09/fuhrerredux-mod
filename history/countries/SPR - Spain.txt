@@ -1,0 +1,298 @@
+﻿capital = 41
+
+oob = "SPR_1936"
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	early_bomber = 1
+	naval_bomber1 = 1
+	fuel_silos = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battleship = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_medium_battery = 1
+		basic_secondary_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		mtg_transport = 1
+	}
+}
+
+add_ideas = {
+	party_pop_0_60
+	SPR_SPM_SPF_SPA_spanish_civil_war_idea
+	SPR_unstable_republican_spirit_idea
+	SPR_woe_christmas_coup_idea
+	SPR_SPM_SPF_SPA_prolonged_recession_idea
+	
+	extensive_conscription
+	low_economic_mobilisation
+	GEN_entente_member
+	SPR_Manuel_Azana_Diaz_hog_sli
+	GEN_FOR_Sli
+	GEN_ECO_Sli
+	GEN_SEC_Sli
+	parliamentary_republic
+}
+
+set_politics = {
+	ruling_party = social_liberal
+	last_election = "1935.11.14"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    vanguardist = 0
+    collectivist = 4
+    libertarian_socialist = 0
+    social_democrat = 10
+    social_liberal = 37
+    market_liberal = 30
+    social_conservative = 10
+    authoritarian_democrat = 4
+    paternal_autocrat = 0
+    national_populist = 0
+    valkist = 5
+}
+
+set_country_flag = coalition_market_liberal
+
+set_convoys = 150
+set_stability = 0.50
+set_war_support = 0.60
+
+#create_country_leader = {
+#	name = "Alejandro Lerroux"
+#	desc = "POLITICS_ALEJANDRO_LERROUX_DESC"
+#	picture = "Portrait_Alejandro_Lerroux.tga"
+#	expire = "1965.1.1"
+#	ideology = social_liberal_subtype
+#	traits = {
+#		#
+#	}
+#}
+
+create_country_leader = {
+	name = "José Cazorla Maure"
+	desc = "POLITICS_JOSE_CAZORLA_MAURE_DESC"
+	picture = "gfx/leaders/SPA/Portrait_SPA_Jose_Cazorla_Maure.tga"
+	expire = "1965.1.1"
+	ideology = vanguardist_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "José Díaz Ramos"
+	desc = "POLITICS_JOSE_DIAZ_RAMOS_DESC"
+	picture = "gfx/leaders/SPA/Portrait_SPA_Jose_Diaz_Ramos.tga"
+	expire = "1965.1.1"
+	ideology = collectivist_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Francisco Largo Caballero"
+	desc = "POLITICS_FRANCISCO_LARGO_CABALLERO_DESC"
+	picture = "gfx/leaders/SPA/Portrait_SPA_Francisco_Largo_Caballero.tga"
+	expire = "1965.1.1"
+	ideology = libertarian_socialist_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Niceto Alcalá-Zamora"
+	desc = "POLITICS_NICETO_ALCALA-ZAMORA_DESC"
+	picture = "Portrait_SPR_Niceto_Alcala-Zamora.tga"
+	expire = "1965.1.1"
+	ideology = social_democrat_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Niceto Alcalá-Zamora"
+	desc = "POLITICS_NICETO_ALCALA-ZAMORA_DESC"
+	picture = "Portrait_SPR_Niceto_Alcala-Zamora.tga"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Niceto Alcalá-Zamora"
+	desc = "POLITICS_NICETO_ALCALA-ZAMORA_DESC"
+	picture = "Portrait_SPR_Niceto_Alcala-Zamora.tga"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Niceto Alcalá-Zamora"
+	desc = "POLITICS_NICETO_ALCALA-ZAMORA_DESC"
+	picture = "Portrait_SPR_Niceto_Alcala-Zamora.tga"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Niceto Alcalá-Zamora"
+	desc = "POLITICS_NICETO_ALCALA-ZAMORA_DESC"
+	picture = "Portrait_SPR_Niceto_Alcala-Zamora.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "José María Albiñana"
+	desc = "POLITICS_JOSE_MARIA_ALBINANA_DESC"
+	picture = "gfx/leaders/SPF/Portrait_SPF_Jose_Maria_Albinana.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "José Antonio Primo de Rivera"
+	desc = "POLITICS_JOSE_ANTONIO_PRIMO_DE_RIVERA_DESC"
+	picture = "gfx/leaders/SPF/Portrait_SPF_Jose_Antonie.tga"
+	expire = "1965.1.1"
+	ideology = national_populist_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ramiro Ledesma Ramos"
+	desc = "POLITICS_RAMIRO_LEDESMA_DESC"
+	picture = "gfx/leaders/SPF/Portrait_SPF_Ramiro_Ledesma.tga"
+	expire = "1965.1.1"
+	ideology = valkist_subtype
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Vicente Rojo Lluch"
+	picture = "Portrait_SPR_Vicente_Rojo_Lluch.tga"
+	traits = {
+		unyielding_defender
+		organizer
+	}
+	skill = 3
+	attack_skill = 1
+    defense_skill = 4
+    planning_skill = 2
+    logistics_skill = 2
+}
+
+### Generals ###
+
+create_corps_commander = {
+	name = "José Miaja"
+	picture = "Portrait_SPR_Jose_Miaja.tga"
+	traits = {
+		trickster
+		infantry_leader
+	}
+	skill = 2
+	attack_skill = 3
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Carlos Romero Giménez"
+	picture = "Portrait_SPR_Carrlos_Gimenez.tga"
+	traits = {
+		skilled_staffer
+		infantry_leader
+	}
+	skill = 3
+	attack_skill = 3
+    defense_skill = 1
+    planning_skill = 3
+    logistics_skill = 3
+}
+
+
+### Ship Variants ###
+
+create_equipment_variant = {
+	name = "C Class"
+	type = submarine_1
+	upgrades = {
+		ship_reliability_upgrade = 1
+		sub_engine_upgrade = 1
+		sub_stealth_upgrade = 1
+		sub_torpedo_upgrade = 1
+	}
+}
+
+create_equipment_variant = {
+	name = "Príncipe Alfonso Class"
+	type = light_cruiser_1
+	upgrades = {
+		ship_reliability_upgrade = 1
+		ship_engine_upgrade = 1
+		ship_gun_upgrade = 1
+		ship_anti_air_upgrade = 1
+	}
+}

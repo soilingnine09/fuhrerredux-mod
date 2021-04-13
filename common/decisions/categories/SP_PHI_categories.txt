@@ -1,0 +1,53 @@
+PHI_department_of_foreign_affairs_decisions = {
+    allowed = { original_tag = PHI }
+
+    visible = { 
+        has_completed_focus = PHI_department_of_foreign_affairs
+    }
+
+    priority = { base = 10 }
+
+    icon = generic_political_actions
+}
+
+PHI_seato_decisions = {
+    allowed = { original_tag = PHI }
+
+    visible = { 
+        has_completed_focus = PHI_no_more_colonialism
+    }
+
+    priority = { base = 10 }
+
+    icon = generic_political_actions
+}
+
+PHI_question_of_occupied_territories = {
+    allowed = { original_tag = PHI }
+
+    priority = { base = 12 }
+
+    icon = generic_political_actions
+}
+
+PHI_state_fundings = {
+    allowed = { original_tag = PHI }
+
+    visible = { 
+        has_completed_focus = PHI_funding_for_state_investments
+    }
+
+    priority = { base = 5 }
+
+    icon = generic_political_actions
+}
+
+PHI_occupation_of_germany = {
+    allowed = { original_tag = PHI }
+
+    visible = { GER = { exists = no } }
+
+    priority = { base = 20 }
+
+    icon = generic_political_actions
+}

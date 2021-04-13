@@ -1,0 +1,190 @@
+﻿capital = 6
+
+set_research_slots = 3
+
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	early_fighter = 1
+	gwtank = 1
+	gw_artillery = 1
+	interwar_antitank = 1
+	interwar_antitank = 1
+	motorised_infantry = 1
+	fuel_silos = 1
+}
+
+add_ideas = {
+	GEN_HOG_Npo
+	GEN_FOR_Npo
+	GEN_ECO_Npo
+	GEN_SEC_Npo
+	parliamentary_republic
+}
+
+set_politics = {	
+	ruling_party = national_populist
+	last_election = "1932.11.27"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    vanguardist = 0
+    collectivist = 7
+    libertarian_socialist = 1
+    social_democrat = 36
+    social_liberal = 0
+    market_liberal = 12
+    social_conservative = 40
+    authoritarian_democrat = 0
+    paternal_autocrat = 0
+    national_populist = 4
+    valkist = 0
+}
+
+add_ideas = {
+	party_pop_0_00
+	limited_conscription
+}
+
+set_convoys = 80
+set_stability = 0.75
+set_war_support = 0.5
+
+create_country_leader = {
+	name = "Frans Van Cauwelaert"
+	desc = "Frans Van Cauwelaert"
+	picture = "Frans_Van_Cauwelaert.dds"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Paul-Emile Janson"
+	desc = "POLITICS_PAUL_EMILE_JANSON_DESC"
+	picture = "Portrait_Belgium_Paul_Emile_Janson.tga"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Paul-Henri Spaak"
+	desc = "POLITICS_PAUL_HENRI_SPAAK_DESC"
+	picture = "Portrait_Belgium_Paul_Henri_Spaak.tga"
+	expire = "1965.1.1"
+	ideology = social_democrat_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Hendrik de Man"
+	desc = "POLITICS_HENDRIK_DE_MAN_DESC"
+	picture = "Portrait_Belgium_Hendrik_de_Man.tga"
+	expire = "1965.1.1"
+	ideology = vanguardist_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Joris van Severen"
+	desc = "POLITICS_JORIS_VAN_SEVEREN_DESC"
+	picture = "Portrait_Belgium_Joris_van_Severen.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Staf de Clercq"
+	desc = "POLITICS_STAF_DE_CLERCQ_DESC"
+	picture = "Portrait_Belgium_Staf_de_Clercq.tga"
+	expire = "1965.1.1"
+	ideology = national_populist_subtype
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Victor Van Strydonck de Burkel"
+	picture = "Portrait_Belgium_Victor_van_Strydonck_de_Burkel.dds"
+	traits = { career_officer cavalry_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2	
+}
+
+create_corps_commander = {
+	name = "Eddy Blondeel"
+	picture = "Portrait_Belgium_Eddy_Blondeel.dds"
+	traits = { media_personality trait_engineer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3	
+}
+
+create_navy_leader = {
+	name = "Georges Timmermans"
+	portrait_path = "gfx/leaders/BEL/Portrait_Belgium_Georges_Timmermans.dds"
+	traits = { seawolf }
+	skill = 4
+}
+
+
+
+
+create_country_leader = {
+	name = "Slamet Jefferson"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = collectivist_subtype
+}
+
+create_country_leader = {
+	name = "Nethaneel Idowu"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = libertarian_socialist_subtype
+}
+
+create_country_leader = {
+	name = "Firuz Kohout"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+}
+
+create_country_leader = {
+	name = "Arkadios Merricks"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+}
+
+create_country_leader = {
+	name = "Lennie Wallis"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = valkist_subtype
+}

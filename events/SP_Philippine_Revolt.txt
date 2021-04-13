@@ -1,0 +1,38 @@
+add_namespace = phr
+
+country_event = {
+    id = phr.1
+    title = phr.1.t
+    desc = phr.1.d
+    picture = GFX_report_event_german_troops_paris
+
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            every_state = {
+                limit = { is_core_of = PHI }
+                add_core_of = SRP
+            }
+        }
+    }
+
+    option = {
+        name = phr.1.a
+
+        every_owned_state = {
+            damage_building = {
+                type = infrastructure
+                damage = 2
+            }
+            damage_building = {
+                type = industrial_complex
+                damage = 2
+            }
+            damage_building = {
+                type = arms_factory
+                damage = 2
+            }
+        }
+    }
+}

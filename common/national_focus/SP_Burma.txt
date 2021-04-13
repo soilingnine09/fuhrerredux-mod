@@ -1,0 +1,1322 @@
+focus_tree = {
+    id = SP_Burma
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = BRM
+        }
+    }
+
+    #############################################
+    #                                           #
+    #                  INDUSTRY                 #
+    #                                           #
+    #############################################
+
+    # Economic Expansion
+    focus = {
+        id = BRM_economic_expansion
+        icon = GFX_goal_reichsautobahn
+        x = 4
+        y = 0
+        cost = 5
+        completion_reward = {
+            add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+        }
+    }
+
+    # Expand Armament Capabilities
+    focus = {
+        id = BRM_expand_armament_capabilities
+        icon = GFX_goal_generic_construct_mil_factory
+        x = 2
+        y = 1
+        cost = 10
+        prerequisite = { focus = BRM_economic_expansion }
+        completion_reward = {
+            random_owned_controlled_state = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+					}
+
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+            }
+            random_owned_controlled_state = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+					}
+
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+            }
+        }
+    }
+    
+    # Expand Industrial Capabilities
+    focus = {
+        id = BRM_expand_industrial_capabilities
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 4
+        y = 1
+        cost = 10
+        prerequisite = { focus = BRM_economic_expansion }
+        completion_reward = {
+            random_owned_controlled_state = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+            }
+            random_owned_controlled_state = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+					}
+
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+            }
+        }
+    }
+
+    # Expand Shipbuilding Capabilities
+    focus = {
+        id = BRM_expand_shipbuilding_capabilities
+        icon = GFX_goal_generic_construct_naval_dockyard
+        x = 6
+        y = 1
+        cost = 10
+        prerequisite = { focus = BRM_economic_expansion }
+        completion_reward = {
+            random_owned_controlled_state = {
+                if = {
+					limit = {
+                        is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 0
+							include_locked = yes
+						}
+					}
+
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
+            }
+            random_owned_controlled_state = {
+                if = {
+					limit = {
+                        is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 0
+							include_locked = yes
+						}
+					}
+
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
+            }
+        }
+    }
+
+    # Infrastructure Expansion
+    focus = {
+        id = BRM_infrastructure_expansion
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 4
+        y = 2
+        cost = 10
+        prerequisite = { focus = BRM_expand_armament_capabilities }
+        prerequisite = { focus = BRM_expand_industrial_capabilities }
+        prerequisite = { focus = BRM_expand_shipbuilding_capabilities }
+        completion_reward = {
+            random_owned_controlled_state = {
+                add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+            }
+            random_owned_controlled_state = {
+                add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+            }
+            random_owned_controlled_state = {
+                add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+            }
+        }
+    }
+
+    # Remote Area Development
+    focus = {
+        id = BRM_remote_area_development
+        icon = GFX_goal_generic_more_territorial_claims
+        x = 2
+        y = 3
+        cost = 10
+        prerequisite = { focus = BRM_infrastructure_expansion }
+        completion_reward = {
+            random_owned_controlled_state = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+					}
+
+					add_extra_state_shared_building_slots = 1
+				}
+            }
+            random_owned_controlled_state = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+
+					add_extra_state_shared_building_slots = 1
+				}
+            }
+            random_owned_controlled_state = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+
+					add_extra_state_shared_building_slots = 1
+				}
+            }
+        }
+    }
+
+    # Resource Extraction
+    focus = {
+        id = BRM_resource_extraction
+        icon = GFX_goal_generic_construction2
+        x = 1
+        y = 4
+        cost = 10
+        prerequisite = { focus = BRM_remote_area_development }
+        completion_reward = {
+            add_tech_bonus = {
+                category = excavation_tech
+                bonus = 2.0
+                uses = 2
+            }
+        }
+    }
+
+    # Synthetic Resource Development
+    focus = {
+        id = BRM_synthetic_resource_development
+        icon = GFX_goal_generic_oil_refinery
+        x = 3
+        y = 4
+        cost = 10
+        prerequisite = { focus = BRM_remote_area_development }
+        completion_reward = {
+            add_tech_bonus = {
+                category = synth_resources
+                bonus = 2.0
+                uses = 2
+            }
+        }
+    }
+
+    # Research Prioritization
+    focus = {
+        id = BRM_research_prioritization
+        icon = GFX_focus_research
+        x = 6
+        y = 3
+        cost = 10
+        prerequisite = { focus = BRM_infrastructure_expansion }
+        completion_reward = {
+            add_research_slot = 1
+        }
+    }
+
+    # New Construction Methods
+    focus = {
+        id = BRM_new_construction_methods
+        icon = GFX_goal_generic_construction
+        x = 5
+        y = 4
+        cost = 10
+        prerequisite = { focus = BRM_research_prioritization }
+        completion_reward = {
+            add_tech_bonus = {
+                category = construction_tech
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # New Industrial Techniques
+    focus = {
+        id = BRM_new_industrial_techniques
+        icon = GFX_goal_generic_production2
+        x = 7
+        y = 4
+        cost = 10
+        prerequisite = { focus = BRM_research_prioritization }
+        completion_reward = {
+            add_tech_bonus = {
+                category = industry
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Economic Boom
+    focus = {
+        id = BRM_economic_boom
+        icon = GFX_focus_generic_the_giant_wakes
+        x = 4
+        y = 5
+        cost = 10
+        prerequisite = { focus = BRM_resource_extraction }
+        prerequisite = { focus = BRM_synthetic_resource_development }
+        prerequisite = { focus = BRM_new_construction_methods }
+        prerequisite = { focus = BRM_new_industrial_techniques }
+        completion_reward = {
+            remove_ideas = BRM_economic_reliance_on_exports
+            add_ideas = BRM_economic_boom_idea
+        }
+    }
+
+
+    #############################################
+    #                                           #
+    #                   ARMY                    #
+    #                                           #
+    #############################################
+
+    # The Army
+    focus = {
+        id = BRM_the_army
+        icon = GFX_goal_generic_allies_build_infantry
+        x = 12
+        y = 0
+        cost = 3
+        completion_reward = {
+            army_experience = 10
+        }
+    }
+
+    # Armaments Primacy
+    focus = {
+        id = BRM_armaments_primacy
+        icon = GFX_goal_national_artillery
+        x = 11
+        y = 1
+        cost = 10
+        mutually_exclusive = { focus = BRM_planning_primacy }
+        prerequisite = { focus = BRM_the_army }
+        completion_reward = {
+            add_tech_bonus = {
+                category = cat_superior_firepower
+                bonus = 1.0
+                uses = 2
+            }
+        }
+    }
+
+    # Planning Primacy
+    focus = {
+        id = BRM_planning_primacy
+        icon = GFX_goal_planning_bonus
+        x = 13
+        y = 1
+        cost = 10
+        mutually_exclusive = { focus = BRM_armaments_primacy }
+        prerequisite = { focus = BRM_the_army }
+        completion_reward = {
+            add_tech_bonus = {
+                category = cat_grand_battle_plan
+                bonus = 1.0
+                uses = 2
+            }
+        }
+    }
+
+    # Support Companies
+    focus = {
+        id = BRM_support_companies
+        icon = GFX_goal_generic_position_armies
+        x = 12
+        y = 2
+        cost = 10
+        prerequisite = {
+            focus = BRM_planning_primacy
+            focus = BRM_armaments_primacy
+        }
+        completion_reward = {
+            add_tech_bonus = {
+                category = support_tech
+                bonus = 1.0
+                uses = 2
+            }
+        }
+    }
+
+    # Modernization and Standardization
+    focus = {
+        id = BRM_modernization_and_standardization
+        icon = GFX_goal_generic_small_arms
+        x = 11
+        y = 3
+        cost = 10
+        prerequisite = { focus = BRM_armaments_primacy }
+        completion_reward = {
+            add_tech_bonus = {
+                category = infantry_weapons 
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Special Forces
+    focus = {
+        id = BRM_special_forces
+        icon = GFX_goal_generic_special_forces
+        x = 13
+        y = 3
+        cost = 10
+        prerequisite = { focus = BRM_planning_primacy }
+        completion_reward = {
+            add_tech_bonus = {
+				category = marine_tech
+                category = para_tech
+                category = mountaineers_tech
+                bonus = 2.0
+                uses = 1
+            }
+        }
+    }
+
+    # Enhance Training
+    focus = {
+        id = BRM_enhance_training
+        icon = GFX_goal_conscription
+        x = 12
+        y = 4
+        cost = 10
+        prerequisite = {
+            focus = BRM_special_forces
+            focus = BRM_modernization_and_standardization
+        }
+        completion_reward = {
+            remove_ideas = BRM_untrained_army
+            add_ideas = BRM_army_enhanced_training
+        }
+    }
+
+    # The Marines
+    focus = {
+        id = BRM_the_marines
+        icon = GFX_focus_RAJ_indian_gentlemen_offcers
+        x = 15
+        y = 2
+        cost = 10
+        prerequisite = { 
+            focus = BRM_planning_primacy
+            focus = BRM_armaments_primacy
+            focus = BRM_navy_defense
+            focus = BRM_navy_offense
+        }
+        completion_reward = {
+            add_tech_bonus = {
+                category = marine_tech
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+    
+    # Landing Crafts
+    focus = {
+        id = BRM_landing_crafts
+        icon = GFX_goal_generic_amphibious_assault
+        x = 15
+        y = 3
+        cost = 5
+        prerequisite = { focus = BRM_the_marines }
+        completion_reward = {
+            if = {
+                limit = { has_dlc = "Man the Guns" }
+                add_tech_bonus = {
+                    technology = mtg_landing_craft
+                    technology = mtg_transport
+                    technology = mtg_tank_landing_craft
+                    bonus = 1.0
+                    uses = 1
+                }
+            }
+            if = { limit = { NOT = { has_dlc = "Man the Guns" } }
+                add_tech_bonus = {
+                    bonus = 1.0
+                    technology = landing_craft
+                    technology = transport
+                    technology = tank_landing_craft
+                    uses = 1
+                }
+            }
+        }
+    }
+
+    #############################################
+    #                                           #
+    #                   NAVY                    #
+    #                                           #
+    #############################################
+
+    # The Navy
+    focus = {
+        id = BRM_the_navy
+        icon = GFX_goal_generic_build_navy
+        x = 18
+        y = 0
+        cost = 3
+        completion_reward = {
+            navy_experience = 10
+        }
+    }
+
+    # Offense
+    focus = {
+        id = BRM_navy_offense
+        icon = GFX_goal_generic_navy_submarine
+        x = 17
+        y = 1
+        cost = 5
+        mutually_exclusive = { focus = BRM_navy_defense }
+        prerequisite = { focus = BRM_the_navy }
+        completion_reward = {
+            add_tech_bonus = {
+                category = ss_tech
+                bonus = 1.0
+                uses = 1
+            }
+            add_tech_bonus = {
+                category = dd_tech
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Defense
+    focus = {
+        id = BRM_navy_defense
+        icon = GFX_goal_generic_navy_cruiser
+        x = 19
+        y = 1
+        cost = 5
+        mutually_exclusive = { focus = BRM_navy_offense }
+        prerequisite = { focus = BRM_the_navy }
+        completion_reward = {
+            add_tech_bonus = {
+                category = cv_tech
+                bonus = 1.0
+                uses = 1
+            }
+            add_tech_bonus = {
+                category = bb_tech
+                category = bc_tech
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Cruiser Research
+    focus = {
+        id = BRM_cruiser_research
+        icon = GFX_goal_generic_navy_battleship
+        x = 18
+        y = 2
+        cost = 10
+        prerequisite = {
+            focus = BRM_navy_offense
+            focus = BRM_navy_defense
+        }
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 2.0
+                category = cl_tech
+                category = ca_tech
+                uses = 1
+            }
+        }
+    }
+
+    # Indirect Approach
+    focus = {
+        id = BRM_indirect_approach
+        icon = GFX_goal_generic_wolf_pack
+        x = 17
+        y = 3
+        cost = 10
+        prerequisite = { focus = BRM_navy_offense }
+        completion_reward = {
+            add_tech_bonus = {
+                category = cat_base_strike
+                bonus = 2.0
+                uses = 1
+            }
+        }
+    }
+
+    # Power Projection
+    focus = {
+        id = BRM_power_projection
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 19
+        y = 3
+        cost = 10
+        prerequisite = { focus = BRM_navy_defense  }
+        completion_reward = {
+            add_tech_bonus = {
+                category = cat_fleet_in_being
+                bonus = 2.0
+                uses = 1
+            }
+        }
+    }
+
+    # Protect the Coast
+    focus = {
+        id = BRM_protect_our_coast
+        icon = GFX_goal_fortify_the_westwall
+        x = 18
+        y = 4
+        cost = 10
+        prerequisite = {
+            focus = BRM_power_projection
+            focus = BRM_indirect_approach
+        }
+        completion_reward = {}
+    }
+
+    # Naval Aviation
+    focus = {
+        id = BRM_naval_aviation
+        icon = GFX_goal_generic_air_naval_bomber
+        x = 21
+        y = 2
+        cost = 10
+        prerequisite = {
+            focus = BRM_navy_offense
+            focus = BRM_navy_defense
+            focus = BRM_air_support
+            focus = BRM_air_destruction
+        }
+        completion_reward = {
+            add_tech_bonus = {
+                category = naval_bomber
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Naval-Air Coordination
+    focus = {
+        id = BRM_naval_air_coordination
+        icon = GFX_goal_generic_navy_carrier
+        x = 21
+        y = 3
+        cost = 10
+        prerequisite = { focus = BRM_naval_aviation }
+        completion_reward = {
+            add_ideas = BRM_naval_air_coordination_idea
+        }
+    }
+    
+    #############################################
+    #                                           #
+    #                 AIR FORCE                 #
+    #                                           #
+    #############################################
+
+    # The Air Force
+    focus = {
+        id = BRM_the_air_force
+        icon = GFX_goal_expand_the_luftwaffe
+        x = 24
+        y = 0
+        cost = 3
+        completion_reward = {
+            air_experience = 10
+        }
+    }
+
+    # Destruction
+    focus = {
+        id = BRM_air_destruction
+        icon = GFX_goal_bombs_away
+        x = 23
+        y = 1
+        cost = 5
+        mutually_exclusive = { focus = BRM_air_support }
+        prerequisite = { focus = BRM_the_air_force }
+        completion_reward = {
+            add_tech_bonus = {
+                category = cat_strategic_destruction
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Support
+    focus = {
+        id = BRM_air_support
+        icon = GFX_goal_air_armada
+        x = 25
+        y = 1
+        cost = 5
+        mutually_exclusive = { focus = BRM_air_destruction }
+        prerequisite = { focus = BRM_the_air_force }
+        completion_reward = {
+            add_tech_bonus = {
+                category = cat_battlefield_support
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Air Bases
+    focus = {
+        id = BRM_air_bases
+        icon = GFX_goal_generic_construction
+        x = 24
+        y = 2
+        cost = 5
+        prerequisite = {
+            focus = BRM_air_destruction
+            focus = BRM_air_support
+        }
+        completion_reward = {
+            random_owned_controlled_state = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+				}
+            }
+            random_owned_controlled_state = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+				}
+            }
+        }
+    }
+
+    # Bomber Modernization
+    focus = {
+        id = BRM_bomber_modernization
+        icon = GFX_goal_generic_air_bomber
+        x = 23
+        y = 3
+        cost = 10
+        prerequisite = { focus = BRM_air_destruction }
+        completion_reward = {
+            add_tech_bonus = {
+                category = tactical_bomber
+                category = cat_strategic_bomber
+                category = cat_heavy_fighter
+                bonus = 1.0
+                uses = 2
+            }
+        }
+    }
+
+    # Fighter Modernization
+    focus = {
+        id = BRM_fighter_modernization
+        icon = GFX_goal_generic_air_fighter
+        x = 25
+        y = 3
+        cost = 10
+        prerequisite = { focus = BRM_air_support }
+        completion_reward = {
+            add_tech_bonus = {
+                category = light_fighter
+                category = cas_bomber
+                category = naval_bomber
+                bonus = 1.0
+                uses = 2
+            }
+        }
+    }
+
+    # Air Academy
+    focus = {
+        id = BRM_air_academy
+        icon = GFX_goal_generic_air_doctrine
+        x = 24
+        y = 4
+        cost = 10
+        prerequisite = {
+            focus = BRM_bomber_modernization
+            focus = BRM_fighter_modernization
+        }
+        completion_reward = {
+            add_ideas = BRM_air_academy_idea
+        }
+    }
+
+    #############################################
+    #                                           #
+    #                 POLITICS                  #
+    #                                           #
+    #############################################
+
+    # Our Own Government
+    focus = {
+        id = BRM_our_own_government
+        icon = GFX_goal_government_icon
+        x = 17
+        y = 6
+        cost = 10
+        completion_reward = {
+            country_event = { id = burma.1 }
+        }
+    }
+
+    # Choose the Democrats
+    focus = {
+        id = BRM_choose_the_democrats
+        icon = GFX_goal_ideology_social_democrat
+        x = 13
+        y = 7
+        cost = 5
+        available = { has_country_flag = BRM_chosen_democrats }
+        prerequisite = { focus = BRM_our_own_government }
+        completion_reward = {
+            add_popularity = {
+                ideology = social_democrat
+                popularity = 0.05
+            }
+        }
+    }
+
+    # Worker Subsidies
+    focus = {
+        id = BRM_worker_subsidies
+        icon = GFX_goal_production
+        x = 11
+        y = 8
+        cost = 10
+        prerequisite = { focus = BRM_choose_the_democrats }
+        completion_reward = {
+            add_ideas = BRM_worker_subsidies_idea
+        }
+    }
+
+    # Poverty Loans
+    focus = {
+        id = BRM_poverty_loans
+        icon = GFX_goal_famine
+        x = 11
+        y = 9
+        cost = 10
+        prerequisite = { focus = BRM_worker_subsidies }
+        completion_reward = {
+            add_stability = 0.05
+            add_war_support = 0.05
+        }
+    }
+
+    # Rural Area Developments
+    focus = {
+        id = BRM_rural_area_developments
+        icon = GFX_goal_factory_complex
+        x = 11
+        y = 10
+        cost = 10
+        prerequisite = { focus = BRM_poverty_loans }
+        completion_reward = {
+            random_owned_controlled_state = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+                    add_extra_state_shared_building_slots = 1
+                }
+            }
+            random_owned_controlled_state = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+                    add_extra_state_shared_building_slots = 1
+                }
+            }
+            random_owned_controlled_state = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+                    add_extra_state_shared_building_slots = 1
+                }
+            }
+        }
+    }
+
+    # Government Reforms
+    focus = {
+        id = BRM_government_reforms
+        icon = GFX_focus_generic_concessions
+        x = 13
+        y = 8
+        cost = 10
+        prerequisite = { focus = BRM_choose_the_democrats }
+        completion_reward = {
+            remove_ideas = BRM_unstable_state
+        }
+    }
+
+    # Open New Universities
+    focus = {
+        id = BRM_open_new_universities
+        icon = GFX_goal_great_science
+        x = 13
+        y = 9
+        cost = 10
+        prerequisite = { focus = BRM_government_reforms }
+        completion_reward = {
+            add_research_slot = 1
+        }
+    }
+
+    # Provide Housing
+    focus = {
+        id = BRM_provide_housing
+        icon = GFX_focus_usa_guarantee_the_american_dream
+        x = 13
+        y = 10
+        cost = 10
+        prerequisite = { focus = BRM_open_new_universities }
+        completion_reward = {
+            remove_ideas = BRM_unstable_state
+        }
+    }
+
+    # Pass the Consumer Protection Act
+    focus = {
+        id = BRM_pass_the_consumer_protection_act
+        icon = GFX_focus_hol_abandon_the_gold_standard
+        x = 15
+        y = 8
+        prerequisite = {
+            focus = BRM_choose_the_democrats
+            focus = BRM_choose_the_liberals
+        }
+        completion_reward = {
+            add_ideas = BRM_consumer_protection_act_idea
+        }
+    }
+
+    # Choose the Liberals
+    focus = {
+        id = BRM_choose_the_liberals
+        icon = GFX_goal_ideology_market_liberal
+        x = 17
+        y = 7
+        cost = 5
+        available = { has_country_flag = BRM_chosen_liberal }
+        prerequisite = { focus = BRM_our_own_government }
+        completion_reward = {
+            add_popularity = {
+                ideology = market_liberal
+                popularity = 0.05
+            }
+        }
+    }
+
+    # Industrial Reforms
+    focus = {
+        id = BRM_industrial_reforms
+        icon = GFX_focus_generic_self_management
+        x = 15
+        y = 9
+        cost = 10
+        prerequisite = { focus = BRM_pass_the_consumer_protection_act }
+        prerequisite = { focus = BRM_government_reforms }
+        completion_reward = {
+            add_tech_bonus = {
+                category = industry
+                bonus = 1.0
+                uses = 2
+            }
+        }
+    }
+
+    # Government Investments
+    focus = {
+        id = BRM_government_investments
+        icon = GFX_goal_gold_reserve
+        x = 15
+        y = 10
+        cost = 10
+        prerequisite = { focus = BRM_industrial_reforms }
+        completion_reward = {
+            add_ideas = BRM_investments
+        }
+    }
+
+    # Farm to Market Programs
+    focus = {
+        id = BRM_farm_to_market_programs
+        icon = GFX_focus_AUS_agriculture
+        x = 17
+        y = 8
+        cost = 10
+        prerequisite = { focus = BRM_choose_the_liberals }
+        completion_reward = {
+            random_owned_controlled_state = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+                    add_extra_state_shared_building_slots = 1
+                }
+            }
+            random_owned_controlled_state = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+                    add_extra_state_shared_building_slots = 1
+                }
+            }
+            random_owned_controlled_state = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+                    add_extra_state_shared_building_slots = 1
+                }
+            }
+        }
+    }
+
+    # Education Reforms
+    focus = {
+        id = BRM_education_reforms
+        icon = GFX_focus_research
+        x = 17
+        y = 9
+        cost = 10
+        prerequisite = { focus = BRM_farm_to_market_programs }
+        completion_reward = {
+            add_research_slot = 1
+        }
+    }
+
+    # Research Subsidies
+    focus = {
+        id = BRM_research_subsidies
+        icon = GFX_goal_bag_of_money
+        x = 19
+        y = 10
+        cost = 10
+        prerequisite = { 
+            focus = BRM_education_reforms
+            focus = BRM_free_education_act
+        }
+        completion_reward = {
+            add_ideas = BRM_research_subsidies_idea
+        }
+    }
+
+    # Revise the Penal Code
+    focus = {
+        id = BRM_revise_the_penal_code
+        icon = GFX_goal_DOM_The_Trial
+        x = 17
+        y = 10
+        cost = 10
+        prerequisite = { focus = BRM_education_reforms }
+        completion_reward = {
+            remove_ideas = BRM_unstable_state
+        }
+    }
+
+    # Choose the Conservatives
+    focus = {
+        id = BRM_choose_the_conservatives
+        icon = GFX_goal_ideology_social_conservative
+        x = 21
+        y = 7
+        cost = 5
+        available = { has_country_flag = BRM_chosen_conservative }
+        prerequisite = { focus = BRM_our_own_government }
+        completion_reward = {
+            add_popularity = {
+                ideology = social_conservative
+                popularity = 0.05
+            }
+        }
+    }
+
+    # Economic Protectionism
+    focus = {
+        id = BRM_economic_protectionism
+        icon = GFX_goal_state_economy
+        x = 19
+        y = 8
+        cost = 10
+        prerequisite = { focus = BRM_choose_the_conservatives }
+        completion_reward = {
+            add_ideas = BRM_economic_protectionism_idea
+        }
+    }
+
+    # Strenghten the State
+    focus = {
+        id = BRM_strengthen_the_state
+        icon = GFX_goal_COS_Ferrer_Coup
+        x = 21
+        y = 8
+        cost = 10
+        prerequisite = { focus = BRM_choose_the_conservatives }
+        completion_reward = {
+            remove_ideas = BRM_unstable_state
+        }
+    }
+
+    # Free Education Act
+    focus = {
+        id = BRM_free_education_act
+        icon = GFX_focus_research2
+        x = 21
+        y = 9
+        cost = 10
+        prerequisite = { focus = BRM_strengthen_the_state }
+        completion_reward = {
+            add_research_slot = 1
+        }
+    }
+
+    # Purchase Tribal Land
+    focus = {
+        id = BRM_purchase_tribal_land
+        icon = GFX_goal_coffee_boom
+        x = 23
+        y = 8
+        cost = 10
+        prerequisite = { focus = BRM_choose_the_conservatives }
+        completion_reward = {
+            random_owned_controlled_state = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+                    add_extra_state_shared_building_slots = 1
+                }
+            }
+            random_owned_controlled_state = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+                    add_extra_state_shared_building_slots = 1
+                }
+            }
+            random_owned_controlled_state = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+                    add_extra_state_shared_building_slots = 1
+                }
+            }
+        }
+    }
+
+    # Open the Markets
+    focus = {
+        id = BRM_open_the_markets
+        icon = GFX_goal_collaborate_local_elites
+        x = 23
+        y = 9
+        cost = 10
+        prerequisite = { focus = BRM_purchase_tribal_land }
+        completion_reward = {
+            add_ideas = BRM_open_markets
+        }
+    }
+
+    # Subsidize New Coroporations
+    focus = {
+        id = BRM_subsidize_new_corporations
+        icon = GFX_DAH_Topke
+        x = 23
+        y = 10
+        cost = 10
+        prerequisite = { focus = BRM_open_the_markets }
+        completion_reward = {
+            add_ideas = BRM_subsidized_corporations
+        }
+    }
+
+    # Encourage Immigration
+    focus = {
+        id = BRM_encourage_immigration
+        icon = GFX_goal_NOR_passport_convention
+        x = 21
+        y = 10
+        cost = 10
+        prerequisite = { focus = BRM_free_education_act }
+        completion_reward = {
+            add_ideas = BRM_immigration
+        }
+    }
+}

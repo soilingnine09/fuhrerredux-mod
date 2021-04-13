@@ -1,0 +1,307 @@
+﻿capital = 607
+
+oob = "ZHI_1936"
+
+set_stability = 0.52
+set_war_support = 0.50
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
+	early_fighter = 1
+	early_bomber = 1
+	fuel_silos = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_secondary_battery = 1
+		basic_torpedo = 1
+		coastal_defense_ships = 1
+	}
+}
+
+
+add_ideas = {
+	party_pop_0_60
+	unbalanced_industry
+	iliterate_population
+	ZHI_fallen_grace1
+	ZHI_traitors
+	ZHI_jade_marshall
+	ZHI_japanese_backing
+	ZHI_Wu_Peifu_hog
+	ZHI_Hu_Weide_for
+	ZHI_Wang_Kemin_eco
+	ZHI_Wang_Yitang_sec
+	military_junta
+}
+
+set_country_flag = Deng_Xihou_dead
+set_country_flag = Long_Yun_dead
+set_country_flag = ministers_cannot_be_replaced
+
+set_politics = {
+	ruling_party = paternal_autocrat
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    vanguardist = 0
+    collectivist = 0
+    libertarian_socialist = 0
+    social_democrat = 4
+    social_liberal = 6
+    market_liberal = 10
+    social_conservative = 8
+    authoritarian_democrat = 4
+    paternal_autocrat = 60
+    national_populist = 8
+    valkist = 0
+}
+
+#Events
+country_event = { id = zhi.1 days = 1 }
+country_event = { id = zhi.2 days = 15 }
+country_event = { id = zhi.295 days = 135 }
+country_event = { id = zhi.296 days = 220 }
+
+create_country_leader = {
+	name = "Wu Peifu"
+	desc = ""
+	picture = "Portrait_Wu_Peifu.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Ku Wei-Chün"
+	desc = ""
+	picture = "Portrait_ZHI_Ku_Wei.tga"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Dong Biwu"
+	desc = ""
+	picture = "Portrait_ZHI_Dong_Biwu.tga"
+	expire = "1965.1.1"
+	ideology = collectivist_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Yan Huiqing"
+	desc = ""
+	picture = "Portrait_ZHI_Yan_Huiqing.tga"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Wu Peifu"
+	desc = ""
+	picture = "Portrait_Wu_Peifu.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Wu Peifu"
+	id = 45006
+	picture = "Portrait_Wu_Peifu.tga"
+	traits = { offensive_doctrine brilliant_strategist old_guard expert_delegator }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_field_marshal = {
+	name = "Sun Chuanfang"
+	id = 45007
+	picture = "Portrait_ZHI_Sun_Chuanfang.tga"
+	traits = { trait_reckless }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_field_marshal = {
+	name = "Wang Chengbing"
+	picture = "Portrait_ZHI_Wang_Chengbing.tga"
+	traits = { fast_planner }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Zhang Huazhi"
+	picture = "Portrait_ZHI_Zhang_Huazhi.tga"
+	id = 45008
+	traits = { trickster }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Zhang Shaozeng"
+	picture = "Portrait_ZHI_Zhang_Shaozeng.tga"
+	id = 45009
+	traits = { commando trickster career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Qi Xieyuan"
+	picture = "Portrait_ZHI_Qi_Xieyuan.tga"
+	traits = {  trickster  }
+	skill = 3
+	attack_skill = 1
+	defense_skill = 5
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Cao Ying"
+	picture = "Portrait_ZHI_Cao_Ying.tga"
+	traits = {  organizer  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_field_marshal = {
+	name = "Wang Huaiqing"
+	picture = "Portrait_ZHI_Wang_Huaiqing.tga"
+	traits = { trait_reckless }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Liu Menggeng"
+	picture = "Portrait_ZHI_Liu_Menggeng.tga"
+	traits = { infantry_leader }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Chen Diaoyuan"
+	picture = "Portrait_ZHI_Chen_Diaoyuan.tga"
+	traits = { infantry_leader }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Zhang Fulai"
+	picture = "Portrait_ZHI_Zhang_Fulai.tga"
+	traits = { trickster inflexible_strategist  }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Du Xigui"
+		picture = "Portrait_ZHI_Di_Xigui.tga"
+	traits = { superior_tactician }
+	skill = 3
+}
+
+
+
+
+
+
+
+
+
+create_country_leader = {
+	name = "Durans Doyle"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = vanguardist_subtype
+}
+
+create_country_leader = {
+	name = "Nethaneel Idowu"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = libertarian_socialist_subtype
+}
+
+create_country_leader = {
+	name = "Arne Narang"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = social_democrat_subtype
+}
+
+create_country_leader = {
+	name = "Firuz Kohout"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+}
+
+create_country_leader = {
+	name = "Ramazan Chavez"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = national_populist_subtype
+}
+
+create_country_leader = {
+	name = "Lennie Wallis"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = valkist_subtype
+}

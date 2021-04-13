@@ -1,0 +1,728 @@
+PHI_department_of_foreign_affairs_decisions = {
+
+    PHI_fund_rebels_fic = {
+        icon = GFX_decision_generic_prepare_civil_war
+
+        visible = { 
+            has_country_flag = PHI_FRA_REJECTED_TERRITORY_DEMANDS
+        }
+        available = { 
+            FIC = { exists = yes } 
+        }
+
+        fire_only_once = yes
+
+        days_remove = 120
+
+        cost = 75
+
+        remove_effect = {
+            hidden_effect = {
+                VIN = {
+                    add_state_core = 286
+                    add_state_core = 961
+                    add_state_core = 671
+                    add_state_core = 958
+                    add_state_core = 1009
+                }
+                LAO = {
+                    add_state_core = 959
+                    add_state_core = 960
+                    add_state_core = 670
+                }
+                CAM = {
+                    add_state_core = 962
+                    add_state_core = 741
+                    add_state_core = 963
+                }
+                set_country_flag = PHI_FUNDED_REBELS_IN_FIC
+            }
+        }
+    }
+
+    PHI_fund_rebels_bea = {
+        icon = GFX_decision_generic_prepare_civil_war
+
+        visible = { 
+            has_country_flag = PHI_ENG_REJECTED_TERRITORY_DEMANDS
+        }
+        available = {
+            BEA = { exists = yes }
+        }
+
+        fire_only_once = yes
+
+        cost = 75
+
+        days_remove = 120
+        
+        remove_effect = {
+            hidden_effect = {
+                BRM = {
+                    add_state_core = 288
+                    add_state_core = 640
+                    add_state_core = 812
+                    add_state_core = 805
+                    add_state_core = 1007
+                }
+                INS = {
+                    add_state_core = 334
+                    add_state_core = 943
+                    add_state_core = 951
+                    add_state_core = 790
+                    add_state_core = 672
+                    add_state_core = 797
+                    add_state_core = 335
+                    add_state_core = 711
+                    add_state_core = 822
+                    add_state_core = 823
+                    add_state_core = 667
+                }
+                MAL = {
+                    add_state_core = 819
+                    add_state_core = 820
+                    add_state_core = 821
+                    add_state_core = 336
+                    add_state_core = 333
+                    add_state_core = 944
+                }
+                set_country_flag = PHI_FUNDED_REBELS_IN_BEA
+            }
+        }
+    }
+
+    PHI_invoke_rebellion_fic = {
+        icon = GFX_decision_generic_prepare_civil_war
+
+        visible = { 
+            has_country_flag = PHI_FUNDED_REBELS_IN_FIC
+        }
+        available = {
+            FIC = { exists = yes }
+        }
+        
+        fire_only_once = yes
+
+        cost = 100
+
+        complete_effect = {
+            VIN = {
+                transfer_state = 961
+                transfer_state = 958
+                transfer_state = 671
+
+                load_oob = VIN_1936
+            }
+            LAO = {
+                transfer_state = 959
+                transfer_state = 960
+
+                load_oob = LAO_1936
+            }
+            CAM = {
+                transfer_state = 962
+                transfer_state = 963
+
+                load_oob = CAM_revolt
+            }
+            FIC = {
+                declare_war_on = {
+                    target = VIN
+                    type = annex_everything
+                }
+                declare_war_on = {
+                    target = LAO
+                    type = annex_everything
+                }
+                declare_war_on = {
+                    target = CAM
+                    type = annex_everything
+                }
+            }
+        }
+    }
+
+    PHI_invoke_rebellion_bea = {
+        icon = GFX_decision_generic_prepare_civil_war
+
+        visible = {
+            has_country_flag = PHI_FUNDED_REBELS_IN_BEA
+        }
+        available = { 
+            BEA = { exists = yes }
+        }
+
+        fire_only_once = yes
+
+        cost = 100
+
+        complete_effect = {
+            INS = {
+                transfer_state = 672
+                transfer_state = 790
+                set_province_controller = 1342
+                set_province_controller = 1386
+
+                load_oob = INS
+            }
+            BRM = {
+                transfer_state = 288
+                transfer_state = 640
+                transfer_state = 812
+                transfer_state = 805
+                transfer_state = 1007
+            }
+            MAL = {
+                transfer_state = 819
+                transfer_state = 820
+                transfer_state = 821
+                transfer_state = 336
+                transfer_state = 333
+                transfer_state = 944
+            }
+            BEA = {
+                declare_war_on = {
+                    target = INS
+                    type = annex_everything
+                }
+            }
+        }
+    }
+
+    PHI_support_rus = {
+        icon = GFX_decision_hol_war_on_pacifism
+
+        visible = { 
+            RUS = { has_war = yes }
+        }
+        available = {
+            is_subject = no
+            NOT = { has_war_with = RUS }
+            every_country = {
+                limit = { is_in_faction_with = ROOT }
+                has_war_with = RUS
+            }
+        }
+
+        fire_only_once = yes
+
+        cost = 20
+
+        complete_effect = { RUS = { country_event = { id = phi.52 } } }
+    }
+
+    PHI_support_chi = {
+        icon = GFX_decision_hol_war_on_pacifism
+
+        visible = { 
+            CHI = { has_war = yes }
+        }
+        available = {
+            is_subject = no
+            NOT = { has_war_with = CHI }
+            every_country = {
+                limit = { is_in_faction_with = ROOT }
+                has_war_with = CHI
+            }
+        }
+
+        fire_only_once = yes
+
+        cost = 20
+
+        complete_effect = { CHI = { country_event = { id = phi.52 } } }
+    }
+
+    PHI_support_ins = {
+        icon = GFX_decision_hol_war_on_pacifism
+
+        visible = {
+            INS = { has_war = yes }
+        }
+        available = {
+            is_subject = no
+            NOT = { has_war_with = INS }
+            every_country = {
+                limit = { is_in_faction_with = ROOT }
+                has_war_with = INS
+            }
+        }
+
+        fire_only_once = yes
+
+        cost = 20
+
+        complete_effect = { INS = { country_event = { id = phi.52 } } }
+    }
+
+    PHI_whitepeace_eng = {
+        icon = GFX_decision_hol_war_on_pacifism
+        
+        visible = { has_war_with = ENG }
+
+        fire_only_once = yes
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = PHI_controls_british_holdings
+
+                # Malaya
+                has_full_control_of_state = 336 
+                has_full_control_of_state = 819
+                has_full_control_of_state = 820
+                has_full_control_of_state = 821
+                has_full_control_of_state = 333
+                has_full_control_of_state = 944
+
+                # Indonesia
+                has_full_control_of_state = 334
+                has_full_control_of_state = 943
+                has_full_control_of_state = 951
+                has_full_control_of_state = 790
+                has_full_control_of_state = 672
+                has_full_control_of_state = 797
+                has_full_control_of_state = 335
+                has_full_control_of_state = 711
+                has_full_control_of_state = 822
+                has_full_control_of_state = 823
+                has_full_control_of_state = 667
+
+                # Burma
+                has_full_control_of_state = 288
+                has_full_control_of_state = 640
+                has_full_control_of_state = 812
+                has_full_control_of_state = 805 
+            }
+        }
+
+        complete_effect = {
+            ENG = { country_event = { id = phi.48 } }
+        }
+    }
+}
+
+PHI_seato = {
+    PHI_invite_vin = {
+        visible = { 
+            VIN = { 
+                exists = yes
+                NOT = { is_in_faction_with = PHI }
+            } 
+        }
+
+        available = {
+            VIN = {
+                is_subject = no
+                is_in_faction = no
+            }
+        }
+
+        cost = 100
+
+        complete_effect = {
+            VIN = { country_event = { id = phi.27 } }
+        }
+    }
+
+    PHI_invite_brm = {
+        visible = {
+            BRM = {
+                exists = yes
+                NOT = { is_in_faction_with = PHI }
+            }
+        }
+
+        available = {
+            BRM = {
+                is_subject = no
+                is_in_faction = no
+            }
+        }
+
+        cost = 100
+
+        complete_effect = {
+            BRM = { country_event = { id = phi.27 } }
+        }
+    }
+
+    PHI_invite_lao = {
+        visible = {
+            LAO = {
+                exists = yes
+                NOT = { is_in_faction_with = PHI }
+            }
+        }
+
+        available = {
+            LAO = {
+                is_subject = no
+                is_in_faction = no
+            }
+        }
+
+        cost = 100
+
+        complete_effect = {
+            LAO = { country_event = { id = phi.27 } }
+        }
+    }
+
+    PHI_invite_cam = {
+        visible = {
+            CAM = {
+                exists = yes
+                NOT = { is_in_faction_with = PHI }
+            }
+        }
+
+        available = {
+            CAM = {
+                is_subject = no
+                is_in_faction = no
+            }
+        }
+
+        cost = 100
+
+        complete_effect = {
+            CAM = { country_event = { id = phi.27 } }
+        }
+    }
+
+    PHI_invite_ins = {
+        visible = {
+            INS = {
+                exists = yes
+                NOT = { is_in_faction_with = PHI }
+            }
+        }
+
+        available = {
+            INS = {
+                is_subject = no
+                is_in_faction = no
+            }
+        }
+
+        cost = 100
+
+        complete_effect = {
+            INS = { country_event = { id = phi.27 } }
+        }
+    }
+
+    PHI_invite_sia = {
+        visible = {
+            SIA = {
+                exists = yes
+                NOT = { is_in_faction_with = PHI }
+            }
+        }
+
+        available = {
+            SIA = {
+                is_subject = no
+                is_in_faction = no
+            }
+        }
+
+        cost = 100
+
+        complete_effect = {
+            SIA = { country_event = { id = phi.27 } }
+        }
+    }
+
+    PHI_invite_mal = {
+        visible = {
+            MAL = {
+                exists = yes
+                NOT = { is_in_faction_with = PHI }
+            }
+        }
+
+        available = {
+            MAL = {
+                is_subject = no
+                is_in_faction = no
+            }
+        }
+
+        cost = 100
+
+        complete_effect = {
+            MAL = { country_event = { id = phi.27 } }
+        }
+    }
+}
+
+PHI_question_of_occupied_territories = {
+    PHI_integrate_sabah = {
+        icon = GFX_decision_hol_draw_up_staff_plans
+
+        visible = { 785 = { NOT = { is_core_of = PHI } } }
+
+        fire_only_once = yes
+
+        available = { has_full_control_of_state = 785 }
+
+        cost = 150
+
+        complete_effect = {
+            country_event = { id = annex.11 }
+        }
+    }
+
+    PHI_jap_territories = {
+        icon = GFX_decision_hol_draw_up_staff_plans
+
+        visible = { has_full_control_of_state = 282 }
+
+        complete_effect = {
+            country_event = { id = annex.8 }
+        }
+    }
+
+    PHI_kor_territories = {
+        icon = GFX_decision_hol_draw_up_staff_plans
+
+        visible = { has_full_control_of_state = 525 }
+
+        complete_effect = {
+            country_event = { id = annex.9 }
+        }
+    }
+
+    PHI_sia_territories = {
+        icon = GFX_decision_hol_draw_up_staff_plans
+
+        visible = { has_full_control_of_state = 1013 }
+
+        complete_effect = {
+            country_event = { id = annex.7 }
+        }
+    }
+}
+
+PHI_occupation_of_germany = {
+    PHI_found_the_german_federation = {
+        icon = GFX_decision_generic_independence
+
+        visible = { 
+            has_full_control_of_state = 64
+            NOT = { has_country_flag = PHI_GER_IMPERIAL_FAMILY }
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            every_state = {
+                limit = {
+                    OR = {
+                        is_core_of = GER
+                        is_core_of = GRP
+                    }
+                }
+                add_core_of = DEU
+                remove_core_of = GER
+                remove_core_of = GRP
+            }
+
+            release = DEU
+
+            if = { 
+                limit = { has_dlc = "Together for Victory" } 
+                set_autonomy = {
+                    target = DEU
+                    autonomy_state = autonomy_dominion
+                }
+            }
+            if = {
+                limit = { NOT = { has_dlc = "Together for Victory" } }
+                puppet = DEU
+            }
+            
+            hidden_effect = {
+                PHI = { give_guarantee = DEU }
+                DEU = { 
+                    give_guarantee = PHI
+
+                    set_politics = {
+                        ruling_party = paternal_autocrat
+                        elections_allowed = no
+                    }
+                    set_popularities = {
+                        vanguardist = 2
+                        collectivist = 4
+                        libertarian_socialist = 6
+                        social_democrat = 12
+                        social_liberal = 8
+                        market_liberal = 4
+                        social_conservative = 14
+                        authoritarian_democrat = 2
+                        paternal_autocrat = 26
+                        national_populist = 8
+                        valkist = 14
+                    }
+
+                    load_oob = DEU_1936
+                }
+            }
+        }
+    }
+
+    PHI_restore_the_kaiserreich = {
+        allowed = { always = no }
+
+        icon = GFX_decision_eng_ally_imperialist_coup
+
+        visible = { has_full_control_of_state = 64 }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            every_state = {
+                limit = {
+                    is_core_of = GER
+                }
+                add_core_of = DEU
+                remove_core_of = GER
+            }
+
+            release = DEU
+
+            if = { 
+                limit = { has_dlc = "Together for Victory" } 
+                set_autonomy = {
+                    target = DEU
+                    autonomy_state = autonomy_dominion
+                }
+            }
+            if = {
+                limit = { NOT = { has_dlc = "Together for Victory" } }
+                puppet = DEU
+            }
+            
+            hidden_effect = {
+                PHI = { 
+                    give_guarantee = DEU
+                    remove_ideas = PHI_german_imperial_family
+                }
+                DEU = { 
+                    set_cosmetic_tag = DEU_kaiser
+
+                   set_politics = {
+                        ruling_party = paternal_autocrat
+                        elections_allowed = no
+                    }
+                    set_popularities = {
+                        vanguardist = 2
+                        collectivist = 4
+                        libertarian_socialist = 6
+                        social_democrat = 12
+                        social_liberal = 8
+                        market_liberal = 4
+                        social_conservative = 14
+                        authoritarian_democrat = 2
+                        paternal_autocrat = 26
+                        national_populist = 8
+                        valkist = 14
+                    }
+
+                    load_oob = DEU_1936
+                }
+            }
+        }
+    }
+}
+
+PHI_state_fundings = {
+    PHI_fund_research_and_development = {
+        icon = GFX_decision_generic_research
+
+        cost = 50
+
+        available = { NOT = { has_country_flag  = PHI_FUNDING_IN_PROGRESS } }
+
+        modifier = {
+            consumer_goods_factor = 0.05
+            research_speed_factor = 0.1
+        }
+
+        complete_effect = { set_country_flag = PHI_FUNDING_IN_PROGRESS }
+
+        remove_effect = { clr_country_flag = PHI_FUNDING_IN_PROGRESS }
+
+        fire_only_once = no
+        days_remove = 120
+        days_re_enable = 360
+    }
+
+    PHI_prioritize_construction = {
+        icon = GFX_decision_generic_construction
+
+        cost = 50
+
+        available = { NOT = { has_country_flag  = PHI_FUNDING_IN_PROGRESS } }
+
+        modifier = {
+            consumer_goods_factor = 0.05
+            production_speed_buildings_factor = 0.1
+            industry_repair_factor = 0.1
+        }
+
+        complete_effect = { set_country_flag = PHI_FUNDING_IN_PROGRESS }
+
+        remove_effect = { clr_country_flag = PHI_FUNDING_IN_PROGRESS }
+
+        fire_only_once = no
+        days_remove = 120
+        days_re_enable = 360
+    }
+
+    PHI_aid_workers = {
+        icon = GFX_decision_hol_attract_foreign_investors
+
+        cost = 50
+
+        available = { NOT = { has_country_flag  = PHI_FUNDING_IN_PROGRESS } }
+
+        modifier = {
+            consumer_goods_factor = 0.05
+            industrial_capacity_factory = 0.1
+            industrial_capacity_dockyard = 0.1
+        }
+
+        complete_effect = { set_country_flag = PHI_FUNDING_IN_PROGRESS }
+
+        remove_effect = { clr_country_flag = PHI_FUNDING_IN_PROGRESS }
+
+        fire_only_once = no
+        days_remove = 120
+        days_re_enable = 360
+    }
+
+    PHI_start_social_services = {
+        icon = GFX_decision_hol_attract_foreign_investors
+
+        cost = 50
+
+        available = { NOT = { has_country_flag  = PHI_FUNDING_IN_PROGRESS } }
+
+        modifier = {
+            consumer_goods_factor = 0.05
+            political_power_gain = 0.1
+            stability_weekly = 0.1
+            monthly_population = 0.1
+        }
+
+        complete_effect = { set_country_flag = PHI_FUNDING_IN_PROGRESS }
+
+        remove_effect = { clr_country_flag = PHI_FUNDING_IN_PROGRESS }
+
+        fire_only_once = no
+        days_remove = 120
+        days_re_enable = 360
+    }
+}

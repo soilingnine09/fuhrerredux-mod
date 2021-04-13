@@ -1,0 +1,129 @@
+SIA_establish_administrative_division = {
+	priority = 100000
+	visible = {
+		tag = SIA
+	}
+}
+SIA_fate_of_occupation = {
+	priority = 99999
+	visible = {
+		tag = SIA
+	}
+}
+SIA_unificationist_major_faction_challenge = {
+	priority = 50000
+	icon = GFX_decision_icon_sia_valkist
+	visible = {
+		tag = SIA
+		NOT = { 
+			OR = {
+				has_completed_focus = SIA_royalist_win_election
+				has_completed_focus = SIA_centrist_win_election
+			}
+		}
+	}
+	scripted_gui = unificationist_persuasion_assembly_decision_ui
+	
+}
+SIA_supervisory_board_of_royal_market = {
+	
+	icon = GFX_decision_category_sia_mahasombat_ministry_icon
+	visible = { AND = { tag = SIA has_country_flag = supervisory_board_of_royal_market_recovery } }
+	scripted_gui = supervisory_board_of_royal_market_decision_ui
+	picture = GFX_decision_category_sia_royal_market_palace
+	priority = 10000
+
+}
+SIA_royalist_coup = {
+	priority = 3000
+	visible = {
+		tag = SIA
+		has_variable = prayool_influence
+	}
+	scripted_gui = SIA_royalist_coup_decision_ui
+}
+SIA_shan_influence = {
+	visible = { has_country_flag = shan_independence_movement_formed }
+	scripted_gui = SIA_shan_state_influence_map_decision_ui
+	priority = 100
+}
+SIA_mon_influence = {
+	visible = { has_country_flag = mon_independence_movement_formed }
+	scripted_gui = SIA_mon_state_influence_map_decision_ui
+	priority = 100
+}
+SIA_valkist_committee_influence = {
+	icon = GFX_decision_icon_sia_valkist
+	visible = {
+		AND = {
+			tag = SIA 
+			has_country_flag = valkist_committee
+		}
+	}
+	priority = 300
+}
+SIA_anarchy_and_natcol_struggle = {
+	scripted_gui = SIA_anarchy_natcol_controlling_zone_decision_ui
+	priority = 900
+	visible = {
+		tag = SIA
+		AND = {
+			has_country_flag = esan_anarchy
+			has_country_flag = lanna_anarchy
+			has_country_flag = general_strike
+		}
+	}
+}
+SIA_factory_expansion_project = {
+	allowed = {
+		tag = SIA
+	}
+	priority = 1000
+	visible = {
+		tag = SIA
+		has_country_flag = more_factory_more_product
+	}
+}
+
+SIA_rattaniyom = {
+	priority = 1000
+	visible = {
+		tag = SIA
+		OR = {
+			has_government = national_populist
+			has_country_flag = coalition_national_populist
+		}
+		has_country_flag = rattaniyom_act
+	}
+}
+SIA_south_annam_plan = {
+	priority = 500
+	visible = {
+		tag = SIA
+		has_country_flag = south_annam_plan
+		OR = {
+			has_government = national_populist
+			has_idea = SIA_phin_choonhavan_hog_pataut
+		}
+	}
+}
+SIA_fading_empire = {
+	priority = 1000
+	visible = {
+		tag = SIA
+	}
+}
+SIA_valkist_border_conflict = {
+	priority = 800
+	visible = {
+		tag = SIA
+		has_country_flag = border_conflict_with_french_indochina
+	}
+}
+SIA_foreign_policy = {
+	priority = 300
+	visible = {
+		tag = SIA
+		date > "1940.1.1"
+	}
+}

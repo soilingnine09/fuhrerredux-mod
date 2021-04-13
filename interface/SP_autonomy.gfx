@@ -1,0 +1,13 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_SP_autonomous_region_icon"
+        textureFile = "gfx/interface/autonomy/autonomy_autonomous_region.dds"
+    }
+
+    spriteType = {
+        name = "GFX_SP_sponsored_state_icon"
+        textureFile = "gfx/interface/autonomy/autonomy_sponsored_state.dds"
+    }
+    
+}

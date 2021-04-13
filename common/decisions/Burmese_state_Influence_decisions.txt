@@ -1,0 +1,252 @@
+SIA_shan_influence = { 
+	hire_shan_people_and_propaganda = {
+		available = { tag = SIA }
+		visible = { 
+			tag = SIA 
+			NOT = {
+				check_variable = {
+					var = shan_influence
+					value = 0.5
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		cost = 20
+		days_remove = 15
+		remove_effect = {
+			custom_effect_tooltip = gain_influence_7_points
+			add_to_variable = { shan_influence = 0.07 }
+		}
+	}
+	allowed_shan_people_buy_weapon_from_us = {
+		available = { tag = SIA }
+		visible = {
+			tag = SIA
+			NOT = {
+				check_variable = {
+					var = weapon_influence
+					value = 1500
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		cost = 50
+		days_remove = 15
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = {
+						var = weapon_influence
+						value = 1
+						compare = less_than
+					}
+				}
+				set_variable = { weapon_influence = 1 }
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = shan_people_get_100_inf_from_us
+			add_to_variable = { weapon_influence = 100 }
+			if = {
+				limit = {
+					check_variable = {
+						var = shan_influence
+						value = 0.5
+						compare = less_than_or_equals
+					}
+				}
+				custom_effect_tooltip = gain_influence_10_points
+				add_to_variable = { shan_influence = 0.1 }
+			}
+		}
+	}
+	reeducation_about_friendship_of_thai_and_shan = {
+		available = { tag = SIA }
+		visible = {
+			tag = SIA
+			NOT = { SHN = { exists = yes } }
+		}
+		cost = 120
+		days_remove = 45
+		remove_effect = {
+			custom_effect_tooltip = gain_influence_20_points
+			add_to_variable = { shan_influence = 0.2 }
+		}
+	}
+	establish_shan_seperationist_government = {
+		available = { 
+			tag = SIA 
+			check_variable = {
+				var = shan_influence
+				value = 1
+				compare = greater_than_or_equals
+			}
+		}
+		visible = { 
+			tag = SIA 
+			check_variable = {
+				var = shan_influence
+				value = 1
+				compare = greater_than_or_equals
+			}
+			NOT = { has_country_flag = shan_government_in_exiled }
+		}
+		cost = 150
+		complete_effect = {
+			SHN = {
+				become_exiled_in = { target = SIA legitimacy = 5 }
+			}
+			SHN = { 
+				add_state_core = 1021 
+				add_state_core = 1007
+			}
+			hidden_effect = {
+				set_country_flag = shan_government_in_exiled
+			}
+		}
+	}
+	improve_legitimacy_of_shan = {
+		available = {
+			tag = SIA
+			any_state = {
+				is_core_of = SHN 
+			}
+		}
+		visible = { 
+			SHN = { exists = no } 
+			any_state = {
+				is_core_of = SHN 
+			}
+		}
+		days_remove = 30
+		remove_effect = {
+			SHN = { add_legitimacy = 15 }
+		}
+	}
+}
+SIA_mon_influence = {
+	hire_mon_people_and_propaganda = {
+		available = { tag = SIA }
+		visible = { 
+			tag = SIA 
+			NOT = {
+				check_variable = {
+					var = mon_influence
+					value = 0.5
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		cost = 20
+		days_remove = 15
+		remove_effect = {
+			custom_effect_tooltip = gain_influence_7_points
+			add_to_variable = { mon_influence = 0.07 }
+		}
+	}
+	allowed_mon_people_buy_weapon_from_us = {
+		available = { tag = SIA }
+		visible = {
+			tag = SIA
+			NOT = {
+				check_variable = {
+					var = weapon_influence
+					value = 1500
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		cost = 50
+		days_remove = 15
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = {
+						var = weapon_influence
+						value = 1
+						compare = less_than
+					}
+				}
+				set_variable = { weapon_influence = 1 }
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = mon_people_get_100_inf_from_us
+			add_to_variable = { weapon_influence = 100 }
+			if = {
+				limit = {
+					check_variable = {
+						var = mon_influence 
+						value = 0.5
+						compare = less_than_or_equals
+					}
+				}
+				custom_effect_tooltip = gain_influence_10_points
+				add_to_variable = { mon_influence = 0.1 }
+			}
+		}
+	}
+	reeducation_about_friendship_of_thai_and_mon = {
+		available = { tag = SIA }
+		visible = {
+			tag = SIA
+			NOT = { MNS = { exists = yes } }
+		}
+		cost = 120
+		days_remove = 45
+		remove_effect = {
+			custom_effect_tooltip = gain_influence_20_points
+			add_to_variable = { mon_influence = 0.2 }
+		}
+	}
+	establish_mon_coalitionist_government = {
+		available = { 
+			tag = SIA 
+			check_variable = {
+				var = mon_influence
+				value = 1
+				compare = greater_than_or_equals
+			}
+		}
+		visible = { 
+			tag = SIA 
+			check_variable = {
+				var = mon_influence
+				value = 1
+				compare = greater_than_or_equals
+			}
+			NOT = { has_country_flag = mon_government_in_exiled }
+		}
+		cost = 150
+		complete_effect = {
+			MNS = {
+				become_exiled_in = { target = SIA legitimacy = 5 }
+			}
+			MNS = { 
+				add_state_core = 1020 
+				add_state_core = 1022
+			}
+			hidden_effect = {
+				set_country_flag = mon_government_in_exiled
+			}
+		}
+	}
+	improve_legitimacy_of_mon = {
+		available = {
+			tag = SIA
+			any_state = {
+				is_core_of = MNS 
+			}
+		}
+		visible = { 
+			MNS = { exists = no } 
+			any_state = {
+				is_core_of = MNS 
+			}
+		}
+		days_remove = 30
+		remove_effect = {
+			MNS = { add_legitimacy = 15 }
+		}
+	}
+}

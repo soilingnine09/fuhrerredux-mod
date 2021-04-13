@@ -1,0 +1,62 @@
+on_actions = {
+
+    on_capitulation = {
+        effect = {
+            if = {
+                limit = { 
+                    ROOT = { tag = FIC }
+                    FROM = {
+                        OR = {
+                            tag = CAM
+                            tag = LAO
+                            tag = VIN
+                        }
+                    }
+                }
+                every_country = {
+                    limit = {
+                        is_in_faction_with = ROOT
+                        has_war_with = FROM
+                    }
+                    whitepeace = CAM
+                    whitepeace = LAO
+                    whitepeace = VIN
+                }
+            }
+        }
+    }
+
+    # ROOT is the winner
+    # FROM gets annexed
+    on_annex = {
+        effect = {
+            if = {
+                limit = {
+                    FROM = { tag = PHI }
+                    ROOT = {
+                        has_full_control_of_state = 327
+                        has_war = no
+                    }
+                }
+                ROOT = { country_event = { annex.10 days = 1 } }
+            }
+
+            if = { 
+                limit = { 
+                    ROOT = { tag = SRP }
+                    FROM = { tag = PHI }
+                } 
+                ROOT = { country_event = { id = srp.1 days = 2 } }
+            }
+
+            if = {
+                limit = {
+                    ROOT = { tag = PHI }
+                    FROM = { tag = SRP }
+                }
+                
+                ROOT = { country_event = { id = phi.49 days = 2 } }
+            }
+        }
+    }
+}

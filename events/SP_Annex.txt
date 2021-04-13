@@ -1,0 +1,708 @@
+add_namespace = annex
+
+# Annexation of Burma
+country_event = {
+    id = annex.1
+    title = annex.1.t
+    desc = annex.1.d
+
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            BRM = {
+                add_state_core = 288
+                add_state_core = 640
+                add_state_core = 812
+                add_state_core = 805
+                add_state_core = 1007
+            }
+        }
+    }
+
+    option = {
+        name = annex.1.a
+
+        release = BRM
+        if = {
+            limit = { has_dlc = "Together for Victory" }
+            set_autonomy = {
+                autonomy_state = SP_sponsored_state
+                target = BRM
+            }
+        }
+        if = {
+            limit = {
+                NOT = { has_dlc = "Together for Victory" }
+            }
+            puppet = BRM
+        }
+    }
+
+    option = {
+        name = annex.1.b
+
+        release = BRM
+        add_political_power = 50
+    }
+}
+
+# Annexation of Cambodia
+country_event = {
+    id = annex.2
+    title = annex.2.t
+    desc = annex.2.d
+
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            FIC = {
+                remove_state_core = 962
+                remove_state_core = 741
+                remove_state_core = 963
+            }
+            CAM = {
+                add_state_core = 962
+                add_state_core = 741
+                add_state_core = 963
+            }
+        }
+    }
+
+    option = {
+        name = annex.2.a
+
+        release = CAM
+        if = {
+            limit = { has_dlc = "Together for Victory" }
+            set_autonomy = {
+                target = CAM
+                autonomy_state = SP_sponsored_state
+            }
+        }
+        if = {
+            limit = {
+                NOT = { has_dlc = "Together for Victory" }
+            }
+            puppet = CAM
+        }
+    }
+
+    option = {
+        name = annex.2.b
+
+        release = CAM
+        add_political_power = 50
+    }
+}
+
+# Annexation of Insulindia
+country_event = {
+    id = annex.3
+    title = annex.3.t
+    desc = annex.3.d
+
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            BEA = {
+                remove_state_core = 334
+                remove_state_core = 943
+                remove_state_core = 951
+                remove_state_core = 790
+                remove_state_core = 672
+                remove_state_core = 797
+                remove_state_core = 335
+                remove_state_core = 711
+                remove_state_core = 822
+                remove_state_core = 823
+                remove_state_core = 667
+                remove_state_core = 785
+            }
+            INS = {
+                add_state_core = 334
+                add_state_core = 943
+                add_state_core = 951
+                add_state_core = 790
+                add_state_core = 672
+                add_state_core = 797
+                add_state_core = 335
+                add_state_core = 711
+                add_state_core = 822
+                add_state_core = 823
+                add_state_core = 667
+            }
+        }
+    }
+
+    option = {
+        name = annex.3.a
+
+        release = INS
+        if = { 
+            limit = { has_dlc = "Together for Victory" } 
+            set_autonomy = {
+                target = INS
+                autonomy_state = SP_sponsored_state
+            }
+        }
+        if = {
+            limit = { NOT = { has_dlc = "Together for Victory" } }
+            puppet = INS
+        }
+    }
+
+    option = {
+        name = annex.3.b
+
+        release = INS
+        add_political_power = 50
+    }
+}
+
+# Annexation of Laos
+country_event = {
+    id = annex.4
+    title = annex.4.t
+    desc = annex.4.d
+
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            FIC = {
+                remove_state_core = 959
+                remove_state_core = 960
+                remove_state_core = 670
+            }
+            LAO = {
+                add_state_core = 959
+                add_state_core = 960
+                add_state_core = 670
+            }
+        }
+    }
+
+    option = {
+        name = annex.4.a
+
+        release = LAO
+        if = {
+            limit = { has_dlc = "Together for Victory" }
+            set_autonomy = {
+                target = LAO
+                autonomy_state = SP_sponsored_state
+            }
+        }
+        if = {
+            limit = {
+                NOT = { has_dlc = "Together for Victory" }
+            }
+            puppet = LAO
+        }
+    }
+
+    option = {
+        name = annex.4.b
+
+        release = LAO
+        add_political_power = 50
+    }
+}
+
+# Annexation of Malaya
+country_event = {
+    id = annex.5
+    title = annex.5.t
+    desc = annex.5.d
+
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            MAL = {
+                add_state_core = 819
+                add_state_core = 820
+                add_state_core = 821
+                add_state_core = 336
+                add_state_core = 333
+                add_state_core = 944
+            }
+        }
+    }
+
+    option = {
+        name = annex.5.a
+
+        release = MAL
+            if = { 
+                limit = { has_dlc = "Together for Victory" } 
+                set_autonomy = {
+                    target = MAL
+                    autonomy_state = SP_sponsored_state
+                }
+            }
+            if = {
+                limit = { NOT = { has_dlc = "Together for Victory" } }
+                puppet = MAL
+            }
+    }
+
+    option = {
+        name = annex.5.b
+
+        release = MAL
+        add_political_power = 50
+    }
+}
+
+# Annexation of Vietnam
+country_event = {
+    id = annex.6
+    title = annex.6.t
+    desc = annex.6.d
+
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            FIC = {
+                remove_state_core = 286
+                remove_state_core = 961
+                remove_state_core = 671
+                remove_state_core = 958
+                remove_state_core = 1009
+            }
+            VIN = {
+                add_state_core = 286
+                add_state_core = 961
+                add_state_core = 671
+                add_state_core = 958
+                add_state_core = 1009
+            }
+        }
+    }
+
+    option = {
+        name = annex.6.a
+
+        release = VIN
+        if = { 
+            limit = { has_dlc = "Together for Victory" } 
+            set_autonomy = {
+                target = VIN
+                autonomy_state = SP_sponsored_state
+            }
+        }
+        if = {
+            limit = { 
+                NOT = { has_dlc = "Together for Victory" }
+            }
+            puppet = VIN
+        }
+    }
+
+    option = {
+        name = annex.6.b
+
+        release = VIN
+        add_political_power = 50
+    }
+}
+
+# Annexation of Siam
+country_event = {
+    id = annex.7
+    title = annex.7.t
+    desc = annex.7.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = annex.7.a
+
+        release = SIA
+        if = { 
+            limit = { has_dlc = "Together for Victory" } 
+            set_autonomy = {
+                target = SIA
+                autonomy_state = autonomy_colony
+            }
+        }
+        if = {
+            limit = { NOT = { has_dlc = "Together for Victory" } }
+            puppet = SIA
+        }
+    }
+}
+
+# Annexation of Japan
+country_event = {
+    id = annex.8
+    title = annex.8.t
+    desc = annex.8.d
+    
+    is_triggered_only = yes
+
+    option = {
+        name = annex.8.a
+
+        release = JAP
+        if = {
+            limit = { has_dlc = "Together for Victory" }
+            set_autonomy = {
+                autonomy_state = autonomy_colony
+                target = JAP
+            }
+        }
+        if = {
+            limit = {
+                NOT = { has_dlc = "Together for Victory" }
+            }
+            puppet = JAP
+        }
+        hidden_effect = {
+            JAP = {
+                load_focus_tree = generic_focus
+
+                set_politics = {
+                    ruling_party = authoritarian_democrat
+                    elections_allowed = no
+                }
+                set_party_name = {
+                    ideology = authoritarian_democrat
+                    long_name = PHI_authoritarian_democrat_post_war_long
+                    name = PHI_authoritarian_democrat_post_war
+                }
+            }
+        }
+    }
+}
+
+# Annexation of Korea
+country_event = {
+    id = annex.9
+    title = annex.9.t
+    desc = annex.9.d
+
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            KOR = {
+                add_state_core = 525
+                add_state_core = 829
+                add_state_core = 828
+                add_state_core = 827
+                add_state_core = 527
+                add_state_core = 830
+                add_state_core = 832
+            }
+        }
+    }
+
+    option = {
+        name = annex.9.a
+
+        release = KOR
+        if = {
+            limit = { has_dlc = "Together for Victory" }
+            set_autonomy = {
+                autonomy_state = autonomy_colony
+                target = KOR
+            }
+        }
+        if = {
+            limit = {
+                NOT = { has_dlc = "Together for Victory" }
+            }
+            puppet = KOR
+        }
+        hidden_effect = {
+            KOR = {
+                load_focus_tree = generic_focus
+
+                set_politics = {
+                    ruling_party = authoritarian_democrat
+                    elections_allowed = no
+                }
+                set_party_name = {
+                    ideology = authoritarian_democrat
+                    long_name = PHI_authoritarian_democrat_post_war_long
+                    name = PHI_authoritarian_democrat_post_war
+                }
+            }
+        }
+    }
+}
+
+# Annexation of the Philippines
+country_event = {
+    id = annex.10
+    title = annex.10.t
+    desc = annex.10.d
+    
+    is_triggered_only = yes
+
+    option = {
+        name = annex.10.a
+        trigger = {
+            tag = USA
+        }
+
+        release = PHI
+        if = {
+            limit = { has_dlc = "Together for Victory" }
+            set_autonomy = {
+                autonomy_state = autonomy_colony
+                target = PHI
+            }
+        }
+        if = {
+            limit = {
+                NOT = { has_dlc = "Together for Victory" }
+            }
+            puppet = PHI
+        }
+        PHI = { 
+            set_cosmetic_tag = PHI_USA
+            hidden_effect = {
+                create_country_leader = {
+                    name = "Douglas MacArthur"
+                    desc = "POLITICS_DOUGLAS_MACARTHUR_DESC"
+                    picture = "gfx/leaders/USA/Portrait_USA_Douglas_MacArthur.dds"
+                    expire = "1964.2.6"
+                    ideology = vanguardist_subtype
+                    traits = { }
+                }
+                create_country_leader = {
+                    name = "Douglas MacArthur"
+                    desc = "POLITICS_DOUGLAS_MACARTHUR_DESC"
+                    picture = "gfx/leaders/USA/Portrait_USA_Douglas_MacArthur.dds"
+                    expire = "1964.2.6"
+                    ideology = collectivist_subtype
+                    traits = { }
+                }
+                create_country_leader = {
+                    name = "Douglas MacArthur"
+                    desc = "POLITICS_DOUGLAS_MACARTHUR_DESC"
+                    picture = "gfx/leaders/USA/Portrait_USA_Douglas_MacArthur.dds"
+                    expire = "1964.2.6"
+                    ideology = libertarian_socialist_subtype
+                    traits = { }
+                }
+                create_country_leader = {
+                    name = "Douglas MacArthur"
+                    desc = "POLITICS_DOUGLAS_MACARTHUR_DESC"
+                    picture = "gfx/leaders/USA/Portrait_USA_Douglas_MacArthur.dds"
+                    expire = "1964.2.6"
+                    ideology = social_democrat_subtype
+                    traits = { }
+                }
+                create_country_leader = {
+                    name = "Douglas MacArthur"
+                    desc = "POLITICS_DOUGLAS_MACARTHUR_DESC"
+                    picture = "gfx/leaders/USA/Portrait_USA_Douglas_MacArthur.dds"
+                    expire = "1964.2.6"
+                    ideology = social_liberal_subtype
+                    traits = { }
+                }
+                create_country_leader = {
+                    name = "Douglas MacArthur"
+                    desc = "POLITICS_DOUGLAS_MACARTHUR_DESC"
+                    picture = "gfx/leaders/USA/Portrait_USA_Douglas_MacArthur.dds"
+                    expire = "1964.2.6"
+                    ideology = market_liberal_subtype
+                    traits = { }
+                }
+                create_country_leader = {
+                    name = "Douglas MacArthur"
+                    desc = "POLITICS_DOUGLAS_MACARTHUR_DESC"
+                    picture = "gfx/leaders/USA/Portrait_USA_Douglas_MacArthur.dds"
+                    expire = "1964.2.6"
+                    ideology = social_conservative_subtype
+                    traits = { }
+                }
+                create_country_leader = {
+                    name = "Douglas MacArthur"
+                    desc = "POLITICS_DOUGLAS_MACARTHUR_DESC"
+                    picture = "gfx/leaders/USA/Portrait_USA_Douglas_MacArthur.dds"
+                    expire = "1964.2.6"
+                    ideology = authoritarian_democrat_subtype
+                    traits = { }
+                }
+                create_country_leader = {
+                    name = "Douglas MacArthur"
+                    desc = "POLITICS_DOUGLAS_MACARTHUR_DESC"
+                    picture = "gfx/leaders/USA/Portrait_USA_Douglas_MacArthur.dds"
+                    expire = "1964.2.6"
+                    ideology = paternal_autocrat_subtype
+                    traits = { }
+                }
+                create_country_leader = {
+                    name = "Douglas MacArthur"
+                    desc = "POLITICS_DOUGLAS_MACARTHUR_DESC"
+                    picture = "gfx/leaders/USA/Portrait_USA_Douglas_MacArthur.dds"
+                    expire = "1964.2.6"
+                    ideology = national_populist_subtype
+                    traits = { }
+                }
+                create_country_leader = {
+                    name = "Douglas MacArthur"
+                    desc = "POLITICS_DOUGLAS_MACARTHUR_DESC"
+                    picture = "gfx/leaders/USA/Portrait_USA_Douglas_MacArthur.dds"
+                    expire = "1964.2.6"
+                    ideology = valkist_subtype
+                    traits = { }
+                }
+            }
+        }
+    }
+
+    option = {
+        name = annex.10.b
+        trigger = {
+            tag = ENG
+        }
+
+        release = PHI
+        if = {
+            limit = { has_dlc = "Together for Victory" }
+            set_autonomy = {
+                autonomy_state = SP_sponsored_state
+                target = PHI
+            }
+        }
+        if = {
+            limit = {
+                NOT = { has_dlc = "Together for Victory" }
+            }
+            puppet = PHI
+        }
+        PHI = { set_cosmetic_tag = PHI_ENG }
+    }
+
+    option = {
+        name = annex.10.c
+        trigger = {
+            OR = {
+                NOT = {
+                    tag = USA
+                    tag = ENG
+                }
+            }
+        }
+
+        release = PHI
+        if = {
+            limit = { has_dlc = "Together for Victory" }
+            set_autonomy = {
+                autonomy_state = autonomy_colony
+                target = PHI
+            }
+        }
+        if = {
+            limit = {
+                NOT = { has_dlc = "Together for Victory" }
+            }
+            puppet = PHI
+        }
+    }
+}
+
+# Sabah
+country_event = {
+    id = annex.11
+    title = annex.11.t
+    desc = annex.11.d
+    
+    is_triggered_only = yes
+
+    option = {
+        name = annex.11.a
+        trigger = {
+            tag = PHI
+        }
+
+        PHI = { add_state_core = 785 }
+    }
+
+    option = {
+        name = annex.11.b
+
+        SBH = { 
+            add_state_core = 785
+            transfer_state = 785
+        }
+
+        if = {
+            limit = { has_dlc = "Together for Victory" }
+            set_autonomy = {
+                target = SBH
+                autonomy_state = SP_autonomous_region
+            }
+        }
+        if = {
+            limit = {
+                NOT = { has_dlc = "Together for Victory" }
+            }
+            puppet = SBH
+        }
+
+        hidden_effect = {
+            SBH = {
+                load_oob = SBH_1936
+                set_politics = {
+                    ruling_party = authoritarian_democrat
+                    elections_allowed = no
+                }
+                set_popularities = {
+                    vanguardist = 2
+                    collectivist = 2
+                    libertarian_socialist = 6
+                    social_democrat = 16
+                    social_liberal = 14
+                    market_liberal = 20
+                    social_conservative = 11
+                    authoritarian_democrat = 29
+                }
+            }
+        }
+    }
+
+    option = {
+        name = annex.11.c
+
+        trigger = {
+            NOT = { tag = PHI }
+        }
+
+        PHI = {
+            transfer_state = 785
+            add_state_core = 785
+        }
+        INS = {
+            remove_state_core = 785
+            add_state_claim = 785
+        }
+    }
+
+    option = {
+        name = annex.11.e
+
+        trigger = {
+            NOT = { tag = INS }
+        }
+
+        INS = {
+            transfer_state = 785
+            add_state_core = 785
+        }
+        PHI = {
+            remove_state_core = 785
+            add_state_claim = 785
+        }
+    }
+}

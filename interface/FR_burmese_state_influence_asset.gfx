@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_shan_state_influence"
+		texturefile = "gfx/interface/decisions/Shan Icon.tga"
+	}
+	spriteType = {
+		name = "GFX_mon_state_influence"
+		texturefile = "gfx/interface/decisions/Hanthawaddy.dds"
+	}
+}

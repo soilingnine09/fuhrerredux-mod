@@ -1,0 +1,332 @@
+﻿capital = 202 #Kiev
+
+oob = "UKR_1936"
+
+set_research_slots = 3
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	paratroopers = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1  # PLACEHOLDER
+	#basic_heavy_tank = 1  # PLACEHOLDER
+	#basic_medium_tank = 1 # PLACEHOLDER
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	strategic_bomber1 = 1
+	naval_bomber1 = 1
+	fuel_silos = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		mtg_transport = 1
+	}
+}
+
+set_convoys = 25
+set_stability = 0.56
+set_war_support = 0.20
+
+
+add_ideas = {
+	party_pop_0_30
+	UKR_famine_spook
+	UKR_language_problem
+	GEN_HOG_Sde
+	GEN_FOR_Sde
+	GEN_ECO_Sde
+	GEN_SEC_Sde
+	parliamentary_republic
+}
+
+set_politics = {	
+	ruling_party = social_democrat
+	last_election = "1935.9.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    vanguardist = 0
+    collectivist = 3
+    libertarian_socialist = 2
+    social_democrat = 38
+    social_liberal = 0
+    market_liberal = 31
+    social_conservative = 0
+    authoritarian_democrat = 0
+    paternal_autocrat = 4
+    national_populist = 22
+    valkist = 0
+}
+
+create_country_leader = {
+	name = "The Central Committee"
+	desc = ""
+	picture = "Portrait_UKR_central_committee.dds"
+	expire = "1953.3.1"
+	ideology = vanguardist_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "The Central Committee"
+	desc = ""
+	picture = "Portrait_UKR_central_committee.dds"
+	expire = "1953.3.1"
+	ideology = collectivist_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "The Central Committee"
+	desc = ""
+	picture = "Portrait_UKR_central_committee.dds"
+	expire = "1953.3.1"
+	ideology = libertarian_socialist_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Andriy Livytskyi"
+	desc = ""
+	picture = "Portrait_UKR_andriy_livytskyi.tga"
+	expire = "1953.3.1"
+	ideology = social_democrat_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Serhij Jefremov"
+	desc = ""
+	picture = "Portrait_UKR_serhij_kefremov.dds"
+	expire = "1953.3.1"
+	ideology = social_liberal_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Serhiy Ostapenko"
+	desc = ""
+	picture = "Portrait_UKR_serhiy_ostapenko.dds"
+	expire = "1953.3.1"
+	ideology = market_liberal_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Oleksander Shulhyn"
+	desc = ""
+	picture = "Portrait_UKR_oleksander_shulhyn.dds"
+	expire = "1953.3.1"
+	ideology = social_conservative_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Pavlo Skoropadskyi"
+	desc = ""
+	picture = "Portrait_UKR_pavlo_skoropadskyi.dds"
+	expire = "1953.3.1"
+	ideology = authoritarian_democrat_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Ivan Chernyakhovsky"
+	desc = ""
+	picture = "Portrait_UKR_ivan_chernyakhovsky.dds"
+	expire = "1953.3.1"
+	ideology = paternal_autocrat_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Dmitri Dontsov"
+	desc = ""
+	picture = "Portrait_UKR_dmitri_dontsov.dds"
+	expire = "1953.3.1"
+	ideology = national_populist_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Volodymyr Shayan"
+	desc = ""
+	picture = "Portrait_UKR_volodymyr_shayan.dds"
+	expire = "1953.3.1"
+	ideology = valkist_subtype
+	traits = {
+		
+	}
+}
+
+create_field_marshal = {
+	name = "Semen Goruk"
+	portrait_path = "gfx/leaders/UKR/Semen_Goruk.tga"
+	traits = { war_hero armor_officer fortress_buster }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Mykola Kapustiansky"
+	portrait_path = "gfx/leaders/UKR/Mykola_Kapustiansky.tga"
+	traits = { defensive_doctrine infantry_officer  }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Arnold Wolf"
+	portrait_path = "gfx/leaders/UKR/Arnold_Wolf.tga"
+	traits = { harsh_leader old_guard winter_specialist }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Vasyl Dmytrovych Bilinchak"
+	portrait_path = "gfx/leaders/UKR/Vasyl_Dmytrovych_Bilinchak.tga"
+	traits = { trickster trait_engineer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Dmytro Bilinchuck"
+	portrait_path = "gfx/leaders/UKR/Dmytro_Bilinchuck.tga"
+	traits = { trait_mountaineer }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Dmytro Vitivsky"
+	portrait_path = "gfx/leaders/UKR/Dmytro_Vitivsky.tga"
+	traits = { trait_cautious armor_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Osyp Bukszovanyj"
+	portrait_path = "gfx/leaders/UKR/Osyp_Bukszovanyj.tga"
+	traits = { commando }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Ivan Kedulich"
+	portrait_path = "gfx/leaders/UKR/Ivan_Kedulich.tga"
+	traits = { career_officer }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Sergii Sydorenko"
+	portrait_path = "gfx/leaders/UKR/Sergii_Sydorenko.tga"
+	traits = { politically_connected }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Svatoslav Shramenko"
+	portrait_path = "gfx/leaders/UKR/Svatoslav_Shramenko.tga"
+	traits = {  }
+	skill = 4
+}
+
+create_navy_leader = {
+	name = "Volodimir Savchenco-Bilinskii"
+	portrait_path = "gfx/leaders/UKR/Volodimir_Savchenco-Bilinskii.tga"
+	traits = { old_guard_navy }
+	skill = 4
+}

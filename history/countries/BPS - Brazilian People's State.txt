@@ -1,0 +1,194 @@
+﻿capital = 500
+
+
+oob = "BRA_1936"
+set_research_slots = 3
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	gwtank = 1
+	early_fighter = 1
+	CAS1 = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_battleship = 1
+	transport = 1
+	fuel_silos = 1
+}
+
+add_ideas = {
+	party_pop_0_40
+	GEN_HOG_Pau
+	GEN_FOR_Pau
+	GEN_ECO_Pau
+	GEN_SEC_Pau
+	one_party_dictatorship
+}
+
+set_politics = {	
+	ruling_party = paternal_autocrat
+	last_election = "1934.7.17"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    social_conservative = 5
+    market_liberal = 7
+    national_populist = 10
+    valkist = 19
+    paternal_autocrat = 42
+    collectivist = 6
+    libertarian_socialist = 6
+    authoritarian_democrat = 5
+}
+
+create_country_leader = {
+	name = "Plinio Correa"
+	desc = "POLITICS_GETULIO_VARGAS_DESC"
+	picture = "PlinioCorrea.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Gustavo Dodt Barroso"
+	desc = "POLITICS_GETULIO_VARGAS_DESC"
+	picture = "GustavoBarroso.dds"
+	expire = "1965.1.1"
+	ideology = valkist_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Getulio Vargas"
+	desc = "POLITICS_GETULIO_VARGAS_DESC"
+	picture = "Vargas.dds"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Plínio Salgado"
+	desc = "POLITICS_PLINIO_SALGADO_DESC"
+	picture = "Portrait_Brazil_Plinio_Salgado.dds"
+	expire = "1965.1.1"
+	ideology = national_populist_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Luís Carlos Prestes"
+	desc = "POLITICS_LUIS_CARLOS_PRESTES_DESC"
+	picture = "Luis_Prestes.tga"
+	expire = "1965.1.1"
+	ideology = collectivist_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Armando Salles"
+	desc = "POLITICS_ARMANDO_SALES_DESC"
+	picture = "ArmandoSalles.tga"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = {
+		#
+	}
+}
+
+set_convoys = 40
+set_stability = 0.60
+set_war_support = 0.90
+
+
+
+create_field_marshal = {
+	name = "Pedro Aurélio de Góis Monteiro"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_navy_3.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Plínio Tourinho"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
+	traits = {  jungle_rat }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_navy_leader = {
+	name = "Augusto Rademaker"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_navy_3.dds"
+	traits = {  }
+	skill = 3
+}
+create_navy_leader = {
+	name = "João Cândido"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_navy_3.dds"
+	traits = {  }
+	skill = 3
+}
+
+
+
+
+
+
+
+
+create_country_leader = {
+	name = "Durans Doyle"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = vanguardist_subtype
+}
+
+create_country_leader = {
+	name = "Nethaneel Idowu"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = libertarian_socialist_subtype
+}
+
+create_country_leader = {
+	name = "Arne Narang"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = social_democrat_subtype
+}
+
+create_country_leader = {
+	name = "Firuz Kohout"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+}
+
+create_country_leader = {
+	name = "Oved Elwes"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+}

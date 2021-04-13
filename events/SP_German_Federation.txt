@@ -1,0 +1,257 @@
+﻿add_namespace = deu
+
+# Trials
+country_event = {
+    id = deu.1
+    title = deu.1.t
+    desc = deu.1.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = deu.1.a
+
+        add_stability = 0.05
+        add_war_support = 0.02
+    }
+}
+
+# Trial of the Officers
+country_event = {
+    id = deu.2
+    title = deu.2.t
+    desc = deu.2.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = deu.2.a
+
+        add_stability = 0.05
+        remove_ideas = DEU_imprisoned_officers
+    }
+
+    option = {
+        name = deu.2.b
+
+        add_war_support = 0.05
+        remove_ideas = DEU_imprisoned_officers
+
+        create_corps_commander = {
+            name = "Heinz Guderian"
+            picture = "Portrait_Germany_Heinz_Guderian_kr.tga"
+            traits = { trickster brilliant_strategist panzer_leader armor_officer career_officer }
+            skill = 4
+            attack_skill = 3
+            defense_skill = 3
+            planning_skill = 4
+            logistics_skill = 3
+        }
+
+        create_corps_commander = {
+            name = "Werner von Blomberg"
+            picture = "Portrait_Germany_Werner_von_Blomberg.tga"
+            traits = { trickster armor_officer career_officer }
+            skill = 3
+            attack_skill = 3
+            defense_skill = 2
+            planning_skill = 3
+            logistics_skill = 2
+        }
+
+        create_corps_commander = {
+            name = "Erwin von Witzleben"
+            picture = "Portrait_Germany_Erwin_von_Witzleben_kr.tga"
+            traits = { skilled_staffer career_officer }
+            skill = 3
+            attack_skill = 2
+            defense_skill = 3
+            planning_skill = 2
+            logistics_skill = 3
+        }
+
+        create_corps_commander = {
+            name = "Wilhelm Ritter von Leeb"
+            picture = "Portrait_Germany_Wilhelm_Ritter_von_Leeb_kr.tga"
+            traits = { skilled_staffer infantry_officer }
+            skill = 3
+            attack_skill = 2
+            defense_skill = 3
+            planning_skill = 3
+            logistics_skill = 2
+        }
+    }
+}
+
+# Trial of the Entrepreneurs
+country_event = {
+    id = deu.3
+    title = deu.3.t
+    desc = deu.3.d
+
+    is_triggered_only = yes 
+
+    option = {
+        name = deu.3.a
+
+        add_stability = 0.05
+        remove_ideas = DEU_valkist_economy
+    }
+
+    option = {
+        name = deu.3.b
+
+        add_political_power = -100
+        remove_ideas = DEU_valkist_economy
+    }
+}
+
+# Trial of the Government
+country_event = {
+    id = deu.4
+    title = deu.4.t
+    desc = deu.4.d
+    
+    is_triggered_only = yes
+
+    option = {
+        name = deu.4.a
+
+        add_stability = 0.05
+        remove_ideas = DEU_valkist_bureaucracy
+    }
+
+    option = {
+        name = deu.4.b
+
+        add_political_power = -100
+        remove_ideas = DEU_valkist_bureaucracy
+    }
+}
+
+# Trial of the Media
+country_event = {
+    id = deu.5
+    title = deu.5.t
+    desc = deu.5.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = deu.5.a
+
+        remove_ideas = DEU_valkist_society
+        add_stability = 0.05
+    }
+
+    option = {
+        name = deu.5.b
+
+        add_political_power = -100
+    }
+}
+
+# Elections!
+country_event = {
+    id = deu.6
+    title = deu.6.t
+    desc = deu.6.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = deu.6.a
+
+        hidden_effect = {
+            set_country_flag = DEU_SDP_VICTORY
+        }
+        set_politics = {
+            ruling_party = social_democrat
+            elections_allowed = no
+        }
+
+        add_popularity = {
+            ideology = social_democrat
+            popularity = 0.15
+        }
+    }
+
+    option = {
+        name = deu.6.b
+
+        hidden_effect = {
+            set_country_flag = DEU_DDP_VICTORY
+        }
+        set_politics = {
+            ruling_party = social_liberal
+            elections_allowed = no
+        }
+
+        add_popularity = {
+            ideology = social_liberal
+            popularity = 0.15
+        }
+    }
+
+    option = {
+        name = deu.6.c
+
+        hidden_effect = {
+            set_country_flag = DEU_ZENTRUM_VICTORY
+        }
+        set_politics = {
+            ruling_party = social_conservative
+            elections_allowed = no
+        }
+
+        add_popularity = {
+            ideology = social_conservative
+            popularity = 0.15
+        }
+    }
+}
+
+# Invitations
+country_event = {
+    id = deu.7
+    title = deu.7.t
+    desc = deu.7.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = deu.7.a
+        set_country_flag = DEU_ACCEPTED_INVITE
+        DEU = { country_event = { id = deu.8 days = 1 } }
+    }
+
+    option = {
+        name = deu.7.b
+        add_political_power = -150
+        DEU = { country_event = { id = deu.9 days = 1 } }
+    }
+}
+
+country_event = {
+    id = deu.8
+    title = deu.8.t
+    desc = deu.8.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = deu.8.a
+    }
+}
+
+country_event = {
+    id = deu.9
+    title = deu.9.t
+    desc = deu.9.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = deu.9.a
+    }
+}

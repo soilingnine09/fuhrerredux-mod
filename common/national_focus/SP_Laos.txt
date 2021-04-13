@@ -1,0 +1,819 @@
+focus_tree = {
+    id = SP_Laos
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = LAO
+        }
+    }
+
+    #############################################
+    #                                           #
+    #                  MILITARY                 #
+    #                                           #
+    #############################################
+
+    # The Armed Forces
+    focus = {
+        id = LAO_the_armed_forces
+        icon = GFX_focus_RAJ_indian_gentlemen_offcers   
+        x = 6
+        y = 0
+        cost = 5
+        completion_reward = {
+            army_experience = 5
+            navy_experience = 5
+            air_experience = 5
+        }
+    }
+
+    # Army
+    focus = {
+        id = LAO_army_focus
+        icon = GFX_goal_generic_allies_build_infantry
+        x = 3
+        y = 1
+        cost = 3
+        prerequisite = { focus = LAO_the_armed_forces }
+        completion_reward = {
+            army_experience = 10
+        }
+    }
+
+    # Fortify the Borders
+    focus = {
+        id = LAO_fortify_the_borders
+        icon = GFX_goal_fortify_the_westwall
+        x = 1
+        y = 2
+        cost = 10
+        prerequisite = { focus = LAO_army_focus }
+        completion_reward = {
+            960 = {
+                add_building_construction = {
+                    province = 4568
+                    type = bunker
+                    level = 5
+                }
+                add_building_construction = {
+                    province = 12433
+                    type = bunker
+                    level = 5
+                }
+                add_building_construction = {
+                    province = 12392
+                    type = bunker
+                    level = 5
+                }
+                add_building_construction = {
+                    province = 7103
+                    type = bunker
+                    level = 5
+                }
+                add_building_construction = {
+                    province = 1507
+                    type = bunker
+                    level = 5
+                }
+            }
+            959 = {
+                add_building_construction = {
+                    province = 10456
+                    type = bunker
+                    level = 5
+                }
+                add_building_construction = {
+                    province = 10330
+                    type = bunker
+                    level = 5
+                }
+                add_building_construction = {
+                    province = 10356
+                    type = bunker
+                    level = 5
+                }
+            }
+            670 = {
+                add_building_construction = {
+                    province = 1464
+                    type = bunker
+                    level = 5
+                }
+                add_building_construction = {
+                    province = 12332
+                    type = bunker
+                    level = 5
+                }
+            }
+        }
+    }
+
+    # Army Motorization
+    focus = {
+        id = LAO_army_motorization
+        icon = GFX_goal_generic_army_motorized
+        x = 3
+        y = 2
+        cost = 10
+        prerequisite = { focus = LAO_army_focus }
+        completion_reward = {
+            add_tech_bonus = {
+                category = motorized_equipment
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Firepower
+    focus = {
+        id = LAO_firepower_focus
+        icon = GFX_goal_generic_army_artillery
+        x = 1
+        y = 3
+        cost = 10
+        mutually_exclusive = { focus = LAO_speed_focus }
+        prerequisite = { focus = LAO_army_motorization }
+        completion_reward = {
+            add_tech_bonus = {
+                category = cat_superior_firepower
+                bonus = 1.0
+                uses = 2
+            }
+        }
+    }
+
+    # Equipment Standardization
+    focus = {
+        id = LAO_equipment_standardization
+        icon = GFX_goal_generic_small_arms
+        x = 1
+        y = 4
+        cost = 5
+        prerequisite = { focus = LAO_firepower_focus }
+        completion_reward = {
+            add_tech_bonus = {
+                category = infantry_weapons
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Artillery Modernization
+    focus = {
+        id = LAO_artillery_modernization
+        icon = GFX_goal_generic_army_artillery2
+        x = 1
+        y = 5
+        cost = 5
+        prerequisite = { focus = LAO_equipment_standardization }
+        completion_reward = {
+            add_tech_bonus = {
+                category = artillery
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Speed
+    focus = {
+        id = LAO_speed_focus
+        icon = GFX_goal_generic_cavalry
+        x = 3
+        y = 3
+        cost = 10
+        mutually_exclusive = { focus = LAO_firepower_focus }
+        prerequisite = { focus = LAO_army_focus }
+        completion_reward = {
+            add_tech_bonus = {
+                category = cat_mobile_warfare
+                bonus = 1.0
+                uses = 2
+            }
+        }
+    }
+
+    # Improved Reconnaissance
+    focus = {
+        id = LAO_improved_reconnaissance
+        icon = GFX_goal_generic_more_territorial_claims
+        x = 3
+        y = 4
+        cost = 5
+        prerequisite = { focus = LAO_speed_focus }
+        completion_reward = {
+            add_tech_bonus = {
+                category = recon_tech
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Tank Experimentation
+    focus = {
+        id = LAO_tank_experimentation
+        icon = GFX_goal_generic_army_tanks
+        x = 3
+        y = 5
+        cost = 5
+        prerequisite = { focus = LAO_improved_reconnaissance }
+        completion_reward = {
+            add_tech_bonus = {
+                category = armor
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # New Tactics
+    focus = {
+        id = LAO_new_tactics
+        icon = GFX_goal_generic_army_doctrines
+        x = 0
+        y = 6
+        cost = 10
+        prerequisite = { focus = LAO_artillery_modernization }
+        completion_reward = {
+            add_tech_bonus = {
+                category = cat_superior_firepower
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Organize the General Staff
+    focus = {
+        id = LAO_organize_the_general_staff
+        icon = GFX_focus_generic_little_entente
+        x = 2
+        y = 6
+        cost = 10
+        prerequisite = {
+            focus = LAO_tank_experimentation
+            focus = LAO_artillery_modernization
+        }
+        completion_reward = {
+            add_ideas = LAO_general_staff
+        }
+    }
+
+    # Lightning War
+    focus = {
+        id = LAO_lightning_war
+        icon = GFX_goal_planning_bonus
+        x = 4
+        y = 6
+        cost = 10
+        prerequisite = {
+            focus = LAO_tank_exprimentation
+        }
+        completion_reward = {
+            add_tech_bonus = {
+                category = cat_mobile_warfare
+                bonus = 1.0
+                uses = 2
+            }
+        }
+    }
+
+    # Navy
+    focus = {
+        id = LAO_navy_focus
+        icon = GFX_goal_generic_build_navy
+        x = 6
+        y = 1
+        cost = 3
+        prerequisite = { focus = LAO_the_armed_forces }
+        completion_reward = {
+            navy_experience = 10
+        }
+    }
+
+    # Marines
+    focus = {
+        id = LAO_marines_focus
+        icon = GFX_goal_generic_amphibious_assault
+        x = 5
+        y = 3
+        cost = 10
+        prerequisite = { focus = LAO_navy_focus }
+        prerequisite = { focus = LAO_army_motorization }
+        completion_reward = {
+            add_tech_bonus = {
+                category = marine_tech
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Naval Bombers
+    focus = {
+        id = LAO_naval_bombers_research
+        icon = GFX_goal_generic_air_naval_bomber
+        x = 7
+        y = 3
+        cost = 10
+        prerequisite = { focus = LAO_navy_focus }
+        prerequisite = { focus = LAO_fighter_research }
+        completion_reward = {
+            add_tech_bonus = {
+                category = naval_bomber
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Air Force
+    focus = {
+        id = LAO_air_force_focus
+        icon = GFX_goal_generic_build_airforce
+        x = 9
+        y = 1
+        cost = 3
+        prerequisite = { focus = LAO_the_armed_forces }
+        completion_reward = {
+            air_experience = 10
+        }
+    }
+
+    # Fighter Research
+    focus = {
+        id = LAO_fighter_research
+        icon = GFX_goal_generic_air_fighter
+        x = 9
+        y = 2
+        cost = 10
+        prerequisite = { focus = LAO_air_force_focus }
+        completion_reward = {
+            add_tech_bonus = {
+                category = light_fighter
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # CAS Research
+    focus = {
+        id = LAO_cas_research
+        icon = GFX_goal_generic_CAS
+        x = 9
+        y = 3
+        cost = 10
+        prerequisite = { focus = LAO_fighter_research }
+        completion_reward = {
+            add_tech_bonus = {
+                category = cas_bomber
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Bomber Research
+    focus = {
+        id = LAO_bomber_research
+        icon = GFX_goal_generic_air_bomber
+        x = 11
+        y = 2
+        cost = 10
+        prerequisite = { focus = LAO_air_force_focus }
+        completion_reward = {
+            add_tech_bonus = {
+                category = tactical_bomber
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Strategic Bomber Research
+    focus = {
+        id = LAO_strategic_bomber_research
+        icon = GFX_goal_generic_occupy_start_war
+        x = 11
+        y = 3
+        cost = 10
+        prerequisite = { focus = LAO_bomber_research }
+        completion_reward = {
+            add_tech_bonus = {
+                category = cat_strategic_bomber
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Air to Ground Doctrines
+    focus = {
+        id = LAO_air_to_ground_doctrines
+        icon = GFX_goal_generic_air_doctrine
+        x = 10
+        y = 4
+        cost = 10
+        prerequisite = { focus = LAO_cas_research }
+        prerequisite = { focus = LAO_strategic_bomber_research }
+        completion_reward = {
+            add_tech_bonus = {
+                category = air_doctrine
+                bonus = 1.0
+                uses = 2
+            }
+        }
+    }
+
+    # Rocketry Investments
+    focus = {
+        id = LAO_rocketry_investments
+        icon = GFX_focus_rocketry
+        x = 10
+        y = 5
+        cost = 10
+        prerequisite = { focus = LAO_air_to_ground_doctrines }
+        completion_reward = {
+            add_tech_bonus = {
+                category = rocketry
+                bonus = 1.0
+                uses = 2
+            }
+        }
+    }
+
+    #############################################
+    #                                           #
+    #                   INDUSTRY                #
+    #                                           #
+    #############################################
+
+    # Direction of the Economy
+    focus = {
+        id = LAO_direction_of_the_economy
+        icon = GFX_goal_generic_consumer_goods
+        x = 16
+        y = 0
+        cost = 10
+        completion_reward = {
+            add_tech_bonus = {
+                category = INDUSTRY
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Preparation for the Modernization
+    focus = {
+        id = LAO_preparation_for_the_modernization
+        icon = GFX_goal_generic_construction
+        x = 14
+        y = 1
+        cost = 10
+        prerequisite = { focus = LAO_direction_of_the_economy }
+        completion_reward = {
+            add_tech_bonus = {
+                category = electronics
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Housing Programs
+    focus = {
+        id = LAO_housing_programs
+        icon = GFX_focus_usa_guarantee_the_american_dream
+        x = 13
+        y = 2
+        cost = 10
+        prerequisite = { focus = LAO_preparation_for_the_modernization }
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = {
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 2
+                        include_locked = yes
+                    }
+                }
+
+                add_extra_state_shared_building_slots = 2
+            }
+        }
+    }
+
+    # University of Vientiane
+    focus = {
+        id = LAO_university_of_vientiane
+        icon = GFX_focus_research
+        x = 13
+        y = 3
+        cost = 10
+        prerequisite = { focus = LAO_housing_programs }
+        completion_reward = {
+            add_research_slot = 1
+        }
+    }
+
+    # Rail Expansion
+    focus = {
+        id = LAO_rail_expansion
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 15
+        y = 2
+        cost = 10
+        prerequisite = { focus = LAO_preparation_for_the_modernization }
+        completion_reward = {
+            random_owned_controlled_state = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    # Roads and Bridges
+    focus = {
+        id = LAO_roads_and_bridges
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 15
+        y = 3
+        cost = 10
+        prerequisite = { focus = LAO_rail_expansion }
+        completion_reward = {
+            random_owned_controlled_state = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    # Expand our Capabilities
+    focus = {
+        id = LAO_expand_our_capabilities
+        icon = GFX_goal_state_economy
+        x = 18
+        y = 1
+        cost = 10
+        prerequisite = { focus = LAO_direction_of_the_economy }
+        completion_reward = {
+            add_tech_bonus = {
+                technology = construction1
+                technology = construction2
+                technology = construction3
+                technology = construction4
+                technology = construction5
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Expand Current Industries
+    focus = {
+        id = LAO_expand_current_industries
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 17
+        y = 2
+        cost = 10
+        prerequisite = { focus = LAO_expand_our_capabilities }
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = {
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 2
+                        include_locked = yes
+                    }
+                }
+
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    # Construct New Industrial Centers
+    focus = {
+        id = LAO_construct_new_industrial_centers
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 17
+        y = 3
+        cost = 10
+        prerequisite = { focus = LAO_expand_current_industries }
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = {
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 2
+                        include_locked = yes
+                    }
+                }
+
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    # Expand Current Arms Factories
+    focus = {
+        id = LAO_expand_current_arms_factories
+        icon = GFX_goal_generic_construct_mil_factory
+        x = 19
+        y = 2
+        cost = 10
+        prerequisite = { focus = LAO_expand_our_capabilities }
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = {
+                    free_building_slots = {
+                        building = arms_factory
+                        size > 2
+                        include_locked = yes
+                    }
+                }
+
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = arms_factory
+                    level = 2
+                    instant_build = yes
+                }
+            }
+        } 
+    }
+
+    # Construct New Arms Factories
+    focus = {
+        id = LAO_construct_new_arms_factories
+        icon = GFX_goal_generic_construct_mil_factory
+        x = 19
+        y = 3
+        cost = 10
+        prerequisite = { focus = LAO_expand_current_arms_factories }
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = {
+                    free_building_slots = {
+                        building = arms_factory
+                        size > 2
+                        include_locked = yes
+                    }
+                }
+
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = arms_factory
+                    level = 2
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    # New Industrial Equipment
+    focus = {
+        id = LAO_new_industrial_equipment
+        icon = GFX_goal_generic_production2
+        x = 14
+        y = 4
+        cost = 10
+        prerequisite = { focus = LAO_university_of_vientiane }
+        prerequisite = { focus = LAO_roads_and_bridges }
+        prerequisite = { focus = LAO_construct_new_industrial_centers }
+        prerequisite = { focus = LAO_construct_new_arms_factories }
+        completion_reward = {
+            add_tech_bonus = {
+                category = industry
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Prospect for New Resources
+    focus = {
+        id = LAO_prospect_for_new_resources
+        icon = GFX_goal_generic_construction2
+        x = 16
+        y = 4
+        cost = 10
+        prerequisite = { focus = LAO_university_of_vientiane }
+        prerequisite = { focus = LAO_roads_and_bridges }
+        prerequisite = { focus = LAO_construct_new_industrial_centers }
+        prerequisite = { focus = LAO_construct_new_arms_factories }
+        completion_reward = {
+            add_tech_bonus = {
+                technology = excavation1
+                technology = excavation2
+                technology = excavation3
+                technology = excavation4
+                technology = excavation5
+            }
+            random_owned_controlled_state = {
+                limit = { 
+                    has_resources_amount = { resource = steel amount < 10 }
+                }
+
+                add_resource = { type = steel amount = 40 }
+            }
+            random_owned_controlled_state = {
+                limit = { 
+                    has_resources_amount = { resource = rubber amount < 20 }
+                }
+
+                add_resource = { type = rubber amount = 30 }
+            }
+        }
+    }
+
+    # Synthetic Resources
+    focus = {
+        id = LAO_synthetic_resources
+        icon = GFX_goal_generic_oil_refinery
+        x = 18
+        y = 4
+        cost = 10
+        prerequisite = { focus = LAO_university_of_vientiane }
+        prerequisite = { focus = LAO_roads_and_bridges }
+        prerequisite = { focus = LAO_construct_new_industrial_centers }
+        prerequisite = { focus = LAO_construct_new_arms_factories }
+        completion_reward = {
+            add_tech_bonus = {
+                category = synth_resources
+                bonus = 2.0
+                uses = 2
+            }
+            random_owned_controlled_state = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = synthetic_refinery
+							size > 0
+							include_locked = yes
+						}
+					}
+
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 1
+						instant_build = yes
+					}
+				}
+            }
+        }
+    }
+
+    # The Laotian Economy
+    focus = {
+        id = LAO_the_laotian_economy
+        icon = GFX_focus_generic_the_giant_wakes
+        x = 16
+        y = 5
+        cost = 10
+        prerequisite = { focus = LAO_new_industrial_equipment }
+        prerequisite = { focus = LAO_prospect_for_new_resources }
+        prerequisite = { focus = LAO_synthetic_resources }
+        completion_reward = {
+            add_ideas = LAO_economic_stability
+        }
+    }
+
+}

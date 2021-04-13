@@ -1,0 +1,119 @@
+SIA_fate_of_occupation = { 
+	activate_occupation = {
+		allowed = { tag = SIA }
+		available = {
+
+		}
+		visible = {
+			OR = {
+				958 = { is_valid_annexation_state = yes }
+				1022 = { is_valid_annexation_state = yes }
+				336 = { is_valid_annexation_state = yes }
+				335 = { is_valid_annexation_state = yes }
+			}
+		}
+		cost = 0
+		complete_effect = {
+			if = {
+				limit = { controls_state = 958 }
+				activate_mission = Fate_of_Indochina
+			}
+			if = {
+				limit = { controls_state = 1022 }
+				activate_mission = Fate_of_Burma
+			}
+			if = {
+				limit = { controls_state = 336 }
+				activate_mission = Fate_of_Malaysia
+			}
+			if = {
+				limit = { controls_state = 335 }
+				activate_mission = Fate_of_Insulindia
+			}
+		}
+	}
+	Fate_of_Indochina = {
+		allowed = { always = no }
+		icon = generic_form_nation
+		selectable_mission = yes
+		days_mission_timeout = 30
+		is_good = no
+		cost = 0
+		fire_only_once = no
+		cancel_trigger = {
+			958 = { is_valid_annexation_state = no }
+		}
+		complete_effect = {
+			country_event = fateocc.1
+		}
+		timeout_effect = {
+			add_stability = -0.05
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	Fate_of_Burma = {
+		allowed = { always = no }
+		icon = generic_form_nation
+		selectable_mission = yes
+		days_mission_timeout = 30
+		is_good = no
+		cost = 0
+		fire_only_once = no
+		cancel_trigger = {
+			1022 = { is_valid_annexation_state = no }
+		}
+		complete_effect = {
+			country_event = fateocc.2
+		}
+		timeout_effect = {
+			add_stability = -0.05
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	Fate_of_Malaysia = {
+		allowed = { always = no }
+		icon = generic_form_nation
+		selectable_mission = yes
+		days_mission_timeout = 30
+		is_good = no
+		cost = 0
+		fire_only_once = no
+		cancel_trigger = {
+			336 = { is_valid_annexation_state = no }
+		}
+		complete_effect = {
+			country_event = fateocc.3
+		}
+		timeout_effect = {
+			add_stability = -0.05
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	Fate_of_Insulindia = {
+		allowed = { always = no }
+		icon = generic_form_nation
+		selectable_mission = yes
+		days_mission_timeout = 30
+		is_good = no
+		cost = 0
+		fire_only_once = no
+		cancel_trigger = {
+			335 = { is_valid_annexation_state = no }
+		}
+		complete_effect = {
+			country_event = fateocc.4
+		}
+		timeout_effect = {
+			add_stability = -0.05
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}

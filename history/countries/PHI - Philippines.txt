@@ -1,0 +1,404 @@
+﻿capital = 327
+
+oob = "PHI_1936"
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "PHI_1936_naval_mtg"
+	else = { 
+		set_naval_oob = "PHI_1936_naval_legacy"
+	}
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	gw_artillery = 1
+	gwtank = 1
+	early_fighter = 1
+	early_bomber = 1
+	fuel_silos = 1
+}
+
+if = {
+	limit = { NOT = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		transport = 1
+	}
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		basic_battery = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		basic_torpedo = 1
+		mtg_transport = 1
+	}
+}
+
+# 54th Independence Day
+country_event = { id = phi.51 days = 893 }
+
+add_ideas = {
+	PHI_thirst_for_democracy
+	PHI_agriculture_economy
+	PHI_marxist_professors
+
+	PHI_Jose_P_Laurel_HoG_ADE
+	PHI_Ferdinand_Marcos_FOR_SCO
+	PHI_Serafin_Fausto_ECO_SCO
+	PHI_Benigno_Aquino_Sr_SEC_ADE
+	presidential_republic
+}
+
+set_convoys = 25
+set_stability = 0.72
+set_war_support = 0.38
+
+set_politics = {	
+	ruling_party = authoritarian_democrat
+	last_election = "1935.9.15"
+	election_frequency = 72
+	elections_allowed = no
+}
+
+set_popularities = {
+    collectivist = 15
+    libertarian_socialist = 4
+    social_democrat = 8
+    social_liberal = 2
+    market_liberal = 16
+    social_conservative = 25
+    authoritarian_democrat = 30
+}
+create_country_leader = {
+	name = "Luis Taruc"
+	desc = "POLITICS_LUIS_TARUC_DESC"
+	picture = "Portrait_Philippines_Luis_Taruc.tga"
+	expire = "1943.6.2"
+	ideology = vanguardist_subtype
+	traits = { prince_of_terror }
+}
+create_country_leader = {
+	name = "Crisanto Evangelista"
+	desc = "POLITICS_CRISTIANO_EVANGELISTA_DESC"
+	picture = "Portrait_Philippines_Crisanto_Evangelista.tga"
+	expire = "1943.6.2"
+	ideology = collectivist_subtype
+	traits = { reluctant_interventionist }
+}
+create_country_leader = {
+	name = "Crisanto Evangelista"
+	desc = "POLITICS_CRISTIANO_EVANGELISTA_DESC"
+	picture = "Portrait_Philippines_Crisanto_Evangelista.tga"
+	expire = "1943.6.2"
+	ideology = libertarian_socialist_subtype
+	traits = { reluctant_interventionist }
+}
+create_country_leader = {
+	name = "Juan Sumulong"
+	desc = "POLITICS_JUAN_SUMILONG_DESC"
+	picture = "Portrait_Philippines_Juan_Sumulong.tga"
+	expire = "1942.1.9"
+	ideology = social_democrat_subtype
+	traits = { captain_of_industry }
+}
+create_country_leader = {
+	name = "Manuel Roxas"
+	desc = "POLITICS_MANUEL_ROXAS_DESC"
+	picture = "Portrait_Philippines_Manuel_Roxas.tga"
+	expire = "1955.2.1"
+	ideology = social_liberal_subtype
+	traits = { financial_expert }
+}
+create_country_leader = {
+	name = "Manuel Roxas"
+	desc = "POLITICS_MANUEL_ROXAS_DESC"
+	picture = "Portrait_Philippines_Manuel_Roxas.tga"
+	expire = "1955.2.1"
+	ideology = market_liberal_subtype
+	traits = { financial_expert }
+}
+create_country_leader = {
+	name = "Manuel Luis Quezón"
+	desc = "POLITICS_MANUEL_LUIS_QUEZON_DESC"
+	picture = "Portrait_Philippines_Manuel_Luis_Quezon_KR.tga"
+	expire = "1964.2.6"
+	ideology = social_conservative_subtype
+	traits = { war_industrialist }
+}
+create_country_leader = {
+	name = "Jose P. Laurel"
+	desc = "POLITICS_JOSE_P_LAUREL_DESC"
+	picture = "Portrait_Philippines_Jose_P_Laurel.tga"
+	expire = "1970.1.26"
+	ideology = authoritarian_democrat_subtype
+	traits = { the_absentee_president }
+}
+create_country_leader = {
+	name = "Basilio J. Valdez"
+	desc = "POLITICS_BASILIO_J_VALDEZ_DESC"
+	picture = "Portrait_Philippines_Basilio_J_Valdez.tga"
+	expire = "1970.1.26"
+	ideology = paternal_autocrat_subtype
+	traits = { war_industrialist }
+}
+create_country_leader = {
+	name = "Emilio Aguinaldo"
+	desc = "POLITICS_EMILIO_AGUINALDO_DESC"
+	picture = "Portrait_Philippines_Emilio_Aguinaldo.tga"
+	expire = "1964.2.6"
+	ideology = national_populist_subtype
+	traits = { nationalist_symbol }
+}
+create_country_leader = {
+	name = "Jorge B. Vargas"
+	desc = "POLITICS_JORGE_B_VARGAS_DESC"
+	picture = "Portrait_Philippines_Jorge_B_Vargas.tga"
+	expire = "1964.2.6"
+	ideology = valkist_subtype
+	traits = { dictator }
+}
+
+### Field Marshal
+
+create_field_marshal = {
+	name = "Vicente P. Lim"
+	picture = "Portrait_Philippines_Vicente_P_Lim.tga"
+	traits = { career_officer brilliant_strategist infantry_officer trickster }
+	skill = 4
+	attack_skill = 3
+    	defense_skill = 4
+    	planning_skill = 3
+    	logistics_skill = 4
+} 
+create_field_marshal = {
+	name = "Basilio J. Valdez"
+	picture = "Portrait_Philippines_Basilio_J_Valdez.tga"
+	traits = { career_officer media_personality organisational_leader }
+	skill = 3
+	attack_skill = 3
+    defense_skill = 2
+	planning_skill = 3
+    logistics_skill = 2
+}
+
+
+# Corps Commander
+create_corps_commander = {
+	name = "Alfredo M. Santos"
+	picture = "Portrait_Philippines_Alfredo_M_Santos.tga"
+	traits = { trickster trait_engineer hill_fighter skilled_staffer }
+	skill = 2
+	attack_skill = 2
+    defense_skill = 3
+    planning_skill = 3
+    logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Paulino Santos"
+	picture = "Portrait_Philippines_Paulino_Santos.tga"
+	traits = { brilliant_strategist infantry_leader jungle_rat skilled_staffer }
+	skill = 3
+	attack_skill = 3
+    defense_skill = 3
+    planning_skill = 3
+    logistics_skill = 3
+}
+create_corps_commander = { 
+	name = "Mateo Capinpin"
+	picture = "Portrait_Philippines_Mateo_Capinpin.tga"
+	traits = { trait_engineer }
+	skill = 2
+	attack_skill = 2
+    defense_skill = 1
+    planning_skill = 3
+    logistics_skill = 4
+}
+create_corps_commander = {
+	name = "Rafael Jalandoni"
+	picture = "Portrait_Philippines_Rafael_Jalandoni.tga"
+	traits = { war_hero career_officer trait_mountaineer }
+	skill = 2
+	attack_skill = 2
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Manuel F. Cabal"
+	picture = "Portrait_Philippines_Manuel_F_Cabal.tga"
+	traits = { brilliant_strategist trickster }
+	skill = 2
+	attack_skill = 2
+    defense_skill = 1
+    planning_skill = 5
+    logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Carlos P. Romulo"
+	picture = "Portrait_Philippines_Carlos_P_Romulo.tga"
+	traits = { media_personality infantry_officer war_hero skilled_staffer }
+	skill = 1
+	attack_skill = 1
+    defense_skill = 2
+    planning_skill = 1
+    logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Salipada Pendatun"
+	picture = "Portrait_Philippines_Salipada_Pendatun.tga"
+	traits = { armor_officer commando }
+	skill = 2
+	attack_skill = 2
+    defense_skill = 1
+    planning_skill = 2
+    logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Ruperto Kangleon"
+	picture = "Portrait_Philippines_Ruperto_Kangleon.tga"
+	traits = { infantry_officer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+
+create_navy_leader = {
+	name = "Santiago Nuval"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_navy_1.dds"
+	traits = { bold aviation_enthusiast spotter }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 3
+}
+create_navy_leader = {
+	name = "Eustacio Orobia"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_navy_3.dds"
+	traits = { blue_water_expert }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 3
+}
+create_navy_leader = {
+	name = "Jose V. Andrada"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Generic_navy_3.dds"
+	traits = { superior_tactician navy_career_officer gunnery_expert }
+	skill = 2
+	attack_skill = 4
+	defense_skill = 3
+	maneuvering_skill = 5
+	coordination_skill = 3
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	create_equipment_variant = {
+		name = "Clemson Class"
+		type = ship_hull_light_1
+		name_group = PHI_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Omaha Class"
+		type = ship_hull_cruiser_1
+		name_group = PHI_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_light_medium_battery_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "S Class"
+		type = ship_hull_submarine_1
+		name_group = PHI_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_2
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+
+	create_equipment_variant = {
+		name = "Barracuda Class"
+		type = ship_hull_submarine_2
+		name_group = PHI_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+	}
+}
+
+if = {
+	limit = { NOT = { has_dlc = "Man the Guns" } }
+	
+	create_equipment_variant = {
+		name = "Barracuda Class"
+		type = submarine_1
+		parent_version = 1
+		upgrades = {
+			ship_reliability_upgrade = 2
+			sub_engine_upgrade = 2
+			sub_stealth_upgrade = 2
+			sub_torpedo_upgrade = 2
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Clemson Class"
+		type = destroyer_1
+		parent_version = 0
+		upgrades = {
+			ship_torpedo_upgrade = 1
+			destroyer_engine_upgrade = 3
+			ship_ASW_upgrade = 2
+			ship_anti_air_upgrade = 1
+		}
+	}
+}

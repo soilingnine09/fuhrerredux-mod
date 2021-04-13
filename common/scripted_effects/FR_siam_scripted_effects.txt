@@ -1,0 +1,159 @@
+faction_leader_challenge_for_marlib = {
+	random_list = {
+		25 = { country_event = { id = siamchallenge.7 days = 1 } }
+		25 = { country_event = { id = siamchallenge.8 days = 5 } }
+		25 = { country_event = { id = siamchallenge.9 days = 5 } }
+		25 = { country_event = { id = siamchallenge.10 days = 5 } }
+	}
+}
+faction_leader_challenge_for_natpop = {
+	random_list = {
+		33 = { country_event = { id = siamchallenge.11 days = 7 } }
+		33 = { country_event = { id = siamchallenge.12 days = 7 } }
+		33 = { country_event = { id = siamchallenge.13 days = 7 } }
+	}
+}
+faction_leader_challenge_for_valkist = {
+	random_list = {
+		25 = { country_event = { id = siamchallenge.14 days = 10 } }
+		25 = { country_event = { id = siamchallenge.15 days = 10 } }
+		25 = { country_event = { id = siamchallenge.16 days = 5 } }
+		25 = { country_event = { id = siamchallenge.17 days = 14 } }
+	}
+}
+##Anarchy Schism's Calc
+anarchy_calc = {
+	set_temp_variable = { anarzone_temp = core_resistance@UWP }
+	divide_temp_variable = { anarzone_temp = 2 }
+	add_to_variable = { anarzone = anarzone_temp }
+	round_variable = anarzone
+	clamp_variable { var = anarzone max = 100 min = 0 }
+}
+natcol_calc = {
+	set_temp_variable = { natcol_temp = ROOT.party_popularity@vanguardist }
+	multiply_temp_variable = { natcol_temp = 100 }
+	add_to_temp_variable = { natcol_temp = core_resistance@UWP }
+	divide_temp_variable = { natcol_temp = 3 }
+	add_to_variable = { natcolzone = natcol_temp }
+	round_variable = natcolzone
+	clamp_variable { var = natcolzone max = 50 min = 0 }
+}
+resistance_level_rank_calc = {
+	set_temp_variable = { temp = anarzone }
+	add_to_temp_variable = { temp = natcolzone }
+	divide_temp_variable = { temp = 2 }
+	subtract_from_temp_variable = { temp = govzone } 
+	add_to_variable = { reslev = temp }
+	round_variable = reslev
+	clamp_variable { var = reslev max = 100 min = 0 }
+}
+govzone_calc = {
+	set_temp_variable = { temp = ROOT.party_popularity@ruling_party }
+	multiply_temp_variable = { temp = 60 }
+	add_to_temp_variable = { temp = core_compliance@UWP }
+	divide_temp_variable = { temp = 2 }
+	add_to_variable = { govzone = temp }
+	round_variable = govzone
+	clamp_variable { var = govzone max = 100 min = 0 }
+}
+reset_all_zone_calc = {
+	if = {
+		limit = {
+			ROOT = { has_variable = anarzone }
+		}
+		clear_variable = anarzone 
+	}
+	if = {
+		limit = {
+			ROOT = { has_variable = natcolzone }
+		}
+		clear_variable = natcolzone 
+	}
+	if = {
+		limit = {
+			ROOT = { has_variable = govzone }
+		}
+		clear_variable = govzone 
+	}
+	if = {
+		limit = {
+			ROOT = { has_variable = reslev }
+		}
+		clear_variable = reslev 
+	}
+}
+all_zone_calc = {
+	anarchy_calc = yes
+	natcol_calc = yes
+	govzone_calc = yes
+	resistance_level_rank_calc = yes
+}
+recalc_all_zone = {
+	reset_all_zone_calc = yes
+	all_zone_calc = yes
+}
+##Royalist Coup
+prayool_influence_level = {
+	clamp_variable = { var = prayool_influence max = 15 min = 1 }
+	if = {
+		limit = {
+			check_variable = {
+				var = prayool_influence
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+		set_variable = { royalist_lev = 4 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = prayool_influence
+					value = 10
+					compare = less_than
+				}
+				check_variable = {
+					var = prayool_influence
+					value = 7
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		set_variable = { royalist_lev = 3 } 
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = prayool_influence
+					value = 7
+					compare = less_than
+				}
+				check_variable = {
+					var = prayool_influence
+					value = 5
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		set_variable = { royalist_lev = 2 } 
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = prayool_influence
+					value = 5
+					compare = less_than
+				}
+				check_variable = {
+					var = prayool_influence
+					value = 1
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		set_variable = { royalist_lev = 1 } 
+	}
+}

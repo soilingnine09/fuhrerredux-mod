@@ -1,0 +1,207 @@
+SIA_anarchy_and_natcol_struggle = {
+	start_the_operation_meng_rai = {
+		visible = {
+			ROOT = { has_country_flag = lanna_anarchy }
+			NOT = { has_country_flag = operation_mengrai }
+		}
+		available = {
+			ROOT = {
+				custom_trigger_tooltip = {
+					tooltip = "Anarchy Schism in Lanna"
+					has_country_flag = lanna_anarchy
+				}
+			}
+		}
+		cost = 100
+		days_remove = 15
+		remove_effect = {
+			custom_effect_tooltip = "Start the Operation Mengrai"
+			hidden_effect = {
+				ROOT = { set_country_flag = operation_mengrai }
+			}
+		}
+	}
+	start_the_operation_korat = {
+		visible = {
+			ROOT = { has_country_flag = esan_anarchy }
+			NOT = { has_country_flag = operation_korat }
+		}
+		available = {
+			ROOT = {
+				custom_trigger_tooltip = {
+					tooltip = "Anarchy Schism in Esan"
+					has_country_flag = esan_anarchy
+				}
+			}
+		}
+		cost = 100
+		days_remove = 15
+		remove_effect = {
+			custom_effect_tooltip = "Start the Operation Korat"
+			hidden_effect = {
+				ROOT = { set_country_flag = operation_korat }
+			}
+		}
+	}
+	final_conclusion_bad_ending = {
+		activation = {
+			ROOT = { 
+				custom_trigger_tooltip = {
+					tooltip = "Martial Law is declared"
+					has_country_flag = esan_anarchy
+					has_country_flag = lanna_anarchy
+					has_country_flag = general_strike
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = "Revolutionary Government is stronger than the Central Government"
+				ROOT = {
+					check_variable = {
+						var = reslev
+						value = 45
+						compare = greater_than
+					}
+				}
+			}
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "Revolutionary Government is not preparing for the war"
+				ROOT = {
+					check_variable = {
+						var = reslev
+						value = 45
+						compare = less_than_or_equals
+					}
+				}
+			}
+		}
+		days_mission_timeout = 50
+		is_good = no
+		timeout_effect = {
+			country_event = siamcivilwar.21
+		}
+	}
+	final_conclusion_good_ending = {
+		activation = {
+			ROOT = { 
+				custom_trigger_tooltip = {
+					tooltip = "Martial Law is declared"
+					has_country_flag = esan_anarchy
+					has_country_flag = lanna_anarchy
+					has_country_flag = general_strike
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = "Revolutionary Government is weaker than the Central Government"
+				ROOT = {
+					check_variable = {
+						var = reslev
+						value = 15
+						compare = less_than_or_equals
+					}
+				}
+			}
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "Revolutionary Government is preparing for the war"
+				ROOT = {
+					check_variable = {
+						var = reslev
+						value = 15
+						compare = greater_than
+					}
+				}
+			}
+		}
+		days_mission_timeout = 150
+		is_good = yes
+		timeout_effect = {
+			country_event = siamcivilwar.23
+		}
+	}
+	natcol_influence_increasing = {
+		allowed = { tag = SIA }
+		activation = { 
+			vanguardist < 0.3 
+			ROOT = { 
+				custom_trigger_tooltip = {
+					tooltip = "Martial Law is declared"
+					has_country_flag = esan_anarchy
+					has_country_flag = lanna_anarchy
+					has_country_flag = general_strike
+				}
+			}
+		}
+		available = { vanguardist > 0.3 }
+		days_mission_timeout = 3
+		timeout_effect = {
+			add_popularity = { ideology = vanguardist popularity = 0.05 }
+			add_political_power = 70
+		}
+	}
+	###State Decision
+	contact_lanna_spy = {
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				state = 1010
+			}
+		}
+		visible = {
+			tag = SIA
+			has_country_flag = operation_mengrai
+		}
+		available = {
+		
+		}
+		on_map_mode = map_only
+		cost = 15
+		days_remove = 20
+		remove_effect = {
+			1010 = {
+				add_resistance = -3
+				add_compliance = 5
+			}
+			random_list = {
+				50 = { add_stability = 0.01 }
+				25 = { country_event = { id = siamcivilwar.18 days = 7 } }
+				25 = { country_event = { id = siamcivilwar.19 days = 7 } }
+			}
+		}
+	}
+	contact_esan_spy = {
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				state = 804
+			}
+		}
+		visible = {
+			tag = SIA
+			has_country_flag = operation_korat
+		}
+		available = {
+		
+		}
+		on_map_mode = map_only
+		cost = 15
+		days_remove = 20
+		remove_effect = {
+			804 = {
+				add_resistance = -3
+				add_compliance = 5
+			}
+			1011 = {
+				add_resistance = -3
+				add_compliance = 5
+			}
+			random_list = {
+				50 = { add_stability = 0.05 }
+				25 = { country_event = { id = siamcivilwar.18 days = 3 } }
+				25 = { country_event = { id = siamcivilwar.19 days = 3 } }
+			}
+		}
+	}
+}

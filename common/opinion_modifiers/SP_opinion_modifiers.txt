@@ -1,0 +1,18 @@
+opinion_modifiers = {
+
+    # ASEAN
+    ASEAN_accepted_invite = { value = 50 }
+    ASEAN_refused_invite = { value = -50 }
+
+    # Philippines
+    PHI_economic_investment = { value = 100 }
+    PHI_trade_treaty_accepted = { value = 50 }
+    PHI_trade_treaty_refused = { value = -50 }
+    PHI_aid_accepted = { value = 50 }
+    PHI_diplomatic_mission = { value = 25 }
+
+    # Siam
+    SIA_reaffirmed_territorial_claims = { value = -75 }
+    SIA_abandoned_territorial_claims = { value = 75 }
+
+}

@@ -1,0 +1,828 @@
+ideas = {
+	head_of_government = {
+		SIA_council_of_minister_hog_authdem = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = hog_cant_change
+					always = no
+				}
+			}
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_oligarchic_council
+			}
+		}
+		SIA_hrh_prince_chainat_hog_authdem = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = hog_cant_change
+					always = no
+				}
+			}
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_oligarchic_council     
+			}
+		}
+		SIA_phraya_manopakorn_hog_socdem = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = hog_cant_change
+					always = no
+				}
+			}
+			traits = {
+				head_of_government
+				social_democrat
+				hog_generic_portrait
+			}
+		}
+		SIA_kuang_abhaiwongse_hog_soclib = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = hog_cant_change
+					always = no
+				}
+			}
+			traits = {
+				head_of_government
+				social_liberal
+				hog_happy_amateur   
+			}
+		}
+		SIA_direk_jayanama_hog_socdem = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = hog_cant_change
+					always = no
+				}
+			}
+			traits = {
+				head_of_government
+				social_democrat
+				hog_silent_workhorse
+			}
+		}
+		SIA_siddhi_savetsila_hog_maklib = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = hog_cant_change
+					always = no
+				}
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_backroom_backstabber
+			}
+		}
+		SIA_seni_pramoj_hog_marlib = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = hog_cant_change
+					always = no
+				}
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_political_protege
+			}
+		}
+		SIA_phin_choonhavan_hog_pataut = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = hog_cant_change
+					always = no
+				}
+			}
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_reformist_soldier
+			}
+		}	
+		SIA_luang_aduldejjarus_hog_pataut = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = hog_cant_change
+					always = no
+				}
+			}
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_determined_populist    
+			}	
+		}
+		SIA_wichitwathakarn_hog_valkist = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = hog_cant_change
+					always = no
+				}
+			}
+			traits = {
+				head_of_government
+				valkist
+				hog_spiritual_leader
+			}
+		}
+		SIA_prachuap_bunnag_hog_soccon = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = hog_cant_change
+					always = no
+				}
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_political_protege 
+			}
+		}
+		SIA_chit_sunthornworn_hog_soccon = {
+			allowed = { original_tag = SIA }
+			picture = SIA_chit_sunthornworn_soccon
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = hog_cant_change
+					always = no
+				}
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_silent_workhorse  
+			}
+		}
+		SIA_plaek_phibunsongkram_hog_natpop = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = hog_cant_change
+					always = no
+				}
+			}
+			traits = {
+				head_of_government
+				national_populist
+				hog_old_general 
+			}
+		}
+		SIA_hh_prince_chanthaburi_ii_hog_natpop = {
+			allowed = { original_tag = SIA }
+			available = { 
+				custom_trigger_tooltip = {
+					tooltip = hog_cant_change
+					always = no
+				}
+			}
+			traits = {
+				head_of_government
+				national_populist
+				hog_accomplished_diplomat      
+			}
+		}
+		SIA_luang_sunawin_wiwat_hog_natpop = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = hog_cant_change
+					always = no
+				}
+			}
+			traits = {
+				head_of_government
+				national_populist
+				hog_old_compromiser
+			}
+		}
+		SIA_boonsanong_punyodyana_hog_vanguard = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = hog_cant_change
+					always = no
+				}
+			}
+			traits = {
+				head_of_government
+				vanguardist
+				hog_red_chairmen       
+			}
+		}
+		SIA_luan_vekchalikanon_hog_libsoc = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = hog_cant_change
+					always = no
+				}
+			}
+			traits = {
+				head_of_government
+				libertarian_socialist
+				hog_backroom_backstabber
+			}
+		}
+	}
+	#Foreign Minister
+	foreign_minister = {
+		SIA_pridi_banomyong_for_libsoc = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				foreign_minister
+				libertarian_socialist
+				for_foreign_sympathizer
+			}
+		}
+		SIA_traidos_phrabandhu_tevakul_for_authdem = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				foreign_minister
+				authoritarian_democrat
+				for_ideological_crusader
+			}
+		}
+		SIA_phraya_sri_visarnvaja_for_soclib = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				foreign_minister
+				social_liberal
+				for_great_compromiser
+			}
+		}
+		SIA_phraya_abhiban_rajamaitri_for_pataut = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_foreign_sympathizer
+			}
+		}
+		SIA_phraya_phahon_for_soccon = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				foreign_minister
+				social_conservative
+				for_general_staffer
+			}
+		}
+		SIA_phraya_sri_sena_for_maklib = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				foreign_minister
+				market_liberal
+				for_relations_expert
+			}
+		}
+		SIA_pridi_thepphong_tevakul_for_natpop = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				foreign_minister
+				national_populist
+				for_radical_among_moderates
+			}
+		}
+		SIA_phot_sarasin_for_socdem = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				foreign_minister
+				social_democrat
+				for_ideological_crusader
+			}
+		}
+		SIA_nai_vorakanbancha_for_natpop = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				foreign_minister
+				national_populist
+				for_general_staffer
+			}
+		}
+		SIA_prince_wan_waithayakon_for_soclib = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				foreign_minister
+				social_liberal
+				for_relations_expert
+			}
+		}
+		SIA_sukit_nimmarnmhern_for_valkist = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				foreign_minister
+				valkist
+				for_relations_expert
+			}
+		}
+	}
+	#Economic Minister
+	economy_minister = {
+		SIA_phya_manavarajasevee_eco_authdem = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				economy_minister 
+				authoritarian_democrat
+				eco_reformer
+			}
+		}
+		SIA_phyom_chulanont_eco_van = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				economy_minister 
+				vanguardist
+				eco_national_liberal
+			}
+		}
+		SIA_prince_phromphong_athiraja_eco_patauth = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				economy_minister 
+				paternal_autocrat
+				eco_balanced_budget_economy
+			}
+		}
+		SIA_prince_wiwathanachai_eco_authdem = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				economy_minister 
+				authoritarian_democrat
+				eco_mixed_economy
+			}
+		}
+		SIA_phya_koman_kulmontri_eco_authdem = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				economy_minister 
+				authoritarian_democrat
+				eco_trade_proponent
+			}
+		}
+		SIA_suwich_phantaset_eco_collectivist = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				economy_minister
+				collectivist
+				eco_industrialiser
+			}
+		}
+		SIA_leng_srisomwong_eco_marlib = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				economy_minister
+				market_liberal
+				eco_industrialiser
+			}
+		}
+		SIA_wichit_lulitanont_eco_socdem = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				economy_minister
+				social_democrat
+				eco_construction_magnate
+			}
+		}
+		SIA_puay_ungphakorn_eco_soclib = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				economy_minister
+				social_liberal
+				eco_bank_president
+			}
+		}
+		SIA_phra_sarasad_palakan_eco_soccon = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				economy_minister
+				social_conservative
+				eco_resource_industrialist
+			}
+		}
+		SIA_jaroon_rattakul_eco_valkist = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				economy_minister
+				valkist
+				eco_military_entrepreneur
+			}
+		}
+		SIA_phao_pianloed_eco_natpop = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				economy_minister
+				national_populist
+				eco_imbedded_unioneer
+			}
+		}
+		SIA_boonsanong_punyodyana_eco_vanguard = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				economy_minister
+				vanguardist
+				eco_balanced_budget_economy       
+			}
+		}
+	}
+	security_minister = {
+		SIA_prince_chirapravati_voradej_sec_pataut = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				security_minister
+				paternal_autocrat 
+				sec_compassionate_gentleman       
+			}
+		}
+		SIA_tawil_udon_sec_libsoc = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				security_minister
+				libertarian_socialist
+				sec_man_of_the_people
+			}
+		}
+		SIA_prince_sukhumbandhu_prince_nakornsawan_sec_authdem = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_preserver_of_culture
+			}
+		}
+		SIA_chit_sunthornworn_sec_soccon = {
+			allowed = { original_tag = SIA }
+			picture = SIA_chit_sunthornworn_soccon
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				security_minister
+				social_conservative
+				sec_back_stabber  
+			}
+		}
+		SIA_phraya_udomphong_phensawat_sec_socdem = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				security_minister
+				social_democrat
+				sec_efficient_sociopath
+			}
+		}
+		SIA_mangkorn_promyothee_sec_soclib = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				security_minister
+				social_liberal
+				sec_back_stabber
+			}
+		}
+		SIA_tawee_bunyaket_sec_marlib = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				security_minister
+				market_liberal
+				sec_crime_fighter
+			}
+		}
+		SIA_banyati_thephassadin_na_ayudhaya_sec_natpop = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				security_minister
+				national_populist
+				sec_driven_recruiter
+			}
+		}
+		SIA_praphas_charusathien_sec_valkist = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				security_minister
+				valkist
+				sec_regionalist
+			}
+		}
+	}
+	head_of_intel = {
+		SIA_luang_naruebetmanit_int_authdem = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				head_of_intel 
+				authoritarian_democrat
+				int_political_specialist
+			}
+		}
+		SIA_chit_sinadyotharak_int_pataut = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				head_of_intel
+				paternal_autocrat
+				int_dismal_enigma
+			}
+		}
+		SIA_luang_chamnannitikaset_int_socdem = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				head_of_intel
+				social_democrat
+				int_technical_specialist
+			}
+		}
+		SIA_chuen_charuphas_int_soccon = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				head_of_intel
+				social_conservative
+				int_o
+			}
+		}
+		SIA_khun_sukhontawit_sueksakorn_int_soclib = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				head_of_intel
+				social_liberal
+				int_logistics_specialist
+			}
+		}
+		SIA_suphasawadwongsanit_sawaddiwat_int_natpop = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				head_of_intel
+				national_populist
+				int_political_specialist
+			}
+		}
+		SIA_sanguan_tularak_int_valkist = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				head_of_intel 
+				valkist
+				int_logistics_specialist
+			}
+		}
+		SIA_teerayut_bunmee_int_libsoc = {
+			allowed = { original_tag = SIA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_cant_change
+					always = no
+				} 
+			}
+			traits = {
+				head_of_intel 
+				libertarian_socialist
+				int_industrial_specialist
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+ASEAN_decisions = {
+    icon = generic_democracy
+
+    allowed = { 
+        OR = {
+            original_tag = PHI
+            original_tag = VIN
+            original_tag = INS
+            original_tag = BRM
+            original_tag = LAO
+            original_tag = CAM
+            original_tag = SIA
+            is_subject_of = PHI
+        }
+    }
+
+    priority = { base = 5 }
+
+}
