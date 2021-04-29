@@ -1,12 +1,14 @@
 ideas = {
 	head_of_government = {
 		SIA_council_of_minister_hog_authdem = {
-			allowed = { original_tag = SIA }
+			allowed = { 
+				OR = { 
+					tag = SIA
+					tag = SIR
+				} 	
+			}
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = hog_cant_change
-					always = no
-				}
+				is_not_change_manually = yes
 			}
 			traits = {
 				head_of_government
@@ -15,12 +17,9 @@ ideas = {
 			}
 		}
 		SIA_hrh_prince_chainat_hog_authdem = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = hog_cant_change
-					always = no
-				}
+				is_not_change_manually = yes
 			}
 			traits = {
 				head_of_government
@@ -28,83 +27,10 @@ ideas = {
 				hog_oligarchic_council     
 			}
 		}
-		SIA_phraya_manopakorn_hog_socdem = {
-			allowed = { original_tag = SIA }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = hog_cant_change
-					always = no
-				}
-			}
-			traits = {
-				head_of_government
-				social_democrat
-				hog_generic_portrait
-			}
-		}
-		SIA_kuang_abhaiwongse_hog_soclib = {
-			allowed = { original_tag = SIA }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = hog_cant_change
-					always = no
-				}
-			}
-			traits = {
-				head_of_government
-				social_liberal
-				hog_happy_amateur   
-			}
-		}
-		SIA_direk_jayanama_hog_socdem = {
-			allowed = { original_tag = SIA }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = hog_cant_change
-					always = no
-				}
-			}
-			traits = {
-				head_of_government
-				social_democrat
-				hog_silent_workhorse
-			}
-		}
-		SIA_siddhi_savetsila_hog_maklib = {
-			allowed = { original_tag = SIA }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = hog_cant_change
-					always = no
-				}
-			}
-			traits = {
-				head_of_government
-				market_liberal
-				hog_backroom_backstabber
-			}
-		}
-		SIA_seni_pramoj_hog_marlib = {
-			allowed = { original_tag = SIA }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = hog_cant_change
-					always = no
-				}
-			}
-			traits = {
-				head_of_government
-				market_liberal
-				hog_political_protege
-			}
-		}
 		SIA_phin_choonhavan_hog_pataut = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = hog_cant_change
-					always = no
-				}
+				is_not_change_manually = yes
 			}
 			traits = {
 				head_of_government
@@ -113,12 +39,9 @@ ideas = {
 			}
 		}	
 		SIA_luang_aduldejjarus_hog_pataut = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = hog_cant_change
-					always = no
-				}
+				is_not_change_manually = yes
 			}
 			traits = {
 				head_of_government
@@ -126,27 +49,76 @@ ideas = {
 				hog_determined_populist    
 			}	
 		}
-		SIA_wichitwathakarn_hog_valkist = {
-			allowed = { original_tag = SIA }
+		SIA_prayool_pamornmontri_hog_pataut = {
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = hog_cant_change
-					always = no
-				}
+				is_not_change_manually = yes
 			}
 			traits = {
 				head_of_government
-				valkist
-				hog_spiritual_leader
+				paternal_autocrat
+				hog_revanchist_conspirator    
+			}
+		}
+		SIA_phraya_manopakorn_hog_socdem = {
+			allowed = { OR = { tag = SIA tag = SIR } }
+			available = {
+				is_not_change_manually = yes
+			}
+			traits = {
+				head_of_government
+				social_democrat
+				hog_generic_portrait
+			}
+		}
+		SIA_direk_jayanama_hog_socdem = {
+			allowed = { OR = { tag = SIA tag = SIR } }
+			available = {
+				is_not_change_manually = yes
+			}
+			traits = {
+				head_of_government
+				social_democrat
+				hog_silent_workhorse
+			}
+		}
+		SIA_kuang_abhaiwongse_hog_soclib = {
+			allowed = { OR = { tag = SIA tag = SIR } }
+			available = {
+				is_not_change_manually = yes
+			}
+			traits = {
+				head_of_government
+				social_liberal
+				hog_happy_amateur   
+			}
+		}
+		SIA_kukrit_pramoj_hog_marlib = {
+			allowed = { OR = { tag = SIA tag = SIR } }
+			available = {
+				is_not_change_manually = yes
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_backroom_backstabber
+			}
+		}
+		SIA_seni_pramoj_hog_marlib = {
+			allowed = { OR = { tag = SIA tag = SIR } }
+			available = {
+				is_not_change_manually = yes
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_political_protege
 			}
 		}
 		SIA_prachuap_bunnag_hog_soccon = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = hog_cant_change
-					always = no
-				}
+				is_not_change_manually = yes
 			}
 			traits = {
 				head_of_government
@@ -154,28 +126,10 @@ ideas = {
 				hog_political_protege 
 			}
 		}
-		SIA_chit_sunthornworn_hog_soccon = {
-			allowed = { original_tag = SIA }
-			picture = SIA_chit_sunthornworn_soccon
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = hog_cant_change
-					always = no
-				}
-			}
-			traits = {
-				head_of_government
-				social_conservative
-				hog_silent_workhorse  
-			}
-		}
 		SIA_plaek_phibunsongkram_hog_natpop = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = hog_cant_change
-					always = no
-				}
+				is_not_change_manually = yes
 			}
 			traits = {
 				head_of_government
@@ -183,27 +137,10 @@ ideas = {
 				hog_old_general 
 			}
 		}
-		SIA_hh_prince_chanthaburi_ii_hog_natpop = {
-			allowed = { original_tag = SIA }
-			available = { 
-				custom_trigger_tooltip = {
-					tooltip = hog_cant_change
-					always = no
-				}
-			}
-			traits = {
-				head_of_government
-				national_populist
-				hog_accomplished_diplomat      
-			}
-		}
 		SIA_luang_sunawin_wiwat_hog_natpop = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = hog_cant_change
-					always = no
-				}
+				is_not_change_manually = yes
 			}
 			traits = {
 				head_of_government
@@ -211,44 +148,68 @@ ideas = {
 				hog_old_compromiser
 			}
 		}
-		SIA_boonsanong_punyodyana_hog_vanguard = {
-			allowed = { original_tag = SIA }
+		SIA_phao_sriyanond_hog_natpop = {
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = hog_cant_change
-					always = no
-				}
+				is_not_change_manually = yes
+			}
+			traits = {
+				head_of_government
+				national_populist
+				hog_charismatic_charmer
+			}
+		}
+		SIA_wichitwathakarn_hog_valkist = {
+			allowed = { OR = { tag = SIA tag = SIR } }
+			available = {
+				is_not_change_manually = yes
+			}
+			traits = {
+				head_of_government
+				valkist
+				hog_spiritual_leader
+			}
+		}
+		SIA_luan_vekchalikanon_hog_col = {
+			allowed = { OR = { tag = SIA tag = SIR } }
+			available = {
+				is_not_change_manually = yes
+			}
+			traits = {
+				head_of_government
+				collectivist
+				hog_backroom_backstabber
+			}
+		}
+		SIA_waas_suthornjamorn_hog_van = {
+			allowed = { OR = { tag = SIA tag = SIR } }
+			available = {
+				is_not_change_manually = yes
 			}
 			traits = {
 				head_of_government
 				vanguardist
-				hog_red_chairmen       
+				hog_red_chairmen
 			}
 		}
-		SIA_luan_vekchalikanon_hog_libsoc = {
-			allowed = { original_tag = SIA }
+		SIA_pridi_banomyong_hog_libsoc = {
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = hog_cant_change
-					always = no
-				}
+				is_not_change_manually = yes
 			}
 			traits = {
 				head_of_government
 				libertarian_socialist
-				hog_backroom_backstabber
+				hog_charismatic_charmer
 			}
 		}
 	}
 	#Foreign Minister
 	foreign_minister = {
 		SIA_pridi_banomyong_for_libsoc = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				foreign_minister
@@ -257,12 +218,9 @@ ideas = {
 			}
 		}
 		SIA_traidos_phrabandhu_tevakul_for_authdem = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				foreign_minister
@@ -271,12 +229,9 @@ ideas = {
 			}
 		}
 		SIA_phraya_sri_visarnvaja_for_soclib = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				foreign_minister
@@ -285,12 +240,9 @@ ideas = {
 			}
 		}
 		SIA_phraya_abhiban_rajamaitri_for_pataut = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				foreign_minister
@@ -299,12 +251,9 @@ ideas = {
 			}
 		}
 		SIA_phraya_phahon_for_soccon = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				foreign_minister
@@ -313,12 +262,9 @@ ideas = {
 			}
 		}
 		SIA_phraya_sri_sena_for_maklib = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				foreign_minister
@@ -327,12 +273,9 @@ ideas = {
 			}
 		}
 		SIA_pridi_thepphong_tevakul_for_natpop = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				foreign_minister
@@ -341,12 +284,9 @@ ideas = {
 			}
 		}
 		SIA_phot_sarasin_for_socdem = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				foreign_minister
@@ -355,12 +295,9 @@ ideas = {
 			}
 		}
 		SIA_nai_vorakanbancha_for_natpop = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				foreign_minister
@@ -369,12 +306,9 @@ ideas = {
 			}
 		}
 		SIA_prince_wan_waithayakon_for_soclib = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				foreign_minister
@@ -383,12 +317,9 @@ ideas = {
 			}
 		}
 		SIA_sukit_nimmarnmhern_for_valkist = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				foreign_minister
@@ -400,12 +331,9 @@ ideas = {
 	#Economic Minister
 	economy_minister = {
 		SIA_phya_manavarajasevee_eco_authdem = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				economy_minister 
@@ -413,27 +341,10 @@ ideas = {
 				eco_reformer
 			}
 		}
-		SIA_phyom_chulanont_eco_van = {
-			allowed = { original_tag = SIA }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
-			}
-			traits = {
-				economy_minister 
-				vanguardist
-				eco_national_liberal
-			}
-		}
 		SIA_prince_phromphong_athiraja_eco_patauth = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				economy_minister 
@@ -442,12 +353,9 @@ ideas = {
 			}
 		}
 		SIA_prince_wiwathanachai_eco_authdem = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				economy_minister 
@@ -456,12 +364,9 @@ ideas = {
 			}
 		}
 		SIA_phya_koman_kulmontri_eco_authdem = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				economy_minister 
@@ -470,12 +375,9 @@ ideas = {
 			}
 		}
 		SIA_suwich_phantaset_eco_collectivist = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				economy_minister
@@ -484,12 +386,9 @@ ideas = {
 			}
 		}
 		SIA_leng_srisomwong_eco_marlib = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				economy_minister
@@ -498,12 +397,9 @@ ideas = {
 			}
 		}
 		SIA_wichit_lulitanont_eco_socdem = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				economy_minister
@@ -512,12 +408,9 @@ ideas = {
 			}
 		}
 		SIA_puay_ungphakorn_eco_soclib = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				economy_minister
@@ -526,12 +419,9 @@ ideas = {
 			}
 		}
 		SIA_phra_sarasad_palakan_eco_soccon = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				economy_minister
@@ -540,12 +430,9 @@ ideas = {
 			}
 		}
 		SIA_jaroon_rattakul_eco_valkist = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				economy_minister
@@ -554,12 +441,9 @@ ideas = {
 			}
 		}
 		SIA_phao_pianloed_eco_natpop = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				economy_minister
@@ -567,13 +451,10 @@ ideas = {
 				eco_imbedded_unioneer
 			}
 		}
-		SIA_boonsanong_punyodyana_eco_vanguard = {
-			allowed = { original_tag = SIA }
+		SIA_supha_sirimanond_eco_van = {
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				economy_minister
@@ -584,12 +465,9 @@ ideas = {
 	}
 	security_minister = {
 		SIA_prince_chirapravati_voradej_sec_pataut = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				security_minister
@@ -598,12 +476,9 @@ ideas = {
 			}
 		}
 		SIA_tawil_udon_sec_libsoc = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				security_minister
@@ -612,12 +487,9 @@ ideas = {
 			}
 		}
 		SIA_prince_sukhumbandhu_prince_nakornsawan_sec_authdem = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				security_minister
@@ -626,13 +498,10 @@ ideas = {
 			}
 		}
 		SIA_chit_sunthornworn_sec_soccon = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			picture = SIA_chit_sunthornworn_soccon
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				security_minister
@@ -641,12 +510,9 @@ ideas = {
 			}
 		}
 		SIA_phraya_udomphong_phensawat_sec_socdem = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				security_minister
@@ -655,12 +521,9 @@ ideas = {
 			}
 		}
 		SIA_mangkorn_promyothee_sec_soclib = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				security_minister
@@ -669,12 +532,9 @@ ideas = {
 			}
 		}
 		SIA_tawee_bunyaket_sec_marlib = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				security_minister
@@ -683,12 +543,9 @@ ideas = {
 			}
 		}
 		SIA_banyati_thephassadin_na_ayudhaya_sec_natpop = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				security_minister
@@ -697,12 +554,9 @@ ideas = {
 			}
 		}
 		SIA_praphas_charusathien_sec_valkist = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				security_minister
@@ -713,12 +567,9 @@ ideas = {
 	}
 	head_of_intel = {
 		SIA_luang_naruebetmanit_int_authdem = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				head_of_intel 
@@ -727,12 +578,9 @@ ideas = {
 			}
 		}
 		SIA_chit_sinadyotharak_int_pataut = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				head_of_intel
@@ -741,12 +589,9 @@ ideas = {
 			}
 		}
 		SIA_luang_chamnannitikaset_int_socdem = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				head_of_intel
@@ -755,12 +600,9 @@ ideas = {
 			}
 		}
 		SIA_chuen_charuphas_int_soccon = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				head_of_intel
@@ -769,12 +611,9 @@ ideas = {
 			}
 		}
 		SIA_khun_sukhontawit_sueksakorn_int_soclib = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				head_of_intel
@@ -783,12 +622,9 @@ ideas = {
 			}
 		}
 		SIA_suphasawadwongsanit_sawaddiwat_int_natpop = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				head_of_intel
@@ -797,12 +633,9 @@ ideas = {
 			}
 		}
 		SIA_sanguan_tularak_int_valkist = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				head_of_intel 
@@ -811,17 +644,210 @@ ideas = {
 			}
 		}
 		SIA_teerayut_bunmee_int_libsoc = {
-			allowed = { original_tag = SIA }
+			allowed = { OR = { tag = SIA tag = SIR } }
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_cant_change
-					always = no
-				} 
+				is_not_change_manually = yes
 			}
 			traits = {
 				head_of_intel 
 				libertarian_socialist
 				int_industrial_specialist
+			}
+		}
+	}
+	chief_of_staff = {
+		SIA_phraya_phahon_cos = {
+			allowed = { original_tag = SIA }
+			
+			traits = {
+				chief_of_staff
+				cos_school_of_fire_support
+			}
+		}
+		SIA_phraya_ritti_arkaney_cos = {
+			allowed = { original_tag = SIA }
+			
+			traits = {
+				chief_of_staff
+				cos_school_of_defence
+			}
+		}
+		SIA_phraya_songsuradet_cos = {
+			allowed = { original_tag = SIA }
+			
+			traits = {
+				chief_of_staff
+				cos_school_of_psychology
+			}
+		}
+		SIA_phraya_sittisongkhram_cos = {
+			allowed = { original_tag = SIA }
+			
+			traits = {
+				chief_of_staff
+				cos_school_of_manoeuvre
+			}
+		}
+		SIA_sarit_thanarat_cos = {
+			allowed = { original_tag = SIA }
+			
+			traits = {
+				chief_of_staff
+				cos_school_of_commando_operations
+			}
+		}
+		SIA_phraya_promyothee_cos = {
+			allowed = { original_tag = SIA }
+			
+			traits = {
+				chief_of_staff
+				cos_school_of_commando_operations
+			}
+		}
+		SIA_plaek_phibunsongkram_cos = {
+			allowed = { original_tag = SIA }
+			
+			traits = {
+				chief_of_staff
+				cos_school_of_fire_support
+			}
+		}
+	}
+	chief_of_army = {
+		SIA_prince_boworadet_carm = {
+			allowed = { original_tag = SIA }
+			
+			traits = {
+				chief_of_army
+				carm_elastic_defence_doctrine
+			}
+		}
+		SIA_phin_choonhavan_carm = {
+			allowed = { original_tag = SIA }
+			available = {
+				has_country_flag = can_replace_military_staff		
+			}
+			traits = {
+				chief_of_army
+				carm_doctrine_of_autonomy 
+			}
+		}
+		SIA_luang_seriroengrit_carm = {
+			allowed = { original_tag = SIA }
+			available = {
+				has_country_flag = can_replace_military_staff			
+			}
+			traits = {
+				chief_of_army
+				carm_guns_and_butter_doctrine 
+			}
+		}
+		SIA_Prayool_Paramontri_carm = {
+			allowed = { original_tag = SIA }
+			
+			traits = {
+				chief_of_army
+				carm_static_defence_doctrine 
+			}
+		}
+		SIA_Thanom_Kittikachorn_carm = {
+			allowed = { original_tag = SIA }
+			
+			traits = {
+				chief_of_army
+				carm_doctrine_of_autonomy 
+			}
+		}
+	}
+	chief_of_navy = {
+		SIA_Luang_Sinthusongkhramchai_cnav = {
+			allowed = { original_tag = SIA }
+			
+			traits = {
+				chief_of_navy
+				cnav_indirect_approach_doctrine
+			}
+		}
+		SIA_Luang_Supachalasai_cnav = {
+			allowed = { original_tag = SIA }
+			
+			traits = {
+				chief_of_navy
+				cnav_open_seas_doctrine
+			}
+		}
+		SIA_Phraya_Wichitchollatee_cnav = {
+			allowed = { original_tag = SIA }
+			
+			traits = {
+				chief_of_navy
+				cnav_open_seas_doctrine
+			}
+		}
+		SIA_Phraya_Wicharnchakkrit_cnav = {
+			allowed = { original_tag = SIA }
+			
+			traits = {
+				chief_of_navy
+				cnav_base_control_doctrine
+			}
+		}
+		SIA_Thawan_Thamrongnawasawat_cnav = {
+			allowed = { original_tag = SIA }
+			
+			traits = {
+				chief_of_navy
+				cnav_indirect_approach_doctrine
+			}
+		}
+		SIA_Luang_Yuthasartkosol_cnav = {
+			allowed = { original_tag = SIA }
+			
+			traits = {
+				chief_of_navy 
+				cnav_base_control_doctrine
+			}
+		}
+		SIA_Sangad_Chaloryu_cnav = {
+			allowed = { original_tag = SIA }
+			
+			traits = {
+				chief_of_navy 
+				cnav_open_seas_doctrine
+			}
+		}
+	}
+	chief_of_air_force = {
+		SIA_Luang_Vejayantarungsarit_cair = {
+			allowed = { original_tag = SIA }
+			
+			traits = {
+				chief_of_air_force 
+				cair_air_superiority_doctrine
+			}
+		}
+		SIA_Fuen_Ritthakhanee_cair = {
+			allowed = { original_tag = SIA }
+			
+			traits = {
+				chief_of_air_force 
+				cair_carpet_bombing_doctrine
+			}
+		}
+		SIA_Chaloemkiart_Wattanangkool_cair = {
+			allowed = { original_tag = SIA }
+			
+			traits = {
+				chief_of_air_force 
+				cair_battlefield_support_doctrine
+			}
+		}
+		SIA_Luang_Atuegtevadej_cair = {
+			allowed = { original_tag = SIA }
+			
+			traits = {
+				chief_of_air_force 
+				cair_the_red_baron
 			}
 		}
 	}

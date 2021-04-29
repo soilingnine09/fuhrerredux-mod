@@ -1,0 +1,162 @@
+﻿#capital = 289
+
+#oob = "SIR"
+
+
+# Starting tech
+set_technology = {
+	### Tanks ###
+	gwtank = 1 #no tankettes for ya
+
+	### Infantry ###
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_engineers = 1
+	motorised_infantry = 1
+	marines = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+
+	### Air ###
+	early_fighter = 1 #Prajadhipok
+	early_bomber = 1 #Boripatr
+	CAS1 = 1
+}
+	### Royal Siamese Arsernal 1936 Estimate ###
+	# Rifles
+add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 750 producer = AUS } # 15,000 Mannlicher M1888 Rifles
+add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = GER } # 40,000 Gewehr 98 Rifles
+add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 500 producer = JAP } # 10,000 Type 38 Arisaka Rifles
+add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 4500 producer = UWP } # 90,000 Type 45 UPWmese Mauser Rifles
+
+	# Artilleries
+add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 6 producer = AUS } # 8 Skoda Mountain Guns(?) - the document didn't specified the calibre
+add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 150 producer = GER } # ~200 Krupp Mountain Guns (mixed)
+add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 39 producer = SWE } # 124 Bofors Mountain Guns (mixed)
+
+	# AA Guns
+add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 6 producer = SWE } # 8 Type 77 Bofors Model 1934
+
+	# Trucks
+add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 30 producer = GER } # Replace the Japanese ones OTL
+add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 40 producer = USA } # Some ford trucks (rough estimate)
+
+	# Tanks/Tankettes
+add_equipment_to_stockpile = { type = gw_tank_equipment amount = 2 producer = ENG } #Captured
+add_equipment_to_stockpile = { type = gw_tank_equipment amount = 52 producer = GER } # Bought (Replace OTL's Modified Carden Loyd tankette, Vickers-6-Ton)
+
+	# Fighter Planes
+add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 1 producer = GER } # 2 - Heinkel HD 43
+add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 42 producer = USA } # 124 - Curtis Hawk II & III, Vought O2U Corsair
+
+	# Bomber Planes
+add_equipment_to_stockpile = { type = tac_bomber_equipment_0 amount = 13 producer = NFA } # 42 - Breguet 14 & Nieuport-Delage NiD 29
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		coastal_defense_ships = 1
+	}
+}
+
+set_cosmetic_tag = SIR_liberation_gov
+
+set_convoys = 150
+set_stability = 0.45
+set_war_support = 0.55
+
+set_politics = {	
+	ruling_party = vanguardist
+	last_election = "1932.9.28"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	vanguardist = 56
+
+	collectivist = 5
+
+	libertarian_socialist = 4
+
+	social_democrat = 0
+
+	social_liberal = 1
+
+	market_liberal = 3
+
+	social_conservative = 0
+
+	authoritarian_democrat = 10
+
+	paternal_autocrat = 13
+
+	national_populist = 3
+
+	valkist = 5
+}
+set_country_flag = can_replace_military_staff
+
+
+
+create_country_leader = {
+	name = "Song Noppakul"
+	picture = "gfx/leaders/SIA/Song_noppakul.dds"
+	expire = "1965.1.1"
+	ideology = vanguardist_subtype
+}
+
+create_country_leader = {
+	name = "Pridi Banomyong"
+	picture = "gfx/leaders/SIA/pridi.dds"
+	expire = "1965.1.1"
+	ideology = collectivist_subtype
+}
+
+create_country_leader = {
+	name = "Pridi Banomyong"
+	picture = "gfx/leaders/SIA/pridi.dds"
+	expire = "1965.1.1"
+	ideology = libertarian_socialist_subtype
+}
+
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	### Ship Variants ###
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Phra Ruang Class"				
+		type = ship_hull_light_1
+		name_group = UPW_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+}

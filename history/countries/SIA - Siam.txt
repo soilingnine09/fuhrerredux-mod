@@ -64,17 +64,7 @@ add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 42 producer =
 add_equipment_to_stockpile = { type = tac_bomber_equipment_0 amount = 13 producer = NFA } # 42 - Breguet 14 & Nieuport-Delage NiD 29
 add_equipment_to_stockpile = { type = tac_bomber_equipment_0 amount = 3 producer = SIA } # 10 - Bomber Type-2 Boripatr
 
-set_variable = { trade_union_inf = 0 }
-set_variable = { centralized_assembly_inf = 0 }
-set_variable = { capitalist_fund_inf = 0 }
-set_variable = { shan_influence = 0 }
-set_variable = { mon_influence = 0 }
-set_variable = { market_people_pop = 0 }
-set_variable = { natpop_people_pop = 0 }
-set_variable = { valkist_people_pop = 0 }
-set_variable = { market_pop = 0 }
-set_variable = { natpop_pop = 0 }
-set_variable = { valkist_pop = 0 }
+
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
@@ -100,16 +90,13 @@ add_ideas = {
 	SIA_phya_manavarajasevee_eco_authdem
 	SIA_phraya_udomphong_phensawat_sec_socdem
 	SIA_luang_chamnannitikaset_int_socdem
-	SIA_prince_boworadet_carm
-	SIA_phraya_songsuradet_cos
 	
-	decreasing_all_cost_for_minister
 	foreign_company_investment
 	parliament_with_officers
 	stable_bureaucrat
 	constitutional_monarchy
 }
-
+805 = { set_demilitarized_zone = yes }
 set_convoys = 150
 set_stability = 0.45
 set_war_support = 0.55
@@ -146,14 +133,11 @@ set_popularities = {
 }
 set_country_flag = coalition_social_conservative
 set_country_flag = can_replace_military_staff
-set_country_flag = marlib_unificationist_leader
-set_country_flag = valkist_membership
 set_cosmetic_tag = SIA_provisional_government
-
 create_country_leader = {
-	name = "Prachatipok"
+	name = "Prajadhipok"
 	desc = "POLITICS_RAMA_VII_DESC"
-	picture = "gfx/leaders/SIA/King_Rama_VII.dds"
+	picture = "Portrait_Siam_Rama_VII.tga"
 	expire = "1965.1.1"
 	ideology = authoritarian_democrat_subtype
 	traits = {
@@ -161,11 +145,11 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-	name = "Varananda Dhavaj"
-	picture = "gfx/leaders/SIA/Varananda_Dhavaj.dds"
+	name = "Boworadet Kritdakorn"
+	picture = "Portrait_Siam_Boworadet.tga"
 	expire = "1965.1.1"
 	ideology = paternal_autocrat_subtype
-	desc = "POLITICS_VARANANDA_DESC"
+	desc = "POLITICS_BOWORADET_DESC"
 }
 
 create_country_leader = {
@@ -184,52 +168,55 @@ create_country_leader = {
 	ideology = valkist_subtype
 }
 create_country_leader = {
-	name = "Song Noppakul"
-	picture = "gfx/leaders/SIA/Song_noppakul.dds"
+	name = "Waas Suthonjamorn"
+	picture = "Portrait_Siam_Waas_Suthonjamorn.tga"
 	expire = "1965.1.1"
 	ideology = vanguardist_subtype
+	traits = {
+		#worker_unifier
+	}
 }
 
 create_country_leader = {
 	name = "Pridi Banomyong"
-	picture = "gfx/leaders/SIA/pridi.dds"
+	picture = "Portrait_Siam_Pridi_Banomyong.tga"
 	expire = "1965.1.1"
 	ideology = collectivist_subtype
 }
 
 create_country_leader = {
 	name = "Pridi Banomyong"
-	picture = "gfx/leaders/SIA/pridi.dds"
+	picture = "Portrait_Siam_Pridi_Banomyong.tga"
 	expire = "1965.1.1"
 	ideology = libertarian_socialist_subtype
 }
 
 create_country_leader = {
-	name = "Prachatipok"
-	picture = "gfx/leaders/SIA/King_Rama_VII.dds"
+	name = "Prajadhipok"
+	picture = "Portrait_Siam_Rama_VII.tga"
 	expire = "1965.1.1"
 	ideology = social_democrat_subtype
 	desc = "POLITICS_RAMA_VII_DESC"
 }
 
 create_country_leader = {
-	name = "Prachatipok"
-	picture = "gfx/leaders/SIA/King_Rama_VII.dds"
+	name = "Prajadhipok"
+	picture = "Portrait_Siam_Rama_VII.tga"
 	expire = "1965.1.1"
 	ideology = social_liberal_subtype
 	desc = "POLITICS_RAMA_VII_DESC"
 }
 
 create_country_leader = {
-	name = "Prachatipok"
-	picture = "gfx/leaders/SIA/King_Rama_VII.dds"
+	name = "Prajadhipok"
+	picture = "Portrait_Siam_Rama_VII.tga"
 	expire = "1965.1.1"
 	ideology = market_liberal_subtype
 	desc = "POLITICS_RAMA_VII_DESC"
 }
 create_country_leader = {
-	name = "Prachatipok"
-	picture = "gfx/leaders/SIA/King_Rama_VII.dds"
+	name = "Prajadhipok"
+	picture = "Portrait_Siam_Rama_VII.tga"
 	expire = "1965.1.1"
 	ideology = social_conservative_subtype
 	desc = "POLITICS_RAMA_VII_DESC"

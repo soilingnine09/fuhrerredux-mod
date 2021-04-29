@@ -2,330 +2,79 @@ SpriteTypes = {
 	##Head of Gov.
 	spriteType = {
 		name = "GFX_idea_SIA_phraya_manopakorn_hog_socdem"
-		texturefile = "gfx/interface/ideas/SIA/Manopakorn.dds"
+		texturefile = "gfx/interface/ideas/SIA/ministers/Phraya_Manopakorn.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_SIA_council_of_minister_hog_authdem"
-		texturefile = "gfx/interface/ideas/SIA/Council_of_ministers.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_plaek_phibunsongkram_hog_natpop"
-		texturefile = "gfx/interface/ideas/SIA/plaek_political.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_direk_jayanama_hog_socdem"
-		texturefile = "gfx/interface/ideas/SIA/direk_jayanama.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_phin_choonhavan_hog_pataut"
-		texturefile = "gfx/interface/ideas/SIA/phin_choonhavan.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_siddhi_savetsila_hog_maklib"
-		texturefile = "gfx/interface/ideas/SIA/siddhi_savetsila.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_wichitwathakarn_hog_valkist"
-		texturefile = "gfx/interface/ideas/SIA/luang_wichitwatakan.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_prachuap_bunnag_hog_soccon"
-		texturefile = "gfx/interface/ideas/SIA/prachuap.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_chit_sunthornworn_soccon"
-		texturefile = "gfx/interface/ideas/SIA/chit_sunthonworn.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_kuang_abhaiwongse_hog_soclib"
-		texturefile = "gfx/interface/ideas/SIA/kuang_political.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_luang_aduldejjarus_hog_pataut"
-		texturefile = "gfx/interface/ideas/SIA/adul_dejjarus.dds"
+		texturefile = "gfx/interface/ideas/SIA/ministers/Siam_Council_of_Ministers.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_SIA_hrh_prince_chainat_hog_authdem"
-		texturefile = "gfx/interface/ideas/SIA/prince_chainat.dds"
+		texturefile = "gfx/interface/ideas/SIA/ministers/Prince Chainat.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_SIA_hh_prince_chanthaburi_ii_hog_natpop"
-		texturefile = "gfx/interface/ideas/SIA/prince_chanthaburi.dds"
+		name = "GFX_idea_SIA_phin_choonhavan_hog_pataut"
+		texturefile = "gfx/interface/ideas/SIA/ministers/Phin_Choonhavan.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_SIA_boonsanong_punyodyana_hog_vanguard"
-		texturefile = "gfx/interface/ideas/SIA/boonsanong.dds"
+		name = "GFX_idea_SIA_luang_aduldejjarus_hog_pataut"
+		texturefile = "gfx/interface/ideas/SIA/ministers/Aduldejjarus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_prayool_pamornmontri_hog_pataut"
+		texturefile = "gfx/interface/ideas/SIA/ministers/Prayool_Pamornmontri.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_direk_jayanama_hog_socdem"
+		texturefile = "gfx/interface/ideas/SIA/ministers/Direk_Chainam.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_kuang_abhaiwongse_hog_soclib"
+		texturefile = "gfx/interface/ideas/SIA/ministers/Khuang_Abhaiwongse.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_kukrit_pramoj_hog_marlib"
+		texturefile = "gfx/interface/ideas/SIA/ministers/Kukrit_Pramoj.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_SIA_seni_pramoj_hog_marlib"
-		texturefile = "gfx/interface/ideas/SIA/ministers/SIA_Seni_Pramoj.dds"
+		texturefile = "gfx/interface/ideas/SIA/ministers/Seni_Pramoj.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_prachuap_bunnag_hog_soccon"
+		texturefile = "gfx/interface/ideas/SIA/ministers/Prachuap_Bunnak.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_plaek_phibunsongkram_hog_natpop"
+		texturefile = "gfx/interface/ideas/SIA/ministers/Plaek_Civilian.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_SIA_luang_sunawin_wiwat_hog_natpop"
-		texturefile = "gfx/interface/ideas/SIA/VcAd_Luang_Sunawin_wiwat.dds"
+		texturefile = "gfx/interface/ideas/SIA/ministers/Sunawinwiwat.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_SIA_luan_vekchalikanon_hog_libsoc"
-		texturefile = "gfx/interface/ideas/SIA/Luan_vekchalikanon.dds"
-	}
-	##Economy
-	spriteType = {
-		name = "GFX_idea_SIA_phya_manavarajasevee_eco_authdem"
-		texturefile = "gfx/interface/ideas/SIA/phya_manavarajasevee.dds"
+		name = "GFX_idea_SIA_phao_sriyanond_hog_natpop"
+		texturefile = "gfx/interface/ideas/SIA/ministers/Phao Sriyanond.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_SIA_phyom_chulanont_eco_van"
-		texturefile = "gfx/interface/ideas/SIA/Phayom_Chulanont.dds"
+		name = "GFX_idea_SIA_wichitwathakarn_hog_valkist"
+		texturefile = "gfx/interface/ideas/SIA/ministers/Wichitwathakarn.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_SIA_prince_phromphong_athiraja_eco_patauth"
-		texturefile = "gfx/interface/ideas/SIA/Phromphong.dds"
+		name = "GFX_idea_SIA_luan_vekchalikanon_hog_col"
+		texturefile = "gfx/interface/ideas/SIA/ministers/Luan_Vekchalikanon.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_SIA_prince_wiwathanachai_eco_authdem"
-		texturefile = "gfx/interface/ideas/SIA/Wiwattanachai.dds"
+		name = "GFX_idea_SIA_waas_suthornjamorn_hog_van"
+		texturefile = "gfx/interface/ideas/SIA/ministers/Waas_Suthornjamorn.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_SIA_phya_koman_kulmontri_eco_authdem"
-		texturefile = "gfx/interface/ideas/SIA/Komal.dds"
+		name = "GFX_idea_SIA_pridi_banomyong_hog_libsoc"
+		texturefile = "gfx/interface/ideas/SIA/ministers/Pridi_Banomyong.dds"
 	}
-	spriteType = {
-		name = "GFX_idea_SIA_suwich_phantaset_eco_collectivist"
-		texturefile = "gfx/interface/ideas/SIA/Suwich.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_leng_srisomwong_eco_marlib"
-		texturefile = "gfx/interface/ideas/SIA/Leng_Srisomwong.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_wichit_lulitanont_eco_socdem"
-		texturefile = "gfx/interface/ideas/SIA/Wichit_Lulitanont.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_puay_ungphakorn_eco_soclib"
-		texturefile = "gfx/interface/ideas/SIA/Puay.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_phra_sarasad_palakan_eco_soccon"
-		texturefile = "gfx/interface/ideas/SIA/Phra_Sarasad.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_jaroon_rattakul_eco_valkist"
-		texturefile = "gfx/interface/ideas/SIA/Jaroon.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_phao_pianloed_eco_natpop"
-		texturefile = "gfx/interface/ideas/SIA/Phao_Pianloed.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_boonsanong_punyodyana_eco_vanguard"
-		texturefile = "gfx/interface/ideas/SIA/boonsanong.dds"
-	}
-	##Foreign
+	###Foreign Minister
 	spriteType = {
 		name = "GFX_idea_SIA_pridi_banomyong_for_libsoc"
-		texturefile = "gfx/interface/ideas/SIA/pridi_political.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_traidos_phrabandhu_tevakul_for_authdem"
-		texturefile = "gfx/interface/ideas/SIA/ministers/SIA_Traitotphrapan_Tevakul.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_phraya_sri_visarnvaja_for_soclib"
-		texturefile = "gfx/interface/ideas/SIA/tianliang.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_phraya_abhiban_rajamaitri_for_pataut"
-		texturefile = "gfx/interface/ideas/SIA/Tom Bunnag.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_phraya_phahon_for_soccon"
-		texturefile = "gfx/interface/ideas/SIA/Phot_Phahonyothin.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_pridi_thepphong_tevakul_for_natpop"
-		texturefile = "gfx/interface/ideas/SIA/ministers/SIA_Priditheppong_Tevakul.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_phot_sarasin_for_socdem"
-		texturefile = "gfx/interface/ideas/SIA/Phot_sarasin.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_nai_vorakanbancha_for_natpop"
-		texturefile = "gfx/interface/ideas/SIA/Vorakarnbancha.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_phraya_sri_sena_for_maklib"
-		texturefile = "gfx/interface/ideas/SIA/Sri_Sena.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_prince_wan_waithayakon_for_soclib"
-		texturefile = "gfx/interface/ideas/SIA/Prince_Wan_Waithayakorn.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_sukit_nimmarnmhern_for_valkist"
-		texturefile = "gfx/interface/ideas/SIA/ministers/SIA_Sukit_Nimmarnmhern.dds"
-	}
-	##Security 
-	spriteType = {
-		name = "GFX_idea_SIA_prince_chirapravati_voradej_sec_pataut"
-		texturefile = "gfx/interface/ideas/SIA/Prince_nakorn_chaisri.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_tawil_udon_sec_libsoc"
-		texturefile = "gfx/interface/ideas/SIA/Tawin.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_prince_sukhumbandhu_prince_nakornsawan_sec_authdem"
-		texturefile = "gfx/interface/ideas/SIA/Prince_nakornsawan.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_phraya_udomphong_phensawat_sec_socdem"
-		texturefile = "gfx/interface/ideas/SIA/Phraya_udomphong.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_mangkorn_promyothee_sec_soclib"
-		texturefile = "gfx/interface/ideas/SIA/Mangkorn.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_tawee_bunyaket_sec_marlib"
-		texturefile = "gfx/interface/ideas/SIA/Tawee_Bunyaket.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_banyati_thephassadin_na_ayudhaya_sec_natpop"
-		texturefile = "gfx/interface/ideas/SIA/Banyati.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_praphas_charusathien_sec_valkist"
-		texturefile = "gfx/interface/ideas/SIA/Praphas.dds"
-	}
-	##Intelligent Service
-	spriteType = {
-		name = "GFX_idea_SIA_luang_naruebetmanit_int_authdem"
-		texturefile = "gfx/interface/ideas/SIA/Sanguan_Juthatemi.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_chit_sinadyotharak_int_pataut"
-		texturefile = "gfx/interface/ideas/SIA/Man_Silpa.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_luang_chamnannitikaset_int_socdem"
-		texturefile = "gfx/interface/ideas/SIA/Luang_chamnan_nitikaset.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_chuen_charuphas_int_soccon"
-		texturefile = "gfx/interface/ideas/SIA/Chuen_charuphas.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_khun_sukhontawit_sueksakorn_int_soclib"
-		texturefile = "gfx/interface/ideas/SIA/Samang_sukhontawit.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_suphasawadwongsanit_sawaddiwat_int_natpop"
-		texturefile = "gfx/interface/ideas/SIA/Mom_chin.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_sanguan_tularak_int_valkist"
-		texturefile = "gfx/interface/ideas/SIA/Sanguan_tularak.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_teerayut_bunmee_int_libsoc"
-		texturefile = "gfx/interface/ideas/SIA/Teerayut_bunmee.dds"
-	}
-	##Chief of Staff
-	spriteType = {
-		name = "GFX_idea_SIA_phraya_phahon_cos"
-		texturefile = "gfx/interface/ideas/SIA/SIA_Phraya_Phaholpholphayuhasena.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_phraya_ritti_arkaney_cos"
-		texturefile = "gfx/interface/ideas/SIA/SIA_Phraya_Ritthi_akkhaney.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_phraya_songsuradet_cos"
-		texturefile = "gfx/interface/ideas/SIA/SIA_Phraya_Songsuradet.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_phraya_sittisongkhram_cos"
-		texturefile = "gfx/interface/ideas/SIA/SIA_Phraya_Sri_Sitthisongkram.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_sarit_thanarat_cos"
-		texturefile = "gfx/interface/ideas/SIA/SIA_Sarit_Thanarat.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_phraya_promyothee_cos"
-		texturefile = "gfx/interface/ideas/SIA/Mangkorn.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_plaek_phibunsongkram_cos"
-		texturefile = "gfx/interface/ideas/SIA/ministers/SIA_Plaek_Khittasangkha.dds"
-	}
-	##Chief of Army
-	spriteType = {
-		name = "GFX_idea_SIA_prince_boworadet_carm"
-		texturefile = "gfx/interface/ideas/SIA/ministers/SIA_Boworadet_Kritsadakorn.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_phin_choonhavan_carm"
-		texturefile = "gfx/interface/ideas/SIA/Marshal_Phin.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_luang_seriroengrit_carm"
-		texturefile = "gfx/interface/ideas/SIA/ministers/SIA_Luang_Seriroengrit.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_Prayool_Paramontri_carm"
-		texturefile = "gfx/interface/ideas/SIA/ministers/SIA_Prayool_Paramontri.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_Thanom_Kittikachorn_carm"
-		texturefile = "gfx/interface/ideas/SIA/ministers/SIA_Thanom_Kittikachorn.dds"
-	}
-	##Chief of Navy
-	spriteType = {
-		name = "GFX_idea_SIA_Luang_Sinthusongkhramchai_cnav"
-		texturefile = "gfx/interface/ideas/SIA/ministers/SIA_Luang_Sinthusongkhramchai.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_Luang_Supachalasai_cnav"
-		texturefile = "gfx/interface/ideas/SIA/ministers/SIA_Luang_Supachalasai.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_Phraya_Wichitchollatee_cnav"
-		texturefile = "gfx/interface/ideas/SIA/ministers/SIA_Phraya_Wichitchollatee.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_Phraya_Wicharnchakkrit_cnav"
-		texturefile = "gfx/interface/ideas/SIA/ministers/SIA_Phraya_Wicharnchakkrit.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_Thawan_Thamrongnawasawat_cnav"
-		texturefile = "gfx/interface/ideas/SIA/ministers/SIA_Thawan_Thamrongnawasawat.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_Luang_Yuthasartkosol_cnav"
-		texturefile = "gfx/interface/ideas/SIA/Yuthasartkosol.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_Sangad_Chaloryu_cnav"
-		texturefile = "gfx/interface/ideas/SIA/Sangad_Chaloryu.dds"
-	}
-	##Chief of Air Force
-	spriteType = {
-		name = "GFX_idea_SIA_Luang_Vejayantarungsarit_cair"
-		texturefile = "gfx/interface/ideas/SIA/ministers/SIA_Luang_Wechayanrangsarit.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_Fuen_Ritthakhanee_cair"
-		texturefile = "gfx/interface/ideas/SIA/Fuen.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_Chaloemkiart_Wattanangkool_cair"
-		texturefile = "gfx/interface/ideas/SIA/Chaloemkiart_Wattanangkool.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_Luang_Atuegtevadej_cair"
-		texturefile = "gfx/interface/ideas/SIA/Bunjiam.dds"
+		texturefile = "gfx/interface/ideas/SIA/ministers/Pridi_Banomyong.dds"
 	}
 }

@@ -1,8 +1,1467 @@
 ﻿add_namespace = siam
 add_namespace = siambw
 add_namespace = siam_start
-add_namespace = siamchallenge
 add_namespace = siamcivilwar
+add_namespace = siamww
+add_namespace = siamfate
+add_namespace = siam_border_conflict
+add_namespace = siamelection
+
+country_event = {
+	id = siamelection.1
+	title = "Election in 1936"
+	desc = siamelection.1.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			set_country_flag = election_finish_1936
+		}
+	}
+	option = { #Kit Sangkom and Valkist
+		name = "Unificationism is so strong"
+		remove_all_ministers = yes
+		hidden_effect = {
+			add_popularity = { ideology = market_liberal popularity = 0.4 }
+			add_popularity = { ideology = social_liberal popularity = 0.15 }
+			add_popularity = { ideology = valkist popularity = 0.15 }
+			add_popularity = { ideology = authoritarian_democrat popularity = -0.13 }
+			add_popularity = { ideology = vanguardist popularity = -0.1 }
+		}
+		set_politics = {	
+			ruling_party = market_liberal
+			last_election = "1936.9.28"
+			election_frequency = 36
+			elections_allowed = yes
+		}
+		
+		hidden_effect = {
+			SP_NS_clear_coalition_effect = yes
+			set_country_flag = coalition_valkist
+			set_country_flag = tai_unificationist_win_election
+			SIA_swap_the_focus = yes
+			SIA_unificationist_seatoffate_begin = yes
+			add_ideas = {
+				SIA_siddhi_savetsila_hog_maklib
+				SIA_phraya_sri_visarnvaja_for_soclib
+				SIA_phraya_sri_sena_for_maklib
+				SIA_jaroon_rattakul_eco_valkist
+				SIA_tawee_bunyaket_sec_marlib
+				SIA_chuen_charuphas_int_soccon
+			}
+		}
+	}
+	option = { ##Royalist
+		name = "First is king, second still be a king"
+		remove_all_ministers = yes
+		hidden_effect = {
+			add_popularity = { ideology = paternal_autocrat popularity = 0.2 }
+			add_popularity = { ideology = authoritarian_democrat popularity = 0.35 }
+			add_popularity = { ideology = valkist popularity = 0.1 }
+			add_popularity = { ideology = libertarian_socialist popularity = -0.13 }
+			add_popularity = { ideology = vanguardist popularity = -0.1 }
+		}
+		set_politics = {	
+			ruling_party = authoritarian_democrat
+			last_election = "1936.9.28"
+			election_frequency = 36
+			elections_allowed = yes
+		}
+		hidden_effect = {
+			SP_NS_clear_coalition_effect = yes
+			set_country_flag = coalition_paternal_autocrat
+			set_country_flag = royalist_win_election
+			SIA_swap_the_focus = yes
+			add_ideas = {
+				SIA_hrh_prince_chainat_hog_authdem
+				SIA_traidos_phrabandhu_tevakul_for_authdem
+				SIA_prince_phromphong_athiraja_eco_patauth
+				SIA_prince_chirapravati_voradej_sec_pataut
+				SIA_luang_naruebetmanit_int_authdem
+			}
+		}
+	}
+	option = { ##Prachatipat and Khana Ratsadon 
+		name = "People and Traditional shall be the partner of them"
+		remove_all_ministers = yes
+		hidden_effect = {
+			add_popularity = { ideology = social_conservative popularity = 0.2 }
+			add_popularity = { ideology = social_liberal popularity = 0.2 }
+			add_popularity = { ideology = social_democrat popularity = 0.13 }
+			add_popularity = { ideology = libertarian_socialist popularity = -0.13 }
+			add_popularity = { ideology = vanguardist popularity = -0.1 }
+		}
+		set_politics = {	
+			ruling_party = social_liberal
+			last_election = "1936.9.28"
+			election_frequency = 36
+			elections_allowed = yes
+		}
+		hidden_effect = {
+			SP_NS_clear_coalition_effect = yes
+			set_country_flag = coalition_social_conservative
+			set_country_flag = united_centrist_win_election
+			SIA_swap_the_focus = yes
+			add_ideas = {
+				SIA_prachuap_bunnag_hog_soccon
+				SIA_phot_sarasin_for_socdem
+				SIA_puay_ungphakorn_eco_soclib
+				SIA_chit_sunthornworn_sec_soccon
+				SIA_luang_chamnannitikaset_int_socdem
+			}
+		}
+	}
+}
+country_event = {
+	id = siam_border_conflict.1
+	title = "Victory of Vientiane Campaign"
+	desc = siam_border_conflict.1.d
+	is_triggered_only = yes
+	option = {
+		name = "Let's push them back to ocean!"
+		add_political_power = 50
+		hidden_effect = {
+			set_country_flag = win_vientiane_campaign
+		}
+	}
+}
+country_event = {
+	id = siam_border_conflict.2
+	title = "Lose of Vientiane Campaign"
+	desc = siam_border_conflict.2.d
+	is_triggered_only = yes
+	option = {
+		name = "How dare you do with us!?"
+		add_political_power = -50
+		hidden_effect = {
+			set_country_flag = lose_vientiane_campaign
+		}
+	}
+}
+
+country_event = {
+	id = siam_border_conflict.3
+	title = "Victory of Battambang Campaign"
+	desc = siam_border_conflict.3.d
+	is_triggered_only = yes
+	option = {
+		name = "Let's push them back to ocean!"
+		add_political_power = 50
+		hidden_effect = {
+			set_country_flag = win_battambang_campaign
+		}
+	}
+}
+country_event = {
+	id = siam_border_conflict.4
+	title = "Lose of Battambang Campaign"
+	desc = siam_border_conflict.4.d
+	is_triggered_only = yes
+	option = {
+		name = "How dare you do with us!?"
+		add_political_power = -50
+		hidden_effect = {
+			set_country_flag = lose_battambang_campaign
+		}
+	}
+}
+country_event = {
+	id = siam_border_conflict.5
+	title = "Resolution of Indochinese Question"
+	desc = siam_border_conflict.5.d
+	is_triggered_only = yes
+	option = {
+		name = "Is the our ending in Asia?"
+		##Transfer claimed territories in Indochina
+		SIA = {
+			every_state = {
+				limit = {
+					AND = {
+						is_core_of = FIC
+						is_claimed_by = SIA
+						NOT = {
+							state = 958
+							state = 671
+							state = 286
+							state = 961
+						}
+					}
+				}
+				SIA = { transfer_state = PREV }
+			}
+		}
+		##End of Indochinese Colonial Government
+		FRA = {
+			set_autonomy = {
+				target = FIC
+				autonomous_state = autonomy_free
+			}
+		}
+		##France and Siam can't be friend forever and more
+		FRA = {
+			add_opinion_modifier = {
+				target = SIA
+				modifier = SIA_fra_rival_forever
+			}
+		}
+		SIA = {
+			add_opinion_modifier = {
+				target = FRA
+				modifier = SIA_fra_rival_forever
+			}
+		}
+	}
+}
+country_event = {
+	id = siamww.1
+	title = "Demand the Monthon Burapha"
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { ##For French Indochina
+		name = "If they claimed and they can defeat us, we shall give them all of claimed lands"
+		trigger = {
+			tag = FIC
+		}
+		ai_chance = {
+			base = 5
+			modifier = {
+				factor = 1000
+				if = {
+					limit = {
+						FRA = {
+							all_owned_state = {
+								NOT = { is_on_continent = europe }
+							}
+						}
+					}
+				}
+			}
+		}
+		SIA = {
+			every_state = {
+				limit = {
+					AND = {
+						is_core_of = FIC
+						is_claimed_by = SIA
+					}
+				}
+				SIA = {
+					transfer_state = PREV
+				}
+			}
+		}
+	}
+	option = { ##For Independent Indochina
+		name = "It's your gift from us, thanks for your help and we will bend the knees to our benefactor"
+		trigger = {
+			tag = ICR
+		}
+		ai_chance = {
+			base = 5
+			modifier = {
+				factor = 1000
+				if = {
+					limit = {
+						SIA = {
+							has_government = national_populist
+							has_completed_focus = SIA_south_annam_plan
+						}
+					}
+				}
+			}
+		}
+		SIA = {
+			every_state = {
+				limit = {
+					AND = {
+						is_core_of = FIC
+						is_claimed_by = SIA
+					}
+				}
+				SIA = {
+					transfer_state = PREV
+				}
+			}
+			set_autonomy = {
+				target = ICR
+				autonomous_state = autonomy_colony
+			}
+		}
+	}
+	option = { ##Disagree in demanding 
+		name = "That's our Motherland, anyone can't take it from us"
+		trigger = {
+			OR = {
+				tag = ICR
+				tag = FIC
+			}
+		}
+		ai_chance = {
+			base = 5
+		}
+		SIA = {
+			create_wargoal = {
+				type = take_claimed_state
+				target = ROOT
+			}
+		}
+	}
+}
+country_event = {
+	id = siamww.2
+	title = "Demand the Shan territory"
+	desc = siamww.2.d
+	is_triggered_only = yes
+	option = {
+		name = "A little state is perfectly for little country"
+		every_state = {
+			limit = { is_core_of = SHN }
+			SHN = { transfer_state = PREV }
+		}
+		SIA = { end_exile = SHN }
+		SIA = {
+			set_autonomy = {
+				autonomous_state = autonomy_dominion
+				target = SHN
+			}
+		}
+		hidden_effect = {
+			SHN = {
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = weapon_influence producer = SIA } 
+			}
+			clear_variable = weapon_influence
+		}
+	}
+	option = {
+		name = "Even the millimetre shall not yours"
+		SIA = {
+			create_wargoal = {
+				type = take_claimed_state
+				target = ROOT
+			}
+		}
+	}
+}
+country_event = {
+	id = siamww.3
+	title = "Demand the Mon territory"
+	desc = siamww.3.d
+	is_triggered_only = yes
+	option = {
+		name = "A little state is perfectly for little country"
+		every_state = {
+			limit = { is_core_of = MNS }
+			MNS = { transfer_state = PREV }
+		}
+		SIA = { end_exile = MNS }
+		SIA = {
+			set_autonomy = {
+				autonomous_state = autonomy_dominion
+				target = MNS
+			}
+		}
+		hidden_effect = {
+			MNS = {
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = weapon_influence producer = SIA } 
+			}
+			clear_variable = weapon_influence
+		}
+	}
+	option = {
+		name = "Even the millimetre shall not yours"
+		SIA = {
+			create_wargoal = {
+				type = take_claimed_state
+				target = ROOT
+			}
+		}
+	}
+}
+country_event = {
+	id = siamww.4
+	title = "[SIA.GetAdjective] Government demands the Burmese territories"
+	desc = siamww.4.d
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			random_country = {
+				limit = { 
+					original_tag = ENG
+					owns_state = 1007
+				}
+				PREV = { set_country_flag = negotiation_between_britain_and_siam }
+			}
+		}
+	}
+	##For Burma
+	option = {
+		name = "Sometimes we don't have the many troop to against them"
+		trigger = {
+			ROOT = {
+				original_tag = BRM
+			}
+		}
+		ai_chance = { base = 5 }
+		every_state = {
+			limit = {
+				is_controlled_by = FROM
+				is_claimed_by = SIA
+				region = 189
+			}
+			SIA = { transfer_state = PREV }
+		}
+	}
+	option = {
+		name = "Our lands can't give to foreigners again"
+		trigger = {
+			ROOT = { 
+				original_tag = BRM
+			}
+		}
+		ai_chance = { base = 5 }
+		SIA = {
+			create_wargoal = {
+				type = take_claimed_state
+				target = ROOT
+			}
+		}
+	}
+	##For Other country which controls Burmese state
+	option = {
+		name = "If they want the little soil, give them"
+		trigger = {
+			ROOT = {
+				NOT = {
+					original_tag = BRM
+				}
+			}
+		}
+		ai_chance = { base = 5 }
+			every_state = {
+				limit = {
+					is_controlled_by = FROM
+					is_claimed_by = SIA
+					region = 189
+				}
+				SIA = { transfer_state = PREV }
+			}
+	}
+	option = {
+		name = "You want it? Just take it, but your strength only"
+		trigger = {
+			ROOT = { 
+				original_tag = BRM
+			}
+		}
+		ai_chance = { base = 5 }
+		SIA = {
+			create_wargoal = {
+				type = take_claimed_state
+				target = FROM
+			}
+		}
+	}
+}
+##Successful negotiation 
+country_event = {
+	id = siamww.5
+	title = "Britain invites you join [ENG.GetFaction]"
+	desc = siamww.5.d
+	trigger = {
+		tag = SIA 
+		ENG = { has_country_flag = negotiation_between_britain_and_siam }
+		NOT = { SIA = { is_in_faction_with = ENG } }
+	}
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	option = {
+		name = "That's cost when I took your land, right?"
+		ENG = { add_to_faction = SIA }
+	}
+}
+##Unsuccessful negotiation and win the Burmese War
+country_event = {
+	id = siamww.6
+	title = "Fading Empire"
+	desc = siamww.6.d
+	is_triggered_only = yes
+	option = {
+		name = "Obviously, we shall have negotiation with you"
+		SIA = { country_event = siam.57 }
+	}
+	option = {
+		name = "We shall never surrender!"
+	}
+}
+##Useful event for create wargoal 
+country_event = {
+	id = siamww.7
+	title = "[SIA.GetName] demands the claimed territory in our country"
+	desc = siamww.7.d
+	is_triggered_only = yes
+	option = {
+		name = "If you want it, just take it"
+		ai_chance = {
+			base = 5
+			modifier = {
+				factor = 100
+				if = {
+					ROOT = { is_in_faction_with = SIA } 
+				}
+			}
+		}
+		every_state = {
+			limit = { 
+				is_controlled_by = ROOT
+				is_claimed_by = SIA
+			}
+			SIA = { transfer_state = PREV }
+		}
+	}
+	option = {
+		name = "Don't joke with us!!"
+		ai_chance = {
+			base = 5
+		}
+		SIA = {
+			create_wargoal = {
+				type = take_claimed_state
+				target = ROOT
+			}
+		}
+	}
+}
+country_event = {
+	id = siamww.8
+	title = "China has been challenged by [SIA.GetName]"
+	desc = siamww.8.d
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			if = {
+				every_country = {
+					limit = {
+						any_owned_state = {
+							is_claimed_by = SIA
+						}
+						is_chinese_warlord = yes
+					}
+					set_country_flag = heavenly_mandate_claimed_by_siam
+				}
+			}
+		}
+	}
+	option = {
+		name = "The heavenly mandate shall belong to us!!!"
+	}
+}
+##Calls the ASEAN Provisional Government
+country_event = {
+	id = siamww.9
+	title = "[SIA.GetAdjective] Government invites the South East Asian countries' representatives to forms the ASEAN Provisional Government"
+	desc = siamww.9.d
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = { set_country_flag = leader_of_asean_assembly }
+	}
+	option = {
+		name = "Anyone wants the independent service from me?"
+		every_country = {
+			limit = { is_asean_tag = yes }
+			country_event = { id = siamww.10 days = 15 } 
+		}
+	}
+}
+##ASEAN Provisional Conference
+country_event = {
+	id = siamww.10
+	title = "[SIA.GetName] invites you to ASEAN Provisional Assembly's Session"
+	desc = siamww.10.d
+	is_triggered_only = yes
+	option = {
+		name = "Kills all colonialist and forms the our prosperity sphere? Let me join!"
+		ai_chance = {
+			factor = 8
+		}
+		ROOT = {
+			set_country_flag = plenipotentiary_representative_of_asean_assembly
+		}
+	}
+	option = {
+		name = "We will stand with ourselves!!"
+		ai_chance = { factor = 2 }
+		SIA = { country_event = siamww.11 }
+	}
+}
+##Get disagreeing from invited countries
+country_event = {
+	id = siamww.11
+	desc = siamww.11.d
+	title = "Some countries are not joining our faction"
+	is_triggered_only = yes
+	option = {
+		name = "At your pleasure!!"
+		add_political_power = -10
+	}
+}
+##Invitation the neighbors
+country_event = {
+	id = siamww.12
+	title = "Neighbours' Provisional Government Question"
+	desc = siamww.12.d
+	is_triggered_only = yes
+	option = {
+		name = "Send the invitation now!"
+		hidden_effect = {
+			random_list = {
+				80 = { country_event = siamww.13 }
+				20 = { country_event = siamww.14 }
+			}
+		}
+	}
+}
+##Burma accepts
+country_event = {
+	id = siamww.13
+	title = "Burma accepts our invitation"
+	desc = siamww.13.d
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			random_list = {
+				80 = { country_event = siamww.15 }
+				20 = { country_event = siamww.16 }
+			}
+		}
+	}
+	option = {
+		name = "Welcome to our faction!"
+		BRM = { become_exiled_in = { target = SIA legitimacy = 100 } }
+		hidden_effect = { BRM = { set_country_flag = plenipotentiary_representative_of_asean_assembly } }
+	}
+}
+##Burma disagree
+country_event = {
+	id = siamww.14
+	title = "Burma not accepts our invitation"
+	desc = siamww.14.d
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			random_list = {
+				80 = { country_event = siamww.15 }
+				20 = { country_event = siamww.16 }
+			}
+		}
+	}
+	option = {
+		name = "How did you do that with me!?"
+		add_political_power = -50
+	}
+}
+##Indochina accepts
+country_event = {
+	id = siamww.15
+	title = "Indochina accepts our invitation"
+	desc = siamww.15.d
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			random_list = {
+				80 = { country_event = siamww.17 }
+				20 = { country_event = siamww.18 }
+			}
+		}
+	}
+	option = {
+		name = "Welcome to our faction!"
+		ICR = { become_exiled_in = { target = SIA legitimacy = 100 } }
+		hidden_effect = { ICR = { set_country_flag = plenipotentiary_representative_of_asean_assembly } }
+	}
+}
+##Indochina disagree
+country_event = {
+	id = siamww.16
+	title = "Indochina not accepts our invitation"
+	desc = siamww.16.d
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			random_list = {
+				80 = { country_event = siamww.17 }
+				20 = { country_event = siamww.18 }
+			}
+		}
+	}
+	option = {
+		name = "How did you do that with me!?"
+		add_political_power = -50
+	}
+}
+##Indonesia accepts
+country_event = {
+	id = siamww.17
+	title = "Indonesia accepts our invitation"
+	desc = siamww.17.d
+	is_triggered_only = yes
+	option = {
+		name = "Welcome to our faction!"
+		INS = { become_exiled_in = { target = SIA legitimacy = 100 } }
+		hidden_effect = { INS = { set_country_flag = plenipotentiary_representative_of_asean_assembly } }
+	}
+}
+##Indonesia disagree
+country_event = {
+	id = siamww.18
+	title = "Indonesia not accepts our invitation"
+	desc = siamww.18.d
+	is_triggered_only = yes
+	option = {
+		name = "How did you do that with me!?"
+		add_political_power = -50
+	}
+}
+##Indonesia exists
+country_event = {
+	id = siamww.19
+	title = "Siam invites you to join [SIA.GetFaction]"
+	trigger = {
+		tag = INS
+		is_puppet = no
+		not = { has_country_flag = plenipotentiary_representative_of_asean_assembly }
+		SIA = { has_completed_focus = SIA_calls_foreigner_ministers_to_the_hall }
+	}
+	mean_time_to_happen = { days = 1 }
+	fire_only_once = yes
+	option = {
+		name = "Let me join!"
+		ai_chance = {
+			factor = 8
+		}
+		SIA = { add_to_faction = INS }
+		hidden_effect = { ROOT = { set_country_flag = plenipotentiary_representative_of_asean_assembly } }
+	}
+	option = {
+		name = "We can stand with ourselves"
+		ai_chance = {
+			factor = 2
+		}
+	}
+}
+############Civil War Zone###############
+country_event = { ##Leftist insults the government
+	id = siamcivilwar.1
+	title = "Socialist Faction Leader insults the government after effect from black wednesday"
+	desc = siamcivilwar.1.d
+	is_triggered_only = yes
+	option = {
+		name = "Minority leader is insulting us? Not a problem for us"
+		add_ideas = red_unrest
+		hidden_effect = {
+			set_country_flag = red_insulting
+			country_event = {
+				id = siamcivilwar.2
+				days = 7
+			}
+		}
+	}
+}
+country_event = { ##Civil Unrest
+	id = siamcivilwar.2
+	title = "Civil Unrest"
+	desc = siamcivilwar.2.d
+	is_triggered_only = yes
+	option = {
+		name = "I keep the promise for recovery our economy"
+		hidden_effect = {
+			set_country_flag = keep_promise
+		}
+	}
+	option = {
+		name = "I am not sure what time we shall finish our recovery project but it shall finish"
+		hidden_effect = {
+			set_country_flag = no_promise
+			add_stability = -0.1
+		}
+	}
+}
+country_event = { ##Keep or not, get your effect from us
+	id = siamcivilwar.3
+	title = "Government and Bureaucrats?"
+	desc = siamcivilwar.3.d
+	trigger = {
+		tag = SIA
+		OR = {
+			AND = {
+				has_country_flag = keep_promise
+				has_idea = black_wednesday
+			}
+			AND = {
+				has_country_flag = no_promise
+				has_idea = black_wednesday
+			}
+		}
+	}
+	fire_only_once = yes
+	mean_time_to_happen = { days = 7 }
+	option = {
+		name = "Shall they not fight against us or not? Up to me"
+		add_stability = 0.05
+		hidden_effect = {
+			if = {
+				limit = { NOT = { has_completed_focus = SIA_recovery_from_great_depression } }
+				swap_ideas = {
+					remove_idea = limited_bureaucrat
+					add_idea = ruined_bureaucrat
+				}
+			}
+			if = {
+				limit = { has_country_flag = no_promise }
+				add_stability = -0.05
+				swap_ideas = {
+					remove_idea = limited_bureaucrat
+					add_idea = ruined_bureaucrat
+				}
+			}
+			if = {
+				limit = { has_country_flag = keep_promise }
+				country_event = { 
+					id = siamcivilwar.10
+					days = 15
+				}
+			}
+		}
+	}
+}
+##Assassination attempts the Prime Minister 
+country_event = { ##Terrorist Organization's letter to Government Office
+	id = siamcivilwar.4
+	title = "Provisional People's Liberation Government of Siam sends the memorendum to office"
+	desc = siamcivilwar.4.d
+	trigger = {
+		tag = SIA
+		OR = {
+			has_idea = ruined_bureaucrat
+			has_country_flag = no_promise
+		}
+		NOT = {
+			has_country_flag = assassin_letter
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			set_country_flag = assassin_letter
+		}
+	}
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	option = {
+		trigger = {
+			tag = SIA
+			has_country_flag = keep_promise
+		}
+		name = "We shall look the prime minister carefully and protect him!"
+		hidden_effect = {
+			add_stability = 0.05
+			country_event = {
+				id = siamcivilwar.5
+				days = 30
+			}
+		}
+	}
+	option = {
+		trigger = {
+			tag = SIA
+			has_country_flag = no_promise
+		}
+		name = "I don't think they are confronted us by the letter only"
+		hidden_effect = {
+			add_stability = -0.05
+			country_event = {
+				id = siamcivilwar.6
+				days = 30
+			}
+		}
+	}
+}
+##Assassination attempts failed
+country_event = {
+	id = siamcivilwar.5
+	title = "Prime Minister's assassination attempts failed"
+	desc = siamcivilwar.5.d
+	is_triggered_only = yes
+	option = {
+		name = "Let's find real assassin"
+		custom_effect_tooltip = "Prime Minister shall resign for keep himself save and deputy prime minister shall be the next prime minister"
+		add_ideas = SIA_council_of_minister_hog_authdem
+		hidden_effect = {
+			country_event = {
+				id = siamcivilwar.7
+				days = 20
+			}
+		}
+	}
+}
+##Assassination attempts succeeded
+country_event = {
+	id = siamcivilwar.6
+	title = "The Death of Prime Minister"
+	desc = siamcivilwar.6.d
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			set_country_flag = the_death_of_prime_minister
+		}
+	}
+	option = {
+		name = "Let's find the real assassin"
+		custom_effect_tooltip = "Form the Emergency Government"
+		add_ideas = SIA_council_of_minister_hog_authdem
+		hidden_effect = {
+			country_event = {
+				id = siamcivilwar.7
+				days = 20
+			}
+		}
+	}
+}
+##Found the terrorist's headquarter in Charoen Krung
+country_event = {
+	id = siamcivilwar.7
+	title = "Terrorist Headquarter has been found by local people at Charoen Krung"
+	desc = siamcivilwar.7.d
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = { set_country_flag = start_the_trial }
+	}
+	option = {
+		name = "Far-left wing of Socialist Faction"
+		hidden_effect = {
+			set_country_flag = vanguardist_insultation
+			country_event = {
+				id = siamcivilwar.8
+				days = 14
+			}
+		}
+	}
+	option = {
+		name = "Spy from other country"
+		hidden_effect = {
+			country_event = {
+				id = siamcivilwar.9
+				days = 14
+			}
+		}
+	}
+}
+##Dissolution of United Regional Workers' Council of Siam
+country_event = {
+	id = siamcivilwar.8
+	title = "Act of United Regional Workers' Council's Dissolution"
+	desc = siamcivilwar.8.d
+	is_triggered_only = yes
+	option = {
+		name = "They shall upgrade their action for fight with us"
+		add_popularity = { ideology = vanguardist popularity = -0.5 }
+		add_popularity = { ideology = collectivist popularity = -0.5 }
+		hidden_effect = {
+			set_country_flag = going_to_war_with_leftist
+		}
+	}
+}
+##Compromise with leftist
+country_event = {
+	id = siamcivilwar.9
+	title = "Compromise with Socialist Faction and Leftist Unrest"
+	desc = siamcivilwar.9.d
+	is_triggered_only = yes
+	option = {
+		name = "I think this is peace of us"
+		remove_ideas = red_unrest
+		hidden_effect = {
+			set_country_flag = peace_of_siam
+			clr_country_flag = red_insulting
+		}
+	}
+}
+##Compromise with Bureaucrat
+country_event = {
+	id = siamcivilwar.10
+	title = "Compromise with Bureaucrat"
+	desc = siamcivilwar.10.d
+	is_triggered_only = yes
+	option = {
+		name = "Finally, everyone unites again"
+		add_stability = 0.05
+		if = {
+			limit = { has_idea = ruined_bureaucrat }
+			swap_ideas = {
+				remove_idea = ruined_bureaucrat
+				add_idea = limited_bureaucrat
+			}
+			swap_ideas = {
+				remove_idea = limited_bureaucrat
+				add_idea = stable_bureaucrat
+			}
+		}
+	}
+}
+##Final Conclusion between Government and People
+country_event = {
+	id = siamcivilwar.11
+	title = "Final Economic Conclusion"
+	desc = siamcivilwar.11.d
+	trigger = {
+		tag = SIA
+		AND = {
+			has_country_flag = keep_promise
+			has_completed_focus = SIA_finish_the_recovery
+			NOT = { 
+				has_country_flag = final_economic_conclusion 
+				has_country_flag = going_to_war_with_leftist
+			}
+		}
+	}
+	mean_time_to_happen = { days = 7 }
+	fire_only_once = yes
+	immediate = { 
+		hidden_effect = { 
+			ROOT = { set_country_flag = final_economic_conclusion }
+		}
+	}
+	option = {
+		name = "Our promise is our duty too"
+		add_political_power = 100
+		hidden_effect = {
+			set_country_flag = peace_of_siam
+			clr_country_flag = red_insulting
+		}
+		if = {
+			limit = {
+				OR = {
+					has_idea = ruined_bureaucrat
+					has_idea = limited_bureaucrat
+				}
+			}
+			country_event = siamcivilwar.10
+		}
+		if = {
+			limit = {
+				has_idea = red_unrest
+			}
+			remove_ideas = red_unrest
+		}
+	}
+}
+##Civil War Preparation##
+country_event = { ##Fuck the Gov. Bomb it all
+	id = siamcivilwar.12
+	title = "Bombing at Korat Provincial Palace"
+	desc = siamcivilwar.12.d
+	trigger = {
+		tag = SIA
+		AND = {
+			has_country_flag = red_insulting
+			has_country_flag = going_to_war_with_leftist
+		}
+		NOT = { has_country_flag = preparation_before_war }
+	}
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = red_insulting
+			set_country_flag = preparation_before_war
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+	fire_only_once = yes
+	option = {
+		name = "For god's sake!"
+		add_stability = -0.05
+		add_political_power = -100
+		1011 = {
+			damage_building = {
+				type = infrastructure
+				damage = 2
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 2
+			}
+		}
+	}
+}
+country_event = {
+	id = siamcivilwar.13
+	title = "Bombing at Udon Ratchathani Provincial Palace"
+	desc = siamcivilwar.13.d
+	trigger = {
+		tag = SIA
+		AND = {
+			has_country_flag = preparation_before_war
+			has_country_flag = going_to_war_with_leftist
+		}
+		NOT = { has_country_flag = count_to_war }
+	}
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = preparation_before_war
+			set_country_flag = count_to_war
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+	fire_only_once = yes
+	option = {
+		name = "For god's sake!"
+		add_stability = -0.05
+		add_political_power = -100
+		804 = {
+			damage_building = {
+				type = infrastructure
+				damage = 2
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 2
+			}
+		}
+	}
+}
+##Country in chaos##
+country_event = {
+	id = siamcivilwar.14
+	title = "Declaration the Martial Law"
+	desc = siamcivilwar.14
+	trigger = {
+		tag = SIA
+		AND = {
+			has_country_flag = count_to_war
+			NOT = { has_country_flag = nearly_the_war }
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+	fire_only_once = yes
+	option = {
+		name = "Keep the order, try to secure!!"
+		add_ideas = country_in_chaos
+		if = {
+			limit = { has_idea = red_unrest }
+			remove_ideas = red_unrest
+		}
+		hidden_effect = {
+			if = {
+				limit = { has_template = "Korngpon Taharn Rarb" }
+				delete_unit_template_and_units = { division_template = "Korngpon Taharn Rarb" }
+			}
+			if = {
+				limit = { has_template = "Korngpon Taharn Rarb Puenyai" }
+				delete_unit_template_and_units = { division_template = "Korngpon Taharn Rarb Puenyai" }
+			}
+			if = {
+				limit = { has_template = "Korngpon Taharn Rarb Yarnkhror" }
+				delete_unit_template_and_units = { division_template = "Korngpon Taharn Rarb Yarnkhror" }
+			}
+			if = {
+				limit = { has_template = "Korngpon Taharn Rarb Raksa Pra-ong" }
+				delete_unit_template_and_units = { division_template = "Korngpon Taharn Rarb Raksa Pra-ong" }
+			}
+			if = {
+				limit = { has_template = "Krom Navikkayothin" }
+				delete_unit_template_and_units = { division_template = "Krom Navikkayothin" }
+			}
+			if = {
+				limit = { has_template = "Krom Taharn Mah" }
+				delete_unit_template_and_units = { division_template = "Krom Taharn Mah" }
+			}
+			if = {
+				limit = { has_template = "Krom Taharn Rarb Yarnyon" }
+				delete_unit_template_and_units = { division_template = "Krom Taharn Rarb Yarnyon" }
+			}
+			if = {
+				limit = { has_template = "Korngpon Taharn Rarb Raksagarn" }
+				delete_unit_template_and_units = { division_template = "Korngpon Taharn Rarb Raksagarn" }
+			}
+			country_lock_all_division_template = yes
+			country_event = {
+				id = siamcivilwar.15
+				days = 3
+			}
+			set_country_flag = nearly_the_war
+		}
+	}
+}
+country_event = {
+	id = siamcivilwar.15
+	title = "General Strike at Esan and Lanna"
+	desc = siamcivilwar.15.d
+	is_triggered_only = yes
+	option = {
+		name = "What the happened!!!"
+		add_political_power = -50
+		add_stability = -0.1
+		hidden_effect = { 
+			set_country_flag = general_strike 
+			set_variable = { reslev = 0 }
+			country_event = {
+				id = siamcivilwar.16
+				days = 7
+			}
+			country_event = {
+				id = siamcivilwar.17
+				days = 10
+			}
+			hidden_effect = {
+				set_variable = { anarzone = 0 }
+				set_variable = { natcolzone = 0 }
+				set_variable = { govzone = 0 }
+			}
+		}
+	}
+}
+country_event = {
+	id = siamcivilwar.16
+	title = "Anarchy state at Esan"
+	desc = siamcivilwar.16.d
+	is_triggered_only = yes
+	option = {
+		name = "Try to contact our army!"
+		1011 = { set_demilitarized_zone = yes }
+		804 = { set_demilitarized_zone = yes }
+		add_stability = -0.2
+		hidden_effect = {
+			set_country_flag = esan_anarchy
+			1011 = {
+				remove_core_of = SIA
+				add_core_of = SIR
+				force_enable_resistance = SIA
+				start_resistance = SIR
+				set_compliance = 0
+				set_resistance = 30
+			}
+			804 = {
+				remove_core_of = SIA
+				add_core_of = SIR
+				force_enable_resistance = SIA
+				start_resistance = SIR
+				set_compliance = 0
+				set_resistance = 30
+			}
+		}
+	}
+}
+country_event = {
+	id = siamcivilwar.17
+	title = "Anarchy state at Lanna"
+	desc = siamcivilwar.17.d
+	is_triggered_only = yes
+	option = {
+		name = "Those scums!!"
+		1010 = { set_demilitarized_zone = yes }
+		add_stability = -0.1
+		hidden_effect = {
+			set_country_flag = lanna_anarchy
+			1010 = {
+				remove_core_of = SIA
+				add_core_of = SIR
+				force_enable_resistance = SIA
+				start_resistance = SIR
+				set_compliance = 0
+				set_resistance = 30
+			}
+		}
+	}
+}
+###Anarchy Status and Fight with NatCol
+country_event = {
+	id = siamcivilwar.18
+	title = "Another Bombing"
+	desc = siamcivilwar.18.d
+	is_triggered_only = yes
+	option = {
+		name = "How dare you"
+		random_state = {
+			limit = {
+				OR = {
+					state = 1010
+					state = 804 
+					state = 1011
+				}
+			}
+			add_resistance = 1
+			add_compliance = -1
+		}
+	}
+}
+country_event = {
+	id = siamcivilwar.19
+	title = "Failed to contact the spy"
+	desc = siamcivilwar.19.d
+	is_triggered_only = yes
+	option = {
+		name = "Find another way now!"
+		random_state = {
+			limit = {
+				OR = {
+					state = 1010
+					state = 804 
+					state = 1011
+				}
+			}
+			add_compliance = -2
+		}
+	}
+}
+country_event = {
+	id = siamcivilwar.20
+	title = "Gangstas' uprising"
+	desc = siamcivilwar.20.d
+	trigger = {
+		tag = SIA
+		check_variable = {
+			var = anarzone
+			value = 15
+			compare = greater_than_or_equals
+		}
+	}
+	fire_only_once = yes
+	mean_time_to_happen = { days = 7 }
+	option = {
+		name = "Oh, for god's sake!"
+		random_state = {
+			limit = {
+				OR = {
+					state = 1010
+					state = 804 
+					state = 1011
+				}
+			}
+			add_resistance = 5
+		}
+	}
+}
+##Bad Ending Route
+country_event = {
+	id = siamcivilwar.21
+	title = "[SIR.GetName] is declaring revolution war on [SIA.GetName]"
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = { 
+			release = SIR
+			ROOT = { set_country_flag = into_the_civilwar }
+			SIR = { set_country_flag = into_the_civilwar }
+		}
+	}
+	option = {
+		name = "Let the war begin"
+		SIR = {
+			declare_war_on = {
+				target = SIA
+				type = annex_everything
+			}
+		}
+		every_state = {
+			limit = { is_core_of = SIA }
+			add_claim_by = SIR
+		}
+		every_state = {
+			limit = { is_core_of = SIR }
+			add_claim_by = SIA
+		}
+		hidden_effect = {
+			SIR = { load_oob = "SIR_CIVILWAR" }
+			ROOT = { load_oob = "SIA_CIVILWAR" }
+			remove_ideas = country_in_chaos
+		}
+	}
+}
+country_event = {
+	id = siamcivilwar.22
+	title = "End of the Red"
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			every_country = {
+				limit = { has_country_flag = into_the_civilwar }
+				clr_country_flag = into_the_civilwar
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SIA
+					is_core_of = SIR
+				}
+				add_core_of = SIA
+			}
+		}
+	}
+	option = {
+		trigger = {
+			ROOT = { tag = SIA }
+		}
+		name = "Finally, everything returns to its way"
+		every_state = {
+			limit = { is_core_of = SIR }
+			remove_core_of = SIR
+		}
+		every_state = {
+			limit = {
+				is_claimed_by = SIR
+			}
+			remove_claim_by = SIR
+		}
+		country_lock_all_division_template = no
+		load_oob = "SIA"
+		hidden_effect = {
+			if = {
+				limit = { has_template = "Kongkamlang Chapowkarn" }
+				delete_unit_template_and_units = { division_template = "Kongkamlang Chapowkarn" }
+			}
+		}
+	}
+}
+##Good Ending Route
+country_event = {
+	id = siamcivilwar.23
+	title = "End of the Red"
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			every_owned_state = {
+				limit = { is_core_of = SIR }
+				add_core_of = SIA
+				cancel_resistance = yes
+				force_disable_resistance = SIA
+			}
+			clr_country_flag = esan_anarchy
+			clr_country_flag = lanna
+			clr_country_flag = general_strike
+			set_country_flag = peace_of_siam
+		}
+	}
+	option = {
+		name = "Finally, everything returns to its way"
+		every_state = {
+			limit = { is_core_of = SIR }
+			remove_core_of = SIR
+		}
+		every_state = {
+			limit = { 
+				is_demilitarized_zone = yes 
+				is_core_of = SIA
+			}
+			set_demilitarized_zone = no
+		}
+		country_lock_all_division_template = no
+		load_oob = "SIA"
+		add_popularity = { ideology = vanguardist popularity = -1 }
+		remove_ideas = country_in_chaos
+		if = {
+			limit = { has_idea = ruined_bureaucrat }
+			swap_ideas = {
+				add_idea = stable_bureaucrat
+				remove_idea = ruined_bureaucrat
+			}
+		}
+	}
+}
 country_event = {
 	id = siam_start.1
 	title = "Welcome to Führerreich: Ban Keid Mung Non"
@@ -35,6 +1494,19 @@ country_event = {
 				days = 1
 			}
 		}
+		SIA_swap_the_focus = yes
+	}
+}
+country_event = {
+	id = siambw.2
+	title = "Emengency Council of Economic Recovering"
+	desc = siambw.2.d
+	is_triggered_only = yes
+	immediate = {
+		SIA_set_economic_council_influence = yes
+	}
+	option = {
+		
 	}
 }
 country_event = {
@@ -60,11 +1532,13 @@ country_event = {
 	fire_only_once = yes
 	
 	option = {
-		name = "Officers and Generals can be MP"
+		name = "We allowed all of them"
+		add_popularity = { ideology = paternal_autocrat popularity = 0.02 }
 		hidden_effect = { set_country_flag = military_mp }
 	}
 	option = {
 		name = "MPs should be civilian or retired soldiers only"
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.02 }
 		hidden_effect = { set_country_flag = agreed_only_ret_soldier }
 	}
 	option = {
@@ -182,16 +1656,10 @@ country_event = {
 	option = {
 		name = "Green for Us!!"
 		add_political_power = 2
-		hidden_effect = {
-			set_country_flag = agriculture_products_trade_union_org
-		}
 	}
 	option = {
 		name = "Oil for Us!!"
 		add_political_power = 2
-		hidden_effect = {
-			set_country_flag = industry_trade_union_org
-		}
 	}
 }
 country_event = {
@@ -354,273 +1822,6 @@ country_event = {
 	}
 }
 
-##Valkist Coup
-country_event = {
-	id = siam.37
-	title = "Officials Meeting at Rajchaprasong"
-	trigger = {
-		tag = SIA
-		has_government = market_liberal
-		has_country_flag = coalition_valkist
-		has_idea = SIA_seni_pramoj_hog_marlib
-		NOT = {
-			has_government = valkist
-			has_completed_focus = SIA_first_congress_of_greater_pantheon_conclave
-			has_country_flag = officials_meeting
-		}
-	}
-	mean_time_to_happen = { days = 14 }
-	fire_only_once = yes
-	immediate = {
-		hidden_effect = {
-			set_country_flag = officials_meeting
-		}
-	}
-	option = {
-		name = "Let's drunk until another morning comes to us!!"
-		add_political_power = 20
-		hidden_effect = {
-			if = {
-				limit = { has_country_flag = SIA_win_civil_war }
-				set_country_flag = valkists_start_revolution
-			}
-			if = {
-				limit = { NOT = { has_country_flag = SIA_win_civil_war } }
-				set_country_flag = valkists_preparing_coup
-			}
-		}
-	}
-}
-country_event = {
-	id = siam.38
-	title = "Secretary of Sapha Ruam Chon Phao Tai meets the Leader of [SIA.GetRulingParty] after the Rajchaprasong Meeting"
-	desc = siam.38.d
-	trigger = {
-		tag = SIA
-		has_government = market_liberal 
-		AND = {
-			has_country_flag = officials_meeting
-			has_country_flag = coalition_valkist
-		}
-		OR = {
-			has_country_flag = valkists_preparing_coup
-			has_country_flag = valkists_start_revolution
-		}
-	}
-	mean_time_to_happen = { days = 7 }
-	fire_only_once = yes
-	immediate = {
-		hidden_effect = { set_country_flag = leadership_of_cabinet_meeting }
-	}
-	option = {
-		name = "So far, so good"
-		add_political_power = 50
-		add_stability = 0.05
-		hidden_effect = {
-			if = {
-				limit = {
-					valkist < 0.2
-				}
-				country_event = {
-					id = siam.402
-					days = 15
-				}
-			}
-			if = {
-				limit = {
-					AND = {
-						valkist > 0.2
-						valkist < 0.49
-					}
-				}
-				country_event = {
-					id = siam.39
-					days = 15
-				}
-			}
-			if = {
-				limit = {
-					valkist > 0.49
-				}
-				country_event = {
-					id = siam.401
-					days = 15
-				}
-			}
-		}
-	}
-}
-##Secular Coup
-country_event = {
-	id = siam.39
-	title = "Sapha Ruam Chon Phao Tai establishes the Propaganda Committee in Esan and Lanna"
-	desc = siam.39.d
-	is_triggered_only = yes
-	option = {
-		name = "If they have nothing to do with us, we should see them only"
-		add_political_power = -50
-		hidden_effect = {
-			set_country_flag = valkist_committee
-			add_ideas = Valkist_influence_in_Siam
-			SIA_recalc_for_idea = yes 
-		}
-	}
-}
-##Magical Coup
-country_event = {
-	id = siam.401
-	title = "Mysterious Person at the front of Ananta Samakhom Throne Hall"
-	desc = siam.401.d
-	is_triggered_only = yes
-	option = {
-		name = "If they have nothing to do with us, we should see them only"
-		add_political_power = -50
-		hidden_effect = {
-			set_country_flag = wizard_blessed_the_parliament
-		}
-	}
-}
-##Failed in coup of Valkist
-country_event = {
-	id = siam.402
-	title = "Coup Plan of Valkists is leaking from their headquarter"
-	desc = siam.402.d
-	is_triggered_only = yes
-	option = {
-		name = "The supreme court finds you guilty and sentence you to be disqualified political rights' person"
-		add_popularity = { ideology = valkist popularity = -0.3 }
-		hidden_effect = {
-			SP_NS_clear_coalition_effect = yes
-			clr_country_flag = coalition_valkist
-			set_country_flag = marlib_supremacy
-		}
-	}
-}
-country_event = {
-	id = siam.41
-	title = "Parliament's Guards storms the Parliament"
-	desc = siam.41.d
-	trigger = {
-		tag = SIA
-		OR = {
-			AND = {
-				has_government = market_liberal
-				has_country_flag = coalition_valkist
-				has_country_flag = valkist_committee
-				OR = {
-					has_idea = Valkist_influence_in_Siam4
-					has_idea = Valkist_influence_in_Siam5
-					has_idea = Valkist_influence_in_Siam6
-				}
-			}
-			AND = {
-				has_government = market_liberal
-				has_country_flag = coalition_valkist
-				has_country_flag = wizard_blessed_the_parliament
-			}
-		}
-		NOT = { has_government = valkist }
-	}
-	fire_only_once = yes
-	mean_time_to_happen = { days = 1 }
-	immediate = { hidden_effect = { set_country_flag = valkist_takeover_government } }
-	option = {
-		name = "Old is dead, long live the new regime!!!"
-		set_politics = {	
-			ruling_party = valkist
-			last_election = "[ROOT.GetDate]"
-			election_frequency = 36
-			elections_allowed = no
-		}
-		complete_national_focus = SIA_valkist_coup
-		SIA_recalc_for_idea = yes
-	}
-}
-##First Congress of Greater Pantheon Conclave
-country_event = {
-	id = siam.42
-	title = "[SIA.GetLeader] calls the First Congress of Greater Pantheon Conclave"
-	desc = siam.42.d
-	trigger = {
-		tag = SIA 
-		focus_progress = {
-			focus = SIA_first_congress_of_greater_pantheon_conclave
-			progress > 0.2
-		}
-		NOT = { has_country_flag = open_the_first_congress }
-	}
-	immediate = { hidden_effect = { set_country_flag = open_the_first_congress } }
-	fire_only_once = yes
-	mean_time_to_happen = { days = 1 }
-	option = {
-		name = "That's what we look up for"
-		hidden_effect = {
-			country_event = { id = siam.43 days = 10 }
-		}
-	}
-}
-country_event = {
-	id = siam.43
-	title = "Appointing the Grand Coordinator of Presidium of Greater Pantheon Conclave"
-	desc = ""
-	is_triggered_only = yes
-	option = {
-		name = "Long Live Lord Grand Coordinator!!"
-		add_ideas = SIA_wichitwathakarn_hog_valkist
-		hidden_effect = {
-			country_event = { id = siam.44 days = 5 }
-		}
-	}
-}
-country_event = {
-	id = siam.44
-	title = "Appointing the Chief Executive of Overseas Affairs of Presidium of Greater Pantheon Conclave"
-	desc = ""
-	is_triggered_only = yes
-	option = {
-		name = "Long Live Lord Chief Overseas"
-		add_ideas = SIA_sukit_nimmarnmhern_for_valkist
-		hidden_effect = {
-			country_event = { id = siam.45 days = 5 }
-		}
-	}
-}
-country_event = {
-	id = siam.45
-	title = "Appointing the Chief of Treasurer of Presidium of Greater Pantheon Conclave"
-	desc = ""
-	is_triggered_only = yes
-	option = {
-		name = "Long Live Lord Treasurer"
-		add_ideas = SIA_jaroon_rattakul_eco_valkist
-		hidden_effect = {
-			country_event = { id = siam.46 days = 5 }
-		}
-	}
-}
-country_event = {
-	id = siam.46
-	title = "Appointing the Chief of State Affair of Presidium of Greater Pantheon Conclave"
-	desc = ""
-	is_triggered_only = yes
-	option = {
-		name = "Long Live Lord Secretary of State"
-		add_ideas = SIA_praphas_charusathien_sec_valkist
-		hidden_effect = {
-			country_event = { id = siam.47 days = 5 }
-		}
-	}
-}
-country_event = {
-	id = siam.47
-	title = "Appointing the Chief Executive of Holy Commission of Intelligent Service"
-	desc = ""
-	is_triggered_only = yes
-	option = {
-		name = "Long Live Lord Commissioner"
-		add_ideas = SIA_sanguan_tularak_int_valkist
-	}
-}
 
 ##Independent SEA Countries' Council
 country_event = { ##Treaty of Salaween
@@ -796,45 +1997,6 @@ country_event = {
 			expire = "1965.1.1"
 		}
 		hidden_effect = { set_country_flag = anusorn_is_king }
-	}
-	option = { ##Rama VIII is Varananda Dhavaj
-		name = "Your Highness Varananda Dhavaj"
-		create_country_leader = {
-			name = "Varananda Dhavaj"
-			desc = "POLITICS_VARANANDA_DHAVAJ_KING_DESC"
-			picture = "gfx/leaders/SIA/Varananda_Dhavaj.dds"
-			ideology = social_democrat_subtype
-			expire = "1965.1.1"
-		}
-		create_country_leader = {
-			name = "Varananda Dhavaj"
-			desc = "POLITICS_VARANANDA_DHAVAJ_KING_DESC"
-			picture = "gfx/leaders/SIA/Varananda_Dhavaj.dds"
-			ideology = authoritarian_democrat_subtype
-			expire = "1965.1.1"
-		}
-		create_country_leader = {
-			name = "Varananda Dhavaj"
-			desc = "POLITICS_VARANANDA_DHAVAJ_KING_DESC"
-			picture = "gfx/leaders/SIA/Varananda_Dhavaj.dds"
-			ideology = social_liberal_subtype
-			expire = "1965.1.1"
-		}
-		create_country_leader = {
-			name = "Varananda Dhavaj"
-			desc = "POLITICS_VARANANDA_DHAVAJ_KING_DESC"
-			picture = "gfx/leaders/SIA/Varananda_Dhavaj.dds"
-			ideology = market_liberal_subtype
-			expire = "1965.1.1"
-		}
-		create_country_leader = {
-			name = "Varananda Dhavaj"
-			desc = "POLITICS_VARANANDA_DHAVAJ_KING_DESC"
-			picture = "gfx/leaders/SIA/Varananda_Dhavaj.dds"
-			ideology = social_conservative_subtype
-			expire = "1965.1.1"
-		}
-		hidden_effect = { set_country_flag = varananda_is_king }
 	}
 }
 country_event = {
@@ -2357,1244 +3519,7 @@ country_event = {
 		}
 		hidden_effect = { set_country_flag = anusorn_is_king }
 	}
-	option = { ##Rama VIII is Varananda Dhavaj
-		name = "Your Highness Varananda Dhavaj"
-		create_country_leader = {
-			name = "Varananda Dhavaj"
-			desc = "POLITICS_VARANANDA_DHAVAJ_KING_DESC"
-			picture = "gfx/leaders/SIA/Varananda_Dhavaj.dds"
-			ideology = social_democrat_subtype
-			expire = "1965.1.1"
-		}
-		create_country_leader = {
-			name = "Varananda Dhavaj"
-			desc = "POLITICS_VARANANDA_DHAVAJ_KING_DESC"
-			picture = "gfx/leaders/SIA/Varananda_Dhavaj.dds"
-			ideology = authoritarian_democrat_subtype
-			expire = "1965.1.1"
-		}
-		create_country_leader = {
-			name = "Varananda Dhavaj"
-			desc = "POLITICS_VARANANDA_DHAVAJ_KING_DESC"
-			picture = "gfx/leaders/SIA/Varananda_Dhavaj.dds"
-			ideology = social_liberal_subtype
-			expire = "1965.1.1"
-		}
-		create_country_leader = {
-			name = "Varananda Dhavaj"
-			desc = "POLITICS_VARANANDA_DHAVAJ_KING_DESC"
-			picture = "gfx/leaders/SIA/Varananda_Dhavaj.dds"
-			ideology = market_liberal_subtype
-			expire = "1965.1.1"
-		}
-		create_country_leader = {
-			name = "Varananda Dhavaj"
-			desc = "POLITICS_VARANANDA_DHAVAJ_KING_DESC"
-			picture = "gfx/leaders/SIA/Varananda_Dhavaj.dds"
-			ideology = social_conservative_subtype
-			expire = "1965.1.1"
-		}
-		hidden_effect = { set_country_flag = varananda_is_king }
-	}
 }
 
-###Faction Leader Challenge###
-#People like or not#
-country_event = { ##People likes that your idea for Market Liberal
-	id = siamchallenge.1
-	title = "Party's popularity has been grown up by people's supporting"
-	desc = siamchallenge.1.d
-	is_triggered_only = yes
-	immediate = { 
-		hidden_effect = {
-			faction_leader_challenge_for_marlib = yes
-		}
-	}
-	option = {
-		name = "Thanks everyone!"
-		add_popularity = { ideology = market_liberal popularity = 0.03 }
-		hidden_effect = { 
-			add_to_variable = { market_pop = 5 }
-		}
-	}
-}
-country_event = { ##People not likes that your idea for Market Liberal
-	id = siamchallenge.2
-	title = "Party's popularity has been gone down by people's insulting"
-	desc = siamchallenge.2.d
-	is_triggered_only = yes
-	option = {
-		name = "Oh, why did you do that!?"
-		add_popularity = { ideology = market_liberal popularity = -0.03 }
-		hidden_effect = { 
-			subtract_from_variable = { market_pop = 5 }
-		}
-	}
-}
-country_event = { ##People likes that your idea for national populist
-	id = siamchallenge.3
-	title = "Party's popularity has been grown up by people's supporting"
-	desc = siamchallenge.3.d
-	is_triggered_only = yes
-	option = {
-		name = "Thanks everyone!"
-		add_popularity = { ideology = national_populist popularity = 0.03 }
-		hidden_effect = {
-			faction_leader_challenge_for_natpop = yes
-			add_to_variable = { natpop_pop = 5 } 
-		}
-	}
-}
-country_event = { ##People not likes that your idea for national populist
-	id = siamchallenge.4
-	title = "Party's popularity has been gone down by people's insulting"
-	desc = siamchallenge.4.d
-	is_triggered_only = yes
-	option = {
-		name = "Oh, why did you do that!?"
-		add_popularity = { ideology = national_populist popularity = -0.03 }
-		hidden_effect = { 
-			subtract_from_variable = { natpop_pop = 5 }
-		}
-	}
-}
-country_event = { ##People likes that your idea for valkist
-	id = siamchallenge.5
-	title = "Party's popularity has been grown up by people's supporting"
-	desc = siamchallenge.5.d
-	is_triggered_only = yes
-	option = {
-		name = "Thanks everyone!"
-		add_popularity = { ideology = valkist popularity = 0.03 }
-		hidden_effect = { 
-			add_to_variable = { valkist_pop = 5 }
-			faction_leader_challenge_for_valkist = yes
-		}
-	}
-}
-country_event = { ##People not likes that your idea for valkist
-	id = siamchallenge.6
-	title = "Party's popularity has been gone down by people's insulting"
-	desc = siamchallenge.6.d
-	is_triggered_only = yes
-	option = {
-		name = "Oh, why did you do that!?"
-		add_popularity = { ideology = valkist popularity = -0.03 }
-		hidden_effect = { 
-			subtract_from_variable = { valkist_pop = 5 }
-		}
-	}
-}
-##Market Liberal Lobbying Challange
-country_event = { ##Promoting Free Trade Area at Hua Lamphong Central Railway Station
-	id = siamchallenge.7
-	title = "Promoting the Free Trade Area's Project at Hua Lamphong Central Railway Station"
-	desc = siamchallenge.7.d
-	is_triggered_only = yes
-	option = {
-		name = "Free trade? That's so impossible to make them real"
-		add_political_power = -10
-		hidden_effect = {
-			add_to_variable = { market_pop = 3 }
-		}
-	}
-}
-country_event = { ##Social Action Party's Extraordinary Convention 
-	id = siamchallenge.8
-	title = "Social Action Party's Extraordinary Convention"
-	desc = siamchallenge.8.d
-	is_triggered_only = yes
-	immediate = {
-		hidden_effect = {
-			faction_leader_challenge_for_marlib = yes
-		}
-	}
-	option = {
-		name = "Let the free traders spread their ideas"
-		add_stability = -0.03
-		hidden_effect = {
-			add_to_variable = { market_pop = 10 }
-		}
-	}
-}
-country_event = { ##Promoting the Anti-Colonialism
-	id = siamchallenge.9
-	title = "Promoting the Anti-Colonialism to people"
-	desc = siamchallenge.9.d
-	is_triggered_only = yes
-	option = {
-		name = "I think that's looking like someone else"
-		add_political_power = 5
-		hidden_effect = {
-			add_to_variable = { market_pop = 20 }
-			add_popularity = { ideology = market_liberal popularity = 0.03 }
-		}
-	}
-}
-country_event = { ##Increase the fundamental of party
-	id = siamchallenge.10
-	title = "Forms the Social Action Youth Front"
-	desc = siamchallenge.10.d
-	is_triggered_only = yes
-	option = {
-		name = "The little kids can fight us? No, they actually can't fight us"
-		add_manpower = -340
-		hidden_effect = {
-			add_to_variable = { market_pop = 10 }
-			add_popularity = { ideology = market_liberal popularity = 0.05 }
-		}
-	}
-}
-##National Populist Lobbying Challange
-country_event = { ##Promoting the One Identity, One Nation
-	id = siamchallenge.11
-	title = "One Identity, One Nation"
-	desc = siamchallenge.11.d
-	is_triggered_only = yes
-	option = {
-		name = "What the happened at Tanawsri?"
-		add_stability = 0.01
-		hidden_effect = {
-			add_to_variable = { natpop_pop = 10 }
-			add_popularity = { ideology = national_populist popularity = 0.02 }
-			faction_leader_challenge_for_natpop = yes
-		}
-	}
-}
-country_event = { ##Do and Done Policy
-	id = siamchallenge.12
-	title = "Do and Done"
-	desc = siamchallenge.12.d
-	is_triggered_only = yes
-	option = {
-		name = "Shall we call Field Marshal to talking about his action?"
-		add_political_power = -50
-		hidden_effect = {
-			add_to_variable = { natpop_pop = 15 }
-			add_popularity = { ideology = national_populist popularity = 0.05 }
-		}
-	}
-}
-country_event = { ##Promoting the royal fellowship 
-	id = siamchallenge.13
-	title = "Royal fellowship and also everyone can join us"
-	desc = siamchallenge.13.d
-	is_triggered_only = yes
-	option = {
-		name = "Oh hey, you can't do that thing"
-		hidden_effect = {
-			add_to_variable = { natpop_pop = 20 }
-			add_popularity = { ideology = national_populist popularity = 0.07 }
-			add_popularity = { ideology = paternal_autocrat popularity = 0.03 }
-		}
-	}
-}
-##Valkist Lobbying Challange
-country_event = { ##Promoting the National Culture's Education Union
-	id = siamchallenge.14
-	title = "National Culture's Education Union"
-	desc = siamchallenge.14.d
-	is_triggered_only = yes
-	option = {
-		name = "That's good idea"
-		hidden_effect = {
-			add_to_variable = { valkist_pop = 20 }
-			add_popularity = { ideology = valkist popularity = 0.05 }
-		}
-	}
-}
-country_event = { ##Insulting Social Action
-	id = siamchallenge.15
-	title = "Supreme Leader of Valkist party addresses at meeting"
-	desc = siamchallenge.15.d
-	is_triggered_only = yes
-	option = {
-		name = "I hope they will not do something bad for themselves"
-		add_political_power = 15
-		hidden_effect = {
-			add_to_variable = { valkist_pop = 15 }
-			add_popularity = { ideology = valkist popularity = 0.08 }
-			add_popularity = { ideology = market_liberal popularity = -0.03 }
-			faction_leader_challenge_for_valkist = yes
-		}
-	}
-}
-country_event = { ##Subsidies the people's SMEs
-	id = siamchallenge.16
-	title = "Subsidies the mini markets"
-	desc = siamchallenge.16
-	is_triggered_only = yes
-	option = {
-		name = "I thing they have a goodwill for people"
-		add_stability = 0.03
-		add_political_power = 20
-		hidden_effect = {
-			add_to_variable = { valkist_pop = 25 }
-			add_popularity = { ideology = valkist popularity = 0.09 }
-		}
-	}
-}
-country_event = { ##Promoting the National Workers and Tai's People Syndicate
-	id = siamchallenge.17
-	title = "Promoting the National Workers and Tai's People Syndicate"
-	desc = siamchallenge.17
-	is_triggered_only = yes
-	option = {
-		name = "Tai or Thai? Choose something"
-		add_stability = -0.05
-		hidden_effect = {
-			add_to_variable = { valkist_pop = 30 }
-			add_popularity = { ideology = valkist popularity = 0.1 }
-		}
-	}
-}
-##1st Extraordinary Session of National Assembly of Siam
-country_event = {
-	id = siamchallenge.18
-	title = "1st Extraordinary Session of National Assembly is started"
-	desc = siamchallenge.18
-	is_triggered_only = yes
-	option = {
-		name = "That will be manifest destiny of Unificationist Faction"
-		hidden_effect = { 
-			set_country_flag = first_extraor_session_parl 
-			country_event = {
-				id = siamchallenge.19
-				days = 10
-			}
-			country_event = {
-				id = siamchallenge.20
-				days = 20
-			}
-			country_event = {
-				id = siamchallenge.21
-				days = 30
-			}
-		}
-	}
-}
-##Announce the Unificationism from each party##
-#Kit Sangkom's revisioning the national mandate to Assembly
-country_event = {
-	id = siamchallenge.19
-	title = "Social Action Party revisions the national mandate to National Assembly"
-	desc = siamchallenge.19.d
-	is_triggered_only = yes
-	option = {
-		name = "Ok"
-		add_political_power = 50
-		hidden_effect = {
-			set_variable = { marlib_national_mandate = market_pop }
-		}
-	}
-}
-#Seri Manangkhasila's revisioning the national mandate to Assembly
-country_event = {
-	id = siamchallenge.20
-	title = "Seri Manangkhasila Party revisions the national mandate to National Assembly"
-	desc = siamchallenge.20.d
-	is_triggered_only = yes
-	option = {
-		name = "Ok"
-		add_political_power = 50
-		hidden_effect = {
-			set_variable = { natpop_national_mandate = natpop_pop }
-		}
-	}
-}
-#Ruam Phao Tai's revisioning national mandate to Assembly
-country_event = {
-	id = siamchallenge.21
-	title = "Sapha Ruam Chon Phao Tai revisions the national mandate to National Assembly"
-	desc = siamchallenge.21.d
-	is_triggered_only = yes
-	option = {
-		name = "Ok"
-		add_political_power = 50
-		hidden_effect = {
-			set_variable = { valkist_national_mandate = valkist_pop }
-		}
-		hidden_effect = {  
-			country_event = {
-				id = siamchallenge.22
-				days = 10
-			}
-			country_event = {
-				id = siamchallenge.23
-				days = 20
-			}
-			country_event = {
-				id = siamchallenge.24
-				days = 30
-			}
-		}
-	}
-}
-##People's Chamber revisions people's influence to National Assembly##
-#Kit Sangkom 
-country_event = {
-	id = siamchallenge.22
-	title = "House Leader of Social Action Party revisions the people's influence to People's Chamber"
-	desc = siamchallenge.22.d
-	is_triggered_only = yes
-	option = {
-		name = "Ok"
-		hidden_effect = {
-			set_variable = { marlib_people_mandate = market_people_pop }
-		}
-	}
-}
-#Seri Manangkhasila
-country_event = {
-	id = siamchallenge.23
-	title = "House Leader of Seri Manangkhasila Party revisions the people's influence to People's Chamber"
-	desc = siamchallenge.23.d
-	is_triggered_only = yes
-	option = {
-		name = "Ok"
-		hidden_effect = {
-			set_variable = { natpop_people_mandate = natpop_people_pop }
-		}
-	}
-}
-#Ruam Chon Phao Tai
-country_event = {
-	id = siamchallenge.24
-	title = "House Leader of Sapha Ruam Chon Phao Tai Party revisions the people's influence to People's Chamber"
-	desc = siamchallenge.24.d
-	is_triggered_only = yes
-	option = {
-		name = "Ok"
-		hidden_effect = {
-			set_variable = { valkist_people_mandate = valkist_people_pop }
-			country_event = { 
-				id = siamchallenge.25
-				days = 3
-			}
-		}
-	}
-}
-##National Assembly votes for new leader
-country_event = {
-	id = siamchallenge.25
-	title = "National Assembly is opening the vote for new leader of faction and government"
-	desc = siamchallenge.25.d
-	is_triggered_only = yes
-	option = {
-		name = "Let see who will win this challenge"
-		hidden_effect = {
-			add_to_variable = { marlib_national_mandate = marlib_people_mandate }
-			add_to_variable = { natpop_national_mandate = natpop_people_mandate }
-			add_to_variable = { valkist_national_mandate = valkist_people_mandate }
-			set_country_flag = end_of_extraor_parl
-		}
-	}
-}
-##Faction Leader Winning
-country_event = {
-	id = siamchallenge.26
-	title = "Unificationist's Faction Leader Election"
-	desc = siamchallenge.26.d
-	is_triggered_only = yes
-	option = {
-		name = "Market Liberal shall be the leader of faction"
-		trigger = {
-			AND = {
-				check_variable = {
-					var = marlib_national_mandate
-					value = natpop_national_mandate
-					compare = greater_than
-				}
-				check_variable = {
-					var = marlib_national_mandate
-					value = valkist_national_mandate
-					compare = greater_than
-				}
-			}
-		}
-		set_politics = {
-			ruling_party = market_liberal
-		}
-		remove_all_ministers = yes
-		add_ideas = {
-			SIA_seni_pramoj_hog_marlib
-			SIA_phraya_sri_sena_for_maklib
-			SIA_leng_srisomwong_eco_marlib
-			SIA_tawee_bunyaket_sec_marlib
-			SIA_chuen_charuphas_int_soccon
-		}
-	}
-	option = {
-		name = "National Populist shall be the leader of faction"
-		trigger = {
-			AND = {
-				check_variable = {
-					var = natpop_national_mandate
-					value = marlib_national_mandate
-					compare = greater_than
-				}
-				check_variable = {
-					var = natpop_national_mandate
-					value = valkist_national_mandate
-					compare = greater_than
-				}
-			}
-		}
-		set_politics = {
-			ruling_party = national_populist
-		}
-		remove_all_ministers = yes
-		add_ideas = {
-			SIA_plaek_phibunsongkram_hog_natpop
-			SIA_pridi_thepphong_tevakul_for_natpop
-			SIA_phao_pianloed_eco_natpop
-			SIA_banyati_thephassadin_na_ayudhaya_sec_natpop
-			SIA_suphasawadwongsanit_sawaddiwat_int_natpop
-		}
-		hidden_effect = {
-			clr_country_flag = marlib_unificationist_leader
-			set_country_flag = natpop_unificationist_leader
-			set_country_flag = marlib_membership
-		}
-	}
-	option = {
-		name = "Valkist shall be the leader of faction"
-		trigger = {
-			AND = {
-				check_variable = {
-					var = valkist_national_mandate
-					value = marlib_national_mandate
-					compare = greater_than
-				}
-				check_variable = {
-					var = valkist_national_mandate
-					value = natpop_national_mandate
-					compare = greater_than
-				}
-			}
-		}
-		set_politics = {
-			ruling_party = valkist
-		}
-		remove_all_ministers = yes
-		hidden_effect = {
-			clr_country_flag = marlib_unificationist_leader
-			set_country_flag = valkist_unificationist_leader
-			set_country_flag = marlib_membership
-		}
-	}
-}
-############Civil War Zone###############
-country_event = { ##Leftist insults the government
-	id = siamcivilwar.1
-	title = "Socialist Faction Leader insults the government after effect from black wednesday"
-	desc = siamcivilwar.1.d
-	is_triggered_only = yes
-	option = {
-		name = "Minority leader is insulting us? Not a problem for us huh."
-		add_ideas = red_unrest
-		hidden_effect = {
-			set_country_flag = red_insulting
-			country_event = {
-				id = siamcivilwar.2
-				days = 7
-			}
-		}
-	}
-}
-country_event = { ##Civil Unrest
-	id = siamcivilwar.2
-	title = "Civil Unrest"
-	desc = siamcivilwar.2.d
-	is_triggered_only = yes
-	option = {
-		name = "I keep the promise for recovery our economy"
-		hidden_effect = {
-			set_country_flag = keep_promise
-		}
-	}
-	option = {
-		name = "I am not sure what time we shall finish our recovery project but it shall finish"
-		hidden_effect = {
-			set_country_flag = no_promise
-			add_stability = -0.1
-		}
-	}
-}
-country_event = { ##Keep or not, get your effect from us
-	id = siamcivilwar.3
-	title = "Government and Bureaucrat?"
-	desc = siamcivilwar.3.d
-	trigger = {
-		tag = SIA
-		OR = {
-			AND = {
-				has_country_flag = keep_promise
-				has_idea = black_wednesday
-			}
-			AND = {
-				has_country_flag = no_promise
-				has_idea = black_wednesday
-			}
-		}
-	}
-	fire_only_once = yes
-	mean_time_to_happen = { days = 7 }
-	option = {
-		name = "Shall they not fight against us or not? Up to me"
-		add_stability = 0.05
-		hidden_effect = {
-			if = {
-				limit = { NOT = { has_completed_focus = SIA_recovery_from_great_depression } }
-				swap_ideas = {
-					remove_idea = limited_bureaucrat
-					add_idea = ruined_bureaucrat
-				}
-			}
-			if = {
-				limit = { has_country_flag = no_promise }
-				add_stability = -0.05
-				swap_ideas = {
-					remove_idea = limited_bureaucrat
-					add_idea = ruined_bureaucrat
-				}
-			}
-			if = {
-				limit = { has_country_flag = keep_promise }
-				country_event = { 
-					id = siamcivilwar.10
-					days = 15
-				}
-			}
-		}
-	}
-}
-##Assassination attempts the Prime Minister 
-country_event = { ##Terrorist Organization's letter to Government Office
-	id = siamcivilwar.4
-	title = "Provisional People's Liberation Government of Siam sends the memorendum to office"
-	desc = siamcivilwar.4.d
-	trigger = {
-		tag = SIA
-		OR = {
-			has_idea = ruined_bureaucrat
-			has_country_flag = no_promise
-		}
-		NOT = {
-			has_country_flag = assassin_letter
-		}
-	}
-	immediate = {
-		hidden_effect = {
-			set_country_flag = assassin_letter
-		}
-	}
-	fire_only_once = yes
-	mean_time_to_happen = { days = 1 }
-	option = {
-		trigger = {
-			tag = SIA
-			has_country_flag = keep_promise
-		}
-		name = "We shall look the prime minister carefully and protect him!"
-		hidden_effect = {
-			add_stability = 0.05
-			country_event = {
-				id = siamcivilwar.5
-				days = 30
-			}
-		}
-	}
-	option = {
-		trigger = {
-			tag = SIA
-			has_country_flag = no_promise
-		}
-		name = "I don't think they are confronted us by the letter only"
-		hidden_effect = {
-			add_stability = -0.05
-			country_event = {
-				id = siamcivilwar.6
-				days = 30
-			}
-		}
-	}
-}
-##Assassination attempts failed
-country_event = {
-	id = siamcivilwar.5
-	title = "Prime Minister's assassination attempts failed"
-	desc = siamcivilwar.5.d
-	is_triggered_only = yes
-	option = {
-		name = "Let's find real assassin"
-		custom_effect_tooltip = "Prime Minister shall resign for keep himself save and deputy prime minister shall be the next prime minister"
-		add_ideas = SIA_council_of_minister_hog_authdem
-		hidden_effect = {
-			country_event = {
-				id = siamcivilwar.7
-				days = 20
-			}
-		}
-	}
-}
-##Assassination attempts succeeded
-country_event = {
-	id = siamcivilwar.6
-	title = "The Death of Prime Minister"
-	desc = siamcivilwar.6.d
-	is_triggered_only = yes
-	immediate = {
-		hidden_effect = {
-			set_country_flag = the_death_of_prime_minister
-		}
-	}
-	option = {
-		name = "Let's find the real assassin"
-		custom_effect_tooltip = "Deputy prime minister shall be the next prime minister"
-		add_ideas = SIA_council_of_minister_hog_authdem
-		hidden_effect = {
-			country_event = {
-				id = siamcivilwar.7
-				days = 20
-			}
-		}
-	}
-}
-##Found the terrorist's headquarter in Charoen Krung
-country_event = {
-	id = siamcivilwar.7
-	title = "Terrorist Headquarter has been found by local people at Charoen Krung"
-	desc = siamcivilwar.7.d
-	is_triggered_only = yes
-	immediate = {
-		hidden_effect = { set_country_flag = start_the_trial }
-	}
-	option = {
-		name = "Far-left wing of Socialist Faction"
-		hidden_effect = {
-			set_country_flag = vanguardist_insultation
-			country_event = {
-				id = siamcivilwar.8
-				days = 14
-			}
-		}
-	}
-	option = {
-		name = "Spy from other country"
-		hidden_effect = {
-			country_event = {
-				id = siamcivilwar.9
-				days = 14
-			}
-		}
-	}
-}
-##Dissolution of United Regional Workers' Council of Siam
-country_event = {
-	id = siamcivilwar.8
-	title = "Act of United Regional Workers' Council's Dissolution"
-	desc = siamcivilwar.8.d
-	is_triggered_only = yes
-	option = {
-		name = "They shall upgrade their action for fight with us"
-		add_popularity = { ideology = vanguardist popularity = -0.5 }
-		add_popularity = { ideology = collectivist popularity = -0.5 }
-		hidden_effect = {
-			set_country_flag = going_to_war_with_leftist
-		}
-	}
-}
-##Compromise with leftist
-country_event = {
-	id = siamcivilwar.9
-	title = "Compromise with Socialist Faction and Leftist Unrest"
-	desc = siamcivilwar.9.d
-	is_triggered_only = yes
-	option = {
-		name = "I think this is peace of us"
-		remove_ideas = red_unrest
-		hidden_effect = {
-			set_country_flag = peace_of_siam
-			clr_country_flag = red_insulting
-		}
-	}
-}
-##Compromise with Bureaucrat
-country_event = {
-	id = siamcivilwar.10
-	title = "Compromise with Bureaucrat"
-	desc = siamcivilwar.10.d
-	is_triggered_only = yes
-	option = {
-		name = "Finally, everyone unites again"
-		add_stability = 0.05
-		if = {
-			limit = { has_idea = ruined_bureaucrat }
-			swap_ideas = {
-				remove_idea = ruined_bureaucrat
-				add_idea = limited_bureaucrat
-			}
-			swap_ideas = {
-				remove_idea = limited_bureaucrat
-				add_idea = stable_bureaucrat
-			}
-		}
-	}
-}
-##Final Conclusion between Government and People
-country_event = {
-	id = siamcivilwar.11
-	title = "Final Economic Conclusion"
-	desc = siamcivilwar.11.d
-	trigger = {
-		tag = SIA
-		AND = {
-			has_country_flag = keep_promise
-			has_completed_focus = SIA_finish_the_recovery
-			NOT = { 
-				has_country_flag = final_economic_conclusion 
-				has_country_flag = going_to_war_with_leftist
-			}
-		}
-	}
-	mean_time_to_happen = { days = 7 }
-	fire_only_once = yes
-	immediate = { 
-		hidden_effect = { 
-			ROOT = { set_country_flag = final_economic_conclusion }
-		}
-	}
-	option = {
-		name = "Our promise is our duty too"
-		add_political_power = 100
-		hidden_effect = {
-			set_country_flag = peace_of_siam
-			clr_country_flag = red_insulting
-		}
-		if = {
-			limit = {
-				OR = {
-					has_idea = ruined_bureaucrat
-					has_idea = limited_bureaucrat
-				}
-			}
-			country_event = siamcivilwar.10
-		}
-		if = {
-			limit = {
-				has_idea = red_unrest
-			}
-			remove_ideas = red_unrest
-		}
-	}
-}
-##Civil War Preparation##
-country_event = { ##Fuck the Gov. Bomb it all
-	id = siamcivilwar.12
-	title = "Bombing at Korat Provincial Palace"
-	desc = siamcivilwar.12.d
-	trigger = {
-		tag = SIA
-		AND = {
-			has_country_flag = red_insulting
-			has_country_flag = going_to_war_with_leftist
-		}
-		NOT = { has_country_flag = preparation_before_war }
-	}
-	immediate = {
-		hidden_effect = {
-			clr_country_flag = red_insulting
-			set_country_flag = preparation_before_war
-		}
-	}
-	mean_time_to_happen = { days = 1 }
-	fire_only_once = yes
-	option = {
-		name = "For god's sake!"
-		add_stability = -0.05
-		add_political_power = -100
-		1011 = {
-			damage_building = {
-				type = infrastructure
-				damage = 2
-			}
-			damage_building = {
-				type = industrial_complex
-				damage = 2
-			}
-		}
-	}
-}
-country_event = {
-	id = siamcivilwar.13
-	title = "Bombing at Udon Ratchathani Provincial Palace"
-	desc = siamcivilwar.13.d
-	trigger = {
-		tag = SIA
-		AND = {
-			has_country_flag = preparation_before_war
-			has_country_flag = going_to_war_with_leftist
-		}
-		NOT = { has_country_flag = count_to_war }
-	}
-	immediate = {
-		hidden_effect = {
-			clr_country_flag = preparation_before_war
-			set_country_flag = count_to_war
-		}
-	}
-	mean_time_to_happen = { days = 1 }
-	fire_only_once = yes
-	option = {
-		name = "For god's sake!"
-		add_stability = -0.05
-		add_political_power = -100
-		804 = {
-			damage_building = {
-				type = infrastructure
-				damage = 2
-			}
-			damage_building = {
-				type = industrial_complex
-				damage = 2
-			}
-		}
-	}
-}
-##Country in chaos##
-country_event = {
-	id = siamcivilwar.14
-	title = "Declaration the Martial Law"
-	desc = siamcivilwar.14
-	trigger = {
-		tag = SIA
-		AND = {
-			has_country_flag = count_to_war
-			NOT = { has_country_flag = nearly_the_war }
-		}
-	}
-	mean_time_to_happen = { days = 1 }
-	fire_only_once = yes
-	option = {
-		name = "Keep the order, try to secure!!"
-		add_ideas = country_in_chaos
-		if = {
-			limit = { has_idea = red_unrest }
-			remove_ideas = red_unrest
-		}
-		hidden_effect = {
-			if = {
-				limit = { has_template = "Korngpon Taharn Rarb Raksagarn" }
-				delete_unit_template_and_units = { division_template = "Korngpon Taharn Rarb Raksagarn" }
-			}
-			if = {
-				limit = { has_template = "Korngpon Taharn Rarb" }
-				delete_unit_template_and_units = { division_template = "Korngpon Taharn Rarb" }
-			}
-			if = {
-				limit = { has_template = "Korngpon Taharn Rarb Puenyai" }
-				delete_unit_template_and_units = { division_template = "Korngpon Taharn Rarb Puenyai" }
-			}
-			if = {
-				limit = { has_template = "Korngpon Taharn Rarb Yarnkhror" }
-				delete_unit_template_and_units = { division_template = "Korngpon Taharn Rarb Yarnkhror" }
-			}
-			if = {
-				limit = { has_template = "Korngpon Taharn Rarb Raksa Pra-ong" }
-				delete_unit_template_and_units = { division_template = "Korngpon Taharn Rarb Raksa Pra-ong" }
-			}
-			if = {
-				limit = { has_template = "Krom Navikkayothin" }
-				delete_unit_template_and_units = { division_template = "Krom Navikkayothin" }
-			}
-			if = {
-				limit = { has_template = "Krom Taharn Mah" }
-				delete_unit_template_and_units = { division_template = "Krom Taharn Mah" }
-			}
-			if = {
-				limit = { has_template = "Krom Taharn Rarb Yarnyon" }
-				delete_unit_template_and_units = { division_template = "Krom Taharn Rarb Yarnyon" }
-			}
-			country_lock_all_division_template = yes
-			country_event = {
-				id = siamcivilwar.15
-				days = 3
-			}
-			set_country_flag = nearly_the_war
-		}
-	}
-}
-country_event = {
-	id = siamcivilwar.15
-	title = "General Strike at Esan and Lanna"
-	desc = siamcivilwar.15.d
-	is_triggered_only = yes
-	option = {
-		name = "What the happened!!!"
-		add_political_power = -50
-		add_stability = -0.1
-		hidden_effect = { 
-			set_country_flag = general_strike 
-			set_variable = { reslev = 0 }
-			country_event = {
-				id = siamcivilwar.16
-				days = 7
-			}
-			country_event = {
-				id = siamcivilwar.17
-				days = 10
-			}
-			hidden_effect = {
-				set_variable = { anarzone = 0 }
-				set_variable = { natcolzone = 0 }
-				set_variable = { govzone = 0 }
-			}
-		}
-	}
-}
-country_event = {
-	id = siamcivilwar.16
-	title = "Anarchy state at Esan"
-	desc = siamcivilwar.16.d
-	is_triggered_only = yes
-	option = {
-		name = "Try to contact our army!"
-		1011 = { set_demilitarized_zone = yes }
-		804 = { set_demilitarized_zone = yes }
-		add_stability = -0.2
-		hidden_effect = {
-			set_country_flag = esan_anarchy
-			1011 = {
-				remove_core_of = SIA
-				add_core_of = UWP
-				force_enable_resistance = SIA
-				start_resistance = UWP
-				set_compliance = 0
-				set_resistance = 30
-			}
-			804 = {
-				remove_core_of = SIA
-				add_core_of = UWP
-				force_enable_resistance = SIA
-				start_resistance = UWP
-				set_compliance = 0
-				set_resistance = 30
-			}
-		}
-	}
-}
-country_event = {
-	id = siamcivilwar.17
-	title = "Anarchy state at Lanna"
-	desc = siamcivilwar.17.d
-	is_triggered_only = yes
-	option = {
-		name = "Those scums!!"
-		1010 = { set_demilitarized_zone = yes }
-		add_stability = -0.1
-		hidden_effect = {
-			set_country_flag = lanna_anarchy
-			1010 = {
-				remove_core_of = SIA
-				add_core_of = UWP
-				force_enable_resistance = SIA
-				start_resistance = UWP
-				set_compliance = 0
-				set_resistance = 30
-			}
-		}
-	}
-}
-###Anarchy Status and Fight with NatCol
-country_event = {
-	id = siamcivilwar.18
-	title = "Another Bombing"
-	desc = siamcivilwar.18.d
-	is_triggered_only = yes
-	option = {
-		name = "How dare you"
-		random_state = {
-			limit = {
-				OR = {
-					state = 1010
-					state = 804 
-					state = 1011
-				}
-			}
-			add_resistance = 1
-			add_compliance = -1
-		}
-	}
-}
-country_event = {
-	id = siamcivilwar.19
-	title = "Failed to contact the spy"
-	desc = siamcivilwar.19.d
-	is_triggered_only = yes
-	option = {
-		name = "Find another way now!"
-		random_state = {
-			limit = {
-				OR = {
-					state = 1010
-					state = 804 
-					state = 1011
-				}
-			}
-			add_compliance = -2
-		}
-	}
-}
-country_event = {
-	id = siamcivilwar.20
-	title = "Gangstas' uprising"
-	desc = siamcivilwar.20.d
-	trigger = {
-		tag = SIA
-		check_variable = {
-			var = anarzone
-			value = 15
-			compare = greater_than_or_equals
-		}
-	}
-	fire_only_once = yes
-	mean_time_to_happen = { days = 7 }
-	option = {
-		name = "Oh, for god's sake!"
-		random_state = {
-			limit = {
-				OR = {
-					state = 1010
-					state = 804 
-					state = 1011
-				}
-			}
-			add_resistance = 5
-		}
-	}
-}
-##Bad Ending Route
-country_event = {
-	id = siamcivilwar.21
-	title = "[UWP.GetName] is declaring revolution war on [SIA.GetName]"
-	is_triggered_only = yes
-	immediate = {
-		hidden_effect = { 
-			release = UWP
-			ROOT = { set_country_flag = into_the_civilwar }
-			UWP = { set_country_flag = into_the_civilwar }
-		}
-	}
-	option = {
-		name = "Let the war begin"
-		UWP = {
-			declare_war_on = {
-				target = SIA
-				type = annex_everything
-			}
-		}
-		every_state = {
-			limit = { is_core_of = SIA }
-			add_claim_by = UWP
-		}
-		every_state = {
-			limit = { is_core_of = UWP }
-			add_claim_by = SIA
-		}
-		hidden_effect = {
-			UWP = { load_oob = "UWP_CIVILWAR" }
-			ROOT = { load_oob = "SIA_CIVILWAR" }
-			remove_ideas = country_in_chaos
-		}
-	}
-}
-country_event = {
-	id = siamcivilwar.22
-	title = "End of the Red"
-	is_triggered_only = yes
-	immediate = {
-		hidden_effect = {
-			every_country = {
-				limit = { has_country_flag = into_the_civilwar }
-				clr_country_flag = into_the_civilwar
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = SIA
-					is_core_of = UWP
-				}
-				add_core_of = SIA
-			}
-		}
-	}
-	option = {
-		trigger = {
-			ROOT = { tag = SIA }
-		}
-		name = "Finally, everything returns to its way"
-		every_state = {
-			limit = { is_core_of = UWP }
-			remove_core_of = UWP
-		}
-		every_state = {
-			limit = {
-				is_claimed_by = UWP
-			}
-			remove_claim_by = UWP
-		}
-		country_lock_all_division_template = no
-		load_oob = "SIA"
-		hidden_effect = {
-			if = {
-				limit = { has_template = "Kongkamlang Chapowkarn" }
-				delete_unit_template_and_units = { division_template = "Kongkamlang Chapowkarn" }
-			}
-		}
-	}
-}
-##Good Ending Route
-country_event = {
-	id = siamcivilwar.23
-	title = "End of the Red"
-	is_triggered_only = yes
-	immediate = {
-		hidden_effect = {
-			every_owned_state = {
-				limit = { is_core_of = UWP }
-				add_core_of = SIA
-				cancel_resistance = yes
-				force_disable_resistance = SIA
-			}
-			clr_country_flag = esan_anarchy
-			clr_country_flag = lanna
-			clr_country_flag = general_strike
-			set_country_flag = peace_of_siam
-		}
-	}
-	option = {
-		name = "Finally, everything returns to its way"
-		every_state = {
-			limit = { is_core_of = UWP }
-			remove_core_of = UWP
-		}
-		every_state = {
-			limit = { 
-				is_demilitarized_zone = yes 
-				is_core_of = SIA
-			}
-			set_demilitarized_zone = no
-		}
-		country_lock_all_division_template = no
-		load_oob = "SIA"
-		add_popularity = { ideology = vanguardist popularity = -1 }
-		remove_ideas = country_in_chaos
-		if = {
-			limit = { has_idea = ruined_bureaucrat }
-			swap_ideas = {
-				add_idea = stable_bureaucrat
-				remove_idea = ruined_bureaucrat
-			}
-		}
-	}
-}
+
+

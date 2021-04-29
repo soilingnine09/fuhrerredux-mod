@@ -2,15 +2,7 @@ ICR = {
 	color = rgb { 51 240 51 }
 	color_ui = rgb { 51 240 51 }
 }
-SHN = {
-	color = rgb { 102 102 255 } 
-	color_ui = rgb { 102 102 255 }
-}
-MNS = {
-	color = rgb { 92 129 230 }
-	color_ui = rgb { 92 129 230 }
-}
-UWP = {
+SIR = {
 	color = rgb { 2 132 178 }
 	color_ui = rgb { 0 147 221 }
 }
@@ -333,12 +325,8 @@ PER = {
 	color_ui = rgb { 92 147 126 }
 }
 PHI = {
-	color = rgb { 248 198 0 }
-	color_ui = rgb { 255 198 0 }
-}
-PHR = {
-	color = rgb { 155 0 0 }
-	color_ui = rgb { 155 0 0 }
+	color = rgb { 230 130 50 }
+	color_ui = rgb { 198 169 248 }
 }
 PRU = {
 	color = rgb { 151  39  39 }
@@ -359,10 +347,6 @@ BAL = {
 SIA = {
 	color = rgb { 171 190 152 }
 	color_ui = rgb { 222 247 198 }
-}
-SBH = {
-	color = rgb { 126 203 120 }
-	color_ui = rgb { 126 203 120 }
 }
 BEA = {
 	color = rgb { 168 28 28 }

@@ -23,22 +23,6 @@ on_actions = {
 			if = {
 				limit = {
 					tag = SIA
-					OR = {
-						has_variable = market_inf
-						has_variable = natpop_inf
-						has_variable = valkist_inf
-					}
-				}
-				SIA_recalc_party_inf = yes
-				SIA_recalc_pop_point = yes
-			}
-		}
-	}
-	on_daily = {
-		effect = {
-			if = {
-				limit = {
-					tag = SIA
 					has_variable = anarzone
 				}
 			}

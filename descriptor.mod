@@ -1,12 +1,11 @@
-version="1.10.4"
+version="0.1"
 tags={
-	"Graphics"
 	"Alternative History"
+	"Map"
+	"Balance"
 }
-name="Fuhrerredux: A Fuhrerreich Expansion"
-picture="thumbnail.png"
+name="FR Redux Project"
 dependencies={
 	"Führerreich: Legacy of The Great War"
 }
-supported_version="1.10.4"
-remote_file_id="2419457479"
+supported_version="1.10.*"

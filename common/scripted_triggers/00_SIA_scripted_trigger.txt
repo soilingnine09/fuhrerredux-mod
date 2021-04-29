@@ -11,7 +11,7 @@ is_chinese_warlord = {
 }
 is_fully_controlled_by_ENG_or_war_ally = {
 	custom_trigger_tooltip = {
-		tooltip = "Is Fully Controlled by Britain or war ally"
+		tooltip = "Is Fully Controlled by Britain or her war ally"
 		controller = {
 			has_full_control_of_state = PREV
 			OR = {
@@ -52,4 +52,10 @@ is_asean_tag = {
 		tag = MAL
 		tag = INS
 	}
+}
+is_not_change_manually = {
+	custom_trigger_tooltip = {
+		tooltip = minister_cant_change
+		always = no
+	}  
 }

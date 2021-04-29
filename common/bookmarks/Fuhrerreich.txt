@@ -131,19 +131,35 @@ bookmarks = {
 				SIA_balance_in_power
 			}
 		}
-		"PHI"={
+		"PER"={
 			minor = yes
-			history = "PHI_FUHRERREICH_DESC"
-			ideology = authoritarian_democrat
+			history = "PER_FUHRERREICH_DESC"
+			ideology = paternal_autocrat
 			ideas = {
-				PHI_thirst_for_democracy
-				PHI_agriculture_economy
-				PHI_marxist_professors
+				PER_british_influence_iran_idea
+				PER_underground_revolutionaries_idea
+				PER_primitive_military_idea
 			}
 			focuses = {
-				PHI_aguinaldo_coup
-				PHI_finish_industrialization_program
-				PHI_asean_focus
+				PER_MIL_consilidate_regime
+				PER_REP_fall_of_lion
+				PER_NAT_civil_war_iran
+			}
+		}
+
+		"MAN"={
+			minor = yes
+			history = "MAN_FUHRERREICH_DESC"
+			ideology = authoritarian_democrat
+			ideas = {
+				MAN_political_reform
+				MAN_antijapanese_sentiment
+				MAN_middling_industry
+			}
+			focuses = {
+				MAN_the_succession
+				MAN_preperations
+				MAN_problems_with_industry
 			}
 		}
 		#"BRA"={

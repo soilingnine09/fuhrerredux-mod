@@ -1,3 +1,204 @@
+SIA_swap_the_focus = {
+	mark_focus_tree_layout_dirty = yes
+}
+SIA_unificationist_seatoffate_begin = {
+	set_temp_variable = { kittemp = ROOT.party_popularity@market_liberal }
+	set_temp_variable = { seritemp = ROOT.party_popularity@national_populist }
+	set_temp_variable = { saphatemp = ROOT.party_popularity@valkist }
+	multiply_temp_variable = { kittemp = 1.5 }
+	multiply_temp_variable = { seritemp = 1.5 }
+	multiply_temp_variable = { saphatemp = 1.5 }
+	clamp_temp_variable = kittemp
+	clamp_temp_variable = seritemp
+	clamp_temp_variable = saphatemp
+	subtract_from_temp_variable = { kittemp = 1 }
+	subtract_from_temp_variable = { seritemp = 1 }
+	subtract_from_temp_variable = { saphatemp = 1 }
+	set_variable = { kitsangkom = kittemp }
+	set_variable = { serimanang = saritemp }
+	set_variable = { saphatai = saphatemp }
+}
+SIA_add_influence_unificationist_low = {
+	random_list = {
+		33 = {
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = valkist
+				popularity = 0.02
+			}
+			add_to_variable = { kitsangkom = 1 }
+			add_to_variable = { saphatai = 1 }
+		}
+		33 = {
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = national_populist
+				popularity = 0.02
+			}
+			add_to_variable = { kitsangkom = 1 }
+			add_to_variable = { serimanang = 1 }
+		}
+		33 = {
+			add_popularity = {
+				ideology = valkist
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = national_populist
+				popularity = 0.02
+			}
+			add_to_variable = { saphatai = 1 }
+			add_to_variable = { serimanang = 1 }
+		}
+	}
+}
+SIA_add_influence_unificationist_medium = {
+	random_list = {
+		33 = {
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = valkist
+				popularity = 0.03
+			}
+			add_to_variable = { kitsangkom = 2 }
+			add_to_variable = { saphatai = 2 }
+		}
+		33 = {
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = national_populist
+				popularity = 0.03
+			}
+			add_to_variable = { kitsangkom = 2 }
+			add_to_variable = { serimanang = 2 }
+		}
+		33 = {
+			add_popularity = {
+				ideology = valkist
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = national_populist
+				popularity = 0.03
+			}
+			add_to_variable = { saphatai = 2 }
+			add_to_variable = { serimanang = 2 }
+		}
+	}
+}
+SIA_add_influence_unificationist_high = {
+	random_list = {
+		33 = {
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = valkist
+				popularity = 0.05
+			}
+			add_to_variable = { kitsangkom = 4 }
+			add_to_variable = { saphatai = 4 }
+		}
+		33 = {
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = national_populist
+				popularity = 0.05
+			}
+			add_to_variable = { kitsangkom = 4 }
+			add_to_variable = { serimanang = 4 }
+		}
+		33 = {
+			add_popularity = {
+				ideology = valkist
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = national_populist
+				popularity = 0.05
+			}
+			add_to_variable = { saphatai = 4 }
+			add_to_variable = { serimanang = 4 }
+		}
+	}
+}
+
+SIA_set_economic_council_influence = {
+	set_variable = { SiamEconomicVar = 0 }
+	set_variable = { SiamEconomicDecaying = 0 }
+}
+SIA_economic_council_decaying = {
+	subtract_from_variable = { SiamEconomicVar = SiamEconomicDecaying } 
+	clamp_variable = {
+		var = SiamEconomicVar
+		max = 100.00
+		min = 0.00 
+	}
+	clamp_variable = {
+		var = SiamEconomicDecaying
+		max = 15.00
+		min = 0.01
+	}
+}
+SIA_economic_decaying_random_rate_low = {
+	set_temp_variable = { temp = random }
+	clamp_temp_variable = {
+		var = temp
+		max = 0.99
+		min = 0.01
+	}
+	add_to_variable = { SiamEconomicDecaying = temp }
+}
+SIA_economic_decaying_random_rate_mid = {
+	set_temp_variable = { temp = random }
+	clamp_temp_variable = {
+		var = temp
+		max = 2.98
+		min = 1.00
+	}
+	add_to_variable = { SiamEconomicDecaying = temp }
+}
+SIA_economic_decaying_random_rate_high = {
+	set_temp_variable = { temp = random }
+	clamp_temp_variable = {
+		var = temp
+		max = 5.00
+		min = 2.99
+	}
+	add_to_variable = { SiamEconomicDecaying = temp }
+}
+SIA_one_believe_ideas = {
+	if = {
+		limit = { has_idea = one_believe_one_unity_1 }
+		swap_ideas = {
+			remove_idea = one_believe_one_unity_1
+			add_idea = one_believe_one_unity_2
+		}
+	}
+	if = {
+		limit = { has_idea = one_believe_one_unity }
+		swap_ideas = {
+			remove_idea = one_believe_one_unity
+			add_idea = one_believe_one_unity_1
+		}
+	}
+}
 faction_leader_challenge_for_marlib = {
 	random_list = {
 		25 = { country_event = { id = siamchallenge.7 days = 1 } }
@@ -155,5 +356,372 @@ prayool_influence_level = {
 			}
 		}
 		set_variable = { royalist_lev = 1 } 
+	}
+}
+SIA_calculate_valkist_influence = {
+	hidden_effect = {
+		set_variable = { valkist_influence_pop = SIA.party_popularity@valkist }
+		if = {
+			limit = {
+				check_variable = {
+					var = valkist_influence_pop
+					value = 0.48
+					compare = less_than
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = valkist_influence_pop
+						value = 0.35
+						compare = less_than
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = valkist_influence_pop
+							value = 0.299
+							compare = greater_than
+						}
+					}
+					set_variable = { SIA_valkist_level = 5 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							var = valkist_influence_pop
+							value = 0.249
+							compare = greater_than
+						}
+					}
+					set_variable = { SIA_valkist_level = 4 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							var = valkist_influence_pop
+							value = 0.199
+							compare = greater_than
+						}
+					}
+					set_variable = { SIA_valkist_level = 3 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							var = valkist_influence_pop
+							value = 0.149
+							compare = greater_than
+						}
+					}
+					set_variable = { SIA_valkist_level = 2 }
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							var = valkist_influence_pop
+							value = 0.049
+							compare = greater_than
+						}
+					}
+					set_variable = { SIA_valkist_level = 1 }
+				}
+				else_if = {
+					limit = {
+						always = yes
+					}
+					set_variable = { SIA_valkist_level = 0 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						var = valkist_influence_pop
+						value = 0.42
+						compare = less_than
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = valkist_influence_pop
+							value = 0.39
+							compare = less_than
+						}
+					}
+					set_variable = { SIA_valkist_level = 6 }
+				}
+				else_if = {
+					limit = {
+						always = yes
+					}
+					set_variable = { SIA_valkist_level = 7 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						var = valkist_influence_pop
+						value = 0.45
+						compare = less_than
+					}
+				}
+				set_variable = { SIA_valkist_level = 8 }
+			}
+			else_if = {
+				limit = {
+					always = yes
+				}
+				set_variable = { SIA_valkist_level = 9 }
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = valkist_influence_pop
+					value = 0.5
+					compare = less_than
+				}
+			}
+			set_variable = { SIA_valkist_level = 10 }
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = valkist_influence_pop
+					value = 0.6
+					compare = less_than
+				}
+			}
+			set_variable = { SIA_valkist_level = 11 }
+		}
+		else_if = {
+			limit = {
+				always = yes
+			}
+			set_variable = { SIA_valkist_level = 12 }
+		}
+	}
+}
+SIA_add_valkist_idea = {
+	hidden_effect = {
+		if = {
+			limit = {
+				check_variable = {
+					var = SIA_valkist_level
+					value = 10
+					compare = less_than
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = SIA_valkist_level
+						value = 5
+						compare = less_than
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = SIA_valkist_level
+							value = 4
+							compare = equals
+						}
+					}
+					add_ideas = Valkist_influence_in_Siam2
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							var = SIA_valkist_level
+							value = 3
+							compare = equals
+						}
+					}
+					add_ideas = Valkist_influence_in_Siam1
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							var = SIA_valkist_level
+							value = 2
+							compare = equals
+						}
+					}
+					add_ideas = Valkist_influence_in_Siam1
+
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							var = SIA_valkist_level
+							value = 1
+							compare = equals
+						}
+					}
+					add_ideas = Valkist_influence_in_Siam
+				}
+				else_if = {
+					limit = {
+						always = yes
+					}
+					add_ideas = Valkist_influence_in_Siam
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						var = SIA_valkist_level
+						value = 8
+						compare = less_than
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = SIA_valkist_level
+							value = 5
+							compare = equals
+						}
+					}
+					add_ideas = Valkist_influence_in_Siam2
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							var = SIA_valkist_level
+							value = 6
+							compare = equals
+						}
+					}
+					add_ideas = Valkist_influence_in_Siam3
+				}
+				else_if = {
+					limit = {
+						always = yes
+					}
+					add_ideas = Valkist_influence_in_Siam3
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						var = SIA_valkist_level
+						value = 8
+						compare = equals
+					}
+				}
+				add_ideas = Valkist_influence_in_Siam4
+			}
+			else_if = {
+				limit = {
+					always = yes
+				}
+				add_ideas = Valkist_influence_in_Siam4
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = SIA_valkist_level
+					value = 10
+					compare = equals
+				}
+			}
+			add_ideas = Valkist_influence_in_Siam5
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = SIA_valkist_level
+					value = 11
+					compare = equals
+				}
+			}
+			add_ideas = Valkist_influence_in_Siam5
+		}
+		else_if = {
+			limit = {
+				always = yes
+			}
+			add_ideas = Valkist_influence_in_Siam6
+		}
+	}
+}
+SIA_remove_valkist_idea = {
+	hidden_effect = {
+		if = {
+			limit = {
+				has_idea = Valkist_influence_in_Siam1
+			}
+			remove_ideas = Valkist_influence_in_Siam1
+		}
+		else_if = {
+			limit = {
+				has_idea = Valkist_influence_in_Siam2
+			}
+			remove_ideas = Valkist_influence_in_Siam2
+		}
+		else_if = {
+			limit = {
+				has_idea = Valkist_influence_in_Siam3
+			}
+			remove_ideas = Valkist_influence_in_Siam3
+		}
+		else_if = {
+			limit = {
+				has_idea = Valkist_influence_in_Siam4
+			}
+			remove_ideas = Valkist_influence_in_Siam4
+		}
+		else_if = {
+			limit = {
+				has_idea = Valkist_influence_in_Siam5
+			}
+			remove_ideas = Valkist_influence_in_Siam5
+		}
+		else_if = {
+			limit = {
+				has_idea = Valkist_influence_in_Siam6
+			}
+			remove_ideas = Valkist_influence_in_Siam6
+		}
+		else_if = {
+			limit = {
+				has_idea = Valkist_influence_in_Siam
+			}
+			remove_ideas = Valkist_influence_in_Siam
+		}
+	}
+}
+SIA_recalc_for_idea = {
+	SIA_remove_valkist_idea = yes
+	SIA_calculate_valkist_influence = yes
+	SIA_add_valkist_idea = yes
+}
+integration_by_siam = {
+	random_country = {
+		limit = {
+			tag = SIA
+			has_full_control_of_state = PREV
+		}
+		add_state_core = PREV
+		remove_state_claim = PREV
+	}
+}
+integration_by_owner = {
+	random_country = {
+		limit = {
+			owner = {
+				has_full_control_of_state = THIS
+				OR = {
+					tag = PREV
+					NOT = { tag = SIA }
+				}
+			}
+		}
+		add_state_core = THIS
 	}
 }

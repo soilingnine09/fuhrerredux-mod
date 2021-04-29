@@ -84,56 +84,7 @@ ideas = {
 				surrender_limit = 0.3
 			}
 		}
-		tai_salvation_united_front = {
-			allowed = { always = no }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			modifier = {
-				MONTHLY_POPULATION = 0.2
-				war_support_factor = 0.2
-				weekly_manpower = 2200
-				army_core_attack_factor = 0.2
-				army_core_defence_factor = 0.2
-				surrender_limit = 0.5
-				army_org = 0.2
-				non_core_manpower = 0.3
-				valkist_drift = 0.05
-				resistance_tick_in_states_controlled_by_enemy = 0.4
-			}
-		}
-		thai_unification_united_front = {
-			allowed = { always = no }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			modifier = {
-				MONTHLY_POPULATION = 0.15
-				war_support_factor = 0.15
-				weekly_manpower = 1200
-				army_core_attack_factor = 0.15
-				army_core_defence_factor = 0.15
-				surrender_limit = 0.5
-				army_org = 0.1
-				non_core_manpower = 0.15
-				national_populist_drift = 0.05
-				resistance_tick_in_states_controlled_by_enemy = 0.3
-			}
-		}
-		south_east_asia_liberation_united_front = {
-			allowed = { always = no }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			modifier = {
-				MONTHLY_POPULATION = 0.15
-				war_support_factor = 0.15
-				weekly_manpower = 1500
-				army_core_attack_factor = 0.15
-				army_core_defence_factor = 0.15
-				surrender_limit = 0.5
-				non_core_manpower = 0.25
-				market_liberal_drift = 0.05
-				resistance_tick_in_states_controlled_by_enemy = 0.25
-			}
-		}
+		
 		##Valkist 
 		Valkist_influence_in_Siam = {
 			allowed = { always = no }
@@ -204,32 +155,128 @@ ideas = {
 				MONTHLY_POPULATION = -0.2
 			}
 		}
-		department_of_religious_affairs = {
+		nava_chatu_sadom = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = valkist_influence
+			modifier = {
+				recruitable_population_factor = -0.1
+				political_power_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+		evidence_from_torturing = {
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
 			modifier = {
-				valkist_drift = 0.2
-				MONTHLY_POPULATION = 0.1
-				stability_factor = 0.25
-				war_support_factor = 0.25
-				political_power_gain = 0.25
-				research_speed_factor = -0.25
+				recruitable_population_factor = -0.03
+				political_power_factor = 0.1
+				valkist_drift = 0.07
+			}
+		}
+		bureaucracy_reform = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.2
+				valkist_drift = 0.1
+				stability_weekly_factor = 0.06
+			}
+		}
+		vigilante_allowed = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.05
+				stability_weekly_factor = 0.06
+			}
+		}
+		no_equal_citizenship = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.07
+				stability_weekly_factor = -0.04
+				war_support_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+		degeneracy_army_conscription = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.07
+				conscription = 0.07
+				war_support_factor = 0.11
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+		militarized_feudalism = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.17
+				conscription = 0.03
+				war_support_factor = 0.1
+				army_core_defence_factor = 0.1
 			}
 		}
 		one_believe_one_unity = {
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
-			picture = valkist_influence
 			modifier = {
-				valkist_drift = 0.2
-				MONTHLY_POPULATION = 0.1
-				stability_factor = 0.1
-				army_core_attack_factor = 0.25
-				army_core_defence_factor = 0.25
-				political_power_gain = 0.25
-				research_speed_factor = -0.15
+				political_power_gain = 0.17
+				conscription = 0.03
+				war_support_factor = 0.1
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05
+				army_org_factor = 0.07
+			}
+			research_bonus = {
+				land_doctrine = -0.15
+			}
+		}
+		one_believe_one_unity_1 = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.2
+				conscription = 0.05
+				war_support_factor = 0.12
+				army_core_defence_factor = 0.5
+				army_core_attack_factor = 0.5
+				army_org_factor = 0.17
+			}
+			research_bonus = {
+				land_doctrine = -0.35
+			}
+		}
+		one_believe_one_unity_2 = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.3
+				conscription = 0.3
+				war_support_factor = 0.35
+				army_core_defence_factor = 0.45
+				army_core_attack_factor = 0.45
+				army_org_factor = 0.4
+			}
+			research_bonus = {
+				land_doctrine = -0.5
 			}
 		}
 		defenders_of_faith_force = {

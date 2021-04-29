@@ -1,0 +1,350 @@
+add_namespace = fateocc
+country_event = {
+	id = fateocc.1
+	title = "Fate of Indochina"
+	desc = fateocc.1.d
+	is_triggered_only = yes
+	option = {
+		name = "Balkanize French Indochina"
+		VIN = {
+			every_state = {
+				limit = {
+					AND = {
+						is_fully_controlled_by_SIA_or_war_ally = yes
+						is_core_of = FIC
+						NOT = {
+							##Cambodia
+							state = 962
+							state = 1023
+							state = 741
+							##Laos
+							state = 959
+							state = 960
+							state = 1009
+							state = 670
+							state = 963
+						}
+					}
+				}
+				VIN = { 
+					transfer_state = PREV
+					set_capital = 958
+				}
+			}
+		}
+		set_autonomy = {
+			target = VIN
+			autonomy_state = autonomy_colony
+		}
+		every_state = {
+			limit = {
+				OR = {
+					is_owned_and_controlled_by = VIN 
+					AND = {
+						is_core_of = FIC
+						is_fully_controlled_by_SIA_or_war_ally = no
+					}
+				}
+			}
+			VIN = { add_state_core = PREV }
+		}
+	}
+	option = {
+		name = "Form the Indochinese Federation"
+		every_state = {
+			limit = {
+				AND = {
+					is_fully_controlled_by_SIA_or_war_ally = yes
+					is_core_of = FIC
+					NOT = {
+						##Cambodia
+						state = 962
+						state = 1023
+						##Laos
+						state = 959
+					}
+				}
+			}
+			ICR = { 
+				transfer_state = PREV 
+				set_capital = 961
+			}
+		}
+		set_autonomy = {
+			target = ICR
+			autonomy_state = autonomy_colony
+		}
+		every_state = {
+			limit = {
+				OR = {
+					is_owned_and_controlled_by = ICR 
+					AND = {
+						is_core_of = FIC
+						is_fully_controlled_by_SIA_or_war_ally = no
+					}
+				}
+			}
+			ICR = { add_state_core = PREV }
+		}
+	}
+}
+country_event = {
+	id = fateocc.2
+	title = "Fate of Burma"
+	desc = fateocc.1.d
+	is_triggered_only = yes
+	option = {
+		name = "Form Unitary Burma"
+		BRM = {
+			every_state = {
+				limit = {
+					AND = {
+						is_fully_controlled_by_SIA_or_war_ally = yes
+						region = 189
+						NOT = {
+							state = 805 #Tenasserim
+							state = 1020
+							state = 1021
+						}
+					}
+				}
+				BRM = { 
+					transfer_state = PREV
+					#set_capital = 1022
+				}
+			}
+		}
+		set_autonomy = {
+			target = BRM
+			autonomy_state = autonomy_colony
+		}
+		every_state = {
+			limit = {
+				AND = {
+					is_owned_and_controlled_by = BRM 
+					region = 189
+					is_fully_controlled_by_SIA_or_war_ally = no
+				}
+			}
+			BRM = { add_state_core = PREV }
+		}
+	}
+}
+country_event = {
+	id = fateocc.3
+	title = "Fate of Malaysia"
+	desc = fateocc.1.d
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			SIA = {
+				transfer_state = 821
+				add_state_core = 821
+			}
+			MAL = {
+				add_state_claim = 336
+				add_state_claim = 820
+				add_state_claim = 819
+				add_state_claim = 333
+				add_state_claim = 785
+			}
+		}
+	}
+	option = {
+		name = "Form the Malaya Confederacy"
+		every_state = {
+			limit = {
+				is_fully_controlled_by_SIA_or_war_ally = yes
+				is_claimed_by = MAL
+				NOT = { is_core_of = ROOT }
+			}
+			MAL = { 
+				transfer_state = PREV 
+				set_capital = 336
+			}
+		}
+		every_state = {
+			limit = {
+				AND = {
+					is_owned_and_controlled_by = MAL
+					is_claimed_by = MAL
+					is_fully_controlled_by_SIA_or_war_ally = no
+				}
+			}
+			MAL = { add_state_core = PREV }
+		}
+		set_autonomy = {
+			target = MAL
+			autonomy_state = autonomy_colony
+		}
+		if = {
+			limit = {
+				has_country_flag = majlis_in_exiled_is_established
+			}
+			MAL = {
+				create_country_leader = {
+					name = "Council of Rulers"
+					desc = "POLITICS_CoR_DESC"
+					picture = "Portrait_MAL_Conference_of_Rulers.tga"
+					expire = "1965.1.1"
+					ideology = vanguardist_subtype
+					traits = {
+						#
+					}
+				}
+				create_country_leader = {
+					name = "Council of Rulers"
+					desc = "POLITICS_CoR_DESC"
+					picture = "Portrait_MAL_Conference_of_Rulers.tga"
+					expire = "1965.1.1"
+					ideology = collectivist_subtype
+					traits = {
+						#
+					}
+				}
+				create_country_leader = {
+					name = "Council of Rulers"
+					desc = "POLITICS_CoR_DESC"
+					picture = "Portrait_MAL_Conference_of_Rulers.tga"
+					expire = "1965.1.1"
+					ideology = libertarian_socialist_subtype
+					traits = {
+						#
+					}
+				}
+				create_country_leader = {
+					name = "Council of Rulers"
+					desc = "POLITICS_CoR_DESC"
+					picture = "Portrait_MAL_Conference_of_Rulers.tga"
+					expire = "1965.1.1"
+					ideology = social_democrat_subtype
+					traits = {
+						#
+					}
+				}
+				create_country_leader = {
+					name = "Council of Rulers"
+					desc = "POLITICS_CoR_DESC"
+					picture = "Portrait_MAL_Conference_of_Rulers.tga"
+					expire = "1965.1.1"
+					ideology = social_liberal_subtype
+					traits = {
+						#
+					}
+				}
+				create_country_leader = {
+					name = "Council of Rulers"
+					desc = "POLITICS_CoR_DESC"
+					picture = "Portrait_MAL_Conference_of_Rulers.tga"
+					expire = "1965.1.1"
+					ideology = market_liberal_subtype
+					traits = {
+						#
+					}
+				}
+				create_country_leader = {
+					name = "Council of Rulers"
+					desc = "POLITICS_CoR_DESC"
+					picture = "Portrait_MAL_Conference_of_Rulers.tga"
+					expire = "1965.1.1"
+					ideology = social_conservative_subtype
+					traits = {
+						#
+					}
+				}
+				create_country_leader = {
+					name = "Council of Rulers"
+					desc = "POLITICS_CoR_DESC"
+					picture = "Portrait_MAL_Conference_of_Rulers.tga"
+					expire = "1965.1.1"
+					ideology = authoritarian_democrat_subtype
+					traits = {
+						#
+					}
+				}
+				create_country_leader = {
+					name = "Council of Rulers"
+					desc = "POLITICS_CoR_DESC"
+					picture = "Portrait_MAL_Conference_of_Rulers.tga"
+					expire = "1965.1.1"
+					ideology = paternal_autocrat_subtype
+					traits = {
+						#
+					}
+				}
+				create_country_leader = {
+					name = "Council of Rulers"
+					desc = "POLITICS_CoR_DESC"
+					picture = "Portrait_MAL_Conference_of_Rulers.tga"
+					expire = "1965.1.1"
+					ideology = national_populist_subtype
+					traits = {
+						#
+					}
+				}
+				create_country_leader = {
+					name = "Council of Rulers"
+					desc = "POLITICS_CoR_DESC"
+					picture = "Portrait_MAL_Conference_of_Rulers.tga"
+					expire = "1965.1.1"
+					ideology = valkist_subtype
+					traits = {
+						#
+					}
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = fateocc.4
+	title = "Fate of Insulindia"
+	desc = fateocc.1.d
+	is_triggered_only = yes
+	option = {
+		name = "Form the Insulindia"
+		every_state = {
+			limit = {
+				is_core_of = BEA
+				NOT = { is_claimed_by = MAL }
+				is_fully_controlled_by_SIA_or_war_ally = yes
+			}
+			INS = {
+				transfer_state = PREV
+				add_state_core = PREV 
+				set_capital = 335
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = BEA
+				is_claimed_by = MAL
+			}
+			MAL = { 
+				add_state_core = PREV 
+				transfer_state = PREV 
+			}
+		}
+		set_autonomy = {
+			target = INS
+			autonomy_state = autonomy_colony
+		}
+		every_state = {
+			limit = {
+				AND = {
+					is_core_of = BEA
+					NOT = { is_claimed_by = MAL }
+					is_fully_controlled_by_SIA_or_war_ally = no 
+				}
+			}
+			INS = {
+				add_state_core = PREV
+			}
+		}
+		hidden_effect = {
+			INS = {
+				complete_national_focus = INS_open_political_sphere
+			}
+		}
+	}
+}

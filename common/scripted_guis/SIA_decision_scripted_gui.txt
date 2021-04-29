@@ -22,11 +22,11 @@ scripted_gui = {
 	supervisory_board_of_royal_market_decision_ui = {
 		context_type = decision_category
 		window_name = "royal_market_board_decision_ui_window"
-		visible = { tag = SIA }
+		properties = {
+			royal_market_board_progbar = {
+				frame = SiamEconomicVar
+			}
+		}
 	}
-	unificationist_persuasion_assembly_decision_ui = {
-		context_type = decision_category
-		window_name = "unificationist_persuasion_in_national_assembly_window"
-		visible = { tag = SIA }
-	}
+	
 }

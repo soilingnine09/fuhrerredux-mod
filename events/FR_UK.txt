@@ -34,6 +34,7 @@ country_event = {
 	
 	option = {
 		name = "Interesting times ahead"
+		news_event = { id = uknews.5 }
 		hidden_effect = {
 			country_event = { id = uk.80 months = 3 }
 			IF = {
@@ -455,6 +456,9 @@ country_event = {
 			}
 			JAP = {
 				news_event = { id = jap.9 }
+			}
+			SIA = {
+				country_event = { id = siambw.1 }
 			}
 		}
 	}
@@ -3879,18 +3883,6 @@ country_event = {
 		name = "We have won our freedom!"
 		white_peace = ENG
 		white_peace = RAJ
-		IF = {
-			limit = {
-				has_war_with = IRQ
-			}
-			white_peace = IRQ
-		}
-		IF = {
-			limit = {
-				has_war_with = SAF
-			}
-			white_peace = SAF
-		}
 		annex_country = { target = RAJ }
 		drop_cosmetic_tag = yes
 		news_event = { id = uknews.7 days = 1 }
@@ -3932,14 +3924,12 @@ country_event = {
 	
 	hidden = yes
 	
-	is_triggered_only = yes
-
-	#trigger = {
-	#	original_tag = RAJ
-	#	NOT = { has_war_with = IND }
-	#	NOT = { ENG = { has_country_flag = indian_armistice2 } }
-	#	IND = { exists = no }
-	#}
+	trigger = {
+		original_tag = RAJ
+		NOT = { has_war_with = IND }
+		NOT = { ENG = { has_country_flag = indian_armistice2 } }
+		IND = { exists = no }
+	}
 	
 	fire_only_once = yes
 	
@@ -7967,7 +7957,7 @@ country_event = {
 	id = ukf.140
 	immediate = {log = "[GetDateText]: [Root.GetName]: event ukf.140"}
 	title = "Bhutan Refuses!"
-	desc = ukf.135.d
+	desc = ukf.140.d
 	picture = report_event_merchant_ship_01
 	
 	is_triggered_only = yes
@@ -10894,12 +10884,12 @@ news_event = {
     }
 }
 
-# - Indian Rebellion
+# - Game-Start Indian Rebellion
 
 news_event = {
 	id = uknews.5
 	immediate = {log = "[GetDateText]: [Root.GetName]: event uknews.5"}
-    title = "Indian Rebellion of 1936"
+    title = "Indian Rebellion of 1935"
     desc = uknews.5.d
     picture = GFX_news_event_kiev_ruins
 
@@ -13628,7 +13618,6 @@ country_event = {
 				modifier = IMP_refused_newf
 				target = ENG
 			}
-			country_event = { days = 1 id = canada.54 }
 		}
 	}
 	
@@ -13648,7 +13637,6 @@ country_event = {
 				modifier = IMP_gave_newf
 				target = ENG
 			}
-			country_event = { days = 1 id = canada.55 }
 		}
 	}
 	
@@ -14097,11 +14085,11 @@ country_event = {
 	option = {
 		name = "Direct it to resource extraction"
 		RAJ = {
-			add_resource = { type = rubber amount = 4 state = 423 }
-			add_resource = { type = chromium amount = 6 state = 425 }
-			add_resource = { type = aluminium amount = 3 state = 426 }
-			add_resource = { type = tungsten amount = 4 state = 432 }
-			add_resource = { type = oil amount = 2 state = 428 }
+			add_resource = { type = rubber amount = 8 state = 423 }
+			add_resource = { type = chromium amount = 12 state = 425 }
+			add_resource = { type = aluminium amount = 12 state = 426 }
+			add_resource = { type = tungsten amount = 12 state = 432 }
+			add_resource = { type = oil amount = 8 state = 428 }
 		}
 	}
 	
@@ -15957,6 +15945,12 @@ country_event = {
 					region = 117
 				}
 				ENG = { transfer_state = PREV }
+			}
+			IF = {
+				limit = {
+					NOT = { MEX = { controls_state = 743 } }
+				}
+				USA = { transfer_state = 743 }
 			}
 			IF = {
 				limit = {
