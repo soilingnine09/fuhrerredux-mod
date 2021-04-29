@@ -1,4 +1,7 @@
-﻿add_namespace = china
+﻿# Chinese Events
+# created by: dax0102
+
+add_namespace = china
 
 # Warlord Chiang
 country_event = {

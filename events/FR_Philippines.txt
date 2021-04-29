@@ -1,4 +1,7 @@
-﻿add_namespace = phi
+﻿# Philippine Events
+# created by: dax0102
+
+add_namespace = phi
 
 # Refugees from Germany
 country_event = {
@@ -608,21 +611,21 @@ country_event = {
     is_triggered_only = yes
 
     option = {
-        name = phi.a
+        name = phi.13.a
         hidden_effect = {
             country_event = { id = phi.9 days = 10 }
         }
     }
 
     option = {
-        name = phi.b
+        name = phi.13.b
         hidden_effect = {
             country_event = { id = phi.14 days = 21 }
         }
     }
 
     option = {
-        name = phi.c
+        name = phi.13.c
         
         ai_chance = {
             factor = 20

@@ -520,16 +520,13 @@ PHI_occupation_of_germany = {
             every_state = {
                 limit = {
                     OR = {
-                        is_core_of = GER
                         is_core_of = GRP
                     }
                 }
-                add_core_of = DEU
-                remove_core_of = GER
-                remove_core_of = GRP
+                add_core_of = GRP
             }
 
-            release = DEU
+            release = GRP
 
             if = { 
                 limit = { has_dlc = "Together for Victory" } 
@@ -545,7 +542,7 @@ PHI_occupation_of_germany = {
             
             hidden_effect = {
                 PHI = { give_guarantee = DEU }
-                DEU = { 
+                GRP = { 
                     give_guarantee = PHI
 
                     set_politics = {

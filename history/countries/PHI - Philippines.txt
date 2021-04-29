@@ -94,17 +94,25 @@ create_country_leader = {
 }
 create_country_leader = {
 	name = "Crisanto Evangelista"
-	desc = "POLITICS_CRISTIANO_EVANGELISTA_DESC"
+	desc = "POLITICS_CRISANTO_EVANGELISTA_DESC"
 	picture = "Portrait_Philippines_Crisanto_Evangelista.tga"
-	expire = "1943.6.2"
+	expire = "1950.3.10"
 	ideology = collectivist_subtype
 	traits = { reluctant_interventionist }
 }
 create_country_leader = {
-	name = "Crisanto Evangelista"
-	desc = "POLITICS_CRISTIANO_EVANGELISTA_DESC"
-	picture = "Portrait_Philippines_Crisanto_Evangelista.tga"
-	expire = "1943.6.2"
+	name = "Pedro Abad Santos"
+	desc = "POLITICS_PEDRO_ABAD_SANTOS_DESC"
+	picture = "Portrait_Philippines_Pedro_Abad_Santos.tga"
+	expire = "1950.3.10"
+	ideology = collectivist_subtype
+	traits = { reluctant_interventionist }
+}
+create_country_leader = {
+	name = "Benigno Ramos"
+	desc = "POLITICS_BENIGNO_RAMOS_DESC"
+	picture = "Portrait_Philippines_Benigno_Ramos.tga"
+	expire = "1946.6.2"
 	ideology = libertarian_socialist_subtype
 	traits = { reluctant_interventionist }
 }
@@ -125,9 +133,9 @@ create_country_leader = {
 	traits = { financial_expert }
 }
 create_country_leader = {
-	name = "Manuel Roxas"
-	desc = "POLITICS_MANUEL_ROXAS_DESC"
-	picture = "Portrait_Philippines_Manuel_Roxas.tga"
+	name = "J. Antonio Araneta"
+	desc = "POLITICS_J_ANTONIO_ARANETA_DESC"
+	picture = "Portrait_Philippines_J_Antonio_Araneta.tga"
 	expire = "1955.2.1"
 	ideology = market_liberal_subtype
 	traits = { financial_expert }

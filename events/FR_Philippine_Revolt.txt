@@ -1,3 +1,6 @@
+# Philippine Revolt Events
+# created by: dax0102
+
 add_namespace = phr
 
 country_event = {

@@ -1,5 +1,4 @@
 # Additions
-DEU = "countries/German Federation.txt"
 PHR = "countries/Philippine Revolt.txt"
 SBH = "countries/Sabah.txt"
 

@@ -1,4 +1,7 @@
-﻿add_namespace = viet
+﻿# Vietnamese Events
+# created by: dax0102
+
+add_namespace = viet
 
 country_event = {
     id = viet.1

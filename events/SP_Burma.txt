@@ -1,4 +1,7 @@
-﻿add_namespace = burma
+﻿# Burmese Events
+# created by: dax0102
+
+add_namespace = burma
 
 # The Elections
 country_event = {

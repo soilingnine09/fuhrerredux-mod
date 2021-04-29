@@ -1,11 +1,12 @@
+# German Federation Focus Tree
+# created by: dax0102
+
+# Note: this tree is used when a foreign power puppets Germany after the Second Great War
+
 focus_tree = {
     id = SP_German_Federation
     country = {
         factor = 0
-        modifier = {
-            add = 10
-            tag = DEU
-        }
         modifier = {
             add = 10
             tag = GRP
@@ -16,7 +17,7 @@ focus_tree = {
 
     # Start Reconstruction
     focus = {
-        id = DEU_start_reconstruction
+        id = GRP_start_reconstruction
         icon = GFX_goal_generic_construction2
         x = 4
         y = 0
@@ -28,12 +29,12 @@ focus_tree = {
 
     # Repair the Infrastructure
     focus = {
-        id = DEU_repair_the_infrastructure
+        id = GRP_repair_the_infrastructure
         icon = GFX_goal_generic_construct_infrastructure
         x = 4
         y = 1
         cost = 5
-        prerequisite = { focus = DEU_start_reconstruction }
+        prerequisite = { focus = GRP_start_reconstruction }
         completion_reward = {
             every_state = {
                 limit = { 
@@ -51,12 +52,12 @@ focus_tree = {
 
     # Repair the Industries
     focus = {
-        id = DEU_repair_the_industries
+        id = GRP_repair_the_industries
         icon = GFX_goal_generic_construct_civ_factory
         x = 2
         y = 1
         cost = 5
-        prerequisite = { focus = DEU_start_reconstruction }
+        prerequisite = { focus = GRP_start_reconstruction }
         completion_reward = {
             random_owned_controlled_state = {
                 limit = {
@@ -114,12 +115,12 @@ focus_tree = {
 
     # Repair the Arms Factories
     focus = {
-        id = DEU_repair_the_arms_factories
+        id = GRP_repair_the_arms_factories
         icon = GFX_goal_generic_construct_mil_factory
         x = 6
         y = 1
         cost = 5
-        prerequisite = { focus = DEU_start_reconstruction }
+        prerequisite = { focus = GRP_start_reconstruction }
         completion_reward = {
             random_owned_controlled_state = {
                 limit = {
@@ -174,113 +175,113 @@ focus_tree = {
 
     # Economic Rehabilitation
     focus = {
-        id = DEU_economic_rehabilitation
+        id = GRP_economic_rehabilitation
         icon = GFX_focus_generic_the_giant_wakes
         x = 4
         y = 2
         cost = 5
         prerequisite = {
-            focus = DEU_repair_the_infrastructure
-            focus = DEU_repair_the_industries
-            focus = DEU_repair_the_arms_factories
+            focus = GRP_repair_the_infrastructure
+            focus = GRP_repair_the_industries
+            focus = GRP_repair_the_arms_factories
         }
         completion_reward = {
-            remove_ideas = DEU_economic_downhill
-            add_ideas = DEU_steady_economic_recovery
+            remove_ideas = GRP_economic_downhill
+            add_ideas = GRP_steady_economic_recovery
         }
     }
 
     # Start the Trials
     focus = {
-        id = DEU_start_the_trials
+        id = GRP_start_the_trials
         icon = GFX_goal_DOM_The_Trial
         x = 4
         y = 3
         cost = 5
-        prerequisite = { focus = DEU_economic_rehabilitation }
+        prerequisite = { focus = GRP_economic_rehabilitation }
         completion_reward = {
-            country_event = { id = deu.1 }
+            country_event = { id = GRP.1 }
         }
     }
 
     # The Officers
     focus = {
-        id = DEU_the_officers
+        id = GRP_the_officers
         icon = GFX_goal_German_Staff
         x = 1
         y = 4
         cost = 20
-        prerequisite = { focus = DEU_start_the_trials }
+        prerequisite = { focus = GRP_start_the_trials }
         completion_reward = {
-            country_event = { id = deu.2 }
+            country_event = { id = GRP.2 }
         }
     }
 
     # The Entrepreneurs
     focus = {
-        id = DEU_the_entrepreneurs
+        id = GRP_the_entrepreneurs
         icon = GFX_goal_state_economy
         x = 3
         y = 4
         cost = 20
-        prerequisite = { focus = DEU_start_the_trials }
+        prerequisite = { focus = GRP_start_the_trials }
         completion_reward = {
-            country_event = { id = deu.3 }
+            country_event = { id = GRP.3 }
         }
     }
 
     # The Government
     focus = {
-        id = DEU_the_government
+        id = GRP_the_government
         icon = GFX_goal_DEI_focus_disband_volksraad
         x = 5
         y = 4
         cost = 20
-        prerequisite = { focus = DEU_start_the_trials }
+        prerequisite = { focus = GRP_start_the_trials }
         completion_reward = {
-            country_event = { id = deu.4 }
+            country_event = { id = GRP.4 }
         }
     }
 
     # The Media
     focus = {
-        id = DEU_the_media
+        id = GRP_the_media
         icon = GFX_goal_generic_propaganda
         x = 7
         y = 4
         cost = 20
-        prerequisite = { focus = DEU_start_the_trials }
+        prerequisite = { focus = GRP_start_the_trials }
         completion_reward = {
-            country_event = { id = deu.5 }
+            country_event = { id = GRP.5 }
         }
     }
 
     # Rehabilitated Military
     focus = {
-        id = DEU_rehabilitated_military
+        id = GRP_rehabilitated_military
         icon = GFX_focus_generic_military_mission
         x = 2
         y = 5
         cost = 5
         prerequisite = { 
-            focus = DEU_the_officers
-            focus = DEU_the_government    
+            focus = GRP_the_officers
+            focus = GRP_the_government    
         }
         completion_reward = {
-            add_ideas = DEU_bundeswehr
+            add_ideas = GRP_bundeswehr
         }
     }
 
     # Withdraw the Censorship Laws
     focus = {
-        id = DEU_withdraw_the_censorship_laws
+        id = GRP_withdraw_the_censorship_laws
         icon = GFX_focus_generic_concessions
         x = 6
         y = 5
         cost = 5
         prerequisite = {
-            focus = DEU_the_media
-            focus = DEU_the_government
+            focus = GRP_the_media
+            focus = GRP_the_government
         }
         completion_reward = {
             add_stability = 0.05
@@ -289,14 +290,14 @@ focus_tree = {
 
     # Pass Regulations
     focus = {
-        id = DEU_pass_regulations
+        id = GRP_pass_regulations
         icon = GFX_goal_munitions_factories
         x = 4
         y = 5
         cost = 5
         prerequisite = {
-            focus = DEU_the_entrepreneurs
-            focus = DEU_the_government
+            focus = GRP_the_entrepreneurs
+            focus = GRP_the_government
         }
         completion_reward = {
             add_stability = 0.05
@@ -305,39 +306,39 @@ focus_tree = {
 
     # New Labour Code
     focus = {
-        id = DEU_new_labour_code
+        id = GRP_new_labour_code
         icon = GFX_goal_production
         x = 4
         y = 6
         cost = 5
         prerequisite = {
-            focus = DEU_pass_regulations
+            focus = GRP_pass_regulations
         }
         completion_reward = {
-            add_ideas = DEU_new_labour_code_idea
+            add_ideas = GRP_new_labour_code_idea
         }
     }
 
     # Finish Reforms
     focus = {
-        id = DEU_finish_reforms
+        id = GRP_finish_reforms
         icon = GFX_focus_generic_self_management
         x = 4
         y = 7
         cost = 10
         prerequisite = {
-            focus = DEU_rehabilitated_military
-            focus = DEU_new_labour_code
-            focus = DEU_withdraw_the_censorship_laws
+            focus = GRP_rehabilitated_military
+            focus = GRP_new_labour_code
+            focus = GRP_withdraw_the_censorship_laws
         }
         completion_reward = {
-            remove_ideas = DEU_steady_economic_recovery
+            remove_ideas = GRP_steady_economic_recovery
         }
     }
 
     # A Reformed Germany
     focus = {
-        id = DEU_a_reformed_germany
+        id = GRP_a_reformed_germany
         icon = GFX_goal_liberty
         x = 18
         y = 0
@@ -345,35 +346,35 @@ focus_tree = {
         available = {
             NOT = {
                 OR = {
-                    has_idea = DEU_valkist_society
-                    has_idea = DEU_valkist_economy
-                    has_idea = DEU_valkist_bureaucracy
-                    has_idea = DEU_steady_economic_recovery
-                    has_idea = DEU_economic_downhill
+                    has_idea = GRP_valkist_society
+                    has_idea = GRP_valkist_economy
+                    has_idea = GRP_valkist_bureaucracy
+                    has_idea = GRP_steady_economic_recovery
+                    has_idea = GRP_economic_downhill
                 }
             }
         }
         completion_reward = {
             add_political_power = 100
-            PHI = { end_puppet = DEU }
+            PHI = { end_puppet = GRP }
         }
     }
 
     # Hold Elections
     focus = {
-        id = DEU_hold_elections
+        id = GRP_hold_elections
         icon = GFX_goal_generic_elections
         x = 18
         y = 1
         cost = 5
-        prerequisite = { focus = DEU_a_reformed_germany }
+        prerequisite = { focus = GRP_a_reformed_germany }
         completion_reward = {
             hidden_effect = {
                 leave_faction = yes
                 set_party_name = {
                     ideology = authoritarian_democrat
-                    name = DEU_authoritarian_democrat_okw
-                    long_name = DEU_authoritarian_democrat_okw_long
+                    name = GRP_authoritarian_democrat_okw
+                    long_name = GRP_authoritarian_democrat_okw_long
                 }
                 kill_country_leader = authoritarian_democrat
                 create_country_leader = {
@@ -386,29 +387,29 @@ focus_tree = {
                     }
                 }
             }
-            country_event = { id = deu.6 }
+            country_event = { id = GRP.6 }
         }
     }
 
     # Choose SDP
     focus = {
-        id = DEU_choose_sdp
+        id = GRP_choose_sdp
         icon = GFX_goal_ideology_social_democrat
         x = 14
         y = 2
         cost = 2
-        available = { has_country_flag = DEU_SDP_VICTORY }
-        prerequisite = { focus = DEU_hold_elections }
+        available = { has_country_flag = GRP_SDP_VICTORY }
+        prerequisite = { focus = GRP_hold_elections }
     }
 
     # Social Welfare for All
     focus = {
-        id = DEU_social_welfare_for_all
+        id = GRP_social_welfare_for_all
         icon = GFX_goal_red_star_dove
         x = 13
         y = 3
         cost = 10
-        prerequisite = { focus = DEU_choose_sdp }
+        prerequisite = { focus = GRP_choose_sdp }
         completion_reward = {
             add_stability = 0.05
         }
@@ -416,25 +417,25 @@ focus_tree = {
 
     # Invest in Farms
     focus = {
-        id = DEU_invest_in_farms
+        id = GRP_invest_in_farms
         icon = GFX_focus_AUS_agriculture
         x = 15
         y = 3
         cost = 10
-        prerequisite = { focus = DEU_choose_sdp }
+        prerequisite = { focus = GRP_choose_sdp }
         completion_reward = {
-            add_ideas = DEU_food_self_suffiency
+            add_ideas = GRP_food_self_suffiency
         }
     }
 
     # Free Public Education
     focus = {
-        id = DEU_free_public_education
+        id = GRP_free_public_education
         icon = GFX_goal_brain
         x = 15
         y = 4
         cost = 10
-        prerequisite = { focus = DEU_invest_in_farms }
+        prerequisite = { focus = GRP_invest_in_farms }
         completion_reward = {
             add_research_slot = 1
         }
@@ -442,28 +443,28 @@ focus_tree = {
 
     # Establish Labour Unions
     focus = {
-        id = DEU_establish_labour_unions
+        id = GRP_establish_labour_unions
         icon = GFX_goal_munitions_factories
         x = 13
         y = 4
         cost = 10
-        prerequisite = { focus = DEU_social_welfare_for_all }
+        prerequisite = { focus = GRP_social_welfare_for_all }
         completion_reward = {
-            add_ideas = DEU_labour_unions
+            add_ideas = GRP_labour_unions
         }
     }
 
     # Democratic Republic
     focus = {
-        id = DEU_democratic_republic
+        id = GRP_democratic_republic
         icon = GFX_goal_Centralised_Government
         x = 14
         y = 5
         cost = 3
-        prerequisite = { focus = DEU_establish_labour_unions }
-        prerequisite = { focus = DEU_free_public_education }
+        prerequisite = { focus = GRP_establish_labour_unions }
+        prerequisite = { focus = GRP_free_public_education }
         completion_reward = {
-            add_ideas = DEU_bastion_of_democracy
+            add_ideas = GRP_bastion_of_democracy
             add_popularity = {
                 ideology = social_democrat
                 popularity = 0.05
@@ -473,36 +474,36 @@ focus_tree = {
 
     # Choose DVP
     focus = {
-        id = DEU_choose_ddp
+        id = GRP_choose_ddp
         icon = GFX_goal_ideology_social_liberal
         x = 18
         y = 2
         cost = 2
-        available = { has_country_flag = DEU_DDP_VICTORY }
-        prerequisite = { focus = DEU_hold_elections }
+        available = { has_country_flag = GRP_DDP_VICTORY }
+        prerequisite = { focus = GRP_hold_elections }
     }
 
     # Consumer Protection Laws
     focus = {
-        id = DEU_consumer_protection_laws
+        id = GRP_consumer_protection_laws
         icon = GFX_goal_HOL_black_monday
         x = 17
         y = 3
         cost = 10
-        prerequisite = { focus = DEU_choose_ddp }
+        prerequisite = { focus = GRP_choose_ddp }
         completion_reward = {
-            add_ideas = DEU_consumer_protectionism
+            add_ideas = GRP_consumer_protectionism
         }
     }
 
     # Education Reform
     focus = {
-        id = DEU_education_reform
+        id = GRP_education_reform
         icon = GFX_focus_research
         x = 17
         y = 4
         cost = 10
-        prerequisite = { focus = DEU_consumer_protection_laws }
+        prerequisite = { focus = GRP_consumer_protection_laws }
         completion_reward = {
             add_research_slot = 1
         }
@@ -510,12 +511,12 @@ focus_tree = {
 
     # Guarantee Human Rights
     focus = {
-        id = DEU_guarantee_human_rights
+        id = GRP_guarantee_human_rights
         icon = GFX_goal_volunteer_alliance
         x = 19
         y = 3
         cost = 10
-        prerequisite = { focus = DEU_choose_ddp }
+        prerequisite = { focus = GRP_choose_ddp }
         completion_reward = {
             add_stability = 0.05
         }
@@ -523,28 +524,28 @@ focus_tree = {
 
     # Help the Poor
     focus = {
-        id = DEU_help_the_poor
+        id = GRP_help_the_poor
         icon = GFX_goal_famine
         x = 19
         y = 4
         cost = 10
-        prerequisite = { focus = DEU_guarantee_human_rights }
+        prerequisite = { focus = GRP_guarantee_human_rights }
         completion_reward = {
-            add_ideas = DEU_unemployment_benefits
+            add_ideas = GRP_unemployment_benefits
         }
     }
 
     # Liberal State
     focus = {
-        id = DEU_liberal_state
+        id = GRP_liberal_state
         icon = GFX_goal_tripartite_pact
         x = 18
         y = 5
         cost = 3
-        prerequisite = { focus = DEU_help_the_poor }
-        prerequisite = { focus = DEU_education_reform }
+        prerequisite = { focus = GRP_help_the_poor }
+        prerequisite = { focus = GRP_education_reform }
         completion_reward = {
-            add_ideas = DEU_bastion_of_democracy
+            add_ideas = GRP_bastion_of_democracy
             add_popularity = {
                 ideology = social_liberal
                 popularity = 0.05
@@ -554,23 +555,23 @@ focus_tree = {
 
     # Choose Zentrum
     focus = {
-        id = DEU_choose_zentrum
+        id = GRP_choose_zentrum
         icon = GFX_goal_ideology_social_conservative
         x = 22
         y = 2
         cost = 2
-        available = { has_country_flag = DEU_ZENTRUM_VICTORY }
-        prerequisite = { focus = DEU_hold_elections }
+        available = { has_country_flag = GRP_ZENTRUM_VICTORY }
+        prerequisite = { focus = GRP_hold_elections }
     }
 
     # Strengthen the State
     focus = {
-        id = DEU_strengthen_the_state
+        id = GRP_strengthen_the_state
         icon = GFX_goal_government_icon
         x = 21
         y = 3
         cost = 10
-        prerequisite = { focus = DEU_choose_zentrum }
+        prerequisite = { focus = GRP_choose_zentrum }
         completion_reward = {
             add_stability = 0.05
         }
@@ -578,25 +579,25 @@ focus_tree = {
 
     # Bring back the Church
     focus = {
-        id = DEU_bring_back_the_church
+        id = GRP_bring_back_the_church
         icon = GFX_BEL_Improve_Catholic_Relations
         x = 23
         y = 3
         cost = 10
-        prerequisite = { focus = DEU_choose_zentrum }
+        prerequisite = { focus = GRP_choose_zentrum }
         completion_reward = {
-            add_ideas = DEU_the_church
+            add_ideas = GRP_the_church
         }
     }
 
     # Open New Universities
     focus = {
-        id = DEU_open_new_universities
+        id = GRP_open_new_universities
         icon = GFX_focus_research
         x = 21
         y = 4
         cost = 10
-        prerequisite = { focus = DEU_strengthen_the_state }
+        prerequisite = { focus = GRP_strengthen_the_state }
         completion_reward = {
             add_research_slot = 1
         }
@@ -604,28 +605,28 @@ focus_tree = {
 
     # Leave the Business to the Businessmen
     focus = {
-        id = DEU_leave_the_business_to_the_businessmen
+        id = GRP_leave_the_business_to_the_businessmen
         icon = GFX_goal_state_economy
         x = 23
         y = 4
         cost = 10
-        prerequisite = { focus = DEU_bring_back_the_church }
+        prerequisite = { focus = GRP_bring_back_the_church }
         completion_reward = {
-            add_ideas = DEU_economic_protectionism
+            add_ideas = GRP_economic_protectionism
         }
     }
 
     # Conservative Nation
     focus = {
-        id = DEU_conservative_nation
+        id = GRP_conservative_nation
         icon = GFX_focus_generic_self_management
         x = 22
         y = 5
         cost = 3
-        prerequisite = { focus = DEU_open_new_universities }
-        prerequisite = { focus = DEU_leave_the_business_to_the_businessmen }
+        prerequisite = { focus = GRP_open_new_universities }
+        prerequisite = { focus = GRP_leave_the_business_to_the_businessmen }
         completion_reward = {
-            add_ideas = DEU_bastion_of_democracy
+            add_ideas = GRP_bastion_of_democracy
             add_popularity = {
                 ideology = social_conservative
                 popularity = 0.05
@@ -635,18 +636,18 @@ focus_tree = {
     
     # A New and Better Germany
     focus = {
-        id = DEU_a_new_and_better_germany
+        id = GRP_a_new_and_better_germany
         icon = GFX_goal_support_democracy
         x = 18
         y = 6
         cost = 10
         prerequisite = {
-            focus = DEU_democratic_republic
-            focus = DEU_liberal_state
-            focus = DEU_conservative_nation
+            focus = GRP_democratic_republic
+            focus = GRP_liberal_state
+            focus = GRP_conservative_nation
         }
         completion_reward = {
-            add_ideas = DEU_a_new_and_better_germany
+            add_ideas = GRP_a_new_and_better_germany
         }
     }
 
@@ -654,13 +655,13 @@ focus_tree = {
 
     # European Economic Development Summit
     focus = {
-        id = DEU_european_economic_development_summit
+        id = GRP_european_economic_development_summit
         icon = GFX_focus_generic_the_giant_wakes
         x = 14
         y = 8
         cost = 2
         available = {
-            has_completed_focus = DEU_a_new_and_better_germany
+            has_completed_focus = GRP_a_new_and_better_germany
         }
         completion_reward = {
             add_political_power = 100
@@ -669,12 +670,12 @@ focus_tree = {
 
     # Send Invites to the West
     focus = {
-        id = DEU_send_invites_to_the_west
+        id = GRP_send_invites_to_the_west
         icon = GFX_goal_generic_improve_relations
         x = 10
         y = 9
         cost = 5
-        prerequisite = { focus = DEU_european_economic_development_summit }
+        prerequisite = { focus = GRP_european_economic_development_summit }
         completion_reward = {
             ENG = {
                 if = {
@@ -682,7 +683,7 @@ focus_tree = {
                         exists = yes
                         NOT = { has_war_with = ROOT }
                     }
-                    country_event = { id = deu.7 }
+                    country_event = { id = GRP.7 }
                 }
             }
             FRA = {
@@ -691,7 +692,7 @@ focus_tree = {
                         exists = yes
                         NOT = { has_war_with = ROOT }
                     }
-                    country_event = { id = deu.7 }
+                    country_event = { id = GRP.7 }
                 }
             }
             POR = {
@@ -701,7 +702,7 @@ focus_tree = {
                         NOT = { has_war_with = ROOT }
                         PRR = { exists = no }
                     }
-                    country_event = { id = deu.7 }
+                    country_event = { id = GRP.7 }
                 }
             }
             PRR = {
@@ -722,7 +723,7 @@ focus_tree = {
                         SPF = { exists = no }
                         SPA = { exists = no }
                     }
-                    country_event = { id = deu.7 }
+                    country_event = { id = GRP.7 }
                 }
             }
             SPM = {
@@ -734,7 +735,7 @@ focus_tree = {
                         SPM = { exists = no }
                         SPA = { exists = no }
                     }
-                    country_event = { id = deu.7 }
+                    country_event = { id = GRP.7 }
                 }
             }
             BEL = {
@@ -746,7 +747,7 @@ focus_tree = {
                         NOT = { has_government = collectivist }
                         NOT = { has_government = vanguardist }
                     }
-                    country_event = { id = deu.7 }
+                    country_event = { id = GRP.7 }
                 }
             }
             HOL = {
@@ -758,7 +759,7 @@ focus_tree = {
                         NOT = { has_government = collectivist }
                         NOT = { has_government = vanguardist }
                     }
-                    country_event = { id = deu.7 }
+                    country_event = { id = GRP.7 }
                 }
             }
         }
@@ -766,12 +767,12 @@ focus_tree = {
 
     # Send Invites to the North
     focus = {
-        id = DEU_send_invites_to_the_north
+        id = GRP_send_invites_to_the_north
         icon = GFX_goal_generic_improve_relations
         x = 12
         y = 9
         cost = 5
-        prerequisite = { focus = DEU_european_economic_development_summit }
+        prerequisite = { focus = GRP_european_economic_development_summit }
         completion_reward = {
             NOR = {
                 if = {
@@ -782,7 +783,7 @@ focus_tree = {
                         NOT = { has_government = collectivist }
                         NOT = { has_government = vanguardist }
                     }
-                    country_event = { id = deu.7 }
+                    country_event = { id = GRP.7 }
                 }
             }
             SWE = {
@@ -794,7 +795,7 @@ focus_tree = {
                         NOT = { has_government = collectivist }
                         NOT = { has_government = vanguardist }
                     }
-                    country_event = { id = deu.7 }
+                    country_event = { id = GRP.7 }
                 }
             }
             DEN = {
@@ -806,7 +807,7 @@ focus_tree = {
                         NOT = { has_government = collectivist }
                         NOT = { has_government = vanguardist }
                     }
-                    country_event = { id = deu.7 }
+                    country_event = { id = GRP.7 }
                 }
             }
             FIN = {
@@ -818,7 +819,7 @@ focus_tree = {
                         NOT = { has_government = collectivist }
                         NOT = { has_government = vanguardist }
                     }
-                    country_event = { id = deu.7 }
+                    country_event = { id = GRP.7 }
                 }
             }
         }
@@ -826,12 +827,12 @@ focus_tree = {
 
     # Send Invites to the South
     focus = {
-        id = DEU_send_invites_to_the_south
+        id = GRP_send_invites_to_the_south
         icon = GFX_goal_generic_improve_relations
         x = 14
         y = 9
         cost = 5
-        prerequisite = { focus = DEU_european_economic_development_summit }
+        prerequisite = { focus = GRP_european_economic_development_summit }
         completion_reward = {
             ITA = {
                 if = {
@@ -843,7 +844,7 @@ focus_tree = {
                         NOT = { has_government = vanguardist }
                         UPC = { exists = no }
                     }
-                    country_event = { id = deu.7 }
+                    country_event = { id = GRP.7 }
                 }
             }
             SRV = {
@@ -855,7 +856,7 @@ focus_tree = {
                         NOT = { has_government = collectivist }
                         NOT = { has_government = vanguardist }
                     }
-                    country_event = { id = deu.7 }
+                    country_event = { id = GRP.7 }
                 }
             }
             SIC = {
@@ -867,7 +868,7 @@ focus_tree = {
                         NOT = { has_government = collectivist }
                         NOT = { has_government = vanguardist }
                     }
-                    country_event = { id = deu.7 }
+                    country_event = { id = GRP.7 }
                 }
             }
             AUS = {
@@ -879,7 +880,7 @@ focus_tree = {
                         NOT = { has_government = collectivist }
                         NOT = { has_government = vanguardist }
                     }
-                    country_event = { id = deu.7 }
+                    country_event = { id = GRP.7 }
                 }
             }
             PIE = {
@@ -891,7 +892,7 @@ focus_tree = {
                         NOT = { has_government = collectivist }
                         NOT = { has_government = vanguardist }
                     }
-                    country_event = { id = deu.7 }
+                    country_event = { id = GRP.7 }
                 }
             }
             SWI = {
@@ -903,7 +904,7 @@ focus_tree = {
                         NOT = { has_government = collectivist }
                         NOT = { has_government = vanguardist }
                     }
-                    country_event = { id = deu.7 }
+                    country_event = { id = GRP.7 }
                 }
             }
         }
@@ -911,12 +912,12 @@ focus_tree = {
 
     # Send Invites to the Balkans
     focus = {
-        id = DEU_send_invites_to_the_balkans
+        id = GRP_send_invites_to_the_balkans
         icon = GFX_goal_generic_improve_relations
         x = 16
         y = 9
         cost = 5
-        prerequisite = { focus = DEU_european_economic_development_summit }
+        prerequisite = { focus = GRP_european_economic_development_summit }
         completion_reward = {
             SER = {
                 if = {
@@ -927,7 +928,7 @@ focus_tree = {
                         NOT = { has_government = collectivist }
                         NOT = { has_government = vanguardist }
                     }
-                    country_event = { id = deu.7 }
+                    country_event = { id = GRP.7 }
                 }
             }
             HUN = {
@@ -939,7 +940,7 @@ focus_tree = {
                         NOT = { has_government = collectivist }
                         NOT = { has_government = vanguardist }
                     }
-                    country_event = { id = deu.7 }
+                    country_event = { id = GRP.7 }
                 }
             }
             ROM = {
@@ -951,7 +952,7 @@ focus_tree = {
                         NOT = { has_government = collectivist }
                         NOT = { has_government = vanguardist }
                     }
-                    country_event = { id = deu.7 }
+                    country_event = { id = GRP.7 }
                 }
             }
             BUL = {
@@ -963,7 +964,7 @@ focus_tree = {
                         NOT = { has_government = collectivist }
                         NOT = { has_government = vanguardist }
                     }
-                    country_event = { id = deu.7 }
+                    country_event = { id = GRP.7 }
                 }
             }
             GRE = {
@@ -975,7 +976,7 @@ focus_tree = {
                         NOT = { has_government = collectivist }
                         NOT = { has_government = vanguardist }
                     }
-                    country_event = { id = deu.7 }
+                    country_event = { id = GRP.7 }
                 }
             }
             ALB = {
@@ -987,7 +988,7 @@ focus_tree = {
                         NOT = { has_government = collectivist }
                         NOT = { has_government = vanguardist }
                     }
-                    country_event = { id = deu.7 }
+                    country_event = { id = GRP.7 }
                 }
             }
         }
@@ -995,12 +996,12 @@ focus_tree = {
 
     # Send Invites to the East
     focus = {
-        id = DEU_send_invites_to_the_east
+        id = GRP_send_invites_to_the_east
         icon = GFX_goal_generic_improve_relations
         x = 18
         y = 9
         cost = 5
-        prerequisite = { focus = DEU_european_economic_development_summit }
+        prerequisite = { focus = GRP_european_economic_development_summit }
         completion_reward = {
             POL = {
                 if = {
@@ -1011,7 +1012,7 @@ focus_tree = {
                         NOT = { has_government = collectivist }
                         NOT = { has_government = vanguardist }
                     }
-                    country_event = { id = deu.7 }
+                    country_event = { id = GRP.7 }
                 }
             }
             LIT = {
@@ -1023,7 +1024,7 @@ focus_tree = {
                         NOT = { has_government = collectivist }
                         NOT = { has_government = vanguardist }
                     }
-                    country_event = { id = deu.7 }
+                    country_event = { id = GRP.7 }
                 }
             }
             BEL = {
@@ -1035,7 +1036,7 @@ focus_tree = {
                         NOT = { has_government = collectivist }
                         NOT = { has_government = vanguardist }
                     }
-                    country_event = { id = deu.7 }
+                    country_event = { id = GRP.7 }
                 }
             }
             URK = {
@@ -1047,7 +1048,7 @@ focus_tree = {
                         NOT = { has_government = collectivist }
                         NOT = { has_government = vanguardist }
                     }
-                    country_event = { id = deu.7 }
+                    country_event = { id = GRP.7 }
                 }
             }
             LAT = {
@@ -1059,7 +1060,7 @@ focus_tree = {
                         NOT = { has_government = collectivist }
                         NOT = { has_government = vanguardist }
                     }
-                    country_event = { id = deu.7 }
+                    country_event = { id = GRP.7 }
                 }
             }
             EST = {
@@ -1071,7 +1072,7 @@ focus_tree = {
                         NOT = { has_government = collectivist }
                         NOT = { has_government = vanguardist }
                     }
-                    country_event = { id = deu.7 }
+                    country_event = { id = GRP.7 }
                 }
             }
         }
@@ -1079,80 +1080,80 @@ focus_tree = {
 
     # Trade Agreements
     focus = {
-        id = DEU_trade_agreements
+        id = GRP_trade_agreements
         icon = GFX_goal_generic_trade
         x = 15
         y = 10
         cost = 10
-        prerequisite = { focus = DEU_send_invites_to_the_west }
-        prerequisite = { focus = DEU_send_invites_to_the_north }
-        prerequisite = { focus = DEU_send_invites_to_the_south }
-        prerequisite = { focus = DEU_send_invites_to_the_balkans }
-        prerequisite = { focus = DEU_send_invites_to_the_east }
+        prerequisite = { focus = GRP_send_invites_to_the_west }
+        prerequisite = { focus = GRP_send_invites_to_the_north }
+        prerequisite = { focus = GRP_send_invites_to_the_south }
+        prerequisite = { focus = GRP_send_invites_to_the_balkans }
+        prerequisite = { focus = GRP_send_invites_to_the_east }
         completion_reward = {
-            add_ideas = DEU_european_trade_agreements
+            add_ideas = GRP_european_trade_agreements
             every_country = {
-                limit = { has_country_flag = DEU_ACCEPTED_INVITE }
-                add_ideas = DEU_european_trade_agreements
+                limit = { has_country_flag = GRP_ACCEPTED_INVITE }
+                add_ideas = GRP_european_trade_agreements
             }
         }
     }
 
     # Immigration Issues
     focus = {
-        id = DEU_immigration_issues
+        id = GRP_immigration_issues
         icon = GFX_goal_generic_trade
         x = 13
         y = 10
         cost = 10
-        prerequisite = { focus = DEU_send_invites_to_the_west }
-        prerequisite = { focus = DEU_send_invites_to_the_north }
-        prerequisite = { focus = DEU_send_invites_to_the_south }
-        prerequisite = { focus = DEU_send_invites_to_the_balkans }
-        prerequisite = { focus = DEU_send_invites_to_the_east }
+        prerequisite = { focus = GRP_send_invites_to_the_west }
+        prerequisite = { focus = GRP_send_invites_to_the_north }
+        prerequisite = { focus = GRP_send_invites_to_the_south }
+        prerequisite = { focus = GRP_send_invites_to_the_balkans }
+        prerequisite = { focus = GRP_send_invites_to_the_east }
         completion_reward = {
-            add_ideas = DEU_european_passport_union
+            add_ideas = GRP_european_passport_union
             every_country = {
-                limit = { has_country_flag = DEU_ACCEPTED_INVITE }
-                add_ideas = DEU_european_passport_union
+                limit = { has_country_flag = GRP_ACCEPTED_INVITE }
+                add_ideas = GRP_european_passport_union
             }
         }
     }
 
     # Establish the European Parliament
     focus = {
-        id = DEU_establish_the_european_parliament
+        id = GRP_establish_the_european_parliament
         icon = GFX_goal_DOM_End_Judicial_Corruption
         x = 14
         y = 11
         cost = 10
-        prerequisite = { focus = DEU_immigration_issues }
-        prerequisite = { focus = DEU_trade_agreements }
+        prerequisite = { focus = GRP_immigration_issues }
+        prerequisite = { focus = GRP_trade_agreements }
         completion_reward = {
             every_country = {
-                limit = { has_country_flag = DEU_ACCEPTED_INVITE }
-                add_ideas = DEU_european_parliament
+                limit = { has_country_flag = GRP_ACCEPTED_INVITE }
+                add_ideas = GRP_european_parliament
             }
         }
     }
 
     # The European Union
     focus = {
-        id = DEU_the_european_union
+        id = GRP_the_european_union
         icon = GFX_goal_COS_Ferrer_Coup
         x = 14
         y = 12
         cost = 10
-        prerequisite = { focus = DEU_establish_the_european_parliament }
+        prerequisite = { focus = GRP_establish_the_european_parliament }
         completion_reward = {
             set_rule = {
                 can_create_factions = yes
             }
-            create_faction = DEU_EUROPEAN_UNION
+            create_faction = GRP_EUROPEAN_UNION
             every_country = {
-                limit = { has_country_flag = DEU_ACCEPTED_INVITE }
+                limit = { has_country_flag = GRP_ACCEPTED_INVITE }
                 leave_faction = yes
-                DEU = { add_to_faction = PREV }
+                GRP = { add_to_faction = PREV }
             }
         }
     }

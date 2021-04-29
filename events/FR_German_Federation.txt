@@ -1,15 +1,18 @@
-﻿add_namespace = deu
+﻿# German Federation Events
+# created by: dax0102
+
+add_namespace = grp
 
 # Trials
 country_event = {
-    id = deu.1
-    title = deu.1.t
-    desc = deu.1.d
+    id = grp.1
+    title = grp.1.t
+    desc = grp.1.d
 
     is_triggered_only = yes
 
     option = {
-        name = deu.1.a
+        name = grp.1.a
 
         add_stability = 0.05
         add_war_support = 0.02
@@ -18,21 +21,21 @@ country_event = {
 
 # Trial of the Officers
 country_event = {
-    id = deu.2
-    title = deu.2.t
-    desc = deu.2.d
+    id = grp.2
+    title = grp.2.t
+    desc = grp.2.d
 
     is_triggered_only = yes
 
     option = {
-        name = deu.2.a
+        name = grp.2.a
 
         add_stability = 0.05
         remove_ideas = DEU_imprisoned_officers
     }
 
     option = {
-        name = deu.2.b
+        name = grp.2.b
 
         add_war_support = 0.05
         remove_ideas = DEU_imprisoned_officers
@@ -85,21 +88,21 @@ country_event = {
 
 # Trial of the Entrepreneurs
 country_event = {
-    id = deu.3
-    title = deu.3.t
-    desc = deu.3.d
+    id = grp.3
+    title = grp.3.t
+    desc = grp.3.d
 
     is_triggered_only = yes 
 
     option = {
-        name = deu.3.a
+        name = grp.3.a
 
         add_stability = 0.05
         remove_ideas = DEU_valkist_economy
     }
 
     option = {
-        name = deu.3.b
+        name = grp.3.b
 
         add_political_power = -100
         remove_ideas = DEU_valkist_economy
@@ -108,21 +111,21 @@ country_event = {
 
 # Trial of the Government
 country_event = {
-    id = deu.4
-    title = deu.4.t
-    desc = deu.4.d
+    id = grp.4
+    title = grp.4.t
+    desc = grp.4.d
     
     is_triggered_only = yes
 
     option = {
-        name = deu.4.a
+        name = grp.4.a
 
         add_stability = 0.05
         remove_ideas = DEU_valkist_bureaucracy
     }
 
     option = {
-        name = deu.4.b
+        name = grp.4.b
 
         add_political_power = -100
         remove_ideas = DEU_valkist_bureaucracy
@@ -131,21 +134,21 @@ country_event = {
 
 # Trial of the Media
 country_event = {
-    id = deu.5
-    title = deu.5.t
-    desc = deu.5.d
+    id = grp.5
+    title = grp.5.t
+    desc = grp.5.d
 
     is_triggered_only = yes
 
     option = {
-        name = deu.5.a
+        name = grp.5.a
 
         remove_ideas = DEU_valkist_society
         add_stability = 0.05
     }
 
     option = {
-        name = deu.5.b
+        name = grp.5.b
 
         add_political_power = -100
     }
@@ -153,14 +156,14 @@ country_event = {
 
 # Elections!
 country_event = {
-    id = deu.6
-    title = deu.6.t
-    desc = deu.6.d
+    id = grp.6
+    title = grp.6.t
+    desc = grp.6.d
 
     is_triggered_only = yes
 
     option = {
-        name = deu.6.a
+        name = grp.6.a
 
         hidden_effect = {
             set_country_flag = DEU_SDP_VICTORY
@@ -177,7 +180,7 @@ country_event = {
     }
 
     option = {
-        name = deu.6.b
+        name = grp.6.b
 
         hidden_effect = {
             set_country_flag = DEU_DDP_VICTORY
@@ -194,7 +197,7 @@ country_event = {
     }
 
     option = {
-        name = deu.6.c
+        name = grp.6.c
 
         hidden_effect = {
             set_country_flag = DEU_ZENTRUM_VICTORY
@@ -213,45 +216,45 @@ country_event = {
 
 # Invitations
 country_event = {
-    id = deu.7
-    title = deu.7.t
-    desc = deu.7.d
+    id = grp.7
+    title = grp.7.t
+    desc = grp.7.d
 
     is_triggered_only = yes
 
     option = {
-        name = deu.7.a
+        name = grp.7.a
         set_country_flag = DEU_ACCEPTED_INVITE
-        DEU = { country_event = { id = deu.8 days = 1 } }
+        DEU = { country_event = { id = grp.8 days = 1 } }
     }
 
     option = {
-        name = deu.7.b
+        name = grp.7.b
         add_political_power = -150
-        DEU = { country_event = { id = deu.9 days = 1 } }
+        DEU = { country_event = { id = grp.9 days = 1 } }
     }
 }
 
 country_event = {
-    id = deu.8
-    title = deu.8.t
-    desc = deu.8.d
+    id = grp.8
+    title = grp.8.t
+    desc = grp.8.d
 
     is_triggered_only = yes
 
     option = {
-        name = deu.8.a
+        name = grp.8.a
     }
 }
 
 country_event = {
-    id = deu.9
-    title = deu.9.t
-    desc = deu.9.d
+    id = grp.9
+    title = grp.9.t
+    desc = grp.9.d
 
     is_triggered_only = yes
 
     option = {
-        name = deu.9.a
+        name = grp.9.a
     }
 }

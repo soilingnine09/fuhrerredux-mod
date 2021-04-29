@@ -1,6 +1,6 @@
 ﻿l_english:
 
-##### Parties #####
+### Parties
 PHR_vanguardist_party:0 "Radical Faction"
 PHR_vanguardist_party_long:0 "Radical Faction of the Socialist Party of the Philippines"
 PHR_collectivist_party:0 "Moderate Faction"
@@ -24,14 +24,14 @@ PHR_national_populist_party_long:0 "New Katipunan Movement \n§gThe former offic
 PHR_valkist_party:0 "KALIBAPI"
 PHR_valkist_party_long:0 "Kapisanan sa Paglilingkod sa Bagong Pilipinas"
 
-##### Ideas #####
+### Ideas
 PHR_the_second_revolution:0 "The Second Revolution"
 PHR_political_factionism:0 "Political Factionism"
 PHR_political_factionism_desc:0 "The Socialist Party is not a unified party but a coalition one, within within are factions vying for power."
 PHR_no_proper_army:0 "Untrained Army"
 PHR_no_proper_army_desc:0 "Our current army is composed of untrained militias, workers and farmers, and many officers have no experience in leading them."
 
-##### Events #####
+### Events
 phr.1.t:0 "Revolution Triumphiant!"
 phr.1.d:0 "Our forces have been successfully defeated government forces who we drove back to the Northern and Southern regions of Luzon. The Government have accepted to negotiate peace and have chosen to surrender."
 phr.1.a:0 "Break the chains!"
