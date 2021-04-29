@@ -105,7 +105,7 @@ PHI_whitepeace_fra:0 "Propose Peace with §Y[FRA.GetAdjective]§!"
 
 PHI_seato_decisions:0 "South East Asian Treaty Organization"
 PHI_seato_decisions_desc:0 "The §YSouth East Asian Treaty Organization§! is a defensive pact between South-East Asian countries. Founded by the [PHI.GetNameDefCap], it aims for south-east asian unity and resistance to foreign imperialism."
-PHI_invite:0 "Invite §C[FROM.GetName]§!"
+PHI_invite:0 "Invite §Y[FROM.GetName]§!"
 
 PHI_state_fundings:0 "State Fundings"
 PHI_fund_research_and_development:0 "Fund Research and Development"
