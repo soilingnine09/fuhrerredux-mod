@@ -105,24 +105,16 @@ create_country_leader = {
 	desc = "POLITICS_PEDRO_ABAD_SANTOS_DESC"
 	picture = "Portrait_Philippines_Pedro_Abad_Santos.tga"
 	expire = "1950.3.10"
-	ideology = collectivist_subtype
-	traits = { reluctant_interventionist }
-}
-create_country_leader = {
-	name = "Benigno Ramos"
-	desc = "POLITICS_BENIGNO_RAMOS_DESC"
-	picture = "Portrait_Philippines_Benigno_Ramos.tga"
-	expire = "1946.6.2"
 	ideology = libertarian_socialist_subtype
 	traits = { reluctant_interventionist }
 }
 create_country_leader = {
-	name = "Juan Sumulong"
-	desc = "POLITICS_JUAN_SUMILONG_DESC"
-	picture = "Portrait_Philippines_Juan_Sumulong.tga"
-	expire = "1942.1.9"
+	name = "Lope K. Santos"
+	desc = "POLITICS_LOPE_K_SANTOS_DESC"
+	picture = "Portrait_Philippines_Lope_K_Santos.tga"
+	expire = "1946.6.2"
 	ideology = social_democrat_subtype
-	traits = { captain_of_industry }
+	traits = { popular_figurehead }
 }
 create_country_leader = {
 	name = "Manuel Roxas"
@@ -173,12 +165,12 @@ create_country_leader = {
 	traits = { nationalist_symbol }
 }
 create_country_leader = {
-	name = "Jorge B. Vargas"
-	desc = "POLITICS_JORGE_B_VARGAS_DESC"
-	picture = "Portrait_Philippines_Jorge_B_Vargas.tga"
-	expire = "1964.2.6"
+	name = "Benigno Ramos"
+	desc = "POLITICS_BENIGNO_RAMOS_DESC"
+	picture = "Portrait_Philippines_Benigno_Ramos.tga"
+	expire = "1946.6.2"
 	ideology = valkist_subtype
-	traits = { dictator }
+	traits = { popular_figurehead }
 }
 
 ### Field Marshal

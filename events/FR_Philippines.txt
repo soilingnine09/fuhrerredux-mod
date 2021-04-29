@@ -73,7 +73,7 @@ country_event = {
     }
 }
 
-# Status of the KALIBAPI Party
+# Status of the Sakdalistas
 country_event = {
     id = phi.3
     title = phi.3.t
@@ -103,7 +103,7 @@ country_event = {
         name = phi.3.b
         add_political_power = 100
         hidden_effect = {
-            set_country_flag = PHI_KALIBAPI_ALLOWED
+            set_country_flag = PHI_SAKDALISTA_ALLOWED
         }
     }
 }
@@ -328,9 +328,9 @@ country_event = {
 
     option = {
         name = phi.3.e
-        trigger = { has_country_flag = PHI_KALIBAPI_ALLOWED }
+        trigger = { has_country_flag = PHI_SAKDALISTA_ALLOWED }
 
-        custom_effect_tooltip = PHI_kalibapi_victory_effect
+        custom_effect_tooltip = PHI_sakdalista_victory_effect
         hidden_effect = {
             add_popularity = {
                 ideology = valkist

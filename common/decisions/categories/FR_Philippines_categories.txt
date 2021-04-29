@@ -1,0 +1,23 @@
+PHI_department_of_foreign_affairs_decisions = {
+    icon = generic_political_actions
+    
+    allowed = { original_tag = PHI }
+    visible = { has_completed_focus = PHI_department_of_foreign_affairs }
+    priority = { base = 50 }
+}
+
+PHI_seato_decisions = {
+    icon = generic_political_actions
+
+    allowed = { original_tag = PHI }
+    visible = { has_completed_focus = PHI_no_more_colonialism }
+    priority = { base = 100 }
+}
+
+PHI_state_fundings = {
+    icon = generic_political_actions
+
+    allowed = { original_tag = PHI }
+    visible = { has_completed_focus = PHI_funding_for_state_investments }
+    priority = { base = 50 }
+}
