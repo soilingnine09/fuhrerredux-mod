@@ -1,6 +1,0 @@
-defined_text = {
-	name = TUInf
-	text = {
-		localization_key = SIA_supervisory_board_of_royal_market_bureau_desc 
-	}
-}

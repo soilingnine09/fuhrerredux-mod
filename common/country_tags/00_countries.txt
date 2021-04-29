@@ -1,6 +1,8 @@
 # Additions
 PHR = "countries/Philippine Revolt.txt"
 SBH = "countries/Sabah.txt"
+SIR = "countries/Asian.txt"
+ICR = "countries/Asian.txt"
 
 # Base
 GER	= "countries/Germany.txt"
