@@ -7,7 +7,7 @@ PHI_FUHRERREICH_DESC:0 "After being colonized for 333 years by the Spanish, the 
 PHI_AI_BEHAVIOR:0 "@PHI Philippines"
 
 PHI_RULE_BROTHERS_UNITED:0 "Brothers United"
-PHI_RULE_BROTHERS_UNITED_DESC:0 "New elections will be called and the Nacionalista Party will won the elections.\n\n§GGovernment:§! Social Conservative\n§GForeign Policy:§! Try to Found ASEAN"
+PHI_RULE_BROTHERS_UNITED_DESC:0 "New elections will be called and the Nacionalista Party will won the elections.\n\n§GGovernment:§! Social Conservative\n§GForeign Policy:§! Try to Found ATEDO"
 PHI_RULE_PRUSSIA_OF_THE_EAST:0 "Prussia of the East"
 PHI_RULE_PRUSSIA_OF_THE_EAST_DESC:0 "The Armed Forces of the Philippines will take control of the Governemnt and establish a militarized state challenging Japanese Hegemony.\n\n§GGovernment:§! Paternal Autocrat\n§GForeign Policy:§! Side with the USA"
 PHI_RULE_TESTING_IMPERIALISM:0 "Testing Imperialism"
@@ -92,14 +92,12 @@ PHI_aid_accepted:0 "Provided Aid"
 PHI_diplomatic_mission:0 "Diplomatic Mission"
 
 ### Decisions
-PHI_department_of_foreign_affairs_decisions:0 "Department of Foreign Affairs"
+PHI_support_foreign_crusades:0 "Support §Y[FROM.GetNameDef]§!"
 PHI_fund_rebels_fic:0 "Fund Rebels in §Y[FIC.GetName]§!"
 PHI_fund_rebels_bea:0 "Fund Rebels in §Y[BEA.GetName]§!"
 PHI_invoke_rebellion_fic:0 "Invoke the Rebellion in §Y[FIC.GetName]§!"
 PHI_invoke_rebellion_bea:0 "Invoke the Rebellion in §Y[BEA.GetName]§!"
-PHI_support_rus:0 "Support §Y[RUS.GetNameDef]§!"
-PHI_support_chi:0 "Support §Y[CHI.GetNameDef]§!"
-PHI_support_ins:0 "Support §Y[INS.GetNameDef]§!"
+
 PHI_whitepeace_eng:0 "Propose Peace with §Y[ENG.GetAdjective]§!"
 PHI_whitepeace_fra:0 "Propose Peace with §Y[FRA.GetAdjective]§!"
 
@@ -112,6 +110,12 @@ PHI_fund_research_and_development:0 "Fund Research and Development"
 PHI_prioritize_construction:0 "Prioritize Constructions"
 PHI_aid_workers:0 "Aid Workers"
 PHI_start_social_services:0 "Start New Social Services"
+
+PHI_atedo_decisions:0 "Asian Trade and Economic Development Organization"
+PHI_atedo_decisions_desc:0 "The §GAsian Trade and Economic Development Organization§! is an economic organization which aims to promote free trade between its member states. Members can import/export goods to other members with much less taxes and tariffs; it also prioritized trade between its members so that they can prosper together."
+PHI_join_atedo:0 "Join ATEDO"
+PHI_leave_atedo:0 "Leave ATEDO"
+PHI_invite_to_atedo:0 "Invite to ATEDO"
 
 ### Custom Triggers
 PHI_DEMOCRACY_RETURNS_FLAG:0 "Elections are being prepared by the Interim Government"
@@ -233,6 +237,7 @@ PHI_soviet_aid_industry:0 "Soviet Aid for the Industries"
 PHI_tax_reform:0 "Tax Reform"
 PHI_financial_support:0 "Financial Support"
 PHI_the_lone_red_star_idea:0 "The Lone Red Star"
+PHI_atedo_member:0 "ATEDO Member"
 
 ### Focus
 # Democratic
@@ -378,9 +383,8 @@ PHI_vietnamese_independence:0 "Guide Vietnam"
 PHI_vietnamese_independence_desc:0 "The time has come, the people of [VIN.GetName] are ready for their own country. We will grant them independence, and guide them towards are bright and prosperous future."
 PHI_lao_independence:0 "Guide Laos"
 PHI_lao_independence_desc:0 "The time has come, the people of [LAO.GetName] are ready for their own country. We will grant them independence, and guide them towards are bright and prosperous future."
-PHI_asean_focus:0 "Found ASEAN"
-PHI_asean_focus_desc:0 "The Association of South-East Asian Nations is an economic alliance with our fellow asian brothers. It focuses on free trading with our neighbors and expanding our current industrial capabilties."
-PHI_asean_focus_tt:0 "Invitations will be sent to our neighboring Asian countries."
+PHI_found_atedo:0 "Found ATEDO"
+PHI_found_atedo_desc:0 "The Asian Trade and Economic Development Organization is an economic alliance with our fellow asian brothers. It focuses on free trading with our neighbors and expanding our current industrial capabilties."
 PHI_the_fuhrer:0 "The Führer"
 PHI_the_fuhrer_desc:0 "Germany, while very far away, can be a valuable ally. They posses an incredible traits that no other nationality can be proud of. "
 PHI_german_trade_deal:0 "German Trade Deal"
@@ -1027,3 +1031,30 @@ phi.53.a:0 "Good grief"
 phi.54.t:0 "Propose Peace to the [PHI.GetName]"
 phi.54.d:0 "The island of Borneo have fallen to [PHI.GetAdjective]. As we don't have the capacity to fight them; the government decides to make peace with them."
 phi.54.a:0 "Propose peace."
+
+# ATEDO Events
+atedo.1.t:0 "Invitation to ATEDO"
+atedo.1.d:0 "With our independence coming near, our liberator and our asian brother has sent us their ambassador and invites us to their trading alliance. This can be beneficial in our economy and can stronger ties with our asian brothers."
+atedo.1.a:0 "Only an idiot would not join this"
+atedo.1.b:0 "This is an imperialistic proposal."
+
+atedo.2.t:0 "[From.GetNameDefCap] Accepts to Join ATEDO"
+atedo.2.d:0 "The [From.GetAdjective] Ambassador in Manila have confirmed that their Government have accepted our invitation to join atedo. This is a step-forward in developing our countries' economies."
+atedo.2.a:0 "Good"
+
+atedo.3.t:0 "[From.GetNameDefCap] Refused to Join ATEDO"
+atedo.3.d:0 "The [From.GetAdjective] Ambassador in Manila have confirmed that their Government have declined our invitation to join atedo."
+atedo.3.a:0 "Good Luck"
+
+atedo.4.t:0 "Request to Join ATEDO"
+atedo.4.d:0 "An delegation from [From.GetNameDefCap] arrived here in Manila today on a mission to discuss the entry of [From.GetName] in atedo."
+atedo.4.a:0 "Let's cooperate!"
+atedo.4.b:0 "The organization doesn't need them"
+
+atedo.5.t:0 "Our entry to ATEDO"
+atedo.5.d:0 "Our delegation in Manila have successfully done their mission; to organize the entry of our country in atedo. This will bring new opportunities on our industries, and thus create jobs for our people."
+atedo.5.a:0 "Huzzah!"
+
+atedo.6.t:0 "Too insignificant for them"
+atedo.6.d:0 "Apperantly our country are too insignificant to join the economic organization of our neighbors. Our delegation will return home defeated after the Filipino diplomats rejects our application to enter ATEDO"
+atedo.6.a:0 "We don't need them"

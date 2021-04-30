@@ -1,5 +1,131 @@
-﻿# Philippine Events
+﻿# Philippines and ATEDO Events
 # created by: dax0102
+
+add_namespace = atedo
+
+country_event = {
+    id = atedo.1
+    title = atedo.1.t
+    desc = atedo.1.d
+    picture = GFX_report_event_vienna_award_negotiations
+
+    is_triggered_only = yes
+
+    option = {
+        name = atedo.1.a
+
+        add_ideas = ASEAN_member
+        
+        PHI = { country_event = { id = atedo.2 } }
+    }
+
+    option = {
+        name = atedo.1.b
+        add_political_power = -50
+
+        ai_chance = {
+            factor = 0
+        }
+
+        PHI = { country_event = { id = atedo.3 } }
+    }
+}
+
+# Country Accepts ASEAN invitation
+country_event = {
+    id = atedo.2
+    title = atedo.2.t
+    desc = atedo.2.d
+    picture = GFX_report_event_vienna_award_hungary
+ 
+    is_triggered_only = yes
+
+    option = {
+        name = atedo.2.a
+        add_political_power = 25
+        add_opinion_modifier = {
+            target = ROOT
+            modifier = atedo_accepted
+        }
+    }
+}
+
+# Country Rejects ASEAN invitation
+country_event = {
+    id = atedo.3
+    title = atedo.3.t
+    desc = atedo.3.d
+    picture = GFX_report_event_vienna_award_hungary
+
+    is_triggered_only = yes
+
+    option = {
+        name = atedo.3.a
+        add_opinion_modifier = {
+            target = ROOT
+            modifier = atedo_refused
+        }
+    }
+}
+
+country_event = {
+    id = atedo.4
+    title = atedo.4.t
+    desc = atedo.4.d
+    picture = GFX_report_event_vienna_award_hungary
+
+    is_triggered_only = yes
+
+    option = {
+        name = atedo.4.a
+        ROOT = { 
+            add_ideas = ASEAN_member
+            country_event = { id = atedo.5 } 
+        }
+    }
+
+    option = {
+        name = atedo.4.b
+        ROOT = {
+            country_event = { id = atedo.6 }
+        }
+    }
+}
+
+country_event = {
+    id = atedo.5
+    title = atedo.5.t
+    desc = atedo.5.d
+    picture = GFX_report_event_vienna_award_hungary
+
+    is_triggered_only = yes
+
+    option = {
+        name = atedo.5.a
+        add_political_power = 100
+        add_opinion_modifier = {
+            target = PHI
+            modifier = ASEAN_accepted_invite
+        }
+    }
+}
+
+country_event = {
+    id = atedo.6
+    title = atedo.6.t
+    desc = atedo.6.d
+    picture = GFX_report_event_vienna_award_negotiations
+
+    is_triggered_only = yes
+
+    option = {
+        name = atedo.6.a
+        add_opinion_modifier = {
+            target = PHI
+            modifier = ASEAN_refused_invite
+        }
+    }
+}
 
 add_namespace = phi
 

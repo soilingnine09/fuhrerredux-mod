@@ -1,0 +1,16 @@
+
+PHI_is_south_east_asian_tag = {
+    custom_trigger_tooltip = {
+        tooltip = PHI_is_south_east_asian_tag_tt
+        OR = {
+            tag = PHI
+            tag = SIA
+            tag = INS
+            tag = VIN
+            tag = LAO
+            tag = CAM
+            tag = MAL
+            tag = BRM
+        }
+    }
+}

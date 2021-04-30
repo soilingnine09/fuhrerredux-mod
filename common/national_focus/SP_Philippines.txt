@@ -1930,7 +1930,6 @@ focus_tree = {
         available = { NOT = { has_idea = PHI_agriculture_economy } }
         completion_reward = {
             add_ideas = PHI_dfa
-            unlock_decision_category_tooltip = PHI_department_of_foreign_affairs_decisions
         }
     }
 
@@ -2424,7 +2423,7 @@ focus_tree = {
 
     # ASEAN
     focus = {
-        id = PHI_asean_focus
+        id = PHI_found_aec
         icon = GFX_goal_liberty
         x = 7
         y = 16
@@ -2436,15 +2435,7 @@ focus_tree = {
         prerequisite = { focus = PHI_malayan_independence }
         prerequisite = { focus = PHI_burmese_independence }
         completion_reward = {
-            add_ideas = ASEAN_member
-            
-            unlock_decision_tooltip = ASEAN_invite_vietnam
-            unlock_decision_tooltip = ASEAN_invite_cambodia
-            unlock_decision_tooltip = ASEAN_invite_siam
-            unlock_decision_tooltip = ASEAN_invite_laos
-            unlock_decision_tooltip = ASEAN_invite_burma
-            unlock_decision_tooltip = ASEAN_invite_insulindia
-            unlock_decision_tooltip = ASEAN_invite_malaysia
+            add_ideas = AEC_member
             hidden_effect = {
                 news_event = { id = news.8 }
             }

@@ -1,6 +1,19 @@
 
 ideas = {
     country = {
+
+        PHI_atedo_member = {
+            picture = can_wartime_prices_and_trade_board
+
+            modifier = {
+                political_power_gain = -0.05
+                consumer_goods_factor = -0.05
+                production_factory_max_efficiency_factor = 0.1
+                industrial_capacity_factory = 0.1
+                industrial_capacity_dockyard = 0.1
+		        local_resources = 0.1
+            }
+        }
         
         PHI_thirst_for_democracy = {
             allowed = { original_tag = PHI }

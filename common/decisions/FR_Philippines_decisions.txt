@@ -1,5 +1,43 @@
-PHI_department_of_foreign_affairs_decisions = {
+# Philippine Decisions
+# created by: dax0102
 
+foreign_support = {
+    PHI_support_foreign_crusades = {
+        icon = GFX_decision_hol_war_on_pacifism
+        fire_only_once = yes
+        cost = 25
+
+        target_trigger = {
+            FROM = {
+                OR = {
+                    tag = RUS
+                    tag = CHI
+                    tag = INS
+                    tag = SIA
+                }
+            }
+        }
+
+        visible = { 
+            FROM = { has_war = yes }
+        }
+
+        available = {
+            is_subject = no
+            NOT = { has_war_with = FROM }
+            every_country = {
+                limit = { is_in_faction_with = ROOT }
+                has_war_with = FROM
+            }
+        }
+
+        complete_effect = { 
+            FROM = { country_event = phi.52 } 
+        }
+    }
+}
+
+foreign_politics = {
     PHI_fund_rebels_fic = {
         icon = GFX_decision_generic_prepare_civil_war
 
@@ -189,71 +227,7 @@ PHI_department_of_foreign_affairs_decisions = {
         }
     }
 
-    PHI_support_rus = {
-        icon = GFX_decision_hol_war_on_pacifism
-
-        visible = { 
-            RUS = { has_war = yes }
-        }
-        available = {
-            is_subject = no
-            NOT = { has_war_with = RUS }
-            every_country = {
-                limit = { is_in_faction_with = ROOT }
-                has_war_with = RUS
-            }
-        }
-
-        fire_only_once = yes
-
-        cost = 20
-
-        complete_effect = { RUS = { country_event = { id = phi.52 } } }
-    }
-
-    PHI_support_chi = {
-        icon = GFX_decision_hol_war_on_pacifism
-
-        visible = { 
-            CHI = { has_war = yes }
-        }
-        available = {
-            is_subject = no
-            NOT = { has_war_with = CHI }
-            every_country = {
-                limit = { is_in_faction_with = ROOT }
-                has_war_with = CHI
-            }
-        }
-
-        fire_only_once = yes
-
-        cost = 20
-
-        complete_effect = { CHI = { country_event = { id = phi.52 } } }
-    }
-
-    PHI_support_ins = {
-        icon = GFX_decision_hol_war_on_pacifism
-
-        visible = {
-            INS = { has_war = yes }
-        }
-        available = {
-            is_subject = no
-            NOT = { has_war_with = INS }
-            every_country = {
-                limit = { is_in_faction_with = ROOT }
-                has_war_with = INS
-            }
-        }
-
-        fire_only_once = yes
-
-        cost = 20
-
-        complete_effect = { INS = { country_event = { id = phi.52 } } }
-    }
+    
 
     PHI_whitepeace_eng = {
         icon = GFX_decision_hol_war_on_pacifism
@@ -424,5 +398,94 @@ PHI_state_fundings = {
         fire_only_once = no
         days_remove = 120
         days_re_enable = 360
+    }
+}
+
+PHI_atedo_decisions = {
+    PHI_join_atedo = {
+        allowed = {
+            PHI_is_south_east_asian_tag = yes
+        }
+
+        visible = { 
+            NOT = { original_tag = PHI }
+            PHI = { has_completed_focus = PHI_asean_focus } 
+        }
+
+        available = {
+            NOT = {
+                OR = {
+                    has_government = vanguardist
+                    has_government = collectivist
+                    has_government = liberatarian_socialist
+                }
+                OR = {
+                    has_idea = export_focus
+                    has_idea = free_trade
+                }
+            }
+
+            every_country = {
+                limit = { has_idea = PHI_atedo_member }
+                NOT = { has_war_with = ROOT }
+            }
+        }
+
+        complete_effect = {
+            PHI = { country_event = { id = atedo.1 } }
+        }
+    }
+    
+    PHI_leave_atedo = {
+        allowed = {
+            PHI_is_south_east_asian_tag = yes
+        }
+
+        visible = { 
+            has_idea = PHI_atedo_member
+            NOT = { original_tag = PHI }
+        }
+
+        complete_effect = {
+            remove_ideas = PHI_atedo_member
+            hidden_effect = {
+                news_event = { id = news.9 days = 1 }
+            }
+        }
+    }
+
+    PHI_invite_to_atedo = {
+        cost = 20
+        days_re_enable = 30
+
+        target_trigger = {
+            FROM = {
+                PHI_is_south_east_asian_tag = yes
+            }
+        }
+
+        allowed = {
+            original_tag = PHI
+        }
+
+        visible = {
+            FROM = {
+                NOT = { has_idea = PHI_atedo_member }
+            }
+        }
+
+        available = {
+            FROM = {
+                exists = yes
+                is_subject = no
+                NOT = { has_war_with = ROOT }
+            }
+        }
+
+        complete_effect = {
+            FROM = {
+                country_event = atedo.1
+            }
+        }
     }
 }
