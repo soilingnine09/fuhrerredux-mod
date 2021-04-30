@@ -317,16 +317,16 @@ PHI_state_fundings = {
 
         cost = 50
 
-        available = { NOT = { has_country_flag  = PHI_FUNDING_IN_PROGRESS } }
+        available = { NOT = { has_country_flag  = PHI_state_funding_in_progress_tt } }
 
         modifier = {
             consumer_goods_factor = 0.05
             research_speed_factor = 0.1
         }
 
-        complete_effect = { set_country_flag = PHI_FUNDING_IN_PROGRESS }
+        complete_effect = { set_country_flag = PHI_state_funding_in_progress_tt }
 
-        remove_effect = { clr_country_flag = PHI_FUNDING_IN_PROGRESS }
+        remove_effect = { clr_country_flag = PHI_state_funding_in_progress_tt }
 
         fire_only_once = no
         days_remove = 120
@@ -338,7 +338,7 @@ PHI_state_fundings = {
 
         cost = 50
 
-        available = { NOT = { has_country_flag  = PHI_FUNDING_IN_PROGRESS } }
+        available = { NOT = { has_country_flag  = PHI_state_funding_in_progress_tt } }
 
         modifier = {
             consumer_goods_factor = 0.05
@@ -346,9 +346,9 @@ PHI_state_fundings = {
             industry_repair_factor = 0.1
         }
 
-        complete_effect = { set_country_flag = PHI_FUNDING_IN_PROGRESS }
+        complete_effect = { set_country_flag = PHI_state_funding_in_progress_tt }
 
-        remove_effect = { clr_country_flag = PHI_FUNDING_IN_PROGRESS }
+        remove_effect = { clr_country_flag = PHI_state_funding_in_progress_tt }
 
         fire_only_once = no
         days_remove = 120
@@ -360,7 +360,7 @@ PHI_state_fundings = {
 
         cost = 50
 
-        available = { NOT = { has_country_flag  = PHI_FUNDING_IN_PROGRESS } }
+        available = { NOT = { has_country_flag  = PHI_state_funding_in_progress_tt } }
 
         modifier = {
             consumer_goods_factor = 0.05
@@ -368,9 +368,9 @@ PHI_state_fundings = {
             industrial_capacity_dockyard = 0.1
         }
 
-        complete_effect = { set_country_flag = PHI_FUNDING_IN_PROGRESS }
+        complete_effect = { set_country_flag = PHI_state_funding_in_progress_tt }
 
-        remove_effect = { clr_country_flag = PHI_FUNDING_IN_PROGRESS }
+        remove_effect = { clr_country_flag = PHI_state_funding_in_progress_tt }
 
         fire_only_once = no
         days_remove = 120
@@ -382,7 +382,7 @@ PHI_state_fundings = {
 
         cost = 50
 
-        available = { NOT = { has_country_flag  = PHI_FUNDING_IN_PROGRESS } }
+        available = { NOT = { has_country_flag  = PHI_state_funding_in_progress_tt } }
 
         modifier = {
             consumer_goods_factor = 0.05
@@ -391,9 +391,9 @@ PHI_state_fundings = {
             monthly_population = 0.1
         }
 
-        complete_effect = { set_country_flag = PHI_FUNDING_IN_PROGRESS }
+        complete_effect = { set_country_flag = PHI_state_funding_in_progress_tt }
 
-        remove_effect = { clr_country_flag = PHI_FUNDING_IN_PROGRESS }
+        remove_effect = { clr_country_flag = PHI_state_funding_in_progress_tt }
 
         fire_only_once = no
         days_remove = 120
@@ -409,7 +409,7 @@ PHI_atedo_decisions = {
 
         visible = { 
             NOT = { original_tag = PHI }
-            PHI = { has_completed_focus = PHI_asean_focus } 
+            PHI = { has_completed_focus = PHI_found_aeda } 
         }
 
         available = {
@@ -426,7 +426,7 @@ PHI_atedo_decisions = {
             }
 
             every_country = {
-                limit = { has_idea = PHI_atedo_member }
+                limit = { has_idea = PHI_aeda_member }
                 NOT = { has_war_with = ROOT }
             }
         }
@@ -436,25 +436,25 @@ PHI_atedo_decisions = {
         }
     }
     
-    PHI_leave_atedo = {
+    PHI_leave_aeda = {
         allowed = {
             PHI_is_south_east_asian_tag = yes
         }
 
         visible = { 
-            has_idea = PHI_atedo_member
+            has_idea = PHI_aeda_member
             NOT = { original_tag = PHI }
         }
 
         complete_effect = {
-            remove_ideas = PHI_atedo_member
+            remove_ideas = PHI_aeda_member
             hidden_effect = {
                 news_event = { id = news.9 days = 1 }
             }
         }
     }
 
-    PHI_invite_to_atedo = {
+    PHI_invite_to_aeda = {
         cost = 20
         days_re_enable = 30
 
@@ -470,7 +470,7 @@ PHI_atedo_decisions = {
 
         visible = {
             FROM = {
-                NOT = { has_idea = PHI_atedo_member }
+                NOT = { has_idea = PHI_aeda_member }
             }
         }
 

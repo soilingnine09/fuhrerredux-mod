@@ -1,5 +1,5 @@
 focus_tree = {
-    id = SP_Philippines
+    id = filipino_focus
     country = {
         factor = 0
         modifier = {
@@ -68,7 +68,7 @@ focus_tree = {
         prerequisite = { focus = PHI_liberal_victory }
         relative_position_id = PHI_liberal_victory
         completion_reward = {
-            add_ideas = PHI_dswd1
+            add_ideas = PHI_social_welfare_department1
         }
     }
 
@@ -108,8 +108,8 @@ focus_tree = {
         relative_position_id = PHI_cooperate_with_trade_unions
         completion_reward = {
             swap_ideas = {
-                remove_idea = PHI_dswd1
-                add_idea = PHI_dswd2
+                remove_idea = PHI_social_welfare_department1
+                add_idea = PHI_social_welfare_department2
             }
         }
     }
@@ -237,7 +237,7 @@ focus_tree = {
         prerequisite = { focus = PHI_human_rights }
         relative_position_id = PHI_human_rights
         completion_reward = {
-            add_ideas = PHI_constabulary
+            add_ideas = PHI_the_constabulary
         }
     }
 
@@ -328,7 +328,7 @@ focus_tree = {
         }
         relative_position_id = PHI_nacionalista_victory
         completion_reward = {
-            add_ideas = PHI_ncis
+            add_ideas = PHI_intelligence_agency
         }
     }
 
@@ -521,7 +521,7 @@ focus_tree = {
         }
     }
 
-    # DoF
+    # Department of Finance
     focus = {
         id = PHI_department_of_finance_focus
         icon = GFX_DAH_Topke
@@ -531,7 +531,7 @@ focus_tree = {
         available_if_capitulated = yes
         prerequisite = { focus = PHI_industrialization_plan }
         completion_reward = {
-            add_ideas = PHI_dof
+            add_ideas = PHI_finance_department
         }
     }
 
@@ -571,7 +571,8 @@ focus_tree = {
         cost = 10
         prerequisite = { focus = PHI_department_of_finance_focus }
         completion_reward = {
-            add_ideas = PHI_dost
+            add_ideas = PHI_science_department
+
             custom_effect_tooltip = available_designer
 			show_ideas_tooltip = PHI_DOST_designer
         }
@@ -586,7 +587,7 @@ focus_tree = {
         cost = 10
         prerequisite = { focus = PHI_department_of_science_and_technology_focus }
         completion_reward = {
-            add_ideas = PHI_pag_asa
+            add_ideas = PHI_weather_bureau
         }
     }
 
@@ -632,7 +633,7 @@ focus_tree = {
         cost = 5
         prerequisite = { focus = PHI_industrialization_plan }
         completion_reward = {
-            add_ideas = PHI_dole
+            add_ideas = PHI_labour_department
         }
     }
 
@@ -651,18 +652,23 @@ focus_tree = {
 
     # Industrial Effort
     focus = {
-        id = PHI_industrial_effort
+        id = PHI_dig_for_resources
         icon = GFX_goal_generic_production
         x = 16
         y = 3
         cost = 10
         prerequisite = { focus = PHI_worker_subsidies_focus }
         completion_reward = {
-            add_tech_bonus = {
-				bonus = 1.0
-				uses = 3
-				category = industry
-			}
+            add_resource = {
+                type = tungsten
+                amount = 24
+                state = 624
+            }
+            add_resource = {
+                type = aluminum
+                amount = 12
+                state = 623
+            }
         }
     }
 
@@ -703,7 +709,7 @@ focus_tree = {
         cost = 5
         prerequisite = { focus = PHI_industrialization_plan }
         completion_reward = { 
-            add_ideas = PHI_dpwh
+            add_ideas = PHI_public_works_department
         }
     }
 
@@ -1115,7 +1121,7 @@ focus_tree = {
     # Expand the Army
     focus = {
         id = PHI_expand_the_army
-        icon = GFX_focus_generic_allies_build_infantry
+        icon = GFX_goal_generic_allies_build_infantry
         x = 28
         y = 0
         cost = 3
@@ -1135,7 +1141,7 @@ focus_tree = {
             focus = PHI_lim_reform
         }
         completion_reward = {
-            add_ideas = PHI_pma
+            add_ideas = PHI_military_academy
         }
     }
 
@@ -1881,7 +1887,7 @@ focus_tree = {
         available_if_capitulated = yes
         available = { NOT = { has_idea = PHI_agriculture_economy } }
         completion_reward = {
-            add_ideas = PHI_dfa
+            add_ideas = PHI_foreign_department
         }
     }
 
@@ -1894,12 +1900,8 @@ focus_tree = {
         cost = 1
         available_if_capitulated = yes
         available = {
-            NOT = {
-                OR = {
-                    has_country_flag = PHI_SIDED_WITH_A_SUPERPOWER
-                    has_country_flag = PHI_DECLARED_SELF_RELIANCE
-                }
-            }
+            is_subject = no
+            is_in_faction = no
         }
         prerequisite = { focus = PHI_department_of_foreign_affairs }
         completion_reward = {
@@ -1920,6 +1922,10 @@ focus_tree = {
         y = 10
         cost = 5
         available_if_capitulated = yes
+        available = {
+            is_subject = no
+            is_in_faction = no
+        }
         prerequisite = { focus = PHI_the_emperor }
         completion_reward = {
             JAP = { country_event = { id = phi.36 } }
@@ -1934,7 +1940,14 @@ focus_tree = {
         y = 11
         cost = 5
         available_if_capitulated = yes
-        available = { has_country_flag = PHI_JAP_TRADE }
+        available = { 
+            JAP = {
+                custom_trigger_tooltip = {
+                    tooltip = PHI_trade_treaty_tt
+                    has_country_flag = PHI_trade_treaty_tt
+                }
+            }
+        }
         prerequisite = { focus = PHI_japanese_trade_deal }
         completion_reward = {
             JAP = { country_event = { id = phi.30 } }
@@ -1986,12 +1999,8 @@ focus_tree = {
         cost = 1
         available_if_capitulated = yes
         available = {
-            NOT = {
-                OR = {
-                    has_country_flag = PHI_SIDED_WITH_A_SUPERPOWER
-                    has_country_flag = PHI_DECLARED_SELF_RELIANCE
-                }
-            }
+            is_subject = no
+            is_in_faction = no
         }
         prerequisite = { focus = PHI_department_of_foreign_affairs }
         completion_reward = {
@@ -2012,6 +2021,10 @@ focus_tree = {
         y = 10
         cost = 5
         available_if_capitulated = yes
+        available = {
+            is_subject = no
+            is_in_faction = no
+        }
         prerequisite = { focus = PHI_the_king }
         completion_reward = {
             ENG = { country_event = { id = phi.36 } }
@@ -2026,7 +2039,14 @@ focus_tree = {
         y = 11
         cost = 5
         available_if_capitulated = yes
-        available = { has_country_flag = PHI_ENG_TRADE }
+        available = { 
+            ENG = {
+                custom_trigger_tooltip = {
+                    tooltip = PHI_trade_treaty_tt
+                    has_country_flag = PHI_trade_treaty_tt
+                }
+            }
+        }
         prerequisite = { focus = PHI_british_trade_deal }
         completion_reward = {
             ENG = { country_event = { id = phi.30 } }
@@ -2104,13 +2124,16 @@ focus_tree = {
         cost = 5
         available_if_capitulated = yes
         prerequisite = { focus = PHI_department_of_foreign_affairs }
+        available = {
+            is_subject = no
+            is_in_faction = no
+        }
         completion_reward = {
             set_rule = {
                 can_create_factions = yes
             }
             create_faction = PHI_seato
             hidden_effect = {
-                set_country_flag = PHI_DECLARED_SELF_RELIANCE
                 set_major = yes
             }
         }
@@ -2125,9 +2148,8 @@ focus_tree = {
         cost = 2
         available_if_capitulated = yes
         available = {
-            NOT = {
-                has_country_flag = PHI_SIDED_WITH_A_SUPERPOWER
-            }
+            is_subject = no
+            is_faction_leader = yes
         }
         prerequisite = { focus = PHI_no_more_colonialism }
         completion_reward = {
@@ -2149,7 +2171,14 @@ focus_tree = {
         y = 12
         cost = 5
         available_if_capitulated = yes
-        available = { has_country_flag = PHI_SOV_TRADE }
+        available = { 
+            SOV = {
+                custom_trigger_tooltip = {
+                    tooltip = PHI_trade_treaty_tt
+                    has_country_flag = PHI_trade_treaty_tt
+                }
+            }
+        }
         prerequisite = { focus = PHI_soviet_trade_deal }
         completion_reward = {
             add_tech_bonus = {
@@ -2173,7 +2202,14 @@ focus_tree = {
         y = 12
         cost = 5
         available_if_capitulated = yes
-        available = { has_country_flag = PHI_SOV_TRADE }
+        available = { 
+            SOV = {
+                custom_trigger_tooltip = {
+                    tooltip = PHI_trade_treaty_tt
+                    has_country_flag = PHI_trade_treaty_tt
+                }
+            } 
+        }
         prerequisite = { focus = PHI_soviet_trade_deal }
         completion_reward = {
             add_tech_bonus = {
@@ -2373,9 +2409,9 @@ focus_tree = {
         }
     }
 
-    # Found ATEDO
+    # Found AEDA
     focus = {
-        id = PHI_found_atedo
+        id = PHI_found_aeda
         icon = GFX_goal_liberty
         x = 7
         y = 16
@@ -2387,7 +2423,7 @@ focus_tree = {
         prerequisite = { focus = PHI_malayan_independence }
         prerequisite = { focus = PHI_burmese_independence }
         completion_reward = {
-            add_ideas = AEC_member
+            add_ideas = PHI_aeda_member
             hidden_effect = {
                 news_event = { id = news.8 }
             }
@@ -2403,12 +2439,8 @@ focus_tree = {
         cost = 1
         available_if_capitulated = yes
         available = {
-            NOT = {
-                OR = {
-                    has_country_flag = PHI_SIDED_WITH_A_SUPERPOWER
-                    has_country_flag = PHI_DECLARED_SELF_RELIANCE
-                }
-            }
+            is_subject = no
+            is_in_faction = no
         }
         prerequisite = { focus = PHI_department_of_foreign_affairs }
         completion_reward = {
@@ -2429,6 +2461,10 @@ focus_tree = {
         y = 10
         cost = 5
         available_if_capitulated = yes
+        available = {
+            is_subject = no
+            is_in_faction = no
+        }
         prerequisite = { focus = PHI_the_fuhrer }
         completion_reward = {
             GER = { country_event = { id = phi.36 } }
@@ -2443,7 +2479,14 @@ focus_tree = {
         y = 11
         cost = 5
         available_if_capitulated = yes
-        available = { has_country_flag = PHI_GER_TRADE }
+        available = { 
+            GER = {
+                custom_trigger_tooltip = {
+                    tooltip = PHI_trade_treaty_tt
+                    has_country_flag = PHI_trade_treaty_tt
+                }
+            }
+        }
         prerequisite = { focus = PHI_german_trade_deal }
         completion_reward = {
             GER = { country_event = { id = PHI.52 } }
@@ -2498,12 +2541,8 @@ focus_tree = {
         cost = 1
         available_if_capitulated = yes
         available = {
-            NOT = {
-                OR = {
-                    has_country_flag = PHI_SIDED_WITH_A_SUPERPOWER
-                    has_country_flag = PHI_DECLARED_SELF_RELIANCE
-                }
-            }
+            is_subject = no
+            is_in_faction = no
         }
         prerequisite = { focus = PHI_department_of_foreign_affairs }
         completion_reward = {
@@ -2524,6 +2563,10 @@ focus_tree = {
         y = 10
         cost = 5
         available_if_capitulated = yes
+        available = {
+            is_subject = no
+            is_in_faction = no
+        }
         prerequisite = { focus = PHI_the_president }
         completion_reward = {
             USA = { country_event = { id = phi.36 } }
@@ -2538,7 +2581,14 @@ focus_tree = {
         y = 11
         cost = 5
         available_if_capitulated = yes
-        available = { has_country_flag = PHI_USA_TRADE }
+        available = { 
+            USA = {
+                custom_trigger_tooltip = {
+                    tooltip = PHI_trade_treaty_tt
+                    has_country_flag = PHI_trade_treaty_tt
+                }
+            }
+        }
         prerequisite = { focus = PHI_american_trade_deal }
         completion_reward = {
             USA = { country_event = { id = PHI.38 } }
@@ -2617,11 +2667,14 @@ focus_tree = {
         icon = GFX_goal_red_star_green_wreath
         x = 22
         y = 7
-        cost = 10
+        cost = 0
         available = { 
-            has_socialist_government = yes
-        }   
-        completion_reward = {}
+            custom_trigger_tooltip = {
+                tooltip = unlocked_later
+                has_country_flag = PHI_workers_rebellion_tt
+                has_socialist_government = yes
+            }
+        }
     }
 
     # Trade Union Congress
@@ -2631,6 +2684,9 @@ focus_tree = {
         x = 22
         y = 8
         cost = 10
+        available = {
+            has_socialist_government = yes
+        }
         prerequisite = { focus = PHI_the_new_republic_proclaimed }
         completion_reward = { country_event = { id = phi.50 } }
     }   
@@ -2642,9 +2698,14 @@ focus_tree = {
         x = 20
         y = 9
         cost = 3
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = PHI_evangelista_remains_tt
+                has_country_flag = PHI_evangelista_remains_tt
+            }
+        }
         prerequisite = { focus = PHI_trade_union_congress }
         mutually_exclusive = { focus = PHI_seize_the_means_of_production }
-        available = { has_country_flag = PHI_EVANGELISTA_REMAINS_FLAG }
         completion_reward = {
             add_political_power = 100
             add_popularity = {
@@ -2938,8 +2999,13 @@ focus_tree = {
         x = 24
         y = 9
         cost = 3
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = PHI_taruc_inaugurated_tt
+                has_country_flag = PHI_taruc_inaugurated_tt
+            }
+        }
         prerequisite = { focus = PHI_trade_union_congress }
-        available = { has_country_flag = PHI_TARUC_ASSUMES_POWER_FLAG }
         mutually_exclusive = { focus = PHI_socialism_with_filipino_characteristics }
         completion_reward = {
             add_political_power = 100
@@ -3097,10 +3163,13 @@ focus_tree = {
         x = 31
         y = 7
         cost = 0
-        available = { has_country_flag = PHI_AGUINALDO_COUP_SUCCESS_FLAG }
-        bypass = { has_government = national_populist }
-        available_if_capitulated = yes
-        completion_reward = {}
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = unlocked_later
+                has_country_flag = PHI_aguinaldo_coup_tt
+                has_government = national_populist
+            }
+        }
     }
 
     # Presidential Death Squads
@@ -3437,10 +3506,13 @@ focus_tree = {
         x = 37
         y = 7
         cost = 0
-        available = { has_country_flag = PHI_MILITARY_JUNTA_FLAG }
-        bypass = { has_government = paternal_autocrat }
-        available_if_capitulated = yes
-        completion_reward = {}
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = unlocked_later
+                has_country_flag = PHI_military_junta_tt
+                has_government = paternal_autocrat
+            }
+        }
     }
 
     # Assassinate Union Leaders
@@ -3554,9 +3626,13 @@ focus_tree = {
         x = 46
         y = 7
         cost = 0
-        available = { has_country_flag = PHI_KALIBAPI_VICTORY_FLAG }
-        bypass = { has_government = valkist }
-        completion_reward = { }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = unlocked_later
+                has_country_flag = PHI_sakdalista_victory_tt
+                has_government = valkist
+            }
+        }
     }
 
     # Begin Cultural Rehabilitation
@@ -3729,7 +3805,7 @@ focus_tree = {
         available = { has_government = valkist }
         prerequisite = { focus = PHI_political_indoctrination }
         completion_reward = {
-            add_ideas = PHI_ncis
+            add_ideas = PHI_intelligence_agency
         }
     }
 

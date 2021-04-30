@@ -22,7 +22,7 @@ PHI_state_fundings = {
     priority = { base = 50 }
 }
 
-PHI_atedo_decisions = {
+PHI_aeda_decisions = {
     icon = generic_democracy
 
     allowed = { PHI_is_south_east_asian_tag = yes }

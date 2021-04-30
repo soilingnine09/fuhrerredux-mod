@@ -1569,8 +1569,8 @@ country_event = {
 # Trade Treaty
 country_event = {
     id = phi.36
-    title = phi.36
-    desc = phi.36
+    title = phi.36.t
+    desc = phi.36.d
     picture = GFX_report_event_generic_sign_treaty3
 
     is_triggered_only = yes
@@ -1608,35 +1608,8 @@ country_event = {
             modifier = PHI_trade_treaty_accepted
         }
 
-        if = {
-            limit = { 
-                FROM = { tag = JAP }
-            }
-            set_country_flag = PHI_JAP_TRADE
-        }
-        if = {
-            limit = {
-                FROM = { tag = ENG }
-            }
-            set_country_flag = PHI_ENG_TRADE
-        }
-        if = {
-            limit = {
-                FROM = { tag = GER }
-            }
-            set_country_flag = PHI_GER_TRADE
-        }
-        if = {
-            limit = {
-                FROM = { tag = USA }
-            }
-            set_country_flag = PHI_USA_TRADE
-        }
-        if = {
-            limit = {
-                FROM = { tag = SOV }
-            }
-            set_country_flag = PHI_SOV_TRADE
+        FROM = {
+            set_country_flag = PHI_trade_treaty_tt
         }
     }
 }

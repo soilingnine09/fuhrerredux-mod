@@ -143,7 +143,7 @@ bookmarks = {
 			focuses = {
 				PHI_aguinaldo_coup
 				PHI_finish_industrialization_program
-				PHI_asean_focus
+				PHI_found_aeda
 			}
 		}
 		#"BRA"={

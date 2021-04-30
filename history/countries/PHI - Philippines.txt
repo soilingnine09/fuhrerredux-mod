@@ -93,17 +93,17 @@ create_country_leader = {
 	traits = { prince_of_terror }
 }
 create_country_leader = {
-	name = "Crisanto Evangelista"
-	desc = "POLITICS_CRISANTO_EVANGELISTA_DESC"
-	picture = "Portrait_Philippines_Crisanto_Evangelista.tga"
+	name = "Pedro Abad Santos"
+	desc = "POLITICS_PEDRO_ABAD_SANTOS_DESC"
+	picture = "Portrait_Philippines_Pedro_Abad_Santos.tga"
 	expire = "1950.3.10"
 	ideology = collectivist_subtype
 	traits = { reluctant_interventionist }
 }
 create_country_leader = {
-	name = "Pedro Abad Santos"
-	desc = "POLITICS_PEDRO_ABAD_SANTOS_DESC"
-	picture = "Portrait_Philippines_Pedro_Abad_Santos.tga"
+	name = "Crisanto Evangelista"
+	desc = "POLITICS_CRISANTO_EVANGELISTA_DESC"
+	picture = "Portrait_Philippines_Crisanto_Evangelista.tga"
 	expire = "1950.3.10"
 	ideology = libertarian_socialist_subtype
 	traits = { reluctant_interventionist }
@@ -125,9 +125,9 @@ create_country_leader = {
 	traits = { financial_expert }
 }
 create_country_leader = {
-	name = "J. Antonio Araneta"
-	desc = "POLITICS_J_ANTONIO_ARANETA_DESC"
-	picture = "Portrait_Philippines_J_Antonio_Araneta.tga"
+	name = "Manuel Roxas"
+	desc = "POLITICS_MANUEL_ROXAS_DESC"
+	picture = "Portrait_Philippines_Manuel_Roxas.tga"
 	expire = "1955.2.1"
 	ideology = market_liberal_subtype
 	traits = { financial_expert }
