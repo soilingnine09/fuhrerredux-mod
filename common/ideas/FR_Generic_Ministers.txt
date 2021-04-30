@@ -36,6 +36,7 @@ head_of_government = {
 					original_tag = JAP
 					original_tag = SAF
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -86,6 +87,7 @@ head_of_government = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -136,6 +138,7 @@ head_of_government = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -187,6 +190,7 @@ head_of_government = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -238,6 +242,7 @@ head_of_government = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -290,6 +295,7 @@ head_of_government = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -341,6 +347,7 @@ head_of_government = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -392,6 +399,7 @@ head_of_government = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -443,6 +451,7 @@ head_of_government = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -494,6 +503,7 @@ head_of_government = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -544,6 +554,7 @@ head_of_government = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -596,6 +607,7 @@ foreign_minister = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -646,6 +658,7 @@ foreign_minister = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -696,6 +709,7 @@ foreign_minister = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -747,6 +761,7 @@ foreign_minister = {
 						original_tag = JAP
 						original_tag = SAF 
 						original_tag = SIA
+						original_tag = PHI
 					}
 				}
 			}
@@ -798,6 +813,7 @@ foreign_minister = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -850,6 +866,7 @@ foreign_minister = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -901,6 +918,7 @@ foreign_minister = {
 					original_tag = JAP
 					original_tag = SAF
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -952,6 +970,7 @@ foreign_minister = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -1003,6 +1022,7 @@ foreign_minister = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -1054,6 +1074,7 @@ foreign_minister = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -1104,6 +1125,7 @@ foreign_minister = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -1156,6 +1178,7 @@ economy_minister = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -1207,6 +1230,7 @@ economy_minister = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -1258,6 +1282,7 @@ economy_minister = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -1310,6 +1335,7 @@ economy_minister = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -1362,6 +1388,7 @@ economy_minister = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -1415,6 +1442,7 @@ economy_minister = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -1467,6 +1495,7 @@ economy_minister = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -1519,6 +1548,7 @@ economy_minister = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -1571,6 +1601,7 @@ economy_minister = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -1623,6 +1654,7 @@ economy_minister = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -1674,6 +1706,7 @@ economy_minister = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -1727,6 +1760,7 @@ security_minister = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -1778,6 +1812,7 @@ security_minister = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -1829,6 +1864,7 @@ security_minister = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -1881,6 +1917,7 @@ security_minister = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -1933,6 +1970,7 @@ security_minister = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -1986,6 +2024,7 @@ security_minister = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -2038,6 +2077,7 @@ security_minister = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -2090,6 +2130,7 @@ security_minister = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -2142,6 +2183,7 @@ security_minister = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -2193,6 +2235,7 @@ security_minister = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -2245,6 +2288,7 @@ security_minister = {
 					original_tag = JAP
 					original_tag = SAF 
 					original_tag = SIA
+					original_tag = PHI
 				}
 			}
 		}
@@ -2297,6 +2341,7 @@ head_of_intel = {
 						original_tag = JAP
 						original_tag = SAF 
 						original_tag = SIA
+						original_tag = PHI
 					}
 				}
 			}
@@ -2345,6 +2390,7 @@ head_of_intel = {
 						original_tag = JAP
 						original_tag = SAF 
 						original_tag = SIA
+						original_tag = PHI
 
 					}
 				}
@@ -2394,6 +2440,7 @@ head_of_intel = {
 						original_tag = JAP
 						original_tag = SAF 
 						original_tag = SIA
+						original_tag = PHI
 					}
 				}
 			}
@@ -2443,6 +2490,7 @@ head_of_intel = {
 						original_tag = JAP
 						original_tag = SAF 
 						original_tag = SIA
+						original_tag = PHI
 					}
 				}
 			}
@@ -2492,6 +2540,7 @@ head_of_intel = {
 						original_tag = JAP
 						original_tag = SAF 
 						original_tag = SIA
+						original_tag = PHI
 					}
 				}
 			}
@@ -2542,6 +2591,7 @@ head_of_intel = {
 						original_tag = JAP
 						original_tag = SAF 
 						original_tag = SIA
+						original_tag = PHI
 					}
 				}
 			}
@@ -2591,6 +2641,7 @@ head_of_intel = {
 						original_tag = JAP
 						original_tag = SAF 
 						original_tag = SIA
+						original_tag = PHI
 					}
 				}
 			}
@@ -2640,6 +2691,7 @@ head_of_intel = {
 						original_tag = JAP
 						original_tag = SAF 
 						original_tag = SIA
+						original_tag = PHI
 					}
 				}
 			}
@@ -2689,6 +2741,7 @@ head_of_intel = {
 						original_tag = JAP
 						original_tag = SAF 
 						original_tag = SIA
+						original_tag = PHI
 					}
 				}
 			}
@@ -2738,6 +2791,7 @@ head_of_intel = {
 						original_tag = JAP
 						original_tag = SAF 
 						original_tag = SIA
+						original_tag = PHI
 					}
 				}
 			}
@@ -2786,6 +2840,7 @@ head_of_intel = {
 						original_tag = JAP
 						original_tag = SAF 
 						original_tag = SIA
+						original_tag = PHI
 					}
 				}
 			}

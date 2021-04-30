@@ -2,6 +2,7 @@
 # created by: dax0102
 
 add_namespace = atedo
+add_namespace = phi
 
 country_event = {
     id = atedo.1
@@ -126,8 +127,6 @@ country_event = {
         }
     }
 }
-
-add_namespace = phi
 
 # Refugees from Germany
 country_event = {
@@ -275,7 +274,6 @@ country_event = {
             }
         }
 
-        custom_effect_tooltip = PHI_new_elections_called_effect
         hidden_effect = {
             set_country_flag = PHI_DEMOCRACY_RETURNS_FLAG
             country_event = { id = phi.5 days = 30 }
@@ -303,14 +301,13 @@ country_event = {
             }
         }
 
-        custom_effect_tooltip = PHI_new_elections_suppressed_effect
         hidden_effect = {
             country_event = { id = phi.6 days = 2 }
         }
     }
 }
 
-# [GetYear] Elections
+# Elections
 country_event = {
     id = phi.5
     title = phi.5.t
@@ -328,161 +325,49 @@ country_event = {
         }
     }
 
+    # Nacionalista
     option = {
         name = phi.5.a
 
-        custom_effect_tooltip = PHI_lp_victory_effect
-        hidden_effect = {
-            set_country_flag = coalition_social_liberal
-            add_popularity = {
-                ideology = market_liberal
-                popularity = 0.2
-            }
-
-            set_politics = {
-                ruling_party = market_liberal
-                elections_allowed = no
-            }
-
-            swap_ideas = {
-                remove_idea = PHI_Jose_P_Laurel_HoG_ADE
-                add_idea = PHI_Manuel_Roxas_HoG_MLI
-            }
-
-            swap_ideas = {
-                remove_idea = PHI_Ferdinand_Marcos_FOR_SCO
-                add_idea = PHI_Manuel_Quadrino_FOR_MLI
-            }
-
-            swap_ideas = {
-                remove_idea = PHI_Serafin_Fausto_ECO_SCO
-                add_idea = PHI_Ramon_Magsaysay_ECO_MLI
-            }
-
-            swap_ideas = {
-                remove_idea = PHI_Benigno_Aquino_Sr_SEC_ADE
-                add_idea = PHI_Roman_Apolinario_SEC_MLI
-            }
-
-            set_country_flag = PHI_LP_VICTORY_FLAG
-            news_event = { id = news.2 days = 1 }
-            remove_ideas = PHI_thirst_for_democracy
+        set_politics = {
+            ruling_party = social_conservative
+            elections_allowed = yes
         }
+        add_popularity = {
+            ideology = social_conservative
+            popularity = 0.15
+        }
+        remove_every_minister = yes
     }
 
+    # Liberal
     option = {
         name = phi.5.b
 
-        custom_effect_tooltip = PHI_pp_victory_effect
-        hidden_effect = {
-            add_popularity = {
-                ideology = social_democrat
-                popularity = 0.2
-            }
-
-            set_politics = {
-                ruling_party = social_democrat
-                elections_allowed = no
-            }
-
-            swap_ideas = {
-                remove_idea = PHI_Jose_P_Laurel_HoG_ADE
-                add_idea = PHI_Juan_Sumulong_HoG_SDE
-            }
-
-            swap_ideas = {
-                remove_idea = PHI_Ferdinand_Marcos_FOR_SCO
-                add_idea = PHI_Rafael_Liwanag_HoG_SDE
-            }
-
-            swap_ideas = {
-                remove_idea = PHI_Serafin_Fausto_ECO_SCO
-                add_idea = PHI_Diosdado_P_Macapagal_ECO_SDE
-            }
-
-            swap_ideas = {
-                remove_idea = PHI_Benigno_Aquino_Sr_SEC_ADE
-                add_idea = PHI_Jose_M_Crisol_SEC_SDE
-            }
-
-            set_country_flag = PHI_PP_VICTORY_FLAG
-            news_event = { id = news.3 days = 1 }
-            remove_ideas = PHI_thirst_for_democracy
+        set_politics = {
+            ruling_party = market_liberal
+            elections_allowed = yes
         }
+        add_popularity = {
+            ideology = market_liberal
+            popularity = 0.15
+        }
+        remove_every_minister = yes
     }
 
+    # Sakdalista
     option = {
         name = phi.5.c
 
-        ai_chance = {
-            factor = 10
-
-            modifier = {
-                factor = 10
-                has_country_flag = PHI_BROTHERS_UNITED_BEHAVIOR
-            }
+        set_politics = {
+            ruling_party = valkist
+            elections_allowed = yes
         }
-
-        custom_effect_tooltip = PHI_np_victory_effect
-        hidden_effect = {
-            add_popularity = {
-                ideology = social_conservative
-                popularity = 0.2
-            }
-
-            set_politics = {
-                ruling_party = social_conservative
-                elections_allowed = no
-            }
-
-            swap_ideas = {
-                remove_idea = PHI_Jose_P_Laurel_HoG_ADE
-                add_idea = PHI_Manuel_Quezon_HoG_SCO
-            }
-            swap_ideas = {
-                remove_idea = PHI_Benigno_Aquino_Sr_SEC_ADE
-                add_idea = PHI_Tirano_Craveza_SEC_SCO
-            }
-            add_ideas = PHI_Ferdinand_Marcos_FOR_SCO
-            add_ideas = PHI_Serafin_Fausto_ECO_SCO
-
-            set_country_flag = PHI_NP_VICTORY_FLAG
-            news_event = { id = news.1 days = 1 }
-            remove_ideas = PHI_thirst_for_democracy
+        add_popularity = {
+            ideology = valkist
+            popularity = 0.15
         }
-    }
-
-    option = {
-        name = phi.3.e
-        trigger = { has_country_flag = PHI_SAKDALISTA_ALLOWED }
-
-        custom_effect_tooltip = PHI_sakdalista_victory_effect
-        hidden_effect = {
-            add_popularity = {
-                ideology = valkist
-                popularity = 0.20
-            }
-
-            set_politics = {
-                ruling_party = valkist
-                elections_allowed = no
-            }
-
-            swap_ideas = {
-                remove_idea = presidential_republic
-                add_idea = one_party_dictatorship
-            }
-
-            swap_ideas = {
-                remove_idea = PHI_Jose_P_Laurel_HoG_ADE
-                add_idea = PHI_Jorge_B_Vargas_HoG_VAL
-            }
-            add_ideas = PHI_Ferdinand_Marcos_FOR_SCO
-            add_ideas = PHI_Serafin_Fausto_ECO_SCO
-
-            set_country_flag = PHI_KALIBAPI_VICTORY_FLAG
-            news_event = { id = news.5 days = 1 }
-        }
+        remove_every_minister = yes
     }
 }
 

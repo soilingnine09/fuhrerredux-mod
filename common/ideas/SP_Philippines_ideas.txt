@@ -14,7 +14,17 @@ ideas = {
 		        local_resources = 0.1
             }
         }
-        
+
+        PHI_the_constabulary = {
+            allowed = { original_tag = PHI }
+            picture = MEX_revolutionary_army
+
+            modifier = {
+               resistance_growth = -0.15
+               compliance_growth = 0.15
+            }
+        }
+
         PHI_thirst_for_democracy = {
             allowed = { original_tag = PHI }
 
@@ -287,19 +297,6 @@ ideas = {
             }
         }
 
-        PHI_controlled_the_unions = {
-            allowed = { original_tag = PHI }
-
-            picture = state_economy
-
-            modifier = {
-                political_power_gain = -0.025
-                production_factory_max_efficiency_factor = 0.05
-                industrial_capacity_factory = -0.025
-				industrial_capacity_dockyard = -0.025
-            }
-        }
-
         PHI_banned_the_unions = {
             allowed = { original_tag = PHI }
 
@@ -487,17 +484,6 @@ ideas = {
                 production_speed_buildings_factor = 0.05
                 industrial_capacity_factory = 0.05
                 industrial_capacity_dockyard = 0.05
-            }
-        }
-
-        PHI_living_the_dream = {
-            allowed = { original_tag = PHI }
-
-            picture = new_deal
-
-            modifier = {
-                political_power_gain = 0.05
-                research_speed_factor = 0.05
             }
         }
 

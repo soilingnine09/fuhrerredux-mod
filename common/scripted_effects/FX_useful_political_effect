@@ -1,0 +1,17 @@
+
+remove_every_ministers = {
+    hidden_effect = {
+        remove_ideas_with_trait = head_of_government
+        remove_ideas_with_trait = foreign_minister
+        remove_ideas_with_trait = economic_minister
+        remove_ideas_with_trait = security_minister
+    }
+}
+
+remove_every_minister_but_hog = {
+    hidden_effect = {
+        remove_ideas_with_trait = foreign_minister
+        remove_ideas_with_trait = economic_minister
+        remove_ideas_with_trait = security_minister
+    }
+}

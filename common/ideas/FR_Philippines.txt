@@ -1,9 +1,0 @@
-# Philippine Ideas, Ministers and Companies
-# created by: dax0102
-
-ideas = {
-
-    country = {
-
-    }
-}

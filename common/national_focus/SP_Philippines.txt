@@ -19,58 +19,54 @@ focus_tree = {
     # Democracy Returns
     focus = {
         id = PHI_democracy_returns
-        icon = GFX_goal_philippines_democracy
+        icon = GFX_focus_philippines_democracy
         x = 4
         y = 0
         cost = 0
         available_if_capitulated = yes
-        bypass = { 
-            OR = {
-                has_government = social_democrat
-                has_government = social_liberal
-                has_government = market_liberal
-                has_government = social_conservative
-            }
-        }
-        available = { has_country_flag = PHI_DEMOCRACY_RETURNS_FLAG }
-        ai_will_do = {
-            factor = 0
+        available = { 
+            has_democratic_government = yes
         }
         completion_reward = {}
     }
 
     ########################
-    #    SOCIAL DEMOCRAT   #
+    #     LIBERAL SHARED   #
     ########################
 
-    #Social Democrat Victory
+    # Liberal Victory
     focus = {
-        id = PHI_social_democrat_victory
-        icon = GFX_goal_ideology_social_democrat
-        x = 1
+        id = PHI_liberal_victory
+        icon = GFX_goal_ideology_market_liberal
+        x = -2
         y = 1
         cost = 0
-        available_if_capitulated = yes
-        prerequisite = { focus = PHI_democracy_returns }
-        bypass = { has_government = social_democrat }
-        mutually_exclusive = { 
-            focus = PHI_liberal_victory
-            focus = PHI_conservative_victory
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = unlocked_later
+                has_country_flag = PHI_LIBERAL_ELECTION_VICTORY
+                has_government = market_liberal
+            }
         }
-        available = { has_country_flag = PHI_PP_VICTORY_FLAG }
+        mutually_exclusive = {
+            focus = PHI_nacionalista_victory
+        }
+        prerequisite = { focus = PHI_democracy_returns }
         completion_reward = {}
+        relative_position_id = PHI_democracy_returns
     }
 
     # Helping the Poor
     focus = {
         id = PHI_helping_the_poor
         icon = GFX_goal_DEI_focus_ban_rice_import
-        x = 0
-        y = 2
+        x = -2
+        y = 1
         cost = 10
         available_if_capitulated = yes
-        available = { has_government = social_democrat }
-        prerequisite = { focus = PHI_social_democrat_victory }
+        available = { has_government = market_liberal }
+        prerequisite = { focus = PHI_liberal_victory }
+        relative_position_id = PHI_liberal_victory
         completion_reward = {
             add_ideas = PHI_dswd1
         }
@@ -81,11 +77,12 @@ focus_tree = {
         id = PHI_cooperate_with_trade_unions
         icon = GFX_goal_RAJ_India_Worker_Rights
         x = 0
-        y = 3
+        y = 1
         cost = 10
         available_if_capitulated = yes
         available = { has_government = social_democrat }
         prerequisite = { focus = PHI_helping_the_poor }
+        relative_position_id = PHI_helping_the_poor
         completion_reward = {
             hidden_effect = {
                 set_country_flag = PHI_COOPERATE_UNIONS
@@ -103,11 +100,12 @@ focus_tree = {
         id = PHI_social_welfare_programs
         icon = GFX_focus_generic_concessions
         x = 0
-        y = 4
+        y = 1
         cost = 10
         available_if_capitulated = yes
         available = { has_government = social_democrat }
         prerequisite = { focus = PHI_cooperate_with_trade_unions }
+        relative_position_id = PHI_cooperate_with_trade_unions
         completion_reward = {
             swap_ideas = {
                 remove_idea = PHI_dswd1
@@ -121,38 +119,30 @@ focus_tree = {
         id = PHI_a_contented_worker_focus
         icon = GFX_goal_generic_consumer_goods
         x = 1
-        y = 5
+        y = 1
         cost = 5
         available = { has_government = social_democrat }
         prerequisite = { focus = PHI_social_welfare_programs }
         prerequisite = { focus = PHI_cwts_focus }
+        relative_position_id = PHI_social_welfare_programs
         completion_reward = {
             add_ideas = PHI_a_contented_worker
         }
     }
 
-    #########################
-    # SOCDEM-LIBERAL SHARED #
-    #########################
-
     # Negiotiate with the Radicals
     focus = {
         id = PHI_negotiate_with_the_radicals
         icon = GFX_goal_flames_of_rebellion
-        x = 2
-        y = 2
+        x = 0
+        y = 1
         cost = 10
         available_if_capitulated = yes
         available = {
-            OR = {
-                has_government = social_democrat
-                has_government = market_liberal
-            }
+            has_government = market_liberal
         }
-        prerequisite = { 
-            focus = PHI_social_democrat_victory
-            focus = PHI_liberal_victory
-        } 
+        prerequisite = {  focus = PHI_liberal_victory }
+        relative_position_id = PHI_liberal_victory
         completion_reward = {
             if = {
                 limit = { has_idea = PHI_marxist_professors }
@@ -176,17 +166,15 @@ focus_tree = {
     focus = {
         id = PHI_new_universities
         icon = GFX_focus_research2
-        x = 2
-        y = 3
+        x = 0
+        y = 1
         cost = 10
         available_if_capitulated = yes        
         available = {
-            OR = {
-                has_government = social_democrat
-                has_government = market_liberal
-            }
+            has_government = market_liberal
         }
         prerequisite = { focus = PHI_negotiate_with_the_radicals }
+        relative_position_id = PHI_negotiate_with_the_radicals
         completion_reward = {
             if = {
                 limit = { has_completed_focus = PHI_education_reform }
@@ -202,76 +190,54 @@ focus_tree = {
     focus = {
         id = PHI_cwts_focus
         icon = GFX_goal_enlist_the_police
-        x = 2
-        y = 4
+        x = 0
+        y = 1
         cost = 10
         available_if_capitulated = yes
         available = {
-            OR = {
-                has_government = social_democrat
-                has_government = market_liberal
-            }
+            has_government = market_liberal
         }
         prerequisite = { focus = PHI_new_universities }
+        relative_position_id = PHI_new_universities
         completion_reward = {
             add_ideas = PHI_cwts
         }
-    }
-
-    ########################
-    #     LIBERAL SHARED   #
-    ########################
-
-    # Social Liberal Victory
-    focus = {
-        id = PHI_liberal_victory
-        icon = GFX_goal_ideology_market_liberal
-        x = 4
-        y = 1
-        cost = 0
-        available_if_capitulated = yes
-        prerequisite = { focus = PHI_democracy_returns }
-        bypass = { has_government = market_liberal }
-        mutually_exclusive = { 
-            focus = PHI_social_democrat_victory
-            focus = PHI_conservative_victory
-        }
-        available = { has_country_flag = PHI_LP_VICTORY_FLAG }
-        completion_reward = {}
     }
 
     # Impose Human Rights
     focus = {
         id = PHI_human_rights
         icon = GFX_goal_DOM_End_Judicial_Corruption
-        x = 4
+        x = 0
         y = 2
         cost = 10
-        available = { has_government = market_liberal }
-        prerequisite = { focus = PHI_liberal_victory }
+        available = { 
+            OR = {
+                has_government = market_liberal
+                has_government = social_conservative
+            }
+        }
+        prerequisite = { 
+            focus = PHI_liberal_victory 
+            focus = PHI_nacionalista_victory
+        }
+        relative_position_id = PHI_democracy_returns
         completion_reward = {
             add_stability = 0.2
         }
     }
 
-    # Agreement with the Trade Unions
+    # The Philippine Constabulary
     focus = {
-        id = PHI_agreement_with_trade_unions
-        icon = GFX_goal_production
-        x = 4
-        y = 3
+        id = PHI_the_philippine_constabulary
+        icon = GFX_focus_philippines_constabulary
+        x = 0
+        y = 1
         cost = 10
-        available = { has_government = market_liberal }
         prerequisite = { focus = PHI_human_rights }
+        relative_position_id = PHI_human_rights
         completion_reward = {
-            hidden_effect = {
-                set_country_flag = PHI_AGREED_UNIONS
-                add_popularity = {
-                    ideology = social_liberal
-                    popularity = 0.01
-                }
-            }
-            add_ideas = PHI_agreement_with_the_unions 
+            add_ideas = PHI_constabulary
         }
     }
 
@@ -282,77 +248,85 @@ focus_tree = {
         x = 4
         y = 4
         cost = 10
-        available = { has_government = market_liberal }
-        prerequisite = { focus = PHI_agreement_with_trade_unions }
-        completion_reward = {
-            random_owned_controlled_state = {
-                if = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = yes
-						}
-
-					}
-                    add_extra_state_shared_building_slots = 2
-                }
-            }
-            random_owned_controlled_state = {
-                if = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = yes
-						}
-
-					}
-                    add_extra_state_shared_building_slots = 2
-                }
-            }
-        }
-    }
-
-    # Living the Dream
-    focus = {
-        id = PHI_living_the_dream_focus
-        icon = GFX_focus_mex_privatisation
-        x = 4
-        y = 5
-        cost = 5
-        available = { has_government = market_liberal }
-        prerequisite = { focus = PHI_rotc_focus }
-        prerequisite = { focus = PHI_government_investments }
-        prerequisite = { focus = PHI_cwts_focus}
-        available_if_capitulated = yes
-        completion_reward = {
-            add_ideas = PHI_living_the_dream
-        }
-    }
-
-    ########################
-    #    LIB-CONS SHARED   #
-    ########################
-
-    # Establish Intelligence Service
-    focus = {
-        id = PHI_establish_intelligence_service
-        icon = GFX_goal_secret_agents
-        x = 6
-        y = 2
-        cost = 10
-        available_if_capitulated = yes
-        available = {
+        available = { 
             OR = {
                 has_government = market_liberal
                 has_government = social_conservative
             }
         }
-        prerequisite = {
-            focus = PHI_liberal_victory
-            focus = PHI_conservative_victory
+        prerequisite = { focus = PHI_the_philippine_constabulary }
+        completion_reward = {
+            random_owned_controlled_state = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+                    add_extra_state_shared_building_slots = 2
+                }
+            }
+            random_owned_controlled_state = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+                    add_extra_state_shared_building_slots = 2
+                }
+            }
         }
+    }
+
+    ########################
+    #  SOCIAL CONSERVATIVE #
+    ########################
+    
+    # Nacionalista Victory
+    focus = {
+        id = PHI_nacionalista_victory
+        icon = GFX_goal_ideology_social_conservative
+        x = 2
+        y = 1
+        cost = 0
+        available_if_capitulated = yes
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = unlocked_later
+                has_country_flag = PHI_NACIONALISTA_ELECTION_VICTORY
+                has_government = social_conservative
+            }
+        }
+        mutually_exclusive = {
+            focus = PHI_liberal_victory
+        }
+        prerequisite = { focus = PHI_democracy_returns }
+        completion_reward = {}
+        relative_position_id = PHI_democracy_returns
+    }
+
+    # Establish Intelligence Service
+    focus = {
+        id = PHI_establish_intelligence_service
+        icon = GFX_goal_secret_agents
+        x = 0
+        y = 1
+        cost = 10
+        available_if_capitulated = yes
+        available = {
+            has_government = social_conservative
+        }
+        prerequisite = {
+            focus = PHI_nacionalista_victory
+        }
+        relative_position_id = PHI_nacionalista_victory
         completion_reward = {
             add_ideas = PHI_ncis
         }
@@ -362,17 +336,15 @@ focus_tree = {
     focus = {
         id = PHI_education_reform
         icon = GFX_focus_research4
-        x = 6
-        y = 3
+        x = 0
+        y = 1
         cost = 10
         available_if_capitulated = yes
         available = {
-            OR = {
-                has_government = market_liberal
-                has_government = social_conservative
-            }
+            has_government = social_conservative
         }
         prerequisite = { focus = PHI_establish_intelligence_service }
+        relative_position_id = PHI_establish_intelligence_service
         completion_reward = {
             if = {
                 limit = { has_completed_focus = PHI_new_universities }
@@ -397,57 +369,31 @@ focus_tree = {
     focus = {
         id = PHI_rotc_focus
         icon = GFX_goal_army_guy_2
-        x = 6
-        y = 4
-        cost = 10
-        available = {
-            OR = {
-                has_government = market_liberal
-                has_government = social_conservative
-            }
-        }
-        available_if_capitulated = yes
-        prerequisite = { focus = PHI_education_reform }
-        completion_reward = {
-            add_ideas = PHI_rotc
-        }
-    }
-
-    ########################
-    #  SOCIAL CONSERVATIVE #
-    ########################
-
-    # Conservative Victory
-    focus = {
-        id = PHI_conservative_victory
-        icon = GFX_goal_ideology_social_conservative
-        x = 7
+        x = 0
         y = 1
-        cost = 0
-        available_if_capitulated = yes
+        cost = 10
         available = {
             has_government = social_conservative
         }
-        prerequisite = { focus = PHI_democracy_returns }
-        bypass = { has_government = social_conservative }
-        mutually_exclusive = {
-            focus = PHI_social_democrat_victory
-            focus = PHI_liberal_victory
+        available_if_capitulated = yes
+        prerequisite = { focus = PHI_education_reform }
+        relative_position_id = PHI_education_reform
+        completion_reward = {
+            add_ideas = PHI_rotc
         }
-        available = { has_country_flag = PHI_NP_VICTORY_FLAG }
-        completion_reward = {}
     }
 
     # Root out Communists
     focus = {
         id = PHI_root_out_communists
         icon = GFX_goal_anti_comintern_pact
-        x = 8
-        y = 2
+        x = 2
+        y = 1
         cost = 10
         available_if_capitulated = yes
         available = { has_government = social_conservative }
-        prerequisite = { focus = PHI_conservative_victory }
+        prerequisite = { focus = PHI_nacionalista_victory }
+        relative_position_id = PHI_nacionalista_victory
         completion_reward = {
             remove_ideas = PHI_marxist_professors
             add_ideas = PHI_marxist_professors_purged1
@@ -470,25 +416,26 @@ focus_tree = {
         }
     }
 
-    # Control the Trade Unions
+    # Agreements with the Trade Unions
     focus = {
-        id = PHI_control_trade_unions
-        icon = GFX_goal_generic_forceful_treaty
-        x = 8
-        y = 3
+        id = PHI_agreement_with_the_unions
+        icon = GFX_goal_production
+        x = 0
+        y = 1
         cost = 10
         available_if_capitulated = yes
         available = { has_government = social_conservative }
         prerequisite = { focus = PHI_root_out_communists }
+        relative_position_id = PHI_root_out_communists
         completion_reward = {
             hidden_effect = {
-                set_country_flag = PHI_CONTROLED_UNIONS
+                set_country_flag = PHI_AGREED_UNIONS
                 add_popularity = {
                     ideology = social_conservative
                     popularity = 0.01
                 }
             }
-            add_ideas = PHI_controlled_the_unions 
+            add_ideas = PHI_agreement_with_the_unions
         }
     }
 
@@ -496,12 +443,13 @@ focus_tree = {
     focus = {
         id = PHI_seek_foreign_investors
         icon = GFX_goal_generic_intelligence_exchange
-        x = 8
-        y = 4
+        x = 0
+        y = 1
         cost = 10
         available_if_capitulated = yes
         available = { has_government = social_conservative }
-        prerequisite = { focus = PHI_control_trade_unions }
+        prerequisite = { focus = PHI_agreement_with_the_unions }
+        relative_position_id = PHI_agreement_with_the_unions
         completion_reward = {
             every_country = {
                 limit = { 
@@ -517,13 +465,14 @@ focus_tree = {
     focus = {
         id = PHI_tradition_and_culture_focus 
         icon = GFX_goal_faith_and_state
-        x = 7
-        y = 5
+        x = -1
+        y = 1
         cost = 5
         available_if_capitulated = yes
         available = { has_government = social_conservative }
         prerequisite = { focus = PHI_seek_foreign_investors }
         prerequisite = { focus = PHI_rotc_focus }
+        relative_position_id = PHI_seek_foreign_investors
         completion_reward = {
             add_ideas = PHI_tradition_and_culture
         }
@@ -532,16 +481,19 @@ focus_tree = {
     # A True Republic
     focus = {
         id = PHI_a_true_republic
-        icon = GFX_goal_COS_Ferrer_Coup
-        x = 4
-        y = 6
+        icon = GFX_focus_philippines_defense
+        x = 0
+        y = 2
         cost = 10
         available_if_capitulated = yes
         prerequisite = { 
             focus = PHI_tradition_and_culture_focus
-            focus = PHI_living_the_dream_focus
             focus = PHI_a_contented_worker_focus
         }
+        prerequisite = {
+            focus = PHI_government_investments
+        }
+        relative_position_id = PHI_government_investments
         completion_reward = {
             add_ideas = PHI_nationalism
         }
@@ -1163,7 +1115,7 @@ focus_tree = {
     # Expand the Army
     focus = {
         id = PHI_expand_the_army
-        icon = GFX_goal_generic_allies_build_infantry
+        icon = GFX_focus_generic_allies_build_infantry
         x = 28
         y = 0
         cost = 3
@@ -2146,7 +2098,7 @@ focus_tree = {
     # No More Colonialism!
     focus = {
         id = PHI_no_more_colonialism
-        icon = GFX_goal_philippines_post_independence_stabilization
+        icon = GFX_focus_philippines_renounce_colonialism
         x = 7
         y = 9
         cost = 5
@@ -2421,9 +2373,9 @@ focus_tree = {
         }
     }
 
-    # ASEAN
+    # Found ATEDO
     focus = {
-        id = PHI_found_aec
+        id = PHI_found_atedo
         icon = GFX_goal_liberty
         x = 7
         y = 16
@@ -2666,14 +2618,9 @@ focus_tree = {
         x = 22
         y = 7
         cost = 10
-        available = { has_country_flag = PHI_SOCIALIST_REPUBLIC_FLAG }
-        bypass = {
-            OR = {
-                has_government = libertarian_socialist
-                has_government = collectivist
-                has_government = vanguardist
-            }
-        }
+        available = { 
+            has_socialist_government = yes
+        }   
         completion_reward = {}
     }
 

@@ -1,0 +1,752 @@
+# Philippine Ideas, Ministers and Companies
+# created by: dax0102
+
+ideas = {
+    country = {}
+
+    # Head of Government
+    head_of_government = {
+        PHI_Luis_Taruc_hog_van = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                vanguardist
+                hog_red_chairman
+            }
+        }
+        PHI_Crisanto_Evangelista_hog_col = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                collectivist
+                hog_happy_amateur
+            }
+        }
+        PHI_Pedro_Abad_Santos_hog_lib = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                libertarian_socialist
+                hog_flamboyant_tough_guy
+            }
+        }
+        PHI_Juan_Sumulong_hog_sde = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                social_democrat
+                hog_pragmatic_statesman
+            }
+        }
+        PHI_Elpidio_Quirino_hog_sli = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                social_liberal
+                hog_political_protege
+            }
+        }
+        PHI_Manuel_Roxas_hog_mli = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                market_liberal
+                hog_corporate_suit
+            }
+        }
+        PHI_Manuel_Quezon_hog_sco = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                social_conservative
+                hog_silent_workhorse
+            }
+        }
+        PHI_Sergio_P_Osmena_hog_sco = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                social_conservative
+                hog_naive_optimist
+            }
+        }
+        PHI_Jose_P_Laurel_hog_ade = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                authoritarian_democrat
+                hog_naive_optimist
+            }
+        }
+        PHI_Basilio_J_Valdez_hog_pau = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                paternal_autocrat
+                hog_general
+            }
+        }
+        PHI_Emilio_Aguinaldo_hog_npo = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                national_populist
+                hog_old_general
+            }
+        }
+        PHI_Benigno_Ramos_hog_val = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                valkist
+                hog_happy_amateur
+            }
+        }
+    }
+
+    # Foreign Minister
+    foreign_minister = {
+        PHI_Casto_Alejandrino_for_col = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                collectivist
+                for_ideological_crusader
+            }
+        }
+        PHI_Rafael_Liwanag_for_sde = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                social_democrat
+                for_apologetic_clerk
+            }
+        }
+        PHI_Joaquin_Elizalde_for_sli = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                social_liberal
+                for_great_compromiser
+            }
+        }
+        PHI_Quentin_Paredes_for_mli = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                market_liberal
+                for_the_cloak_n_dagger_schemer
+            }
+        }
+        PHI_Manuel_Quadrino_for_sco = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                social_conservative
+                for_skilled_negotiator
+            }
+        }
+        PHI_Ferdinand_Marcos_for_sco = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                social_conservative
+                for_iron_fisted_brute
+            }
+        }
+        PHI_Vicente_P_Lim_for_pau = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                paternal_autocrat
+                for_charismatic_diplomat
+            }
+        }
+    }
+
+    # Economic Minister
+    economic_minister = {
+        PHI_Herminegildo_Cruz_eco_col = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economic_minister
+                collectivist
+                eco_planned_economy_proponent
+            }
+        }
+        PHI_Carlos_P_Garcia_eco_sde = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economic_minister
+                social_democrat
+                eco_reformer
+            }
+        }
+        PHI_Diosdado_P_Macapagal_eco_sde = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economic_minister
+                social_democrat
+                eco_mixed_economy
+            }
+        }
+        PHI_Manuel_Quadrino_eco_sli = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economic_minister
+                social_liberal
+                eco_bank_president
+            }
+        }
+        PHI_Antonio_de_las_Alas_eco_sli = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economic_minister
+                social_liberal
+                eco_resource_industrialist
+            }
+        }
+        PHI_Ramon_Quisumbing_eco_mli = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economic_minister
+                market_liberal
+                eco_keynesian_economy
+            }
+        }
+        PHI_Ramon_Magsaysay_eco_mli = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economic_minister
+                market_liberal
+                eco_resource_industrialist
+            }
+        }
+        PHI_Jose_G_David_eco_sco = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economic_minister
+                social_conservative
+                eco_construction_magnate
+            }
+        }
+        PHI_Serafin_Fausto_eco_sco = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economic_minister
+                social_conservative
+                eco_laissez_faire_capitalist
+            }
+        }
+        PHI_Ramon_Alcaraz_eco_pau = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economic_minister
+                social_conservative
+                eco_military_entrepreneur
+            }
+        }
+    }
+
+    # Security Minister
+    security_minister = {
+        PHI_Guillermo_Capadocia_sec_col = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                collectivist
+                sec_prince_of_terror
+            }
+        }
+        PHI_Mariano_Balgos_sec_lib = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                libertarian_socialist
+                sec_man_of_the_people
+            }
+        }
+        PHI_Jose_M_Crisol_sec_sde = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                social_democrat
+                sec_compassionate_gentleman
+            }
+        }
+        PHI_Pardo_de_Tavera_sec_sde = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                social_democrat
+                sec_crime_fighter
+            }
+        }
+        PHI_Alberto_Ramos_sec_sli = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                social_liberal
+                sec_compassionate_gentleman
+            }
+        }
+        PHI_Leoncio_S_Tan_sec_sli = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                social_liberal
+                sec_man_of_the_people
+            }
+        }
+        PHI_Ramon_Quisumbing_sec_mli = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                market_liberal
+                sec_crime_fighter
+            }
+        }
+        PHI_Roman_Apolinario_sec_mli = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                market_liberal
+                sec_man_of_the_people
+            }
+        }
+        PHI_Teofisto_Sison_sec_sco = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                social_conservative
+                sec_crime_fighter
+            }
+        }
+        PHI_Tirano_Craveza_sec_sco = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                social_conservative
+                sec_efficient_sociopath
+            }
+        }
+        PHI_Jose_Yulo_sec_sco = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                social_conservative
+                sec_compassionate_gentleman
+            }
+        }
+        PHI_Benigno_Aquino_Sr_sec_ade = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                authoritarian_democrat
+                sec_prince_of_terror
+            }
+        }
+        PHI_Rafael_Jalandoni_sec_pau = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                paternal_autocrat
+                sec_crime_fighter
+            }
+        }
+        PHI_Emilio_Aguinaldo_sec_npo = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                national_populist
+                sec_man_of_the_people
+            }
+        }
+        PHI_Jose_G_Lukban_sec_val = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                valkist
+                sec_compassionate_gentleman
+            }
+        }
+    }
+
+    # Intelligence Minister
+    head_of_intel = {
+        PHI_Luis_Taruc_int_col = {
+            allowed = { original_tag = PHI }
+            available = { has_socialist_government = yes }
+            cancel_if_invalid = yes
+            traits = {
+                head_of_intel
+                collectivist
+                int_technical_specialist
+            }
+        }
+        PHI_John_Gilbert_Winant_int_sli = {
+            allowed = { original_tag = PHI }
+            available = { has_democratic_government = yes }
+            cancel_if_invalid = yes
+            traits = {
+                head_of_intel
+                social_liberal
+                int_logistics_specialist
+            }
+        }
+        PHI_Leslie_Ailen_Wheeler_int_mli = {
+            allowed = { original_tag = PHI }
+            available = { has_democratic_government = yes }
+            cancel_if_invalid = yes
+            traits = {
+                head_of_intel
+                market_liberal
+                int_political_specialist
+            }
+        }
+        PHI_James_Wilson_int_sco = {
+            allowed = { original_tag = PHI }
+            available = { has_democratic_government = yes }
+            cancel_if_invalid = yes
+            traits = {
+                head_of_intel
+                social_conservative
+                int_technical_specialist
+            }
+        }
+        PHI_Fidel_Segundo_int_ade = {
+            allowed = { original_tag = PHI }
+            available = { has_authoritarian_government = yes }
+            cancel_if_invalid = yes
+            traits = {
+                head_of_intel
+                authoritarian_democrat
+                int_logistics_specialist
+            }
+        }
+        PHI_Benigno_Ramos_int_val = {
+            allowed = { original_tag = PHI }
+            available = { has_authoritarian_government = yes }
+            cancel_if_invalid = yes
+            traits = {
+                head_of_intel
+                valkist
+                int_industrial_specialist
+            }
+        }
+    }
+
+    # Chief of Staff
+    chief_of_staff = {
+        PHI_Luis_Taruc_cos_col = {
+            allowed = { original_tag = PHI }
+            available = { has_socialist_government = yes }
+            cancel_if_invalid = yes
+            traits = {
+                chief_of_staff
+                collectivist
+                cos_school_of_psychology
+            }
+        }
+        PHI_Augusto_Jurado_cos = {
+            allowed = { original_tag = PHI }
+            available = { has_socialist_government = no }
+            cancel_if_invalid = yes
+            traits = {
+                chief_of_staff
+                cos_school_of_psychology
+            }
+        }
+        PHI_Paulino_Santos_cos = {
+            allowed = { original_tag = PHI }
+            available = { has_socialist_government = no }
+            cancel_if_invalid = yes
+            traits = {
+                chief_of_staff
+                cos_school_of_manoeuvre
+            }
+        }
+        PHI_Quirinto_P_Evangelista_cos = {
+            allowed = { original_tag = PHI }
+            available = { has_socialist_government = no }
+            cancel_if_invalid = yes
+            traits = {
+                chief_of_staff
+                cos_school_of_mass_combat
+            }
+        }
+        PHI_Basilio_J_Valdez_cos = {
+            allowed = { original_tag = PHI }
+            available = { has_socialist_government = no }
+            cancel_if_invalid = yes
+            traits = {
+                chief_of_staff
+                cos_school_of_defence
+            }
+        }
+    }
+
+    # Chief of Army
+    chief_of_army = {
+        PHI_Jesus_Lava_carm_col = {
+            allowed = { original_tag = PHI }
+            available = { has_socialist_government = yes }
+            cancel_if_invalid = yes
+            traits = {
+                chief_of_army
+                carm_armoured_spearhead_doctrine
+            }
+        }
+        PHI_Benito_N_Ebuen_carm = {
+            allowed = { original_tag = PHI }
+            available = { has_socialist_government = no }
+            cancel_if_invalid = yes
+            traits = {
+                chief_of_army
+                carm_elastic_defence_doctrine
+            }
+        }
+        PHI_Heraclio_Alano_carm = {
+            allowed = { original_tag = PHI }
+            available = { has_socialist_government = no }
+            cancel_if_invalid = yes
+            traits = {
+                chief_of_army
+                carm_decisive_battle_doctrine
+            }
+        }
+        PHI_Mateo_M_Capinpin_carm = {
+            allowed = { original_tag = PHI }
+            available = { has_socialist_government = no }
+            cancel_if_invalid = yes
+            traits = {
+                chief_of_army
+                carm_armoured_spearhead_doctrine
+            }
+        }
+        PHI_Vicente_P_Lim_carm = {
+            allowed = { original_tag = PHI }
+            available = { has_socialist_government = no }
+            cancel_if_invalid = yes
+            traits = {
+                chief_of_army
+                carm_guns_and_butter_doctrine
+            }
+        }
+        PHI_Basilio_J_Valdez_carm = {
+            allowed = { original_tag = PHI }
+            available = { has_socialist_government = no }
+            cancel_if_invalid = yes
+            traits = {
+                chief_of_army
+                carm_elastic_defence_doctrine
+            }
+        }
+    }
+
+    # Chief of Navy
+    chief_of_navy = {
+        PHI_Jose_V_Andrada_cnav = {
+            allowed = { original_tag = PHI }
+            traits = {
+                chief_of_navy
+                cnav_base_control_doctrine
+            }
+        }
+        PHI_Ramon_A_Alcaraz_cnav = {
+            allowed = { original_tag = PHI }
+            traits = {
+                chief_of_navy
+                cnav_indirect_approach_doctrine
+            }
+        }
+        PHI_Santiago_Nuval_cnav = {
+            allowed = { original_tag = PHI }
+            traits = {
+                chief_of_navy
+                cnav_power_projection_doctrine
+            }
+        }
+        PHI_Eustacio_Orobia_cnav = {
+            allowed = { original_tag = PHI }
+            traits = {
+                chief_of_navy
+                cnav_open_seas_doctrine
+            }
+        }
+    }
+
+    # Chief of Air Force
+    chief_of_air_force = {
+        PHI_Joe_Rogers_cair = {
+            allowed = { original_tag = PHI }
+            traits = {
+                chief_of_air_force
+                cair_battlefield_support_doctrine
+            }
+        }
+        PHI_Basilio_Fernando_cair = {
+            allowed = { original_tag = PHI }
+            traits = {
+                chief_of_air_force
+                cair_carpet_bombing_doctrine
+            }
+        }
+        PHI_Edwin_Andrews_cair = {
+            allowed = { original_tag = PHI }
+            traits = {
+                chief_of_air_force
+                cair_battlefield_support_doctrine
+            }
+        }
+        PHI_Pelagio_Cruz_cair = {
+            allowed = { original_tag = PHI }
+            traits = {
+                chief_of_air_force
+                cair_battlefield_support_doctrine
+            }
+        }
+        PHI_Victor_H_Dizon_cair = {
+            allowed = { original_tag = PHI }
+            traits = {
+                chief_of_air_force
+                cair_carpet_bombing_doctrine
+            }
+        }
+        PHI_Felix_Pestana_cair = {
+            allowed = { original_tag = PHI }
+            traits = {
+                chief_of_air_force
+                cair_air_superiority_doctrine
+            }
+        }
+    }
+
+    # Theorist
+    theorist = {
+        PHI_Basilio_J_Valdez_theo = {
+            allowed = { original_tag = PHI }
+            traits = {
+                land_doctrine_theorist
+            }
+            research_bonus = {
+                cat_superior_firepower = 0.1
+            }
+        }
+        PHI_Vicente_P_Lim_theo = {
+            allowed = { original_tag = PHI }
+            traits = {
+                land_doctrine_theorist
+            }
+            research_bonus = {
+                cat_grand_battle_plan = 0.1
+            }
+        }
+        PHI_Santiago_Nuval_theo = {
+            allowed = { original_tag = PHI }
+            traits = {
+                naval_doctrine_theorist
+            }
+            research_bonus = {
+                naval_doctrine = 0.05
+            }
+        }
+        PHI_Pelagio_Cruz_theo = {
+            allowed = { original_tag = PHI }
+            traits = {
+                air_doctrine_theorist
+            }
+            research_bonus = {
+                air_doctrine = 0.05
+            }
+        }
+    }
+}
