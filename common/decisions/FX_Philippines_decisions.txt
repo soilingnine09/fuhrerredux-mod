@@ -220,8 +220,8 @@ PHI_state_fundings = {
     }
 }
 
-PHI_atedo_decisions = {
-    PHI_join_atedo = {
+PHI_aeda_decisions = {
+    PHI_join_aeda = {
         allowed = {
             PHI_is_south_east_asian_tag = yes
         }
@@ -251,7 +251,7 @@ PHI_atedo_decisions = {
         }
 
         complete_effect = {
-            PHI = { country_event = { id = atedo.1 } }
+            PHI = { country_event = { id = aeda.1 } }
         }
     }
     
@@ -303,7 +303,7 @@ PHI_atedo_decisions = {
 
         complete_effect = {
             FROM = {
-                country_event = atedo.1
+                country_event = aeda.1
             }
         }
     }

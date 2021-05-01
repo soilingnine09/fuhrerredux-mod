@@ -2,20 +2,20 @@
 
  ### News Events ###
  news.1.t:0 "Quezon inaugurated as Philippine President"
- news.1.d:0 "[This.GetNewspaperHeader]Manuel Luis Quezon, a former Senator, was officially declared as President-elect by the election officials. A charismatic man and very popular to the Filipino people, is it not suprising that President Quezon have gathered overwhelming votes from rural and urban provinces across the Philippines.\n\nWith this new government installed, the democratic foundations of the country has prevailed and its citizens are now hoping for a bright and properous future."
+ news.1.d:0 "[This.GetNewspaperHeader][PHI.GetLeader], a former Senator, was officially declared as President-elect by the election officials. A charismatic man and very popular to the Filipino people, is it not suprising that President Quezon have gathered overwhelming votes from rural and urban provinces across the Philippines.\n\nWith this new government installed, the democratic foundations of the country has prevailed and its citizens are now hoping for a bright and properous future."
  news.1.a:0 "The United States taught them well"
 
  news.2.t:0 "Roxas inaugurated as Philippine President"
- news.2.d:0 "[This.GetNewspaperHeader]ManuelRoxas, a former Senator, was officially declared as President-elect by the election officials. A charismatic man and very popular to the Filipino people, is it not suprising that President Roxas have gathered overwhelming votes from rural and urban provinces across the Philippines.\n\nWith this new government installed, the democratic foundations of the country has prevailed and its citizens are now hoping for a bright and properous future."
+ news.2.d:0 "[This.GetNewspaperHeader][PHI.GetLeader], a former Senator, was officially declared as President-elect by the election officials. A charismatic man and very popular to the Filipino people, is it not suprising that President Roxas have gathered overwhelming votes from rural and urban provinces across the Philippines.\n\nWith this new government installed, the democratic foundations of the country has prevailed and its citizens are now hoping for a bright and properous future."
  news.2.a:0 "The United States taught them well"
 
  news.3.t:0 "Sumulong inaugurated as Philippine President"
- news.3.d:0 "[This.GetNewspaperHeader]Juan Sumulong, a former Senator, was officially declared as President-elect by the election officials. Although not very popular in some provinces especially in rural ones, the new President have managed to secure enough votes to won the democratic elections..\n\nWith this new government installed, the democratic foundations of the country has prevailed and its citizens are now hoping for a bright and properous future."
+ news.3.d:0 "[This.GetNewspaperHeader][PHI.GetLeader], a former Senator, was officially declared as President-elect by the election officials. Although not very popular in some provinces especially in rural ones, the new President have managed to secure enough votes to won the democratic elections..\n\nWith this new government installed, the democratic foundations of the country has prevailed and its citizens are now hoping for a bright and properous future."
  news.3.a:0 "The United States taught them well"
 
- news.4.t:0 "KALIBAPI wins Philippine Elections"
- news.4.d:0 "[This.GetNewspaperHeader]Having allowed to operate as a political party, the KALIBAPI Party have secured enough votes to won the democratic elections in the Philippines and have made Jorge Vargas inaugurated as President. It seems that the support for this party have been rampant as votes from rural to urban cities have been overwhelmingly high.\n\nAs one of the few Valkist movements in Asia, many are still anxious about the path that the Philippines will take on this new ideology."
- news.4.a:0 "Concering."
+ news.4.t:0 "Sakdalistas wins Philippine Elections"
+ news.4.d:0 "[This.GetNewspaperHeader]Having allowed to operate as a political party, the Lapiang Sakdalista have secured enough votes to won the democratic elections in the Philippines and have made [PHI.GetLeader] inaugurated as President. It seems that the support for this party have been rampant as votes from rural to urban cities have been overwhelmingly high.\n\nAs one of the few Valkist movements in Asia, many are still anxious about the path that the Philippines will take on this new ideology."
+ news.4.a:0 "Concerning."
 
  news.5.t:0 "The Army Takes Power in the Philippines"
  news.5.d:0 "[This.GetNewspaperHeader]Having just achieved independence from the United States, the Philippines faced today perhaps one of the most serious challenges any new country could face. With public dissatisfaction against the current administration rising, disgruntled army officers marched on Manila to support rebelling peasants and workers.\n\nTheir attempt was quickly thwarted as army units intervened in and drove the rebellious army out of the capital and many key points. However, the army decided to seize the power for themselves, with a cabinet of military commanders put in place to ensure the safety of the Philippines 'for the foreseeable future'."
