@@ -1222,41 +1222,39 @@ country_event = {
         trigger = { tag = JAP }
 
         ai_chance = {
-            factor = 40
+            base = 20
 
             modifier = {
-                factor = 100
-                JAP = { has_war_with = USA }
-                PHI = { has_war_with = USA }
+                factor = 1.5
+                USA = {
+                    has_war_with = JAP
+                    has_war_with = PHI
+                }
             }
             modifier = {
-                factor = 100
-                JAP = { has_war_with = ENG }
-                PHI = { has_war_with = ENG }
+                factor = 1.5
+                ENG = {
+                    has_war_with = JAP
+                    has_war_with = PHI
+                }
             }
             modifier = {
-                factor = 600
-                JAP = { has_war_with = SOV } 
+                factor = 1.5
+                JAP = {
+                    has_war_with = SOV
+                }
             }
             modifier = {
-                factor = 200
-                PHI = { num_of_divisions > 60 }
+                factor = 2.5
+                PHI = { 
+                    num_of_divisions > 50
+                }
             }
             modifier = {
-                factor = 200
-                PHI = { num_of_factories > 60 }
-            }
-            modifier = {
-                factor = 0.5
-                PHI = { has_government = libertarian_socialist }
-            }
-            modifier = {
-                factor = 0.5
-                PHI = { has_government = collectivist }
-            }
-            modifier = {
-                factor = 0.5
-                PHI = { has_government = vanguardist }
+                factor = 2.5
+                PHI = {
+                    num_of_factories > 50
+                }
             }
         }
 
@@ -1288,7 +1286,36 @@ country_event = {
         name = phi.30.b.jp
         trigger = { tag = JAP }
 
-        PHI = { country_event = { id = phi.32 } }
+        ai_chance = {
+            base = 20
+
+            modifier = {
+                factor = 0.5
+                PHI = {
+                    has_war_with = USA
+                }
+            }
+            modifier = {
+                factor = 0.5
+                JAP = {
+                    has_war_with = SOV
+                }
+                PHI = {
+                    OR = {
+                        AND = {
+                            has_war_with = ENG
+                            BEA = { has_capitulated = no }
+                        }
+                        AND = {
+                            has_war_with = FRA
+                            FIC = { has_capitulated = no }
+                        }
+                    }
+                }
+            }
+        }
+
+        PHI = { country_event = phi.32 }
     }
 
     # Option for GER
@@ -1297,33 +1324,37 @@ country_event = {
         trigger = { tag = GER }
 
         ai_chance = {
-            factor = 200
+            base = 20
 
             modifier = {
-                factor = 10
-                FRA = { has_war_with = GER }
+                factor = 1.5
+                GER = {
+                    has_war_with = FRA
+                }
             }
             modifier = {
-                factor = 10
-                ENG = { has_war_with = GER }
+                factor = 1.5
+                GER = {
+                    has_war_with = SOV
+                }
             }
             modifier = {
-                factor = 10
-                SOV = { has_war_with = GER }
+                factor = 1.5
+                PHI = {
+                    num_of_divisions > 50
+                }
             }
             modifier = {
-                factor = 10
-                PHI = { num_of_factories > 50 }
-            }
-            modifier = {
-                factor = 10
-                PHI = { num_of_divisions > 100 }
+                factor = 2.5
+                PHI = {
+                    num_of_factories > 50
+                }
             }
         }
 
         PHI = {
             set_country_flag = PHI_SIDED_WITH_A_MAJOR
-            country_event = { id = phi.32 }
+            country_event = phi.32
             give_guarantee = GER
         }
         GER = {
@@ -1339,7 +1370,7 @@ country_event = {
         name = phi.30.b.de
         trigger = { tag = GER }
 
-        PHI = { country_event = { id = phi.33 } }
+        PHI = { country_event = phi.33 }
     }
 
     # Option for ENG
@@ -1348,35 +1379,29 @@ country_event = {
         trigger = { tag = ENG }
 
         ai_chance = {
-            factor = 200
+            factor = 20
 
             modifier = {
-                factor = 10
-                BEI = { exists = no }
+                factor = 5.0
+                tag = ENG
+                NOT = { country_exists = BEA }
             }
             modifier = {
-                factor = 4
-                JAP = { has_government = national_populist }
+                factor = 12.5
+                tag = ENG
+                has_war_with = GER
+                has_war_together_with = FRA
+                FRA = { has_capitulated = yes }
             }
             modifier = {
-                factor = 4
-                JAP = { has_government = authoritarian_democrat }
+                factor = 1.5
+                tag = ENG
+                has_war_with = JAP
             }
             modifier = {
-                factor = 10
-                ENG = { has_government = authoritarian_democrat }
-            }
-            modifier = {
-                factor = 10
-                ENG = { has_government = paternal_autocrat }
-            }
-            modifier = {
-                factor = 10
-                ENG = { has_war_with = JAP }
-            }
-            modifier = {
-                factor = 2
-                FRA = { has_war_with = ENG }
+                factor = 2.5
+                tag = ENG
+                has_war_with = GER
             }
         }
 
@@ -1398,15 +1423,30 @@ country_event = {
         PHI = {
             set_country_flag = PHI_SIDED_WITH_A_MAJOR
             set_cosmetic_tag = PHI_UK
-            country_event = { id = phi.32 }
+            country_event = phi.32
         }
     }
     option = {
         name = phi.30.b.uk
         trigger = { tag = ENG }
 
+        ai_chance = {
+            base = 20
+
+            modifier = {
+                factor = 0.5
+                tag = ENG
+                country_exists = BEA
+            }
+            modifier = {
+                factor = 0.5
+                tag = ENG
+                is_in_faction_with = FRA
+            }
+        }
+
         PHI = {
-            country_event = { id = phi.33 }
+            country_event = phi.33
         }
     }
 
@@ -1416,23 +1456,12 @@ country_event = {
         trigger = { tag = USA }
 
         ai_chance = {
-            factor = 100
+            base = 50
 
             modifier = {
-                factor = 10
-                PHI = { has_country_flag = PHI_RETURN_OF_DEMOCRACY }
-            }
-            modifier = {
-                factor = 20
-                USA = { has_war_with = JAP }
-            }
-            modifier = {
-                factor = 10
-                ENG = { has_government = authoritarian_democrat }
-            }
-            modifier = {
-                factor = 0.2
-                PHI = { has_war_with = USA }
+                factor = 12.5
+                tag = USA
+                has_war_with = JAP
             }
         }
 
@@ -1453,7 +1482,7 @@ country_event = {
 
         PHI = {
             set_country_flag = PHI_SIDED_WITH_A_MAJOR
-            country_event = { id = phi.32 }
+            country_event = phi.32
         }
     }
 
@@ -1461,8 +1490,21 @@ country_event = {
         name = phi.30.b.us
         trigger = { tag = USA }
 
+        ai_chance = {
+            factor = 20
+
+            modifier = {
+                factor = 0.5
+                PHI = { has_socialist_government = yes }
+            }
+            modifier = {
+                factor = 0.5
+                PHI = { has_government = valkist }
+            }
+        }
+
         PHI = {
-            country_event = { id = phi.33 }
+            country_event = phi.33
         }
     }
 }
@@ -1646,27 +1688,59 @@ country_event = {
         name = phi.39.a
 
         ai_chance = {
-            factor = 200
+            base = 10
 
             modifier = {
-                factor = 10
-                PHI = { num_of_divisions > 100 }
-            }
-            modifier = {
-                factor = 10
-                PHI = { num_of_factories > 100 }
-            }
-            modifier = {
-                factor = 2
+                factor = 1.5
+                tag = FRA
                 has_war_with = GER
             }
             modifier = {
-                factor = 2
-                has_war_with = JAP
+                factor = 2.5
+                tag = FRA
+                has_war_with = ENG
             }
             modifier = {
-                factor = 2
-                has_war_with = USA
+                factor = 1.5
+                tag = FRA
+                surrender_progress > 0.5
+            }
+            modifier = {
+                factor = 5.0
+                tag = FRA
+                OR = {
+                    has_war_with = GER
+                    has_war_with = FRA
+                }
+                num_divisions < 50
+            }
+            modifier = {
+                factor = 12.5
+                tag = FRA
+                OR = {
+                    AND = {
+                        has_war_with = GER
+                        GER = { controls_state = 16 }
+                    }
+                    AND = {
+                        has_war_with = ENG
+                        ENG = { controls_state = 16 }
+                    }
+                }
+            }
+            modifier = {
+                factor = 1.5
+                tag = ENG
+                OR = {
+                    has_war_with = GER
+                    has_war_with = JAP
+                    has_war_with = USA
+                }
+            }
+            modifier = {
+                factor = 2.5
+                tag = ENG
+                surrender_progress > 0.5
             }
         }
 
@@ -1728,7 +1802,7 @@ country_event = {
                         transfer_troops = no
                     }
                 }
-                country_event = { id = phi.40 }
+                country_event = phi.40
             }
         }
             
@@ -1740,7 +1814,7 @@ country_event = {
             }
             PHI = {
                 annex_country = { target = FIC transfer_troops = no }
-                country_event = { id = phi.40 }
+                country_event = phi.40
             }
         }
     }
@@ -1748,7 +1822,32 @@ country_event = {
     option = {
         name = phi.39.b
 
-        PHI = { country_event = { id = phi.41 } }
+        ai_chance = {
+            base = 90
+
+            modifier = {
+                factor = 0.5
+                tag = ENG
+                has_war_with = GER
+                has_war_together_with = FRA
+            }
+            modifier = {
+                factor = 0.5
+                tag = FRA
+                has_war_with = GER
+                has_war_together_with = ENG
+            }
+            modifier = {
+                factor = 0.5
+                tag = ENG
+                has_navy_size = {
+                    size < 50
+                    type = capital_ship
+                }
+            }
+        }
+
+        PHI = { country_event = phi.41 }
     }
 }
 
