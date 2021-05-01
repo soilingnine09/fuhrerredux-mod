@@ -57,10 +57,10 @@ add_ideas = {
 	PHI_agriculture_economy
 	PHI_marxist_professors
 
-	PHI_Jose_P_Laurel_HoG_ADE
-	PHI_Ferdinand_Marcos_FOR_SCO
-	PHI_Serafin_Fausto_ECO_SCO
-	PHI_Benigno_Aquino_Sr_SEC_ADE
+	PHI_Jose_P_Laurel_hog_ade
+	PHI_Ferdinand_Marcos_for_sco
+	PHI_Serafin_Fausto_eco_sco
+	PHI_Benigno_Aquino_Sr_sec_ade
 	presidential_republic
 }
 

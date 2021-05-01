@@ -21,7 +21,7 @@ ideas = {
                 industrial_capacity_dockyard = -0.25
             }
         }
-        PHI_marxist_professors1 = {
+        PHI_marxist_professors = {
             allowed = { original_tag = PHI }
             picture = generic_collectivism_rising
             modifier = {
@@ -184,14 +184,21 @@ ideas = {
         }
         PHI_christian_state = {
 			allowed = { original_tag = PHI }
-
             picture = BRA_faith_unity
-
 			modifier = {
 				army_morale_factor = 0.2
 				attrition = -0.2
 			}
 		}
+        PHI_the_constabulary = {
+            allowed = { original_tag = PHI }
+            picture = chi_army_corruption
+            modifier = {
+                required_garrison_factor = -0.15
+                occupation_cost = -0.25
+                compliance_growth_on_our_occupied_states = 0.25
+            }
+        }
         PHI_cwts = {
 			allowed = { original_tag = PHI }
 			picture = generic_infantry_bonus
@@ -834,8 +841,8 @@ ideas = {
         }
     }
 
-    # Economic Minister
-    economic_minister = {
+    # Economy Minister
+    economy_minister = {
         PHI_Herminegildo_Cruz_eco_col = {
             allowed = { original_tag = PHI }
             available = { can_replace_minister = no }

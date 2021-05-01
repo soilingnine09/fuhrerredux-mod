@@ -279,15 +279,7 @@ PHI_seato = {
     PHI_invite_country = {
         target_trigger = {
             FROM = {
-                OR = {
-                    tag = VIN
-                    tag = INS
-                    tag = SIA
-                    tag = BRM
-                    tag = LAO
-                    tag = CAM
-                    tag = MAL
-                }
+                PHI_is_south_east_asian_tag = yes
             }
         }
 
