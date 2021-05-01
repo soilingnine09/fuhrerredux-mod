@@ -1,5 +1,5 @@
 focus_tree = {
-    id = SP_Sabah
+    id = sabah_focus
 
     country = {
         factor = 0

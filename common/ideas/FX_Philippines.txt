@@ -655,24 +655,24 @@ ideas = {
                 hog_red_chairman
             }
         }
-        PHI_Crisanto_Evangelista_hog_col = {
+        PHI_Pedro_Abad_Santos_hog_col = {
             allowed = { original_tag = PHI }
             available = { can_replace_hog = no }
             cancel_if_invalid = no
             traits = {
                 head_of_government
                 collectivist
-                hog_happy_amateur
+                hog_flamboyant_tough_guy
             }
         }
-        PHI_Pedro_Abad_Santos_hog_lib = {
+        PHI_Crisanto_Evangelista_hog_lib = {
             allowed = { original_tag = PHI }
             available = { can_replace_hog = no }
             cancel_if_invalid = no
             traits = {
                 head_of_government
                 libertarian_socialist
-                hog_flamboyant_tough_guy
+                hog_happy_amateur
             }
         }
         PHI_Juan_Sumulong_hog_sde = {

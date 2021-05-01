@@ -1,6 +1,6 @@
 # Inspired by the Princely Federation Focus Tree in Kaiserreich
 focus_tree = {
-    id = SP_China
+    id = chinese_focus
 
 	country = {
 		factor = 0

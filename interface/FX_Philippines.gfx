@@ -6,12 +6,12 @@ spriteTypes = {
         texturefile = "gfx/interface/ministers/PHI/PHI_Luis_Taruc.dds"
     }
     spriteType = {
-        name = "GFX_idea_PHI_Crisanto_Evangelista_hog_col"
-        texturefile = "gfx/interface/ministers/PHI/PHI_Crisanto_Evangelista.dds"
+        name = "GFX_idea_PHI_Pedro_Abad_Santos_hog_col"
+        texturefile = "gfx/interface/ministers/PHI/PHI_Pedro_Abad_Santos.dds"
     }
     spriteType = {
-        name = "GFX_idea_PHI_Pedro_Abad_Santos_hog_lib"
-        texturefile = "gfx/interface/ministers/PHI/PHI_Pedro_Abad_Santos.dds"
+        name = "GFX_idea_PHI_Crisanto_Evangelista_hog_lib"
+        texturefile = "gfx/interface/ministers/PHI/PHI_Crisanto_Evangelista.dds"
     }
     spriteType = {
         name = "GFX_idea_PHI_Juan_Sumulong_hog_sde"
