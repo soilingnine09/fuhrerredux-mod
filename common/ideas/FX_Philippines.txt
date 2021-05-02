@@ -25,6 +25,7 @@ ideas = {
             allowed = { original_tag = PHI }
             picture = generic_collectivism_rising
             modifier = {
+                political_power_cost = 0.15
                 research_speed_factor = 0.2
             }
         }
@@ -652,7 +653,7 @@ ideas = {
             traits = {
                 head_of_government
                 vanguardist
-                hog_red_chairman
+                hog_red_chairmen
             }
         }
         PHI_Pedro_Abad_Santos_hog_col = {
@@ -742,7 +743,7 @@ ideas = {
             traits = {
                 head_of_government
                 paternal_autocrat
-                hog_general
+                hog_respected_war_hero
             }
         }
         PHI_Emilio_Aguinaldo_hog_npo = {

@@ -82,7 +82,9 @@ set_popularities = {
     social_liberal = 2
     market_liberal = 16
     social_conservative = 25
-    authoritarian_democrat = 30
+    authoritarian_democrat = 22
+	national_populist = 4
+	valkist = 4
 }
 create_country_leader = {
 	name = "Luis Taruc"

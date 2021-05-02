@@ -10,6 +10,10 @@ focus_tree = {
 
     continuous_focus_position = { x = 2500 y = 1800 }
 
+    initial_show_position = {
+        focus = PHI_industrialization_plan
+    }
+
     ######################################################
     #                                                    #
     #                    DEMOCRATIC                      #

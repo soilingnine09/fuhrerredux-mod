@@ -9,19 +9,19 @@
  news.2.d:0 "[This.GetNewspaperHeader][PHI.GetLeader], a former Senator, was officially declared as President-elect by the election officials. A charismatic man and very popular to the Filipino people, is it not suprising that President Roxas have gathered overwhelming votes from rural and urban provinces across the Philippines.\n\nWith this new government installed, the democratic foundations of the country has prevailed and its citizens are now hoping for a bright and properous future."
  news.2.a:0 "The United States taught them well"
 
- news.3.t:0 "Sumulong inaugurated as Philippine President"
- news.3.d:0 "[This.GetNewspaperHeader][PHI.GetLeader], a former Senator, was officially declared as President-elect by the election officials. Although not very popular in some provinces especially in rural ones, the new President have managed to secure enough votes to won the democratic elections..\n\nWith this new government installed, the democratic foundations of the country has prevailed and its citizens are now hoping for a bright and properous future."
- news.3.a:0 "The United States taught them well"
+ news.3.t:0 "Sakdalistas wins Philippine Elections"
+ news.3.d:0 "[This.GetNewspaperHeader]Having allowed to operate as a political party, the Lapiang Sakdalista have secured enough votes to won the democratic elections in the Philippines and have made [PHI.GetLeader] inaugurated as President. It seems that the support for this party have been rampant as votes from rural to urban cities have been overwhelmingly high.\n\nAs one of the few Valkist movements in Asia, many are still anxious about the path that the Philippines will take on this new ideology."
+ news.3.a:0 "Concerning."
 
- news.4.t:0 "Sakdalistas wins Philippine Elections"
- news.4.d:0 "[This.GetNewspaperHeader]Having allowed to operate as a political party, the Lapiang Sakdalista have secured enough votes to won the democratic elections in the Philippines and have made [PHI.GetLeader] inaugurated as President. It seems that the support for this party have been rampant as votes from rural to urban cities have been overwhelmingly high.\n\nAs one of the few Valkist movements in Asia, many are still anxious about the path that the Philippines will take on this new ideology."
- news.4.a:0 "Concerning."
+ news.4.t:0 "Communist uprising in the [PHI.GetName]"
+ news.4.d:0 "[This.GetNewspaperHeader]Fresh news from the [PHI.GetName], communist rebels have seized several government facilities and have successfully taken control over the capital city, [PHI.Capital.GetName]. However, many important government officials have evacuated the city and are in the safety of the Northern region.\n\nGovernment troops are now preparing to counter-attack to take control of the capital city. With the new chaos created by the uprising, most Filipinos find themselves in a new conflict, most of them still remember the horrors of the Filipino-American War."
+ news.4.a:0 "Good grief..."
 
  news.5.t:0 "The Army Takes Power in the Philippines"
  news.5.d:0 "[This.GetNewspaperHeader]Having just achieved independence from the United States, the Philippines faced today perhaps one of the most serious challenges any new country could face. With public dissatisfaction against the current administration rising, disgruntled army officers marched on Manila to support rebelling peasants and workers.\n\nTheir attempt was quickly thwarted as army units intervened in and drove the rebellious army out of the capital and many key points. However, the army decided to seize the power for themselves, with a cabinet of military commanders put in place to ensure the safety of the Philippines 'for the foreseeable future'."
  news.5.a:0 "Let's see how long this lasts"
 
- news.6.t:0 "Trade Unions established a New Philippine Republic"
+ news.6.t:0 "A New Socialist Philippine Republic"
  news.6.d:0 "[This.GetNewspaperHeader]Having just achieved independence from the United States, the Philippines faced today perhaps one of the most serious challenges any new country could face. With public dissatisfaction against the current administration rising, disgruntled army officers marched on Manila to support rebelling peasants and workers.\n\nIt seems the army's support for Syndicalism was more widespread then expected, and the army rapidly declared support for the Syndicalist movement. Now left with no army outside of a few loyalist divisions and not wanting to see the archipelago descend into another bloody civil war, the government signed power over to the Syndicalist movement's leader."
  news.6.a:0 "Even in Asia, liberalism isn't safe!"
 
@@ -29,11 +29,11 @@
  news.7.d:0 "[This.GetNewspaperHeader]Having just achieved independence from the United States, the Philippines faced today perhaps one of the most serious challenges any new country could face. With public dissatisfaction against the current administration rising, disgruntled army officers marched on Manila to support rebelling peasants and workers.\n\nIt seems the army's support for the former revolutionary Emilio Aguinaldo was more widespread then expected, and the army rapidly declared support for the Nationalist movement. Now left with no army outside of a few loyalist divisions and not wanting to see the archipelago descend into another bloody civil war, the government signed power over to General Emilio Aguinaldo."
  news.7.a:0 "The Return of the King?"
 
- news.8.t:0 "Philippines founds ASEAN"
+ news.8.t:0 "Philippines founds AEDA"
  news.8.d:0 "[This.GetNewspaperHeader]After archiving independence from the United States, the Philippines have been becoming an industrial powerhouse in South East Asia, rivaling the Empire of Japan. Today, they have announced an economic organization that aims to freely trade with neighboring countries, strenghtening relations along the way."
  news.8.a:0 "Intriguing."
 
- news.9.t:0 "[From.GetName] leaves ASEAN"
+ news.9.t:0 "[From.GetName] leaves AEDA"
  news.9.d:0 "[This.GetNewspaperHeader]The [From.GetAdjective] Government has announced that they are leaving the economic organization for South East Asian nations founded by the Philippines. It is unclear why they are leaving, but sources say that the Philippines has much more influence in internal politics of member countries."
  news.9.a:0 "Intriguing."
 
@@ -41,23 +41,3 @@
  news.10.d:0 "[This.GetNewspaperHeader]While the independence war of the Insulindians are still raging, the Philippine Government have just seized the moment and have landed troops in the Sabah region, completely occuping the area. There are reports from resistance with local British and Insulindian battalions but was completely pacified hours later."
  news.10.a:0 "Give that back!"
  news.10.b:0 "Interesting."
-
- news.11.t:0 "Snap Elections in [SIA.GetName]"
- news.11.d:0 "[This.GetNewspaperHeader]The opposition party in Siam, Pak Sangkhomniyom, have proved their allegations of corruptions on the current administration. With the issue exploding overnight, the government has left no choice but to call on snap elections to prevent a violent action from both parties. It seems that the current Prime Minister, Plaek Phibunsongkhram have resigned and fled the country, in fear of arrests or assassinations."
- news.11.a:0 "Democracy? in Siam?"
-
- news.12.t:0 "Socialist Victory in [SIA.GetName]"
- news.12.d:0 "[This.GetNewspaperHeader]It seems due to the corruption scandals concerning the previous regime in Siam have lost the faith of the poor in the government and its policies. The recent snap elections have made the Socialist Party a majority in the [SIA.GetAdjective] government and have push radical changes.\n\nMany are worried that these radical reforms might endanger the very principles and culture of the [SIA.GetAdjective] nation; and some have expressed great concerns on the status of the monarchy."
- news.12.a:0 "Concerning."
-
- news.13.t:0 "Communist uprising in the [PHI.GetName]"
- news.13.d:0 "[This.GetNewspaperHeader]Fresh news from the [PHI.GetName], communist rebels have seized several government facilities and have successfully taken control over the capital city, [PHI.Capital.GetName]. However, many important government officials have evacuated the city and are in the safety of the Northern region.\n\nGovernment troops are now preparing to counter-attack to take control of the capital city. With the new chaos created by the uprising, most Filipinos find themselves in a new conflict, most of them still remember the horrors of the Filipino-American War."
- news.13.a:0 "What is happening in the world?"
-
- news.14.t:0 "Direct Rule in Siam"
- news.14.d:0 "[This.GetNewspaperHeader]The King of Siam, [SIA.GetLeader] has ordered the dissolution of the [SIA.GetAdjective] Legislation and have successfully taken full control of the [SIA.GetAdjective] Government.\n\nMany people are not shocked however, as many of them lived through the years when the King of Siam has ruled with absolute power. The transition was generally peaceful as many within the [SIA.GetAdjective] citizens are still loyal to the King."
- news.14.a:0 "Asians are so conservative."
-
- news.15.t:0 "Protests in the Philippines"
- news.15.d:0 "[This.GetNewspaperHeader]After cancelling the scheduled elections this year, the government of the [PHI.GetName] is now facing a full-blown strike and protests across the archipelago. The protests however, are not going off anytime soon as more and more [PHI.GetAdjective]s are going into the streets.\n\nThe Catholic Church however, have announced their support to the protesters and denounced the current government's decisions to cancel the upcoming elections. This puts the current government more pressure in accepting the demands of their people."
- news.15.a:0 "Just accept their demands"

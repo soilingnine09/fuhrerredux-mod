@@ -38,14 +38,14 @@ has_authoritarian_govenrment = {
 
 can_replace_hog = {
     custom_trigger_tooltip = {
-        tooltip = FX_can_replace_hog
-        always = no
+        tooltip = can_replace_hog
+        always = yes
     }
 }
 
 can_replace_minister = {
     custom_trigger_tooltip = {
-        tooltip = FX_ministers_cannot_be_replaced
-        always = no
+        tooltip = ministers_cannot_be_replaced
+        always = yes
     }
 }

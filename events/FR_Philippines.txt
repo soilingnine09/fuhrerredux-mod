@@ -318,7 +318,7 @@ country_event = {
         hidden_effect = {
             add_popularity = {
                 ideology = authoritarian_democrat
-                popularity = -0.05
+                popularity = -0.15
             }
         }
     }
@@ -342,6 +342,10 @@ country_event = {
             PHI_Jose_G_David_eco_sco
             PHI_Tirano_Craveza_sec_sco
         }
+        hidden_effect = {
+            set_country_flag = PHI_nacionalista_victory_tt
+            news_event = news.1
+        }
     }
 
     # Liberal
@@ -363,6 +367,11 @@ country_event = {
             PHI_Ramon_Magsaysay_eco_mli
             PHI_Alberto_Ramos_sec_sli
         }
+
+        hidden_effect = {
+            set_country_flag = PHI_liberal_victory_tt
+            news_event = news.2
+        }
     }
 
     # Sakdalista
@@ -383,6 +392,11 @@ country_event = {
             PHI_Ferdinand_Marcos_for_sco
             PHI_Diosdado_P_Macapagal_eco_sde
             PHI_Jose_G_Lukban_sec_val
+        }
+
+        hidden_effect = {
+            set_country_flag = PHI_sakdalista_victory_tt
+            news_event = news.4
         }
     }
 }
@@ -507,30 +521,23 @@ country_event = {
     option = {
         name = phi.9.a
         
-        custom_effect_tooltip = PHI_army_coup_effect
-        hidden_effect = {
-            add_popularity = {
-                ideology = paternal_autocrat
-                popularity = 0.20
-            }
-            set_politics = {
-                ruling_party = paternal_autocrat
-                elections_allowed = no
-            }
-
-            swap_ideas = {
-                remove_idea = presidential_republic
-                add_idea = military_junta
-            }
-
-            remove_every_minister = yes
-            add_ideas = {
-                PHI_Basilio_J_Valdez_hog_pau
-                PHI_Vicente_P_Lim_for_pau
-                PHI_Ramon_Alcaraz_eco_pau
-                PHI_Rafael_Jalandoni_sec_pau
-            }
+        add_popularity = {
+            ideology = paternal_autocrat
+            popularity = 0.20
         }
+        set_politics = {
+            ruling_party = paternal_autocrat
+            elections_allowed = no
+        }
+
+        remove_every_minister = yes
+        add_ideas = {
+            PHI_Basilio_J_Valdez_hog_pau
+            PHI_Vicente_P_Lim_for_pau
+            PHI_Ramon_Alcaraz_eco_pau
+            PHI_Rafael_Jalandoni_sec_pau
+        }
+        set_country_flag = PHI_military_junta_tt
     }
 }
 
@@ -543,6 +550,7 @@ country_event = {
 
     is_triggered_only = yes
 
+    # Elections
     option = {
         name = phi.10.a
 
@@ -552,6 +560,7 @@ country_event = {
         }
     }
 
+    # NatPop and LibSoc
     option = {
         name = phi.10.b
 
@@ -598,6 +607,7 @@ country_event = {
 
     is_triggered_only = yes
 
+    # NatPop
     option = {
         name = phi.12.a
 
@@ -623,7 +633,7 @@ country_event = {
         name = phi.12.b
 
         hidden_effect = {
-            set_country_flag = PHI_DEMOCRACY_RETURNS_FLAG
+            set_country_flag = PHI_democracy_returns_tt
             country_event = { id = phi.4 days = 30 }
         }
     }
@@ -687,28 +697,27 @@ country_event = {
     option = {
         name = phi.14.a
 
-        custom_effect_tooltip = PHI_socialist_republic_effect
+        add_popularity = {
+            ideology = libertarian_socialist
+            popularity = 0.2
+        }
+        set_politics = {
+            ruling_party = libertarian_socialist
+            elections_allowed = no
+        }
+        remove_every_minister = yes
+
+        add_ideas = {
+            PHI_Crisanto_Evangelista_hog_lib
+            PHI_Casto_Alejandrino_for_col
+            PHI_Herminegildo_Cruz_eco_col
+            PHI_Mariano_Balgos_sec_lib
+        }
+
+        remove_ideas = PHI_thirst_for_democracy
         hidden_effect = {
-            add_popularity = {
-                ideology = libertarian_socialist
-                popularity = 0.2
-            }
-            set_politics = {
-                ruling_party = libertarian_socialist
-                elections_allowed = no
-            }
-            remove_every_minister = yes
-
-            add_ideas = {
-                PHI_Crisanto_Evangelista_hog_lib
-                PHI_Casto_Alejandrino_for_col
-                PHI_Herminegildo_Cruz_eco_col
-                PHI_Mariano_Balgos_sec_lib
-            }
-
             news_event = { id = news.6 days = 1 }
-            set_country_flag = PHI_SOCIALIST_REPUBLIC_FLAG
-            remove_ideas = PHI_thirst_for_democracy
+            set_country_flag = PHI_socialist_republic_tt
         }
     }
 }
@@ -735,8 +744,8 @@ country_event = {
         }
 
         swap_ideas = {
-            remove_idea = PHI_Benigno_Aquino_Sr_SEC_ADE
-            add_idea = PHI_Emilio_Aguinaldo_SEC_PAT
+            remove_idea = PHI_Benigno_Aquino_Sr_sec_ade
+            add_idea = PHI_Emilio_Aguinaldo_sec_pau
         }
         hidden_effect = {
             country_event = { id = phi.16 days = 7 }
@@ -800,26 +809,25 @@ country_event = {
     option = {
         name = phi.18.a
 
-        custom_effect_tooltip = PHI_aguinaldo_coup_effect
+        add_popularity = {
+            ideology = national_populist
+            popularity = 0.15
+        }
+
+        set_politics = {
+            ruling_party = national_populist
+            elections_allowed = no
+        }
+
+        remove_every_minister = yes
+        add_ideas = {
+            PHI_Emilio_Aguinaldo_hog_npo
+            PHI_Ferdinand_Marcos_for_sco
+            PHI_Serafin_Fausto_eco_sco
+            PHI_Benigno_Aquino_Sr_sec_ade
+        }
+
         hidden_effect = {
-            add_popularity = {
-                ideology = national_populist
-                popularity = 0.15
-            }
-
-            set_politics = {
-                ruling_party = national_populist
-                elections_allowed = no
-            }
-
-            remove_every_minister = yes
-            add_ideas = {
-                PHI_Emilio_Aguinaldo_hog_npo
-                PHI_Ferdinand_Marcos_for_sco
-                PHI_Serafin_Fausto_eco_sco
-                PHI_Benigno_Aquino_Sr_sec_ade
-            }
-
             news_event = { id = news.7 days = 1 }
             set_country_flag = PHI_AGUINALDO_COUP_FLAG
         }

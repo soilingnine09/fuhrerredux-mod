@@ -1,8 +1,12 @@
 ﻿l_english:
 
+### Politics
+POLITICS_LEADER:0 "§THead of State: $LEADER|H$§!"
+POLITICS_NEXT_ELECTION:0 "Election: $DATE|H$"
+
 ### Triggers
-FX_can_replace_hog:0 "Can Replace Head of Government"
-FX_ministers_cannot_be_replaced:0 "Ministers Cannot Be Replaced"
+can_replace_hog:0 "Can Replace Head of Government"
+ministers_cannot_be_replaced:0 "Ministers Cannot Be Replaced"
 
 FX_is_socialist_tt:0 "Has a Collectivist, Socialist or a Libertarian Socialist government."
 FX_is_socialist_tt_NOT:0 "Does §Rnot§! have a Collectivist, Socialist or a Libertarian Socialist government."
