@@ -1,0 +1,55 @@
+#force_to_transfer_our_core = {
+#		visible = {
+#			any_country = {
+#				is_in_faction_with = SIA 
+#				any_owned_state = {
+#					is_core_of = SIA
+#				}
+#			}
+#			has_country_flag = dev_debug
+#		}
+#		available = {
+#			any_country = {
+#				is_in_faction_with = SIA 
+#				any_owned_state = {
+#					is_core_of = SIA
+#				}
+#			}
+#		}
+#		cost = 50
+#		complete_effect = {
+#			SIA = {
+#				every_state = {
+#					limit = { 
+#						AND = {
+#							OR = {
+#								is_claimed_by = SIA
+#								is_core_of = SIA
+#							}
+#							NOT = { is_controlled_by = SIA }
+#						}
+#					}
+#					ROOT = { transfer_state = PREV }
+#				}
+#			}
+#		}
+#	}
+#install_tibet_regime = {
+#		visible = {
+#			any_owned_state = {
+#				is_core_of = TIB 
+#				is_controlled_by = SIA
+#			}
+#			has_country_flag = dev_debug
+#		}
+#		available = {
+#			TIB = { exists = no }
+#		}
+#		cost = 20
+#		complete_effect = {
+#			release_autonomy = {
+#				target = TIB
+#				autonomy_state = autonomy_puppet
+#			}
+#		}
+#	}

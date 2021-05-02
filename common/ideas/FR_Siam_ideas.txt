@@ -32,6 +32,16 @@ ideas = {
 				stability_factor = 0.1
 			}
 		}
+		pretender_crisis = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = { 
+				political_power_factor = -0.05
+				stability_factor = -0.05
+				custom_modifier_tooltip = SIA_pretender_crisis_tt
+			}
+		}
 		red_unrest = {
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }

@@ -91,6 +91,7 @@ add_ideas = {
 	SIA_phraya_udomphong_phensawat_sec_socdem
 	SIA_luang_chamnannitikaset_int_socdem
 	
+	pretender_crisis
 	foreign_company_investment
 	parliament_with_officers
 	stable_bureaucrat

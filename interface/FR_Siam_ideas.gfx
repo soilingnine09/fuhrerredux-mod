@@ -11,6 +11,10 @@ spriteTypes = {
 		name = "GFX_idea_stable_bureaucrat"
 		texturefile = "gfx/interface/ideas/SIA/company/stable_bureaucrat.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_pretender_crisis"
+		texturefile = "gfx/interface/ideas/SIA/GFX_Pretender_Crisis_Siam.dds"
+	}
 	##Economic
 	spriteType = {
 		name = "GFX_idea_black_wednesday"
