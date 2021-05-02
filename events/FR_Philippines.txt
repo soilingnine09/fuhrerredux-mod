@@ -1083,25 +1083,20 @@ country_event = {
         custom_effect_tooltip = PHI_communist_revolt_effect
         hidden_effect = {
 
-            release = PHR
             PHR = {
-                set_cosmetic_tag = PHR_uprising
-                load_oob = "PHR_revolt" 
-
                 add_state_core = 327
                 transfer_state = 327
                 declare_war_on = {
                     type = annex_everything
                     target = PHI
                 }
+
+                load_oob = PHR_revolt
             }
 
             news_event = { id = news.13 days = 1 }
-            
-            remove_state_core = 327
-            add_state_claim = 327
             set_capital = 623
-            load_oob = "PHI_civil_war"
+            load_oob = PHI_civil_war
         }
     }
 }
@@ -2318,21 +2313,13 @@ country_event = {
 
     is_triggered_only = yes
 
-    immediate = {
-        hidden_effect = {
-            every_state = {
-                limit = { is_core_of = SRP }
-
-                add_core_of = PHI
-                remove_core_of = SRP
-            }
-        }
-    }
-
     option = {
         name = phi.49.a
 
         327 = {
+            remove_core_of = PHR
+            add_core_of = PHI
+            
             damage_building = {
                 type = infrastructure
                 damage = 2
@@ -2633,16 +2620,16 @@ country_event = {
 
 # 1940 Liberal Nominees
 country_event = {
-    id = phi.59
-    title = phi.59.t
-    desc = phi.59.d
+    id = phi.58
+    title = phi.58.t
+    desc = phi.58.d
     picture = GFX_report_event_generic_sign_treaty3
 
     is_triggered_only = yes
 
     # Roxas
     option = {
-        name = phi.59.a
+        name = phi.58.a
         add_popularity = {
             ideology = market_liberal
             popularity = 0.05
@@ -2654,7 +2641,7 @@ country_event = {
     }
 
     option = {
-        name = phi.59.b
+        name = phi.58.b
         add_popularity = {
             ideology = social_liberal
             popularity = 0.05
@@ -2685,7 +2672,7 @@ country_event = {
     }
 
     option = {
-        name = phi.59.c
+        name = phi.58.c
         add_popularity = {
             ideology = market_liberal
             popularity = 0.05

@@ -3,6 +3,7 @@
 ### Politics
 POLITICS_LEADER:0 "§THead of State: $LEADER|H$§!"
 POLITICS_NEXT_ELECTION:0 "Election: $DATE|H$"
+POLITICS_NOELECTIONS:0 "No Elections"
 
 ### Triggers
 can_replace_hog:0 "Can Replace Head of Government"

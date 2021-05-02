@@ -3,9 +3,7 @@ ideas = {
 
         PHR_the_second_revolution = {
             allowed = { original_tag = PHR }
-
             picture = generic_victors_of_ww1
-
             modifier = {
                 recruitable_population_factor = 0.1
                 army_core_attack_factor = 0.05
@@ -15,9 +13,7 @@ ideas = {
 
         PHR_political_factionism = {
             allowed = { original_tag = PHR }
-
             picture = UK_politics_syn_idea
-
             modifier = {
                 political_power_gain = -0.25
                 stability_factor = -0.15
@@ -27,9 +23,7 @@ ideas = {
 
         PHR_no_proper_army = {
             allowed = { original_tag = PHR }
-
             picture = MEX_revolutionary_army
-
             modifier = {
                 army_org_factor = -0.15
                 planning_speed = -0.25
