@@ -18,6 +18,14 @@ spriteTypes = {
         texturefile = "gfx/interface/ministers/PHI/PHI_Juan_Sumulong.dds"
     }
     spriteType = {
+        name = "GFX_idea_PHI_Lope_K_Santos_hog_sde"
+        texturefile = ""
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Juan_Feleo_hog_sde"
+        texturefile = ""
+    }
+    spriteType = {
         name = "GFX_idea_PHI_Elpidio_Quirino_hog_sli"
         texturefile = "gfx/interface/ministers/PHI/PHI_Elpidio_Quirino.dds"
     }
@@ -26,12 +34,24 @@ spriteTypes = {
         texturefile = "gfx/interface/ministers/PHI/PHI_Manuel_Roxas.dds"
     }
     spriteType = {
+        name = "GFX_idea_PHI_J_Antonio_Araneta_hog_mli"
+        texturefile = ""
+    }
+    spriteType = {
         name = "GFX_idea_PHI_Manuel_Quezon_hog_sco"
         texturefile = "gfx/interface/ministers/PHI/PHI_Manuel_Quezon.dds"
     }
     spriteType = {
         name = "GFX_idea_PHI_Sergio_P_Osmena_hog_sco"
         texturefile = "gfx/interface/ministers/PHI/PHI_Sergio_Osmena.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Eulogio_Rodriguez_Sr_hog_sco"
+        texturefile = ""
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Gregorio_Aglipay_hog_sco"
+        texturefile = ""
     }
     spriteType = {
         name = "GFX_idea_PHI_Jose_P_Laurel_hog_ade"

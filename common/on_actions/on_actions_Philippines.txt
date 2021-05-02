@@ -1,9 +1,27 @@
 on_actions = {
+    on_startup = {
+        effect = {
+            if = {
+                limit = { tag = PHI }
+                country_event = phi.0
+            }
+        }
+    }
+
+    on_new_term_election = {
+        effect = {
+            if = {
+                limit = { tag = PHI }
+                country_event = phi.5
+                country_event = phi.60
+            }
+        }
+    }
 
     on_capitulation = {
         effect = {
             if = {
-                limit = { 
+                limit = {
                     ROOT = { tag = FIC }
                     FROM = {
                         OR = {
@@ -13,6 +31,7 @@ on_actions = {
                         }
                     }
                 }
+
                 every_country = {
                     limit = {
                         is_in_faction_with = ROOT
@@ -33,29 +52,21 @@ on_actions = {
             if = {
                 limit = {
                     FROM = { tag = PHI }
-                    ROOT = {
-                        has_full_control_of_state = 327
-                        has_war = no
-                    }
+                    ROOT = { tag = PHR }
                 }
-                ROOT = { country_event = { annex.10 days = 1 } }
-            }
-
-            if = { 
-                limit = { 
-                    ROOT = { tag = SRP }
-                    FROM = { tag = PHI }
-                } 
-                ROOT = { country_event = { id = srp.1 days = 2 } }
+                ROOT = {
+                    country_event = { id = phr.1 days = 2 }
+                }
             }
 
             if = {
                 limit = {
+                    FROM = { tag = PHR }
                     ROOT = { tag = PHI }
-                    FROM = { tag = SRP }
                 }
-                
-                ROOT = { country_event = { id = phi.49 days = 2 } }
+                ROOT = {
+                    country_event = { id = phi.49 days = 2 }
+                }
             }
         }
     }

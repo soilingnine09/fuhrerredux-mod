@@ -686,6 +686,26 @@ ideas = {
                 hog_pragmatic_statesman
             }
         }
+        PHI_Lope_K_Santos_hog_sde = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                social_democrat
+                hog_state_secularist
+            }
+        }
+        PHI_Juan_Feleo_hog_sde = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                social_democrat
+                hog_determined_populist
+            }
+        }
         PHI_Elpidio_Quirino_hog_sli = {
             allowed = { original_tag = PHI }
             available = { can_replace_hog = no }
@@ -703,7 +723,17 @@ ideas = {
             traits = {
                 head_of_government
                 market_liberal
-                hog_corporate_suit
+                hog_backroom_backstabber
+            }
+        }
+        PHI_J_Antonio_Araneta_hog_mli = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                market_liberal
+                hog_smiling_oilman
             }
         }
         PHI_Manuel_Quezon_hog_sco = {
@@ -724,6 +754,26 @@ ideas = {
                 head_of_government
                 social_conservative
                 hog_naive_optimist
+            }
+        }
+        PHI_Eulogio_Rodriguez_Sr_hog_sco = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                social_conservative
+                hog_corporate_suit
+            }
+        }
+        PHI_Gregorio_Aglipay_hog_sco = {
+            allowed = { original_tag = PHI }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                social_conservative
+                hog_spiritual_leader
             }
         }
         PHI_Jose_P_Laurel_hog_ade = {

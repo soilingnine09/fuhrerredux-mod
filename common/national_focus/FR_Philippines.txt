@@ -29,7 +29,7 @@ focus_tree = {
         cost = 0
         available_if_capitulated = yes
         available = { 
-            has_democratic_government = yes
+            has_elected_government = yes
         }
         completion_reward = {}
     }
@@ -49,7 +49,7 @@ focus_tree = {
             custom_trigger_tooltip = {
                 tooltip = unlocked_later
                 has_country_flag = PHI_LIBERAL_ELECTION_VICTORY
-                has_government = market_liberal
+                has_elected_government = yes
             }
         }
         mutually_exclusive = {
@@ -68,7 +68,7 @@ focus_tree = {
         y = 1
         cost = 10
         available_if_capitulated = yes
-        available = { has_government = market_liberal }
+        available = { has_elected_government = yes }
         prerequisite = { focus = PHI_liberal_victory }
         relative_position_id = PHI_liberal_victory
         completion_reward = {
@@ -84,7 +84,7 @@ focus_tree = {
         y = 1
         cost = 10
         available_if_capitulated = yes
-        available = { has_government = social_democrat }
+        available = { has_elected_government = yes }
         prerequisite = { focus = PHI_helping_the_poor }
         relative_position_id = PHI_helping_the_poor
         completion_reward = {
@@ -107,7 +107,7 @@ focus_tree = {
         y = 1
         cost = 10
         available_if_capitulated = yes
-        available = { has_government = social_democrat }
+        available = { has_elected_government = yes }
         prerequisite = { focus = PHI_cooperate_with_trade_unions }
         relative_position_id = PHI_cooperate_with_trade_unions
         completion_reward = {
@@ -125,7 +125,7 @@ focus_tree = {
         x = 1
         y = 1
         cost = 5
-        available = { has_government = social_democrat }
+        available = { has_elected_government = yes }
         prerequisite = { focus = PHI_social_welfare_programs }
         prerequisite = { focus = PHI_cwts_focus }
         relative_position_id = PHI_social_welfare_programs
@@ -143,7 +143,7 @@ focus_tree = {
         cost = 10
         available_if_capitulated = yes
         available = {
-            has_government = market_liberal
+            has_elected_government = yes
         }
         prerequisite = {  focus = PHI_liberal_victory }
         relative_position_id = PHI_liberal_victory
@@ -175,7 +175,7 @@ focus_tree = {
         cost = 10
         available_if_capitulated = yes        
         available = {
-            has_government = market_liberal
+            has_elected_government = yes
         }
         prerequisite = { focus = PHI_negotiate_with_the_radicals }
         relative_position_id = PHI_negotiate_with_the_radicals
@@ -199,7 +199,7 @@ focus_tree = {
         cost = 10
         available_if_capitulated = yes
         available = {
-            has_government = market_liberal
+            has_elected_government = yes
         }
         prerequisite = { focus = PHI_new_universities }
         relative_position_id = PHI_new_universities
@@ -216,10 +216,7 @@ focus_tree = {
         y = 2
         cost = 10
         available = { 
-            OR = {
-                has_government = market_liberal
-                has_government = social_conservative
-            }
+            has_elected_government = yes
         }
         prerequisite = { 
             focus = PHI_liberal_victory 
@@ -253,10 +250,7 @@ focus_tree = {
         y = 4
         cost = 10
         available = { 
-            OR = {
-                has_government = market_liberal
-                has_government = social_conservative
-            }
+            has_elected_government = yes
         }
         prerequisite = { focus = PHI_the_philippine_constabulary }
         completion_reward = {
@@ -305,7 +299,7 @@ focus_tree = {
             custom_trigger_tooltip = {
                 tooltip = unlocked_later
                 has_country_flag = PHI_NACIONALISTA_ELECTION_VICTORY
-                has_government = social_conservative
+                has_elected_government = yes
             }
         }
         mutually_exclusive = {
@@ -325,7 +319,7 @@ focus_tree = {
         cost = 10
         available_if_capitulated = yes
         available = {
-            has_government = social_conservative
+            has_elected_government = yes
         }
         prerequisite = {
             focus = PHI_nacionalista_victory
@@ -345,7 +339,7 @@ focus_tree = {
         cost = 10
         available_if_capitulated = yes
         available = {
-            has_government = social_conservative
+            has_elected_government = yes
         }
         prerequisite = { focus = PHI_establish_intelligence_service }
         relative_position_id = PHI_establish_intelligence_service
@@ -377,7 +371,7 @@ focus_tree = {
         y = 1
         cost = 10
         available = {
-            has_government = social_conservative
+            has_elected_government = yes
         }
         available_if_capitulated = yes
         prerequisite = { focus = PHI_education_reform }
@@ -395,7 +389,7 @@ focus_tree = {
         y = 1
         cost = 10
         available_if_capitulated = yes
-        available = { has_government = social_conservative }
+        available = { has_elected_government = yes }
         prerequisite = { focus = PHI_nacionalista_victory }
         relative_position_id = PHI_nacionalista_victory
         completion_reward = {
@@ -428,7 +422,7 @@ focus_tree = {
         y = 1
         cost = 10
         available_if_capitulated = yes
-        available = { has_government = social_conservative }
+        available = { has_elected_government = yes }
         prerequisite = { focus = PHI_root_out_communists }
         relative_position_id = PHI_root_out_communists
         completion_reward = {
@@ -451,7 +445,7 @@ focus_tree = {
         y = 1
         cost = 10
         available_if_capitulated = yes
-        available = { has_government = social_conservative }
+        available = { has_elected_government = yes }
         prerequisite = { focus = PHI_agreement_with_the_unions }
         relative_position_id = PHI_agreement_with_the_unions
         completion_reward = {
@@ -473,7 +467,7 @@ focus_tree = {
         y = 1
         cost = 5
         available_if_capitulated = yes
-        available = { has_government = social_conservative }
+        available = { has_elected_government = yes }
         prerequisite = { focus = PHI_seek_foreign_investors }
         prerequisite = { focus = PHI_rotc_focus }
         relative_position_id = PHI_seek_foreign_investors
@@ -2428,6 +2422,7 @@ focus_tree = {
         prerequisite = { focus = PHI_burmese_independence }
         completion_reward = {
             add_ideas = PHI_aeda_member
+            unlock_decision_category_tooltip = PHI_aeda_decisions
             hidden_effect = {
                 news_event = { id = news.8 }
             }

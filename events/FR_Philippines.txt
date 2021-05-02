@@ -128,6 +128,19 @@ country_event = {
     }
 }
 
+# Intro Event
+country_event = {
+    id = phi.0
+    title = phi.0.t
+    desc = phi.0.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = phi.0.a
+    }
+}
+
 # Refugees from Germany
 country_event = {
     id = phi.1
@@ -308,10 +321,14 @@ country_event = {
     desc = phi.5.d
     picture = GFX_report_event_election_vote
 
+    fire_only_once = yes
+    is_triggered_only = yes
+
     trigger = {
-        original_tag = PHI
-        date > 1936.11.15
         has_elections = yes
+        NOT = {
+            has_country_flag = PHI_had_1936_elections
+        }
     }
 
     immediate = {
@@ -343,6 +360,7 @@ country_event = {
             PHI_Tirano_Craveza_sec_sco
         }
         hidden_effect = {
+            set_country_flag = PHI_had_1936_elections
             set_country_flag = PHI_nacionalista_victory_tt
             news_event = news.1
         }
@@ -369,6 +387,7 @@ country_event = {
         }
 
         hidden_effect = {
+            set_country_flag = PHI_had_1936_elections
             set_country_flag = PHI_liberal_victory_tt
             news_event = news.2
         }
@@ -395,6 +414,7 @@ country_event = {
         }
 
         hidden_effect = {
+            set_country_flag = PHI_had_1936_elections
             set_country_flag = PHI_sakdalista_victory_tt
             news_event = news.4
         }
@@ -2537,6 +2557,229 @@ country_event = {
                 ideology = social_liberal
                 name = PHI_new_liberal_party
                 long_name = PHI_new_liberal_party_long
+            }
+        }
+    }
+}
+
+# 1940 Nacionalista Nominees
+country_event = {
+    id = phi.57
+    title = phi.57.t
+    desc = phi.57.d
+    picture = GFX_report_event_generic_sign_treaty3
+
+    is_triggered_only = yes
+
+    # Quezon
+    option = {
+        name = phi.57.a
+        add_popularity = {
+            ideology = social_conservative
+            popularity = 0.05
+        }
+        
+        hidden_effect = {
+            set_country_flag = PHI_quezon_inaugurated
+        }
+    }
+
+    # Osmena
+    option = {
+        name = phi.57.b
+        add_popularity = {
+            ideology = social_conservative
+            popularity = 0.05
+        }
+
+        hidden_effect = {
+            kill_ideology_leader = social_conservative
+            set_country_flag = PHI_osmena_inaugurated
+
+            create_country_leader = {
+                name = "Sergio P. Osmeña"
+                desc = "POLITICS_SERGIO_P_OSMENA_DESC"
+                picture = "gfx/leaders/PHI/Portrait_Philippines_Sergio_Osmena.tga"
+                expire = "1964.2.6"
+                ideology = social_conservative_subtype
+                traits = { silent_workhorse }
+            } 
+        }
+    }
+
+    # Rodriguez
+    option = {
+        name = phi.57.c
+        add_popularity = {
+            ideology = social_conservative
+            popularity = 0.05
+        }
+
+        hidden_effect = {
+            kill_ideology_leader = social_conservative
+            set_country_flag = PHI_rodriguez_inaugurated
+
+            create_country_leader = {
+                name = "Eulogio Rodriguez Sr."
+                desc = "POLITICS_EULOGIO_RODRIGUEZ_SR_DESC"
+                picture = "gfx/leaders/PHI/Portrait_Philippines_Eulogio_Rodriguez_Sr.tga"
+                expire = "1964.2.6"
+                ideology = social_conservative_subtype
+                traits = { silent_workhorse }
+            } 
+        }
+    }
+}
+
+# 1940 Liberal Nominees
+country_event = {
+    id = phi.59
+    title = phi.59.t
+    desc = phi.59.d
+    picture = GFX_report_event_generic_sign_treaty3
+
+    is_triggered_only = yes
+
+    # Roxas
+    option = {
+        name = phi.59.a
+        add_popularity = {
+            ideology = market_liberal
+            popularity = 0.05
+        }
+
+        hidden_effect = {
+            set_country_flag = PHI_roxas_inaugurated
+        }
+    }
+
+    option = {
+        name = phi.59.b
+        add_popularity = {
+            ideology = social_liberal
+            popularity = 0.05
+        }
+
+        hidden_effect = {
+            kill_ideology_leader = market_liberal
+            kill_ideology_leader = social_liberal
+            set_country_flag = PHI_quirino_inaugurated
+            
+            create_country_leader = {
+                name = "Elpidio Quirino"
+                desc = "POLITICS_ELPIDIO_QUIRINO_DESC"
+                picture = "gfx/leaders/PHI/Portrait_Philippines_Elpidio_Quirino.tga"
+                expire = "1964.2.6"
+                ideology = market_liberal_subtype
+                traits = { silent_workhorse }
+            }
+            create_country_leader = {
+                name = "Elpidio Quirino"
+                desc = "POLITICS_ELPIDIO_QUIRINO_DESC"
+                picture = "gfx/leaders/PHI/Portrait_Philippines_Elpidio_Quirino.tga"
+                expire = "1964.2.6"
+                ideology = social_liberal_subtype
+                traits = { silent_workhorse }
+            }  
+        }
+    }
+
+    option = {
+        name = phi.59.c
+        add_popularity = {
+            ideology = market_liberal
+            popularity = 0.05
+        }
+
+        hidden_effect = {
+            kill_ideology_leader = market_liberal
+            kill_ideology_leader = social_liberal
+            set_country_flag = PHI_araneta_inaugurated
+            
+            create_country_leader = {
+                name = "J. Antonio Araneta"
+                desc = "POLITICS_J_ANTONIO_ARANETA_DESC"
+                picture = "gfx/leaders/PHI/Portrait_Philippines_J_Antonio_Araneta.tga"
+                expire = "1964.2.6"
+                ideology = market_liberal_subtype
+                traits = { silent_workhorse }
+            }
+            create_country_leader = {
+                name = "J. Antonio Araneta"
+                desc = "POLITICS_J_ANTONIO_ARANETA_DESC"
+                picture = "gfx/leaders/PHI/Portrait_Philippines_J_Antonio_Araneta.tga"
+                expire = "1964.2.6"
+                ideology = social_liberal_subtype
+                traits = { silent_workhorse }
+            }
+        }
+    }
+}
+
+# 1940 Democrata Nominations
+country_event = {
+    id = phi.59
+    title = phi.59.t
+    desc = phi.59.d
+    picture = GFX_report_event_hitler_handshake
+
+    is_triggered_only = yes
+
+    # Sumulong
+    option = {
+        name = phi.59.a
+        add_popularity = {
+            ideology = social_democrat
+            popularity = 0.05
+        }
+
+        hidden_effect = {
+            set_country_flag = PHI_sumulong_inaugurated
+        }
+    }
+
+    # Santos
+    option = {
+        name = phi.59.b
+        add_popularity = {
+            ideology = social_democrat
+            popularity = 0.05
+        }
+
+        hidden_effect = {
+            set_country_flag = PHI_santos_inaugurated
+            kill_ideology_leader = social_democrat
+
+            create_country_leader = {
+                name = "Lope K. Santos"
+                desc = "POLITICS_LOPE_K_SANTOS_DESC"
+                picture = "gfx/leaders/PHI/Portrait_Philippines_Lope_K_Santos.tga"
+                expire = "1964.2.6"
+                ideology = social_democrat_subtype
+                traits = { }
+            }
+        }
+    }
+
+    # Feleo
+    option = {
+        name = phi.59.c
+        add_popularity = {
+            ideology = social_democrat
+            popularity = 0.05
+        }
+
+        hidden_effect = {
+            set_country_flag = PHI_feleo_inaugurated
+            kill_ideology_leader = social_democrat
+
+            create_country_leader = {
+                name = "Juan Feleo"
+                desc = "POLITICS_JUAN_FELEO_DESC"
+                picture = "gfx/leaders/PHI/Portrait_Philippines_Juan_Feleo.tga"
+                expire = "1964.2.6"
+                ideology = social_democrat_subtype
+                traits = { }
             }
         }
     }

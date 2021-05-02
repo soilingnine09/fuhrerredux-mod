@@ -10,6 +10,8 @@ ministers_cannot_be_replaced:0 "Ministers Cannot Be Replaced"
 
 FX_is_socialist_tt:0 "Has a Collectivist, Socialist or a Libertarian Socialist government."
 FX_is_socialist_tt_NOT:0 "Does §Rnot§! have a Collectivist, Socialist or a Libertarian Socialist government."
+FX_is_elected_tt:0 "Has a democratic-elected government."
+FX_is_elected_tt_NOT:0 "Does §Rnot§! have a democratic-elected government."
 FX_is_democratic_tt:0 "Has a democratic government."
 FX_is_democratic_tt_NOT:0 "Does §Rnot§! have a democratic government."
 FX_is_authoritarian_tt:0 "Has an authoritarian and reactionary government."
