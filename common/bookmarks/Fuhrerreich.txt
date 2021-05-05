@@ -4,7 +4,7 @@ bookmarks = {
 		desc = "FUHRERREICH_DESC"
 		date = 1936.1.1.1
 		picture = "GFX_select_date_1936"
-		default_country = "SIA"
+		default_country = "USA"
 		default = yes
 
 		"USA"={
@@ -162,19 +162,6 @@ bookmarks = {
 				MAN_problems_with_industry
 			}
 		}
-		#"BRA"={
-		#	minor = yes
-		#	history = "BRA_FUHRERREICH_DESC"
-		#	ideology = market_liberal
-		#	ideas = {
-		#		BRA_political_instability
-		#	}
-		#	focuses = {
-		#		BRA_civil_war
-		#		BRA_standing_for_the_union
-		#		BRA_our_republic_reborn
-		#	}
-		#}
 
 
 		effect = {
