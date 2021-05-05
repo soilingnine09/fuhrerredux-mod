@@ -569,16 +569,14 @@ focus_tree = {
         cost = 10
         prerequisite = { focus = PHI_department_of_finance_focus }
         completion_reward = {
-            add_ideas = PHI_science_department
-
             custom_effect_tooltip = available_designer
 			show_ideas_tooltip = PHI_DOST_designer
         }
     }
 
-    # Establish PAG-ASA
+    # Increase Research
     focus = {
-        id = PHI_establish_pag_asa
+        id = PHI_increase_research
         icon = GFX_goal_machine
         x = 12
         y = 3
@@ -596,7 +594,7 @@ focus_tree = {
         x = 12
         y = 4
         cost = 10
-        prerequisite = { focus = PHI_establish_pag_asa }
+        prerequisite = { focus = PHI_increase_research }
         completion_reward = {
             add_research_slot = 1
         }
@@ -2137,83 +2135,91 @@ focus_tree = {
         }
     }
 
-    # Soviet Trade Deal
+
+    # Invite Siam
     focus = {
-        id = PHI_soviet_trade_deal
-        icon = GFX_focus_chi_mission_to_the_soviet_union
-        x = 7
-        y = 10
-        cost = 2
-        available_if_capitulated = yes
+        id = PHI_invite_siam
+        icon = GFX_goal_flag_siam
+        x = -2
+        y = 1
+        cost = 7
         available = {
-            is_subject = no
-            is_faction_leader = yes
+            SIA = {
+                exists = yes
+                NOT = { has_war_with = ROOT }
+                is_in_faction = no
+            }
+        }
+        bypass = {
+            SIA = {
+                OR = {
+                    is_in_faction_with = ROOT
+                    is_subject_of = ROOT
+                }
+            }
         }
         prerequisite = { focus = PHI_no_more_colonialism }
+        relative_position_id = PHI_no_more_colonialism
         completion_reward = {
-            SOV = {
-                add_opinion_modifier = {
-                    target = PHI
-                    modifier = PHI_diplomatic_mission
-                }
-                country_event = { id = phi.33 }
+            activate_targeted_decision = {
+                target = SIA
+                decision = PHI_invite_country
+            }
+            hidden_effect = {
+                SIA = { set_country_flag = PHI_can_invite }
             }
         }
     }
 
-    # Soviet Equipment
+    # Invite Insulindia
     focus = {
-        id = PHI_soviet_equipment
-        icon = GFX_goal_RUS_armored_school
-        x = 6
-        y = 12
-        cost = 5
-        available_if_capitulated = yes
-        available = { 
-            SOV = {
-                custom_trigger_tooltip = {
-                    tooltip = PHI_trade_treaty_tt
-                    has_country_flag = PHI_trade_treaty_tt
+        id = PHI_invite_insulindia
+        icon = GFX_focus_chi_cooperation_with_the_nationalists
+        x = 2
+        y = 1
+        cost = 7
+        available = {
+            INS = {
+                exists = yes
+                NOT = { has_war_with = ROOT }
+                is_in_faction = no
+            }
+        }
+        bypass = {
+            INS = {
+                OR = {
+                    is_in_faction_with = ROOT
+                    is_subject_of = ROOT
                 }
             }
         }
-        prerequisite = { focus = PHI_soviet_trade_deal }
+        prerequisite = { focus = PHI_no_more_colonialism }
+        relative_position_id = PHI_no_more_colonialism
         completion_reward = {
-            add_tech_bonus = {
-                bonus = 1.0
-                uses = 2
-                category = infantry_weapons
+            activate_targeted_decision = {
+                target = INS
+                decision = PHI_invite_country
             }
-            add_tech_bonus = {
-                bonus = 1.0
-                uses = 2
-                category = armor
+            hidden_effect = {
+                INS = { set_country_flag = PHI_can_invite }
             }
         }
     }
 
-    # Soviet Tactics
+    # Found AEDA
     focus = {
-        id = PHI_soviet_tactics
-        icon = GFX_goal_generic_small_arms
-        x = 8
-        y = 12
-        cost = 5
-        available_if_capitulated = yes
-        available = { 
-            SOV = {
-                custom_trigger_tooltip = {
-                    tooltip = PHI_trade_treaty_tt
-                    has_country_flag = PHI_trade_treaty_tt
-                }
-            } 
-        }
-        prerequisite = { focus = PHI_soviet_trade_deal }
+        id = PHI_found_aeda
+        icon = GFX_goal_liberty
+        x = 0
+        y = 2
+        cost = 10
+        prerequisite = { focus = PHI_no_more_colonialism }
+        relative_position_id = PHI_no_more_colonialism
         completion_reward = {
-            add_tech_bonus = {
-                bonus = 1.0
-                uses = 2
-                category = land_doctrine
+            country_event = seasia.1
+            unlock_decision_category_tooltip = PHI_aeda_decisions
+            hidden_effect = {
+                news_event = { id = news.8 }
             }
         }
     }
@@ -2222,17 +2228,15 @@ focus_tree = {
     focus = {
         id = PHI_demand_british_colonial_holdings
         icon = GFX_goal_generic_more_territorial_claims
-        x = 5
-        y = 13
+        x = -2
+        y = 1
         cost = 5
         available_if_capitulated = no
         will_lead_to_war_with = ENG 
         prerequisite = { 
-            focus = PHI_soviet_tactics
+            focus = PHI_found_aeda
         }
-        prerequisite = {
-            focus = PHI_soviet_equipment
-        }
+        relative_position_id = PHI_found_aeda
         completion_reward = {
             add_manpower = 10000
             add_equipment_to_stockpile = {
@@ -2250,8 +2254,8 @@ focus_tree = {
     focus = {
         id = PHI_malayan_independence
         icon = GFX_goal_generic_improve_relations
-        x = 4
-        y = 14
+        x = -1
+        y = 1
         cost = 3
         available_if_capitulated = no
         available = {
@@ -2262,8 +2266,9 @@ focus_tree = {
             has_full_control_of_state = 333
             has_full_control_of_state = 944
         }
-        bypass = { MAL = { exists = yes } }
+        bypass = { country_exists = MAL }
         prerequisite = { focus = PHI_demand_british_colonial_holdings }
+        relative_position_id = PHI_demand_british_colonial_holdings
         completion_reward = {
            country_event = { id = annex.5 }
         }
@@ -2273,8 +2278,8 @@ focus_tree = {
     focus = {
         id = PHI_indonesian_independence
         icon = GFX_goal_generic_improve_relations
-        x = 5
-        y = 15
+        x = 0
+        y = 2
         cost = 3
         available_if_capitulated = no
         available = {
@@ -2290,8 +2295,9 @@ focus_tree = {
             has_full_control_of_state = 823
             has_full_control_of_state = 667
         }
-        bypass = { INS = { exists = yes } }
+        bypass = { country_exists = INS }
         prerequisite = { focus = PHI_demand_british_colonial_holdings }
+        relative_position_id = PHI_demand_british_colonial_holdings
         completion_reward = {
             country_event = { id = annex.3 }
         }
@@ -2301,8 +2307,8 @@ focus_tree = {
     focus = {
         id = PHI_burmese_independence
         icon = GFX_goal_generic_improve_relations
-        x = 6
-        y = 14
+        x = 1
+        y = 1
         cost = 3
         available_if_capitulated = no
         available = {
@@ -2312,8 +2318,9 @@ focus_tree = {
             has_full_control_of_state = 805 
             has_full_control_of_state = 1007
         }
-        bypass = { BRM = { exists = yes } }
+        bypass = { country_exists = BRM }
         prerequisite = { focus = PHI_demand_british_colonial_holdings }
+        relative_position_id = PHI_demand_british_colonial_holdings
         completion_reward = {
             country_event = { id = annex.1 }
         }
@@ -2323,17 +2330,15 @@ focus_tree = {
     focus = {
         id = PHI_demand_french_colonial_holdings
         icon = GFX_goal_generic_more_territorial_claims
-        x = 9
-        y = 13
+        x = 2
+        y = 1
         cost = 5
         available_if_capitulated = no
         will_lead_to_war_with = FRA
         prerequisite = {
-            focus = PHI_soviet_tactics 
+            focus = PHI_found_aeda 
         }
-        prerequisite = {
-            focus = PHI_soviet_equipment
-        }
+        relative_position_id = PHI_found_aeda
         completion_reward = {
             add_manpower = 10000
             add_equipment_to_stockpile = {
@@ -2349,17 +2354,18 @@ focus_tree = {
     focus = {
         id = PHI_cambodian_independence
         icon = GFX_goal_generic_improve_relations
-        x = 8
-        y = 14
+        x = -1
+        y = 1
         cost = 3
         available_if_capitulated = no
-        bypass = { CAM = { exists = yes } }
         available = {
             has_full_control_of_state = 962
             has_full_control_of_state = 741
             has_full_control_of_state = 963
         }
+        bypass = { country_exists = CAM }
         prerequisite = { focus = PHI_demand_french_colonial_holdings }
+        relative_position_id = PHI_demand_french_colonial_holdings
         completion_reward = {
             country_event = { id = annex.2 }
         }
@@ -2369,8 +2375,8 @@ focus_tree = {
     focus = {
         id = PHI_vietnamese_independence
         icon = GFX_goal_generic_improve_relations
-        x = 9
-        y = 15
+        x = 0
+        y = 2
         cost = 3
         available_if_capitulated = no
         available = {
@@ -2380,8 +2386,9 @@ focus_tree = {
             has_full_control_of_state = 958
             has_full_control_of_state = 1009
         }
-        bypass = { VIN = { exists = yes } }
+        bypass = { country_exists = VIN }
         prerequisite = { focus = PHI_demand_french_colonial_holdings }
+        relative_position_id = PHI_demand_french_colonial_holdings
         completion_reward = {
             country_event = { id = annex.6 }
         }
@@ -2391,8 +2398,8 @@ focus_tree = {
     focus = {
         id = PHI_lao_independence
         icon = GFX_goal_generic_improve_relations
-        x = 10
-        y = 14
+        x = 1
+        y = 1
         cost = 3
         available_if_capitulated = no
         available = {
@@ -2400,32 +2407,11 @@ focus_tree = {
             has_full_control_of_state = 960
             has_full_control_of_state = 670
         }
-        bypass = { LAO = { exists = yes } }
+        bypass = { country_exists = LAO }
         prerequisite = { focus = PHI_demand_french_colonial_holdings }
+        relative_position_id = PHI_demand_french_colonial_holdings
         completion_reward = {
             country_event = { id = annex.4 }
-        }
-    }
-
-    # Found AEDA
-    focus = {
-        id = PHI_found_aeda
-        icon = GFX_goal_liberty
-        x = 7
-        y = 16
-        cost = 10
-        prerequisite = { focus = PHI_cambodian_independence }
-        prerequisite = { focus = PHI_vietnamese_independence }
-        prerequisite = { focus = PHI_lao_independence }
-        prerequisite = { focus = PHI_indonesian_independence }
-        prerequisite = { focus = PHI_malayan_independence }
-        prerequisite = { focus = PHI_burmese_independence }
-        completion_reward = {
-            add_ideas = PHI_aeda_member
-            unlock_decision_category_tooltip = PHI_aeda_decisions
-            hidden_effect = {
-                news_event = { id = news.8 }
-            }
         }
     }
 
@@ -3662,7 +3648,6 @@ focus_tree = {
         available = { has_government = valkist }
         prerequisite = { focus = PHI_begin_cultural_rehabilitation }
         completion_reward = {
-            remove_ideas = PHI_thirst_for_democracy
             add_popularity = {
                 ideology = valkist
                 popularity = 0.1

@@ -22,10 +22,11 @@ add_ideas = {
 	PHR_the_second_revolution
 	revolutionary_movement
 
-	GEN_HOG_Lis
-	GEN_FOR_Lis
-	GEN_ECO_Lis
-	GEN_SEC_Lis
+	PHI_Crisanto_Evangelista_hog_lib
+	PHI_Casto_Alejandrino_for_col
+	PHI_Herminegildo_Cruz_eco_col
+	PHI_Guillermo_Capadocia_sec_col
+	PHI_Luis_Taruc_int_col
 }
 
 set_convoys = 10

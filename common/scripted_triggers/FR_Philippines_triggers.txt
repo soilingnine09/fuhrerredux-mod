@@ -1,16 +1,56 @@
 
-PHI_is_south_east_asian_tag = {
+is_a_filipino_tag = {
+    OR = {
+        original_tag = PHI
+        original_tag = PHR
+    }
+}
+
+PHI_is_in_south_east_asia = {
+    OR = {
+        tag = PHI
+        tag = INS
+        tag = SIA
+        tag = VIN
+        tag = LAO
+        tag = CAM
+        tag = BRM
+        tag = MAL
+    }
+}
+
+PHI_has_trade_with_britain = {
     custom_trigger_tooltip = {
-        tooltip = PHI_is_south_east_asian_tag_tt
-        OR = {
-            tag = PHI
-            tag = SIA
-            tag = INS
-            tag = VIN
-            tag = LAO
-            tag = CAM
-            tag = MAL
-            tag = BRM
+        tooltip = PHI_has_trade_with_britain_tt
+        ENG = {
+            has_country_flag = PHI_trade_treaty_tt
+        }
+    }
+}
+
+PHI_has_trade_with_united_states = {
+    custom_trigger_tooltip = {
+        tooltip = PHI_has_trade_with_united_states_tt
+        USA = {
+            has_country_flag = PHI_trade_treaty_tt
+        }
+    }
+}
+
+PHI_has_trade_with_germany = {
+    custom_trigger_tooltip = {
+        tooltip = PHI_has_trade_with_germany_tt
+        GER = {
+            has_country_flag = PHI_trade_treaty_tt
+        }
+    }
+}
+
+PHI_has_trade_with_japan = {
+    custom_trigger_tooltip = {
+        tooltip = PHI_has_trade_with_japan_tt
+        JAP = {
+            has_country_flag = PHI_trade_treaty_tt
         }
     }
 }

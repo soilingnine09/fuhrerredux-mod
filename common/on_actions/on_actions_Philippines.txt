@@ -1,9 +1,14 @@
 on_actions = {
     on_startup = {
         effect = {
-            if = {
-                limit = { tag = PHI }
-                country_event = phi.0
+            random_country = {
+                if = {
+                    limit = { tag = PHI }
+                    country_event = {
+                        id = phi.0
+                        days = 2
+                    }
+                }
             }
         }
     }

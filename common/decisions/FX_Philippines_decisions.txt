@@ -1,7 +1,7 @@
 # Philippine Decisions
 # created by: dax0102
 
-foreign_support = {
+foreign_politics = {
     PHI_support_foreign_crusades = {
         icon = GFX_decision_hol_war_on_pacifism
         fire_only_once = yes
@@ -35,9 +35,7 @@ foreign_support = {
             FROM = { country_event = phi.52 } 
         }
     }
-}
 
-foreign_politics = {
     PHI_propose_whitepeace = {
         icon = GFX_decision_hol_war_on_pacifism
         
@@ -82,17 +80,22 @@ foreign_politics = {
     }
 }
 
-PHI_seato = {
+PHI_seato_decisions = {
     PHI_invite_country = {
         target_trigger = {
             FROM = {
-                PHI_is_south_east_asian_tag = yes
+                PHI_is_in_south_east_asia = yes
             }
         }
 
         visible = {
             country_exists = FROM
             NOT = { is_in_faction_with = FROM }
+
+            if = {
+                limit = { FROM = SIA }
+                SIA = { set_country_flag = PHI_can_invite }
+            }
         }
 
         available = {
@@ -221,89 +224,165 @@ PHI_state_fundings = {
 }
 
 PHI_aeda_decisions = {
-    PHI_join_aeda = {
-        allowed = {
-            PHI_is_south_east_asian_tag = yes
-        }
+    PHI_invite_into_aeda = {
+        icon = generic_agreement
+        priority = 5
+        cost = 0
+        fire_only_once = no
 
-        visible = { 
-            NOT = { original_tag = PHI }
-            PHI = { has_completed_focus = PHI_found_aeda } 
+        target_root_trigger = {
+            has_idea = PHI_aeda_main
         }
-
-        available = {
-            NOT = {
-                OR = {
-                    has_government = vanguardist
-                    has_government = collectivist
-                    has_government = liberatarian_socialist
-                }
-                OR = {
-                    has_idea = export_focus
-                    has_idea = free_trade
-                }
-            }
-
-            every_country = {
-                limit = { has_idea = PHI_aeda_member }
-                NOT = { has_war_with = ROOT }
-            }
-        }
-
-        complete_effect = {
-            PHI = { country_event = { id = aeda.1 } }
-        }
-    }
-    
-    PHI_leave_aeda = {
-        allowed = {
-            PHI_is_south_east_asian_tag = yes
-        }
-
-        visible = { 
-            has_idea = PHI_aeda_member
-            NOT = { original_tag = PHI }
-        }
-
-        complete_effect = {
-            remove_ideas = PHI_aeda_member
-            hidden_effect = {
-                news_event = { id = news.9 days = 1 }
-            }
-        }
-    }
-
-    PHI_invite_to_aeda = {
-        cost = 20
-        days_re_enable = 30
 
         target_trigger = {
             FROM = {
-                PHI_is_south_east_asian_tag = yes
-            }
-        }
-
-        allowed = {
-            original_tag = PHI
-        }
-
-        visible = {
-            FROM = {
-                NOT = { has_idea = PHI_aeda_member }
+                has_socialist_government = no
+                is_in_faction_with = ROOT
+                OR = {
+                    is_subject = no
+                    is_subject_of = ROOT
+                }
+                NOT = {
+                    tag = ROOT
+                    has_country_flag = PHI_invited_to_aeda
+                    has_country_flag = PHI_refused_aeda
+                }
             }
         }
 
         available = {
+            ROOT = {
+                has_capitulated = no
+                custom_trigger_tooltip = {
+                    tooltip = PHI_not_currently_inviting_tt
+                    NOT = {
+                        has_country_flag = { flag = PHI_inviting_to_aeda value > 0 }
+                    }
+                }
+            }
             FROM = {
-                exists = yes
-                is_subject = no
-                NOT = { has_war_with = ROOT }
+                has_capitulated = no
+            }
+        }
+
+        visible = {
+            has_idea = PHI_aeda_main
+            has_socialist_government = no
+            NOT = {
+                is_in_array = { global.aeda_members = FROM }
+            }
+            FROM = {
+                has_socialist_government = no
+                OR = {
+					is_subject = no
+					is_subject_of = ROOT
+				}
+				NOT = {
+					tag = ROOT
+					has_country_flag = PHI_invited_to_aeda
+					has_country_flag = PHI_refused_aeda
+				}
             }
         }
 
         complete_effect = {
+            clr_country_flag = PHI_inviting_to_aeda
+            set_country_flag = {
+                flag = PHI_inviting_to_aeda
+                days = 3
+                value = 1
+            }
             FROM = {
-                country_event = aeda.1
+                country_event = { id = seasia.2 days = 2 }
+            }
+        }
+    }
+
+    PHI_leave_aeda = {
+        icon = generic_civil_support
+        fire_only_once = yes
+
+        target_root_trigger = {
+            is_in_array = { global.aeda_members = ROOT }
+        }
+
+        target_trigger = {
+            FROM = {
+                has_idea = PHI_aeda_main
+                is_in_faction_with = ROOT
+            }
+        }
+
+        complete_effect = {
+            set_country_flag = PHI_refused_aeda
+            PHI_remove_from_aeda = yes
+        }
+    }
+
+    PHI_aeda_send_aid_home = {
+        icon = generic_industry
+
+        custom_cost_text = PHI_aeda_100pp
+        custom_cost_trigger = {
+            check_variable = {
+                var = global.aeda_pp
+                value = 100
+                compare = greater_than_or_equals
+            }
+        }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = PHI_aeda_invest_year
+                OR = {
+                    NOT = { has_country_flag = PHI_aeda_investment }
+                    has_country_flag = {
+                        flag = PHI_aeda_investment
+                        days > 364
+                    }
+                }
+            }
+        }
+        visible = {
+            has_idea = PHI_aeda_main
+        }
+
+        complete_effect = {
+            subtract_from_variable = { global.aeda_pp = 100 }
+            country_event = seasia.6
+        }
+    }
+
+    PHI_aeda_send_aid = {
+        icon = generic_industry
+
+        custom_cost_text = PHI_aeda_100pp
+        custom_cost_trigger = {
+            check_variable = {
+                var = global.aeda_pp
+                value = 100
+                compare = greater_than_or_equals
+            }
+        }
+
+        target_array = global.aeda_members
+
+        target_root_trigger = {
+            has_idea = PHI_aeda_main
+        }
+
+        target_trigger = {
+            FROM = {
+                NOT = { tag = ROOT }
+                is_in_faction_with = ROOT
+                is_in_array = { global.aeda_members = THIS }
+            }
+        }
+
+        complete_effect = {
+            subtract_from_variable = { global.aeda_pp = 100 }
+            FROM = {
+                country_event = seasia.6
             }
         }
     }

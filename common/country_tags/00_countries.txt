@@ -1,6 +1,5 @@
 # Additions
 PHR = "countries/Philippine Revolt.txt"
-SBH = "countries/Sabah.txt"
 
 # Base
 GER	= "countries/Germany.txt"

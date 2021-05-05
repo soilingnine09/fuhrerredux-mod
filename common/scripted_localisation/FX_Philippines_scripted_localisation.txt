@@ -1,0 +1,219 @@
+defined_text = {
+    name = PHI_aeda1
+    text = {
+        trigger = {
+            check_variable = { global.aeda_members^num > 1 }
+        }
+        localization_key = PHI_aeda1_name
+    }
+    text = {
+        trigger = {
+            check_variable = { global.aeda_members^num < 1 }
+        }
+        localization_key = PHI_aeda_none
+    }
+    text = {
+        trigger = {
+            check_variable = { global.aeda_members^num < 2 }
+        }
+        localization_key = PHI_aeda1_last
+    }
+}
+
+defined_text = {
+    name = PHI_aeda2
+    text = {
+        trigger = {
+            check_variable = { global.aeda_members^num > 2 }
+        }
+        localization_key = PHI_aeda2_name
+    }
+    text = {
+        trigger = {
+            check_variable = { global.aeda_members^num < 2 }
+        }
+        localization_key = PHI_aeda_none
+    }
+    text = {
+        trigger = {
+            check_variable = { global.aeda_members^num < 3 }
+        }
+        localization_key = PHI_aeda2_last
+    }
+}
+
+defined_text = {
+    name = PHI_aeda3
+    text = {
+        trigger = {
+            check_variable = { global.aeda_members^num > 3 }
+        }
+        localization_key = PHI_aeda3_name
+    }
+    text = {
+        trigger = {
+            check_variable = { global.aeda_members^num < 3 }
+        }
+        localization_key = PHI_aeda_none
+    }
+    text = {
+        trigger = {
+            check_variable = { global.aeda_members^num < 4 }
+        }
+        localization_key = PHI_aeda3_last
+    }
+}
+
+defined_text = {
+    name = PHI_aeda4
+    text = {
+        trigger = {
+            check_variable = { global.aeda_members^num > 4 }
+        }
+        localization_key = PHI_aeda4_name
+    }
+    text = {
+        trigger = {
+            check_variable = { global.aeda_members^num < 4 }
+        }
+        localization_key = PHI_aeda_none
+    }
+    text = {
+        trigger = {
+            check_variable = { global.aeda_members^num < 5 }
+        }
+        localization_key = PHI_aeda4_last
+    }
+}
+
+defined_text = {
+    name = PHI_aeda5
+    text = {
+        trigger = {
+            check_variable = { global.aeda_members^num > 5 }
+        }
+        localization_key = PHI_aeda5_name
+    }
+    text = {
+        trigger = {
+            check_variable = { global.aeda_members^num < 5 }
+        }
+        localization_key = PHI_aeda_none
+    }
+    text = {
+        trigger = {
+            check_variable = { global.aeda_members^num < 6 }
+        }
+        localization_key = PHI_aeda5_last
+    }
+}
+
+defined_text = {
+    name = PHI_aeda6
+    text = {
+        trigger = {
+            check_variable = { global.aeda_members^num > 6 }
+        }
+        localization_key = PHI_aeda6_name
+    }
+    text = {
+        trigger = {
+            check_variable = { global.aeda_members^num < 6 }
+        }
+        localization_key = PHI_aeda_none
+    }
+    text = {
+        trigger = {
+            check_variable = { global.aeda_members^num < 6 }
+        }
+        localization_key = PHI_aeda6_last
+    }
+}
+
+defined_text = {
+    name = PHI_aeda7
+    text = {
+        trigger = {
+            check_variable = { global.aeda_members^num > 7 }
+        }
+        localization_key = PHI_aeda7_name
+    }
+    text = {
+        trigger = {
+            check_variable = { global.aeda_members^num < 7 }
+        }
+        localization_key = PHI_aeda_none
+    }
+    text = {
+        trigger = {
+            check_variable = { global.aeda_members^num < 8 }
+        }
+        localization_key = PHI_aeda7_last
+    }
+}
+
+defined_text = {
+    name = PHI_aeda8
+    text = {
+        trigger = {
+            check_variable = { global.aeda_members^num > 8 }
+        }
+        localization_key = PHI_aeda8_name
+    }
+    text = {
+        trigger = {
+            check_variable = { global.aeda_members^num < 8 }
+        }
+        localization_key = PHI_aeda_none
+    }
+    text = {
+        trigger = {
+            check_variable = { global.aeda_members^num < 9 }
+        }
+        localization_key = PHI_aeda8_last
+    }
+}
+
+defined_text = {
+    name = PHI_aeda9
+    text = {
+        trigger = {
+            check_variable = { global.aeda_members^num > 9 }
+        }
+        localization_key = PHI_aeda9_name
+    }
+    text = {
+        trigger = {
+            check_variable = { global.aeda_members^num < 9 }
+        }
+        localization_key = PHI_aeda_none
+    }
+    text = {
+        trigger = {
+            check_variable = { global.aeda_members^num < 10 }
+        }
+        localization_key = PHI_aeda9_last
+    }
+}
+
+defined_text = {
+    name = PHI_aeda10
+    text = {
+        trigger = {
+            check_variable = { global.aeda_members^num > 10 }
+        }
+        localization_key = PHI_aeda10_name
+    }
+    text = {
+        trigger = {
+            check_variable = { global.aeda_members^num < 10 }
+        }
+        localization_key = PHI_aeda_none
+    }
+    text = {
+        trigger = {
+            check_variable = { global.aeda_members^num < 11 }
+        }
+        localization_key = PHI_aeda10_last
+    }
+}
