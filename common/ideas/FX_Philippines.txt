@@ -924,7 +924,7 @@ ideas = {
             traits = {
                 foreign_minister
                 social_conservative
-                for_skilled_negotiator
+                for_hawkish_intervener
             }
         }
         PHI_Ferdinand_Marcos_for_sco = {
@@ -956,7 +956,7 @@ ideas = {
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
-                economic_minister
+                economy_minister
                 collectivist
                 eco_planned_economy_proponent
             }
@@ -966,7 +966,7 @@ ideas = {
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
-                economic_minister
+                economy_minister
                 social_democrat
                 eco_reformer
             }
@@ -976,7 +976,7 @@ ideas = {
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
-                economic_minister
+                economy_minister
                 social_democrat
                 eco_mixed_economy
             }
@@ -986,7 +986,7 @@ ideas = {
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
-                economic_minister
+                economy_minister
                 social_liberal
                 eco_bank_president
             }
@@ -996,7 +996,7 @@ ideas = {
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
-                economic_minister
+                economy_minister
                 social_liberal
                 eco_resource_industrialist
             }
@@ -1006,7 +1006,7 @@ ideas = {
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
-                economic_minister
+                economy_minister
                 market_liberal
                 eco_keynesian_economy
             }
@@ -1016,7 +1016,7 @@ ideas = {
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
-                economic_minister
+                economy_minister
                 market_liberal
                 eco_industrialiser
             }
@@ -1026,7 +1026,7 @@ ideas = {
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
-                economic_minister
+                economy_minister
                 social_conservative
                 eco_construction_magnate
             }
@@ -1036,7 +1036,7 @@ ideas = {
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
-                economic_minister
+                economy_minister
                 social_conservative
                 eco_laissez_faire_capitalist
             }
@@ -1046,7 +1046,7 @@ ideas = {
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
-                economic_minister
+                economy_minister
                 social_conservative
                 eco_military_entrepreneur
             }

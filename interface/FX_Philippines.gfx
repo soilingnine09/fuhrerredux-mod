@@ -19,11 +19,11 @@ spriteTypes = {
     }
     spriteType = {
         name = "GFX_idea_PHI_Lope_K_Santos_hog_sde"
-        texturefile = ""
+        texturefile = "gfx/interface/ministers/PHI/PHI_Lope_K_Santos.tga"
     }
     spriteType = {
         name = "GFX_idea_PHI_Juan_Feleo_hog_sde"
-        texturefile = ""
+        texturefile = "gfx/interface/ministers/PHI/PHI_Juan_Feleo.tga"
     }
     spriteType = {
         name = "GFX_idea_PHI_Elpidio_Quirino_hog_sli"
@@ -51,7 +51,7 @@ spriteTypes = {
     }
     spriteType = {
         name = "GFX_idea_PHI_Gregorio_Aglipay_hog_sco"
-        texturefile = ""
+        texturefile = "gfx/interface/ministers/PHI/PHI_Gregorio_Aglipay.tga"
     }
     spriteType = {
         name = "GFX_idea_PHI_Jose_P_Laurel_hog_ade"
