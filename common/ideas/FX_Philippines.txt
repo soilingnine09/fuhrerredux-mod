@@ -410,20 +410,22 @@ ideas = {
             allowed = { original_tag = PHI }
             picture = NOR_labour_conflicts
             modifier = {
-                stability_factor = -0.15
-                war_support_factor = -0.15
-                production_speed_buildings_factor = -0.15
-                industrial_capacity_factory = -0.15
-                industrial_capacity_dockyard = -0.15
+                industrial_capacity_factory = -0.05
+                industrial_capacity_dockyard = -0.05
             }
         }
         PHI_worker_strikes2 = {
             allowed = { original_tag = PHI }
             picture = NOR_labour_conflicts
             modifier = {
-                stability_factor = -0.25
-                war_support_factor = -0.25
-                production_speed_buildings_factor = -0.25
+                industrial_capacity_factory = -0.15
+                industrial_capacity_dockyard = -0.15
+            }
+        }
+        PHI_worker_strikes3 = {
+            allowed = { original_tag = PHI }
+            picture = NOR_labour_conflicts
+            modifier = {
                 industrial_capacity_factory = -0.25
                 industrial_capacity_dockyard = -0.25
             }
@@ -722,7 +724,7 @@ ideas = {
             }
         }
         PHI_Juan_Sumulong_hog_sde = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_hog = no }
             cancel_if_invalid = no
             traits = {
@@ -732,7 +734,7 @@ ideas = {
             }
         }
         PHI_Lope_K_Santos_hog_sde = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_hog = no }
             cancel_if_invalid = no
             traits = {
@@ -742,7 +744,7 @@ ideas = {
             }
         }
         PHI_Juan_Feleo_hog_sde = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_hog = no }
             cancel_if_invalid = no
             traits = {
@@ -752,7 +754,7 @@ ideas = {
             }
         }
         PHI_Elpidio_Quirino_hog_sli = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_hog = no }
             cancel_if_invalid = no
             traits = {
@@ -762,7 +764,7 @@ ideas = {
             }
         }
         PHI_Manuel_Roxas_hog_mli = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_hog = no }
             cancel_if_invalid = no
             traits = {
@@ -772,7 +774,7 @@ ideas = {
             }
         }
         PHI_J_Antonio_Araneta_hog_mli = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_hog = no }
             cancel_if_invalid = no
             traits = {
@@ -782,7 +784,7 @@ ideas = {
             }
         }
         PHI_Manuel_Quezon_hog_sco = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_hog = no }
             cancel_if_invalid = no
             traits = {
@@ -792,7 +794,7 @@ ideas = {
             }
         }
         PHI_Sergio_P_Osmena_hog_sco = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_hog = no }
             cancel_if_invalid = no
             traits = {
@@ -802,7 +804,7 @@ ideas = {
             }
         }
         PHI_Eulogio_Rodriguez_Sr_hog_sco = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_hog = no }
             cancel_if_invalid = no
             traits = {
@@ -812,7 +814,7 @@ ideas = {
             }
         }
         PHI_Gregorio_Aglipay_hog_sco = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_hog = no }
             cancel_if_invalid = no
             traits = {
@@ -822,7 +824,7 @@ ideas = {
             }
         }
         PHI_Jose_P_Laurel_hog_ade = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_hog = no }
             visible = { NOT = { has_country_flag = PHI_interim_president_dead } }
             cancel_if_invalid = no
@@ -833,7 +835,7 @@ ideas = {
             }
         }
         PHI_Benigno_Aquino_Sr_hog_ade = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_hog = no }
             visible = { has_country_flag = PHI_interim_president_dead }
             cancel_if_invalid = no
@@ -844,7 +846,7 @@ ideas = {
             }
         }
         PHI_Basilio_J_Valdez_hog_pau = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_hog = no }
             cancel_if_invalid = no
             traits = {
@@ -854,7 +856,7 @@ ideas = {
             }
         }
         PHI_Emilio_Aguinaldo_hog_npo = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_hog = no }
             cancel_if_invalid = no
             traits = {
@@ -864,7 +866,7 @@ ideas = {
             }
         }
         PHI_Benigno_Ramos_hog_val = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_hog = no }
             cancel_if_invalid = no
             traits = {
@@ -888,7 +890,7 @@ ideas = {
             }
         }
         PHI_Rafael_Liwanag_for_sde = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
@@ -898,7 +900,7 @@ ideas = {
             }
         }
         PHI_Joaquin_Elizalde_for_sli = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
@@ -908,7 +910,7 @@ ideas = {
             }
         }
         PHI_Quentin_Paredes_for_mli = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
@@ -918,7 +920,7 @@ ideas = {
             }
         }
         PHI_Manuel_Quadrino_for_sco = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
@@ -928,7 +930,7 @@ ideas = {
             }
         }
         PHI_Ferdinand_Marcos_for_sco = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
@@ -938,7 +940,7 @@ ideas = {
             }
         }
         PHI_Vicente_P_Lim_for_pau = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
@@ -962,7 +964,7 @@ ideas = {
             }
         }
         PHI_Carlos_P_Garcia_eco_sde = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
@@ -972,7 +974,7 @@ ideas = {
             }
         }
         PHI_Diosdado_P_Macapagal_eco_sde = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
@@ -982,7 +984,7 @@ ideas = {
             }
         }
         PHI_Manuel_Quadrino_eco_sli = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
@@ -992,7 +994,7 @@ ideas = {
             }
         }
         PHI_Antonio_de_las_Alas_eco_sli = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
@@ -1002,7 +1004,7 @@ ideas = {
             }
         }
         PHI_Ramon_Quisumbing_eco_mli = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
@@ -1012,7 +1014,7 @@ ideas = {
             }
         }
         PHI_Ramon_Magsaysay_eco_mli = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
@@ -1022,7 +1024,7 @@ ideas = {
             }
         }
         PHI_Jose_G_David_eco_sco = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
@@ -1032,7 +1034,7 @@ ideas = {
             }
         }
         PHI_Serafin_Fausto_eco_sco = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
@@ -1042,7 +1044,7 @@ ideas = {
             }
         }
         PHI_Ramon_Alcaraz_eco_pau = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
@@ -1076,7 +1078,7 @@ ideas = {
             }
         }
         PHI_Jose_M_Crisol_sec_sde = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
@@ -1086,7 +1088,7 @@ ideas = {
             }
         }
         PHI_Pardo_de_Tavera_sec_sde = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
@@ -1096,7 +1098,7 @@ ideas = {
             }
         }
         PHI_Alberto_Ramos_sec_sli = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
@@ -1106,7 +1108,7 @@ ideas = {
             }
         }
         PHI_Leoncio_S_Tan_sec_sli = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
@@ -1116,7 +1118,7 @@ ideas = {
             }
         }
         PHI_Ramon_Quisumbing_sec_mli = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
@@ -1126,7 +1128,7 @@ ideas = {
             }
         }
         PHI_Roman_Apolinario_sec_mli = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
@@ -1136,7 +1138,7 @@ ideas = {
             }
         }
         PHI_Teofisto_Sison_sec_sco = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
@@ -1146,7 +1148,7 @@ ideas = {
             }
         }
         PHI_Tirano_Craveza_sec_sco = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
@@ -1156,7 +1158,7 @@ ideas = {
             }
         }
         PHI_Jose_Yulo_sec_sco = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
@@ -1166,7 +1168,7 @@ ideas = {
             }
         }
         PHI_Benigno_Aquino_Sr_sec_ade = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
@@ -1176,7 +1178,7 @@ ideas = {
             }
         }
         PHI_Rafael_Jalandoni_sec_pau = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
@@ -1186,7 +1188,7 @@ ideas = {
             }
         }
         PHI_Emilio_Aguinaldo_sec_npo = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
@@ -1196,7 +1198,7 @@ ideas = {
             }
         }
         PHI_Jose_G_Lukban_sec_val = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
@@ -1220,7 +1222,7 @@ ideas = {
             }
         }
         PHI_John_Gilbert_Winant_int_sli = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = yes
             traits = {
@@ -1230,7 +1232,7 @@ ideas = {
             }
         }
         PHI_Leslie_Ailen_Wheeler_int_mli = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = yes
             traits = {
@@ -1240,7 +1242,7 @@ ideas = {
             }
         }
         PHI_James_Wilson_int_sco = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = yes
             traits = {
@@ -1250,7 +1252,7 @@ ideas = {
             }
         }
         PHI_Fidel_Segundo_int_ade = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = yes
             traits = {
@@ -1260,7 +1262,7 @@ ideas = {
             }
         }
         PHI_Benigno_Ramos_int_val = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = yes
             traits = {
@@ -1284,7 +1286,7 @@ ideas = {
             }
         }
         PHI_Augusto_Jurado_cos = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { has_socialist_government = no }
             cancel_if_invalid = yes
             traits = {
@@ -1293,7 +1295,7 @@ ideas = {
             }
         }
         PHI_Paulino_Santos_cos = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { has_socialist_government = no }
             cancel_if_invalid = yes
             traits = {
@@ -1302,7 +1304,7 @@ ideas = {
             }
         }
         PHI_Quirinto_P_Evangelista_cos = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { has_socialist_government = no }
             cancel_if_invalid = yes
             traits = {
@@ -1311,7 +1313,7 @@ ideas = {
             }
         }
         PHI_Basilio_J_Valdez_cos = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { has_socialist_government = no }
             cancel_if_invalid = yes
             traits = {
@@ -1333,7 +1335,7 @@ ideas = {
             }
         }
         PHI_Benito_N_Ebuen_carm = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { has_socialist_government = no }
             cancel_if_invalid = yes
             traits = {
@@ -1342,7 +1344,7 @@ ideas = {
             }
         }
         PHI_Heraclio_Alano_carm = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { has_socialist_government = no }
             cancel_if_invalid = yes
             traits = {
@@ -1351,7 +1353,7 @@ ideas = {
             }
         }
         PHI_Mateo_M_Capinpin_carm = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { has_socialist_government = no }
             cancel_if_invalid = yes
             traits = {
@@ -1360,7 +1362,7 @@ ideas = {
             }
         }
         PHI_Vicente_P_Lim_carm = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { has_socialist_government = no }
             cancel_if_invalid = yes
             traits = {
@@ -1369,7 +1371,7 @@ ideas = {
             }
         }
         PHI_Basilio_J_Valdez_carm = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             available = { has_socialist_government = no }
             cancel_if_invalid = yes
             traits = {
@@ -1382,28 +1384,28 @@ ideas = {
     # Chief of Navy
     chief_of_navy = {
         PHI_Jose_V_Andrada_cnav = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             traits = {
                 chief_of_navy
                 cnav_base_control_doctrine
             }
         }
         PHI_Ramon_A_Alcaraz_cnav = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             traits = {
                 chief_of_navy
                 cnav_indirect_approach_doctrine
             }
         }
         PHI_Santiago_Nuval_cnav = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             traits = {
                 chief_of_navy
                 cnav_power_projection_doctrine
             }
         }
         PHI_Eustacio_Orobia_cnav = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             traits = {
                 chief_of_navy
                 cnav_open_seas_doctrine
@@ -1414,42 +1416,42 @@ ideas = {
     # Chief of Air Force
     chief_of_air_force = {
         PHI_Joe_Rogers_cair = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             traits = {
                 chief_of_air_force
                 cair_battlefield_support_doctrine
             }
         }
         PHI_Basilio_Fernando_cair = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             traits = {
                 chief_of_air_force
                 cair_carpet_bombing_doctrine
             }
         }
         PHI_Edwin_Andrews_cair = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             traits = {
                 chief_of_air_force
                 cair_battlefield_support_doctrine
             }
         }
         PHI_Pelagio_Cruz_cair = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             traits = {
                 chief_of_air_force
                 cair_battlefield_support_doctrine
             }
         }
         PHI_Victor_H_Dizon_cair = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             traits = {
                 chief_of_air_force
                 cair_carpet_bombing_doctrine
             }
         }
         PHI_Felix_Pestana_cair = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             traits = {
                 chief_of_air_force
                 cair_air_superiority_doctrine
@@ -1460,7 +1462,7 @@ ideas = {
     # Theorist
     theorist = {
         PHI_Basilio_J_Valdez_theo = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             traits = {
                 land_doctrine_theorist
             }
@@ -1469,7 +1471,7 @@ ideas = {
             }
         }
         PHI_Vicente_P_Lim_theo = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             traits = {
                 land_doctrine_theorist
             }
@@ -1478,7 +1480,7 @@ ideas = {
             }
         }
         PHI_Santiago_Nuval_theo = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             traits = {
                 naval_doctrine_theorist
             }
@@ -1487,7 +1489,7 @@ ideas = {
             }
         }
         PHI_Pelagio_Cruz_theo = {
-            allowed = { original_tag = PHI }
+            allowed = { is_a_filipino_tag = yes }
             traits = {
                 air_doctrine_theorist
             }
@@ -1499,7 +1501,7 @@ ideas = {
         industrial_concern = {
             designer = yes
             PHI_benguet_corporation = {
-                allowed = { original_tag = PHI }
+                allowed = { is_a_filipino_tag = yes }
                 picture = generic_industrial_concern_2
                 traits = { mining_company }
                 research_bonus = {
@@ -1510,7 +1512,7 @@ ideas = {
                 }
             }
             PHI_ayala_corporation = {
-                allowed = { original_tag = PHI }
+                allowed = { is_a_filipino_tag = yes }
                 picture = generic_refining_concern_1
                 traits = { oil_concern }
                 research_bonus = {
@@ -1522,7 +1524,7 @@ ideas = {
                 }
             }
             PHI_science_department = {
-                allowed = { original_tag = PHI }
+                allowed = { is_a_filipino_tag = yes }
                 picture = generic_electronics_concern_3
                 traits = { electronics_manufacturer }
                 research_bonus = {
@@ -1534,7 +1536,7 @@ ideas = {
                 }
             }
             PHI_san_miguel_corporation = {
-                allowed = { original_tag = PHI }
+                allowed = { is_a_filipino_tag = yes }
                 picture = generic_industrial_concern_3
                 traits = { industrial_concern }
                 research_bonus = {
@@ -1545,7 +1547,7 @@ ideas = {
                 }
             }
             PHI_standard_oil = {
-                allowed = { original_tag = PHI }
+                allowed = { is_a_filipino_tag = yes }
                 available = { has_trade_with_united_states = yes }
                 picture = standard_oil_california
                 traits = { oil_concern }
@@ -1558,7 +1560,7 @@ ideas = {
                 }
             }
             PHI_english_electric = {
-                allowed = { original_tag = PHI }
+                allowed = { is_a_filipino_tag = yes }
                 available = { has_trade_with_britain = yes }
                 picture = english_electric
                 traits = { electronics_manufacturer }
@@ -1571,7 +1573,7 @@ ideas = {
                 }
             }
             PHI_kawasaki = {
-                allowed = { original_tag = PHI }
+                allowed = { is_a_filipino_tag = yes }
                 available = { has_trade_with_japan = yes }
                 picture = kawasaki
                 traits = { industrial_concern }
@@ -1583,7 +1585,7 @@ ideas = {
                 }
             }
             PHI_krupp = {
-                allowed = { original_tag = PHI }
+                allowed = { is_a_filipino_tag = yes }
                 available = { has_trade_with_germany = yes }
                 picture = krupp
                 traits = { mining_company }
@@ -1599,7 +1601,7 @@ ideas = {
         weapons_manufacturer = {
             designer = yes
             PHI_armscor = {
-                allowed = { original_tag = PHI }
+                allowed = { is_a_filipino_tag = yes }
                 available = { has_completed_focus = PHI_fund_armscor }
                 picture = generic_infantry_equipment_manufacturer_2
                 traits = { infantry_equipment_producer_offense_2 }
@@ -1608,7 +1610,7 @@ ideas = {
                 }
             }
             PHI_nissan = {
-                allowed = { original_tag = PHI }
+                allowed = { is_a_filipino_tag = yes }
                 available = { has_trade_with_japan = yes }
                 picture = nissan
                 traits = { infantry_equipment_producer_defense_1 }
@@ -1617,7 +1619,7 @@ ideas = {
                 }
             }
             PHI_rsaf_enfield = {
-                allowed = { original_tag = PHI }
+                allowed = { is_a_filipino_tag = yes }
                 available = { has_trade_with_britain = yes }
                 picture = rsaf_enfield
                 traits = { infantry_equipment_producer_assualt_1 }
@@ -1630,7 +1632,7 @@ ideas = {
         tank_manufacturer = {
             designer = yes
             PHI_army_deparment = {
-                allowed = { original_tag = PHI }
+                allowed = { is_a_filipino_tag = yes }
                 picture = generic_tank_manufacturer_2
                 traits = { motorised_equipment_producer_offense_3 }
                 research_bonus = {
@@ -1638,7 +1640,7 @@ ideas = {
                 }
             }
             PHI_ford = {
-                allowed = { original_tag = PHI }
+                allowed = { is_a_filipino_tag = yes }
                 available = { has_trade_with_united_states = yes }
                 picture = ford_motor_company
                 traits = { medium_tank_producer_mass_2 }
@@ -1647,7 +1649,7 @@ ideas = {
                 }
             }
             PHI_porsche = {
-                allowed = { original_tag = PHI }
+                allowed = { is_a_filipino_tag = yes }
                 available = { has_trade_with_germany = yes }
                 picture = porsche
                 traits = { heavy_tank_producer_offense_1 }
@@ -1656,7 +1658,7 @@ ideas = {
                 }
             }
             PHI_vickers = {
-                allowed = { original_tag = PHI }
+                allowed = { is_a_filipino_tag = yes }
                 available = { has_trade_with_britain = yes }
                 picture = vickers_armstrong_eng
                 traits = { small_tank_producer_mass_1 }
@@ -1669,7 +1671,7 @@ ideas = {
         air_naval_manufacturer = {
             designer = yes
             PHI_air_force_department = {
-                allowed = { original_tag = PHI }
+                allowed = { is_a_filipino_tag = yes }
                 picture = generic_air_manufacturer_3
                 traits = { nav_cas_producer_mass_2 }
                 research_bonus = {
@@ -1677,7 +1679,7 @@ ideas = {
                 }
             }
             PHI_mitsubishi = {
-                allowed = { original_tag = PHI }
+                allowed = { is_a_filipino_tag = yes }
                 available = { has_trade_with_japan = yes }
                 picture = mitsubishi
                 traits = { nav_cas_producer_offense_2 }
@@ -1686,7 +1688,7 @@ ideas = {
                 }
             }
             PHI_junkers = {
-                allowed = { original_tag = PHI }
+                allowed = { is_a_filipino_tag = yes }
                 available = { has_trade_with_germany = yes }
                 picture = junkers
                 traits = { fighter_producer_defense_1 }
@@ -1695,7 +1697,7 @@ ideas = {
                 }
             }
             PHI_hawker = {
-                allowed = { original_tag = PHI }
+                allowed = { is_a_filipino_tag = yes }
                 available = { has_trade_with_britain = yes }
                 picture = hawker
                 traits = { bomber_producer_defense_2 }
@@ -1704,7 +1706,7 @@ ideas = {
                 }
             }
             PHI_boeing = {
-                allowed = { original_tag = PHI }
+                allowed = { is_a_filipino_tag = yes }
                 available = { has_trade_with_united_states = yes }
                 picture = boeing
                 traits = { fighter_producer_offense_2 }
@@ -1713,7 +1715,7 @@ ideas = {
                 }
             }
             PHI_subic_naval = {
-                allowed = { original_tag = PHI }
+                allowed = { is_a_filipino_tag = yes }
                 picture = generic_naval_manufacturer_1
                 traits = { small_ship_producer_mass_2 }
                 research_bonus = {
@@ -1721,7 +1723,7 @@ ideas = {
                 }
             }
             PHI_harland_wolff = {
-                allowed = { original_tag = PHI }
+                allowed = { is_a_filipino_tag = yes }
                 available = { has_trade_with_britain = yes }
                 picture = harland_wolff
                 traits = { cruiser_producer_mass_2 }
@@ -1730,7 +1732,7 @@ ideas = {
                 }
             }
             PHI_yarrow_shipbuilders = {
-                allowed = { original_tag = PHI }
+                allowed = { is_a_filipino_tag = yes }
                 available = { has_trade_with_united_states = yes }
                 picture = yarrow_shipbuilders
                 traits = { capital_ship_producer_mass_1 }
@@ -1739,7 +1741,7 @@ ideas = {
                 }
             }
             PHI_blohm_und_voss = {
-                allowed = { original_tag = PHI }
+                allowed = { is_a_filipino_tag = yes }
                 available = { has_trade_with_germany = yes }
                 picture = blohm_und_voss
                 traits = { small_ship_producer_offense_2 }

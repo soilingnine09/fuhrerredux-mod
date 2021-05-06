@@ -278,15 +278,379 @@ country_event = {
     }
 }
 
+# Aftermath of the Assassination
+country_event = {
+    id = phi.7
+    title = phi.7.t
+    desc = phi.7.d
+    is_triggered_only = yes
+
+    option = { # Postpone
+        name = phi.7.a
+        add_stability = -0.15
+        set_politics = {
+            ruling_party = authoritarian_democrat
+            elections_allowed = no
+        }
+        hidden_effect = {
+            country_event = { id = phi.8 days = 7 }
+        }
+    }
+    option = { # Continue
+        name = phi.7.b
+        add_political_power = -100
+    }
+}
+
+# CBCP Denouncement
+country_event = {
+    id = phi.8
+    title = phi.8.t
+    desc = phi.8.d
+    is_triggered_only = yes
+
+    option = {
+        name = phi.8.a
+        hidden_effect = {
+            country_event = { id = phi.9 days = 14 }
+        }
+    }
+}
+
+# Protests
+country_event = {
+    id = phi.9
+    title = phi.9.t
+    desc = phi.9.d
+    is_triggered_only = yes
+
+    option = { # Ignore
+        name = phi.9.a
+        add_ideas = PHI_worker_strikes1
+        hidden_effect = {
+            country_event = { id = phi.10 days = 7 }
+        }
+    }
+}
+
+# Expanded Protests
+country_event = {
+    id = phi.10
+    title = phi.10.t
+    desc = phi.10.d
+    is_triggered_only = yes
+
+    option = { # It will resolve on its own
+        name = phi.10.a
+        swap_ideas = {
+            remove_idea = PHI_worker_strikes1
+            add_idea = PHI_worker_strikes2
+        }
+        hidden_effect = {
+            country_event = { id = phi.11 days = 7 }
+        }
+    }
+}
+
 # General Strike
 country_event = {
     id = phi.11
     title = phi.11.t
     desc = phi.11.d
+    is_triggered_only = yes
 
+    option = { # Try negotiating
+        name = phi.11.a
+        swap_ideas = {
+            remove_idea = PHI_worker_strikes2
+            add_idea = PHI_worker_strikes3
+        }
+        hidden_effect = {
+            country_event = { id = phi.12 days = 2 }
+        }
+    }
+    option = { # Disperse them
+        name = phi.11.b
+        swap_ideas = {
+            remove_idea = PHI_worker_strikes2
+            add_idea = PHI_worker_strikes3
+        }
+        hidden_effect = {
+            
+        }
+    }
+}
+
+# Aguinaldo Offers Help
+country_event = {
+    id = phi.12
+    title = phi.12.t
+    desc = phi.12.d
+    is_triggered_only = yes
+
+    option = { # Allow
+        name = phi.12.a
+        add_popularity = {
+            ideology = national_populist
+            popularity = 0.05
+        }
+        hidden_effect = {
+            remove_ideas_with_trait = security_minister
+            add_ideas = PHI_Emilio_Aguinaldo_sec_npo
+            country_event = { id = phi.13 days = 12 }
+        }
+    }
+    option = { # Don't allow 
+        name = phi.12.b
+        add_political_power = 10
+        hidden_effect = {
+            country_event = { id = phi.18 days = 12 }
+        }
+    }
+}
+
+# Negotiations in Manila
+country_event = {
+    id = phi.13
+    title = phi.13.t
+    desc = phi.13.d
+    is_triggered_only = yes
+
+    option = { # Excellent.
+        name = phi.13.a
+        add_popularity = {
+            ideology = national_populist
+            popularity = 0.05
+        }
+        swap_ideas = {
+            remove_idea = PHI_worker_strikes3
+            add_idea = PHI_worker_strikes2
+        }
+        hidden_effect = {
+            country_event = { id = phi.14 days = 14 }
+        }
+    }
+}
+
+# Negotiations in the Provinces
+country_event = {
+    id = phi.14
+    title = phi.14.t
+    desc = phi.14.d
+    is_triggered_only = yes
+
+    option = { # Excellent
+        name = phi.14.a
+        add_popularity = {
+            ideology = national_populist
+            popularity = 0.05
+        }
+        swap_ideas = {
+            remove_idea = PHI_worker_strikes2
+            add_idea = PHI_worker_strikes1
+        }
+    }
+}
+
+# Compromise with Laborista
+country_event = {
+    id = phi.15
+    title = phi.15.t
+    desc = phi.15.d
+    is_triggered_only = yes
+
+    option = { # Excellent
+        name = phi.15.a
+        add_popularity = {
+            ideology = national_populist
+            popularity = 0.05
+        }
+        remove_ideas = PHI_worker_strikes1
+        set_politics = {
+            ruling_party = authoritarian_democrat
+            elections_allowed = yes
+        }
+        hidden_effect = {
+            country_event = { id = phi.16 days = 21 }
+        }
+    }
+}
+
+# Aguinaldo's Position
+country_event = {
+    id = phi.16
+    title = phi.16.t
+    desc = phi.16.d
+    is_triggered_only = yes
+
+    option = { # Keep his position
+        name = phi.16.a
+        hidden_effect = {
+            country_event = { id = phi.17 days = 21 }
+        }
+    }
+    option = { # We don't need him anymore.
+        name = phi.16.b
+        add_stability = -0.05
+        hidden_effect = {
+            remove_ideas_with_trait = security_minister
+            add_ideas = PHI_Benigno_Aquino_Sr_sec_ade
+            hold_election = ROOT
+        }
+    }
+}
+
+# March on Manila
+country_event = {
+    id = phi.17
+    title = phi.17.t
+    desc = phi.17.d
+    is_triggered_only = yes
+
+    option = { # Hurrah!
+        name = phi.17.a
+        set_politics = {
+            ruling_party = national_populist
+            elections_allowed = no
+        }
+        remove_every_minister = yes
+        add_ideas = {
+            PHI_Emilio_Aguinaldo_hog_npo
+            PHI_Ferdinand_Marcos_for_sco
+            PHI_Ramon_Alcaraz_eco_pau
+            PHI_Rafael_Jalandoni_sec_pau
+            PHI_Fidel_Segundo_int_ade
+        }
+        hidden_effect = {
+            set_country_flag = PHI_aguinaldo_coup_tt
+        }
+    }
+}
+
+# Meeting with Laborista
+country_event = {
+    id = phi.18
+    title = phi.18.t
+    desc = phi.18.d
+    is_triggered_only = yes
+
+    option = { # Let's get this over with
+        name = phi.18.a
+        hidden_effect = {
+            country_event = { id = phi.19 days = 2 }
+        }
+    }
+}
+
+# Demands
+country_event = {
+    id = phi.19
+    title = phi.19.t
+    desc = phi.19.d
+    is_triggered_only = yes
+
+    option = { # Accept all
+        name = phi.19.a
+        hidden_effect = {
+            country_event = { id = phi.20 days = 7 }
+        }
+    }
+    option = { # Accept some
+        name = phi.19.b
+        hidden_effect = {
+            hold_election = ROOT
+        }
+    }
+}
+
+# Army Coup
+country_event = {
+    id = phi.20
+    title = phi.20.t
+    desc = phi.20.d
+    is_triggered_only = yes
+
+    option = { # Hurrah
+        name = phi.20.a
+        set_politics = {
+            ruling_party = paternal_autocrat
+            elections_allowed = no
+        }
+        add_popularity = {
+            ideology = paternal_autocrat
+            popularity = 0.25
+        }
+        remove_every_minister = yes
+        add_ideas = {
+            PHI_Basilio_J_Valdez_hog_pau
+            PHI_Vicente_P_Lim_for_pau
+            PHI_Ramon_Alcaraz_eco_pau
+            PHI_Rafael_Jalandoni_sec_pau
+            PHI_Fidel_Segundo_int_ade
+        }
+        hidden_effect = {
+            set_country_flag = PHI_army_coup_tt
+        }
+    }
+}
+
+# Army Units Mutineering
+country_event = {
+    id = phi.21
+    title = phi.21.t
+    desc = phi.21.d
     is_triggered_only = yes
 
     option = {
-        name = phi.11.a
+        name = phi.21.a
+        add_manpower = -1500
+        hidden_effect = {
+            country_event = { id = phi.22 days = 7 }
+        }
+    }
+}
+
+# Civil War!
+country_event = {
+    id = phi.22
+    title = phi.22.t
+    desc = phi.22.d
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            PHI = {
+                delete_unit_template_and_units = {
+                    division_template = "Infantry Division"
+                    disband = yes
+                }
+
+                set_capital = 623
+                load_oob = PHI_civil_war
+            }
+            PHR = {
+                add_state_core = 327
+                add_state_core = 624
+                transfer_state = 327
+                transfer_state = 624
+
+                load_oob = PHR_civil_war
+                declare_war_on = {
+                    target = PHI
+                    type = annex_everything
+                }
+            }
+        }
+    }
+
+    option = { # For the Republic!
+        name = phi.22.a
+        add_political_power = 100
+    }
+    option = { # For the People!
+        name = phi.22.b
+        PHR = {
+            change_tag_from = ROOT
+        }
     }
 }
