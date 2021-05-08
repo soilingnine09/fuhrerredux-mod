@@ -146,19 +146,27 @@ bookmarks = {
 				PHI_found_aeda
 			}
 		}
-		#"BRA"={
-		#	minor = yes
-		#	history = "BRA_FUHRERREICH_DESC"
-		#	ideology = market_liberal
-		#	ideas = {
-		#		BRA_political_instability
-		#	}
-		#	focuses = {
-		#		BRA_civil_war
-		#		BRA_standing_for_the_union
-		#		BRA_our_republic_reborn
-		#	}
-		#}
+		"SWI"={
+			minor = yes
+			history = "SWI_FUHRERREICH_DESC"
+			ideology = market_liberal
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"HUN"={
+			minor = yes
+			history = "HUN_FUHRERREICH_DESC"
+			ideology = national_populist
+			ideas = {
+				hun_trianon
+   	 			hun_economic_ruin
+			}
+			focuses = {
+			}
+		}
+
 
 
 		effect = {

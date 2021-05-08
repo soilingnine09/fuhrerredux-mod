@@ -1,5 +1,11 @@
 spriteTypes = {
 
+    ### Event Pictures
+    spriteType = {
+        name = "GFX_report_event_PHI_rizal_park"
+        texturefile = "gfx/event_pictures/PHI/report_event_PHI_intro.tga"
+    }
+
     ### Head of Government
     spriteType = {
         name = "GFX_idea_PHI_Luis_Taruc_hog_van"

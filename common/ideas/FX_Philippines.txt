@@ -528,9 +528,9 @@ ideas = {
                 ai_join_ally_desire_factor = -200
             }
         }
-        PHI_japanese_support = {
+        PHI_naval_production_assistance = {
             allowed = { original_tag = PHI }
-            picture = warrior_traditions_idea
+            picture = generic_coastal_defense_ships
             equipment_bonus = {
                 naval_equipment = {
 					build_cost_ic = -0.15
@@ -538,9 +538,9 @@ ideas = {
 				}
             }
         }
-        PHI_british_support = {
+        PHI_aircraft_production_assistance = {
             allowed = { original_tag = PHI }
-            picture = stiff_upper_lip
+            picture = generic_air_research
             equipment_bonus = {
                 air_equipment = {
 					build_cost_ic = -0.15
@@ -548,9 +548,9 @@ ideas = {
 				}
             }
         }
-        PHI_german_support = {
+        PHI_armor_production_assistance = {
             allowed = { original_tag = PHI }
-            picture = german_advisors
+            picture = generic_acquire_tanks
             equipment_bonus = {
                 light_tank_equipment = {
 					build_cost_ic = -0.15
@@ -566,9 +566,9 @@ ideas = {
 				}
             }
         }
-        PHI_american_support = {
+        PHI_firepower_production_assistance = {
             allowed = { original_tag = PHI }
-            picture = air_support_focus
+            picture = generic_artillery_regiments
             equipment_bonus = {
                infantry_equipment = {
 					build_cost_ic = -0.15
@@ -582,45 +582,6 @@ ideas = {
 					build_cost_ic = -0.15
 					instant = yes
 				}
-            }
-        }
-        PHI_filipino_support = {
-            allowed = {
-                NOT = { original_tag = PHI }
-            }
-            available = {
-                NOT = { has_war_with = PHI }
-            }
-            picture = german_advisors
-
-            modifier = {
-                army_core_attack_factor = 0.05
-                army_core_defence_factor = 0.05
-            }
-            research_bonus = {
-                infantry_equipment = 0.1
-				motorized = 0.1
-                artillery_equipment = 0.1 
-            }
-            equipment_bonus = {
-                infantry_equipment = {
-					build_cost_ic = -0.15
-					instant = yes
-				}
-				motorized = {
-					build_cost_ic = -0.15
-					instant = yes
-				}
-                artillery_equipment = {
-					build_cost_ic = -0.15
-					instant = yes
-				}
-            }
-        }
-        PHI_financial_support = {
-            picture = ger_mefo_bills_payment
-            modifier = {
-                consumer_goods_factor = -0.05
             }
         }
         PHI_aeda_main = {

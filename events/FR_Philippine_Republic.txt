@@ -3,12 +3,11 @@
 
 add_namespace = phi
 
-# Intro Event
-country_event = {
+country_event = { # Intro Event
     id = phi.0
     title = phi.0.t
     desc = phi.0.d
-
+    picture = GFX_report_event_PHI_rizal_park
     is_triggered_only = yes
 
     option = { # Mabuhay ang Pilipinas!
@@ -16,8 +15,7 @@ country_event = {
     }
 }
 
-# Refugee Crisis
-country_event = {
+country_event = { # Refugee Crisis
     id = phi.1
     title = phi.1.t
     desc = phi.1.d
@@ -55,8 +53,7 @@ country_event = {
     }
 }
 
-# Status of the Sakdalistas
-country_event = {
+country_event = { # Status of the Sakdalistas
     id = phi.2
     title = phi.2.t
     desc = phi.2.d
@@ -84,8 +81,7 @@ country_event = {
     }
 }
 
-# Quarrels in the Nacionalista
-country_event = {
+country_event = { # Quarrels in the Nacionalista
     id = phi.3
     title = phi.3.t
     desc = phi.3.d
@@ -109,8 +105,7 @@ country_event = {
     }
 }
 
-# Nacionalista Breaks
-country_event = {
+country_event = { # Nacionalista Breaks
     id = phi.4
     title = phi.4.t
     desc = phi.4.d
@@ -137,8 +132,7 @@ country_event = {
     }
 }
 
-# Trip to Congress
-country_event = {
+country_event = { # Trip to Congress
     id = phi.5
     title = phi.5.t
     desc = phi.5.d
@@ -185,8 +179,7 @@ country_event = {
     }
 }
 
-# Presidential Elections
-country_event = {
+country_event = { # Presidential Elections
     id = phi.6
     title = phi.6.t
     desc = phi.6.d
@@ -278,11 +271,11 @@ country_event = {
     }
 }
 
-# Aftermath of the Assassination
-country_event = {
+country_event = { # Aftermath of the Assassination
     id = phi.7
     title = phi.7.t
     desc = phi.7.d
+    picture = GFX_report_event_czech_soldiers_01
     is_triggered_only = yes
 
     option = { # Postpone
@@ -302,11 +295,11 @@ country_event = {
     }
 }
 
-# CBCP Denouncement
-country_event = {
+country_event = { # CBCP Denouncement
     id = phi.8
     title = phi.8.t
     desc = phi.8.d
+    picture = GFX_report_event_finnish_letter
     is_triggered_only = yes
 
     option = {
@@ -317,11 +310,11 @@ country_event = {
     }
 }
 
-# Protests
-country_event = {
+country_event = { # Protests
     id = phi.9
     title = phi.9.t
     desc = phi.9.d
+    picture = GFX_report_event_generic_rally
     is_triggered_only = yes
 
     option = { # Ignore
@@ -333,11 +326,11 @@ country_event = {
     }
 }
 
-# Expanded Protests
-country_event = {
+country_event = { # Expanded Protests
     id = phi.10
     title = phi.10.t
     desc = phi.10.d
+    picture = GFX_report_event_worker_protests
     is_triggered_only = yes
 
     option = { # It will resolve on its own
@@ -352,11 +345,11 @@ country_event = {
     }
 }
 
-# General Strike
-country_event = {
+country_event = { # General Strike
     id = phi.11
     title = phi.11.t
     desc = phi.11.d
+    picture = GFX_report_event_gathering_protest
     is_triggered_only = yes
 
     option = { # Try negotiating
@@ -381,11 +374,11 @@ country_event = {
     }
 }
 
-# Aguinaldo Offers Help
-country_event = {
+country_event = { # Aguinaldo Offers Help
     id = phi.12
     title = phi.12.t
     desc = phi.12.d
+    picture = GFX_report_event_second_vienna_award_pact
     is_triggered_only = yes
 
     option = { # Allow
@@ -409,11 +402,11 @@ country_event = {
     }
 }
 
-# Negotiations in Manila
-country_event = {
+country_event = { # Negotiations in Manila
     id = phi.13
     title = phi.13.t
     desc = phi.13.d
+    picture = GFX_report_event_molotov_signing_pact
     is_triggered_only = yes
 
     option = { # Excellent.
@@ -432,11 +425,11 @@ country_event = {
     }
 }
 
-# Negotiations in the Provinces
-country_event = {
+country_event = { # Negotiations in the Provinces
     id = phi.14
     title = phi.14.t
     desc = phi.14.d
+    picture = GFX_report_event_soviet_tank_parade
     is_triggered_only = yes
 
     option = { # Excellent
@@ -452,11 +445,11 @@ country_event = {
     }
 }
 
-# Compromise with Laborista
-country_event = {
+country_event = { # Compromise with Laborista
     id = phi.15
     title = phi.15.t
     desc = phi.15.d
+    picture = GFX_report_event_pierre_laval
     is_triggered_only = yes
 
     option = { # Excellent
@@ -476,11 +469,11 @@ country_event = {
     }
 }
 
-# Aguinaldo's Position
-country_event = {
+country_event = { # Aguinaldo's Position
     id = phi.16
     title = phi.16.t
     desc = phi.16.d
+    picture = GFX_report_event_soviet_purge_speech
     is_triggered_only = yes
 
     option = { # Keep his position
@@ -500,11 +493,11 @@ country_event = {
     }
 }
 
-# March on Manila
-country_event = {
+country_event = { # March on Manila
     id = phi.17
     title = phi.17.t
     desc = phi.17.d
+    picture = GFX_report_event_spain_civil_war_volunteers_02
     is_triggered_only = yes
 
     option = { # Hurrah!
@@ -527,11 +520,11 @@ country_event = {
     }
 }
 
-# Meeting with Laborista
-country_event = {
+country_event = { # Meeting with Laborista
     id = phi.18
     title = phi.18.t
     desc = phi.18.d
+    picture = GFX_report_event_canada_treaty
     is_triggered_only = yes
 
     option = { # Let's get this over with
@@ -542,11 +535,11 @@ country_event = {
     }
 }
 
-# Demands
-country_event = {
+country_event = { # Demands
     id = phi.19
     title = phi.19.t
     desc = phi.19.d
+    picture = GFX_report_event_spain_civil_war_volunteers_02
     is_triggered_only = yes
 
     option = { # Accept all
@@ -563,11 +556,11 @@ country_event = {
     }
 }
 
-# Army Coup
-country_event = {
+country_event = { # Army Coup
     id = phi.20
     title = phi.20.t
     desc = phi.20.d
+    picture = GFX_report_event_czech_soldiers_01
     is_triggered_only = yes
 
     option = { # Hurrah
@@ -594,11 +587,11 @@ country_event = {
     }
 }
 
-# Army Units Mutineering
-country_event = {
+country_event = { # Army Units Mutineering
     id = phi.21
     title = phi.21.t
     desc = phi.21.d
+    picture = GFX_report_event_french_resistance_01
     is_triggered_only = yes
 
     option = {
@@ -610,8 +603,7 @@ country_event = {
     }
 }
 
-# Civil War!
-country_event = {
+country_event = { # Civil War!
     id = phi.22
     title = phi.22.t
     desc = phi.22.d
@@ -652,5 +644,409 @@ country_event = {
         PHR = {
             change_tag_from = ROOT
         }
+    }
+}
+
+country_event = { # Ask for Investments
+    id = phi.100
+    title = phi.100.t
+    desc = phi.100.d
+    picture = GFX_report_event_canada_ronnie
+    is_triggered_only = yes
+
+    option = {
+        name = phi.100.a
+        PHI = {
+            add_offsite_building = {
+                type = industrial_complex
+                level = 1
+            }
+            country_event = phi.101
+        }
+    }
+    option = {
+        name = phi.100.b
+        PHI = {
+            country_event = phi.102
+        }
+    }
+}
+
+country_event = { # From Accepts Giving Investments
+    id = phi.101
+    title = phi.101.t
+    desc = phi.101.d
+    picture = GFX_report_event_generic_read_write
+    is_triggered_only = yes
+
+    option = {
+        name = phi.101.a
+    }
+}
+
+country_event = { # From Declines Giving Investments
+    id = phi.102
+    title = phi.102.t
+    desc = phi.102.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+
+    option = {
+        name = phi.102.a
+    }
+}
+
+country_event = { # Trade Treaty
+    id = phi.103
+    title = phi.103.t
+    desc = phi.103.d
+    picture = GFX_report_event_generic_factory
+    is_triggered_only = yes
+
+    option = { # Accept
+        name = phi.103.a
+        hidden_effect = {
+            set_country_flag = PHI_trade_treaty_tt
+            FROM = {
+                country_event = phi.104
+            }
+        }
+    }
+    option = { # Decline
+        name = phi.103.b
+        hidden_effect = {
+            FROM = {
+                country_event = phi.105
+            }
+        }
+    }
+}
+
+country_event = { # Trade Treaty Accepted
+    id = phi.104
+    title = phi.104.t
+    desc = phi.104.d
+    picture = GFX_report_event_generic_read_write
+    is_triggered_only = yes
+
+    option = {
+        name = phi.104.a
+    }
+}
+
+country_event = { # Trade Treaty Refused
+    id = phi.105
+    title = phi.105.t
+    desc = phi.105.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+
+    option = {
+        name = phi.105.a
+    }
+}
+
+# Faction Joining
+country_event = {
+    id = phi.108
+    is_triggered_only = yes
+    picture = GFX_report_event_generic_sign_treaty2
+
+    title = {
+        text = phi.108.t.jap
+        trigger = { tag = JAP }
+    }
+    title = {
+        text = phi.108.t.ger
+        trigger = { tag = GER }
+    }
+    title = {
+        text = phi.108.t.eng
+        trigger = { tag = ENG }
+    }
+    title = {
+        text = phi.108.t.usa
+        trigger = { tag = USA }
+    }
+    desc = {
+        text = phi.108.d.jap
+        trigger = { tag = JAP }
+    }
+    desc = {
+        text = phi.108.d.ger
+        trigger = { tag = GER }
+    }
+    desc = {
+        text = phi.108.d.eng
+        trigger = { tag = ENG }
+    }
+    desc = {
+        text = phi.108.d.usa
+        trigger = { tag = USA }
+    }
+
+    option = { # Allow Entry
+        name = phi.108.a
+        if = {
+            limit = {
+                is_faction_leader = yes
+            }
+            add_to_faction = FROM
+        }
+    }
+    option = { # Deny Entry
+        name = phi.108.b
+        FROM = {
+            country_event = phi.109
+        }
+    }
+}
+
+country_event = { # Faction Entry Denied 
+    id = phi.109
+    title = phi.109.t
+    desc = phi.109.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+
+    option = { # Damn them
+        name = phi.109.a
+    }
+}
+
+country_event = { # Demand Transfer of Colonial Holdings
+    id = phi.110
+    title = phi.110.t
+    desc = phi.110.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+
+    option = { # Accept
+        name = phi.110.a
+        if = {
+            limit = { tag = ENG }
+            FROM = {
+                transfer_state = 819
+                transfer_state = 820
+                transfer_state = 336
+                transfer_state = 821
+                transfer_state = 711
+                transfer_state = 712
+                transfer_state = 288
+                transfer_state = 640
+                transfer_state = 805
+                transfer_state = 812
+                transfer_state = 1007
+
+                annex_country = {
+                    target = BEA
+                    transfer_troops = no
+                }
+                country_event = phi.111
+            }
+        }
+        if = {
+            limit = { tag = FRA }
+            FROM = {
+                annex_country = {
+                    target = FIC
+                    transfer_troops = no
+                }
+                country_event = phi.111
+            }
+        }
+    }
+    option = { # Decline
+        name = phi.110.b
+        FROM = {
+            country_event = phi.112
+        }
+    }
+}
+
+country_event = { # Transfer Accepted
+    id = phi.111
+    title = phi.111.t
+    desc = phi.111.d
+    picture = GFX_report_event_german_troops_paris
+    is_triggered_only = yes
+
+    option = {
+        name = phi.111.a
+    }
+}
+
+country_event = { # Transfer Denied
+    id = phi.112
+    title = phi.112.t
+    desc = phi.112.d
+    picture = GFX_report_event_albanian_partisans
+    is_triggered_only = yes
+
+    option = {
+        name = phi.112.a
+        if = {
+            limit = { FROM = ENG }
+            create_wargoal = {
+                type = annex_everything
+                target = BEA
+            }
+        }
+        if = {
+            limit = { FROM = FRA }
+            create_wargoal = {
+                type = annex_everything
+                target = FIC
+            }
+        }
+    }
+}
+
+country_event = { # Request Naval Production Assistance
+    id = phi.113
+    title = phi.113.t
+    desc = phi.113.d
+    picture = GFX_report_event_hitler_handshake
+    is_triggered_only = yes
+
+    option = {
+        name = phi.113.a
+        FROM = { 
+            add_ideas = PHI_naval_production_assistance
+            country_event = phi.117
+        }
+    }
+    option = {
+        name = phi.113.b
+
+        FROM = { country_event = phi.118 }
+    }
+}
+
+country_event = { # Request Aircraft Production Assistance
+    id = phi.114
+    title = phi.114.t
+    desc = phi.114.d
+    picture = GFX_report_event_canada_treaty
+    is_triggered_only = yes
+
+    option = {
+        name = phi.114.a
+        FROM = {
+            add_ideas = PHI_aircraft_production_assistance
+            country_event = phi.117
+        }
+    }
+    option = {
+        name = phi.114.b
+        FROM = { country_event = phi.118 }
+    }
+}
+
+country_event = { # Request Armour Production Assistance
+    id = phi.115 
+    title = phi.115.t
+    desc = phi.115.d
+    picture = GFX_report_event_generic_read_write
+    is_triggered_only = yes
+
+    option = {
+        name = phi.115.a
+        FROM = {
+            add_ideas = PHI_armor_production_assistance
+            country_event = phi.117
+        }
+    }
+    option = {
+        name = phi.115.b
+        FROM = { country_event = phi.118 }
+    }
+}
+
+country_event = { # Request Firepower Production Assistance
+    id = phi.116
+    title = phi.116.t
+    desc = phi.116.d
+    picture = GFX_report_event_generic_read_write
+    is_triggered_only = yes
+
+    option = {
+        name = phi.116.a
+        FROM = {
+            add_ideas = PHI_firepower_production_assistance
+            country_event = phi.117
+        }
+    }
+    option = {
+        name = phi.116.b
+        FROM = { country_event = phi.118 }
+    }
+}
+
+country_event = { # Request Approved
+    id = phi.117
+    title = phi.117.t
+    desc = phi.117.d
+    picture = GFX_report_event_generic_sign_treaty2
+    is_triggered_only = yes
+
+    option = {
+        name = phi.117.a
+    }
+}
+
+country_event = { # Request Denied
+    id = phi.118
+    title = phi.118.t
+    desc = phi.118.d
+    picture = GFX_report_event_generic_sign_treaty2
+    is_triggered_only = yes
+
+    option = {
+        name = phi.118.a
+    }
+}
+
+country_event = { Invitation to SEADI
+    id = phi.119
+    title = phi.119.t
+    desc = phi.119.d
+    picture = GFX_report_event_japanese_siam_politicians
+    is_triggered_only = yes
+
+    option = {
+        name = phi.119.a
+        FROM = { country_event = phi.120 }
+    }
+    option = {
+        name = phi.119.b
+    }
+}
+
+country_event = { # Inviation Accepted
+    id = phi.120
+    title = phi.120.t
+    desc = phi.120.d
+    picture = GFX_report_event_japanese_siam_politicians
+    is_triggered_only = yes
+
+    option = {
+        name = phi.120.a
+        if = {
+            limit = { is_faction_leader = yes }
+            add_to_faction = FROM
+        }
+    }
+}
+
+country_event = { # Invitation Refused
+    id = phi.121
+    title = phi.121.t
+    desc = phi.121.d
+    picture = GFX_report_event_japanese_siam_politicians
+    is_triggered_only = yes
+
+    option = {
+        name = phi.121.a
     }
 }
