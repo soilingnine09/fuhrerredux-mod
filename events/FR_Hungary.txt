@@ -1688,7 +1688,7 @@ country_event = { # Hungary - Austria surrenders Burgenland
 	}
 }
 
-country_event = { # Hungary - Austria surrenders Burgenland
+country_event = { # Hungary - Austria doesnt surrender Burgenland
 	id = hun_for.21
 	title = hun_for.21.t
 	desc = hun_for.21.d
