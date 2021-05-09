@@ -257,9 +257,7 @@ ideas = {
         }
         PHI_legacy_of_general_luna = {
             allowed = { original_tag = PHI }
-
             picture = chi_army_corruption3
-
             modifier = {
                 attrition = -0.2
                 out_of_supply_factor = -0.2
@@ -591,7 +589,7 @@ ideas = {
             }
         }
         PHI_aeda_economic1 = {
-            picture = generic_foreign_capital
+            picture = PHI_aeda_economic_subsidies
             modifier = {
                 consumer_goods_factor = -0.075
                 industrial_capacity_factory = 0.15
@@ -599,7 +597,7 @@ ideas = {
             }
         }
         PHI_aeda_economic2 = {
-            picture = generic_foreign_capital
+            picture = PHI_aeda_economic_subsidies
             modifier = {
                 consumer_goods_factor = 0.05
                 industrial_capacity_factory = 0.1
@@ -607,7 +605,7 @@ ideas = {
             }
         }
         PHI_aeda_economic3 = {
-            picture = generic_foreign_capital
+            picture = PHI_aeda_economic_subsidies
             modifier = {
                 consumer_goods_factor = 0.025
                 industrial_capacity_factory = 0.05
@@ -615,37 +613,37 @@ ideas = {
             }
         }
         PHI_aeda_excavation1 = {
-            picture = ast_all_in
+            picture = PHI_aeda_resource_exploration
             modifier = {
                 local_resources_factor = 0.15
             }
         }
         PHI_aeda_excavation2 = {
-            picture = ast_all_in
+            picture = PHI_aeda_resource_exploration
             modifier = {
                 local_resources_factor = 0.1
             }
         }
         PHI_aeda_excavation3 = {
-            picture = ast_all_in
+            picture = PHI_aeda_resource_exploration
             modifier = {
                 local_resources_factor = 0.05
             }
         }
         PHI_aeda_construction1 = {
-            picture = generic_central_management
+            picture = PHI_aeda_construction_subsidies
             modifier = {
                 production_speed_buildings_factor = 0.15
             }
         }
         PHI_aeda_construction2 = {
-            picture = generic_central_management
+            picture = PHI_aeda_construction_subsidies
             modifier = {
                 production_speed_buildings_factor = 0.1
             }
         }
         PHI_aeda_construction3 = {
-            picture = generic_central_management
+            picture = PHI_aeda_construction_subsidies
             modifier = {
                 production_speed_buildings_factor = 0.05
             }
@@ -1593,7 +1591,7 @@ ideas = {
     # Tank Manufacturer
     tank_manufacturer = {
         designer = yes
-        PHI_army_deparment = {
+        PHI_army_department = {
             allowed = { is_a_filipino_tag = yes }
             picture = generic_tank_manufacturer_2
             traits = { motorised_equipment_producer_offense_3 }

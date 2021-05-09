@@ -6,13 +6,14 @@ PHI_default_plan = {
 
     enable = {
         original_tag = PHI
-        has_country_flag = PHI_BROTHERS_UNITED_BEHAVIOR
+        has_country_flag = PHI_ai_chosen
+        has_country_flag = PHI_democratic_behavior
     }
 
     abort = {
         OR = {
-            has_war_with = SOV
-            has_completed_focus = PHI_asean_focus
+            NOT = { country_exists = FIC }
+            NOT = { country_exists = BEA }
         }
     }
 
@@ -90,9 +91,10 @@ PHI_alternate_plan_1 = {
 
     enable = {
         original_tag = PHI
-        has_country_flag = PHI_PRUSSIA_OF_THE_EAST_BEHAVIOR
-        JAP = { exists = yes }
-        USA = { exists = yes }
+        has_country_flag = PHI_ai_chosen
+        has_country_flag = PHI_pataut_behavior
+        country_exists = JAP
+        country_exists = USA
     }
 
     abort = {
@@ -180,8 +182,8 @@ PHI_alternate_plan_2 = {
 
     enable = {
         original_tag = PHI
-        has_country_flag = PHI_TESTING_IMPERIALISM_BEHAVIOR
-        JAP = { exists = yes }
+        has_country_flag = PHI_natpop_behavior
+        country_exists = JAP
     }
 
     abort = {
@@ -243,7 +245,7 @@ PHI_alternate_plan_2 = {
     ideas = { }
 
     ai_strategy = {
-        type = contain
+        type = befriend
         id = "JAP"
         value = 200
     }
@@ -258,5 +260,92 @@ PHI_alternate_plan_2 = {
     focus_factors = {
         PHI_enlist_the_unemployed_focus
         PHI_filipino_nationalism
+    }
+}
+
+PHI_alternate_plan_3 = {
+    name = "Back to the Past"
+    desc = "The AI will priorise siding with Germany"
+
+    enable = {
+        original_tag = PHI
+        has_country_flag = PHI_valkist_behavior
+        country_exists = GER
+    }
+
+    abort = {
+        GER = {
+            OR = {
+                has_war_with = PHI
+                exists = no
+            }
+        }
+    }
+
+    ai_national_focuses = {
+        # Start the Industrialization
+        PHI_industrialization_plan                              # 35 days
+        PHI_department_of_public_works_and_highways_focus       # 35 days
+        PHI_luzon_development                                   # 70 days
+        PHI_visayas_development                                 # 70 days
+        PHI_mindanao_development                                # 70 days
+        PHI_state_armouries                                     # 70 days
+        PHI_fund_armscor                                        # 70 days
+        PHI_further_military_investments                        # 70 days
+        PHI_metro_manila                                        # 35 days
+        PHI_expand_pnr                                          # 35 days
+        PHI_the_pan_philippine_highway                          # 70 days
+        PHI_finish_industrialization_program                    # 70 days
+
+        PHI_department_of_labour_and_employment_focus           # 35 days
+
+        # Focus Navy and Air Force Buffs
+        PHI_expand_the_army                                     # 21 days
+        PHI_philippine_military_academy                         # 70 days
+        PHI_valdez_reform                                       # 35 days
+        PHI_expand_the_navy                                     # 21 days   
+        PHI_large_navy                                          # 35 days
+        PHI_submarine_modernization                             # 70 days
+        PHI_expand_the_air_force                                # 35 days
+        PHI_filipino_high_command                               # 35 days
+        PHI_department_of_finance_focus                         # 70 days
+        PHI_worker_subsidies_focus                              # 70 days
+        PHI_destroyer_modernization                             # 70 days
+        PHI_battlefield_support                                 # 70 days
+        PHI_modernize_cas_equipment                             # 70 days
+
+        PHI_the_fuhrer
+        PHI_german_trade_deal
+        PHI_military_pact_with_the_germans
+    }
+
+    research = {
+        cat_superior_firepower = 15.0
+        infantry_weapons = 10.0
+        air_doctrine = 10.0
+        naval_doctrine = 10.0
+        cas_bomber = 5.0
+        nav_bomber = 5.0
+        naval_equipment = 2.0
+    }
+
+    ideas = { }
+
+    ai_strategy = {
+        type = befriend
+        id = "GER"
+        value = 200
+    }
+
+    weight = {
+        factor = 1.0
+        modifier = {
+            factor = 1.0
+        }
+    }
+
+    focus_factors = {
+        PHI_promote_pre_colonial_culture
+        PHI_pass_new_conscription_laws
     }
 }

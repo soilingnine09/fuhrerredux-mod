@@ -11,7 +11,6 @@ country_event = {
     title = seasia.1.t
     desc = seasia.1.d
     picture = GFX_report_event_generic_sign_treaty1
-
     is_triggered_only = yes
 
     option = {
@@ -40,7 +39,6 @@ country_event = {
     title = seasia.2.t
     desc = seasia.2.d
     picture = GFX_report_event_gre_balkan_pact
-
     is_triggered_only = yes
 
     trigger = {
@@ -106,7 +104,6 @@ country_event = {
     title = seasia.3.t
     desc = seasia.3.d
     picture = GFX_report_event_japan_europe_pact
-
     is_triggered_only = yes
 
     option = {
@@ -141,7 +138,6 @@ country_event = {
     title = seasia.5.t
     desc = seasia.5.d
     picture = GFX_report_event_tank_factory
-
     is_triggered_only = yes
 
     # Economic Aid
@@ -228,6 +224,7 @@ country_event = {
     id = seasia.6
     title = seasia.6.t
     picture = GFX_report_event_generic_train
+    is_triggered_only = yes
 
     desc = {
         text = seasia.6.d.head
@@ -237,8 +234,6 @@ country_event = {
         text = seasia.6.d.member
         trigger = { NOT = { tag = FROM } }
     }
-
-    is_triggered_only = yes
 
     # Civillian
     option = {

@@ -5,15 +5,56 @@ on_actions = {
                 limit = { tag = PHI }
                 country_event = { id = phi.0 days = 2 }
             }
+            PHI = {
+                if = {
+                    limit = {
+                        has_game_rule = {
+                            rule = PHI_AI_BEHAVIOR
+                            option = PHI_BROTHERS_UNITED
+                        }
+                    }
+                    set_country_flag = PHI_ai_chosen
+                    set_country_flag = PHI_democratic_behavior
+                }
+                else_if = {
+                    limit = {
+                        has_game_rule = {
+                            rule = PHI_AI_BEHAVIOR
+                            option = PHI_PRUSSIA_OF_THE_EAST
+                        }
+                    }
+                    set_country_flag = PHI_ai_chosen
+                    set_country_flag = PHI_pataut_behavior
+                }
+                else_if = {
+                    limit = {
+                        has_game_rule = {
+                            rule = PHI_AI_BEHAVIOR
+                            option = PHI_TESTING_IMPERIALISM
+                        }
+                    }
+                    set_country_flag = PHI_ai_chosen
+                    set_country_flag = PHI_natpop_behavior
+                }
+                else_if - {
+                    limit = {
+                        has_game_rule = {
+                            rule = PHI_AI_BEHAVIOR
+                            option = PHI_RETURN_TO_THE_PAST
+                        }
+                    }
+                    set_country_flag = PHI_ai_chosen
+                    set_country_flag = PHI_valkist_behavior
+                }
+            }
         }
     }
-
     on_new_term_election = {
         effect = {
             if = {
                 limit = { tag = PHI }
-                country_event = phi.6
-                country_event = phi.27
+                country_event = phi.6 # 1936 Elections
+                country_event = phi.27 # 1940 Elections
             }
         }
     }
@@ -22,25 +63,23 @@ on_actions = {
         effect = {
             if = {
                 limit = {
-                    ROOT = { tag = FIC }
-                    FROM = {
-                        OR = {
-                            tag = CAM
-                            tag = LAO
-                            tag = VIN
-                        }
+                    ROOT = {
+                        tag = FIC
+                        is_subject_of = FRA
                     }
+                    FROM = { tag = PHI }
                 }
-
-                every_country = {
-                    limit = {
-                        is_in_faction_with = ROOT
-                        has_war_with = FROM
+                FRA = { country_event = phi.122 }
+            }
+            if = {
+                limit = {
+                    ROOT = {
+                        tag = BEA
+                        is_subject_of = ENG
                     }
-                    whitepeace = CAM
-                    whitepeace = LAO
-                    whitepeace = VIN
+                    FROM = { tag = PHI }
                 }
+                ENG = { country_event = phi.122 }
             }
         }
     }
