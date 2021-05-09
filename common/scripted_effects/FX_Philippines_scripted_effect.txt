@@ -77,3 +77,17 @@ PHI_remove_from_aeda = {
         clear_variable = aeda_nav_factories
     }
 }
+
+PHI_reset_nominations = {
+    hidden_effect = {
+        clr_country_flag = PHI_quezon_nominated
+        clr_country_flag = PHI_osmena_nominated
+        clr_country_flag = PHI_rodriguez_nominated
+        clr_country_flag = PHI_roxas_nominated
+        clr_country_flag = PHI_quirino_nominated
+        clr_country_flag = PHI_araneta_nominated
+        clr_country_flag = PHI_sumulong_nominated
+        clr_country_flag = PHI_santos_inaugurated
+        clr_country_flag = PHI_feleo_inaugurated
+    }
+}

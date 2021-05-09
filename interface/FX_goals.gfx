@@ -20,4 +20,19 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/PHI_goal_renounce_colonialism.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_focus_philippines_army"
+		texturefile = "gfx/interface/goals/PHI_goal_army.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_philippines_navy"
+		texturefile = "gfx/interface/goals/PHI_goal_navy.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_philippines_air_force"
+		texturefile = "gfx/interface/goals/PHI_goal_air_force.tga"
+	}
+
 }

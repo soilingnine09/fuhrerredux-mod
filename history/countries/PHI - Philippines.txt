@@ -53,7 +53,7 @@ if = {
 country_event = { id = phi.51 days = 893 }
 
 add_ideas = {
-	PHI_thirst_for_democracy
+	PHI_promise_of_elections
 	PHI_agriculture_economy
 	PHI_marxist_professors
 
@@ -61,6 +61,7 @@ add_ideas = {
 	PHI_Ferdinand_Marcos_for_sco
 	PHI_Serafin_Fausto_eco_sco
 	PHI_Benigno_Aquino_Sr_sec_ade
+	PHI_Fidel_Segundo_int_ade
 	presidential_republic
 }
 

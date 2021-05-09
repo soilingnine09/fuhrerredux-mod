@@ -1118,7 +1118,8 @@ focus_tree = {
     # Expand the Army
     focus = {
         id = PHI_expand_the_army
-        icon = GFX_goal_generic_allies_build_infantry
+        icon = GFX_focus_philippines_army
+        #icon = GFX_goal_generic_allies_build_infantry
         x = 28
         y = 0
         cost = 3
@@ -1334,7 +1335,8 @@ focus_tree = {
     # Expand the Navy
     focus = {
         id = PHI_expand_the_navy
-        icon = GFX_goal_battleship
+        #icon = GFX_goal_battleship
+        icon = GFX_focus_philippines_navy
         x = 36
         y = 0
         cost = 3
@@ -1567,7 +1569,8 @@ focus_tree = {
     # Expand the Air Force
     focus = {
         id = PHI_expand_the_air_force
-        icon = GFX_goal_expand_the_luftwaffe
+        #icon = GFX_goal_expand_the_luftwaffe
+        icon = GFX_focus_philippines_air_force
         x = 45
         y = 0
         cost = 3
@@ -1961,7 +1964,13 @@ focus_tree = {
         available_if_capitulated = yes
         prerequisite = { focus = PHI_our_place_in_the_sphere }
         completion_reward = {
-            add_ideas = PHI_japanese_support
+            add_tech_bonus = {
+                category = air_doctrine
+                category = naval_doctrine
+                category = infantry_weapons
+                bonus = 1.0
+                uses = 2
+            }
         }
     }
 
@@ -2060,7 +2069,13 @@ focus_tree = {
         available_if_capitulated = yes
         prerequisite = { focus = PHI_protection_from_the_empire }
         completion_reward = {
-            add_ideas = PHI_british_support
+            add_tech_bonus = {
+                category = air_doctrine
+                category = naval_doctrine
+                category = electronics
+                uses = 2
+                bonus = 1.0
+            }
         }
     }
 
@@ -2645,7 +2660,13 @@ focus_tree = {
         available_if_capitulated = yes
         prerequisite = { focus = PHI_military_pact_with_the_germans }
         completion_reward = {
-            add_ideas = PHI_german_support
+            add_tech_bonus = {
+                category = armor
+                category = artillery
+                category = land_doctrine
+                bonus = 1.0
+                uses = 2
+            }
         }
     }
 
@@ -2748,7 +2769,13 @@ focus_tree = {
         mutually_exclusive = { focus = PHI_purchase_tank_equipment }
         prerequisite = { focus = PHI_defense_treaty_with_america }
         completion_reward = {
-            add_ideas = PHI_american_support
+            add_tech_bonus = {
+                category = land_doctrine
+                category = artillery
+                category = industry
+                bonus = 1.0
+                uses = 2
+            }
         }
     }
 
@@ -2813,7 +2840,7 @@ focus_tree = {
         available = { 
             custom_trigger_tooltip = {
                 tooltip = unlocked_later
-                has_country_flag = PHI_worker_victory_tt
+                has_socialist_government = yes
             }
         }
     }
@@ -2829,7 +2856,7 @@ focus_tree = {
             has_socialist_government = yes
         }
         prerequisite = { focus = PHI_the_new_republic_proclaimed }
-        completion_reward = { country_event = { id = phi.50 } }
+        completion_reward = { country_event = phi.23 }
     }   
 
     # Socialism with Filipino Characteristics
@@ -2841,8 +2868,8 @@ focus_tree = {
         cost = 3
         available = {
             custom_trigger_tooltip = {
-                tooltip = PHI_evangelista_remains_tt
-                has_country_flag = PHI_evangelista_remains_tt
+                tooltip = unlocked_later
+                has_country_flag = PHI_lib_soc_majority_tt
             }
         }
         prerequisite = { focus = PHI_trade_union_congress }
@@ -3142,8 +3169,8 @@ focus_tree = {
         cost = 3
         available = {
             custom_trigger_tooltip = {
-                tooltip = PHI_taruc_inaugurated_tt
-                has_country_flag = PHI_taruc_inaugurated_tt
+                tooltip = unlocked_later
+                has_country_flag = PHI_vanguardist_majority_tt
             }
         }
         prerequisite = { focus = PHI_trade_union_congress }

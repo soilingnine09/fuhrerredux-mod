@@ -136,7 +136,7 @@ bookmarks = {
 			history = "PHI_FUHRERREICH_DESC"
 			ideology = authoritarian_democrat
 			ideas = {
-				PHI_thirst_for_democracy
+				PHI_promise_of_elections
 				PHI_agriculture_economy
 				PHI_marxist_professors
 			}

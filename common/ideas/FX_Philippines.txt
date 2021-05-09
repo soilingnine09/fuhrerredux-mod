@@ -3,20 +3,20 @@
 
 ideas = {
     country = {
-        PHI_thirst_for_democracy = {
+        PHI_promise_of_elections = {
             allowed = { original_tag = PHI }
             picture = MEX_revolutionary_army
             modifier = {
-                stability_factor = -0.45
-                war_support_factor = -0.25
-                political_power_cost = 0.50
+                political_power_cost = 0.25
+                authoritarian_democrat_drift = -0.01
             }
         }
         PHI_agriculture_economy = {
             allowed = { original_tag = PHI }
             picture = generic_agrarian_society
             modifier = {
-                production_factory_max_efficiency_factor = -0.15
+                production_factory_max_efficiency_factor = -0.25
+                production_factory_start_efficiency_factor = -0.25
                 industrial_capacity_factory = -0.25
                 industrial_capacity_dockyard = -0.25
             }
@@ -1458,257 +1458,257 @@ ideas = {
                 air_doctrine = 0.05
             }
         }
-        # Industrial Concern
-        industrial_concern = {
-            designer = yes
-            PHI_benguet_corporation = {
-                allowed = { is_a_filipino_tag = yes }
-                picture = generic_industrial_concern_2
-                traits = { mining_company }
-                research_bonus = {
-                    industry = 0.15
-                }
-                modifier = {
-                    local_resources_factor = 0.05
-                }
+    }
+    # Industrial Concern
+    industrial_concern = {
+        designer = yes
+        PHI_benguet_corporation = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_industrial_concern_2
+            traits = { mining_company }
+            research_bonus = {
+                industry = 0.15
             }
-            PHI_ayala_corporation = {
-                allowed = { is_a_filipino_tag = yes }
-                picture = generic_refining_concern_1
-                traits = { oil_concern }
-                research_bonus = {
-                    synth_resources = 0.15
-                }
-                modifier = {
-                    fuel_gain_factor = 0.05
-                    production_oil_factor = 0.05
-                }
-            }
-            PHI_science_department = {
-                allowed = { is_a_filipino_tag = yes }
-                picture = generic_electronics_concern_3
-                traits = { electronics_manufacturer }
-                research_bonus = {
-                    electronics = 0.15
-                }
-                modifier = {
-                    industrial_capacity_factory = 0.05
-                    industrial_capacity_dockyard = 0.05
-                }
-            }
-            PHI_san_miguel_corporation = {
-                allowed = { is_a_filipino_tag = yes }
-                picture = generic_industrial_concern_3
-                traits = { industrial_concern }
-                research_bonus = {
-                    industry = 0.15
-                }
-                modifier = {
-                    production_speed_buildings_factor = 0.05
-                }
-            }
-            PHI_standard_oil = {
-                allowed = { is_a_filipino_tag = yes }
-                available = { has_trade_with_united_states = yes }
-                picture = standard_oil_california
-                traits = { oil_concern }
-                research_bonus = {
-                    synth_resources = 0.15
-                }
-                modifier = {
-                    fuel_gain_factor = 0.05
-                    production_oil_factor = 0.05
-                }
-            }
-            PHI_english_electric = {
-                allowed = { is_a_filipino_tag = yes }
-                available = { has_trade_with_britain = yes }
-                picture = english_electric
-                traits = { electronics_manufacturer }
-                research_bonus = {
-                    electronics = 0.15
-                }
-                modifier = {
-                    industrial_capacity_factory = 0.05
-                    industrial_capacity_dockyard = 0.05
-                }
-            }
-            PHI_kawasaki = {
-                allowed = { is_a_filipino_tag = yes }
-                available = { has_trade_with_japan = yes }
-                picture = kawasaki
-                traits = { industrial_concern }
-                research_bonus = {
-                    industry = 0.15
-                }
-                modifier = {
-                    production_speed_buildings_factor = 0.05
-                }
-            }
-            PHI_krupp = {
-                allowed = { is_a_filipino_tag = yes }
-                available = { has_trade_with_germany = yes }
-                picture = krupp
-                traits = { mining_company }
-                research_bonus = {
-                    industry = 0.15
-                }
-                modifier = {
-                    local_resources_factor = 0.05
-                }
+            modifier = {
+                local_resources_factor = 0.05
             }
         }
-        # Weapons Manufacturer
-        weapons_manufacturer = {
-            designer = yes
-            PHI_armscor = {
-                allowed = { is_a_filipino_tag = yes }
-                available = { has_completed_focus = PHI_fund_armscor }
-                picture = generic_infantry_equipment_manufacturer_2
-                traits = { infantry_equipment_producer_offense_2 }
-                research_bonus = {
-                    infantry_weapons = 0.15
-                }
+        PHI_ayala_corporation = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_refining_concern_1
+            traits = { oil_concern }
+            research_bonus = {
+                synth_resources = 0.15
             }
-            PHI_nissan = {
-                allowed = { is_a_filipino_tag = yes }
-                available = { has_trade_with_japan = yes }
-                picture = nissan
-                traits = { infantry_equipment_producer_defense_1 }
-                research_bonus = {
-                    infantry_weapons = 0.15
-                }
-            }
-            PHI_rsaf_enfield = {
-                allowed = { is_a_filipino_tag = yes }
-                available = { has_trade_with_britain = yes }
-                picture = rsaf_enfield
-                traits = { infantry_equipment_producer_assualt_1 }
-                research_bonus = {
-                    infantry_weapons = 0.15
-                }
+            modifier = {
+                fuel_gain_factor = 0.05
+                production_oil_factor = 0.05
             }
         }
-        # Tank Manufacturer
-        tank_manufacturer = {
-            designer = yes
-            PHI_army_deparment = {
-                allowed = { is_a_filipino_tag = yes }
-                picture = generic_tank_manufacturer_2
-                traits = { motorised_equipment_producer_offense_3 }
-                research_bonus = {
-                    motorized = 0.15
-                }
+        PHI_science_department = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_electronics_concern_3
+            traits = { electronics_manufacturer }
+            research_bonus = {
+                electronics = 0.15
             }
-            PHI_ford = {
-                allowed = { is_a_filipino_tag = yes }
-                available = { has_trade_with_united_states = yes }
-                picture = ford_motor_company
-                traits = { medium_tank_producer_mass_2 }
-                research_bonus = {
-                    armor = 0.15
-                }
-            }
-            PHI_porsche = {
-                allowed = { is_a_filipino_tag = yes }
-                available = { has_trade_with_germany = yes }
-                picture = porsche
-                traits = { heavy_tank_producer_offense_1 }
-                research_bonus = {
-                    armor = 0.15
-                }
-            }
-            PHI_vickers = {
-                allowed = { is_a_filipino_tag = yes }
-                available = { has_trade_with_britain = yes }
-                picture = vickers_armstrong_eng
-                traits = { small_tank_producer_mass_1 }
-                research_bonus = {
-                    armor = 0.15
-                }
+            modifier = {
+                industrial_capacity_factory = 0.05
+                industrial_capacity_dockyard = 0.05
             }
         }
-        # Naval-Air Manufacturer
-        air_naval_manufacturer = {
-            designer = yes
-            PHI_air_force_department = {
-                allowed = { is_a_filipino_tag = yes }
-                picture = generic_air_manufacturer_3
-                traits = { nav_cas_producer_mass_2 }
-                research_bonus = {
-                    air_equipment = 0.15
-                }
+        PHI_san_miguel_corporation = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_industrial_concern_3
+            traits = { industrial_concern }
+            research_bonus = {
+                industry = 0.15
             }
-            PHI_mitsubishi = {
-                allowed = { is_a_filipino_tag = yes }
-                available = { has_trade_with_japan = yes }
-                picture = mitsubishi
-                traits = { nav_cas_producer_offense_2 }
-                research_bonus = {
-                    air_equipment = 0.15
-                }
+            modifier = {
+                production_speed_buildings_factor = 0.05
             }
-            PHI_junkers = {
-                allowed = { is_a_filipino_tag = yes }
-                available = { has_trade_with_germany = yes }
-                picture = junkers
-                traits = { fighter_producer_defense_1 }
-                research_bonus = {
-                    air_equipment = 0.15
-                }
+        }
+        PHI_standard_oil = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_trade_with_united_states = yes }
+            picture = standard_oil_california
+            traits = { oil_concern }
+            research_bonus = {
+                synth_resources = 0.15
             }
-            PHI_hawker = {
-                allowed = { is_a_filipino_tag = yes }
-                available = { has_trade_with_britain = yes }
-                picture = hawker
-                traits = { bomber_producer_defense_2 }
-                research_bonus = {
-                    air_equipment = 0.15
-                }
+            modifier = {
+                fuel_gain_factor = 0.05
+                production_oil_factor = 0.05
             }
-            PHI_boeing = {
-                allowed = { is_a_filipino_tag = yes }
-                available = { has_trade_with_united_states = yes }
-                picture = boeing
-                traits = { fighter_producer_offense_2 }
-                research_bonus = {
-                    air_equipment = 0.15
-                }
+        }
+        PHI_english_electric = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_trade_with_britain = yes }
+            picture = english_electric
+            traits = { electronics_manufacturer }
+            research_bonus = {
+                electronics = 0.15
             }
-            PHI_subic_naval = {
-                allowed = { is_a_filipino_tag = yes }
-                picture = generic_naval_manufacturer_1
-                traits = { small_ship_producer_mass_2 }
-                research_bonus = {
-                    naval_equipment = 0.15
-                }
+            modifier = {
+                industrial_capacity_factory = 0.05
+                industrial_capacity_dockyard = 0.05
             }
-            PHI_harland_wolff = {
-                allowed = { is_a_filipino_tag = yes }
-                available = { has_trade_with_britain = yes }
-                picture = harland_wolff
-                traits = { cruiser_producer_mass_2 }
-                research_bonus = {
-                    naval_equipment = 0.15
-                }
+        }
+        PHI_kawasaki = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_trade_with_japan = yes }
+            picture = kawasaki
+            traits = { industrial_concern }
+            research_bonus = {
+                industry = 0.15
             }
-            PHI_yarrow_shipbuilders = {
-                allowed = { is_a_filipino_tag = yes }
-                available = { has_trade_with_united_states = yes }
-                picture = yarrow_shipbuilders
-                traits = { capital_ship_producer_mass_1 }
-                research_bonus = {
-                    naval_equipment = 0.15
-                }
+            modifier = {
+                production_speed_buildings_factor = 0.05
             }
-            PHI_blohm_und_voss = {
-                allowed = { is_a_filipino_tag = yes }
-                available = { has_trade_with_germany = yes }
-                picture = blohm_und_voss
-                traits = { small_ship_producer_offense_2 }
-                research_bonus = {
-                    naval_equipment = 0.15
-                }
+        }
+        PHI_krupp = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_trade_with_germany = yes }
+            picture = krupp
+            traits = { mining_company }
+            research_bonus = {
+                industry = 0.15
+            }
+            modifier = {
+                local_resources_factor = 0.05
+            }
+        }
+    }
+    # Weapons Manufacturer
+    weapons_manufacturer = {
+        designer = yes
+        PHI_armscor = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_completed_focus = PHI_fund_armscor }
+            picture = generic_infantry_equipment_manufacturer_2
+            traits = { infantry_equipment_producer_offense_2 }
+            research_bonus = {
+                infantry_weapons = 0.15
+            }
+        }
+        PHI_nissan = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_trade_with_japan = yes }
+            picture = nissan
+            traits = { infantry_equipment_producer_defense_1 }
+            research_bonus = {
+                infantry_weapons = 0.15
+            }
+        }
+        PHI_rsaf_enfield = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_trade_with_britain = yes }
+            picture = rsaf_enfield
+            traits = { infantry_equipment_producer_assualt_1 }
+            research_bonus = {
+                infantry_weapons = 0.15
+            }
+        }
+    }
+    # Tank Manufacturer
+    tank_manufacturer = {
+        designer = yes
+        PHI_army_deparment = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_tank_manufacturer_2
+            traits = { motorised_equipment_producer_offense_3 }
+            research_bonus = {
+                motorized = 0.15
+            }
+        }
+        PHI_ford = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_trade_with_united_states = yes }
+            picture = ford_motor_company
+            traits = { medium_tank_producer_mass_2 }
+            research_bonus = {
+                armor = 0.15
+            }
+        }
+        PHI_porsche = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_trade_with_germany = yes }
+            picture = porsche
+            traits = { heavy_tank_producer_offense_1 }
+            research_bonus = {
+                armor = 0.15
+            }
+        }
+        PHI_vickers = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_trade_with_britain = yes }
+            picture = vickers_armstrong_eng
+            traits = { small_tank_producer_mass_1 }
+            research_bonus = {
+                armor = 0.15
+            }
+        }
+    }
+    # Naval-Air Manufacturer
+    air_naval_manufacturer = {
+        designer = yes
+        PHI_air_force_department = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_air_manufacturer_3
+            traits = { nav_cas_producer_mass_2 }
+            research_bonus = {
+                air_equipment = 0.15
+            }
+        }
+        PHI_mitsubishi = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_trade_with_japan = yes }
+            picture = mitsubishi
+            traits = { nav_cas_producer_offense_2 }
+            research_bonus = {
+                air_equipment = 0.15
+            }
+        }
+        PHI_junkers = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_trade_with_germany = yes }
+            picture = junkers
+            traits = { fighter_producer_defense_1 }
+            research_bonus = {
+                air_equipment = 0.15
+            }
+        }
+        PHI_hawker = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_trade_with_britain = yes }
+            picture = hawker
+            traits = { bomber_producer_defense_2 }
+            research_bonus = {
+                air_equipment = 0.15
+            }
+        }
+        PHI_boeing = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_trade_with_united_states = yes }
+            picture = boeing
+            traits = { fighter_producer_offense_2 }
+            research_bonus = {
+                air_equipment = 0.15
+            }
+        }
+        PHI_subic_naval = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_naval_manufacturer_1
+            traits = { small_ship_producer_mass_2 }
+            research_bonus = {
+                naval_equipment = 0.15
+            }
+        }
+        PHI_harland_wolff = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_trade_with_britain = yes }
+            picture = harland_wolff
+            traits = { cruiser_producer_mass_2 }
+            research_bonus = {
+                naval_equipment = 0.15
+            }
+        }
+        PHI_yarrow_shipbuilders = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_trade_with_united_states = yes }
+            picture = yarrow_shipbuilders
+            traits = { capital_ship_producer_mass_1 }
+            research_bonus = {
+                naval_equipment = 0.15
+            }
+        }
+        PHI_blohm_und_voss = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_trade_with_germany = yes }
+            picture = blohm_und_voss
+            traits = { small_ship_producer_offense_2 }
+            research_bonus = {
+                naval_equipment = 0.15
             }
         }
     }
