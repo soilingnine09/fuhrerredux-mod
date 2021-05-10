@@ -1369,6 +1369,29 @@ country_event = { # Ask for Investments
 
     option = {
         name = phi.100.a
+        ai_chance = {
+            base = 50
+            modifier = {
+                factor = 10
+                is_in_faction_with = FROM
+            }
+            modifier = {
+                factor = 4
+                FROM = { is_subject_of = PREV }
+            }
+            modifier = {
+                factor = 2
+                has_opinion > 50
+            }
+            modifier = {
+                factor = 0.2
+                num_of_factories > 100
+            }
+            modifier = {
+                factor = 0.8
+                FROM = { is_major = yes }
+            }
+        }
         PHI = {
             add_offsite_building = {
                 type = industrial_complex
@@ -1379,6 +1402,9 @@ country_event = { # Ask for Investments
     }
     option = {
         name = phi.100.b
+        ai_chance = {
+            base = 50
+        }
         PHI = {
             country_event = phi.102
         }
@@ -1500,6 +1526,34 @@ country_event = {
 
     option = { # Allow Entry
         name = phi.108.a
+        ai_chance = {
+            base = 50
+            modifier = {
+                factor = 20
+                tag = USA
+                has_war_with = JAP
+            }
+            modifier = {
+                factor = 20
+                tag = JAP
+                has_war = yes
+            }
+            modifier = {
+                factor = 20
+                tag = ENG
+                has_war = yes
+            }
+            modifier = {
+                factor = 20
+                tag = ENG
+                country_exists = INS
+            }
+            modifier = {
+                factor = 20
+                tag = GER
+                has_war_with = FRA
+            }
+        }
         if = {
             limit = {
                 is_faction_leader = yes
@@ -1509,6 +1563,9 @@ country_event = {
     }
     option = { # Deny Entry
         name = phi.108.b
+        ai_chance = {
+            base = 50
+        }
         FROM = {
             country_event = phi.109
         }
@@ -1536,6 +1593,49 @@ country_event = { # Demand Transfer of Colonial Holdings
 
     option = { # Accept
         name = phi.110.a
+        ai_chance = {
+            base = 10
+            modifier = {
+                factor = 10
+                surrender_progress > 0.5
+            }
+            modifier = {
+                factor = 2
+                tag = ENG
+                has_war_with = FRA
+            }
+            modifier = {
+                factor = 4
+                tag = ENG
+                has_war_with = USA
+            }
+            modifier = {
+                factor = 2
+                tag = FRA
+                has_war_with = ENG
+            }
+            modifier = {
+                factor = 2
+                tag = FRA
+                has_war_with = GER
+            }
+            modifier = {
+                factor = 2
+                num_of_factories > 100
+            }
+            modifier = {
+                factor = 2
+                num_of_divisions > 100
+            }
+            modifier = {
+                factor = 0.8
+                FROM = { has_war_with = JAP }
+            }
+            modifier = {
+                factor = 0.8
+                FROM = { has_war_with = USA }
+            }
+        }
         if = {
             limit = { tag = ENG }
             FROM = {
@@ -1571,6 +1671,9 @@ country_event = { # Demand Transfer of Colonial Holdings
     }
     option = { # Decline
         name = phi.110.b
+        ai_chance = {
+            base = 90
+        }
         FROM = {
             country_event = phi.112
         }
@@ -1624,6 +1727,13 @@ country_event = { # Request Naval Production Assistance
 
     option = {
         name = phi.113.a
+        ai_chance = {
+            base = 80
+            modifier = {
+                factor = 20
+                is_in_faction_with = FROM
+            }
+        }
         FROM = { 
             add_ideas = PHI_naval_production_assistance
             country_event = phi.117
@@ -1631,8 +1741,9 @@ country_event = { # Request Naval Production Assistance
     }
     option = {
         name = phi.113.b
-
-        FROM = { country_event = phi.118 }
+        FROM = { 
+            country_event = phi.118
+        }
     }
 }
 
@@ -1645,6 +1756,13 @@ country_event = { # Request Aircraft Production Assistance
 
     option = {
         name = phi.114.a
+        ai_chance = {
+            base = 80
+            modifier = {
+                factor = 20
+                is_in_faction_with = FROM
+            }
+        }
         FROM = {
             add_ideas = PHI_aircraft_production_assistance
             country_event = phi.117
@@ -1665,6 +1783,13 @@ country_event = { # Request Armour Production Assistance
 
     option = {
         name = phi.115.a
+        ai_chance = {
+            base = 80
+            modifier = {
+                factor = 20
+                is_in_faction_with = FROM
+            }
+        }
         FROM = {
             add_ideas = PHI_armor_production_assistance
             country_event = phi.117
@@ -1685,6 +1810,13 @@ country_event = { # Request Firepower Production Assistance
 
     option = {
         name = phi.116.a
+        ai_chance = {
+            base = 80
+            modifier = {
+                factor = 20
+                is_in_faction_with = FROM
+            }
+        }
         FROM = {
             add_ideas = PHI_firepower_production_assistance
             country_event = phi.117
@@ -1729,10 +1861,25 @@ country_event = { Invitation to SEADI
 
     option = {
         name = phi.119.a
+        ai_chance = {
+            base = 60
+            modifier = {
+                factor = 2
+                num_of_factories > 100
+            }
+            modifier = {
+                factor = 2
+                num_of_divisions > 50
+            }
+        }
         FROM = { country_event = phi.120 }
     }
     option = {
         name = phi.119.b
+        ai_chance = {
+            base = 40
+        }
+        FROM = { country_event = phi.121 }
     }
 }
 
