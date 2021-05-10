@@ -1,0 +1,1501 @@
+# Philippine Republic Focus Tree
+# created by: dax0102
+
+focus_tree = {
+    id = filipino_republic_focus
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = PHI
+        }
+    }
+
+    continuous_focus_position = { x = 3800 y = 1000 }
+
+    initial_show_position = {
+        focus = PHI_industrialization_plan
+    }
+
+    shared_focus = PHI_industrialization_plan
+    shared_focus = PHI_expand_the_army
+    shared_focus = PHI_expand_the_navy
+    shared_focus = PHI_expand_the_air_force
+    shared_focus = PHI_department_of_foreign_affairs
+
+    ######################################################
+    #                                                    #
+    #                    DEMOCRATIC                      #
+    #                                                    #
+    ######################################################
+
+    # Democracy Returns
+    focus = {
+        id = PHI_democracy_returns
+        icon = GFX_focus_philippines_democracy
+        x = 4
+        y = 0
+        cost = 0
+        available_if_capitulated = yes
+        available = { 
+            custom_trigger_tooltip = {
+                tooltip = unlocked_later
+                has_country_flag = PHI_had_1936_elections
+            }
+        }
+        completion_reward = {}
+    }
+
+    ########################
+    #     LIBERAL SHARED   #
+    ########################
+
+    # Liberal Victory
+    focus = {
+        id = PHI_liberal_victory
+        icon = GFX_goal_ideology_market_liberal
+        x = -2
+        y = 1
+        cost = 0
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = PHI_liberal_victory_tt
+                has_country_flag = PHI_liberal_victory_tt
+            }
+        }
+        mutually_exclusive = {
+            focus = PHI_nacionalista_victory
+        }
+        prerequisite = { focus = PHI_democracy_returns }
+        completion_reward = {}
+        relative_position_id = PHI_democracy_returns
+    }
+
+    # Helping the Poor
+    focus = {
+        id = PHI_helping_the_poor
+        icon = GFX_goal_DEI_focus_ban_rice_import
+        x = -2
+        y = 1
+        cost = 6
+        available_if_capitulated = yes
+        available = { has_elected_government = yes }
+        prerequisite = { focus = PHI_liberal_victory }
+        relative_position_id = PHI_liberal_victory
+        completion_reward = {
+            add_ideas = PHI_social_welfare_department1
+        }
+    }
+
+    # Cooperate with the Trade Unions
+    focus = {
+        id = PHI_cooperate_with_trade_unions
+        icon = GFX_goal_RAJ_India_Worker_Rights
+        x = 0
+        y = 1
+        cost = 6
+        available_if_capitulated = yes
+        available = { has_elected_government = yes }
+        prerequisite = { focus = PHI_helping_the_poor }
+        relative_position_id = PHI_helping_the_poor
+        completion_reward = {
+            hidden_effect = {
+                set_country_flag = PHI_COOPERATE_UNIONS
+                add_popularity = {
+                    ideology = social_democrat
+                    popularity = 0.1
+                }
+            }
+            add_ideas = PHI_cooperated_with_the_unions
+        }
+    }
+
+    # Social Welfare Programs
+    focus = {
+        id = PHI_social_welfare_programs
+        icon = GFX_focus_generic_concessions
+        x = 0
+        y = 1
+        cost = 6
+        available_if_capitulated = yes
+        available = { has_elected_government = yes }
+        prerequisite = { focus = PHI_cooperate_with_trade_unions }
+        relative_position_id = PHI_cooperate_with_trade_unions
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = PHI_social_welfare_department1
+                add_idea = PHI_social_welfare_department2
+            }
+        }
+    }
+
+    # A Contented Worker
+    focus = {
+        id = PHI_a_contented_worker_focus
+        icon = GFX_goal_generic_consumer_goods
+        x = 1
+        y = 1
+        cost = 6
+        available = { has_elected_government = yes }
+        prerequisite = { focus = PHI_social_welfare_programs }
+        prerequisite = { focus = PHI_cwts_focus }
+        relative_position_id = PHI_social_welfare_programs
+        completion_reward = {
+            add_ideas = PHI_a_contented_worker
+        }
+    }
+
+    # Negiotiate with the Radicals
+    focus = {
+        id = PHI_negotiate_with_the_radicals
+        icon = GFX_goal_flames_of_rebellion
+        x = 0
+        y = 1
+        cost = 6
+        available_if_capitulated = yes
+        available = {
+            has_elected_government = yes
+        }
+        prerequisite = {  focus = PHI_liberal_victory }
+        relative_position_id = PHI_liberal_victory
+        completion_reward = {
+            if = {
+                limit = { has_idea = PHI_marxist_professors }
+                remove_ideas = PHI_marxist_professors
+                add_ideas = PHI_marxist_professors_reformed
+            }
+            add_stability = 0.1
+            add_war_support = 0.2
+            add_popularity = {
+                ideology = market_liberal
+				popularity = 0.05
+            }
+            add_popularity = {
+                ideology = social_democrat
+				popularity = 0.05
+            }
+        }
+    }
+
+    # Open new Universities
+    focus = {
+        id = PHI_new_universities
+        icon = GFX_focus_research2
+        x = 0
+        y = 1
+        cost = 6
+        available_if_capitulated = yes        
+        available = {
+            has_elected_government = yes
+        }
+        prerequisite = { focus = PHI_negotiate_with_the_radicals }
+        relative_position_id = PHI_negotiate_with_the_radicals
+        completion_reward = {
+            if = {
+                limit = { has_completed_focus = PHI_education_reform }
+                add_ideas = PHI_education_funding
+                else = {
+                    add_research_slot = 1
+                }
+            }
+        }
+    }
+
+    # Civil Welfare Training Service
+    focus = {
+        id = PHI_cwts_focus
+        icon = GFX_goal_enlist_the_police
+        x = 0
+        y = 1
+        cost = 6
+        available_if_capitulated = yes
+        available = {
+            has_elected_government = yes
+        }
+        prerequisite = { focus = PHI_new_universities }
+        relative_position_id = PHI_new_universities
+        completion_reward = {
+            add_ideas = PHI_cwts
+        }
+    }
+
+    # Impose Human Rights
+    focus = {
+        id = PHI_human_rights
+        icon = GFX_goal_DOM_End_Judicial_Corruption
+        x = 0
+        y = 2
+        cost = 6
+        available = { 
+            has_elected_government = yes
+        }
+        prerequisite = { 
+            focus = PHI_liberal_victory 
+            focus = PHI_nacionalista_victory
+        }
+        relative_position_id = PHI_democracy_returns
+        completion_reward = {
+            add_stability = 0.2
+        }
+    }
+
+    # The Philippine Constabulary
+    focus = {
+        id = PHI_the_philippine_constabulary
+        icon = GFX_focus_philippines_constabulary
+        x = 0
+        y = 1
+        cost = 6
+        prerequisite = { focus = PHI_human_rights }
+        relative_position_id = PHI_human_rights
+        completion_reward = {
+            add_ideas = PHI_the_constabulary
+        }
+    }
+
+    # Government Investments
+    focus = {
+        id = PHI_government_investments
+        icon = GFX_goal_bag_of_money
+        x = 4
+        y = 4
+        cost = 6
+        available = { 
+            has_elected_government = yes
+        }
+        prerequisite = { focus = PHI_the_philippine_constabulary }
+        completion_reward = {
+            random_owned_controlled_state = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+                    add_extra_state_shared_building_slots = 2
+                }
+            }
+            random_owned_controlled_state = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+                    add_extra_state_shared_building_slots = 2
+                }
+            }
+        }
+    }
+
+    ########################
+    #  SOCIAL CONSERVATIVE #
+    ########################
+    
+    # Nacionalista Victory
+    focus = {
+        id = PHI_nacionalista_victory
+        icon = GFX_goal_ideology_social_conservative
+        x = 2
+        y = 1
+        cost = 0
+        available_if_capitulated = yes
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = PHI_nacionalista_victory_tt
+                has_country_flag = PHI_nacionalista_victory_tt
+            }
+        }
+        mutually_exclusive = {
+            focus = PHI_liberal_victory
+        }
+        prerequisite = { focus = PHI_democracy_returns }
+        completion_reward = {}
+        relative_position_id = PHI_democracy_returns
+    }
+
+    # Establish Intelligence Service
+    focus = {
+        id = PHI_establish_intelligence_service
+        icon = GFX_goal_secret_agents
+        x = 0
+        y = 1
+        cost = 6
+        available_if_capitulated = yes
+        available = {
+            has_elected_government = yes
+        }
+        prerequisite = {
+            focus = PHI_nacionalista_victory
+        }
+        relative_position_id = PHI_nacionalista_victory
+        completion_reward = {
+            add_ideas = PHI_intelligence_agency
+        }
+    }
+
+    # Education Reform
+    focus = {
+        id = PHI_education_reform
+        icon = GFX_focus_research4
+        x = 0
+        y = 1
+        cost = 6
+        available_if_capitulated = yes
+        available = {
+            has_elected_government = yes
+        }
+        prerequisite = { focus = PHI_establish_intelligence_service }
+        relative_position_id = PHI_establish_intelligence_service
+        completion_reward = {
+            if = {
+                limit = { has_completed_focus = PHI_new_universities }
+                add_ideas = PHI_education_funding
+                else = {
+                    add_research_slot = 1
+                }
+            }
+            if = {
+                limit = {
+                    has_idea = PHI_marxist_professors_purged1
+                }
+                swap_ideas = {
+                    remove_idea = PHI_marxist_professors_purged1
+                    add_idea = PHI_marxist_professors_purged2
+                }
+            }
+        }
+    }
+
+    # Reserved Officers Training Corps
+    focus = {
+        id = PHI_rotc_focus
+        icon = GFX_goal_army_guy_2
+        x = 0
+        y = 1
+        cost = 6
+        available = {
+            has_elected_government = yes
+        }
+        available_if_capitulated = yes
+        prerequisite = { focus = PHI_education_reform }
+        relative_position_id = PHI_education_reform
+        completion_reward = {
+            add_ideas = PHI_rotc
+        }
+    }
+
+    # Root out Communists
+    focus = {
+        id = PHI_root_out_communists
+        icon = GFX_goal_anti_comintern_pact
+        x = 2
+        y = 1
+        cost = 6
+        available_if_capitulated = yes
+        available = { has_elected_government = yes }
+        prerequisite = { focus = PHI_nacionalista_victory }
+        relative_position_id = PHI_nacionalista_victory
+        completion_reward = {
+            remove_ideas = PHI_marxist_professors
+            add_ideas = PHI_marxist_professors_purged1
+            add_popularity = {
+                ideology = vanguardist
+				popularity = -0.05
+            }
+            add_popularity = {
+                ideology = collectivist
+				popularity = -0.05
+            }
+            add_popularity = {
+                ideology = libertarian_socialist
+				popularity = -0.05
+            }
+            add_popularity = {
+                ideology = social_democrat
+				popularity = -0.05
+            }
+        }
+    }
+
+    # Agreements with the Trade Unions
+    focus = {
+        id = PHI_agreement_with_the_unions
+        icon = GFX_goal_production
+        x = 0
+        y = 1
+        cost = 6
+        available_if_capitulated = yes
+        available = { has_elected_government = yes }
+        prerequisite = { focus = PHI_root_out_communists }
+        relative_position_id = PHI_root_out_communists
+        completion_reward = {
+            hidden_effect = {
+                set_country_flag = PHI_AGREED_UNIONS
+                add_popularity = {
+                    ideology = social_conservative
+                    popularity = 0.01
+                }
+            }
+            add_ideas = PHI_agreement_with_the_unions
+        }
+    }
+
+    # Seek Foreign Investors
+    focus = {
+        id = PHI_seek_foreign_investors
+        icon = GFX_goal_generic_intelligence_exchange
+        x = 0
+        y = 1
+        cost = 6
+        available_if_capitulated = yes
+        available = { has_elected_government = yes }
+        prerequisite = { focus = PHI_agreement_with_the_unions }
+        relative_position_id = PHI_agreement_with_the_unions
+        completion_reward = {
+            every_country = {
+                limit = { 
+                    is_major = yes
+                    NOT = { tag = PHI }
+                }
+                country_event = { id = phi.100 }
+            }
+        }
+    }
+
+    # Tradition and Culture
+    focus = {
+        id = PHI_tradition_and_culture_focus 
+        icon = GFX_goal_faith_and_state
+        x = -1
+        y = 1
+        cost = 6
+        available_if_capitulated = yes
+        available = { has_elected_government = yes }
+        prerequisite = { focus = PHI_seek_foreign_investors }
+        prerequisite = { focus = PHI_rotc_focus }
+        relative_position_id = PHI_seek_foreign_investors
+        completion_reward = {
+            add_ideas = PHI_tradition_and_culture
+        }
+    }
+
+    # A True Republic
+    focus = {
+        id = PHI_a_true_republic
+        icon = GFX_focus_philippines_defense
+        x = 0
+        y = 2
+        cost = 6
+        available_if_capitulated = yes
+        prerequisite = { 
+            focus = PHI_tradition_and_culture_focus
+            focus = PHI_a_contented_worker_focus
+        }
+        prerequisite = {
+            focus = PHI_government_investments
+        }
+        relative_position_id = PHI_government_investments
+        completion_reward = {
+            add_ideas = PHI_nationalism
+        }
+    }
+
+    ######################################################
+    #                                                    #
+    #                     REACTIONARY                    #
+    #                                                    #
+    ######################################################
+
+    ########################
+    #   NATIONAL-POPULIST  #
+    ########################
+    # Aguinaldo's Coup
+    focus = {
+        id = PHI_aguinaldo_coup
+        icon = GFX_goal_ideology_national_populist
+        x = 14
+        y = 7
+        cost = 0
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = unlocked_later
+                has_country_flag = PHI_aguinaldo_coup_tt
+                has_government = national_populist
+            }
+        }
+    }
+
+    # Presidential Death Squads
+    focus = {
+        id = PHI_presidential_death_squads
+        icon = GFX_focus_generic_strike_at_democracy1
+        x = -1
+        y = 1
+        cost = 6
+        available = { has_government = national_populist }
+        prerequisite = { focus = PHI_aguinaldo_coup }
+        relative_position_id = PHI_aguinaldo_coup
+        completion_reward = {
+            add_ideas = PHI_secret_police
+        }
+    }
+
+    # Execute Corrupt Officials
+    focus = {
+        id = PHI_execute_corrupt_officials
+        icon = GFX_goal_LEC_monkey
+        x = 0
+        y = 1
+        cost = 6
+        available_if_capitulated = yes
+        available = { has_government = national_populist }
+        prerequisite = { focus = PHI_presidential_death_squads }
+        relative_position_id = PHI_presidential_death_squads
+        completion_reward = {
+            add_popularity = {
+                ideology = national_populist
+				popularity = 0.05
+            }
+            add_ideas = PHI_weakened_oligarchy
+            add_stability = 0.05
+            add_war_support = 0.05
+        }
+    }
+
+    # Establish State Religion
+    focus = {
+        id = PHI_establish_state_religion
+        icon = GFX_BEL_Improve_Catholic_Relations
+        x = 0
+        y = 1
+        cost = 6
+        available_if_capitulated = yes
+        available = { has_government = national_populist }
+        prerequisite = { focus = PHI_execute_corrupt_officials }
+        relative_position_id = PHI_execute_corrupt_officials
+        completion_reward = {
+            add_ideas = PHI_christian_state
+        }
+    }
+
+    # Ban Trade Unions
+    focus = {
+        id = PHI_ban_trade_unions
+        icon = GFX_goal_generic_attack_allies
+        x = 0
+        y = 1
+        cost = 6
+        available_if_capitulated = yes
+        available = { has_government = national_populist }
+        prerequisite = { focus = PHI_establish_state_religion }
+        relative_position_id = PHI_establish_state_religion
+        completion_reward = {
+            hidden_effect = {
+                set_country_flag = PHI_BANNED_UNIONS
+            }
+            add_ideas = PHI_banned_the_unions
+            add_popularity = {
+                ideology = national_populist
+				popularity = 0.05
+            }
+        }
+    }
+
+    # Democratic in Paper
+    focus = {
+        id = PHI_democratic_in_paper
+        icon = GFX_goal_authoritarian
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = PHI_aguinaldo_coup }
+        relative_position_id = PHI_aguinaldo_coup
+        completion_reward = {
+            add_stability = 0.05
+            add_war_support = 0.05
+            remove_ideas = PHI_thirst_for_democracy
+        }
+    }
+
+    # Death of the Republic
+    focus = {
+        id = PHI_death_of_the_republic
+        icon = GFX_goal_MAF_Graveyard
+        x = -1
+        y = 1
+        cost = 6
+        available_if_capitulated = yes
+        available = {
+            OR = {
+                has_government = national_populist
+                has_government = paternal_autocrat
+            }
+        }
+        prerequisite = { focus = PHI_valdez_government }
+        relative_position_id = PHI_valdez_government
+        completion_reward = {
+            set_cosmetic_tag = PHI_state
+            remove_ideas = PHI_thirst_for_democracy
+
+            add_popularity = {
+                ideology = paternal_autocrat
+                popularity = 0.05
+            }
+        }
+    }
+
+    # Control the Assembly
+    focus = {
+        id = PHI_control_the_assembly
+        icon = GFX_goal_Centralised_Government
+        x = 0
+        y = 1
+        cost = 6
+        mutually_exclusive = {
+            focus = PHI_threaten_the_assembly
+            focus = PHI_abolish_the_assembly
+        }
+        prerequisite = { focus = PHI_democratic_in_paper }
+        relative_position_id = PHI_democratic_in_paper
+        completion_reward = {
+            add_popularity = {
+                ideology = national_populist
+                popularity = 0.05
+            }
+        }
+    }
+
+    # Threaten the Assembly
+    focus = {
+        id = PHI_threaten_the_assembly
+        icon = GFX_goal_DEI_focus_disband_volksraad
+        x = 2
+        y = 1
+        cost = 6
+        mutually_exclusive = {
+            focus = PHI_control_the_assembly
+            focus = PHI_abolish_the_assembly
+        }
+        prerequisite = {
+            focus = PHI_democratic_in_paper
+            focus = PHI_death_of_the_republic
+        }
+        relative_position_id = PHI_democratic_in_paper
+        completion_reward = {
+            add_stability = 0.05
+            add_war_support = 0.05
+        }
+    }
+
+    # Abolish the Assembly
+    focus = {
+        id = PHI_abolish_the_assembly
+        icon = GFX_goal_COS_Ferrer_Coup
+        x = 0
+        y = 1
+        cost = 6
+        mutually_exclusive = {
+            focus = PHI_control_the_assembly
+            focus = PHI_threaten_the_assembly
+        }
+        prerequisite = { focus = PHI_death_of_the_republic }
+        relative_position_id = PHI_death_of_the_republic
+        completion_reward = {
+            add_popularity = {
+                ideology = paternal_autocrat
+                popularity = 0.05
+            }
+        }
+    }
+
+    # Tax Mandate
+    focus = {
+        id = PHI_tax_mandate
+        icon = GFX_goal_bag_of_money
+        x = 0
+        y = 1
+        cost = 6
+        available = { has_government = national_populist }
+        prerequisite = {
+            focus = PHI_control_the_assembly
+            focus = PHI_threaten_the_assembly
+        }
+        relative_position_id = PHI_control_the_assembly
+        completion_reward = {
+            add_ideas = PHI_tax_reform
+        }
+    }
+
+    # A Secret Police
+    focus = {
+        id = PHI_a_secret_police
+        icon = GFX_goal_generic_propaganda
+        x = 0
+        y = 1
+        cost = 6
+        available_if_capitulated = yes
+        available = { has_government = paternal_autocrat }
+        prerequisite = {
+            focus = PHI_abolish_the_assembly
+            focus = PHI_threaten_the_assembly
+        }
+        relative_position_id = PHI_abolish_the_assembly
+        completion_reward = {
+            add_ideas = PHI_secret_police
+        }
+    }
+
+    # Purge the Communist Professors
+    focus = {
+        id = PHI_purge_the_communist_professors
+        icon = GFX_goal_backstab
+        x = 0
+        y = 1
+        cost = 6
+        available = {
+            OR = {
+                has_government = national_populist
+                has_government = paternal_autocrat
+            }
+        }
+        prerequisite = {
+            focus = PHI_threaten_the_assembly
+            focus = PHI_abolish_the_assembly
+            focus = PHI_control_the_assembly
+        }
+        relative_position_id = PHI_threaten_the_assembly
+        completion_reward = {
+            remove_ideas = PHI_marxist_professors
+            add_ideas = PHI_marxist_professors_purged1
+            add_popularity = {
+                ideology = vanguardist
+				popularity = -0.05
+            }
+            add_popularity = {
+                ideology = collectivist
+				popularity = -0.05
+            }
+            add_popularity = {
+                ideology = libertarian_socialist
+				popularity = -0.05
+            }
+            add_popularity = {
+                ideology = social_democrat
+				popularity = -0.05
+            }
+        }
+    }
+
+    # State Education Reform
+    focus = {
+        id = PHI_state_education_reform
+        icon = GFX_goal_great_science
+        x = 0
+        y = 1
+        cost = 6
+        available = {
+            OR = {
+                has_government = national_populist
+                has_government = paternal_autocrat
+            }
+        }
+        prerequisite = { focus = PHI_purge_the_communist_professors }
+        relative_position_id = PHI_purge_the_communist_professors
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = PHI_marxist_professors_purged1
+                add_idea = PHI_marxist_professors_purged2
+            }
+            add_research_slot = 1
+        }
+    }
+
+    # Enlist the Unemployed
+    focus = {
+        id = PHI_enlist_the_unemployed_focus
+        icon = GFX_goal_army_guy_2
+        x = 0
+        y = 1
+        cost = 6
+        available = {
+            OR = {
+                has_government = national_populist
+                has_government = paternal_autocrat
+            }
+        }
+        prerequisite = { focus = PHI_state_education_reform }
+        prerequisite = { 
+            focus = PHI_privatize_non_essential_services
+            focus = PHI_ban_trade_unions
+        }
+        relative_position_id = PHI_state_education_reform
+        completion_reward = {
+            add_ideas = PHI_enlist_the_unemployed
+        }
+    }
+
+    # Filipino Nationalism
+    focus = {
+        id = PHI_filipino_nationalism
+        icon = GFX_goal_flag_phillipines
+        x = 0
+        y = 1
+        cost = 6
+        available = {
+            OR = {
+                has_government = national_populist
+                has_government = paternal_autocrat
+            }
+        }
+        prerequisite = { focus = PHI_enlist_the_unemployed_focus }
+        relative_position_id = PHI_enlist_the_unemployed_focus
+        completion_reward = {
+            add_ideas = PHI_nationalism
+        }
+    }
+
+
+    #########################
+    #   PATERNAL-AUTOCRAT   #
+    #########################
+
+    # Valdez Government
+    focus = {
+        id = PHI_valdez_government
+        icon = GFX_goal_ideology_paternal_autocrat
+        x = 6
+        y = 0
+        cost = 0
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = unlocked_later
+                has_country_flag = PHI_military_junta_tt
+                has_government = paternal_autocrat
+            }
+        }
+        relative_position_id = PHI_aguinaldo_coup
+    }
+
+    # Assassinate Union Leaders
+    focus = {
+        id = PHI_assassinate_union_leaders
+        icon = GFX_goal_generic_war_with_comintern
+        x = 1
+        y = 1
+        cost = 3
+        available_if_capitulated = yes
+        available = { has_government = paternal_autocrat }
+        prerequisite = { focus = PHI_valdez_government }
+        relative_position_id = PHI_valdez_government
+        completion_reward = {
+            add_popularity = {
+                ideology = paternal_autocrat
+				popularity = 0.05
+            }
+            add_stability = 0.1
+            add_war_support = 0.1
+            add_political_power = -100
+        }
+    }
+
+    # Reforming the Government
+    focus = {
+        id = PHI_reforming_the_government
+        icon = GFX_goal_HOL_sustain_neutrality
+        x = 0
+        y = 1
+        cost = 6
+        available_if_capitulated = yes
+        available = { has_government = paternal_autocrat }
+        prerequisite = { focus = PHI_assassinate_union_leaders }
+        relative_position_id = PHI_assassinate_union_leaders
+        completion_reward = {
+            add_timed_idea = {
+                idea = PHI_reformed_government
+                days = 360
+            }
+            swap_ideas = {
+                remove_idea = military_junta
+                add_idea = presidential_republic
+            }
+        }
+    }
+
+    # Corporatist Economic Policies
+    focus = {
+        id = PHI_corporatist_economic_policy_focus
+        icon = GFX_goal_gold_reserve
+        x = 0
+        y = 1
+        cost = 6
+        available_if_capitulated = yes
+        available = { has_government = paternal_autocrat }
+        prerequisite = { focus = PHI_reforming_the_government }
+        relative_position_id = PHI_reforming_the_government
+        completion_reward = {
+            add_ideas = PHI_corporatist_economic_policy
+        }
+    }
+
+    # Privatize Non-Essential Services
+    focus = {
+        id = PHI_privatize_non_essential_services
+        icon = GFX_goal_generic_consumer_goods
+        x = 0
+        y = 1
+        cost = 6
+        available_if_capitulated = yes
+        available = { has_government = paternal_autocrat }
+        prerequisite = { focus = PHI_corporatist_economic_policy_focus }
+        relative_position_id = PHI_corporatist_economic_policy_focus
+        completion_reward = {
+            random_owned_controlled_state = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+                    add_extra_state_shared_building_slots = 2
+                }
+            }
+            random_owned_controlled_state = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+                    add_extra_state_shared_building_slots = 2
+                }
+            }
+        }
+    }
+
+    ######################################################
+    #                                                    #
+    #                   VALKIST PATH                     #
+    #                                                    #
+    ######################################################  
+
+    # Valkists in the Government
+    focus = {
+        id = PHI_valkists_in_the_government
+        icon = GFX_goal_ideology_valkist
+        x = 30
+        y = 7
+        cost = 0
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = unlocked_later
+                has_country_flag = PHI_sakdalista_victory_tt
+                has_government = valkist
+            }
+        }
+    }
+
+    # Begin Cultural Rehabilitation
+    focus = {
+        id = PHI_begin_cultural_rehabilitation
+        icon = GFX_goal_economic_stuff
+        x = 0
+        y = 1
+        cost = 2
+        available_if_capitulated = yes
+        available = { has_government = valkist }
+        prerequisite = { focus = PHI_valkists_in_the_government }
+        relative_position_id = PHI_valkists_in_the_government
+        completion_reward = {
+            add_political_power = 100
+            add_stability = 0.05
+            add_war_support = 0.05
+        } 
+    }
+
+    # Political Indoctrination
+    focus = {
+        id = PHI_political_indoctrination
+        icon = GFX_goal_purges
+        x = -2
+        y = 1
+        cost = 3
+        available_if_capitulated = yes
+        available = { has_government = valkist }
+        prerequisite = { focus = PHI_begin_cultural_rehabilitation }
+        relative_position_id = PHI_begin_cultural_rehabilitation
+        completion_reward = {
+            add_popularity = {
+                ideology = valkist
+                popularity = 0.1
+            }
+        }
+    }
+
+    # Federalizing the State
+    focus = {
+        id = PHI_federalizing_the_state
+        icon = GFX_goal_generic_neutrality_focus
+        x = -1
+        y = 1
+        cost = 6
+        available_if_capitulated = yes
+        available = { has_government = valkist }
+        prerequisite = { focus = PHI_political_indoctrination }
+        relative_position_id = PHI_political_indoctrination
+        completion_reward = {
+            add_political_power = 100
+            add_stability = 0.10
+            add_war_support = 0.05
+            add_popularity = {
+                ideology = valkist
+                popularity = 0.1
+            }
+        }
+    }
+
+    # Western Culture Co-Existence
+    focus = {
+        id = PHI_western_culture_coexistence
+        icon = GFX_goal_support_democracy
+        x = -1
+        y = 1
+        cost = 6
+        available_if_capitulated = yes
+        available = { has_government = valkist }
+        mutually_exclusive = { focus = PHI_eliminate_western_ideals }
+        prerequisite = { focus = PHI_federalizing_the_state }
+        relative_position_id = PHI_federalizing_the_state
+        completion_reward = {
+            add_popularity = {
+                ideology = valkist
+                popularity = -0.15
+            }
+            add_stability = 0.05
+            add_war_support = 0.05
+        }
+    }
+
+    # New Museums
+    focus = {
+        id = PHI_new_museums
+        icon = GFX_goal_generic_construction
+        x = 0
+        y = 1
+        cost = 6
+        available_if_capitulated = yes
+        available = { has_government = valkist }
+        prerequisite = { focus = PHI_western_culture_coexistence }
+        relative_position_id = PHI_western_culture_coexistence
+        completion_reward = {
+            add_ideas = PHI_foreign_culture_tolerance
+        }
+    }
+
+    # New Valkist Education
+    focus = {
+        id = PHI_new_valkist_education
+        icon = GFX_focus_research4
+        x = 0
+        y = 1
+        cost = 6
+        available = { has_government = valkist }
+        available_if_capitulated = yes
+        prerequisite = { focus = PHI_new_museums }
+        relative_position_id = PHI_new_museums
+        completion_reward = {
+            add_research_slot = 1
+        }
+    }
+
+    # Eliminate Western Ideals
+    focus = {
+        id = PHI_eliminate_western_ideals
+        icon = GFX_goal_generic_political_pressure
+        x = 1
+        y = 1
+        cost = 6
+        available = { has_government = valkist }
+        available_if_capitulated = yes
+        prerequisite = { focus = PHI_federalizing_the_state }
+        mutually_exclusive = { focus = PHI_western_culture_coexistence }
+        relative_position_id = PHI_federalizing_the_state
+        completion_reward = {
+            add_popularity = {
+                ideology = valkist
+                popularity = 0.15
+            }
+            add_stability = -0.05
+            add_war_support = -0.05
+        }
+    }
+
+    # Promote Pre-Colonial Culture
+    focus = {
+        id = PHI_promote_pre_colonial_culture
+        icon = GFX_goal_valkist_star
+        x = 0
+        y = 1
+        cost = 6
+        available = { has_government = valkist }
+        available_if_capitulated = yes
+        prerequisite = { focus = PHI_eliminate_western_ideals }
+        relative_position_id = PHI_eliminate_western_ideals
+        completion_reward = {
+            add_ideas = PHI_own_culture_promotion
+        }
+    }
+
+    # Integrate Baybayin Writing
+    focus = {
+        id = PHI_integrate_baybayin_writing
+        icon = GFX_goal_generic_improve_relations
+        x = 0
+        y = 1
+        cost = 6
+        available_if_capitulated = yes
+        available = { has_government = valkist }
+        prerequisite = { focus = PHI_promote_pre_colonial_culture }
+        relative_position_id = PHI_promote_pre_colonial_culture
+        completion_reward = {
+            add_research_slot = 1
+        }
+    }
+
+    # Establish a Secret Police
+    focus = {
+        id = PHI_establish_a_secret_police
+        icon = GFX_goal_secret_police
+        x = 2
+        y = 1
+        cost = 6
+        available_if_capitulated = yes
+        available = { has_government = valkist }
+        prerequisite = { focus = PHI_political_indoctrination }
+        relative_position_id = PHI_political_indoctrination
+        completion_reward = {
+            add_ideas = PHI_intelligence_agency
+        }
+    }
+
+    # Deal with the Left
+    focus = {
+        id = PHI_deal_with_the_left
+        icon = GFX_goal_Communist_Discourse
+        x = 0
+        y = 1
+        cost = 6
+        available_if_capitulated = yes
+        available = { has_government = valkist }
+        prerequisite = { focus = PHI_establish_a_secret_police }
+        relative_position_id = PHI_establish_a_secret_police
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = PHI_marxist_professors
+                add_idea = PHI_marxist_professors_purged2
+            }
+        }
+    }
+
+    # Youth Indoctrination
+    focus = {
+        id = PHI_youth_indoctrination
+        icon = GFX_goal_refugee_management
+        x = 0
+        y = 1
+        cost = 6
+        available_if_capitulated = yes
+        available = { has_government = valkist }
+        prerequisite = { focus = PHI_deal_with_the_left }
+        relative_position_id = PHI_deal_with_the_left
+        completion_reward = {
+            add_ideas = PHI_state_youth_organizations
+        }
+    }
+
+    # Pass Conscription Laws
+    focus = {
+        id = PHI_pass_new_conscription_laws
+        icon = GFX_focus_generic_military_mission
+        x = 0
+        y = 1
+        cost = 6
+        available_if_capitulated = yes
+        available = { has_government = valkist }
+        prerequisite = { focus = PHI_youth_indoctrination }
+        relative_position_id = PHI_youth_indoctrination
+        completion_reward = {
+            add_manpower = 1000
+            add_ideas = PHI_for_the_country
+        }
+    }
+
+    # Economic Reforms
+    focus = {
+        id = PHI_economic_reforms
+        icon = GFX_goal_industry_air
+        x = 3
+        y = 1
+        cost = 3
+        available_if_capitulated = yes
+        available = { has_government = valkist }
+        prerequisite = { focus = PHI_begin_cultural_rehabilitation }
+        relative_position_id = PHI_begin_cultural_rehabilitation
+        completion_reward = {
+            add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+        }
+    }
+
+    # Modernize Agriculture Methods
+    focus = {
+        id = PHI_modernize_agriculture_methods
+        icon = GFX_IRE_farms
+        x = 0
+        y = 1
+        cost = 6
+        available_if_capitulated = yes
+        available = { has_government = valkist }
+        prerequisite = { focus = PHI_economic_reforms }
+        relative_position_id = PHI_economic_reforms
+        completion_reward = {
+            add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = electronics
+			}
+        }
+    }
+
+    # The Government's Trade Unions
+    focus = {
+        id = PHI_the_governments_trade_unions
+        icon = GFX_goal_support_fascism
+        x = -1
+        y = 1
+        cost = 6
+        available_if_capitulated = yes
+        available = { has_government = valkist }
+        prerequisite = { focus = PHI_modernize_agriculture_methods }
+        relative_position_id = PHI_modernize_agriculture_methods
+        completion_reward = {
+            add_ideas = PHI_government_unions
+        }
+    }
+
+    # Industrial Reforms
+    focus = {
+        id = PHI_industrial_reforms
+        icon = GFX_focus_generic_industry_3
+        x = 0
+        y = 1
+        cost = 6
+        available_if_capitulated = yes
+        available = { has_government = valkist }
+        prerequisite = { focus = PHI_the_governments_trade_unions }
+        relative_position_id = PHI_the_governments_trade_unions
+        completion_reward = {
+            327 = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+                    add_extra_state_shared_building_slots = 1
+                }
+            }
+            623 = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+                    add_extra_state_shared_building_slots = 1
+                }
+            }
+            624 = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+                    add_extra_state_shared_building_slots = 1
+                }
+            }
+            625 = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+                    add_extra_state_shared_building_slots = 1
+                }
+            }
+            626 = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+                    add_extra_state_shared_building_slots = 1
+                }
+            }
+            627 = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+                    add_extra_state_shared_building_slots = 1
+                }
+            }
+            628 = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+                    add_extra_state_shared_building_slots = 1
+                }
+            }
+        }
+    }
+
+    # Funding for State Investments
+    focus = {
+        id = PHI_funding_for_state_investments
+        icon = GFX_Hand_reaching_for_money
+        x = 1
+        y = 1
+        cost = 6
+        available_if_capitulated = yes
+        available = { has_government = valkist }
+        prerequisite = { focus = PHI_modernize_agriculture_methods }
+        relative_position_id = PHI_modernize_agriculture_methods
+        completion_reward = {
+            unlock_decision_category_tooltip = PHI_state_fundings
+        }
+    }
+
+    # New Labour Policies
+    focus = {
+        id = PHI_new_labour_policies
+        icon = GFX_goal_red_star_dove
+        x = 0
+        y = 1
+        cost = 6
+        available_if_capitulated = yes
+        available = { has_government = valkist }
+        prerequisite = { focus = PHI_funding_for_state_investments }
+        relative_position_id = PHI_funding_for_state_investments
+        completion_reward = {
+            add_ideas = PHI_valkist_labour_policy
+        }
+    }
+
+    # Modern Sandigs
+    focus = {
+        id = PHI_modern_sandigs
+        icon = GFX_Valkist_Germany_Wolf
+        x = 0
+        y = 1
+        cost = 6
+        available_if_capitulated = yes
+        available = { has_government = valkist }
+        prerequisite = {
+            focus = PHI_integrate_baybayin_writing
+            focus = PHI_new_valkist_education
+        }
+        prerequisite = {
+            focus = PHI_pass_new_conscription_laws
+        }
+        relative_position_id = PHI_pass_new_conscription_laws
+        completion_reward = {
+            hidden_effect = {
+                division_template = {
+					name = "Sandig Division"
+					priority = 2
+					division_names_group = PHI_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+			
+	    	   		 	infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+
+					support = {
+        				artillery = { x = 0 y = 0 }
+        				engineer = { x = 0 y = 1 }
+					}
+				}
+                random_owned_controlled_state = {
+                    prioritize = { 327 }
+                    create_unit = {
+                        division = "name = \"Sandig Division\" division_template = \"Sandig Division\" start_experience_factor = 0.75" 
+                        owner = PHI
+                    }
+                    create_unit = {
+                        division = "name = \"Sandig Division\" division_template = \"Sandig Division\" start_experience_factor = 0.75" 
+                        owner = PHI
+                    }
+                    create_unit = {
+                        division = "name = \"Sandig Division\" division_template = \"Sandig Division\" start_experience_factor = 0.75" 
+                        owner = PHI
+                    }
+                }
+            }
+            custom_effect_tooltip = PHI_modern_sandigs_tt
+        }
+    }
+
+}
