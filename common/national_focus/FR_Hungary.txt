@@ -813,6 +813,7 @@ focus_tree = {
 			}
 		}
 		available = {
+			has_war = no
 			has_army_manpower = { size > 74999 }
 		}
 		prerequisite = {
@@ -863,6 +864,7 @@ focus_tree = {
 			}
 		}
 		available = {
+			has_war = no
 			has_army_manpower = { size > 79999 }
 		}
 		prerequisite = {
@@ -909,6 +911,7 @@ focus_tree = {
 			}
 		}
 		available = {
+			has_war = no
 			has_army_manpower = { size > 79999 }
 			SLO = {
 				exists = yes
@@ -940,6 +943,7 @@ focus_tree = {
 			factor = 20
 		}
 		available = {
+			has_war = no
 			154 = {
 				NOT = {
 					is_owned_and_controlled_by = HUN
@@ -988,6 +992,7 @@ focus_tree = {
 			}
 		}
 		available = {
+			has_war = no
 			76 = {
 				NOT = {
 					is_owned_and_controlled_by = HUN
@@ -1055,6 +1060,7 @@ focus_tree = {
 			}
 		}
 		available = {
+			has_war = no
 			HUN = {
 				has_capitulated = no
 				is_puppet = no
