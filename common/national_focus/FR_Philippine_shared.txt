@@ -1462,6 +1462,7 @@ shared_focus = {
     available = {
         is_subject = no
         is_in_faction = no
+        has_socialist_government = no
     }
     prerequisite = { focus = PHI_department_of_foreign_affairs }
     relative_position_id = PHI_department_of_foreign_affairs
@@ -1568,6 +1569,7 @@ shared_focus = {
     available = {
         is_subject = no
         is_in_faction = no
+        has_socialist_government = no
     }
     prerequisite = { focus = PHI_department_of_foreign_affairs }
     relative_position_id = PHI_department_of_foreign_affairs
@@ -2162,6 +2164,7 @@ shared_focus = {
     available = {
         is_subject = no
         is_in_faction = no
+        has_socialist_government = no
     }
     prerequisite = { focus = PHI_department_of_foreign_affairs }
     relative_position_id = PHI_department_of_foreign_affairs
@@ -2261,6 +2264,7 @@ shared_focus = {
     available = {
         is_subject = no
         is_in_faction = no
+        has_socialist_government = no
     }
     prerequisite = { focus = PHI_department_of_foreign_affairs }
     relative_position_id = PHI_department_of_foreign_affairs

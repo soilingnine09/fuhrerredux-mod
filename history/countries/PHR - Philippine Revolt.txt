@@ -17,16 +17,15 @@ set_technology = {
 }
 
 add_ideas = {
-	PHR_decentralized_command
-	PHR_no_proper_army
-	PHR_the_second_revolution
-	revolutionary_movement
-
+	PHI_agriculture_economy
+	PHI_marxist_professors
+	
 	PHI_Crisanto_Evangelista_hog_lib
 	PHI_Casto_Alejandrino_for_col
 	PHI_Herminegildo_Cruz_eco_col
 	PHI_Guillermo_Capadocia_sec_col
 	PHI_Luis_Taruc_int_col
+	revolutionary_movement
 }
 
 set_convoys = 10
