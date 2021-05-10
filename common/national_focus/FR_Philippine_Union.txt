@@ -11,7 +11,7 @@ focus_tree = {
         }
     }
 
-    continuous_focus_position = { x = 100 y = 1200 }
+    continuous_focus_position = { x = 1600 y = 1200 }
 
     shared_focus = PHI_industrialization_plan
     shared_focus = PHI_expand_the_army
