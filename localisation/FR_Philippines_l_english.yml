@@ -1,7 +1,7 @@
 ﻿l_english:
 
 ### History
-PHI_FUHRERREICH_DESC:0 "After being colonized for 333 years by the Spanish, the Philippines won its independence with the help of the Americans. However, its indepence is short-lived as the US interests in the region made the Americans annex the archipelago shortly after the signing of the Treaty of Paris.\n\nFew decades later, the Americans have granted the Philippines autonomy under the Commonwealth and successfully gained its independence due to the effects of the Great Depression."
+PHI_FUHRERREICH_DESC:0 "Oppressed for 333 years, the Philippines revolted against Spain in 1898 with the help of American support. However, the United States has opted to annex the Philippines resulting in a bloody Filipino-American war.\n\nFew decades later, the Tydings-McDuffie Act granted the Philippines autonomy and soon independence after a 10-year transition period. It came earlier than expected however, as the United States granted full-independence as to ease of expenditures during the times of the Great Depression."
 
 ### Game Rules
 PHI_AI_BEHAVIOR:0 "@PHI Philippines"
