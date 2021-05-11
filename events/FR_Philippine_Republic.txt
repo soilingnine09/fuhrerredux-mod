@@ -224,7 +224,7 @@ country_event = { # Trip to Congress
                 PHI_Jose_Yulo_sec_sco
                 PHI_Fidel_Segundo_int_ade
             }
-            country_event = { id = phi.6 days = 14 }
+            country_event = { id = phi.7 days = 14 }
         }
     }
 }

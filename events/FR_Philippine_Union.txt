@@ -16,8 +16,8 @@ country_event = {
         every_state = {
             limit = { is_core_of = PHI }
             add_core_of = PHR
+            remove_core_of = PHI
         }
-        load_focus_tree = filipino_focus
         set_country_flag = PHI_worker_victory_tt
     }
 }

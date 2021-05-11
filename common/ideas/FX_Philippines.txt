@@ -5,7 +5,7 @@ ideas = {
     country = {
         PHI_promise_of_elections = {
             allowed = { is_a_filipino_tag = yes }
-            picture = MEX_revolutionary_army
+            picture = PHI_promises_of_elections
             modifier = {
                 political_power_cost = 0.25
                 authoritarian_democrat_drift = -0.01
