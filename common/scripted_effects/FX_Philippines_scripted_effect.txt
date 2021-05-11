@@ -1,0 +1,93 @@
+PHI_remove_from_aeda = {
+    custom_effect_tooltip = PHI_leave_aeda_tt
+    clr_country_flag = PHI_joined_aeda
+    clear_variable = aeda_contribution
+
+    if = {
+        limit = { has_idea = PHI_aeda_economic1 }
+        remove_ideas = PHI_aeda_economic1
+    }
+    if = {
+        limit = { has_idea = PHI_aeda_economic2 }
+        remove_ideas = PHI_aeda_economic2
+    }
+    if = {
+        limit = { has_idea = PHI_aeda_economic3 }
+        remove_ideas = PHI_aeda_economic3
+    }
+    if = {
+        limit = { has_idea = PHI_aeda_excavation1 }
+        remove_ideas = PHI_aeda_excavation1
+    }
+    if = {
+        limit = { has_idea = PHI_aeda_excavation2 }
+        remove_ideas = PHI_aeda_excavation2
+    }
+    if = {
+        limit = { has_idea = PHI_aeda_excavation3 }
+        remove_ideas = PHI_aeda_excavation3
+    }
+    if = {
+        limit = { has_idea = PHI_aeda_construction1 }
+        remove_ideas = PHI_aeda_construction1
+    }
+    if = {
+        limit = { has_idea = PHI_aeda_construction2 }
+        remove_ideas = PHI_aeda_construction2
+    }
+    if = {
+        limit = { has_idea = PHI_aeda_construction3 }
+        remove_ideas = PHI_aeda_construction3
+    }
+
+    if = {
+        limit = { check_variable = { aeda_civ_factories > 0 } }
+        custom_effect_tooltip = PHI_remove_aeda_civ
+        hidden_effect = {
+            set_variable = { tempvar1 = 0 }
+            subtract_from_variable = { var = tempvar1 value = aeda_civ_factories }
+            add_offsite_building = { type = industrial_complex level = tempvar1 }
+            clear_variable = tempvar1
+        }
+    }
+    if = {
+        limit = { check_variable = { aeda_mil_factories > 0 } }
+        custom_effect_tooltip = PHI_remove_aeda_mil
+        hidden_effect = {
+            set_variable = { tempvar1 = 0 }
+            subtract_from_variable = { var = tempvar1 value = aeda_mil_factories }
+            add_offsite_building = { type = arms_factory level = tempvar1 }
+            clear_variable = tempvar1
+        }
+    }
+    if = {
+        limit = { check_variable = { aeda_nav_factories > 0 } }
+        custom_effect_tooltip = PHI_remove_aeda_nav
+        hidden_effect = {
+            set_variable = { tempvar1 = 0 }
+            subtract_from_variable = { var = tempvar1 value = aeda_nav_factories }
+            add_offsite_building = { type = dockyard level = tempvar1 }
+            clear_variable = tempvar1
+        }
+    }
+
+    hidden_effect = {
+        clear_variable = aeda_civ_factories
+        clear_variable = aeda_mil_factories
+        clear_variable = aeda_nav_factories
+    }
+}
+
+PHI_reset_nominations = {
+    hidden_effect = {
+        clr_country_flag = PHI_quezon_nominated
+        clr_country_flag = PHI_osmena_nominated
+        clr_country_flag = PHI_rodriguez_nominated
+        clr_country_flag = PHI_roxas_nominated
+        clr_country_flag = PHI_quirino_nominated
+        clr_country_flag = PHI_araneta_nominated
+        clr_country_flag = PHI_sumulong_nominated
+        clr_country_flag = PHI_santos_inaugurated
+        clr_country_flag = PHI_feleo_inaugurated
+    }
+}

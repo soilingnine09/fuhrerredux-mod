@@ -17,15 +17,15 @@ set_technology = {
 }
 
 add_ideas = {
-	SRP_decentralized_command
-	SRP_no_proper_army
-	SRP_the_second_revolution
+	PHI_agriculture_economy
+	PHI_marxist_professors
+	
+	PHI_Crisanto_Evangelista_hog_lib
+	PHI_Casto_Alejandrino_for_col
+	PHI_Herminegildo_Cruz_eco_col
+	PHI_Guillermo_Capadocia_sec_col
+	PHI_Luis_Taruc_int_col
 	revolutionary_movement
-
-	GEN_HOG_Lis
-	GEN_FOR_Lis
-	GEN_ECO_Lis
-	GEN_SEC_Lis
 }
 
 set_convoys = 10
@@ -50,35 +50,45 @@ set_popularities = {
 create_country_leader = {
 	name = "Luis Taruc"
 	desc = "POLITICS_LUIS_TARUC_DESC"
-	picture = "Portrait_Philippines_Luis_Taruc.tga"
+	picture = "gfx/leaders/PHI/Portrait_Philippines_Luis_Taruc.tga"
 	expire = "1943.6.2"
 	ideology = vanguardist_subtype
-	traits = { }
+	traits = { prince_of_terror }
 }
 create_country_leader = {
-	name = "Crisanto Evangelista"
-	desc = "POLITICS_CRISTIANO_EVANGELISTA_DESC"
-	picture = "Portrait_Philippines_Crisanto_Evangelista.tga"
-	expire = "1943.6.2"
+	name = "Pedro Abad Santos"
+	desc = "POLITICS_PEDRO_ABAD_SANTOS_DESC"
+	picture = "gfx/leaders/PHI/Portrait_Philippines_Pedro_Abad_Santos.tga"
+	expire = "1950.3.10"
 	ideology = collectivist_subtype
-	traits = { }
+	traits = { reluctant_interventionist }
 }
 create_country_leader = {
 	name = "Crisanto Evangelista"
-	desc = "POLITICS_CRISTIANO_EVANGELISTA_DESC"
-	picture = "Portrait_Philippines_Crisanto_Evangelista.tga"
-	expire = "1943.6.2"
+	desc = "POLITICS_CRISANTO_EVANGELISTA_DESC"
+	picture = "gfx/leaders/PHI/Portrait_Philippines_Crisanto_Evangelista.tga"
+	expire = "1950.3.10"
 	ideology = libertarian_socialist_subtype
-	traits = { }
+	traits = { reluctant_interventionist }
 }
 
 create_corps_commander = {
 	name = "Luis Taruc"
-	picture = "Portrait_Philippines_Luis_Taruc.tga"
+	portrait_path = "gfx/leaders/PHI/Portrait_Philippines_Luis_Taruc.tga"
 	traits = { commando }
 	skill = 1
 	attack_skill = 2
     defense_skill = 1
     planning_skill = 2
+    logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Casto Alejandrino"
+	portrait_path = "gfx/leaders/PHI/Portrait_Philippines_Casto_Alejandrino.tga"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+    defense_skill = 1
+    planning_skill = 1
     logistics_skill = 1
 }

@@ -13,11 +13,11 @@
 		infantry = { x = 2 y = 2 }
 	}
 	support = {
-	        engineer = { x = 0 y = 0 }
+	    engineer = { x = 0 y = 0 }
 	}
 }
 division_template = {
-	name = "Militia"
+	name = "Militia Brigade"
 
 	regiments = {
 		militia = { x = 0 y = 0 }
@@ -31,63 +31,81 @@ division_template = {
 
 units = {
 	division = {
-		name = "11th Infantry Division"
+		name = "1st Infantry Division"
 		location = 10167
 		division_template = "Infantry Division"		
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "12th Infantry Division"
+		name = "2nd Infantry Division"
 		location = 1415
 		division_template = "Infantry Division"		
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "13rd Infantry Division"
+		name = "3rd Infantry Division"
 		location = 10167
 		division_template = "Infantry Division"		
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "14th Infantry Division"
-		location = 4288
+		name = "4th Infantry Division"
+		location = 12213
 		division_template = "Infantry Division"		
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "15th Infantry Division"
+		name = "5th Infantry Division"
 		location = 4241
 		division_template = "Infantry Division"		
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "16th Infantry Division"
+		name = "6th Infantry Division"
+		location = 1311
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "7th Infantry Division"
+		location = 1311
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "8th Infantry Division"
+		location = 12158
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "9th Infantry Division"
+		location = 12158
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "10th Infantry Division"
 		location = 12118
 		division_template = "Infantry Division"		
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "17th Infantry Division"
-		location = 12213
-		division_template = "Infantry Division"		
+		name = "1st Militia Brigade"
+		location = 7360
+		division_template = "Militia Brigade"		
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "18th Infantry Division"
-		location = 12118
-		division_template = "Infantry Division"		
+		name = "2nd Militia Brigade"
+		location = 7445
+		division_template = "Militia Brigade"		
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "19th Infantry Division"
-		location = 10167
-		division_template = "Infantry Division"		
-		start_experience_factor = 0.1
-	}
-	division = {
-		name = "20th Infantry Division"
-		location = 12213
-		division_template = "Infantry Division"		
+		name = "3rd Militia Brigade"
+		location = 12112
+		division_template = "Militia Brigade"		
 		start_experience_factor = 0.1
 	}
 }

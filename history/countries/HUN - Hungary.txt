@@ -1,6 +1,6 @@
 ﻿capital = 43
 
-# I am well aware that there is no oob in this file, that is intentional
+oob = "HUN_1936"
 
 set_research_slots = 3
 set_stability = 0.30
@@ -142,6 +142,10 @@ create_field_marshal = {
 	gfx = GFX_Portrait_hungary_ferenc_feketehalmy_czeydner
 	traits = { }
 	skill = 2
+	attack_skill = 4
+    defense_skill = 3
+    planning_skill = 1
+    logistics_skill = 2
 }
 ################
 ### Generals ###
@@ -153,6 +157,10 @@ create_corps_commander = {
 	gfx = GFX_Portrait_hungary_geza_lakatos
 	traits = {  }
 	skill = 3
+	attack_skill = 4
+    defense_skill = 1
+    planning_skill = 2
+    logistics_skill = 3
 }
 
 create_corps_commander = {
@@ -160,6 +168,10 @@ create_corps_commander = {
 	gfx = GFX_Portrait_hungary_ivan_hindy
 	traits = {  trickster }
 	skill = 4
+	attack_skill = 3
+    defense_skill = 3
+    planning_skill = 1
+    logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -167,6 +179,10 @@ create_corps_commander = {
 	gfx = GFX_Portrait_hungary_karoly_beregfy
 	traits = { }
 	skill = 1
+	attack_skill = 2
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -174,6 +190,10 @@ create_corps_commander = {
 	gfx = GFX_Portrait_hungary_lajos_veress
 	traits = { panzer_leader }
 	skill = 2
+	attack_skill = 4
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -181,6 +201,10 @@ create_corps_commander = {
 	picture = "Portrait_Vilmos_Nagybaczon.tga"
 	traits = { }
 	skill = 2
+	attack_skill = 1
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 3
 }
 
 create_corps_commander = {
@@ -188,6 +212,10 @@ create_corps_commander = {
 	picture = "Portrait_Bela_Kiraly.tga"
 	traits = { }
 	skill = 4
+	attack_skill = 3
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -195,6 +223,10 @@ create_corps_commander = {
 	picture = "Portrait_Gusztav_Hennyey.tga"
 	traits = { }
 	skill = 1
+	attack_skill = 2
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -202,6 +234,10 @@ create_corps_commander = {
 	picture = "Portrait_Andras_Littay.tga"
 	traits = { }
 	skill = 1
+	attack_skill = 4
+    defense_skill = 2
+    planning_skill = 1
+    logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -209,6 +245,10 @@ create_corps_commander = {
 	picture = ""
 	traits = { }
 	skill = 1
+	attack_skill = 1
+    defense_skill = 3
+    planning_skill = 4
+    logistics_skill = 1
 }
 
 create_corps_commander = {
@@ -216,6 +256,10 @@ create_corps_commander = {
 	picture = ""
 	traits = { }
 	skill = 1
+	attack_skill = 3
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
 }
 
 create_corps_commander = {
@@ -223,6 +267,10 @@ create_corps_commander = {
 	picture = ""
 	traits = { }
 	skill = 1
+	attack_skill = 2
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -230,6 +278,10 @@ create_corps_commander = {
 	picture = ""
 	traits = { }
 	skill = 1
+	attack_skill = 2
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -237,6 +289,10 @@ create_corps_commander = {
 	picture = ""
 	traits = { }
 	skill = 1
+	attack_skill = 2
+    defense_skill = 1
+    planning_skill = 3
+    logistics_skill = 1
 }
 
 create_corps_commander = {
@@ -244,6 +300,10 @@ create_corps_commander = {
 	picture = ""
 	traits = { }
 	skill = 1
+	attack_skill = 1
+    defense_skill = 1
+    planning_skill = 4
+    logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -251,14 +311,12 @@ create_corps_commander = {
 	picture = ""
 	traits = { }
 	skill = 1
+	attack_skill = 1
+    defense_skill = 2
+    planning_skill = 4
+    logistics_skill = 1
 }
 
-create_corps_commander = {
-	name = "Béla Miklós"
-	picture = ""
-	traits = { }
-	skill = 1
-}
 
 
 

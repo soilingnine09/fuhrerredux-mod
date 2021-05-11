@@ -630,49 +630,6 @@ country_event = {
     }
 
     option = {
-        name = annex.11.b
-
-        SBH = { 
-            add_state_core = 785
-            transfer_state = 785
-        }
-
-        if = {
-            limit = { has_dlc = "Together for Victory" }
-            set_autonomy = {
-                target = SBH
-                autonomy_state = SP_autonomous_region
-            }
-        }
-        if = {
-            limit = {
-                NOT = { has_dlc = "Together for Victory" }
-            }
-            puppet = SBH
-        }
-
-        hidden_effect = {
-            SBH = {
-                load_oob = SBH_1936
-                set_politics = {
-                    ruling_party = authoritarian_democrat
-                    elections_allowed = no
-                }
-                set_popularities = {
-                    vanguardist = 2
-                    collectivist = 2
-                    libertarian_socialist = 6
-                    social_democrat = 16
-                    social_liberal = 14
-                    market_liberal = 20
-                    social_conservative = 11
-                    authoritarian_democrat = 29
-                }
-            }
-        }
-    }
-
-    option = {
         name = annex.11.c
 
         trigger = {

@@ -1,0 +1,25 @@
+PHI_seato_decisions = {
+    icon = generic_political_actions
+    priority = 100
+
+    allowed = { original_tag = PHI }
+    visible = { has_completed_focus = PHI_no_more_colonialism }
+}
+
+PHI_aeda_decisions = {
+    icon = generic_democracy
+    priority = 50
+
+    allowed = { original_tag = PHI }
+    visible = { 
+        has_global_flag = PHI_aeda_created
+    }
+}
+
+PHI_state_fundings = {
+    icon = generic_political_actions
+    priority = 30
+
+    allowed = { original_tag = PHI }
+    visible = { has_completed_focus = PHI_funding_for_state_investments }
+}

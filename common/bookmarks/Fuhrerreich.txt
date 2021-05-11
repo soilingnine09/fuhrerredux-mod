@@ -130,8 +130,8 @@ bookmarks = {
 				SIA_recovery_from_great_depression
 				SIA_balance_in_power
 			}
-		}
-		"PER"={
+		} 
+		"PER" = {
 			minor = yes
 			history = "PER_FUHRERREICH_DESC"
 			ideology = paternal_autocrat
@@ -147,7 +147,7 @@ bookmarks = {
 			}
 		}
 
-		"MAN"={
+		"MAN" = {
 			minor = yes
 			history = "MAN_FUHRERREICH_DESC"
 			ideology = authoritarian_democrat
@@ -162,19 +162,42 @@ bookmarks = {
 				MAN_problems_with_industry
 			}
 		}
-		#"BRA"={
-		#	minor = yes
-		#	history = "BRA_FUHRERREICH_DESC"
-		#	ideology = market_liberal
-		#	ideas = {
-		#		BRA_political_instability
-		#	}
-		#	focuses = {
-		#		BRA_civil_war
-		#		BRA_standing_for_the_union
-		#		BRA_our_republic_reborn
-		#	}
-		#}
+		"PHI" = {
+			minor = yes
+			history = "PHI_FUHRERREICH_DESC"
+			ideology = authoritarian_democrat
+			ideas = {
+				PHI_promise_of_elections
+				PHI_agriculture_economy
+				PHI_marxist_professors
+			}
+			focuses = {
+				PHI_aguinaldo_coup
+				PHI_finish_industrialization_program
+				PHI_found_aeda
+			}
+		}
+		"SWI" = {
+			minor = yes
+			history = "SWI_FUHRERREICH_DESC"
+			ideology = market_liberal
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"HUN" = {
+			minor = yes
+			history = "HUN_FUHRERREICH_DESC"
+			ideology = national_populist
+			ideas = {
+				hun_trianon
+   	 			hun_economic_ruin
+			}
+			focuses = {
+			}
+		}
+
 
 
 		effect = {

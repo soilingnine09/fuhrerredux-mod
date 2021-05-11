@@ -1,0 +1,351 @@
+# Philippine Decisions
+# created by: dax0102
+
+foreign_politics = {
+    PHI_propose_whitepeace = {
+        icon = GFX_decision_hol_war_on_pacifism
+        
+        target_trigger = {
+            FROM = {
+                OR = {
+                    tag = ENG
+                    tag = FRA
+                }
+            }
+        }
+
+        visible = {
+            FROM = { has_war_with = ROOT }
+        }
+
+        available = {
+            FROM = {
+                if = {
+                    limit = { 
+                        tag = ENG
+                    }
+                    BEA = { has_capitulated = yes }
+                }
+
+                if = {
+                    limit = {
+                        tag = FRA
+                    }
+                    FIC = { has_capitulated = yes }
+                }
+            }
+        }
+
+        complete_effect = {
+            FROM = { country_event = phi.122 }
+        }
+    }
+}
+
+PHI_seato_decisions = {
+    PHI_invite_country = {
+        target_trigger = {
+            FROM = {
+                PHI_is_in_south_east_asia = yes
+            }
+        }
+
+        visible = {
+            country_exists = FROM
+            NOT = { is_in_faction_with = FROM }
+
+            if = {
+                limit = { FROM = SIA }
+                SIA = { set_country_flag = PHI_can_invite }
+            }
+        }
+
+        available = {
+            FROM = {
+                NOT = { has_war_with = ROOT }
+                is_in_faction = no
+            }
+        }
+
+        complete_effect = {
+            FROM = {
+                country_event = phi.119
+            }
+        }
+    }
+}
+
+PHI_state_fundings = {
+    PHI_fund_research_and_development = {
+        icon = GFX_decision_generic_research
+        days_remove = 120
+        days_re_enable = 40
+        cost = 50
+
+        available = { 
+            NOT = { 
+                has_country_flag = PHI_state_funding_in_progress_tt
+            } 
+        }
+
+        complete_effect = {
+            set_country_flag = PHI_state_funding_in_progress_tt
+        }
+
+        remove_effect = {
+            clr_country_flag = PHI_state_funding_in_progress_tt
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.05
+            research_speed_factor = 0.1
+        }
+    }
+
+    PHI_prioritize_construction = {
+        icon = GFX_decision_generic_construction
+        days_remove = 120
+        days_re_enable = 40
+        cost = 50
+
+        available = { 
+            NOT = { 
+                has_country_flag = PHI_state_funding_in_progress_tt
+            } 
+        }
+
+        complete_effect = {
+            set_country_flag = PHI_state_funding_in_progress_tt
+        }
+
+        remove_effect = {
+            clr_country_flag = PHI_state_funding_in_progress_tt
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.05
+            production_speed_buildings_factor = 0.1
+            industry_repair_factor = 0.1
+        }
+    }
+
+    PHI_aid_workers = {
+        icon = GFX_decision_hol_attract_foreign_investors
+        days_remove = 120
+        days_re_enable = 40
+        cost = 50
+
+        available = { 
+            NOT = { 
+                has_country_flag = PHI_state_funding_in_progress_tt
+            } 
+        }
+
+        complete_effect = {
+            set_country_flag = PHI_state_funding_in_progress_tt
+        }
+
+        remove_effect = {
+            clr_country_flag = PHI_state_funding_in_progress_tt
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.05
+            industrial_capacity_factory = 0.1
+            industrial_capacity_dockyard = 0.1
+        }
+    }
+
+    PHI_start_social_services = {
+        icon = GFX_decision_hol_attract_foreign_investors
+        days_remove = 120
+        days_re_enable = 40
+        cost = 50
+
+        available = { 
+            NOT = { 
+                has_country_flag = PHI_state_funding_in_progress_tt
+            } 
+        }
+
+        complete_effect = {
+            set_country_flag = PHI_state_funding_in_progress_tt
+        }
+
+        remove_effect = {
+            clr_country_flag = PHI_state_funding_in_progress_tt
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.05
+            political_power_gain = 0.1
+            stability_weekly = 0.1
+            monthly_population = 0.1
+        }
+    }
+}
+
+PHI_aeda_decisions = {
+    PHI_invite_into_aeda = {
+        icon = generic_agreement
+        priority = 5
+        cost = 0
+        fire_only_once = no
+
+        target_root_trigger = {
+            has_idea = PHI_aeda_main
+        }
+
+        target_trigger = {
+            FROM = {
+                has_socialist_government = no
+                is_in_faction_with = ROOT
+                OR = {
+                    is_subject = no
+                    is_subject_of = ROOT
+                }
+                NOT = {
+                    tag = ROOT
+                    has_country_flag = PHI_invited_to_aeda
+                    has_country_flag = PHI_refused_aeda
+                }
+            }
+        }
+
+        available = {
+            ROOT = {
+                has_capitulated = no
+                custom_trigger_tooltip = {
+                    tooltip = PHI_not_currently_inviting_tt
+                    NOT = {
+                        has_country_flag = { flag = PHI_inviting_to_aeda value > 0 }
+                    }
+                }
+            }
+            FROM = {
+                has_capitulated = no
+            }
+        }
+
+        visible = {
+            has_idea = PHI_aeda_main
+            has_socialist_government = no
+            NOT = {
+                is_in_array = { global.aeda_members = FROM }
+            }
+            FROM = {
+                has_socialist_government = no
+                OR = {
+					is_subject = no
+					is_subject_of = ROOT
+				}
+				NOT = {
+					tag = ROOT
+					has_country_flag = PHI_invited_to_aeda
+					has_country_flag = PHI_refused_aeda
+				}
+            }
+        }
+
+        complete_effect = {
+            clr_country_flag = PHI_inviting_to_aeda
+            set_country_flag = {
+                flag = PHI_inviting_to_aeda
+                days = 3
+                value = 1
+            }
+            FROM = {
+                country_event = { id = seasia.2 days = 2 }
+            }
+        }
+    }
+
+    PHI_leave_aeda = {
+        icon = generic_civil_support
+        fire_only_once = yes
+
+        target_root_trigger = {
+            is_in_array = { global.aeda_members = ROOT }
+        }
+
+        target_trigger = {
+            FROM = {
+                has_idea = PHI_aeda_main
+                is_in_faction_with = ROOT
+            }
+        }
+
+        complete_effect = {
+            set_country_flag = PHI_refused_aeda
+            PHI_remove_from_aeda = yes
+        }
+    }
+
+    PHI_aeda_send_aid_home = {
+        icon = generic_industry
+
+        custom_cost_text = PHI_aeda_100pp
+        custom_cost_trigger = {
+            check_variable = {
+                var = global.aeda_pp
+                value = 100
+                compare = greater_than_or_equals
+            }
+        }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = PHI_aeda_invest_year
+                OR = {
+                    NOT = { has_country_flag = PHI_aeda_investment }
+                    has_country_flag = {
+                        flag = PHI_aeda_investment
+                        days > 364
+                    }
+                }
+            }
+        }
+        visible = {
+            has_idea = PHI_aeda_main
+        }
+
+        complete_effect = {
+            subtract_from_variable = { global.aeda_pp = 100 }
+            country_event = seasia.6
+        }
+    }
+
+    PHI_aeda_send_aid = {
+        icon = generic_industry
+
+        custom_cost_text = PHI_aeda_100pp
+        custom_cost_trigger = {
+            check_variable = {
+                var = global.aeda_pp
+                value = 100
+                compare = greater_than_or_equals
+            }
+        }
+
+        target_array = global.aeda_members
+
+        target_root_trigger = {
+            has_idea = PHI_aeda_main
+        }
+
+        target_trigger = {
+            FROM = {
+                NOT = { tag = ROOT }
+                is_in_faction_with = ROOT
+                is_in_array = { global.aeda_members = THIS }
+            }
+        }
+
+        complete_effect = {
+            subtract_from_variable = { global.aeda_pp = 100 }
+            FROM = {
+                country_event = seasia.6
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+PHI_ai_behavior = {
+	name = "PHI_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = PHI_BROTHERS_UNITED
+		text = PHI_RULE_BROTHERS_UNITED
+		desc = PHI_RULE_BROTHERS_UNITED_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = PHI_PRUSSIA_OF_THE_EAST
+		text = PHI_RULE_PRUSSIA_OF_THE_EAST
+		desc = PHI_RULE_PRUSSIA_OF_THE_EAST_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = PHI_TESTING_IMPERIALISM
+		text = PHI_RULE_TESTING_IMPERIALISM
+		desc = PHI_RULE_TESTING_IMPERIALISM_DESC
+		allow_achievements = yes
+	}
+	option = {
+		name = PHI_BACK_TO_THE_PAST
+		text = PHI_RULE_BACK_TO_THE_PAST
+		desc = PHI_RULE_BACK_TO_THE_PAST_DESC
+		allow_achievements = yes
+	}
+}

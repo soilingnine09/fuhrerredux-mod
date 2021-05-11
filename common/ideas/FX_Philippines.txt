@@ -1,0 +1,1704 @@
+# Philippine Ideas, Ministers and Companies
+# created by: dax0102
+
+ideas = {
+    country = {
+        PHI_promise_of_elections = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = PHI_promises_of_elections
+            modifier = {
+                political_power_cost = 0.25
+                authoritarian_democrat_drift = -0.01
+            }
+        }
+        PHI_agriculture_economy = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_agrarian_society
+            modifier = {
+                production_factory_max_efficiency_factor = -0.25
+                production_factory_start_efficiency_factor = -0.25
+                industrial_capacity_factory = -0.25
+                industrial_capacity_dockyard = -0.25
+            }
+        }
+        PHI_marxist_professors = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_collectivism_rising
+            modifier = {
+                political_power_cost = 0.15
+                research_speed_factor = 0.2
+            }
+        }
+        PHI_marxist_professors_purged1 = {
+            picture = officers_purged
+            allowed = { is_a_filipino_tag = yes }
+            modifier = {
+				research_speed_factor = -0.1
+            }
+        }
+        PHI_marxist_professors_purged2 = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = officers_purged
+            modifier = {
+                stability_factor = 0.1
+				research_speed_factor = 0.2
+            }
+        }
+        PHI_marxist_professors_reformed = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_army_war_college
+            modifier = {
+				research_speed_factor = 0.2
+            }
+        }
+        PHI_finance_department = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = chi_hyper_inflation5
+            modifier = {
+                consumer_goods_factor = -0.05
+            }
+        }
+        PHI_public_works_department = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_build_infrastructure
+            modifier = {
+                production_speed_buildings_factor = 0.2
+				industry_repair_factor = 0.2
+				industry_free_repair_factor = 0.5
+            }
+        }
+        PHI_labour_department = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_production_bonus
+            modifier = {
+                production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+            }
+        }
+        PHI_social_welfare_department1 = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = raj_risk_of_famine
+            modifier = {
+                consumer_goods_factor = 0.05
+                industrial_capacity_factory = 0.05
+                industrial_capacity_dockyard = 0.05
+                stability_factor = 0.1
+            }
+        }
+
+        PHI_social_welfare_department2 = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = raj_risk_of_famine
+            modifier = {
+                consumer_goods_factor = 0.1
+                industrial_capacity_factory = 0.15
+                industrial_capacity_dockyard = 0.15
+                stability_factor = 0.2
+            }
+        }
+        PHI_foreign_department = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = received_attache
+            modifier = {
+                improve_relations_maintain_cost_factor = -0.25
+                trade_opinion_factor = 0.15
+            }
+        }
+        PHI_increased_research = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_research_bonus
+            modifier = {
+                consumer_goods_factor = 0.05
+                research_speed_factor = 0.15
+            }
+        }
+        PHI_banks_deregulated = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_coins
+            modifier = {
+                consumer_goods_factor = -0.05
+                production_speed_buildings_factor = 0.05
+            }
+        }
+        PHI_government_assistance_fund = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = capital_outflow
+            modifier = {
+                consumer_goods_factor = 0.02
+                industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+            }
+        }
+        PHI_worker_subsidies = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = ROM_king_carol_ii_hedonist
+            modifier = {
+                consumer_goods_factor = 0.05
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+            }
+        }
+        PHI_intelligence_agency = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_secret_police
+            modifier = {
+				enemy_partisan_effect = -0.25
+				subversive_activites_upkeep = -0.25
+				foreign_subversive_activites = -0.25
+            }
+        }
+        PHI_secret_police = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_secret_police
+            modifier = {
+                enemy_partisan_effect = -0.25
+                subversive_activites_upkeep = -0.25
+                foreign_subversive_activites = -0.25
+            }
+        }
+        PHI_enlist_the_unemployed = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_reserve_divisions
+            modifier = {
+                non_core_manpower = 0.05
+				conscription = 0.2
+				conscription_factor = 0.2
+            }
+        }
+        PHI_christian_state = {
+			allowed = { is_a_filipino_tag = yes }
+            picture = BRA_faith_unity
+			modifier = {
+				army_morale_factor = 0.2
+				attrition = -0.2
+			}
+		}
+        PHI_the_constabulary = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = chi_army_corruption
+            modifier = {
+                required_garrison_factor = -0.15
+                occupation_cost = -0.25
+                compliance_growth_on_our_occupied_states = 0.25
+            }
+        }
+        PHI_cwts = {
+			allowed = { is_a_filipino_tag = yes }
+			picture = generic_infantry_bonus
+			modifier = {
+				training_time_factor = -0.2
+			}
+		}
+		PHI_rotc = {
+			allowed = { is_a_filipino_tag = yes }
+			picture = eng_imperial_conscription
+			modifier = {
+                conscription = 0.05
+                conscription_factor = 0.15
+			}
+		}
+        PHI_cooperated_with_the_unions = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = UK_economy_syn_idea
+            modifier = {
+                political_power_gain = 0.05
+                production_factory_max_efficiency_factor = -0.1
+                industrial_capacity_factory = 0.05
+                industrial_capacity_dockyard = 0.05
+            }
+        }
+        PHI_agreement_with_the_unions = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_production_bonus
+            modifier = {
+                political_power_gain = 0.025
+                production_factory_max_efficiency_factor = -0.05
+                industrial_capacity_factory = 0.025
+				industrial_capacity_dockyard = 0.025
+            }
+        }
+        PHI_banned_the_unions = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = ast_classify_aliens
+            modifier = {
+                political_power_gain = -0.05
+                production_factory_max_efficiency_factor = 0.1
+                industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+            }
+        }
+        PHI_military_academy = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = HUN_secret_rearmament
+            modifier = {
+                army_attack_factor = 0.15
+                army_defence_factor = 0.15
+                training_time_factor = -0.15
+            }
+        }
+        PHI_general_staff = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = general_staff
+            modifier = {
+                army_org_factor = 0.1
+                planning_speed = 0.05
+                no_supply_grace = 48
+            }
+        }
+        PHI_legacy_of_general_luna = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = chi_army_corruption3
+            modifier = {
+                attrition = -0.2
+                out_of_supply_factor = -0.2
+                supply_consumption_factor = -0.2
+            }
+        }
+        PHI_hell_it_is = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = KTG_Industrial_Crisis_Town
+            modifier = {
+                air_strategic_bomber_bombing_factor = 0.1
+                air_strategic_bomber_attack_factor = 0.1
+            }
+        }
+        PHI_army_support = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_air_bonus
+            modifier = {
+                air_close_air_support_attack_factor = 0.1
+                air_cas_present_factor = 0.1
+                air_close_air_support_agility_factor = 0.1
+            }
+        }
+        PHI_tax_reform = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_foreign_capital
+            modifier = {
+                consumer_goods_factor = -0.05
+            }
+        }
+        PHI_weakened_oligarchy = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = ROM_king_carol_ii_hedonist
+            modifier = {
+                political_power_gain = -0.05
+                consumer_goods_factor = -0.05
+            }
+        }
+        PHI_reformed_government = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_pp_unity_bonus
+            modifier = {
+                stability_weekly = 0.05
+                war_support_weekly = 0.05
+            }
+        }
+        PHI_nationalism = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = ast_abandon_the_westminster_system_fascism
+            modifier = {
+                surrender_limit = 0.15
+                conscription = 0.1
+                army_core_attack_factor = 0.05
+	            army_core_defence_factor = 0.05
+            }
+        }
+        PHI_corporatist_economic_policy = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_goods_red_bonus
+            modifier = {
+                production_factory_max_efficiency_factor = 0.1
+                industrial_capacity_factory = 0.025
+                industrial_capacity_dockyard = 0.025
+            }
+        }
+        PHI_tradition_and_culture = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = BRA_faith_unity
+            modifier = {
+                drift_defence_factor = 0.15
+                local_resources_factor = 0.25
+                monthly_population = 0.25
+            }
+        }
+        PHI_a_contented_worker = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = ROM_king_carol_ii_hedonist
+            modifier = {
+                production_speed_buildings_factor = 0.05
+                industrial_capacity_factory = 0.05
+                industrial_capacity_dockyard = 0.05
+            }
+        }
+        PHI_government_unions = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_fascism_drift_bonus
+            modifier = {
+                political_power_gain = -0.05
+                industrial_capacity_factory = 0.05
+                industrial_capacity_dockyard = 0.05
+            }
+        }
+        PHI_state_youth_organizations = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = eng_imperial_conscription
+            modifier = {
+                conscription_factor = 0.15
+            }
+        }
+        PHI_for_the_country = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = triumphant_will
+            modifier = {
+                conscription = 0.1
+                army_core_attack_factor = 0.1
+                army_core_defence_factor = 0.1
+            }
+        }
+        PHI_valkist_labour_policy = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = HUN_treaty_of_triannon
+            modifier = {
+                consumer_goods_factor = 0.05
+                production_factory_max_efficiency_factor = 0.05
+                industrial_capacity_factory = 0.025
+                industrial_capacity_dockyard = 0.025
+            }
+        }
+        PHI_foreign_culture_tolerance = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_democratic_drift_bonus
+            modifier = {
+                research_speed_factor = 0.05
+            }
+        }
+        PHI_own_culture_promotion = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_volunteer_expedition_bonus
+            modifier = {
+                monthly_population = 0.75
+            }
+        }
+        PHI_valkist_campaigns = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = GFX_idea_generic_valkist_support
+            modifier = {
+                valkist_drift = 0.1
+            }
+        }
+        PHI_public_education_funding = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = jap_supremacy_of_technology
+            modifier = {
+                research_speed_factor = 0.05
+            }
+        }
+        PHI_worker_strikes1 = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = NOR_labour_conflicts
+            modifier = {
+                industrial_capacity_factory = -0.05
+                industrial_capacity_dockyard = -0.05
+            }
+        }
+        PHI_worker_strikes2 = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = NOR_labour_conflicts
+            modifier = {
+                industrial_capacity_factory = -0.15
+                industrial_capacity_dockyard = -0.15
+            }
+        }
+        PHI_worker_strikes3 = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = NOR_labour_conflicts
+            modifier = {
+                industrial_capacity_factory = -0.25
+                industrial_capacity_dockyard = -0.25
+            }
+        }
+        PHI_government_housing = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_build_infrastructure
+            modifier = {
+                monthly_population = 0.75
+            }
+        }
+        PHI_government_corporations = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_political_support
+            modifier = {
+                industrial_capacity_factory = 0.15
+                industrial_capacity_dockyard = 0.15
+                production_speed_buildings_factor = 0.15
+            }
+        }
+        PHI_seized_wealth = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = ROM_king_carol_emptied_accounts
+            modifier = {
+                consumer_goods_factor = -0.15
+            }
+        }
+        PHI_pcps = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = NOR_secret_police_idea_1
+            modifier = {
+                stability_factor = 0.2
+                enemy_partisan_effect = -0.25
+				subversive_activites_upkeep = -0.25
+				foreign_subversive_activites = -0.25
+            }
+        }
+        PHI_forced_conscription = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_communist_army
+            modifier = {
+                conscription = 0.15
+                conscription_factor = 0.15
+                army_org_factor = -0.05
+                army_attack_factor = -0.1
+                army_defence_factor = -0.1
+            }
+        }
+        PHI_state_atheism = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = chi_war_of_resistance3
+            modifier = {
+                stability_factor = -0.15
+                industrial_capacity_factory = 0.1
+                industrial_capacity_dockyard = 0.1
+            }
+        }
+        PHI_new_quotas = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = saf_history_of_segregation_2
+            modifier = {
+                production_factory_max_efficiency_factor = 0.1
+                production_speed_buildings_factor = 0.1
+                political_power_gain = -0.1
+            }
+        }
+        PHI_secular_state = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_victors_of_ww1
+            modifier = {
+                stability_factor = 0.05
+                industrial_capacity_factory = 0.05
+                industrial_capacity_dockyard = 0.05
+            }
+        }
+        PHI_unity_and_equality = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = home_of_revolution
+            modifier = {
+                surrender_limit = 0.15
+            }
+        }
+        PHI_german_refugees = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = prc_low_popular_support3
+            modifier = {
+                consumer_goods_factor = 0.02
+                research_speed_factor = 0.05
+                monthly_population = 2.5
+            }
+        }
+        PHI_the_lone_red_star_idea = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = ger_the_great_red_menace
+            modifier = {
+                enemy_justify_war_goal_time = 2.0
+                justify_war_goal_time = 2.0
+                ai_get_ally_desire_factor = -500
+                ai_call_ally_desire_factor = -200
+                ai_join_ally_desire_factor = -200
+            }
+        }
+        PHI_naval_production_assistance = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_coastal_defense_ships
+            equipment_bonus = {
+                naval_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+            }
+        }
+        PHI_aircraft_production_assistance = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_air_research
+            equipment_bonus = {
+                air_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+            }
+        }
+        PHI_armor_production_assistance = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_acquire_tanks
+            equipment_bonus = {
+                light_tank_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+				medium_tank_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+				heavy_tank_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+            }
+        }
+        PHI_firepower_production_assistance = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_artillery_regiments
+            equipment_bonus = {
+               infantry_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+				motorized = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+                artillery_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+            }
+        }
+        PHI_aeda_main = {
+            picture = can_wartime_prices_and_trade_board
+            modifier = {
+                consumer_goods_factor = -0.05
+            }
+        }
+        PHI_aeda_economic1 = {
+            picture = PHI_aeda_economic_subsidies
+            modifier = {
+                consumer_goods_factor = -0.075
+                industrial_capacity_factory = 0.15
+                industrial_capacity_dockyard = 0.15
+            }
+        }
+        PHI_aeda_economic2 = {
+            picture = PHI_aeda_economic_subsidies
+            modifier = {
+                consumer_goods_factor = 0.05
+                industrial_capacity_factory = 0.1
+                industrial_capacity_dockyard = 0.1
+            }
+        }
+        PHI_aeda_economic3 = {
+            picture = PHI_aeda_economic_subsidies
+            modifier = {
+                consumer_goods_factor = 0.025
+                industrial_capacity_factory = 0.05
+                industrial_capacity_dockyard = 0.05
+            }
+        }
+        PHI_aeda_excavation1 = {
+            picture = PHI_aeda_resource_exploration
+            modifier = {
+                local_resources_factor = 0.15
+            }
+        }
+        PHI_aeda_excavation2 = {
+            picture = PHI_aeda_resource_exploration
+            modifier = {
+                local_resources_factor = 0.1
+            }
+        }
+        PHI_aeda_excavation3 = {
+            picture = PHI_aeda_resource_exploration
+            modifier = {
+                local_resources_factor = 0.05
+            }
+        }
+        PHI_aeda_construction1 = {
+            picture = PHI_aeda_construction_subsidies
+            modifier = {
+                production_speed_buildings_factor = 0.15
+            }
+        }
+        PHI_aeda_construction2 = {
+            picture = PHI_aeda_construction_subsidies
+            modifier = {
+                production_speed_buildings_factor = 0.1
+            }
+        }
+        PHI_aeda_construction3 = {
+            picture = PHI_aeda_construction_subsidies
+            modifier = {
+                production_speed_buildings_factor = 0.05
+            }
+        }
+    }
+
+    # Head of Government
+    head_of_government = {
+        PHI_Luis_Taruc_hog_van = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                vanguardist
+                hog_red_chairmen
+            }
+        }
+        PHI_Pedro_Abad_Santos_hog_col = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                collectivist
+                hog_flamboyant_tough_guy
+            }
+        }
+        PHI_Crisanto_Evangelista_hog_lib = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                libertarian_socialist
+                hog_happy_amateur
+            }
+        }
+        PHI_Juan_Sumulong_hog_sde = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                social_democrat
+                hog_pragmatic_statesman
+            }
+        }
+        PHI_Lope_K_Santos_hog_sde = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                social_democrat
+                hog_state_secularist
+            }
+        }
+        PHI_Juan_Feleo_hog_sde = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                social_democrat
+                hog_determined_populist
+            }
+        }
+        PHI_Elpidio_Quirino_hog_sli = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                social_liberal
+                hog_political_protege
+            }
+        }
+        PHI_Manuel_Roxas_hog_mli = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                market_liberal
+                hog_backroom_backstabber
+            }
+        }
+        PHI_J_Antonio_Araneta_hog_mli = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                market_liberal
+                hog_smiling_oilman
+            }
+        }
+        PHI_Manuel_Quezon_hog_sco = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                social_conservative
+                hog_silent_workhorse
+            }
+        }
+        PHI_Sergio_P_Osmena_hog_sco = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                social_conservative
+                hog_naive_optimist
+            }
+        }
+        PHI_Eulogio_Rodriguez_Sr_hog_sco = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                social_conservative
+                hog_corporate_suit
+            }
+        }
+        PHI_Gregorio_Aglipay_hog_sco = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                social_conservative
+                hog_spiritual_leader
+            }
+        }
+        PHI_Jose_P_Laurel_hog_ade = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_hog = no }
+            visible = { NOT = { has_country_flag = PHI_interim_president_dead } }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                authoritarian_democrat
+                hog_naive_optimist
+            }
+        }
+        PHI_Benigno_Aquino_Sr_hog_ade = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_hog = no }
+            visible = { has_country_flag = PHI_interim_president_dead }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                authoritarian_democrat
+                hog_local_tyrant
+            }
+        }
+        PHI_Basilio_J_Valdez_hog_pau = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                paternal_autocrat
+                hog_respected_war_hero
+            }
+        }
+        PHI_Emilio_Aguinaldo_hog_npo = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                national_populist
+                hog_old_general
+            }
+        }
+        PHI_Benigno_Ramos_hog_val = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                valkist
+                hog_happy_amateur
+            }
+        }
+    }
+
+    # Foreign Minister
+    foreign_minister = {
+        PHI_Casto_Alejandrino_for_col = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                collectivist
+                for_ideological_crusader
+            }
+        }
+        PHI_Rafael_Liwanag_for_sde = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                social_democrat
+                for_apologetic_clerk
+            }
+        }
+        PHI_Joaquin_Elizalde_for_sli = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                social_liberal
+                for_great_compromiser
+            }
+        }
+        PHI_Quentin_Paredes_for_mli = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                market_liberal
+                for_the_cloak_n_dagger_schemer
+            }
+        }
+        PHI_Manuel_Quadrino_for_sco = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                social_conservative
+                for_hawkish_intervener
+            }
+        }
+        PHI_Ferdinand_Marcos_for_sco = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                social_conservative
+                for_iron_fisted_brute
+            }
+        }
+        PHI_Vicente_P_Lim_for_pau = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                paternal_autocrat
+                for_relations_expert
+            }
+        }
+    }
+
+    # Economy Minister
+    economy_minister = {
+        PHI_Herminegildo_Cruz_eco_col = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                collectivist
+                eco_planned_economy_proponent
+            }
+        }
+        PHI_Carlos_P_Garcia_eco_sde = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                social_democrat
+                eco_reformer
+            }
+        }
+        PHI_Diosdado_P_Macapagal_eco_sde = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                social_democrat
+                eco_mixed_economy
+            }
+        }
+        PHI_Manuel_Quadrino_eco_sli = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                social_liberal
+                eco_bank_president
+            }
+        }
+        PHI_Antonio_de_las_Alas_eco_sli = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                social_liberal
+                eco_resource_industrialist
+            }
+        }
+        PHI_Ramon_Quisumbing_eco_mli = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                market_liberal
+                eco_keynesian_economy
+            }
+        }
+        PHI_Ramon_Magsaysay_eco_mli = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                market_liberal
+                eco_industrialiser
+            }
+        }
+        PHI_Jose_G_David_eco_sco = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                social_conservative
+                eco_construction_magnate
+            }
+        }
+        PHI_Serafin_Fausto_eco_sco = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                social_conservative
+                eco_laissez_faire_capitalist
+            }
+        }
+        PHI_Ramon_Alcaraz_eco_pau = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                social_conservative
+                eco_military_entrepreneur
+            }
+        }
+    }
+
+    # Security Minister
+    security_minister = {
+        PHI_Guillermo_Capadocia_sec_col = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                collectivist
+                sec_back_stabber
+            }
+        }
+        PHI_Mariano_Balgos_sec_lib = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                libertarian_socialist
+                sec_man_of_the_people
+            }
+        }
+        PHI_Jose_M_Crisol_sec_sde = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                social_democrat
+                sec_compassionate_gentleman
+            }
+        }
+        PHI_Pardo_de_Tavera_sec_sde = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                social_democrat
+                sec_crime_fighter
+            }
+        }
+        PHI_Alberto_Ramos_sec_sli = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                social_liberal
+                sec_media_magnate
+            }
+        }
+        PHI_Leoncio_S_Tan_sec_sli = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                social_liberal
+                sec_regionalist
+            }
+        }
+        PHI_Ramon_Quisumbing_sec_mli = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                market_liberal
+                sec_crime_fighter
+            }
+        }
+        PHI_Roman_Apolinario_sec_mli = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                market_liberal
+                sec_health_and_safety
+            }
+        }
+        PHI_Teofisto_Sison_sec_sco = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                social_conservative
+                sec_driven_recruiter
+            }
+        }
+        PHI_Tirano_Craveza_sec_sco = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                social_conservative
+                sec_efficient_sociopath
+            }
+        }
+        PHI_Jose_Yulo_sec_sco = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                social_conservative
+                sec_silent_lawyer
+            }
+        }
+        PHI_Benigno_Aquino_Sr_sec_ade = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                authoritarian_democrat
+                sec_crooked_kleptocrat
+            }
+        }
+        PHI_Rafael_Jalandoni_sec_pau = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                paternal_autocrat
+                sec_secret_police_chief
+            }
+        }
+        PHI_Emilio_Aguinaldo_sec_npo = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                national_populist
+                sec_man_of_the_people
+            }
+        }
+        PHI_Jose_G_Lukban_sec_val = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                valkist
+                sec_preserver_of_culture
+            }
+        }
+    }
+
+    # Intelligence Minister
+    head_of_intel = {
+        PHI_Luis_Taruc_int_col = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = yes
+            traits = {
+                head_of_intel
+                collectivist
+                int_political_specialist
+            }
+        }
+        PHI_John_Gilbert_Winant_int_sli = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = yes
+            traits = {
+                head_of_intel
+                social_liberal
+                int_dismal_enigma
+            }
+        }
+        PHI_Leslie_Ailen_Wheeler_int_mli = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = yes
+            traits = {
+                head_of_intel
+                market_liberal
+                int_naval_intelligence_specialist
+            }
+        }
+        PHI_James_Wilson_int_sco = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = yes
+            traits = {
+                head_of_intel
+                social_conservative
+                int_technical_specialist
+            }
+        }
+        PHI_Fidel_Segundo_int_ade = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = yes
+            traits = {
+                head_of_intel
+                authoritarian_democrat
+                int_logistics_specialist
+            }
+        }
+        PHI_Benigno_Ramos_int_val = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = yes
+            traits = {
+                head_of_intel
+                valkist
+                int_industrial_specialist
+            }
+        }
+    }
+
+    # Chief of Staff
+    chief_of_staff = {
+        PHI_Luis_Taruc_cos_col = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_socialist_government = yes }
+            cancel_if_invalid = yes
+            traits = {
+                chief_of_staff
+                collectivist
+                cos_school_of_psychology
+            }
+        }
+        PHI_Augusto_Jurado_cos = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_socialist_government = no }
+            cancel_if_invalid = yes
+            traits = {
+                chief_of_staff
+                cos_school_of_psychology
+            }
+        }
+        PHI_Paulino_Santos_cos = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_socialist_government = no }
+            cancel_if_invalid = yes
+            traits = {
+                chief_of_staff
+                cos_school_of_manoeuvre
+            }
+        }
+        PHI_Quirinto_P_Evangelista_cos = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_socialist_government = no }
+            cancel_if_invalid = yes
+            traits = {
+                chief_of_staff
+                cos_school_of_mass_combat
+            }
+        }
+        PHI_Basilio_J_Valdez_cos = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_socialist_government = no }
+            cancel_if_invalid = yes
+            traits = {
+                chief_of_staff
+                cos_school_of_defence
+            }
+        }
+    }
+
+    # Chief of Army
+    chief_of_army = {
+        PHI_Jesus_Lava_carm_col = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_socialist_government = yes }
+            cancel_if_invalid = yes
+            traits = {
+                chief_of_army
+                carm_armoured_spearhead_doctrine
+            }
+        }
+        PHI_Benito_N_Ebuen_carm = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_socialist_government = no }
+            cancel_if_invalid = yes
+            traits = {
+                chief_of_army
+                carm_elastic_defence_doctrine
+            }
+        }
+        PHI_Heraclio_Alano_carm = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_socialist_government = no }
+            cancel_if_invalid = yes
+            traits = {
+                chief_of_army
+                carm_decisive_battle_doctrine
+            }
+        }
+        PHI_Mateo_M_Capinpin_carm = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_socialist_government = no }
+            cancel_if_invalid = yes
+            traits = {
+                chief_of_army
+                carm_armoured_spearhead_doctrine
+            }
+        }
+        PHI_Vicente_P_Lim_carm = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_socialist_government = no }
+            cancel_if_invalid = yes
+            traits = {
+                chief_of_army
+                carm_guns_and_butter_doctrine
+            }
+        }
+        PHI_Basilio_J_Valdez_carm = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_socialist_government = no }
+            cancel_if_invalid = yes
+            traits = {
+                chief_of_army
+                carm_elastic_defence_doctrine
+            }
+        }
+    }
+
+    # Chief of Navy
+    chief_of_navy = {
+        PHI_Jose_V_Andrada_cnav = {
+            allowed = { is_a_filipino_tag = yes }
+            traits = {
+                chief_of_navy
+                cnav_base_control_doctrine
+            }
+        }
+        PHI_Ramon_A_Alcaraz_cnav = {
+            allowed = { is_a_filipino_tag = yes }
+            traits = {
+                chief_of_navy
+                cnav_indirect_approach_doctrine
+            }
+        }
+        PHI_Santiago_Nuval_cnav = {
+            allowed = { is_a_filipino_tag = yes }
+            traits = {
+                chief_of_navy
+                cnav_power_projection_doctrine
+            }
+        }
+        PHI_Eustacio_Orobia_cnav = {
+            allowed = { is_a_filipino_tag = yes }
+            traits = {
+                chief_of_navy
+                cnav_open_seas_doctrine
+            }
+        }
+    }
+
+    # Chief of Air Force
+    chief_of_air_force = {
+        PHI_Joe_Rogers_cair = {
+            allowed = { is_a_filipino_tag = yes }
+            traits = {
+                chief_of_air_force
+                cair_battlefield_support_doctrine
+            }
+        }
+        PHI_Basilio_Fernando_cair = {
+            allowed = { is_a_filipino_tag = yes }
+            traits = {
+                chief_of_air_force
+                cair_carpet_bombing_doctrine
+            }
+        }
+        PHI_Edwin_Andrews_cair = {
+            allowed = { is_a_filipino_tag = yes }
+            traits = {
+                chief_of_air_force
+                cair_battlefield_support_doctrine
+            }
+        }
+        PHI_Pelagio_Cruz_cair = {
+            allowed = { is_a_filipino_tag = yes }
+            traits = {
+                chief_of_air_force
+                cair_battlefield_support_doctrine
+            }
+        }
+        PHI_Victor_H_Dizon_cair = {
+            allowed = { is_a_filipino_tag = yes }
+            traits = {
+                chief_of_air_force
+                cair_carpet_bombing_doctrine
+            }
+        }
+        PHI_Felix_Pestana_cair = {
+            allowed = { is_a_filipino_tag = yes }
+            traits = {
+                chief_of_air_force
+                cair_air_superiority_doctrine
+            }
+        }
+    }
+
+    # Theorist
+    theorist = {
+        PHI_Basilio_J_Valdez_theo = {
+            allowed = { is_a_filipino_tag = yes }
+            traits = {
+                land_doctrine_theorist
+            }
+            research_bonus = {
+                cat_superior_firepower = 0.1
+            }
+        }
+        PHI_Vicente_P_Lim_theo = {
+            allowed = { is_a_filipino_tag = yes }
+            traits = {
+                land_doctrine_theorist
+            }
+            research_bonus = {
+                cat_grand_battle_plan = 0.1
+            }
+        }
+        PHI_Santiago_Nuval_theo = {
+            allowed = { is_a_filipino_tag = yes }
+            traits = {
+                naval_doctrine_theorist
+            }
+            research_bonus = {
+                naval_doctrine = 0.05
+            }
+        }
+        PHI_Pelagio_Cruz_theo = {
+            allowed = { is_a_filipino_tag = yes }
+            traits = {
+                air_doctrine_theorist
+            }
+            research_bonus = {
+                air_doctrine = 0.05
+            }
+        }
+    }
+    # Industrial Concern
+    industrial_concern = {
+        designer = yes
+        PHI_benguet_corporation = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_industrial_concern_2
+            traits = { mining_company }
+            research_bonus = {
+                industry = 0.15
+            }
+            modifier = {
+                local_resources_factor = 0.05
+            }
+        }
+        PHI_ayala_corporation = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_refining_concern_1
+            traits = { oil_concern }
+            research_bonus = {
+                synth_resources = 0.15
+            }
+            modifier = {
+                fuel_gain_factor = 0.05
+                production_oil_factor = 0.05
+            }
+        }
+        PHI_science_department = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_electronics_concern_3
+            traits = { electronics_manufacturer }
+            research_bonus = {
+                electronics = 0.15
+            }
+            modifier = {
+                industrial_capacity_factory = 0.05
+                industrial_capacity_dockyard = 0.05
+            }
+        }
+        PHI_san_miguel_corporation = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_industrial_concern_3
+            traits = { industrial_concern }
+            research_bonus = {
+                industry = 0.15
+            }
+            modifier = {
+                production_speed_buildings_factor = 0.05
+            }
+        }
+        PHI_standard_oil = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_trade_with_united_states = yes }
+            picture = standard_oil_california
+            traits = { oil_concern }
+            research_bonus = {
+                synth_resources = 0.15
+            }
+            modifier = {
+                fuel_gain_factor = 0.05
+                production_oil_factor = 0.05
+            }
+        }
+        PHI_english_electric = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_trade_with_britain = yes }
+            picture = english_electric
+            traits = { electronics_manufacturer }
+            research_bonus = {
+                electronics = 0.15
+            }
+            modifier = {
+                industrial_capacity_factory = 0.05
+                industrial_capacity_dockyard = 0.05
+            }
+        }
+        PHI_kawasaki = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_trade_with_japan = yes }
+            picture = kawasaki
+            traits = { industrial_concern }
+            research_bonus = {
+                industry = 0.15
+            }
+            modifier = {
+                production_speed_buildings_factor = 0.05
+            }
+        }
+        PHI_krupp = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_trade_with_germany = yes }
+            picture = krupp
+            traits = { mining_company }
+            research_bonus = {
+                industry = 0.15
+            }
+            modifier = {
+                local_resources_factor = 0.05
+            }
+        }
+    }
+    # Weapons Manufacturer
+    weapons_manufacturer = {
+        designer = yes
+        PHI_armscor = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_completed_focus = PHI_fund_armscor }
+            picture = generic_infantry_equipment_manufacturer_2
+            traits = { infantry_equipment_producer_offense_2 }
+            research_bonus = {
+                infantry_weapons = 0.15
+            }
+        }
+        PHI_nissan = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_trade_with_japan = yes }
+            picture = nissan
+            traits = { infantry_equipment_producer_defense_1 }
+            research_bonus = {
+                infantry_weapons = 0.15
+            }
+        }
+        PHI_rsaf_enfield = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_trade_with_britain = yes }
+            picture = rsaf_enfield
+            traits = { infantry_equipment_producer_assualt_1 }
+            research_bonus = {
+                infantry_weapons = 0.15
+            }
+        }
+    }
+    # Tank Manufacturer
+    tank_manufacturer = {
+        designer = yes
+        PHI_army_department = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_tank_manufacturer_2
+            traits = { motorised_equipment_producer_offense_3 }
+            research_bonus = {
+                motorized = 0.15
+            }
+        }
+        PHI_ford = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_trade_with_united_states = yes }
+            picture = ford_motor_company
+            traits = { medium_tank_producer_mass_2 }
+            research_bonus = {
+                armor = 0.15
+            }
+        }
+        PHI_porsche = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_trade_with_germany = yes }
+            picture = porsche
+            traits = { heavy_tank_producer_offense_1 }
+            research_bonus = {
+                armor = 0.15
+            }
+        }
+        PHI_vickers = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_trade_with_britain = yes }
+            picture = vickers_armstrong_eng
+            traits = { small_tank_producer_mass_1 }
+            research_bonus = {
+                armor = 0.15
+            }
+        }
+    }
+    # Naval-Air Manufacturer
+    air_naval_manufacturer = {
+        designer = yes
+        PHI_air_force_department = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_air_manufacturer_3
+            traits = { nav_cas_producer_mass_2 }
+            research_bonus = {
+                air_equipment = 0.15
+            }
+        }
+        PHI_mitsubishi = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_trade_with_japan = yes }
+            picture = mitsubishi
+            traits = { nav_cas_producer_offense_2 }
+            research_bonus = {
+                air_equipment = 0.15
+            }
+        }
+        PHI_junkers = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_trade_with_germany = yes }
+            picture = junkers
+            traits = { fighter_producer_defense_1 }
+            research_bonus = {
+                air_equipment = 0.15
+            }
+        }
+        PHI_hawker = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_trade_with_britain = yes }
+            picture = hawker
+            traits = { bomber_producer_defense_2 }
+            research_bonus = {
+                air_equipment = 0.15
+            }
+        }
+        PHI_boeing = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_trade_with_united_states = yes }
+            picture = boeing
+            traits = { fighter_producer_offense_2 }
+            research_bonus = {
+                air_equipment = 0.15
+            }
+        }
+        PHI_subic_naval = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_naval_manufacturer_1
+            traits = { small_ship_producer_mass_2 }
+            research_bonus = {
+                naval_equipment = 0.15
+            }
+        }
+        PHI_harland_wolff = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_trade_with_britain = yes }
+            picture = harland_wolff
+            traits = { cruiser_producer_mass_2 }
+            research_bonus = {
+                naval_equipment = 0.15
+            }
+        }
+        PHI_yarrow_shipbuilders = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_trade_with_united_states = yes }
+            picture = yarrow_shipbuilders
+            traits = { capital_ship_producer_mass_1 }
+            research_bonus = {
+                naval_equipment = 0.15
+            }
+        }
+        PHI_blohm_und_voss = {
+            allowed = { is_a_filipino_tag = yes }
+            available = { has_trade_with_germany = yes }
+            picture = blohm_und_voss
+            traits = { small_ship_producer_offense_2 }
+            research_bonus = {
+                naval_equipment = 0.15
+            }
+        }
+    }
+}

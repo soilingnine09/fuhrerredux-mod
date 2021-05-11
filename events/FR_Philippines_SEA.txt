@@ -1,0 +1,282 @@
+# South East Asia Events
+# created by: dax0102
+
+add_namespace = seasia
+
+### Asian Economic and Development Association Events
+
+# AEDA Founded (focus)
+country_event = {
+    id = seasia.1
+    title = seasia.1.t
+    desc = seasia.1.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+
+    option = {
+        name = seasia.1.a
+
+        add_ideas = PHI_aeda_main
+        unlock_decision_category_tooltip = PHI_aeda_decisions
+        
+        add_political_power = -50
+        custom_effect_tooltip = PHI_add_50_pp_to_aeda
+        hidden_effect = {
+            set_global_flag = PHI_aeda_created
+            set_country_flag = PHI_joined_aeda
+            set_variable = { global.aeda_pp = 50 }
+            add_to_array = { array = global.aeda_members }
+            set_variable = { aeda_civ_factories = 0 }
+            set_variable = { aeda_mil_factories = 0 }
+            set_variable = { aeda_nav_factories = 0 }
+        }
+    }
+}
+
+# Invitation to AEDA (decision)
+country_event = {
+    id = seasia.2
+    title = seasia.2.t
+    desc = seasia.2.d
+    picture = GFX_report_event_gre_balkan_pact
+    is_triggered_only = yes
+
+    trigger = {
+        has_capitulated = no
+        is_in_faction_with = ROOT
+    }
+
+    # Join and invest 25PP
+    option = {
+        name = seasia.2.a
+
+        custom_effect_tooltip = PHI_joins_aeda_tt
+        add_political_power = -25
+        custom_effect_tooltip = PHI_add_25_pp_to_aeda
+        hidden_effect = {
+            set_variable = { aeda_contribution = 25 }
+            add_to_variable = { global.aeda_pp = 25 }
+            set_variable = { aeda_civ_factories = 0 }
+            set_variable = { aeda_mil_factories = 0 }
+            set_variable = { aeda_nav_factories = 0 }
+
+            set_country_flag = PHI_joined_aeda
+            set_country_flag = PHI_invited_to_aeda
+            
+            FROM = { country_event = seasia.3 }
+            country_event = seasia.5
+        }
+    }
+    # Join and invest 50PP
+    option = {
+        name = seasia.2.b
+
+        custom_effect_tooltip = PHI_joins_aeda_tt
+        add_political_power = -50
+        custom_effect_tooltip = PHI_add_50_pp_to_aeda
+        hidden_effect = {
+            set_variable = { aeda_contribution = 50 }
+            add_to_variable = { global.aeda_pp = 50 }
+            set_variable = { aeda_civ_factories = 0 }
+            set_variable = { aeda_mil_factories = 0 }
+            set_variable = { aeda_nav_factories = 0 }
+
+            set_country_flag = PHI_joined_aeda
+            set_country_flag = PHI_invited_to_aeda
+
+            FROM = { country_event = seasia.3 }
+            country_event = seasia.5
+        }
+    }
+    # Refuse to Join
+    option = {
+        name = seasia.2.c
+
+        clr_country_flag = PHI_invited_to_aeda
+        set_country_flag = PHI_refused_aeda
+        FROM = { country_event = seasia.4 }
+    }
+}
+
+# Notifications for New Members
+country_event = {
+    id = seasia.3
+    title = seasia.3.t
+    desc = seasia.3.d
+    picture = GFX_report_event_japan_europe_pact
+    is_triggered_only = yes
+
+    option = {
+        name = seasia.3.a
+
+        clr_country_flag = PHI_inviting_to_aeda
+        hidden_effect = {
+            add_to_array = { array = global.aeda_members value = FROM }
+        }
+    }
+}
+
+# Refusal of FROM to Join AEDA
+country_event = {
+    id = seasia.4
+    title = seasia.4.t
+    desc = seasia.4.d
+    picture = GFX_report_event_german_politician_speech
+
+    is_triggered_only = yes
+
+    option = {
+        name = seasia.4.a
+
+        clr_country_flag = PHI_inviting_to_aeda
+    }
+}
+
+# Initial AEDA Aid
+country_event = {
+    id = seasia.5
+    title = seasia.5.t
+    desc = seasia.5.d
+    picture = GFX_report_event_tank_factory
+    is_triggered_only = yes
+
+    # Economic Aid
+    option = {
+        name = seasia.5.a
+
+        if = {
+            limit = { check_variable = { aeda_contribution < 50 } }
+            add_timed_idea = {
+                idea = PHI_aeda_economic1
+                days = 365
+            }
+        }
+        else_if = {
+            limit = { check_variable = { aeda_contribution < 100 } }
+            add_timed_idea = {
+                idea = PHI_aeda_economic2
+                days = 365
+            }
+        }
+        else = {
+            add_timed_idea = {
+                idea = PHI_aeda_economic3
+                days = 365
+            }
+        }
+    }
+
+    # Excavation Projects
+    option = {
+        name = seasia.5.b
+
+        if = {
+            limit = { check_variable = { aeda_contribution < 50 } }
+            add_timed_idea = {
+                idea = PHI_aeda_excavation1
+                days = 365
+            }
+        }
+        else_if = {
+            limit = { check_variable = { aeda_contribution < 100 } }
+            add_timed_idea = {
+                idea = PHI_aeda_excavation2
+                days = 365
+            }
+        }
+        else = {
+            add_timed_idea = {
+                idea = PHI_aeda_excavation3
+                days = 365
+            }
+        }
+    }
+
+    # Construction Subsidies
+    option = {
+        name = seasia.5.c
+
+        if = {
+            limit = { check_variable = { aeda_contribution < 50 } }
+            add_timed_idea = {
+                idea = PHI_aeda_construction1
+                days = 365
+            }
+        }
+        else_if = {
+            limit = { check_variable = { aeda_contribution < 100 } }
+            add_timed_idea = {
+                idea = PHI_aeda_construction2
+                days = 365
+            }
+        }
+        else = {
+            add_timed_idea = {
+                idea = PHI_aeda_construction3
+                days = 365
+            }
+        }
+    }
+}
+
+# Investments to AEDA Member
+country_event = {
+    id = seasia.6
+    title = seasia.6.t
+    picture = GFX_report_event_generic_train
+    is_triggered_only = yes
+
+    desc = {
+        text = seasia.6.d.head
+        trigger = { tag = FROM }
+    }
+    desc = {
+        text = seasia.6.d.member
+        trigger = { NOT = { tag = FROM } }
+    }
+
+    # Civillian
+    option = {
+        name = seasia.6.a
+
+        add_offsite_building = { 
+            type = industrial_complex 
+            level = 1 
+        }
+        hidden_effect = {
+            clr_country_flag = PHI_aeda_investment
+            set_country_flag = PHI_aeda_investment
+            add_to_variable = { aeda_civ_factories = 1 }
+        }
+    }
+
+    # Military
+    option = {
+        name = seasia.6.b
+
+        add_offsite_building = { 
+            type = arms_factory 
+            level = 1 
+        }
+        hidden_effect = {
+            clr_country_flag = PHI_aeda_investment
+            set_country_flag = PHI_aeda_investment
+            add_to_variable = { aeda_mil_factories = 1 }
+        }
+    }
+
+    # Dockyard
+    option = {
+        name = seasia.6.c
+
+        add_offsite_building = { 
+            type = industrial_complex 
+            level = 1 
+        }
+        hidden_effect = {
+            clr_country_flag = PHI_aeda_investment
+            set_country_flag = PHI_aeda_investment
+            add_to_variable = { aeda_nav_factories = 1 }
+        }
+    }
+}

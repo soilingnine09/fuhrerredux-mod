@@ -1,0 +1,23 @@
+# Philippine Revolt Events
+# created by: dax0102
+
+add_namespace = phr
+
+country_event = {
+    id = phr.1
+    title = phr.1.t
+    desc = phr.1.d
+    picture = GFX_report_event_german_troops_paris
+
+    is_triggered_only = yes
+
+    option = {
+        name = phr.1.a
+        every_state = {
+            limit = { is_core_of = PHI }
+            add_core_of = PHR
+            remove_core_of = PHI
+        }
+        set_country_flag = PHI_worker_victory_tt
+    }
+}

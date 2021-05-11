@@ -1,0 +1,38 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_focus_philippines_constabulary"
+		texturefile = "gfx/interface/goals/PHI_goal_constabulary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_philippines_defense"
+		texturefile = "gfx/interface/goals/PHI_goal_defense.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_philippines_democracy"
+		texturefile = "gfx/interface/goals/PHI_goal_democracy.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_philippines_renounce_colonialism"
+		texturefile = "gfx/interface/goals/PHI_goal_renounce_colonialism.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_philippines_army"
+		texturefile = "gfx/interface/goals/PHI_goal_army.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_philippines_navy"
+		texturefile = "gfx/interface/goals/PHI_goal_navy.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_philippines_air_force"
+		texturefile = "gfx/interface/goals/PHI_goal_air_force.tga"
+	}
+
+}
