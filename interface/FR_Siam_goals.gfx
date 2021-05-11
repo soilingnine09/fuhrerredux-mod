@@ -1,27 +1,39 @@
 SpriteTypes = { 
 	spriteType = {
 		name = "GFX_balance_in_power"
-		texturefile = "gfx/interface/goals/balance_in_power.dds"
+		texturefile = "gfx/interface/goals/GFX_balance_in_power.dds"
 	}
 	spriteType = {
 		name = "GFX_political_reform"
-		texturefile = "gfx/interface/goals/politcal_reform.dds"
+		texturefile = "gfx/interface/goals/GFX_signed_act.dds"
 	}
 	spriteType = {
 		name = "GFX_rajaniyom_incident"
-		texturefile = "gfx/interface/goals/Rajaniyom_incident.dds"
+		texturefile = "gfx/interface/goals/GFX_royal_democracy.dds"
 	}
 	spriteType = {
 		name = "GFX_coop_with_rajaniyom"
-		texturefile = "gfx/interface/goals/coop_with_royalist.dds"
+		texturefile = "gfx/interface/goals/GFX_royalist_militarist.dds"
 	}
 	spriteType = {
 		name = "GFX_recovery_from_great_depression"
-		texturefile = "gfx/interface/goals/Recovery_Siamese_Economy.dds"
+		texturefile = "gfx/interface/goals/GFX_Recovery_Siamese_Economy.dds"
 	}
 	spriteType = {
-		name = "GFX_trade_union"
-		texturefile = "gfx/interface/goals/Trade_Union.dds"
+		name = "GFX_economist_meeting"
+		texturefile = "gfx/interface/goals/GFX_Siam_Economists_Meeting.dds"
+	}
+	spriteType = {
+		name = "GFX_traditionalist_chairman"
+		texturefile = "gfx/interface/goals/GFX_Economic_Traditional.dds"
+	}
+	spriteType = {
+		name = "GFX_capitalist_chairman"
+		texturefile = "gfx/interface/goals/GFX_Economic_Capitalist.dds"
+	}
+	spriteType = {
+		name = "GFX_socialist_chairman"
+		texturefile = "gfx/interface/goals/GFX_Economic_Socialist.dds"
 	}
 	spriteType = {
 		name = "GFX_trade_union_congress_of_siam"
@@ -69,7 +81,7 @@ SpriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_unificationist_faction"
-		texturefile = "gfx/interface/goals/Thai_unificationist.dds"
+		texturefile = "gfx/interface/goals/GFX_four_horsemen_of_extremist_nationalist.dds"
 	}
 	spriteType = {
 		name = "GFX_Royalist_win_election"

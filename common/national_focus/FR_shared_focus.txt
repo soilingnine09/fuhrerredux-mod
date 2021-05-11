@@ -1042,7 +1042,10 @@ shared_focus = {
 		random_country = {
 			limit = { tag = ROOT }
 			random_owned_state = {
-				limit = { is_core_of = ROOT }
+				limit = { 
+					is_core_of = ROOT 
+					is_coastal = yes
+				}
 				add_building_construction = {
 					type = dockyard
 					level = 2
@@ -1052,6 +1055,7 @@ shared_focus = {
 					random_owned_state = {
 						limit = {
 							NOT = { state = PREV.PREV }
+							is_coastal = yes
 						}
 						add_building_construction = {
 							type = dockyard

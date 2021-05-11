@@ -1,19 +1,27 @@
 spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_foreign_company_investment"
-		texturefile = "gfx/interface/ideas/SIA/company/foreign_asset.dds"
+		texturefile = "gfx/interface/ideas/SIA/GFX_Entente_Trade.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_parliament_with_officers"
-		texturefile = "gfx/interface/ideas/SIA/company/Officers_and_Civilians.dds"
+		texturefile = "gfx/interface/ideas/SIA/GFX_Political_Struggle.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_stable_bureaucrat"
-		texturefile = "gfx/interface/ideas/SIA/company/stable_bureaucrat.dds"
+		texturefile = "gfx/interface/ideas/SIA/GFX_Stablilized_Bureaucracy.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_pretender_crisis"
 		texturefile = "gfx/interface/ideas/SIA/GFX_Pretender_Crisis_Siam.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_limited_bureaucrat"
+		texturefile = "gfx/interface/ideas/SIA/GFX_Unstabilized_Bureaucracy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ruined_bureaucrat"
+		texturefile = "gfx/interface/ideas/SIA/GFX_Ruined_Bureaucracy.dds"
 	}
 	##Economic
 	spriteType = {

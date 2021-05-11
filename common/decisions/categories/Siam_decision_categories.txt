@@ -20,7 +20,20 @@ SIA_fate_of_occupation = {
 }
 SIA_supervisory_board_of_royal_market = {
 	icon = GFX_decision_category_sia_mahasombat_ministry_icon
-	visible = { AND = { tag = SIA has_country_flag = supervisory_board_of_royal_market_recovery } }
+	visible = { 
+		AND = { 
+			tag = SIA 
+			OR = {
+				has_completed_focus = SIA_socialist_chairman
+				has_completed_focus = SIA_traditionalist_chairman
+				has_completed_focus = SIA_capitalist_chairman
+			} 
+			OR = {
+				has_idea = black_wednesday
+				has_idea = black_wednesday_1
+			}
+		} 
+	}
 	scripted_gui = supervisory_board_of_royal_market_decision_ui
 	picture = GFX_decision_category_sia_royal_market_palace
 	priority = 10000

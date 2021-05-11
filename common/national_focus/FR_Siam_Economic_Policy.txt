@@ -12,33 +12,33 @@ shared_focus = {
 			remove_idea = black_wednesday
 			add_idea = black_wednesday_1
 		}
-		hidden_effect = {
-			set_country_flag = supervisory_board_of_royal_market_recovery
-		}
 	}
 }
 
 shared_focus = {
 	id = SIA_meeting_of_economists
-	icon = GFX_a_meeting 
+	icon = GFX_economist_meeting 
 	relative_position_id = SIA_recovery_from_great_depression
 	x = 0
 	y = 1
 	cost = 5
 	prerequisite = { focus = SIA_recovery_from_great_depression }
 	completion_reward = {
-		
+		country_event = siambw.2
 	}
 } 
 shared_focus = {
 	id = SIA_socialist_chairman
-	icon = GFX_
+	icon = GFX_socialist_chairman
 	relative_position_id = SIA_meeting_of_economists
 	x = 0
 	y = 1
-	cost = 5
+	cost = 1
 	prerequisite = { focus = SIA_meeting_of_economists }
 	allow_branch = { has_country_flag = select_socialist }
+	completion_reward = {
+		custom_effect_tooltip = unlock_economic_ui_tt
+	}
 }
 shared_focus = {
 	id = SIA_autarky_reform
@@ -127,34 +127,262 @@ shared_focus = {
 	prerequisite = { focus = SIA_forward_to_industrialization }
 }
 shared_focus = {
-	id = SIA_afterrain_of_economic_recovery_soc
+	id = SIA_yellow_cover_book
 	icon = GFX_
 	relative_position_id = SIA_socialist_chairman
 	x = 0
 	y = 5
-	cost = 10
+	cost = 5
 	prerequisite = { focus = SIA_city_of_industry }
 	prerequisite = { focus = SIA_agrarian_reform }
 }
 shared_focus = {
-	id = SIA_capitalist_chairman
+	id = SIA_afterrain_of_economic_recovery_soc
 	icon = GFX_
+	relative_position_id = SIA_socialist_chairman
+	x = 0
+	y = 6
+	cost = 10
+	prerequisite = { focus = SIA_yellow_cover_book }
+}
+shared_focus = {
+	id = SIA_capitalist_chairman
+	icon = GFX_capitalist_chairman
 	relative_position_id = SIA_meeting_of_economists
 	x = 0
 	y = 1
 	cost = 5
 	prerequisite = { focus = SIA_meeting_of_economists }
-	#allow_branch = { has_country_flag = select_capitalist }
+	allow_branch = { has_country_flag = select_capitalist }
+}
+shared_focus = {
+	id = SIA_bond_for_investment 
+	icon = GFX_
+	relative_position_id = SIA_capitalist_chairman
+	x = 2
+	y = 1
+	cost = 5
+	prerequisite = { focus = SIA_capitalist_chairman }
+}
+shared_focus = {
+	id = SIA_looking_for_new_industry
+	icon = GFX_
+	relative_position_id = SIA_bond_for_investment
+	x = 0
+	y = 1
+	cost = 5
+	prerequisite = { focus = SIA_bond_for_investment }
+}
+shared_focus = {
+	id = SIA_gold_standard_reform
+	icon = GFX_
+	relative_position_id = SIA_bond_for_investment
+	x = 0
+	y = 2
+	cost = 5
+	prerequisite = { focus = SIA_looking_for_new_industry }
+}
+shared_focus = {
+	id = SIA_second_wave_of_investment
+	icon = GFX_
+	relative_position_id = SIA_bond_for_investment
+	x = 0
+	y = 3
+	cost = 5
+	prerequisite = { focus = SIA_gold_standard_reform }
+}
+shared_focus = {
+	id = SIA_coastal_corridor_concession
+	icon = GFX_
+	relative_position_id = SIA_capitalist_chairman
+	x = -2
+	y = 1
+	cost = 5
+	prerequisite = { focus = SIA_capitalist_chairman }
+}
+shared_focus = {
+	id = SIA_western_company_investment
+	icon = GFX_
+	relative_position_id = SIA_coastal_corridor_concession
+	x = -2
+	y = 1
+	cost = 5
+	prerequisite = { focus = SIA_coastal_corridor_concession }
+	mutually_exclusive = { focus = SIA_japanese_company_investment }
+}
+shared_focus = {
+	id = SIA_seeking_help_from_rockyfeller
+	icon = GFX_
+	relative_position_id = SIA_western_company_investment
+	x = 0
+	y = 1
+	cost = 5
+	prerequisite = { focus = SIA_western_company_investment }
+}
+shared_focus = {
+	id = SIA_state_investment_company
+	icon = GFX_
+	relative_position_id = SIA_western_company_investment
+	x = 0
+	y = 2
+	cost = 5
+	prerequisite = { focus = SIA_seeking_help_from_rockyfeller }
+}
+shared_focus = {
+	id = SIA_japanese_company_investment
+	icon = GFX_
+	relative_position_id = SIA_coastal_corridor_concession
+	x = 2
+	y = 1
+	cost = 5
+	prerequisite = { focus = SIA_coastal_corridor_concession }
+	mutually_exclusive = { focus = SIA_western_company_investment }
+}
+shared_focus = {
+	id = SIA_zaibutsu_economic_aid
+	icon = GFX_
+	relative_position_id = SIA_japanese_company_investment
+	x = 0
+	y = 1
+	cost = 5
+	prerequisite = { focus = SIA_japanese_company_investment }
+}
+shared_focus = {
+	id = SIA_resource_mining_company
+	icon = GFX_
+	relative_position_id = SIA_japanese_company_investment
+	x = 0
+	y = 2 
+	cost = 5
+	prerequisite = { focus = SIA_zaibutsu_economic_aid }
+}
+shared_focus = {
+	id = SIA_wealth_of_nation
+	icon = GFX_
+	relative_position_id = SIA_capitalist_chairman
+	x = 0
+	y = 5
+	cost = 5
+	prerequisite = { focus = SIA_second_wave_of_investment }
+	prerequisite = {
+		focus = SIA_resource_mining_company
+		focus = SIA_state_investment_company 
+	}
+}
+shared_focus = {
+	id = SIA_afterrain_of_economic_recovery_cap
+	icon = GFX_
+	relative_position_id = SIA_wealth_of_nation
+	x = 0
+	y = 1
+	cost = 5
+	prerequisite = { focus = SIA_wealth_of_nation }
 }
 shared_focus = {
 	id = SIA_traditionalist_chairman
-	icon = GFX_
+	icon = GFX_traditionalist_chairman
 	relative_position_id = SIA_meeting_of_economists
 	x = 0
 	y = 1
 	cost = 5
 	prerequisite = { focus = SIA_meeting_of_economists }
 	allow_branch = { has_country_flag = select_traditionalist }
+}
+shared_focus = {
+	id = SIA_land_reform
+	icon = GFX_
+	relative_position_id = SIA_traditionalist_chairman
+	x = -2
+	y = 1
+	cost = 5
+	prerequisite = { focus = SIA_traditionalist_chairman }
+}
+shared_focus = {
+	id = SIA_landowner_empowerment
+	icon = GFX_
+	relative_position_id = SIA_land_reform
+	x = 0
+	y = 1
+	cost = 5
+	prerequisite = { focus = SIA_land_reform }
+}
+shared_focus = {
+	id = SIA_resources_standard
+	icon = GFX_
+	relative_position_id = SIA_land_reform
+	x = -2
+	y = 2
+	cost = 5
+	prerequisite = { focus = SIA_landowner_empowerment }
+	mutually_exclusive = { focus = SIA_rebuild_gold_standard }
+}
+shared_focus = {
+	id = SIA_rebuild_gold_standard
+	icon = GFX_
+	relative_position_id = SIA_land_reform
+	x = 2
+	y = 2
+	cost = 5
+	prerequisite = { focus = SIA_landowner_empowerment }
+	mutually_exclusive = { focus = SIA_resources_standard }
+}
+shared_focus = {
+	id = SIA_nationwide_agrarian_reform
+	icon = GFX_
+	relative_position_id = SIA_land_reform
+	x = 0
+	y = 3
+	cost = 5
+	prerequisite = {
+		focus = SIA_resources_standard
+		focus = SIA_rebuild_gold_standard 
+	}
+}
+shared_focus = {
+	id = SIA_nationalize_foreign_investment
+	icon = GFX_
+	relative_position_id = SIA_traditionalist_chairman
+	x = 2
+	y = 1
+	cost = 5
+	prerequisite = { focus = SIA_traditionalist_chairman }
+}
+shared_focus = {
+	id = SIA_increase_land_taxation
+	icon = GFX_
+	relative_position_id = SIA_nationalize_foreign_investment
+	x = 0
+	y = 1
+	cost = 5
+	prerequisite = { focus = SIA_nationalize_foreign_investment }
+}
+shared_focus = {
+	id = SIA_land_rent_for_poor
+	icon = GFX_
+	relative_position_id = SIA_nationalize_foreign_investment
+	x = 0
+	y = 2
+	cost = 5
+	prerequisite = { focus = SIA_increase_land_taxation }
+}
+shared_focus = {
+	id = SIA_regional_state_bank
+	icon = GFX_
+	relative_position_id = SIA_nationalize_foreign_investment
+	x = 0
+	y = 3
+	cost = 5
+	prerequisite = { focus = SIA_land_rent_for_poor }
+}
+shared_focus = {
+	id = SIA_afterrain_of_economic_recovery_cap
+	icon = GFX_
+	relative_position_id = SIA_traditionalist_chairman
+	x = 0
+	y = 5
+	cost = 5
+	prerequisite = { focus = SIA_regional_state_bank }
+	prerequisite = { focus = SIA_nationwide_agrarian_reform }
 }
 ##Industrial Revolution
 shared_focus = {

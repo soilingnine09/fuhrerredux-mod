@@ -157,6 +157,7 @@ SIA_economic_council_decaying = {
 	}
 }
 SIA_economic_decaying_random_rate_low = {
+	custom_effect_tooltip = gain_decaying_rate_low
 	set_temp_variable = { temp = random }
 	clamp_temp_variable = {
 		var = temp
@@ -166,6 +167,7 @@ SIA_economic_decaying_random_rate_low = {
 	add_to_variable = { SiamEconomicDecaying = temp }
 }
 SIA_economic_decaying_random_rate_mid = {
+	custom_effect_tooltip = gain_decaying_rate_mid
 	set_temp_variable = { temp = random }
 	clamp_temp_variable = {
 		var = temp
@@ -175,6 +177,7 @@ SIA_economic_decaying_random_rate_mid = {
 	add_to_variable = { SiamEconomicDecaying = temp }
 }
 SIA_economic_decaying_random_rate_high = {
+	custom_effect_tooltip = gain_decaying_rate_high
 	set_temp_variable = { temp = random }
 	clamp_temp_variable = {
 		var = temp
@@ -183,6 +186,95 @@ SIA_economic_decaying_random_rate_high = {
 	}
 	add_to_variable = { SiamEconomicDecaying = temp }
 }
+SIA_subtract_decaying_random_rate_low = {
+	custom_effect_tooltip = subtract_decaying_rate_low
+	set_temp_variable = { temp = random }
+	clamp_temp_variable = {
+		var = temp
+		max = 3.00
+		min = 0.01
+	}
+	subtract_from_variable = { SiamEconomicDecaying = temp }
+}
+SIA_subtract_decaying_random_rate_mid = {
+	custom_effect_tooltip = subtract_decaying_rate_mid
+	set_temp_variable = { temp = random }
+	clamp_temp_variable = {
+		var = temp
+		max = 5.00
+		min = 3.01
+	}
+	subtract_from_variable = { SiamEconomicDecaying = temp }
+}
+SIA_subtract_decaying_random_rate_high = {
+	custom_effect_tooltip = subtract_decaying_rate_high
+	set_temp_variable = { temp = random }
+	clamp_temp_variable = {
+		var = temp
+		max = 13.00
+		min = 5.01
+	}
+	subtract_from_variable = { SiamEconomicDecaying = temp }
+}
+SIA_economic_progressing_random_rate_low = {
+	custom_effect_tooltip = gain_progressing_rate_low
+	set_temp_variable = { temp1 = random }
+	clamp_temp_variable = {
+		var = temp1 
+		max = 10.00
+		min = 0.99
+	}
+	add_to_variable = { SiamEconomicVar = temp1 }
+}
+SIA_economic_progressing_random_rate_mid = {
+	custom_effect_tooltip = gain_progressing_rate_mid
+	set_temp_variable = { temp1 = random }
+	clamp_temp_variable = {
+		var = temp1 
+		max = 15.00
+		min = 10.01
+	}
+	add_to_variable = { SiamEconomicVar = temp1 }
+}
+SIA_economic_progressing_random_rate_high = {
+	custom_effect_tooltip = gain_progressing_rate_high
+	set_temp_variable = { temp1 = random }
+	clamp_temp_variable = {
+		var = temp1 
+		max = 17.00
+		min = 15.01
+	}
+	add_to_variable = { SiamEconomicVar = temp1 }
+}
+SIA_subtract_progressing_random_rate_low = {
+	set_temp_variable = { temp = random }
+	clamp_temp_variable = {
+		var = temp
+		max = 3.00
+		min = 0.01
+	}
+	add_to_variable = { SiamEconomicVar = temp }
+}
+SIA_subtract_progressing_random_rate_mid = {
+	set_temp_variable = { temp = random }
+	clamp_temp_variable = {
+		var = temp
+		max = 5.00
+		min = 3.01
+	}
+	add_to_variable = { SiamEconomicVar = temp }
+}
+SIA_subtract_progressing_random_rate_high = {
+	set_temp_variable = { temp = random }
+	clamp_temp_variable = {
+		var = temp
+		max = 13.00
+		min = 5.01
+	}
+	add_to_variable = { SiamEconomicVar = temp }
+}
+
+
 SIA_regency_council_take_on = {
 	create_country_leader = {
 		name = "Regency Council of Siam"
@@ -563,28 +655,28 @@ SIA_king_of_siam_yugala = {
 			expire = "1991.10.1"
 		}
 		create_country_leader = {
-			name = "Panupan Yugala"
+			name = "Chaloemphon Thikhambara"
 			desc = "POLITICS_CHALOEMPHON_DESC"
 			picture = "Portrait_Siam_Panupan_Yugala.tga"
 			ideology = authoritarian_democrat_subtype
 			expire = "1991.10.1"
 		}
 		create_country_leader = {
-			name = "Panupan Yugala"
+			name = "Chaloemphon Thikhambara"
 			desc = "POLITICS_CHALOEMPHON_DESC"
 			picture = "Portrait_Siam_Panupan_Yugala.tga"
 			ideology = social_liberal_subtype
 			expire = "1991.10.1"
 		}
 		create_country_leader = {
-			name = "Panupan Yugala"
+			name = "Chaloemphon Thikhambara"
 			desc = "POLITICS_CHALOEMPHON_DESC"
 			picture = "Portrait_Siam_Panupan_Yugala.tga"
 			ideology = market_liberal_subtype
 			expire = "1991.10.1"
 		}
 		create_country_leader = {
-			name = "Panupan Yugala"
+			name = "Chaloemphon Thikhambara"
 			desc = "POLITICS_CHALOEMPHON_DESC"
 			picture = "Portrait_Siam_Panupan_Yugala.tga"
 			ideology = social_conservative_subtype

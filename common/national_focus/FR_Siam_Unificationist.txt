@@ -350,7 +350,7 @@ shared_focus = {
 	completion_reward = {
 		if = {
 			limit = {
-				NOT = { has_completed_focus = SIA_sayaboury_or_rubber }
+				#NOT = { has_completed_focus = SIA_sayaboury_or_rubber }
 			}
 			add_state_claim = 959
 		}

@@ -43,14 +43,26 @@ country_event = {
 }
 country_event = {
 	id = siambw.2
-	title = "Emengency Council of Economic Recovering"
+	title = "Meeting of Economists"
 	desc = siambw.2.d
 	is_triggered_only = yes
 	immediate = {
 		SIA_set_economic_council_influence = yes
 	}
 	option = {
-		
+		name = "Luang Praditmanutham can manage the bureau"
+		set_country_flag = select_socialist
+		SIA_swap_the_focus = yes
+	}
+	option = {
+		name = "Let's royalist do their own"
+		set_country_flag = select_traditionalist
+		SIA_swap_the_focus = yes
+	}
+	option = {
+		name = "Mr.Puey has the plan for our disaster"
+		set_cosmetic_tag = select_capitalist
+		SIA_swap_the_focus = yes 
 	}
 }
 country_event = {
