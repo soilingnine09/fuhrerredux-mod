@@ -1,0 +1,2622 @@
+###################################################
+#           United States Focus Tree              #
+###################################################
+###################################################
+#  Made by CIA & Alde "SHIT I DROPPED IT" Baran   #
+###################################################
+
+focus_tree = {
+	id = usa_focus
+
+	continuous_focus_position = { x = 50 y = 1500 }
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = USA
+		}
+	}
+
+
+	##### MILITARY
+
+	focus = {
+		id = USA_military_review
+		icon = GFX_goal_generic_small_arms
+		x = 20
+		y = 0
+		cost = 15
+
+		#available = { has_country_flag = USA_black_wednesday_recovery }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_military_review"
+			army_experience = 10
+			air_experience = 25
+			navy_experience = 25
+
+		}
+	}
+
+	focus = {
+		id = USA_united_states_army
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = USA_military_review }
+		x = 7
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		bypass = {
+			has_country_flag = usa_army_reformed
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_united_states_army"
+			army_experience = 5
+		}
+	}
+
+	#EISENHOWER'S PLAN
+
+	focus = {
+		id = USA_eisenhower_plan
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = USA_united_states_army }
+		mutually_exclusive = { focus = USA_patton_plan }
+		mutually_exclusive = { focus = USA_macarthur_plan }
+		x = 2
+		y = 2
+		cost = 5
+
+		available = { has_country_flag = Eisenhower_plan }
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_eisenhower_plan"
+			army_experience = 5
+			add_tech_bonus = {
+  				bonus = 0.5
+ 				uses = 2
+ 				category = cat_grand_battle_plan
+			}
+		}
+	}
+
+	focus = {
+		id = USA_defensive_warfare
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = USA_eisenhower_plan }
+		x = 0
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_defensive_warfare"
+			army_experience = 5
+			add_ideas = USA_defensive_warfare
+		}
+	}
+
+	focus = {
+		id = USA_grand_strategy
+		icon = GFX_goal_planning_bonus
+		prerequisite = { focus = USA_eisenhower_plan }
+		x = 2
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_grand_strategy"
+			add_ideas = USA_grand_strategy
+			add_tech_bonus = {
+  				bonus = 0.25
+ 				uses = 1
+ 				category = cat_grand_battle_plan
+			}
+		}
+	}
+
+	focus = {
+		id = USA_sack_unskilled_officers
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = USA_eisenhower_plan }
+		x = 4
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_sack_unskilled_officers"
+			army_experience = 30
+			add_political_power = -30
+		}
+	}
+
+	focus = {
+		id = USA_diverse_climate_training
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = USA_sack_unskilled_officers }
+		prerequisite = { focus = USA_grand_strategy }
+		prerequisite = { focus = USA_defensive_warfare }
+		x = 2
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_diverse_climate_training"
+			army_experience = 5
+			add_ideas = USA_diverse_training
+		}
+	}
+
+	focus = {
+		id = USA_inter_division_cooperation
+		icon = GFX_focus_generic_little_entente
+		prerequisite = { focus = USA_grand_strategy }
+		prerequisite = { focus = USA_defensive_warfare }
+		x = 1
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_inter_division_cooperation"
+			add_tech_bonus = {
+  				bonus = 0.5
+ 				uses = 2
+ 				category = support_tech
+			}
+		}
+	}
+
+	focus = {
+		id = USA_new_artillery_designs
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = USA_sack_unskilled_officers }
+		prerequisite = { focus = USA_grand_strategy }
+		x = 3
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_new_artillery_designs"
+			add_tech_bonus = {
+  				bonus = 0.5
+ 				uses = 2
+ 				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = USA_firepower_supremacy
+		icon = GFX_goal_doctrine_fire_superiority
+		prerequisite = { focus = USA_inter_division_cooperation }
+		prerequisite = { focus = USA_new_artillery_designs }
+		prerequisite = { focus = USA_diverse_climate_training }
+		x = 2
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_firepower_supremacy"
+			add_ideas = USA_tactical_superiority
+			add_tech_bonus = {
+  				bonus = 0.50
+ 				uses = 1
+ 				category = cat_grand_battle_plan
+			}
+		}
+	}
+
+	#PATTON'S PLAN
+
+	focus = {
+		id = USA_patton_plan
+		icon = GFX_goal_RUS_Markov_plan
+		prerequisite = { focus = USA_united_states_army }
+		mutually_exclusive = { focus = USA_macarthur_plan }
+		mutually_exclusive = { focus = USA_eisenhower_plan }
+		x = 7
+		y = 2
+		cost = 5
+
+		available = { has_country_flag = Patton_plan }
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_patton_plan"
+			army_experience = 5
+			add_tech_bonus = {
+  				bonus = 0.75
+ 				uses = 1
+ 				category = cat_mobile_warfare
+			}
+		}
+	}
+
+	focus = {
+		id = USA_speed_cult
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = USA_patton_plan }
+		bypass = { has_tech = motorised_infantry }
+		x = 8
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_speed_cult"
+ 			add_tech_bonus = {
+  				bonus = 0.75
+ 				uses = 1
+ 				category = motorized_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = USA_new_tank_designs
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = USA_speed_cult focus = USA_endless_offensives }
+		x = 8
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_new_tank_designs"
+			add_tech_bonus = {
+  				bonus = 0.5
+ 				uses = 1
+ 				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = USA_endless_offensives
+		icon = GFX_goal_volunteer_alliance
+		prerequisite = { focus = USA_patton_plan }
+		x = 6
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_endless_offensives"
+			add_ideas = USA_endless_offensives
+		}
+	}
+
+	focus = {
+		id = USA_the_xylophone
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = USA_speed_cult focus = USA_endless_offensives }
+		x = 6
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_the_xylophone"
+			add_tech_bonus = {
+				uses = 1
+				ahead_reduction = 1
+				technology = motorized_rocket_unit
+				technology = rocket_artillery
+				technology = rocket_artillery2
+				technology = rocket_artillery3
+			}
+		}
+	}
+
+	focus = {
+		id = USA_field_aid
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = USA_the_xylophone focus = USA_new_tank_designs }
+		x = 6
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_field_aid"
+			add_tech_bonus = {
+  				bonus = 0.5
+ 				uses = 2
+ 				category = hospital_tech
+			}
+		}
+	}
+
+	focus = {
+		id = USA_rifles_and_trucks
+		icon = GFX_goal_national_arsenal
+		prerequisite = { focus = USA_the_xylophone focus = USA_new_tank_designs }
+		x = 8
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_rifles_and_trucks"
+			add_ideas = USA_rifles_and_trucks
+		}
+	}
+
+	focus = {
+		id = USA_the_art_of_war
+		icon = GFX_goal_LEC_armsUSA
+		prerequisite = { focus = USA_field_aid }
+		prerequisite = { focus = USA_rifles_and_trucks }
+		x = 7
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_the_art_of_war"
+			add_tech_bonus = {
+  				bonus = 0.75
+ 				uses = 1
+ 				category = cat_mobile_warfare
+			}
+		}
+	}
+
+	focus = {
+		id = USA_healing_past_wounds
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = USA_firepower_supremacy focus = USA_the_art_of_war focus = USA_new_york_project }
+		x = 7
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_healing_past_wounds"
+			remove_ideas = USA_failed_offensive
+		}
+	}
+
+
+ 	#MACARTHUR'S PLAN
+
+	focus = {
+		id = USA_macarthur_plan
+		icon = GFX_goal_conscription
+		prerequisite = { focus = USA_united_states_army }
+		mutually_exclusive = { focus = USA_patton_plan }
+		mutually_exclusive = { focus = USA_eisenhower_plan }
+		x = 12
+		y = 2
+		cost = 5
+
+		available = { has_country_flag = MacArthur_plan }
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_macarthur_plan"
+			army_experience = 5
+			add_tech_bonus = {
+  				bonus = 0.50
+ 				uses = 3
+ 				category = cat_mass_assault
+			}
+		}
+	}
+
+	focus = {
+		id = USA_re_equip_men
+		icon = GFX_goal_munitions_factories
+		prerequisite = { focus = USA_macarthur_plan }
+		x = 10
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_re_equip_men"
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = USA }
+			add_tech_bonus = {
+  				bonus = 0.50
+ 				uses = 1
+ 				ahead_reduction = 1
+ 				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = USA_army_marches_on_its_stomach
+		icon = GFX_focus_AUS_agriculture
+		prerequisite = { focus = USA_macarthur_plan }
+		x = 14
+		y = 3
+		cost = 5
+
+		bypass = {
+			NOT = {
+				has_idea = USA_malnourished_populace
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_army_marches_on_its_stomach"
+			remove_ideas = USA_malnourished_populace
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = USA_reorganized_logistics
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = USA_macarthur_plan }
+		x = 12
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_reorganized_logistics"
+			add_ideas = USA_reorganized_logi
+		}
+	}
+
+	focus = {
+		id = USA_federal_draft
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = USA_re_equip_men }
+		prerequisite = { focus = USA_army_marches_on_its_stomach }
+		prerequisite = { focus = USA_reorganized_logistics }
+		x = 12
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_federal_draft"
+			add_ideas = USA_federal_draft_idea
+		}
+	}
+
+	focus = {
+		id = USA_communication_primacy
+		icon = GFX_goal_generic_radar
+		prerequisite = { focus = USA_army_marches_on_its_stomach }
+		prerequisite = { focus = USA_reorganized_logistics }
+		x = 13
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_communication_primacy"
+			add_tech_bonus = {
+  				bonus = 0.50
+ 				uses = 2
+ 				ahead_reduction = 1
+ 				category = signal_company_tech
+			}
+			add_tech_bonus = {
+  				bonus = 0.25
+ 				uses = 1
+ 				category = electronics
+			}
+		}
+	}
+
+	focus = {
+		id = USA_guns_over_butter
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = USA_re_equip_men }
+		prerequisite = { focus = USA_reorganized_logistics }
+		x = 11
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			358 = {
+				is_owned_and_controlled_by = USA
+			}
+			357 = {
+				is_owned_and_controlled_by = USA
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_guns_over_butter"
+			358 = {
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			357 = {
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			378 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+			358 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = USA_new_york_project
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = USA_guns_over_butter }
+		prerequisite = { focus = USA_communication_primacy }
+		prerequisite = { focus = USA_federal_draft }
+		x = 12
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_new_york_project"
+			add_tech_bonus = {
+ 				uses = 1
+ 				ahead_reduction = 1
+ 				category = nuclear
+			}
+		}
+	}
+
+
+	###  U.S NAVY  ###
+
+
+	focus = {
+		id = USA_united_states_navy
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = USA_military_review }
+		x = 20
+		y = 1
+		cost = 5
+
+		bypass = {
+			has_country_flag = usa_navy_reformed
+		}
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_united_states_navy"
+			navy_experience = 5
+		}
+	}
+
+	focus = {
+		id = USA_finish_naval_program
+		icon = GFX_goal_generic_sea_focused_navy
+		prerequisite = { focus = USA_united_states_navy }
+		x = 20
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_finish_naval_program"
+			add_political_power = -75
+			add_timed_idea = {
+			idea = USA_1928_program
+			days = 365
+			}
+		}
+	}
+
+	focus = {
+		id = USA_open_up_new_dockyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = USA_finish_naval_program }
+		x = 21
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_open_up_new_dockyards"
+			if = {
+                limit = {    378 = { is_owned_and_controlled_by = USA } }
+                378 = {
+                add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = dockyard
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+            }
+		if = {
+                limit = {    361 = { is_owned_and_controlled_by = USA } }
+                361 = {
+                add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = dockyard
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+            }
+        if = {
+                limit = {    359 = { is_owned_and_controlled_by = USA } }
+                359 = { #random_owned_state
+                add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = dockyard
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+            }
+		}
+	}
+
+	focus = {
+		id = USA_reaching_into_the_pacific
+		icon = GFX_goal_continuous_naval_production
+		prerequisite = { focus = USA_finish_naval_program }
+		x = 19
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_reaching_into_the_pacific"
+			378 = {
+				add_building_construction = {
+					type = naval_base
+					province = 9671
+					level = 3
+					instant_build = yes
+				}
+			}
+			629 = {
+				add_building_construction = {
+					type = naval_base
+					province = 4180
+					level = 4
+					instant_build = yes
+				}
+			}
+			632 = {
+				add_building_construction = {
+					type = naval_base
+					province = 13047
+					level = 3
+					instant_build = yes
+				}
+			}
+			862 = {
+				add_building_construction = {
+					type = naval_base
+					province = 13080
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = USA_coast_fortifications
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = USA_reaching_into_the_pacific }
+		prerequisite = { focus = USA_open_up_new_dockyards }
+		x = 20
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_coast_fortifications"
+			378 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 4
+					province = 610
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 4
+					province = 9671
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 4
+					province = 9814
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 4
+					province = 1562
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = USA_strength_at_sea
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = USA_united_states_navy }
+		mutually_exclusive = { focus = USA_in_sky_and_water }
+		x = 18
+		y = 2
+		cost = 5
+
+		available = { has_country_flag = Heavy_fleet }
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_strength_at_sea"
+			add_tech_bonus = {
+  				bonus = 0.5
+ 				uses = 2
+ 				category = cat_fleet_in_being
+			}
+		}
+	}
+
+	focus = {
+		id = USA_comission_extra_destroyers
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = USA_strength_at_sea }
+		x = 17
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_comission_extra_destroyers"
+			hidden_effect = {
+				if = {
+					limit = { NOT = { has_dlc = "Man the Guns" } }
+						load_oob = USA_destroyer_comission
+				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }
+						load_oob = USA_destroyer_comission_mtg
+				}
+			}
+			custom_effect_tooltip  = USA_destroyers_tooltip
+			add_tech_bonus = {
+  				bonus = 0.25
+ 				uses = 1
+ 				category = dd_tech
+			}
+		}
+	}
+
+	focus = {
+		id = USA_battlecruiser_research
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = USA_comission_extra_destroyers }
+		x = 17
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_battlecruiser_research"
+			add_tech_bonus = {
+  				bonus = 0.5
+ 				uses = 1
+ 				category = bc_tech
+			}
+		}
+	}
+
+	focus = {
+		id = USA_anti_submarine_warfare
+		icon = GFX_goal_generic_navy_anti_submarine
+		prerequisite = { focus = USA_battlecruiser_research }
+		x = 18
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_anti_submarine_warfare"
+			add_tech_bonus = {
+  				bonus = 0.75
+ 				uses = 1
+ 				category = dd_tech
+			}
+		}
+	}
+
+	focus = {
+		id = USA_refit_battleships
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = USA_anti_submarine_warfare }
+		x = 19
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_refit_battleships"
+			add_tech_bonus = {
+  				bonus = 0.5
+ 				uses = 1
+ 				category = bb_tech
+			}
+		}
+	}
+
+	focus = {
+		id = USA_refine_naval_invasion_strategy
+		icon = GFX_focus_secret_rearmament
+		prerequisite = { focus = USA_comission_extra_destroyers focus = USA_communication_primacy }
+		x = 15
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_refine_naval_invasion_strategy"
+			add_tech_bonus = {
+ 				uses = 1
+ 				ahead_reduction = 1
+ 				category = tp_tech
+			}
+			add_tech_bonus = {
+  				bonus = 0.25
+ 				uses = 1
+ 				category = marine_tech
+			}
+		}
+	}
+
+	focus = {
+		id = USA_in_sky_and_water
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = { focus = USA_united_states_navy }
+		mutually_exclusive = { focus = USA_strength_at_sea }
+		x = 22
+		y = 2
+		cost = 5
+
+		available = { has_country_flag = Carrier_fleet }
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_in_sky_and_water"
+			add_tech_bonus = {
+  				bonus = 0.5
+ 				uses = 2
+ 				category = cat_base_strike
+			}
+		}
+	}
+
+	focus = {
+		id = USA_prioritize_carrier_research
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = { focus = USA_in_sky_and_water }
+		x = 23
+		y = 3
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_prioritize_carrier_research"
+			add_tech_bonus = {
+  				bonus = 0.75
+ 				uses = 1
+ 				category = cv_tech
+			}
+		}
+	}
+
+	focus = {
+		id = USA_light_cruiser_escorts
+		icon = GFX_goal_generic_occupy_states_coastal
+		prerequisite = { focus = USA_prioritize_carrier_research }
+		x = 23
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_light_cruiser_escorts"
+			add_tech_bonus = {
+  				bonus = 0.5
+ 				uses = 1
+ 				category = cl_tech
+			}
+		}
+	}
+
+	focus = {
+		id = USA_convoy_raiding
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { focus = USA_light_cruiser_escorts }
+		x = 22
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_convoy_raiding"
+			add_tech_bonus = {
+  				bonus = 0.75
+ 				uses = 1
+ 				category = ss_tech
+			}
+		}
+	}
+
+	focus = {
+		id = USA_kearsarge_carrier
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = { focus = USA_convoy_raiding }
+		x = 21
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_kearsarge_carrier"
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_dlc = "Man the Guns"
+						}
+					}
+					load_oob = USA_kearsarge
+				}
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					load_oob = USA_kearsarge_mtg
+				}				
+			}
+			custom_effect_tooltip  = USA_kearsarge_tooltip
+		}
+	}
+
+	focus = {
+		id = USA_refined_strategy
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = USA_kearsarge_carrier focus = USA_refit_battleships }
+		x = 20
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_refined_strategy"
+			add_tech_bonus = {
+  				bonus = 0.5
+ 				uses = 2
+ 				category = naval_doctrine
+			}
+		}
+	}
+
+	###  U.S AIRFORCE ###
+
+	focus = {
+		id = USA_united_states_airforce
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = USA_military_review }
+		x = 29
+		y = 1
+		cost = 5
+
+		bypass = { has_country_flag = usa_airforce_reformed }
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_united_states_airforce"
+			air_experience = 5
+		}
+	}
+
+	focus = {
+		id = USA_radar_stations
+		icon = GFX_goal_generic_radar
+		prerequisite = { focus = USA_united_states_airforce }
+		x = 29
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_radar_stations"
+			add_tech_bonus = {
+  				bonus = 0.35
+ 				uses = 1
+ 				category = radar_tech
+			}
+		}
+	}
+
+	focus = {
+		id = USA_future_of_aviation
+		icon = GFX_focus_rocketry
+		prerequisite = { focus = USA_radar_stations }
+		x = 29
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = { date > 1939.1.1 }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_future_of_aviation"
+			add_tech_bonus = {
+  				ahead_reduction = 1
+ 				uses = 1
+ 				category = rocketry
+			}
+		}
+	}
+
+	### HEAVY AIRFORCE
+
+	focus = {
+		id = USA_heavy_airforce
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = USA_united_states_airforce }
+		mutually_exclusive = { focus = USA_light_airforce }
+
+		available = { has_country_flag = Heavy_airforce }
+
+		x = 26
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_heavy_airforce"
+			add_tech_bonus = {
+  				bonus = 0.5
+ 				uses = 2
+ 				category = strategic_destruction_tree
+			}
+		}
+	}
+
+	focus = {
+		id = USA_destroy_means_of_production
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = USA_heavy_airforce }
+		x = 27
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_destroy_means_of_production"
+			add_tech_bonus = {
+  				bonus = 0.5
+ 				uses = 1
+ 				category = cat_strategic_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = USA_escorting_bombers
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = USA_destroy_means_of_production }
+		x = 27
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_escorting_bombers"
+			add_tech_bonus = {
+  				bonus = 0.5
+ 				uses = 1
+ 				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = USA_destruction_en_masse
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = USA_escorting_bombers }
+		x = 28
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_destruction_en_masse"
+			add_ideas = USA_bombers_en_masse
+		}
+	}
+
+	focus = {
+		id = USA_flexible_designs
+		icon = GFX_goal_continuous_air_production
+		prerequisite = { focus = USA_destruction_en_masse }
+		x = 28
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_flexible_designs"
+			add_tech_bonus = {
+  				bonus = 0.5
+ 				uses = 1
+ 				category = tactical_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = USA_naval_strikes
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = { focus = USA_prioritize_carrier_research focus = USA_destroy_means_of_production }
+		x = 25
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_naval_strikes"
+			air_experience = 20
+			navy_experience = 20
+			add_tech_bonus = {
+  				bonus = 0.5
+ 				uses = 1
+ 				category = naval_bomber
+			}
+		}
+	}
+
+	### LIGHT AIRFORCE ###
+
+	focus = {
+		id = USA_light_airforce
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = USA_united_states_airforce }
+		mutually_exclusive = { focus = USA_heavy_airforce }
+		x = 32
+		y = 2
+		cost = 5
+
+		available = { has_country_flag = Light_airforce }
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_light_airforce"
+			add_tech_bonus = {
+  				bonus = 0.5
+ 				uses = 2
+ 				category = battlefield_support_tree
+			}
+		}
+	}
+
+	focus = {
+		id = USA_air_wing_excersises
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = USA_light_airforce }
+		x = 31
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_air_wing_excersises"
+			air_experience = 50
+		}
+	}
+
+	focus = {
+		id = USA_new_patrol_models
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = USA_air_wing_excersises }
+		x = 31
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_new_patrol_models"
+			add_tech_bonus = {
+  				bonus = 0.5
+ 				uses = 1
+ 				category = light_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = USA_close_air_support_missions
+		icon = GFX_focus_generic_air_defense
+		prerequisite = { focus = USA_new_patrol_models }
+		x = 30
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_close_air_support_missions"
+			add_tech_bonus = {
+  				bonus = 0.5
+ 				uses = 1
+ 				category = cas_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = USA_combat_unit_destruction
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = USA_close_air_support_missions }
+		x = 30
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_combat_unit_destruction"
+			air_experience = 20
+			add_ideas = USA_unit_destruction
+		}
+	}
+
+	focus = {
+		id = USA_reorganize_air_staffing
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = USA_combat_unit_destruction focus = USA_flexible_designs }
+		x = 29
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_reorganize_air_staffing"
+			add_tech_bonus = {
+  				bonus = 0.5
+ 				uses = 2
+ 				category = air_doctrine
+			}
+		}
+	}
+
+#WAKE ME UP
+#1936 Election
+#INB4 I die while working on this
+
+	focus = {
+		id = USA_1936_election
+		icon = GFX_goal_generic_elections
+		x = 39
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 15
+		}
+
+		BYPASS = {
+			has_country_flag = USA_election_started
+		}
+
+		available = { always = no }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_1936_election"
+			add_political_power = 5
+		}
+	}
+
+	focus = {
+		id = USA_national_recovery_act
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = USA_1936_election }
+		x = 39
+		y = 1
+		cost = 1
+		ai_will_do = {
+			factor = 15
+		}
+
+		BYPASS = {
+			OR = {
+				has_country_flag = USA_1936_landon_won
+				has_country_flag = USA_1936_roosevelt_won
+				has_country_flag = USA_1936_garner_won
+				has_country_flag = USA_1936_long_won
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_national_recovery_act"
+			add_ideas = USA_national_recovery_act
+		}
+	}
+
+	focus = {
+		id = USA_expand_long
+		icon = GFX_goal_ideology_social_democrat
+		prerequisite = { focus = USA_national_recovery_act }
+		mutually_exclusive = { focus = USA_wheelchair_man focus = USA_balf_bandon focus = USA_cactus_jack }
+		x = 36
+		y = 2
+		cost = 5
+		available = {
+			has_country_flag = USA_1936_long_won
+		}
+		ai_will_do = {
+			factor = 15
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_expand_long"
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = USA_bridge_the_class_gap
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = USA_expand_long }
+		x = 36
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 15
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_bridge_the_class_gap"
+			swap_ideas = {
+  				remove_idea = USA_great_depression
+ 				add_idea = USA_depression_long_1
+ 			}
+		}
+	}
+
+	focus = {
+		id = USA_i_am_for_the_poor_man
+		icon = GFX_focus_generic_concessions
+		prerequisite = { focus = USA_bridge_the_class_gap }
+		x = 36
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 15
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_i_am_for_the_poor_man"
+			swap_ideas = {
+  				remove_idea = USA_depression_long_1
+ 				add_idea = USA_depression_long_2
+ 			}
+		}
+	}
+
+	focus = {
+		id = USA_wheelchair_man
+		icon = GFX_goal_ideology_social_liberal
+		prerequisite = { focus = USA_national_recovery_act }
+		mutually_exclusive = { focus = USA_expand_long focus = USA_balf_bandon focus = USA_cactus_jack }
+		x = 38
+		y = 2
+		cost = 5
+		available = {
+			has_country_flag = USA_1936_roosevelt_won
+		}
+		ai_will_do = {
+			factor = 15
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_wheelchair_man"
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = USA_bridge_the_race_gap
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_wheelchair_man }
+		x = 38
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 15
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_bridge_the_race_gap"
+			swap_ideas = {
+  				remove_idea = USA_great_depression
+ 				add_idea = USA_depression_fdr_1
+ 			}
+		}
+	}
+
+	focus = {
+		id = USA_we_are_still_in_the_making
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = USA_bridge_the_race_gap }
+		x = 38
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 15
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_we_are_still_in_the_making"
+			swap_ideas = {
+  				remove_idea = USA_depression_fdr_1
+ 				add_idea = USA_depression_fdr_2
+ 			}
+		}
+	}
+
+	focus = {
+		id = USA_balf_bandon
+		icon = GFX_goal_ideology_market_liberal
+		prerequisite = { focus = USA_national_recovery_act }
+		mutually_exclusive = { focus = USA_expand_long focus = USA_wheelchair_man focus = USA_cactus_jack }
+		x = 40
+		y = 2
+		cost = 5
+		available = {
+			has_country_flag = USA_1936_landon_won
+		}
+		ai_will_do = {
+			factor = 15
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_balf_bandon"
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = USA_bridge_the_corporate_gap
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = USA_balf_bandon }
+		x = 40
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 15
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_bridge_the_corporate_gap"
+			swap_ideas = {
+  				remove_idea = USA_great_depression
+ 				add_idea = USA_depression_landon_1
+ 			}
+		}
+	}
+
+	focus = {
+		id = USA_i_will_not_promise_the_moon
+		icon = GFX_focus_generic_the_giant_wakes
+		prerequisite = { focus = USA_bridge_the_corporate_gap }
+		x = 40
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 15
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_i_will_not_promise_the_moon"
+			swap_ideas = {
+  				remove_idea = USA_depression_landon_1
+ 				add_idea = USA_depression_landon_2
+ 			}
+		}
+	}
+
+	focus = {
+		id = USA_cactus_jack
+		icon = GFX_goal_ideology_social_conservative
+		prerequisite = { focus = USA_national_recovery_act }
+		mutually_exclusive = { focus = USA_expand_long focus = USA_wheelchair_man focus = USA_balf_bandon }
+		x = 42
+		y = 2
+		cost = 5
+		available = {
+			has_country_flag = USA_1936_garner_won
+		}
+		ai_will_do = {
+			factor = 15
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_cactus_jack"
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = USA_bridge_the_administrative_gap
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = USA_cactus_jack }
+		x = 42
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 15
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_bridge_the_administrative_gap"
+			swap_ideas = {
+  				remove_idea = USA_great_depression
+ 				add_idea = USA_depression_garner_1
+ 			}
+		}
+	}
+
+	focus = {
+		id = USA_too_many_laws
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = USA_bridge_the_administrative_gap }
+		x = 42
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 15
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_too_many_laws"
+			swap_ideas = {
+  				remove_idea = USA_depression_garner_1
+ 				add_idea = USA_depression_garner_2
+ 			}
+		}
+	}
+
+	################
+	#FOREIGN POLICY#
+	################
+
+	focus = {
+		id = USA_foriegn_policy
+		icon = GFX_goal_anschluss
+		prerequisite = { focus = USA_i_am_for_the_poor_man focus = USA_we_are_still_in_the_making focus = USA_i_will_not_promise_the_moon focus = USA_too_many_laws }
+		x = 36
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_foriegn_policy"
+			#add_political_power = 5
+			add_named_threat = { threat = 5 name = USA_end_isolation }
+		}
+	}
+
+	focus = {
+		id = USA_defend_the_border
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = USA_foriegn_policy }
+		mutually_exclusive = { focus = USA_defend_the_interior }
+		x = 34
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_defend_the_border"
+			375 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 12369
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 5061
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 2019
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 12728
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 5038
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 1954
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 10894
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 10740
+						instant_build = yes
+					}
+				}
+			376 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 12791
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 5044
+						instant_build = yes
+					}
+				}
+			377 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 7920
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 3834
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 10783
+						instant_build = yes
+					}
+				}
+		}
+	}
+
+	focus = {
+		id = USA_defend_the_interior
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = USA_foriegn_policy }
+		mutually_exclusive = { focus = USA_defend_the_border }
+		x = 38
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_defend_the_interior"
+			add_ideas = USA_defend_the_interior
+		}
+	}
+
+	focus = {
+		id = USA_we_will_be_waiting
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = USA_defend_the_border }
+		x = 34
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_we_will_be_waiting"
+			add_ideas = USA_we_will_be_waiting
+		}
+	}
+
+	focus = {
+		id = USA_tighten_extradition_law
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = USA_defend_the_interior focus = USA_defend_the_border }
+		x = 36
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_tighten_extradition_law"
+			add_opinion_modifier = { target = MEX modifier = USA_tighten_extradition_law }
+		}
+	}
+
+	focus = {
+		id = USA_democratic_traditions
+		icon = GFX_goal_support_democracy 
+		prerequisite = { focus = USA_defend_the_interior }
+		x = 38
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_democratic_traditions"
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = USA_deal_with_panama
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = { focus = USA_democratic_traditions focus = USA_we_will_be_waiting }
+		prerequisite = { focus = USA_tighten_extradition_law }
+		x = 36
+		y = 8
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_deal_with_panama"
+			create_wargoal = {
+				type = annex_everything
+				target = PAN
+			}
+		}
+	}
+
+	focus = {
+		id = USA_centroamerican_incursion
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		prerequisite = { focus = USA_deal_with_panama }
+		mutually_exclusive = { focus = USA_befriend_central_countries }
+		x = 38
+		y = 9
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_centroamerican_incursion"
+			country_event = US.6
+			add_named_threat = { threat = 5 name = USA_centroamerican_agression }
+		}
+	}
+
+	focus = {
+		id = USA_befriend_central_countries
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = USA_deal_with_panama }
+		mutually_exclusive = { focus = USA_centroamerican_incursion }
+		x = 34
+		y = 9
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_befriend_central_countries"
+			country_event = US.10
+		}
+	}
+
+	focus = {
+		id = USA_it_will_never_happen_here
+		icon = GFX_goal_nested_fortifications
+		prerequisite = { focus = USA_centroamerican_incursion focus = USA_befriend_central_countries }
+		x = 36
+		y = 10
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_it_will_never_happen_here"
+			add_ideas = USA_it_will_never_happen_here
+		}
+	}
+
+	focus = {
+		id = USA_put_southern_valkists_in_their_place
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = USA_it_will_never_happen_here }
+		mutually_exclusive = { focus = USA_it_isnt_too_late }
+		x = 34
+		y = 11
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = no
+
+		available = {
+			NOT = {
+		      MEX = {
+		        has_completed_focus = MEX_constitutional_monarchy
+		    	}
+        	}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_put_southern_valkists_in_their_place"
+			create_wargoal = {
+				type = annex_everything
+				target = MEX
+			}
+			add_named_threat = { threat = 7.5 name = USA_warmongering }
+		}
+	}
+
+	focus = {
+		id = USA_it_isnt_too_late
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = USA_it_will_never_happen_here }
+		mutually_exclusive = { focus = USA_put_southern_valkists_in_their_place }
+		x = 38
+		y = 11
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			NOT = {
+				MEX = {
+					has_completed_focus = MEX_pequena_venganza
+				}
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_it_isnt_too_late"
+			MEX = { country_event = US.14 }
+			add_named_threat = { threat = 2.5 name = USA_pressure_mexico }
+		}
+	}
+
+	#################
+	#DOMESTIC POLICY#
+	#################
+
+	focus = {
+		id = USA_treading_water
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = USA_i_am_for_the_poor_man focus = USA_we_are_still_in_the_making focus = USA_i_will_not_promise_the_moon focus = USA_too_many_laws }
+		x = 42
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 15
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_treading_water"
+			remove_ideas = USA_national_recovery_act
+		}
+	}
+
+	focus = {
+		id = USA_review_the_union
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = USA_treading_water }
+		x = 44
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_review_the_union"
+			add_political_power = 50
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = USA_49th_state
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = USA_review_the_union }
+		x = 44
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_49th_state"
+			463 = { add_core_of = USA } #Alaska
+			hidden_effect = {
+			set_cosmetic_tag = USA_49
+			}
+		}
+	}
+
+	focus = {
+		id = USA_50th_state
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = USA_49th_state }
+		x = 44
+		y = 8
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_50th_state"
+			629 = { add_core_of = USA } #Hawaii
+			hidden_effect = {
+			set_cosmetic_tag = USA_50
+			}
+		}
+	}
+
+	focus = {
+		id = USA_51st_state
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = USA_50th_state }
+		x = 44
+		y = 9
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_51st_state"
+			484 = { add_core_of = USA } #Baja
+			hidden_effect = {
+			set_cosmetic_tag = USA_51
+			}
+		}
+	}
+
+	focus = {
+		id = USA_integrate_puerto_rico
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_51st_state }
+		x = 44
+		y = 10
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_integrate_puerto_rico"
+			686 = { add_core_of = USA } #Puerto Rico
+		}
+	}
+
+	focus = {
+		id = USA_question_of_foriegn_holdings
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = USA_integrate_puerto_rico }
+		x = 44
+		y = 11
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_question_of_foriegn_holdings"
+			create_wargoal = {
+				type = annex_everything
+				target = PHI
+			}
+		}
+	}
+
+	focus = {
+		id = USA_public_sector
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = USA_treading_water }
+		mutually_exclusive = { focus = USA_private_sector }
+		x = 40
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 15
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_public_sector"
+			add_ideas = USA_public_sector_idea_1
+		}
+	}
+
+	focus = {
+		id = USA_education_reform
+		icon = GFX_focus_research
+		prerequisite = { focus = USA_public_sector }
+		#mutually_exclusive = { focus =  }
+		x = 40
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 15
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_education_reform"
+			swap_ideas = {
+  				remove_idea = USA_public_sector_idea_1
+ 				add_idea = USA_public_sector_idea_2
+ 			}
+		}
+	}
+
+	focus = {
+		id = USA_private_sector
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = USA_treading_water }
+		mutually_exclusive = { focus = USA_public_sector }
+		x = 42
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 15
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_private_sector"
+			add_ideas = USA_private_sector_idea_1
+		}
+	}
+
+	focus = {
+		id = USA_support_the_entrepeneurs
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = USA_private_sector }
+		#mutually_exclusive = { focus =  }
+		x = 42
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 15
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_support_the_entrepeneurs"
+			swap_ideas = {
+  				remove_idea = USA_private_sector_idea_1
+ 				add_idea = USA_private_sector_idea_2
+ 			}
+		}
+	}
+
+	focus = {
+		id = USA_the_american_pheonix
+		icon = GFX_goal_shield_bird
+		prerequisite = { focus = USA_support_the_entrepeneurs focus = USA_education_reform }
+		#mutually_exclusive = { focus =  }
+		x = 41
+		y = 8
+		cost = 5
+		ai_will_do = {
+			factor = 15
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_the_american_pheonix"
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = USA_the_perfect_american
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = USA_the_american_pheonix }
+		mutually_exclusive = { focus = USA_looking_outwards }
+		x = 40
+		y = 9
+		cost = 5
+		ai_will_do = {
+			factor = 15
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_the_perfect_american"
+			IF = {
+					limit = {
+						has_idea = USA_private_sector_idea_2
+					}
+					swap_ideas = {
+  						remove_idea = USA_private_sector_idea_2
+ 						add_idea = USA_private_sector_idea_3
+ 					}
+				}
+			IF = {
+					limit = {
+						has_idea = USA_public_sector_idea_2
+					}
+					swap_ideas = {
+  						remove_idea = USA_public_sector_idea_2
+ 						add_idea = USA_public_sector_idea_3
+ 					}
+				}
+		}
+	}
+
+	focus = {
+		id = USA_looking_outwards
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = USA_the_american_pheonix }
+		mutually_exclusive = { focus = USA_the_perfect_american }
+		x = 42
+		y = 9
+		cost = 5
+		ai_will_do = {
+			factor = 15
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_looking_outwards"
+			every_country = {
+				add_opinion_modifier = { target = USA modifier = USA_looking_outwards }
+			}
+		}
+	}
+
+	focus = {
+		id = USA_renewed
+		icon = GFX_goal_anschluss
+		prerequisite = { focus = USA_the_perfect_american }
+		x = 40
+		y = 10
+		cost = 15
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_renewed"
+			custom_effect_tooltip = USA_great_depression_tt
+			set_country_flag = USA_GREAT_DEPRESSION_RECOVERY
+			hidden_effect = {
+				remove_ideas = {
+					USA_depression_long_2
+					USA_depression_fdr_2
+					USA_depression_landon_2
+					USA_depression_garner_2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = USA_restored
+		icon = GFX_goal_anschluss
+		prerequisite = { focus = USA_looking_outwards }
+		#mutually_exclusive = { focus =  }
+		x = 42
+		y = 10
+		cost = 5
+		ai_will_do = {
+			factor = 15
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_restored"
+			custom_effect_tooltip = USA_great_depression_tt
+			set_country_flag = USA_GREAT_DEPRESSION_RECOVERY
+			hidden_effect = {
+				remove_ideas = {
+					USA_depression_long_2
+					USA_depression_fdr_2
+					USA_depression_landon_2
+					USA_depression_garner_2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = USA_new_democratic_bastion
+		icon = GFX_focus_generic_the_giant_wakes
+		prerequisite = { focus = USA_renewed focus = USA_restored }
+		#mutually_exclusive = { focus =  }
+		x = 41
+		y = 11
+		cost = 5
+		ai_will_do = {
+			factor = 15
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_new_democratic_bastion"
+			add_stability = 0.2
+		}
+	}
+}

@@ -1,0 +1,394 @@
+on_actions = {
+	#Not run on a specific country.
+	on_startup = {
+		effect = {
+			ENG = {
+#				IF = { 
+#					limit = {
+#						has_game_rule = {
+#							rule = ENG_ai_behavior
+#							option = RANDOM
+#						}
+#					}
+#				}
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = ENG_ai_behavior
+							option = CAPE_SINGAPORE
+						}
+					}
+					set_country_flag = ENG_AI_CHOSEN
+					set_country_flag = capesingapore
+				}
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = ENG_ai_behavior
+							option = CRUSH_COLLECTIVISM
+						}
+					}
+					set_country_flag = ENG_AI_CHOSEN
+					set_country_flag = avenging1776
+				}
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = ENG_ai_behavior
+							option = IMP_FED
+						}
+					}
+					set_country_flag = ENG_AI_CHOSEN
+					set_country_flag = isoimpfed
+				}
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = ENG_ai_behavior
+							option = ENTENTE_CORDIALE
+						}
+					}
+					set_country_flag = ENG_AI_CHOSEN
+					set_country_flag = reformentente
+				}
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = ENG_ai_behavior
+							option = CHALLENGE_FRANCE
+						}
+					}
+					set_country_flag = ENG_AI_CHOSEN
+					set_country_flag = challengefrance
+				}
+				
+			}
+
+			GER = {
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = GER_ai_behavior
+							option = GER_WEST_FIRST
+						}
+					}
+					set_country_flag = GER_west_is_first
+				}
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = GER_ai_behavior
+							option = GER_EAST_FIRST
+						}
+					}
+					set_country_flag = GER_east_is_first
+				}
+			}
+			
+			SOV = {
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = SOV_ai_behavior
+							option = SOV_TRIUMVIRATE
+						}
+					}
+					set_country_flag = SOV_rule_picked_triumvirate
+				}
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = SOV_ai_behavior
+							option = SOV_TUKHACHEVSKY
+						}
+					}
+					set_country_flag = SOV_rule_picked_tukha
+				}
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = SOV_ai_behavior
+							option = SOV_KIROV
+						}
+					}
+					set_country_flag = SOV_rule_picked_kirov
+				}
+			}
+			
+			JAP = {
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = JAP_ai_behavior
+							option = JAP_JEWEL
+						}
+					}
+					set_country_flag = JAP_picked_jewel
+				}
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = JAP_ai_behavior
+							option = JAP_DOMINANCE
+						}
+					}
+					set_country_flag = JAP_picked_dominance
+				}
+			}			
+			
+			ITA = {
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = ITA_ai_behavior
+							option = ITA_COMMIE
+						}
+					}
+					set_country_flag = ITA_rule_picked_commie
+				}
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = ITA_ai_behavior
+							option = ITA_DEMOCRATIC
+						}
+					}
+					set_country_flag = ITA_rule_picked_democratic
+				}
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = ITA_ai_behavior
+							option = ITA_VALKIST
+						}
+					}
+					set_country_flag = ITA_rule_picked_valkist
+				}
+			}
+
+			SAF = {
+				IF = {
+					limit = {
+						has_game_rule = {
+							rule = SAF_ai_behavior
+							option = SAF_ANC
+						}
+					}
+					set_country_flag = SAF_rule_picked_anc
+				}
+				IF = {
+					limit = {
+						has_game_rule = {
+							rule = SAF_ai_behavior
+							option = SAF_UNITED
+						}
+					}
+					set_country_flag = SAF_rule_picked_united
+				}
+				IF = {
+					limit = {
+						has_game_rule = {
+							rule = SAF_ai_behavior
+							option = SAF_PNP
+						}
+					}
+					set_country_flag = SAF_rule_picked_pnp
+				}
+			}
+			
+			SPR = {
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = SPR_ai_behavior
+							option = SPR_AZANA
+						}
+					}
+					set_country_flag = SPR_azana
+				}
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = SPR_ai_behavior
+							option = SPR_LERROUX
+						}
+					}
+					set_country_flag = SPR_lerroux
+				}
+			}
+			
+			SPM = {
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = SPM_ai_behavior
+							option = SPM_RE
+						}
+					}
+					set_country_flag = SPM_re
+				}
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = SPM_ai_behavior
+							option = SPM_CEDA
+						}
+					}
+					set_country_flag = SPM_ceda
+				}
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = SPM_ai_behavior
+							option = SPM_LRC
+						}
+					}
+					set_country_flag = SPM_lrc
+				}
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = SPM_ai_behavior
+							option = SPM_LRC_LIBERAL
+						}
+					}
+					set_country_flag = SPM_lrc_liberal
+				}
+			}
+			
+			SPA = {
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = SPA_ai_behavior
+							option = SPA_CNT_FAI_ANARCHIST
+						}
+					}
+					set_country_flag = SPA_cnt_fai_anarchist
+					set_country_flag = SPA_cnt_fai
+				}
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = SPA_ai_behavior
+							option = SPA_CNT_FAI_SYNDICALIST
+						}
+					}
+					set_country_flag = SPA_cnt_fai_syndicalist
+					set_country_flag = SPA_cnt_fai
+				}
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = SPA_ai_behavior
+							option = SPA_PSOE_DEMOCRATIC
+						}
+					}
+					set_country_flag = SPA_psoe_democratic
+					set_country_flag = SPA_psoe
+				}
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = SPA_ai_behavior
+							option = SPA_PSOE_MARXIST
+						}
+					}
+					set_country_flag = SPA_psoe_marxist
+					set_country_flag = SPA_psoe
+				}
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = SPA_ai_behavior
+							option = SPA_PCE_RAMOS
+						}
+					}
+					set_country_flag = SPA_pce_ramos
+					set_country_flag = SPA_pce
+				}
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = SPA_ai_behavior
+							option = SPA_PCE_IBARRURI
+						}
+					}
+					set_country_flag = SPA_pce_ibarruri
+					set_country_flag = SPA_pce
+				}
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = SPA_ai_behavior
+							option = SPA_PCE_MAURE
+						}
+					}
+					set_country_flag = SPA_pce_maure
+					set_country_flag = SPA_pce
+				}
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = SPA_ai_behavior
+							option = SPA_PCE_MAURIN
+						}
+					}
+					set_country_flag = SPA_pce_maurin
+					set_country_flag = SPA_pce
+				}
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = SPA_ai_behavior
+							option = SPA_PCE_NIN_PEREZ
+						}
+					}
+					set_country_flag = SPA_pce_nin_perez
+					set_country_flag = SPA_pce
+				}
+			}
+			
+			SPF = {
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = SPF_ai_behavior
+							option = SPF_JCAH
+						}
+					}
+					set_country_flag = SPF_jcah
+				}
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = SPF_ai_behavior
+							option = SPF_FALANGE
+						}
+					}
+					set_country_flag = SPF_falange
+				}
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = SPF_ai_behavior
+							option = SPF_PNE_CARLIST
+						}
+					}
+					set_country_flag = SPF_pne_carlist
+					set_country_flag = SPF_pne
+				}
+				IF = { 
+					limit = {
+						has_game_rule = {
+							rule = SPF_ai_behavior
+							option = SPF_PNE_ALFONSIST
+						}
+					}
+					set_country_flag = SPF_pne_alfonsist
+					set_country_flag = SPF_pne
+				}
+			}
+		}
+	}
+}

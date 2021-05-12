@@ -1,0 +1,1218 @@
+GER_fate_of_bohemia = {
+	# annex_bohemia = {
+
+        # icon = oppression
+
+		# available = {
+			# AND = {
+				# controls_state = 9
+				# NOT = {
+					# has_war_with = CZE
+				# }
+			# }
+		# }
+
+        # visible = {
+			# original_tag = GER
+			# OR = {
+				# has_war_with = CZE
+				# controls_state = 9
+			# }
+			# NOT = {
+				# has_country_flag = BOH_done
+			# }
+        # }
+
+        # fire_only_once = yes
+
+		# complete_effect = {
+			# GER = {
+				# annex_country = { target = CZE transfer_troops = no }
+			# }
+			# set_country_flag = BOH_done
+			# 74 = {
+				# add_core_of = GER
+			# }	
+			# 775 = {
+				# add_core_of = GER
+			# }
+			# 69 = {
+				# add_core_of = GER
+			# }	
+		# }
+
+        # cost = 50
+
+        # ai_will_do = {
+            # factor = 200
+            # modifier = {
+				# CZE = {
+					# is_ai = no
+				# }
+				# factor = 0
+            # }
+        # }
+    # }
+
+	puppet_bohemia = {
+
+        icon = oppression
+
+		available = {
+			AND = {
+				controls_state = 9
+				NOT = {
+					has_war_with = CZE
+				}
+			}
+		}
+
+        visible = {
+			original_tag = GER
+			OR = {
+				has_war_with = CZE
+				controls_state = 9
+			}
+			NOT = {
+				has_country_flag = BOH_done
+			}
+        }
+		
+        cost = 50
+
+        fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision puppet_bohemia"
+			set_country_flag = BOH_done
+			every_state = {
+				limit = {
+					is_core_of = CZE
+					is_controlled_by = GER
+					NOT = {
+						is_core_of = GER
+						is_claimed_by = GER
+					}
+				}
+				CZE = {
+					transfer_state = PREV
+				}
+			}
+			if = {
+				limit = {
+					CZE = {
+						owns_state = 69
+					}
+				}
+				GER = {
+					transfer_state = 69
+				}
+			}
+			if = {
+				limit = {
+					CZE = {
+						owns_state = 775
+					}
+				}
+				GER = {
+					transfer_state = 775
+				}
+			}
+			if = {
+				limit = {
+					CZE = {
+						owns_state = 74
+					}
+				}
+				GER = {
+					transfer_state = 74
+				}
+			}
+			CZE = {
+				load_focus_tree = generic_focus
+				set_cosmetic_tag = BOH_puppet
+				copy_government_idea_of_ROOT = yes
+				set_politics = {
+					ruling_party = valkist elections_allowed = no
+				}
+				create_country_leader = {
+				name = "Alois Eliáš"
+				desc = ""
+				picture = "gfx/leaders/CZE/Portrait_Czech_Jaroslav_Krejci.dds"
+				expire = "1965.1.1"
+				ideology = valkist_subtype
+				traits = { }
+				}
+				add_popularity = {
+					ideology = valkist
+					popularity = 0.30
+				}
+			}
+			GER = {
+				puppet = CZE
+			}
+		}
+
+        cost = 30
+
+        ai_will_do = {
+            factor = 10
+            modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 10
+            }
+        }
+    }
+}
+
+GER_fate_of_austria = {
+	puppet_austria = {
+
+        icon = oppression
+
+		available = {
+			GER = {
+				owns_state = 803
+			}
+			AUS = {
+				exists = no
+			}
+		}
+
+        visible = {
+			original_tag = GER
+			GER = {
+				owns_state = 803
+			}
+			AUS = {
+				exists = no
+			}
+		}
+
+        fire_only_once = yes
+		
+        cost = 25
+
+        ai_will_do = {
+            factor = 0
+            modifier = {
+				AUS = {
+					is_ai = no
+				}
+				factor = 100
+            }
+        }
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision puppet_austria"
+			every_state = {
+				limit = {
+					is_core_of = AUS
+					is_owned_by = GER
+				}
+				AUS = {
+					transfer_state = PREV
+				}
+			}
+			puppet = AUS
+			AUS = {
+				set_cosmetic_tag = AUS_puppet
+				load_focus_tree = generic_focus
+				create_country_leader = {
+				name = "Ernst Kaltenbrunner"
+				desc = ""
+				picture = "AUS_Portrait_Ernst_Kaltenbrunner.tga"
+				ideology = valkist_subtype
+				traits = { }
+				}				
+				#country_event = { id = ger.10511 }
+			}
+		}
+
+        cost = 25
+    }
+}
+
+GER_fate_of_france = {
+	puppet_france = {
+
+        icon = generic_nationalism
+
+		available = {
+			GER = {
+				OR = {
+					has_country_flag = GER_french_escapes
+					owns_state = 16
+					FRA = {
+						has_capitulated = yes
+					}
+				}
+			}
+		}
+
+        visible = {
+			original_tag = GER
+ 			GER = {
+				OR = {
+					has_war_with = FRA
+					has_country_flag = GER_french_escapes
+					owns_state = 16
+				}
+			}
+        }
+		
+        cost = 25
+
+        fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision puppet_france"
+			country_event = ger.403
+		}
+
+        ai_will_do = {
+            factor = 200
+        }
+
+        fire_only_once = yes
+
+        cost = 50
+    }
+}
+
+GER_fate_of_italy = {
+	puppet_italy = {
+
+        icon = generic_nationalism
+
+		available = {
+			GER = {
+				OR = {
+					controls_state = 2
+					has_country_flag = GER_italy_escapes
+				}
+			}
+		}
+
+        visible = {
+			original_tag = GER
+			GER = {
+				OR = {
+					has_war_with = ITA
+					has_country_flag = GER_italy_escapes
+					owns_state = 2
+				}
+			}
+        }
+		
+        cost = 25
+
+        ai_will_do = {
+            factor = 190
+        }
+
+        fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision puppet_italy"
+			country_event = ger.413
+		}
+    }
+}
+
+GER_fate_of_lithuania = {
+	annex_lithuania = {
+
+        icon = oppression
+
+		available = {
+			LIT = {
+				AND = {
+					is_ai = yes
+					is_puppet_of = GER
+					NOT = {
+						has_cosmetic_tag = LIT_ostland
+					}
+				}
+			}
+		}
+
+        visible = {
+			original_tag = GER
+			NOT = {
+				has_country_flag = LIT_done
+			}
+			LIT = {
+				AND = {
+					is_ai = yes
+					is_puppet_of = GER
+				}
+			}
+		}
+		
+        cost = 25
+
+        ai_will_do = {
+            factor = 50
+        }
+
+        fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision annex_lithuania"
+			annex_country = {
+				target = LIT
+			}
+		}
+    }
+
+GER_take_memel = {
+	
+	 icon = oppression
+
+		available = {
+			LIT = {
+				OR = {
+					is_puppet_of = GER
+					exists = no
+				}	
+			}
+		}
+
+        visible = {
+			original_tag = GER
+			NOT = {
+				has_country_flag = LIT_done
+			}
+			OR = {
+				LIT = {
+					is_puppet_of = GER
+				}
+				AND = {
+					GER = {
+						owns_state = 11
+					}
+					LIT = {
+						exists = no
+					}
+				}
+			}
+		}
+		
+        cost = 25
+
+        ai_will_do = {
+            factor = 100
+        }
+
+        fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GER_take_memel"
+			transfer_state = 188
+			#LIT = {
+			#	add_ideas = GER_lithuanian_puppet
+			#}
+			every_state = {
+				limit = {
+					AND = {
+						is_core_of = LIT
+						is_owned_by = GER
+						NOT = {
+							OR = {
+								is_core_of = GER 
+								is_claimed_by = GER
+							}
+						}
+					}
+				}
+				LIT = { transfer_state = PREV }
+			}
+			GER = {
+				puppet = LIT
+			}
+			LIT = {
+				copy_government_idea_of_ROOT = yes
+				set_cosmetic_tag = LIT_puppet
+			}
+			set_country_flag = LIT_done
+		}
+    }
+}
+	
+GER_fate_of_poland = {
+
+#	puppet_goralenland = {
+
+ #       icon = generic_industry
+
+#		available = {
+#			AND = {	
+#				controls_state = 91
+#				controls_state = 89
+#			}
+#		}
+
+ #       visible = {
+	#		AND = {
+	#			OR = {
+	#				has_war_with = POL
+	#				controls_state = 10
+	#			}
+	#			NOT = {
+	#				OR = {
+	#					GRL = {
+	#						is_puppet_of = GER
+	#					}
+	#				}
+	#			}
+	#		}
+	#	}
+		
+#        cost = 25
+
+#        ai_will_do = {
+#            factor = 10
+#        }
+
+#        fire_only_once = yes
+#
+#		complete_effect = {
+#			GRL = {
+#				set_cosmetic_tag = GRL_puppet
+#				transfer_state = 89
+#				transfer_state = 91
+#				add_state_core = 91
+#				add_state_core = 89
+#				add_state_core = 93
+#				add_state_core = 199
+#			}
+#			if = {
+#				limit = {
+#					GER = {
+#						controls_state = 201
+#						}
+#					}
+#					GRL = {
+#						transfer_state = 201
+#						add_state_core = 201
+#					}
+#			}
+#			if = {
+#				limit = {
+#					GER = {
+#						controls_state = 93
+#						}
+#					}
+#					GRL = {
+#						transfer_state = 93
+#					}
+#			}
+#			if = {
+#				limit = {
+#					GER = {
+#						controls_state = 199
+#						}
+#					}
+#					GRL = {
+#						transfer_state = 199
+#					}
+#			}
+
+#			GER = {
+#				puppet = GRL
+#			}
+#			GRL = {
+#				set_politics = { ruling_party = valkist }
+#				add_popularity = {
+#					ideology = valkist
+#					popularity = 0.20
+#				}
+#				set_country_flag = grl_independence
+#				create_country_leader = {
+#				name = "Wacław Krzeptowski"
+#				desc = "Wacław_Krzeptowski_disc"
+#				picture = "gfx/leaders/GRL/leader_grl_Waclaw_Krz.png"
+#				expire = "1965.1.1"
+#				ideology = valkist_subtype
+#				traits = { }
+#				}
+#			}
+#		}
+#	}
+
+	# GER_annex_poland = {
+
+        # icon = oppression
+
+		# available = {
+			# GER = {
+				# controls_state = 10
+			# }
+		# }
+
+        # visible = {
+			# original_tag = GER
+			# OR = {
+				# GER = {
+					# controls_state = 10
+				# }
+				# GER = {
+					# has_war_with = POL
+				# }
+				# POL = {
+					# exists = no
+				# }
+			# }
+		# }
+		
+        # cost = 30
+
+        # ai_will_do = {
+            # factor = 25
+        # }
+
+        # fire_only_once = yes
+
+		# complete_effect = {
+		# set_country_flag = POL_is_done
+		# add_ideas = GER_polish_occupation
+			# 86 = {
+				# add_core_of = GER
+			# }
+			# 66 = {	
+				# add_core_of = GER
+			# }
+			# 67 = {	
+				# add_core_of = GER
+			# }
+			# 752 = {	
+				# add_core_of = GER
+			# }
+		# }
+    # }
+
+	GER_polish_puppet = {
+	
+		icon = oppression
+
+		available = {
+			GER = {
+				controls_state = 10
+			}
+			POL = {
+				exists = no
+			}
+		}
+		
+        visible = {
+			original_tag = GER
+			OR = {
+				has_war_with = POL
+				GER = {
+					controls_state = 10
+				}
+			}
+		}
+		
+        cost = 30
+
+        ai_will_do = {
+            factor = 100
+        }
+
+        fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GER_polish_puppet"
+			set_country_flag = POL_is_done
+			every_state = {
+				limit = {
+					AND = {
+						is_core_of = POL
+						is_owned_by = GER
+						NOT = {
+							OR = {
+								is_core_of = GER 
+								is_claimed_by = GER
+							}
+						}
+					}
+				}
+				POL = { transfer_state = PREV }
+			}
+			puppet = POL
+			if = {
+				limit = {
+					POL = {
+						owns_state = 17
+					}
+				}
+				GER = {
+					transfer_state = 17
+				}
+			}
+			if = {
+				limit = {
+					POL = {
+						owns_state = 752
+					}
+				}
+				GER = {
+					transfer_state = 752		
+				}
+			}
+			POL = {
+				load_focus_tree = generic_focus
+				copy_government_idea_of_ROOT = yes
+				set_politics = {
+					ruling_party = valkist elections_allowed = no
+				}
+				create_country_leader = {
+				name = "Wacław Krzeptowski"
+				desc = ""
+				picture = "gfx/leaders/POL/Portrait_Poland_Waclaw_Krzeptowski.tga"
+				expire = "1965.1.1"
+				ideology = valkist_subtype
+				traits = { }
+				}
+				set_cosmetic_tag = POL_puppet
+			}
+		}
+    }
+}
+
+GER_fate_of_east_europe = {
+	GER_ukainian_puppet = {
+	
+		icon = oppression
+
+		available = {
+			GER = {
+				any_owned_state = {
+					is_core_of = UKR
+				}
+			}
+			UKR = {
+				exists = no
+			}
+		}
+		
+        visible = {
+			original_tag = GER
+		}
+		
+        cost = 25
+
+        ai_will_do = {
+            factor = 100
+        }
+
+        fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GER_ukainian_puppet"
+			every_state = {
+				limit = {
+					AND = {
+						is_core_of = UKR
+						is_owned_by = GER
+						NOT = {
+							OR = {
+								is_core_of = GER 
+								is_claimed_by = GER 
+							}
+						}
+					}
+				}
+				UKR = { transfer_state = PREV }
+			}
+			puppet = UKR
+			UKR = {
+				load_focus_tree = generic_focus
+				copy_government_idea_of_ROOT = yes
+				set_politics = {
+					ruling_party = valkist elections_allowed = no
+				}
+				create_country_leader = {
+				name = "Stepan Bandera"
+				desc = ""
+				picture = "gfx/leaders/UKR/leader_UKR_Stepan_Bandera.tga"
+				expire = "1965.1.1"
+				ideology = valkist_subtype
+				traits = { }
+				}
+				set_cosmetic_tag = UKR_puppet
+			}
+		}
+    }
+	
+	GER_belarus_puppet = { 
+	
+		icon = oppression
+
+		available = {
+			GER = {
+				owns_state = 206
+			}
+			BLR = {
+				exists = no
+			}
+		}
+
+        visible = {
+			original_tag = GER
+			OR = {
+				has_war_with = BLR
+				GER = {
+					controls_state = 206
+				}
+			}
+		}
+		
+        cost = 25
+
+        ai_will_do = {
+            factor = 100
+        }
+
+        fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GER_belarus_puppet"
+			every_state = {
+				limit = {
+					AND = {
+						is_core_of = BLR
+						is_owned_by = GER
+						NOT = {
+							OR = {
+								is_core_of = GER 
+							}
+						}
+					}
+				}
+				BLR = { transfer_state = PREV }
+			}
+			puppet = BLR
+			BLR = {
+				load_focus_tree = generic_focus
+				copy_government_idea_of_ROOT = yes
+				set_politics = {
+					ruling_party = valkist elections_allowed = no
+				}
+				create_country_leader = {
+				name = "Radasłaŭ_Astroŭski"
+				desc = ""
+				picture = "gfx/leaders/BLR/leader_BLR_Radaslau_Astrouski.tga"
+				expire = "1965.1.1"
+				ideology = valkist_subtype
+				traits = { }
+				}
+				set_cosmetic_tag = BLR_puppet
+			}
+		}
+    }
+	
+	GER_russian_puppet = {
+	
+		icon = oppression
+
+		available = {
+			GER = {
+				owns_state = 219
+			}
+			SOV = {
+				OR = {
+					exists = no
+					has_capitulated = yes
+					NOT = {
+						owns_state = 219
+					}
+				}
+			}
+		}
+
+        visible = {
+			original_tag = GER
+			OR = {
+				has_war_with = SOV
+				GER = {
+					controls_state = 219
+				}
+			}
+		}
+		
+        cost = 25
+
+        ai_will_do = {
+            factor = 200
+			# modifier = {
+				# factor = 0.1
+				# GER = {
+					# has_war = yes
+				# }
+			# }
+        }
+
+       # fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GER_russian_puppet"
+			every_state = {
+				limit = {
+					is_core_of = SOV
+				}
+				VRS = {
+					add_state_core = PREV
+				}
+			}
+			GER = {
+				country_event = ger.285
+			}
+		}
+    }
+}
+
+GER_fate_of_britian = {
+	puppet_britian = {
+
+        icon = generic_nationalism
+
+		available = {
+			GER = {
+				AND = {
+					has_country_flag = GER_england_escapes
+					controls_state = 126
+				}
+			}
+		}
+
+        visible = {
+			original_tag = GER
+			GER = {
+				OR = {
+					has_war_with = ENG
+					has_country_flag = GER_england_escapes
+					controls_state = 126
+				}
+			}
+        }
+		
+        cost = 50
+
+        ai_will_do = {
+            factor = 100
+        }
+
+        fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision puppet_britian"
+			country_event = ger.423
+		}
+	}
+}
+
+GER_fall_weiss = {
+	fall_poland = {
+
+        icon = oppression
+
+		available = {
+			GER = {
+				AND = {
+					has_country_flag = GER_french_escapes
+					has_country_flag = POL_fall_weiss
+				}
+			}
+		}
+
+        visible = {
+			original_tag = GER
+			POL = {
+				exists = yes
+				NOT = {
+					OR = {
+						is_in_faction_with = GER
+						is_puppet_of = GER
+					}
+				}
+			}
+			GER = {
+				has_country_flag = POL_fall_weiss
+			}
+        }
+		
+        cost = 50
+
+        ai_will_do = {
+            factor = 100
+			modifier = {
+				factor = 0
+				GER = {
+					surrender_progress > 0.1
+				}
+			}
+        }
+
+        fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision fall_poland"
+			if = {
+				limit = {
+					GER = {
+						is_ai = no
+					}
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = POL
+				}
+			}
+			if = {
+				limit = {
+					GER = {
+						is_ai = yes
+					}
+				}
+				declare_war_on = {
+					type = annex_everything
+					target = POL
+				}
+			}
+		}
+	}
+	
+	fall_ukraine = {
+
+        icon = oppression
+
+		available = {
+			GER = {
+				AND = {
+					has_country_flag = GER_french_escapes
+					has_country_flag = UKR_fall_weiss
+				}
+			}
+		}
+
+        visible = {
+			original_tag = GER
+			UKR = {
+				exists = yes
+				NOT = {
+					OR = {
+						is_in_faction_with = GER
+						is_puppet_of = GER
+					}
+				}
+			}
+			GER = {
+				has_country_flag = UKR_fall_weiss
+			}
+        }
+		
+        cost = 50
+
+        ai_will_do = {
+            factor = 100
+			modifier = {
+				factor = 0.1
+				GER = {
+					NOT = {
+						is_neighbor_of = UKR
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				GER = {
+					surrender_progress > 0.1
+				}
+			}
+        }
+
+        fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision fall_ukraine"
+			if = {
+				limit = {
+					GER = {
+						is_ai = no
+					}
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = UKR
+				}
+			}
+			if = {
+				limit = {
+					GER = {
+						is_ai = yes
+					}
+				}
+				declare_war_on = {
+					type = annex_everything
+					target = UKR
+				}
+			}
+		}
+	}
+}
+
+GER_fate_of_denmark_dec = {
+	# annex_denmark = {
+
+        # icon = oppression
+
+		# available = {
+			# DEN = {
+				# exists = no
+			# }
+			# GER = {
+				# owns_state = 37
+			# }
+		# }
+
+        # visible = {
+			# original_tag = GER
+			# GER = {
+				# OR = {
+					# has_war_with = DEN
+					# controls_state = 37
+				# }
+				# NOT = {
+					# has_country_flag = GER_den_done
+				# }
+			# }
+        # }
+
+        # fire_only_once = yes
+
+		# complete_effect = {
+			# GER = {
+				# set_country_flag = GER_den_done
+				# annex_country = { target = DEN transfer_troops = no }
+			# }
+			# 37 = {
+				# add_building_construction = {
+					# type = industrial_complex
+					# instant_build = yes
+					# level = 2
+				# }
+			# }
+			# 915 = {
+				# add_core_of = GER
+			# }	
+			# 58 = {
+				# add_core_of = GER
+			# }
+			# 784 = {
+				# add_core_of = GER
+			# }	
+		# }
+
+        # cost = 50
+
+        # ai_will_do = {
+            # factor = 200
+            # modifier = {
+				# DEN = {
+					# is_ai = no
+				# }
+				# factor = 0
+            # }
+        # }
+    # }
+
+	puppet_denmark = {
+
+        icon = oppression
+
+		available = {
+			DEN = {
+				exists = no
+			}
+			GER = {
+				controls_state = 37
+			}
+		}
+
+        visible = {
+			original_tag = GER
+			OR = {
+				has_war_with = DEN
+				controls_state = 37
+			}
+			NOT = {
+				has_country_flag = GER_den_done
+			}
+        }
+
+        fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision puppet_denmark"
+			set_country_flag = GER_den_done
+			915 = {
+				add_core_of = GER
+			}	
+			58 = {
+				add_core_of = GER
+			}
+			784 = {
+				add_core_of = GER
+			}
+			every_state = {
+				limit = {
+					is_core_of = DEN
+					is_controlled_by = GER
+					NOT = {
+						is_core_of = GER
+						is_claimed_by = GER
+					}
+				}
+				DEN = {
+					transfer_state = PREV
+				}
+			}
+			DEN = {
+				load_focus_tree = generic_focus
+				set_cosmetic_tag = DEN_puppet
+				copy_government_idea_of_ROOT = yes
+				set_politics = {
+					ruling_party = valkist elections_allowed = no
+				}
+				create_country_leader = {
+				name = "Frits Clausen"
+				desc = "POLITICS_FRITS_CLAUSEN_DESC"
+				picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+				expire = "1965.1.1"
+				ideology = valkist_subtype
+				traits = { }
+				}
+			}
+			GER = {
+				puppet = DEN
+			}
+		}
+
+        cost = 25
+
+        ai_will_do = {
+            factor = 1
+            modifier = {
+				DEN = {
+					is_ai = no
+				}
+				factor = 100
+            }
+        }
+    }
+}

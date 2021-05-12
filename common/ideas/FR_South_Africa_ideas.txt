@@ -1,0 +1,1148 @@
+##############
+# Country ideas (South Africa) 
+##############
+ideas = {
+	country = {
+
+		SAF_Black_Wednesday = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_black_wednesday"}
+			allowed = {
+			original_tag = "SAF"
+			}
+
+			picture = great_depression
+			modifier = {
+                		production_factory_max_efficiency_factor = -0.30
+                		industrial_capacity_factory = -0.3
+                		production_speed_buildings_factor = -0.3		
+			}
+		}
+
+		SAF_Black_Wednesday2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_black_wednesday2"}
+			allowed = {
+			original_tag = "SAF"
+			}
+
+			picture = great_depression
+			modifier = {
+				political_power_cost = 0.1
+                		production_factory_max_efficiency_factor = -0.25
+                		industrial_capacity_factory = -0.25
+                		production_speed_buildings_factor = -0.2		
+			}
+		}
+
+		SAF_Black_Wednesday3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_black_wednesday3"}
+			allowed = {
+			original_tag = "SAF"
+			}
+
+			picture = great_depression
+			modifier = {
+				stability_factor = -0.1
+                		production_factory_max_efficiency_factor = -0.2
+                		industrial_capacity_factory = -0.25
+                		production_speed_buildings_factor = -0.25	
+			}
+		}
+
+		SAF_Black_Wednesday4 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_black_wednesday4"}
+			allowed = {
+			original_tag = "SAF"
+			}
+
+			picture = great_depression
+			modifier = {
+                		political_power_cost = 0.075
+                		production_factory_max_efficiency_factor = -0.2
+                		industrial_capacity_factory = -0.2
+                		production_speed_buildings_factor = -0.15	
+			}
+		}
+
+		SAF_Black_Wednesday5 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_black_wednesday5"}
+			allowed = {
+			original_tag = "SAF"
+			}
+
+			picture = great_depression
+			modifier = {
+                		stability_factor = -0.075
+                		production_factory_max_efficiency_factor = -0.15
+                		industrial_capacity_factory = -0.2
+                		production_speed_buildings_factor = -0.2			
+			}
+		}
+
+		SAF_Black_Wednesday6 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_black_wednesday6"}
+			allowed = {
+			original_tag = "SAF"
+			}
+
+			picture = great_depression
+			modifier = {
+                		political_power_cost = 0.05
+                		production_factory_max_efficiency_factor = -0.1
+                		industrial_capacity_factory = -0.1
+                		production_speed_buildings_factor = -0.05		
+			}
+		}
+
+		SAF_Black_Wednesday7 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_black_wednesday6"}
+			allowed = {
+			original_tag = "SAF"
+			}
+
+			picture = great_depression
+			modifier = {
+                		stability_factor = -0.05
+                		production_factory_max_efficiency_factor = -0.05
+                		industrial_capacity_factory = -0.1
+                		production_speed_buildings_factor = -0.1			
+			}
+		}
+
+		SAF_Rhodesia_Unrest = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Rhodesia_Unrest"}
+			allowed = {
+				original_tag = "SAF"
+			}
+
+			picture = chi_war_of_resistance3
+			modifier = {
+                		production_factory_max_efficiency_factor = -0.05
+              			industrial_capacity_factory = -0.1
+                		stability_factor = -0.15	
+			}
+		}
+
+		SAF_Integration_Resist = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Integration_Resist"}
+			allowed = {
+				original_tag = "SAF"
+			}
+
+			picture = ast_abandon_the_westminster_system
+			modifier = {
+				stability_factor = -0.10
+                		industrial_capacity_factory = -0.1
+              			political_power_cost = 0.1	
+			}
+		}
+
+		SAF_Boer_Legacy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Boer_Legacy"}
+			allowed = {
+				original_tag = "SAF"
+			}
+
+			picture = chi_army_corruption3
+			modifier = {
+				army_org_Factor = 0.10
+				war_support_factor = 0.05
+				conscription_factor = -0.05
+				stability_factor = -0.05	
+			}
+		}
+
+		SAF_Boer_Legacy1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Boer_Legacy1"}
+			allowed = {
+				original_tag = "SAF"
+			}
+
+			picture = chi_army_corruption3
+			modifier = {
+				army_org_Factor = 0.10
+				war_support_factor = 0.05
+				stability_factor = -0.05	
+			}
+		}
+
+		SAF_Boer_Legacy2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Boer_Legacy2"}
+			allowed = {
+				original_tag = "SAF"
+			}
+
+			picture = chi_army_corruption3
+			modifier = {
+				army_org_Factor = 0.10
+				war_support_factor = 0.05
+				conscription_factor = -0.05	
+			}
+		}
+
+		SAF_Anti_British_Sentiment = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Anti_British_Sentiment"}
+			allowed = {
+				original_tag = "SAF"
+			}
+
+			picture = chi_wargaming_division
+			modifier = {
+				conscription_factor = 0.05
+				war_support_factor = 0.05
+				political_power_cost = 0.1	
+			}
+		}
+
+		SAF_Boers_Enraged = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Boers_Enraged"}
+			allowed = {
+				original_tag = "SAF"
+			}
+
+			picture = anti_soviet_pact
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+	
+		SAF_Integrated_Society = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Integrated_Society"}
+			allowed = {
+				original_tag = "SAF"
+			}
+
+			picture = generic_morale_bonus
+			modifier = {
+				stability_factor = 0.10
+                		industrial_capacity_factory = 0.2
+              			political_power_cost = -0.1
+			}
+		}
+
+		SAF_Integrated_Society1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Integrated_Society1"}
+			allowed = {
+				original_tag = "SAF"
+			}
+
+			picture = generic_disjointed_gov
+			modifier = {
+				industrial_capacity_factory = 0.1	
+			}
+		}
+
+		SAF_Integrated_Society2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Integrated_Society2"}
+			allowed = {
+				original_tag = "SAF"
+			}
+
+			picture = generic_disjointed_gov
+			modifier = {
+				stability_factor = 0.10	
+			}
+		}
+
+		SAF_Integrated_Society3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Integrated_Society3"}
+			allowed = {
+				original_tag = "SAF"
+			}
+
+			picture = generic_disjointed_gov
+			modifier = {
+				political_power_cost = -0.1
+			}
+		}
+		
+		SAF_Stabilized_Society = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Stabilized_Society"}
+			allowed = {
+				original_tag = "SAF"
+			}
+
+			picture = very_high_popularity
+			modifier = {
+				stability_factor = 0.20
+                		industrial_capacity_factory = 0.1
+              			political_power_cost = -0.1
+			}
+		}
+
+		SAF_Stabilized_Society1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Stabilized_Society1"}
+			allowed = {
+				original_tag = "SAF"
+			}
+
+			picture = generic_disjointed_gov
+			modifier = {
+				industrial_capacity_factory = 0.1	
+			}
+		}
+
+		SAF_Stabilized_Society2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Stabilized_Society2"}
+			allowed = {
+				original_tag = "SAF"
+			}
+
+			picture = generic_disjointed_gov
+			modifier = {
+				stability_factor = 0.10	
+			}
+		}
+
+		SAF_Stabilized_Society3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Stabilized_Society3"}
+			allowed = {
+				original_tag = "SAF"
+			}
+
+			picture = generic_disjointed_gov
+			modifier = {
+				political_power_cost = -0.1
+			}
+		}
+
+		SAF_Independent_Society = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Independent_Society"}
+			allowed = {
+				original_tag = "SAF"
+			}
+
+			picture = triumphant_will
+			modifier = {
+				stability_factor = 0.10
+                		industrial_capacity_factory = 0.1
+              			political_power_cost = -0.2
+			}
+		}
+
+		SAF_Independent_Society1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Independent_Society1"}
+			allowed = {
+				original_tag = "SAF"
+			}
+
+			picture = generic_disjointed_gov
+			modifier = {
+				industrial_capacity_factory = 0.1	
+			}
+		}
+
+		SAF_Independent_Society2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Independent_Society2"}
+			allowed = {
+				original_tag = "SAF"
+			}
+
+			picture = generic_disjointed_gov
+			modifier = {
+				stability_factor = 0.10	
+			}
+		}
+
+		SAF_Independent_Society3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Independent_Society3"}
+			allowed = {
+				original_tag = "SAF"
+			}
+
+			picture = generic_disjointed_gov
+			modifier = {
+				political_power_cost = -0.1
+			}
+		}
+
+		SAF_British_Friendship = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_British_Friendship"}
+			allowed = {
+				original_tag = "SAF"
+			}
+
+			picture = generic_pp_unity_bonus
+			modifier = {
+				conscription_factor = 0.05
+				war_support_factor = -0.05
+				political_power_cost = -0.1
+			}
+		}
+
+		SAF_Independence_at_Last = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Independence_at_Last"}
+			allowed = {
+				original_tag = "SAF"
+			}
+
+			picture = triumphant_will
+			modifier = {
+				stability_factor = 0.05
+              			political_power_cost = -0.1
+				war_support_factor = 0.1
+			}
+		}
+
+		SAF_Ver_Supply = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Ver_Supply"}
+			allowed = {	always = no	}
+			allowed_civil_war = { always = yes }
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				support_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				} 
+			}
+			picture = general_staff
+			removal_cost = -1
+		}
+
+		SAF_Scorched_Earth = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Scorched_Earth"}
+			allowed = {	always = no	}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				resistance_damage_to_garrison_on_our_occupied_states = 0.1
+				resistance_damage_to_garrison = -0.1
+			}
+			picture = general_staff
+			removal_cost = -1
+		}
+
+		SAF_Land_Supply = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Land_Supply"}
+			allowed = {	always = no	}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				supply_consumption_factor = -0.1
+			}
+			picture = general_staff
+			removal_cost = -1
+		}
+		
+		SAF_British_Shipbuilding = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_British_Shipbuilding"}
+			allowed = {	always = no	}
+			allowed_civil_war = { always = yes }
+			equipment_bonus = {
+			capital_ship = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+			}
+			modifier = {
+				production_speed_dockyard_factor = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+			picture = generic_navy_bonus
+			removal_cost = -1
+		}
+
+		SAF_South_African_Shipbuilding = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_South_African_Shipbuilding"}
+			allowed = {	always = no	}
+			allowed_civil_war = { always = yes }
+			equipment_bonus = {
+				screen_ship = {
+						instant = yes
+						build_cost_ic = -0.1
+				}
+				light_cruiser = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+			}
+			modifier = {
+				production_speed_dockyard_factor = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+			picture = generic_navy_bonus
+			removal_cost = -1
+		}
+
+		SAF_Boer_Revolt = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Boer_Revolt"}
+			picture = FRA_scw_intervention_republicans_focus
+			allowed = {
+				original_tag = SAF
+			}
+				
+			removal_cost = -1
+			
+			modifier = {
+				army_org_Factor = -0.1
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.1
+				political_power_cost = 0.1
+			}
+		}
+
+		SAF_Boer_Revolt2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Boer_Revolt2"}
+			picture = FRA_scw_intervention_republicans_focus
+			allowed = {
+				original_tag = SAF
+			}
+				
+			removal_cost = -1
+			
+			modifier = {
+				army_org_Factor = -0.1
+				stability_factor = -0.1
+				political_power_cost = 0.1
+			}
+		}
+
+		SAF_Boer_Revolt3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Boer_Revolt3"}
+			picture = FRA_scw_intervention_republicans_focus
+			allowed = {
+				original_tag = SAF
+			}
+				
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+				political_power_cost = 0.1
+			}
+		}
+
+		ZAF_Disorganized_Rebels = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZAF_Disorganized_Rebels"}
+			picture = FRA_scw_intervention_republicans_focus
+			allowed = {
+				original_tag = ZAF
+			}
+				
+			removal_cost = -1
+				
+			research_bonus = {
+				land_doctrine = -0.20
+			}
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.20
+				army_org_Factor = -0.15
+			}
+		}
+	}
+
+##############
+# Theorists
+##############
+
+	theorist = {
+		
+	}
+
+##############
+# Country ministers (South Africa) 
+##############
+
+	head_of_government = {
+		SAF_Jbm_Hertzog_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Jbm_Hertzog_hog"}
+			allowed = {original_tag = SAF}
+			available = {
+				OR = {
+					has_government = social_conservative
+					has_government = authoritarian_democrat
+				}
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = { head_of_government hog_silent_workhorse }
+			cancel_if_invalid = no
+		}
+
+		SAF_Jan_Smuts_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Jan_Smuts_hog"}
+			allowed = {original_tag = SAF}
+			available = {
+				has_government = social_conservative
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = { head_of_government hog_pragmatic_statesman }
+			cancel_if_invalid = no
+		}
+
+		SAF_Oliver_Tambo_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Oliver_Tambo_hog"}
+			allowed = {original_tag = SAF}
+			available = {
+				has_government = social_democrat
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = { head_of_government hog_naive_optimist }
+			cancel_if_invalid = no
+		}
+
+		SAF_Ab_Xuma_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Ab_Xuma_hog"}
+			allowed = {original_tag = SAF}
+			available = {
+				has_government = social_democrat
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = { head_of_government hog_happy_amateur }
+			cancel_if_invalid = no
+		}
+
+		SAF_Charles_Stallard_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Charles_Stallard_hog"}
+			allowed = {original_tag = SAF}
+			available = {
+				has_government = social_liberal
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = { head_of_government hog_political_protege }
+			cancel_if_invalid = no
+		}
+
+		SAF_bram_fischer_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_bram_fischer_hog"}
+			allowed = {original_tag = SAF}
+			available = {
+				has_government = vanguardist
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = { head_of_government hog_red_chairmen }
+			cancel_if_invalid = no
+		}
+
+		SAF_Tielman_Roos_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Tielman_Roos_hog"}
+			allowed = {original_tag = SAF}
+			available = {
+				OR = {
+					has_government = national_populist
+					has_government = valkist
+				}
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = { head_of_government hog_flamboyant_tough_guy }
+			cancel_if_invalid = no
+		}
+
+		SAF_Df_Malan_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Df_Malan_hog"}
+			allowed = {original_tag = SAF}
+			available = {
+				OR = {
+					has_government = national_populist
+					has_government = valkist
+				}
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = { head_of_government hog_backroom_backstabber }
+			cancel_if_invalid = no
+		}
+		SAF_William_Andrews_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_William_Andrews_hog"}
+			allowed = {original_tag = SAF}
+			available = {
+				has_government = collectivist
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = { head_of_government hog_charismatic_charmer }
+			cancel_if_invalid = no
+		}
+	}
+
+	foreign_minister = {
+		SAF_Charles_Water_for = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Charles_Water_for"}
+			allowed = {original_tag = SAF}
+			traits = {foreign_minister social_conservative for_apologetic_clerk}
+			cancel_if_invalid = no
+		}
+		SAF_EG_Jansen_for = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_EG_Jansen_for"}
+			allowed = {original_tag = SAF}
+			available = {
+				OR = {
+					has_government = paternal_autocrat
+					has_government = national_populist
+					has_government = valkist
+				}
+			}
+			traits = {foreign_minister valkist for_iron_fisted_brute}
+			cancel_if_invalid = no
+		}
+		SAF_Eric_Louw_for = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Eric_Louw_for"}
+			allowed = {original_tag = SAF}
+			available = {
+				OR = {
+					has_government = paternal_autocrat
+					has_government = national_populist
+					has_government = valkist
+				}
+			}
+			traits = {foreign_minister valkist for_moderate_among_radicals}
+			cancel_if_invalid = no
+		}
+		SAF_Reginald_Blankenberg_for = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Reginald_Blankenberg_for"}
+			allowed = {original_tag = SAF}
+			traits = {foreign_minister social_conservative for_relations_expert}
+			cancel_if_invalid = no
+		}
+		SAF_Seymour_Jacklin_for = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Seymour_Jacklin_for"}
+			allowed = {original_tag = SAF}
+			traits = {foreign_minister social_conservative for_hawkish_intervener}
+			cancel_if_invalid = no
+		}
+		SAF_Yusuf_Dadoo_for = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Yusuf_Dadoo_for"}
+			allowed = {original_tag = SAF}
+			available = {
+				has_government = vanguardist
+			}
+			traits = {foreign_minister vanguardist for_general_staffer}
+			cancel_if_invalid = no
+		}
+	}
+
+	economy_minister = {
+		SAF_alex_hepple_eco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_alex_hepple_eco"}
+			allowed = {original_tag = SAF}
+			available = {
+				OR = {
+					has_government = collectivist
+					has_government = social_democrat
+					has_government = social_liberal
+				}
+			}
+			traits = {economy_minister social_liberal eco_imbedded_unioneer}
+			cancel_if_invalid = no
+		}
+
+		SAF_ben_schoeman_eco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_ben_schoeman_eco"}
+			allowed = {original_tag = SAF}
+			available = {
+				OR = {
+					has_government = paternal_autocrat
+					has_government = national_populist
+					has_government = valkist
+				}
+			}
+			traits = {economy_minister national_populist eco_keynesian_economy}
+			cancel_if_invalid = no
+		}
+
+		SAF_Jan_Hendrik_Hofmeyr_eco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Jan_Hendrik_Hofmeyr_eco"}
+			allowed = {original_tag = SAF}
+			available = {
+				NOT = {
+					has_government = paternal_autocrat
+					has_government = national_populist
+					has_government = valkist
+				}
+			}
+			traits = {economy_minister national_populist eco_mixed_economy}
+			cancel_if_invalid = no
+		}
+
+		SAF_Nicolaas_Havenga_eco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Nicolaas_Havenga_eco"}
+			allowed = {original_tag = SAF}
+			available = {
+				NOT = {
+					has_government = paternal_autocrat
+					has_government = national_populist
+					has_government = valkist
+				}
+			}
+			traits = {economy_minister social_conservative eco_laissez_faire_capitalist}
+			cancel_if_invalid = no
+		}
+		SAF_Walter_Madeley_eco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Walter_Madeley_eco"}
+			allowed = {original_tag = SAF}
+			available = {
+				OR = {
+					has_government = collectivist
+					has_government = social_democrat
+					has_government = social_liberal
+				}
+			}
+			traits = {economy_minister collectivist eco_devoted_monopoly_buster}
+			cancel_if_invalid = no
+		}
+	}
+
+	security_minister = {
+		SAF_FHP_Creswell_sec = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_FHP_Creswell_sec"}
+			allowed = {original_tag = SAF}
+			traits = {security_minister social_conservative sec_crime_fighter}
+			cancel_if_invalid = no
+		}
+		SAF_Frans_Erasmus_sec = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Frans_Erasmus_sec"}
+			allowed = {original_tag = SAF}
+			available = {
+				OR = {
+					has_government = paternal_autocrat
+					has_government = national_populist
+					has_government = valkist
+				}
+			}
+			traits = {economy_minister valkist sec_prince_of_terror}
+			cancel_if_invalid = no
+		}
+		SAF_Hendrik_Verwoerd_sec = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Hendrick_Verwoerd_sec"}
+			allowed = {original_tag = SAF}
+			available = {
+				OR = {
+					has_government = paternal_autocrat
+					has_government = national_populist
+					has_government = valkist
+				}
+			}
+			traits = {economy_minister valkist sec_back_stabber}
+			cancel_if_invalid = no
+		}
+		SAF_Eben_Donges_sec = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Eben_Donges_sec"}
+			allowed = {original_tag = SAF}
+			available = {
+				OR = {
+					has_government = paternal_autocrat
+					has_government = national_populist
+					has_government = valkist
+				}
+			}
+			traits = {economy_minister national_populist sec_preserver_of_culture}
+			cancel_if_invalid = no
+		}
+	}
+
+	head_of_intel = {
+		SAF_C_R_Swart_int = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_C_R_Swart_int"}
+			allowed = {original_tag = SAF}
+			available = {
+				OR = {
+					has_government = paternal_autocrat
+					has_government = national_populist
+					has_government = valkist
+				}
+			}
+			traits = {head_of_intel national_populist int_political_specialist}
+			cancel_if_invalid = no
+		}
+		SAF_HG_Lawrence_int = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_HG_Lawrence_int"}
+			allowed = {original_tag = SAF}
+			available = {
+				OR = {
+					has_government = collectivist
+					has_government = social_democrat
+					has_government = social_liberal
+				}
+			}
+			traits = {head_of_intel collectivist int_industrial_specialist}
+			cancel_if_invalid = no
+		}
+		SAF_Oswald_Pirow_int = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Oswald_Pirow_int"}
+			allowed = {original_tag = SAF}
+			available = {
+				OR = {
+					has_government = paternal_autocrat
+					has_government = national_populist
+					has_government = valkist
+				}
+			}
+			traits = {head_of_intel national_populist int_logistics_specialist}
+			cancel_if_invalid = no
+		}
+		SAF_Paul_Sauer_int = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Paul_Sauer_int"}
+			allowed = {original_tag = SAF}
+			available = {
+				OR = {
+					has_government = paternal_autocrat
+					has_government = national_populist
+					has_government = valkist
+				}
+			}
+			traits = {head_of_intel national_populist int_technical_specialist}
+			cancel_if_invalid = no
+		}
+	}
+
+	chief_of_army = {
+		SAF_christiaan_du_toit_mli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_christiaan_du_toit_mli"}
+			allowed = {original_tag = SAF}
+			available = {
+				OR = {
+					has_government = paternal_autocrat
+					has_government = national_populist
+					has_government = valkist
+				}
+			}
+			traits = {
+				chief_of_army
+				carm_guns_and_butter_doctrine
+			}
+			cancel_if_invalid = no
+		}
+		SAF_Leonard_Beyers_mli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Leonard_Beyers_mli"}
+			allowed = {original_tag = SAF}
+			traits = {
+				chief_of_army
+				carm_decisive_battle_doctrine
+			}
+			cancel_if_invalid = no
+		}
+		SAF_Pieter_de_Waal_mli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Pieter_de_Waal_mli"}
+			allowed = {original_tag = SAF}
+			traits = {
+				chief_of_army
+				carm_elastic_defence_doctrine
+			}
+			cancel_if_invalid = no
+		}
+	}
+
+	chief_of_navy = {
+		SAF_cornelis_van_zuigenbrogge = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_cornelis_van_zuigenbrogge"}
+			allowed = {original_tag = SAF}
+			traits = {
+				chief_of_navy
+				cnav_open_seas_doctrine
+			}
+			cancel_if_invalid = no
+		}
+		SAF_Jeannot_de_la_Tourier = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Jeannot_de_la_Tourier"}
+			allowed = {original_tag = SAF}
+			traits = {
+				chief_of_navy
+				cnav_decisive_battle_doctrine
+			}
+			cancel_if_invalid = no
+		}
+	}
+
+	chief_of_air_force = {
+		SAF_sailor_malan = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_sailor_malan"}
+			allowed = {original_tag = SAF}
+			traits = {
+				chief_of_air_force
+				cair_air_superiority_doctrine
+			}
+			cancel_if_invalid = no
+		}
+		SAF_Christoffel_Venter = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Christoffel_Venter"}
+			allowed = {original_tag = SAF}
+			traits = {
+				chief_of_air_force
+				cair_battlefield_support_doctrine
+			}
+			cancel_if_invalid = no
+		}
+		SAF_Pierre_van_Ryneveld = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Pierre_van_Ryneveld"}
+			allowed = {original_tag = SAF}
+			traits = {
+				chief_of_air_force
+				cair_naval_aviation_doctrine
+			}
+			cancel_if_invalid = no
+		}
+		SAF_Stephen_Melville = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAF_Stephen_Melville"}
+			allowed = {original_tag = SAF}
+			traits = {
+				chief_of_air_force
+				cair_air_superiority_doctrine
+			}
+			cancel_if_invalid = no
+		}
+	}
+##############
+# Companies
+##############
+
+#### General ####
+	industrial_concern = {
+
+		anglo_american = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea anglo_american"}
+			allowed = { original_tag = SAF }
+			traits = { industrial_manufacturer }
+			modifier = {
+				local_resources_factor = 0.05
+				production_speed_industrial_complex_factor = 0.1
+			}
+			research_bonus = {
+				industry = 0.1
+			}
+		}
+
+		engen_petroleum = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea engen_petroleum"}
+			allowed = { original_tag = SAF }
+			traits = { oil_concern }
+			modifier = {
+				production_oil_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.1
+			}
+			research_bonus = {
+				industry = 0.1
+			}
+		}
+
+		south_african_steel_and_iron = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea south_african_steel_and_iron"}
+			allowed = { original_tag = SAF }
+			traits = { industrial_manufacturer }
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+			research_bonus = {
+				industry = 0.1
+			}
+		}
+
+		university_of_cape_town = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea university_of_cape_town"}
+			allowed = { original_tag = SAF }
+			traits = {electronics_manufacturer }
+			research_bonus = {
+				electronics = 0.1
+			}
+		}
+
+		african_explosives = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea african_explosives"}
+			allowed = { original_tag = SAF }
+			traits = {chemical_producer }
+			research_bonus = {
+				synth_resources = 0.1
+			}
+		}
+	}
+
+#### Weapons Manufacturer ####
+	weapons_manufacturer = {
+		designer = yes
+
+		directorate_of_supplies = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea directorate_of_supplies"}
+			allowed = { original_tag = SAF }
+			traits = { infantry_equipment_producer_assualt_1 }
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
+		}
+
+		pretoria_mint = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pretoria_mint"}
+			allowed = { original_tag = SAF }
+			traits = { infantry_equipment_producer_mass_1 }
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
+		}
+
+		dorman_long = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea dorman_long"}
+			allowed = { original_tag = SAF }
+			traits = { artillery_producer_offense_1 }
+			research_bonus = {
+				artillery = 0.1
+			}
+		}
+
+		retief_de_ville_co = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea retief_de_ville_co"}
+			allowed = { original_tag = SAF }
+			traits = { motorised_equipment_producer_defense_0 }
+			research_bonus = {
+				motorized_equipment = 0.1
+			}
+		}
+	}
+
+#### Naval Manufacturer ####
+	air_naval_manufacturer = {
+		designer = yes
+
+		elgin_brown_and_hamer = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea elgin_brown_and_hamer"}
+			allowed = { original_tag = SAF }
+			traits = { cruiser_producer_defense_1 }
+			research_bonus = {
+				naval_equipment = 0.1
+			}
+		}
+		
+		de_havilland_south_africa = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea de_havilland_south_africa"}
+			allowed = { original_tag = SAF }
+			traits = { fighter_producer_offense_1 }
+			research_bonus = {
+				air_equipment = 0.1
+			}
+		}		
+	}
+
+#### Heavy Equipment Manufacturer ####
+	tank_manufacturer = {
+		designer = yes
+
+		south_african_railways = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea south_african_railways"}
+			allowed = { original_tag = SAF }
+			traits = { small_tank_producer_offense_0 }
+			research_bonus = {
+				armor = 0.1
+			}
+		}
+
+		south_african_vickers = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea south_african_vickers"}
+			allowed = { original_tag = SAF }
+			traits = { 
+				#vickers_armstrong_industries 
+			}
+			research_bonus = {
+				armor = 0.1
+			}
+		}
+	}	
+}

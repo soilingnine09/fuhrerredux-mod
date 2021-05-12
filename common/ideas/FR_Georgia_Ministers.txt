@@ -1,0 +1,1169 @@
+
+ideas = {
+### Head of Government
+head_of_government = {
+		GEO_grigol_robakidze_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_grigol_robakidze_hog"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = national_populist
+				has_government = paternal_autocrat
+				has_government = valkist
+			}
+			has_country_flag = can_replace_hog
+			NOT = {has_country_flag = grigol_robakidze_dead}
+			NOT = {has_country_flag = grigol_robakidze_hog_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+		}
+		traits = { head_of_government valkist hog_spiritual_leader }
+		cancel_if_invalid = no
+	}
+		GEO_shalva_karumidze_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_shalva_karumidze_hog"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = national_populist
+				has_government = paternal_autocrat
+				has_government = valkist
+				has_government = authoritarian_democrat
+			}
+			has_country_flag = can_replace_hog
+			NOT = {has_country_flag = shalva_karumidze_dead}
+			NOT = {has_country_flag = shalva_karumidze_hog_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+		}
+		traits = { head_of_government national_populist hog_determined_populist }
+		cancel_if_invalid = no
+	}
+		GEO_georges_matchabelli_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_georges_matchabelli_hog"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = national_populist
+				has_government = paternal_autocrat
+				has_government = valkist
+				has_government = authoritarian_democrat
+			}
+			has_country_flag = can_replace_hog
+			NOT = {has_country_flag = georges_matchabelli_dead}
+			NOT = {has_country_flag = georges_matchabelli_hog_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+		}
+		traits = { head_of_government paternal_autocrat hog_old_compromiser }
+		cancel_if_invalid = no
+	}
+		GEO_mikheil_tsereteli_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_mikheil_tsereteli_hog"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = national_populist
+				has_government = paternal_autocrat
+				has_government = authoritarian_democrat
+				has_government = social_conservative
+			}
+			has_country_flag = can_replace_hog
+			NOT = {has_country_flag = mikheil_tsereteli_dead}
+			NOT = {has_country_flag = mikheil_tsereteli_hog_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+		}
+		traits = { head_of_government authoritarian_democrat hog_pragmatic_statesman }
+		cancel_if_invalid = no
+	}
+		GEO_raphiel_ingilo_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_raphiel_ingilo_hog"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = authoritarian_democrat
+				has_government = social_conservative
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+			}
+			has_country_flag = can_replace_hog
+			NOT = {has_country_flag = raphiel_ingilo_dead}
+			NOT = {has_country_flag = raphiel_ingilo_hog_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+		}
+		traits = { head_of_government social_conservative hog_spiritual_leader }
+		cancel_if_invalid = no
+	}
+		GEO_revaz_gabashvili_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_revaz_gabashvili_hog"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = authoritarian_democrat
+				has_government = social_conservative
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+			}
+			has_country_flag = can_replace_hog
+			NOT = {has_country_flag = revaz_gabashvili_dead}
+			NOT = {has_country_flag = revaz_gabashvili_hog_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+		}
+		traits = { head_of_government social_conservative hog_flamboyant_tough_guy }
+		cancel_if_invalid = no
+	}
+		GEO_aleqsandre_asatiani_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_aleqsandre_asatiani_hog"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = social_conservative
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+			}			has_country_flag = can_replace_hog
+			NOT = {has_country_flag = aleqsandre_asatiani_dead}
+			NOT = {has_country_flag = aleqsandre_asatiani_hog_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+		}
+		traits = { head_of_government market_liberal hog_silent_workhorse }
+		cancel_if_invalid = no
+	}
+		GEO_ioseb_baratashvili_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_ioseb_baratashvili_hog"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = social_conservative
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+			}
+			has_country_flag = can_replace_hog
+			NOT = {has_country_flag = ioseb_baratashvili_dead}
+			NOT = {has_country_flag = ioseb_baratashvili_hog_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+		}
+		traits = { head_of_government social_liberal hog_charismatic_charmer }
+		cancel_if_invalid = no
+	}
+		GEO_akaki_chkhenkeli_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_akaki_chkhenkeli_hog"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+			}
+			has_country_flag = can_replace_hog
+			NOT = {has_country_flag = akaki_chkhenkeli_dead}
+			NOT = {has_country_flag = akaki_chkhenkeli_hog_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+		}
+		traits = { head_of_government social_democrat hog_pragmatic_statesman }
+		cancel_if_invalid = no
+	}
+		GEO_irkali_tsereteli_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_irkali_tsereteli_hog"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = vanguardist
+				has_government = collectivist
+				has_government = social_democrat
+			}
+			has_country_flag = can_replace_hog
+			NOT = {has_country_flag = irkali_tsereteli_dead}
+			NOT = {has_country_flag = irkali_tsereteli_hog_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+		}
+		traits = { head_of_government libertarian_socialist hog_naive_optimist }
+		cancel_if_invalid = no
+	}
+		GEO_mamia_orakhelashvili_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_mamia_orakhelashvili_hog"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = vanguardist
+				has_government = collectivist
+			}
+			has_country_flag = can_replace_hog
+			NOT = {has_country_flag = mamia_orakhelashvili_dead}
+			NOT = {has_country_flag = mamia_orakhelashvili_hog_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+		}
+		traits = { head_of_government collectivist hog_red_chairmen }
+		cancel_if_invalid = no
+	}
+		GEO_aleksi_gegechkori_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_aleksi_gegechkori_hog"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = vanguardist
+				has_government = collectivist
+			}
+			has_country_flag = can_replace_hog
+			NOT = {has_country_flag = aleksi_gegechkori_dead}
+			NOT = {has_country_flag = aleksi_gegechkori_hog_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+		}
+		traits = { head_of_government vanguardist hog_underground_figurehead }
+		cancel_if_invalid = no
+	}
+		GEO_ioseb_jugashvili_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_ioseb_jugashvili_hog"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = vanguardist
+				has_government = collectivist
+			}
+			has_country_flag = can_replace_hog
+			NOT = {has_country_flag = ioseb_jugashvili_dead}
+			NOT = {has_country_flag = ioseb_jugashvili_hog_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+		}
+		traits = { head_of_government vanguardist hog_local_tyrant }
+		cancel_if_invalid = no
+	}
+}
+### Foreign Minister
+foreign_minister = {
+		GEO_levan_gogoberidze_for = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_levan_gogoberidze_for"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = vanguardist
+				has_government = collectivist
+			}
+			NOT = {has_country_flag = levan_gogoberidze_dead}
+			NOT = {has_country_flag = levan_gogoberidze_for_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = for_cannot_be_replaced}		}
+		traits = { foreign_minister vanguardist for_moderate_among_radicals }
+		cancel_if_invalid = no
+	}
+		GEO_mikheil_kakhiani_for = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_mikheil_kakhiani_for"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = vanguardist
+				has_government = collectivist
+			}
+			NOT = {has_country_flag = mikheil_kakhiani_dead}
+			NOT = {has_country_flag = mikheil_kakhiani_for_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = for_cannot_be_replaced}		}
+		traits = { foreign_minister vanguardist for_the_cloak_n_dagger_schemer }
+		cancel_if_invalid = no
+	}
+		GEO_grigol_uratadze_for = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_grigol_uratadze_for"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = social_democrat
+			}
+			NOT = {has_country_flag = grigol_uratadze_dead}
+			NOT = {has_country_flag = grigol_uratadze_for_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = for_cannot_be_replaced}		}
+		traits = { foreign_minister libertarian_socialist for_ideological_crusader }
+		cancel_if_invalid = no
+	}
+		GEO_zurab_avalishvili_for = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_zurab_avalishvili_for"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+				has_government = libertarian_socialist
+			}
+			NOT = {has_country_flag = zurab_avalishvili_dead}
+			NOT = {has_country_flag = zurab_avalishvili_for_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = for_cannot_be_replaced}		}
+		traits = { foreign_minister social_democrat for_biased_intellectual }
+		cancel_if_invalid = no
+	}
+		GEO_simon_mdivani_for = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_simon_mdivani_for"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = social_conservative
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+			}
+			NOT = {has_country_flag = simon_mdivani_dead}
+			NOT = {has_country_flag = simon_mdivani_for_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = for_cannot_be_replaced}		}
+		traits = { foreign_minister social_liberal for_relations_expert }
+		cancel_if_invalid = no
+	}
+		GEO_haidar_bammat_for = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_haidar_bammat_for"}
+		allowed = { original_tag = GEO }
+		available = {
+			NOT = {has_country_flag = haidar_bammat_dead}
+			NOT = {has_country_flag = haidar_bammat_for_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = for_cannot_be_replaced}
+			has_country_flag = GEO_caucasia_formed
+		}
+		traits = { foreign_minister social_conservative for_great_compromiser }
+		cancel_if_invalid = no
+	}
+		GEO_konstantine_gamsakhurdia_for = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_konstantine_gamsakhurdia_for"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = authoritarian_democrat
+				has_government = social_conservative
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+			}
+			NOT = {has_country_flag = konstantine_gamsakhurdia_dead}
+			NOT = {has_country_flag = konstantine_gamsakhurdia_for_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = for_cannot_be_replaced}		}
+		traits = { foreign_minister social_conservative for_ideological_crusader }
+		cancel_if_invalid = no
+	}
+		GEO_akaki_khoshtaria_for = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_akaki_khoshtaria_for"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = social_conservative
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+			}			NOT = {has_country_flag = akaki_khoshtaria_dead}
+			NOT = {has_country_flag = akaki_khoshtaria_for_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = for_cannot_be_replaced}		}
+		traits = { foreign_minister market_liberal for_world_patrician }
+		cancel_if_invalid = no
+	}
+}
+### Economic Minister
+economy_minister = {
+		GEO_alexander_svanidze_eco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_alexander_svanidze_eco"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = vanguardist
+				has_government = collectivist
+			}
+			NOT = {has_country_flag = alexander_svanidze_dead}
+			NOT = {has_country_flag = alexander_svanidze_eco_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = eco_cannot_be_replaced}		}
+		traits = { economy_minister vanguardist eco_planned_economy_proponent }
+		cancel_if_invalid = no
+	}
+		GEO_ilya_tsivtsivadze_eco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_ilya_tsivtsivadze_eco"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = vanguardist
+				has_government = collectivist
+			}
+			NOT = {has_country_flag = ilya_tsivtsivadze_dead}
+			NOT = {has_country_flag = ilya_tsivtsivadze_eco_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = eco_cannot_be_replaced}		}
+		traits = { economy_minister vanguardist eco_planned_economy_proponent }
+		cancel_if_invalid = no
+	}
+		GEO_beso_lominadze_eco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_beso_lominadze_eco"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = vanguardist
+				has_government = collectivist
+			}
+			NOT = {has_country_flag = beso_lominadze_dead}
+			NOT = {has_country_flag = beso_lominadze_eco_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = eco_cannot_be_replaced}		}
+		traits = { economy_minister collectivist eco_industrialiser }
+		cancel_if_invalid = no
+	}
+		GEO_giorgi_tsintsadze_eco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_giorgi_tsintsadze_eco"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = social_democrat
+			}
+			NOT = {has_country_flag = giorgi_tsintsadze_dead}
+			NOT = {has_country_flag = giorgi_tsintsadze_eco_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = eco_cannot_be_replaced}		}
+		traits = { economy_minister libertarian_socialist eco_mixed_economy }
+		cancel_if_invalid = no
+	}
+		GEO_victor_tevzaia_eco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_victor_tevzaia_eco"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+				has_government = libertarian_socialist
+			}
+			NOT = {has_country_flag = victor_tevzaia_dead}
+			NOT = {has_country_flag = victor_tevzaia_eco_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = eco_cannot_be_replaced}		}
+		traits = { economy_minister social_democrat eco_trade_proponent }
+		cancel_if_invalid = no
+	}
+		GEO_teimuraz_chelidze_eco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_teimuraz_chelidze_eco"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = social_democrat
+			}
+			NOT = {has_country_flag = teimuraz_chelidze_dead}
+			NOT = {has_country_flag = teimuraz_chelidze_eco_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = eco_cannot_be_replaced}		}
+		traits = { economy_minister libertarian_socialist eco_imbedded_unioneer }
+		cancel_if_invalid = no
+	}
+		GEO_mammad_jafarov_eco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_mammad_jafarov_eco"}
+		allowed = { original_tag = GEO }
+		available = {
+			has_country_flag = GEO_transcaucasia_formed
+			NOT = {has_country_flag = mammad_jafarov_dead}
+			NOT = {has_country_flag = mammad_jafarov_eco_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = eco_cannot_be_replaced}		}
+		traits = { economy_minister social_liberal eco_trade_proponent }
+		cancel_if_invalid = no
+	}
+		GEO_grigol_natadze_eco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_grigol_natadze_eco"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = social_conservative
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+			}
+			NOT = {has_country_flag = grigol_natadze_dead}
+			NOT = {has_country_flag = grigol_natadze_eco_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = eco_cannot_be_replaced}		}
+		traits = { economy_minister social_liberal eco_reformer }
+		cancel_if_invalid = no
+	}
+		GEO_aleqsandre_asatiani_eco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_aleqsandre_asatiani_eco"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = social_conservative
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+			}			NOT = {has_country_flag = aleqsandre_asatiani_dead}
+			NOT = {has_country_flag = aleqsandre_asatiani_eco_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = eco_cannot_be_replaced}		}
+		traits = { economy_minister market_liberal eco_national_liberal }
+		cancel_if_invalid = no
+	}
+}
+### Security Minister
+security_minister = {
+		GEO_georgi_atarbekov_sec = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_georgi_atarbekov_sec"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = vanguardist
+			}
+			NOT = {has_country_flag = georgi_atarbekov_dead}
+			NOT = {has_country_flag = georgi_atarbekov_sec_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = sec_cannot_be_replaced}
+		}
+		traits = { security_minister vanguardist sec_prince_of_terror }
+		cancel_if_invalid = no
+	}
+		GEO_mikhail_givishiani_sec = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_mikhail_givishiani_sec"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = vanguardist
+				has_government = collectivist
+			}
+			NOT = {has_country_flag = mikhail_givishiani_dead}
+			NOT = {has_country_flag = mikhail_givishiani_sec_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = sec_cannot_be_replaced}
+		}
+		traits = { security_minister vanguardist sec_efficient_sociopath }
+		cancel_if_invalid = no
+	}
+		GEO_vlasa_mgeladze_sec = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_vlasa_mgeladze_sec"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = social_democrat
+			}
+			NOT = {has_country_flag = vlasa_mgeladze_dead}
+			NOT = {has_country_flag = vlasa_mgeladze_sec_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = sec_cannot_be_replaced}
+		}
+		traits = { security_minister libertarian_socialist sec_compassionate_gentleman }
+		cancel_if_invalid = no
+	}
+		GEO_ruben_minasian_sec = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_ruben_minasian_sec"}
+		allowed = { original_tag = GEO }
+		available = {
+			has_country_flag = GEO_transcaucasia_formed
+			NOT = {has_country_flag = ruber_minasian_dead}
+			NOT = {has_country_flag = ruber_minasian_sec_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = sec_cannot_be_replaced}
+		}
+		traits = { security_minister social_democrat sec_regionalist }
+		cancel_if_invalid = no
+	}
+		GEO_aslan_abashidze_sec = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_aslan_abashidze_sec"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+			}
+			NOT = {has_country_flag = aslan_abashidze_dead}
+			NOT = {has_country_flag = aslan_abashidze_sec_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = sec_cannot_be_replaced}
+		}
+		traits = { security_minister social_democrat sec_driven_recruiter }
+		cancel_if_invalid = no
+	}
+		GEO_ioseb_gedevanishvili_sec = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_ioseb_gedevanishvili_sec"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = social_conservative
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+			}
+			NOT = {has_country_flag = ioseb_gedevanishvili_dead}
+			NOT = {has_country_flag = ioseb_gedevanishvili_sec_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = sec_cannot_be_replaced}
+		}
+		traits = { security_minister social_liberal sec_health_and_safety }
+		cancel_if_invalid = no
+	}
+		GEO_leo_kereselidze_sec = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_leo_kereselidze_sec"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = authoritarian_democrat
+				has_government = social_conservative
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+			}
+			NOT = {has_country_flag = leo_kereselidze_dead}
+			NOT = {has_country_flag = leo_kereselidze_sec_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = sec_cannot_be_replaced}
+		}
+		traits = { security_minister social_conservative sec_driven_recruiter }
+		cancel_if_invalid = no
+	}
+		GEO_shalva_maglakelidze_sec = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_shalva_maglakelidze_sec"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = national_populist
+				has_government = paternal_autocrat
+				has_government = authoritarian_democrat
+				has_government = social_conservative
+			}
+			NOT = {has_country_flag = shalva_maglakelidze_dead}
+			NOT = {has_country_flag = shalva_maglakelidze_sec_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = sec_cannot_be_replaced}
+		}
+		traits = { security_minister authoritarian_democrat sec_silent_lawyer }
+		cancel_if_invalid = no
+	}
+}
+### Intelligence Minister
+head_of_intel = {
+		GEO_vsevolod_merkulov_int = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_vsevolod_merkulov_int"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = vanguardist
+				has_government = collectivist
+			}
+			NOT = {has_country_flag = vsevolod_merkulov_dead}
+			NOT = {has_country_flag = vsevolod_merkulov_int_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = int_cannot_be_replaced}
+		}
+		traits = { head_of_intel vanguardist int_dismal_enigma }
+		cancel_if_invalid = no
+	}
+		GEO_sergo_goglidze_int = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_sergo_goglidze_int"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = vanguardist
+				has_government = collectivist
+			}
+			NOT = {has_country_flag = sergo_goglidze_dead}
+			NOT = {has_country_flag = sergo_goglidze_int_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = int_cannot_be_replaced}
+		}
+		traits = { head_of_intel vanguardist int_technical_specialist }
+		cancel_if_invalid = no
+	}
+		GEO_tevdore_glonti_int = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_tevdore_glonti_int"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = social_democrat
+			}
+			NOT = {has_country_flag = tevdore_glonti_dead}
+			NOT = {has_country_flag = tevdore_glonti_int_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = int_cannot_be_replaced}
+		}
+		traits = { head_of_intel libertarian_socialist int_political_specialist }
+		cancel_if_invalid = no
+	}
+		GEO_zori_zoriantsi_int = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_zori_zoriantsi_int"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+				has_government = social_conservative
+			}
+			NOT = {has_country_flag = zori_zoriantsi_dead}
+			NOT = {has_country_flag = zori_zoriantsi_int_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = int_cannot_be_replaced}
+		}
+		traits = { head_of_intel social_democrat int_political_specialist }
+		cancel_if_invalid = no
+	}
+		GEO_evgen_gvaladze_int = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_evgen_gvaladze_int"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+				has_government = social_conservative
+			}
+			NOT = {has_country_flag = evgen_gvaladze_dead}
+			NOT = {has_country_flag = evgen_gvaladze_int_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = int_cannot_be_replaced}
+		}
+		traits = { head_of_intel social_democrat int_logistics_specialist }
+		cancel_if_invalid = no
+	}
+		GEO_grigol_rtskhiladze_int = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_grigol_rtskhiladze_int"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = social_conservative
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+				has_government = libertarian_socialist
+			}
+			NOT = {has_country_flag = grigol_rtskhiladze_dead}
+			NOT = {has_country_flag = grigol_rtskhiladze_int_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = int_cannot_be_replaced}
+		}
+		traits = { head_of_intel social_liberal int_political_specialist }
+		cancel_if_invalid = no
+	}
+		GEO_spiridon_kedia_int = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_spiridon_kedia_int"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = authoritarian_democrat
+				has_government = social_conservative
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+			}
+			NOT = {has_country_flag = spiridon_kedia_dead}
+			NOT = {has_country_flag = spiridon_kedia_int_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = int_cannot_be_replaced}
+		}
+		traits = { head_of_intel social_conservative int_logistics_specialist }
+		cancel_if_invalid = no
+	}
+		GEO_mikheil_javakhishvili_int = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_mikheil_javakhishvili_int"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = authoritarian_democrat
+				has_government = social_conservative
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+			}
+			NOT = {has_country_flag = mikheil_javakhishvili_dead}
+			NOT = {has_country_flag = mikheil_javakhishvili_int_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = int_cannot_be_replaced}
+		}
+		traits = { head_of_intel social_conservative int_political_specialist }
+		cancel_if_invalid = no
+	}
+		GEO_lavrentiy_beria_int = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_lavrentiy_beria_int"}
+		allowed = { original_tag = GEO }
+		available = {
+			NOT = {has_country_flag = lavrentiy_beria_dead}
+			NOT = {has_country_flag = lavrentiy_beria_int_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = int_cannot_be_replaced}
+			has_country_flag = int_minster_beria
+		}
+		traits = { head_of_intel int_technical_specialist }
+		cancel_if_invalid = no
+	}
+}
+### Military High Command
+chief_of_staff = {
+		GEO_simon_petrosian_cos = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_simon_petrosian_cos"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = vanguardist
+				has_government = collectivist
+			}
+			NOT = {has_country_flag = simon_petrosian_dead}
+			NOT = {has_country_flag = simon_petrosian_cos_fired}
+		}
+		traits = { cos_school_of_psychology }
+		cancel_if_invalid = no
+	}
+		GEO_andria_chiabrishvili_cos = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_andria_chiabrishvili_cos"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+				has_government = social_conservative
+			}
+			NOT = {has_country_flag = andria_chiabrishvili_dead}
+			NOT = {has_country_flag = andria_chiabrishvili_cos_fired}
+		}
+		traits = { cos_school_of_mass_combat }
+		cancel_if_invalid = no
+	}
+		GEO_artem_jijikhia_cos = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_artem_jijikhia_cos"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+				has_government = social_conservative
+			}
+			NOT = {has_country_flag = artem_jijikhia_dead}
+			NOT = {has_country_flag = artem_jijikhia_cos_fired}
+		}
+		traits = { cos_school_of_fire_support }
+		cancel_if_invalid = no
+	}
+}
+### Chief of Army
+chief_of_army = {
+		GEO_ivane_kazbegi_carm = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_ivane_kazbegi_carm"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+				has_government = social_conservative
+			}
+			NOT = {has_country_flag = ivane_kazbegi_dead}
+			NOT = {has_country_flag = ivane_kazbegi_carm_fired}
+		}
+		traits = { carm_static_defence_doctrine }
+		cancel_if_invalid = no
+	}
+		GEO_aleksandre_andronikashvili_carm = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_aleksandre_andronikashvili_carm"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+				has_government = social_conservative
+			}
+			NOT = {has_country_flag = aleksandre_andronikashvili_dead}
+			NOT = {has_country_flag = aleksandre_andronikashvili_carm_fired}
+		}
+		traits = { carm_elastic_defence_doctrine }
+		cancel_if_invalid = no
+	}
+		GEO_konstantin_leselidze_carm = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_konstantin_leselidze_carm"}
+		allowed = { original_tag = GEO }
+		available = {
+			NOT = {has_country_flag = konstantin_leselidze_dead}
+			NOT = {has_country_flag = konstantin_leselidze_carm_fired}
+		}
+		traits = { carm_static_defence_doctrine }
+		cancel_if_invalid = no
+	}
+		GEO_aleksi_inauri_carm = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_aleksi_inauri_carm"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = vanguardist
+				has_government = collectivist
+			}
+			NOT = {has_country_flag = aleksi_inauri_dead}
+			NOT = {has_country_flag = aleksi_inauri_carm_fired}
+		}
+		traits = { carm_commando_doctrine }
+		cancel_if_invalid = no
+	}
+		GEO_varden_tsulukidze_carm = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_varden_tsulukidze_carm"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+				has_government = social_conservative
+			}
+			NOT = {has_country_flag = varden_tsulukidze_dead}
+			NOT = {has_country_flag = varden_tsulukidze_carm_fired}
+		}
+		traits = { carm_static_defence_doctrine }
+		cancel_if_invalid = no
+	}
+}
+### Chief of Navy
+chief_of_navy = {
+		GEO_viktor_lomidze_cnav = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_viktor_lomidze_cnav"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+				has_government = social_conservative
+			}
+			NOT = {has_country_flag = viktor_lomidze_dead}
+			NOT = {has_country_flag = viktor_lomidze_cnav_fired}
+		}
+		traits = { cnav_indirect_approach_doctrine }
+		cancel_if_invalid = no
+	}
+		GEO_yaroslav_iosseliani_cnav = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_yaroslav_iosseliani_cnav"}
+		allowed = { original_tag = GEO }
+		available = {
+			NOT = {has_country_flag = yaroslav_iosseliani_dead}
+			NOT = {has_country_flag = yaroslav_iosseliani_cnav_fired}
+		}
+		traits = { cnav_open_seas_doctrine }
+		cancel_if_invalid = no
+	}
+		GEO_giorgi_tumanishvili_cnav = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_giorgi_tumanishvili_cnav"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+				has_government = social_conservative
+			}
+			NOT = {has_country_flag = giorgi_tumanishvili_dead}
+			NOT = {has_country_flag = giorgi_tumanishvili_cnav_fired}
+		}
+		traits = { cnav_decisive_battle_doctrine }
+		cancel_if_invalid = no
+	}
+}
+### Chief of Airforce
+chief_of_air_force = {
+		GEO_vakhtang_makashvili_cair = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_vakhtang_makashvili_cair"}
+		allowed = { original_tag = GEO }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+				has_government = social_conservative
+			}
+			NOT = {has_country_flag = vakhtang_makashvili_dead}
+			NOT = {has_country_flag = vakhtang_makashvili_cair_fired}
+		}
+		traits = { cair_battlefield_support_doctrine }
+		cancel_if_invalid = no
+	}
+		GEO_evstafii_tatanashvili_cair = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_evstafii_tatanashvili_cair"}
+		allowed = { original_tag = GEO }
+		available = {
+			NOT = {has_country_flag = evstafii_tatanashvili_dead}
+			NOT = {has_country_flag = evstafii_tatanashvili_cair_fired}
+		}
+		traits = { cair_battlefield_support_doctrine }
+		cancel_if_invalid = no
+	}
+		GEO_chichiko_bendeliani_cair = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_chichiko_bendeliani_cair"}
+		allowed = { original_tag = GEO }
+		available = {
+			NOT = {has_country_flag = chichiko_bendeliani_dead}
+			NOT = {has_country_flag = chichiko_bendeliani_cair_fired}
+		}
+		traits = { cair_air_superiority_doctrine }
+		cancel_if_invalid = no
+	}
+		GEO_nikoloz_abramishvili_cair = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GEO_nikoloz_abramishvili_cair"}
+		allowed = { original_tag = GEO }
+		available = {
+			NOT = {has_country_flag = nikoloz_abramishvili_dead}
+			NOT = {has_country_flag = nikoloz_abramishvili_cair_fired}
+		}
+		traits = { cair_air_superiority_doctrine }
+		cancel_if_invalid = no
+	}
+}
+theorist = {
+		giorgi_mazniashvili_theorist = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea giorgi_mazniashvili_theorist"}
+		cost = 150		
+		allowed = {
+			original_tag = GEO
+		}
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+				has_government = social_conservative
+			}
+		}
+		research_bonus = {
+			cat_grand_battle_plan = 0.1
+        }
+		traits = { trench_warfare_theorist }
+	}
+		giorgi_kvinitadze_theorist = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea giorgi_kvinitadze_theorist"}
+		cost = 150		
+		allowed = {
+			original_tag = GEO
+		}
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+				has_government = social_conservative
+			}
+		}
+		research_bonus = {
+		    cat_superior_firepower = 0.1
+        }
+		traits = { superior_firepower_theorist }
+	}
+		valiko_jugheli_theorist = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea valiko_jugheli_theorist"}
+		cost = 150		
+		allowed = {
+			original_tag = GEO
+		}
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+				has_government = social_conservative
+			}
+		}
+		research_bonus = {
+		    cat_mass_assault = 0.1
+        }
+		traits = { mass_assault_theorist }
+	}
+		alexander_kartveli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea alexander_kartveli"}
+		allowed = { 
+			original_tag = GEO
+		}
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+				has_government = social_conservative
+			}
+		}
+		traits = { fighter_theorist }
+		research_bonus = {
+			air_equipment = 0.07
+			jet_technology = 0.15
+		}
+	}
+
+		mikheil_grigorashvili = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea mikheil_grigorashvili"}
+		allowed = { 
+			original_tag = GEO
+		}
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+				has_government = social_conservative
+			}
+		}
+		traits = { fighter_theorist }
+		research_bonus = {
+			air_equipment = 0.12
+		}
+	}
+		galaktion_alpaidze = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea galaktion_alpaidze"}
+		allowed = {
+			original_TAG = GEO
+		}
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+				has_government = social_conservative
+			}
+		}
+		research_bonus = {
+			electronics = 0.07
+		}
+		traits = { electronic_theorist }
+	}
+		nikoloz_muskhelishvili = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea nikoloz_muskhelishvili"}
+		allowed = {
+			original_TAG = GEO
+		}
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+				has_government = social_conservative
+			}
+		}
+		research_bonus = {
+			industry = 0.10
+		}
+		traits = { industry_theorist }
+	}
+}
+}

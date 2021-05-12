@@ -1,0 +1,3285 @@
+ideas = {
+
+	head_of_government = {
+		
+		### Republican Ministers ###
+		
+		SPR_Manuel_Azana_Diaz_hog_sli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SPR_Manuel_Azana_Diaz_hog_sli"}
+			allowed = {
+				OR = {
+					original_tag = SPR
+					#original_tag = SPF
+					#original_tag = SPA
+				}
+			}
+			available = {
+				has_government = social_liberal
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				social_liberal
+				hog_silent_workhorse
+			}
+			cancel_if_invalid = no
+		}
+		
+		SPR_Diego_Martinez_Barrio_hog_sli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SPR_Diego_Martinez_Barrio_hog_sli"}
+			allowed = {
+				OR = {
+					original_tag = SPR
+					#original_tag = SPF
+					#original_tag = SPA
+				}
+			}
+			available = {
+				has_government = social_liberal
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				social_liberal
+				hog_backroom_backstabber
+			}
+			cancel_if_invalid = no
+		}
+		
+		SPR_Alejandro_Lerroux_hog_mli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SPR_Alejandro_Lerroux_hog_mli"}
+			allowed = {
+				OR = {
+					original_tag = SPR
+					#original_tag = SPF
+					#original_tag = SPA
+				}
+			}
+			available = {
+				has_government = market_liberal
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_political_protege
+			}
+			cancel_if_invalid = no
+		}
+		
+		SPR_Niceto_Alcala_Zamora_hog_mli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SPR_Niceto_Alcala_Zamora_hog_mli"}
+			allowed = {
+				OR = {
+					original_tag = SPR
+					#original_tag = SPF
+					#original_tag = SPA
+				}
+			}
+			available = {
+				has_government = market_liberal
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_pragmatic_statesman
+			}
+			cancel_if_invalid = no
+		}
+		
+		SPR_Miguel_Maura_Gamazo_hog_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SPR_Miguel_Maura_Gamazo_hog_sco"}
+			allowed = {
+				OR = {
+					original_tag = SPR
+					#original_tag = SPF
+					#original_tag = SPA
+				}
+			}
+			available = {
+				has_government = social_conservative
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_corporate_suit
+			}
+			cancel_if_invalid = no
+		}
+		
+		SPR_Vicente_Rojo_Lluch_hog_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SPR_Vicente_Rojo_Lluch_hog_ade"}
+			allowed = {
+				OR = {
+					original_tag = SPR
+					#original_tag = SPF
+					#original_tag = SPA
+				}
+			}
+			available = {
+				has_government = authoritarian_democrat
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_respected_war_hero
+			}
+			cancel_if_invalid = no
+		}
+		
+		### Monarchist Ministers ###
+		
+		SPM_Alvaro_de_Figueroa_y_Torres_Sotomayor_hog_sli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SPM_Alvaro_de_Figueroa_y_Torres_Sotomayor_hog_sli"}
+			allowed = {
+				OR = {
+					original_tag = SPM
+					#original_tag = SPF
+					#original_tag = SPA
+				}
+			}
+			available = {
+				has_government = social_liberal
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				social_liberal
+				hog_old_compromiser
+			}
+			cancel_if_invalid = no
+		}
+		
+		SPM_Juan_de_la_Cierva_y_Penafiel_hog_mli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SPM_Juan_de_la_Cierva_y_Penafiel_hog_mli"}
+			allowed = {
+				OR = {
+					original_tag = SPM
+					#original_tag = SPF
+					#original_tag = SPA
+				}
+			}
+			available = {
+				has_government = market_liberal
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_silent_workhorse
+			}
+			cancel_if_invalid = no
+		}
+		
+		SPM_Francesc_Cambo_hog_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SPM_Francesc_Cambo_hog_sco"}
+			allowed = {
+				OR = {
+					original_tag = SPM
+					#original_tag = SPF
+					#original_tag = SPA
+				}
+			}
+			available = {
+				has_government = social_conservative
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_political_protege
+			}
+			cancel_if_invalid = no
+		}
+		
+		SPM_Jose_Sanjurjo_Sacanell_hog_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SPM_Jose_Sanjurjo_Sacanell_hog_ade"}
+			allowed = {
+				OR = {
+					original_tag = SPM
+					#original_tag = SPF
+					#original_tag = SPA
+				}
+			}
+			available = {
+				has_government = authoritarian_democrat
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_old_general
+			}
+			cancel_if_invalid = no
+		}
+		
+		SPM_JM_Gil_Robles_Quinones_hog_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SPM_JM_Gil_Robles_Quinones_hog_ade"}
+			allowed = {
+				OR = {
+					original_tag = SPM
+					#original_tag = SPF
+					#original_tag = SPA
+				}
+			}
+			available = {
+				has_government = authoritarian_democrat
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_determined_populist
+			}
+			cancel_if_invalid = no
+		}
+		
+		SPM_Antonio_Goicoechea_hog_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SPM_Antonio_Goicoechea_hog_pau"}
+			allowed = {
+				OR = {
+					original_tag = SPM
+					#original_tag = SPF
+					#original_tag = SPA
+				}
+			}
+			available = {
+				has_government = paternal_autocrat
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_flamboyant_tough_guy
+			}
+			cancel_if_invalid = no
+		}
+		
+		### Socialist Ministers ###
+		
+		SPA_Jose_Cazorla_Maure_hog_van = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SPA_Jose_Cazorla_Maure_hog_van"}
+			allowed = {
+				OR = {
+					original_tag = SPA
+					#original_tag = SPF
+					#original_tag = SPA
+				}
+			}
+			available = {
+				has_government = vanguardist
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				vanguardist
+				hog_iron_heel
+			}
+			cancel_if_invalid = no
+		}
+		
+		SPA_Santiago_Carrillo_Solares_hog_van = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SPA_Santiago_Carrillo_Solares_hog_van"}
+			allowed = {
+				OR = {
+					original_tag = SPA
+					#original_tag = SPF
+					#original_tag = SPA
+				}
+			}
+			available = {
+				has_government = vanguardist
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				vanguardist
+				hog_political_protege
+			}
+			cancel_if_invalid = no
+		}
+		
+		SPA_Jose_Diaz_Ramos_hog_col = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SPA_Jose_Diaz_Ramos_hog_col"}
+			allowed = {
+				OR = {
+					original_tag = SPA
+					#original_tag = SPF
+					#original_tag = SPA
+				}
+			}
+			available = {
+				has_government = collectivist
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				collectivist
+				hog_ambitious_union_boss
+			}
+			cancel_if_invalid = no
+		}
+		
+		SPA_Dolores_Ibarruri_hog_col = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SPA_Dolores_Ibarruri_hog_col"}
+			allowed = {
+				OR = {
+					original_tag = SPA
+					#original_tag = SPF
+					#original_tag = SPA
+				}
+			}
+			available = {
+				has_government = collectivist
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				collectivist
+				hog_charismatic_charmer
+			}
+			cancel_if_invalid = no
+		}
+		
+		SPA_Andres_Nin_Perez_hog_col = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SPA_Andres_Nin_Perez_hog_col"}
+			allowed = {
+				OR = {
+					original_tag = SPA
+					#original_tag = SPF
+					#original_tag = SPA
+				}
+			}
+			available = {
+				has_government = collectivist
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				collectivist
+				hog_political_protege
+			}
+			cancel_if_invalid = no
+		}
+		
+		SPA_Vicente_Uribe_hog_col = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SPA_Vicente_Uribe_hog_col"}
+			allowed = {
+				OR = {
+					original_tag = SPA
+					#original_tag = SPF
+					#original_tag = SPA
+				}
+			}
+			available = {
+				has_government = collectivist
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				collectivist
+				hog_pragmatic_statesman
+			}
+			cancel_if_invalid = no
+		}
+		
+		SPA_Joaquin_Maurin_hog_lso = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SPA_Joaquin_Maurin_hog_lso"}
+			allowed = {
+				OR = {
+					original_tag = SPA
+					#original_tag = SPF
+					#original_tag = SPA
+				}
+			}
+			available = {
+				has_government = libertarian_socialist
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				libertarian_socialist
+				hog_ambitious_union_boss
+			}
+			cancel_if_invalid = no
+		}
+		
+		SPA_Juan_Garcia_Oliver_hog_lso = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SPA_Juan_Garcia_Oliver_hog_lso"}
+			allowed = {
+				OR = {
+					original_tag = SPA
+					#original_tag = SPF
+					#original_tag = SPA
+				}
+			}
+			available = {
+				has_government = libertarian_socialist
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				libertarian_socialist
+				hog_ambitious_union_boss
+			}
+			cancel_if_invalid = no
+		}
+		
+		SPA_Angel_Pestana_Nunez_hog_lso = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SPA_Angel_Pestana_Nunez_hog_lso"}
+			allowed = {
+				OR = {
+					original_tag = SPA
+					#original_tag = SPF
+					#original_tag = SPA
+				}
+			}
+			available = {
+				has_government = libertarian_socialist
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				libertarian_socialist
+				hog_determined_populist
+			}
+			cancel_if_invalid = no
+		}
+		
+		SPA_Francisco_Largo_Caballero_hog_lso = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SPA_Francisco_Largo_Caballero_hog_lso"}
+			allowed = {
+				OR = {
+					original_tag = SPA
+					#original_tag = SPF
+					#original_tag = SPA
+				}
+			}
+			available = {
+				has_government = libertarian_socialist
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				libertarian_socialist
+				hog_smiling_oilman
+			}
+			cancel_if_invalid = no
+		}
+		
+		SPA_Juan_Negrin_Lopez_hog_sde = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SPA_Juan_Negrin_Lopez_hog_sde"}
+			allowed = {
+				OR = {
+					original_tag = SPA
+					#original_tag = SPF
+					#original_tag = SPA
+				}
+			}
+			available = {
+				has_government = social_democrat
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				social_democrat
+				hog_naive_optimist
+			}
+			cancel_if_invalid = no
+		}
+		
+		SPA_Anastasio_de_Gracia_hog_sde = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SPA_Anastasio_de_Gracia_hog_sde"}
+			allowed = {
+				OR = {
+					original_tag = SPA
+					#original_tag = SPF
+					#original_tag = SPA
+				}
+			}
+			available = {
+				has_government = social_democrat
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				social_democrat
+				hog_ambitious_union_boss
+			}
+			cancel_if_invalid = no
+		}
+		
+		### Carlist Ministers ###
+		
+		SPF_Francisco_Javier_de_Borbon_Parma_hog_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SPF_Francisco_Javier_de_Borbon_Parma_hog_pau"}
+			allowed = {
+				OR = {
+					original_tag = SPF
+					#original_tag = SPF
+					#original_tag = SPA
+				}
+			}
+			available = {
+				has_government = paternal_autocrat
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_determined_populist
+			}
+			cancel_if_invalid = no
+		}
+		
+		SPF_Manuel_Fal_Conde_hog_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SPF_Manuel_Fal_Conde_hog_pau"}
+			allowed = {
+				OR = {
+					original_tag = SPF
+					#original_tag = SPF
+					#original_tag = SPA
+				}
+			}
+			available = {
+				has_government = paternal_autocrat
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_flamboyant_tough_guy
+			}
+			cancel_if_invalid = no
+		}
+		
+		SPF_Jose_Maria_Albinana_hog_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SPF_Jose_Maria_Albinana_hog_npo"}
+			allowed = {
+				OR = {
+					original_tag = SPF
+					#original_tag = SPF
+					#original_tag = SPA
+				}
+			}
+			available = {
+				has_government = national_populist
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				national_populist
+				hog_charismatic_charmer
+			}
+			cancel_if_invalid = no
+		}
+		
+		SPF_Jose_Antonio_Primo_de_Rivera_hog_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SPF_Jose_Antonio_Primo_de_Rivera_hog_npo"}
+			allowed = {
+				OR = {
+					original_tag = SPF
+					#original_tag = SPF
+					#original_tag = SPA
+				}
+			}
+			available = {
+				has_government = national_populist
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				national_populist
+				hog_political_protege
+			}
+			cancel_if_invalid = no
+		}
+	}
+
+	foreign_minister = { ### Person of Influence ###
+		## Foreign Minister ##
+		SWF_Jesus_Hernandez_y_Tomas_for_tot = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Jesus_Hernandez_y_Tomas_for_tot"
+			}
+			traits = {
+				foreign_minister
+				vanguardist
+				for_ideological_crusader
+			}
+		}
+
+		SWF_Santiago_Carrillo_Solares_for_tot = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Santiago_Carrillo_Solares_for_tot"
+			}
+			traits = {
+				foreign_minister
+				vanguardist
+				for_the_cloak_n_dagger_schemer
+			}
+		}
+		
+		SWF_Dolores_Ibaurri_Gomez_for_tot = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Dolores_Ibaurri_Gomez_for_tot"
+			}
+			traits = {
+				foreign_minister
+				collectivist
+				for_iron_fisted_brute
+			}
+		}
+
+		SWF_Andreu_Nin_i_Perez_for_syn = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Andreu_Nin_i_Perez_for_syn"
+			}
+			traits = {
+				foreign_minister
+				collectivist
+				for_the_cloak_n_dagger_schemer
+			}
+		}
+		
+		SWF_Jose_Diaz_Ramos_for_col = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Jose_Diaz_Ramos_for_col"
+			}
+			traits = {
+				foreign_minister
+				collectivist
+				for_ideological_crusader
+			}
+		}
+		
+		SWF_Jordi_Arquer_for_lso = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Jordi_Arquer_for_lso"
+			}
+			traits = {
+				foreign_minister
+				libertarian_socialist
+				for_world_patrician
+			}
+		}
+
+		SWF_Eduardo_de_Guzman_for_syn = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Eduardo_de_Guzman_for_syn"
+			}
+			traits = {
+				foreign_minister
+				libertarian_socialist
+				for_great_compromiser
+			}
+		}
+
+		SWF_Angel_Pestana_for_rso = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Angel_Pestana_for_rso"
+			}
+			traits = {
+				foreign_minister
+				libertarian_socialist
+				for_apologetic_clerk
+			}
+		}
+		
+		SWF_Julio_Alvarez_del_Vayo_for_lso = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Julio_Alvarez_del_Vayo_for_lso"
+			}
+			traits = {
+				foreign_minister
+				libertarian_socialist
+				for_ideological_crusader
+			}
+		}
+
+		SWF_Julian_Besteiro_Fernandez_for_rso = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Julian_Besteiro_Fernandez_for_rso"
+			}
+			traits = {
+				foreign_minister
+				social_democrat
+				for_apologetic_clerk
+			}
+		}
+		
+		SWF_Fernando_de_los_Rios_Urruti_for_rso = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Fernando_de_los_Rios_Urruti_for_rso"
+			}
+			traits = {
+				foreign_minister
+				social_democrat
+				for_the_cloak_n_dagger_schemer
+			}
+		}
+	}
+		
+	economy_minister = {
+		## Economy Minister ##
+		SWF_Enrique_Castro_Delgado_eco_tot = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Enrique_Castro_Delgado_eco_tot"
+			}
+			traits = {
+				economy_minister
+				vanguardist
+				eco_infantry_proponent
+			}
+		}
+
+		SWF_Jesus_Hernandez_y_Tomas_eco_tot = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Jesus_Hernandez_y_Tomas_eco_tot"
+			}
+			traits = {
+				economy_minister
+				vanguardist
+				eco_theoretical_scientist
+			}
+		}
+		
+		SWF_Vicente_Uribe_eco_col = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Vicente_Uribe_eco_col"
+			}
+			traits = {
+				economy_minister
+				collectivist
+				eco_keynesian_economy
+			}
+		}
+		
+		SWF_Rafael_Vidiella_eco_col = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Rafael_Vidiella_eco_col"
+			}
+			traits = {
+				economy_minister
+				collectivist
+				eco_imbedded_unioneer
+			}
+		}
+		
+		SWF_Miquel_Valdes_eco_col = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Miquel_Valdes_eco_col"
+			}
+			traits = {
+				economy_minister
+				collectivist
+				eco_imbedded_unioneer
+			}
+		}
+
+		SWF_Federica_Monsteny_Mane_eco_syn = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Federica_Monsteny_Mane_eco_syn"
+			}
+			traits = {
+				economy_minister
+				libertarian_socialist
+				eco_theoretical_scientist
+			}
+		}
+
+		SWF_Joaquin_Ascaso_Budria_eco_syn = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Joaquin_Ascaso_Budria_eco_syn"
+			}
+			traits = {
+				economy_minister
+				libertarian_socialist
+				eco_military_entrepreneur
+			}
+		}
+
+		SWF_Juan_Lopez_Sanchez_eco_syn = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Juan_Lopez_Sanchez_eco_syn"
+			}
+			traits = {
+				economy_minister
+				libertarian_socialist
+				eco_resource_industrialist
+			}
+		}
+
+		SWF_Juan_Peiro_Belis_eco_syn = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Juan_Peiro_Belis_eco_syn"
+			}
+			traits = {
+				economy_minister
+				libertarian_socialist
+				eco_administrative_genius
+			}
+		}
+
+		SWF_Belamino_Tomas_Alvarez_eco_rso = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Belamino_Tomas_Alvarez_eco_rso"
+			}
+			traits = {
+				economy_minister
+				libertarian_socialist
+				eco_resource_industrialist
+			}
+		}
+
+		SWF_Felix_Gordon_Ordas_eco_rso = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Felix_Gordon_Ordas_eco_rso"
+			}
+			traits = {
+				economy_minister
+				libertarian_socialist
+				eco_laissez_faire_capitalist
+			}
+		}
+
+		SWF_Francisco_Largo_Caballero_eco_rso = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Francisco_Largo_Caballero_eco_rso"
+			}
+			traits = {
+				economy_minister
+				libertarian_socialist
+				eco_resource_industrialist
+			}
+		}
+		
+		SWF_Anastasio_de_Gracia_eco_sde = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Anastasio_de_Gracia_eco_sde"
+			}
+			traits = {
+				economy_minister
+				social_democrat
+				eco_resource_industrialist
+			}
+		}
+		
+		SWF_Fernando_de_los_Rios_Urruti_eco_rso = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Fernando_de_los_Rios_Urruti_eco_rso"
+			}
+			traits = {
+				economy_minister
+				social_democrat
+				eco_strategic_destruction_proponent
+			}
+		}
+	}
+
+	security_minister = {
+		## Security Minister ##
+		SWF_Antonio_Mije_sec_tot = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Antonio_Mije_sec_tot"
+			}
+			traits = {
+				security_minister
+				vanguardist
+				sec_prince_of_terror
+			}
+		}
+
+		SWF_Joaquin_Grimau_Garcia_sec_tot = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Joaquin_Grimau_Garcia_sec_tot"
+			}
+			traits = {
+				security_minister
+				vanguardist
+				sec_efficient_sociopath
+			}
+		}
+
+		SWF_Dolores_Ibaurri_Gomez_sec_tot = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Dolores_Ibaurri_Gomez_sec_tot"
+			}
+			traits = {
+				security_minister
+				collectivist
+				sec_efficient_sociopath
+			}
+		}
+
+		SWF_Jose_Diaz_Ramos_sec_tot = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Jose_Diaz_Ramos_sec_tot"
+			}
+			traits = {
+				security_minister
+				collectivist
+				sec_man_of_the_people
+			}
+		}
+
+		SWF_Santiago_Carrillo_Solares_sec_tot = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Santiago_Carrillo_Solares_sec_tot"
+			}
+			traits = {
+				security_minister
+				collectivist
+				sec_prince_of_terror
+			}
+		}
+
+		SWF_Valentin_Gonzalez_Gonzalez_sec_tot = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Valentin_Gonzalez_Gonzalez_sec_tot"
+			}
+			traits = {
+				security_minister
+				collectivist
+				sec_back_stabber
+			}
+		}
+
+		SWF_Andreu_Nin_i_Perez_sec_syn = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Andreu_Nin_i_Perez_sec_syn"
+			}
+			traits = {
+				security_minister
+				collectivist
+				sec_compassionate_gentleman
+			}
+		}
+
+		SWF_Buenaventura_Durruti_Dumange_sec_syn = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Buenaventura_Durruti_Dumange_sec_syn"
+			}
+			traits = {
+				security_minister
+				libertarian_socialist
+				sec_prince_of_terror
+			}
+		}
+
+		SWF_Eduardo_de_Guzman_sec_syn = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Eduardo_de_Guzman_sec_syn"
+			}
+			traits = {
+				security_minister
+				libertarian_socialist
+				sec_silent_lawyer
+			}
+		}
+
+		SWF_Juan_Garcia_Oliver_sec_syn = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Juan_Garcia_Oliver_sec_syn"
+			}
+			traits = {
+				security_minister
+				libertarian_socialist
+				sec_man_of_the_people
+			}
+		}
+
+		SWF_Angel_Galarza_y_Gago_sec_rso = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Angel_Galarza_y_Gago_sec_rso"
+			}
+			traits = {
+				security_minister
+				libertarian_socialist
+				sec_prince_of_terror
+			}
+		}
+
+		SWF_Antonio_Ortega_Gutierrez_sec_rso = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Antonio_Ortega_Gutierrez_sec_rso"
+			}
+			traits = {
+				security_minister
+				libertarian_socialist
+				sec_efficient_sociopath
+			}
+		}
+
+		SWF_Joaquin_Ascaso_Budria_sec_rso = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Joaquin_Ascaso_Budria_sec_rso"
+			}
+			traits = {
+				security_minister
+				libertarian_socialist
+				sec_silent_lawyer
+			}
+		}
+		
+		SWF_Indalecio_Prieto_sec_sde = {
+			allowed = { original_tag = SPA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Indalecio_Prieto_sec_sde"
+			}
+			traits = {
+				security_minister
+				libertarian_socialist
+				sec_health_and_safety
+			}
+		}
+
+	}
+
+	chief_of_staff = { ### Chief of Staff ###
+		SWF_Emilio_Kleber_cos_tot = {
+			allowed = { original_tag = SPA }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Emilio_Kleber_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Emilio_Kleber_cos_tot"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_defence
+			}
+			cancel_if_invalid = yes
+		}
+
+		SWF_Enrique_Lister_Forjan_cos_tot = {
+			allowed = { original_tag = SPA }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Enrique_Lister_Forjan_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Enrique_Lister_Forjan_cos_tot"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_psychology
+			}
+			cancel_if_invalid = yes
+		}
+
+		SWF_Buenaventura_Durruti_Dumange_cos_syn = {
+			allowed = { original_tag = SPA }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Buenaventura_Durruti_Dumange_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Buenaventura_Durruti_Dumange_cos_syn"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_defence
+			}
+			cancel_if_invalid = yes
+		}
+
+		SWF_Francisco_Ascaso_Budria_cos_syn = {
+			allowed = { original_tag = SPA }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Francisco_Ascaso_Budria_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Francisco_Ascaso_Budria_cos_syn"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+			cancel_if_invalid = yes
+		}
+
+		SWF_Vicente_Rojo_Lluch_cos_rso = {
+			allowed = { original_tag = SPR }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Vicente_Rojo_Lluch_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Vicente_Rojo_Lluch_cos_rso"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_manoeuvre
+			}
+			cancel_if_invalid = yes
+		}
+
+	}
+
+	chief_of_army = { ### Chief of Army ###
+		SWF_Enrique_Lister_Forjan_carm_tot = {
+			allowed = { original_tag = SPA }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Enrique_Lister_Forjan_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Enrique_Lister_Forjan_carm_tot"
+			}
+			traits = {
+				chief_of_army
+				carm_decisive_battle_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		SWF_Buenaventura_Durruti_Dumange_carm_syn = {
+			allowed = { original_tag = SPA }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Buenaventura_Durruti_Dumange_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Buenaventura_Durruti_Dumange_carm_syn"
+			}
+			traits = {
+				chief_of_army
+				carm_decisive_battle_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		SWF_Francisco_Ascaso_Budria_carm_syn = {
+			allowed = { original_tag = SPA }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Francisco_Ascaso_Budria_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Francisco_Ascaso_Budria_carm_syn"
+			}
+			traits = {
+				chief_of_army
+				carm_guns_and_butter_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		SWF_Vicente_Rojo_Lluch_carm_rso = {
+			allowed = { original_tag = SPR }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Vicente_Rojo_Lluch_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Vicente_Rojo_Lluch_carm_rso"
+			}
+			traits = {
+				chief_of_army
+				carm_decisive_battle_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+	}
+
+	chief_of_navy = { ### Chief of Navy ###
+		SWF_Juan_Lopez_Sanchez_cnav_syn = {
+			allowed = { original_tag = SPA }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Juan_Lopez_Sanchez_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Juan_Lopez_Sanchez_cnav_syn"
+			}
+			traits = {
+				chief_of_navy
+				cnav_indirect_approach_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		SWF_Juan_Peiro_Belis_cnav_syn = {
+			allowed = { original_tag = SPA }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Juan_Peiro_Belis_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Juan_Peiro_Belis_cnav_syn"
+			}
+			traits = {
+				chief_of_navy
+				cnav_base_control_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+	}
+
+	chief_of_air_force = { ### Chief of Air Force ###
+		SWF_Juan_Lopez_Sanchez_cair_syn = {
+			allowed = { original_tag = SPA }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Juan_Lopez_Sanchez_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Juan_Lopez_Sanchez_cair_syn"
+			}
+			traits = {
+				chief_of_air_force
+				cair_battlefield_support_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		SWF_Juan_Peiro_Belis_cair_syn = {
+			allowed = { original_tag = SPA }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Juan_Peiro_Belis_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWF_Juan_Peiro_Belis_cair_syn"
+			}
+			traits = {
+				chief_of_air_force
+				cair_carpet_bombing_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+	}
+
+	### SPF ###
+	
+	foreign_minister = { ### Person of Influence ###
+		## Foreign Minister ##
+
+		SPR_Jose_Luis_Arrese_Magra_for_pau = {
+			allowed = { original_tag = SPF }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPR_Jose_Luis_Arrese_Magra_for_pau"
+			}
+			traits = {
+				foreign_minister
+				valkist
+				for_iron_fisted_brute
+			}
+		}
+		
+		SPR_Raimundo_Fernandez_Cuesta_for_npo = {
+			allowed = { original_tag = SPF }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPR_Raimundo_Fernandez_Cuesta_eco_npo"
+			}
+			traits = {
+				foreign_minister
+				national_populist
+				for_moderate_among_radicals
+			}
+		}
+	}
+
+	economy_minister = {
+		## Economy Minister ##
+		SPR_Jose_Luis_Arrese_Magra_eco_pau = {
+			allowed = { original_tag = SPF }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPR_Jose_Luis_Arrese_Magra_eco_pau"
+			}
+			traits = {
+				economy_minister
+				valkist
+				eco_resource_industrialist
+			}
+		}
+
+		SPR_Onesimo_Redondo_Ortega_eco_pau = {
+			allowed = { original_tag = SPF }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPR_Onesimo_Redondo_Ortega_eco_pau"
+			}
+			traits = {
+				economy_minister
+				valkist
+				eco_tank_proponent
+			}
+		}
+	}
+	
+	security_minister = {
+		## Security Minister ##
+
+		SPR_Jose_Antonio_Primo_de_Rivera_sec_pau = {
+			allowed = { original_tag = SPF }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPR_Jose_Antonio_Primo_de_Rivera_sec_pau"
+			}
+			traits = {
+				security_minister
+				national_populist
+				sec_man_of_the_people
+			}
+		}
+
+		SPR_Jose_Luis_Arrese_Magra_sec_pau = {
+			allowed = { original_tag = SPF }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPR_Jose_Luis_Arrese_Magra_sec_pau"
+			}
+			traits = {
+				security_minister
+				valkist
+				sec_crime_fighter
+			}
+		}
+		
+		SPR_Pedro_Mourlane_Michelena_sec_pau = {
+			allowed = { original_tag = SPF }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPR_Pedro_Mourlane_Michelena_sec_pau"
+			}
+			traits = {
+				security_minister
+				national_populist
+				sec_man_of_the_people
+			}
+		}
+
+		SPR_Tomas_Conde_de_Redezno_sec_pau = {
+			allowed = { original_tag = SPF }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPR_Tomas_Conde_de_Redezno_sec_pau"
+			}
+			traits = {
+				security_minister
+				national_populist
+				sec_prince_of_terror
+			}
+		}	
+
+		SPA_Dionisio_Ridruejo_sec_ade = {
+			allowed = { original_tag = SPF }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Dionisio_Ridruejo_sec_ade"
+			}
+			traits = {
+				security_minister
+				valkist
+				sec_back_stabber
+			}
+		}	
+		
+		SPA_Tomas_Dominguez_Arevalo_sec_pau = {
+			allowed = { original_tag = SPF }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Dionisio_Ridruejo_sec_ade"
+			}
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_compassionate_gentleman
+			}
+		}
+
+		SPA_Emilio_Mola_Vidal_sec_pau = {
+			allowed = { original_tag = SPF }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Emilio_Mola_Vidal_sec_pau"
+			}
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_prince_of_terror
+			}
+		}		
+
+	}
+
+	chief_of_staff = { ### Chief of Staff ###
+
+		SPR_Onesimo_Redondo_Ortega_cos_pau = {
+			allowed = { original_tag = SPF }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Onesimo_Redondo_Ortega_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPR_Onesimo_Redondo_Ortega_cos_pau"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+			cancel_if_invalid = yes
+		}
+
+	}
+
+	chief_of_army = { ### Chief of Army ###
+
+		SPR_Onesimo_Redondo_Ortega_carm_pau = {
+			allowed = { original_tag = SPF }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Onesimo_Redondo_Ortega_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPR_Onesimo_Redondo_Ortega_carm_pau"
+			}
+			traits = {
+				chief_of_army
+				carm_static_defence_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+	}
+
+	chief_of_navy = { ### Chief of Navy ###
+
+		SPR_Francisco_Moreno_Fernandez_cnav_pau = {
+			allowed = { original_tag = SPF }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Francisco_Moreno_Fernandez_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPR_Francisco_Moreno_Fernandez_cnav_pau"
+			}
+			traits = {
+				chief_of_navy
+				cnav_open_seas_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+	}
+
+	chief_of_air_force = { ### Chief of Air Force ###
+
+		SPR_Jose_Luis_Arrese_Magra_cair_pau = {
+			allowed = { original_tag = SPF }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Jose_Luis_Arrese_Magra_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPR_Jose_Luis_Arrese_Magra_cair_pau"
+			}
+			traits = {
+				chief_of_air_force
+				cair_battlefield_support_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+	}
+
+	### SPM/SPR ###
+	
+	foreign_minister = { ### Person of Influence ###
+		## Foreign Minister ##
+		SPA_Anxel_Casal_for_sde = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Anxel_Casal_for_sde"
+			}
+			traits = {
+				foreign_minister
+				social_democrat
+				for_apologetic_clerk
+			}
+		}
+
+		SPA_Bibiano_Fernandez_Ossorio_for_sde = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Bibiano_Fernandez_Ossorio_for_sde"
+			}
+			traits = {
+				foreign_minister
+				social_democrat
+				for_great_compromiser
+			}
+		}
+
+		SPA_Alfonso_Castelao_for_sli = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Alfonso_Castelao_for_sli"
+			}
+			traits = {
+				foreign_minister
+				social_liberal
+				for_general_staffer
+			}
+		}
+
+		SPA_Anton_Vilar_Ponte_for_sli = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Anton_Vilar_Ponte_for_sli"
+			}
+			traits = {
+				foreign_minister
+				social_liberal
+				for_ideological_crusader
+			}
+		}
+
+		SPA_Diego_Hidalgo_Duran_for_sli = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Diego_Hidalgo_Duran_for_sli"
+			}
+			traits = {
+				foreign_minister
+				social_liberal
+				for_general_staffer
+			}
+		}
+
+		SPA_Diego_Martinez_Barrio_for_sli = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Diego_Martinez_Barrio_for_sli"
+			}
+			traits = {
+				foreign_minister
+				social_liberal
+				for_the_cloak_n_dagger_schemer
+			}
+		}
+
+		SPA_Alvaro_Cunqueiro_Mora_for_mli = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Alvaro_Cunqueiro_Mora_for_mli"
+			}
+			traits = {
+				foreign_minister
+				market_liberal
+				for_iron_fisted_brute
+			}
+		}
+
+		SPA_Claudio_Sanchez_Albornoz_for_mli = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Claudio_Sanchez_Albornoz_for_mli"
+			}
+			traits = {
+				foreign_minister
+				market_liberal
+				for_ideological_crusader
+			}
+		}
+
+		SPA_Jose_Martinez_de_Velasco_for_mli = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Jose_Martinez_de_Velasco_for_mli"
+			}
+			traits = {
+				foreign_minister
+				market_liberal
+				for_iron_fisted_brute
+			}
+		}
+
+		SPA_Niceto_Alcala_Zamora_for_mli = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Niceto_Alcala_Zamora_for_mli"
+			}
+			traits = {
+				foreign_minister
+				market_liberal
+				for_great_compromiser
+			}
+		}
+
+		SPA_Ramon_Otero_Pedrayo_for_mli = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Ramon_Otero_Pedrayo_for_mli"
+			}
+			traits = {
+				foreign_minister
+				market_liberal
+				for_apologetic_clerk
+			}
+		}
+
+		SPA_Alexandre_Boveda_Iglesias_for_sco = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Alexandre_Boveda_Iglesias_for_sco"
+			}
+			traits = {
+				foreign_minister
+				social_conservative
+				for_great_compromiser
+			}
+		}
+
+		SPA_Claudio_Sanchez_Albornoz_for_sco = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Claudio_Sanchez_Albornoz_for_sco"
+			}
+			traits = {
+				foreign_minister
+				social_conservative
+				for_ideological_crusader
+			}
+		}
+
+		SPA_Francisco_de_Borbon_de_la_Torre_for_sco = {
+			allowed = { original_tag = SPM }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Francisco_de_Borbon_de_la_Torre_for_sco"
+			}
+			traits = {
+				foreign_minister
+				social_conservative
+				for_general_staffer
+			}
+		}
+
+		SPA_Francisco_Javier_de_Landaburu_for_sco = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Francisco_Javier_de_Landaburu_for_sco"
+			}
+			traits = {
+				foreign_minister
+				social_conservative
+				for_great_compromiser
+			}
+		}
+
+		SPA_Niceto_Alcala_Zamora_for_sco = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Niceto_Alcala_Zamora_for_sco"
+			}
+			traits = {
+				foreign_minister
+				social_conservative
+				for_great_compromiser
+			}
+		}
+
+		SPA_Alberto_M_Artejo_Alvarez_for_ade = {
+			allowed = { original_tag = SPM }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Alberto_M_Artejo_Alvarez_for_ade"
+			}
+			traits = {
+				foreign_minister
+				authoritarian_democrat
+				for_apologetic_clerk
+			}
+		}
+
+		SPA_Francisco_de_Asis_Serrat_y_Bonastre_for_pau = {
+			allowed = { original_tag = SPM }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Francisco_de_Asis_Serrat_y_Bonastre_for_pau"
+			}
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_ideological_crusader
+			}
+		}
+	}
+
+	economy_minister = {
+		## Economy Minister ##
+		SPA_Anxel_Casal_eco_sde = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Anxel_Casal_eco_sde"
+			}
+			traits = {
+				economy_minister
+				social_democrat
+				eco_laissez_faire_capitalist
+			}
+		}
+
+		SPA_Bibiano_Fernandez_Ossorio_eco_sde = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Bibiano_Fernandez_Ossorio_eco_sde"
+			}
+			traits = {
+				economy_minister
+				social_democrat
+				eco_infantry_proponent
+			}
+		}
+
+		SPA_Alejandro_Lerroux_Garcia_eco_sli = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Alejandro_Lerroux_Garcia_eco_sli"
+			}
+			traits = {
+				economy_minister
+				social_liberal
+				eco_administrative_genius
+			}
+		}
+
+		SPA_Bernardo_Giner_de_los_Rios_Garcia_eco_sli = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Bernardo_Giner_de_los_Rios_Garcia_eco_sli"
+			}
+			traits = {
+				economy_minister
+				social_liberal
+				eco_theoretical_scientist
+			}
+		}
+
+		SPA_Emilio_Herrera_eco_sli = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Emilio_Herrera_eco_sli"
+			}
+			traits = {
+				economy_minister
+				social_liberal
+				eco_air_superiority_proponent
+			}
+		}
+
+		SPA_Diego_Hidalgo_Duran_eco_mli = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Diego_Hidalgo_Duran_eco_mli"
+			}
+			traits = {
+				economy_minister
+				market_liberal
+				eco_military_entrepreneur
+			}
+		}
+
+		SPA_Emilio_Herrera_eco_mli = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Emilio_Herrera_eco_mli"
+			}
+			traits = {
+				economy_minister
+				market_liberal
+				eco_air_superiority_proponent
+			}
+		}
+
+		SPA_Joaquin_Chapaprieta_Torregosa_eco_mli = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Joaquin_Chapaprieta_Torregosa_eco_mli"
+			}
+			traits = {
+				economy_minister
+				market_liberal
+				eco_resource_industrialist
+			}
+		}
+
+		SPA_Josep_Tarradellas_eco_mli = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Josep_Tarradellas_eco_mli"
+			}
+			traits = {
+				economy_minister
+				market_liberal
+				eco_resource_industrialist
+			}
+		}
+
+		SPA_Alexandre_Boveda_Iglesias_eco_sco = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Alexandre_Boveda_Iglesias_eco_sco"
+			}
+			traits = {
+				economy_minister
+				social_conservative
+				eco_laissez_faire_capitalist
+			}
+		}
+
+		SPA_Diego_Hidalgo_Duran_eco_sco = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Diego_Hidalgo_Duran_eco_sco"
+			}
+			traits = {
+				economy_minister
+				social_conservative
+				eco_military_entrepreneur
+			}
+		}
+
+		SPA_Francisco_de_Borbon_de_la_Torre_eco_sco = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Francisco_de_Borbon_de_la_Torre_eco_sco"
+			}
+			traits = {
+				economy_minister
+				social_conservative
+				eco_tank_proponent
+			}
+		}
+
+		SPA_Juan_Vigon_Suerodiaz_eco_sco = {
+			allowed = { original_tag = SPM }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Juan_Vigon_Suerodiaz_eco_sco"
+			}
+			traits = {
+				economy_minister
+				social_conservative
+				eco_theoretical_scientist
+			}
+		}
+
+		SPA_Jose_Calvo_Sotelo_eco_ade = {
+			allowed = {
+				OR = {
+					original_tag = SPM
+					AND = {
+						original_tag = SPF
+						SPM = {
+							exists = no
+						}
+					}
+				}
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Jose_Calvo_Sotelo_eco_ade"
+			}
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_laissez_faire_capitalist
+			}
+		}
+
+		SPA_Mariano_Anso_eco_ade = {
+			allowed = { original_tag = SPM }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Mariano_Anso_eco_ade"
+			}
+			traits = {
+				economy_minister
+				authoritarian_democrat
+				eco_battlefield_support_proponent
+			}
+		}
+
+		SPA_Fidel_Davila_Arrondo_eco_pau = {
+			allowed = { original_tag = SPM }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Fidel_Davila_Arrondo_eco_pau"
+			}
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_military_entrepreneur
+			}
+		}
+
+		SPA_German_Gil_y_Yuste_eco_pau = {
+			allowed = { original_tag = SPM }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_German_Gil_y_Yuste_eco_pau"
+			}
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_infantry_proponent
+			}
+		}
+
+		SPA_Juan_Vigon_Suerodiaz_eco_pau = {
+			allowed = { original_tag = SPM }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Juan_Vigon_Suerodiaz_eco_pau"
+			}
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_theoretical_scientist
+			}
+		}
+	}
+
+	security_minister = {
+		## Security Minister ##
+		SPA_Amos_Salvador_Carreras_sec_sde = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Amos_Salvador_Carreras_sec_sde"
+			}
+			traits = {
+				security_minister
+				social_democrat
+				sec_man_of_the_people
+			}
+		}
+
+		SPA_Marcelino_Domingo_Sanjuan_sec_sde = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Marcelino_Domingo_Sanjuan_sec_sde"
+			}
+			traits = {
+				security_minister
+				social_democrat
+				sec_compassionate_gentleman
+			}
+		}
+
+		SPA_Alejandro_Lerroux_Garcia_sec_sli = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Alejandro_Lerroux_Garcia_sec_sli"
+			}
+			traits = {
+				security_minister
+				social_liberal
+				sec_crooked_kleptocrat
+			}
+		}
+
+		SPA_Diego_Martinez_Barrio_sec_sli = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Diego_Martinez_Barrio_sec_sli"
+			}
+			traits = {
+				security_minister
+				social_liberal
+				sec_prince_of_terror
+			}
+		}
+
+		SPA_Federico_Escofet_Alsina_sec_sli = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Federico_Escofet_Alsina_sec_sli"
+			}
+			traits = {
+				security_minister
+				social_liberal
+				sec_crime_fighter
+			}
+		}
+
+		SPA_Miguel_Maura_Gamazo_sec_mli = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Miguel_Maura_Gamazo_sec_mli"
+			}
+			traits = {
+				security_minister
+				market_liberal
+				sec_compassionate_gentleman
+			}
+		}
+
+		SPA_Antonio_Roson_sec_sco = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Antonio_Roson_sec_sco"
+			}
+			traits = {
+				security_minister
+				social_conservative
+				sec_silent_lawyer
+			}
+		}
+
+		SPA_Jose_Martinez_de_Velasco_sec_sco = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Jose_Martinez_de_Velasco_sec_sco"
+			}
+			traits = {
+				security_minister
+				social_conservative
+				sec_crime_fighter
+			}
+		}
+
+		SPA_Miguel_Cabanellas_Ferrer_sec_sco = {
+			allowed = { original_tag = SPM }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Miguel_Cabanellas_Ferrer_sec_sco"
+			}
+			traits = {
+				security_minister
+				social_conservative
+				sec_crime_fighter
+			}
+		}
+
+		SPA_Miguel_Maura_Gamazo_sec_sco = {
+			allowed = { original_tag = SPR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Miguel_Maura_Gamazo_sec_sco"
+			}
+			traits = {
+				security_minister
+				social_conservative
+				sec_compassionate_gentleman
+			}
+		}
+
+		SPA_Blas_Perez_Gonzalez_sec_ade = {
+			allowed = { original_tag = SPM }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Blas_Perez_Gonzalez_sec_ade"
+			}
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_silent_lawyer
+			}
+		}
+
+		SPA_Miguel_Ponte_Manso_de_Zuniga_sec_ade = {
+			allowed = { original_tag = SPM }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Miguel_Ponte_Manso_de_Zuniga_sec_ade"
+			}
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_crime_fighter
+			}
+		}
+
+		SPA_Gonzalo_Queipo_de_Llano_sec_pau = {
+			allowed = { original_tag = SPF }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Gonzalo_Queipo_de_Llano_sec_pau"
+			}
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_man_of_the_people
+			}
+		}
+
+	}
+
+	chief_of_staff = { ### Chief of Staff ###
+		SPA_Miguel_Cabanellas_Ferrer_cos_mli = {
+			allowed = { original_tag = SPM }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Miguel_Cabanellas_Ferrer_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Miguel_Cabanellas_Ferrer_cos_mli"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_psychology
+			}
+			cancel_if_invalid = yes
+		}
+
+		SPA_Carlos_Asensio_Cabanillas_cos_ade = {
+			allowed = { original_tag = SPM }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Carlos_Asensio_Cabanillas_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Carlos_Asensio_Cabanillas_cos_ade"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+			cancel_if_invalid = yes
+		}
+
+		SPA_Francisco_Franco_Bahamonde_cos_ade = {
+			allowed = { original_tag = SPM }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Francisco_Franco_Bahamonde_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Francisco_Franco_Bahamonde_cos_ade"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_psychology
+			}
+			cancel_if_invalid = yes
+		}
+
+		SPA_Camilo_Alonso_Vega_cos_pau = {
+			allowed = { original_tag = SPM }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Camilo_Alonso_Vega_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Camilo_Alonso_Vega_cos_pau"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+			cancel_if_invalid = yes
+		}
+
+		SPA_Emilio_Mola_Vidal_cos_pau = {
+			allowed = { original_tag = SPF }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Emilio_Mola_Vidal_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Emilio_Mola_Vidal_cos_pau"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_manoeuvre
+			}
+			cancel_if_invalid = yes
+		}
+
+		SPA_Fidel_Davila_Arrondo_cos_pau = {
+			allowed = { original_tag = SPM }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Fidel_Davila_Arrondo_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Fidel_Davila_Arrondo_cos_pau"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_psychology
+			}
+			cancel_if_invalid = yes
+		}
+
+		SPA_Gonzalo_Queipo_de_Llano_cos_pau = {
+			allowed = { original_tag = SPF }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Gonzalo_Queipo_de_Llano_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Gonzalo_Queipo_de_Llano_cos_pau"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+			cancel_if_invalid = yes
+		}
+
+		SPA_Jose_Sanjurjo_Sacanell_cos_pau = {
+			allowed = { original_tag = SPM }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Jose_Sanjurjo_Sacanell_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Jose_Sanjurjo_Sacanell_cos_pau"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_psychology
+			}
+			cancel_if_invalid = yes
+		}
+
+		SPA_Ricardo_de_Rada_cos_pau = {
+			allowed = { original_tag = SPM }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Ricardo_de_Rada_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Ricardo_de_Rada_cos_pau"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+			cancel_if_invalid = yes
+		}
+
+	}
+
+	chief_of_army = { ### Chief of Army ###
+		SPA_Miguel_Cabanellas_Ferrer_carm_mli = {
+			allowed = { original_tag = SPM }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Miguel_Cabanellas_Ferrer_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Miguel_Cabanellas_Ferrer_carm_mli"
+			}
+			traits = {
+				chief_of_army
+				carm_static_defence_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		SPA_Antonio_Ortega_carm_sco = {
+			allowed = { original_tag = SPR }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Antonio_Ortega_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Antonio_Ortega_carm_sco"
+			}
+			traits = {
+				chief_of_army
+				carm_elastic_defence_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		SPA_Carlos_Asensio_Cabanillas_carm_ade = {
+			allowed = { original_tag = SPM }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Carlos_Asensio_Cabanillas_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Carlos_Asensio_Cabanillas_carm_ade"
+			}
+			traits = {
+				chief_of_army
+				carm_armoured_spearhead_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		SPA_Fidel_Davila_Arrondo_carm_ade = {
+			allowed = { original_tag = SPM }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Fidel_Davila_Arrondo_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Fidel_Davila_Arrondo_carm_ade"
+			}
+			traits = {
+				chief_of_army
+				carm_static_defence_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		SPA_Francisco_Franco_Bahamonde_carm_ade = {
+			allowed = { original_tag = SPM }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Francisco_Franco_Bahamonde_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Francisco_Franco_Bahamonde_carm_ade"
+			}
+			traits = {
+				chief_of_army
+				carm_decisive_battle_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		SPA_Camilo_Alonso_Vega_carm_pau = {
+			allowed = { original_tag = SPM }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Camilo_Alonso_Vega_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Camilo_Alonso_Vega_carm_pau"
+			}
+			traits = {
+				chief_of_army
+				carm_decisive_battle_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		SPA_Emilio_Mola_Vidal_carm_pau = {
+			allowed = { original_tag = SPF }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Emilio_Mola_Vidal_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Emilio_Mola_Vidal_carm_pau"
+			}
+			traits = {
+				chief_of_army
+				carm_decisive_battle_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		SPA_Gonzalo_Queipo_de_Llano_carm_pau = {
+			allowed = { original_tag = SPF }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Gonzalo_Queipo_de_Llano_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Gonzalo_Queipo_de_Llano_carm_pau"
+			}
+			traits = {
+				chief_of_army
+				carm_guns_and_butter_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		SPA_Jose_Sanjurjo_Sacanell_carm_pau = {
+			allowed = { original_tag = SPM }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Jose_Sanjurjo_Sacanell_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Jose_Sanjurjo_Sacanell_carm_pau"
+			}
+			traits = {
+				chief_of_army
+				carm_armoured_spearhead_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		SPA_Ricardo_de_Rada_carm_pau = {
+			allowed = { original_tag = SPM }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Ricardo_de_Rada_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Ricardo_de_Rada_carm_pau"
+			}
+			traits = {
+				chief_of_army
+				carm_static_defence_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+	}
+
+	chief_of_navy = { ### Chief of Navy ###
+		SPA_Josep_Tarradellas_cnav_mli = {
+			allowed = { original_tag = SPR }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Josep_Tarradellas_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Josep_Tarradellas_cnav_mli"
+			}
+			traits = {
+				chief_of_navy
+				cnav_base_control_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		SPA_Miguel_Maura_Gamazo_cnav_mli = {
+			allowed = { original_tag = SPR }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Miguel_Maura_Gamazo_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Miguel_Maura_Gamazo_cnav_mli"
+			}
+			traits = {
+				chief_of_navy
+				cnav_decisive_battle_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		SPA_Miguel_Maura_Gamazo_cnav_sco = {
+			allowed = { original_tag = SPM }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Miguel_Maura_Gamazo_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Miguel_Maura_Gamazo_cnav_sco"
+			}
+			traits = {
+				chief_of_navy
+				cnav_decisive_battle_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+	}
+
+	chief_of_air_force = { ### Chief of Air Force ###
+		SPA_Camilo_Alonso_Vega_cair_mli = {
+			allowed = { original_tag = SPR }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Camilo_Alonso_Vega_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Camilo_Alonso_Vega_cair_mli"
+			}
+			traits = {
+				chief_of_air_force
+				cair_vertical_envelopment_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		SPA_Diego_Hidalgo_Duran_cair_mli = {
+			allowed = { original_tag = SPR }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Diego_Hidalgo_Duran_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Diego_Hidalgo_Duran_cair_mli"
+			}
+			traits = {
+				chief_of_air_force
+				cair_air_superiority_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		SPA_Emilio_Herrera_cair_mli = {
+			allowed = { original_tag = SPR }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Emilio_Herrera_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Emilio_Herrera_cair_mli"
+			}
+			traits = {
+				chief_of_air_force
+				cair_battlefield_support_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		SPA_Juan_Vigon_Suerodiaz_cair_ade = {
+			allowed = { original_tag = SPM }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Juan_Vigon_Suerodiaz_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SPA_Juan_Vigon_Suerodiaz_cair_ade"
+			}
+			traits = {
+				chief_of_air_force
+				cair_battlefield_support_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+	}	
+	
+}

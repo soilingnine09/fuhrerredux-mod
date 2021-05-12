@@ -1,0 +1,400 @@
+﻿##############################
+# Kingdom of Bulgaria events #
+##############################
+# Created by darknight1342 #
+###########################
+
+add_namespace = bulgaria
+
+#Intro
+country_event = { 
+	id = bulgaria.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bulgaria.1"}
+    title = "The Kingdom of Bulgaria"
+    desc = bulgaria.1.d
+    picture = GFX_report_event_soviet_soldiers_tank
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = "Unity Makes Strength."
+    }
+}
+
+#Help Hungary against Romania
+country_event = {
+	id = bulgaria.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bulgaria.2"}
+	title = "Honour the Hungarian Alliance?"
+	desc = bulgaria.2.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	trigger = {
+		has_country_flag = bul_hun_treaty
+		HUN = {
+			has_war_with = ROM
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "Onwards, to war!"
+			add_to_war = { targeted_alliance = HUN enemy = ROM }
+		clr_country_flag = bul_hun_treaty
+	}
+	option = {
+		name = "War would be unfavourable at this time."
+		add_political_power = -50
+		clr_country_flag = bul_hun_treaty
+	}
+}
+country_event = { #Hungarian-backed collie coup
+	id = bulgaria.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bulgaria.3"}
+	title = "Hungarians instigate a coup!"
+	desc = bulgaria.3.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = {
+		name = "The uprising is crushed!"
+		set_country_flag = BUL_CIVIL_WAR_AVERTED
+		add_manpower = -10000
+		add_stability = -0.05
+		add_popularity = { ideology = collectivist popularity = -0.2 }
+		add_popularity = { ideology = vanguardist popularity = -0.2 }
+		add_popularity = { ideology = libertarian_socialist popularity = -0.2 }
+	}
+
+	option = {
+		name = "The Collectivists are successful!"
+		trigger = {
+			NOT = {
+				has_global_flag = bul_civil_war
+			}
+		}
+		set_country_flag = BUL_CIVIL_WAR_AVERTED
+		add_ideas = workers_republic
+		set_politics = {
+			ruling_party = collectivist
+			elections_allowed = no
+		}
+		add_popularity = { ideology = collectivist popularity = 0.2 }
+		add_popularity = { ideology = vanguardist popularity = 0.05 }
+		add_popularity = { ideology = libertarian_socialist popularity = 0.05 }
+		diplomatic_relation = { country = HUN relation = non_aggression_pact }
+		HUN = {
+			country_event = { id = hungary.53 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = bulgaria.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bulgaria.4"}
+	title = "Orange Guard skirmishes with the Army!"
+	desc = bulgaria.4.d
+	picture = report_event_generic_conference
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BUL
+		date > 1936.2.1
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	option = {
+		name = "We will put them in their graves!"
+		add_manpower = -1000
+		add_popularity = { ideology = collectivist popularity = 0.015 }
+		add_popularity = { ideology = vanguardist popularity = 0.015 }
+		add_popularity = { ideology = libertarian_socialist popularity = 0.015 }
+		hidden_effect = { 
+			country_event = { days = 15 id = bulgaria.5 }
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = bulgaria.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bulgaria.5"}
+	title = "The Orange Guard is driven into hiding"
+	desc = bulgaria.5.d
+	picture = report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Violent revolutionaries have no place in our Nation!"
+		add_stability = -0.025
+		add_popularity = { ideology = collectivist popularity = -0.03 }
+		add_popularity = { ideology = vanguardist popularity = -0.03 }
+		add_popularity = { ideology = libertarian_socialist popularity = -0.03 }
+		ai_chance = { factor = 100 }
+		hidden_effect = { 
+			country_event = { days = 15 id = bulgaria.6 }
+		}
+	}
+}
+
+country_event = {
+	id = bulgaria.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bulgaria.6"}
+	title = "Drop in support for the Tsar"
+	desc = bulgaria.6.d
+	picture = report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Worrying, but there is little we can do."
+		add_stability = -0.025
+		add_popularity = { ideology = authoritarian_democrat popularity = -0.025 }
+		hidden_effect = { 
+			country_event = { days = 31 id = bulgaria.7 }
+		}
+		ai_chance = { factor = 0 }
+	}
+
+	option = {
+		name = "We need to form a United Front with the other parties!"
+		add_stability = -0.1
+		add_political_power = -50
+		hidden_effect = { 
+			country_event = { days = 31 id = bulgaria.10 }
+		}
+		ai_chance = { factor = 100 } #AI will always take this to avoid civil-war spam
+	}
+}
+
+country_event = {
+	id = bulgaria.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bulgaria.7"}
+	title = "Socialist Riots in Burgas!"
+	desc = bulgaria.7.d
+	picture = report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Break them up!"
+		add_popularity = { ideology = collectivist popularity = 0.03 }
+		add_manpower = -1000
+		hidden_effect = { 
+			country_event = { days = 31 id = bulgaria.8 }
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = bulgaria.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bulgaria.8"}
+	title = "Fighting spreads across the Nation!"
+	desc = bulgaria.8.d
+	picture = report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Send in the army! Send everything we have!"
+		add_manpower = -9000
+		add_stability = -0.05
+		hidden_effect = { 
+			country_event = { days = 31 id = bulgaria.9 }
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = bulgaria.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bulgaria.9"}
+	title = "The Leftists proclaim the Bulgarian Socialist Republic!"
+	desc = bulgaria.9.d
+	picture = report_event_generic_conference
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Traitorous bastards! To war!"
+		set_global_flag = bul_civil_war
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.05 }
+		add_popularity = { ideology = social_democrat popularity = -0.25 }
+		add_popularity = { ideology = libertarian_socialist popularity = -0.25 }
+		add_popularity = { ideology = collectivist popularity = -0.25 }
+		add_popularity = { ideology = vanguardist popularity = -0.25 }
+		add_stability = 0.25
+		add_political_power = 100
+		BSR = { 
+			every_state = {
+				limit = {
+					is_core_of = BUL
+				}
+				add_core_of = BSR
+			}
+			transfer_state = 211
+			transfer_state = 764
+			transfer_state = 766
+			load_OOB = BSR
+		}
+		declare_war_on = {
+			type = annex_everything
+			target = BSR
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = bulgaria.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bulgaria.10"}
+	title = "Pact with the Extremists"
+	desc = bulgaria.10.d
+	picture = report_event_generic_conference
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "It's nessecary."
+		add_political_power = -50
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.05 }
+		add_popularity = { ideology = paternal_autocrat popularity = -0.1 }
+		hidden_effect = { 
+			country_event = { days = 10 id = bulgaria.11 }
+		}
+		ai_chance = { factor = 100 }
+	}
+
+	option = {
+		name = "It's dangerous."
+		hidden_effect = { 
+			country_event = { days = 10 id = bulgaria.7 }
+		}
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+	id = bulgaria.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bulgaria.11"}
+	title = "Pact with the Democrats"
+	desc = bulgaria.11.d
+	picture = report_event_generic_conference
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Promise future reform for a temporary alliance."
+		add_political_power = -100
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.05 }
+		add_popularity = { ideology = social_liberal popularity = -0.1 }
+		add_popularity = { ideology = market_liberal popularity = -0.1 }
+		add_popularity = { ideology = social_conservative popularity = -0.1 }
+		hidden_effect = { 
+			country_event = { days = 10 id = bulgaria.12 }
+		}
+		ai_chance = { factor = 100 }
+	}
+
+	option = {
+		name = "We have no need for that!"
+		hidden_effect = { 
+			country_event = { days = 10 id = bulgaria.7 }
+		}
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+	id = bulgaria.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bulgaria.12"}
+	title = "Free and fair elections?"
+	desc = bulgaria.12.d
+	picture = report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Democracy might be our best shot at appeasing the People."
+		add_political_power = -150
+		country_event = { days = 31 id = bulgaria.13 }
+		hidden_effect = { 
+			country_event = { days = 1 id = bulgaria.14 }
+		}
+		ai_chance = { factor = 100 }
+	}
+
+	option = {
+		name = "Democracy?! Why would that be suitable in this point in time?!"
+		add_stability = 0.05
+		add_political_power = 50
+		hidden_effect = { 
+			country_event = { days = 10 id = bulgaria.7 }
+		}
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+	id = bulgaria.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bulgaria.13"}
+	title = "Free Elections"
+	desc = bulgaria.13.d
+	picture = report_event_generic_conference
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "The United Front is victorious!"
+		set_country_flag = BUL_CIVIL_WAR_AVERTED
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.1 }
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = no
+		}
+		ai_chance = { factor = 60 }
+	}
+
+	option = {
+		name = "The BRSDP manages a popular vote!"
+		set_country_flag = BUL_CIVIL_WAR_AVERTED
+		add_popularity = { ideology = libertarian_socialist popularity = 0.15 }
+		set_politics = {
+			ruling_party = libertarian_socialist
+			elections_allowed = no
+		}
+		ai_chance = { factor = 40 }
+	}
+}
+
+country_event = {
+	id = bulgaria.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bulgaria.14"}
+	title = "The Left Deradicalizes"
+	desc = bulgaria.14.d
+	picture = report_event_generic_conference
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Not good, not bad."
+		add_popularity = { ideology = libertarian_socialist popularity = 0.2 }
+		add_popularity = { ideology = collectivist popularity = -0.2 }
+		add_popularity = { ideology = vanguardist popularity = -0.2 }
+		ai_chance = { factor = 100 }
+	}
+}

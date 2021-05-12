@@ -1,0 +1,967 @@
+ideas = {
+### Head of Government
+head_of_government = {
+		SOV_Mikhail_Kalinin_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Mikhail_Kalinin_hog"}
+		allowed = { original_tag = SOV }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = vanguardist
+				has_government = collectivist
+			}
+			has_country_flag = can_replace_hog
+			NOT = {has_country_flag = Mikhail_Kalinin_dead}
+			NOT = {has_country_flag = Mikhail_Kalinin_hog_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+		}
+		traits = { head_of_government collectivist hog_old_compromiser }
+		cancel_if_invalid = no
+	}
+		SOV_Grigory_Zinoviev_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Grigory_Zinoviev_hog"}
+		allowed = { original_tag = SOV }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = vanguardist
+				has_government = collectivist
+			}
+			has_country_flag = can_replace_hog
+			NOT = {has_country_flag = Grigory_Zinoviev_dead}
+			NOT = {has_country_flag = Grigory_Zinoviev_hog_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+		}
+		traits = { head_of_government collectivist hog_naive_optimist }
+		cancel_if_invalid = no
+	}
+		SOV_Mikhail_Frunze_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Mikhail_Frunze_hog"}
+		allowed = { original_tag = SOV }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = vanguardist
+				has_government = collectivist
+			}
+			has_country_flag = can_replace_hog
+			NOT = {has_country_flag = Mikhail_Frunze_dead}
+			NOT = {has_country_flag = Mikhail_Frunze_hog_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+		}
+		traits = { head_of_government collectivist hog_charismatic_charmer }
+		cancel_if_invalid = no
+	}
+		SOV_Georgy_Malenkov_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Georgy_Malenkov_hog"}
+		allowed = { original_tag = SOV }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = vanguardist
+				has_government = collectivist
+			}
+			has_country_flag = can_replace_hog
+			NOT = {has_country_flag = Georgy_Malenkov_dead}
+			NOT = {has_country_flag = Georgy_Malenkov_hog_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+		}
+		traits = { head_of_government vanguardist hog_political_protege }
+		cancel_if_invalid = no
+	}
+		SOV_Grigori_Sokolnikov_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Grigori_Sokolnikov_hog"}
+		allowed = { original_tag = SOV }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = vanguardist
+				has_government = collectivist
+				has_government = social_democrat
+			}
+			has_country_flag = can_replace_hog
+			NOT = {has_country_flag = Grigori_Sokolnikov_dead}
+			NOT = {has_country_flag = Grigori_Sokolnikov_hog_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+		}
+		traits = { head_of_government libertarian_socialist hog_charismatic_charmer }
+		cancel_if_invalid = no
+	}
+}
+### Foreign Minister
+foreign_minister = {
+		SOV_Vyacheslav_Molotov_for = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Vyacheslav_Molotov_for"}
+		allowed = { original_tag = SOV }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = vanguardist
+				has_government = collectivist
+			}
+			NOT = {has_country_flag = Vyacheslav_Molotov_dead}
+			NOT = {has_country_flag = Vyacheslav_Molotov_for_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = for_cannot_be_replaced}		}
+		traits = { foreign_minister vanguardist for_iron_fisted_brute }
+		cancel_if_invalid = no
+	}
+		SOV_Andery_Vyshinsky_for = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Andery_Vyshinsky_for"}
+		allowed = { original_tag = SOV }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = vanguardist
+				has_government = collectivist
+			}
+			NOT = {has_country_flag = Andery_Vyshinsky_dead}
+			NOT = {has_country_flag = Andery_Vyshinsky_for_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = for_cannot_be_replaced}		}
+		traits = { foreign_minister vanguardist for_the_cloak_n_dagger_schemer }
+		cancel_if_invalid = no
+	}
+		SOV_Alexandra_Kollontai_for = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Alexandra_Kollontai_for"}
+		allowed = { original_tag = SOV }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = vanguardist
+				has_government = collectivist
+			}
+			NOT = {has_country_flag = Alexandra_Kollontai_dead}
+			NOT = {has_country_flag = Alexandra_Kollontai_for_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = for_cannot_be_replaced}		}
+		traits = { foreign_minister collectivist for_apologetic_clerk }
+		cancel_if_invalid = no
+	}
+		SOV_Maxim_Gorky_for = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Maxim_Gorky_for"}
+		allowed = { original_tag = SOV }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = vanguardist
+				has_government = collectivist
+				has_government = social_democrat
+			}
+			NOT = {has_country_flag = Maxim_Gorky_dead}
+			NOT = {has_country_flag = Maxim_Gorky_for_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = for_cannot_be_replaced}		}
+		traits = { foreign_minister libertarian_socialist for_biased_intellectual }
+		cancel_if_invalid = no
+	}
+}
+### Economic Minister
+economy_minister = {
+		SOV_Nikolay_Krestinsky_eco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Nikolay_Krestinsky_eco"}
+		allowed = { original_tag = SOV }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = vanguardist
+				has_government = collectivist
+			}
+			NOT = {has_country_flag = Nikolay_Krestinsky_dead}
+			NOT = {has_country_flag = Nikolay_Krestinsky_eco_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = eco_cannot_be_replaced}		}
+		traits = { economy_minister collectivist eco_administrative_genius }
+		cancel_if_invalid = no
+	}
+		SOV_Lazar_Kaganovich_eco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Lazar_Kaganovich_eco"}
+		allowed = { original_tag = SOV }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = vanguardist
+				has_government = collectivist
+			}
+			NOT = {has_country_flag = Lazar_Kaganovich_dead}
+			NOT = {has_country_flag = Lazar_Kaganovich_eco_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = eco_cannot_be_replaced}		}
+		traits = { economy_minister vanguardist eco_balanced_budget_economy }
+		cancel_if_invalid = no
+	}
+		SOV_Lev_Kamenev_eco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Lev_Kamenev_eco"}
+		allowed = { original_tag = SOV }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = vanguardist
+				has_government = collectivist
+			}
+			NOT = {has_country_flag = Lev_Kamenev_dead}
+			NOT = {has_country_flag = Lev_Kamenev_eco_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = eco_cannot_be_replaced}		}
+		traits = { economy_minister collectivist eco_balanced_budget_economy }
+		cancel_if_invalid = no
+	}
+		SOV_Alexander_Bogdanov_eco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Alexander_Bogdanov_eco"}
+		allowed = { original_tag = SOV }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = vanguardist
+				has_government = collectivist
+				has_government = social_democrat
+			}
+			NOT = {has_country_flag = Alexander_Bogdanov_dead}
+			NOT = {has_country_flag = Alexander_Bogdanov_eco_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = eco_cannot_be_replaced}		}
+		traits = { economy_minister libertarian_socialist eco_theoretical_scientist }
+		cancel_if_invalid = no
+	}
+}
+### Security Minister
+security_minister = {
+		SOV_Nikolai_Yezhov_sec = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Nikolai_Yezhov_sec"}
+		allowed = { original_tag = SOV }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = vanguardist
+				has_government = collectivist
+			}
+			NOT = {has_country_flag = Nikolai_Yezhov_dead}
+			NOT = {has_country_flag = Nikolai_Yezhov_sec_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = sec_cannot_be_replaced}
+		}
+		traits = { security_minister vanguardist sec_back_stabber }
+		cancel_if_invalid = no
+	}
+		SOV_Vladimir_Antonov_Ovseyenko_sec = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Vladimir_Antonov_Ovseyenko_sec"}
+		allowed = { original_tag = SOV }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = vanguardist
+				has_government = collectivist
+			}
+			NOT = {has_country_flag = Vladimir_Antonov_Ovseyenko_dead}
+			NOT = {has_country_flag = Vladimir_Antonov_Ovseyenko_sec_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = sec_cannot_be_replaced}
+		}
+		traits = { security_minister collectivist sec_crime_fighter }
+		cancel_if_invalid = no
+	}
+		SOV_Anatoly_Lunacharsky_sec = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Anatoly_Lunacharsky_sec"}
+		allowed = { original_tag = SOV }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = vanguardist
+				has_government = collectivist
+				has_government = social_democrat
+			}
+			NOT = {has_country_flag = Anatoly_Lunacharsky_dead}
+			NOT = {has_country_flag = Anatoly_Lunacharsky_sec_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = sec_cannot_be_replaced}
+		}
+		traits = { security_minister libertarian_socialist sec_crime_fighter }
+		cancel_if_invalid = no
+	}
+		SOV_Vasily_Blokhin_sec = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Vasily_Blokhin_sec"}
+		allowed = { original_tag = SOV }
+		available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = vanguardist
+				has_government = collectivist
+			}
+			NOT = {has_country_flag = Vasily_Blokhin_dead}
+			NOT = {has_country_flag = Vasily_Blokhin_sec_fired}
+			NOT = {has_country_flag = ministers_cannot_be_replaced}
+			NOT = {has_country_flag = sec_cannot_be_replaced}
+		}
+		traits = { security_minister vanguardist sec_crime_fighter }
+		cancel_if_invalid = no
+	}
+}
+	chief_of_staff = { ### Chief of Staff ###
+		SOV_Aleksei_I_Antonov_cos_tot = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Aleksei_I_Antonov_cos_tot"}
+			allowed = { original_tag = SOV }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Aleksei_I_Antonov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Aleksei_I_Antonov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SOV_Aleksei_I_Antonov_cos_tot"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_psychology
+			}
+			cancel_if_invalid = yes
+		}
+
+		SOV_Alesandr_M_Vasilevskij_cos_tot = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Alesandr_M_Vasilevskij_cos_tot"}
+			allowed = { original_tag = SOV }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Alesandr_M_Vasilevskij_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Alesandr_M_Vasilevskij_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SOV_Alesandr_M_Vasilevskij_cos_tot"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_defence
+			}
+			cancel_if_invalid = yes
+		}
+
+		SOV_Boris_M_Shaposhnikov_cos_tot = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Boris_M_Shaposhnikov_cos_tot"}
+			allowed = { original_tag = SOV }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Boris_M_Shaposhnikov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Boris_M_Shaposhnikov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SOV_Boris_M_Shaposhnikov_cos_tot"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+			cancel_if_invalid = yes
+		}
+
+		SOV_Georgiy_K_Zhukov_cos_tot = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Georgiy_K_Zhukov_cos_tot"}
+			allowed = { original_tag = SOV }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Georgiy_K_Zhukov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Georgiy_K_Zhukov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SOV_Georgiy_K_Zhukov_cos_tot"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_fire_support
+			}
+			cancel_if_invalid = yes
+		}
+
+		SOV_Kirill_A_Meretskov_cos_tot = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Kirill_A_Meretskov_cos_tot"}
+			allowed = { original_tag = SOV }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Kirill_A_Meretskov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Kirill_A_Meretskov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SOV_Kirill_A_Meretskov_cos_tot"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_psychology
+			}
+			cancel_if_invalid = yes
+		}
+
+		SOV_Michail_N_Tuchatjevskij_cos_tot = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Michail_N_Tuchatjevskij_cos_tot"}
+			allowed = { original_tag = SOV }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Michail_N_Tuchatjevskij_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Michail_N_Tuchatjevskij_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SOV_Michail_N_Tuchatjevskij_cos_tot"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_manoeuvre
+			}
+			cancel_if_invalid = yes
+		}
+
+		SOV_Nikolaj_Bulganin_cos_tot = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Nikolaj_Bulganin_cos_tot"}
+			allowed = { original_tag = SOV }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Nikolaj_Bulganin_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Nikolaj_Bulganin_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SOV_Nikolaj_Bulganin_cos_tot"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+			cancel_if_invalid = yes
+		}
+
+		SOV_Sergei_M_Shtemenko_cos_tot = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Sergei_M_Shtemenko_cos_tot"}
+			allowed = { original_tag = SOV }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Sergei_M_Shtemenko_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Sergei_M_Shtemenko_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SOV_Sergei_M_Shtemenko_cos_tot"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_manoeuvre
+			}
+			cancel_if_invalid = yes
+		}
+
+		SOV_Aleksandr_I_Yegorov_cos_syn = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Aleksandr_I_Yegorov_cos_syn"}
+			allowed = { original_tag = SOV }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Aleksandr_I_Yegorov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Aleksandr_I_Yegorov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SOV_Aleksandr_I_Yegorov_cos_syn"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_manoeuvre
+			}
+			cancel_if_invalid = yes
+		}
+
+		SOV_Vladimir_A_Ovseyenko_cos_syn = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Vladimir_A_Ovseyenko_cos_syn"}
+			allowed = { original_tag = SOV }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Vladimir_A_Ovseyenko_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Vladimir_A_Ovseyenko_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SOV_Vladimir_A_Ovseyenko_cos_syn"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_manoeuvre
+			}
+			cancel_if_invalid = yes
+		}
+
+		SOV_Fedor_I_Trukhin_cos_rso = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Fedor_I_Trukhin_cos_rso"}
+			allowed = { original_tag = SOV }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Fedor_I_Trukhin_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Fedor_I_Trukhin_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SOV_Fedor_I_Trukhin_cos_rso"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+			cancel_if_invalid = yes
+		}
+
+		SOV_Konstantin_K_Rokossovsky_cos_rso = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Konstantin_K_Rokossovsky_cos_rso"}
+			allowed = { original_tag = SOV }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Konstantin_K_Rokossovsky_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Konstantin_K_Rokossovsky_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SOV_Konstantin_K_Rokossovsky_cos_rso"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_manoeuvre
+			}
+			cancel_if_invalid = yes
+		}
+
+		SOV_Vladimir_Triandafillov_cos_rso = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Vladimir_Triandafillov_cos_rso"}
+			allowed = { original_tag = SOV }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Vladimir_Triandafillov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Vladimir_Triandafillov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SOV_Vladimir_Triandafillov_cos_rso"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_manoeuvre
+			}
+			cancel_if_invalid = yes
+		}
+	}
+
+	chief_of_army = { ### Chief of Army ###
+		SOV_Kliment_Y_Voroshilov_carm_tot = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Kliment_Y_Voroshilov_carm_tot"}
+			allowed = { original_tag = SOV }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Kliment_Y_Voroshilov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Kliment_Y_Voroshilov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SOV_Kliment_Y_Voroshilov_carm_tot"
+			}
+			traits = {
+				chief_of_army
+				carm_guns_and_butter_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		SOV_Rodion_Malinovskij_carm_tot = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Rodion_Malinovskij_carm_tot"}
+			allowed = { original_tag = SOV }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Rodion_Malinovskij_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Rodion_Malinovskij_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SOV_Rodion_Malinovskij_carm_tot"
+			}
+			traits = {
+				chief_of_army
+				carm_armoured_spearhead_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		SOV_Semen_K_Timoshenko_carm_tot = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Semen_K_Timoshenko_carm_tot"}
+			allowed = { original_tag = SOV }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Semen_K_Timoshenko_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Semen_K_Timoshenko_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SOV_Semen_K_Timoshenko_carm_tot"
+			}
+			traits = {
+				chief_of_army
+				carm_elastic_defence_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		SOV_Aleksandr_I_Yegorov_carm_syn = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Aleksandr_I_Yegorov_carm_syn"}
+			allowed = { original_tag = SOV }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Aleksandr_I_Yegorov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Aleksandr_I_Yegorov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SOV_Aleksandr_I_Yegorov_carm_syn"
+			}
+			traits = {
+				chief_of_army
+				carm_elastic_defence_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		SOV_Michail_V_Frunze_carm_rso = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Michail_V_Frunze_carm_rso"}
+			allowed = { original_tag = SOV }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Michail_V_Frunze_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Michail_V_Frunze_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SOV_Michail_V_Frunze_carm_rso"
+			}
+			traits = {
+				chief_of_army
+				carm_armoured_spearhead_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+	}
+
+	chief_of_navy = { ### Chief of Navy ###
+		SOV_Mikhail_V_Viktorov_cnav_tot = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Mikhail_V_Viktorov_cnav_tot"}
+			allowed = { original_tag = SOV }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Mikhail_V_Viktorov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Mikhail_V_Viktorov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SOV_Mikhail_V_Viktorov_cnav_tot"
+			}
+			traits = {
+				chief_of_navy
+				cnav_power_projection_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		SOV_Nikolai_Kuznetsov_cnav_tot = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Nikolai_Kuznetsov_cnav_tot"}
+			allowed = { original_tag = SOV }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Nikolai_Kuznetsov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Nikolai_Kuznetsov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SOV_Nikolai_Kuznetsov_cnav_tot"
+			}
+			traits = {
+				chief_of_navy
+				cnav_decisive_battle_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		SOV_Ivan_S_Isakov_cnav_syn = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Ivan_S_Isakov_cnav_syn"}
+			allowed = { original_tag = SOV }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Ivan_S_Isakov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Ivan_S_Isakov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SOV_Ivan_S_Isakov_cnav_syn"
+			}
+			traits = {
+				chief_of_navy
+				cnav_base_control_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		SOV_Vladimir_M_Orlov_cnav_syn = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Vladimir_M_Orlov_cnav_syn"}
+			allowed = { original_tag = SOV }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Vladimir_M_Orlov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Vladimir_M_Orlov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SOV_Vladimir_M_Orlov_cnav_syn"
+			}
+			traits = {
+				chief_of_navy
+				cnav_indirect_approach_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		SOV_Konstantin_Dushenov_cnav_rso = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Konstantin_Dushenov_cnav_rso"}
+			allowed = { original_tag = SOV }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Konstantin_Dushenov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Konstantin_Dushenov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SOV_Konstantin_Dushenov_cnav_rso"
+			}
+			traits = {
+				chief_of_navy
+				cnav_indirect_approach_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+	}
+
+	chief_of_air_force = { ### Chief of Air Force ###
+		SOV_Aleksandr_D_Loktionov_cair_tot = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Aleksandr_D_Loktionov_cair_tot"}
+			allowed = { original_tag = SOV }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Aleksandr_D_Loktionov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Aleksandr_D_Loktionov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SOV_Aleksandr_D_Loktionov_cair_tot"
+			}
+			traits = {
+				chief_of_air_force
+				cair_battlefield_support_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		SOV_Alexander_Novikov_cair_tot = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Alexander_Novikov_cair_tot"}
+			allowed = { original_tag = SOV }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Alexander_Novikov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Alexander_Novikov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SOV_Alexander_Novikov_cair_tot"
+			}
+			traits = {
+				chief_of_air_force
+				cair_air_superiority_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		SOV_Pavel_V_Rychagov_cair_tot = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Pavel_V_Rychagov_cair_tot"}
+			allowed = { original_tag = SOV }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Pavel_V_Rychagov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Pavel_V_Rychagov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SOV_Pavel_V_Rychagov_cair_tot"
+			}
+			traits = {
+				chief_of_air_force
+				cair_naval_aviation_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		SOV_YV_Vladimiroch_cair_tot = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_YV_Vladimiroch_cair_tot"}
+			allowed = { original_tag = SOV }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = YV_Vladimiroch_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = YV_Vladimiroch_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SOV_YV_Vladimiroch_cair_tot"
+			}
+			traits = {
+				chief_of_air_force
+				cair_carpet_bombing_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		SOV_Aleksandr_E_Golovanov_cair_syn = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Aleksandr_E_Golovanov_cair_syn"}
+			allowed = { original_tag = SOV }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Aleksandr_E_Golovanov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Aleksandr_E_Golovanov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SOV_Aleksandr_E_Golovanov_cair_syn"
+			}
+			traits = {
+				chief_of_air_force
+				cair_battlefield_support_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		SOV_Yakov_I_Alksnis_cair_syn = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Yakov_I_Alksnis_cair_syn"}
+			allowed = { original_tag = SOV }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Yakov_I_Alksnis_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Yakov_I_Alksnis_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SOV_Yakov_I_Alksnis_cair_syn"
+			}
+			traits = {
+				chief_of_air_force
+				cair_air_superiority_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		SOV_Yakov_V_Smushkevich_cair_syn = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SOV_Yakov_V_Smushkevich_cair_syn"}
+			allowed = { original_tag = SOV }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Yakov_V_Smushkevich_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Yakov_V_Smushkevich_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SOV_Yakov_V_Smushkevich_cair_syn"
+			}
+			traits = {
+				chief_of_air_force
+				cair_battlefield_support_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+	}
+
+}

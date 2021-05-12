@@ -1,0 +1,44 @@
+GRL_German_Politics = {
+    lemko_incorporation = {
+
+        icon = border_war
+
+		available = {
+			has_completed_focus = generic_ideological_fanaticism
+			has_army_manpower = { size > 10000 }
+			LMK = {
+				owns_state = 800
+			}
+		}
+
+        visible = {
+			LMK = {
+				owns_state = 800
+			}
+		}
+
+		highlight_states = {
+			OR = {
+				state = 800
+				state = 801		
+			}
+		}
+
+		ai_will_do = {
+			base = 80
+			modifier = { 
+				has_army_manpower = { size > 20000 }
+				factor = 10
+			}
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision lemko_incorporation"
+			GER = {
+				country_event = ger.2072
+			}
+		}
+    }
+}
