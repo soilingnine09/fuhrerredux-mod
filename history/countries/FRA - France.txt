@@ -975,10 +975,3 @@ if = {
 		}
 	}
 }
-
-create_country_leader = {
-	name = "Lennie Wallis"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
-	expire = "1965.1.1"
-	ideology = valkist_subtype
-}
