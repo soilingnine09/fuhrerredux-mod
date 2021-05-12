@@ -282,31 +282,3 @@ if = {
 		}
 	}
 }
-
-create_country_leader = {
-	name = "Durans Doyle"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-	expire = "1965.1.1"
-	ideology = vanguardist_subtype
-}
-
-create_country_leader = {
-	name = "Nethaneel Idowu"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-	expire = "1965.1.1"
-	ideology = libertarian_socialist_subtype
-}
-
-create_country_leader = {
-	name = "Ratimir McAlister"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = market_liberal_subtype
-}
-
-create_country_leader = {
-	name = "Slamet Jefferson"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-	expire = "1965.1.1"
-	ideology = collectivist_subtype
-}
