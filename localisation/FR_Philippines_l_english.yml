@@ -1092,6 +1092,11 @@ phi.122.d:0 "The Foreign Ministry have received a proposal from the [From.GetAdj
 phi.122.a:0 "Accept it."
 phi.122.b:0 "We will march to [From.Capital.GetName]"
 
+# Philippine Union Events
+phr.1.t:0 "Revolution Triumpant!"
+phr.1.d:0 "We have now in control of the entire Philippine Archipelago, the revolutionaries are now incharge and the old capitalist order is now abolished. The workers that have been long oppressed have been freed and they have broken the chains!"
+phr.1.a:0 "Mabuhay ang Manggagawa!"
+
 # AEDA Events
 seasia.1.t:0 "Creation of AEDA"
 seasia.1.d:0 "The Asian Economic and Development Association is an organization which aims to provide economic aid and developmental programs to its members in order to improve their economic and industrial capabilities which in turn, can help in limiting western and imperialist influences in the region."

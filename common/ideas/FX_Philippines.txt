@@ -8,7 +8,7 @@ ideas = {
             picture = PHI_promises_of_elections
             modifier = {
                 political_power_cost = 0.25
-                authoritarian_democrat_drift = -0.01
+                authoritarian_democrat_drift = -0.05
             }
         }
         PHI_agriculture_economy = {

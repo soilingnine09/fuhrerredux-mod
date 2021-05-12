@@ -1,0 +1,66 @@
+# News Events
+# created by: dax0102
+
+news_event = { # Laurel Assassinated
+    id = news.1
+    title = news.1.t
+    desc = news.1.d
+    major = yes
+    is_triggered_only = yes
+    show_major = { NOT = { tag = PHI } }
+    option = { name = news.1.a }
+}
+news_event = { # Quezon Inaugurated
+    id = news.2
+    title = news.2.t
+    desc = news.2.d
+    major = yes
+    is_triggered_only = yes
+    show_major = { NOT = { tag = PHI } }
+    option = { name = news.2.a }
+}
+news_event = {
+    id = news.3
+    title = news.3.t
+    desc = news.3.d
+    major = yes
+    is_triggered_only = yes
+    show_major = { NOT = { tag = PHI } }
+    option = { name = news.3.a }
+}
+news_event = {
+    id = news.4
+    title = news.4.t
+    desc = news.4.d
+    major = yes
+    is_triggered_only = yes
+    show_major = { NOT = { tag = PHI } }
+    option = { name = news.4.a }
+}
+news_event = {
+    id = news.5
+    title = news.5.t
+    desc = news.5.d
+    major = yes
+    is_triggered_only = yes
+    show_major = { NOT = { tag = PHI } }
+    option = { name = news.5.a }
+}
+news_event = {
+    id = news.6
+    title = news.6.t
+    desc = news.6.d
+    major = yes
+    is_triggered_only = yes
+    show_major = { NOT = { tag = PHI } }
+    option = { name = news.6.a }
+}
+news_event = {
+    id = news.7
+    title = news.7.t
+    desc = news.7.d
+    major = yes
+    is_triggered_only = yes
+    show_major = { NOT = { tag = PHI } }
+    option = { name = news.7.a }
+}
