@@ -1,0 +1,111 @@
+﻿##### Division Templates ##### 
+division_template = {
+	name = "Striletsʹka militsiya"			# Rifle Militia
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+	}
+}
+##### OOB #####
+units = {		
+	division= {
+		name = "1-y Striletsʹka militsiya"		
+		location = 6593
+		division_template = "Striletsʹka militsiya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {
+		name = "2-y Striletsʹka militsiya"		
+		location = 11561
+		division_template = "Striletsʹka militsiya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {
+		name = "3-y Striletsʹka militsiya"		
+		location = 11405
+		division_template = "Striletsʹka militsiya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {
+		name = "4-y Striletsʹka militsiya"		
+		location = 3767
+		division_template = "Striletsʹka militsiya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {
+		name = "5-y Striletsʹka militsiya"		
+		location = 11489
+		division_template = "Striletsʹka militsiya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {
+		name = "6-y Striletsʹka militsiya"		
+		location = 3531
+		division_template = "Striletsʹka militsiya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {
+		name = "7-y Striletsʹka militsiya"		
+		location = 3573
+		division_template = "Striletsʹka militsiya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+}
+
+#########################
+###Starting Production###
+#########################
+#Couldn't work, will get back to - Cinnabun
+#instant_effect = {
+#		
+#	add_equipment_production = {
+#		equipment = {
+#			type = infantry_equipment_1
+#			creator = UKR
+#		}
+#		requested_factories = 3
+#		progress = 0.1
+#		efficiency = 100
+#	}
+#	add_equipment_production = {
+#		equipment = {
+#			type = artillery_equipment_1
+#			creator = UKR 
+#		}
+#		requested_factories = 2
+#		progress = 0.3
+#		efficiency = 100
+#	}
+#	add_equipment_production = {
+#		equipment = {
+#			type = fighter_equipment_0
+#			creator = UKR 
+#		}
+#		requested_factories = 1
+#		progress = 0.3
+#		efficiency = 100
+#	}
+#	add_equipment_production = {
+#		equipment = {
+#			type = tac_bomber_equipment_1
+#			creator = UKR
+#		}
+#		requested_factories = 1
+#		progress = 0.3
+#		efficiency = 100
+#	}
+#}

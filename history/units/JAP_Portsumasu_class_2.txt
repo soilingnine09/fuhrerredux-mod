@@ -1,0 +1,14 @@
+#Second Portsumasu Class Destroyers
+
+units = {
+	navy = {
+		name = "Second Converted Destroyer Fleet"
+		base = 1092 #Kure
+		location = 1092 #Kure
+
+		ship = { name = "Nanzan" definition = destroyer equipment = { destroyer1 = { amount = 1 owner = JAP version_name = "Portsumasu Class" } } }
+		ship = { name = "Ryojunko" definition = destroyer equipment = { destroyer1 = { amount = 1 owner = JAP version_name = "Portsumasu Class" } } }
+		ship = { name = "Ryouyou" definition = destroyer equipment = { destroyer1 = { amount = 1 owner = JAP version_name = "Portsumasu Class" } } }
+		ship = { name = "Chintao" definition = destroyer equipment = { destroyer1 = { amount = 1 owner = JAP version_name = "Portsumasu Class" } } }
+	} 
+}

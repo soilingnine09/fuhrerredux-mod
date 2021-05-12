@@ -1,0 +1,29 @@
+units = {
+	division = {
+		name = "3 'Heijo' Kankoku Shidan"
+		location = 4052
+		division_template = "Kankoku shidan"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+}
+
+units = {
+	division = {
+		name = "4 'Hasan' Kankoku Shidan"
+		location = 4052
+		division_template = "Kankoku shidan"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+}
+
+units = {
+	division = {
+		name = "5 'Nigawa' Kankoku Shidan"
+		location = 4052
+		division_template = "Kankoku shidan"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+}

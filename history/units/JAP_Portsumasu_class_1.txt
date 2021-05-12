@@ -1,0 +1,15 @@
+#First Portsumasu Class Destroyers
+
+units = {
+	navy = {
+		name = "First Converted Destroyer Fleet"
+		base = 1092 #Kure
+		location = 1092 #Kure
+
+		ship = { name = "Portsumasu" definition = destroyer equipment = { destroyer1 = { amount = 1 owner = JAP version_name = "Portsumasu Class" } } }
+		ship = { name = "Sandepu" definition = destroyer equipment = { destroyer1 = { amount = 1 owner = JAP version_name = "Portsumasu Class" } } }
+		ship = { name = "Mukden" definition = destroyer equipment = { destroyer1 = { amount = 1 owner = JAP version_name = "Portsumasu Class" } } }
+		ship = { name = "Tsushima" definition = destroyer equipment = { destroyer1 = { amount = 1 owner = JAP version_name = "Portsumasu Class" } } }
+
+	} 
+}

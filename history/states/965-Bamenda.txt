@@ -1,0 +1,28 @@
+state={
+	id=965
+	name="STATE_965"
+	resources={
+	}
+
+	history={
+		add_core_of = NGA
+		add_core_of = CMR
+		owner = ENG
+		buildings = {
+			infrastructure = 3
+			arms_factory = 0
+			industrial_complex = 1
+			}
+		victory_points = {
+			2050 1 
+		}
+
+	}
+
+	provinces={
+		5095 13269 13257
+	}
+	manpower=1646416
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

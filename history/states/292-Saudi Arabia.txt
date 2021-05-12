@@ -1,0 +1,29 @@
+
+state={
+	id=292
+	name="STATE_292"
+	manpower = 1440000
+	
+	state_category = town
+	resources={
+		oil=15.0
+	}
+
+	history={
+		owner = ARB
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		victory_points = {
+			12727 5
+		}
+		add_core_of = SAU
+		add_core_of = ARB
+	}
+
+	provinces={
+		5024 5093 7995 8004 8060 10892 12727 12813 12870 
+	}
+}
