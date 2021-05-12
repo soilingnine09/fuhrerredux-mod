@@ -7,7 +7,7 @@ PHI_FUHRERREICH_DESC:0 "Oppressed for 333 years, the Philippines revolted agains
 PHI_AI_BEHAVIOR:0 "@PHI Philippines"
 
 PHI_RULE_BROTHERS_UNITED:0 "Brothers United"
-PHI_RULE_BROTHERS_UNITED_DESC:0 "New elections will be called and either the Partido Nacionalista or Partido Liberal will win the elections.\n\n§GGovernment:§! Social Conservative or Market Liberal\n\n§GForeign Policy:§! Try to Found AEDA"
+PHI_RULE_BROTHERS_UNITED_DESC:0 "New elections will be called and either the Partido Nacionalista or Partido Liberal will win the elections.\n\n§GGovernment:§! Social Conservative or Market Liberal\n§GForeign Policy:§! Try to Found AEDA"
 PHI_RULE_PRUSSIA_OF_THE_EAST:0 "Prussia of the East"
 PHI_RULE_PRUSSIA_OF_THE_EAST_DESC:0 "The Armed Forces of the Philippines will take control of the Governemnt and establish a militarized state challenging Japanese Hegemony.\n\n§GGovernment:§! Paternal Autocrat\n§GForeign Policy:§! Side with the USA"
 PHI_RULE_TESTING_IMPERIALISM:0 "Testing Imperialism"
