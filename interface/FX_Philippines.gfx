@@ -162,7 +162,7 @@ spriteTypes = {
         texturefile = "gfx/interface/ministers/PHI/PHI_Jose_G_David.dds"
     }
     spriteType = {
-        name = "GFX_idea_PHI_Serafin_Fausto_eco_sco"
+        name = "GFX_idea_PHI_Serafin_Fausto_eco_ade"
         texturefile = "gfx/interface/ministers/PHI/PHI_Serafin_Fausto.dds"
     }
     spriteType = {
