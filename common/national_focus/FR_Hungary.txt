@@ -1036,6 +1036,74 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = { #demand Illyria
+		id = hun_demand_illyria
+		icon = GFX_goal_HUN_step_on_skull
+		cost = 10
+		x = 10
+		y = 7
+		will_lead_to_war_with = SER
+		ai_will_do = {
+			factor = 320
+			modifier = {
+				factor = 100
+				HUN = {
+					has_army_manpower = { size > 99999 }
+				}
+			}
+			modifier = {
+				factor = 50
+				SER = {
+					is_in_faction = no
+				}
+			}
+		}
+		available = {
+			has_war = no
+			45 = {
+				NOT = {
+					is_owned_and_controlled_by = HUN
+				}
+			}
+			750 = {
+				NOT = {
+					is_owned_and_controlled_by = HUN
+				}
+			}
+			985 = {
+				NOT = {
+					is_owned_and_controlled_by = HUN
+				}
+			}
+		}
+		prerequisite = {
+			focus = hun_demand_transylvania
+		}
+		bypass = {
+			HUN = {
+				has_war_with = SER
+			}
+			45 = {
+				is_owned_and_controlled_by = HUN
+			}
+			750 = {
+				is_owned_and_controlled_by = HUN
+			}
+			985 = {
+				is_owned_and_controlled_by = HUN
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus hun_demand_illyria"
+			SER = {
+				country_event = {
+					id = hun_for.7
+					days = 3
+				}
+			}
+		}
+	}
 	
 	focus = { #demand Burgenland
 		id = hun_demand_austria
