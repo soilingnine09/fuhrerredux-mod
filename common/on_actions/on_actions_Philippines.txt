@@ -58,7 +58,6 @@ on_actions = {
             }
         }
     }
-
     on_capitulation = {
         effect = {
             if = {
@@ -83,7 +82,6 @@ on_actions = {
             }
         }
     }
-
     # ROOT is the winner
     # FROM gets annexed
     on_annex = {

@@ -215,6 +215,7 @@ country_event = { # Trip to Congress
         }
         hidden_effect = {
             set_country_flag = PHI_interim_president_dead
+            set_country_flag = PHI_1936_elections_cancelled
 
             remove_every_minister = yes
             add_ideas = {
@@ -239,10 +240,11 @@ country_event = { # Presidential Elections
     is_triggered_only = yes
 
     trigger = {
-        original_tag = PHI
-        has_elections = yes
-        date > 1936.11.15
+        tag = PHI
+        date > 1936.1.1
+        date < 1937.1.1
         NOT = {
+            has_country_flag = PHI_1936_elections_cancelled
             has_country_flag = PHI_had_1936_elections
         }
     }
@@ -660,7 +662,7 @@ country_event = { # Aguinaldo's Position
         hidden_effect = {
             remove_ideas_with_trait = security_minister
             add_ideas = PHI_Benigno_Aquino_Sr_sec_ade
-            hold_election = ROOT
+            clr_country_flag = PHI_1936_elections_cancelled
         }
     }
 }
@@ -781,7 +783,7 @@ country_event = { # Demands
             remove_ideas = PHI_worker_strikes1
         }
         hidden_effect = {
-            hold_election = ROOT
+            clr_country_flag = PHI_1936_elections_cancelled
         }
     }
 }
@@ -1207,10 +1209,11 @@ country_event = { # 1940 Presidential Elections
     is_triggered_only = yes
 
     trigger = {
-        date > 1940.11.15
-        has_elections = yes
-        original_tag = PHI
+        tag = PHI
+        date > 1940.1.1
+        date < 1940.12.30
         NOT = {
+            has_country_flag = PHI_1940_elections_cancelled
             has_country_flag = PHI_had_1940_elections
         }
     }

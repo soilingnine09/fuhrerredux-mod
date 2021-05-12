@@ -983,13 +983,13 @@ ideas = {
                 eco_construction_magnate
             }
         }
-        PHI_Serafin_Fausto_eco_sco = {
+        PHI_Serafin_Fausto_eco_ade = {
             allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
                 economy_minister
-                social_conservative
+                authoritarian_democrat
                 eco_laissez_faire_capitalist
             }
         }
@@ -999,7 +999,7 @@ ideas = {
             cancel_if_invalid = no
             traits = {
                 economy_minister
-                social_conservative
+                paternal_autocrat
                 eco_military_entrepreneur
             }
         }

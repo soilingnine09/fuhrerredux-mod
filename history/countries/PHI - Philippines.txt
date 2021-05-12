@@ -49,9 +49,6 @@ if = {
 	}
 }
 
-# 54th Independence Day
-country_event = { id = phi.51 days = 893 }
-
 add_ideas = {
 	PHI_promise_of_elections
 	PHI_agriculture_economy
