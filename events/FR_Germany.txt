@@ -4546,6 +4546,12 @@ country_event = { # Denmark Folds
 		784 = {
 			add_core_of = GER
 		}
+		915 = {
+			add_core_of = GER
+		}
+		991 = {
+			add_core_of = GER
+		}
 		FRA = {
 				modify_country_flag = { flag = FRA_german_threat value = 1 }
 		}
@@ -4795,7 +4801,7 @@ country_event = { # Germany. Time to strike Denmark
 				}
 			}
 			declare_war_on = {
-				target = DEN
+				target = SHO
 				type = annex_everything
 			}
 		}
@@ -4807,11 +4813,20 @@ country_event = { # Germany. Time to strike Denmark
 				}
 			}
 			create_wargoal = {
-				target = DEN
+				target = SHO
 				type = annex_everything
 			}
 		}
 		58 = {
+			add_core_of = GER
+		}
+		784 = {
+			add_core_of = GER
+		}
+		915 = {
+			add_core_of = GER
+		}
+		991 = {
 			add_core_of = GER
 			}
 			FRA = {

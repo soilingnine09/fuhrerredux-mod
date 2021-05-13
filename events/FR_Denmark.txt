@@ -2595,33 +2595,33 @@ country_event = {
 ###Kiel stuffs###
 #################
 
-#country_event = {
-#	id = denmark.100
-#	immediate = {log = "[GetDateText]: [Root.GetName]: event denmark.100"}
-#	title = "Unrest in the Kiel Zone"
-#	desc = denmark.100.d
-#	picture = GFX_report_event_generic_riot
-#
-#	fire_only_once = yes
-#	
-#	trigger = {
-#		tag = DEN
-#		date > 1936.8.1
-#	}
-#	
-#	mean_time_to_happen = {
-#		days = 0
-#	}
-#
-#	option = {
-#		name = "Not again!"
-#		set_global_flag = SHO_ANGERY_KIELERS
-#		hidden_effect = {
-#			SHO = {
-#				country_event = { days = 0 id = denmark.101 }
-#			}
-#		}
-#		add_political_power = -50
-#		ai_chance = { factor = 100 }
-#	}
-#}
+country_event = {
+	id = denmark.100
+	immediate = {log = "[GetDateText]: [Root.GetName]: event denmark.100"}
+	title = "Unrest in the Kiel Zone"
+	desc = denmark.100.d
+	picture = GFX_report_event_generic_riot
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = DEN
+		date > 1936.8.1
+	}
+	
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	option = {
+		name = "Not again!"
+		set_global_flag = SHO_ANGERY_KIELERS
+		hidden_effect = {
+			SHO = {
+				country_event = { days = 0 id = denmark.101 }
+			}
+		}
+		add_political_power = -50
+		ai_chance = { factor = 100 }
+	}
+}
