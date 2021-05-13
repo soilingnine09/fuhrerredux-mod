@@ -330,7 +330,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "King George V"
+	name = "George V"
 	desc = "POLITICS_GEORGE_V_DESC"
 	picture = "Portrait_Britain_George_V.tga"
 	expire = "1938.1.1"
@@ -341,7 +341,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "King George V"
+	name = "George V"
 	desc = "POLITICS_GEORGE_V_DESC"
 	picture = "Portrait_Britain_George_V.tga"
 	expire = "1938.1.1"
@@ -352,7 +352,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "King George V"
+	name = "George V"
 	desc = "POLITICS_GEORGE_V_DESC"
 	picture = "Portrait_Britain_George_V.tga"
 	expire = "1938.1.1"
@@ -363,7 +363,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "King George V"
+	name = "George V"
 	desc = "POLITICS_GEORGE_V_DESC"
 	picture = "Portrait_Britain_George_V.tga"
 	expire = "1938.1.1"
@@ -374,7 +374,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "King George V"
+	name = "George V"
 	desc = "POLITICS_GEORGE_V_DESC"
 	picture = "Portrait_Britain_George_V.tga"
 	expire = "1938.1.1"
@@ -385,7 +385,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "King George V"
+	name = "George V"
 	desc = "POLITICS_GEORGE_V_DESC"
 	picture = "Portrait_Britain_George_V.tga"
 	expire = "1938.1.1"
@@ -396,7 +396,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "King George V"
+	name = "George V"
 	desc = "POLITICS_GEORGE_V_DESC"
 	picture = "Portrait_Britain_George_V.tga"
 	expire = "1938.1.1"
@@ -407,7 +407,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "King George V"
+	name = "George V"
 	desc = "POLITICS_GEORGE_V_DESC"
 	picture = "Portrait_Britain_George_V.tga"
 	expire = "1938.1.1"

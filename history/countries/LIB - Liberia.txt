@@ -29,11 +29,11 @@ set_politics = {
 
 set_popularities = {
     vanguardist = 0
-    collectivist = 1
+    collectivist = 0
     libertarian_socialist = 0
     social_democrat = 2
     social_liberal = 6
-    market_liberal = 27
+    market_liberal = 28
     social_conservative = 35
     authoritarian_democrat = 5
     paternal_autocrat = 22
@@ -41,6 +41,16 @@ set_popularities = {
     valkist = 0
 }
 
+create_country_leader = {
+	name = "Garvey I"
+	desc = "POLITICS_MARCUS_GARVEY_DESC"
+	picture = "Portrait_LIB_Marcus_Garvey.tga"
+	expire = "1965.1.1"
+	ideology = valkist_subtype
+	traits = {
+		#
+	}
+}
 
 create_country_leader = {
 	name = "Edwin Barclay"
@@ -51,4 +61,174 @@ create_country_leader = {
 	traits = {
 		#
 	}
+}
+
+create_country_leader = {
+	name = "Anthony Dashward Wilson"
+	desc = "POLITICS_DASH_WILSON_DESC"
+	picture = "Portrait_LIB_Anthony_Wilson.tga"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Thomas J. Faulkner"
+	desc = "POLITICS_THOMAS_FAULKNER_DESC"
+	picture = "Portrait_LIB_Thomas_J_Faulkner.tga"
+	expire = "1965.1.1"
+	ideology = social_democrat_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "William Tubman"
+	desc = "POLITICS_WILLIAM_TUBMAN_DESC"
+	picture = "Portrait_LIB_William_Tubman.tga"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Alford Russ"
+	desc = "POLITICS_ALFORD_RUSS_DESC"
+	picture = "Portrait_LIB_Alford_Russ.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Harvey S. Firestone"
+	desc = "POLITICS_HARVEY_FIRESTONE_DESC"
+	picture = "Portrait_LIB_Harvey_Firestone.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Frank E. Tolbert"
+	desc = "POLITICS_FRANK_TOLBERT_DESC"
+	picture = "Portrait_LIB_Frank_Tolbert.tga"
+	expire = "1965.1.1"
+	ideology = national_populist_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "No Leadership"
+	desc = "POLITICS_NO_LEADERSHIP_DESC"
+	picture = "Portrait_LIB_Mud_Hut.tga"
+	expire = "1965.1.1"
+	ideology = vanguardist_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "No Leadership"
+	desc = "POLITICS_NO_LEADERSHIP_DESC"
+	picture = "Portrait_LIB_Mud_Hut.tga"
+	expire = "1965.1.1"
+	ideology = collectivist_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "No Leadership"
+	desc = "POLITICS_NO_LEADERSHIP_DESC"
+	picture = "Portrait_LIB_Mud_Hut.tga"
+	expire = "1965.1.1"
+	ideology = libertarian_socialist_subtype
+	traits = {
+		#
+	}
+}
+
+### Field Marshal
+### Corps Commander
+create_field_marshal = { #Auto-Generated
+	name = "Alford Russ"
+	portrait_path = "gfx/leaders/LIB/Portrait_LIB_Alford_Russ.tga"
+	traits = {
+		infantry_leader
+		trait_engineer
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = { #Auto-Generated
+	name = "Jenkins Yancey"
+	portrait_path = "gfx/leaders/LIB/Portrait_LIB_Jenkins_Yancey.tga"
+	traits = {
+		trickster
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = { 
+	name = "Wilson Ballard"
+	portrait_path = "gfx/leaders/LIB/Portrait_LIB_Wilson_Ballard.tga"
+	traits = {
+		jungle_rat
+		ranger
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = { 
+	name = "Arthur Brown"
+	portrait_path = "gfx/leaders/LIB/Portrait_LIB_Arthur_Brown.tga"
+	traits = {
+		career_officer
+		commando
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = { 
+	name = "Richard Newton"
+	portrait_path = "gfx/leaders/LIB/Portrait_LIB_Richard_Newton.tga"
+	traits = {
+		infantry_officer
+		trait_reckless
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 3
 }

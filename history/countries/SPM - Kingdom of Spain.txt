@@ -117,7 +117,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "HM Alfonso XIII"
+	name = "Alfonso XIII"
 	desc = "POLITICS_ALFONSO_XIII_DESC"
 	picture = "Portrait_SPM_Alfonso_XIII.tga"
 	expire = "1965.1.1"
@@ -128,7 +128,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "HM Alfonso XIII"
+	name = "Alfonso XIII"
 	desc = "POLITICS_ALFONSO_XIII_DESC"
 	picture = "Portrait_SPM_Alfonso_XIII.tga"
 	expire = "1965.1.1"
@@ -139,7 +139,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "HM Alfonso XIII"
+	name = "Alfonso XIII"
 	desc = "POLITICS_ALFONSO_XIII_DESC"
 	picture = "Portrait_SPM_Alfonso_XIII.tga"
 	expire = "1965.1.1"
@@ -150,7 +150,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "HM Alfonso XIII"
+	name = "Alfonso XIII"
 	desc = "POLITICS_ALFONSO_XIII_DESC"
 	picture = "Portrait_SPM_Alfonso_XIII.tga"
 	expire = "1965.1.1"
@@ -161,7 +161,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "HM Alfonso XIII"
+	name = "Alfonso XIII"
 	desc = "POLITICS_ALFONSO_XIII_DESC"
 	picture = "Portrait_SPM_Alfonso_XIII.tga"
 	expire = "1965.1.1"
@@ -172,7 +172,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "HM Alfonso XIII"
+	name = "Alfonso XIII"
 	desc = "POLITICS_ALFONSO_XIII_DESC"
 	picture = "Portrait_SPM_Alfonso_XIII.tga"
 	expire = "1965.1.1"
@@ -183,7 +183,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "HM Alfonso XIII"
+	name = "Alfonso XIII"
 	desc = "POLITICS_ALFONSO_XIII_DESC"
 	picture = "Portrait_SPM_Alfonso_XIII.tga"
 	expire = "1965.1.1"
