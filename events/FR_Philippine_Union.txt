@@ -7,7 +7,7 @@ country_event = {
     id = phr.1
     title = phr.1.t
     desc = phr.1.d
-    picture = GFX_report_event_german_troops_paris
+    picture = GFX_report_event_PHI_rizal_park
 
     is_triggered_only = yes
 
