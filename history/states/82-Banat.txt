@@ -18,6 +18,7 @@ state={
 			infrastructure = 5
 		}
 		add_claim_by = ROM
+		add_claim_by = HUN
 	}
 
 	provinces={

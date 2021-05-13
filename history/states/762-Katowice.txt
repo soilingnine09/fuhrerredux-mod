@@ -12,7 +12,7 @@ state={
 		victory_points = {
 			6711 5 
 		}
-
+		add_claim_by = HUN
 	}
 
 	provinces={
