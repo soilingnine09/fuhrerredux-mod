@@ -3616,6 +3616,7 @@ focus_tree = {
 		available = {
 			OR = {
 				owns_state = 58
+				owns_state = 991
 				owns_state = 915
 				owns_state = 784
 				SHO = {

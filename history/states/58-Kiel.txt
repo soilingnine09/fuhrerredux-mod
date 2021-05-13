@@ -7,7 +7,7 @@ state={
 		victory_points = {
 			6389 10 
 		}
-		owner = GER
+		owner = SHO
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 3
@@ -18,8 +18,7 @@ state={
 			}
 
 		}
-		add_core_of = GER
-		set_demilitarized_zone = yes
+		add_core_of = SHO
 
 	}
 
