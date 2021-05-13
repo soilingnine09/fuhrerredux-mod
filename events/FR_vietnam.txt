@@ -1,77 +1,100 @@
-﻿#################
-# Vietnam Events#
-########################
-# Made by darknight1342#
-########################
+﻿# Vietnamese Events
+# created by: dax0102
 
-add_namespace = vin
+add_namespace = viet
 
-country_event = { #Vietnam or Laos takes over Cambodia and gets the option to release them
-	id = vin.1
-	immediate = {log = "[GetDateText]: [Root.GetName]: event vin.1"}
-	title = "Cambodian socialists request self-governance"
-	desc = vin.1.d
-	picture = GFX_report_event_physics_lab_02
+country_event = {
+    id = viet.1
+    title = viet.1.t
+    desc = viet.1.d
+    picture = GFX_report_event_election_vote
 
-	trigger = {
-		OR = {
-			AND = {
-				962 = {
-					is_controlled_by = VIN
-				}
-				741 = {
-					is_controlled_by = VIN
-				}
-			}
-			AND = {
-				962 = {
-					is_controlled_by = LAO
-				}
-				741 = {
-					is_controlled_by = LAO
-				}
-			}
-		}
-	}
+    is_triggered_only = yes
 
-	mean_time_to_happen = {
-		days = 1
-	}
+    option = {
+        name = viet.1.a
 
-	fire_only_once = yes
+        set_politics = {
+            ruling_party = social_democrat
+            elections_allowed = no
+        }
+        hidden_effect = {
+            add_popularity = {
+                ideology = social_democrat
+                popularity = 0.15
+            }
 
-	option = {
-		name = vin.1.a
-		CAM = {
-			transfer_state = 962
-			transfer_state = 741
-			set_politics = {
-				ruling_party = libertarian_socialist
-			}
-			add_to_war = { 
-				targeted_alliance = VIN 
-				enemy = FIC 
-				hostility_reason = asked_to_join
-			}
-		}
-		hidden_effect = {
-			CAM = {
-				load_oob = CAM_revolt
-			}
-		}
-		962 = {
-			add_core_of = CAM
-		}
-		741 = {
-			add_core_of = CAM
-		}
-		VIN = {
-			add_to_faction = CAM
-		}
-	}
+            set_country_flag = VIN_DEMOCRAT_VICTORY_FLAG
+        }
+    }
 
-	option = {
-		name = vin.1.b
-		add_political_power = -30
-	}
+    option = {
+        name = viet.1.b
+
+        set_politics = {
+            ruling_party = market_liberal
+            elections_allowed = no
+        }
+        hidden_effect = {
+            add_popularity = {
+                ideology = market_liberal
+                popularity = 0.15
+            }
+
+            set_country_flag = VIN_LIBERAL_VICTORY_FLAG
+        }
+    }
+
+    option = {
+        name = viet.1.c
+
+        set_politics = {
+            ruling_party = social_conservative
+            elections_allowed = no
+        }
+        hidden_effect = {
+            add_popularity = {
+                ideology = social_conservative
+                popularity = 0.15
+            }
+
+            set_country_flag = VIN_CONSERVATIVE_VICTORY_FLAG
+        }
+    }
+
+    option = {
+        name = viet.1.e
+
+        set_politics = {
+            ruling_party = social_democrat
+            elections_allowed = no
+        }
+        hidden_effect = {
+            add_popularity = {
+                ideology = social_democrat
+                popularity = 0.15
+            }
+
+            set_country_flag = VIN_SOCIAL_DEMOCRAT_VICTORY_FLAG
+        }
+    }
+}
+
+country_event = {
+    id = viet.2
+    title = viet.2.t
+    desc = viet.2.d
+    picture = report_event_iww_demonstration
+
+    is_triggered_only = yes
+
+    option = {
+        name = viet.2.a
+        add_ideas = VIN_banned_unions
+    }
+
+    option = {
+        name = viet.2.b
+        add_political_power = 50
+    }
 }

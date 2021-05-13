@@ -244,7 +244,7 @@
 	}
 	shared_focus = {
 		id = DEN_expand_belt_ferries
-		icon = GFX_goal_generic_occypy_states_coastal
+		icon = GFX_goal_generic_occupy_states_coastal
 		cost = 8.00
 		prerequisite = {
 			focus = DEN_industrial_investments
@@ -722,7 +722,7 @@
 	}
 	shared_focus = {
 		id = DEN_establish_jaegerkorpset
-		icon = GFX_goal_DEN_focus_jaegerkorpset
+		icon = GFX_goal_army_guy
 		cost = 8.00
 		prerequisite = {
 			focus = DEN_experiment_with_offense

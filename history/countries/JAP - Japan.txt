@@ -1239,24 +1239,3 @@ if = {
 			}
 		}
 	}
-	
-create_country_leader = {
-	name = "Durans Doyle"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.tga"
-	expire = "1965.1.1"
-	ideology = vanguardist_subtype
-}
-
-create_country_leader = {
-	name = "Nethaneel Idowu"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.tga"
-	expire = "1965.1.1"
-	ideology = libertarian_socialist_subtype
-}
-
-create_country_leader = {
-	name = "Alexis Langlois"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.tga"
-	expire = "1965.1.1"
-	ideology = paternal_autocrat_subtype
-}

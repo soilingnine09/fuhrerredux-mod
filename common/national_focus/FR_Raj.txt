@@ -69,7 +69,7 @@ focus_tree = {
 
 	focus = { 
 		id = RAJ_Maintain_Indian_Control
-		icon = GFX_?
+		icon = GFX_focus_RAJ_indianisation_of_army
 		mutually_exclusive = { focus = RAJ_Increase_British_Control }
 		prerequisite = { focus = RAJ_British_Indian_Army }
 		x = -2
@@ -272,7 +272,7 @@ focus_tree = {
 
 	focus = { 
 		id = RAJ_Raj_Army
-		icon = GFX_?
+		icon = GFX_focus_RAJ_indian_gentlemen_offcers
 		prerequisite = {
 			focus = RAJ_Indian_Military_Academy
 			focus = RAJ_English_Superiority
@@ -1635,7 +1635,7 @@ focus_tree = {
 
 	focus = {
 		id = RAJ_Forward
-		icon = GFX_?
+		icon = GFX_focus_RAJ_all_india_forward_bloc
 
 		x = 29
 		y = 8
