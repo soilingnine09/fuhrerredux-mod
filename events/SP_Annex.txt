@@ -27,7 +27,7 @@ country_event = {
         if = {
             limit = { has_dlc = "Together for Victory" }
             set_autonomy = {
-                autonomy_state = SP_sponsored_state
+                autonomy_state = autonomy_protectorate
                 target = BRM
             }
         }
@@ -78,7 +78,7 @@ country_event = {
             limit = { has_dlc = "Together for Victory" }
             set_autonomy = {
                 target = CAM
-                autonomy_state = SP_sponsored_state
+                autonomy_state = autonomy_protectorate
             }
         }
         if = {
@@ -145,7 +145,7 @@ country_event = {
             limit = { has_dlc = "Together for Victory" } 
             set_autonomy = {
                 target = INS
-                autonomy_state = SP_sponsored_state
+                autonomy_state = autonomy_protectorate
             }
         }
         if = {
@@ -193,7 +193,7 @@ country_event = {
             limit = { has_dlc = "Together for Victory" }
             set_autonomy = {
                 target = LAO
-                autonomy_state = SP_sponsored_state
+                autonomy_state = autonomy_protectorate
             }
         }
         if = {
@@ -241,7 +241,7 @@ country_event = {
                 limit = { has_dlc = "Together for Victory" } 
                 set_autonomy = {
                     target = MAL
-                    autonomy_state = SP_sponsored_state
+                    autonomy_state = autonomy_protectorate
                 }
             }
             if = {
@@ -293,7 +293,7 @@ country_event = {
             limit = { has_dlc = "Together for Victory" } 
             set_autonomy = {
                 target = VIN
-                autonomy_state = SP_sponsored_state
+                autonomy_state = autonomy_protectorate
             }
         }
         if = {
@@ -571,7 +571,7 @@ country_event = {
         if = {
             limit = { has_dlc = "Together for Victory" }
             set_autonomy = {
-                autonomy_state = SP_sponsored_state
+                autonomy_state = autonomy_protectorate
                 target = PHI
             }
         }

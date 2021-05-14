@@ -105,8 +105,7 @@ bookmarks = {
             }
         }
         "---" = {
-            history = "OTHER_FUHRERREDUX_DESC
-            "
+            history = "OTHER_FUHRERREDUX_DESC"
         }
 
         ### Minors
