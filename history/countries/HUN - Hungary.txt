@@ -154,7 +154,7 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "Géza Lakatos" 
-	gfx = GFX_Portrait_hungary_geza_lakatos
+	picture = Portrait_HUN_Geza_Lakatos.tga
 	traits = {  }
 	skill = 3
 	attack_skill = 4
@@ -187,7 +187,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Lajos Veress" 
-	gfx = GFX_Portrait_hungary_lajos_veress
+	picture = Portrait_HUN_Lajos_Veress.tga
 	traits = { panzer_leader }
 	skill = 2
 	attack_skill = 4
@@ -264,7 +264,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Dezső László"
-	picture = ""
+	picture = "Portrait_HUN_Dezso_Laszlo.tga"
 	traits = { }
 	skill = 1
 	attack_skill = 2
