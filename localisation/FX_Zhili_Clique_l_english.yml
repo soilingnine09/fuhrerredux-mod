@@ -60,7 +60,7 @@ ZHI_valkist_party:0 "SRS"
 ZHI_valkist_party_long:0 "Spiritual Revolution Society"
 
 ### DESCRIPTION ###
-ZHI_FUHRERREICH_DESC:0 "The Zhili Clique is one of China’s finest warlord states and is led by, perhaps the greatest strategist in China at this time, Wu Peifu. Wu Peifu is a Chinese nationalist who, although he doesn't like his alliance with the Japanese, sees the alliance with Japan as a necessity for the survival of his Clique. It has, like many other states in China, been in many wars and has a veteran force of many soldiers and generals, but lacks good industry.\n\nFengtian, rival of the Zhili Clique, lies to the north, taunting them at every step. A war is brewing... And the Zhili Clique will be its victor."
+ZHI_FUHRERREDUX_DESC:0 "The Zhili Clique is one of China’s finest warlord states and is led by, perhaps the greatest strategist in China at this time, Wu Peifu. Wu Peifu is a Chinese nationalist who, although he doesn't like his alliance with the Japanese, sees the alliance with Japan as a necessity for the survival of his Clique. It has, like many other states in China, been in many wars and has a veteran force of many soldiers and generals, but lacks good industry.\n\nFengtian, rival of the Zhili Clique, lies to the north, taunting them at every step. A war is brewing... And the Zhili Clique will be its victor."
 
 ### EVENTS ###
 zhi.1.t:0 "Far to the East part 1"

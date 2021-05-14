@@ -83,7 +83,7 @@ on_actions = {
 					exists = yes
 					is_ai = no
 				}
-				set_country_flag = show_welcome_splash
+				set_country_flag = show_intro_gui
 			}		
 		}
 	}	

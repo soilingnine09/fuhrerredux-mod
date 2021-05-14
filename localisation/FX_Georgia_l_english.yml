@@ -199,7 +199,7 @@ promote_officers:0 "Promote Officers"
 bring_back_kvinitadze:0 "Recall Giorgi Kvinitadze"
 bring_back_kvinitadze_desc:0 "With Georgia embroiled in war again, we can call Kvinitadze to once again lead our forces to victory."
 ####BRIEF HISTORY
-GEO_FUHRERREICH_DESC:0 "100 years have passed, and Georgia has finally regained its independence when the Russian Empire crumbled. Lead by the Georgian Menshevik Party, the country quickly adopted Social Democratic reforms and developed rapidly. However, after the 1934 elections the party has become increasingly split between a faction that wants to quickly abolish capitalism, and a faction that is more in favor of gradual development of society. The split has emboldened Georgia's smaller parties, and it looks like if the political situation doesn't stabilize quickly radical new players can enter the political field."
+GEO_FUHRERREDUX_DESC:0 "100 years have passed, and Georgia has finally regained its independence when the Russian Empire crumbled. Lead by the Georgian Menshevik Party, the country quickly adopted Social Democratic reforms and developed rapidly. However, after the 1934 elections the party has become increasingly split between a faction that wants to quickly abolish capitalism, and a faction that is more in favor of gradual development of society. The split has emboldened Georgia's smaller parties, and it looks like if the political situation doesn't stabilize quickly radical new players can enter the political field."
 
 ####EVENTS
 ge.100000.t:0 "Georgia's Situation in 1936"

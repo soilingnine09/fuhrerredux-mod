@@ -1,7 +1,7 @@
 ﻿l_english:
 
 ### History
-PHI_FUHRERREICH_DESC:0 "Oppressed for 333 years, the Philippines revolted against Spain in 1898 with the help of American support. However, the United States has opted to annex the Philippines resulting in a bloody Filipino-American war.\n\nFew decades later, the Tydings-McDuffie Act granted the Philippines autonomy and soon independence after a 10-year transition period. It came earlier than expected however, as the United States granted full-independence as to ease of expenditures during the times of the Great Depression."
+PHI_FUHRERREDUX_DESC:0 "Oppressed for 333 years, the Philippines revolted against Spain in 1898 with the help of American support. However, the United States has opted to annex the Philippines resulting in a bloody Filipino-American war.\n\nFew decades later, the Tydings-McDuffie Act granted the Philippines autonomy and soon independence after a 10-year transition period. It came earlier than expected however, as the United States granted full-independence as to ease of expenditures during the times of the Great Depression."
 
 ### Game Rules
 PHI_AI_BEHAVIOR:0 "@PHI Philippines"

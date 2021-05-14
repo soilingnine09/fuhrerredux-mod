@@ -1,7 +1,7 @@
 ﻿l_english:
 
 #### History
-FRA_FUHRERREICH_DESC:0 "Victorious, but at what cost? Many Frenchmen found themselves asking this in the aftermath of the Great War. France had reclaimed its rightful land, and established a protectorate over the Rheinland to prevent the Germans from ever threatening La Patrie ever again. However as the 1930s come to an end, France's position in Europe and the world is increasingly threatened, with a hostile British Empire threatening France's colonies and a increasingly belligerent Soviet Union, but perhaps of the greatest concern is a resurgent Germany. France will need cunning, bravery, and excellent diplomacy to emerge from the coming storm unscathed."
+FRA_FUHRERREDUX_DESC:0 "Victorious, but at what cost? Many Frenchmen found themselves asking this in the aftermath of the Great War. France had reclaimed its rightful land, and established a protectorate over the Rheinland to prevent the Germans from ever threatening La Patrie ever again. However as the 1930s come to an end, France's position in Europe and the world is increasingly threatened, with a hostile British Empire threatening France's colonies and a increasingly belligerent Soviet Union, but perhaps of the greatest concern is a resurgent Germany. France will need cunning, bravery, and excellent diplomacy to emerge from the coming storm unscathed."
 
 ### Country Names
 FRA_vanguardist:0 "Commune of France"
@@ -79,6 +79,9 @@ FRA_national_populist_party_long:0 "Trade Policy: §BProtectionism§! \nEconomic
 ###
 FRA_valkist_party:0 "SF"
 FRA_valkist_party_long:0 "Trade Policy: §BProtectionism§! \nEconomic Policy: §YLaissez Faire§! \nWar Policy: §GPro-Military§! \n\nSolidarité Française \n§gFrance's only Valkist movement, the Solidarité Française have virtually no internal support outside of some Germans living in Alsace-Lorraine and the Sarre. Many in French politics believe that the SF are openly working against the French state in order to bring about a collaberationist regime which is submissive to Germany. The SF has no real centralized leadership and is only united in their unique ideology which differs greatly from all others on the spectrum.§!"
+
+### Leader Descriptions
+POLITICS_PAUL_REYNAUD_DESC:0 "Paul Reynaud made his first major appearance in French politics in 1919, Reynaud was elected as part of the Conservative 'Blue Horizon' Bloc. Quickly developing a reputation for being a Savvy politician, Reynaud soon clarified his allegiance as a member of the Fédération Républicaine. Quickly climbing ranks within the party due to his Militant nature in foreign policy, Reynaud rose to the position of the Vice-President of the FR. In 1925, Auguste Isaac resigned his position as President of the Fédération Républicaine and sought to appoint a Militant successor in order to strengthen the platform of the party. Reynaud was a natural candidate due to his popularity within the party and firm stance on foreign affiars. Under Reynaud's leadership, the Fédération Républicaine managed gathering the most votes and seats in both the 1928 & 1932 Elections. An extremely pragmatic man, Reynaud follows one doctrine in foreign policy; France has no Friends, only Interests."
 
 #### TRAITS ####
 cia:0 "Head of the CIA"

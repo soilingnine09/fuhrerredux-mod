@@ -1,6 +1,6 @@
 ﻿l_english:
 ### History
-GER_FUHRERREICH_DESC:0 "The new Reich has arisen. It has been four years since Dressler's Valkists secured power after winning the snap elections. The economy is thriving once again with the Valkists funneling ungodly amounts of money into the arms industry to ensure that in the upcoming wars nobody will stand up to Germany's greatness. \n\nOnly the upcoming years will decide whether Dressler's dreams remain dreams or if the Fuhrerreich will become more than the sum of its parts, with Germany being the superpower it always aspired to be."
+GER_FUHRERREDUX_DESC:0 "The new Reich has arisen. It has been four years since Dressler's Valkists secured power after winning the snap elections. The economy is thriving once again with the Valkists funneling ungodly amounts of money into the arms industry to ensure that in the upcoming wars nobody will stand up to Germany's greatness. \n\nOnly the upcoming years will decide whether Dressler's dreams remain dreams or if the Fuhrerreich will become more than the sum of its parts, with Germany being the superpower it always aspired to be."
 
 ### Country Names
 GER_vanguardist:0 "German Soviet Republic"
@@ -128,6 +128,44 @@ VIR_valkist_DEF:0 "Der Irische Freistaat"
 VIR_puppet:0 "Irischer Freistaat"
 VIR_puppet_ADJ:0 "Irisch"
 VIR_puppet_DEF:0 "Der Irische Freistaat"
+
+# Valkist USSR/Russia
+VRS_vanguardist:0 "Russian Union"
+VRS_vanguardist_ADJ:0 "Russian"
+VRS_vanguardist_DEF:0 "The Union of Russia"
+VRS_collectivist:0 "Russian Union"
+VRS_collectivist_ADJ:0 "Russian"
+VRS_collectivist_DEF:0 "The Union of Russia"
+VRS_libertarian_socialist:0 "Russian Union"
+VRS_libertarian_socialist_ADJ:0 "Russian"
+VRS_libertarian_socialist_DEF:0 "The Union of Russia"
+VRS_social_democrat:0 "Russian Free State"
+VRS_social_democrat_ADJ:0 "Russian"
+VRS_social_democrat_DEF:0 "The Russian Free State"
+VRS_social_liberal:0 "Russian Free State"
+VRS_social_liberal_ADJ:0 "Russian"
+VRS_social_liberal_DEF:0 "The Russian Free State"
+VRS_market_liberal:0 "Russian Free State"
+VRS_market_liberal_ADJ:0 "Russian"
+VRS_market_liberal_DEF:0 "The Russian Free State"
+VRS_social_conservative:0 "Russian Free State"
+VRS_social_conservative_ADJ:0 "Russian"
+VRS_social_conservative_DEF:0 "The Russian Free State"
+VRS_authoritarian_democrat:0 "R.K. Russia""
+VRS_authoritarian_democrat_ADJ:0 "Russian"
+VRS_authoritarian_democrat_DEF:0 "The Reichskommissariat of Russia"
+VRS_paternal_autocrat:0 "R.K. Russia""
+VRS_paternal_autocrat_ADJ:0 "Russian"
+VRS_paternal_autocrat_DEF:0 "The Reichskommissariat of Russia"
+VRS_national_populist:0 "R.K. Russia""
+VRS_national_populist_ADJ:0 "Russian"
+VRS_national_populist_DEF:0 "The Reichskommissariat of Russia"
+VRS_valkist:0 "R.K. Russland"
+VRS_valkist_ADJ:0 "Russisch"
+VRS_valkist_DEF:0 "Das Reichskommissariat Russland"
+
+### Leader Descriptions
+POLITICS_ADAM_DRESSLER_DESC:0 "An orphan, a Veteran, an Austro-German, Dressler led a very difficult life. Following the Great War, Dressler would find his way to the DNVP and then become one of their most notable and charismatic speakers. Dressler would attempt to assist a DNVP-led coup in 1923, only to be crushed and forcibly detained. During his time in prison, Dressler wrote a fanatic novel titled 'Mein Deutschland das Siegreiche', a novel detailing revenge against the Western Powers and destruction of the Soviets in the East. The novel would become incredibly popular. Following a case that proved Dressler's imprisonment unlawful; he was released from prison and was greeted by hundreds of supporters. Dressler would then build up support for his newly founded Valkistische Volkspartei Deutschlands and then run for office in 1932. Dressler narrowly lost to Otto Wels, declared the results fraudulent, and then lead a coup to bring down the Wels' Government. Dressler declared himself leader of Germany in the Reichstag, something the Entente responded to with hostility due to their belief of the 1932 election being legitimate. Dressler declared a snap-election which led to an overwhelming VVD victory. With it, the Entente reluctantly accepted the belief that the 1932 elections were fraudulent. Since then, Dressler has rearmed Germany from the shadows, prepared to enforce Germany's vision for Europe through Military Might in coming years."
 
 #### Ideas ####
 GER_nation_reborn:0 "A Nation Reborn"

@@ -15,6 +15,9 @@ leader_traits = {
 	blank  = { random = no } ### to make an empty space
 }
 
+#####################
+# General industry
+#####################
 leader_traits = {
 
 	mining_company = { random = no }
@@ -24,16 +27,6 @@ leader_traits = {
 	railroad_company = { random = no }
 	oil_concern = { random = no }
 
-}
-
-#####################
-# General industry
-#####################
-leader_traits = {
-
-	chemical_producer = { random = no }
-	industrial_manufacturer = { random = no }
-	electronics_manufacturer = { random = no }
 }
 
 #####################

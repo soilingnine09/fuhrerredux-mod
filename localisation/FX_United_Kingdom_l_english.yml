@@ -10,7 +10,7 @@ interwar_antiair:0 "Interwar Anti-Air"
 
 ##### Bookmark Description #####
 
-ENG_FUHRERREICH_DESC:0 "The Great War lasted for five long years of merciless slaughter and destruction. In the end, Britain stood victorious over the butchered Central Powers, establishing itself once more as the global hegemon. The 1931 Statute of Autonomy would grant the Dominion nations only limited powers, with the original proposals being drastically altered resulting in great resentment towards the mother country. Britain is in a precarious position. The Imperial Conference of 1937 looms ever closer and in the years that follow Britain will be faced with choices that will not only determine the fate of the Empire, but of the future of Britain itself."
+ENG_FUHRERREDUX_DESC:0 "The Great War lasted for five long years of merciless slaughter and destruction. In the end, Britain stood victorious over the butchered Central Powers, establishing itself once more as the global hegemon. The 1931 Statute of Autonomy would grant the Dominion nations only limited powers, with the original proposals being drastically altered resulting in great resentment towards the mother country. Britain is in a precarious position. The Imperial Conference of 1937 looms ever closer and in the years that follow Britain will be faced with choices that will not only determine the fate of the Empire, but of the future of Britain itself."
 IRE_ENG1:0 "Dominion of Ireland"
 
 ### Country Names
@@ -552,8 +552,11 @@ ENG_GRP_authoritarian_democrat_party_long:0 "Military Administration"
 ENG_FRP_authoritarian_democrat:0 "Military Administration"
 ENG_FRP_authoritarian_democrat_party_long:0 "Military Administration"
 
-##### Political Ministers #####
+### Leader Descriptions
+POLITICS_GEORGE_V_DESC:0 "George V of Windsor is the King-Emperor of the British Empire, more than just in name. Reigning nearly 3 times longer than his father, Edward VII, he has risen to become one of the most beloved Monarchs in British history. Under his reign the British Empire has once again asserted itself as the Global Hegemon and has economically eclipsed both their rivals and former allies following the Empire's return to Splendid Isolation. However, his invincible image does not entirely live up to reality. As the years march forward, King George's health has been steadily deteriorating, forcing him allow his son, Prince Edward, to assume a portion of his duties. Some of the Empire's finest medical experts expect him to live another 10 years at minimum, although King George privately holds an opinion to the contrary, despite his often stoic nature."
+POLITICS_EDWARD_VIII_DESC:0 "With the passing of the beloved King George, Edward VIII of Windsor found himself inheriting not only an Empire spanning from Vancouver to Wellington, but also the larger-than-life image that was established by his Father. Charismatic, confident, and armed with experience from the closing years of his Father's reign; the newly coronated King-Emperor is prepared to assume any duties that may be required of him in coming years."
 
+##### Political Ministers #####
 ENG_Samuel_Hoare_hog:0 "Sir Samuel Hoare, Prime Minister"
 ENG_John_Anderson_for:0 "1st Viscount John Anderson, Foreign Secretary"
 ENG_Neville_Chamberlain_eco:0 "Neville Chamberlain, Chancellor of the Exchequer"

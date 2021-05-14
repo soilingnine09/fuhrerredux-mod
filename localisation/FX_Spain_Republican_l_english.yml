@@ -567,7 +567,7 @@ SPR_Miguel_Maura_Gamazo_hog_sco:0 "Miguel Maura Gamazo"
 SPR_Vicente_Rojo_Lluch_hog_ade:0 "Vicente Rojo Lluch"
 
 ### Other Stuff ###
-SPR_FUHRERREICH_DESC:0 "Republicanism has been tried in Spain before, but it was in 1931, after years of the dictatorship of Miguel Primo de Rivera, that a Second Spanish Republic was established. This Republic was immedieately under the threat of coup attempts and anti-republican forces. These tensions would culminate in a failed coup in December 1935, which quickly turned into a civil war.\n\nRepublicans are now rallied to our banner in order to defend this Republic that we have fought for."
+SPR_FUHRERREDUX_DESC:0 "Republicanism has been tried in Spain before, but it was in 1931, after years of the dictatorship of Miguel Primo de Rivera, that a Second Spanish Republic was established. This Republic was immedieately under the threat of coup attempts and anti-republican forces. These tensions would culminate in a failed coup in December 1935, which quickly turned into a civil war.\n\nRepublicans are now rallied to our banner in order to defend this Republic that we have fought for."
 
 SPR_election_happened_flag:0 "Elections have been held in Spain"
 SPR_strengthen_french_ties_flag:0 "Strong ties with France"

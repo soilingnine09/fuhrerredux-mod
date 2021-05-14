@@ -67,7 +67,7 @@ DEN_valkist_natpop_party:0 "Nationale"
 DEN_valkist_natpop_party_long:0 "Danmarks Nationale Parti (German Collaborationists)"
 
 #### Description ####
-DEN_FUHRERREICH_DESC:0 "The Danish Realm survived the Great War relatively unscathed, but it was the interwar period in which political strife took its toll on the Kingdom. The 1920s saw the Easter Crisis and the Abdication Crisis, two events which culminated in King Christian X breaking with constitutional norms in order to assert the sovreignity of Denmark and weaken the power and influence of the left-wing elements in the nation. After these political crises, the democracy and republicanism were established and after the first election the Social Democrats led the nation into the new decade. It remains to be seen where Denmark will go and how it will act in future crises."
+DEN_FUHRERREDUX_DESC:0 "The Danish Realm survived the Great War relatively unscathed, but it was the interwar period in which political strife took its toll on the Kingdom. The 1920s saw the Easter Crisis and the Abdication Crisis, two events which culminated in King Christian X breaking with constitutional norms in order to assert the sovreignity of Denmark and weaken the power and influence of the left-wing elements in the nation. After these political crises, the democracy and republicanism were established and after the first election the Social Democrats led the nation into the new decade. It remains to be seen where Denmark will go and how it will act in future crises."
 
 #### IDEAS ####
 DEN_danish_republicanism_idea:0 "Danish Republicanism"
