@@ -10,7 +10,7 @@ on_actions = {
                     limit = {
                         has_game_rule = {
                             rule = PHI_AI_BEHAVIOR
-                            option = PHI_BROTHERS_UNITED
+                            option = PHI_DEFAULT
                         }
                     }
                     set_country_flag = PHI_ai_chosen

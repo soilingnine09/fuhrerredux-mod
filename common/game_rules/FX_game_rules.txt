@@ -1,10 +1,303 @@
+GER_ai_behavior = {
+	name = "GER_AI_BEHAVIOR"
+	##required_dlc = "Waking the Tiger"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = GER_WEST_FIRST
+		text = "RULE_OPTION_GER_WEST_FIRST"
+		desc = "RULE_OPTION_GER_WEST_FIRST_DESC"
+	}
+	option = {
+		name = GER_EAST_FIRST
+		text = "RULE_OPTION_GER_EAST_FIRST"
+		desc = "RULE_OPTION_GER_EAST_FIRST_DESC"
+	}
+}
+SOV_ai_behavior = {
+	name = "SOV_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = SOV_TRIUMVIRATE
+		text = "RULE_OPTION_SOV_TRIUMVIRATE"
+		desc = "RULE_OPTION_SOV_TRIUMVIRATE_DESC"
+	}
+	option = {
+		name = SOV_TUKHACHEVSKY
+		text = "RULE_OPTION_SOV_TUKHACHEVSKY"
+		desc = "RULE_OPTION_SOV_TUKHACHEVSKY_DESC"
+	}
+	option = {
+		name = SOV_KIROV
+		text = "RULE_OPTION_SOV_KIROV"
+		desc = "RULE_OPTION_SOV_KIROV_DESC"
+	}
+}
+
+JAP_ai_behavior = {
+	name = "JAP_AI_BEHAVIOR"
+	#required_dlc = "Waking the Tiger"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = JAP_JEWEL
+		text = "RULE_OPTION_JAP_JEWEL"
+		desc = "RULE_OPTION_JAP_JEWEL_DESC"
+	}
+	option = {
+		name = JAP_DOMINANCE
+		text = "RULE_OPTION_JAP_DOMINANCE"
+		desc = "RULE_OPTION_JAP_DOMINANCE_DESC"
+	}	
+}
+ITA_ai_behavior = {
+	name = "ITA_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = ITA_COMMIE
+		text = "RULE_OPTION_ITA_COMMIE"
+		desc = "RULE_OPTION_ITA_COMMIE_DESC"
+	}
+	option = {
+		name = ITA_DEMOCRATIC
+		text = "RULE_OPTION_ITA_DEMOCRATIC"
+		desc = "RULE_OPTION_ITA_DEMOCRATIC_DESC"
+	}
+	option = {
+		name = ITA_VALKIST
+		text = "RULE_OPTION_ITA_VALKIST"
+		desc = "RULE_OPTION_ITA_VALKIST_DESC"
+	}	
+}
+SAF_ai_behavior = {
+	name = "SAF_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = SAF_ANC
+		text = "RULE_OPTION_SAF_ANC"
+		desc = "RULE_OPTION_SAF_ANC_DESC"
+	}
+	option = {
+		name = SAF_UNITED
+		text = "RULE_OPTION_SAF_UNITED"
+		desc = "RULE_OPTION_SAF_UNITED_DESC"
+	}
+	option = {
+		name = SAF_PNP
+		text = "RULE_OPTION_SAF_PNP"
+		desc = "RULE_OPTION_SAF_PNP_DESC"
+	}	
+}
+SPR_ai_behavior = {
+	name = "SPR_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = SPR_AZANA
+		text = "RULE_OPTION_SPR_AZANA"
+		desc = "RULE_OPTION_SPR_AZANA_DESC"
+	}
+	option = {
+		name = SPR_LERROUX
+		text = "RULE_OPTION_SPR_LERROUX"
+		desc = "RULE_OPTION_SPR_LERROUX_DESC"
+	}
+}
+SPM_ai_behavior = {
+	name = "SPM_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = SPM_RE
+		text = "RULE_OPTION_SPM_RE"
+		desc = "RULE_OPTION_SPM_RE_DESC"
+	}
+	option = {
+		name = SPM_CEDA
+		text = "RULE_OPTION_SPM_CEDA"
+		desc = "RULE_OPTION_SPM_CEDA_DESC"
+	}
+	option = {
+		name = SPM_LRC
+		text = "RULE_OPTION_SPM_LRC"
+		desc = "RULE_OPTION_SPM_LRC_DESC"
+	}
+	option = {
+		name = SPM_LRC_LIBERAL
+		text = "RULE_OPTION_SPM_LRC_LIBERAL"
+		desc = "RULE_OPTION_SPM_LRC_LIBERAL_DESC"
+	}
+}
+SPA_ai_behavior = {
+	name = "SPA_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = SPA_CNT_FAI_ANARCHIST
+		text = "RULE_OPTION_SPA_CNT_FAI_ANARCHIST"
+		desc = "RULE_OPTION_SPA_CNT_FAI_ANARCHIST_DESC"
+	}
+	option = {
+		name = SPA_CNT_FAI_SYNDICALIST
+		text = "RULE_OPTION_SPA_CNT_FAI_SYNDICALIST"
+		desc = "RULE_OPTION_SPA_CNT_FAI_SYNDICALIST_DESC"
+	}
+	option = {
+		name = SPA_PSOE_DEMOCRATIC
+		text = "RULE_OPTION_SPA_PSOE_DEMOCRATIC"
+		desc = "RULE_OPTION_SPA_PSOE_DEMOCRATIC_DESC"
+	}
+	option = {
+		name = SPA_PSOE_MARXIST
+		text = "RULE_OPTION_SPA_PSOE_MARXIST"
+		desc = "RULE_OPTION_SPA_PSOE_MARXIST_DESC"
+	}
+	option = {
+		name = SPA_PCE_RAMOS
+		text = "RULE_OPTION_SPA_PCE_RAMOS"
+		desc = "RULE_OPTION_SPA_PCE_RAMOS_DESC"
+	}
+	option = {
+		name = SPA_PCE_IBARRURI
+		text = "RULE_OPTION_SPA_PCE_IBARRURI"
+		desc = "RULE_OPTION_SPA_PCE_IBARRURI_DESC"
+	}
+	option = {
+		name = SPA_PCE_MAURE
+		text = "RULE_OPTION_SPA_PCE_MAURE"
+		desc = "RULE_OPTION_SPA_PCE_MAURE_DESC"
+	}
+	option = {
+		name = SPA_PCE_MAURIN
+		text = "RULE_OPTION_SPA_PCE_MAURIN"
+		desc = "RULE_OPTION_SPA_PCE_MAURIN_DESC"
+	}
+	option = {
+		name = SPA_PCE_NIN_PEREZ
+		text = "RULE_OPTION_SPA_PCE_NIN_PEREZ"
+		desc = "RULE_OPTION_SPA_PCE_NIN_PEREZ_DESC"
+	}
+}
+SPF_ai_behavior = {
+	name = "SPF_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = SPF_JCAH
+		text = "RULE_OPTION_SPF_JCAH"
+		desc = "RULE_OPTION_SPF_JCAH_DESC"
+	}
+	option = {
+		name = SPF_FALANGE
+		text = "RULE_OPTION_SPF_FALANGE"
+		desc = "RULE_OPTION_SPF_FALANGE_DESC"
+	}
+	option = {
+		name = SPF_PNE_CARLIST
+		text = "RULE_OPTION_SPF_PNE_CARLIST"
+		desc = "RULE_OPTION_SPF_PNE_CARLIST_DESC"
+	}
+	option = {
+		name = SPF_PNE_ALFONSIST
+		text = "RULE_OPTION_SPF_PNE_ALFONSIST"
+		desc = "RULE_OPTION_SPF_PNE_ALFONSIST_DESC"
+	}
+}
+ENG_ai_behavior = {
+	name = "ENG_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_ENG_RANDOM"
+		desc = "RULE_OPTION_ENG_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = CAPE_SINGAPORE
+		text = "RULE_OPTION_CAPE_SINGAPORE"
+		desc = "RULE_OPTION_CAPE_SINGAPORE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = IMP_FED
+		text = "RULE_OPTION_IMP_FED"
+		desc = "RULE_OPTION_IMP_FED_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = CRUSH_COLLECTIVISM
+		text = "RULE_OPTION_CRUSH_COLLECTIVISM"
+		desc = "RULE_OPTION_CRUSH_COLLECTIVISM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = CHALLENGE_FRANCE
+		text = "RULE_OPTION_CHALLENGE_FRANCE"
+		desc = "RULE_OPTION_CHALLENGE_FRANCE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = ENTENTE_CORDIALE
+		text = "RULE_OPTION_ENTENTE_CORDIALE"
+		desc = "RULE_OPTION_ENTENTE_CORDIALE_DESC"
+		allow_achievements = yes
+	}
+}
 PHI_ai_behavior = {
 	name = "PHI_AI_BEHAVIOR"
 	group = "RULE_GROUP_AI_BEHAVIOR"
 	default = {
-		name = PHI_BROTHERS_UNITED
-		text = PHI_RULE_BROTHERS_UNITED
-		desc = PHI_RULE_BROTHERS_UNITED_DESC
+		name = PHI_DEFAULT
+		text = PHI_RULE_DEFAULT
+		desc = PHI_RULE_DEFAULT_DESC
 		allow_achievements = yes
 	}
 	option = {
