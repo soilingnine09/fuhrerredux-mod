@@ -1,15 +1,8 @@
-
 spriteTypes = {
+	# New News Event Pictures for Fuhrerredux
+	# Sorted by tag not name
 
-	spriteType = {
-		name = "GFX_news_event_AEDA_founded"
-		texturefile = "gfx/event_pictures/ASEAN/news_event_ASEAN_founded.tga"
-	}
-	spriteType = {
-		name = "GFX_news_event_AEDA_meeting"
-		texturefile = "gfx/event_pictures/ASEAN/news_event_ASEAN_country_left.tga"
-	}
-
+	# PHI - Philippines
 	spriteType = {
 		name = "GFX_news_event_PHI_quezon_inaugurated"
 		texturefile = "gfx/event_pictures/PHI/news_event_PHI_quezon_inaugurated.tga"
@@ -23,12 +16,8 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/PHI/news_event_PHI_ramos_inaugurated.tga"
 	}
 	spriteType = {
-		name = GFX_news_event_PHI_aguinaldo_coup"
+		name = "GFX_news_event_PHI_aguinaldo_coup"
 		texturefile = "gfx/event_pictures/PHI/news_event_PHI_aguinaldo_coup.tga"
-	}
-    spriteType = {
-		name = "GFX_news_event_PHI_independence"
-		texturefile = "gfx/event_pictures/PHI/news_event_PHI_independence.dds"
 	}
 	spriteType = {
 		name = "GFX_news_event_PHI_manila_uprising"
@@ -38,9 +27,4 @@ spriteTypes = {
 		name = "GFX_news_event_PHI_army_coup"
 		texturefile = "gfx/event_pictures/PHI/news_event_PHI_army_coup.tga"
 	}
-	spriteType = {
-		name = "GFX_news_event_PHI_sabah_occupied"
-		texturefile = "gfx/event_pictures/PHI/news_event_PHI_sabah_occupied.tga"
-	}
-
 }

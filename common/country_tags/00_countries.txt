@@ -58,6 +58,7 @@ NIR = "countries/WestEuropean.txt" # Northern Ireland
 FIC = "countries/WestEuropean.txt" # French Indochina
 DEI = "countries/WestEuropean.txt" # Dutch East Indies
 LUX = "countries/WestEuropean.txt" # Luxembourg
+MLT = "countries/WestEuropean.txt" # Malta
 
 ### Eastern European
 SOV = "countries/EastEuropean.txt" # Soviet Union
@@ -86,14 +87,19 @@ VRS = "countries/EastEuropean.txt" # Valkist Russia
 CRO = "countries/EastEuropean.txt" # Croatia
 UKR = "countries/EastEuropean.txt" # Ukraine
 GEO = "countries/EastEuropean.txt" # Georgia
+GOR = "countries/EastEuropean.txt" # Mountain Republic
 MOL = "countries/EastEuropean.txt" # Moldova
 UBD = "countries/EastEuropean.txt" # United Baltic Dutchy
 MAC = "countries/EastEuropean.txt" # Macedonia
 BSR = "countries/EastEuropean.txt" # Bulgarian Socialist Republic
 LMK = "countries/EastEuropean.txt" # Lemko
+GRL = "countries/EastEuropean.txt" # Goralenland
+SLV = "countries/EastEuropean.txt" # Slovenia
 
 ### North America
 USA = "countries/WestEuropean.txt" # United States
+CSA = "countries/WestEuropean.txt" # Confederate States
+USB = "countries/WestEuropean.txt" # Neutral Bloc
 QUE = "countries/WestEuropean.txt" # Quebec
 
 ### South America
@@ -129,6 +135,7 @@ PAR = "countries/SouthAmerican.txt" # Paraguay
 SUR = "countries/SouthAmerican.txt" # Suriname
 CAY = "countries/SouthAmerican.txt" # Cayenne
 CRU = "countries/SouthAmerican.txt" # Cruzoob
+CRC = "countries/SouthAmerican.txt" # Curacao
 
 ### Central Asia
 KAZ = "countries/MiddleEastern.txt" # Kazakhstan
@@ -139,6 +146,7 @@ UZB = "countries/MiddleEastern.txt" # Uzbekistan
 TAJ = "countries/MiddleEastern.txt" # Tajikistan
 KYR = "countries/MiddleEastern.txt" # Kyrgyzstan
 DAG = "countries/MiddleEastern.txt" # Dagestan
+TMS = "countries/MiddleEastern.txt" # Turkmenistan
 
 ### Middle East
 TUR = "countries/MiddleEastern.txt" # Turkey
@@ -203,6 +211,7 @@ MNS = "countries/Asian.txt" # ?
 SCH = "countries/Asian.txt" # Sichuan
 MEN = "countries/Asian.txt" # Mengkukuo
 NKR = "countries/Asian.txt" # North Korea
+SHN = "countries/Asian.txt" # Shan
 
 ### South Asia
 IND = "countries/Indian.txt" # India
@@ -221,6 +230,7 @@ BOM = "countries/Indian.txt" # Bombay
 PAK = "countries/Indian.txt" # Pakistan
 BAN = "countries/Indian.txt" # Bangladesh
 SRL = "countries/Indian.txt" # Sri Lanka
+MLD = "countries/Indian.txt" # Maldives
 
 ### Commonwealth
 ENG = "countries/Commonwealth.txt" # United Kingdom
@@ -282,6 +292,11 @@ NMB = "countries/African.txt" # Namibia
 WES = "countries/African.txt" # Western Sahara
 ETH = "countries/African.txt" # Ethiopia
 LIB = "countries/African.txt" # Liberia
+MRT = "countries/African.txt" # Mauritania
 
 ### Ocenia
 FIJ = "countries/Indian.txt" # Fiji
+GYA = "countries/Indian.txt" # Guyana
+
+### Others
+XXB = "countries/WestEuropean.txt" # GFX TWO?
