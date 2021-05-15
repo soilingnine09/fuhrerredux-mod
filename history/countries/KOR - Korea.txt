@@ -46,7 +46,7 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Kim Chwa-chin"
-	desc = "POLITICS_KIM_CHWA_CHIN_DESC
+	desc = "POLITICS_KIM_CHWA_CHIN_DESC"
 	picture = "gfx/leaders/KOR/Kim Chwa-Chin.tga"
 	expire = "1938.1.1"
 	ideology = libertarian_socialist_subtype

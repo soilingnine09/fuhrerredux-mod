@@ -49,19 +49,9 @@ PHI_default_plan = {
         
         PHI_department_of_foreign_affairs                       # 21 days
         PHI_no_more_colonialism                                 # 35 days
-        PHI_soviet_trade_deal                                   # 70 days
-        PHI_soviet_equipment                                    # 14 days
-        PHI_soviet_tactics                                      # 14 days
-        PHI_soviet_engineering                                  # 14 days
+        PHI_demand_aeda                                         # 35 days
         PHI_demand_french_colonial_holdings                     # 70 days
         PHI_demand_british_colonial_holdings                    # 70 days
-        PHI_indonesian_independence                             # 35 days
-        PHI_vietnamese_independence                             # 35 days
-        PHI_lao_independence                                    # 35 days
-        PHI_malayan_independence                                # 35 days
-        PHI_burmese_independence                                # 35 days
-        PHI_cambodian_independence                              # 35 days
-        PHI_asean_focus                                         # 35 days
     }
 
     weight = {

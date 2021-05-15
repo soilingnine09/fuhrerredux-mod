@@ -1065,7 +1065,6 @@ country_event = { # Liberal Nominations
         name = phi.24.a
         hidden_effect = {
             kill_ideology_leader = market_liberal
-            kill_ideology_leader = social_liberal
             set_country_flag = PHI_roxas_nominated
         }
         create_country_leader = {
@@ -1076,29 +1075,12 @@ country_event = { # Liberal Nominations
             ideology = market_liberal_subtype
             traits = { }
         }
-        create_country_leader = {
-            name = "Manuel A. Roxas"
-            desc = "POLITICS_MANUEL_A_ROXAS_DESC"
-            picture = "gfx/leaders/PHI/Portrait_Philippines_Manuel_Roxas.tga"
-            expire = "1955.2.1"
-            ideology = social_liberal_subtype
-            traits = { }
-        }
     }
     option = { # Quirino
         name = phi.24.b
         hidden_effect = {
-            kill_ideology_leader = market_liberal
             kill_ideology_leader = social_liberal
             set_country_flag = PHI_quirino_nominated
-        }
-        create_country_leader = {
-            name = "Elpidio Quirino"
-            desc = "POLITICS_ELPIDIO_QUIRINO_DESC"
-            picture = "gfx/leaders/PHI/Portrait_Philippines_Elpidio_Quirino.tga"
-            expire = "1955.2.1"
-            ideology = market_liberal_subtype
-            traits = { }
         }
         create_country_leader = {
             name = "Elpidio Quirino"
@@ -1113,7 +1095,6 @@ country_event = { # Liberal Nominations
         name = phi.24.c
         hidden_effect = {
             kill_ideology_leader = market_liberal
-            kill_ideology_leader = social_liberal
             set_country_flag = PHI_araneta_nominated
         }
         create_country_leader = {
@@ -1122,14 +1103,6 @@ country_event = { # Liberal Nominations
             picture = "gfx/leaders/PHI/Portrait_Philippines_J_Antonio_Araneta.tga"
             expire = "1955.2.1"
             ideology = market_liberal_subtype
-            traits = { }
-        }
-        create_country_leader = {
-            name = "Elpidio Quirino"
-            desc = "POLITICS_ELPIDIO_QUIRINO_DESC"
-            picture = "gfx/leaders/PHI/Portrait_Philippines_J_Antonio_Araneta.tga"
-            expire = "1955.2.1"
-            ideology = social_liberal_subtype
             traits = { }
         }
     }
