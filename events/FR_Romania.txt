@@ -55,64 +55,52 @@ country_event = {
 		add_political_power = 50
 		remove_ideas = rom_regency
 		create_country_leader = {
-			name = "Michael I Von Hohenzollern-Sigmaringen"
+			name = "Michael I"
 			desc = "POLITICS_MICHAEL_I_DESC"
-			picture = "gfx/leaders/ROM/michael_I.tga"
+			picture = "Portrait_Romania_Michael_I.tga"
 			expire = "2017.12.5"
 			ideology = social_democrat_subtype
-			traits = { 
-			}
+			traits = { }
 		}
-
 		create_country_leader = {
-			name = "Michael I Von Hohenzollern-Sigmaringen"
+			name = "Michael I"
 			desc = "POLITICS_MICHAEL_I_DESC"
-			picture = "gfx/leaders/ROM/michael_I.tga"
+			picture = "Portrait_Romania_Michael_I.tga"
 			expire = "2017.12.5"
 			ideology = social_liberal_subtype
-			traits = { 
-			}
+			traits = { }
 		}
-
 		create_country_leader = {
-			name = "Michael I Von Hohenzollern-Sigmaringen"
+			name = "Michael I"
 			desc = "POLITICS_MICHAEL_I_DESC"
-			picture = "gfx/leaders/ROM/michael_I.tga"
+			picture = "Portrait_Romania_Michael_I.tga"
 			expire = "2017.12.5"
 			ideology = market_liberal_subtype
-			traits = { 
-			}
+			traits = { }
 		}
-
 		create_country_leader = {
-			name = "Michael I Von Hohenzollern-Sigmaringen"
+			name = "Michael I"
 			desc = "POLITICS_MICHAEL_I_DESC"
-			picture = "gfx/leaders/ROM/michael_I.tga"
+			picture = "Portrait_Romania_Michael_I.tga"
 			expire = "2017.12.5"
 			ideology = social_conservative_subtype
-			traits = { 
-			}
+			traits = { }
 		}
-
 		create_country_leader = {
-			name = "Michael I Von Hohenzollern-Sigmaringen"
+			name = "Michael I"
 			desc = "POLITICS_MICHAEL_I_DESC"
-			picture = "gfx/leaders/ROM/michael_I.tga"
+			picture = "Portrait_Romania_Michael_I.tga"
 			expire = "2017.12.5"
 			ideology = authoritarian_democrat_subtype
-			traits = { 
-			}
+			traits = { }
 		}
-
 		create_country_leader = {
-			name = "Michael I Von Hohenzollern-Sigmaringen"
+			name = "Michael I"
 			desc = "POLITICS_MICHAEL_I_DESC"
-			picture = "gfx/leaders/ROM/michael_I.tga"
+			picture = "Portrait_Romania_Michael_I.tga"
 			expire = "2017.12.5"
 			ideology = paternal_autocrat_subtype
-			traits = { charismatic
-				#
-			}
+			traits = { }
 		}
 	}
 }
