@@ -226,7 +226,7 @@ ideas = {
 			original_tag = "CZE"
 			}
 
-			picture = GFX_idea_generic_collectivism_rising
+			picture = CZE_memories_of_the_revolution
 			modifier = {
 				stability_factor = -0.1
 				war_support_factor = -0.1
@@ -238,7 +238,7 @@ ideas = {
 			original_tag = "CZE"
 			}
 
-			picture = GFX_idea_generic_collectivism_rising
+			picture = CZE_memories_of_the_revolution
 			modifier = {
 				stability_factor = -0.05
 				war_support_factor = -0.05

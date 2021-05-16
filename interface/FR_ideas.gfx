@@ -5,6 +5,10 @@ spriteTypes = {
 	############
 
 	spriteType = {
+		name = "GFX_idea_CZE_memories_of_the_revolution"
+		texturefile = "gfx/interface/ideas/CZE/CZE_memories_of_the_revolution.tga"
+	}
+	spriteType = {
 		name = "GFX_idea_generic_collectivism_rising"
 		texturefile = "gfx/interface/ideas/ideas/generic_collectivism_rising.dds"
 	}
