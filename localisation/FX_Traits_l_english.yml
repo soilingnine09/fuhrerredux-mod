@@ -127,7 +127,7 @@ int_industrial_specialist:0 "Industrial Specialist"
 int_naval_intelligence_specialist:0 "Naval Intelligence Specialist"
 int_o:0 ""O""
 
-### cos Minister
+### Chief of Staff
 cos_school_of_manoeuvre:0 "School of Manoeuvre"
 cos_school_of_fire_support:0 "School of Fire Support"
 cos_school_of_mass_combat:0 "School of Mass Combat"
@@ -135,7 +135,7 @@ cos_school_of_psychology:0 "School of Psychology"
 cos_school_of_defence:0 "School of Defence"
 cos_school_of_commando_operations:0 "School of Commando Operations"
 
-### carm Minister
+### Chief of Army
 carm_elastic_defence_doctrine:0 "Elastic Defence Doctrine"
 carm_static_defence_doctrine:0 "Static Defence Doctrine"
 carm_decisive_battle_doctrine:0 "Decisive Battle Doctrine"
@@ -144,14 +144,14 @@ carm_guns_and_butter_doctrine:0 "Guns and Butter Doctrine"
 carm_commando_doctrine:0 "Commando Doctrine"
 carm_doctrine_of_autonomy:0 "Doctrine of Autonomy"
 
-### cnav Minister
+### Chief of Navy
 cnav_open_seas_doctrine:0 "Open Seas Doctrine"
 cnav_decisive_battle_doctrine:0 "Decisive Battle Doctrine"
 cnav_power_projection_doctrine:0 "Power Projection Doctrine"
 cnav_indirect_approach_doctrine:0 "Indirect Approach Doctrine"
 cnav_base_control_doctrine:0 "Base Control Doctrine"
 
-### cair Minister
+### Chief of Air Force
 cair_air_superiority_doctrine:0 "Air Superiority Doctrine"
 cair_naval_aviation_doctrine:0 "Naval Aviation Doctrine"
 cair_battlefield_support_doctrine:0 "Battlefield Support Doctrine"

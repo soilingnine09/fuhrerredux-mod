@@ -38,6 +38,13 @@ OTHER_FUHRERREDUX_DESC:0 "It is 1936, and the world is on a brink of a new, inev
 FX_SPLASH_TITLE:0 "Welcome to Fuhrerredux"
 FX_SPLASH_CREDITS:0 "§YBrought to you by the FX Team:§!\ndax0102, Todd Howard, Captain Kaiczer, dhdjk, alden102, AmCath, and Lextzo.\n\n§YCredits to the FR Team:§!\nDarknight1342, Jespertjee, Trimeon, Drowse, Spocklan116, Steffplays123, Arser, Kalmoire, Kaiserman, LuxLoser, Milekhippy, Terran117, Freidrich von Omansich, Kano901, Raptor Jesus, Hellbat, Santander, JacNoLie, Bern, Jeanne bim Rolterstard-Würfsache, and LoneTechWolf."
 
+### Intro Event
+intro.1.t:0 "Führerredux Build 0.1.0"
+intro.1.d:0 "After nearly a full calander year of waiting, we are overjoyed to annouce that Legacy of the Great War 0.5 has finally been released to the public! In this version you will find many small changes throughout the globe; new and improved content for Scandinavia, an entirely new set of content for the Indian subcontinent with more on the way, and various improvements to the map in preparation for future updates. \n\nThis mod is continually worked on by a dedicated team of volunteers from around the globe, and we all greatly appreciate your kind words and time spent enjoying the content that we have created. From the bottom of our hearts, you all have our most sincere thanks!"
+intro.2.d:0 "Q; (Nation) is pretty bad. Will it be getting a rework?\nA; Yes, all nations are intended to get a rework at some point in time. Nothing here is permanent.\n\nQ; Will (Nation) get content in the future?\nA; Our goal, similar to Kaiserreich, is for all nations to eventually recieve content. Now, the time until that's accomplished? You can bet it's going to be quite some time; we're only human after all.\n\nQ; Will DLCs (such as WtT) be a requirement for Fuhrerreich?\nA; Absolutely not. While Fuhrerreich will make good use of the new features added in official expansions we will not make it mandatory for Players to buy the DLCs to play the mod.\n\nQ;I'd like to join the team as an Artist/Coder/Tester! Where do I sign up?\nA; Great to hear! You'll have to join our Discord Server and fill out the respective application. We've got links to the discord on our Steam Workshop page and Subreddit, however if you're a masochist and would prefer to type the invite out manually; it's right here: https://discord.gg/7Q6VuRN"
+intro.3.d:0 "Fuhrerredux uses Kaiserreich's minister system, and obviously borrows from KR heavily in multiple other areas. One such example is the popularity system. \n\nKaiserreich's popularity system entails more notable Political Power gain for nations that have more popular parties, in an attempt to represent civil content with the regime or parliamentary majorities in democratic systems. Generally, higher popularity means that PP Gain will also be higher. The following is the Criteria for the various popularity levels. \n\nVery Low Popularity = Less than 20% Popularity for the ruling Party\nLow Popularity = 20% - 40% Popularity for the ruling Party\nMedium Popularity = 40% - 60% Popularity for the ruling Party\nHigh Popularity = 60% - 80% Popularity for the ruling Party\nVery High Popularity = More than 80% Popularity for the ruling Party\n\nNow, we said 'Generally, higher popularity means that PP Gain will also be higher' for a reason. Nations such as France have their popularity system disabled in order to properly simulate their coalition-based gameplay (or for other reasons entirely). Just be sure to keep this in mind and you should be smooth-sailing when playing nations with their party popularity system disabled!"
+intro.4.d:0 "Hello there! Similar to Kaiserreich, the world of Fuhrerreich relies heavily on news events in order to feel alive and interesting. Ultimately, there's the possibility that you may not apperciate this though, and would prefer to turn it off to reduce event-spam.\n\nBecause of the aforementioned reasons, we're going to need you to select a preference for World News events before we let you out of this event chain."
+
 ### Difficulty Settings
 custom_diff_strong_ger:0 "Strengthen the Germans"
 custom_diff_strong_sov:0 "Strengthen the Soviets"
@@ -67,6 +74,32 @@ paternal_autocrat:0 "Paternal Autocrats"
 national_populist:0 "National Populists"
 valkist:0 "Valkists"
 
+### Ideology Nouns
+vanguardist_noun:0 "National Collectivism"
+collectivist_noun:0 "Socialism"
+libertarian_socialist_noun:0 "Libertarianism"
+social_democrat_noun:0 "Social Democracy"
+social_liberal_noun:0 "Social Liberalism"
+market_liberal_noun:0 "Market Liberalism"
+social_conservative_noun:0 "Social Conservatism"
+authoritarian_democrat_noun:0 "Authoritarian Dem."
+paternal_autocrat_noun:0 "Paternal Autocracy"
+national_populist_noun:0 "National Populism"
+valkist_noun:0 "Valkism"
+
+### Ideology Desc
+vanguardist_desc:0 "National Collectivist"
+collectivist_desc:0 "Socialist"
+libertarian_socialist_desc:0 "Libertarian"
+social_democrat_desc:0 "Social Democrat"
+social_liberal_desc:0 "Social Liberal"
+market_liberal_desc:0 "Market Liberal"
+social_conservative_desc:0 "Social Conservative"
+authoritarian_democrat_desc:0 "Authoritarian Democrat"
+paternal_autocrat_desc:0 "Paternal Autocrat"
+national_populist_desc:0 "National Populist"
+valkist_desc:0 "Valkist"
+
 ### Ideology Drift
 vanguardist_drift:0 "Daily National Collectivist support"
 collectivist_drift:0 "Daily Socialist support"
@@ -79,6 +112,20 @@ authoritarian_democrat_drift:0 "Daily Authoritarian Democrat support"
 paternal_autocrat_drift:0 "Daily Paternal Autocrat support"
 national_populist_drift:0 "Daily National Populist support"
 valkist_drift:0 "Daily Valkist support"
+
+### Ideology Subtype Desc
+vanguardist_subtype_desc:0 "National Collectivism is a term used to describe the collection of theories and concepts created by Vyacheslav Molotov based off of the attempted Hamburg Commune. National Collectivism emphasizes the development of socialism within the state. National Collectivist states build and implement their political base along Leninist lines, creating a revolutionary vanguard state to eventually reach a communist society. However, most power in National Collectivism is centralized around the strong state and its leader. Due to its totalitarian nature, political violence is used liberally to purge counter-revolutionary elements  Agriculture is often collectivized en masse and industry is centrally planned. Despite this, National Collectivism is widespread and sees itself as the true successor of Leninist thought, separating itself from Libertarianism completely while remaining suspicious of mainstream Leninist Socialism."
+collectivist_subtype_desc:0 "Created in the aftermath of the Russian Revolution, Leninist Socialism is the mainstream socialist ideology. Named after the interpretations of Karl Marx by revolutionary Vladimir Lenin, Leninist Socialism adheres to the creation of a revolutionary vanguard and the dictatorship of the proletariat through class struggle and violent overthrow of the capitalist state. The eventual goal of Socialism is for the state functions to wither away and eventually transform society into a Marxist communist society. The Leninist Socialist political system is built around a single party state ran by the revolutionary workers party that adheres to a top-down approach towards governing known as democratic centralism, while the economic system is reliant of worker controlled regional and municipal councils known as soviets. Internationalist in tone, Leninist Socialism is often exported around the globe by its adherents and is heavily reinforced by the Leninist Union of Soviet Socialist Republics."
+libertarian_socialist_subtype_desc:0 "Libertarianism represents a wide range of socialist doctrines that oppose the Leninist hegemony on the socialist movement through support of a decentralized, anti-authoritarian and anti-capitalist society ran democratically by the workers alongside worker-owned means of production. Libertarian ideologies include left communism, council communism, anarcho-syndicalism, and anarcho-communism, and do not strictly support the tenets of Marxism or Communism."
+social_democrat_subtype_desc:0 "Social Democracy is an ideology whose goal is to reform capitalism and humanize it by aligning it with the ethical ideals of social welfare while maintaining the capitalist mode of production, rather than creating an alternative socialist economic system. While usually promoting a plutocratic form of government and a heavily regulated market economy, some more radical streams exist."
+social_liberal_subtype_desc:0 "Social Liberalism is a variation on mainstream Market liberalism, with the main difference being is the inclusion of various civil freedoms as basic human rights. Professing progressive social and economic policies the social liberals aim to create a society where every individual is free to live his own life with full opportunities regardless of their status."
+market_liberal_subtype_desc:0 "Market Liberals see themselves as the mainstream liberal ideology. The main tenants of Market Liberalism are an unregulated free market and a liberal democratic political system. Market Liberals believe that the freer the market the freer the people, and they will staunchly defend the political and economic rights of the individual."
+social_conservative_subtype_desc:0 "Conservatism is a political ideology which can vary greatly depending on the political history of the region or nation. Nonetheless, it is normally centred on preserving traditional beliefs, attitudes and philosophy as well as the traditional power dynamic of society while using the democratic system. Opposed to both radical and moderate changes to the status quo, conservatives want to keep society in order and stable. Most conservative societies usually promote a regulated market economy and favour economic protectionism."
+authoritarian_democrat_subtype_desc:0 "Authoritarian Democracy is an ideology that combines a strong executive power with a representative parliament and a partial democratic political system. Authoritarian Democratic regimes often take a conservative stance on social issues, favour centralization and typically have Hawkish sentiments in-government; although isolationist branches of this ideology are not unheard of. The aim of these regimes is to maintain national stability and provide the people both a popular and responsible government."
+paternal_autocrat_subtype_desc:0 "Paternal Autocracy is not a political ideology in the normal sense of the word, but rather a general term for the attitude that these governments hold towards their citizens: The people are all subjects of the leader, either a king or a dictator, and it is the leader's job and duty to lead the state and society towards the righteous and best path while uniting the people of under his benevolent protection. These countries usually have a very authoritarian government, conservative social views and a state controlled economy."
+national_populist_subtype_desc:0 "Encompassing a variety of ultra-nationalist and militaristic movements, National Populism typically venerates devotion to the state, uniting the people under a strong leader and a corporate economy. Diplomatically, National Populists typically emphasize Expansionist, Hawkish, and Revanchist policies when appropriate or relevant to the given Nation. Often espousing racial politics and violent rhetoric, National Populism is vehemently opposed by most other political parties."
+valkist_subtype_desc:0 "Named after the Germanic symbol that German Valkists wear, Valkism is an extreme nationalist and militaristic ideology, that proposes a system where the political power is centralized under a strong leadership, that through the state controls and guides the nation to its national rebirth. Nonetheless, Valkists fundamentally defend socially progressive ideals and the leader grants liberties to the people. Valkists are characterized by adopting conceptual and aesthetical aspects from ancient, pagan, mystical and esoterical traditions, generally relevant to the nation in question. There are many schools of thought in Valkist economics, but the state supremacy and control over it is undisputed."
+internationalist_subtype_desc:0 "Developed from particularly interventionist branches of collectivism and marxism overall, Internationalist Socialism, as it calls itself, or more commonly known as Internationalism,  is a socialist ideology that proposes the workers, once in power, must organize to enact a perpetual revolution, and to continue proactively in their struggle to bring socialism to the world. While most socialist strains are of international nature, the proactive spirit of Internationalism has given it a more militant nature, and Internationalist ideologues are known advocates of increased militarization of the workers in name of the revolution, as well as establishing a strong state that is able to defend the workers’ interests and protect the revolution from reactionary forces that may oppose it, as the revolution is never supposed to stop spreading."
 
 ### Ideology Acceptance
 vanguardist_acceptance:0 "Acceptance of National Collectivism"
