@@ -153,16 +153,7 @@ if = {
 		autonomous_state = autonomy_colony
 		freedom_level = 0.5
 	}
-	set_autonomy = {
-		target = ISR
-		autonomous_state = autonomy_protectorate
-		freedom_level = 0.5
-	}
-	set_autonomy = {
-		target = IRQ
-		autonomous_state = autonomy_protectorate
-		freedom_level = 0.5
-	}
+
 	set_autonomy = {
 		target = BEA
 		autonomous_state = autonomy_colony
