@@ -2079,7 +2079,7 @@ focus_tree = {
 
   focus = {
 		id = SWI_break_bread_with_the_italians
-		icon = SWI_Bread_with_Italian_Characteristics
+		icon = GFX_goal_SWI_break_bread_with_the_italians
     prerequisite = { focus = SWI_chief_ambassadorship_founded_in_bern focus = SWI_chief_ambassadorship_founded_in_geneva focus = SWI_chief_ambassadorship_founded_in_lugano }
 		x = 20
 		y = 8

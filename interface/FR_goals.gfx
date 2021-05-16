@@ -1834,10 +1834,10 @@ spriteTypes = {
 	name = "GFX_goal_SWI_break_bread_with_the_krauts"
 	texturefile= "gfx/interface/goals/break_bread_with_the_krauts.dds"
 	}
-	# SpriteType = {
-	# name = "GFX_goal_SWI_break_bread_with_the_italians"
-	# texturefile= "gfx/interface/goals/break_bread_with_the_italians.dds"
-	# }
+	SpriteType = {
+	name = "GFX_goal_SWI_break_bread_with_the_italians"
+	texturefile= "gfx/interface/goals/break_bread_with_the_italians.dds"
+	}
 	SpriteType = {
 	name = "GFX_goal_SWI_break_bread_with_the_austrians"
 	texturefile= "gfx/interface/goals/break_bread_with_the_austrians.dds"
