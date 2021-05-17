@@ -81,7 +81,7 @@ SpriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_unificationist_faction"
-		texturefile = "gfx/interface/goals/GFX_four_horsemen_of_extremist_nationalist.dds"
+		texturefile = "gfx/interface/goals/GFX_triumvirate_of_unificationist.dds"
 	}
 	spriteType = {
 		name = "GFX_Royalist_win_election"
