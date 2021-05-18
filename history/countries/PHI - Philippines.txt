@@ -10,6 +10,8 @@ if = {
 	}
 }
 
+country_event = { id = phi.29 days = 366 }
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -55,7 +57,7 @@ add_ideas = {
 	PHI_marxist_professors
 
 	PHI_Jose_P_Laurel_hog_ade
-	PHI_Ferdinand_Marcos_for_sco
+	PHI_Ferdinand_Marcos_for_ade
 	PHI_Serafin_Fausto_eco_ade
 	PHI_Benigno_Aquino_Sr_sec_ade
 	PHI_Fidel_Segundo_int_ade

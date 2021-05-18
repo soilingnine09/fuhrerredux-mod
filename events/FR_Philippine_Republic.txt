@@ -220,7 +220,7 @@ country_event = { # Trip to Congress
             remove_every_minister = yes
             add_ideas = {
                 PHI_Benigno_Aquino_Sr_hog_ade
-                PHI_Ferdinand_Marcos_for_sco
+                PHI_Ferdinand_Marcos_for_ade
                 PHI_Serafin_Fausto_eco_ade
                 PHI_Jose_Yulo_sec_sco
                 PHI_Fidel_Segundo_int_ade
@@ -358,7 +358,7 @@ country_event = { # Presidential Elections
         remove_every_minister = yes
         add_ideas = {
             PHI_Benigno_Ramos_hog_val
-            PHI_Ferdinand_Marcos_for_sco
+            PHI_Ferdinand_Marcos_for_ade
             PHI_Diosdado_P_Macapagal_eco_sde
             PHI_Jose_G_Lukban_sec_val
             PHI_Benigno_Ramos_int_val
@@ -687,7 +687,7 @@ country_event = { # March on Manila
         remove_every_minister = yes
         add_ideas = {
             PHI_Emilio_Aguinaldo_hog_npo
-            PHI_Ferdinand_Marcos_for_sco
+            PHI_Ferdinand_Marcos_for_ade
             PHI_Ramon_Alcaraz_eco_pau
             PHI_Rafael_Jalandoni_sec_pau
             PHI_Fidel_Segundo_int_ade
@@ -1232,7 +1232,7 @@ country_event = { # 1940 Presidential Elections
             limit = { has_country_flag = PHI_rodriguez_nominated }
             add_ideas = {
                 PHI_Eulogio_Rodriguez_Sr_hog_sco
-                PHI_Ferdinand_Marcos_for_sco
+                PHI_Ferdinand_Marcos_for_ade
                 PHI_Jose_G_David_eco_sco
                 PHI_Tirano_Craveza_sec_sco
                 PHI_James_Wilson_int_sco
@@ -1343,6 +1343,50 @@ country_event = { # 1940 Presidential Elections
     }
 }
 
+country_event = { # Independence Day Debate
+    id = phi.29
+    title = phi.29.t
+    desc = phi.29.d
+    picture = GFX_report_event_PHI_rizal_park
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = { # June 
+        name = phi.29.a
+        set_country_flag = PHI_selected_date
+        hidden_effect = {
+            country_event = { id = phi.30 days = 162 }
+        }
+    }
+    option = { # July
+        name = phi.29.b
+        set_country_flag = PHI_selected_date
+        hidden_effect = {
+            country_event = { id = phi.30 days = 184 }
+        }
+    }
+}
+
+country_event = { # Independence Day
+    id = phi.30
+    title = phi.30.t
+    desc = phi.30.d
+    picture = GFX_report_event_PHI_rizal_park
+    is_triggered_only = yes
+
+    trigger = {
+        has_country_flag = PHI_selected_date
+    }
+
+    option = {
+        name = phi.30.t
+        add_political_power = 50
+        hidden_effect = {
+            country_event = { id = phi.30 days = 365 }
+        }
+    }
+}
+
 country_event = { # Ask for Investments
     id = phi.100
     title = phi.100.t
@@ -1427,20 +1471,62 @@ country_event = { # Trade Treaty
 
     option = { # Accept
         name = phi.103.a
-        hidden_effect = {
-            set_country_flag = PHI_trade_treaty_tt
-            FROM = {
-                country_event = phi.104
+        ai_chance = {
+            base = 60
+            modifier = { 
+                factor = 8
+                tag = ENG
+                NOT = { country_exists = BEA }
+            }
+            modifier = {
+                factor = 8
+                tag = GER
+                country_exists = BEA
+            }
+            modifier = {
+                factor = 8
+                tag = GER
+                country_exists = FIC
+            }
+            modifier = {
+                factor = 4
+                tag = JAP
+                OR = {
+                    has_war_with = ENG
+                    has_war_with = FRA
+                    has_war_with = USA
+                }
+            }
+            modifier = {
+                factor = 2
+                tag = JAP
+                OR = {
+                    has_war_with = MAN
+                    has_war_with = ZHI
+                    has_war_with = CHI
+                }
+            }
+            modifier = {
+                factor = 10
+                tag = USA
+                OR = {
+                    has_war_with = JAP
+                    has_war_with = ENG
+                }
+            }
+            modifier = {
+                factor = 0.5
+                has_war_with = FROM
             }
         }
+        FROM = { country_event = phi.104 }
     }
     option = { # Decline
         name = phi.103.b
-        hidden_effect = {
-            FROM = {
-                country_event = phi.105
-            }
+        ai_chance = {
+            base = 40
         }
+        FROM = { country_event = phi.105 }
     }
 }
 
@@ -1453,6 +1539,24 @@ country_event = { # Trade Treaty Accepted
 
     option = {
         name = phi.104.a
+        hidden_effect = {
+            if = {
+                limit = { FROM = ENG }
+                set_country_flag = PHI_british_trade
+            }
+            else_if = {
+                limit = { FROM = USA }
+                set_country_flag = PHI_american_trade
+            }
+            else_if = {
+                limit = { FROM = GER }
+                set_country_flag = PHI_german_trade
+            }
+            else_if = {
+                limit = { FROM = JAP }
+                set_country_flag = PHI_japanese_trade
+            }
+        }
     }
 }
 
