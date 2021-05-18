@@ -37,7 +37,6 @@ ideas = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_lessened_antijapanese_sentiment"}
 			picture = MAN_antijapanese_sentiment
 
-
 			allowed = {
 				always = no
 			}
@@ -74,7 +73,7 @@ ideas = {
 
 		MAN_warlord_ubiquity = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_warlord_ubiquity"}
-			picture = GFX_idea_beiyang_council
+			picture = beiyang_council
 
 
 			allowed = {
@@ -135,7 +134,7 @@ ideas = {
 
 		MAN_no_central_rule = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_no_central_rule"}
-			picture = GFX_idea_generic_anarchism_rising
+			picture = generic_anarchism_rising
 
 
 			allowed = {
@@ -151,7 +150,7 @@ ideas = {
 
 		MAN_industry_paralyzed = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_industry_paralyzed"}
-			picture = GFX_idea_grl_minority_rule
+			picture = grl_minority_rule
 
 
 			allowed = {
@@ -167,7 +166,7 @@ ideas = {
 
 		MAN_japanese_interests_in_manchuria = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_japanese_interests_in_manchuria"}
-			picture = GFX_idea_japanese_monopolies
+			picture = jap_zaibatsu
 
 
 			allowed = {
@@ -184,7 +183,7 @@ ideas = {
 
 		MAN_military_disarray = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_military_disarray"}
-			picture = GFX_idea_country_focus_army
+			picture = tfv_can_conscription_crisis
 
 
 			allowed = {
@@ -200,7 +199,7 @@ ideas = {
 
 		MAN_harbin_military_academy_idea = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_harbin_military_academy_idea"}
-			picture = GFX_idea_generic_officer_cap
+			picture = saf_soviet_advisers
 
 
 			allowed = {
@@ -215,7 +214,7 @@ ideas = {
 
 		MAN_tianjin_naval_academy_idea = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_tianjin_naval_academy_idea"}
-			picture = GFX_idea_generic_officer_cap
+			picture = generic_sea_focused_navy
 
 
 			allowed = {
@@ -230,7 +229,7 @@ ideas = {
 
 		MAN_power_from_the_people = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_power_from_the_people"}
-			picture = GFX_idea_grl_minority_rule
+			picture = ast_abandon_the_westminster_system
 
 
 			allowed = {
@@ -245,7 +244,7 @@ ideas = {
 
 		MAN_power_from_the_people_conscription = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_power_from_the_people_conscription"}
-			picture = GFX_idea_grl_minority_rule
+			picture = ast_abandon_the_westminster_system
 
 
 			allowed = {
@@ -261,7 +260,7 @@ ideas = {
 
 		MAN_electrifying_the_cities = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_electrifying_the_cities"}
-			picture = GFX_idea_generic_electronics_concern_1 #placeholder
+			picture = generic_central_management
 
 
 			allowed = {
@@ -277,7 +276,7 @@ ideas = {
 
 		MAN_schools = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_schools"}
-			picture = send_attache
+			picture = generic_army_war_college
 
 			allowed = {
 				always = no
@@ -316,7 +315,7 @@ ideas = {
 
 		MAN_culture_manchu_revival = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_culture_manchu_revival"}
-			picture = GFX_idea_MAN_old_manchu_culture
+			picture = MAN_old_manchu_culture
 
 			allowed = {
 				always = no
@@ -330,7 +329,7 @@ ideas = {
 
 		MAN_culture_han = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_culture_han"}
-			picture = GFX_idea_chi_chinese_support #placeholder
+			picture = chi_chinese_support
 
 			allowed = {
 				always = no
@@ -1169,7 +1168,7 @@ ideas = {
 	}
 		MAN_manchurian_economic_gains = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_manchurian_economic_gains"}
-		picture = GFX_idea_MAN_manchurian_economic_gains
+		picture = MAN_manchurian_economic_gains
 
 		allowed = {
 			always = no

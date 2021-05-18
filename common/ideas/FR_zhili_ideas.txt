@@ -34,7 +34,7 @@ ideas = {
 
 		ZHI_jade_marshall = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_jade_marshall"}
-		picture = GFX_idea_ZHI_jade_marshall
+		picture = ZHI_jade_marshall
 			modifier = {	
 				army_attack_factor = 0.05
 				army_defence_factor = 0.05
@@ -44,7 +44,7 @@ ideas = {
 
 		ZHI_japanese_backing = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_japanese_backing"}
-		picture = GFX_idea_ZHI_japanese_backing
+		picture = ZHI_japanese_backing
 			cancel = {
 				has_war_with = JAP
 			}
@@ -89,7 +89,7 @@ ideas = {
 		}
 		ZHI_japanese_backing2 = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_japanese_backing2"}
-		picture = GFX_idea_ZHI_japanese_backing
+		picture = ZHI_japanese_backing
 			cancel = {
 				has_war_with = JAP
 			}
@@ -128,7 +128,7 @@ ideas = {
 		}
 		ZHI_jaden_jewel = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_jaden_jewel"}
-		picture = GFX_idea_ZHI_jaden_jewel
+		picture = ZHI_jaden_jewel
 			modifier = {
 				political_power_gain = 0.1
 				stability_factor = 0.1
@@ -141,7 +141,7 @@ ideas = {
 		}
 		ZHI_broken_jewel = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_broken_jewel"}
-		picture = GFX_idea_ZHI_jaden_jewel
+		picture = ZHI_jaden_jewel
 			modifier = {
 				political_power_gain = -0.1
 				stability_factor = -0.15
@@ -375,7 +375,7 @@ ideas = {
 		}
 		ZHI_no_marshal = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_no_marshal"}
-		picture = GFX_idea_ZHI_no_marshal
+		picture = ZHI_no_marshal
 			modifier = {
 				army_org_factor = -0.05
 				army_morale_factor = -0.08
@@ -384,7 +384,7 @@ ideas = {
 		}
 		ZHI_the_nanking_warlord = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_the_nanking_warlord"}
-		picture = GFX_idea_ZHI_nanking_warlord
+		picture = ZHI_nanking_warlord
 			modifier = {
 				army_org_factor = 0.02
 				army_attack_factor = 0.03
@@ -420,7 +420,7 @@ ideas = {
 		}
 		ZHI_jade_marshal2 = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_jade_marshal2"}
-		picture = GFX_idea_ZHI_jade_marshall
+		picture = ZHI_jade_marshall
 			modifier = {
 				army_attack_factor = 0.05
 				army_defence_factor = 0.05
@@ -451,7 +451,7 @@ ideas = {
 		}
 		part_of_beiyang_council = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea part_of_beiyang_council"}
-			picture = GFX_idea_beiyang_council
+			picture = beiyang_council
 			modifier = {
 				political_power_gain = 0.06
 				stability_factor = 0.10
