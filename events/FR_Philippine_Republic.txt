@@ -1343,6 +1343,50 @@ country_event = { # 1940 Presidential Elections
     }
 }
 
+country_event = { # Independence Day Debate
+    id = phi.29
+    title = phi.29.t
+    desc = phi.29.d
+    picture = GFX_report_event_PHI_rizal_park
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = { # June 
+        name = phi.29.a
+        set_country_flag = PHI_selected_date
+        hidden_effect = {
+            country_event = { id = phi.30 days = 162 }
+        }
+    }
+    option = { # July
+        name = phi.29.b
+        set_country_flag = PHI_selected_date
+        hidden_effect = {
+            country_event = { id = phi.30 days = 184 }
+        }
+    }
+}
+
+country_event = { # Independence Day
+    id = phi.30
+    title = phi.30.t
+    desc = phi.30.d
+    picture = GFX_report_event_PHI_rizal_park
+    is_triggered_only = yes
+
+    trigger = {
+        has_country_flag = PHI_selected_date
+    }
+
+    option = {
+        name = phi.30.t
+        add_political_power = 50
+        hidden_effect = {
+            country_event = { id = phi.30 days = 365 }
+        }
+    }
+}
+
 country_event = { # Ask for Investments
     id = phi.100
     title = phi.100.t

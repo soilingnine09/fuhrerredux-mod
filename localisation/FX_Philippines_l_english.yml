@@ -999,6 +999,13 @@ phi.28.d:0 "Today is election day, and ballots have been finished counted after 
 phi.28.a:0 "Nacionalista"
 phi.28.b:0 "Liberal"
 phi.28.c:0 "Demócrata"
+phi.29.t:0 "Celebration of our Independence"
+phi.29.d:0 "Technically, there have been two independence days of [PHI.GetNameDef], one is June 12 which is when the Katipunan or the First Republic have declared independence from Spain; and the other is July 4, when the Americans have granted us full independence. Only one can be celebrated anually to avoid confusion, and there are multiple voices in the government that opposes each other, however, the President can break this stalemate."
+phi.29.a:0 "June 12"
+phi.29.b:0 "July 4"
+phi.30.t:0 "Independence Day!"
+phi.30.d:0 "Today, [PHI.GetNameDef] is celebrating its independence day from the foreign colonizers, whom have oppressed the [PHI.GetAdjective] for hundreds of years. People have been gathering in the streets of not just only in [PHI.Capital.GetName] but also in the provinces, as the celebration is widely popular with the [PHI.GetAdjective] people."
+phi.30.a:0 "Mabuhay ang Pilipinas!"
 
 phi.100.t:0 "[PHI.GetNameDef] Requests Economic Investments"
 phi.100.d:0 "An ambassador from Manila has talked with our Economic Ministers, they requested us to invest in their economic programs. These can be useful in our future plans and can increase our influence in the region. What shall be our response?"
