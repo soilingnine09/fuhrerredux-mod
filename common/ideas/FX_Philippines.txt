@@ -86,7 +86,6 @@ ideas = {
                 stability_factor = 0.1
             }
         }
-
         PHI_social_welfare_department2 = {
             allowed = { is_a_filipino_tag = yes }
             picture = raj_risk_of_famine
@@ -879,13 +878,13 @@ ideas = {
                 for_hawkish_intervener
             }
         }
-        PHI_Ferdinand_Marcos_for_sco = {
+        PHI_Ferdinand_Marcos_for_ade = {
             allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
                 foreign_minister
-                social_conservative
+                authoritarian_democrat
                 for_iron_fisted_brute
             }
         }
