@@ -109,51 +109,6 @@ bookmarks = {
         }
 
         ### Minors
-        "SIA" = {
-            history = "SIA_FUHRERREDUX_DESC"
-            ideology = social_democrat
-            minor = yes
-            ideas = {
-                foreign_company_investment
-                parliament_with_officers
-                stable_bureaucrat
-            }
-            focuses = {
-                SIA_third_industrial_revolution
-                SIA_recovery_from_great_depression
-                SIA_balance_in_power
-            }
-        }
-        "PER" = {
-            history = "PER_FUHRERREDUX_DESC"
-            ideology = paternal_autocrat
-            minor = yes
-            ideas = {
-                PER_british_influence_iran_idea
-                PER_underground_revolutionaries_idea
-                PER_primitive_military_idea
-            }
-            focuses = {
-                PER_MIL_consilidate_regime
-                PER_REP_fall_of_lion
-                PER_NAT_civil_war_iran
-            }
-        }
-        "SWI" = {
-            history = "SWI_FUHRERREDUX_DESC"
-            ideology = market_liberal
-            minor = yes
-            ideas = {
-                SWI_die_schweizer_armee
-                SWI_the_swiss_banking_act
-                SWI_swiss_neutrality
-            }
-            focuses = {
-                SWI_continuing_economic_planning
-                SWI_the_1939_federal_elections
-                SWI_audit_on_swiss_banks
-            }
-        }
         "PHI" = {
             history = "PHI_FUHRERREDUX_DESC"
             ideology = authoritarian_democrat
@@ -183,19 +138,20 @@ bookmarks = {
                 hun_demand_transylvania
             }
         }
-        "NOR" = {
-            history = "NOR_FUHRERREDUX_DESC"
-            ideology = libertarian_socialist
+		
+		"SWI" = {
+            history = "SWI_FUHRERREDUX_DESC"
+            ideology = market_liberal
             minor = yes
             ideas = {
-                NOR_monarchist_right_idea
-                NOR_war_on_samfundsvernet_idea
-                NOR_socialism_surrounded_idea
+                SWI_die_schweizer_armee
+                SWI_the_swiss_banking_act
+                SWI_swiss_neutrality
             }
             focuses = {
-                NOR_1936_election
-                NOR_monarchist_victory
-                NOR_socialist_republic
+                SWI_continuing_economic_planning
+                SWI_the_1939_federal_elections
+                SWI_audit_on_swiss_banks
             }
         }
 
