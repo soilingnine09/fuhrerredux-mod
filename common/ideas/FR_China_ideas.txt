@@ -4,7 +4,7 @@ ideas = {
 		iliterate_population = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea iliterate_population"}
 			removal_cost = -1
-			picture = SIA_military_expenditure_cut
+			picture = CHI_illiterate_population
 
 			allowed = {
 				always = no

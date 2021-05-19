@@ -120,7 +120,7 @@ spriteTypes = {
         texturefile = "gfx/interface/ministers/PHI/PHI_Manuel_Quadrino.dds"
     }
     spriteType = {
-        name = "GFX_idea_PHI_Ferdinand_Marcos_for_sco"
+        name = "GFX_idea_PHI_Ferdinand_Marcos_for_ade"
         texturefile = "gfx/interface/ministers/PHI/PHI_Ferdinand_Marcos.dds"
     }
     spriteType = {

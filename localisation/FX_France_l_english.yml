@@ -38,9 +38,6 @@ FRA_valkist:0 "État Français"
 FRA_valkist_ADJ:0 "Française"
 FRA_valkist_DEF:0 "L'État Français"
 
-### Focus Tree
-france_focus_junta:0 "Military Government Tree"
-
 ### Research Groups
 continental_entente_research_name:0 "Entente Institute of Research"
 continental_entente_research_desc:0 "The Entente Institute of Research, or simply 'EIR', is an academic organization headed by France. Whilst many domestic branches of this organization do exist, there are a sizeable amount of branches related to military innovations."
@@ -129,10 +126,10 @@ fra_promote_defense_desc:0 "If the Great War taught us anything, it's that nothi
 fra_fort_research:0 "Experimental Fortification Research"
 fra_fort_research_desc:0 "The French countryside is a great place to test new styles of forts and see which ones preform better under certain conditions. When these tests are done we will be able to find the most efficiant and effective system for stopping the enemy in their tracks."
 ###
-fra_allocate_fort_funds:0 "Allocate funds to the Calais-Metz Line"
+fra_allocate_fort_funds:0 "Allocate Funds to the Calais-Metz Line"
 fra_allocate_fort_funds_desc:0 "Our weakness in the Great War was the Belgian border and the terrible natural defenses in the Pas De Calais. A string of fortifications stretching from the coastline to Metz will deter the Germans from invading through the same route they used some 20 years ago."
 ###
-fra_good_defense:0 "...Is a perfect defense"
+fra_good_defense:0 "...is the Perfect Defense"
 fra_good_defense_desc:0 "With our defensive projects completed, we have turned the entirety of France into one huge bunker. No enemy would ever dare attack us now!"
 ###
 fra_promote_offense:0 "Out with the Old..."
@@ -141,10 +138,10 @@ fra_promote_offense_desc:0 "The offensives of 1918-1919 have shown that simply s
 fra_fund_military_uni:0 "Fund Military Colleges"
 fra_fund_military_uni_desc:0 "In order to win a war, a nation needs a full roster of competant generals who have been trained in the arts of modern warfare. Funding military colleges throughout metropolitan France will allow us to train new officers and fufill this need."
 ###
-fra_modern_doctrine:0 "A Modern Doctrine"
+fra_modern_doctrine:0 "Modern Doctrine"
 fra_modern_doctrine_desc:0 "We have decided that the defensive doctrine which has served us in the last war is no longer good enough for a modern army. It's about time we chose a new direction."
 ###
-fra_in_new:0 "...In with the new"
+fra_in_new:0 "...in With the New"
 fra_in_new_desc:0 "Our doctrine has been revived, our army modernized, and our generals fresh. Our military is able to take on the threats of the new world, wherever they may be."
 ###
 fra_invest_ic:0 "Investigation of the Capitalists"
@@ -168,7 +165,7 @@ fra_prov_govt_desc:0 "The sitting government is clearly unable to deal with the 
 fra_nuc_alive:0 "The Bloc National survives"
 fra_nuc_alive_desc:0 "The trial of the eleven forced a shakeup in the French government, and the Bloc National has come out of it stronger than ever. Now we are ready to face the new decade with renewed vigour and determination to lead Franc further to greatness."
 ###
-fra_1936_election:0 "The 1936 election"
+fra_1936_election:0 "The 1936 Elections"
 fra_1936_election_desc:0 "With the financial scandal finally behind us, the government is ready to begin the 1936 elections which were originally slated for early March."
 ###
 fra_socdem_win:0 "The SFIO"
@@ -195,7 +192,7 @@ fra_more_jobs_desc:0 "Our industry is beginning to fall behind that of the Briti
 fra_extend_healthcare:0 "Extended Healthcare"
 fra_extend_healthcare_desc:0 "Despite being a civilized and Western colonial power, our healthcare system is extremely outdated and bloated. Modernizing this system will allow us to heal our citizens and soldiers alike with greater efficiancy."
 ###
-fra_revise_finance:0 "Revise the financial plans"
+fra_revise_finance:0 "Revise the Financial Plans"
 fra_revise_finance_desc:0 "The 1936 Financial Scandal rocked France to its very core, and we are in desperate need of radical reorganization if we are to continue governing the nation effectively."
 ###
 fra_business_subsidy:0 "Business Subsidies"
@@ -216,7 +213,7 @@ fra_algeria_adventure_desc:0 "The Algerian desert may be impassible, but there i
 fra_prov_election:0 "Death of the Republic"
 fra_prov_election_desc:0 "The French Third Republic has proven itself woefully incapable of handling the troubled political climate that the 20th Century has brought, and many believe that the time for radical change has come. A complete restructuring of the constitution will bring about a new era of French politics and prosperity."
 ###
-fra_af_control:0 "AF in Control"
+fra_af_control:0 "Action Française"
 fra_af_control_desc:0 "With the provisional elections at an end, the Action Française has been democratically elected and the balance of power in the French political sphere has changed dramatically. We must reorganize the parliament in an equally dramatic measure to ensure a smooth transition of power."
 ###
 fra_papal_love:0 "Papal Reconciliation"
@@ -231,7 +228,7 @@ fra_party_news_desc:0 "From the founding of our party at the turn of the Century
 fra_restore_chin:0 "Restoration of the Monarchy"
 fra_restore_chin_desc:0 "With the support of the Pope, the people, and the military, it's time to invite the exiled Orléanist prince to take the French throne. The Republican experiment will be ended once and for all, and the divine monarchy will reign supreme!"
 ###
-fra_illegal_strikes:0 "Revoke the legality of Strikes"
+fra_illegal_strikes:0 "Revoke the Legality of Strikes"
 fra_illegal_strikes_desc:0 "France has had a history of industrial workers going on strike whenever they feel their every demand is not met in full, and our government has always caved into them. No more will this be the case, we will not give in to any more of their socialist demands."
 ###
 fra_german_menace:0 "The German Menace"
@@ -258,7 +255,7 @@ fra_juan_party_desc:0 "We have achieved our hard-fought goal of uniting the nati
 fra_royal_education:0 "Royalist Education"
 fra_royal_education_desc:0 "It seems that the history of the French monarchy has been lost on the citizens of our kingdom. Introducing a new curriculum relating to our royal history should be able to rectify this, and stir up a few more volunteers for the army."
 ###
-fra_german_war:0 "Put down the German dog"
+fra_german_war:0 "Put Down the German Dog"
 fra_german_war_desc:0 "It has become clear that the new German Reich has no intention of abiding by the Treaty of Versallies, and they threaten the very stability of the entire continent. We must launch a pre-emptive invasion to restore order across the Rhine once and for all."
 ###
 fra_distribute_titles:0 "Distribute Royal Titles"
@@ -285,7 +282,7 @@ fra_peoples_govt_desc:0 "As per the intention of the original French revolution,
 fra_regulate_franc:0 "Regulating the Franc"
 fra_regulate_franc_desc:0 "The financial scandal in our nation proved how instable currency can be, and drastic measures must be taken in order to stabalize the Franc and ensure economic prosperity."
 ###
-fra_safe_rhine:0 "Safeguard our interests in the Rhine"
+fra_safe_rhine:0 "Safeguard our Interests in the Rhine"
 fra_safe_rhine_desc:0 "French control of the Rhineland has proven to be of great economic benifit, but it has also come with great risk; armed revolt and invervention from Germany loom over us as a persistant and constant threat. The construction of some basic fortifications should suffice for the time being while we organize a more planned defense."
 ###
 fra_fight_religion:0 "A War on Religion"
@@ -354,7 +351,7 @@ fra_desperate_defense_desc:0 "The final days of France draw near, now not even t
 fra_ground_eyes:0 "Eyes on the Ground..."
 fra_ground_eyes_desc:0 "To fight a war blind is to commit yourself to certain defeat, we need to know where our enemies are at all times if we want to achieve victory in this new age of fast and mobile warfare where every second counts."
 ###
-fra_sky_eyes:0 "...And Eyes in the Sky"
+fra_sky_eyes:0 "...and Eyes in the Sky"
 fra_sky_eyes_desc:0 "Aerial Recon is quickly proving to be one of the deciding factors in who will emerge victorious in battle, as shown by our troops in the Rif War during the 20s. Developing this doctrine further will increase our chances of winning on the balefield and allow us to see the enemy movements and react accordingly."
 ###
 fra_general_staff:0 "French General Staff"
@@ -492,7 +489,7 @@ fra_mas_contracts_desc:0 "The Manufacture d'armes de Saint-Étienne, or MAS, is 
 fra_women_army:0 "Women in the Army"
 fra_women_army_desc:0 "We have a giant untapped source of manpower in our female population. Women all across the country have shown great intrest in becoming medics, engineers, and even soldiers in our army. We would be fools to let this oppertunity go to waste."
 ###
-fra_many_guns:0 "Mass rifle production"
+fra_many_guns:0 "Mass Rifle production"
 fra_many_guns_desc:0 "For many years our army has suffered from a critical lack of rifles, and what good is a soldier if they don't have a gun in their hands? We must remedy this crisis as soon as possible."
 ###
 fra_many_soldiers:0 "Mass Mobilization Initative"
@@ -651,7 +648,7 @@ fra_destroyers_desc:0 "Destroyers are an extremely versitile ship which can perf
 fra_quick_response:0 "Quick-Response Task Forces"
 fra_quick_response_desc:0 "Increasing the speed of our small task forces will allow us to deal more damage and take less damage ourselves. These new doctrines will prove invaluable if we are ever caught up in a naval war."
 ###
-fra_cruisers:0 "Cruiser initiative"
+fra_cruisers:0 "Cruiser Initiative"
 fra_cruisers_desc:0 "Cruisers make up the backbone of any strong navy, and we would be fools to ignore this fact. More cruisers will give our fleets more of an advantage in battle."
 ###
 fra_merchant_marine:0 "Expand the Merchant Marine"
@@ -672,7 +669,7 @@ fra_coastal_air_def_desc:0 "Should the unthinkable happen and the enemies take c
 fra_naval_bombers:0 "Naval Bombers"
 fra_naval_bombers_desc:0 "Close Air Support can only do so much damage against an enemy fleet, we need to develop new aircraft which have the sole purpose of destroying ships if we are to truly destroy the enemy before they are able to retreat."
 ###
-fra_navy_air_cadets:0 "Air-Navy cadet excercises"
+fra_navy_air_cadets:0 "Air-Navy Cadet Excercises"
 fra_navy_air_cadets_desc:0 "The Air and Navy cadets operate almost entirely independant of each other. We should encourage cooperation between the two groups in order to promote cooperation and brotherhood between them."
 ###
 fra_continental_supremacy:0 "Coming soon!"
@@ -711,7 +708,7 @@ fra_valkist_saar_desc:0 "The Sarre department is almost entirely homogeneous wit
 fra_education_reform:0 "Education Reform"
 fra_education_reform_desc:0 "Teaching the next generation of French soldiers and officers the importance of a strong military and a strong state is imparitive to ensuring our regime will stand the test of time."
 ###
-fra_national_revolution:0 "The "Révolution nationale""
+fra_national_revolution:0 "The Révolution Nationale"
 fra_national_revolution_desc:0 "The culture of France needs to change dramatically if we are to stand up to the military might of other nations that wish to subjugate us. By the end of this project all French homes will be filled with the citizens saying "Travail, Famille, Patrie"."
 ###
 fra_german_revolution:0 "Spread the Révolution to Germany"
@@ -732,10 +729,10 @@ fra_anti_german_propaganda_desc:0 "A second Great War looks ever more likely jus
 fra_ban_radicals:0 "Ban Radical Groups"
 fra_ban_radicals_desc:0 "The previous conservative government of France was very wary of banning groups under the fear that they may simply move underground and resort to violence to spread their message. With the new regime however, we are not afraid of such activities. Should these groups continue to radicalize underground like the rats they are, we will flood the sewer and force them to the top where we can shoot them!\n ...metaphorically, of course."
 ###
-fra_milice:0 "Form the Milice française"
+fra_milice:0 "Form the Milice Française"
 fra_milice_desc:0 "As we expected, the radical groups that we banned went underground to continue their operations in secret. This has forced our hand and we have no other choice but to form the Milice française, a paramilitary organization headed by Joseph Darnand, one of the more outspoken members of government against these groups. We should make sure to keep the Milice on a tight leash, lest they run wild without supervision."
 ###
-fra_compromise:0 "Compromise with the radicals"
+fra_compromise:0 "Compromise with the Radicals"
 fra_compromise_desc:0 "The radical groups we pushed underground have shown no signs of letting up, and have made it clear that we must pay for our so-called injustices against them. Perhaps giving them minor diplomatic concessions will allow us to resume normal day-to-day operations without worrying about car bombs or shootings in the streets."
 
 
@@ -1946,7 +1943,7 @@ fra_nuc_win_election:0 "The Bloc National has not been disbanded."
 ###
 fra_tunis_shipments:0 "§GWe will recieve shipments of weapons and soldiers from Tunisia every few months.§!"
 ###
-fra_prov_allow:0 "§GThe military government will begin reforming the government.§!"
+fra_prov_allow:0 "§GThe Military Government will begin reforming the government.§!"
 ###
 fra_strike_warn:0 "§RWe could be pushed into conflict with the working class should they attempt an organized strike.§!"
 ###

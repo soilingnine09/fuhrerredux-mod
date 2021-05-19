@@ -198,6 +198,7 @@ country_event = { #1936 election
 		name = fra.8.b
 		hidden_effect = {
 			set_country_flag = fra_1936_elections
+			set_country_flag = fra_sfio_win_election
 		}
 		set_politics = {
 			ruling_party = social_democrat
@@ -211,6 +212,7 @@ country_event = { #1936 election
 		name = fra.8.c
 		hidden_effect = {
 			set_country_flag = fra_1936_elections
+			set_country_flag = fra_radical_win_election
 		}
 		set_politics = {
 			ruling_party = social_liberal
@@ -230,6 +232,7 @@ country_event = { #1936 election
 		SP_NS_clear_coalition_effect = yes
 		hidden_effect = {
 			set_country_flag = fra_1936_elections
+			set_country_flag = fra_dra_win_election
 		}
 		add_popularity = {
     		ideology = social_conservative
@@ -388,46 +391,39 @@ country_event = { #Petain's power is questioned
 	title = fra.13.t
 	desc = fra.13.d
 	picture = GFX_report_event_diplomacy3
-
+	is_triggered_only = yes
 
 	trigger = {
 		FRA = {
 			has_completed_focus = fra_prov_election
 		}
 	}
-	is_triggered_only = yes
 
-	option = { #stick with Petain
+	option = { # Stick with Petain, Military Government
 		name = fra.13.a
 		add_political_power = -50
 		set_country_flag = fra_prov_bad
-		custom_effect_tooltip = fra_prov_allow
-		hidden_effect = {
-			FRA = {
-				load_focus_tree = fra_focus_military
-			}
-		}
-		custom_effect_tooltip = fra_tree_unlocked
+		set_country_flag = fra_stick_with_petain
 	}
 
-	#option = { #Georges Valois and the AF, redacted until it is either fixed or removed
-	#	name = fra.13.b
-	#	create_country_leader = {
-	#		name = "Georges Valois"
-	#		desc = "POLITICS_GEORGES_VALOIS_DESC"
-	#		picture = "Portrait_France_Georges_Valois.tga"
-	#		expire = "1965.1.1"
-	#		ideology = paternal_autocrat_subtype
-	#		traits = {}
-	#	}
-	#	set_country_flag = fra_prov_bad
-	#	custom_effect_tooltip = fra_prov_allow
-	#	hidden_effect = {
-	#		country_event = fra.61
-	#	}
-	#}
+	option = { # Georges Valois and the AF
+		name = fra.13.b
+		create_country_leader = {
+			name = "Georges Valois"
+			desc = "POLITICS_GEORGES_VALOIS_DESC"
+			picture = "Portrait_France_Georges_Valois.tga"
+			expire = "1965.1.1"
+			ideology = paternal_autocrat_subtype
+			traits = {}
+		}
+		set_country_flag = fra_prov_bad
+		set_country_flag = fra_monarchist_france
+		hidden_effect = {
+			country_event = fra.61
+		}
+	}
 
-	option = { #Francois de la Roque and the PSF
+	option = { # Francois de la Roque and the PSF
 		name = fra.13.c
 		set_politics = {
 			ruling_party = authoritarian_democrat
@@ -437,12 +433,7 @@ country_event = { #Petain's power is questioned
 			popularity = 0.10
 		}
 		set_country_flag = fra_prov_bad
-		custom_effect_tooltip = fra_prov_allow
-		hidden_effect = {
-			FRA = {
-				load_focus_tree = fra_focus_psf
-			}
-		}
+		set_country_flag = fra_christan_democracy
 	}
 }
 
@@ -2118,12 +2109,6 @@ country_event = {
 			long_name = "Action Française"
 			name = "AF"
 		}
-		hidden_effect = {
-			FRA = {
-				load_focus_tree = fra_focus_monarchy
-			}
-		}
-		custom_effect_tooltip = fra_tree_unlocked
 	}
 }
 
