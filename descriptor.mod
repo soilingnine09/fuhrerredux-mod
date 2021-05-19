@@ -30,10 +30,13 @@ replace_path="map/supplyareas"
 replace_path="map/strategicregions"
 replace_path="tests"
 version="0.1"
+dependencies = {
+	"Führerreich: Legacy of The Great War"
+}
 tags={
 	"Alternative History"
 	"Map"
 	"Balance"
 }
-path="/home/isaiahcollins/.local/share/Paradox Interactive/Hearts of Iron IV/mod/fuhrerredux"
+path="C:/Users/tonde/Documents/Paradox Interactive/Hearts of Iron IV/mod/FX"
 supported_version="1.10.*"

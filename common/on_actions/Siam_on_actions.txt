@@ -1,4 +1,4 @@
-on_actions = {
+#on_actions = {
 	on_startup = {
 		effect = {
 			random_country = {
@@ -43,4 +43,4 @@ on_actions = {
 			}
 		}
 	}
-}
+#}

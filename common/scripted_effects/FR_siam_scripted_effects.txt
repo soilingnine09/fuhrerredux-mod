@@ -247,6 +247,7 @@ SIA_economic_progressing_random_rate_high = {
 	add_to_variable = { SiamEconomicVar = temp1 }
 }
 SIA_subtract_progressing_random_rate_low = {
+	custom_effect_tooltip = subtract_progressing_rate_low
 	set_temp_variable = { temp = random }
 	clamp_temp_variable = {
 		var = temp
@@ -256,6 +257,7 @@ SIA_subtract_progressing_random_rate_low = {
 	add_to_variable = { SiamEconomicVar = temp }
 }
 SIA_subtract_progressing_random_rate_mid = {
+	custom_effect_tooltip = subtract_progressing_rate_mid
 	set_temp_variable = { temp = random }
 	clamp_temp_variable = {
 		var = temp
@@ -265,6 +267,7 @@ SIA_subtract_progressing_random_rate_mid = {
 	add_to_variable = { SiamEconomicVar = temp }
 }
 SIA_subtract_progressing_random_rate_high = {
+	custom_effect_tooltip = subtract_progressing_rate_high
 	set_temp_variable = { temp = random }
 	clamp_temp_variable = {
 		var = temp

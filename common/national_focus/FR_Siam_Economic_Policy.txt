@@ -4,8 +4,9 @@ shared_focus = {
 	x = 30
 	y = 0
 	cost = 5
-	allow_branch = { has_country_flag = royal_market_crash } 
-	available = { has_country_flag = royal_market_crash }
+	allow_branch = { always = no }
+	#allow_branch = { has_country_flag = royal_market_crash } 
+	#available = { has_country_flag = royal_market_crash }
 	completion_reward = {
 		custom_effect_tooltip = commerce_the_broken_economy
 		swap_ideas = {
@@ -48,6 +49,9 @@ shared_focus = {
 	y = 1
 	cost = 3
 	prerequisite = { focus = SIA_socialist_chairman }
+	completion_reward = {
+		SIA_economic_progressing_random_rate_mid = yes
+	}
 }
 shared_focus = {
 	id = SIA_revisit_gold_standard
@@ -98,6 +102,11 @@ shared_focus = {
 	y = 1
 	cost = 3
 	prerequisite = { focus = SIA_socialist_chairman }
+	completion_reward = {
+		hidden_effect = {
+			set_variable = { sia_workerfund = 100} 
+		}
+	}
 }
 shared_focus = {
 	id = SIA_fund_workers
@@ -107,6 +116,12 @@ shared_focus = {
 	y = 1
 	cost = 3
 	prerequisite = { focus = SIA_investment_program }
+	completion_reward = {
+		custom_effect_tooltip = "We can fund less cost for workers for our program"
+		hidden_effect = {
+			subtract_from_variable = { sia_workerfund = 35 } 
+		}
+	}
 }
 shared_focus = {
 	id = SIA_forward_to_industrialization

@@ -749,7 +749,7 @@ country_event = {
 			set_country_flag = kgv_dead
 			retire_country_leader = yes
 			create_country_leader = { 
-				name = "Edward VIII" 
+				name = "King Edward VIII" 
 				desc = "POLITICS_EDWARD_VIII_DESC" 
 				picture = "Portrait_UK_Edward_VIII.tga" 
 				expire = "1965.1.1" 
@@ -757,7 +757,7 @@ country_event = {
 				traits = { meddler charismatic } 
 			}
 			create_country_leader = { 
-				name = "Edward VIII" 
+				name = "King Edward VIII" 
 				desc = "POLITICS_EDWARD_VIII_DESC" 
 				picture = "Portrait_UK_Edward_VIII.tga" 
 				expire = "1965.1.1" 
@@ -765,7 +765,7 @@ country_event = {
 				traits = { meddler charismatic } 
 			}
 			create_country_leader = { 
-				name = "Edward VIII" 
+				name = "King Edward VIII" 
 				desc = "POLITICS_EDWARD_VIII_DESC" 
 				picture = "Portrait_UK_Edward_VIII.tga" 
 				expire = "1965.1.1" 
@@ -773,7 +773,7 @@ country_event = {
 				traits = { meddler charismatic } 
 			}
 			create_country_leader = { 
-				name = "Edward VIII" 
+				name = "King Edward VIII" 
 				desc = "POLITICS_EDWARD_VIII_DESC" 
 				picture = "Portrait_UK_Edward_VIII.tga" 
 				expire = "1965.1.1" 
@@ -781,7 +781,7 @@ country_event = {
 				traits = { meddler charismatic } 
 			}
 			create_country_leader = { 
-				name = "Edward VIII" 
+				name = "King Edward VIII" 
 				desc = "POLITICS_EDWARD_VIII_DESC" 
 				picture = "Portrait_UK_Edward_VIII.tga" 
 				expire = "1965.1.1" 
@@ -789,7 +789,7 @@ country_event = {
 				traits = { meddler charismatic } 
 			}
 			create_country_leader = { 
-				name = "Edward VIII" 
+				name = "King Edward VIII" 
 				desc = "POLITICS_EDWARD_VIII_DESC" 
 				picture = "Portrait_UK_Edward_VIII.tga" 
 				expire = "1965.1.1" 
@@ -797,7 +797,7 @@ country_event = {
 				traits = { meddler charismatic } 
 			}
 			create_country_leader = { 
-				name = "Edward VIII" 
+				name = "King Edward VIII" 
 				desc = "POLITICS_EDWARD_VIII_DESC" 
 				picture = "Portrait_UK_Edward_VIII.tga" 
 				expire = "1965.1.1" 
@@ -805,7 +805,7 @@ country_event = {
 				traits = { meddler charismatic } 
 			}
 			create_country_leader = { 
-				name = "Edward VIII" 
+				name = "King Edward VIII" 
 				desc = "POLITICS_EDWARD_VIII_DESC" 
 				picture = "Portrait_UK_Edward_VIII.tga" 
 				expire = "1965.1.1" 
@@ -912,7 +912,7 @@ country_event = {
 		hidden_effect = {
 			retire_country_leader = yes
 			create_country_leader = { 
-				name = "George VI" 
+				name = "King George VI" 
 				desc = "POLITICS_GEORGE_VI_DESC" 
 				picture = "Portrait_Britain_George_VI.tga" 
 				expire = "1965.1.1" 
@@ -920,7 +920,7 @@ country_event = {
 				traits = { } 
 			}
 			create_country_leader = { 
-				name = "George VI" 
+				name = "King George VI" 
 				desc = "POLITICS_GEORGE_VI_DESC" 
 				picture = "Portrait_Britain_George_VI.tga" 
 				expire = "1965.1.1" 
@@ -928,7 +928,7 @@ country_event = {
 				traits = { } 
 			}
 			create_country_leader = { 
-				name = "George VI" 
+				name = "King George VI" 
 				desc = "POLITICS_GEORGE_VI_DESC" 
 				picture = "Portrait_Britain_George_VI.tga" 
 				expire = "1965.1.1"  
@@ -936,7 +936,7 @@ country_event = {
 				traits = { } 
 			}
 			create_country_leader = { 
-				name = "George VI" 
+				name = "King George VI" 
 				desc = "POLITICS_GEORGE_VI_DESC" 
 				picture = "Portrait_Britain_George_VI.tga" 
 				expire = "1965.1.1" 
@@ -944,7 +944,7 @@ country_event = {
 				traits = { } 
 			}
 			create_country_leader = { 
-				name = "George VI" 
+				name = "King George VI" 
 				desc = "POLITICS_GEORGE_VI_DESC" 
 				picture = "Portrait_Britain_George_VI.tga" 
 				expire = "1965.1.1"  
@@ -952,7 +952,7 @@ country_event = {
 				traits = { } 
 			}
 			create_country_leader = { 
-				name = "George VI" 
+				name = "King George VI" 
 				desc = "POLITICS_GEORGE_VI_DESC" 
 				picture = "Portrait_Britain_George_VI.tga" 
 				expire = "1965.1.1" 
@@ -960,7 +960,7 @@ country_event = {
 				traits = { } 
 			}
 			create_country_leader = { 
-				name = "George VI" 
+				name = "King George VI" 
 				desc = "POLITICS_GEORGE_VI_DESC" 
 				picture = "Portrait_Britain_George_VI.tga" 
 				expire = "1965.1.1" 
@@ -968,7 +968,7 @@ country_event = {
 				traits = { } 
 			}
 			create_country_leader = { 
-				name = "George VI" 
+				name = "King George VI" 
 				desc = "POLITICS_GEORGE_VI_DESC" 
 				picture = "Portrait_Britain_George_VI.tga" 
 				expire = "1965.1.1" 
@@ -3297,7 +3297,7 @@ country_event = {
 				traits = {  } 
 			}
 			create_country_leader = { 
-				name = "Edward VIII" 
+				name = "King Edward VIII" 
 				desc = "POLITICS_EDWARD_VIII_DESC" 
 				picture = "Portrait_UK_Edward_VIII.tga" 
 				expire = "1965.1.1" 
@@ -3392,7 +3392,7 @@ country_event = {
 				traits = {  } 
 			}
 			create_country_leader = { 
-				name = "Edward VIII" 
+				name = "King Edward VIII" 
 				desc = "POLITICS_EDWARD_VIII_DESC" 
 				picture = "Portrait_UK_Edward_VIII.tga" 
 				expire = "1965.1.1" 

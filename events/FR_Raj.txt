@@ -1388,9 +1388,9 @@ country_event = { #UK Takes Burma
 		RAJ = {
 			country_event = {days = 1 id = raj.21}
 		}
-		ENG = {
-			country_event = {days = 5 id = raj.22}
-		}
+		#ENG = {
+		#	country_event = {days = 5 id = raj.22}
+		#}
 	}
 }
 
@@ -1417,8 +1417,25 @@ country_event = { #British event, Parliament decides on course of intervention i
 
 	picture = report_event_generic_conference
 
-	is_triggered_only = yes
-
+	trigger = {
+		tag = ENG
+		RAJ = { 
+			AND = {
+				has_war_with = IND 
+				is_puppet_of = ENG
+				surrender_progress > 0.7
+			}
+		}
+		ENG = { NOT = { has_country_flag = ENG_Indian_Revolt_Intervention } }
+	}
+	fire_only_once = yes
+	immediate = { 
+		hidden_effect = {
+			set_country_flag = ENG_Indian_Revolt_Intervention 
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+	
 	option = { #Full military intervention
 		name = raj.22.a
 		custom_effect_tooltip = raj_intervention_full_tt

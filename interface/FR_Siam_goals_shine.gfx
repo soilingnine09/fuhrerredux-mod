@@ -587,13 +587,13 @@ spriteTypes = {
       animationtexturescale = { x = 1.0 y = 1.0 } 
     }
     legacy_lazy_load = no
-  }
+	}
   spriteType = {
 		name = "GFX_unificationist_faction_shine"
-		textureFile = "gfx/interface/goals/GFX_four_horsemen_of_extremist_nationalist.dds"
+		textureFile = "gfx/interface/goals/GFX_triumvirate_of_unificationist.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_four_horsemen_of_extremist_nationalist.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_triumvirate_of_unificationist.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
 			animationrotation = -90.0   # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no     # yes or no ;)
@@ -606,7 +606,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_four_horsemen_of_extremist_nationalist.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_triumvirate_of_unificationist.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
 			animationrotation = 90.0    # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no     # yes or no ;)

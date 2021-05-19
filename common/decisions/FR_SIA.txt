@@ -1,3 +1,121 @@
+SIA_supervisory_board_of_royal_market = {
+	pressure_protest_from_people = {
+		available = {
+			OR = {
+				has_completed_focus = SIA_establishes_trades_union_congress
+				has_completed_focus = SIA_bills_for_economic_improvement
+				has_completed_focus = SIA_foreign_company
+			}
+		}
+		activation = {
+			AND = {
+				has_idea = black_wednesday_1
+				OR = {
+					has_country_flag = supervisory_board_of_trade_union
+					has_country_flag = supervisory_board_of_centralized_assembly
+					has_country_flag = supervisory_board_of_free_trade
+				}
+			}
+		}
+		days_mission_timeout = 210
+		timeout_effect = {
+			add_stability = -0.05
+			add_manpower = -1000
+		}
+	}
+	###Socialist Non-Permanent Program Decision
+	state_welfare_propaganda = {
+		visible = {
+			OR = { 
+				has_completed_focus = SIA_autarky_reform
+				has_completed_focus = SIA_investment_program
+			}
+		}
+		cost = 20
+		days_remove = 30
+		days_re_enable = 7
+		modifier = {
+			libertarian_socialism_drift = 0.01
+		}
+		remove_effect = {
+			SIA_subtract_decaying_random_rate_low = yes
+		}
+	}
+	agrarian_regional_union = {
+		visible = {
+			has_completed_focus = SIA_agrarian_reform
+		}
+		cost = 25
+		days_remove = 40
+		days_re_enable = 15
+		modifier = {
+			libertarian_socialism_drift = 0.01
+			collectivist_drift = 0.01
+		}
+		remove_effect = {
+			SIA_subtract_decaying_random_rate_mid = yes
+			SIA_economic_progressing_random_rate_low = yes
+		}
+	}
+	initiative_learning_program = {
+		visible = {
+			has_completed_focus = SIA_investment_program
+		}
+		cost = 25
+		days_remove = 40
+		days_re_enable = 15
+		modifier = {
+			libertarian_socialism_drift = 0.01
+			collectivist_drift = 0.01
+		}
+		remove_effect = {
+			SIA_subtract_decaying_random_rate_mid = yes
+			SIA_economic_progressing_random_rate_low = yes
+		}
+	}
+	###Investment Program Toward the Industrialized 
+	eastern_dry_dock = {
+		visible = {
+			has_completed_focus = SIA_forward_to_industrialization
+		}
+		cost = sia_workerfund?100
+		days_remove = 40
+		fire_only_once = yes
+		modifier = {
+			consumer_goods_factor = 0.15
+		}
+		remove_effect = {
+			1013 = {
+				add_building_construction = {
+					type = naval_dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			SIA_economic_progressing_random_rate_high = yes
+			SIA_economic_decaying_random_rate_mid = yes
+		}
+	}
+	northern_mineral_excavation_zone = {
+		visible = {
+			has_completed_focus = SIA_forward_to_industrialization
+		}
+		available = {
+			NOT = { has_decision = eastern_dry_dock }
+		}
+		cost = sia_workerfund?100
+		days_remove = 40
+		fire_only_once = yes
+		modifier = {
+			consumer_goods_factor = 0.15
+		}
+		remove_effect = {
+			SIA_economic_progressing_random_rate_high = yes
+			SIA_economic_decaying_random_rate_mid = yes
+		}
+	}
+}
+
 SIA_anarchy_and_natcol_struggle = {
 	start_the_operation_meng_rai = {
 		visible = {
@@ -1552,573 +1670,7 @@ SIA_foreign_policy = {
 		}
 	}
 }
-SIA_supervisory_board_of_royal_market = {
-	pressure_protest_from_people = {
-		available = {
-			OR = {
-				has_completed_focus = SIA_establishes_trades_union_congress
-				has_completed_focus = SIA_bills_for_economic_improvement
-				has_completed_focus = SIA_foreign_company
-			}
-		}
-		activation = {
-			AND = {
-				has_idea = black_wednesday_1
-				OR = {
-					has_country_flag = supervisory_board_of_trade_union
-					has_country_flag = supervisory_board_of_centralized_assembly
-					has_country_flag = supervisory_board_of_free_trade
-				}
-			}
-		}
-		days_mission_timeout = 210
-		timeout_effect = {
-			add_stability = -0.05
-			add_manpower = -1000
-		}
-	}
-	##Trade Union Affairs
-	lands_reform_and_shares_the_wealth = {
-		available = {
-			has_country_flag = supervisory_board_of_trade_union
-			has_idea = black_wednesday_1
-			NOT = { 
-				OR = { 
-					has_decision = domestic_consumption_improvement
-					has_decision = central_price_reduction_for_people_market
-					has_decision = region_trade_union_policy
-				} 
-			}
-		}
-		visible = { has_country_flag = supervisory_board_of_trade_union }
-		cost = 50
-		days_remove = 30
-		modifier = {
-			vanguardist_drift = 0.01
-			market_liberal_drift = 0.01
-			collectivist_drift = 0.01
-			libertarian_socialist_drift = 0.01
-		}
-		fire_only_once = yes
-		remove_effect = {
-			add_ideas = lands_reform
-			custom_effect_tooltip = trade_union_inf_increase_by_5
-			custom_effect_tooltip = centralized_assembly_inf_decrease_by_5
-			custom_effect_tooltip = capitalist_fund_inf_decrease_by_10
-			add_to_variable = {  trade_union_inf = 5 }
-			subtract_from_variable = {  centralized_assembly_inf = 5 }
-			subtract_from_variable = {  capitalist_fund_inf = 10 }
-		}
-	}
-	domestic_consumption_improvement = {
-		available = {
-			has_country_flag = supervisory_board_of_trade_union
-			has_idea = black_wednesday_1 
-			NOT = { 
-				OR = { 
-					has_decision = lands_reform_and_shares_the_wealth
-					has_decision = central_price_reduction_for_people_market
-					has_decision = region_trade_union_policy
-				} 
-			}
-		}
-		visible = { has_country_flag = supervisory_board_of_trade_union }
-		cost = 50
-		days_remove = 30
-		modifier = {
-			vanguardist_drift = 0.01
-			market_liberal_drift = 0.01
-			collectivist_drift = 0.01
-			libertarian_socialist_drift = 0.01
-		}
-		fire_only_once = yes
-		remove_effect = {
-			add_ideas = domestic_reform
-			custom_effect_tooltip = trade_union_inf_increase_by_5
-			custom_effect_tooltip = centralized_assembly_inf_increase_by_2
-			custom_effect_tooltip = capitalist_fund_inf_increase_by_1
-			add_to_variable = {  trade_union_inf = 5 }
-			add_to_variable = {  centralized_assembly_inf = 2 }
-			add_to_variable = {  capitalist_fund_inf = 1 }
-		}
-	}
-	central_price_reduction_for_people_market = {
-		available = {
-			has_country_flag = supervisory_board_of_trade_union
-			has_idea = black_wednesday_1 
-			NOT = { 
-				OR = { 
-					has_decision = lands_reform_and_shares_the_wealth
-					has_decision = domestic_consumption_improvement
-					has_decision = region_trade_union_policy
-				} 
-			}
-		}
-		visible = { has_country_flag = supervisory_board_of_trade_union }
-		cost = 50
-		days_remove = 30
-		modifier = {
-			vanguardist_drift = 0.01
-			market_liberal_drift = 0.01
-			collectivist_drift = 0.01
-			libertarian_socialist_drift = 0.01
-		}
-		fire_only_once = yes
-		remove_effect = {
-			add_ideas = stable_central_price_for_commons
-			custom_effect_tooltip = trade_union_inf_increase_by_7
-			custom_effect_tooltip = centralized_assembly_inf_increase_by_3
-			custom_effect_tooltip = capitalist_fund_inf_decrease_by_15
-			add_to_variable = {  trade_union_inf = 7 }
-			add_to_variable = {  centralized_assembly_inf = 3 }
-			subtract_from_variable = {  capitalist_fund_inf = 15 }
-		}
-	}
-	region_trade_union_policy = {
-		available = {
-			has_country_flag = supervisory_board_of_trade_union
-			has_idea = black_wednesday_1 
-			trade_union_medium_influence = yes
-			NOT = { 
-				OR = { 
-					has_decision = lands_reform_and_shares_the_wealth
-					has_decision = domestic_consumption_improvement
-					has_decision = central_price_reduction_for_people_market
-				} 
-			}
-		}
-		visible = { has_country_flag = supervisory_board_of_trade_union }
-		cost = 50
-		days_remove = 30
-		modifier = {
-			vanguardist_drift = 0.01
-			collectivist_drift = 0.01
-			libertarian_socialist_drift = 0.01
-		}
-		fire_only_once = yes
-		remove_effect = {
-			add_ideas = region_trade_union
-			custom_effect_tooltip = trade_union_inf_increase_by_30
-			custom_effect_tooltip = centralized_assembly_inf_decrease_by_30
-			custom_effect_tooltip = capitalist_fund_inf_decrease_by_30
-			add_to_variable = {  trade_union_inf = 30 }
-			subtract_from_variable = {  centralized_assembly_inf = 30 }
-			subtract_from_variable = {  capitalist_fund_inf = 30 }
-		}
-	}
-	##Centralized Affairs
-	career_centre_development = {
-		available = {
-			has_country_flag = supervisory_board_of_centralized_assembly
-			has_idea = black_wednesday_1 
-			NOT = { 
-				OR = { 
-					has_decision = find_new_economic_fund_for_commons
-					has_decision = establishes_regional_cooperative
-					has_decision = five_years_plan_for_national_trading
-				} 
-			}
-		}
-		visible = { has_country_flag = supervisory_board_of_centralized_assembly }
-		cost = 50
-		days_remove = 30
-		modifier = {
-			social_democrat_drift = 0.01
-			social_liberal_drift = 0.01
-			social_conservative_drift = 0.01
-			authoritarian_democrat_drift = 0.01
-			paternal_autocrat_drift = 0.01
-		}
-		fire_only_once = yes
-		remove_effect = {
-			add_ideas = provincial_career_centre
-			custom_effect_tooltip = centralized_assembly_inf_increase_by_5
-			custom_effect_tooltip = trade_union_inf_increase_by_2
-			custom_effect_tooltip = capitalist_fund_inf_decrease_by_5
-			add_to_variable = {  centralized_assembly_inf = 5 }
-			add_to_variable = {  trade_union_inf = 2 }
-			subtract_from_variable = {  capitalist_fund_inf = 5 }
-		}
-	}
-	find_new_economic_fund_for_commons = {
-		available = {
-			has_country_flag = supervisory_board_of_centralized_assembly
-			has_idea = black_wednesday_1 
-			NOT = { 
-				OR = { 
-					has_decision = career_centre_development
-					has_decision = establishes_regional_cooperative
-					has_decision = five_years_plan_for_national_trading
-				} 
-			}
-		}
-		visible = { has_country_flag = supervisory_board_of_centralized_assembly }
-		cost = 50
-		days_remove = 30
-		modifier = {
-			social_democrat_drift = 0.01
-			social_liberal_drift = 0.01
-			social_conservative_drift = 0.01
-			authoritarian_democrat_drift = 0.01
-			paternal_autocrat_drift = 0.01
-		}
-		fire_only_once = yes
-		remove_effect = {
-			add_timed_idea = {
-				idea = national_fund_for_commons_career
-				days = 730
-			}
-			custom_effect_tooltip = centralized_assembly_inf_increase_by_10
-			custom_effect_tooltip = trade_union_inf_increase_by_5
-			custom_effect_tooltip = capitalist_fund_inf_decrease_by_7
-			add_to_variable = {  centralized_assembly_inf = 10 }
-			add_to_variable = {  trade_union_inf = 5 }
-			subtract_from_variable = { capitalist_fund_inf = 7 }
-		}
-	}
-	establishes_regional_cooperative = {
-		available = {
-			has_country_flag = supervisory_board_of_centralized_assembly
-			has_idea = black_wednesday_1 
-			NOT = { 
-				OR = { 
-					has_decision = career_centre_development
-					has_decision = find_new_economic_fund_for_commons
-					has_decision = five_years_plan_for_national_trading
-				} 
-			}
-		}
-		visible = { has_country_flag = supervisory_board_of_centralized_assembly }
-		cost = 50
-		days_remove = 30
-		modifier = {
-			social_democrat_drift = 0.01
-			social_liberal_drift = 0.01
-			social_conservative_drift = 0.01
-			authoritarian_democrat_drift = 0.01
-			paternal_autocrat_drift = 0.01
-		}
-		fire_only_once = yes
-		remove_effect = {
-			add_ideas = regional_cooperative_organization
-			custom_effect_tooltip = centralized_assembly_inf_increase_by_20
-			custom_effect_tooltip = trade_union_inf_increase_by_10_2
-			custom_effect_tooltip = capitalist_fund_inf_decrease_by_14
-			add_to_variable = {  centralized_assembly_inf = 25 }
-			add_to_variable = { trade_union_inf = 10 }
-			subtract_from_variable = { capitalist_fund_inf = 25 }
-		}
-	}
-	five_years_plan_for_national_trading = {
-		available = {
-			has_country_flag = supervisory_board_of_centralized_assembly
-			has_idea = black_wednesday_1 
-			NOT = { 
-				OR = { 
-					has_decision = career_centre_development
-					has_decision = find_new_economic_fund_for_commons
-					has_decision = establishes_regional_cooperative
-				} 
-			}
-		}
-		visible = { has_country_flag = supervisory_board_of_centralized_assembly }
-		cost = 50
-		days_remove = 30
-		modifier = {
-			social_democrat_drift = 0.01
-			social_liberal_drift = 0.01
-			social_conservative_drift = 0.01
-			authoritarian_democrat_drift = 0.01
-			paternal_autocrat_drift = 0.01
-		}
-		fire_only_once = yes
-		remove_effect = {
-			add_timed_idea = {
-				idea = five_years_plan_for_national_and_interior_trading
-				days = 1825
-			}
-			custom_effect_tooltip = centralized_assembly_inf_increase_by_25
-			custom_effect_tooltip = trade_union_inf_decrease_by_13
-			custom_effect_tooltip = capitalist_fund_inf_increase_by_15
-			add_to_variable = {  centralized_assembly_inf = 25 }
-			subtract_from_variable = { trade_union_inf = 13 }
-			add_to_variable = { capitalist_fund_inf = 15 }
-		}
-	}
-	##Free Trade Affairs
-	get_franc_to_economic = {
-		available = {
-			has_country_flag = supervisory_board_of_free_trade
-			has_idea = black_wednesday_1 
-			NOT = { 
-				OR = { 
-					has_decision = naval_and_railroad_project
-					has_decision = builds_more_factory
-					has_decision = foreigner_funding_cooperative_in_capital
-				} 
-			}
-		}
-		visible = { has_country_flag = supervisory_board_of_free_trade }
-		cost = 50
-		days_remove = 30
-		modifier = {
-			market_liberal_drift = 0.01
-			valkist_drift = 0.01
-		}
-		fire_only_once = yes
-		remove_effect = {
-			add_ideas = franc_of_siam
-			custom_effect_tooltip = capitalist_fund_inf_increase_by_15
-			custom_effect_tooltip = centralized_assembly_inf_increase_by_5
-			custom_effect_tooltip = trade_union_inf_decrease_by_13
-			add_to_variable = {  capitalist_fund_inf = 15 }
-			add_to_variable = { centralized_assembly_inf = 5 }
-			subtract_from_variable = { trade_union_inf = 13 }
-		}
-	}
-	naval_and_railroad_project = {
-		available = {
-			has_country_flag = supervisory_board_of_free_trade
-			has_idea = black_wednesday_1
-			NOT = { 
-				OR = { 
-					has_decision = get_franc_to_economic
-					has_decision = builds_more_factory
-					has_decision = foreigner_funding_cooperative_in_capital
-				} 
-			}
-			
-		}
-		visible = { has_country_flag = supervisory_board_of_free_trade }
-		cost = 50
-		days_remove = 30
-		modifier = {
-			market_liberal_drift = 0.01
-			valkist_drift = 0.01
-		}
-		fire_only_once = yes
-		remove_effect = {
-			custom_effect_tooltip = capitalist_fund_inf_increase_by_20
-			custom_effect_tooltip = centralized_assembly_inf_increase_by_10
-			custom_effect_tooltip = trade_union_inf_decrease_by_35
-			add_to_variable = { capitalist_fund_inf = 20 }
-			add_to_variable = { centralized_assembly_inf = 10 }
-			subtract_from_variable = { trade_union_inf = 35 }
-			if = {
-				limit = {
-					NOT = {
-						any_owned_state = {
-							dockyard > 0
-							free_building_slots = {
-								building = dockyard
-								size > 2
-								include_locked = yes
-							}
-						}
-					}
-					any_owned_state = {
-						is_coastal = yes
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				}
-				set_country_flag = naval_effort_built
-			}
-			if = {
-				limit = {
-					NOT = { has_country_flag = naval_effort_built }
-					any_owned_state = {
-						dockyard > 0
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						dockyard > 0
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				}
-				set_country_flag = naval_effort_built
-			}
-			if = {
-				limit = {
-					NOT = { has_country_flag = naval_effort_built }
-					NOT = {
-						any_owned_state = {
-							free_building_slots = {
-								building = dockyard
-								size > 2
-								include_locked = yes
-							}
-						}
-					}
-				}
-				random_state = {
-					limit = {
-						controller = { tag = ROOT }
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 1
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-	builds_more_factory = {
-		available = {
-			has_country_flag = supervisory_board_of_free_trade
-			has_idea = black_wednesday_1 
-			NOT = { 
-				OR = { 
-					has_decision = naval_and_railroad_project
-					has_decision = get_franc_to_economic
-					has_decision = foreigner_funding_cooperative_in_capital
-				} 
-			}
-		}
-		visible = { has_country_flag = supervisory_board_of_free_trade }
-		cost = 50
-		days_remove = 30
-		modifier = {
-			market_liberal_drift = 0.01
-			valkist_drift = 0.01
-			consumer_goods_factor = -0.1
-		}
-		fire_only_once = yes
-		remove_effect = {
-			add_offsite_building = {
-				type = industrial_complex level = 2
-			}
-			custom_effect_tooltip = capitalist_fund_inf_increase_by_15
-			custom_effect_tooltip = centralized_assembly_inf_increase_by_8
-			custom_effect_tooltip = trade_union_inf_decrease_by_10
-			add_to_variable = { capitalist_fund_inf = 15 }
-			add_to_variable = { centralized_assembly_inf = 8 }
-			subtract_from_variable = { trade_union_inf = 10 }
-		}
-	}
-	foreigner_funding_cooperative_in_capital = {
-		available = {
-			has_country_flag = supervisory_board_of_free_trade
-			has_idea = black_wednesday_1 
-			NOT = { 
-				OR = { 
-					has_decision = naval_and_railroad_project
-					has_decision = builds_more_factory
-					has_decision = get_franc_to_economic
-				} 
-			}
-		}
-		visible = { has_country_flag = supervisory_board_of_free_trade }
-		cost = 50
-		days_remove = 30
-		modifier = {
-			market_liberal_drift = 0.01
-			valkist_drift = 0.01
-			consumer_goods_factor = -0.1
-		}
-		fire_only_once = yes
-		remove_effect = {
-			add_ideas = metropolitan_cooperative
-			custom_effect_tooltip = capitalist_fund_inf_increase_by_30
-			custom_effect_tooltip = centralized_assembly_inf_increase_by_10
-			custom_effect_tooltip = trade_union_inf_decrease_by_40
-			add_to_variable = { capitalist_fund_inf = 30 }
-			add_to_variable = { centralized_assembly_inf = 10 }
-			subtract_from_variable = { trade_union_inf = 40 }
-		}
-	}
-}
+
 SIA_factory_expansion_project = {
 	northern_factory_expansion = {
 		available = {
