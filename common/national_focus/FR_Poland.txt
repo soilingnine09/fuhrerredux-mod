@@ -4373,6 +4373,31 @@ focus = {
 		add_war_support = 0.1
 	}
 }
+focus = {
+	id = POL_threaten_belarus
+	icon = GFX_goal_generic_occupy_states_ongoing_war
+	ai_will_do = { factor = 10 }
+
+	x = 82
+	y = 3
+	cost = 5
+
+	prerequisite = { focus = POL_eastern_expansion }
+	will_lead_to_war_with = BLR
+	bypass = {
+		BLR = {
+			OR = {
+				is_in_faction_with = POL
+				is_puppet_of = POL
+			}
+		}
+	}
+	available_if_capitulated = no  
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POL_threaten_belarus"
+		BLR = { country_event = poland.100 }
+	}
+}
 #military bills
 focus = { 
 	id = POL_review_military

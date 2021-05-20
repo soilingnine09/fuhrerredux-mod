@@ -203,16 +203,16 @@ units = {
 
 	# 11ya Strelkoviy Korpus
 	division= {			
-		name = "2ya 'Belorusskaya' Strelk. Div."		
-		location = 9341
+		name = "2ya Strelk. Div."		
+		location = 310
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 
 	}			
 	division= {			
-		name = "8ya 'Minskaya' Strelk. Div."		
-		location = 406
+		name = "8ya Strelk. Div."		
+		location = 11241
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -220,7 +220,7 @@ units = {
 	}			
 	division= {			
 		name = "37ya Strelkovaya Diviziya"		
-		location = 6413
+		location = 6354
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -230,7 +230,7 @@ units = {
 	# 3ya Kavaleriyskiy Korpus
 	division= {			
 		name = "7ya Kavaleriyskaya Diviziya"		
-		location = 3281
+		location = 3390
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -238,7 +238,7 @@ units = {
 	}
 	division= {			
 		name = "11ya Kavaleriyskaya Diviziya"		
-		location = 6280
+		location = 6326
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -298,7 +298,7 @@ units = {
 	# 10ya Strelkoviy Korpus		
 	division= {			
 		name = "14ya 'Krivorozhskaya' Strelk. Div."		
-		location = 11370
+		location = 9323
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -306,7 +306,7 @@ units = {
 	}			
 	division= {			
 		name = "52ya Strelkovaya Diviziya"		
-		location = 11370
+		location = 9323
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -314,7 +314,7 @@ units = {
 	}			
 	division= {			
 		name = "55ya 'Kurskaya' Strelk. Div."		
-		location = 11370
+		location = 9323
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -395,7 +395,7 @@ units = {
 	# 16ya Strelkoviy Korpus		
 	division= {			
 		name = "4ya 'Smolenskaya' Strelk. Div."		
-		location = 3393
+		location = 11349
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -403,7 +403,7 @@ units = {
 	}			
 	division= {			
 		name = "43ya Strelkovaya Diviziya"		
-		location = 3393
+		location = 11349
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -411,7 +411,7 @@ units = {
 	}			
 	division= {			
 		name = "81ya Strelkovaya Diviziya"		
-		location = 3393
+		location = 11349
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -423,7 +423,7 @@ units = {
 	# 8ya Strelkoviy Korpus		
 	division= {			
 		name = "24ya 'Samaro-Ulyanovsk' Strelk. Div."		
-		location = 9249
+		location = 6344
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85

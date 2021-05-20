@@ -36,7 +36,7 @@ units = {
 	##### Infantry #####
 	division= {	
 		name = "város milícia"
-		location = 13125
+		location = 682
 		division_template = "város milícia"
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.7
