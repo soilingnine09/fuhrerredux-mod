@@ -233,16 +233,6 @@ is_in_south_asia = {
 	}
 }
 
-is_in_south_europe = {
-	OR = {
-		tag = GRE
-		tag = ITA
-		tag = TUR
-		tag = ITP
-		tag = TRT
-	}
-}
-
 # checks whether the country in scope is in the same continent as ROOT (the country running the event)
 same_continent_as_ROOT = {
 	OR = {
