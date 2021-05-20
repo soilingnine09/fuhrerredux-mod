@@ -406,12 +406,12 @@ country_event = { #Petain's power is questioned
 		set_country_flag = fra_stick_with_petain
 	}
 
-	option = { # Georges Valois and the AF
+	option = { # Charles Maurras and the AF
 		name = fra.13.b
 		create_country_leader = {
-			name = "Georges Valois"
-			desc = "POLITICS_GEORGES_VALOIS_DESC"
-			picture = "Portrait_France_Georges_Valois.tga"
+			name = "Charles Maurras"
+			desc = "POLITICS_CHARLES_MAURRAS_DESC"
+			picture = "Portrait_France_Charles_Maurras.tga"
 			expire = "1965.1.1"
 			ideology = paternal_autocrat_subtype
 			traits = {}
@@ -458,7 +458,7 @@ country_event = { #restoration of the monarchy
 			FRA_low_legitimacy
 		}
 		create_country_leader = {
-			name = "H.M. Jean III d'Orleans"
+			name = "Jean III"
 			desc = "POLITICS_KING_JEAN_DESC"
 			picture = "Portrait_France_Jean_d_Orleans.tga"
 			expire = "1965.1.1"
