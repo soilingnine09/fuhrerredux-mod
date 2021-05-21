@@ -3730,7 +3730,7 @@ focus_tree = {
 	}
 		focus = { 
 		id = CZE_representation_for_all
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_goal_czech_fist
 
  		ai_will_do = { factor = 50 } 
 
@@ -3755,7 +3755,7 @@ focus_tree = {
 	}
 		focus = { 
 		id = CZE_pan_slavic_dream
-		icon = GFX_goal_slo_friend
+		icon = GFX_focus_zapadoslavia_panslavic
 
  		ai_will_do = { factor = 0 } 
 
@@ -3786,7 +3786,7 @@ focus_tree = {
 	}
 		focus = { 
 		id = CZE_dab_on_poland
-		icon = GFX_goal_slo_friend
+		icon = GFX_focus_zapadoslavia_poland
 
  		ai_will_do = { factor = 0 } 
 
@@ -3809,7 +3809,7 @@ focus_tree = {
 	}
 		focus = { 
 		id = CZE_minorities_in_silesia
-		icon = GFX_goal_slo_friend
+		icon = GFX_focus_zapadoslavia_silesia
 
  		ai_will_do = { factor = 0 } 
 
@@ -3836,7 +3836,7 @@ focus_tree = {
 	}
 		focus = { 
 		id = CZE_zapadoslavia_rises
-		icon = GFX_goal_slo_friend
+		icon = GFX_focus_zapadoslavia
 
  		ai_will_do = { factor = 0 } 
 
@@ -3873,7 +3873,7 @@ focus_tree = {
 	}
 		focus = { 
 		id = CZE_unite_western_slavs
-		icon = GFX_goal_slo_friend
+		icon = GFX_focus_unite_west_slavs
 
  		ai_will_do = { factor = 0 } 
 

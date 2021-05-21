@@ -34,5 +34,30 @@ spriteTypes = {
 		name = "GFX_focus_philippines_air_force"
 		texturefile = "gfx/interface/goals/PHI_goal_air_force.tga"
 	}
-
+	
+	SpriteType = {
+		name = "GFX_focus_zapadoslavia_poland"
+		texturefile = "gfx/interface/goals/CZE_March_on_Krakow.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_zapadoslavia_panslavic"
+		texturefile = "gfx/interface/goals/CZE_Panslavic_Dream.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_zapadoslavia_silesia"
+		texturefile = "gfx/interface/goals/CZE_Silesia_Minorities.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_unite_west_slavs"
+		texturefile = "gfx/interface/goals/CZE_Unite_West_Slavs.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_zapadoslavia"
+		texturefile = "gfx/interface/goals/CZE_Zapadoslavia.tga"
+	}
+	
 }
