@@ -804,9 +804,9 @@ GER_fate_of_east_europe = {
 					ruling_party = valkist elections_allowed = no
 				}
 				create_country_leader = {
-				name = "Radasłaŭ_Astroŭski"
+				name = "Radasłaŭ Astroŭski"
 				desc = ""
-				picture = "gfx/leaders/BLR/leader_BLR_Radaslau_Astrouski.tga"
+				picture = "gfx/leaders/BLR/Portrait_BLR_Radaslau_Astrouski.tga"
 				expire = "1965.1.1"
 				ideology = valkist_subtype
 				traits = { }
