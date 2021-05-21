@@ -3751,6 +3751,183 @@ focus_tree = {
 			73 = {
 				add_core_of = CZE
 			}
-		} 
+		}
 	}
-}
+		focus = { 
+		id = CZE_pan_slavic_dream
+		icon = GFX_goal_slo_friend
+
+ 		ai_will_do = { factor = 0 } 
+
+ 		x =8
+ 		y =10
+ 		cost = 6
+ 		prerequisite = { focus = CZE_representation_for_all }
+		prerequisite = { focus = CZE_a_different_union }
+ 		available = {
+ 		}
+		available_if_capitulated = yes  
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_pan_slavic_dream"
+			add_war_support = 0.1
+			66 = {
+				add_claim_by = CZE
+			}
+			794 = {
+				add_claim_by = CZE
+			}
+			67 = {
+				add_claim_by = CZE
+			}
+			799 = {
+				add_claim_by = CZE
+			}
+		}
+	}
+		focus = { 
+		id = CZE_dab_on_poland
+		icon = GFX_goal_slo_friend
+
+ 		ai_will_do = { factor = 0 } 
+
+ 		x =9
+ 		y =11
+ 		cost = 5
+ 		prerequisite = { focus = CZE_pan_slavic_dream }
+ 		available = {
+ 		}
+		available_if_capitulated = yes  
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_dab_on_poland"
+			add_manpower = 1500
+			add_command_power = 75
+			create_wargoal = {
+				type = annex_everything
+				target = POL
+			}
+		}
+	}
+		focus = { 
+		id = CZE_minorities_in_silesia
+		icon = GFX_goal_slo_friend
+
+ 		ai_will_do = { factor = 0 } 
+
+ 		x =7
+ 		y =11
+ 		cost = 5
+ 		prerequisite = { focus = CZE_pan_slavic_dream }
+ 		available = {
+ 		}
+		available_if_capitulated = yes  
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus cze_minorities_in_silesia"
+			add_manpower = 2500
+			add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1500
+			producer = GER
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = GER
+			}
+		}
+	}
+		focus = { 
+		id = CZE_zapadoslavia_rises
+		icon = GFX_goal_slo_friend
+
+ 		ai_will_do = { factor = 0 } 
+
+ 		x =8
+ 		y =12
+ 		cost = 6
+ 		prerequisite = { focus = CZE_minorities_in_silesia }
+		prerequisite = { focus = CZE_dab_on_poland }
+ 		available = {
+			OR = {
+				controls_state = 66
+				controls_state = 799
+			}
+		}
+		available_if_capitulated = yes  
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CZE_zapadoslavia_rises"
+			add_stability = 0.1
+			add_political_power = 150
+			set_cosmetic_tag = CZE_zapadoslavia
+		66 = {
+				add_core_of = CZE
+			}
+		794 = {
+				add_core_of = CZE
+			}
+		67 = {
+				add_core_of = CZE
+			}
+		799 = {
+				add_core_of = CZE
+			}
+		}
+	}
+		focus = { 
+		id = CZE_unite_western_slavs
+		icon = GFX_goal_slo_friend
+
+ 		ai_will_do = { factor = 0 } 
+
+ 		x =8
+ 		y =13
+ 		cost = 6
+ 		prerequisite = { focus = CZE_zapadoslavia_rises }
+ 		available = {
+			OR = {
+			}
+		}
+		available_if_capitulated = yes  
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus cze_unite_western_slavs"
+			create_wargoal = {
+				type = annex_everything
+				target = POL
+			}
+		85 = {
+				add_claim_by = CZE
+				}
+		5 = {
+				add_claim_by = CZE
+				}
+		752 = {
+				add_claim_by = CZE
+				}
+		98 = {
+				add_claim_by = CZE
+				}
+		86 = {
+				add_claim_by = CZE
+				}
+		87 = {
+				add_claim_by = CZE
+				}
+		10 = {
+				add_claim_by = CZE
+				}
+		92 = {
+				add_claim_by = CZE
+				}
+		90 = {
+				add_claim_by = CZE
+				}
+		88 = {
+				add_claim_by = CZE
+				}
+		91 = {
+				add_claim_by = CZE
+				}
+		89 = {
+				add_claim_by = CZE
+				}
+			}
+		}
+	}

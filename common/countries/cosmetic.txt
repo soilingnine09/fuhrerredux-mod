@@ -404,6 +404,10 @@ ETH_puppet = {
 	color = rgb { 152 130 160 }
  	color_ui = rgb { 152 130 100 }
 }
+CZE_zapadoslavia = { 133 125 203 }
+	color = rgb { 53 137 155 }
+	color_ui = rgb { 146  80  140 }
+}
 
 # ToR easter egg
 TOR_CSA = {
