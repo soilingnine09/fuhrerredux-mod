@@ -1,0 +1,355 @@
+# Ministers GFX
+# created by: dax0102
+
+spriteTypes = {
+
+    # PHI
+
+    ### Head of Government
+    spriteType = {
+        name = "GFX_idea_PHI_Luis_Taruc_hog_van"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Luis_Taruc.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Pedro_Abad_Santos_hog_col"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Pedro_Abad_Santos.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Crisanto_Evangelista_hog_lib"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Crisanto_Evangelista.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Juan_Sumulong_hog_sde"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Juan_Sumulong.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Lope_K_Santos_hog_sde"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Lope_K_Santos.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Juan_Feleo_hog_sde"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Juan_Feleo.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Elpidio_Quirino_hog_sli"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Elpidio_Quirino.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Manuel_Roxas_hog_mli"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Manuel_Roxas.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_J_Antonio_Araneta_hog_mli"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_J_Antonio_Araneta.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Manuel_Quezon_hog_sco"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Manuel_Quezon.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Sergio_P_Osmena_hog_sco"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Sergio_Osmena.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Eulogio_Rodriguez_Sr_hog_sco"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Eulogio_Rodriguez_Sr.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Gregorio_Aglipay_hog_sco"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Gregorio_Aglipay.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Jose_P_Laurel_hog_ade"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Jose_P_Laurel.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Benigno_Aquino_Sr_hog_ade"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Benigno_Aquino_sr.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Basilio_J_Valdez_hog_pau"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Basilio_J_Valdez.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Emilio_Aguinaldo_hog_npo"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Emilio_Aguinaldo.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Benigno_Ramos_hog_val"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Benigno_Ramos.dds"
+    }
+
+    ### Foreign Minister
+    spriteType = {
+        name = "GFX_idea_PHI_Casto_Alejandrino_for_col"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Casto_Alejandrino.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Rafael_Liwanag_for_sde"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Rafel_Liwanag.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Joaquin_Elizalde_for_sli"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Joaquin_Elizalde.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Quentin_Paredes_for_mli"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Quintin_Paredes.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Manuel_Quadrino_for_sco"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Manuel_Quadrino.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Ferdinand_Marcos_for_ade"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Ferdinand_Marcos.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Vicente_P_Lim_for_pau"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Vicente_P_Lim.dds"
+    }
+
+    ### Economic Minister
+    spriteType = {
+        name = "GFX_idea_PHI_Herminegildo_Cruz_eco_col"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Herminegildo_Cruz.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Carlos_P_Garcia_eco_sde"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Carlos_P_Garcia.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Diosdado_P_Macapagal_eco_sde"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Diosdado_P_Macapagal.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Manuel_Quadrino_eco_sli"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Manuel_Quadrino.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Antonio_de_las_Alas_eco_sli"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Antonio_de_las_Alas.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Ramon_Quisumbing_eco_mli"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Ramon_Quisumbing.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Ramon_Magsaysay_eco_mli"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Ramon_Magsaysay.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Jose_G_David_eco_sco"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Jose_G_David.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Serafin_Fausto_eco_ade"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Serafin_Fausto.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Ramon_Alcaraz_eco_pau"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Ramon_A_Alcaraz.dds"
+    }
+
+    ### Security Minister
+    spriteType = {
+        name = "GFX_idea_PHI_Guillermo_Capadocia_sec_col"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Guillermo_Capadocia.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Mariano_Balgos_sec_lib"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Mariano_Balgos.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Jose_M_Crisol_sec_sde"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Jose_M_Crisol.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Pardo_de_Tavera_sec_sde"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Pardo_de_Tavera.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Alberto_Ramos_sec_sli"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Alberto_Ramos.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Leoncio_S_Tan_sec_sli"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Leoncio_S_Tan.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Ramon_Quisumbing_sec_mli"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Ramon_Quisumbing.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Roman_Apolinario_sec_mli"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Roman_Apolinario.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Teofisto_Sison_sec_sco"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Teofilo_Sison.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Tirano_Craveza_sec_sco"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Tirano_Craveza.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Jose_Yulo_sec_sco"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Jose_Yulo.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Benigno_Aquino_Sr_sec_ade"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Benigno_Aquino_sr.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Rafael_Jalandoni_sec_pau"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Rafael_Jalandoni.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Emilio_Aguinaldo_sec_npo"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Emilio_Aguinaldo.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Jose_G_Lukban_sec_val"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Jose_G_Lukban.dds"
+    }
+
+    ### Intelligence Minister
+    spriteType = {
+        name = "GFX_idea_PHI_Luis_Taruc_int_col"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Luis_Taruc.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_John_Gilbert_Winant_int_sli"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_John_Gilbert_Winant.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Leslie_Ailen_Wheeler_int_mli"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Leslie_Ailen_Wheeler.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Fidel_Segundo_int_ade"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Fidel_Segundo.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_James_Wilson_int_sco"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_James_Wilson.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Benigno_Ramos_int_val"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Benigno_Ramos.dds"
+    }
+
+    ### Chief of Staff
+    spriteType = {
+        name = "GFX_idea_PHI_Luis_Taruc_cos_col"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Luis_Taruc.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Augusto_Jurado_cos"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Augusto_Jurado.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Paulino_Santos_cos"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Paulino_Santos.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Quirinto_P_Evangelista_cos"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Quirinto_P_Evangelista.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Basilio_J_Valdez_cos"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Basilio_J_Valdez.dds"
+    }
+
+    ### Chief of Army
+    spriteType = {
+        name = "GFX_idea_PHI_Jesus_Lava_carm_col"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Jesus_Lava.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Benito_N_Ebuen_carm"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Benito_N_Ebuen.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Heraclio_Alano_carm"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Heraclio_Alano.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Mateo_M_Capinpin_carm"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Mateo_M_Capinpin.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Rafael_Jalandoni_carm"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Rafael_Jalandoni.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Vicente_P_Lim_carm"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Vicente_P_Lim.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Basilio_J_Valdez_carm"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Basilio_J_Valdez.dds"
+    }
+
+    ### Chief of Navy
+    spriteType = {
+        name = "GFX_idea_PHI_Jose_V_Andrada_cnav"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Jose_V_Andrada.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Ramon_A_Alcaraz_cnav"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Ramon_A_Alcaraz.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Santiago_Nuval_cnav"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Santiago_Nuval.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Eustacio_Orobia_cnav"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Eustacio_Orobia.dds"
+    }
+
+    ### Chief of Air Force
+    spriteType = {
+        name = "GFX_idea_PHI_Joe_Rogers_cair"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Joe_Rogers.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Basilio_Fernando_cair"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Basilio_Fernando.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Edwin_Andrews_cair"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Edwin_Andrews.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Pelagio_Cruz_cair"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Pelagio_Cruz.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Victor_H_Dizon_cair"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Victor_H_Dizon.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Felix_Pestana_cair"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Felix_Pestana.dds"
+    }
+
+    ### Theorist
+    spriteType = {
+        name = "GFX_idea_PHI_Basilio_J_Valdez_theo"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Basilio_J_Valdez.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Vicente_P_Lim_theo"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Vicente_P_Lim.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Santiago_Nuval_theo"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Santiago_Nuval.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_Pelagio_Cruz_theo"
+        texturefile = "gfx/interface/ideas/PHI/ministers/PHI_Pelagio_Cruz.dds"
+    }
+}

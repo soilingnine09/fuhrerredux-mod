@@ -35,5 +35,5 @@ tags={
 	"Map"
 	"Balance"
 }
-path="/home/isaiahcollins/.local/share/Paradox Interactive/Hearts of Iron IV/mod/fuhrerredux"
 supported_version="1.10.*"
+remote_file_id="2491464633"
