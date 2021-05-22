@@ -41,6 +41,12 @@ units = {
 		start_experience_factor = 0.1
 	}
 	division = {
+		name = "3rd Revolutionary Division"
+		location = 10265
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.1
+	}
+	division = {
 		name = "1st Revolutionary Militia"
 		location = 4288
 		division_template = "Revolutionary Militia"		

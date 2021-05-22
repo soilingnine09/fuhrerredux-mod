@@ -5,7 +5,7 @@ state={
 
 	history={
 		add_core_of = FIC
-		add_core_of = CAM
+		add_claim_by = CAM
 		owner = FIC
 		buildings = {
 			infrastructure = 3

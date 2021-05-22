@@ -411,6 +411,7 @@ is_english_tag = {
 		tag = AST
 		tag = SCO
 		tag = WLS
+		tag = EGL
 	}
 }
 is_french_tag = {

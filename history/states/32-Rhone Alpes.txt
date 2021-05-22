@@ -12,7 +12,7 @@ state={
 	}
 
 	history={
-		add_core_of = OCC
+		add_claim_by = OCC
 		owner = FRA
 		buildings = {
 			infrastructure = 4

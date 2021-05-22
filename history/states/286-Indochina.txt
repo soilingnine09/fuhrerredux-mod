@@ -7,7 +7,7 @@ state={
 
 	history={
 		add_core_of = FIC
-		add_core_of = VIN
+		add_claim_by = VIN
 		owner = FIC
 		buildings = {
 			infrastructure = 2

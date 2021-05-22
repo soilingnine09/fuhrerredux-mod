@@ -1,0 +1,2388 @@
+# Annexation Events
+# created by: dax0102
+
+# note: when created the events were arranged alphabetically
+# using the country tags, use CTRL + F then type the tag
+# to easily find what you are looking for
+
+add_namespace = annexation
+
+country_event = {
+    id = annexation.1
+    title = annexation.1.t
+    desc = annexation.1.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = AFG_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = { 
+            tag = AFG
+            has_country_flag = AFG_OCCUPIED
+            country_exists = AFG
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 267
+        }
+    }
+    option = { # Puppet
+        name = annexation.1.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = AFG
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            AFG = { transfer_state = PREV }
+        }
+        puppet = AFG
+    }
+    option = { # Annex
+        name = annexation.1.b
+        ai_chance = { factor = 5 }
+        set_country_flag = AFG_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.2
+    title = annexation.2.t
+    desc = annexation.2.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = ALB_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = ALB
+            has_country_flag = ALB_OCCUPIED
+            country_exists = ALB
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 44
+        }
+    }
+    option = { # Puppet
+        name = annexation.2.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = ALB
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            ALB = { transfer_state = PREV }
+        }
+        puppet = ALB
+    }
+    option = {
+        name = annexation.2.b
+        ai_chance = { factor = 5 }
+        set_country_flag = ALB_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.3
+    title = annexation.3.t
+    desc = annexation.3.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = ARB_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = ARB
+            has_country_flag = ARB_OCCUPIED
+            country_exists = ARB
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 679
+        }
+    }
+    option = { # Puppet
+        name = annexation.3.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = ARB
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            ARB = { transfer_state = PREV }
+        }
+        puppet = ARB
+    }
+    option = {
+        name = annexation.3.b
+        ai_chance = { factor = 5 }
+        set_country_flag = ARB_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.4
+    title = annexation.4.t
+    desc = annexation.4.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = ARG_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = ARG
+            has_country_flag = ARG_OCCUPIED
+            country_exists = ARG
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 278
+        }
+    }
+    option = { # Puppet
+        name = annexation.4.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = ARG
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            ARG = { transfer_state = PREV }
+        }
+        puppet = ARG
+    }
+    option = {
+        name = annexation.4.b
+        ai_chance = { factor = 5 }
+        set_country_flag = ARG_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.5
+    title = annexation.5.t
+    desc = annexation.5.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = ARM_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = ARM
+            has_country_flag = ARM_OCCUPIED
+            country_exists = ARM
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 230
+        }
+    }
+    option = { # Puppet
+        name = annexation.5.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = ARM
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            ARM = { transfer_state = PREV }
+        }
+        puppet = ARM
+    }
+    option = {
+        name = annexation.5.b
+        ai_chance = { factor = 5 }
+        set_country_flag = ARM_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.6
+    title = annexation.6.t
+    desc = annexation.6.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = AST_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = AST
+            has_country_flag = AST_OCCUPIED
+            country_exists = AST
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 808
+        }
+    }
+    option = { # Puppet
+        name = annexation.6.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = AST
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            AST = { transfer_state = PREV }
+        }
+        puppet = AST
+    }
+    option = {
+        name = annexation.6.b
+        ai_chance = { factor = 5 }
+        set_country_flag = AST_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.7
+    title = annexation.4.t
+    desc = annexation.4.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = AUS_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = AUS
+            tag = GER
+            has_country_flag = AUS_OCCUPIED
+            country_exists = AUS
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 803
+        }
+    }
+    option = { # Puppet
+        name = annexation.7.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = AUS
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            AUS = { transfer_state = PREV }
+        }
+        puppet = AUS
+    }
+    option = {
+        name = annexation.7.b
+        ai_chance = { factor = 5 }
+        set_country_flag = AUS_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.8
+    title = annexation.8.t
+    desc = annexation.8.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = AZR_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = AZR
+            has_country_flag = AZR_OCCUPIED
+            country_exists = AZR
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 229
+        }
+    }
+    option = { # Puppet
+        name = annexation.8.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = AZR
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            AZR = { transfer_state = PREV }
+        }
+        puppet = AZR
+    }
+    option = {
+        name = annexation.8.b
+        ai_chance = { factor = 5 }
+        set_country_flag = AZR_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.9
+    title = annexation.9.t
+    desc = annexation.9.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = BAL_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = BAL
+            tag = INC
+            tag = IND
+            has_country_flag = BAL_OCCUPIED
+            country_exists = BAL
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 439
+        }
+    }
+    option = { # Puppet
+        name = annexation.9.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = BAL
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            BAL = { transfer_state = PREV }
+        }
+        puppet = BAL
+    }
+    option = {
+        name = annexation.9.b
+        ai_chance = { factor = 5 }
+        set_country_flag = BAL_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.10
+    title = annexation.10.t
+    desc = annexation.10.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = BAW_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = BAW
+            has_country_flag = BAW_OCCUPIED
+            country_exists = BAW
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 50
+        }
+    }
+    option = { # Puppet
+        name = annexation.8.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = BAW
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            BAW = { transfer_state = PREV }
+        }
+        puppet = BAW
+    }
+    option = {
+        name = annexation.8.b
+        ai_chance = { factor = 5 }
+        set_country_flag = BAW_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.11
+    title = annexation.11.t
+    desc = annexation.11.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = BAY_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = BAY
+            has_country_flag = BAY_OCCUPIED
+            country_exists = BAY
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 229
+        }
+    }
+    option = { # Puppet
+        name = annexation.11.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = BAY
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            BAY = { transfer_state = PREV }
+        }
+        puppet = BAY
+    }
+    option = {
+        name = annexation.11.b
+        ai_chance = { factor = 5 }
+        set_country_flag = BAY_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.12
+    title = annexation.12.t
+    desc = annexation.12.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = BEA_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = BEA
+            tag = INS
+            has_country_flag = BEA_OCCUPIED
+            country_exists = BEA
+            country_exists = INS
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 335
+        }
+    }
+    option = { # Puppet
+        name = annexation.12.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = BEA
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            INS = { transfer_state = PREV }
+        }
+        puppet = INS
+    }
+    option = {
+        name = annexation.12.b
+        ai_chance = { factor = 5 }
+        set_country_flag = INS_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.13
+    title = annexation.13.t
+    desc = annexation.13.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = BEL_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = BEL
+            has_country_flag = BE_OCCUPIED
+            country_exists = BEL
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 6
+        }
+    }
+    option = { # Puppet
+        name = annexation.13.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = BEL
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            BEL = { transfer_state = PREV }
+        }
+        puppet = BEL
+    }
+    option = {
+        name = annexation.13.b
+        ai_chance = { factor = 5 }
+        set_country_flag = BEL_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.14
+    title = annexation.14.t
+    desc = annexation.14.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = BHU_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = BHU
+            has_country_flag = BHU_OCCUPIED
+            country_exists = BHU
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 324
+        }
+    }
+    option = { # Puppet
+        name = annexation.14.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = BHU
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            BHU = { transfer_state = PREV }
+        }
+        puppet = BHU
+    }
+    option = {
+        name = annexation.14.b
+        ai_chance = { factor = 5 }
+        set_country_flag = BHU_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.15
+    title = annexation.15.t
+    desc = annexation.15.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = BIH_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = BIH
+            has_country_flag = BIH_OCCUPIED
+            country_exists = BIH
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 439
+        }
+    }
+    option = { # Puppet
+        name = annexation.15.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = BIH
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            BIH = { transfer_state = PREV }
+        }
+        puppet = BIH
+    }
+    option = {
+        name = annexation.15.b
+        ai_chance = { factor = 5 }
+        set_country_flag = BIH_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.16
+    title = annexation.16.t
+    desc = annexation.16.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = BLR_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = BLR
+            has_country_flag = BLR_OCCUPIED
+            country_exists = BLR
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 206
+        }
+    }
+    option = { # Puppet
+        name = annexation.16.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = BLR
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            BLR = { transfer_state = PREV }
+        }
+        puppet = BLR
+    }
+    option = {
+        name = annexation.16.b
+        ai_chance = { factor = 5 }
+        set_country_flag = BLR_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.17
+    title = annexation.17.t
+    desc = annexation.17.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = BOL_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = BOL
+            has_country_flag = BOL_OCCUPIED
+            country_exists = BOL
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 302
+        }
+    }
+    option = { # Puppet
+        name = annexation.17.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = BOL
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            BOL = { transfer_state = PREV }
+        }
+        puppet = BOL
+    }
+    option = {
+        name = annexation.17.b
+        ai_chance = { factor = 5 }
+        set_country_flag = BOL_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.18
+    title = annexation.18.t
+    desc = annexation.18.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = BOM_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = BOM
+            has_country_flag = BOM_OCCUPIED
+            country_exists = BOM
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 302
+        }
+    }
+    option = { # Puppet
+        name = annexation.18.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = BOM
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            BOM = { transfer_state = PREV }
+        }
+        puppet = BOM
+    }
+    option = {
+        name = annexation.18.b
+        ai_chance = { factor = 5 }
+        set_country_flag = BOM_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.19
+    title = annexation.19.t
+    desc = annexation.19.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = BOS_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = BOS
+            has_country_flag = BOS_OCCUPIED
+            country_exists = BOS
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 104
+        }
+    }
+    option = { # Puppet
+        name = annexation.19.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = BOM
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            BOS = { transfer_state = PREV }
+        }
+        puppet = BOS
+    }
+    option = {
+        name = annexation.19.b
+        ai_chance = { factor = 5 }
+        set_country_flag = BOS_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.20
+    title = annexation.20.t
+    desc = annexation.20.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = BRA_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = BPS
+            tag = BRA
+            tag = UBR
+            has_country_flag = BRA_OCCUPIED
+            country_exists = BRA
+            country_exists = BPS
+            country_exists = UBR
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 500
+        }
+    }
+    option = { # Puppet
+        name = annexation.20.a
+        ai_chance = { base = 95 }
+        trigger = { has_socialist_government = yes }
+        every_owned_state = {
+            limit = {
+                is_core_of = UBR
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            UBR = { transfer_state = PREV }
+        }
+        puppet = UBR
+    }
+    option = {
+        name = annexation.20.b
+        ai_chance = { base = 95 }
+        trigger = { has_elected_government = yes }
+        every_owned_state = {
+            limit = {
+                is_core_of = BRA
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            BRA = { transfer_state = PREV }
+        }
+        puppet = BRA
+    }
+    option = {
+        name = annexation.20.c
+        ai_chance = { base = 95 }
+        trigger = { has_authoritarian_government = yes }
+        every_owned_state = {
+            limit = {
+                is_core_of = BPS
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            BPS = { transfer_state = PREV }
+        }
+        puppet = BPS
+    }
+    option = {
+        name = annexation.20.e
+        ai_chance = { factor = 5 }
+        set_country_flag = BRA_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.21
+    title = annexation.21.t
+    desc = annexation.21.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = BRI_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = BRI
+            tag = FRA
+            has_country_flag = BRI_OCCUPIED
+            country_exists = BRI
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 14
+        }
+    }
+    option = { # Puppet
+        name = annexation.21.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = BRI
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            BRI = { transfer_state = PREV }
+        }
+        puppet = BRI
+    }
+    option = {
+        name = annexation.21.b
+        ai_chance = { factor = 5 }
+        set_country_flag = BRI_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.22
+    title = annexation.22.t
+    desc = annexation.22.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = BRM_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = BRM
+            has_country_flag = BRM_OCCUPIED
+            country_exists = BRM
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 288
+        }
+    }
+    option = { # Puppet
+        name = annexation.22.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = BRM
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            BRM = { transfer_state = PREV }
+        }
+        puppet = BRM
+    }
+    option = {
+        name = annexation.22.b
+        ai_chance = { factor = 5 }
+        set_country_flag = BRM_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.23
+    title = annexation.23.t
+    desc = annexation.23.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = BRW_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = BRW
+            tag = GER
+            has_country_flag = BRW_OCCUPIED
+            country_exists = BRW
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 64
+        }
+    }
+    option = { # Puppet
+        name = annexation.23.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = BRW
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            BRW = { transfer_state = PREV }
+        }
+        puppet = BRW
+    }
+    option = {
+        name = annexation.23.b
+        ai_chance = { factor = 5 }
+        set_country_flag = BRW_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.24
+    title = annexation.24.t
+    desc = annexation.24.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = BUL_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = BUL
+            tag = BSR
+            has_country_flag = BUL_OCCUPIED
+            country_exists = BUL
+            country_exists = BSR
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 48
+        }
+    }
+    option = { # Puppet
+        name = annexation.24.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = BUL
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            BUL = { transfer_state = PREV }
+        }
+        puppet = BUL
+    }
+    option = {
+        name = annexation.24.b
+        ai_chance = { factor = 5 }
+        set_country_flag = BUL_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.25
+    title = annexation.25.t
+    desc = annexation.25.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = CAM_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = CAM
+            has_country_flag = CAM_OCCUPIED
+            country_exists = CAM
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 741
+        }
+    }
+    option = { # Puppet
+        name = annexation.25.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = CAM
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            CAM = { transfer_state = PREV }
+        }
+        puppet = CAM
+    }
+    option = {
+        name = annexation.25.b
+        ai_chance = { factor = 5 }
+        set_country_flag = CAM_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.26
+    title = annexation.26.t
+    desc = annexation.26.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = CAN_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = CAN
+            has_country_flag = CAN_OCCUPIED
+            country_exists = CAN
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 276
+        }
+    }
+    option = { # Puppet
+        name = annexation.26.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = CAN
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            CAN = { transfer_state = PREV }
+        }
+        puppet = CAN
+    }
+    option = {
+        name = annexation.26.b
+        ai_chance = { factor = 5 }
+        set_country_flag = CAN_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.27
+    title = annexation.27.t
+    desc = annexation.27.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = CEN_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = CEN
+            has_country_flag = CEN_OCCUPIED
+            country_exists = CEN
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 75
+        }
+    }
+    option = { # Puppet
+        name = annexation.27.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = CEN
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            CEN = { transfer_state = PREV }
+        }
+        puppet = CEN
+    }
+    option = {
+        name = annexation.27.b
+        ai_chance = { factor = 5 }
+        set_country_flag = CEN_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.28
+    title = annexation.28.t
+    desc = annexation.28.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = CHI_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            is_chinese_tag = yes
+            has_country_flag = CHI_OCCUPIED
+            country_exists = CHI
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 613
+        }
+    }
+    option = { # Puppet
+        name = annexation.28.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = CHI
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            CHI = { transfer_state = PREV }
+        }
+        puppet = CHI
+    }
+    option = {
+        name = annexation.28.b
+        ai_chance = { factor = 5 }
+        set_country_flag = CHI_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.29
+    title = annexation.29.t
+    desc = annexation.29.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = CHL_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = CHL
+            has_country_flag = CHL_OCCUPIED
+            country_exists = CHL
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 279
+        }
+    }
+    option = { # Puppet
+        name = annexation.29.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = CHL
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            CHL = { transfer_state = PREV }
+        }
+        puppet = CHL
+    }
+    option = {
+        name = annexation.29.b
+        ai_chance = { factor = 5 }
+        set_country_flag = CHL_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.30
+    title = annexation.30.t
+    desc = annexation.30.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = COG_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = COG
+            tag = BEL
+            has_country_flag = COG_OCCUPIED
+            country_exists = COG
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 295
+        }
+    }
+    option = { # Puppet
+        name = annexation.30.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = COG
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            COG = { transfer_state = PREV }
+        }
+        puppet = COG
+    }
+    option = {
+        name = annexation.30.b
+        ai_chance = { factor = 5 }
+        set_country_flag = COG_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.31
+    title = annexation.31.t
+    desc = annexation.31.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = COL_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = COL
+            has_country_flag = COL_OCCUPIED
+            country_exists = COL
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 306
+        }
+    }
+    option = { # Puppet
+        name = annexation.31.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = COL
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            COL = { transfer_state = PREV }
+        }
+        puppet = COL
+    }
+    option = {
+        name = annexation.31.b
+        ai_chance = { factor = 5 }
+        set_country_flag = COL_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.32
+    title = annexation.32.t
+    desc = annexation.32.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = COR_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = COR
+            tag = FRA
+            has_country_flag = COR_OCCUPIED
+            country_exists = COR_OCCUPIED
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 1
+        }
+    }
+    option = { # Puppet
+        name = annexation.31.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = COR
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            COR = { transfer_state = PREV }
+        }
+        puppet = COR
+    }
+    option = {
+        name = annexation.32.b
+        ai_chance = { factor = 5 }
+        set_country_flag = COR_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.32
+    title = annexation.32.t
+    desc = annexation.32.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = COS_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = COS
+            has_country_flag = COS_OCCUPIED
+            country_exists = COS
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 316
+        }
+    }
+    option = { # Puppet
+        name = annexation.32.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = COS
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            COS = { transfer_state = PREV }
+        }
+        puppet = COS
+    }
+    option = {
+        name = annexation.31.b
+        ai_chance = { factor = 5 }
+        set_country_flag = COS_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.33
+    title = annexation.33.t
+    desc = annexation.33.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = CRC_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = CRC
+            has_country_flag = CRC_OCCUPIED
+            country_exists = CRC
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 695
+        }
+    }
+    option = { # Puppet
+        name = annexation.33.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = CRC
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            CRC = { transfer_state = PREV }
+        }
+        puppet = CRC
+    }
+    option = {
+        name = annexation.31.b
+        ai_chance = { factor = 5 }
+        set_country_flag = CRC_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.34
+    title = annexation.34.t
+    desc = annexation.34.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = CRO_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = CRO
+            has_country_flag = CRO_OCCUPIED
+            country_exists = CRO
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 109
+        }
+    }
+    option = { # Puppet
+        name = annexation.34.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = CRO
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            CRO = { transfer_state = PREV }
+        }
+        puppet = CRO
+    }
+    option = {
+        name = annexation.34.b
+        ai_chance = { factor = 5 }
+        set_country_flag = CRO_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.35
+    title = annexation.35.t
+    desc = annexation.35.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = CRU_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = CRU
+            tag = MEX
+            has_country_flag = CRU_OCCUPIED
+            country_exists = CRU
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 881
+        }
+    }
+    option = { # Puppet
+        name = annexation.35.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = CRU
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            CRU = { transfer_state = PREV }
+        }
+        puppet = CRU
+    }
+    option = {
+        name = annexation.35.b
+        ai_chance = { factor = 5 }
+        set_country_flag = CRU_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.36
+    title = annexation.36.t
+    desc = annexation.36.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = CUB_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = CUB
+            has_country_flag = CUB_OCCUPIED
+            country_exists = CUB
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 315
+        }
+    }
+    option = { # Puppet
+        name = annexation.36.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = CUB
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            CUB = { transfer_state = PREV }
+        }
+        puppet = CUB
+    }
+    option = {
+        name = annexation.36.b
+        ai_chance = { factor = 5 }
+        set_country_flag = CUB_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.37
+    title = annexation.37.t
+    desc = annexation.37.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = CYP_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = CYP
+            has_country_flag = CYP_OCCUPIED
+            country_exists = CYP_OCCUPIED
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 183
+        }
+    }
+    option = { # Puppet
+        name = annexation.37.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = CYP
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            CYP = { transfer_state = PREV }
+        }
+        puppet = CYP
+    }
+    option = {
+        name = annexation.37.b
+        ai_chance = { factor = 5 }
+        set_country_flag = CYP_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.38
+    title = annexation.38.t
+    desc = annexation.38.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = CZE_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = CZE
+            has_country_flag = CZE_OCCUPIED
+            country_exists = CZE
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 9
+        }
+    }
+    option = { # Puppet
+        name = annexation.38.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = CZE
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            CZE = { transfer_state = PREV }
+        }
+        puppet = CZE
+    }
+    option = {
+        name = annexation.38.b
+        ai_chance = { factor = 5 }
+        set_country_flag = CZE_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.39
+    title = annexation.39.t
+    desc = annexation.39.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = DEI_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = DEI
+            tag = INS
+            has_country_flag = DEI_OCCUPIED
+            country_exists = DEI
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 335
+        }
+    }
+    option = { # Puppet
+        name = annexation.39.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = DEI
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            INS = { transfer_state = PREV }
+        }
+        puppet = INS
+    }
+    option = {
+        name = annexation.39.b
+        ai_chance = { factor = 5 }
+        set_country_flag = DEI_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.40
+    title = annexation.40.t
+    desc = annexation.40.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = DEN_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = DEN
+            has_country_flag = DEN_OCCUPIED
+            country_exists = DEN
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 37
+        }
+    }
+    option = { # Puppet
+        name = annexation.40.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = DEN
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            DEN = { transfer_state = PREV }
+        }
+        puppet = DEN
+    }
+    option = {
+        name = annexation.40.b
+        ai_chance = { factor = 5 }
+        set_country_flag = DEN_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.41
+    title = annexation.41.t
+    desc = annexation.41.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = DOM_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = DOM
+            has_country_flag = DOM_OCCUPIED
+            country_exists = DOM
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 319
+        }
+    }
+    option = { # Puppet
+        name = annexation.41.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = DOM
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            DOM = { transfer_state = PREV }
+        }
+        puppet = DOM
+    }
+    option = {
+        name = annexation.41.b
+        ai_chance = { factor = 5 }
+        set_country_flag = DOM_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.42
+    title = annexation.42.t
+    desc = annexation.42.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = ECU_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = ECU
+            has_country_flag = ECU_OCCUPIED
+            country_exists = ECU
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 305
+        }
+    }
+    option = { # Puppet
+        name = annexation.42.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = ECU
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            ECU = { transfer_state = PREV }
+        }
+        puppet = ECU
+    }
+    option = {
+        name = annexation.42.b
+        ai_chance = { factor = 5 }
+        set_country_flag = ECU_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.43
+    title = annexation.43.t
+    desc = annexation.43.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = EGY_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = EGY
+            has_country_flag = EGY_OCCUPIED
+            country_exists = EGY
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 446
+        }
+    }
+    option = { # Puppet
+        name = annexation.43.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = EGY
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            EGY = { transfer_state = PREV }
+        }
+        puppet = EGY
+    }
+    option = {
+        name = annexation.43.b
+        ai_chance = { factor = 5 }
+        set_country_flag = EGY_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.44
+    title = annexation.44.t
+    desc = annexation.44.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = ELS_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = ELS
+            has_country_flag = ELS_OCCUPIED
+            country_exists = ELS
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 314
+        }
+    }
+    option = { # Puppet
+        name = annexation.44.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = ELS
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            ELS = { transfer_state = PREV }
+        }
+        puppet = ELS
+    }
+    option = {
+        name = annexation.44.b
+        ai_chance = { factor = 5 }
+        set_country_flag = ELS_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.45
+    title = annexation.45.t
+    desc = annexation.45.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = ENG_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = EGL
+            tag = ENG
+            tag = ENP
+            has_country_flag = ENG_OCCUPIED
+            country_exists = ENG
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 306
+        }
+    }
+    option = { # Puppet
+        name = annexation.45.a
+        ai_chance = { base = 45 }
+        every_owned_state = {
+            limit = {
+                is_core_of = ENG
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            ENP = { transfer_state = PREV }
+        }
+        puppet = ENP
+    }
+    option = {
+        name = annexation.45.b
+        ai_chance = { base = 50 }
+        every_owned_state = {
+            limit = {
+                is_claimed_by = WLS
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            WLS = { 
+                add_state_core = PREV
+                transfer_state = PREV
+            }
+        }
+        every_owned_state = {
+            limit = {
+                is_claimed_by = SCO
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            SCO = { 
+                add_state_core = PREV
+                transfer_state = PREV
+            }
+        }
+        every_owned_state = {
+            limit = {
+                is_claimed_by = IRE
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            IRE = {
+                add_state_core = PREV
+                transfer_state = PREV
+            }
+        }
+        every_owned_state = {
+            limit = {
+                is_core_of = ENG
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            EGL = { transfer_state = PREV }
+        }
+        puppet = WLS
+        puppet = SCO
+        puppet = EGL
+    }
+    option = {
+        name = annexation.45.c
+        ai_chance = { factor = 5 }
+        set_country_flag = ENG_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.46
+    title = annexation.46.t
+    desc = annexation.46.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = ERM_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = ERM
+            has_country_flag = ERM_OCCUPIED
+            country_exists = ERM
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 5
+        }
+    }
+    option = { # Puppet
+        name = annexation.46.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = ERM
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            ERM = { transfer_state = PREV }
+        }
+        puppet = ERM
+    }
+    option = {
+        name = annexation.46.b
+        ai_chance = { factor = 5 }
+        set_country_flag = ERM_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.47
+    title = annexation.47.t
+    desc = annexation.47.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = EST_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = EST
+            has_country_flag = EST_OCCUPIED
+            country_exists = EST
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 13
+        }
+    }
+    option = { # Puppet
+        name = annexation.47.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = EST
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            EST = { transfer_state = PREV }
+        }
+        puppet = EST
+    }
+    option = {
+        name = annexation.47.b
+        ai_chance = { factor = 5 }
+        set_country_flag = EST_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.48
+    title = annexation.48.t
+    desc = annexation.48.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = ETH_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = ETH
+            has_country_flag = ETH_OCCUPIED
+            country_exists = ETH
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 271
+        }
+    }
+    option = { # Puppet
+        name = annexation.48.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = ETH
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            ETH = { transfer_state = PREV }
+        }
+        puppet = ETH
+    }
+    option = {
+        name = annexation.48.b
+        ai_chance = { factor = 5 }
+        set_country_flag = ETH_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.49
+    title = annexation.49.t
+    desc = annexation.49.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = FIC_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = FIC
+            tag = VIN
+            tag = CAM
+            tag = LAO
+            has_country_flag = FIC_OCCUPIED
+            country_exists = FIC
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 958
+        }
+    }
+    option = { # Puppet
+        name = annexation.49.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_claimed_by = CAM
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            CAM = {
+                add_state_core = PREV
+                transfer_state = PREV
+            }
+        }
+        every_owned_state = {
+            limit = {
+                is_claimed_by = LAO
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            LAO = {
+                add_state_core = PREV
+                transfer_state = PREV
+            }
+        }
+        every_owned_state = {
+            limit = {
+                is_claimed_by = VIN
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            VIN = {
+                add_state_core = PREV
+                transfer_state = PREV
+            }
+        }
+        puppet = LAO
+        puppet = CAM
+        puppet = VIN
+    }
+    option = {
+        name = annexation.49.b
+        ai_chance = { factor = 5 }
+        set_country_flag = FIC_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.50
+    title = annexation.50.t
+    desc = annexation.50.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = FIN_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = FIN
+            has_country_flag = FIN_OCCUPIED
+            country_exists = FIN
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 111
+        }
+    }
+    option = { # Puppet
+        name = annexation.50.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = FIN
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            FIN = { transfer_state = PREV }
+        }
+        puppet = FIN
+    }
+    option = {
+        name = annexation.50.b
+        ai_chance = { factor = 5 }
+        set_country_flag = FIN_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.51
+    title = annexation.51.t
+    desc = annexation.51.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = FLA_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = FLA
+            has_country_flag = FLA_OCCUPIED
+            country_exists = FLA
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 111
+        }
+    }
+    option = { # Puppet
+        name = annexation.51.a
+        ai_chance = { base = 95 }
+        every_owned_state = {
+            limit = {
+                is_core_of = FLA
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            FLA = { transfer_state = PREV }
+        }
+        puppet = FLA
+    }
+    option = {
+        name = annexation.51.b
+        ai_chance = { factor = 5 }
+        set_country_flag = FLA_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}
+country_event = {
+    id = annexation.52
+    title = annexation.52.t
+    desc = annexation.52.d
+    picture = GFX_report_event_czech_soldiers_01
+    immediate = { set_country_flag = FRA_OCCUPIED }
+    mean_time_to_happen = { days = 3 }
+    trigger = {
+        NOT = {
+            tag = FRA
+            has_country_flag = FRA_OCCUPIED
+            country_exists = FRA
+        }
+        ROOT = {
+            has_war = no
+            owns_state = 111
+        }
+    }
+    option = { # Puppet
+        name = annexation.52.a
+        ai_chance = { base = 50 }
+        every_owned_state = {
+            limit = {
+                is_core_of = FRA
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            FRP = {
+                add_state_core = PREV
+                transfer_state = PREV
+            }
+        }
+        puppet = FRP
+    }
+    option = {
+        name = annexation.52.b
+        ai_chance = { base = 45 }
+        every_owned_state = {
+            limit = {
+                is_claimed_by = COR
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            COR = {
+                add_state_core = PREV
+                transfer_state = PREV
+            }
+        }
+        every_owned_state = {
+            limit = {
+                is_claimed_by = NRM
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            NRM = {
+                add_state_core = PREV
+                transfer_state = PREV
+            }
+        }
+        every_owned_state = {
+            limit = {
+                is_claimed_by = BRI
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            BRI = {
+                add_state_core = PREV
+                transfer_state = PREV
+            }
+        }
+        every_owned_state = {
+            limit = {
+                is_claimed_by = OCC
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            OCC = {
+                add_state_core = PREV
+                transfer_state = PREV
+            }
+        }
+        every_owned_state = {
+            limit = {
+                is_core_of = FRA
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            FRP = {
+                add_state_core = PREV
+                transfer_state = PREV
+            }
+        }
+        puppet = FRP
+        puppet = BRI
+        puppet = OCC
+        puppet = NRM
+        puppet = COR
+    }
+    option = {
+        name = annexation.52.c
+        ai_chance = { factor = 5 }
+        set_country_flag = FRA_OCCUPIED
+        add_political_power = -50
+        add_stability = -0.025
+        add_war_support = -0.025
+    }
+}

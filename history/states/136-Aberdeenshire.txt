@@ -17,7 +17,7 @@ state={
 			dockyard = 4
 		}
 		add_core_of = ENG
-		add_core_of = SCO
+		add_claim_by = SCO
 		victory_points = {
 			11136 5 
 		}
