@@ -30,6 +30,7 @@ has_no_unique_ministers = {
             original_tag = SIA
             original_tag = PHI
             original_tag = PHR
+            original_tag = GRE
         }
     }
 }
@@ -65,6 +66,7 @@ has_no_unique_companies = {
             original_tag = SIA
             original_tag = PHI
             original_tag = PHR
+            original_tag = GRE
         }
     }
 }

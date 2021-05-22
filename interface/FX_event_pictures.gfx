@@ -1,0 +1,8 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_report_event_PHI_rizal_park"
+        texturefile = "gfx/event_pictures/PHI/report_event_PHI_intro.tga"
+    }
+
+}

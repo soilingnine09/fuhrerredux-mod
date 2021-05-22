@@ -21,6 +21,7 @@ add_ideas = {
 	GEN_FOR_Mli
 	GEN_ECO_Mli
 	GEN_SEC_Mli
+	GEN_entente_member
 	parliamentary_republic
 }
 

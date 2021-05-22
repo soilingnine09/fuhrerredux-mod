@@ -4,6 +4,7 @@ state={
 
 	history={
 		owner = ENG
+		add_claim_by = IRE
 		victory_points = {
 			11293 10 
 		}
@@ -13,12 +14,8 @@ state={
 			industrial_complex = 2
 			11293 = {
 				naval_base = 6
-
 			}
-
 		}
-		add_core_of = IRE
-
 	}
 
 	provinces={

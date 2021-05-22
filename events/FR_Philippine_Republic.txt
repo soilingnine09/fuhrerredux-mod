@@ -1419,11 +1419,11 @@ country_event = { # Ask for Investments
                 FROM = { is_major = yes }
             }
         }
-        PHI = {
-            add_offsite_building = {
-                type = industrial_complex
-                level = 1
-            }
+        add_offsite_building = {
+            type = industrial_complex
+            level = 2
+        }
+        FROM = {
             country_event = phi.101
         }
     }
@@ -1432,7 +1432,7 @@ country_event = { # Ask for Investments
         ai_chance = {
             base = 50
         }
-        PHI = {
+        FROM = {
             country_event = phi.102
         }
     }
@@ -1447,6 +1447,10 @@ country_event = { # From Accepts Giving Investments
 
     option = {
         name = phi.101.a
+         add_offsite_building = {
+            type = industrial_complex
+            level = 2
+        }
     }
 }
 
