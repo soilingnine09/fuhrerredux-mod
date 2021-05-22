@@ -6,7 +6,7 @@ state={
 	state_category = large_city
 
 	history={
-		add_core_of = HES
+		add_claim_by = HES
 		owner = GER
 		victory_points = {
 			495 5 

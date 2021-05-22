@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		add_core_of = SAX
+		add_claim_by = SAX
 		owner = GER
 		buildings = {
 			infrastructure = 7

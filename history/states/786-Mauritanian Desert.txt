@@ -4,7 +4,7 @@ state={
 	name="STATE_786"
 
 	history={
-		add_core_of = POM
+		add_claim_by = POM
 		owner = GER
 		buildings = {
 			infrastructure = 8

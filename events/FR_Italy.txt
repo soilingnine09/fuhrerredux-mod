@@ -1802,7 +1802,7 @@ country_event = { # Italian Civil War - Commies
 						is_core_of = ITA
 					}
 					THIS = {
-						add_core_of = PIE
+						add_claim_by = PIE
 					}
 				}
 				add_popularity = {

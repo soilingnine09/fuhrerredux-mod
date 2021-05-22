@@ -4,7 +4,7 @@ state={
 	name="STATE_66"
 
 	history={
-		add_core_of = SIL
+		add_claim_by = SIL
 		owner = GER
 		buildings = {
 			infrastructure = 6

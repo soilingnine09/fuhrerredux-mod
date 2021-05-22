@@ -6,7 +6,7 @@ state={
 	state_category = metropolis
 
 	history={
-		add_core_of = LOM
+		add_claim_by = LOM
 		owner = ITA
 		victory_points = {
 			3780 15 

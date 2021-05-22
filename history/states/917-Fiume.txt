@@ -4,7 +4,7 @@ state={
 
 	history={
 		add_core_of = CRO
-		add_core_of = SRV
+		add_claim_by = SRV
 		owner = ITA
 		buildings = {
 			infrastructure = 6

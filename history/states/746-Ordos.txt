@@ -34,7 +34,7 @@ state={
 			#}
 
 		}
-		add_core_of = RHI
+		add_claim_by = RHI
 
 	}
 

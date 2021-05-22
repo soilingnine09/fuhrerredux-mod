@@ -6,7 +6,7 @@ state={
 	
 	state_category = city
 	history={
-		add_core_of = SIC
+		add_claim_by = SIC
 		owner = ITA
 		victory_points = {
 			10074 15 

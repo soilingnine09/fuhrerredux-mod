@@ -8,7 +8,7 @@ state={
 	}
 
 	history={
-		add_core_of = SIL
+		add_claim_by = SIL
 		owner = POL
 		buildings = {
 			infrastructure = 6

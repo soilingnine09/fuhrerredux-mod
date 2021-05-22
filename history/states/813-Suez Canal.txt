@@ -12,7 +12,7 @@ state={
 			}
 
 		}
-		add_core_of = EGY
+		add_claim_by = EGY
 		victory_points = {
 			12049 3 
 		}
