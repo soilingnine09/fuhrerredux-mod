@@ -5,12 +5,11 @@ state={
 
 	history={
 		owner = ENG
+		add_claim_by = IRE
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 3
-
 		}
-		add_core_of = IRE
 		victory_points = {
 			9303 1
 		}

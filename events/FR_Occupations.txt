@@ -2103,7 +2103,7 @@ country_event = {
 		ai_chance = { factor = 95 }
 		every_state = {
 			limit = {
-				is_core_of = IRE
+				is_claimed_by = IRE
 				is_fully_controlled_by = ROOT
 				NOT = { is_core_of = ROOT }
 				NOT = { is_claimed_by = ROOT }
@@ -5139,6 +5139,7 @@ country_event = {			# - Holstein Event
 			add_state_core = 58
 			add_state_core = 784
 			add_state_core = 915
+			add_state_core = 991
 		}
 		release_puppet = SHO
 		SHO = {
@@ -5171,6 +5172,12 @@ country_event = {			# - Holstein Event
 				controls_state = 915
 			}
 			GRP = { transfer_state = 915 }
+		}
+		IF = {
+			limit = {
+				controls_state = 991
+			}
+			GRP = { transfer_state = 991 }
 		}
 		set_country_flag = decided_holstein
 	}
