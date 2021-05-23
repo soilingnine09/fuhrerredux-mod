@@ -58,6 +58,7 @@ set_war_support = 0.25
 DEN = {
 	puppet = PREV
 }
+give_military_access = ENG
 
 set_politics = {	
 	ruling_party = authoritarian_democrat

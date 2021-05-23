@@ -172,7 +172,7 @@ if = {
 	}
 }
 
-give_military_access = SHO
+
 diplomatic_relation = { country = SHO relation = non_aggression_pact }
 
 #Trade
