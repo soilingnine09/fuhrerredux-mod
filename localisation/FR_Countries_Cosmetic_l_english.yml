@@ -1216,34 +1216,6 @@ IRQ_mashriq_valkist:0 "Mashriqi Republic"
 IRQ_mashriq_valkist_ADJ:0 "Mashriqi"
 IRQ_mashriq_valkist_DEF:0 "The Arab Republic of Mashriq"
 
-#RK Slovakia
-SLO_puppet_authoritarian_democrat:0 "R.K. Slovakia"
-SLO_puppet_authoritarian_democrat_ADJ:0 "Slovak"
-SLO_puppet_authoritarian_democrat_DEF:0 "The Reichskommissariat Slovakia"
-SLO_puppet_paternal_autocrat:0 "R.K. Slovakia"
-SLO_puppet_paternal_autocrat_ADJ:0 "Slovak"
-SLO_puppet_paternal_autocrat_DEF:0 "The Reichskommissariat Slovakia"
-SLO_puppet_national_populist:0 "R.K. Slovakia"
-SLO_puppet_national_populist_ADJ:0 "Slovak"
-SLO_puppet_national_populist_DEF:0 "The Reichskommissariat Slovakia"
-SLO_puppet_valkist:0 "R.K. Slowakei"
-SLO_puppet_valkist_ADJ:0 "Slowak"
-SLO_puppet_valkist_DEF:0 "Der Reichskommissariat Slowakei"
-
-#RK ostland
-LIT_ostland_authoritarian_democrat:0 "R.K. Ostland"
-LIT_ostland_authoritarian_democrat_ADJ:0 "Ostlandian"
-LIT_ostland_authoritarian_democrat_DEF:0 "The Reichskommissariat Ostland"
-LIT_ostland_paternal_autocrat:0 "R.K. Ostland"
-LIT_ostland_paternal_autocrat_ADJ:0 "Ostlandian"
-LIT_ostland_paternal_autocrat_DEF:0 "The Reichskommissariat Ostland"
-LIT_ostland_national_populist:0 "R.K. Ostland"
-LIT_ostland_national_populist_ADJ:0 "Ostlandian"
-LIT_ostland_national_populist_DEF:0 "The Reichskommissariat Ostland"
-LIT_ostland_valkist:0 "R.K. Ostland"
-LIT_ostland_valkist_ADJ:0 "Ostlandian"
-LIT_ostland_valkist_DEF:0 "Der Reichskommissariat Ostland"
-
 #Reichskommissariat Ukraine
 LIT_puppet_authoritarian_democrat:0 "Protectorate of Lithuania"
 LIT_puppet_authoritarian_democrat_ADJ:0 "Lithuanian"
@@ -2995,15 +2967,7 @@ DEN_puppet_valkist_ADJ:0 "Dänisch"
 DEN_puppet_valkist_DEF:0 "Der Reichskommissariat Dänemark"
 
 #Reichskommissariat Austria
-AUS_puppet_authoritarian_democrat:0 "Protectorate of Austria"
-AUS_puppet_authoritarian_democrat_ADJ:0 "Austrian"
-AUS_puppet_authoritarian_democrat_DEF:0 "The Protectorate of Austria"
-AUS_puppet_national_populist:0 "Protectorate of Austria"
-AUS_puppet_national_populist_ADJ:0 "Austrian"
-AUS_puppet_national_populist_DEF:0 "The Protectorate of Austria"
-AUS_puppet_valkist:0 "Protektorat Österreich"
-AUS_puppet_valkist_ADJ:0 "Österreichisch"
-AUS_puppet_valkist_DEF:0 "Das Protektorat Österreich"
+
 
 #Reichskommissariat Hungary
 HUN_puppet_authoritarian_democrat:0 "Protectorate of Hungary"

@@ -537,6 +537,11 @@ country_event = {
             BEL = { transfer_state = PREV }
         }
         puppet = BEL
+
+        if = {
+            limit = { tag = SOV }
+            BEL = { set_cosmetic_tag = BEL_SSR }
+        }
     }
     option = {
         name = annexation.13.b
@@ -639,6 +644,7 @@ country_event = {
     trigger = {
         NOT = {
             tag = BLR
+            tag = GER
             has_country_flag = BLR_OCCUPIED
             country_exists = BLR
         }
@@ -660,6 +666,11 @@ country_event = {
             BLR = { transfer_state = PREV }
         }
         puppet = BLR
+
+        if = {
+            limit = { tag = SOV }
+            BLR = { set_cosmetic_tag = BLR_SSR }
+        }
     }
     option = {
         name = annexation.16.b
@@ -1633,6 +1644,7 @@ country_event = {
     trigger = {
         NOT = {
             tag = CZE
+            tag = GER
             has_country_flag = CZE_OCCUPIED
             country_exists = CZE
         }
@@ -1654,6 +1666,11 @@ country_event = {
             CZE = { transfer_state = PREV }
         }
         puppet = CZE
+
+        if = {
+            limit = { tag = SOV }
+            CZE = { set_cosmetic_tag = CZE_SSR }
+        }
     }
     option = {
         name = annexation.38.b
@@ -1716,6 +1733,7 @@ country_event = {
     trigger = {
         NOT = {
             tag = DEN
+            tag = GER
             has_country_flag = DEN_OCCUPIED
             country_exists = DEN
         }
@@ -2350,6 +2368,7 @@ country_event = {
     option = { # Puppet
         name = annexation.52.a
         ai_chance = { base = 50 }
+        trigger = { NOT = { tag = SOV } }
         every_owned_state = {
             limit = {
                 is_core_of = FRA
@@ -2367,6 +2386,7 @@ country_event = {
     option = { # Fragment
         name = annexation.52.b
         ai_chance = { base = 45 }
+        trigger = { NOT = { tag = SOV } }
         every_owned_state = {
             limit = {
                 state = 1
@@ -2456,6 +2476,21 @@ country_event = {
     }
     option = {
         name = annexation.52.c
+        trigger = { tag = SOV }
+        every_owned_state = {
+            limit = {
+                is_core_of = FRA
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            FRA = { transfer_state = PREV }
+        }
+        puppet = FRA
+        FRA = { set_cosmetic_tag = FRA_SSR }
+    }
+    option = {
+        name = annexation.52.e
         ai_chance = { factor = 5 }
         set_country_flag = FRA_OCCUPIED
         add_political_power = -50
@@ -2525,6 +2560,7 @@ country_event = {
     option = { # Puppet
         name = annexation.54.a
         ai_chance = { base = 50 }
+        trigger = { NOT = { tag = SOV } }
         every_owned_state = {
             limit = {
                 is_core_of = GER
@@ -2536,9 +2572,28 @@ country_event = {
         }
         puppet = GRP
     }
-    option = { # Fragment
+    option = {
         name = annexation.54.b
+        trigger = { tag = SOV }
+        every_owned_state = {
+            limit = {
+                is_core_of = GER
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            DDR = {
+                add_state_core = PREV
+                transfer_state = PREV
+            }
+        }
+        puppet = DDR
+        DDR = { set_cosmetic_tag = GER_SSR }
+    }
+    option = { # Fragment
+        name = annexation.54.c
         ai_chance = { base = 45 }
+        trigger = { NOT = { tag = SOV } }
         every_owned_state = {
             limit = {
                 OR = {
@@ -2715,7 +2770,7 @@ country_event = {
         set_global_flag = germany_balkanized
     }
     option = {
-        name = annexation.54.c
+        name = annexation.54.e
         ai_chance = { factor = 5 }
         set_country_flag = GER_OCCUPIED
         add_political_power = -50
@@ -3004,6 +3059,11 @@ country_event = {
             HOL = { transfer_state = PREV }
         }
         puppet = HOL
+
+        if = {
+            limit = { tag = SOV }
+            HOL = { set_cosmetic_tag = HOL_SSR }
+        }
     }
     option = {
         name = annexation.61.b
@@ -4149,6 +4209,11 @@ country_event = {
             }
         }
         puppet = LIT
+
+        if = {
+            limit = { tag = GER }
+            LIT = { set_cosmetic_tag = GER_LIT_rk }
+        }
     }
     option = {
         name = annexation.83.b
@@ -4213,6 +4278,7 @@ country_event = {
     trigger = {
         NOT = {
             tag = LUX
+            tag = GER
             has_country_flag = LUX_OCCUPIED
             country_exists = LUX
         }
@@ -5203,6 +5269,15 @@ country_event = {
             }
         }
         puppet = POL
+
+        if = {
+            limit = { tag = GER }
+            POL = { set_cosmetic_tag = GER_POL_rk }
+        }
+        else_if = {
+            limit = { tag = SOV }
+            POL = { set_cosmetic_tag = POL_SSR }
+        }
     }
     option = {
         name = annexation.107.b
@@ -6235,6 +6310,7 @@ country_event = {
     trigger = {
         NOT = {
             tag = SLO
+            tag = GER
             has_country_flag = SLO_OCCUPIED
             country_exists = SLO
         }
@@ -6572,9 +6648,14 @@ country_event = {
             }
         }
         puppet = SPA
+
+        if = {
+            limit = { tag = SOV }
+            SPA = { set_cosmetic_tag = SPA_SSR }
+        }
     }
     option = {
-        name = annexation.134.b
+        name = annexation.134.f
         ai_chance = { factor = 5 }
         set_country_flag = SPR_OCCUPIED
         add_political_power = -50
@@ -6973,6 +7054,11 @@ country_event = {
             }
         }
         puppet = UKR
+
+        if = {
+            limit = { tag = SOV }
+            UKR = { set_cosmetic_tag = UKR_SSR }
+        }
     }
     option = {
         name = annexation.143.b
@@ -7061,6 +7147,11 @@ country_event = {
             }
         }
         puppet = USA
+
+        if = {
+            limit = { tag = SOV }
+            set_cosmetic_tag = USA_SSR
+        }
     }
     option = {
         name = annexation.145.b

@@ -68,20 +68,6 @@ GER_fate_of_lithuania = {
 	}
 }
 
-GER_fate_of_poland = {
-	icon = generic_fascism
-	
-	priority = {
-		factor = 10
-	}
-
-	picture = GFX_decision_cat_generic_treaty
-
-	allowed = {
-		original_tag = GER
-	}
-}
-
 GER_fate_of_east_europe = {
 	icon = generic_fascism
 	

@@ -194,7 +194,14 @@ create_country_leader = {
 	}
 }
 
-
+create_country_leader = {
+	name = "Wacław Krzeptowski"
+	desc = "POLITICS_WACLAW_KRZEPTOWSKI"
+	picture = "Portrait_Poland_Waclaw_Krzeptowski.tga"
+	expire = "1965.1.1"
+	ideology = valkist_subtype
+	traits = { }
+}
 
 create_field_marshal = {
 	name = "Edward Rydz-Śmigły"
