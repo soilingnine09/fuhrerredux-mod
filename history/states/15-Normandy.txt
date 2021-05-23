@@ -10,7 +10,6 @@ state={
 	state_category = small_town
 
 	history={
-		add_claim_by = NRM
 		owner = FRA
 		victory_points = {
 			3549 1

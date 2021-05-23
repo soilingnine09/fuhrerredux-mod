@@ -5,7 +5,7 @@ state={
 	state_category = rural
 
 	history={
-		add_claim_by = SRV
+		
 		owner = ITA
 		add_core_of = ITA
 		buildings = {

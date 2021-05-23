@@ -3,7 +3,7 @@ state={
 	name="STATE_770"
 
 	history={
-		add_claim_by = SRV
+		
 		owner = ITA
 		buildings = {
 			infrastructure = 8

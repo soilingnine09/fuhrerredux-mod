@@ -12,7 +12,6 @@ state={
 	}
 
 	history={
-		add_claim_by = OCC
 		owner = FRA
 		victory_points = {
 			9898 4 

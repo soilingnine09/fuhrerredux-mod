@@ -4,7 +4,6 @@ state={
 	name="STATE_54"
 
 	history={
-		add_claim_by = BAY
 		owner = GER
 		buildings = {
 			infrastructure = 7

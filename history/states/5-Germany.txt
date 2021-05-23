@@ -4,7 +4,6 @@ state={
 	name="STATE_5"
 
 	history={
-		add_claim_by = ERM
 		owner = GER
 		controller = GER
 		victory_points = {

@@ -8,7 +8,7 @@ state={
 	}
 
 	history={
-		add_claim_by = NAP
+		
 		owner = ITA
 		victory_points = {
 			819 20 

@@ -7,7 +7,6 @@ state={
 	state_category = city
 
 	history={
-		add_claim_by = BAY
 		owner = GER
 		buildings = {
 			infrastructure = 6

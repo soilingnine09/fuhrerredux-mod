@@ -4,7 +4,7 @@ state={
 	name="STATE_62"
 
 	history={
-		add_claim_by = POM
+		
 		owner = GER
 		victory_points = {
 			6282 5 

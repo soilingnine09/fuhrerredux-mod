@@ -13,7 +13,7 @@ state={
 	}
 
 	history={
-		add_claim_by = PIE
+		
 		owner = ITA
 		victory_points = {
 			6788 15 

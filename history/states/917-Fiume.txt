@@ -3,9 +3,11 @@ state={
 	name = "STATE_917"
 
 	history={
-		add_core_of = CRO
-		add_claim_by = SRV
 		owner = ITA
+		add_core_of = ITA
+		add_claim_by = SER
+		add_claim_by = CRO
+
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 1
@@ -14,8 +16,8 @@ state={
 		victory_points = {
 			11564 2 
 		}
-		add_core_of = SER
-		add_core_of = ITA
+		
+		
 	}
 
 	provinces={

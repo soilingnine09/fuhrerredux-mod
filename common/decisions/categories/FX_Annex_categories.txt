@@ -1,4 +1,0 @@
-generic_annex_decisions = {
-    priority = 100
-    icon = GFX_decision_category_eng_move_to_secure_the_dominions
-}

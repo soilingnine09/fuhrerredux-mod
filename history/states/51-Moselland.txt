@@ -23,7 +23,7 @@ state={
 			air_base = 3
 
 		}
-		add_claim_by = RHI
+		add_core_of = RHI
 
 	
 	}

@@ -5,7 +5,6 @@ state={
 	
 	state_category = city
 	history={
-		add_claim_by = ERM
 		owner = GER
 		victory_points = {
 			362 10

@@ -5,7 +5,6 @@ state={
 	state_category = small_town
 
 	history={
-		add_claim_by = OCC
 		owner = FRA
 		add_core_of = FRA
 		victory_points = {

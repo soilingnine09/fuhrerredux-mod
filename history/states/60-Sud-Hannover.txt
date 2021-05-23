@@ -12,7 +12,7 @@ state={
 	state_category = large_city
 
 	history={
-		add_claim_by = SAX
+		
 		owner = GER
 		victory_points = { 6524 5 }
 		buildings = {

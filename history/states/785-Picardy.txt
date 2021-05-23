@@ -5,7 +5,7 @@ state = {
 	state_category = town
 
 	history = {
-		add_claim_by = POM
+		
 		owner = BEA
 		add_core_of = BEA
 		buildings = {

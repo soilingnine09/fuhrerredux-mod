@@ -3,7 +3,7 @@ state={
 	name="STATE_849"
 
 	history={
-		add_claim_by = NAP
+		
 		owner = ITA
 		buildings = {
 			industrial_complex = 2

@@ -6,7 +6,7 @@ state={
 	state_category = rural
 
 	history={
-		add_claim_by = PIE
+		
 		owner = ITA
 		buildings = {
 			industrial_complex = 1

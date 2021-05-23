@@ -7,7 +7,6 @@ state={
 	state_category = city
 
 	history={
-		add_claim_by = OCC
 		owner = FRA
 		victory_points = {
 			6766 10

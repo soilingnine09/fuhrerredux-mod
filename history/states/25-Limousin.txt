@@ -7,7 +7,6 @@ state={
 
 	state_category = small_town
 	history={
-		add_claim_by = OCC
 		owner = FRA
 		buildings = {
 			infrastructure = 6

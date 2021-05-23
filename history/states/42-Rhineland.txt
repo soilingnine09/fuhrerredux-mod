@@ -24,7 +24,7 @@ state={
 			industrial_complex = 3
 
 		}
-		add_claim_by = RHI
+		add_core_of = RHI
 
 	}
 
