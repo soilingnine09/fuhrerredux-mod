@@ -587,7 +587,7 @@ country_event = {
 	mean_time_to_happen = { days = 1 }
 	option = {
 		name = "How about new grand marshal?"
-		remove_all_ministers = yes
+		remove_every_minister = yes
 		add_ideas = {
 			SIA_phin_choonhavan_hog_pataut
 			SIA_phraya_abhiban_rajamaitri_for_pataut
@@ -1951,7 +1951,7 @@ country_event = {
 	}
 	option = { #Kit Sangkom and Valkist
 		name = "Unificationism is so strong"
-		remove_all_ministers = yes
+		remove_every_minister = yes
 		hidden_effect = {
 			add_popularity = { ideology = market_liberal popularity = 0.4 }
 			add_popularity = { ideology = social_liberal popularity = 0.15 }
@@ -1984,7 +1984,7 @@ country_event = {
 	}
 	option = { ##Royalist
 		name = "First is king, second still be a king"
-		remove_all_ministers = yes
+		remove_every_minister = yes
 		hidden_effect = {
 			add_popularity = { ideology = paternal_autocrat popularity = 0.2 }
 			add_popularity = { ideology = authoritarian_democrat popularity = 0.35 }
@@ -2014,7 +2014,7 @@ country_event = {
 	}
 	option = { ##Prachatipat and Khana Ratsadon 
 		name = "People and Traditional shall be the partner of them"
-		remove_all_ministers = yes
+		remove_every_minister = yes
 		hidden_effect = {
 			add_popularity = { ideology = social_conservative popularity = 0.2 }
 			add_popularity = { ideology = social_liberal popularity = 0.2 }

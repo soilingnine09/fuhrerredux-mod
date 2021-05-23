@@ -2,9 +2,19 @@
 # created by: dax0102
 
 foreign_politics = {
+    PHI_withdraw_advisors = {
+        icon = GFX_decision_generic_break_treaty
+        cost = 50
+        target_trigger = {
+            FROM = { PHI_is_in_south_east_asia = yes }
+        }
+        visible = { has_idea = PHI_guided_by_ph }
+        complete_effect = {
+            FROM = { remove_idea = PHI_guided_by_ph }
+        }
+    }
     PHI_propose_whitepeace = {
         icon = GFX_decision_hol_war_on_pacifism
-        
         target_trigger = {
             FROM = {
                 OR = {
@@ -13,29 +23,21 @@ foreign_politics = {
                 }
             }
         }
-
         visible = {
             FROM = { has_war_with = ROOT }
         }
-
         available = {
             FROM = {
                 if = {
-                    limit = { 
-                        tag = ENG
-                    }
+                    limit = { tag = ENG }
                     BEA = { has_capitulated = yes }
                 }
-
-                if = {
-                    limit = {
-                        tag = FRA
-                    }
+                else_if = {
+                    limit = { tag = FRA }
                     FIC = { has_capitulated = yes }
                 }
             }
         }
-
         complete_effect = {
             FROM = { country_event = phi.122 }
         }
@@ -45,28 +47,22 @@ foreign_politics = {
 PHI_seato_decisions = {
     PHI_invite_country = {
         target_trigger = {
-            FROM = {
-                PHI_is_in_south_east_asia = yes
-            }
+            FROM = { PHI_is_in_south_east_asia = yes }
         }
-
         visible = {
             country_exists = FROM
             NOT = { is_in_faction_with = FROM }
-
             if = {
                 limit = { FROM = SIA }
                 SIA = { set_country_flag = PHI_can_invite }
             }
         }
-
         available = {
             FROM = {
                 NOT = { has_war_with = ROOT }
                 is_in_faction = no
             }
         }
-
         complete_effect = {
             FROM = {
                 country_event = phi.119

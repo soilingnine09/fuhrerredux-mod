@@ -1,3 +1,16 @@
+can_replace_hog = {
+    custom_trigger_tooltip = {
+        tooltip = can_replace_hog
+        always = yes
+    }
+}
+
+can_replace_minister = {
+    custom_trigger_tooltip = {
+        tooltip = ministers_cannot_be_replaced
+        always = yes
+    }
+}
 
 has_no_unique_ministers = {
     NOT = {

@@ -368,7 +368,7 @@ country_event = {
 		set_politics = {
 			ruling_party = market_liberal
 		}
-		remove_all_ministers = yes
+		remove_every_minister = yes
 		SP_NS_clear_coalition_effect = yes
 		SIA_swap_the_focus = yes
 		add_ideas = {
@@ -404,7 +404,7 @@ country_event = {
 		set_politics = {
 			ruling_party = national_populist
 		}
-		remove_all_ministers = yes
+		remove_every_minister = yes
 		SP_NS_clear_coalition_effect = yes
 		SIA_swap_the_focus = yes
 		add_ideas = {
@@ -437,7 +437,7 @@ country_event = {
 		set_politics = {
 			ruling_party = valkist
 		}
-		remove_all_ministers = yes
+		remove_every_minister = yes
 		SP_NS_clear_coalition_effect = yes
 		SIA_swap_the_focus = yes
 		if = {

@@ -31,7 +31,7 @@ separate_peace_all_wars = {
 }
 
 # removes all current ministers for the country in scope - no tooltips displayed
-remove_all_ministers = {
+remove_every_minister = {
 	hidden_effect = {
 		remove_ideas_with_trait = head_of_government
 		remove_ideas_with_trait = foreign_minister
@@ -39,6 +39,15 @@ remove_all_ministers = {
 		remove_ideas_with_trait = security_minister
 		remove_ideas_with_trait = head_of_intel
 	}
+}
+
+# removes all ministers but the Head of Government 
+remove_every_minister_but_hog = {
+    hidden_effect = {
+        remove_ideas_with_trait = foreign_minister
+        remove_ideas_with_trait = economic_minister
+        remove_ideas_with_trait = security_minister
+    }
 }
 
 # changes the government of the country in scope to that of ROOT (the country running the event)
