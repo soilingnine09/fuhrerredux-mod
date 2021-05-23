@@ -144,10 +144,6 @@ LAT = {
 	color = rgb { 130 72 71 }
 	color_ui = rgb { 10 40 170 }
 }
-UBD = {
-	color = rgb { 122 142 138 }
-	color_ui = rgb { 142 142 128 }
-}
 ITA = {
 	color = rgb { 72 125 78 }
 	color_ui = rgb { 87 165 82 }

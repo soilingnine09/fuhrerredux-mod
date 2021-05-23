@@ -89,7 +89,6 @@ UKR = "countries/EastEuropean.txt" # Ukraine
 GEO = "countries/EastEuropean.txt" # Georgia
 GOR = "countries/EastEuropean.txt" # Mountain Republic
 MOL = "countries/EastEuropean.txt" # Moldova
-UBD = "countries/EastEuropean.txt" # United Baltic Dutchy
 MAC = "countries/EastEuropean.txt" # Macedonia
 BSR = "countries/EastEuropean.txt" # Bulgarian Socialist Republic
 LMK = "countries/EastEuropean.txt" # Lemko
@@ -165,14 +164,12 @@ ALG = "countries/MiddleEastern.txt" # Algeria
 MOR = "countries/MiddleEastern.txt" # Morocco
 TUN = "countries/MiddleEastern.txt" # Tunisia
 ARB = "countries/MiddleEastern.txt" # Hashemite Arabia
-QAT = "countries/MiddleEastern.txt" # Qatar
 KUW = "countries/MiddleEastern.txt" # Kuwait
 CYP = "countries/MiddleEastern.txt" # Cyprus
 IRQ = "countries/MiddleEastern.txt" # Iraq
 PER = "countries/MiddleEastern.txt" # Persia
 SYR = "countries/MiddleEastern.txt" # Syria
 JOR = "countries/MiddleEastern.txt" # Jordan
-UAE = "countries/MiddleEastern.txt" # United Arab Emirates
 PHN = "countries/MiddleEastern.txt" # Phoenicia
 
 ### Asia
