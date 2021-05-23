@@ -15025,6 +15025,30 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = itafla.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event itafla.2"}
+	title = itafla.2.t
+	desc = itafla.2.d
+	picture = ita_16
+
+	trigger = {
+		tag = ITA
+		date > 1936.5.0
+	}
+
+	mean_time_to_happen = { days = 7 }
+
+	fire_only_once = yes
+
+	option = {
+		name = itafla.2.a
+		2 = {
+			add_manpower = -1
+		}	
+	}
+}
+
 ####################
 # Socialist events #
 ####################

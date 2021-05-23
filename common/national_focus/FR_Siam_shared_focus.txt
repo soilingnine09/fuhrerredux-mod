@@ -877,6 +877,7 @@ shared_focus = {
 	relative_position_id = SIA_establish_central_command
 	allow_branch = {
 		has_dlc = "Man the Guns"
+		has_completed_focus = SIA_establish_central_command
 	}
 	x = 1
 	y = 7
