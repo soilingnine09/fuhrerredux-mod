@@ -3497,7 +3497,7 @@ country_event = { # fate of Hungary
 	name = "We will puppet all of greater Hungary"
 		HUN = {
 		load_focus_tree = generic_focus
-		set_cosmetic_tag = HUN_puppet
+		set_cosmetic_tag = GER_HUN_rk
 		copy_government_idea_of_ROOT = yes
 			set_politics = {
 				ruling_party = valkist elections_allowed = no
@@ -3541,7 +3541,7 @@ country_event = { # fate of Hungary
 	name = "We shall divide Hungary"
 		HUN = {
 		load_focus_tree = generic_focus
-		set_cosmetic_tag = HUN_puppet
+		set_cosmetic_tag = GER_HUN_rk
 		copy_government_idea_of_ROOT = yes
 			set_politics = {
 				ruling_party = valkist elections_allowed = no
@@ -5457,7 +5457,7 @@ country_event = { # Fate of Denmark
 		hidden_effect = {
 			DEN = {
 				load_focus_tree = generic_focus
-				set_cosmetic_tag = DEN_puppet
+				set_cosmetic_tag = GER_DEN_rk
 				copy_government_idea_of_ROOT = yes
 				set_politics = {
 					ruling_party = valkist elections_allowed = no
@@ -5497,7 +5497,7 @@ country_event = { # Fate of Player Denmark
 		hidden_effect = {
 			DEN = {
 				load_focus_tree = generic_focus
-				set_cosmetic_tag = DEN_puppet
+				set_cosmetic_tag = GER_DEN_rk
 				copy_government_idea_of_ROOT = yes
 				set_politics = {
 					ruling_party = valkist elections_allowed = no
@@ -6027,7 +6027,7 @@ country_event = { # Poland gives Lithuania
 				ideology = valkist_subtype
 				traits = { }
 				}
-				set_cosmetic_tag = LIT_puppet
+				set_cosmetic_tag = GER_LIT_rk
 			}
 		}
 	}
@@ -9549,7 +9549,7 @@ country_event = { # Poland - Germany demands submission
 			ideology = valkist_subtype
 			traits = { }
 			}
-			set_cosmetic_tag = POL_puppet
+			set_cosmetic_tag = GER_POL_rk
 		}
 	}
 	
@@ -11465,7 +11465,7 @@ country_event = { # Germany - The fate for occupied France
 			puppet = ORL
 		}
 		ORL = {
-			set_cosmetic_tag = VFR_puppet
+			set_cosmetic_tag = GER_FRA_rk
 			copy_government_idea_of_ROOT = yes
 			set_political_party = {
 				ideology = valkist
@@ -12293,7 +12293,7 @@ option = { # Puppet Italy
         }
 		hidden_effect = {
 			SRV = {
-				set_cosmetic_tag = VIT_puppet
+				set_cosmetic_tag = GER_ITA_rk
 			}
 			
             every_state = {
@@ -13818,7 +13818,7 @@ option = { # Puppet Britain
 			transfer_state = 816
 			}
 
-			set_cosmetic_tag = EGL_puppet
+			set_cosmetic_tag = GER_ENG_rk
 			copy_government_idea_of_ROOT = yes
             set_politics = { ruling_party = valkist }
 			add_ideas = {
@@ -13907,7 +13907,7 @@ option = { # Divide the isles
 			puppet = SCO
         }
 			EGL = {
-			set_cosmetic_tag = EGL_puppet2
+			set_cosmetic_tag = GER_ENG_rk
 			transfer_state = 125
             transfer_state = 126
             transfer_state = 127
@@ -13987,7 +13987,7 @@ option = { # Divide the isles
     }
 
 	SCO = {
-		set_cosmetic_tag = SCO_puppet
+		set_cosmetic_tag = GER_SCO_rk
 		transfer_state = 121
         transfer_state = 133
         transfer_state = 136
@@ -14039,7 +14039,7 @@ option = { # Divide the isles
 					}
 				}
 		IRE = {
-			set_cosmetic_tag = IRE_puppet
+			set_cosmetic_tag = GER_IRE_rk
 			transfer_state = 113
 			transfer_state = 119
 			transfer_state = 134
@@ -14328,7 +14328,7 @@ country_event = { # Germany - The fate of Slovakia
 		}
 		SLO = {
 			load_focus_tree = generic_focus
-			set_cosmetic_tag = SLO_puppet
+			set_cosmetic_tag = GER_SLO_rk
 		}
 		GER = {
             puppet = SLO
@@ -14384,7 +14384,7 @@ country_event = { # Germany - The fate of the Lemko
     name = ger.2070.a
 		LMK = {
 			load_focus_tree = generic_focus
-			set_cosmetic_tag = LMK_puppet
+			set_cosmetic_tag = GER_BOH_rk
             transfer_state = 800
             transfer_state = 801
             add_state_core = 800
