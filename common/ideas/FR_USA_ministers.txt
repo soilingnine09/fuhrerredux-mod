@@ -1,0 +1,101 @@
+###########################
+# United States Ministers #
+###########################
+
+ideas = {
+
+  #### HEADS OF GOVERNMENT ####
+
+  head_of_government = {
+
+		USA_Floyd_B_Olson_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_Floyd_B_Olson_hog"}
+          allowed = {original_tag = USA }
+          available = {
+              has_government = social_democrat
+              has_country_flag = can_replace_hog
+              NOT = {has_country_flag = Floyd_B_Olson_dead}
+              NOT = {has_country_flag = Floyd_B_Olson_fired}
+              NOT = {has_country_flag = ministers_cannot_be_replaced}
+          }
+          traits = {head_of_government social_democrat hog_pragmatic_statesman}
+          }
+
+		USA_Robert_Taft_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_Robert_Taft_hog"}
+          allowed = {original_tag = USA }
+          available = {
+            has_government = market_liberal
+            has_country_flag = can_replace_hog
+            NOT = {has_country_flag = Robert_Taft_dead}
+            NOT = {has_country_flag = Robert_Taft_fired}
+            NOT = {has_country_flag = ministers_cannot_be_replaced}
+            }
+            traits = {head_of_government market_liberal hog_silent_workhorse}
+            }
+		  
+		USA_Gerald_Smith_hog_aut = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_Gerald_Smith_hog_aut"}
+          allowed = {original_tag = USA }
+          available = {
+          has_government = authoritarian_democrat
+          has_country_flag = can_replace_hog
+          NOT = {has_country_flag = Gerald_Smith_dead}
+          NOT = {has_country_flag = Gerald_Smith_fired}
+          NOT = {has_country_flag = ministers_cannot_be_replaced}
+          }
+          traits = {head_of_government authoritarian_democrat hog_local_tyrant}
+          }
+		  
+		USA_Gerald_Smith_hog_pat = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_Gerald_Smith_hog_pat"}
+          allowed = {original_tag = USA }
+          available = {
+          has_government = paternal_autocrat
+          has_country_flag = can_replace_hog
+          NOT = {has_country_flag = Gerald_Smith_dead}
+          NOT = {has_country_flag = Gerald_Smith_fired}
+          NOT = {has_country_flag = ministers_cannot_be_replaced}
+          }
+          traits = {head_of_government paternal_autocrat hog_local_tyrant}
+          }
+		
+		USA_Hiram_Evans_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_Hiram_Evans_hog"}
+        allowed = {original_tag = USA }
+        available = {
+        has_government = national_populist
+        has_country_flag = can_replace_hog
+        NOT = {has_country_flag = Hiram_Evans_dead}
+        NOT = {has_country_flag = Hiram_Evans_fired}
+        NOT = {has_country_flag = ministers_cannot_be_replaced}
+        }
+        traits = {head_of_government national_populist hog_underground_figurehead}
+        }
+      }
+
+  foreign_minister = {
+  
+	
+
+  }
+
+  economy_minister = {
+
+	
+  
+  }
+
+  #### SECURITY MINISTERS ####
+
+  security_minister = {
+  
+	
+
+  }
+
+  #### INTEL MINISTERS ####
+
+
+
+}

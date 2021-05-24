@@ -1,0 +1,1459 @@
+ideas = {
+
+	head_of_government = {
+		FIN_Otto_Wille_Kuusinen_hog_van = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Otto_Wille_Kuusinen_hog_van"}
+			allowed = {original_tag = FIN}
+			available = {
+				has_government = vanguardist
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				vanguardist
+				hog_red_chairmen
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Arvo_Tuominen_hog_van = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Arvo_Tuominen_hog_van"}
+			allowed = {original_tag = FIN}
+			available = {
+				has_government = vanguardist
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				vanguardist
+				hog_flamboyant_tough_guy
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Kullervo_Manner_hog_col = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Kullervo_Manner_hog_col"}
+			allowed = {original_tag = FIN}
+			available = {
+				has_government = collectivist
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				collectivist
+				hog_determined_populist
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Adolf_Taimi_hog_col = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Adolf_Taimi_hog_col"}
+			allowed = {original_tag = FIN}
+			available = {
+				has_government = collectivist
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				collectivist
+				hog_backroom_backstabber
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Oskari_Tokoi_hog_lso = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Oskari_Tokoi_hog_lso"}
+			allowed = {original_tag = FIN}
+			available = {
+				has_government = libertarian_socialist
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				libertarian_socialist
+				hog_ambitious_union_boss
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Edvard_Gylling_hog_lso = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Edvard_Gylling_hog_lso"}
+			allowed = {original_tag = FIN}
+			available = {
+				has_government = libertarian_socialist
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				libertarian_socialist
+				hog_state_secularist
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Mauno_Pekkala_hog_lso = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Mauno_Pekkala_hog_lso"}
+			allowed = {original_tag = FIN}
+			available = {
+				has_government = libertarian_socialist
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				libertarian_socialist
+				hog_pragmatic_statesman
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Vaino_Tanner_hog_sde = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Vaino_Tanner_hog_sde"}
+			allowed = {original_tag = FIN}
+			available = {
+				has_government = social_democrat
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				social_democrat
+				hog_pragmatic_statesman
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Karl_August_Fagerholm_hog_sde = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Karl_August_Fagerholm_hog_sde"}
+			allowed = {original_tag = FIN}
+			available = {
+				has_government = social_democrat
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				social_democrat
+				hog_naive_optimist
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Waino_Wuolijoki_hog_sde = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Waino_Wuolijoki_hog_sde"}
+			allowed = {original_tag = FIN}
+			available = {
+				has_government = social_democrat
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				social_democrat
+				hog_sincere_internationalist
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Juho_Sunila_hog_sli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Juho_Sunila_hog_sli"}
+			allowed = {original_tag = FIN}
+			available = {
+				has_government = social_liberal
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				social_liberal
+				hog_pragmatic_statesman
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Kyosti_Kallio_hog_sli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Kyosti_Kallio_hog_sli"}
+			allowed = {original_tag = FIN}
+			available = {
+				has_government = social_liberal
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				social_liberal
+				hog_old_compromiser
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Urho_Kekkonen_hog_sli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Urho_Kekkonen_hog_sli"}
+			allowed = {original_tag = FIN}
+			available = {
+				has_government = social_liberal
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				social_liberal
+				hog_political_protege
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Risto_Heikki_Ryti_hog_mli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Risto_Heikki_Ryti_hog_mli"}
+			allowed = {original_tag = FIN}
+			available = {
+				has_government = market_liberal
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_sincere_internationalist
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Aimo_Cajander_hog_mli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Aimo_Cajander_hog_mli"}
+			allowed = {original_tag = FIN}
+			available = {
+				has_government = market_liberal
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_naive_optimist
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Pehr_Evind_Svinhufvud_hog_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Pehr_Evind_Svinhufvud_hog_sco"}
+			allowed = {original_tag = FIN}
+			available = {
+				has_government = social_conservative
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_local_tyrant
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Juho_Kusti_Paasikivi_hog_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Juho_Kusti_Paasikivi_hog_sco"}
+			allowed = {original_tag = FIN}
+			available = {
+				has_government = social_conservative
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_political_protege
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Edwin_Linkomies_hog_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Edwin_Linkomies_hog_sco"}
+			allowed = {original_tag = FIN}
+			available = {
+				has_government = social_conservative
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_flamboyant_tough_guy
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Carl_Gustav_Mannerheim_hog_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Carl_Gustav_Mannerheim_hog_ade"}
+			allowed = {original_tag = FIN}
+			available = {
+				has_government = authoritarian_democrat
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_field_marshal_baron
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Erik_Heinrichs_hog_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Erik_Heinrichs_hog_ade"}
+			allowed = {original_tag = FIN}
+			available = {
+				has_government = authoritarian_democrat
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_respected_war_hero
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Karl_Fredrik_Wilkama_hog_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Karl_Fredrik_Wilkama_hog_ade"}
+			allowed = {original_tag = FIN}
+			available = {
+				has_government = authoritarian_democrat
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_old_general
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Vihtori_Kosola_hog_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Vihtori_Kosola_hog_pau"}
+			allowed = {original_tag = FIN}
+			available = {
+				has_government = paternal_autocrat
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_revanchist_conspirator
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Herman_Gummerus_hog_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Herman_Gummerus_hog_pau"}
+			allowed = {original_tag = FIN}
+			available = {
+				has_government = paternal_autocrat
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_old_compromiser
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Vilho_Annala_hog_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Vilho_Annala_hog_npo"}
+			allowed = {original_tag = FIN}
+			available = {
+				has_government = national_populist
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				national_populist
+				hog_pragmatic_statesman
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Bruno_Salmiala_hog_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Bruno_Salmiala_hog_npo"}
+			allowed = {original_tag = FIN}
+			available = {
+				has_government = national_populist
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				national_populist
+				hog_flamboyant_tough_guy
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Kurt_Martti_Wallenius_hog_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Kurt_Martti_Wallenius_hog_npo"}
+			allowed = {original_tag = FIN}
+			available = {
+				has_government = national_populist
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				national_populist
+				hog_old_general
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Vilho_Helanen_hog_val = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Vilho_Helanen_hog_val"}
+			allowed = {original_tag = FIN}
+			available = {
+				has_government = valkist
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				valkist
+				hog_old_general
+			}
+			cancel_if_invalid = no
+		}
+	}
+	
+	foreign_minister = {
+		FIN_Arvo_Tuominen_for_van = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Arvo_Tuominen_for_van"}
+			allowed = {original_tag = FIN}
+			available = {
+				vanguardist_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				foreign_minister
+				vanguardist
+				for_the_cloak_n_dagger_schemer
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Ville_Pessi_for_col = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Ville_Pessi_for_col"}
+			allowed = {original_tag = FIN}
+			available = {
+				collectivist_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				foreign_minister
+				collectivist
+				for_ideological_crusader
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Yrjoe_Sirola_for_col = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Yrjoe_Sirola_for_col"}
+			allowed = {original_tag = FIN}
+			available = {
+				collectivist_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				foreign_minister
+				collectivist
+				for_ideological_crusader
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Niilo_Wallari_for_lso = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Niilo_Wallari_for_lso"}
+			allowed = {original_tag = FIN}
+			available = {
+				libertarian_socialist_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				foreign_minister
+				libertarian_socialist
+				for_iron_fisted_brute
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Reinhold_Svento_for_lso = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Reinhold_Svento_for_lso"}
+			allowed = {original_tag = FIN}
+			available = {
+				libertarian_socialist_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				foreign_minister
+				libertarian_socialist
+				for_great_compromiser
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Vaeinoe_Voionmaa_for_sde = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Vaeinoe_Voionmaa_for_sde"}
+			allowed = {original_tag = FIN}
+			available = {
+				social_democrat_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				foreign_minister
+				social_democrat
+				for_great_compromiser
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Vaino_Tanner_for_sde = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Vaino_Tanner_for_sde"}
+			allowed = {original_tag = FIN}
+			available = {
+				social_democrat_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				foreign_minister
+				social_democrat
+				for_relations_expert
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Uuno_Takki_for_sde = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Uuno_Takki_for_sde"}
+			allowed = {original_tag = FIN}
+			available = {
+				social_democrat_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				foreign_minister
+				social_democrat
+				for_world_patrician
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Urho_Kekkonen_for_sli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Urho_Kekkonen_for_sli"}
+			allowed = {original_tag = FIN}
+			available = {
+				social_liberal_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				foreign_minister
+				social_liberal
+				for_great_compromiser
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Eljas_Erkko_for_mli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Eljas_Erkko_for_mli"}
+			allowed = {original_tag = FIN}
+			available = {
+				market_liberal_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				foreign_minister
+				market_liberal
+				for_iron_fisted_brute
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Rudolf_Holsti_for_mli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Rudolf_Holsti_for_mli"}
+			allowed = {original_tag = FIN}
+			available = {
+				market_liberal_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				foreign_minister
+				market_liberal
+				for_relations_expert
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Aarno_Yrjoe_Koskinen_for_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Aarno_Yrjoe_Koskinen_for_sco"}
+			allowed = {original_tag = FIN}
+			available = {
+				social_conservative_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				foreign_minister
+				social_conservative
+				for_great_compromiser
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Edwin_Linkomies_for_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Edwin_Linkomies_for_sco"}
+			allowed = {original_tag = FIN}
+			available = {
+				social_conservative_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				foreign_minister
+				social_conservative
+				for_biased_intellectual
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Aarne_Sihvo_for_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Aarne_Sihvo_for_ade"}
+			allowed = {original_tag = FIN}
+			available = {
+				authoritarian_democrat_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				foreign_minister
+				authoritarian_democrat
+				for_ideological_crusader
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Aksel_Airo_for_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Aksel_Airo_for_ade"}
+			allowed = {original_tag = FIN}
+			available = {
+				authoritarian_democrat_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				foreign_minister
+				authoritarian_democrat
+				for_general_staffer
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Arne_Somersalo_for_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Arne_Somersalo_for_npo"}
+			allowed = {original_tag = FIN}
+			available = {
+				national_populist_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				foreign_minister
+				national_populist
+				for_general_staffer
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Vilho_Helanen_for_val = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Vilho_Helanen_for_val"}
+			allowed = {original_tag = FIN}
+			available = {
+				valkist_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				foreign_minister
+				valkist
+				for_ideological_crusader
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Carl_Enckell_for_ind = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Carl_Enckell_for_ind"}
+			allowed = {original_tag = FIN}
+			available = {
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				foreign_minister
+				for_relations_expert
+			}
+			cancel_if_invalid = no
+		}
+	}
+	
+	economy_minister = {
+		FIN_Eero_Haapalainen_eco_van = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Eero_Haapalainen_eco_van"}
+			allowed = {original_tag = FIN}
+			available = {
+				vanguardist_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				economy_minister
+				vanguardist
+				eco_infantry_proponent
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Yrjo_Murto_eco_col = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Yrjo_Murto_eco_col"}
+			allowed = {original_tag = FIN}
+			available = {
+				collectivist_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				economy_minister
+				collectivist
+				eco_planned_economy_proponent
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Edvard_Gylling_eco_lso = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Edvard_Gylling_eco_lso"}
+			allowed = {original_tag = FIN}
+			available = {
+				libertarian_socialist_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				economy_minister
+				libertarian_socialist
+				eco_reformer
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Elin_Airamo_eco_lso = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Elin_Airamo_eco_lso"}
+			allowed = {original_tag = FIN}
+			available = {
+				libertarian_socialist_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				economy_minister
+				libertarian_socialist
+				eco_industrialiser
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Hannes_Ryoemae_eco_sde = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Hannes_Ryoemae_eco_sde"}
+			allowed = {original_tag = FIN}
+			available = {
+				social_democrat_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				economy_minister
+				social_democrat
+				eco_mixed_economy
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Vaeinoe_Salovaara_eco_sde = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Vaeinoe_Salovaara_eco_sde"}
+			allowed = {original_tag = FIN}
+			available = {
+				social_democrat_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				economy_minister
+				social_democrat
+				eco_steel_magnate
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Tyko_Reinikka_eco_sli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Tyko_Reinikka_eco_sli"}
+			allowed = {original_tag = FIN}
+			available = {
+				social_liberal_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				economy_minister
+				social_liberal
+				eco_bank_president
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Juho_Niukkanen_eco_sli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Juho_Niukkanen_eco_sli"}
+			allowed = {original_tag = FIN}
+			available = {
+				social_liberal_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				economy_minister
+				social_liberal
+				eco_balanced_budget_economy
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Eemil_Linna_eco_mli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Eemil_Linna_eco_mli"}
+			allowed = {original_tag = FIN}
+			available = {
+				market_liberal_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				economy_minister
+				market_liberal
+				eco_reformer
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Juho_Vennola_eco_mli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Juho_Vennola_eco_mli"}
+			allowed = {original_tag = FIN}
+			available = {
+				market_liberal_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				economy_minister
+				market_liberal
+				eco_laissez_faire_capitalist
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Risto_Ryti_eco_mli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Risto_Ryti_eco_mli"}
+			allowed = {original_tag = FIN}
+			available = {
+				market_liberal_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				economy_minister
+				market_liberal
+				eco_bank_president
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Kyoesti_Jaervinen_eco_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Kyoesti_Jaervinen_eco_sco"}
+			allowed = {original_tag = FIN}
+			available = {
+				social_conservative_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				economy_minister
+				social_conservative
+				eco_laissez_faire_capitalist
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Oskari_Lehtonen_eco_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Oskari_Lehtonen_eco_sco"}
+			allowed = {original_tag = FIN}
+			available = {
+				social_conservative_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				economy_minister
+				social_conservative
+				eco_bank_president
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Jarl_Lundqvist_eco_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Jarl_Lundqvist_eco_ade"}
+			allowed = {original_tag = FIN}
+			available = {
+				authoritarian_democrat_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				economy_minister
+				authoritarian_democrat
+				eco_military_entrepreneur
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Rafael_Haarla_eco_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Rafael_Haarla_eco_pau"}
+			allowed = {original_tag = FIN}
+			available = {
+				paternal_autocrat_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_resource_industrialist
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Martti_Pihkala_eco_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Martti_Pihkala_eco_npo"}
+			allowed = {original_tag = FIN}
+			available = {
+				paternal_autocrat_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_laissez_faire_capitalist
+			}
+			cancel_if_invalid = no
+		}
+	}
+	
+	security_minister = {
+		FIN_Akseli_Anttila_sec_van = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Akseli_Anttila_sec_van"}
+			allowed = {original_tag = FIN}
+			available = {
+				vanguardist_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				security_minister
+				vanguardist
+				sec_secret_police_chief
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Yrjo_Leino_sec_col = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Yrjo_Leino_sec_col"}
+			allowed = {original_tag = FIN}
+			available = {
+				collectivist_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				security_minister
+				collectivist
+				sec_compassionate_gentleman
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Toivo_Alavirta_sec_col = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Toivo_Alavirta_sec_col"}
+			allowed = {original_tag = FIN}
+			available = {
+				collectivist_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				security_minister
+				collectivist
+				sec_crime_fighter
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Eino_Kilpi_sec_lso = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Eino_Kilpi_sec_lso"}
+			allowed = {original_tag = FIN}
+			available = {
+				libertarian_socialist_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				security_minister
+				libertarian_socialist
+				sec_preserver_of_culture
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Kaarlo_Heinonen_sec_sde = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Kaarlo_Heinonen_sec_sde"}
+			allowed = {original_tag = FIN}
+			available = {
+				social_democrat_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				security_minister
+				social_democrat
+				sec_crime_fighter
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Vaeinoe_Hakkila_sec_sde = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Vaeinoe_Hakkila_sec_sde"}
+			allowed = {original_tag = FIN}
+			available = {
+				social_democrat_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				security_minister
+				social_democrat
+				sec_silent_lawyer
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Juho_Niukkanen_sec_sli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Juho_Niukkanen_sec_sli"}
+			allowed = {original_tag = FIN}
+			available = {
+				social_liberal_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				security_minister
+				social_liberal
+				sec_efficient_sociopath
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Albin_Manner_sec_sli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Albin_Manner_sec_sli"}
+			allowed = {original_tag = FIN}
+			available = {
+				social_liberal_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				security_minister
+				social_liberal
+				sec_crime_fighter
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Toivo_Mikael_Kivimaki_sec_mli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Toivo_Mikael_Kivimaki_sec_mli"}
+			allowed = {original_tag = FIN}
+			available = {
+				market_liberal_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				security_minister
+				market_liberal
+				sec_crime_fighter
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Oskari_Lehtonen_sec_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Oskari_Lehtonen_sec_sco"}
+			allowed = {original_tag = FIN}
+			available = {
+				social_conservative_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				security_minister
+				social_conservative
+				sec_silent_lawyer
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Urho_Castren_sec_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Urho_Castren_sec_sco"}
+			allowed = {original_tag = FIN}
+			available = {
+				social_conservative_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				security_minister
+				social_conservative
+				sec_silent_lawyer
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Aarne_Sihvo_sec_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Aarne_Sihvo_sec_ade"}
+			allowed = {original_tag = FIN}
+			available = {
+				authoritarian_democrat_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_crime_fighter
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Karl_Lennart_Oesch_sec_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Karl_Lennart_Oesch_sec_ade"}
+			allowed = {original_tag = FIN}
+			available = {
+				authoritarian_democrat_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_secret_police_chief
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Elias_Simojoki_sec_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Elias_Simojoki_sec_pau"}
+			allowed = {original_tag = FIN}
+			available = {
+				paternal_autocrat_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_prince_of_terror
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Vihtori_Kosola_sec_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Elias_Simojoki_sec_pau"}
+			allowed = {original_tag = FIN}
+			available = {
+				paternal_autocrat_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_efficient_sociopath
+			}
+			cancel_if_invalid = no
+		}
+		
+		FIN_Martti_Pihkala_sec_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Martti_Pihkala_sec_npo"}
+			allowed = {original_tag = FIN}
+			available = {
+				national_populist_allowed = yes
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				security_minister
+				national_populist
+				sec_secret_police_chief
+			}
+			cancel_if_invalid = no
+		}
+	}
+	chief_of_staff = { ### Chief of Staff ###
+		FIN_Aarne_Sihvo_cos_ade = {
+			allowed = { original_tag = FIN }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Aarne_Sihvo_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea FIN_Aarne_Sihvo_cos_ade"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_commando_operations
+			}
+			cancel_if_invalid = yes
+		}
+
+		FIN_Carl_Gustaf_Mannerheim_cos_ade = {
+			allowed = { original_tag = FIN }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Carl_Gustaf_Mannerheim_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea FIN_Carl_Gustaf_Mannerheim_cos_ade"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_defence
+			}
+			cancel_if_invalid = yes
+		}
+
+		FIN_Erik_Heinrichs_cos_ade = {
+			allowed = { original_tag = FIN }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Erik_Heinrichs_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea FIN_Erik_Heinrichs_cos_ade"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_psychology
+			}
+			cancel_if_invalid = yes
+		}
+
+		FIN_Hugo_Oesterman_cos_ade = {
+			allowed = { original_tag = FIN }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Hugo_Oesterman_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea FIN_Hugo_Oesterman_cos_ade"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_fire_support
+			}
+			cancel_if_invalid = yes
+		}
+
+		FIN_Lauri_Malmberg_cos_ade = {
+			allowed = { original_tag = FIN }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Lauri_Malmberg_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea FIN_Lauri_Malmberg_cos_ade"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_psychology
+			}
+			cancel_if_invalid = yes
+		}
+
+	}
+
+	chief_of_army = { ### Chief of Army ###
+		FIN_Aksel_Airo_carm_ade = {
+			allowed = { original_tag = FIN }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Aksel_Airo_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea FIN_Aksel_Airo_carm_ade"
+			}
+			traits = {
+				chief_of_army
+				carm_decisive_battle_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		FIN_Karl_Fredrik_Wilkama_carm_ade = {
+			allowed = { original_tag = FIN }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Karl_Fredrik_Wilkama_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea FIN_Karl_Fredrik_Wilkama_carm_ade"
+			}
+			traits = {
+				chief_of_army
+				carm_doctrine_of_autonomy
+			}
+			cancel_if_invalid = yes
+		}
+
+		FIN_Karl_Lennart_Oesch_carm_ade = {
+			allowed = { original_tag = FIN }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Karl_Lennart_Oesch_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea FIN_Karl_Lennart_Oesch_carm_ade"
+			}
+			traits = {
+				chief_of_army
+				carm_commando_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		FIN_Vilho_Petter_Nenonen_carm_ade = {
+			allowed = { original_tag = FIN }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Vilho_Petter_Nenonen_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea FIN_Vilho_Petter_Nenonen_carm_ade"
+			}
+			traits = {
+				chief_of_army
+				carm_decisive_battle_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+	}
+
+	chief_of_navy = { ### Chief of Navy ###
+		FIN_Eero_Rahola_cnav_ade = {
+			allowed = { original_tag = FIN }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Eero_Rahola_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea FIN_Eero_Rahola_cnav_ade"
+			}
+			traits = {
+				chief_of_navy
+				cnav_open_seas_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		FIN_Vaeinoe_Valve_cnav_ade = {
+			allowed = { original_tag = FIN }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Vaeinoe_Valve_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea FIN_Vaeinoe_Valve_cnav_ade"
+			}
+			traits = {
+				chief_of_navy
+				cnav_decisive_battle_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+	}
+
+	chief_of_air_force = { ### Chief of Air Force ###
+		FIN_Jarl_Lundqvist_cair_ade = {
+			allowed = { original_tag = FIN }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Jarl_Lundqvist_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea FIN_Jarl_Lundqvist_cair_ade"
+			}
+			traits = {
+				chief_of_air_force
+				cair_carpet_bombing_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		FIN_Vaeinoe_Vuori_cair_ade = {
+			allowed = { original_tag = FIN }
+			available = { }
+			visible = {
+				NOT = { has_country_flag = Vaeinoe_Vuori_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea FIN_Vaeinoe_Vuori_cair_ade"
+			}
+			traits = {
+				chief_of_air_force
+				cair_air_superiority_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+	}
+
+}

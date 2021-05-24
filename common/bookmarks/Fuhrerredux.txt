@@ -1,0 +1,162 @@
+bookmarks = {
+    bookmark = {
+        name = "FUHRERREDUX_NAME"
+        desc = "FUHRERREDUX_DESC"
+        date = 1936.1.1
+        picture = GFX_select_date_1936
+        default_country = "GER"
+        default = yes
+
+        #### Majors
+        "USA" = {
+            history = "USA_FUHERREDUX_DESC"
+            ideology = market_liberal
+            ideas = {
+                USA_failed_offensive
+                USA_malnourished_populace
+                USA_sick_man_america
+            }
+            focuses = {
+
+            }
+        }
+        "SOV" = {
+            history = "SOV_FUHRERREDUX_DESC"
+            ideology = collectivist
+            ideas = {
+                unpopular_conscription
+                unbalanced_economy
+                SOV_lacking_industrialization
+            }
+            focuses = {
+                SOV_kickstart_industrialization
+                SOV_red_army
+                SOV_Premier_Lenin
+            }
+        }
+        "GER" = {
+            history = "GER_FUHRERREDUX_DESC"
+            ideology = valkist
+            ideas = {
+                GER_nation_reborn
+                GER_naval_treaty
+                GER_army_treaty
+            }
+            focuses = {
+                GER_pangerman
+                GER_great_purge
+                GER_legacy_of_the_weltkrieg
+            }
+        }
+        "FRA" = {
+            history = "FRA_FUHRERREDUX_DESC"
+            ideology = social_conservative
+            ideas = {
+                FRA_great_war_legacy
+                FRA_somme
+                FRA_divided_military_staff
+            }
+            focuses = {
+                fra_restore_chin
+                fra_legacy_begone
+                fra_air_navy_coop
+            }
+        }
+        "ITA" = {
+            history = "ITA_FUHRERREDUX_DESC"
+            ideology = social_democrat
+            ideas = {
+                ITA_ppi_stagnation
+                ITA_political_radicalization
+                ITA_colonial_administration
+            }
+            focuses = {
+                ITA_future_ppi
+                ITA_france_conference
+                ITA_balkan_focus
+            }
+        }
+        "ENG" = {
+            history = "ENG_FUHRERREDUX_DESC"
+            ideology = social_conservative
+            ideas = {
+                ENG_col_unrest
+                ENG_irb
+                ENG_war_fatigue
+            }
+            focuses = {
+                ENG_imp_fed
+                ENG_absolutism
+                ENG_dip_usa
+            }
+        }
+        "JAP" = {
+            history = "JAP_FUHRERREDUX_DESC"
+            ideology = social_conservative
+            ideas = {
+                JAP_gunbatsu
+                jap_wnt
+                JAP_interservice_rivalry_balanced
+            }
+            focuses = {
+                jap_nanshinron
+                jap_the_admiral_plot
+                JAP_the_yamato
+            }
+        }
+        "---" = {
+            history = "OTHER_FUHRERREDUX_DESC"
+        }
+
+        ### Minors
+        "PHI" = {
+            history = "PHI_FUHRERREDUX_DESC"
+            ideology = authoritarian_democrat
+            minor = yes
+            ideas = {
+               	PHI_promise_of_elections
+				PHI_agriculture_economy
+				PHI_marxist_professors 
+            }
+            focuses = {
+                PHI_aguinaldo_coup
+				PHI_finish_industrialization_program
+				PHI_found_aeda
+            }
+        }
+        "HUN" = {
+            history = "HUN_FUHRERREDUX_DESC"
+            ideology = national_populist
+            minor = yes
+            ideas = {
+                hun_trianon
+   	            hun_economic_ruin
+            }
+            focuses = {
+                hun_mil_start
+                hun_venge
+                hun_demand_transylvania
+            }
+        }
+		
+		"SWI" = {
+            history = "SWI_FUHRERREDUX_DESC"
+            ideology = market_liberal
+            minor = yes
+            ideas = {
+                SWI_die_schweizer_armee
+                SWI_the_swiss_banking_act
+                SWI_swiss_neutrality
+            }
+            focuses = {
+                SWI_continuing_economic_planning
+                SWI_the_1939_federal_elections
+                SWI_audit_on_swiss_banks
+            }
+        }
+
+        effect = {
+            randomize_weather = 12345
+        }
+    }
+}

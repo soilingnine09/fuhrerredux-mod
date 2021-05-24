@@ -1,0 +1,156 @@
+#################
+# ROMANIA IDEAS #
+#########################
+# MADE BY DARKNIGHT1342 #
+#########################
+ideas = {
+	country = {
+		rom_danube_research = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea rom_danube_research"}
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.07
+			}
+		}
+		rom_integrated_officers = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea rom_integrated_officers"}
+			picture = generic_manpower_bonus
+			modifier = {
+				experience_gain_army = 0.05
+				army_org_Factor = 0.05
+				max_planning = 0.10
+			}
+		}
+		rom_interlaced_economy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea rom_interlaced_economy"}
+			picture = idea_generic_flexible_foreign_policy2
+			modifier = {
+				consumer_goods_factor = -0.02
+			}
+		}
+		rom_armament = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea rom_armament"}
+			picture = generic_production_bonus
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+		}
+		rom_fast_building = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea rom_fast_building"}
+			picture = generic_production_bonus
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		rom_preserve_rom = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea rom_preserve_rom"}
+			picture = rom_preserve_greater_romania
+			modifier = {
+				army_core_defence_factor = 0.15
+				max_dig_in = 10
+			}
+		}
+		rom_militarism_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea rom_militarism_idea"}
+			picture = idea_generic_army_war_college
+			modifier = {
+				conscription_factor = 0.03
+			}
+		}
+		rom_active_wargames = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea rom_active_wargames"}
+			picture = idea_hun_secret_rearmament
+			modifier = {
+				max_planning = 0.10
+				planning_speed = 0.05
+				army_org_Factor = 0.05
+				defence = 0.03
+				offence = 0.03
+			}
+		}
+		rom_regency = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea rom_regency"}
+			picture = ROM_figurehead_king_michael
+			modifier = {
+				political_power_gain = -0.25
+			}
+		}
+		rom_constitution = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea rom_constitution"}
+			picture = iron_guard
+			modifier = {
+				political_power_gain = 0.1
+			}
+		}
+		rom_full_control = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea rom_full_control"}
+			picture = idea_generic_king_handled
+			modifier = {
+				resistance_damage_to_garrison = -0.2
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		rom_purge_dissent = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea rom_purge_dissent"}
+			picture = generic_secret_police
+			modifier = {
+				resistance_damage_to_garrison = -0.3
+			}
+		}
+		rom_seize_god = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea rom_seize_god"}
+			picture = orthodox_church_support
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		rom_national_industry_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea rom_national_industry_idea"}
+			picture = generic_local_self_management
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		rom_german_advisors_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea rom_german_advisors_idea"}
+			picture = general_Staff
+			modifier = {
+				experience_gain_army = 0.05
+			}
+		}
+		rom_balkan_defend = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea rom_balkan_defend"}
+			picture = idea_generic_fortify_the_borders
+			modifier = {
+				production_speed_bunker_factor = 0.2
+			}
+		}
+		rom_free_education_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea rom_free_education_idea"}
+			picture = generic_victors_of_ww1
+			modifier = {
+				research_speed_factor = 0.02
+			}
+		}
+		rom_welfare = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea rom_welfare"}
+			picture = FRA_national_mobilization_focus
+			modifier = {
+				consumer_goods_factor = -0.03
+			}
+		}
+		rom_revenge = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea rom_revenge"}
+			picture = combined_bomber_offensive
+			targeted_modifier = {
+				tag = HUN
+				attack_bonus_against = 0.2
+			}
+		}
+	}
+}

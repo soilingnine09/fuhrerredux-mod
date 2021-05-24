@@ -1,0 +1,1100 @@
+ideas = {
+##############
+# Country ideas
+##############
+	country = {
+	
+		CZE_suspended_democracy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_suspended_democracy"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = general_staff
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = -0.2
+			}
+		}
+		CZE_suspended_democracy1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_suspended_democracy1"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = general_staff
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = -0.1
+			}
+		}
+		CZE_suspended_democracyz = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_suspended_democracyz"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = general_staff
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = -0.25
+			}
+		}
+		CZE_suspended_democracyb = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_suspended_democracyb"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = general_staff
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = -0.1
+			}
+		}
+		CZE_suspended_democracyc = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_suspended_democracyc"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = general_staff
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+		CZE_land_reform = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_land_reform"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = generic_agrarian_reform
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+		CZE_agrarian_focus = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_agrarian_focus"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = generic_agrarian_reform
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		CZE_agrarian_focus1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_agrarian_focus1"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = generic_agrarian_reform
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		CZE_welfare_reform = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_welfare_reform"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				supply_consumption_factor = -0.05
+			}
+		}
+		CZE_welfare_reform1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_welfare_reform1"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				supply_consumption_factor = -0.05
+			}
+		}
+		CZE_dev_program = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_dev_program"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+		CZE_dev_program1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_dev_program1"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+			}
+		}
+		CZE_soc_justice = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_soc_justice"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				supply_consumption_factor = -0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		CZE_soc_justice1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_soc_justice1"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				supply_consumption_factor = -0.1
+				consumer_goods_factor = -0.07
+			}
+		}
+		CZE_expanded_police = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_expanded_police"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = idea_big_entente_idea
+			modifier = {
+				resistance_activity = -0.1
+				decryption_factor = 0.05
+			}
+		}
+		CZE_the_oo_in_force = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_the_oo_in_force"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = idea_big_entente_idea
+			modifier = {
+				resistance_activity = -0.1
+				decryption_factor = 0.05
+			}
+		}
+		CZE_the_oo_in_power = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_the_oo_in_power"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = idea_big_entente_idea
+			modifier = {
+				resistance_activity = -0.1
+				decryption_factor = 0.05
+				political_power_gain = -0.1
+			}
+		}
+		CZE_purged_the_oo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_purged_the_oo"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = idea_big_entente_idea
+			modifier = {
+				resistance_activity = 0.1
+				decryption_factor = -0.05
+			}
+		}
+		CZE_memories_of_the_revolution = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_memories_of_the_revolution"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = CZE_memories_of_the_revolution
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+			}
+		}
+		CZE_memories_of_the_revolution1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_memories_of_the_revolution1"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = CZE_memories_of_the_revolution
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+		CZE_sudeten_concessions = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_sudeten_concessions"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = generic_volunteer_expedition_bonus
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
+		CZE_ethnic_tensions = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_ethnic_tensions"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = generic_volunteer_expedition_bonus
+			modifier = {}
+		}
+		CZE_ethnic_tensions1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_ethnic_tensions1"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = generic_volunteer_expedition_bonus
+			modifier = {
+				stability_factor = -0.25
+				industrial_capacity_factory = -0.2
+				production_speed_arms_factory_factor = -0.2
+				production_speed_industrial_complex_factor = -0.2
+			}
+		}
+		CZE_revolution_collectivist = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_revolution_collectivist"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = GFX_idea_generic_collectivism_rising
+			modifier = {				
+				war_support_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+		CZE_ethnic_tensions2a = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_ethnic_tensions2a"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = generic_volunteer_expedition_bonus
+			modifier = {
+				stability_factor = -0.25
+				industrial_capacity_factory = -0.15
+				production_speed_arms_factory_factor = -0.15
+				production_speed_industrial_complex_factor = -0.15
+			}
+		}
+		CZE_red_militia = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_red_militia"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = UoB_militia_idea
+			modifier = {
+				training_time_army_factor = -0.05
+				army_morale_factor = 0.05  
+			}
+		}
+		CZE_czech_legions = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_czech_legions"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = death_men
+			modifier = {
+				conscription_factor = 0.15
+				army_morale_factor = 0.05  
+			}
+		}
+		CZE_honor_service = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_honor_service"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = death_men
+			modifier = {
+				conscription_factor = 0.15
+				planning_speed = 0.05 
+			}
+		}
+		CZE_rev_industry = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_rev_industry"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		CZE_corporatism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_corporatism"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+		CZE_new_policies = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_new_policies"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		CZE_ethnic_tensions3a = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_ethnic_tensions3a"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = generic_volunteer_expedition_bonus
+			modifier = {
+				stability_factor = -0.125
+				industrial_capacity_factory = -0.15
+				production_speed_arms_factory_factor = -0.15
+				production_speed_industrial_complex_factor = -0.15
+			}
+		}
+		CZE_ethnic_tensions2b = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_ethnic_tensions2b"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = generic_volunteer_expedition_bonus
+			modifier = {
+				stability_factor = -0.25
+				industrial_capacity_factory = -0.1
+				production_speed_arms_factory_factor = -0.1
+				production_speed_industrial_complex_factor = -0.1
+			}
+		}
+		CZE_ethnic_tensions3b = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_ethnic_tensions3b"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = generic_volunteer_expedition_bonus
+			modifier = {
+				stability_factor = -0.125
+				industrial_capacity_factory = -0.1
+				production_speed_arms_factory_factor = -0.1
+				production_speed_industrial_complex_factor = -0.1
+			}
+		}
+		CZE_socialist_intelligence = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_socialist_intelligence"}
+			allowed = {
+			original_tag = "CZE"
+			}
+
+			picture = SOV_scientist_defect
+			modifier = {
+				resistance_activity = -0.1
+				decryption_factor = 0.05
+			}
+		}
+	}
+
+	head_of_government = { ### Head of Government ###
+		CZE_Klement_Gottwald_hog_van = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Klement_Gottwald_hog_van"}
+			allowed = {
+				original_tag = CZE
+				has_government = vanguardist
+			}
+			available = {
+				has_government = vanguardist
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = Klement_Gottwald_dead}
+				NOT = {has_country_flag = Klement_Gottwald_hog_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				vanguardist
+				hog_flamboyant_tough_guy
+			}
+			cancel_if_invalid = no
+		}
+		CZE_Klement_Gottwald_hog_bol = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Klement_Gottwald_hog_bol"}
+			allowed = {original_tag = CZE}
+			available = {
+				has_government = collectivist
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = Klement_Gottwald_dead}
+				NOT = {has_country_flag = Klement_Gottwald_hog_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				collectivist
+				hog_flamboyant_tough_guy
+			}
+			cancel_if_invalid = no
+		}
+
+		CZE_Jan_Sverma_hog_bol = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Jan_Sverma_hog_bol"}
+			allowed = {original_tag = CZE}
+			available = {
+				has_government = collectivist
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = Jan_Sverma_dead}
+				NOT = {has_country_flag = Jan_Sverma_hog_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				collectivist
+				hog_political_protege
+			}
+			cancel_if_invalid = no
+		}
+
+		CZE_Ludvik_Svoboda_hog_bol = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Ludvik_Svoboda_hog_bol"}
+			allowed = {original_tag = CZE}
+			available = {
+				has_government = collectivist
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = Ludvik_Svoboda_dead}
+				NOT = {has_country_flag = Ludvik_Svoboda_hog_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				collectivist
+				hog_silent_workhorse
+			}
+			cancel_if_invalid = no
+		}
+
+
+		CZE_Antonin_Hampl_hog_sde = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Antonin_Hampl_hog_sde"}
+			allowed = {original_tag = CZE}
+			available = {
+				has_government = social_democrat
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = Antonin_Hampl_dead}
+				NOT = {has_country_flag = Antonin_Hampl_hog_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				social_democrat
+				hog_ambitious_union_boss
+			}
+			cancel_if_invalid = no
+		}
+
+		CZE_Rudolf_Beran_hog_sli = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Rudolf_Beran_hog_sli"}
+			allowed = {original_tag = CZE}
+			available = {
+				has_government = social_liberal
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = Rudolf_Beran_dead}
+				NOT = {has_country_flag = Rudolf_Beran_hog_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				social_liberal
+				hog_flamboyant_tough_guy
+			}
+			cancel_if_invalid = no
+		}
+		CZE_Edvard_Benes_hog_mli = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Edvard_Benes_hog_mli"}
+			allowed = {original_tag = CZE}
+			available = {
+				has_government = market_liberal
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = Edvard_Benes_dead}
+				NOT = {has_country_flag = Edvard_Benes_hog_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_silent_workhorse
+			}
+			cancel_if_invalid = no
+		}
+		CZE_Viktor_Dyk_hog_sco = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Viktor_Dyk_hog_sco"}
+			allowed = {original_tag = CZE}
+			available = {
+				has_government = social_conservative
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = Viktor_Dyk_dead}
+				NOT = {has_country_flag = Viktor_Dyk_hog_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_political_protege
+			}
+			cancel_if_invalid = no
+		}
+
+		CZE_Josef_Snejdarek_hog_pau = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Josef_Snejdarek_hog_pau"}
+			allowed = {original_tag = CZE}
+			available = {
+				has_government = paternal_autocrat
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = Josef_Snejdarek_dead}
+				NOT = {has_country_flag = Josef_Snejdarek_hog_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_old_general
+			}
+			cancel_if_invalid = no
+		}
+		CZE_Jan_Syrovy_hog_pau = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Jan_Syrovy_hog_pau"}
+			allowed = {original_tag = CZE}
+			available = {
+				has_government = paternal_autocrat
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = Jan_Syrovy_dead}
+				NOT = {has_country_flag = Jan_Syrovy_hog_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_old_general
+			}
+			cancel_if_invalid = no
+		}
+		CZE_Radola_Gajda_hog_npo = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Radola_Gajda_hog_npo"}
+			allowed = {original_tag = CZE}
+			available = {
+				has_government = national_populist
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = Radola_Gajda_dead}
+				NOT = {has_country_flag = Radola_Gajda_hog_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				national_populist
+				hog_naive_optimist
+			}
+			cancel_if_invalid = no
+		}
+		CZE_Emmanuel_Moravec_hog_npo = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Emmanuel_Moravec_hog_npo"}
+			allowed = {original_tag = CZE}
+			available = {
+				has_government = national_populist
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = Emmanuel_Moravec_dead}
+				NOT = {has_country_flag = Emmanuel_Moravec_hog_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				national_populist
+				hog_old_general
+			}
+			cancel_if_invalid = no
+		}
+		CZE_Jan_Rys_hog_val = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Jan_Rys_hog_val"}
+			allowed = {
+				original_tag = CZE
+				has_government = valkist
+			}
+			available = {
+				has_government = valkist
+				has_country_flag = can_replace_hog
+				NOT = {has_country_flag = Jan_Rys_dead}
+				NOT = {has_country_flag = Jan_Rys_hog_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+			}
+			traits = {
+				head_of_government
+				national_populist
+				hog_political_protege
+			}
+			cancel_if_invalid = no
+		}
+	}
+	foreign_minister = { ### Foreign Minister ###
+
+		CZE_Rudolf_Slansky_for_bol = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Rudolf_Slansky_for_bol"}
+			allowed = {original_tag = CZE}
+			available = {
+				collectivist_allowed = yes
+				NOT = {has_country_flag = Rudolf_Slansky_dead}
+				NOT = {has_country_flag = Rudolf_Slansky_for_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				foreign_minister
+				collectivist
+				for_apologetic_clerk
+			}
+			cancel_if_invalid = no
+		}
+		CZE_Antonin_Zapotocky_for_bol = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Antonin_Zapotocky_for_bol"}
+			allowed = {original_tag = CZE}
+			available = {
+				collectivist_allowed = yes
+				NOT = {has_country_flag = Antonin_Zapotocky_dead}
+				NOT = {has_country_flag = Antonin_Zapotocky_for_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				foreign_minister
+				collectivist
+				for_great_compromiser
+			}
+			cancel_if_invalid = no
+		}
+		CZE_Bohumil_Lausman_for_sde = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Bohumil_Lausman_for_sde"}
+			allowed = {original_tag = CZE}
+			available = {
+				social_democrat_allowed = yes
+				NOT = {has_country_flag = Bohumil_Lausman_dead}
+				NOT = {has_country_flag = Bohumil_Lausman_for_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				foreign_minister
+				social_democrat
+				for_apologetic_clerk
+			}
+			cancel_if_invalid = no
+		}
+		CZE_Ladislav_Karel_Feierabend_for_sli = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Ladislav_Karel_Feierabend_for_sli"}
+			allowed = {original_tag = CZE}
+			available = {
+				social_liberal_allowed = yes
+				NOT = {has_country_flag = Ladislav_Karel_Feierabend_dead}
+				NOT = {has_country_flag = Ladislav_Karel_Feierabend_for_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				foreign_minister
+				social_liberal
+				for_apologetic_clerk
+			}
+			cancel_if_invalid = no
+		}
+		CZE_Vaclav_Klofac_for_mli = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Vaclav_Klofac_for_mli"}
+			allowed = {original_tag = CZE}
+			available = {
+				market_liberal_allowed = yes
+				NOT = {has_country_flag = Vaclav_Klofac_dead}
+				NOT = {has_country_flag = Vaclav_Klofac_for_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				foreign_minister
+				market_liberal
+				for_ideological_crusader
+			}
+			cancel_if_invalid = no
+		}
+		CZE_Josef_Matousek_for_sco = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Josef_Matousek_for_sco"}
+			allowed = {original_tag = CZE}
+			available = {
+				social_conservative_allowed = yes
+				NOT = {has_country_flag = Josef_Matousek_dead}
+				NOT = {has_country_flag = Josef_Matousek_for_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				foreign_minister
+				social_conservative
+				for_great_compromiser
+			}
+			cancel_if_invalid = no
+		}
+		CZE_Alois_Liska_for_pau = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Alois_Liska_for_pau"}
+			allowed = {original_tag = CZE}
+			available = {
+				paternal_autocrat_allowed = yes
+				NOT = {has_country_flag = Alois_Liska_dead}
+				NOT = {has_country_flag = Alois_Liska_for_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_iron_fisted_brute
+			}
+			cancel_if_invalid = no
+		}
+
+		CZE_Jan_Rys_Rozsevac_for_npo = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Jan_Rys_Rozsevac_for_npo"}
+			allowed = {original_tag = CZE}
+			available = {
+				national_populist_allowed = yes
+				NOT = {has_country_flag = Jan_Rys_Rozsevac_dead}
+				NOT = {has_country_flag = Jan_Rys_Rozsevac_for_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				foreign_minister
+				national_populist
+				for_the_cloak_n_dagger_schemer
+			}
+			cancel_if_invalid = no
+		}
+		CZE_Charles_Pergler_for_npo = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Charles_Pergler_for_npo"}
+			allowed = {original_tag = CZE}
+			available = {
+				national_populist_allowed = yes
+				NOT = {has_country_flag = Charles_Pergler_dead}
+				NOT = {has_country_flag = Charles_Pergler_for_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+			}
+			traits = {
+				foreign_minister
+				national_populist
+				for_apologetic_clerk
+			}
+			cancel_if_invalid = no
+		}
+	}
+
+	economy_minister = { ### Economy Minister ###
+
+		CZE_Bohumil_Smeral_eco_bol = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Bohumil_Smeral_eco_bol"}
+			allowed = {original_tag = CZE}
+			available = {
+				collectivist_allowed = yes
+				NOT = {has_country_flag = Bohumir_Smeral_dead}
+				NOT = {has_country_flag = Bohumir_Smeral_eco_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = eco_cannot_be_replaced}
+			}
+			traits = {
+				economy_minister
+				collectivist
+				eco_resource_industrialist
+			}
+			cancel_if_invalid = no
+		}
+		CZE_Vaclav_Majer_eco_sde = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Vaclav_Majer_eco_sde"}
+			allowed = {original_tag = CZE}
+			available = {
+				social_democrat_allowed = yes
+				NOT = {has_country_flag = Vaclav_Majer_dead}
+				NOT = {has_country_flag = Vaclav_Majer_eco_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = eco_cannot_be_replaced}
+			}
+			traits = {
+				economy_minister
+				social_democrat
+				eco_military_entrepreneur
+			}
+			cancel_if_invalid = no
+		}
+		CZE_Jan_Malypetr_eco_sli = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Jan_Malypetr_eco_sli"}
+			allowed = {original_tag = CZE}
+			available = {
+				social_liberal_allowed = yes
+				NOT = {has_country_flag = Jan_Malypetr_dead}
+				NOT = {has_country_flag = Jan_Malypetr_eco_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = eco_cannot_be_replaced}
+			}
+			traits = {
+				economy_minister
+				social_liberal
+				eco_administrative_genius
+			}
+			cancel_if_invalid = no
+		}
+		CZE_Emil_Franke_eco_mli = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Emil_Franke_eco_mli"}
+			allowed = {original_tag = CZE}
+			available = {
+				market_liberal_allowed = yes
+				NOT = {has_country_flag = Emil_Franke_dead}
+				NOT = {has_country_flag = Emil_Franke_eco_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = eco_cannot_be_replaced}
+			}
+			traits = {
+				economy_minister
+				market_liberal
+				eco_laissez_faire_capitalist
+			}
+			cancel_if_invalid = no
+		}
+		CZE_Karel_Englis_eco_sco = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Karel_Englis_eco_sco"}
+			allowed = {original_tag = CZE}
+			available = {
+				social_conservative_allowed = yes
+				NOT = {has_country_flag = Karel_Englis_dead}
+				NOT = {has_country_flag = Karel_Englis_eco_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = eco_cannot_be_replaced}
+			}
+			traits = {
+				economy_minister
+				social_conservative
+				eco_resource_industrialist
+			}
+			cancel_if_invalid = no
+		}
+		CZE_Ludvik_Svoboda_eco_pau = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Ludvik_Svoboda_eco_pau"}
+			allowed = {original_tag = CZE}
+			available = {
+				paternal_autocrat_allowed = yes
+				NOT = {has_country_flag = Ludvik_Svoboda_dead}
+				NOT = {has_country_flag = Ludvik_Svoboda_eco_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = eco_cannot_be_replaced}
+			}
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_military_entrepreneur
+			}
+			cancel_if_invalid = no
+		}
+		CZE_Jiri_Stribrny_eco_npo = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Jiri_Stribrny_eco_npo"}
+			allowed = {original_tag = CZE}
+			available = {
+				national_populist_allowed = yes
+				NOT = {has_country_flag = Jiri_Stribrny_dead}
+				NOT = {has_country_flag = Jiri_Stribrny_eco_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = eco_cannot_be_replaced}
+			}
+			traits = {
+				economy_minister
+				national_populist
+				eco_military_entrepreneur
+			}
+			cancel_if_invalid = no
+		}
+	}
+
+	security_minister = { ### Security Minister ###
+
+		CZE_Bohumil_Jilek_sec_bol = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Bohumil_Jilek_sec_bol"}
+			allowed = {original_tag = CZE}
+			available = {
+				collectivist_allowed = yes
+				NOT = {has_country_flag = Bohumil_Jilek_dead}
+				NOT = {has_country_flag = Bohumil_Jilek_sec_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = sec_cannot_be_replaced}
+			}
+			traits = {
+				security_minister
+				collectivist
+				sec_prince_of_terror
+			}
+			cancel_if_invalid = no
+		}
+		CZE_Jaroslav_Stransky_sec_sde = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Jaroslav_Stransky_sec_sde"}
+			allowed = {original_tag = CZE}
+			available = {
+				social_democrat_allowed = yes
+				NOT = {has_country_flag = Jaroslav_Stransky_dead}
+				NOT = {has_country_flag = Jaroslav_Stransky_sec_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = sec_cannot_be_replaced}
+			}
+			traits = {
+				security_minister
+				social_democrat
+				sec_silent_lawyer
+			}
+			cancel_if_invalid = no
+		}
+		CZE_Bohumir_Bradac_sec_sli = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Bohumir_Bradac_sec_sli"}
+			allowed = {original_tag = CZE}
+			available = {
+				social_liberal_allowed = yes
+				NOT = {has_country_flag = Bohumir_Bradac_dead}
+				NOT = {has_country_flag = Bohumir_Bradac_sec_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = sec_cannot_be_replaced}
+			}
+			traits = {
+				security_minister
+				social_liberal
+				sec_crooked_kleptocrat
+			}
+			cancel_if_invalid = no
+		}
+		CZE_Petr_Zenkl_sec_mli = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Petr_Zenkl_sec_mli"}
+			allowed = {original_tag = CZE}
+			available = {
+				market_liberal_allowed = yes
+				NOT = {has_country_flag = Petr_Zenkl_dead}
+				NOT = {has_country_flag = Petr_Zenkl_sec_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = sec_cannot_be_replaced}
+			}
+			traits = {
+				security_minister
+				market_liberal
+				sec_man_of_the_people
+			}
+			cancel_if_invalid = no
+		}
+
+		CZE_Ladislav_Novak_sec_sco = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Ladislav_Novak_sec_sco"}
+			allowed = {original_tag = CZE}
+			available = {
+				social_conservative_allowed = yes
+				NOT = {has_country_flag = Ladislav_Novak_dead}
+				NOT = {has_country_flag = Ladislav_Novak_sec_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = sec_cannot_be_replaced}
+			}
+			traits = {
+				security_minister
+				social_conservative
+				sec_silent_lawyer
+			}
+			cancel_if_invalid = no
+		}
+
+
+		CZE_Karel_Klapalek_sec_pau = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Karel_Klapalek_sec_pau"}
+			allowed = {original_tag = CZE}
+			available = {
+				paternal_autocrat_allowed = yes
+				NOT = {has_country_flag = Karel_Klapalek_dead}
+				NOT = {has_country_flag = Karel_Klapalek_sec_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = sec_cannot_be_replaced}
+			}
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_crime_fighter
+			}
+			cancel_if_invalid = no
+		}
+		CZE_Emmanuel_Moravec_sec_npo = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Emmanuel_Moravec_sec_npo"}
+			allowed = {original_tag = CZE}
+			available = {
+				national_populist_allowed = yes
+				NOT = {has_country_flag = Emmanuel_Moravec_dead}
+				NOT = {has_country_flag = Emmanuel_Moravec_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = sec_cannot_be_replaced}
+			}
+			traits = {
+				security_minister
+				national_populist
+				sec_efficient_sociopath
+			}
+			cancel_if_invalid = no
+		}
+		CZE_Charles_Pergler_sec_npo = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CZE_Charles_Pergler_sec_npo"}
+			allowed = {original_tag = CZE}
+			available = {
+				national_populist_allowed = yes
+				NOT = {has_country_flag = Charles_Pergler_dead}
+				NOT = {has_country_flag = Charles_Pergler_fired}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = sec_cannot_be_replaced}
+			}
+			traits = {
+				security_minister
+				national_populist
+				sec_crime_fighter
+			}
+			cancel_if_invalid = no
+		}
+	}
+
+
+
+
+
+
+}

@@ -1,0 +1,1159 @@
+﻿###################
+# Romanian Events #
+#########################
+# Made by Darknight1342 #
+#########################
+
+add_namespace = rom
+
+country_event = { #Intro
+	id = rom.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rom.1"}
+	title = rom.1.t
+	desc = rom.1.d
+	picture = GFX_report_event_soviet_soldiers_tank
+	
+	trigger = {
+		tag = ROM
+	}
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = rom.1.a
+		}
+	}
+
+country_event = {
+	id = rom.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rom.2"}
+	title = rom.2.t
+	desc = rom.2.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	# Drowse
+	trigger = {
+		original_tag = ROM
+		date > 1936.10.25
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	# Drowse
+
+	fire_only_once = yes
+
+	option = {
+		name = rom.2.a
+		add_political_power = 50
+		remove_ideas = rom_regency
+		create_country_leader = {
+			name = "Michael I"
+			desc = "POLITICS_MICHAEL_I_DESC"
+			picture = "Portrait_Romania_Michael_I.tga"
+			expire = "2017.12.5"
+			ideology = social_democrat_subtype
+			traits = { }
+		}
+		create_country_leader = {
+			name = "Michael I"
+			desc = "POLITICS_MICHAEL_I_DESC"
+			picture = "Portrait_Romania_Michael_I.tga"
+			expire = "2017.12.5"
+			ideology = social_liberal_subtype
+			traits = { }
+		}
+		create_country_leader = {
+			name = "Michael I"
+			desc = "POLITICS_MICHAEL_I_DESC"
+			picture = "Portrait_Romania_Michael_I.tga"
+			expire = "2017.12.5"
+			ideology = market_liberal_subtype
+			traits = { }
+		}
+		create_country_leader = {
+			name = "Michael I"
+			desc = "POLITICS_MICHAEL_I_DESC"
+			picture = "Portrait_Romania_Michael_I.tga"
+			expire = "2017.12.5"
+			ideology = social_conservative_subtype
+			traits = { }
+		}
+		create_country_leader = {
+			name = "Michael I"
+			desc = "POLITICS_MICHAEL_I_DESC"
+			picture = "Portrait_Romania_Michael_I.tga"
+			expire = "2017.12.5"
+			ideology = authoritarian_democrat_subtype
+			traits = { }
+		}
+		create_country_leader = {
+			name = "Michael I"
+			desc = "POLITICS_MICHAEL_I_DESC"
+			picture = "Portrait_Romania_Michael_I.tga"
+			expire = "2017.12.5"
+			ideology = paternal_autocrat_subtype
+			traits = { }
+		}
+	}
+}
+
+country_event = { #result of the election
+	id = rom.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rom.3"}
+	title = rom.3.t
+	desc = rom.3.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #iron guard
+		name = rom.3.a
+		ai_chance = { factor = 10 }
+		add_political_power = -100
+		add_ideas = one_party_dictatorship
+		set_politics = {
+			ruling_party = national_populist
+		}
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.30
+		}
+		set_country_flag = rom_election_done
+	}
+	option = { #socdem
+		name = rom.3.c
+		ai_chance = { factor = 50 }
+		add_political_power = -25
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.05
+		}
+		set_country_flag = rom_election_done
+	}
+	option = { #soclib
+		name = rom.3.e
+		ai_chance = { factor = 50 }
+		add_political_power = -25
+		add_ideas = parliamentary_republic
+		set_politics = {
+			ruling_party = social_liberal
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.25
+		}
+		set_country_flag = rom_election_done
+	}
+	option = { #marklib
+		name = rom.3.f
+		ai_chance = { factor = 50 }
+		add_political_power = -25
+		add_ideas = parliamentary_republic
+		set_politics = {
+			ruling_party = social_conservative
+		}
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.35
+		}
+		set_country_flag = rom_election_done
+	}
+	option = { #soccon
+		name = rom.3.b
+		ai_chance = { factor = 50 }
+		add_political_power = -25
+		add_ideas = parliamentary_republic
+		set_politics = {
+			ruling_party = social_conservative
+		}
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.25
+		}
+		set_country_flag = rom_election_done
+	}
+}
+
+country_event = { #the religious question
+	id = rom.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rom.4"}
+	title = rom.4.t
+	desc = rom.4.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #seize religious assets
+		name = rom.4.a
+		ai_chance = { factor = 50 }
+		add_political_power = -50
+		add_timed_idea = {
+			idea = rom_seize_god
+			days = 180
+		}
+	}
+
+	option = { #don't touch religious assets
+		name = rom.4.b
+		ai_chance = { factor = 5 }
+		add_political_power = 50
+	}
+}
+
+country_event = { #Serbian event, Romania demands dismantlement
+	id = rom.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rom.5"}
+	title = rom.5.t
+	desc = rom.5.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = rom.5.a
+		ai_chance = { factor = 0 }
+		if = {
+			limit = {
+				105 = {
+					is_owned_and_controlled_by = SER
+				}
+			}
+			MNT = {
+				transfer_state = 105
+			}
+		}
+		105 = {
+			add_core_of = MNT
+			remove_core_of = SER
+		}
+		if = {
+			limit = {
+				109 = {
+					is_owned_and_controlled_by = SER
+				}
+			}
+			CRO = {
+				transfer_state = 109
+				109 = {
+					add_core_of = CRO
+					remove_core_of = SER
+				}
+			}
+		}
+		if = {
+			limit = {
+				103 = {
+					is_owned_and_controlled_by = SER
+				}
+			}
+			CRO = {
+				transfer_state = 103
+			}
+			103 = {
+				add_core_of = CRO
+				remove_core_of = SER
+			}
+		}
+		if = {
+			limit = {
+				789 = {
+					is_owned_and_controlled_by = SER
+				}
+			}
+			CRO = {
+				transfer_state = 789
+				789 = {
+					add_core_of = CRO
+					remove_core_of = SER
+				}
+			}
+		}
+		if = {
+			limit = {
+				790 = {
+					is_owned_and_controlled_by = SER
+				}
+			}
+			CRO = {
+				transfer_state = 790
+				790 = {
+					add_core_of = CRO
+					remove_core_of = SER
+				}
+			}
+		}
+		if = {
+			limit = {
+				163 = {
+					is_owned_and_controlled_by = SER
+				}
+			}
+			CRO = {
+				transfer_state = 163
+				163 = {
+					add_core_of = CRO
+					remove_core_of = SER
+				}
+			}
+		}
+		if = {
+			limit = {
+				917 = {
+					is_owned_and_controlled_by = SER
+				}
+			}
+			CRO = {
+				transfer_state = 917
+				917 = {
+					add_core_of = CRO
+					remove_core_of = SER
+				}
+			}
+		}
+		if = {
+			limit = {
+				104 = {
+					is_owned_and_controlled_by = SER
+				}
+			}
+			BOS = {
+				transfer_state = 104
+				104 = {
+					add_core_of = BOS
+					remove_core_of = SER
+				}
+			}
+		}
+		if = {
+			limit = {
+				788 = {
+					is_owned_and_controlled_by = SER
+				}
+			}
+			BOS = {
+				transfer_state = 788
+				788 = {
+					add_core_of = BOS
+					remove_core_of = SER
+				}
+			}
+		}
+		if = {
+			limit = {
+				767 = {
+					is_owned_and_controlled_by = SER
+				}
+			}
+			SLV = {
+				transfer_state = 767
+				767 = {
+					add_core_of = SLV
+					remove_core_of = SER
+				}
+			}
+		}
+		if = {
+			limit = {
+				102 = {
+					is_owned_and_controlled_by = SER
+				}
+			}
+			SLV = {
+				transfer_state = 102
+				102 = {
+					add_core_of = SLV
+					remove_core_of = SER
+				}
+			}
+		}
+
+		ROM = {
+			country_event = {
+				id = rom.6
+				days = 3
+			}
+		}
+
+		hidden_effect = {
+			BUL = {
+				country_event = {
+					id = rom.8
+					days = 5
+				}
+			}
+		}
+	}
+
+	option = {
+		name = rom.5.b
+		ai_chance = { factor = 500 }
+		add_political_power = 50
+		ROM = {
+			country_event = {
+				id = rom.7
+				days = 10
+			}
+		}
+	}
+}
+
+	country_event = { #Serbia bends to Romanian demands
+	id = rom.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rom.6"}
+		title = rom.6.t
+		desc = rom.6.d
+		picture = GFX_report_event_soviet_soldiers_tank
+
+		is_triggered_only = yes
+
+		fire_only_once = yes
+
+		option = {
+			name = rom.6.a
+			add_political_power = 25
+		}
+	}
+
+	country_event = { #Serbia stands defiant
+	id = rom.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rom.7"}
+		title = rom.7.t
+		desc = rom.7.d
+		picture = GFX_report_event_soviet_soldiers_tank
+
+		is_triggered_only = yes
+
+		fire_only_once = yes
+
+		option = {
+			name = rom.7.a
+			add_political_power = 25
+			ROM = {
+				create_wargoal = {
+					type = annex_everything
+					target = SER
+				}
+			}
+		}
+	}
+
+	country_event = { #Bulgaria chooses to seize Macedonia or not
+	id = rom.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rom.8"}
+		title = rom.8.t
+		desc = rom.8.d
+		picture = GFX_report_event_soviet_soldiers_tank
+
+		is_triggered_only = yes
+
+		fire_only_once = yes
+
+		option = {
+			name = rom.8.a
+			ai_chance = { factor = 50 }
+			SER = {
+				country_event = {
+					id = rom.9
+					days = 1
+				}
+			}
+		}
+
+		option = {
+			name = rom.8.b
+			ai_chance = { factor = 5 }
+			add_political_power = -20
+		}
+	}
+
+	country_event = { #Serbia chooses to cave to Bulgar demands or not
+	id = rom.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rom.9"}
+		title = rom.9.t
+		desc = rom.9.d
+		picture =  GFX_report_event_soviet_soldiers_tank
+
+		is_triggered_only = yes
+
+		fire_only_once = yes
+
+		option = {
+			name = rom.9.a
+			ai_chance = { factor = 50 }
+			add_political_power = -50
+			BUL = {
+				transfer_state = 942
+				transfer_state = 106
+				country_event = {
+					id = rom.10
+					days = 3
+				}
+			}
+		}
+
+		option = {
+			name = rom.9.b
+			ai_chance = { factor = 25 }
+			add_political_power = 25
+			BUL = {
+				country_event = {
+					id = rom.11
+					days = 3
+				}
+			}
+		}
+	}
+
+	country_event = { #Serbia cedes Macedonia and border region
+	id = rom.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rom.10"}
+		title = rom.10.t
+		desc = rom.10.d
+		picture = GFX_report_event_soviet_soldiers_tank
+
+		is_triggered_only = yes
+
+		fire_only_once = yes
+
+		option = {
+			name = rom.10.a
+			add_political_power = 20
+		}
+	}
+
+	country_event = { #Serbia refuses to cede Macedonia and border region
+	id = rom.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rom.11"}
+		title = rom.11.t
+		desc = rom.11.d
+		picture = GFX_report_event_soviet_soldiers_tank
+
+		is_triggered_only = yes
+
+		fire_only_once = yes
+
+		option = {
+			name = rom.11.a
+			ai_chance = { factor = 50 }
+			BUL = {
+				create_wargoal = {
+					type = annex_everything
+					target = SER
+				}
+			}
+		}
+
+		option = {
+			name = rom.11.b
+			ai_chance = { factor = 10 }
+			add_political_power = -20
+		}
+	}
+
+	country_event = { #Germany invites Romania to the Stahlpark
+	id = rom.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rom.12"}
+		title = rom.12.t
+		desc = rom.12.d
+		picture = GFX_report_event_soviet_soldiers_tank
+
+		is_triggered_only = yes
+
+		fire_only_once = yes
+
+		option = { #accept
+			name = rom.12.a
+			ai_chance = { factor = 50 }
+			add_political_power = 25
+			add_to_faction = ROM
+			ROM = {
+				country_event = {
+					id = rom.13
+					days = 1
+				}
+			}
+		}
+
+		option = { #deny
+			name = rom.12.
+			ai_chance = { factor = 0 }
+			add_political_power = -25
+			ROM = {
+				country_event = {
+					id = rom.14
+					days = 1
+				}
+			}
+		}
+	}
+
+	country_event = { #Germany accepts Romania into the Stahlpakt
+	id = rom.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rom.13"}
+		title = rom.13.t
+		desc = rom.13.d
+		picture = GFX_report_event_soviet_soldiers_tank
+
+		is_triggered_only = yes
+
+		fire_only_once = yes
+
+		option = {
+			name = rom.13.a
+			add_political_power = 20
+		}
+	}
+
+	country_event = { #Germany denies Romania entry into the Stahlpakt
+	id = rom.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rom.14"}
+		title = rom.14.t
+		desc = rom.14.d
+		picture = GFX_report_event_soviet_soldiers_tank
+
+		is_triggered_only = yes
+
+		fire_only_once = yes
+
+		option = {
+			name = rom.14.a
+		}
+	}
+
+	country_event = {
+	id = rom.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rom.15"}
+		title = rom.15.t
+		desc = rom.15.d
+		picture = GFX_report_event_soviet_soldiers_tank
+
+		is_triggered_only = yes
+
+		fire_only_once = yes
+
+		option = {
+			name = rom.15.a
+			ai_chance = { factor = 10 }
+			add_political_power = 20
+			ROM = {
+				create_faction = ROM_BALKAN_PACT
+				add_to_faction = SER
+			}
+			ROM = {
+				country_event = {
+					id = rom.16
+					days = 1
+				}
+			}
+		}
+
+		option = {
+			name = rom.15.b
+			ai_chance = { factor = 1 }
+			ROM = {
+				country_event = {
+					id = rom.17
+					days = 1
+				}
+			}
+		}
+	}
+
+	country_event = { #Serbia accepts Romanian faction
+	id = rom.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rom.16"}
+		title = rom.16.t
+		desc = rom.16.d
+		picture = GFX_report_event_soviet_soldiers_tank
+
+		is_triggered_only = yes
+
+		fire_only_once = yes
+
+		option = {
+			name = rom.16.a
+		}
+	}
+
+	country_event = { #Serbia denies Romanian faction
+	id = rom.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rom.17"}
+		title = rom.17.t
+		desc = rom.17.d
+		picture = GFX_report_event_soviet_soldiers_tank
+
+		is_triggered_only = yes
+
+		fire_only_once = yes
+
+		option = {
+			name = rom.17.a
+		}
+	}
+
+	country_event = { #France invites Romania to the CE
+	id = rom.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rom.18"}
+		title = rom.18.t
+		desc = rom.18.d
+		picture = GFX_report_event_soviet_soldiers_tank
+
+		is_triggered_only = yes
+
+		fire_only_once = yes
+
+		option = { #accept
+			name = rom.18.a
+			ai_chance = { factor = 50 }
+			add_political_power = 25
+			add_to_faction = ROM
+			ROM = {
+				country_event = {
+					id = rom.19
+					days = 1
+				}
+			}
+		}
+
+		option = { #deny
+			name = rom.18.b
+			ai_chance = { factor = 5 }
+			add_political_power = -25
+			ROM = {
+				country_event = {
+					id = rom.20
+					days = 1
+				}
+			}
+		}
+	}
+
+	country_event = { #France accepts Romania into the CE
+	id = rom.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rom.19"}
+		title = rom.19.t
+		desc = rom.19.d
+		picture = GFX_report_event_soviet_soldiers_tank
+
+		is_triggered_only = yes
+
+		fire_only_once = yes
+
+		option = {
+			name = rom.19.a
+			add_political_power = 20
+		}
+	}
+
+	country_event = { #France denies Romania entry into the CE
+	id = rom.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rom.20"}
+		title = rom.20.t
+		desc = rom.20.d
+		picture = GFX_report_event_soviet_soldiers_tank
+
+		is_triggered_only = yes
+
+		fire_only_once = yes
+
+		option = {
+			name = rom.20.a
+		}
+	}
+
+	country_event = { #monarchy isn't happy with the iron guard
+	id = rom.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rom.21"}
+		title = rom.21.t
+		desc = rom.21.d
+
+		is_triggered_only = yes
+
+		fire_only_once = yes
+
+		option = {
+			name = rom.21.a
+		}
+
+		option = {
+			name = rom.21.b
+			hidden_effect = {
+				ROM = {
+					country_event = {
+						id = rom.22
+						days = 30
+					}
+				}
+			}
+		}
+	}
+
+	country_event = { #nicholas is A N G E R Y
+	id = rom.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rom.22"}
+		title = rom.22.t
+		desc = rom.22.d
+
+		is_triggered_only = yes
+
+		fire_only_once = yes
+
+		option = {
+			name = rom.22.a
+			add_political_power = -100
+		}
+
+		option = {
+			name = rom.22.b
+			hidden_effect = {
+				ROM = {
+					country_event = {
+						id = rom.23
+						days = 20
+					}
+				}
+			}
+		}
+	}
+
+	country_event = { #nicholas coup's the iron guard
+	id = rom.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rom.23"}
+		title = rom.23.t
+		desc = rom.23.d
+		picture = GFX_report_event_soviet_soldiers_tank
+
+		is_triggered_only = yes
+
+		fire_only_once = yes
+
+		option = {
+			name = rom.23.a
+			ROM = {
+				add_political_power = -20
+				set_country_flag = rom_nicky_coup
+				add_ideas = absolute_monarchy
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+            }
+
+                set_popularities = {
+                    vanguardist = 0
+                    collectivist = 0
+                    libertarian_socialist = 15
+                    social_democrat = 13
+                    social_liberal = 0
+                    market_liberal = 0
+                    social_conservative = 5
+                    authoritarian_democrat = 0
+                    paternal_autocrat = 55
+                    national_populist = 12
+                    valkist = 0
+                }
+			}
+		}
+	}
+
+	country_event = { #unrest in Transylvania
+	id = rom.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rom.24"}
+		title = rom.24.t
+		desc = rom.24.d
+		picture = GFX_report_event_soviet_soldiers_tank
+
+		trigger = {
+			tag = ROM
+			date > 1937.2.4
+			HUN = {
+				has_completed_focus = hun_venge
+			}
+			ROM = {
+				owns_state = 76
+				owns_state = 84
+				owns_state = 762
+			}
+		}
+
+		mean_time_to_happen = {
+			days = 80
+		}
+
+		fire_only_once = yes
+
+		option = {
+			name = rom.24.a
+			ai_chance = {
+				base = 95
+			}
+			add_political_power = -50
+			add_manpower = -5000
+			76 = {
+				damage_building = {
+					type = infrastructure
+					damage = 0.5
+				}
+			}
+			84 = {
+				damage_building = {
+					type = infrastructure
+					damage = 0.3
+				}
+			}
+			762 = {
+				damage_building = {
+					type = infrastructure
+					damage = 0.5
+				}
+			}
+		}
+
+		option = {
+			name = rom.24.b
+			ai_chance = {
+				base = 5
+			}
+			random_list = {
+				75 = {
+					ROM = {
+						country_event = {
+							id = rom.25
+							days = 35
+						}
+					}
+				}
+				25 = {
+					ROM = {
+						country_event = {
+							id = rom.26
+							days = 35
+						}
+					}
+				}
+			}
+		}
+	}
+
+	country_event = { #unrest in Transylvania dies down
+	id = rom.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rom.25"}
+		title = rom.25.t
+		desc = rom.25.d
+
+		fire_only_once = yes
+
+		is_triggered_only = yes
+
+		option = {
+			name = rom.25.a
+			add_political_power = 25
+		}
+	}
+
+	country_event = { #revolution in Transylvania
+	id = rom.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rom.26"}
+		title = rom.26.t
+		desc = rom.26.d
+
+		is_triggered_only = yes
+
+		fire_only_once = yes
+
+		option = { #fight the rebels
+			name = rom.26.a
+			ai_chance = {
+				base = 95
+			}
+			hidden_effect = { 
+				news_event = { id = worldnews.102 days = 4 } 
+			}
+			TRA = {
+				transfer_state = 76
+				transfer_state = 83
+				transfer_state = 762
+				transfer_state = 154
+				add_ideas = one_party_dictatorship
+				set_politics = {
+					ruling_party = national_populist
+					elections_allowed = no
+            }
+
+                set_popularities = {
+                    vanguardist = 0
+                    collectivist = 0
+                    libertarian_socialist = 0
+                    social_democrat = 6
+                    social_liberal = 0
+                    market_liberal = 0
+                    social_conservative = 6
+                    authoritarian_democrat = 8
+                    paternal_autocrat = 7
+                    national_populist = 73
+                    valkist = 0
+                }
+				hidden_effect = {
+					load_oob = TRA_revolt
+					TRA = {
+						country_event = {
+							id = rom.27
+							days = 10
+						}
+						country_event = {
+							id = rom.28
+							days = 11
+						}
+					}
+				}
+			}
+		}
+
+		option = { #you can't fight a tiny Transylvanian rebellion? smh you must have really dicked your country up.
+			name = rom.26.b
+			ai_chance = {
+				base = 5
+			}
+			add_political_power = -150
+			custom_effect_tooltip = rom_trans_dead
+		}
+	}
+
+	country_event = { #Transylvanian event, DoW Romania
+	id = rom.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rom.27"}
+		title = rom.27.t
+		desc = rom.27.d
+
+		is_triggered_only = yes
+
+		fire_only_once = yes
+
+		option = {
+			name = rom.27.a
+			declare_war_on = {
+   				target = ROM
+    			type = annex_everything
+			}
+		}
+	}
+
+	country_event = { #Transylvanian event, bring Hungary into the war
+	id = rom.28
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rom.28"}
+		title = rom.28.t
+		desc = rom.28.d
+
+		is_triggered_only = yes
+
+		fire_only_once = yes
+
+		option = { #call them to arms
+			name = rom.28.a
+			ai_chance = {
+				base = 100
+			}
+			HUN = {
+				country_event = {
+					id = rom.29
+					days = 1
+				}
+			}
+		}
+
+		option = { #don't call them to arms
+			name = rom.28.b
+			ai_chance = {
+				base = 0
+			}
+		}
+	}
+
+	country_event = { #Hungarian event, Transylvania calls to arms
+	id = rom.29
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rom.29"}
+		title = rom.29.t
+		desc = rom.29.d
+
+		is_triggered_only = yes
+
+		fire_only_once = yes
+
+		option = { #yes
+			name = rom.29.a
+			ai_chance = {
+				base = 100
+			}
+			create_faction = hun_trans_pact
+			HUN = {
+				add_to_faction = TRA
+			}
+			add_to_war = { 
+    			targeted_alliance = TRA 
+    			enemy = ROM 
+			}
+			TRA = { #response event
+				country_event = {
+					id = rom.30
+					days = 1
+				}
+			}
+		}
+
+		option = { #no
+			name = rom.29.b
+			ai_chance = {
+				base = 0
+			}
+			add_political_power = -25
+			TRA = { #response event
+				country_event = {
+					id = rom.31
+					days = 1
+				}
+			}
+		}
+	}
+
+	country_event = { #Transylvanian event, Hungary joins war
+	id = rom.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rom.30"}
+		title = rom.30.t
+		desc = rom.30.d
+
+		is_triggered_only = yes
+
+		fire_only_once = yes
+
+		option = {
+			name = rom.30.a
+		}
+	}
+
+	country_event = { #Transylvanian event, Hungary doesn't join war
+	id = rom.31
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rom.31"}
+		title = rom.31.t
+		desc = rom.31.d
+
+		is_triggered_only = yes
+
+		fire_only_once = yes
+
+		option = {
+			name = rom.31.a
+		}
+	}

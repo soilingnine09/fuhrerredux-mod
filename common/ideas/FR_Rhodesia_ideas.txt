@@ -1,0 +1,29 @@
+##############
+# Country ideas (South Africa) 
+##############
+ideas = {
+	head_of_government = {
+		RHO_Godfrey_Huggins_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RHO_Godfrey_Huggins_hog"}
+			allowed = {original_tag = RHO}
+			traits = { head_of_government hog_backroom_backstabber }
+			cancel_if_invalid = no
+		}
+	}
+
+	head_of_intel = {
+		RHO_PK_van_der_byl_int = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RHO_PK_van_der_byl_int"}
+			allowed = {original_tag = RHO}
+			available = {
+				OR = {
+					has_government = paternal_autocrat
+					has_government = national_populist
+					has_government = valkist
+				}
+			}
+			traits = {head_of_intel national_populist int_political_specialist}
+			cancel_if_invalid = no
+		}
+	}
+}

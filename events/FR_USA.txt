@@ -1,0 +1,1213 @@
+﻿#####################################
+#        United States Events       #
+#####################################
+# By CIA, Supermarks, and Aldebaran #
+#####################################
+
+add_namespace = US #Internal stuff
+
+# intro
+country_event = {
+	id = US.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event US.1"}
+	title = "The State of Old Glory"
+	desc = US.1.d
+	picture = GFX_report_event_generic_riot
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		USA = { exists = yes }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "God bless America!"
+	}
+}
+
+country_event = {
+	id = US.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event US.2"}
+	title = "The U.S Army"
+	desc = US.2.d
+	picture = report_event_generic_conference
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		focus_progress = { focus = USA_military_review progress > 0.2 }
+	}
+
+	mean_time_to_happen = {
+		days = 3
+	}
+
+	option = {
+		name = "Let's follow Eisenhower's Lead!"
+		set_country_flag = Eisenhower_plan
+		set_country_flag = usa_army_reformed
+	}
+
+	option = {
+		name = "We need innovation! Listen to Patton!"
+		set_country_flag = Patton_plan
+		set_country_flag = usa_army_reformed
+	}
+
+	option = {
+		name = "MacArthur's got the right of it!"
+		set_country_flag = MacArthur_plan
+		set_country_flag = usa_army_reformed
+	}
+}
+
+country_event = {
+	id = US.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event US.3"}
+	title = "The U.S Navy"
+	desc = US.3.d
+	picture = report_event_generic_conference
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		focus_progress = { focus = USA_military_review progress > 0.5 }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "What we need is a larger Fleet..."
+		set_country_flag = Heavy_fleet
+		set_country_flag = usa_navy_reformed
+	}
+
+	option = {
+		name = "Not even a question, a Carrier-based Navy."
+		set_country_flag = Carrier_fleet
+		set_country_flag = usa_navy_reformed
+	}
+}
+
+country_event = {
+	id = US.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event US.4"}
+	title = "The U.S.A.F"
+	desc = US.4.d
+	picture = report_event_generic_conference
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		focus_progress = { focus = USA_military_review progress > 0.8 }
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	option = {
+		name = "We should prioritize destruction of enemy industry."
+		set_country_flag = Heavy_airforce
+		set_country_flag = usa_airforce_reformed
+	}
+
+	option = {
+		name = "We should prioritize strategic support of the Army."
+		set_country_flag = Light_airforce
+		set_country_flag = usa_airforce_reformed
+	}
+}
+
+country_event = {
+	id = US.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event US.5"}
+	title = "Panic in Houston"
+	desc = US.5.d
+	picture = GFX_report_event_generic_riot
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		USA = { exists = yes }
+	}
+
+	mean_time_to_happen = {
+		days = 48
+	}
+
+	option = {
+		name = "The Southern Serpent..."
+		add_political_power = -125
+		add_stability = -0.05
+		375 = {
+            damage_building = { type = infrastructure damage = 0.75 }
+        }
+    	}
+}
+country_event = {
+	id = US.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event US.6"}
+	title = "Bringing Centroamerica into our sphere"
+	desc = US.6.d
+	picture = report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { factor = 100 }
+		name = "Time to bring them to Heel..."
+		COS = { country_event = { id = US.7 }}
+		NIC = { country_event = { id = US.7 }}
+		HON = { country_event = { id = US.7 }}
+		ELS = { country_event = { id = US.7 }}
+		GUA = { country_event = { id = US.7 }}
+	}
+}
+
+country_event = {
+	id = US.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event US.7"}
+	title = "The United States demand submission!"
+	desc = US.7.d
+	picture = report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { factor = 70 }
+		name = "Not a chance! Libertad o Muerte!"
+		USA = { country_event = { id = US.8 days = 1 }}
+	}
+
+	option = {
+		name = "We aren't in a position to refuse..."
+		ai_chance = { factor = 30 }
+		USA = { country_event = { id = US.9 days = 1 }}
+		FROM = { puppet = ROOT }	#FROM = Nation that sent the event. ROOT = the tag of the nation that accepts.
+	}
+}
+
+country_event = {
+	id = US.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event US.8"}
+	title = "[From.GetName] has refused our demand!" #[GetName] is the name of the nation. [From.GetName] is the name of the nation that sent the event
+	desc = US.8.d
+	picture = report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { factor = 70 }
+		name = "Drop the matter, an invasion of Central America sounds like a supply misery."
+	}
+
+	option = {
+		name = "If it's War they want..."
+		ai_chance = { factor = 30 }
+		add_political_power = -30
+		create_wargoal = {
+				type = annex_everything
+				target = FROM
+			}
+	}
+}
+
+country_event = {
+	id = US.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event US.9"}
+	title = "[From.GetName] has submit to our demands."
+	desc = US.9.d
+	picture = report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { factor = 100 }
+		name = "A Necessary act to ensure stability in the Region."
+	}
+}
+
+country_event = {
+	id = US.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event US.10"}
+	title = "Befriending Central America"
+	desc = US.10.d
+	picture = report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { factor = 100 }
+		name = "Send the offers!"
+		create_faction = free_bloc
+		COS = { country_event = { id = US.11 days = 1 }}
+		NIC = { country_event = { id = US.11 days = 1 }}
+		HON = { country_event = { id = US.11 days = 1 }}
+		ELS = { country_event = { id = US.11 days = 1 }}
+		GUA = { country_event = { id = US.11 days = 1 }}
+	}
+}
+
+country_event = {
+	id = US.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event US.11"}
+	title = "An Offer from Washington"
+	desc = US.11.d
+	picture = report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { factor = 30 }
+		name = "We'd rather decline."
+		USA = { country_event = { id = US.12 days = 0 }}
+	}
+
+	option = {
+		name = "Sounds reasonable, let's accept."
+		ai_chance = { factor = 70 }
+		USA = { country_event = { id = US.13 days = 0 }}
+		FROM = { add_to_faction = ROOT }
+	}
+}
+
+country_event = {
+	id = US.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event US.12"}
+	title = "[From.GetName] has declined membership." #[From.GetNameDef] alternatively when aldebaran fixes central countries DEFname loc
+	desc = US.12.d
+	picture = report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Sad!"
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = US.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event US.13"}
+	title = "[From.GetName] has agreed to join the Free Bloc."
+	desc = US.13.d
+	picture = report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { factor = 100 }
+		name = "We stand together."
+		add_political_power = 15
+	}
+}
+
+country_event = {
+	id = US.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event US.14"}
+	title = "USA demands restoration of the Client-state"
+	desc = US.14.d
+	picture = report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { factor = 90 }
+		name = "Go to hell you goddamn Yanks."
+		add_political_power = 100
+		add_stability = 0.05
+		add_war_support = 0.05
+		USA = { country_event = { id = US.15 days = 1 }}
+	}
+
+	option = {
+		name = "We must cave to their demands..."
+		ai_chance = { factor = 10 }
+		USA = { puppet = ROOT }
+	}
+}
+
+country_event = {
+	id = US.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event US.15"}
+	title = "War"
+	desc = US.15.d
+	picture = report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { factor = 100 }
+		name = "The war has come, then."
+		add_political_power = -100
+		add_manpower = -9870
+		declare_war_on = {
+			target = MEX
+			type = annex_everything
+		}
+		hidden_effect = {
+		news_event = { id = worldnews.104 }
+		}
+
+	}
+}
+
+country_event = {
+	id = US.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event US.16"}
+	title = "Recovery from starvation"
+	desc = US.16.d
+	picture = report_event_generic_conference
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		has_country_flag = USA_GREAT_DEPRESSION_RECOVERY
+	}
+
+	mean_time_to_happen = {
+		days = 365
+	}
+
+	option = {
+		name = "It's about time!"
+		add_political_power = 100
+		remove_ideas = {
+			USA_malnourished_populace
+			USA_sick_man_america
+		}
+	}
+}
+
+country_event = {
+	id = US.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event US.17"}
+	title = "Crutch for dumb-as-shit USA AI"
+	desc = "You shouldn't see this! This event is only for the AI! Please report this to the North America team."
+	picture = report_event_generic_conference
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		has_war_with = MEX
+		is_ai = yes
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	option = {
+		name = "I'm shitty US AI, fuck me fuck fuck fuck"
+		increase_conscription = yes
+		increase_mobilisation = yes
+		load_oob = USA_AI_BUFF
+	}
+}
+
+####################################
+#####THIRD MEXICAN-AMERICAN WAR#####
+####################################
+
+add_namespace = usa #Foriegn, diplo, etc etc
+add_namespace = usanews
+
+country_event = {
+	id = usa.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event usa.20"}
+	title = ""
+	desc = usa.20.d
+
+	trigger = {
+		original_tag = USA
+		date > 1936.12.1
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 0 }
+
+	hidden = yes
+
+	immediate = { news_event = usanews.1 }
+}
+
+news_event = {
+	id = usanews.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event usanews.1"}
+	title = "Southern Agitation"
+	desc = usanews.1.d
+	picture = GFX_news_event_second_american_civil_war
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		trigger = {
+			OR = {
+				tag = USA
+				tag = MEX
+			}
+		}
+		name = "We will defend our borders!"
+		hidden_effect = {
+			IF = {
+				limit = {
+					original_tag = MEX
+				}
+				MEX = { country_event = { id = usa.21 days = 60 } }
+			}
+			IF = {
+				limit = {
+					original_tag = USA
+				}
+				375 = { set_state_flag = skirmishes }
+				376 = { set_state_flag = skirmishes }
+				377 = { set_state_flag = skirmishes }
+				378 = { set_state_flag = skirmishes }
+			}
+			set_country_flag = border_clashes
+		}
+	}
+
+	option = {
+		trigger = {
+			AND = {
+				NOT = { tag = USA }
+				NOT = { tag = MEX }
+			}
+		}
+		name = "Will the USA and Mexico ever settle their differences?"
+	}
+}
+
+country_event = {
+	id = usa.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event usa.21"}
+	title = "Border Skirmish"
+	desc = usa.21.d
+	picture = report_event_merchant_ship_01
+
+	is_triggered_only = yes
+
+	immediate = { modify_country_flag = { flag = border_clashes value = 1 } }
+
+	option = {
+		name = "Endorse their worthy crusade!"
+		add_political_power = -50
+		add_manpower = -20000
+		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -1000 producer = MEX }
+		hidden_effect = {
+			USA = { country_event = { id = usa.22 hours = 8 } }
+			IF = {
+				limit = {
+					has_country_flag = { flag = border_clashes value < 6 }
+				}
+				country_event = { id = usa.21 days = 120 }
+				USA = { country_event = { id = usa.26 days = 9 } }
+				country_event = { id = usa.26 days = 18 }
+			}
+			IF = {
+				limit = {
+					has_country_flag = { flag = border_clashes value > 5 }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "We cannot condone such actions"
+		add_political_power = -50
+		hidden_effect = {
+			USA = { country_event = { id = usa.23 hours = 8 } }
+			IF = {
+				limit = {
+					has_country_flag = { flag = border_clashes value < 6 }
+				}
+				country_event = { id = usa.21 days = 120 }
+				USA = { country_event = { id = usa.26 days = 9 } }
+				country_event = { id = usa.26 days = 18 }
+			}
+			IF = {
+				limit = {
+					has_country_flag = { flag = border_clashes value > 5 }
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = usa.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event usa.22"}
+	title = "Border City Attacked"
+	desc = usa.22.d
+	picture = report_event_merchant_ship_01
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Declare Martial Law in the effected region!"
+		add_political_power = -100
+		hidden_effect = {
+			MEX = { country_event = { id = usa.25 hours = 8 } }
+		}
+	}
+
+	option = {
+		name = "Deploy the National Guard to the area"
+		add_political_power = -25
+		add_manpower = -10000
+		random_owned_state = {
+			limit = {
+				has_state_flag = skirmishes
+			}
+			damage_building = {
+                type = industrial_complex
+                damage = 0.5
+            }
+			damage_building = {
+                type = infrastructure
+                damage = 0.5
+            }
+		}
+		hidden_effect = {
+			MEX = { country_event = { id = usa.24 hours = 8 } }
+		}
+	}
+}
+
+country_event = {
+	id = usa.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event usa.23"}
+	title = "Mexican Nationalists attack border area"
+	desc = usa.23.d
+	picture = report_event_merchant_ship_01
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Try to defuse the situation"
+		add_political_power = -50
+		add_stability = -0.01
+		random_owned_state = {
+			limit = {
+				has_state_flag = skirmishes
+			}
+			damage_building = {
+                type = industrial_complex
+                damage = 0.5
+            }
+			damage_building = {
+                type = infrastructure
+                damage = 0.5
+            }
+		}
+		hidden_effect = {
+			MEX = { country_event = { id = usa.25 hours = 8 } }
+		}
+	}
+
+	option = {
+		name = "Declare Martial Law in the effected region!"
+		add_political_power = -100
+		add_manpower = -10000
+		hidden_effect = {
+			MEX = { country_event = { id = usa.24 hours = 8 } }
+		}
+	}
+}
+
+country_event = {
+	id = usa.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event usa.24"}
+	title = "US troops rebuke our attack!"
+	desc = usa.24.d
+	picture = report_event_merchant_ship_01
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Rally the people!"
+		add_political_power = -150
+		random_list = {
+			75 = {
+				IF = {
+					limit = {
+						has_idea = MEX_basta
+					}
+					swap_ideas = { remove_idea = MEX_basta add_idea = MEX_basta2 }
+				}
+				IF = {
+					limit = {
+						has_idea = MEX_basta2
+					}
+					swap_ideas = { remove_idea = MEX_basta2 add_idea = MEX_basta3 }
+				}
+				IF = {
+					limit = {
+						has_idea = MEX_basta3
+					}
+					swap_ideas = { remove_idea = MEX_basta3 add_idea = MEX_basta4 }
+				}
+				IF = {
+					limit = {
+						has_idea = MEX_basta4
+					}
+					swap_ideas = { remove_idea = MEX_basta4 add_idea = MEX_basta5 }
+				}
+				IF = {
+					limit = {
+						has_idea = MEX_basta5
+					}
+					swap_ideas = { remove_idea = MEX_basta5 add_idea = MEX_basta6 }
+				}
+				IF = {
+					limit = {
+						has_idea = MEX_basta6
+					}
+					swap_ideas = { remove_idea = MEX_basta6 add_idea = MEX_basta7 }
+				}
+			}
+			25 = {
+				#This does nothing
+			}
+		}
+	}
+
+	option = {
+		name = "Show our plight to the masses"
+		add_political_power = -25
+		add_manpower = 5000
+		random_list = {
+			10 = {
+				IF = {
+					limit = {
+						has_idea = MEX_basta
+					}
+					swap_ideas = { remove_idea = MEX_basta add_idea = MEX_basta2 }
+				}
+				IF = {
+					limit = {
+						has_idea = MEX_basta2
+					}
+					swap_ideas = { remove_idea = MEX_basta2 add_idea = MEX_basta3 }
+				}
+				IF = {
+					limit = {
+						has_idea = MEX_basta3
+					}
+					swap_ideas = { remove_idea = MEX_basta3 add_idea = MEX_basta4 }
+				}
+				IF = {
+					limit = {
+						has_idea = MEX_basta4
+					}
+					swap_ideas = { remove_idea = MEX_basta4 add_idea = MEX_basta5 }
+				}
+				IF = {
+					limit = {
+						has_idea = MEX_basta5
+					}
+					swap_ideas = { remove_idea = MEX_basta5 add_idea = MEX_basta6 }
+				}
+				IF = {
+					limit = {
+						has_idea = MEX_basta6
+					}
+					swap_ideas = { remove_idea = MEX_basta6 add_idea = MEX_basta7 }
+				}
+			}
+			90 = {
+				#This does nothing
+			}
+		}
+	}
+}
+
+country_event = {
+	id = usa.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event usa.25"}
+	title = "USA attempts to defuse tensions"
+	desc = usa.25.d
+	picture = report_event_merchant_ship_01
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Their complacency will be their undoing"
+		add_political_power = 50
+		random_list = {
+			10 = {
+				IF = {
+					limit = {
+						has_idea = MEX_basta
+					}
+					swap_ideas = { remove_idea = MEX_basta add_idea = MEX_basta2 }
+				}
+				IF = {
+					limit = {
+						has_idea = MEX_basta2
+					}
+					swap_ideas = { remove_idea = MEX_basta2 add_idea = MEX_basta3 }
+				}
+				IF = {
+					limit = {
+						has_idea = MEX_basta3
+					}
+					swap_ideas = { remove_idea = MEX_basta3 add_idea = MEX_basta4 }
+				}
+				IF = {
+					limit = {
+						has_idea = MEX_basta4
+					}
+					swap_ideas = { remove_idea = MEX_basta4 add_idea = MEX_basta5 }
+				}
+				IF = {
+					limit = {
+						has_idea = MEX_basta5
+					}
+					swap_ideas = { remove_idea = MEX_basta5 add_idea = MEX_basta6 }
+				}
+				IF = {
+					limit = {
+						has_idea = MEX_basta6
+					}
+					swap_ideas = { remove_idea = MEX_basta6 add_idea = MEX_basta7 }
+				}
+			}
+			90 = {
+				#This does nothing
+			}
+		}
+	}
+}
+
+country_event = {
+	id = usa.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event usa.26"}
+	title = "Warhawk Sentiment"
+	desc = usa.26.d
+	picture = report_event_merchant_ship_01
+
+	is_triggered_only = yes
+
+	option = {
+		trigger = {
+			original_tag = USA
+		}
+		name = "The argument for war continues to gain strength"
+		add_political_power = 50
+	}
+
+	option = {
+		trigger = {
+			original_tag = MEX
+		}
+		name = "Use this to our advantange!"
+		add_political_power = -150
+		IF = {
+			limit = {
+				has_idea = MEX_basta
+			}
+			swap_ideas = { remove_idea = MEX_basta add_idea = MEX_basta2 }
+		}
+		IF = {
+			limit = {
+				has_idea = MEX_basta2
+			}
+			swap_ideas = { remove_idea = MEX_basta2 add_idea = MEX_basta3 }
+		}
+		IF = {
+			limit = {
+				has_idea = MEX_basta3
+			}
+			swap_ideas = { remove_idea = MEX_basta3 add_idea = MEX_basta4 }
+		}
+		IF = {
+			limit = {
+				has_idea = MEX_basta4
+			}
+			swap_ideas = { remove_idea = MEX_basta4 add_idea = MEX_basta5 }
+		}
+		IF = {
+			limit = {
+				has_idea = MEX_basta5
+			}
+			swap_ideas = { remove_idea = MEX_basta5 add_idea = MEX_basta6 }
+		}
+		IF = {
+			limit = {
+				has_idea = MEX_basta6
+			}
+			swap_ideas = { remove_idea = MEX_basta6 add_idea = MEX_basta7 }
+		}
+	}
+
+	option = {
+		trigger = {
+			original_tag = MEX
+		}
+		name = "Ignore these bellicose fools!"
+	}
+}
+
+country_event = {
+	id = usa.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event usa.27"}
+	title = "Nationalists Call for War!"
+	desc = usa.27.d
+	picture = report_event_merchant_ship_01
+
+	trigger = {
+		OR = {
+			original_tag = USA
+			original_tag = MEX
+		}
+		date > 1939.2.1
+		NOT = { has_country_flag = call_war }
+	}
+
+	mean_time_to_happen = { days = 14 }
+
+	option = {
+		trigger = {
+			original_tag = USA
+		}
+		name = "We must be on our guard"
+		add_political_power = 100
+		hidden_effect = {
+			IF = {
+				limit = {
+					NOT = { MEX = { has_country_flag = call_war } }
+				}
+				USA = { country_event = { id = usa.28 days = 60 } }
+				MEX = { country_event = { id = usa.28 days = 60 } }
+			}
+			set_country_flag = call_war
+		}
+	}
+
+	option = {
+		trigger = {
+			original_tag = MEX
+		}
+		name = "We must prepare accordingly"
+		add_manpower = 10000
+		hidden_effect = {
+			IF = {
+				limit = {
+					NOT = { USA = { has_country_flag = call_war } }
+				}
+				USA = { country_event = { id = usa.28 days = 60 } }
+				MEX = { country_event = { id = usa.28 days = 60 } }
+			}
+			set_country_flag = call_war
+		}
+	}
+
+	option = {
+		trigger = {
+			original_tag = MEX
+		}
+		name = "We will reclaim our rightful land!"
+		random_list = {
+			10 = {
+				IF = {
+					limit = {
+						has_idea = MEX_basta
+					}
+					swap_ideas = { remove_idea = MEX_basta add_idea = MEX_basta2 }
+				}
+				IF = {
+					limit = {
+						has_idea = MEX_basta2
+					}
+					swap_ideas = { remove_idea = MEX_basta2 add_idea = MEX_basta3 }
+				}
+				IF = {
+					limit = {
+						has_idea = MEX_basta3
+					}
+					swap_ideas = { remove_idea = MEX_basta3 add_idea = MEX_basta4 }
+				}
+				IF = {
+					limit = {
+						has_idea = MEX_basta4
+					}
+					swap_ideas = { remove_idea = MEX_basta4 add_idea = MEX_basta5 }
+				}
+				IF = {
+					limit = {
+						has_idea = MEX_basta5
+					}
+					swap_ideas = { remove_idea = MEX_basta5 add_idea = MEX_basta6 }
+				}
+				IF = {
+					limit = {
+						has_idea = MEX_basta6
+					}
+					swap_ideas = { remove_idea = MEX_basta6 add_idea = MEX_basta7 }
+				}
+			}
+			90 = {
+				#This does nothing
+			}
+		}
+		hidden_effect = {
+			IF = {
+				limit = {
+					NOT = { USA = { has_country_flag = call_war } }
+				}
+				USA = { country_event = { id = usa.28 days = 60 } }
+				MEX = { country_event = { id = usa.28 days = 60 } }
+			}
+			set_country_flag = call_war
+		}
+	}
+}
+
+country_event = {
+	id = usa.28
+	immediate = {log = "[GetDateText]: [Root.GetName]: event usa.28"}
+	title = "The San Diego Incident"
+	desc = usa.28.d
+	picture = report_event_merchant_ship_01
+
+	is_triggered_only = yes
+
+	option = {
+		trigger = {
+			original_tag = USA
+		}
+		name = "This is unacceptable! Demand their Government step down immediately!"
+		add_political_power = -100
+		add_manpower = -25000
+		378 ={
+            damage_building = {
+                type = industrial_complex
+                damage = 0.8
+            }
+			damage_building = {
+                type = infrastructure
+                damage = 0.8
+            }
+			damage_building = {
+                type = arms_factory
+                damage = 0.8
+            }
+        }
+		MEX = { country_event = { id = usa.29 hours = 8 } }
+	}
+
+	option = {
+		trigger = {
+			original_tag = MEX
+		}
+		name = "Victory!"
+		add_stability = 0.05
+	}
+}
+
+country_event = {
+	id = usa.29
+	immediate = {log = "[GetDateText]: [Root.GetName]: event usa.29"}
+	title = "USA demands that our Government resigns!"
+	desc = usa.29.d
+	picture = report_event_merchant_ship_01
+
+	is_triggered_only = yes
+
+	option = {
+		name = "To hell with their demands! We will settle this now!"
+		declare_war_on = {
+			target = USA
+			type = annex_everything
+		}
+		hidden_effect = {
+			news_event = { id = usanews.2 }
+			#MEX = { 
+			#	country_event = { 
+			#		id = usa.18 # EVENT DOESN'T EXIST
+			#		hours = 24 
+			#	} 
+			#}
+		}
+	}
+
+	option = {
+		name = "We cannot risk war with the Yankees"
+		USA = { puppet = MEX }
+	}
+}
+
+country_event = {
+	id = usa.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event usa.30"}
+	title = "The Death of Eugene Debs"
+	desc = US.30.d
+	picture = report_event_merchant_ship_01
+
+	trigger = {
+		tag = USA
+		date > 1936.3.21
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "Unfortunate, but in many ways welcome."
+			create_country_leader = {
+			 name = "John Reed"
+			 desc = "POLITICS_John_Reed_DESC"
+			 picture = "Portrait_USA_John_Reed.tga"
+			 expire = "1965.1.1"
+			 ideology = libertarian_socialist_subtype
+		 }
+		}
+	}
+
+	country_event = {
+	id = usa.31
+	immediate = {log = "[GetDateText]: [Root.GetName]: event usa.31"}
+		title = "The Fourth of July"
+		desc = usa.31.d
+		picture = report_event_merchant_ship_01
+
+		trigger = {
+			tag = USA
+			date > 1936.7.03
+			}
+
+			fire_only_once = yes
+
+		option = {
+			name = "In many ways, democracy was born here. And here is must carry on!"
+			add_stability = 0.01
+			add_political_power = 20
+
+			hidden_effect = {
+				country_event = { id = usa.31 months = 12 }
+			}
+
+			 }
+}
+
+country_event = {
+	id = usa.32
+	immediate = {log = "[GetDateText]: [Root.GetName]: event usa.32"}
+	title = "Mexico Offers Peace"
+	desc = usa.32.d
+	picture = report_event_merchant_ship_01
+
+	is_triggered_only = yes
+
+		mean_time_to_happen = {
+			days = 1
+		}
+
+	option = {
+		name = "Already tired of battle? Of course we reject!"
+		ai_chance = { factor = 70 }
+		add_political_power = 50
+		}
+
+	option = {
+		name = "They can have their useless territory back."
+		ai_chance = { factor = 30 }
+		add_political_power = -50
+		USA = { white_peace = MEX }
+    MEX = { white_peace = USA }
+		}
+}
+
+country_event = {
+	id = usa.33
+	immediate = {log = "[GetDateText]: [Root.GetName]: event usa.33"}
+	title = "Mexico Demands Peace"
+	desc = usa.33.d
+	picture = report_event_merchant_ship_01
+
+	is_triggered_only = yes
+
+	option = {
+		name = "We... aren't really in a position to refuse."
+		ai_chance = { factor = 95 }
+		USA = { white_peace = MEX }
+    MEX = { white_peace = USA }
+		transfer_state = 484
+		transfer_state = 743
+		transfer_state = 378
+		transfer_state = 930
+		transfer_state = 928
+		transfer_state = 923
+		transfer_state = 922
+		transfer_state = 921
+		transfer_state = 375
+		transfer_state = 919
+		transfer_state = 377
+		transfer_state = 376
+		transfer_state = 920
+		transfer_state = 926
+		transfer_state = 925
+		transfer_state = 929
+		}
+
+	option = {
+		name = "We will never surrender!"
+		ai_chance = { factor = 5 }
+		add_political_power = -100
+		hidden_effect = {
+		country_event = {id = mex.21 hours = 4}
+			}
+		}
+}
+
+news_event = {
+	id = usanews.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event usanews.2"}
+	title = "Third Mexican-American War"
+	desc = usanews.2
+	picture = report_event_merchant_ship_01
+
+	is_triggered_only = yes
+
+	option = {
+		trigger = {
+			OR = {
+				original_tag = USA
+				original_tag = MEX
+			}
+		}
+		name = "We will be victorious!"
+	}
+
+	option = {
+		trigger = {
+			AND = {
+				NOT = { original_tag = USA }
+				NOT = { original_tag = MEX }
+			}
+		}
+		name = "Will this war be the end of the Sick Man of the Americas?"
+	}
+}

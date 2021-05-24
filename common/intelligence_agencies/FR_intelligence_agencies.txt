@@ -1,0 +1,8 @@
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_fr_sia
+	names = { "Office of National Intelligence Service" }
+
+	default = { tag = SIA }
+	available = { original_tag = SIA }
+}

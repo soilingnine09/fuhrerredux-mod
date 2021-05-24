@@ -1,0 +1,3 @@
+has_fuhrer_mana = {
+    tag = GER
+}

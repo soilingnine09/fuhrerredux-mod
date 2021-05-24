@@ -1,0 +1,91 @@
+
+FRA_increase_legitimacy = {
+	if = {
+		limit = {
+			has_idea = FRA_very_high_legitimacy
+		}
+		add_political_power = 50
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_high_legitimacy
+		}
+		swap_ideas = {
+			remove_idea = FRA_high_legitimacy
+			add_idea = FRA_very_high_legitimacy
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_med_legitimacy
+		}
+		swap_ideas = {
+			remove_idea = FRA_med_legitimacy
+			add_idea = FRA_high_legitimacy
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_low_legitimacy
+		}
+		swap_ideas = {
+			remove_idea = FRA_low_legitimacy
+			add_idea = FRA_med_legitimacy
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_very_low_legitimacy
+		}
+		swap_ideas = {
+			remove_idea = FRA_very_low_legitimacy
+			add_idea = FRA_low_legitimacy
+		}
+	}
+}
+
+
+FRA_decrease_legitimacy = {
+	if = {
+		limit = {
+			has_idea = FRA_very_low_legitimacy
+		}
+		add_political_power = -50
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_low_legitimacy
+		}
+		swap_ideas = {
+			remove_idea = FRA_low_legitimacy
+			add_idea = FRA_very_low_legitimacy
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_med_legitimacy
+		}
+		swap_ideas = {
+			remove_idea = FRA_med_legitimacy
+			add_idea = FRA_low_legitimacy
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_high_legitimacy
+		}
+		swap_ideas = {
+			remove_idea = FRA_high_legitimacy
+			add_idea = FRA_med_legitimacy
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_very_high_legitimacy
+		}
+		swap_ideas = {
+			remove_idea = FRA_very_high_legitimacy
+			add_idea = FRA_high_legitimacy
+		}
+	}
+}

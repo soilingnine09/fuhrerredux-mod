@@ -1,0 +1,10 @@
+CHI_war_decisions = {
+	allowed = {
+		original_tag = CHI
+	}
+}
+CHI_chinese_unification_decisions = {
+    allowed = {
+        original_tag = CHI
+    }
+}
