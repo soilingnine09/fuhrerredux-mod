@@ -1,2 +1,1 @@
-SIR = "countries/Asian.txt"
-ICR = "countries/Asian.txt"
+
