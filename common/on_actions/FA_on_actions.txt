@@ -29,18 +29,4 @@ on_actions = {
 			recalc_all_zone = yes 
 		}
 	}
-	on_annex = {
-		effect = {
-			if = {
-				limit = { 
-					tag = SIA
-					FROM = { tag = UWP } 
-				}
-				SIA = { 
-					country_event = siamcivilwar.22 
-					set_country_flag = SIA_win_civil_war
-				}
-			}
-		}
-	}
 }
