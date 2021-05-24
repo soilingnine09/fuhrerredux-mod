@@ -1,0 +1,18 @@
+state={
+	id=1030
+	name="STATE_1030"
+	provinces={
+		5042 
+	}
+	manpower=180020
+	state_category = rural
+
+	history = {
+		owner = SIK
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = SIK
+	}
+	buildings_max_level_factor=1.000
+}
