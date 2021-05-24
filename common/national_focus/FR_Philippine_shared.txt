@@ -1507,7 +1507,7 @@ shared_focus = {
     prerequisite = { focus = PHI_japanese_trade_deal }
     relative_position_id = PHI_japanese_trade_deal
     completion_reward = {
-        JAP = { country_event = phi.108 }
+        JAP = { country_event = phi.106 }
     }
 }
 
@@ -1549,11 +1549,11 @@ shared_focus = {
     completion_reward = {
         if = {
             limit = { is_in_faction_with = JAP }
-            JAP = { country_event = phi.113 }
+            JAP = { country_event = phi.111 }
         }
         if = {
             limit = { is_in_faction_with = ENG }
-            ENG = { country_event = phi.113 }
+            ENG = { country_event = phi.111 }
         }
     }
 }
@@ -1614,7 +1614,7 @@ shared_focus = {
     prerequisite = { focus = PHI_british_trade_deal }
     relative_position_id = PHI_british_trade_deal
     completion_reward = {
-        ENG = { country_event = phi.108 }
+        ENG = { country_event = phi.106 }
     }
 }
 
@@ -1656,11 +1656,11 @@ shared_focus = {
     completion_reward = {
         if = {
             limit = { is_in_faction_with = JAP }
-            JAP = { country_event = phi.114 }
+            JAP = { country_event = phi.112 }
         }
         if = {
             limit = { is_in_faction_with = ENG }
-            ENG = { country_event = phi.114 }
+            ENG = { country_event = phi.112 }
         }
     }
 }
@@ -1929,41 +1929,6 @@ shared_focus = {
     }
 }
 
-# Invite Siam
-shared_focus = {
-    id = PHI_invite_siam
-    icon = GFX_goal_flag_siam
-    x = 0
-    y = 1
-    cost = 7
-    available = {
-        SIA = {
-            exists = yes
-            NOT = { has_war_with = ROOT }
-            is_in_faction = no
-        }
-    }
-    bypass = {
-        SIA = {
-            OR = {
-                is_in_faction_with = ROOT
-                is_subject_of = ROOT
-            }
-        }
-    }
-    prerequisite = { focus = PHI_found_aeda }
-    relative_position_id = PHI_found_aeda
-    completion_reward = {
-        activate_targeted_decision = {
-            target = SIA
-            decision = PHI_invite_country
-        }
-        hidden_effect = {
-            SIA = { set_country_flag = PHI_can_invite }
-        }
-    }
-}
-
 # Demand British Colonial Holdings
 shared_focus = {
     id = PHI_demand_british_colonial_holdings
@@ -1984,7 +1949,7 @@ shared_focus = {
             amount = 5000
             producer = PHI 
         }
-        ENG = { country_event = phi.110 }
+        ENG = { country_event = phi.108 }
     }
 }
 
@@ -1997,18 +1962,15 @@ shared_focus = {
     cost = 3
     available_if_capitulated = no
     available = {
-        has_full_control_of_state = 336 
-        has_full_control_of_state = 819
-        has_full_control_of_state = 820
-        has_full_control_of_state = 821
-        has_full_control_of_state = 333
-        has_full_control_of_state = 944
+        MAL = {
+            exists = yes
+            is_in_faction_with = ROOT
+        }
     }
-    bypass = { country_exists = MAL }
     prerequisite = { focus = PHI_demand_british_colonial_holdings }
     relative_position_id = PHI_demand_british_colonial_holdings
     completion_reward = {
-        country_event = { id = annex.5 }
+        MAL = { add_ideas = PHI_guided_by_the_philippines }
     }
 }
 
@@ -2021,23 +1983,15 @@ shared_focus = {
     cost = 3
     available_if_capitulated = no
     available = {
-        has_full_control_of_state = 334
-        has_full_control_of_state = 943
-        has_full_control_of_state = 951
-        has_full_control_of_state = 790
-        has_full_control_of_state = 672
-        has_full_control_of_state = 797
-        has_full_control_of_state = 335
-        has_full_control_of_state = 711
-        has_full_control_of_state = 822
-        has_full_control_of_state = 823
-        has_full_control_of_state = 667
+        INS = {
+            exists = yes
+            is_in_faction_with = ROOT
+        }
     }
-    bypass = { country_exists = INS }
     prerequisite = { focus = PHI_demand_british_colonial_holdings }
     relative_position_id = PHI_demand_british_colonial_holdings
     completion_reward = {
-        country_event = { id = annex.3 }
+        INS = { add_ideas = PHI_guided_by_the_philippines }
     }
 }
 
@@ -2050,17 +2004,15 @@ shared_focus = {
     cost = 3
     available_if_capitulated = no
     available = {
-        has_full_control_of_state = 288
-        has_full_control_of_state = 640
-        has_full_control_of_state = 812
-        has_full_control_of_state = 805 
-        has_full_control_of_state = 1007
+        BRM = {
+            exists = yes
+            is_in_faction_with = ROOT
+        }
     }
-    bypass = { country_exists = BRM }
     prerequisite = { focus = PHI_demand_british_colonial_holdings }
     relative_position_id = PHI_demand_british_colonial_holdings
     completion_reward = {
-        country_event = { id = annex.1 }
+        BRM = { add_ideas = PHI_guided_by_the_philippines }
     }
 }
 
@@ -2084,7 +2036,7 @@ shared_focus = {
             amount = 5000
             producer = PHI 
         }
-        FRA = { country_event = phi.110 }
+        FRA = { country_event = phi.108 }
     }
 }
 
@@ -2097,15 +2049,15 @@ shared_focus = {
     cost = 3
     available_if_capitulated = no
     available = {
-        has_full_control_of_state = 962
-        has_full_control_of_state = 741
-        has_full_control_of_state = 963
+        CAM = {
+            exists = yes
+            is_in_faction_with = ROOT
+        }
     }
-    bypass = { country_exists = CAM }
     prerequisite = { focus = PHI_demand_french_colonial_holdings }
     relative_position_id = PHI_demand_french_colonial_holdings
     completion_reward = {
-        country_event = { id = annex.2 }
+        CAM = { add_ideas = PHI_guided_by_the_philippines }
     }
 }
 
@@ -2118,17 +2070,15 @@ shared_focus = {
     cost = 3
     available_if_capitulated = no
     available = {
-        has_full_control_of_state = 286
-        has_full_control_of_state = 961
-        has_full_control_of_state = 671
-        has_full_control_of_state = 958
-        has_full_control_of_state = 1009
+        VIN = {
+            exists = yes
+            is_in_faction_with = ROOT
+        }
     }
-    bypass = { country_exists = VIN }
     prerequisite = { focus = PHI_demand_french_colonial_holdings }
     relative_position_id = PHI_demand_french_colonial_holdings
     completion_reward = {
-        country_event = { id = annex.6 }
+        VIN = { add_ideas = PHI_guided_by_the_philippines }
     }
 }
 
@@ -2141,15 +2091,15 @@ shared_focus = {
     cost = 3
     available_if_capitulated = no
     available = {
-        has_full_control_of_state = 959
-        has_full_control_of_state = 960
-        has_full_control_of_state = 670
+        LAO = {
+            exists = yes
+            is_in_faction_with = ROOT
+        }
     }
-    bypass = { country_exists = LAO }
     prerequisite = { focus = PHI_demand_french_colonial_holdings }
     relative_position_id = PHI_demand_french_colonial_holdings
     completion_reward = {
-        country_event = { id = annex.4 }
+        LAO = { add_ideas = PHI_guided_by_the_philippines }
     }
 }
 
@@ -2209,7 +2159,7 @@ shared_focus = {
     prerequisite = { focus = PHI_german_trade_deal }
     relative_position_id = PHI_german_trade_deal
     completion_reward = {
-        GER = { country_event = phi.108 }
+        GER = { country_event = phi.106 }
     }
 }
 
@@ -2249,7 +2199,7 @@ shared_focus = {
     }
     relative_position_id = PHI_learn_from_the_germans
     completion_reward = {
-        GER = { country_event = phi.115 } 
+        GER = { country_event = phi.113 } 
     }
 }
 
@@ -2309,7 +2259,7 @@ shared_focus = {
     prerequisite = { focus = PHI_american_trade_deal }
     relative_position_id = PHI_american_trade_deal
     completion_reward = {
-        USA = { country_event = phi.108 }
+        USA = { country_event = phi.106 }
     }
 }
 
@@ -2351,11 +2301,11 @@ shared_focus = {
     completion_reward = {
         if = {
             limit = { is_in_faction_with = USA }
-            USA = { country_event = phi.116 }
+            USA = { country_event = phi.114 }
         }
         if = {
             limit = { is_in_faction_with = GER }
-            GER = { country_event = phi.116 }
+            GER = { country_event = phi.114 }
         }
     }
 }

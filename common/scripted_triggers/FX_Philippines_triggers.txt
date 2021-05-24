@@ -18,31 +18,3 @@ PHI_is_in_south_east_asia = {
         tag = MAL
     }
 }
-
-PHI_has_trade_with_britain = {
-    custom_trigger_tooltip = {
-        tooltip = PHI_has_trade_with_britain_tt
-        has_country_flag = PHI_british_trade
-    }
-}
-
-PHI_has_trade_with_united_states = {
-    custom_trigger_tooltip = {
-        tooltip = PHI_has_trade_with_united_states_tt
-        has_country_flag = PHI_american_trade
-    }
-}
-
-PHI_has_trade_with_germany = {
-    custom_trigger_tooltip = {
-        tooltip = PHI_has_trade_with_germany_tt
-        has_country_flag = PHI_german_trade
-    }
-}
-
-PHI_has_trade_with_japan = {
-    custom_trigger_tooltip = {
-        tooltip = PHI_has_trade_with_japan_tt
-        has_country_flag = PHI_japanese_trade
-    }
-}

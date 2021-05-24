@@ -347,7 +347,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Philippe Pétain"
 	desc = "POLITICS_PHILIPPE_PETAIN_DESC"
-	picture = "Portrait_France_PhilippePetain.tga"
+	picture = "Portrait_France_Philippe_Petain.tga"
 	expire = "1965.1.1"
 	ideology = paternal_autocrat_subtype
 	traits = {
@@ -376,7 +376,7 @@ create_country_leader = {
 
 create_field_marshal = {
 	name = "Maurice Gamelin"
-	picture = "Portrait_France_MauriceGamelin.tga"
+	picture = "Portrait_France_Maurice_Gamelin.tga"
 	traits = {
 		defensive_doctrine
 		offensive_doctrine
@@ -390,7 +390,7 @@ create_field_marshal = {
 
 create_field_marshal = {
 	name = "Philippe Pétain"
-	picture = "Portrait_France_PhilippePetain1.tga"
+	picture = "Portrait_France_Philippe_Petain.tga"
 	traits = {
 		old_guard
 		organisational_leader
@@ -405,7 +405,7 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "Alphonse Juin"
-	picture = "Portrait_France_Alphonse_Juin2.tga"
+	picture = "Portrait_France_Alphonse_Juin.tga"
 	traits = {  }
 	skill = 3
 	attack_skill = 3
@@ -416,7 +416,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Maurice Janin"
-	picture = "Portrait_NFA_Maurice_Janin.tga"
+	picture = "Portrait_France_Maurice_Janin.tga"
 	traits = {
 		politically_connected
 		harsh_leader
@@ -430,7 +430,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Charles de Gaulle"
-	picture = "Portrait_France_Charles_deGaulle1.tga"
+	picture = "Portrait_France_Charles_deGaulle.tga"
 	traits = {
 		panzer_leader
 		urban_assault_specialist
@@ -444,7 +444,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Jean de Lattre de Tassigny"
-	picture = "Portrait_France_Jean_tassigny1.tga"
+	picture = "Portrait_France_Jean_Tassigny.tga"
 	traits = {
 		trickster
 		naval_invader
@@ -459,7 +459,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Maxime Weygand"
-	picture = "Portrait_France_MaximeWeygand.tga"
+	picture = "Portrait_France_Maxime_Weygand.tga"
 	traits = { old_guard }
 	skill = 2
 	attack_skill = 1
@@ -470,7 +470,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Philippe Leclerc"
-	picture = "Portrait_France_philippe_leclerc2.tga"
+	picture = "Portrait_France_Philippe_Leclerc.tga"
 	traits = {
 		panzer_leader
 		desert_fox

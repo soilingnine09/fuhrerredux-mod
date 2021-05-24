@@ -572,7 +572,7 @@ ideas = {
 				}
             }
         }
-        PHI_guided_by_ph = {
+        PHI_guided_by_the_philippines = {
             modifier = {
                 political_power_gain = 0.15
                 consumer_goods_factor = -0.05
@@ -1511,7 +1511,7 @@ ideas = {
         }
         PHI_standard_oil = {
             allowed = { is_a_filipino_tag = yes }
-            available = { has_trade_with_united_states = yes }
+            available = { has_country_flag = PHI_american_trade }
             picture = standard_oil_california
             traits = { oil_concern }
             research_bonus = {
@@ -1524,7 +1524,7 @@ ideas = {
         }
         PHI_english_electric = {
             allowed = { is_a_filipino_tag = yes }
-            available = { has_trade_with_britain = yes }
+            available = { has_country_flag = PHI_british_trade }
             picture = english_electric
             traits = { electronics_manufacturer }
             research_bonus = {
@@ -1537,7 +1537,7 @@ ideas = {
         }
         PHI_kawasaki = {
             allowed = { is_a_filipino_tag = yes }
-            available = { has_trade_with_japan = yes }
+            available = { has_country_flag = PHI_japanese_trade }
             picture = kawasaki
             traits = { industrial_concern }
             research_bonus = {
@@ -1549,7 +1549,7 @@ ideas = {
         }
         PHI_krupp = {
             allowed = { is_a_filipino_tag = yes }
-            available = { has_trade_with_germany = yes }
+            available = { has_country_flag = PHI_german_trade }
             picture = krupp
             traits = { mining_company }
             research_bonus = {
@@ -1574,7 +1574,7 @@ ideas = {
         }
         PHI_nissan = {
             allowed = { is_a_filipino_tag = yes }
-            available = { has_trade_with_japan = yes }
+            available = { has_country_flag = PHI_japanese_trade }
             picture = nissan
             traits = { infantry_equipment_producer_defense_1 }
             research_bonus = {
@@ -1583,7 +1583,7 @@ ideas = {
         }
         PHI_rsaf_enfield = {
             allowed = { is_a_filipino_tag = yes }
-            available = { has_trade_with_britain = yes }
+            available = { has_country_flag = PHI_british_trade }
             picture = rsaf_enfield
             traits = { infantry_equipment_producer_assualt_1 }
             research_bonus = {
@@ -1604,7 +1604,7 @@ ideas = {
         }
         PHI_ford = {
             allowed = { is_a_filipino_tag = yes }
-            available = { has_trade_with_united_states = yes }
+            available = { has_country_flag = PHI_american_trade }
             picture = ford_motor_company
             traits = { medium_tank_producer_mass_2 }
             research_bonus = {
@@ -1613,7 +1613,7 @@ ideas = {
         }
         PHI_porsche = {
             allowed = { is_a_filipino_tag = yes }
-            available = { has_trade_with_germany = yes }
+            available = { has_country_flag = PHI_german_trade }
             picture = porsche
             traits = { heavy_tank_producer_offense_1 }
             research_bonus = {
@@ -1622,7 +1622,7 @@ ideas = {
         }
         PHI_vickers = {
             allowed = { is_a_filipino_tag = yes }
-            available = { has_trade_with_britain = yes }
+            available = { has_country_flag = PHI_british_trade }
             picture = vickers_armstrong_eng
             traits = { small_tank_producer_mass_1 }
             research_bonus = {
@@ -1643,7 +1643,7 @@ ideas = {
         }
         PHI_mitsubishi = {
             allowed = { is_a_filipino_tag = yes }
-            available = { has_trade_with_japan = yes }
+            available = { has_country_flag = PHI_japanese_trade }
             picture = mitsubishi
             traits = { nav_cas_producer_offense_2 }
             research_bonus = {
@@ -1652,7 +1652,7 @@ ideas = {
         }
         PHI_junkers = {
             allowed = { is_a_filipino_tag = yes }
-            available = { has_trade_with_germany = yes }
+            available = { has_country_flag = PHI_german_trade }
             picture = junkers
             traits = { fighter_producer_defense_1 }
             research_bonus = {
@@ -1661,7 +1661,7 @@ ideas = {
         }
         PHI_hawker = {
             allowed = { is_a_filipino_tag = yes }
-            available = { has_trade_with_britain = yes }
+            available = { has_country_flag = PHI_british_trade }
             picture = hawker
             traits = { bomber_producer_defense_2 }
             research_bonus = {
@@ -1670,7 +1670,7 @@ ideas = {
         }
         PHI_boeing = {
             allowed = { is_a_filipino_tag = yes }
-            available = { has_trade_with_united_states = yes }
+            available = { has_country_flag = PHI_american_trade }
             picture = boeing
             traits = { fighter_producer_offense_2 }
             research_bonus = {
@@ -1687,7 +1687,7 @@ ideas = {
         }
         PHI_harland_wolff = {
             allowed = { is_a_filipino_tag = yes }
-            available = { has_trade_with_britain = yes }
+            available = { has_country_flag = PHI_british_trade }
             picture = harland_wolff
             traits = { cruiser_producer_mass_2 }
             research_bonus = {
@@ -1696,7 +1696,7 @@ ideas = {
         }
         PHI_yarrow_shipbuilders = {
             allowed = { is_a_filipino_tag = yes }
-            available = { has_trade_with_united_states = yes }
+            available = { has_country_flag = PHI_american_trade }
             picture = yarrow_shipbuilders
             traits = { capital_ship_producer_mass_1 }
             research_bonus = {
@@ -1705,7 +1705,7 @@ ideas = {
         }
         PHI_blohm_und_voss = {
             allowed = { is_a_filipino_tag = yes }
-            available = { has_trade_with_germany = yes }
+            available = { has_country_flag = PHI_german_trade }
             picture = blohm_und_voss
             traits = { small_ship_producer_offense_2 }
             research_bonus = {

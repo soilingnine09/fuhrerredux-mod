@@ -3428,11 +3428,8 @@ country_event = { #1940 election
 	trigger = {
 		original_tag = FRA
 		date > 1940.4.1
-		FRA = {
-			NOT = {
-				has_war_with = GER
-			}
-		}
+		NOT = { has_war_with = GER }
+		has_elected_government = yes
 	}
 
 	mean_time_to_happen = {
@@ -3660,7 +3657,7 @@ country_event = { #Petain takes control of Free France
 		create_country_leader = {
 			name = "Philippe Petain"
 			desc = "POLITICS_PHILIPPE_PETAIN_DESC"
-			picture = "Portrait_France_PhilippePetain.tga"
+			picture = "Portrait_France_Philippe_Petain.tga"
 			expire = "1965.1.1"
 			ideology = authoritarian_democrat_subtype
 			traits = {  }
@@ -6595,7 +6592,7 @@ country_event = { #fate of the British Isles ~~~NOT THE REST OF THE EMPIRE~~~
 					create_country_leader = {
 						name = "Viceroy Maxime Weygand"
 						desc = "POLITICS_VICEROY_WEYGAND_DESC"
-						picture = "Portrait_England_MaximeWeygand.tga"
+						picture = "Portrait_Britain_Maxime_Weygand.tga"
 						expire = "1965.1.1"
 						ideology = authoritarian_democrat_subtype
 						traits = {  }
@@ -6627,7 +6624,7 @@ country_event = { #fate of the British Isles ~~~NOT THE REST OF THE EMPIRE~~~
 					create_country_leader = {
 						name = "Governor Maxime Weygand"
 						desc = "POLITICS_GOVERNOR_WEYGAND_DESC"
-						picture = "Portrait_England_MaximeWeygand.tga"
+						picture = "Portrait_Britain_Maxime_Weygand.tga"
 						expire = "1965.1.1"
 						ideology = authoritarian_democrat_subtype
 						traits = {  }

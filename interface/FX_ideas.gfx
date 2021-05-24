@@ -6,6 +6,10 @@ spriteTypes = {
     }
     
     spriteType = {
+        name = "GFX_idea_PHI_guided_by_the_philippines"
+        texturefile = "gfx/interface/ideas/PHI/ideas/PHI_guided_by_philippines.tga"
+    }
+    spriteType = {
         name = "GFX_idea_PHI_aeda_economic_aid"
         texturefile = "gfx/interface/ideas/PHI/ideas/PHI_aeda_economic_aid.tga"
     }

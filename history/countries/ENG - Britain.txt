@@ -476,7 +476,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Richard O'Connor"
-	picture = "Portrait_Britain_Richard_OConnor1.tga"
+	picture = "Portrait_Britain_Richard_OConnor.tga"
 	traits = {  }
 	skill = 4
 	attack_skill = 2
@@ -509,7 +509,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Harold Alexander"
-	picture = "Portrait_Canada_Harold_Alexander1.tga"
+	picture = "Portrait_Britain_Harold_Alexander.tga"
 	traits = { politically_connected }
 	skill = 5
 	attack_skill = 4
@@ -531,7 +531,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Thomas Jacomb Hutton"
-		picture = "Portrait_England_Thomas_Jacomb_Hutton1.tga"
+		picture = "Portrait_Britain_Thomas_Jacomb_Hutton.tga"
 	traits = { old_guard }
 	skill = 2
 	attack_skill = 2
@@ -597,7 +597,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "William Gott"
-		picture = "Portrait_England_William_Gott1.tga"
+		picture = "Portrait_Britain_William_Gott.tga"
 	traits = { armor_officer war_hero inflexible_strategist }
 	skill = 3
 	attack_skill = 2
@@ -653,7 +653,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Archibald Wavell"
-	picture = "Portrait_Canada_Archibald_Wavell1.tga"
+	picture = "Portrait_Britain_Archibald_Wavell.tga"
 	traits = { career_officer }
 	skill = 4
 	attack_skill = 4
