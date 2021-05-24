@@ -9,7 +9,7 @@ state= {
 	}
 
 	history = {
-		add_claim_by = CYP
+		add_core_of = CYP
 		owner = ENG
 		buildings = {
 			infrastructure = 4

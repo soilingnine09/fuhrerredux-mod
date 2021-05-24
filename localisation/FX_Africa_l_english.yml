@@ -1,40 +1,4 @@
-l_english:
-
-
-# TAG
-TAG_vanguardist:0 ""
-TAG_vanguardist_ADJ:0 ""
-TAG_vanguardist_DEF:0 ""
-TAG_collectivist:0 ""
-TAG_collectivist_ADJ:0 ""
-TAG_collectivist_DEF:0 ""
-TAG_libertarian_socialist:0 ""
-TAG_libertarian_socialist_ADJ:0 ""
-TAG_libertarian_socialist_DEF:0 ""
-TAG_social_democrat:0 ""
-TAG_social_democrat_ADJ:0 ""
-TAG_social_democrat_DEF:0 ""
-TAG_social_liberal:0 ""
-TAG_social_liberal_ADJ:0 ""
-TAG_social_liberal_DEF:0 ""
-TAG_market_liberal:0 ""
-TAG_market_liberal_ADJ:0 ""
-TAG_market_liberal_DEF:0 ""
-TAG_social_conservative:0 ""
-TAG_social_conservative_ADJ:0 ""
-TAG_social_conservative_DEF:0 ""
-TAG_authoritarian_democrat:0 ""
-TAG_authoritarian_democrat_ADJ:0 ""
-TAG_authoritarian_democrat_DEF:0 ""
-TAG_paternal_autocrat:0 ""
-TAG_paternal_autocrat_ADJ:0 ""
-TAG_paternal_autocrat_DEF:0 ""
-TAG_national_populist:0 ""
-TAG_national_populist_ADJ:0 ""
-TAG_national_populist_DEF:0 ""
-TAG_valkist:0 ""
-TAG_valkist_ADJ:0 ""
-TAG_valkist_DEF:0 ""
+﻿l_english:
 
 # Botswana
 BOT_vanguardist:0 "Botswana"
@@ -946,7 +910,7 @@ VOL_valkist:0 "Manden Kurufaba"
 VOL_valkist_ADJ:0 "Burkina Faso"
 VOL_valkist_DEF:0 "Manden Kurufaba"
 
-# Burkina Faso
+# Dahomey
 DAH_vanguardist:0 "Benin"
 DAH_vanguardist_ADJ:0 "Beninese"
 DAH_vanguardist_DEF:0 "The People's Collective of Benin"
