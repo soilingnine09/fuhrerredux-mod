@@ -11,7 +11,7 @@ state={
 			}
 		}
 		add_core_of = IND
-		add_claim_by = OMA
+		add_core_of = OMA
 	}
 
 	provinces={

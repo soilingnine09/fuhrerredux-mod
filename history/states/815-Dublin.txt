@@ -4,7 +4,7 @@ state={
 
 	history={
 		owner = ENG
-		add_claim_by = IRE
+		add_core_of = IRE
 		victory_points = {
 			11293 10 
 		}

@@ -4,7 +4,7 @@ state={
 
 	history={
 		owner = ENG
-		add_claim_by = IRE
+		add_core_of = IRE
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 2

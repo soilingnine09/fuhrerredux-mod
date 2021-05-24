@@ -8,7 +8,7 @@ state={
 	history={
 		owner = FIC
 		add_core_of = FIC
-		add_claim_by = LAO
+		add_core_of = LAO
 		buildings = {
 			infrastructure = 3
 		}

@@ -27,7 +27,7 @@ state=
 			3996 5
 		}
 
-		add_claim_by = EGY
+		add_core_of = EGY
 
 	}
 

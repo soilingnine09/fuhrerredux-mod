@@ -1,323 +1,3 @@
-
-GER_fate_of_france = {
-	puppet_france = {
-
-        icon = generic_nationalism
-
-		available = {
-			GER = {
-				OR = {
-					has_country_flag = GER_french_escapes
-					owns_state = 16
-					FRA = {
-						has_capitulated = yes
-					}
-				}
-			}
-		}
-
-        visible = {
-			original_tag = GER
- 			GER = {
-				OR = {
-					has_war_with = FRA
-					has_country_flag = GER_french_escapes
-					owns_state = 16
-				}
-			}
-        }
-		
-        cost = 25
-
-        fire_only_once = yes
-
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision puppet_france"
-			country_event = ger.403
-		}
-
-        ai_will_do = {
-            factor = 200
-        }
-
-        fire_only_once = yes
-
-        cost = 50
-    }
-}
-
-GER_fate_of_italy = {
-	puppet_italy = {
-
-        icon = generic_nationalism
-
-		available = {
-			GER = {
-				OR = {
-					controls_state = 2
-					has_country_flag = GER_italy_escapes
-				}
-			}
-		}
-
-        visible = {
-			original_tag = GER
-			GER = {
-				OR = {
-					has_war_with = ITA
-					has_country_flag = GER_italy_escapes
-					owns_state = 2
-				}
-			}
-        }
-		
-        cost = 25
-
-        ai_will_do = {
-            factor = 190
-        }
-
-        fire_only_once = yes
-
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision puppet_italy"
-			country_event = ger.413
-		}
-    }
-}
-
-GER_fate_of_east_europe = {
-	GER_ukainian_puppet = {
-	
-		icon = oppression
-
-		available = {
-			GER = {
-				any_owned_state = {
-					is_core_of = UKR
-				}
-			}
-			UKR = {
-				exists = no
-			}
-		}
-		
-        visible = {
-			original_tag = GER
-		}
-		
-        cost = 25
-
-        ai_will_do = {
-            factor = 100
-        }
-
-        fire_only_once = yes
-
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision GER_ukainian_puppet"
-			every_state = {
-				limit = {
-					AND = {
-						is_core_of = UKR
-						is_owned_by = GER
-						NOT = {
-							OR = {
-								is_core_of = GER 
-								is_claimed_by = GER 
-							}
-						}
-					}
-				}
-				UKR = { transfer_state = PREV }
-			}
-			puppet = UKR
-			UKR = {
-				load_focus_tree = generic_focus
-				copy_government_idea_of_ROOT = yes
-				set_politics = {
-					ruling_party = valkist elections_allowed = no
-				}
-				create_country_leader = {
-				name = "Stepan Bandera"
-				desc = ""
-				picture = "gfx/leaders/UKR/leader_UKR_Stepan_Bandera.tga"
-				expire = "1965.1.1"
-				ideology = valkist_subtype
-				traits = { }
-				}
-				set_cosmetic_tag = UKR_puppet
-			}
-		}
-    }
-	
-	GER_belarus_puppet = { 
-	
-		icon = oppression
-
-		available = {
-			GER = {
-				owns_state = 206
-			}
-			BLR = {
-				exists = no
-			}
-		}
-
-        visible = {
-			original_tag = GER
-			OR = {
-				has_war_with = BLR
-				GER = {
-					controls_state = 206
-				}
-			}
-		}
-		
-        cost = 25
-
-        ai_will_do = {
-            factor = 100
-        }
-
-        fire_only_once = yes
-
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision GER_belarus_puppet"
-			every_state = {
-				limit = {
-					AND = {
-						is_core_of = BLR
-						is_owned_by = GER
-						NOT = {
-							OR = {
-								is_core_of = GER 
-							}
-						}
-					}
-				}
-				BLR = { transfer_state = PREV }
-			}
-			puppet = BLR
-			BLR = {
-				load_focus_tree = generic_focus
-				copy_government_idea_of_ROOT = yes
-				set_politics = {
-					ruling_party = valkist elections_allowed = no
-				}
-				create_country_leader = {
-				name = "Radasłaŭ Astroŭski"
-				desc = ""
-				picture = "gfx/leaders/BLR/Portrait_BLR_Radaslau_Astrouski.tga"
-				expire = "1965.1.1"
-				ideology = valkist_subtype
-				traits = { }
-				}
-				set_cosmetic_tag = BLR_puppet
-			}
-		}
-    }
-	
-	GER_russian_puppet = {
-	
-		icon = oppression
-
-		available = {
-			GER = {
-				owns_state = 219
-			}
-			SOV = {
-				OR = {
-					exists = no
-					has_capitulated = yes
-					NOT = {
-						owns_state = 219
-					}
-				}
-			}
-		}
-
-        visible = {
-			original_tag = GER
-			OR = {
-				has_war_with = SOV
-				GER = {
-					controls_state = 219
-				}
-			}
-		}
-		
-        cost = 25
-
-        ai_will_do = {
-            factor = 200
-			# modifier = {
-				# factor = 0.1
-				# GER = {
-					# has_war = yes
-				# }
-			# }
-        }
-
-       # fire_only_once = yes
-
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision GER_russian_puppet"
-			every_state = {
-				limit = {
-					is_core_of = SOV
-				}
-				VRS = {
-					add_state_core = PREV
-				}
-			}
-			GER = {
-				country_event = ger.285
-			}
-		}
-    }
-}
-
-GER_fate_of_britian = {
-	puppet_britian = {
-
-        icon = generic_nationalism
-
-		available = {
-			GER = {
-				AND = {
-					has_country_flag = GER_england_escapes
-					controls_state = 126
-				}
-			}
-		}
-
-        visible = {
-			original_tag = GER
-			GER = {
-				OR = {
-					has_war_with = ENG
-					has_country_flag = GER_england_escapes
-					controls_state = 126
-				}
-			}
-        }
-		
-        cost = 50
-
-        ai_will_do = {
-            factor = 100
-        }
-
-        fire_only_once = yes
-
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision puppet_britian"
-			country_event = ger.423
-		}
-	}
-}
-
 GER_fall_weiss = {
 	fall_poland = {
 
@@ -468,152 +148,446 @@ GER_fall_weiss = {
 	}
 }
 
-GER_fate_of_denmark_dec = {
-	# annex_denmark = {
+GER_german_civilwar = {
+	war_republic = {
 
-        # icon = oppression
-
-		# available = {
-			# DEN = {
-				# exists = no
-			# }
-			# GER = {
-				# owns_state = 37
-			# }
-		# }
-
-        # visible = {
-			# original_tag = GER
-			# GER = {
-				# OR = {
-					# has_war_with = DEN
-					# controls_state = 37
-				# }
-				# NOT = {
-					# has_country_flag = GER_den_done
-				# }
-			# }
-        # }
-
-        # fire_only_once = yes
-
-		# complete_effect = {
-			# GER = {
-				# set_country_flag = GER_den_done
-				# annex_country = { target = DEN transfer_troops = no }
-			# }
-			# 37 = {
-				# add_building_construction = {
-					# type = industrial_complex
-					# instant_build = yes
-					# level = 2
-				# }
-			# }
-			# 915 = {
-				# add_core_of = GER
-			# }	
-			# 58 = {
-				# add_core_of = GER
-			# }
-			# 784 = {
-				# add_core_of = GER
-			# }	
-		# }
-
-        # cost = 50
-
-        # ai_will_do = {
-            # factor = 200
-            # modifier = {
-				# DEN = {
-					# is_ai = no
-				# }
-				# factor = 0
-            # }
-        # }
-    # }
-
-	puppet_denmark = {
-
-        icon = oppression
+        icon = generic_industry
 
 		available = {
-			DEN = {
-				exists = no
-			}
-			GER = {
-				controls_state = 37
-			}
+			has_army_manpower = { size > 249999 }
+			OR = {
+				AND = {
+					original_tag = HAN
+					has_cosmetic_tag = HAN_kingdom
+					GRP = {
+						exists = yes
+					}
+				}
+				AND = {
+					original_tag = BRW
+					has_cosmetic_tag = GER_SSR
+					GRP = {
+						exists = yes
+					}
+				}
+				AND = {
+					original_tag = BAY
+					is_in_faction_with = USA
+					GRP = {
+						exists = yes
+					}
+				}
+			}		
 		}
 
         visible = {
-			original_tag = GER
-			OR = {
-				has_war_with = DEN
-				controls_state = 37
-			}
 			NOT = {
-				has_country_flag = GER_den_done
+				has_country_flag = GRP_done
 			}
-        }
-
-        fire_only_once = yes
-
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision puppet_denmark"
-			set_country_flag = GER_den_done
-			915 = {
-				add_core_of = GER
-			}	
-			58 = {
-				add_core_of = GER
-			}
-			784 = {
-				add_core_of = GER
-			}
-			every_state = {
-				limit = {
-					is_core_of = DEN
-					is_controlled_by = GER
-					NOT = {
-						is_core_of = GER
-						is_claimed_by = GER
+			OR = {
+				AND = {
+					original_tag = HAN
+					has_cosmetic_tag = HAN_kingdom
+					GRP = {
+						exists = yes
 					}
 				}
-				DEN = {
-					transfer_state = PREV
+				AND = {
+					original_tag = BRW
+					has_cosmetic_tag = GER_SSR
+					GRP = {
+						exists = yes
+					}
+				}
+				AND = {
+					original_tag = BAY
+					is_in_faction_with = USA
+					GRP = {
+						exists = yes
+					}
+				}
+			}			
+        }
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision war_republic"
+			set_country_flag = GRP_done
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				declare_war_on = {
+					target = GRP
+					type = annex_everything
 				}
 			}
-			DEN = {
-				load_focus_tree = generic_focus
-				set_cosmetic_tag = DEN_puppet
-				copy_government_idea_of_ROOT = yes
-				set_politics = {
-					ruling_party = valkist elections_allowed = no
+			if = {
+				limit = {
+					is_ai = no
 				}
-				create_country_leader = {
-				name = "Frits Clausen"
-				desc = "POLITICS_FRITS_CLAUSEN_DESC"
-				picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-				expire = "1965.1.1"
-				ideology = valkist_subtype
-				traits = { }
+				create_wargoal = {
+					target = GRP
+					type = annex_everything
 				}
-			}
-			GER = {
-				puppet = DEN
 			}
 		}
 
-        cost = 25
+        cost = 100
 
         ai_will_do = {
             factor = 1
             modifier = {
-				DEN = {
+				factor = 100
+				ROOT = {
+					has_army_manpower = { size > 249999 }
+				}
+            }
+            modifier = {
+				factor = 1000
+				ROOT = {
+					has_army_manpower = { size > 499999 }
+				}
+            }
+            modifier = {
+				factor = 0.5
+				has_war = yes
+            }
+            modifier = {
+				factor = 0
+				NOT = {
+					is_neighbor_of = GRP
+				}
+            }
+        }
+    }
+
+	war_kingdom = {
+
+        icon = generic_industry
+
+		available = {
+			has_army_manpower = { size > 249999 }
+			OR = {
+				AND = {
+					original_tag = BRW
+					has_cosmetic_tag = GER_SSR
+					HAN = {
+						exists = yes
+					}
+				}
+				AND = {
+					original_tag = GRP
+					HAN = {
+						exists = yes
+					}
+				}
+				AND = {
+					original_tag = BAY
+					is_in_faction_with = USA
+					HAN = {
+						exists = yes
+					}
+				}
+			}		
+		}
+
+        visible = {
+			NOT = {
+				has_country_flag = HAN_done
+			}
+			OR = {
+				AND = {
+					original_tag = BRW
+					has_cosmetic_tag = GER_SSR
+					HAN = {
+						exists = yes
+					}
+				}
+				AND = {
+					original_tag = GRP
+					HAN = {
+						exists = yes
+					}
+				}
+				AND = {
+					original_tag = BAY
+					is_in_faction_with = USA
+					GRP = {
+						exists = yes
+					}
+				}
+			}			
+        }
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision war_kingdom"
+			set_country_flag = HAN_done
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				declare_war_on = {
+					target = HAN
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
 					is_ai = no
 				}
+				create_wargoal = {
+					target = HAN
+					type = annex_everything
+				}
+			}
+		}
+
+        cost = 100
+
+        ai_will_do = {
+            factor = 1
+            modifier = {
 				factor = 100
+				ROOT = {
+					has_army_manpower = { size > 249999 }
+				}
+            }
+            modifier = {
+				factor = 1000
+				ROOT = {
+					has_army_manpower = { size > 499999 }
+				}
+            }
+            modifier = {
+				factor = 0.5
+				has_war = yes
+            }
+            modifier = {
+				factor = 0
+				NOT = {
+					is_neighbor_of = HAN
+				}
+            }
+        }
+    }
+
+	war_soviet = {
+
+       icon = generic_industry
+
+		available = {
+			has_army_manpower = { size > 249999 }
+			OR = {
+				AND = {
+					original_tag = HAN
+					has_cosmetic_tag = HAN_kingdom
+					BRW = {
+						exists = yes
+					}
+				}
+				AND = {
+					original_tag = GRP
+					BRW = {
+						exists = yes
+					}
+				}
+				AND = {
+					original_tag = BAY
+					is_in_faction_with = USA
+					BRW = {
+						exists = yes
+					}
+				}
+			}		
+		}
+
+        visible = {
+			NOT = {
+				has_country_flag = BRW_done
+			}
+			OR = {
+				AND = {
+					original_tag = GRP
+					BRW = {
+						exists = yes
+					}
+				}
+				AND = {
+					original_tag = HAN
+					has_cosmetic_tag = HAN_kingdom
+					BRW = {
+						exists = yes
+					}
+				}
+				AND = {
+					original_tag = BAY
+					is_in_faction_with = USA
+					BRW = {
+						exists = yes
+					}
+				}
+			}			
+        }
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision war_soviet"
+			set_country_flag = BRW_done
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				declare_war_on = {
+					target = BRW
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					is_ai = no
+				}
+				create_wargoal = {
+					target = BRW
+					type = annex_everything
+				}
+			}
+		}
+
+        cost = 100
+
+        ai_will_do = {
+            factor = 1
+            modifier = {
+				factor = 100
+				ROOT = {
+					has_army_manpower = { size > 249999 }
+				}
+            }
+            modifier = {
+				factor = 1000
+				ROOT = {
+					has_army_manpower = { size > 499999 }
+				}
+            }
+            modifier = {
+				factor = 0.5
+				has_war = yes
+            }
+            modifier = {
+				factor = 0
+				NOT = {
+					is_neighbor_of = BRW
+				}
+            }
+        }
+    }
+	
+	war_bavaria = {
+
+       icon = generic_industry
+
+		available = {
+			has_army_manpower = { size > 249999 }
+			OR = {
+				AND = {
+					original_tag = HAN
+					has_cosmetic_tag = HAN_kingdom
+					BAY = {
+						exists = yes
+					}
+				}
+				AND = {
+					original_tag = GRP
+					BAY = {
+						exists = yes
+					}
+				}
+				AND = {
+					original_tag = BRW
+					has_cosmetic_tag = GER_SSR
+					BAY = {
+						exists = yes
+					}
+				}
+			}		
+		}
+
+        visible = {
+			BAY = {
+				is_puppet_of = USA
+				exists = yes
+			}
+			OR = {
+				AND = {
+					original_tag = GRP
+					BAY = {
+						exists = yes
+					}
+				}
+				AND = {
+					original_tag = HAN
+					has_cosmetic_tag = HAN_kingdom
+					BAY = {
+						exists = yes
+					}
+				}
+				AND = {
+					original_tag = BRW
+					has_cosmetic_tag = GER_SSR
+					BAY = {
+						exists = yes
+					}
+				}
+			}			
+        }
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision war_bavaria"
+			set_country_flag = BRW_done
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				declare_war_on = {
+					target = BAY
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					is_ai = no
+				}
+				create_wargoal = {
+					target = BAY
+					type = annex_everything
+				}
+			}
+		}
+
+        cost = 100
+
+        ai_will_do = {
+            factor = 1
+            modifier = {
+				factor = 100
+				ROOT = {
+					has_army_manpower = { size > 249999 }
+				}
+            }
+            modifier = {
+				factor = 1000
+				ROOT = {
+					has_army_manpower = { size > 499999 }
+				}
+            }
+            modifier = {
+				factor = 0.5
+				has_war = yes
+            }
+            modifier = {
+				factor = 0
+				NOT = {
+					is_neighbor_of = BAY
+				}
             }
         }
     }

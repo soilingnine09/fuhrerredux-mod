@@ -418,3 +418,8 @@ TOR_TEX = {
 	color = rgb { 60 59 110 }
 	color_ui = rgb { 60 59 110 }
 }
+
+GER_FRA_rk = {
+	color = rgb { 0 18 127 }
+	color_ui = rgb { 0 18 127 }
+}

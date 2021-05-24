@@ -1,105 +1,7 @@
-GER_fate_of_bohemia = {
-	icon = generic_fascism
-	
-	priority = {
-		factor = 10
-	}
-
-	picture = GFX_decision_cat_generic_treaty
-
-	allowed = {
-		original_tag = GER
-	}
-}
-
-GER_fate_of_austria = {
-	icon = generic_fascism
-
-	picture = GFX_decision_cat_generic_treaty
-	
-	priority = {
-		factor = 10
-	}	
-
-	allowed = {
-		original_tag = GER
-	}
-}
-
-GER_fate_of_france = {
-	icon = generic_fascism
-	
-	priority = {
-		factor = 21
-	}
-
-	picture = GFX_decision_cat_generic_treaty
-
-	allowed = {
-		original_tag = GER
-	}
-}
-
-GER_fate_of_italy = {
-	icon = generic_fascism
-
-	picture = GFX_decision_cat_generic_treaty
-	
-	priority = {
-		factor = 20
-	}	
-
-	allowed = {
-		original_tag = GER
-	}
-}
-
-GER_fate_of_lithuania = {
-	icon = generic_fascism
-	
-	priority = {
-		factor = 10
-	}	
-
-	picture = GFX_decision_cat_generic_treaty
-
-	allowed = {
-		original_tag = GER
-	}
-}
-
-GER_fate_of_east_europe = {
-	icon = generic_fascism
-	
-	priority = {
-		factor = 10
-	}	
-
-	picture = GFX_decision_cat_generic_treaty
-
-	allowed = {
-		original_tag = GER
-	}
-}
-
 GER_berlin_olympics = {
 	icon = ger_mefo_bills
 
 	picture = GFX_decision_cat_generic_mefo_bills
-
-	allowed = {
-		original_tag = GER
-	}
-}
-
-GER_fate_of_britian = {
-	icon = generic_fascism
-	
-	priority = {
-		factor = 20
-	}
-
-	picture = GFX_decision_cat_generic_treaty
 
 	allowed = {
 		original_tag = GER
@@ -122,20 +24,6 @@ GER_fall_weiss = {
 	priority = {
 		factor = 10
 	}
-
-	picture = GFX_decision_cat_generic_treaty
-
-	allowed = {
-		original_tag = GER
-	}
-}
-
-GER_fate_of_denmark_dec = {
-	icon = generic_fascism
-	
-	priority = {
-		factor = 10
-	}	
 
 	picture = GFX_decision_cat_generic_treaty
 

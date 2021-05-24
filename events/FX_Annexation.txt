@@ -387,6 +387,7 @@ country_event = {
     immediate = { set_country_flag = BAW_OCCUPIED }
     mean_time_to_happen = { days = 3 }
     trigger = {
+        has_global_flag = germany_balkanized
         NOT = {
             tag = BAW
             has_country_flag = BAW_OCCUPIED
@@ -902,7 +903,7 @@ country_event = {
         }
         ROOT = {
             has_war = no
-            owns_state = 14
+            owns_state = 116
         }
     }
     option = { # Puppet
@@ -1354,6 +1355,7 @@ country_event = {
     immediate = { set_country_flag = COR_OCCUPIED }
     mean_time_to_happen = { days = 3 }
     trigger = {
+        has_global_flag = france_balkanized
         NOT = {
             tag = COR
             tag = FRA
@@ -2354,6 +2356,7 @@ country_event = {
     immediate = { set_country_flag = FLA_OCCUPIED }
     mean_time_to_happen = { days = 3 }
     trigger = {
+        has_global_flag = belgium_balkanized
         NOT = {
             tag = FLA
             has_country_flag = FLA_OCCUPIED
@@ -2396,13 +2399,13 @@ country_event = {
     mean_time_to_happen = { days = 3 }
     trigger = {
         NOT = {
-            tag = FRA
+            is_french_tag = yes
             has_country_flag = FRA_OCCUPIED
             country_exists = FRA
         }
         ROOT = {
             has_war = no
-            owns_state = 111
+            owns_state = 16
         }
     }
     option = { # Puppet
@@ -2519,6 +2522,12 @@ country_event = {
         puppet = OCC
         puppet = NRM
         puppet = COR
+
+        FRP = { drop_cosmetic_tag = yes }
+        if = {
+            limit = { tag = GER }
+            FRP = { set_cosmetic_tag = GER_FRA_rk }
+        }
     }
     option = {
         name = annexation.52.c
@@ -5019,7 +5028,10 @@ country_event = {
         ai_chance = { base = 95 }
         every_owned_state = {
             limit = {
-                is_core_of = OMA
+                OR = {
+                    is_core_of = OMA
+                    is_claimed_by = OMA
+                }
                 is_fully_controlled_by = ROOT
                 NOT = { is_core_of = ROOT }
                 NOT = { is_claimed_by = ROOT }
@@ -7298,6 +7310,7 @@ country_event = {
     immediate = { set_country_flag = WLL_OCCUPIED }
     mean_time_to_happen = { days = 3 }
     trigger = {
+        has_global_flag = belgium_balkanized
         NOT = {
             tag = WLL
             has_country_flag = WLL_OCCUPIED
