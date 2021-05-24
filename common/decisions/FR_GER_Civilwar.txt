@@ -1,0 +1,444 @@
+GER_german_civilwar = {
+	war_republic = {
+
+        icon = generic_industry
+
+		available = {
+			has_army_manpower = { size > 249999 }
+			OR = {
+				AND = {
+					original_tag = HAN
+					has_cosmetic_tag = HAN_kingdom
+					GRP = {
+						exists = yes
+					}
+				}
+				AND = {
+					original_tag = BRW
+					has_cosmetic_tag = GER_SSR
+					GRP = {
+						exists = yes
+					}
+				}
+				AND = {
+					original_tag = BAY
+					is_in_faction_with = USA
+					GRP = {
+						exists = yes
+					}
+				}
+			}		
+		}
+
+        visible = {
+			NOT = {
+				has_country_flag = GRP_done
+			}
+			OR = {
+				AND = {
+					original_tag = HAN
+					has_cosmetic_tag = HAN_kingdom
+					GRP = {
+						exists = yes
+					}
+				}
+				AND = {
+					original_tag = BRW
+					has_cosmetic_tag = GER_SSR
+					GRP = {
+						exists = yes
+					}
+				}
+				AND = {
+					original_tag = BAY
+					is_in_faction_with = USA
+					GRP = {
+						exists = yes
+					}
+				}
+			}			
+        }
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision war_republic"
+			set_country_flag = GRP_done
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				declare_war_on = {
+					target = GRP
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					is_ai = no
+				}
+				create_wargoal = {
+					target = GRP
+					type = annex_everything
+				}
+			}
+		}
+
+        cost = 100
+
+        ai_will_do = {
+            factor = 1
+            modifier = {
+				factor = 100
+				ROOT = {
+					has_army_manpower = { size > 249999 }
+				}
+            }
+            modifier = {
+				factor = 1000
+				ROOT = {
+					has_army_manpower = { size > 499999 }
+				}
+            }
+            modifier = {
+				factor = 0.5
+				has_war = yes
+            }
+            modifier = {
+				factor = 0
+				NOT = {
+					is_neighbor_of = GRP
+				}
+            }
+        }
+    }
+
+	war_kingdom = {
+
+        icon = generic_industry
+
+		available = {
+			has_army_manpower = { size > 249999 }
+			OR = {
+				AND = {
+					original_tag = BRW
+					has_cosmetic_tag = GER_SSR
+					HAN = {
+						exists = yes
+					}
+				}
+				AND = {
+					original_tag = GRP
+					HAN = {
+						exists = yes
+					}
+				}
+				AND = {
+					original_tag = BAY
+					is_in_faction_with = USA
+					HAN = {
+						exists = yes
+					}
+				}
+			}		
+		}
+
+        visible = {
+			NOT = {
+				has_country_flag = HAN_done
+			}
+			OR = {
+				AND = {
+					original_tag = BRW
+					has_cosmetic_tag = GER_SSR
+					HAN = {
+						exists = yes
+					}
+				}
+				AND = {
+					original_tag = GRP
+					HAN = {
+						exists = yes
+					}
+				}
+				AND = {
+					original_tag = BAY
+					is_in_faction_with = USA
+					GRP = {
+						exists = yes
+					}
+				}
+			}			
+        }
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision war_kingdom"
+			set_country_flag = HAN_done
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				declare_war_on = {
+					target = HAN
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					is_ai = no
+				}
+				create_wargoal = {
+					target = HAN
+					type = annex_everything
+				}
+			}
+		}
+
+        cost = 100
+
+        ai_will_do = {
+            factor = 1
+            modifier = {
+				factor = 100
+				ROOT = {
+					has_army_manpower = { size > 249999 }
+				}
+            }
+            modifier = {
+				factor = 1000
+				ROOT = {
+					has_army_manpower = { size > 499999 }
+				}
+            }
+            modifier = {
+				factor = 0.5
+				has_war = yes
+            }
+            modifier = {
+				factor = 0
+				NOT = {
+					is_neighbor_of = HAN
+				}
+            }
+        }
+    }
+
+	war_soviet = {
+
+       icon = generic_industry
+
+		available = {
+			has_army_manpower = { size > 249999 }
+			OR = {
+				AND = {
+					original_tag = HAN
+					has_cosmetic_tag = HAN_kingdom
+					BRW = {
+						exists = yes
+					}
+				}
+				AND = {
+					original_tag = GRP
+					BRW = {
+						exists = yes
+					}
+				}
+				AND = {
+					original_tag = BAY
+					is_in_faction_with = USA
+					BRW = {
+						exists = yes
+					}
+				}
+			}		
+		}
+
+        visible = {
+			NOT = {
+				has_country_flag = BRW_done
+			}
+			OR = {
+				AND = {
+					original_tag = GRP
+					BRW = {
+						exists = yes
+					}
+				}
+				AND = {
+					original_tag = HAN
+					has_cosmetic_tag = HAN_kingdom
+					BRW = {
+						exists = yes
+					}
+				}
+				AND = {
+					original_tag = BAY
+					is_in_faction_with = USA
+					BRW = {
+						exists = yes
+					}
+				}
+			}			
+        }
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision war_soviet"
+			set_country_flag = BRW_done
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				declare_war_on = {
+					target = BRW
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					is_ai = no
+				}
+				create_wargoal = {
+					target = BRW
+					type = annex_everything
+				}
+			}
+		}
+
+        cost = 100
+
+        ai_will_do = {
+            factor = 1
+            modifier = {
+				factor = 100
+				ROOT = {
+					has_army_manpower = { size > 249999 }
+				}
+            }
+            modifier = {
+				factor = 1000
+				ROOT = {
+					has_army_manpower = { size > 499999 }
+				}
+            }
+            modifier = {
+				factor = 0.5
+				has_war = yes
+            }
+            modifier = {
+				factor = 0
+				NOT = {
+					is_neighbor_of = BRW
+				}
+            }
+        }
+    }
+	
+	war_bavaria = {
+
+       icon = generic_industry
+
+		available = {
+			has_army_manpower = { size > 249999 }
+			OR = {
+				AND = {
+					original_tag = HAN
+					has_cosmetic_tag = HAN_kingdom
+					BAY = {
+						exists = yes
+					}
+				}
+				AND = {
+					original_tag = GRP
+					BAY = {
+						exists = yes
+					}
+				}
+				AND = {
+					original_tag = BRW
+					has_cosmetic_tag = GER_SSR
+					BAY = {
+						exists = yes
+					}
+				}
+			}		
+		}
+
+        visible = {
+			BAY = {
+				is_puppet_of = USA
+				exists = yes
+			}
+			OR = {
+				AND = {
+					original_tag = GRP
+					BAY = {
+						exists = yes
+					}
+				}
+				AND = {
+					original_tag = HAN
+					has_cosmetic_tag = HAN_kingdom
+					BAY = {
+						exists = yes
+					}
+				}
+				AND = {
+					original_tag = BRW
+					has_cosmetic_tag = GER_SSR
+					BAY = {
+						exists = yes
+					}
+				}
+			}			
+        }
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision war_bavaria"
+			set_country_flag = BRW_done
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				declare_war_on = {
+					target = BAY
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					is_ai = no
+				}
+				create_wargoal = {
+					target = BAY
+					type = annex_everything
+				}
+			}
+		}
+
+        cost = 100
+
+        ai_will_do = {
+            factor = 1
+            modifier = {
+				factor = 100
+				ROOT = {
+					has_army_manpower = { size > 249999 }
+				}
+            }
+            modifier = {
+				factor = 1000
+				ROOT = {
+					has_army_manpower = { size > 499999 }
+				}
+            }
+            modifier = {
+				factor = 0.5
+				has_war = yes
+            }
+            modifier = {
+				factor = 0
+				NOT = {
+					is_neighbor_of = BAY
+				}
+            }
+        }
+    }
+}

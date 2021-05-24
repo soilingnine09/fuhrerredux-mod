@@ -1,0 +1,614 @@
+### Yes, it's ripped. And? ###
+
+ideas = {
+	country = {
+	}
+
+#### HEAD OF GOVERNMENTS ####
+
+	head_of_government = {
+		MAN_Zhang_Council_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Zhang_Council_hog"}
+            allowed = {original_tag = MAN }
+            available = {
+                has_government = authoritarian_democrat
+                has_country_flag = can_replace_hog
+                NOT = {has_country_flag = Zhang_Council_dead}
+                NOT = {has_country_flag = Zhang_Council_fired}
+                NOT = {has_country_flag = ministers_cannot_be_replaced}
+            }
+            traits = {head_of_government authoritarian_democrat hog_oligarchic_council}
+            cancel_if_invalid = no
+        }
+
+		MAN_Zhang_Xueliang_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Zhang_Xueliang_hog"}
+            allowed = {original_tag = MAN }
+            available = {
+                has_government = authoritarian_democrat
+                has_country_flag = can_replace_hog
+                NOT = {has_country_flag = Zhang_Xueliang_dead}
+                NOT = {has_country_flag = Zhang_Xueliang_fired}
+                NOT = {has_country_flag = ministers_cannot_be_replaced}
+            }
+            traits = {head_of_government authoritarian_democrat hog_naive_optimist}
+            cancel_if_invalid = no
+        }
+
+		MAN_Local_Warlords_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Local_Warlords_hog"}
+            allowed = {original_tag = MAN }
+            available = {
+                has_government = paternal_autocrat
+                has_country_flag = can_replace_hog
+                NOT = {has_country_flag = Local_Warlords_dead}
+                NOT = {has_country_flag = Local_Warlords_fired}
+                NOT = {has_country_flag = ministers_cannot_be_replaced}
+            }
+            traits = {head_of_government paternal_autocrat hog_oligarchic_council}
+            cancel_if_invalid = no
+        }
+
+		MAN_Interim_Government_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Interim_Government_hog"}
+            allowed = {original_tag = MAN }
+            available = {
+                has_government = authoritarian_democrat
+                has_country_flag = can_replace_hog
+                NOT = {has_country_flag = Interim_Government_dead}
+                NOT = {has_country_flag = Interim_Government_fired}
+                NOT = {has_country_flag = ministers_cannot_be_replaced}
+            }
+            traits = {head_of_government authoritarian_democrat hog_oligarchic_council}
+            cancel_if_invalid = no
+        }
+
+		MAN_Tang_Hualong_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Tang_Hualong_hog"}
+            allowed = {original_tag = MAN }
+            available = {
+                has_government = social_democrat
+                has_country_flag = can_replace_hog
+                NOT = {has_country_flag = Tang_Hualong_dead}
+                NOT = {has_country_flag = Tang_Hualong_fired}
+                NOT = {has_country_flag = ministers_cannot_be_replaced}
+            }
+            traits = {head_of_government social_democrat hog_determined_populist}
+            cancel_if_invalid = no
+        }
+
+		MAN_Tang_Shaoyi_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Tang_Shaoyi_hog"}
+            allowed = {original_tag = MAN }
+            available = {
+                has_government = social_liberal
+                has_country_flag = can_replace_hog
+                NOT = {has_country_flag = Tang_Shaoyi_dead}
+                NOT = {has_country_flag = Tang_Shaoyi_fired}
+                NOT = {has_country_flag = ministers_cannot_be_replaced}
+            }
+            traits = {head_of_government social_liberal hog_pragmatic_statesman}
+            cancel_if_invalid = no
+        }
+
+		MAN_TV_Soong_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_TV_Soong_hog"}
+            allowed = {original_tag = MAN }
+            available = {
+                has_government = social_conservative
+                has_country_flag = can_replace_hog
+                NOT = {has_country_flag = TV_Soong_dead}
+                NOT = {has_country_flag = TV_Soong_fired}
+                NOT = {has_country_flag = ministers_cannot_be_replaced}
+            }
+            traits = {head_of_government social_conservative hog_old_compromiser}
+            cancel_if_invalid = no
+        }
+
+		MAN_Zhang_Zongchang_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Zhang_Zongchang_hog"}
+            allowed = {original_tag = MAN }
+            available = {
+                has_government = national_populist
+                has_country_flag = can_replace_hog
+                NOT = {has_country_flag = Zhang_Zongchang_dead}
+                NOT = {has_country_flag = Zhang_Zongchang_fired}
+                NOT = {has_country_flag = ministers_cannot_be_replaced}
+            }
+            traits = {head_of_government national_populist hog_local_tyrant}
+            cancel_if_invalid = no
+        }
+
+		MAN_Cao_Rulin_hog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Cao_Rulin_hog"}
+            allowed = {original_tag = MAN }
+            available = {
+                has_government = national_populist
+                has_country_flag = can_replace_hog
+                NOT = {has_country_flag = Cao_Rulin_dead}
+                NOT = {has_country_flag = Cao_Rulin_fired}
+                NOT = {has_country_flag = ministers_cannot_be_replaced}
+            }
+            traits = {head_of_government national_populist hog_backroom_backstabber}
+            cancel_if_invalid = no
+        }
+    }
+
+#### FOREIGN MINISTERS ####
+
+    foreign_minister = {
+		MAN_Ruan_Zhenduo_for = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Ruan_Zhenduo_for"}
+                allowed = {original_tag = MAN}
+                available = {
+										has_government = national_populist
+                    NOT = {has_country_flag = Ruan_Zhenduo_dead}
+                    NOT = {has_country_flag = Ruan_Zhenduo_fired}
+                    NOT = {has_country_flag = ministers_cannot_be_replaced}
+                    NOT = {has_country_flag = for_cannot_be_replaced}
+                }
+                traits = {foreign_minister national_populist for_general_staffer}
+                cancel_if_invalid = no
+            }
+
+		MAN_Yu_Zhishan_for = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Yu_Zhishan_for"}
+                allowed = {original_tag = MAN}
+                available = {
+										has_government = social_democrat
+                    NOT = {has_country_flag = Yu_Zhishan_dead}
+                    NOT = {has_country_flag = Yu_Zhishan_fired}
+                    NOT = {has_country_flag = ministers_cannot_be_replaced}
+                    NOT = {has_country_flag = for_cannot_be_replaced}
+                }
+                traits = {foreign_minister national_populist for_iron_fisted_brute}
+                cancel_if_invalid = no
+            }
+
+		MAN_Chang_Chun_for = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Chang_Chun_for"}
+                allowed = {original_tag = MAN}
+                available = {
+										has_government = market_liberal
+                    NOT = {has_country_flag = Chang_Chun_dead}
+                    NOT = {has_country_flag = Chang_Chun_fired}
+                    NOT = {has_country_flag = ministers_cannot_be_replaced}
+                    NOT = {has_country_flag = for_cannot_be_replaced}
+                }
+                traits = {foreign_minister authoritarian_democrat for_ideological_crusader}
+                cancel_if_invalid = no
+            }
+
+		MAN_Huang_Fu_for = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Huang_Fu_for"}
+                allowed = {original_tag = MAN}
+                available = {
+										has_government = social_liberal
+                    NOT = {has_country_flag = Huang_Fu_dead}
+                    NOT = {has_country_flag = Huang_Fu_fired}
+                    NOT = {has_country_flag = ministers_cannot_be_replaced}
+                    NOT = {has_country_flag = for_cannot_be_replaced}
+                }
+                traits = {foreign_minister authoritarian_democrat for_world_patrician}
+                cancel_if_invalid = no
+            }
+
+		MAN_Wu_Jinglian_for = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Wu_Jinglian_for"}
+                allowed = {original_tag = MAN}
+                available = {
+										has_government = paternal_autocrat
+                    NOT = {has_country_flag = Wu_Jinglian_dead}
+                    NOT = {has_country_flag = Wu_Jinglian_Leal_fired}
+                    NOT = {has_country_flag = ministers_cannot_be_replaced}
+                    NOT = {has_country_flag = for_cannot_be_replaced}
+                }
+                traits = {foreign_minister paternal_autocrat for_moderate_among_radicals}
+                cancel_if_invalid = no
+            }
+
+		MAN_Sun_Qichang_for = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Sun_Qichang_for"}
+                allowed = {original_tag = MAN}
+                available = {
+										has_government = social_conservative
+                    NOT = {has_country_flag = Sun_Qichang_dead}
+                    NOT = {has_country_flag = Sun_Qichang_fired}
+                    NOT = {has_country_flag = ministers_cannot_be_replaced}
+                    NOT = {has_country_flag = for_cannot_be_replaced}
+                }
+                traits = {foreign_minister social_conservative for_radical_among_moderates}
+                cancel_if_invalid = no
+            }
+
+		MAN_Wang_Yintai_for = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Wang_Yintai_for"}
+                allowed = {original_tag = MAN}
+                available = {
+										has_government = valkist
+                    NOT = {has_country_flag = Wang_Yintai_dead}
+                    NOT = {has_country_flag = Wang_Yintai_fired}
+                    NOT = {has_country_flag = ministers_cannot_be_replaced}
+                    NOT = {has_country_flag = for_cannot_be_replaced}
+                }
+                traits = {foreign_minister valkist for_relations_expert}
+                cancel_if_invalid = no
+            }
+        }
+
+#### ECONOMIC MINISTERS ####
+
+    economy_minister = {
+		MAN_Ruan_Zhenduo_eco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Ruan_Zhenduo_eco"}
+                    allowed = {original_tag = MAN}
+                    available = {
+												has_government = social_democrat
+                        NOT = {has_country_flag = Ruan_Zhenduo_dead}
+                        NOT = {has_country_flag = Ruan_Zhenduo_fired}
+                        NOT = {has_country_flag = ministers_cannot_be_replaced}
+                        NOT = {has_country_flag = eco_cannot_be_replaced}
+                    }
+                    traits = {economy_minister social_democrat eco_military_entrepreneur}
+                    cancel_if_invalid = no
+                }
+
+		MAN_Yu_Zhishan_eco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Yu_Zhishan_eco"}
+                    allowed = {original_tag = MAN}
+                    available = {
+												has_government = national_populist
+                        NOT = {has_country_flag = Yu_Zhishan_dead}
+                        NOT = {has_country_flag = Yu_Zhishan_fired}
+                        NOT = {has_country_flag = ministers_cannot_be_replaced}
+                        NOT = {has_country_flag = eco_cannot_be_replaced}
+                    }
+                    traits = {economy_minister national_populist eco_industrialiser}
+                    cancel_if_invalid = no
+                }
+
+		MAN_Li_Shaogeng_eco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Li_Shaogeng_eco"}
+                    allowed = {original_tag = MAN}
+                    available = {
+												has_government = social_conservative
+                        NOT = {has_country_flag = Li_Shaogeng_dead}
+                        NOT = {has_country_flag = Li_Shaogeng_fired}
+                        NOT = {has_country_flag = ministers_cannot_be_replaced}
+                        NOT = {has_country_flag = eco_cannot_be_replaced}
+                    }
+                    traits = {economy_minister social_conservative eco_railway_magnate}
+                    cancel_if_invalid = no
+                }
+
+		MAN_Lu_Ronghuan_eco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Lu_Ronghuan_eco"}
+                    allowed = {original_tag = MAN}
+                    available = {
+												has_government = national_populist
+                        NOT = {has_country_flag = Lu_Ronghuan_dead}
+                        NOT = {has_country_flag = Lu_Ronghuan_fired}
+                        NOT = {has_country_flag = ministers_cannot_be_replaced}
+                        NOT = {has_country_flag = eco_cannot_be_replaced}
+                    }
+                    traits = {economy_minister social_democrat eco_resource_industrialist}
+                    cancel_if_invalid = no
+                }
+
+		MAN_Chang_Chun_eco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Chang_Chun_eco"}
+                    allowed = {original_tag = MAN}
+                    available = {
+												has_government = authoritarian_democrat
+                        NOT = {has_country_flag = Chang_Chun_dead}
+                        NOT = {has_country_flag = Chang_Chun_fired}
+                        NOT = {has_country_flag = ministers_cannot_be_replaced}
+                        NOT = {has_country_flag = eco_cannot_be_replaced}
+                    }
+                    traits = {economy_minister authoritarian_democrat eco_keynesian_economy}
+                    cancel_if_invalid = no
+                }
+
+		MAN_Pan_Fu_eco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Pan_Fu_eco"}
+                    allowed = {original_tag = MAN}
+                    available = {
+												has_government = authoritarian_democrat
+                        NOT = {has_country_flag = Pan_Fu_dead}
+                        NOT = {has_country_flag = Pan_Fu_fired}
+                        NOT = {has_country_flag = ministers_cannot_be_replaced}
+                        NOT = {has_country_flag = eco_cannot_be_replaced}
+                    }
+                    traits = {economy_minister authoritarian_democrat eco_national_liberal}
+                    cancel_if_invalid = no
+                }
+
+		MAN_Y_C_James_Yen_eco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Y_C_James_Yen_eco"}
+                    allowed = {original_tag = MAN}
+                    available = {
+												has_government = social_liberal
+                        NOT = {has_country_flag = Y_C_James_Yen_dead}
+                        NOT = {has_country_flag = Y_C_James_Yen_fired}
+                        NOT = {has_country_flag = ministers_cannot_be_replaced}
+                        NOT = {has_country_flag = eco_cannot_be_replaced}
+                    }
+                    traits = {economy_minister social_liberal eco_balanced_budget_economy}
+                    cancel_if_invalid = no
+                }
+
+		MAN_Sun_Qichang_eco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Sun_Qichang_eco"}
+                    allowed = {original_tag = MAN}
+                    available = {
+												has_government = social_conservative
+                        NOT = {has_country_flag = Sun_Qichang_dead}
+                        NOT = {has_country_flag = Sun_Qichang_fired}
+                        NOT = {has_country_flag = ministers_cannot_be_replaced}
+                        NOT = {has_country_flag = eco_cannot_be_replaced}
+                    }
+                    traits = {economy_minister social_conservative eco_construction_magnate}
+                    cancel_if_invalid = no
+                }
+
+		MAN_Tang_Yulin_eco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Tang_Yulin_eco"}
+                    allowed = {original_tag = MAN}
+                    available = {
+												has_government = paternal_autocrat
+                        NOT = {has_country_flag = Tang_Yulin_dead}
+                        NOT = {has_country_flag = Tang_Yulin_fired}
+                        NOT = {has_country_flag = ministers_cannot_be_replaced}
+                        NOT = {has_country_flag = eco_cannot_be_replaced}
+                    }
+                    traits = {economy_minister paternal_autocrat eco_military_entrepreneur}
+                    cancel_if_invalid = no
+                }
+
+		MAN_Yuan_Jinkai_eco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Yuan_Jinkai_eco"}
+                    allowed = {original_tag = MAN}
+                    available = {
+												has_government = valkist
+                        NOT = {has_country_flag = Yuan_Jinkai_dead}
+                        NOT = {has_country_flag = Yuan_Jinkai_fired}
+                        NOT = {has_country_flag = ministers_cannot_be_replaced}
+                        NOT = {has_country_flag = eco_cannot_be_replaced}
+                    }
+                    traits = {economy_minister valkist eco_resource_industrialist}
+                    cancel_if_invalid = no
+                }
+        }
+
+#### SECURITY MINISTERS ####
+
+    security_minister = {
+		MAN_Ding_Jianxiu_sec = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Ding_Jianxiu_sec"}
+                    allowed = {original_tag = MAN}
+                    available = {
+												has_government = national_populist
+                        NOT = {has_country_flag = Ding_Jianxiu_dead}
+                        NOT = {has_country_flag = Ding_Jianxiu_fired}
+                        NOT = {has_country_flag = ministers_cannot_be_replaced}
+                        NOT = {has_country_flag = sec_cannot_be_replaced}
+                    }
+                    traits = {security_minister national_populist sec_driven_recruiter}
+                    cancel_if_invalid = no
+                }
+		MAN_Yang_Yuting_sec = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Yang_Yuting_sec"}
+		                    allowed = {original_tag = MAN}
+		                    available = {
+														has_government = authoritarian_democrat
+		                        NOT = {has_country_flag = Yang_Yuting_dead}
+		                        NOT = {has_country_flag = Yang_Yuting_fired}
+		                        NOT = {has_country_flag = ministers_cannot_be_replaced}
+		                        NOT = {has_country_flag = sec_cannot_be_replaced}
+		                    }
+		                    traits = {security_minister authoritarian_democrat sec_prince_of_terror}
+		                    cancel_if_invalid = no
+		                }
+
+		MAN_Cao_Rulin_sec = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Cao_Rulin_sec"}
+				                    allowed = {original_tag = MAN}
+				                    available = {
+																has_government = national_populist
+				                        NOT = {has_country_flag = Cao_Rulin_dead}
+				                        NOT = {has_country_flag = Cao_Rulin_fired}
+				                        NOT = {has_country_flag = ministers_cannot_be_replaced}
+				                        NOT = {has_country_flag = sec_cannot_be_replaced}
+				                    }
+				                    traits = {security_minister national_populist sec_compassionate_gentleman}
+				                    cancel_if_invalid = no
+				                }
+
+		MAN_Li_Shaogeng_sec = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Li_Shaogeng_sec"}
+						                    allowed = {original_tag = MAN}
+						                    available = {
+																		has_government = social_conservative
+						                        NOT = {has_country_flag = Li_Shaogeng_dead}
+						                        NOT = {has_country_flag = Li_Shaogeng_fired}
+						                        NOT = {has_country_flag = ministers_cannot_be_replaced}
+						                        NOT = {has_country_flag = sec_cannot_be_replaced}
+						                    }
+						                    traits = {security_minister social_conservative sec_silent_lawyer}
+						                    cancel_if_invalid = no
+						                }
+
+		MAN_Liang_Shiyi_sec = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Liang_Shiyi_sec"}
+								                    allowed = {original_tag = MAN}
+								                    available = {
+																				has_government = social_conservative
+								                        NOT = {has_country_flag = Liang_Shiyi_dead}
+								                        NOT = {has_country_flag = Liang_Shiyi_fired}
+								                        NOT = {has_country_flag = ministers_cannot_be_replaced}
+								                        NOT = {has_country_flag = sec_cannot_be_replaced}
+								                    }
+								                    traits = {security_minister social_conservative sec_secret_police_chief}
+								                    cancel_if_invalid = no
+								                }
+
+		MAN_Y_C_James_Yen_sec = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Y_C_James_Yen_sec"}
+										                    allowed = {original_tag = MAN}
+										                    available = {
+																						has_government = social_liberal
+										                        NOT = {has_country_flag = Guadalupe_Sanchez_dead}
+										                        NOT = {has_country_flag = Guadalupe_Sanchez_fired}
+										                        NOT = {has_country_flag = ministers_cannot_be_replaced}
+										                        NOT = {has_country_flag = sec_cannot_be_replaced}
+										                    }
+										                    traits = {security_minister social_liberal sec_crooked_kleptocrat}
+										                    cancel_if_invalid = no
+										                }
+
+		MAN_Ma_Zhanshan_sec = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Ma_Zhanshan_sec"}
+												                    allowed = {original_tag = MAN}
+												                    available = {
+																								has_government = social_democrat
+												                        NOT = {has_country_flag = Ma_Zhanshan_dead}
+												                        NOT = {has_country_flag = Ma_Zhanshan_fired}
+												                        NOT = {has_country_flag = ministers_cannot_be_replaced}
+												                        NOT = {has_country_flag = sec_cannot_be_replaced}
+												                    }
+												                    traits = {security_minister social_democrat sec_crime_fighter}
+												                    cancel_if_invalid = no
+												                }
+
+		MAN_Tang_Yulin_sec = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Tang_Yulin_sec"}
+														                    allowed = {original_tag = MAN}
+														                    available = {
+																										has_government = paternal_autocrat
+														                        NOT = {has_country_flag = Tang_Yulin_dead}
+														                        NOT = {has_country_flag = Tang_Yulin_fired}
+														                        NOT = {has_country_flag = ministers_cannot_be_replaced}
+														                        NOT = {has_country_flag = sec_cannot_be_replaced}
+														                    }
+														                    traits = {security_minister paternal_autocrat sec_man_of_the_people}
+														                    cancel_if_invalid = no
+														                }
+
+		MAN_Yuan_Jinkai_sec = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Yuan_Jinkai_sec"}
+																                    allowed = {original_tag = MAN}
+																                    available = {
+																												has_government = authoritarian_democrat
+																                        NOT = {has_country_flag = Yuan_Jinkai_dead}
+																                        NOT = {has_country_flag = Yuan_Jinkai_fired}
+																                        NOT = {has_country_flag = ministers_cannot_be_replaced}
+																                        NOT = {has_country_flag = sec_cannot_be_replaced}
+																                    }
+																                    traits = {security_minister authoritarian_democrat sec_secret_police_chief}
+																                    cancel_if_invalid = no
+																                }
+}
+
+#### INTEL MINISTERS ####
+
+
+
+    head_of_intel = {
+
+		MAN_Bao_Wenyue_int = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Bao_Wenyue_int"}
+                    allowed = {original_tag = MAN}
+                    available = {
+												has_government = national_populist
+                        #NOT = {has_country_flag = Bao_Wenyue_dead}
+                        #NOT = {has_country_flag = Bao_Wenyue_fired}
+                        NOT = {has_country_flag = ministers_cannot_be_replaced}
+                        NOT = {has_country_flag = int_cannot_be_replaced}
+                    }
+                    traits = {head_of_intel national_populist int_political_specialist}
+                    cancel_if_invalid = no
+                }
+		MAN_Ding_Jianxiu_int = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Ding_Jianxiu_int"}
+												allowed = {original_tag = MAN}
+												available = {
+														has_government = market_liberal
+														#NOT = {has_country_flag = Ding_Jianxiu_dead}
+														#NOT = {has_country_flag = Ding_Jianxiu_fired}
+														NOT = {has_country_flag = ministers_cannot_be_replaced}
+														NOT = {has_country_flag = int_cannot_be_replaced}
+												}
+												traits = {head_of_intel market_liberal int_political_specialist}
+												cancel_if_invalid = no
+										}
+
+		MAN_Lu_Ronghuan_int = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Lu_Ronghuan_int"}
+				                    allowed = {original_tag = MAN}
+				                    available = {
+																has_government = social_democrat
+				                        NOT = {has_country_flag = Lu_Ronghuan_dead}
+				                        NOT = {has_country_flag = Lu_Ronghuan_fired}
+				                        NOT = {has_country_flag = ministers_cannot_be_replaced}
+				                        NOT = {has_country_flag = int_cannot_be_replaced}
+				                    }
+				                    traits = {head_of_intel social_democrat int_political_specialist}
+				                    cancel_if_invalid = no
+				                }
+
+		MAN_Mo_Dehui_int = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Mo_Dehui_int"}
+                                allowed = {original_tag = MAN}
+                                available = {
+                                    has_government = social_conservative
+                                    NOT = {has_country_flag = Mo_Dehui_dead}
+                                    NOT = {has_country_flag = Mo_Dehui_fired}
+                                    NOT = {has_country_flag = ministers_cannot_be_replaced}
+                                    NOT = {has_country_flag = int_cannot_be_replaced}
+                                }
+                                traits = {head_of_intel social_conservative int_political_specialist}
+                                cancel_if_invalid = no
+                            }
+
+		MAN_Wu_Jinglian_int = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Wu_Jinglian_int"}
+        				                    allowed = {original_tag = MAN}
+        				                    available = {
+        																has_government = authoritarian_democrat
+        				                        NOT = {has_country_flag = Wu_Jinglian_dead}
+        				                        NOT = {has_country_flag = Wu_Jinglian_fired}
+        				                        NOT = {has_country_flag = ministers_cannot_be_replaced}
+        				                        NOT = {has_country_flag = int_cannot_be_replaced}
+        				                    }
+        				                    traits = {head_of_intel authoritarian_democrat int_political_specialist}
+        				                    cancel_if_invalid = no
+        				                }
+
+		MAN_Tang_Yulin_int = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Tang_Yulin_int"}
+            				                    allowed = {original_tag = MAN}
+            				                    available = {
+            																has_government = paternal_autocrat
+            				                        NOT = {has_country_flag = Tang_Yulin_dead}
+            				                        NOT = {has_country_flag = Tang_Yulin_fired}
+            				                        NOT = {has_country_flag = ministers_cannot_be_replaced}
+            				                        NOT = {has_country_flag = int_cannot_be_replaced}
+            				                    }
+            				                    traits = {head_of_intel paternal_autocrat int_political_specialist}
+            				                    cancel_if_invalid = no
+            				                }
+
+		MAN_Zang_Shiyi_int = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_Zang_Shiyi_int"}
+                				                    allowed = {original_tag = MAN}
+                				                    available = {
+                																has_government = social_liberal
+                				                        NOT = {has_country_flag = Zang_Shiyi_dead}
+                				                        NOT = {has_country_flag = Zang_Shiyi_fired}
+                				                        NOT = {has_country_flag = ministers_cannot_be_replaced}
+                				                        NOT = {has_country_flag = int_cannot_be_replaced}
+                				                    }
+                				                    traits = {head_of_intel paternal_autocrat int_political_specialist}
+                				                    cancel_if_invalid = no
+                				                }
+}

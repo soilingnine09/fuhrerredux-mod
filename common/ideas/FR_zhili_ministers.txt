@@ -1,0 +1,532 @@
+ideas = {
+	
+	##Zhili Clique Ministers##
+
+
+	##Head of Government
+	head_of_government = {
+		ZHI_Wu_Peifu_hog = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_Wu_Peifu_hog"}
+            allowed = {original_tag = ZHI}
+            available = {
+				OR = {
+					has_government = national_populist
+					has_government = paternal_autocrat
+					has_government = valkist
+					has_government = authoritarian_democrat
+				}
+                has_country_flag = can_replace_hog
+                NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = Wu_Peifu_dead}
+				NOT = {has_country_flag = Wu_Peifu_hog_fired}
+            }
+            traits = { head_of_government paternal_autocrat hog_philosopher_general }
+            cancel_if_invalid = no
+        }
+		ZHI_Sun_Chuanfang_hog = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_Sun_Chuanfang_hog"}
+            allowed = {original_tag = ZHI}
+            available = {
+				OR = {
+					has_government = national_populist
+					has_government = paternal_autocrat
+					has_government = valkist
+					has_government = authoritarian_democrat
+				}
+                has_country_flag = can_replace_hog
+                NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = Sun_Chuanfang_dead}
+				NOT = {has_country_flag = Sun_Chuanfang_hog_fired}
+            }
+            traits = { head_of_government paternal_autocrat hog_ruthless_warlord }
+            cancel_if_invalid = no
+        }
+		ZHI_Cao_Kun_hog = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_Cao_Kun_hog"}
+            allowed = {original_tag = ZHI}
+            available = {
+				OR = {
+					has_government = national_populist
+					has_government = paternal_autocrat
+					has_government = authoritarian_democrat
+					has_government = social_conservative
+				}
+                has_country_flag = can_replace_hog
+                NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = Cao_Kun_dead}
+				NOT = {has_country_flag = Cao_Kun_cos_fired}
+            }
+            traits = { head_of_government authoritarian_democrat hog_democratic_tyrant }
+            cancel_if_invalid = no
+        }
+		ZHI_Dong_Biwu_hog = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_Dong_Biwu_hog"}
+            allowed = {original_tag = ZHI}
+            available = {
+			OR = {
+				has_government = libertarian_socialist
+				has_government = vanguardist
+				has_government = collectivist
+			}
+                has_country_flag = can_replace_hog
+                NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = Dong_Biwu_dead}
+				NOT = {has_country_flag = Dong_Biwu_cos_fired}
+            }
+            traits = { head_of_government collectivist hog_privileged_socialist }
+            cancel_if_invalid = no
+        }
+		ZHI_Ku_Wei_Chun_hog = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_Ku_Wei_Chun_hog"}
+            allowed = {original_tag = ZHI}
+            available = {
+			OR = {
+				has_government = social_conservative
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+			}
+                has_country_flag = can_replace_hog
+                NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = Ku_Wei_Chun_dead}
+				NOT = {has_country_flag = Ku_Wei_Chun_cos_fired}
+            }
+            traits = { head_of_government market_liberal hog_sincere_internationalist }
+            cancel_if_invalid = no
+        }
+		ZHI_Yan_Huiqing_hog = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_Yan_Huiqing_hog"}
+            allowed = {original_tag = ZHI}
+            available = {
+			OR = {
+				has_government = authoritarian_democrat
+				has_government = social_conservative
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+			}
+                has_country_flag = can_replace_hog
+                NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = Yan_Huiqing_dead}
+				NOT = {has_country_flag = Yan_Huiqing_cos_fired}
+            }
+            traits = { head_of_government social_conservative hog_accomplished_diplomat }
+            cancel_if_invalid = no
+        }
+    }
+	##Foreign Minister
+	foreign_minister = { ### Foreign Minister ###
+		ZHI_Hu_Weide_for = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_Hu_Weide_for"}
+			allowed = {original_tag = ZHI}
+			available = {
+				OR = {
+					has_government = national_populist
+					has_government = paternal_autocrat
+					has_government = valkist
+					has_government = authoritarian_democrat
+				}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+				NOT = {has_country_flag = Hu_Weide_dead}
+				NOT = {has_country_flag = Hu_Weide_cos_fired}
+			}
+			traits = {foreign_minister paternal_autocrat for_relations_expert}
+			cancel_if_invalid = no
+		}
+		ZHI_Hu_Shih_for = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_Hu_Shih_for"}
+			allowed = {original_tag = ZHI}
+			available = {
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+				NOT = {has_country_flag = Hu_Shih_dead}
+				NOT = {has_country_flag = Hu_Shih_cos_fired}
+			}
+			traits = {foreign_minister market_liberal for_great_compromiser}
+			cancel_if_invalid = no
+		}
+		ZHI_Ku_Wei_Chun_for = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_Ku_Wei_Chun_for"}
+			allowed = {original_tag = ZHI}
+			available = {
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+				NOT = {has_country_flag = Ku_Wei_Chun_dead}
+				NOT = {has_country_flag = Ku_Wei_Chun_for_fired}
+			}
+			traits = {foreign_minister market_liberal for_foreign_sympathizer}
+			cancel_if_invalid = no
+		}
+		ZHI_Deng_Xihou_for = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_Deng_Xihou_for"}
+			allowed = {original_tag = ZHI}
+			available = {
+				OR = {
+					has_government = national_populist
+					has_government = paternal_autocrat
+					has_government = valkist
+					has_government = authoritarian_democrat
+				}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = for_cannot_be_replaced}
+				NOT = {has_country_flag = Deng_Xihou_dead}
+				NOT = {has_country_flag = Deng_Xihou_cos_fired}
+			}
+			traits = {foreign_minister paternal_autocrat for_iron_fisted_brute}
+			cancel_if_invalid = no
+		}
+	}
+	##Economic Ministers
+	economy_minister = {
+		ZHI_Wang_Kemin_eco = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_Wang_Kemin_eco"}
+			allowed = {original_tag = ZHI}
+			available = {
+				OR = {
+					has_government = national_populist
+					has_government = paternal_autocrat
+					has_government = valkist
+					has_government = authoritarian_democrat
+				}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = eco_cannot_be_replaced}
+				NOT = {has_country_flag = Wang_Kemin_dead}
+				NOT = {has_country_flag = Wang_Kemin_cos_fired}
+			}
+			traits = {economy_minister paternal_autocrat eco_bank_president}
+			cancel_if_invalid = no
+		}
+		ZHI_Tang_Erho_eco = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_Tang_Erho_eco"}
+			allowed = {original_tag = ZHI}
+			available = {
+				OR = {
+					has_government = national_populist
+					has_government = paternal_autocrat
+					has_government = authoritarian_democrat
+					has_government = social_conservative
+				}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = eco_cannot_be_replaced}
+				NOT = {has_country_flag = Tang_Erho_dead}
+				NOT = {has_country_flag = Tang_Erho_cos_fired}
+			}
+			traits = {economy_minister authoritarian_democrat eco_mixed_economy}
+			cancel_if_invalid = no
+		}
+		ZHI_Gao_Lingwei_eco = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_Gao_Lingwei_eco"}
+			allowed = {original_tag = ZHI}
+			available = {
+				OR = {
+					has_government = national_populist
+					has_government = paternal_autocrat
+					has_government = authoritarian_democrat
+					has_government = social_conservative
+				}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = sec_cannot_be_replaced}
+				NOT = {has_country_flag = Gao_Lingwei_dead}
+				NOT = {has_country_flag = Gao_Lingwei_cos_fired}
+			}
+			traits = {security_minister authoritarian_democrat eco_industrialiser}
+			cancel_if_invalid = no
+		}
+	}
+	## Security Ministers
+	security_minister = { 
+		ZHI_Wang_Yitang_sec = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_Wang_Yitang_sec"}
+			allowed = {original_tag = ZHI}
+			available = {
+				OR = {
+					has_government = national_populist
+					has_government = paternal_autocrat
+					has_government = valkist
+					has_government = authoritarian_democrat
+				}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = sec_cannot_be_replaced}
+				NOT = {has_country_flag = Wang_Yitang_dead}
+				NOT = {has_country_flag = Wang_Yitang_cos_fired}
+			}
+			traits = {security_minister paternal_autocrat sec_driven_recruiter}
+			cancel_if_invalid = no
+		}
+		ZHI_Wen_Shizhen_sec = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_Wen_Shizhen_sec"}
+			allowed = {original_tag = ZHI}
+			available = {
+				OR = {
+					has_government = national_populist
+					has_government = paternal_autocrat
+					has_government = authoritarian_democrat
+					has_government = social_conservative
+				}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = sec_cannot_be_replaced}
+				NOT = {has_country_flag = Wen_Shizhen_dead}
+				NOT = {has_country_flag = Wen_Shizhen_cos_fired}
+			}
+			traits = {security_minister authoritarian_democrat sec_great_soul}
+			cancel_if_invalid = no
+		}
+		ZHI_Pan_Juying_sec = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_Pan_Juying_sec"}
+			allowed = {original_tag = ZHI}
+			available = {
+				OR = {
+					has_government = national_populist
+					has_government = paternal_autocrat
+					has_government = valkist
+					has_government = authoritarian_democrat
+				}
+				NOT = {has_country_flag = ministers_cannot_be_replaced}
+				NOT = {has_country_flag = sec_cannot_be_replaced}
+				NOT = {has_country_flag = Pan_Juying_dead}
+				NOT = {has_country_flag = Pan_Juying_sec_fired}
+			}
+			traits = {security_minister paternal_autocrat sec_preserver_of_culture}
+			cancel_if_invalid = no
+		}
+		ZHI_Long_Yun_sec = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_Long_Yun_sec"}
+			allowed = {original_tag = ZHI}
+			available = {
+				OR = {
+					has_government = national_populist
+					has_government = paternal_autocrat
+					has_government = valkist
+					has_government = authoritarian_democrat
+				}
+				NOT = {has_country_flag = Long_Yun_dead}
+				NOT = {has_country_flag = Long_Yun_cos_fired}
+			}
+			traits = {security_minister paternal_autocrat sec_prince_of_terror}
+			cancel_if_invalid = no
+		}
+	}
+	## Intelligence Ministers
+	head_of_intel = { 
+		ZHI_Zhang_Wensheng_int = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_Zhang_Wensheng_int"}
+			allowed = {original_tag = ZHI}
+			available = {
+				OR = {
+					has_government = national_populist
+					has_government = paternal_autocrat
+					has_government = valkist
+					has_government = authoritarian_democrat
+				}
+				NOT = {has_country_flag = Zhang_Wensheng_dead}
+				NOT = {has_country_flag = Zhang_Wensheng_int_fired}
+			}
+			traits = {head_of_intel paternal_autocrat int_logistics_specialist}
+			cancel_if_invalid = no
+		}
+		ZHI_Bao_Bingchen_int = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_Bao_Bingchen_int"}
+			allowed = {original_tag = ZHI}
+			available = {
+				OR = {
+					has_government = national_populist
+					has_government = paternal_autocrat
+					has_government = valkist
+					has_government = authoritarian_democrat
+				}
+				NOT = {has_country_flag = Bao_Bingchen_dead}
+				NOT = {has_country_flag = Bao_Bingchen_cos_fired}
+			}
+			traits = {head_of_intel paternal_autocrat int_dismal_enigma}
+			cancel_if_invalid = no
+		}
+		ZHI_Ding_Zhipan_int = {#Auto-Generated
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_Ding_Zhipan_int"}
+			allowed = {original_tag = ZHI}
+			available = {
+				OR = {
+					has_government = national_populist
+					has_government = paternal_autocrat
+					has_government = authoritarian_democrat
+					has_government = social_conservative
+				}
+				NOT = {has_country_flag = Ding_Zhipan_dead}
+				NOT = {has_country_flag = Ding_Zhipan_cos_fired}
+			}
+			traits = {head_of_intel authoritarian_democrat int_political_specialist}
+			cancel_if_invalid = no
+		}
+	}
+
+	## Military High Command
+	chief_of_staff = {
+		ZHI_Wu_Peifu_cos = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_Wu_Peifu_cos"}
+			allowed = { original_tag = ZHI }
+			available = {
+				OR = {
+					has_government = national_populist
+					has_government = paternal_autocrat
+					has_government = valkist
+					has_government = authoritarian_democrat
+				}
+				NOT = {has_country_flag = Wu_Peifu_dead}
+				NOT = {has_country_flag = Wu_Peifu_cos_fired}
+			}
+			traits = { cos_school_of_psychology }
+			cancel_if_invalid = no
+		}
+		ZHI_Sun_Chuanfang_cos = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_Sun_Chuanfang_cos"}
+			allowed = { original_tag = ZHI }
+			available = {
+				OR = {
+					has_government = national_populist
+					has_government = paternal_autocrat
+					has_government = valkist
+					has_government = authoritarian_democrat
+				}
+				NOT = {has_country_flag = Sun_Chuanfang_dead}
+				NOT = {has_country_flag = Sun_Chuanfang_cos_fired}
+			}
+			traits = { cos_school_of_fire_support }
+			cancel_if_invalid = no
+		}
+		ZHI_Wang_Chengbing_cos = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_Wang_Chengbing_cos"}
+			allowed = { original_tag = ZHI }
+			available = {
+				OR = {
+					has_government = national_populist
+					has_government = paternal_autocrat
+					has_government = valkist
+					has_government = authoritarian_democrat
+				}
+				NOT = {has_country_flag = Wang_Chengbing_dead}
+				NOT = {has_country_flag = Wang_Chengbing_cos_fired}
+			}
+			traits = { cos_school_of_defence }
+			cancel_if_invalid = no
+		}
+	}
+	## Chief of Army
+	chief_of_army = {
+		ZHI_Zhang_Tinge_carm = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_Zhang_Tinge_carm"}
+			allowed = { original_tag = ZHI }
+			available = {
+				OR = {
+					has_government = national_populist
+					has_government = paternal_autocrat
+					has_government = valkist
+					has_government = authoritarian_democrat
+				}
+				NOT = {has_country_flag = Zhang_Tinge_dead}
+				NOT = {has_country_flag = Zhang_Tinge_carm_fired}
+			}
+			traits = { carm_decisive_battle_doctrine }
+			cancel_if_invalid = no
+		}
+		ZHI_Xiao_Yaonan_carm = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_Xiao_Yaonan_carm"}
+			allowed = { original_tag = ZHI }
+			available = {
+				OR = {
+					has_government = national_populist
+					has_government = paternal_autocrat
+					has_government = authoritarian_democrat
+					has_government = social_conservative
+				}
+				NOT = {has_country_flag = Xiao_Yaonan_dead}
+				NOT = {has_country_flag = Xiao_Yaonan_carm_fired}
+			}
+			traits = { carm_elastic_defence_doctrine }
+			cancel_if_invalid = no
+		}
+		ZHI_Zhang_Shaozeng_carm = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_Zhang_Shaozeng_carm"}
+			allowed = { original_tag = ZHI }
+			available = {
+				OR = {
+					has_government = national_populist
+					has_government = paternal_autocrat
+					has_government = authoritarian_democrat
+					has_government = social_conservative
+				}
+				NOT = {has_country_flag = Zhang_Shaozeng_dead}
+				NOT = {has_country_flag = Zhang_Shaozeng_carm_fired}
+			}
+			traits = { carm_guns_and_butter_doctrine }
+			cancel_if_invalid = no
+		}
+		ZHI_Lu_Jin_carm = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_Lu_Jin_carm"}
+			allowed = { original_tag = ZHI }
+			available = {
+				OR = {
+					has_government = national_populist
+					has_government = paternal_autocrat
+					has_government = valkist
+					has_government = authoritarian_democrat
+				}
+				NOT = {has_country_flag = Lu_Jin_dead}
+				NOT = {has_country_flag = Lu_Jin_carm_fired}
+			}
+			traits = { carm_static_defence_doctrine }
+			cancel_if_invalid = no
+		}
+		ZHI_Cai_Chengxun_carm = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_Cai_Chengxun_carm"}
+			allowed = { original_tag = ZHI }
+			available = {
+				OR = {
+					has_government = authoritarian_democrat
+					has_government = social_conservative
+					has_government = market_liberal
+					has_government = social_liberal
+					has_government = social_democrat
+				}
+				NOT = {has_country_flag = Cai_Chengxun_dead}
+				NOT = {has_country_flag = Cai_Chengxun_carm_fired}
+			}
+			traits = { carm_doctrine_of_autonomy }
+			cancel_if_invalid = no
+		}
+		ZHI_Jiang_Yanxing_carm = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_Jiang_Yanxing_carm"}
+			allowed = { original_tag = ZHI }
+			available = {
+				OR = {
+					has_government = national_populist
+					has_government = paternal_autocrat
+					has_government = valkist
+					has_government = authoritarian_democrat
+				}
+				NOT = {has_country_flag = Jiang_Yanxing_dead}
+				NOT = {has_country_flag = Jiang_Yanxing_carm_fired}
+			}
+			traits = { carm_guns_and_butter_doctrine }
+			cancel_if_invalid = no
+		}
+	}
+	## Chief of Navy
+	chief_of_navy = {
+		ZHI_Du_Xigui_cnav = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_Du_Xigui_cnav"}
+			allowed = { original_tag = ZHI }
+			available = {
+				OR = {
+					has_government = national_populist
+					has_government = paternal_autocrat
+					has_government = valkist
+					has_government = authoritarian_democrat
+				}
+				NOT = {has_country_flag = Du_Xigui_dead}
+				NOT = {has_country_flag = Du_Xigui_cnav_fired}
+			}
+			traits = { cnav_open_seas_doctrine }
+			cancel_if_invalid = no
+		}
+	}
+}

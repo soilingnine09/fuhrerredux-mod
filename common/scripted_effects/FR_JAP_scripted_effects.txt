@@ -1,0 +1,192 @@
+JAP_interservice_rivalry_towards_army = {
+	
+	if = {
+		limit = { has_idea = JAP_interservice_rivalry_army_bolstered }
+		swap_ideas = {
+			remove_idea = JAP_interservice_rivalry_army_bolstered
+			add_idea = JAP_interservice_rivalry_army_dominant
+		}
+	}
+
+	if = {
+		limit = { has_idea = JAP_interservice_rivalry_army_strengthened }
+		swap_ideas = {
+			remove_idea = JAP_interservice_rivalry_army_strengthened
+			add_idea = JAP_interservice_rivalry_army_bolstered
+		}
+	}
+
+	if = {
+		limit = { has_idea = JAP_interservice_rivalry_army_strengthened }
+		swap_ideas = {
+			remove_idea = JAP_interservice_rivalry_army_strengthened
+			add_idea = JAP_interservice_rivalry_army_bolstered
+		}
+	}
+
+	if = {
+		limit = { has_idea = JAP_interservice_rivalry_army_preferred }
+		swap_ideas = {
+			remove_idea = JAP_interservice_rivalry_army_preferred
+			add_idea = JAP_interservice_rivalry_army_strengthened
+		}
+	}
+
+	if = {
+		limit = { has_idea = JAP_interservice_rivalry_balanced }
+		swap_ideas = {
+			remove_idea = JAP_interservice_rivalry_balanced
+			add_idea = JAP_interservice_rivalry_army_preferred
+		}
+	}
+
+	if = {
+		limit = { has_idea = JAP_interservice_rivalry_navy_preferred }
+		swap_ideas = {
+			remove_idea = JAP_interservice_rivalry_navy_preferred
+			add_idea = JAP_interservice_rivalry_balanced
+		}
+	}
+
+	if = {
+		limit = { has_idea = JAP_interservice_rivalry_navy_strengthened }
+		swap_ideas = {
+			remove_idea = JAP_interservice_rivalry_navy_strengthened
+			add_idea = JAP_interservice_rivalry_navy_preferred
+		}
+	}
+
+	if = {
+		limit = { has_idea = JAP_interservice_rivalry_navy_bolstered }
+		swap_ideas = {
+			remove_idea = JAP_interservice_rivalry_navy_bolstered
+			add_idea = JAP_interservice_rivalry_navy_strengthened
+		}
+	}
+
+	
+
+	if = {
+		limit = { has_idea = JAP_interservice_rivalry_navy_dominant }
+		swap_ideas = {
+			remove_idea = JAP_interservice_rivalry_navy_dominant
+			add_idea = JAP_interservice_rivalry_navy_bolstered
+		}
+	}
+
+}
+
+JAP_interservice_rivalry_towards_navy = {
+
+	if = {
+		limit = { has_idea = JAP_interservice_rivalry_navy_bolstered }
+		swap_ideas = {
+			remove_idea = JAP_interservice_rivalry_navy_bolstered
+			add_idea = JAP_interservice_rivalry_navy_dominant
+		}
+	}
+
+	if = {
+		limit = { has_idea = JAP_interservice_rivalry_navy_strengthened }
+		swap_ideas = {
+			remove_idea = JAP_interservice_rivalry_navy_strengthened
+			add_idea = JAP_interservice_rivalry_navy_bolstered
+		}
+	}	
+
+	if = {
+		limit = { has_idea = JAP_interservice_rivalry_navy_preferred }
+		swap_ideas = {
+			remove_idea = JAP_interservice_rivalry_navy_strengthened
+			add_idea = JAP_interservice_rivalry_navy_preferred
+		}
+	}
+
+	if = {
+		limit = { has_idea = JAP_interservice_rivalry_balanced }
+		swap_ideas = {
+			remove_idea = JAP_interservice_rivalry_balanced
+			add_idea = JAP_interservice_rivalry_navy_preferred
+		}
+	}
+
+	if = {
+		limit = { has_idea = JAP_interservice_rivalry_army_preferred }
+		swap_ideas = {
+			remove_idea = JAP_interservice_rivalry_army_preferred
+			add_idea = JAP_interservice_rivalry_balanced
+		}
+	}
+
+
+	if = {
+		limit = { has_idea = JAP_interservice_rivalry_army_strengthened }
+		swap_ideas = {
+			remove_idea = JAP_interservice_rivalry_army_strengthened
+			add_idea = JAP_interservice_rivalry_army_preferred
+		}
+	}
+
+	if = {
+		limit = { has_idea = JAP_interservice_rivalry_army_bolstered }
+		swap_ideas = {
+			remove_idea = JAP_interservice_rivalry_army_bolstered
+			add_idea = JAP_interservice_rivalry_army_strengthened
+		}
+	}
+
+	if = {
+		limit = { has_idea = JAP_interservice_rivalry_army_dominant }
+		swap_ideas = {
+			remove_idea = JAP_interservice_rivalry_army_dominant
+			add_idea = JAP_interservice_rivalry_army_bolstered
+		}
+	}
+}
+
+JAP_LSMC_step_towards_recovery = {
+	if = {
+		limit = { has_idea = JAP_LSMC_stage5_rec }
+		remove_ideas = JAP_LSMC_stage5_rec
+	}
+	
+	if = {
+		limit = { has_idea = JAP_LSMC_stage4_rec }
+		swap_ideas = {
+			remove_idea = JAP_LSMC_stage4_rec
+			add_idea = JAP_LSMC_stage5_rec
+		}
+	}	
+
+	if = {
+		limit = { has_idea = JAP_LSMC_stage3_rec }
+		swap_ideas = {
+			remove_idea = JAP_LSMC_stage3_rec
+			add_idea = JAP_LSMC_stage4_rec
+		}
+	}
+	
+	if = {
+		limit = { has_idea = JAP_LSMC_stage2_rec }
+		swap_ideas = {
+			remove_idea = JAP_LSMC_stage2_rec
+			add_idea = JAP_LSMC_stage3_rec
+		}
+	}	
+
+	if = {
+		limit = { has_idea = JAP_LSMC_stage1_rec }
+		swap_ideas = {
+			remove_idea = JAP_LSMC_stage1_rec
+			add_idea = JAP_LSMC_stage2_rec
+		}
+	}
+	
+	if = {
+		limit = { has_idea = JAP_LSMC_complete }
+		swap_ideas = {
+			remove_idea = JAP_LSMC_complete
+			add_idea = JAP_LSMC_stage1_rec
+		}
+	}	
+}

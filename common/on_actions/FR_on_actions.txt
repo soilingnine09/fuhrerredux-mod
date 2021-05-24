@@ -1,0 +1,805 @@
+on_actions = {
+	 on_startup = {
+		 effect = {
+			# every_country = {
+				# limit = {
+					# exists = yes
+					# is_ai = no
+				# }
+				# country_event = { hours = 1 id = intro.1 }
+			# }
+			# random_country = {
+				# limit = {
+					# exists = yes
+				# }
+				# set_country_flag = statistics_1
+				# country_event = statistics.1
+		   # }
+			SOV = {
+				set_variable = { var = collectivization value = 2 }
+				clamp_variable = {
+					var = collectivization
+					min = 0
+					max = 100
+				}
+				SOV_set_collectivization_var = yes
+				add_offsite_building = { type = collectivization_idea level = collectivization }
+		   }
+			random_country = {
+				limit = {
+					exists = yes
+				}
+				country_event = gov.0
+		   }
+		}
+<<<<<<< Updated upstream
+	 }
+
+=======
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					any_of = {
+						array = CHI.core_states
+						NOT = { is_controlled_by = MAN }
+					}
+				}
+				for_each_scope_loop = {
+					array = CHI.core_states
+					if = {
+						limit = { MAN = { exists = yes } }
+						MAN = { 
+							remove_state_core = PREV 
+							add_state_claim = PREV 
+						}
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					any_of = {
+						array = CHI.core_states
+						NOT = { is_controlled_by = CHI }
+					}
+				}
+				for_each_scope_loop = {
+					array = CHI.core_states
+					if = {
+						limit = { CHI = { exists = yes } }
+						CHI = { 
+							remove_state_core = PREV 
+							add_state_claim = PREV 
+						}
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = SIK
+						is_core_of = MON
+						is_core_of = TIB
+					}
+					NOT = {
+						is_claimed_by = CHI
+						is_claimed_by = MAN
+					}
+				}
+				add_to_array = {
+					array = ROOT.CHI_claim_province
+				}
+				for_each_scope_loop = {
+					array = ROOT.CHI_claim_province
+					if = {
+						limit = { CHI = { exists = yes } }
+						CHI = { 
+							add_state_claim = PREV 
+						}
+					}
+					if = {
+						limit = { MAN = { exists = yes } }
+						MAN = { 
+							add_state_claim = PREV 
+						}
+					}
+				}
+			}
+			clear_array = ROOT.CHI_claim_province
+		}
+	}
+>>>>>>> Stashed changes
+	on_startup = {
+	    effect = {
+
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = unit_limit_options
+						option = AI_ONLY
+					}
+				}
+				set_global_flag = KR_unit_limits_ai_only
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = unit_limit_options
+						option = NONE
+					}
+				}
+				set_global_flag = KR_no_unit_limits
+			} 
+
+	    	every_country = {
+	        	limit = {
+	        		exists = yes
+	         		is_ai = no
+	        	}
+	        country_event = { hours = 1 id = intro.1 }
+	      	}
+	    }
+	}
+	
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					exists = yes
+				}
+				# unit limit calculations
+				calculate_actual_division_number = yes
+				calculate_maximum_divisions = yes
+			}
+			
+			#UI Setup
+			every_country = {
+				limit = {
+					exists = yes
+					is_ai = no
+				}
+				set_country_flag = show_intro_gui
+			}		
+		}
+	}	
+
+	on_weekly = {
+		effect = {
+			# unit limit calculations
+			if = {
+				limit = {
+					NOT = { has_global_flag = KR_no_unit_limits }
+				}
+				calculate_actual_division_number = yes
+				calculate_maximum_divisions = yes
+				if = {
+					limit = { is_faction_leader = yes }
+					country_event = kr.political.211
+					for_each_scope_loop = {
+						array = faction_members
+						country_event = kr.political.210
+					}
+				}
+				country_event = kr.political.122
+			}
+
+			# update intelligence agency AI
+			if = {
+				limit = {
+					has_intelligence_agency = yes
+					is_ai = yes
+				}
+				update_operation_ai = yes
+			}
+		}
+	}
+	
+    on_startup = {
+        effect = {
+            #Begin on_weekly event cycle
+            every_country = {
+				SP_NS_coalition_pop_eval = yes
+                country_event = { id = fr.political.2 }
+            }
+        }
+    }
+    # on_daily = {
+        # effect = {
+            # if = {
+                # limit = {
+                    # any_country = {
+                        # exists = no
+                        # has_country_flag = statistics_1
+                    # }
+                # }
+                # PREV = {
+                    # clr_country_flag = statistics_1
+                # }
+                # random_country = {
+                    # limit = {
+                        # exists = yes
+                    # }
+                    # set_country_flag = statistics_1
+                    # country_event = statistics.1
+                # }
+            # }
+        # }
+    # }
+
+	on_startup = { # Entente Council
+		effect = {
+			every_country = {
+				limit = {
+					owns_state = 16
+				}
+				FRA = {
+					set_variable = { entente_faith = 65 }
+					set_variable = { entente_tension = 0 } # probably not going to be used
+				}
+			}
+				FRA = {
+					add_ideas = GEN_entente_leader
+				}
+				ITA = {
+					add_ideas = GEN_entente_leader
+				}
+
+			every_country = {
+				limit = {
+					OR = {
+						original_tag = BEL
+						original_tag = LUX
+						original_tag = CZE
+						original_tag = AUS
+						original_tag = POL
+						original_tag = ROM
+						original_tag = SPR
+						original_tag = DEN
+						original_tag = LAT
+						original_tag = UKR
+						original_tag = BLR
+					}
+				}
+				add_ideas = GEN_entente_member
+			}
+
+		}
+	}
+
+	on_startup = { # Princely Pact
+		effect = { 
+			add_to_array = { global.HYD_princes = HYD }
+		}
+	}
+
+    on_daily = { # Variable cap for Entente Council. Can only be between 0 - 100
+        effect = {
+            if = {
+                limit = {
+                    FRA = {
+						check_variable = {
+							entente_faith > 100 # Variable can't exceed 100
+						}
+					}
+				}
+				set_variable = { entente_faith = 100 }
+            }
+            if = {
+                limit = {
+                    FRA = {
+						check_variable = {
+							entente_faith < 0  # Variable can't be less than 0
+						}
+					}
+				}
+				set_variable = { entente_faith = 0 }
+            }
+        }
+	}
+
+	on_startup = {
+		effect = {
+			# Faction state Control for Italy
+			# Socialist Control
+			ITA = {
+				set_variable = { socialist_control = 15 }
+				set_variable = { syndie_control = 15 }
+			}
+			158 = {
+				set_state_flag = ITA_state_socialist
+				add_state_modifier = {
+					modifier = {
+						local_manpower = -0.1
+						local_building_slots = 1
+					}
+				}
+			}
+			159 = {
+				set_state_flag = ITA_state_socialist
+				add_state_modifier = {
+					modifier = {
+						local_manpower = -0.1
+						local_building_slots = 1
+					}
+				}
+			}
+			161 = {
+				set_state_flag = ITA_state_socialist
+				add_state_modifier = {
+					modifier = {
+						local_manpower = -0.1
+						local_building_slots = 1
+					}
+				}
+			}
+			162 = {
+				set_state_flag = ITA_state_socialist
+				add_state_modifier = {
+					modifier = {
+						local_manpower = -0.1
+						local_building_slots = 1
+					}
+				}
+			}
+			# Syndie Control
+			117 = {
+				set_state_flag = ITA_state_syndie
+				add_state_modifier = {
+					modifier = {
+						local_manpower = -0.1
+					}
+				}
+			}
+			156 = {
+				set_state_flag = ITA_state_syndie
+				add_state_modifier = {
+					modifier = {
+						local_manpower = -0.1
+					}
+				}
+			}
+			849 = {
+				set_state_flag = ITA_state_syndie
+				add_state_modifier = {
+					modifier = {
+						local_manpower = -0.1
+					}
+				}
+			}
+			850 = {
+				set_state_flag = ITA_state_syndie
+				add_state_modifier = {
+					modifier = {
+						local_manpower = -0.1
+					}
+				}
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			# Scorched States tracker for USSR
+			every_state = {
+				limit = {
+					region = 130
+				}
+				THIS = {
+					set_state_flag = SOV_ukraine
+				}
+			}
+
+			every_state = {
+				limit = {
+					region = 131
+				}
+				THIS = {
+					set_state_flag = SOV_belarus
+				}
+			}
+
+			every_state = {
+				limit = {
+					region = 37
+				}
+				THIS = {
+					set_state_flag = SOV_baltic
+				}
+			}
+
+			every_state = {
+				limit = {
+					region = 39
+				}
+				THIS = {
+					set_state_flag = SOV_east_poland
+				}
+			}
+
+			every_state = {
+				limit = {
+					region = 13
+				}
+				THIS = {
+					set_state_flag = SOV_finland
+				}
+			}
+
+			every_state = {
+				limit = {
+					region = 12
+				}
+				THIS = {
+					set_state_flag = SOV_north_scandinavia
+				}
+			}
+
+			every_state = {
+				limit = {
+					region = 132
+				}
+				THIS = {
+					set_state_flag = SOV_north_front
+				}
+			}
+
+			every_state = {
+				limit = {
+					region = 150
+				}
+				THIS = {
+					set_state_flag = SOV_arctic
+				}
+			}
+
+			every_state = {
+				limit = {
+					region = 133
+				}
+				THIS = {
+					set_state_flag = SOV_central_russia
+				}
+			}
+
+			every_state = {
+				limit = {
+					region = 137
+				}
+				THIS = {
+					set_state_flag = SOV_west_steppe
+				}
+			}
+
+			every_state = {
+				limit = {
+					region = 40
+				}
+				THIS = {
+					set_state_flag = SOV_transvolga
+				}
+			}
+
+			every_state = {
+				limit = {
+					region = 135
+				}
+				THIS = {
+					set_state_flag = SOV_kuban
+				}
+			}
+
+			every_state = {
+				limit = {
+					region = 134
+				}
+				THIS = {
+					set_state_flag = SOV_caucasus
+				}
+			}
+
+			every_state = {
+				limit = {
+					region = 138
+				}
+				THIS = {
+					set_state_flag = SOV_ural
+				}
+			}
+
+			every_state = {
+				limit = {
+					region = 136
+				}
+				THIS = {
+					set_state_flag = SOV_great_steppe
+				}
+			}
+
+			every_state = {
+				limit = {
+					region = 14
+				}
+				THIS = {
+					set_state_flag = SOV_trans_urals
+				}
+			}
+
+			every_state = {
+				limit = {
+					region = 151
+				}
+				THIS = {
+					set_state_flag = SOV_west_siberia
+				}
+			}
+
+			every_state = {
+				limit = {
+					region = 149
+				}
+				THIS = {
+					set_state_flag = SOV_east_siberia
+				}
+			}
+
+			every_state = {
+				limit = {
+					region = 148
+				}
+				THIS = {
+					set_state_flag = SOV_far_east
+				}
+			}
+		}
+	}
+	
+	on_government_change = { # When Government ideology changes this recalculates legislative support based on party popularity.
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						has_variable = senators_support
+					}
+				}
+				set_variable = { senators_support = NS_ruling_party_pop }
+				# random_list = {
+					# 34 = {
+						# subtract_from_variable = {
+							# var = senators_support
+							# value = 10
+						# }
+					# }
+					# 33 = {
+						# subtract_from_variable = {
+							# var = senators_support
+							# value = 15
+						# }
+					# }
+					# 33 = {
+						# subtract_from_variable = {
+							# var = senators_support
+							# value = 20
+						# }
+					# }
+				# }
+			}
+		}
+	}
+	
+	on_government_change = { # give nations appropriate ministers
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						NOT = {
+							OR = { # These nations already have ministers
+								tag = CZE
+								tag = RUS
+								tag = USA
+								tag = GER
+								tag = ENG
+								tag = ITA
+								tag = CAN
+								tag = RHI
+								tag = CHL
+								tag = AST
+								tag = NOR
+								tag = BOL
+								tag = COL
+								tag = PRU
+								tag = ARG
+								tag = TUR
+								tag = UOB
+								tag = POL
+								tag = FRA
+								tag = SWE
+								tag = BEL
+								tag = GEO
+								tag = ZHI
+								tag = JAP
+								tag = PER
+								tag = FIN
+							}
+						}
+					}
+				}			
+				if = {
+					limit = {
+						ROOT = {
+							has_government = vanguardist
+						}
+					}
+					ROOT = {
+						add_ideas = {
+							GEN_HOG_Van
+							GEN_FOR_Van
+							GEN_ECO_Van
+							GEN_SEC_Van
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							has_government = collectivist
+						}
+					}
+					ROOT = {
+						add_ideas = {
+							GEN_HOG_Col
+							GEN_FOR_Col
+							GEN_ECO_Col
+							GEN_SEC_Col
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							has_government = libertarian_socialist
+						}
+					}
+					ROOT = {
+						add_ideas = {
+							GEN_HOG_Lis
+							GEN_FOR_Lis
+							GEN_ECO_Lis
+							GEN_SEC_Lis
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							has_government = social_democrat
+						}
+					}
+					ROOT = {
+						add_ideas = {
+							GEN_HOG_Sde
+							GEN_FOR_Sde
+							GEN_ECO_Sde
+							GEN_SEC_Sde
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							has_government = social_liberal
+						}
+					}
+					ROOT = {
+						add_ideas = {
+							GEN_HOG_Sli
+							GEN_FOR_Sli
+							GEN_ECO_Sli
+							GEN_SEC_Sli
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							has_government = market_liberal
+						}
+					}
+					ROOT = {
+						add_ideas = {
+							GEN_HOG_Mli
+							GEN_FOR_Mli
+							GEN_ECO_Mli
+							GEN_SEC_Mli
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							has_government = market_liberal
+						}
+					}
+					ROOT = {
+						add_ideas = {
+							GEN_HOG_Mli
+							GEN_FOR_Mli
+							GEN_ECO_Mli
+							GEN_SEC_Mli
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							has_government = social_conservative
+						}
+					}
+					ROOT = {
+						add_ideas = {
+							GEN_HOG_Sco
+							GEN_FOR_Sco
+							GEN_ECO_Sco
+							GEN_SEC_Sco
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							has_government = authoritarian_democrat
+						}
+					}
+					ROOT = {
+						add_ideas = {
+							GEN_HOG_Ade
+							GEN_FOR_Ade
+							GEN_ECO_Ade
+							GEN_SEC_Ade
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							has_government = paternal_autocrat
+						}
+					}
+					ROOT = {
+						add_ideas = {
+							GEN_HOG_Pau
+							GEN_FOR_Pau
+							GEN_ECO_Pau
+							GEN_SEC_Pau
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							has_government = national_populist
+						}
+					}
+					ROOT = {
+						add_ideas = {
+							GEN_HOG_Npo
+							GEN_FOR_Npo
+							GEN_ECO_Npo
+							GEN_SEC_Npo
+						}
+					}
+				}
+				else = {
+					ROOT = {
+						add_ideas = {
+							GEN_HOG_Val
+							GEN_FOR_Val
+							GEN_ECO_Val
+							GEN_SEC_Val
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,2822 @@
+##############
+#Indian Ideas#
+##############
+
+ideas = {
+
+	## India Ideas ##
+
+	country = {
+	
+	}
+	
+	head_of_government = { ### Head of Government ###
+		BHC_Hemanta_Kumar_Sarkar_hog_tot = {
+			allowed = { original_tag = IND }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					valkist_allowed = yes
+					NOT = { has_country_flag = Hemanta_Kumar_Sarkar_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				valkist_allowed = yes
+				NOT = { has_country_flag = Hemanta_Kumar_Sarkar_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Hemanta_Kumar_Sarkar_hog_tot"
+			}
+			traits = {
+				head_of_government
+				valkist
+				hog_ambitious_union_boss
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Jawaharlal_Nehru_hog_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					collectivist_allowed = yes
+					NOT = { has_country_flag = Jawaharlal_Nehru_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				collectivist_allowed = yes
+				NOT = { has_country_flag = Jawaharlal_Nehru_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Jawaharlal_Nehru_hog_syn"
+			}
+			traits = {
+				head_of_government
+				collectivist
+				hog_flamboyant_tough_guy
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Jayaprakash_Narayan_hog_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					collectivist_allowed = yes
+					NOT = { has_country_flag = Jayaprakash_Narayan_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				collectivist_allowed = yes
+				NOT = { has_country_flag = Jayaprakash_Narayan_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Jayaprakash_Narayan_hog_syn"
+			}
+			traits = {
+				head_of_government
+				collectivist
+				hog_naive_optimist
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Lal_Bahadur_Shastri_hog_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					collectivist_allowed = yes
+					NOT = { has_country_flag = Lal_Bahadur_Shastri_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				collectivist_allowed = yes
+				NOT = { has_country_flag = Lal_Bahadur_Shastri_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Lal_Bahadur_Shastri_hog_syn"
+			}
+			traits = {
+				head_of_government
+				collectivist
+				hog_silent_workhorse
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Manabendra_Nath_Roy_hog_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					collectivist_allowed = yes
+					NOT = { has_country_flag = Manabendra_Nath_Roy_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				collectivist_allowed = yes
+				NOT = { has_country_flag = Manabendra_Nath_Roy_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Manabendra_Nath_Roy_hog_syn"
+			}
+			traits = {
+				head_of_government
+				collectivist
+				hog_reformist_soldier
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Puran_Chand_Joshi_hog_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					collectivist_allowed = yes
+					NOT = { has_country_flag = Puran_Chand_Joshi_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				collectivist_allowed = yes
+				NOT = { has_country_flag = Puran_Chand_Joshi_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Puran_Chand_Joshi_hog_syn"
+			}
+			traits = {
+				head_of_government
+				collectivist
+				hog_reformist_soldier
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Shripad_Amrit_Dange_hog_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					collectivist_allowed = yes
+					NOT = { has_country_flag = Shripad_Amrit_Dange_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				collectivist_allowed = yes
+				NOT = { has_country_flag = Shripad_Amrit_Dange_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Shripad_Amrit_Dange_hog_syn"
+			}
+			traits = {
+				head_of_government
+				collectivist
+				hog_ambitious_union_boss
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Narendra_Deva_hog_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					libertarian_socialist_allowed = yes
+					NOT = { has_country_flag = Narendra_Deva_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				libertarian_socialist_allowed = yes
+				NOT = { has_country_flag = Narendra_Deva_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Narendra_Deva_hog_rso"
+			}
+			traits = {
+				head_of_government
+				libertarian_socialist
+				hog_ambitious_union_boss
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Nirmal_Kumar_Bose_hog_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					libertarian_socialist_allowed = yes
+					NOT = { has_country_flag = Nirmal_Kumar_Bose_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				libertarian_socialist_allowed = yes
+				NOT = { has_country_flag = Nirmal_Kumar_Bose_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Nirmal_Kumar_Bose_hog_rso"
+			}
+			traits = {
+				head_of_government
+				libertarian_socialist
+				hog_silent_workhorse
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Panjabrao_Deshmukh_hog_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					libertarian_socialist_allowed = yes
+					NOT = { has_country_flag = Panjabrao_Deshmukh_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				libertarian_socialist_allowed = yes
+				NOT = { has_country_flag = Panjabrao_Deshmukh_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Panjabrao_Deshmukh_hog_rso"
+			}
+			traits = {
+				head_of_government
+				libertarian_socialist
+				hog_ambitious_union_boss
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Rabindranath_Tagore_hog_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					libertarian_socialist_allowed = yes
+					NOT = { has_country_flag = Rabindranath_Tagore_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				libertarian_socialist_allowed = yes
+				NOT = { has_country_flag = Rabindranath_Tagore_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Rabindranath_Tagore_hog_rso"
+			}
+			traits = {
+				head_of_government
+				libertarian_socialist
+				hog_silent_workhorse
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Shri_Aurobindo_hog_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					libertarian_socialist_allowed = yes
+					NOT = { has_country_flag = Shri_Aurobindo_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				libertarian_socialist_allowed = yes
+				NOT = { has_country_flag = Shri_Aurobindo_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Shri_Aurobindo_hog_rso"
+			}
+			traits = {
+				head_of_government
+				libertarian_socialist
+				hog_naive_optimist
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Bidhan_Chandra_Roy_hog_sde = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_democrat_allowed = yes
+					NOT = { has_country_flag = Bidhan_Chandra_Roy_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				social_democrat_allowed = yes
+				NOT = { has_country_flag = Bidhan_Chandra_Roy_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Bidhan_Chandra_Roy_hog_sde"
+			}
+			traits = {
+				head_of_government
+				social_democrat
+				hog_happy_amateur
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Muhammad_Ali_Bogra_hog_sde = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_democrat_allowed = yes
+					NOT = { has_country_flag = Muhammad_Ali_Bogra_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				social_democrat_allowed = yes
+				NOT = { has_country_flag = Muhammad_Ali_Bogra_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Muhammad_Ali_Bogra_hog_sde"
+			}
+			traits = {
+				head_of_government
+				social_democrat
+				hog_ambitious_union_boss
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Sucheta_Kriplani_hog_sli = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_liberal_allowed = yes
+					NOT = { has_country_flag = Sucheta_Kriplani_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				social_liberal_allowed = yes
+				NOT = { has_country_flag = Sucheta_Kriplani_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Sucheta_Kriplani_hog_sli"
+			}
+			traits = {
+				head_of_government
+				social_liberal
+				hog_political_protege
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Huseyn_Shaheed_Suhrawardy_hog_mli = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					market_liberal_allowed = yes
+					NOT = { has_country_flag = Huseyn_Shaheed_Suhrawardy_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				market_liberal_allowed = yes
+				NOT = { has_country_flag = Huseyn_Shaheed_Suhrawardy_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Huseyn_Shaheed_Suhrawardy_hog_mli"
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_ambitious_union_boss
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Khawaja_Nazimuddin_hog_sco = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_conservative_allowed = yes
+					NOT = { has_country_flag = Khawaja_Nazimuddin_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				social_conservative_allowed = yes
+				NOT = { has_country_flag = Khawaja_Nazimuddin_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Khawaja_Nazimuddin_hog_sco"
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_political_protege
+			}
+			cancel_if_invalid = no
+		}
+
+	}
+
+	foreign_minister = { ### Foreign Minister ###
+		BHC_A_C_N_Nambiar_for_tot = {
+			allowed = { original_tag = IND }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					valkist_allowed = yes
+					NOT = { has_country_flag = A_C_N_Nambiar_dead }
+				}
+			}
+			visible = {
+				valkist_allowed = yes
+				NOT = { has_country_flag = A_C_N_Nambiar_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_A_C_N_Nambiar_for_tot"
+			}
+			traits = {
+				foreign_minister
+				valkist
+				for_great_compromiser
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Alexandra_David_Neel_for_tot = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					vanguardist_allowed = yes
+					NOT = { has_country_flag = Alexandra_David_Neel_dead }
+				}
+			}
+			visible = {
+				vanguardist_allowed = yes
+				NOT = { has_country_flag = Alexandra_David_Neel_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Alexandra_David_Neel_for_tot"
+			}
+			traits = {
+				foreign_minister
+				vanguardist
+				for_ideological_crusader
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Sarat_Chandra_Bose_for_tot = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					vanguardist_allowed = yes
+					NOT = { has_country_flag = Sarat_Chandra_Bose_dead }
+				}
+			}
+			visible = {
+				vanguardist_allowed = yes
+				NOT = { has_country_flag = Sarat_Chandra_Bose_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Sarat_Chandra_Bose_for_tot"
+			}
+			traits = {
+				foreign_minister
+				vanguardist
+				for_the_cloak_n_dagger_schemer
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Sardul_Singh_Caveeshar_for_tot = {
+			allowed = { original_tag = IND }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					valkist_allowed = yes
+					NOT = { has_country_flag = Sardul_Singh_Caveeshar_dead }
+				}
+			}
+			visible = {
+				valkist_allowed = yes
+				NOT = { has_country_flag = Sardul_Singh_Caveeshar_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Sardul_Singh_Caveeshar_for_tot"
+			}
+			traits = {
+				foreign_minister
+				valkist
+				for_biased_intellectual
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Subhas_Chandra_Bose_for_tot = {
+			allowed = { original_tag = IND }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					valkist_allowed = yes
+					NOT = { has_country_flag = Subhas_Chandra_Bose_dead }
+				}
+			}
+			visible = {
+				valkist_allowed = yes
+				NOT = { has_country_flag = Subhas_Chandra_Bose_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Subhas_Chandra_Bose_for_tot"
+			}
+			traits = {
+				foreign_minister
+				valkist
+				for_general_staffer
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Bhavabhushan_Mitra_for_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					collectivist_allowed = yes
+					NOT = { has_country_flag = Bhavabhushan_Mitra_dead }
+				}
+			}
+			visible = {
+				collectivist_allowed = yes
+				NOT = { has_country_flag = Bhavabhushan_Mitra_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Bhavabhushan_Mitra_for_syn"
+			}
+			traits = {
+				foreign_minister
+				collectivist
+				for_ideological_crusader
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Jayaprakash_Narayan_for_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					collectivist_allowed = yes
+					NOT = { has_country_flag = Jayaprakash_Narayan_dead }
+				}
+			}
+			visible = {
+				collectivist_allowed = yes
+				NOT = { has_country_flag = Jayaprakash_Narayan_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Jayaprakash_Narayan_for_syn"
+			}
+			traits = {
+				foreign_minister
+				collectivist
+				for_great_compromiser
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Sohan_Singh_Bhakna_for_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					collectivist_allowed = yes
+					NOT = { has_country_flag = Sohan_Singh_Bhakna_dead }
+				}
+			}
+			visible = {
+				collectivist_allowed = yes
+				NOT = { has_country_flag = Sohan_Singh_Bhakna_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Sohan_Singh_Bhakna_for_syn"
+			}
+			traits = {
+				foreign_minister
+				collectivist
+				for_general_staffer
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Vallabhbhai_Jhaverbhai_Patel_for_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					collectivist_allowed = yes
+					NOT = { has_country_flag = Vallabhbhai_Jhaverbhai_Patel_dead }
+				}
+			}
+			visible = {
+				collectivist_allowed = yes
+				NOT = { has_country_flag = Vallabhbhai_Jhaverbhai_Patel_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Vallabhbhai_Jhaverbhai_Patel_for_syn"
+			}
+			traits = {
+				foreign_minister
+				collectivist
+				for_iron_fisted_brute
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Ananthasayanam_Ayyangar_for_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					libertarian_socialist_allowed = yes
+					NOT = { has_country_flag = Ananthasayanam_Ayyangar_dead }
+				}
+			}
+			visible = {
+				libertarian_socialist_allowed = yes
+				NOT = { has_country_flag = Ananthasayanam_Ayyangar_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Ananthasayanam_Ayyangar_for_rso"
+			}
+			traits = {
+				foreign_minister
+				libertarian_socialist
+				for_great_compromiser
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Aung_San_for_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					libertarian_socialist_allowed = yes
+					NOT = { has_country_flag = Aung_San_dead }
+				}
+			}
+			visible = {
+				libertarian_socialist_allowed = yes
+				NOT = { has_country_flag = Aung_San_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Aung_San_for_rso"
+			}
+			traits = {
+				foreign_minister
+				libertarian_socialist
+				for_ideological_crusader
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Mahadev_Desai_for_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					libertarian_socialist_allowed = yes
+					NOT = { has_country_flag = Mahadev_Desai_dead }
+				}
+			}
+			visible = {
+				libertarian_socialist_allowed = yes
+				NOT = { has_country_flag = Mahadev_Desai_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Mahadev_Desai_for_rso"
+			}
+			traits = {
+				foreign_minister
+				libertarian_socialist
+				for_great_compromiser
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_U_Nu_for_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					libertarian_socialist_allowed = yes
+					NOT = { has_country_flag = U_Nu_dead }
+				}
+			}
+			visible = {
+				libertarian_socialist_allowed = yes
+				NOT = { has_country_flag = U_Nu_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_U_Nu_for_rso"
+			}
+			traits = {
+				foreign_minister
+				libertarian_socialist
+				for_the_cloak_n_dagger_schemer
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Paramhansa_Yogananda_for_sde = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_democrat_allowed = yes
+					NOT = { has_country_flag = Paramhansa_Yogananda_dead }
+				}
+			}
+			visible = {
+				social_democrat_allowed = yes
+				NOT = { has_country_flag = Paramhansa_Yogananda_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Paramhansa_Yogananda_for_sde"
+			}
+			traits = {
+				foreign_minister
+				social_democrat
+				for_great_compromiser
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Sri_Anandamoyi_Ma_for_sli = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_liberal_allowed = yes
+					NOT = { has_country_flag = Sri_Anandamoyi_Ma_dead }
+				}
+			}
+			visible = {
+				social_liberal_allowed = yes
+				NOT = { has_country_flag = Sri_Anandamoyi_Ma_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Sri_Anandamoyi_Ma_for_sli"
+			}
+			traits = {
+				foreign_minister
+				social_liberal
+				for_great_compromiser
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Sisir_Kumar_Maitra_for_mli = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					market_liberal_allowed = yes
+					NOT = { has_country_flag = Sisir_Kumar_Maitra_dead }
+				}
+			}
+			visible = {
+				market_liberal_allowed = yes
+				NOT = { has_country_flag = Sisir_Kumar_Maitra_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Sisir_Kumar_Maitra_for_mli"
+			}
+			traits = {
+				foreign_minister
+				market_liberal
+				for_biased_intellectual
+			}
+			cancel_if_invalid = no
+		}
+
+	}
+
+	economy_minister = { ### Economy Minister ###
+		BHC_Leela_Roy_eco_tot = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					vanguardist_allowed = yes
+					NOT = { has_country_flag = Leela_Roy_dead }
+				}
+			}
+			visible = {
+				vanguardist_allowed = yes
+				NOT = { has_country_flag = Leela_Roy_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Leela_Roy_eco_tot"
+			}
+			traits = {
+				economy_minister
+				vanguardist
+				eco_planned_economy_proponent
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Nalini_Ranjan_Sarkar_eco_tot = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					vanguardist_allowed = yes
+					NOT = { has_country_flag = Nalini_Ranjan_Sarkar_dead }
+				}
+			}
+			visible = {
+				vanguardist_allowed = yes
+				NOT = { has_country_flag = Nalini_Ranjan_Sarkar_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Nalini_Ranjan_Sarkar_eco_tot"
+			}
+			traits = {
+				economy_minister
+				vanguardist
+				eco_administrative_genius
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Army_Reform_Committee_eco_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					collectivist_allowed = yes
+					NOT = { has_country_flag = Army_Reform_Committee_dead }
+				}
+			}
+			visible = {
+				collectivist_allowed = yes
+				NOT = { has_country_flag = Army_Reform_Committee_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Army_Reform_Committee_eco_syn"
+			}
+			traits = {
+				economy_minister
+				collectivist
+				eco_army_reform_committee
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Bhupendra_Kumar_Datta_eco_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					collectivist_allowed = yes
+					NOT = { has_country_flag = Bhupendra_Kumar_Datta_dead }
+				}
+			}
+			visible = {
+				collectivist_allowed = yes
+				NOT = { has_country_flag = Bhupendra_Kumar_Datta_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Bhupendra_Kumar_Datta_eco_syn"
+			}
+			traits = {
+				economy_minister
+				collectivist
+				eco_resource_industrialist
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Gulzarilal_Nanda_eco_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					collectivist_allowed = yes
+					NOT = { has_country_flag = Gulzarilal_Nanda_dead }
+				}
+			}
+			visible = {
+				collectivist_allowed = yes
+				NOT = { has_country_flag = Gulzarilal_Nanda_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Gulzarilal_Nanda_eco_syn"
+			}
+			traits = {
+				economy_minister
+				collectivist
+				eco_industrialiser
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Jawaharlal_Nehru_eco_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					collectivist_allowed = yes
+					NOT = { has_country_flag = Jawaharlal_Nehru_dead }
+				}
+			}
+			visible = {
+				collectivist_allowed = yes
+				NOT = { has_country_flag = Jawaharlal_Nehru_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Jawaharlal_Nehru_eco_syn"
+			}
+			traits = {
+				economy_minister
+				collectivist
+				eco_industrialiser
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Lal_Bahadur_Shastri_eco_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					collectivist_allowed = yes
+					NOT = { has_country_flag = Lal_Bahadur_Shastri_dead }
+				}
+			}
+			visible = {
+				collectivist_allowed = yes
+				NOT = { has_country_flag = Lal_Bahadur_Shastri_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Lal_Bahadur_Shastri_eco_syn"
+			}
+			traits = {
+				economy_minister
+				collectivist
+				eco_administrative_genius
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Surya_Sen_eco_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					collectivist_allowed = yes
+					NOT = { has_country_flag = Surya_Sen_dead }
+				}
+			}
+			visible = {
+				collectivist_allowed = yes
+				NOT = { has_country_flag = Surya_Sen_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Surya_Sen_eco_syn"
+			}
+			traits = {
+				economy_minister
+				collectivist
+				eco_reformer
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Vallabhbhai_Jhaverbhai_Patel_eco_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					collectivist_allowed = yes
+					NOT = { has_country_flag = Vallabhbhai_Jhaverbhai_Patel_dead }
+				}
+			}
+			visible = {
+				collectivist_allowed = yes
+				NOT = { has_country_flag = Vallabhbhai_Jhaverbhai_Patel_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Vallabhbhai_Jhaverbhai_Patel_eco_syn"
+			}
+			traits = {
+				economy_minister
+				collectivist
+				eco_mixed_economy
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Ba_Win_eco_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					libertarian_socialist_allowed = yes
+					NOT = { has_country_flag = Ba_Win_dead }
+				}
+			}
+			visible = {
+				libertarian_socialist_allowed = yes
+				NOT = { has_country_flag = Ba_Win_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Ba_Win_eco_rso"
+			}
+			traits = {
+				economy_minister
+				libertarian_socialist
+				eco_resource_industrialist
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Bhogaraju_Pattabhi_Sitaramayya_eco_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					libertarian_socialist_allowed = yes
+					NOT = { has_country_flag = Bhogaraju_Pattabhi_Sitaramayya_dead }
+				}
+			}
+			visible = {
+				libertarian_socialist_allowed = yes
+				NOT = { has_country_flag = Bhogaraju_Pattabhi_Sitaramayya_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Bhogaraju_Pattabhi_Sitaramayya_eco_rso"
+			}
+			traits = {
+				economy_minister
+				libertarian_socialist
+				eco_keynesian_economy
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Dr_John_Mathai_eco_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					libertarian_socialist_allowed = yes
+					NOT = { has_country_flag = Dr_John_Mathai_dead }
+				}
+			}
+			visible = {
+				libertarian_socialist_allowed = yes
+				NOT = { has_country_flag = Dr_John_Mathai_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Dr_John_Mathai_eco_rso"
+			}
+			traits = {
+				economy_minister
+				libertarian_socialist
+				eco_balanced_budget_economy
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Jnananjan_Niyogi_eco_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					libertarian_socialist_allowed = yes
+					NOT = { has_country_flag = Jnananjan_Niyogi_dead }
+				}
+			}
+			visible = {
+				libertarian_socialist_allowed = yes
+				NOT = { has_country_flag = Jnananjan_Niyogi_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Jnananjan_Niyogi_eco_rso"
+			}
+			traits = {
+				economy_minister
+				libertarian_socialist
+				eco_administrative_genius
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Panjabrao_Deshmukh_eco_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					libertarian_socialist_allowed = yes
+					NOT = { has_country_flag = Panjabrao_Deshmukh_dead }
+				}
+			}
+			visible = {
+				libertarian_socialist_allowed = yes
+				NOT = { has_country_flag = Panjabrao_Deshmukh_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Panjabrao_Deshmukh_eco_rso"
+			}
+			traits = {
+				economy_minister
+				libertarian_socialist
+				eco_theoretical_scientist
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Prafulla_Chandra_Roy_eco_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					libertarian_socialist_allowed = yes
+					NOT = { has_country_flag = Prafulla_Chandra_Roy_dead }
+				}
+			}
+			visible = {
+				libertarian_socialist_allowed = yes
+				NOT = { has_country_flag = Prafulla_Chandra_Roy_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Prafulla_Chandra_Roy_eco_rso"
+			}
+			traits = {
+				economy_minister
+				libertarian_socialist
+				eco_theoretical_scientist
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Prasanta_C_Mahalanobis_eco_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					libertarian_socialist_allowed = yes
+					NOT = { has_country_flag = Prasanta_C_Mahalanobis_dead }
+				}
+			}
+			visible = {
+				libertarian_socialist_allowed = yes
+				NOT = { has_country_flag = Prasanta_C_Mahalanobis_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Prasanta_C_Mahalanobis_eco_rso"
+			}
+			traits = {
+				economy_minister
+				libertarian_socialist
+				eco_industrialiser
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Hitendra_Desai_eco_sli = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_liberal_allowed = yes
+					NOT = { has_country_flag = Hitendra_Desai_dead }
+				}
+			}
+			visible = {
+				social_liberal_allowed = yes
+				NOT = { has_country_flag = Hitendra_Desai_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Hitendra_Desai_eco_sli"
+			}
+			traits = {
+				economy_minister
+				social_liberal
+				eco_resource_industrialist
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Syama_Prasad_Mookerjee_eco_sco = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_conservative_allowed = yes
+					NOT = { has_country_flag = Syama_Prasad_Mookerjee_dead }
+				}
+			}
+			visible = {
+				social_conservative_allowed = yes
+				NOT = { has_country_flag = Syama_Prasad_Mookerjee_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Syama_Prasad_Mookerjee_eco_sco"
+			}
+			traits = {
+				economy_minister
+				social_conservative
+				eco_theoretical_scientist
+			}
+			cancel_if_invalid = no
+		}
+
+	}
+
+	security_minister = { ### Security Minister ###
+		BHC_Chandrasekhar_Azad_sec_tot = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					vanguardist_allowed = yes
+					NOT = { has_country_flag = Chandrasekhar_Azad_dead }
+				}
+			}
+			visible = {
+				vanguardist_allowed = yes
+				NOT = { has_country_flag = Chandrasekhar_Azad_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Chandrasekhar_Azad_sec_tot"
+			}
+			traits = {
+				security_minister
+				vanguardist
+				sec_efficient_sociopath
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Subhas_Chandra_Bose_sec_tot = {
+			allowed = { original_tag = IND }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					valkist_allowed = yes
+					NOT = { has_country_flag = Subhas_Chandra_Bose_dead }
+				}
+			}
+			visible = {
+				valkist_allowed = yes
+				NOT = { has_country_flag = Subhas_Chandra_Bose_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Subhas_Chandra_Bose_sec_tot"
+			}
+			traits = {
+				security_minister
+				valkist
+				sec_compassionate_gentleman
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_U_Muthuramalingam_Thevar_sec_tot = {
+			allowed = { original_tag = IND }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					valkist_allowed = yes
+					NOT = { has_country_flag = U_Muthuramalingam_Thevar_dead }
+				}
+			}
+			visible = {
+				valkist_allowed = yes
+				NOT = { has_country_flag = U_Muthuramalingam_Thevar_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_U_Muthuramalingam_Thevar_sec_tot"
+			}
+			traits = {
+				security_minister
+				valkist
+				sec_secret_police_chief
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Puran_Chand_Joshi_sec_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					collectivist_allowed = yes
+					NOT = { has_country_flag = Puran_Chand_Joshi_dead }
+				}
+			}
+			visible = {
+				collectivist_allowed = yes
+				NOT = { has_country_flag = Puran_Chand_Joshi_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Puran_Chand_Joshi_sec_syn"
+			}
+			traits = {
+				security_minister
+				collectivist
+				sec_crime_fighter
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Sarojini_Naidu_sec_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					collectivist_allowed = yes
+					NOT = { has_country_flag = Sarojini_Naidu_dead }
+				}
+			}
+			visible = {
+				collectivist_allowed = yes
+				NOT = { has_country_flag = Sarojini_Naidu_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Sarojini_Naidu_sec_syn"
+			}
+			traits = {
+				security_minister
+				collectivist
+				sec_man_of_the_people
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_V_M_Tarkunde_sec_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					collectivist_allowed = yes
+					NOT = { has_country_flag = V_M_Tarkunde_dead }
+				}
+			}
+			visible = {
+				collectivist_allowed = yes
+				NOT = { has_country_flag = V_M_Tarkunde_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_V_M_Tarkunde_sec_syn"
+			}
+			traits = {
+				security_minister
+				collectivist
+				sec_crime_fighter
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Vinayak_Damodar_Savarkar_sec_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					collectivist_allowed = yes
+					NOT = { has_country_flag = Vinayak_Damodar_Savarkar_dead }
+				}
+			}
+			visible = {
+				collectivist_allowed = yes
+				NOT = { has_country_flag = Vinayak_Damodar_Savarkar_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Vinayak_Damodar_Savarkar_sec_syn"
+			}
+			traits = {
+				security_minister
+				collectivist
+				sec_prince_of_terror
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Maulana_Bhashani_sec_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					libertarian_socialist_allowed = yes
+					NOT = { has_country_flag = Maulana_Bhashani_dead }
+				}
+			}
+			visible = {
+				libertarian_socialist_allowed = yes
+				NOT = { has_country_flag = Maulana_Bhashani_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Maulana_Bhashani_sec_rso"
+			}
+			traits = {
+				security_minister
+				libertarian_socialist
+				sec_man_of_the_people
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Rafi_Ahmed_Kidwai_sec_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					libertarian_socialist_allowed = yes
+					NOT = { has_country_flag = Rafi_Ahmed_Kidwai_dead }
+				}
+			}
+			visible = {
+				libertarian_socialist_allowed = yes
+				NOT = { has_country_flag = Rafi_Ahmed_Kidwai_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Rafi_Ahmed_Kidwai_sec_rso"
+			}
+			traits = {
+				security_minister
+				libertarian_socialist
+				sec_crime_fighter
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Rajkumari_Amrit_Kaur_sec_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					libertarian_socialist_allowed = yes
+					NOT = { has_country_flag = Rajkumari_Amrit_Kaur_dead }
+				}
+			}
+			visible = {
+				libertarian_socialist_allowed = yes
+				NOT = { has_country_flag = Rajkumari_Amrit_Kaur_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Rajkumari_Amrit_Kaur_sec_rso"
+			}
+			traits = {
+				security_minister
+				libertarian_socialist
+				sec_health_and_safety
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Thakin_Mya_sec_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					libertarian_socialist_allowed = yes
+					NOT = { has_country_flag = Thakin_Mya_dead }
+				}
+			}
+			visible = {
+				libertarian_socialist_allowed = yes
+				NOT = { has_country_flag = Thakin_Mya_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Thakin_Mya_sec_rso"
+			}
+			traits = {
+				security_minister
+				libertarian_socialist
+				sec_compassionate_gentleman
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Bidhan_Chandra_Roy_sec_sde = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_democrat_allowed = yes
+					NOT = { has_country_flag = Bidhan_Chandra_Roy_dead }
+				}
+			}
+			visible = {
+				social_democrat_allowed = yes
+				NOT = { has_country_flag = Bidhan_Chandra_Roy_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Bidhan_Chandra_Roy_sec_sde"
+			}
+			traits = {
+				security_minister
+				social_democrat
+				sec_compassionate_gentleman
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Narayan_Roy_sec_sde = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_democrat_allowed = yes
+					NOT = { has_country_flag = Narayan_Roy_dead }
+				}
+			}
+			visible = {
+				social_democrat_allowed = yes
+				NOT = { has_country_flag = Narayan_Roy_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Narayan_Roy_sec_sde"
+			}
+			traits = {
+				security_minister
+				social_democrat
+				sec_crime_fighter
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Bhupal_Bose_sec_sli = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_liberal_allowed = yes
+					NOT = { has_country_flag = Bhupal_Bose_dead }
+				}
+			}
+			visible = {
+				social_liberal_allowed = yes
+				NOT = { has_country_flag = Bhupal_Bose_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Bhupal_Bose_sec_sli"
+			}
+			traits = {
+				security_minister
+				social_liberal
+				sec_silent_lawyer
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_AC_Bhaktivedanta_Swami_Prabhupada_sec_ade = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					authoritarian_democrat_allowed = yes
+					NOT = { has_country_flag = AC_Bhaktivedanta_Swami_Prabhupada_dead }
+				}
+			}
+			visible = {
+				authoritarian_democrat_allowed = yes
+				NOT = { has_country_flag = AC_Bhaktivedanta_Swami_Prabhupada_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_AC_Bhaktivedanta_Swami_Prabhupada_sec_ade"
+			}
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_compassionate_gentleman
+			}
+			cancel_if_invalid = no
+		}
+
+	}
+
+	head_of_intel = { ### Head of Intel ###
+		BHC_Muzaffar_Ahmed_int_tot = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					vanguardist_allowed = yes
+					NOT = { has_country_flag = Muzaffar_Ahmed_dead }
+				}
+			}
+			visible = {
+				vanguardist_allowed = yes
+				NOT = { has_country_flag = Muzaffar_Ahmed_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Muzaffar_Ahmed_int_tot"
+			}
+			traits = {
+				head_of_intel
+				vanguardist
+				int_logistics_specialist
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_M_A_G_Osmani_int_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					collectivist_allowed = yes
+					NOT = { has_country_flag = M_A_G_Osmani_dead }
+				}
+			}
+			visible = {
+				collectivist_allowed = yes
+				NOT = { has_country_flag = M_A_G_Osmani_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_M_A_G_Osmani_int_syn"
+			}
+			traits = {
+				head_of_intel
+				collectivist
+				int_logistics_specialist
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Manabendra_Nath_Roy_int_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					collectivist_allowed = yes
+					NOT = { has_country_flag = Manabendra_Nath_Roy_dead }
+				}
+			}
+			visible = {
+				collectivist_allowed = yes
+				NOT = { has_country_flag = Manabendra_Nath_Roy_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Manabendra_Nath_Roy_int_syn"
+			}
+			traits = {
+				head_of_intel
+				collectivist
+				int_logistics_specialist
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Rahul_Sankrityayan_int_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					collectivist_allowed = yes
+					NOT = { has_country_flag = Rahul_Sankrityayan_dead }
+				}
+			}
+			visible = {
+				collectivist_allowed = yes
+				NOT = { has_country_flag = Rahul_Sankrityayan_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Rahul_Sankrityayan_int_syn"
+			}
+			traits = {
+				head_of_intel
+				collectivist
+				int_industrial_specialist
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Rash_Behari_Bose_int_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					collectivist_allowed = yes
+					NOT = { has_country_flag = Rash_Behari_Bose_dead }
+				}
+			}
+			visible = {
+				collectivist_allowed = yes
+				NOT = { has_country_flag = Rash_Behari_Bose_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Rash_Behari_Bose_int_syn"
+			}
+			traits = {
+				head_of_intel
+				collectivist
+				int_political_specialist
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_V_Subbiah_int_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					collectivist_allowed = yes
+					NOT = { has_country_flag = V_Subbiah_dead }
+				}
+			}
+			visible = {
+				collectivist_allowed = yes
+				NOT = { has_country_flag = V_Subbiah_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_V_Subbiah_int_syn"
+			}
+			traits = {
+				head_of_intel
+				collectivist
+				int_political_specialist
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Abdul_Razak_int_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					libertarian_socialist_allowed = yes
+					NOT = { has_country_flag = Abdul_Razak_dead }
+				}
+			}
+			visible = {
+				libertarian_socialist_allowed = yes
+				NOT = { has_country_flag = Abdul_Razak_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Abdul_Razak_int_rso"
+			}
+			traits = {
+				head_of_intel
+				libertarian_socialist
+				int_dismal_enigma
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_J_B_Kripalani_int_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					libertarian_socialist_allowed = yes
+					NOT = { has_country_flag = J_B_Kripalani_dead }
+				}
+			}
+			visible = {
+				libertarian_socialist_allowed = yes
+				NOT = { has_country_flag = J_B_Kripalani_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_J_B_Kripalani_int_rso"
+			}
+			traits = {
+				head_of_intel
+				libertarian_socialist
+				int_logistics_specialist
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Jagjivan_Ram_int_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					libertarian_socialist_allowed = yes
+					NOT = { has_country_flag = Jagjivan_Ram_dead }
+				}
+			}
+			visible = {
+				libertarian_socialist_allowed = yes
+				NOT = { has_country_flag = Jagjivan_Ram_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Jagjivan_Ram_int_rso"
+			}
+			traits = {
+				head_of_intel
+				libertarian_socialist
+				int_political_specialist
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Rafi_Ahmed_Kidwai_int_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					libertarian_socialist_allowed = yes
+					NOT = { has_country_flag = Rafi_Ahmed_Kidwai_dead }
+				}
+			}
+			visible = {
+				libertarian_socialist_allowed = yes
+				NOT = { has_country_flag = Rafi_Ahmed_Kidwai_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Rafi_Ahmed_Kidwai_int_rso"
+			}
+			traits = {
+				head_of_intel
+				libertarian_socialist
+				int_dismal_enigma
+			}
+			cancel_if_invalid = no
+		}
+
+	}
+
+	chief_of_staff = { ### Chief of Staff ###
+		BHC_ADLoganadan_cos_tot = {
+			allowed = { original_tag = IND }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = ADLoganadan_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = ADLoganadan_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_ADLoganadan_cos_tot"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_fire_support
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Subhas_Chandra_Bose_cos_tot = {
+			allowed = { original_tag = IND }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Subhas_Chandra_Bose_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Subhas_Chandra_Bose_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Subhas_Chandra_Bose_cos_tot"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_manoeuvre
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Virendranath_Chattopadhyaya_cos_tot = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Virendranath_Chattopadhyaya_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Virendranath_Chattopadhyaya_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Virendranath_Chattopadhyaya_cos_tot"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_fire_support
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Bhai_Bhagwan_Singh_cos_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Bhai_Bhagwan_Singh_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Bhai_Bhagwan_Singh_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Bhai_Bhagwan_Singh_cos_syn"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Chempakaraman_Pillai_cos_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Chempakaraman_Pillai_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Chempakaraman_Pillai_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Chempakaraman_Pillai_cos_syn"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_defence
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_M_A_G_Osmani_cos_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = M_A_G_Osmani_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = M_A_G_Osmani_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_M_A_G_Osmani_cos_syn"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Mahendra_Pratap_cos_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Mahendra_Pratap_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Mahendra_Pratap_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Mahendra_Pratap_cos_syn"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_fire_support
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Rash_Behari_Bose_cos_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Rash_Behari_Bose_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Rash_Behari_Bose_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Rash_Behari_Bose_cos_syn"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_psychology
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Sahajanand_Saraswati_cos_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Sahajanand_Saraswati_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Sahajanand_Saraswati_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Sahajanand_Saraswati_cos_syn"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Shripad_Amrit_Dange_cos_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Shripad_Amrit_Dange_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Shripad_Amrit_Dange_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Shripad_Amrit_Dange_cos_syn"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_commando_operations
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Tarak_Nath_Das_cos_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Tarak_Nath_Das_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Tarak_Nath_Das_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Tarak_Nath_Das_cos_syn"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_manoeuvre
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Thakin_Soe_cos_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Thakin_Soe_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Thakin_Soe_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Thakin_Soe_cos_syn"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_manoeuvre
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Ba_Cho_cos_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Ba_Cho_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Ba_Cho_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Ba_Cho_cos_rso"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_defence
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Barindra_Kumar_Ghosh_cos_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Barindra_Kumar_Ghosh_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Barindra_Kumar_Ghosh_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Barindra_Kumar_Ghosh_cos_rso"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Pandit_Parmanand_cos_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Pandit_Parmanand_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Pandit_Parmanand_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Pandit_Parmanand_cos_rso"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_defence
+			}
+			cancel_if_invalid = no
+		}
+
+	}
+
+	chief_of_army = { ### Chief of Army ###
+		BHC_ADLoganadan_carm_tot = {
+			allowed = { original_tag = IND }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = ADLoganadan_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = ADLoganadan_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_ADLoganadan_carm_tot"
+			}
+			traits = {
+				chief_of_army
+				carm_armoured_spearhead_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Bhagat_Singh_carm_tot = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Bhagat_Singh_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Bhagat_Singh_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Bhagat_Singh_carm_tot"
+			}
+			traits = {
+				chief_of_army
+				carm_doctrine_of_autonomy
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Bhupendra_Kumar_Datta_carm_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Bhupendra_Kumar_Datta_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Bhupendra_Kumar_Datta_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Bhupendra_Kumar_Datta_carm_syn"
+			}
+			traits = {
+				chief_of_army
+				carm_guns_and_butter_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Chempakaraman_Pillai_carm_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Chempakaraman_Pillai_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Chempakaraman_Pillai_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Chempakaraman_Pillai_carm_syn"
+			}
+			traits = {
+				chief_of_army
+				carm_decisive_battle_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_M_A_G_Osmani_carm_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = M_A_G_Osmani_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = M_A_G_Osmani_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_M_A_G_Osmani_carm_syn"
+			}
+			traits = {
+				chief_of_army
+				carm_armoured_spearhead_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Mahendra_Pratap_carm_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Mahendra_Pratap_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Mahendra_Pratap_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Mahendra_Pratap_carm_syn"
+			}
+			traits = {
+				chief_of_army
+				carm_elastic_defence_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Rash_Behari_Bose_carm_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Rash_Behari_Bose_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Rash_Behari_Bose_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Rash_Behari_Bose_carm_syn"
+			}
+			traits = {
+				chief_of_army
+				carm_elastic_defence_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Shripad_Amrit_Dange_carm_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Shripad_Amrit_Dange_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Shripad_Amrit_Dange_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Shripad_Amrit_Dange_carm_syn"
+			}
+			traits = {
+				chief_of_army
+				carm_commando_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Surya_Sen_carm_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Surya_Sen_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Surya_Sen_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Surya_Sen_carm_syn"
+			}
+			traits = {
+				chief_of_army
+				carm_doctrine_of_autonomy
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Tarak_Nath_Das_carm_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Tarak_Nath_Das_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Tarak_Nath_Das_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Tarak_Nath_Das_carm_syn"
+			}
+			traits = {
+				chief_of_army
+				carm_elastic_defence_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Than_Tun_carm_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Than_Tun_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Than_Tun_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Than_Tun_carm_syn"
+			}
+			traits = {
+				chief_of_army
+				carm_guns_and_butter_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_M_P_T_Acharya_carm_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = M_P_T_Acharya_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = M_P_T_Acharya_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_M_P_T_Acharya_carm_rso"
+			}
+			traits = {
+				chief_of_army
+				carm_guns_and_butter_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Pandit_Parmanand_carm_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Pandit_Parmanand_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Pandit_Parmanand_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Pandit_Parmanand_carm_rso"
+			}
+			traits = {
+				chief_of_army
+				carm_elastic_defence_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Baba_Prithvi_Singh_Azad_carm_sde = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Baba_Prithvi_Singh_Azad_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Baba_Prithvi_Singh_Azad_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Baba_Prithvi_Singh_Azad_carm_sde"
+			}
+			traits = {
+				chief_of_army
+				carm_elastic_defence_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+	}
+
+	chief_of_navy = { ### Chief of Navy ###
+		BHC_M_A_G_Osmani_cnav_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = M_A_G_Osmani_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = M_A_G_Osmani_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_M_A_G_Osmani_cnav_syn"
+			}
+			traits = {
+				chief_of_navy
+				cnav_base_control_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Sannappa_Parameshwar_Gaonkar_cnav_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Sannappa_Parameshwar_Gaonkar_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Sannappa_Parameshwar_Gaonkar_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Sannappa_Parameshwar_Gaonkar_cnav_syn"
+			}
+			traits = {
+				chief_of_navy
+				cnav_decisive_battle_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Bhaskar_Soman_cnav_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Bhaskar_Soman_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Bhaskar_Soman_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Bhaskar_Soman_cnav_rso"
+			}
+			traits = {
+				chief_of_navy
+				cnav_decisive_battle_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Lala_Har_Dayal_cnav_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Lala_Har_Dayal_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Lala_Har_Dayal_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Lala_Har_Dayal_cnav_rso"
+			}
+			traits = {
+				chief_of_navy
+				cnav_power_projection_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+	}
+
+	chief_of_air_force = { ### Chief of Air Force ###
+		BHC_Gurbachan_Singh_cair_tot = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Gurbachan_Singh_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Gurbachan_Singh_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Gurbachan_Singh_cair_tot"
+			}
+			traits = {
+				chief_of_air_force
+				cair_battlefield_support_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Dodla_Ranga_Reddy_cair_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Dodla_Ranga_Reddy_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Dodla_Ranga_Reddy_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Dodla_Ranga_Reddy_cair_syn"
+			}
+			traits = {
+				chief_of_air_force
+				cair_carpet_bombing_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_P_Krishna_Pillai_cair_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = P_Krishna_Pillai_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = P_Krishna_Pillai_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_P_Krishna_Pillai_cair_syn"
+			}
+			traits = {
+				chief_of_air_force
+				cair_carpet_bombing_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_P_Krishnamurti_cair_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = P_Krishnamurti_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = P_Krishnamurti_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_P_Krishnamurti_cair_syn"
+			}
+			traits = {
+				chief_of_air_force
+				cair_battlefield_support_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Syed_Naseem_Haider_cair_syn = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Syed_Naseem_Haider_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Syed_Naseem_Haider_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Syed_Naseem_Haider_cair_syn"
+			}
+			traits = {
+				chief_of_air_force
+				cair_naval_aviation_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Niranjan_Prasad_cair_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Niranjan_Prasad_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Niranjan_Prasad_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Niranjan_Prasad_cair_rso"
+			}
+			traits = {
+				chief_of_air_force
+				cair_air_superiority_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Pulin_Behari_Das_cair_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Pulin_Behari_Das_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Pulin_Behari_Das_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Pulin_Behari_Das_cair_rso"
+			}
+			traits = {
+				chief_of_air_force
+				cair_air_superiority_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		BHC_Subroto_Mukherjee_cair_rso = {
+			allowed = { original_tag = INC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Subroto_Mukherjee_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Subroto_Mukherjee_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BHC_Subroto_Mukherjee_cair_rso"
+			}
+			traits = {
+				chief_of_air_force
+				cair_battlefield_support_doctrine
+			}
+			cancel_if_invalid = no
+		}
+	}
+	
+##############
+	# Companies
+	##############
+
+	#### General ####
+	industrial_concern = {
+
+		bengalese_steel_mills = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea bengalese_steel_mills"}
+			allowed = { original_tag = INC }
+			traits = { industrial_manufacturer }
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+			research_bonus = {
+				industry = 0.1
+			}
+		}
+	}
+
+	#### Weapons Manufacturer ####
+	weapons_manufacturer = {
+		designer = yes
+
+		bengal_ordnance_factories = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea bengal_ordnance_factories"}
+			allowed = { original_tag = INC }
+			traits = { infantry_equipment_producer_offense_1 }
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
+		}
+	}
+
+	#### Heavy Equipment Manufacturer ####
+	tank_manufacturer = {
+		designer = yes
+
+		premier_automobiles = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea premier_automobiles"}
+			allowed = { original_tag = INC }
+			traits = { motorised_equipment_producer_mass_0 }
+			research_bonus = {
+				motorized_equipment = 0.05
+			}
+		}
+
+		chittaranjan_locomotive = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea chittaranjan_locomotive"}
+			allowed = { original_tag = INC }
+			traits = { small_tank_producer_defense_0 }
+			research_bonus = {
+				armor = 0.05
+			}
+		}
+	}
+
+	#### Air and Naval Manufacturer ####
+	air_naval_manufacturer = {
+		designer = yes
+
+		indian_national_airways = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea indian_national_airways"}
+			allowed = { original_tag = INC }
+			traits = { fighter_producer_offense_0 }
+			research_bonus = {
+				air_equipment = 0.05
+			}
+		}
+
+		khulna_shipyard = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea khulna_shipyard"}
+			allowed = { original_tag = INC }
+			traits = { small_ship_producer_offense_0 }
+			research_bonus = {
+				naval_equipment = 0.05
+			}
+		}
+	}	
+	
+}

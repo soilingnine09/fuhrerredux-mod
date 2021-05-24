@@ -1,0 +1,4422 @@
+ideas = {
+	
+	head_of_government = { ### Head of Government ###
+
+		RUS_Vladimir_M_Zenzinov_hog_sde = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Vladimir_M_Zenzinov_hog_sde"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_democrat_allowed = yes
+					NOT = { has_country_flag = Vladimir_M_Zenzinov_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				social_democrat_allowed = yes
+				NOT = { has_country_flag = Vladimir_M_Zenzinov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Vladimir_M_Zenzinov_hog_sde"
+			}
+			traits = {
+				head_of_government
+				social_democrat
+				hog_silent_workhorse
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Venedikt_Miakotin_hog_sli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Venedikt_Miakotin_hog_sli"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_liberal_allowed = yes
+					NOT = { has_country_flag = Pavel_N_Milyukov_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				social_liberal_allowed = yes
+				NOT = { has_country_flag = Pavel_N_Milyukov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Venedikt_Miakotin_hog_sli"
+			}
+			traits = {
+				head_of_government
+				social_liberal
+				hog_silent_workhorse
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Pavel_N_Milyukov_hog_mli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Pavel_N_Milyukov_hog_mli"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					market_liberal_allowed = yes
+					NOT = { has_country_flag = Pavel_N_Milyukov_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				market_liberal_allowed = yes
+				NOT = { has_country_flag = Pavel_N_Milyukov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Pavel_N_Milyukov_hog_mli"
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_backroom_backstabber
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Vasily_G_Boldyrev_hog_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Vasily_G_Boldyrev_hog_sco"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_conservative_allowed = yes
+					NOT = { has_country_flag = Vasily_G_Boldyrev_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				social_conservative_allowed = yes
+				NOT = { has_country_flag = Vasily_G_Boldyrev_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Vasily_G_Boldyrev_hog_sco"
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_respected_war_hero
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Georgiy_P_Ignatiev_hog_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Georgiy_P_Ignatiev_hog_sco"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_conservative_allowed = yes
+					NOT = { has_country_flag = Georgiy_P_Ignatiev_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				social_conservative_allowed = yes
+				NOT = { has_country_flag = Georgiy_P_Ignatiev_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Georgiy_P_Ignatiev_hog_sco"
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_silent_workhorse
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Nikolai_S_Trubetskoy_hog_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Nikolai_S_Trubetskoy_hog_sco"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_conservative_allowed = yes
+					NOT = { has_country_flag = Nikolai_S_Trubetskoy_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				social_conservative_allowed = yes
+				NOT = { has_country_flag = Nikolai_S_Trubetskoy_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Nikolai_S_Trubetskoy_hog_sco"
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_naive_optimist
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Alexandr_Danilovich_Allfyorov_hog_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Alexandr_Danilovich_Allfyorov_hog_sco"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_conservative_allowed = yes
+					NOT = { has_country_flag = Alexandr_Danilovich_Allfyorov }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				social_conservative_allowed = yes
+				NOT = { has_country_flag = Alexandr_Danilovich_Allfyorov }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Alexandr_Danilovich_Allfyorov_hog_sco"
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_naive_optimist
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Abram_Dragomirov_hog_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Abram_Dragomirov_hog_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					authoritarian_democrat_allowed = yes
+					NOT = { has_country_flag = Abram_Dragomirov_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				authoritarian_democrat_allowed = yes
+				NOT = { has_country_flag = Abram_Dragomirov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Abram_Dragomirov_hog_ade"
+			}
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_old_general
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Anton_I_Denikin_hog_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Anton_I_Denikin_hog_sco"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_conservative_allowed = yes
+					NOT = { has_country_flag = Anton_I_Denikin_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				social_conservative_allowed = yes
+				NOT = { has_country_flag = Anton_I_Denikin_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Anton_I_Denikin_hog_sco"
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_old_general
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Felix_F_Yusupov_hog_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Felix_F_Yusupov_hog_sco"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_conservative_allowed = yes
+					NOT = { has_country_flag = Felix_F_Yusupov_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				social_conservative_allowed = yes
+				NOT = { has_country_flag = Felix_F_Yusupov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Felix_F_Yusupov_hog_sco"
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_happy_amateur
+			}
+			cancel_if_invalid = no
+		}
+		RUS_Anatoly_Pepelyayev_hog_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Anatoly_Pepelyayev_hog_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					authoritarian_democrat_allowed = yes
+					NOT = { has_country_flag = Anatoly_Pepelyayev_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				authoritarian_democrat_allowed = yes
+				NOT = { has_country_flag = Anatoly_Pepelyayev_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Anatoly_Pepelyayev_hog_ade"
+			}
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_happy_amateur
+			}
+			cancel_if_invalid = no
+		}
+		
+
+		RUS_Patriarch_Kiril_hog_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Patriarch_Kiril_hog_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					authoritarian_democrat_allowed = yes
+					NOT = { has_country_flag = Patriarch_Kiril_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				authoritarian_democrat_allowed = yes
+				NOT = { has_country_flag = Patriarch_Kiril_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Patriarch_Kiril_hog_ade"
+			}
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_spiritual_leader
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Pavel_Bermondt_Avalov_hog_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Pavel_Bermondt_Avalov_hog_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					authoritarian_democrat_allowed = yes
+					NOT = { has_country_flag = Pavel_Bermondt_Avalov_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				authoritarian_democrat_allowed = yes
+				NOT = { has_country_flag = Pavel_Bermondt_Avalov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Pavel_Bermondt_Avalov_hog_ade"
+			}
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_old_general
+			}
+			cancel_if_invalid = no
+		}
+
+
+		RUS_Vasily_Kanin_hog_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Vasily_Kanin_hog_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					authoritarian_democrat_allowed = yes
+					NOT = { has_country_flag = Vasily_Kanin_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				authoritarian_democrat_allowed = yes
+				NOT = { has_country_flag = Vasily_Kanin_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Vasily_Kanin_hog_ade"
+			}
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_old_admiral
+			}
+			cancel_if_invalid = no
+		}
+
+
+
+		RUS_Aleksandr_S_Lukomsky_hog_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Aleksandr_S_Lukomsky_hog_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					authoritarian_democrat_allowed = yes
+					NOT = { has_country_flag = Aleksandr_S_Lukomsky_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				authoritarian_democrat_allowed = yes
+				NOT = { has_country_flag = Aleksandr_S_Lukomsky_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Aleksandr_S_Lukomsky_hog_ade"
+			}
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_old_general
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Lev_N_Gumilov_hog_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Lev_N_Gumilov_hog_pau"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					paternal_autocrat_allowed = yes
+					NOT = { has_country_flag = Lev_N_Gumilov_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				paternal_autocrat_allowed = yes
+				NOT = { has_country_flag = Lev_N_Gumilov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Lev_N_Gumilov_hog_pau"
+			}
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_naive_optimist
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Pyotr_N_Wrangel_hog_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Pyotr_N_Wrangel_hog_pau"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					paternal_autocrat_allowed = yes
+					NOT = { has_country_flag = Pyotr_Wrangel_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				paternal_autocrat_allowed = yes
+				NOT = { has_country_flag = Pyotr_Wrangel_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Pyotr_N_Wrangel_hog_pau"
+			}
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_silent_workhorse
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Regency_Council_hog_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Regency_Council_hog_pau"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					paternal_autocrat_allowed = yes
+					NOT = { has_country_flag = Regency_Council_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				paternal_autocrat_allowed = yes
+				NOT = { has_country_flag = Regency_Council_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Regency_Council_hog_pau"
+			}
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_silent_workhorse
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Vladimir_M_Purishkevich_hog_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Vladimir_M_Purishkevich_hog_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					national_populist_allowed = yes
+					NOT = { has_country_flag = Vladimir_M_Purishkevich_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				national_populist_allowed = yes
+				NOT = { has_country_flag = Vladimir_M_Purishkevich_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Vladimir_M_Purishkevich_hog_npo"
+			}
+			traits = {
+				head_of_government
+				national_populist
+				hog_flamboyant_tough_guy
+			}
+			cancel_if_invalid = no
+		}
+		
+		RUS_Lavr_G_Kornilov_hog_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Lavr_G_Kornilov_hog_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					national_populist_allowed = yes
+					NOT = { has_country_flag = Lavr_G_Kornilov_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				national_populist_allowed = yes
+				NOT = { has_country_flag = Lavr_G_Kornilov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Lavr_G_Kornilov_hog_npo"
+			}
+			traits = {
+				head_of_government
+				national_populist
+				hog_old_general
+			}
+			cancel_if_invalid = no
+		}
+		RUS_Nikolai_V_Ustryalov_hog_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Nikolai_V_Ustryalov_hog_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					national_populist_allowed = yes
+					NOT = { has_country_flag = Nikolai_V_Ustryalov_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				national_populist_allowed = yes
+				NOT = { has_country_flag = Nikolai_V_Ustryalov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Nikolai_V_Ustryalov_hog_npo"
+			}
+			traits = {
+				head_of_government
+				national_populist
+				hog_flamboyant_tough_guy
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Pavel_N_Shatilov_hog_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Pavel_N_Shatilov_hog_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					national_populist_allowed = yes
+					NOT = { has_country_flag = Pavel_N_Shatilov_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				national_populist_allowed = yes
+				NOT = { has_country_flag = Pavel_N_Shatilov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Pavel_N_Shatilov_hog_npo"
+			}
+			traits = {
+				head_of_government
+				national_populist
+				hog_political_protege
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Sergei_G_Romanovski_hog_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Sergei_G_Romanovski_hog_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					national_populist_allowed = yes
+					NOT = { has_country_flag = Sergei_G_Romanovski_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				national_populist_allowed = yes
+				NOT = { has_country_flag = Sergei_G_Romanovski_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Sergei_G_Romanovski_hog_npo"
+			}
+			traits = {
+				head_of_government
+				national_populist
+				hog_backroom_backstabber
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Viktor_L_Pokrovsky_hog_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Viktor_L_Pokrovsky_hog_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					national_populist_allowed = yes
+					NOT = { has_country_flag = Viktor_L_Pokrovsky_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				national_populist_allowed = yes
+				NOT = { has_country_flag = Viktor_L_Pokrovsky_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Viktor_L_Pokrovsky_hog_npo"
+			}
+			traits = {
+				head_of_government
+				national_populist
+				hog_backroom_backstabber
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Viktor_M_Baydalakov_hog_val = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Viktor_M_Baydalakov_hog_val"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					valkist_allowed = yes
+					NOT = { has_country_flag = Viktor_M_Baydalakov_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				valkist_allowed = yes
+				NOT = { has_country_flag = Viktor_M_Baydalakov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Viktor_M_Baydalakov_hog_val"
+			}
+			traits = {
+				head_of_government
+				valkist
+				hog_corporate_suit
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Arkadiy_Stolypin_hog_val = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Arkadiy_Stolypin_hog_val"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					valkist_allowed = yes
+					NOT = { has_country_flag = Arkadiy_Stolypin_dead }
+					has_country_flag = can_replace_hog
+				}
+			}
+			visible = {
+				valkist_allowed = yes
+				NOT = { has_country_flag = Arkadiy_Stolypin_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Arkadiy_Stolypin_hog_val"
+			}
+			traits = {
+				head_of_government
+				valkist
+				hog_backroom_backstabber
+			}
+			cancel_if_invalid = no
+		}
+
+
+
+	}
+
+	foreign_minister = { ### Foreign Minister ###
+
+		RUS_Fanni_Y_Kaplan_for_sde = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Fanni_Y_Kaplan_for_sde"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_democrat_allowed = yes
+					NOT = { has_country_flag = Fanni_Y_Kaplan_dead }
+				}
+			}
+			visible = {
+				social_democrat_allowed = yes
+				NOT = { has_country_flag = Fanni_Y_Kaplan_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Fanni_Y_Kaplan_for_sde"
+			}
+			traits = {
+				foreign_minister
+				social_democrat
+				for_ideological_crusader
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Viktor_M_Chernov_for_sde = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Viktor_M_Chernov_for_sde"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_democrat_allowed = yes
+					NOT = { has_country_flag = Viktor_M_Chernov_dead }
+				}
+			}
+			visible = {
+				social_democrat_allowed = yes
+				NOT = { has_country_flag = Viktor_M_Chernov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Viktor_M_Chernov_for_sde"
+			}
+			traits = {
+				foreign_minister
+				social_democrat
+				for_apologetic_clerk
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Ariadna_V_Tyrkova_Williams_for_sli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Ariadna_V_Tyrkova_Williams_for_sli"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_liberal_allowed = yes
+					NOT = { has_country_flag = Ariadna_V_Tyrkova_Williams_dead }
+				}
+			}
+			visible = {
+				social_liberal_allowed = yes
+				NOT = { has_country_flag = Ariadna_V_Tyrkova_Williams_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Ariadna_V_Tyrkova_Williams_for_sli"
+			}
+			traits = {
+				foreign_minister
+				social_liberal
+				for_apologetic_clerk
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Georgiy_V_Vernadsky_for_sli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Georgiy_V_Vernadsky_for_sli"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_liberal_allowed = yes
+					NOT = { has_country_flag = Georgiy_V_Vernadsky_dead }
+				}
+			}
+			visible = {
+				social_liberal_allowed = yes
+				NOT = { has_country_flag = Georgiy_V_Vernadsky_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Georgiy_V_Vernadsky_for_sli"
+			}
+			traits = {
+				foreign_minister
+				social_liberal
+				for_great_compromiser
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Mikhail_I_Tereshchenko_for_sli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Mikhail_I_Tereshchenko_for_sli"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_liberal_allowed = yes
+					NOT = { has_country_flag = Mikhail_I_Tereshchenko_dead }
+				}
+			}
+			visible = {
+				social_liberal_allowed = yes
+				NOT = { has_country_flag = Mikhail_I_Tereshchenko_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Mikhail_I_Tereshchenko_for_sli"
+			}
+			traits = {
+				foreign_minister
+				social_liberal
+				for_ideological_crusader
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Nikolai_V_Nekrasov_for_sli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Nikolai_V_Nekrasov_for_sli"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_liberal_allowed = yes
+					NOT = { has_country_flag = Nikolai_V_Nekrasov_dead }
+				}
+			}
+			visible = {
+				social_liberal_allowed = yes
+				NOT = { has_country_flag = Nikolai_V_Nekrasov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Nikolai_V_Nekrasov_for_sli"
+			}
+			traits = {
+				foreign_minister
+				social_liberal
+				for_apologetic_clerk
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Pyotr_B_Struve_for_sli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Pyotr_B_Struve_for_sli"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_liberal_allowed = yes
+					NOT = { has_country_flag = Pyotr_B_Struve_dead }
+				}
+			}
+			visible = {
+				social_liberal_allowed = yes
+				NOT = { has_country_flag = Pyotr_B_Struve_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Pyotr_B_Struve_for_sli"
+			}
+			traits = {
+				foreign_minister
+				social_liberal
+				for_ideological_crusader
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Aleksandr_I_Konovalov_for_mli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Aleksandr_I_Konovalov_for_mli"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					market_liberal_allowed = yes
+					NOT = { has_country_flag = Aleksandr_I_Konovalov_dead }
+				}
+			}
+			visible = {
+				market_liberal_allowed = yes
+				NOT = { has_country_flag = Aleksandr_I_Konovalov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Aleksandr_I_Konovalov_for_mli"
+			}
+			traits = {
+				foreign_minister
+				market_liberal
+				for_apologetic_clerk
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Alexei_M_Nikitin_for_mli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Alexei_M_Nikitin_for_mli"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					market_liberal_allowed = yes
+					NOT = { has_country_flag = Alexei_M_Nikitin_dead }
+				}
+			}
+			visible = {
+				market_liberal_allowed = yes
+				NOT = { has_country_flag = Alexei_M_Nikitin_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Alexei_M_Nikitin_for_mli"
+			}
+			traits = {
+				foreign_minister
+				market_liberal
+				for_great_compromiser
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Pavel_N_Milyukov_for_mli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Pavel_N_Milyukov_for_mli"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					market_liberal_allowed = yes
+					NOT = { has_country_flag = Pavel_N_Milyukov_dead }
+				}
+			}
+			visible = {
+				market_liberal_allowed = yes
+				NOT = { has_country_flag = Pavel_N_Milyukov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Pavel_N_Milyukov_for_mli"
+			}
+			traits = {
+				foreign_minister
+				market_liberal
+				for_great_compromiser
+			}
+			cancel_if_invalid = no
+		}
+
+
+		RUS_Georgiy_P_Ignatiev_for_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Georgiy_P_Ignatiev_for_sco"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_conservative_allowed = yes
+					NOT = { has_country_flag = Georgiy_P_Ignatiev_dead }
+				}
+			}
+			visible = {
+				social_conservative_allowed = yes
+				NOT = { has_country_flag = Georgiy_P_Ignatiev_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Georgiy_P_Ignatiev_for_sco"
+			}
+			traits = {
+				foreign_minister
+				social_conservative
+				for_great_compromiser
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Vasily_G_Boldyrev_for_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Vasily_G_Boldyrev_for_sco"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_conservative_allowed = yes
+					NOT = { has_country_flag = Vasily_G_Boldyrev_dead }
+				}
+			}
+			visible = {
+				social_conservative_allowed = yes
+				NOT = { has_country_flag = Vasily_G_Boldyrev_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Vasily_G_Boldyrev_for_sco"
+			}
+			traits = {
+				foreign_minister
+				social_conservative
+				for_general_staffer
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Nikolai_S_Trubetskoy_for_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Nikolai_S_Trubetskoy_for_sco"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_conservative_allowed = yes
+					NOT = { has_country_flag = Nikolai_S_Trubetskoy_dead }
+				}
+			}
+			visible = {
+				social_conservative_allowed = yes
+				NOT = { has_country_flag = Nikolai_S_Trubetskoy_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Nikolai_S_Trubetskoy_for_sco"
+			}
+			traits = {
+				foreign_minister
+				social_conservative
+				for_biased_intellectual
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Vladimir_D_Nabokov_for_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Vladimir_D_Nabokov_for_sco"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_conservative_allowed = yes
+					NOT = { has_country_flag = Vladimir_D_Nabokov_dead }
+				}
+			}
+			visible = {
+				social_conservative_allowed = yes
+				NOT = { has_country_flag = Vladimir_D_Nabokov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Vladimir_D_Nabokov_for_sco"
+			}
+			traits = {
+				foreign_minister
+				social_conservative
+				for_general_staffer
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Vladimir_P_Paley_for_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Vladimir_P_Paley_for_sco"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_conservative_allowed = yes
+					NOT = { has_country_flag = Vladimir_P_Paley_dead }
+				}
+			}
+			visible = {
+				social_conservative_allowed = yes
+				NOT = { has_country_flag = Vladimir_P_Paley_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Vladimir_P_Paley_for_sco"
+			}
+			traits = {
+				foreign_minister
+				social_conservative
+				for_apologetic_clerk
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Mikhail_A_Taube_for_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Mikhail_A_Taube_for_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					authoritarian_democrat_allowed = yes
+					NOT = { has_country_flag = Mikhail_A_Taube_dead }
+				}
+			}
+			visible = {
+				authoritarian_democrat_allowed = yes
+				NOT = { has_country_flag = Mikhail_A_Taube_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Mikhail_A_Taube_for_ade"
+			}
+			traits = {
+				foreign_minister
+				authoritarian_democrat
+				for_ideological_crusader
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Vasily_Kanin_for_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Vasily_Kanin_for_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					authoritarian_democrat_allowed = yes
+					NOT = { has_country_flag = Vasily_Kanin_dead }
+				}
+			}
+			visible = {
+				authoritarian_democrat_allowed = yes
+				NOT = { has_country_flag = Vasily_Kanin_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Vasily_Kanin_for_ade"
+			}
+			traits = {
+				foreign_minister
+				authoritarian_democrat
+				for_general_staffer
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Vladimir_Galitzine_for_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Vladimir_Galitzine_for_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					authoritarian_democrat_allowed = yes
+					NOT = { has_country_flag = Vladimir_Galitzine_dead }
+				}
+			}
+			visible = {
+				authoritarian_democrat_allowed = yes
+				NOT = { has_country_flag = Vladimir_Galitzine_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Vladimir_Galitzine_for_ade"
+			}
+			traits = {
+				foreign_minister
+				authoritarian_democrat
+				for_great_compromiser
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Alexei_A_Ignatiev_for_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Alexei_A_Ignatiev_for_pau"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					paternal_autocrat_allowed = yes
+					NOT = { has_country_flag = Alexei_A_Ignatiev_dead }
+				}
+			}
+			visible = {
+				paternal_autocrat_allowed = yes
+				NOT = { has_country_flag = Alexei_A_Ignatiev_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Alexei_A_Ignatiev_for_pau"
+			}
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_the_cloak_n_dagger_schemer
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Boris_V_Stuermer_for_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Boris_V_Stuermer_for_pau"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					paternal_autocrat_allowed = yes
+					NOT = { has_country_flag = Boris_V_Stuermer_dead }
+				}
+			}
+			visible = {
+				paternal_autocrat_allowed = yes
+				NOT = { has_country_flag = Boris_V_Stuermer_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Boris_V_Stuermer_for_pau"
+			}
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_iron_fisted_brute
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Lev_N_Gumilov_for_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Lev_N_Gumilov_for_pau"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					paternal_autocrat_allowed = yes
+					NOT = { has_country_flag = Lev_N_Gumilov_dead }
+				}
+			}
+			visible = {
+				paternal_autocrat_allowed = yes
+				NOT = { has_country_flag = Lev_N_Gumilov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Lev_N_Gumilov_for_pau"
+			}
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_iron_fisted_brute
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Aleksandr_Dikgof_Derental_for_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Aleksandr_Dikgof_Derental_for_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					national_populist_allowed = yes
+					NOT = { has_country_flag = Aleksandr_Dikgof_Derental_dead }
+				}
+			}
+			visible = {
+				national_populist_allowed = yes
+				NOT = { has_country_flag = Aleksandr_Dikgof_Derental_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Aleksandr_Dikgof_Derental_for_npo"
+			}
+			traits = {
+				foreign_minister
+				national_populist
+				for_biased_intellectual
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Aleksandr_L_Kazembek_for_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Aleksandr_L_Kazembek_for_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					national_populist_allowed = yes
+					NOT = { has_country_flag = Aleksandr_L_Kazembek_dead }
+				}
+			}
+			visible = {
+				national_populist_allowed = yes
+				NOT = { has_country_flag = Aleksandr_L_Kazembek_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Aleksandr_L_Kazembek_for_npo"
+			}
+			traits = {
+				foreign_minister
+				national_populist
+				for_iron_fisted_brute
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Aleksei_N_Tolstoy_for_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Aleksei_N_Tolstoy_for_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					national_populist_allowed = yes
+					NOT = { has_country_flag = Aleksei_N_Tolstoy_dead }
+				}
+			}
+			visible = {
+				national_populist_allowed = yes
+				NOT = { has_country_flag = Aleksei_N_Tolstoy_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Aleksei_N_Tolstoy_for_npo"
+			}
+			traits = {
+				foreign_minister
+				national_populist
+				for_biased_intellectual
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Dmitri_M_Odinets_for_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Dmitri_M_Odinets_for_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					national_populist_allowed = yes
+					NOT = { has_country_flag = Dmitri_M_Odinets_dead }
+				}
+			}
+			visible = {
+				national_populist_allowed = yes
+				NOT = { has_country_flag = Dmitri_M_Odinets_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Dmitri_M_Odinets_for_npo"
+			}
+			traits = {
+				foreign_minister
+				national_populist
+				for_ideological_crusader
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Sergei_G_Romanovski_for_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Sergei_G_Romanovski_for_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					national_populist_allowed = yes
+					NOT = { has_country_flag = Sergei_G_Romanovski_dead }
+				}
+			}
+			visible = {
+				national_populist_allowed = yes
+				NOT = { has_country_flag = Sergei_G_Romanovski_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Sergei_G_Romanovski_for_npo"
+			}
+			traits = {
+				foreign_minister
+				national_populist
+				for_great_compromiser
+			}
+			cancel_if_invalid = no
+		}
+		RUS_Alexander_Vuyrgler_for_val = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Alexander_Vuyrgler_for_val"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					valkist_allowed = yes
+					NOT = { has_country_flag = Sergei_G_Romanovski_dead }
+				}
+			}
+			visible = {
+				valkist_allowed = yes
+				NOT = { has_country_flag = Sergei_G_Romanovski_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Sergei_G_Romanovski_for_npo"
+			}
+			traits = {
+				foreign_minister
+				valkist
+				for_great_compromiser
+			}
+			cancel_if_invalid = no
+		}
+
+
+	}
+
+	economy_minister = { ### Economy Minister ###
+
+		RUS_Vladimir_M_Zenzinov_eco_sde = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Vladimir_M_Zenzinov_eco_sde"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_democrat_allowed = yes
+					NOT = { has_country_flag = Vladimir_M_Zenzinov_dead }
+				}
+			}
+			visible = {
+				social_democrat_allowed = yes
+				NOT = { has_country_flag = Vladimir_M_Zenzinov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Vladimir_M_Zenzinov_eco_sde"
+			}
+			traits = {
+				economy_minister
+				social_democrat
+				eco_keynesian_economy
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Andrei_D_Sakharov_eco_sli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Andrei_D_Sakharov_eco_sli"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_liberal_allowed = yes
+					NOT = { has_country_flag = Andrei_D_Sakharov_dead }
+				}
+			}
+			visible = {
+				social_liberal_allowed = yes
+				NOT = { has_country_flag = Andrei_D_Sakharov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Andrei_D_Sakharov_eco_sli"
+			}
+			traits = {
+				economy_minister
+				social_liberal
+				eco_theoretical_scientist
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Mikhail_I_Tereshchenko_eco_sli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Mikhail_I_Tereshchenko_eco_sli"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_liberal_allowed = yes
+					NOT = { has_country_flag = Mikhail_I_Tereshchenko_dead }
+				}
+			}
+			visible = {
+				social_liberal_allowed = yes
+				NOT = { has_country_flag = Mikhail_I_Tereshchenko_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Mikhail_I_Tereshchenko_eco_sli"
+			}
+			traits = {
+				economy_minister
+				social_liberal
+				eco_administrative_genius
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Vadim_V_Rudnev_eco_sli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Vadim_V_Rudnev_eco_sli"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_liberal_allowed = yes
+					NOT = { has_country_flag = Vadim_V_Rudnev_dead }
+				}
+			}
+			visible = {
+				social_liberal_allowed = yes
+				NOT = { has_country_flag = Vadim_V_Rudnev_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Vadim_V_Rudnev_eco_sli"
+			}
+			traits = {
+				economy_minister
+				social_liberal
+				eco_military_entrepreneur
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Alexey_Peshekhonov_eco_sli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Alexey_Peshekhonov_eco_sli"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_liberal_allowed = yes
+					NOT = { has_country_flag = Alexey_Peshekhonov_dead }
+				}
+			}
+			visible = {
+				social_liberal_allowed = yes
+				NOT = { has_country_flag = Alexey_Peshekhonov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Alexey_Peshekhonov_eco_sli"
+			}
+			traits = {
+				economy_minister
+				social_liberal
+				eco_balanced_budget_economy
+			}
+			cancel_if_invalid = no
+		}
+
+
+		RUS_Vladimir_P_Smirnov_eco_sli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Vladimir_P_Smirnov_eco_sli"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_liberal_allowed = yes
+					NOT = { has_country_flag = Vladimir_P_Smirnov_dead }
+				}
+			}
+			visible = {
+				social_liberal_allowed = yes
+				NOT = { has_country_flag = Vladimir_P_Smirnov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Vladimir_P_Smirnov_eco_sli"
+			}
+			traits = {
+				economy_minister
+				social_liberal
+				eco_balanced_budget_economy
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Aleksandr_I_Konovalov_eco_mli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Aleksandr_I_Konovalov_eco_mli"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					market_liberal_allowed = yes
+					NOT = { has_country_flag = Aleksandr_I_Konovalov_dead }
+				}
+			}
+			visible = {
+				market_liberal_allowed = yes
+				NOT = { has_country_flag = Aleksandr_I_Konovalov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Aleksandr_I_Konovalov_eco_mli"
+			}
+			traits = {
+				economy_minister
+				market_liberal
+				eco_balanced_budget_economy
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Mikhail_V_Bernacki_eco_mli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Mikhail_V_Bernacki_eco_mli"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					market_liberal_allowed = yes
+					NOT = { has_country_flag = Mikhail_V_Bernacki_dead }
+				}
+			}
+			visible = {
+				market_liberal_allowed = yes
+				NOT = { has_country_flag = Mikhail_V_Bernacki_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Mikhail_V_Bernacki_eco_mli"
+			}
+			traits = {
+				economy_minister
+				market_liberal
+				eco_administrative_genius
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Wassily_Leontief_eco_mli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Wassily_Leontief_eco_mli"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					market_liberal_allowed = yes
+					NOT = { has_country_flag = Wassily_Leontief_dead }
+				}
+			}
+			visible = {
+				market_liberal_allowed = yes
+				NOT = { has_country_flag = Wassily_Leontief_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Wassily_Leontief_eco_mli"
+			}
+			traits = {
+				economy_minister
+				market_liberal
+				eco_laissez_faire_capitalist
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Ivan_G_Erdeli_eco_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Ivan_G_Erdeli_eco_sco"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_conservative_allowed = yes
+					NOT = { has_country_flag = Ivan_G_Erdeli_dead }
+				}
+			}
+			visible = {
+				social_conservative_allowed = yes
+				NOT = { has_country_flag = Ivan_G_Erdeli_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Ivan_G_Erdeli_eco_sco"
+			}
+			traits = {
+				economy_minister
+				social_conservative
+				eco_infantry_proponent
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Sergei_Bulgakov_eco_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Sergei_Bulgakov_eco_sco"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_conservative_allowed = yes
+					NOT = { has_country_flag = Sergei_Bulgakov_dead }
+				}
+			}
+			visible = {
+				social_conservative_allowed = yes
+				NOT = { has_country_flag = Sergei_Bulgakov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Sergei_Bulgakov_eco_sco"
+			}
+			traits = {
+				economy_minister
+				social_conservative
+				eco_bank_president
+			}
+			cancel_if_invalid = no
+		}
+		RUS_Vladimir_von_Kappel_eco_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Vladimir_von_Kappel_eco_sco"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_conservative_allowed = yes
+					NOT = { has_country_flag = Vladimir_von_Kappel_dead }
+				}
+			}
+			visible = {
+				social_conservative_allowed = yes
+				NOT = { has_country_flag = Vladimir_von_Kappel_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Vladimir_von_Kappel_eco_sco"
+			}
+			traits = {
+				economy_minister
+				social_conservative
+				eco_military_entrepreneur
+			}
+			cancel_if_invalid = no
+		}
+		RUS_Alexei_P_Arkhangelskiy_eco_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Alexei_P_Arkhangelskiy_eco_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					authoritarian_democrat_allowed = yes
+					NOT = { has_country_flag = Alexei_P_Arkhangelskiy_dead }
+				}
+			}
+			visible = {
+				authoritarian_democrat_allowed = yes
+				NOT = { has_country_flag = Alexei_P_Arkhangelskiy_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Alexei_P_Arkhangelskiy_eco_ade"
+			}
+			traits = {
+				economy_minister
+				authoritarian_democrat
+				eco_military_entrepreneur
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Dmitri_Pavlovich_Romanov_eco_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Dmitri_Pavlovich_Romanov_eco_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					authoritarian_democrat_allowed = yes
+					NOT = { has_country_flag = Dmitri_Pavlovich_Romanov_dead }
+				}
+			}
+			visible = {
+				authoritarian_democrat_allowed = yes
+				NOT = { has_country_flag = Dmitri_Pavlovich_Romanov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Dmitri_Pavlovich_Romanov_eco_ade"
+			}
+			traits = {
+				economy_minister
+				authoritarian_democrat
+				eco_corrupt_kleptocrat
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Mikhail_Rodzyanko_eco_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Mikhail_Rodzyanko_eco_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					authoritarian_democrat_allowed = yes
+					NOT = { has_country_flag = Mikhail_Rodzyanko_dead }
+				}
+			}
+			visible = {
+				authoritarian_democrat_allowed = yes
+				NOT = { has_country_flag = Mikhail_Rodzyanko_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Mikhail_Rodzyanko_eco_ade"
+			}
+			traits = {
+				economy_minister
+				authoritarian_democrat
+				eco_resource_industrialist
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Pavel_N_Ignatiev_eco_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Pavel_N_Ignatiev_eco_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					authoritarian_democrat_allowed = yes
+					NOT = { has_country_flag = Pavel_N_Ignatiev_dead }
+				}
+			}
+			visible = {
+				authoritarian_democrat_allowed = yes
+				NOT = { has_country_flag = Pavel_N_Ignatiev_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Pavel_N_Ignatiev_eco_ade"
+			}
+			traits = {
+				economy_minister
+				authoritarian_democrat
+				eco_resource_industrialist
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Vladimir_N_Kokovtsov_eco_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Vladimir_N_Kokovtsov_eco_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					authoritarian_democrat_allowed = yes
+					NOT = { has_country_flag = Vladimir_N_Kokovtsov_dead }
+				}
+			}
+			visible = {
+				authoritarian_democrat_allowed = yes
+				NOT = { has_country_flag = Vladimir_N_Kokovtsov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Vladimir_N_Kokovtsov_eco_ade"
+			}
+			traits = {
+				economy_minister
+				authoritarian_democrat
+				eco_bank_president
+			}
+			cancel_if_invalid = no
+		}
+
+
+
+		RUS_Aleksei_I_Putilov_eco_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Aleksei_I_Putilov_eco_pau"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					paternal_autocrat_allowed = yes
+					NOT = { has_country_flag = Aleksei_I_Putilov_dead }
+				}
+			}
+			visible = {
+				paternal_autocrat_allowed = yes
+				NOT = { has_country_flag = Aleksei_I_Putilov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Aleksei_I_Putilov_eco_pau"
+			}
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_bank_president
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Alexei_A_Ignatiev_eco_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Alexei_A_Ignatiev_eco_pau"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					paternal_autocrat_allowed = yes
+					NOT = { has_country_flag = Alexei_A_Ignatiev_dead }
+				}
+			}
+			visible = {
+				paternal_autocrat_allowed = yes
+				NOT = { has_country_flag = Alexei_A_Ignatiev_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Alexei_A_Ignatiev_eco_pau"
+			}
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_military_entrepreneur
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Ivan_P_Romanovsky_eco_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Ivan_P_Romanovsky_eco_pau"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					paternal_autocrat_allowed = yes
+					NOT = { has_country_flag = Ivan_P_Romanovsky_dead }
+				}
+			}
+			visible = {
+				paternal_autocrat_allowed = yes
+				NOT = { has_country_flag = Ivan_P_Romanovsky_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Ivan_P_Romanovsky_eco_pau"
+			}
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_reformer
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Nikanor_V_Savic_eco_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Nikanor_V_Savic_eco_pau"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					paternal_autocrat_allowed = yes
+					NOT = { has_country_flag = Nikanor_V_Savic_dead }
+				}
+			}
+			visible = {
+				paternal_autocrat_allowed = yes
+				NOT = { has_country_flag = Nikanor_V_Savic_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Nikanor_V_Savic_eco_pau"
+			}
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_industrialiser
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Nikolai_A_Maklakov_eco_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Nikolai_A_Maklakov_eco_pau"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					paternal_autocrat_allowed = yes
+					NOT = { has_country_flag = Nikolai_A_Maklakov_dead }
+				}
+			}
+			visible = {
+				paternal_autocrat_allowed = yes
+				NOT = { has_country_flag = Nikolai_A_Maklakov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Nikolai_A_Maklakov_eco_pau"
+			}
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_military_entrepreneur
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Andrey_I_Zankevich_eco_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Andrey_I_Zankevich_eco_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					national_populist_allowed = yes
+					NOT = { has_country_flag = Andrey_I_Zankevich_dead }
+				}
+			}
+			visible = {
+				national_populist_allowed = yes
+				NOT = { has_country_flag = Andrey_I_Zankevich_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Andrey_I_Zankevich_eco_npo"
+			}
+			traits = {
+				economy_minister
+				national_populist
+				eco_construction_magnate
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Nikolai_P_Krasnov_eco_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Nikolai_P_Krasnov_eco_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					national_populist_allowed = yes
+					NOT = { has_country_flag = Nikolai_P_Krasnov_dead }
+				}
+			}
+			visible = {
+				national_populist_allowed = yes
+				NOT = { has_country_flag = Nikolai_P_Krasnov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Nikolai_P_Krasnov_eco_npo"
+			}
+			traits = {
+				economy_minister
+				national_populist
+				eco_construction_magnate
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Nikolai_V_Ustryalov_eco_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Nikolai_V_Ustryalov_eco_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					national_populist_allowed = yes
+					NOT = { has_country_flag = Nikolai_V_Ustryalov_dead }
+				}
+			}
+			visible = {
+				national_populist_allowed = yes
+				NOT = { has_country_flag = Nikolai_V_Ustryalov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Nikolai_V_Ustryalov_eco_npo"
+			}
+			traits = {
+				economy_minister
+				national_populist
+				eco_administrative_genius
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Yuri_V_Kluchnikov_eco_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Yuri_V_Kluchnikov_eco_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					national_populist_allowed = yes
+					NOT = { has_country_flag = Yuri_V_Kluchnikov_dead }
+				}
+			}
+			visible = {
+				national_populist_allowed = yes
+				NOT = { has_country_flag = Yuri_V_Kluchnikov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Yuri_V_Kluchnikov_eco_npo"
+			}
+			traits = {
+				economy_minister
+				national_populist
+				eco_construction_magnate
+			}
+			cancel_if_invalid = no
+		}
+		RUS_Georgiy_Gins_eco_val = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Georgiy_Gins_eco_val"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					valkist_allowed = yes
+					NOT = { has_country_flag = Georgiy_Gins_dead }
+				}
+			}
+			visible = {
+				valkist_allowed = yes
+				NOT = { has_country_flag = Georgiy_Gins_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Georgiy_Gins_eco_val"
+			}
+			traits = {
+				economy_minister
+				valkist
+				eco_administrative_genius
+			}
+			cancel_if_invalid = no
+		}
+
+
+	}
+
+	security_minister = { ### Security Minister ###
+	
+		RUS_Grigory_Gershuni_sec_sde = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Grigory_Gershuni_sec_sde"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_democrat_allowed = yes
+					NOT = { has_country_flag = Grigory_Gershuni_dead }
+				}
+			}
+			visible = {
+				social_democrat_allowed = yes
+				NOT = { has_country_flag = Grigory_Gershuni_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Grigory_Gershuni_sec_sde"
+			}
+			traits = {
+				security_minister
+				social_democrat
+				sec_prince_of_terror
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Iraklij_G_Tsereteliy_sec_sde = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Iraklij_G_Tsereteliy_sec_sde"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_democrat_allowed = yes
+					NOT = { has_country_flag = Iraklij_G_Tsereteliy_dead }
+				}
+			}
+			visible = {
+				social_democrat_allowed = yes
+				NOT = { has_country_flag = Iraklij_G_Tsereteliy_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Iraklij_G_Tsereteliy_sec_sde"
+			}
+			traits = {
+				security_minister
+				social_democrat
+				sec_silent_lawyer
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Vladimir_L_Burtsev_sec_sde = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Vladimir_L_Burtsev_sec_sde"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_democrat_allowed = yes
+					NOT = { has_country_flag = Vladimir_L_Burtsev_dead }
+				}
+			}
+			visible = {
+				social_democrat_allowed = yes
+				NOT = { has_country_flag = Vladimir_L_Burtsev_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Vladimir_L_Burtsev_sec_sde"
+			}
+			traits = {
+				security_minister
+				social_democrat
+				sec_crime_fighter
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Boris_V_Savinkov_sec_sde = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Boris_V_Savinkov_sec_sde"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_democrat_allowed = yes
+					NOT = { has_country_flag = Boris_V_Savinkov_dead }
+				}
+			}
+			visible = {
+				social_democrat_allowed = yes
+				NOT = { has_country_flag = Boris_V_Savinkov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Boris_V_Savinkov_sec_sde"
+			}
+			traits = {
+				security_minister
+				social_democrat
+				sec_crime_fighter
+			}
+			cancel_if_invalid = no
+		}
+
+
+		RUS_Andrei_I_Shingarev_sec_mli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Andrei_I_Shingarev_sec_mli"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					market_liberal_allowed = yes
+					NOT = { has_country_flag = Andrei_I_Shingarev_dead }
+				}
+			}
+			visible = {
+				market_liberal_allowed = yes
+				NOT = { has_country_flag = Andrei_I_Shingarev_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Andrei_I_Shingarev_sec_mli"
+			}
+			traits = {
+				security_minister
+				market_liberal
+				sec_compassionate_gentleman
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Vasily_A_Kharlamov_sec_mli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Vasily_A_Kharlamov_sec_mli"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					market_liberal_allowed = yes
+					NOT = { has_country_flag = Vasily_A_Kharlamov_dead }
+				}
+			}
+			visible = {
+				market_liberal_allowed = yes
+				NOT = { has_country_flag = Vasily_A_Kharlamov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Vasily_A_Kharlamov_sec_mli"
+			}
+			traits = {
+				security_minister
+				market_liberal
+				sec_man_of_the_people
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Vasily_A_Maklakov_sec_mli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Vasily_A_Maklakov_sec_mli"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					market_liberal_allowed = yes
+					NOT = { has_country_flag = Vasily_A_Maklakov_dead }
+				}
+			}
+			visible = {
+				market_liberal_allowed = yes
+				NOT = { has_country_flag = Vasily_A_Maklakov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Vasily_A_Maklakov_sec_mli"
+			}
+			traits = {
+				security_minister
+				market_liberal
+				sec_silent_lawyer
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Aleksandr_D_Protopopov_sec_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Aleksandr_D_Protopopov_sec_sco"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_conservative_allowed = yes
+					NOT = { has_country_flag = Aleksandr_D_Protopopov_dead }
+				}
+			}
+			visible = {
+				social_conservative_allowed = yes
+				NOT = { has_country_flag = Aleksandr_D_Protopopov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Aleksandr_D_Protopopov_sec_sco"
+			}
+			traits = {
+				security_minister
+				social_conservative
+				sec_back_stabber
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Matvey_Skobelev_sec_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Matvey_Skobelev_sec_sco"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_conservative_allowed = yes
+					NOT = { has_country_flag = Matvey_Skobelev_dead }
+				}
+			}
+			visible = {
+				social_conservative_allowed = yes
+				NOT = { has_country_flag = Matvey_Skobelev_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Matvey_Skobelev_sec_sco"
+			}
+			traits = {
+				security_minister
+				social_conservative
+				sec_prince_of_terror
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Nikolai_Gredeskul_sec_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Nikolai_Gredeskul_sec_sco"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_conservative_allowed = yes
+					NOT = { has_country_flag = Nikolai_Gredeskul_dead }
+				}
+			}
+			visible = {
+				social_conservative_allowed = yes
+				NOT = { has_country_flag = Nikolai_Gredeskul_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Nikolai_Gredeskul_sec_sco"
+			}
+			traits = {
+				security_minister
+				social_conservative
+				sec_efficient_sociopath
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Vasily_Shulgin_sec_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Vasily_Shulgin_sec_sco"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_conservative_allowed = yes
+					NOT = { has_country_flag = Vasily_Shulgin_dead }
+				}
+			}
+			visible = {
+				social_conservative_allowed = yes
+				NOT = { has_country_flag = Vasily_Shulgin_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Vasily_Shulgin_sec_sco"
+			}
+			traits = {
+				security_minister
+				social_conservative
+				sec_back_stabber
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Vladimir_D_Nabokov_sec_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Vladimir_D_Nabokov_sec_sco"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_conservative_allowed = yes
+					NOT = { has_country_flag = Vladimir_D_Nabokov_dead }
+				}
+			}
+			visible = {
+				social_conservative_allowed = yes
+				NOT = { has_country_flag = Vladimir_D_Nabokov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Vladimir_D_Nabokov_sec_sco"
+			}
+			traits = {
+				security_minister
+				social_conservative
+				sec_health_and_safety
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Felix_F_Yusupov_sec_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Felix_F_Yusupov_sec_sco"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					authoritarian_democrat_allowed = yes
+					NOT = { has_country_flag = Felix_F_Yusupov_dead }
+				}
+			}
+			visible = {
+				authoritarian_democrat_allowed = yes
+				NOT = { has_country_flag = Felix_F_Yusupov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Felix_F_Yusupov_sec_sco"
+			}
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_back_stabber
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Mikhail_Rodzyanko_sec_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Mikhail_Rodzyanko_sec_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					authoritarian_democrat_allowed = yes
+					NOT = { has_country_flag = Mikhail_Rodzyanko_dead }
+				}
+			}
+			visible = {
+				authoritarian_democrat_allowed = yes
+				NOT = { has_country_flag = Mikhail_Rodzyanko_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Mikhail_Rodzyanko_sec_ade"
+			}
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_silent_lawyer
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Pavel_N_Ignatiev_sec_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Pavel_N_Ignatiev_sec_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					authoritarian_democrat_allowed = yes
+					NOT = { has_country_flag = Pavel_N_Ignatiev_dead }
+				}
+			}
+			visible = {
+				authoritarian_democrat_allowed = yes
+				NOT = { has_country_flag = Pavel_N_Ignatiev_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Pavel_N_Ignatiev_sec_ade"
+			}
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_crime_fighter
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Pyotr_N_Wrangel_sec_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Pyotr_N_Wrangel_sec_pau"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					paternal_autocrat_allowed = yes
+					NOT = { has_country_flag = Pyotr_N_Wrangel_dead }
+				}
+			}
+			visible = {
+				paternal_autocrat_allowed = yes
+				NOT = { has_country_flag = Pyotr_N_Wrangel_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Pyotr_N_Wrangel_sec_ade"
+			}
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_crime_fighter
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Sergei_L_Markov_sec_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Sergei_L_Markov_sec_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					authoritarian_democrat_allowed = yes
+					NOT = { has_country_flag = Sergei_L_Markov_dead }
+				}
+			}
+			visible = {
+				authoritarian_democrat_allowed = yes
+				NOT = { has_country_flag = Sergei_L_Markov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Sergei_L_Markov_sec_ade"
+			}
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_silent_lawyer
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Sergei_P_Melgunov_sec_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Sergei_P_Melgunov_sec_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					authoritarian_democrat_allowed = yes
+					NOT = { has_country_flag = Sergei_P_Melgunov_dead }
+				}
+			}
+			visible = {
+				authoritarian_democrat_allowed = yes
+				NOT = { has_country_flag = Sergei_P_Melgunov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Sergei_P_Melgunov_sec_ade"
+			}
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_man_of_the_people
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Sergius_of_Nizhny_Novgorod_sec_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Sergius_of_Nizhny_Novgorod_sec_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					authoritarian_democrat_allowed = yes
+					NOT = { has_country_flag = Sergius_of_Nizhny_Novgorod_dead }
+				}
+			}
+			visible = {
+				authoritarian_democrat_allowed = yes
+				NOT = { has_country_flag = Sergius_of_Nizhny_Novgorod_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Sergius_of_Nizhny_Novgorod_sec_ade"
+			}
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_man_of_the_people
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Vladimir_N_Kokovtsov_sec_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Vladimir_N_Kokovtsov_sec_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					authoritarian_democrat_allowed = yes
+					NOT = { has_country_flag = Vladimir_N_Kokovtsov_dead }
+				}
+			}
+			visible = {
+				authoritarian_democrat_allowed = yes
+				NOT = { has_country_flag = Vladimir_N_Kokovtsov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Vladimir_N_Kokovtsov_sec_ade"
+			}
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_compassionate_gentleman
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Aleksandr_P_Balk_sec_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Aleksandr_P_Balk_sec_pau"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					paternal_autocrat_allowed = yes
+					NOT = { has_country_flag = Aleksandr_P_Balk_dead }
+				}
+			}
+			visible = {
+				paternal_autocrat_allowed = yes
+				NOT = { has_country_flag = Aleksandr_P_Balk_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Aleksandr_P_Balk_sec_pau"
+			}
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_prince_of_terror
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Nikolai_P_Vladimir_sec_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Nikolai_P_Vladimir_sec_pau"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					paternal_autocrat_allowed = yes
+					NOT = { has_country_flag = Nikolai_P_Vladimir_dead }
+				}
+			}
+			visible = {
+				paternal_autocrat_allowed = yes
+				NOT = { has_country_flag = Nikolai_P_Vladimir_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Nikolai_P_Vladimir_sec_pau"
+			}
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_crime_fighter
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Pyotr_Krasnov_sec_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Pyotr_Krasnov_sec_pau"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					paternal_autocrat_allowed = yes
+					NOT = { has_country_flag = Pyotr_Krasnov_dead }
+				}
+			}
+			visible = {
+				paternal_autocrat_allowed = yes
+				NOT = { has_country_flag = Pyotr_Krasnov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Pyotr_Krasnov_sec_pau"
+			}
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_crime_fighter
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Vladimir_M_Purishkevich_sec_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Vladimir_M_Purishkevich_sec_pau"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					paternal_autocrat_allowed = yes
+					NOT = { has_country_flag = Vladimir_M_Purishkevich_dead }
+				}
+			}
+			visible = {
+				paternal_autocrat_allowed = yes
+				NOT = { has_country_flag = Vladimir_M_Purishkevich_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Vladimir_M_Purishkevich_sec_pau"
+			}
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_crooked_kleptocrat
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Vladimir_Malyshkin_sec_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Vladimir_Malyshkin_sec_pau"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					paternal_autocrat_allowed = yes
+					NOT = { has_country_flag = Vladimir_Malyshkin_dead }
+				}
+			}
+			visible = {
+				paternal_autocrat_allowed = yes
+				NOT = { has_country_flag = Vladimir_Malyshkin_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Vladimir_Malyshkin_sec_pau"
+			}
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_back_stabber
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Aleksandr_A_Galich_sec_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Aleksandr_A_Galich_sec_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					national_populist_allowed = yes
+					NOT = { has_country_flag = Aleksandr_A_Galich_dead }
+				}
+			}
+			visible = {
+				national_populist_allowed = yes
+				NOT = { has_country_flag = Aleksandr_A_Galich_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Aleksandr_A_Galich_sec_npo"
+			}
+			traits = {
+				security_minister
+				national_populist
+				sec_man_of_the_people
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Anatoly_MacReady_Stenroos_sec_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Anatoly_MacReady_Stenroos_sec_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					national_populist_allowed = yes
+					NOT = { has_country_flag = Anatoly_MacReady_Stenroos_dead }
+				}
+			}
+			visible = {
+				national_populist_allowed = yes
+				NOT = { has_country_flag = Anatoly_MacReady_Stenroos_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Anatoly_MacReady_Stenroos_sec_npo"
+			}
+			traits = {
+				security_minister
+				national_populist
+				sec_media_magnate
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Bronislav_V_Kaminski_sec_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Bronislav_V_Kaminski_sec_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					national_populist_allowed = yes
+					NOT = { has_country_flag = Bronislav_V_Kaminski_dead }
+				}
+			}
+			visible = {
+				national_populist_allowed = yes
+				NOT = { has_country_flag = Bronislav_V_Kaminski_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Bronislav_V_Kaminski_sec_npo"
+			}
+			traits = {
+				security_minister
+				national_populist
+				sec_prince_of_terror
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Emma_Dikgof_Derental_sec_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Emma_Dikgof_Derental_sec_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					national_populist_allowed = yes
+					NOT = { has_country_flag = Emma_Dikgof_Derental_dead }
+				}
+			}
+			visible = {
+				national_populist_allowed = yes
+				NOT = { has_country_flag = Emma_Dikgof_Derental_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Emma_Dikgof_Derental_sec_npo"
+			}
+			traits = {
+				security_minister
+				national_populist
+				sec_efficient_sociopath
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Grigorij_R_Semyonov_sec_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Grigorij_R_Semyonov_sec_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					national_populist_allowed = yes
+					NOT = { has_country_flag = Grigorij_R_Semyonov_dead }
+				}
+			}
+			visible = {
+				national_populist_allowed = yes
+				NOT = { has_country_flag = Grigorij_R_Semyonov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Grigorij_R_Semyonov_sec_npo"
+			}
+			traits = {
+				security_minister
+				national_populist
+				sec_efficient_sociopath
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Ivan_A_Ilyin_sec_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Ivan_A_Ilyin_sec_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					national_populist_allowed = yes
+					NOT = { has_country_flag = Ivan_A_Ilyin_dead }
+				}
+			}
+			visible = {
+				national_populist_allowed = yes
+				NOT = { has_country_flag = Ivan_A_Ilyin_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Ivan_A_Ilyin_sec_npo"
+			}
+			traits = {
+				security_minister
+				national_populist
+				sec_silent_lawyer
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Viktor_L_Pokrovsky_sec_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Viktor_L_Pokrovsky_sec_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					national_populist_allowed = yes
+					NOT = { has_country_flag = Viktor_L_Pokrovsky_dead }
+				}
+			}
+			visible = {
+				national_populist_allowed = yes
+				NOT = { has_country_flag = Viktor_L_Pokrovsky_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Viktor_L_Pokrovsky_sec_npo"
+			}
+			traits = {
+				security_minister
+				national_populist
+				sec_back_stabber
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Vladimir_V_Manstein_sec_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Vladimir_V_Manstein_sec_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					national_populist_allowed = yes
+					NOT = { has_country_flag = Vladimir_V_Manstein_dead }
+				}
+			}
+			visible = {
+				national_populist_allowed = yes
+				NOT = { has_country_flag = Vladimir_V_Manstein_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Vladimir_V_Manstein_sec_npo"
+			}
+			traits = {
+				security_minister
+				national_populist
+				sec_efficient_sociopath
+			}
+			cancel_if_invalid = no
+		}
+		RUS_Anton_Tourkul_sec_val = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Anton_Tourkul_sec_val"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					valkist_allowed = yes
+					NOT = { has_country_flag = Anton_Tourkul_dead }
+				}
+			}
+			visible = {
+				valkist_allowed = yes
+				NOT = { has_country_flag = Anton_Tourkul_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Anton_Tourkul_sec_val"
+			}
+			traits = {
+				security_minister
+				valkist
+				sec_efficient_sociopath
+			}
+			cancel_if_invalid = no
+		}
+
+	}
+
+	head_of_intel = { ### Head of Intel ###
+	
+		RUS_Grigory_Gershuni_int_sde = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Grigory_Gershuni_int_sde"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_democrat_allowed = yes
+					NOT = { has_country_flag = Grigory_Gershuni_dead }
+				}
+			}
+			visible = {
+				social_democrat_allowed = yes
+				NOT = { has_country_flag = Grigory_Gershuni_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Grigory_Gershuni_int_sde"
+			}
+			traits = {
+				head_of_intel
+				social_democrat
+				int_political_specialist
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Nikolai_F_Vatutin_int_sde = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Nikolai_F_Vatutin_int_sde"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_democrat_allowed = yes
+					NOT = { has_country_flag = Nikolai_F_Vatutin_dead }
+				}
+			}
+			visible = {
+				social_democrat_allowed = yes
+				NOT = { has_country_flag = Nikolai_F_Vatutin_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Nikolai_F_Vatutin_int_sde"
+			}
+			traits = {
+				head_of_intel
+				social_democrat
+				int_logistics_specialist
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Pavel_N_Malyantovich_int_sde = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Pavel_N_Malyantovich_int_sde"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_democrat_allowed = yes
+					NOT = { has_country_flag = Pavel_N_Malyantovich_dead }
+				}
+			}
+			visible = {
+				social_democrat_allowed = yes
+				NOT = { has_country_flag = Pavel_N_Malyantovich_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Pavel_N_Malyantovich_int_sde"
+			}
+			traits = {
+				head_of_intel
+				social_democrat
+				int_political_specialist
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Vasily_A_Kharlamov_int_mli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Vasily_A_Kharlamov_int_mli"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					market_liberal_allowed = yes
+					NOT = { has_country_flag = Vasily_A_Kharlamov_dead }
+				}
+			}
+			visible = {
+				market_liberal_allowed = yes
+				NOT = { has_country_flag = Vasily_A_Kharlamov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Vasily_A_Kharlamov_int_mli"
+			}
+			traits = {
+				head_of_intel
+				market_liberal
+				int_logistics_specialist
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Roman_B_Gul_int_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Roman_B_Gul_int_sco"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_conservative_allowed = yes
+					NOT = { has_country_flag = Roman_B_Gul_dead }
+				}
+			}
+			visible = {
+				social_conservative_allowed = yes
+				NOT = { has_country_flag = Roman_B_Gul_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Roman_B_Gul_int_sco"
+			}
+			traits = {
+				head_of_intel
+				social_conservative
+				int_industrial_specialist
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Vasily_Shulgin_int_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Vasily_Shulgin_int_sco"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_conservative_allowed = yes
+					NOT = { has_country_flag = Vasily_Shulgin_dead }
+				}
+			}
+			visible = {
+				social_conservative_allowed = yes
+				NOT = { has_country_flag = Vasily_Shulgin_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Vasily_Shulgin_int_sco"
+			}
+			traits = {
+				head_of_intel
+				social_conservative
+				int_technical_specialist
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Yevgeny_K_Miller_int_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Yevgeny_K_Miller_int_sco"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					social_conservative_allowed = yes
+					NOT = { has_country_flag = Yevgeny_K_Miller_dead }
+				}
+			}
+			visible = {
+				social_conservative_allowed = yes
+				NOT = { has_country_flag = Yevgeny_K_Miller_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Yevgeny_K_Miller_int_sco"
+			}
+			traits = {
+				head_of_intel
+				social_conservative
+				int_logistics_specialist
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Abram_Dragomirov_int_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Abram_Dragomirov_int_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					authoritarian_democrat_allowed = yes
+					NOT = { has_country_flag = Abram_Dragomirov_dead }
+				}
+			}
+			visible = {
+				authoritarian_democrat_allowed = yes
+				NOT = { has_country_flag = Abram_Dragomirov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Abram_Dragomirov_int_ade"
+			}
+			traits = {
+				head_of_intel
+				authoritarian_democrat
+				int_technical_specialist
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Aleksandr_A_Kazakov_int_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Aleksandr_A_Kazakov_int_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					authoritarian_democrat_allowed = yes
+					NOT = { has_country_flag = Aleksandr_A_Kazakov_dead }
+				}
+			}
+			visible = {
+				authoritarian_democrat_allowed = yes
+				NOT = { has_country_flag = Aleksandr_A_Kazakov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Aleksandr_A_Kazakov_int_ade"
+			}
+			traits = {
+				head_of_intel
+				authoritarian_democrat
+				int_technical_specialist
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Felix_F_Yusupov_int_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Felix_F_Yusupov_int_sco"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					authoritarian_democrat_allowed = yes
+					NOT = { has_country_flag = Felix_F_Yusupov_dead }
+				}
+			}
+			visible = {
+				authoritarian_democrat_allowed = yes
+				NOT = { has_country_flag = Felix_F_Yusupov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Felix_F_Yusupov_int_sco"
+			}
+			traits = {
+				head_of_intel
+				social_conservative
+				int_political_specialist
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Vladimir_von_Kappel_int_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Vladimir_von_Kappel_int_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					authoritarian_democrat_allowed = yes
+					NOT = { has_country_flag = Vladimir_von_Kappel_dead }
+				}
+			}
+			visible = {
+				authoritarian_democrat_allowed = yes
+				NOT = { has_country_flag = Vladimir_von_Kappel_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Vladimir_von_Kappel_int_ade"
+			}
+			traits = {
+				head_of_intel
+				authoritarian_democrat
+				int_logistics_specialist
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Aleksandr_I_Solzhenitsyn_int_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Aleksandr_I_Solzhenitsyn_int_pau"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					paternal_autocrat_allowed = yes
+					NOT = { has_country_flag = Aleksandr_I_Solzhenitsyn_dead }
+				}
+			}
+			visible = {
+				paternal_autocrat_allowed = yes
+				NOT = { has_country_flag = Aleksandr_I_Solzhenitsyn_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Aleksandr_I_Solzhenitsyn_int_pau"
+			}
+			traits = {
+				head_of_intel
+				paternal_autocrat
+				int_political_specialist
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Mikhail_A_Meandrov_int_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Mikhail_A_Meandrov_int_pau"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					paternal_autocrat_allowed = yes
+					NOT = { has_country_flag = Mikhail_A_Meandrov_dead }
+				}
+			}
+			visible = {
+				paternal_autocrat_allowed = yes
+				NOT = { has_country_flag = Mikhail_A_Meandrov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Mikhail_A_Meandrov_int_pau"
+			}
+			traits = {
+				head_of_intel
+				paternal_autocrat
+				int_dismal_enigma
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Aleksandr_S_Antonov_int_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Aleksandr_S_Antonov_int_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					national_populist_allowed = yes
+					NOT = { has_country_flag = Aleksandr_S_Antonov_dead }
+				}
+			}
+			visible = {
+				national_populist_allowed = yes
+				NOT = { has_country_flag = Aleksandr_S_Antonov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Aleksandr_S_Antonov_int_npo"
+			}
+			traits = {
+				head_of_intel
+				national_populist
+				int_logistics_specialist
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Boris_V_Annenkov_int_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Boris_V_Annenkov_int_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					national_populist_allowed = yes
+					NOT = { has_country_flag = Boris_V_Annenkov_dead }
+				}
+			}
+			visible = {
+				national_populist_allowed = yes
+				NOT = { has_country_flag = Boris_V_Annenkov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Boris_V_Annenkov_int_npo"
+			}
+			traits = {
+				head_of_intel
+				national_populist
+				int_logistics_specialist
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Sergei_G_Romanovski_int_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Sergei_G_Romanovski_int_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					national_populist_allowed = yes
+					NOT = { has_country_flag = Sergei_G_Romanovski_dead }
+				}
+			}
+			visible = {
+				national_populist_allowed = yes
+				NOT = { has_country_flag = Sergei_G_Romanovski_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Sergei_G_Romanovski_int_npo"
+			}
+			traits = {
+				head_of_intel
+				national_populist
+				int_dismal_enigma
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Viktor_M_Baydalakov_int_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Viktor_M_Baydalakov_int_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					national_populist_allowed = yes
+					NOT = { has_country_flag = Viktor_M_Baydalakov_dead }
+				}
+			}
+			visible = {
+				national_populist_allowed = yes
+				NOT = { has_country_flag = Viktor_M_Baydalakov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Viktor_M_Baydalakov_int_npo"
+			}
+			traits = {
+				head_of_intel
+				national_populist
+				int_political_specialist
+			}
+			cancel_if_invalid = no
+		}
+
+	}
+
+	chief_of_staff = { ### Chief of Staff ###
+
+		RUS_Georgiy_K_Zhukov_cos_sde = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Georgiy_K_Zhukov_cos_sde"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Georgiy_K_Zhukov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Georgiy_K_Zhukov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Georgiy_K_Zhukov_cos_sde"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_fire_support
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Mikhail_D_Bonch_Bruyevich_cos_sde = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Mikhail_D_Bonch_Bruyevich_cos_sde"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Mikhail_D_Bonch_Bruyevich_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Mikhail_D_Bonch_Bruyevich_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Mikhail_D_Bonch_Bruyevich_cos_sde"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_defence
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Nikolai_F_Vatutin_cos_sde = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Nikolai_F_Vatutin_cos_sde"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Nikolai_F_Vatutin_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Nikolai_F_Vatutin_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Nikolai_F_Vatutin_cos_sde"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_psychology
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Nikolai_N_Dukhonin_cos_sli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Nikolai_N_Dukhonin_cos_sli"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Nikolai_N_Dukhonin_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Nikolai_N_Dukhonin_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Nikolai_N_Dukhonin_cos_sli"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Vasily_A_Kharlamov_cos_mli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Vasily_A_Kharlamov_cos_mli"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Vasily_A_Kharlamov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Vasily_A_Kharlamov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Vasily_A_Kharlamov_cos_mli"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_manoeuvre
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Jevgenij_von_Rommel_cos_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Jevgenij_von_Rommel_cos_sco"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Jevgenij_von_Rommel_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Jevgenij_von_Rommel_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Jevgenij_von_Rommel_cos_sco"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_manoeuvre
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Anton_I_Denikin_cos_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Anton_I_Denikin_cos_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Anton_I_Denikin_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Anton_I_Denikin_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Anton_I_Denikin_cos_ade"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Pyotr_N_Wrangel_cos_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Pyotr_N_Wrangel_cos_pau"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Pyotr_N_Wrangel_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Pyotr_N_Wrangel_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Pyotr_N_Wrangel_cos_pau"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_manoeuvre
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Sergei_L_Markov_cos_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Sergei_L_Markov_cos_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Sergei_L_Markov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Sergei_L_Markov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Sergei_L_Markov_cos_ade"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_manoeuvre
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Ivan_P_Romanovsky_cos_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Ivan_P_Romanovsky_cos_pau"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Ivan_P_Romanovsky_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Ivan_P_Romanovsky_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Ivan_P_Romanovsky_cos_pau"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_fire_support
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Lavr_G_Kornilov_cos_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Lavr_G_Kornilov_cos_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Lavr_G_Kornilov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Lavr_G_Kornilov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Lavr_G_Kornilov_cos_npo"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Mikhail_Drozdovsky_cos_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Mikhail_Drozdovsky_cos_pau"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Mikhail_Drozdovsky_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Mikhail_Drozdovsky_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Mikhail_Drozdovsky_cos_pau"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_psychology
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Pyotr_Krasnov_cos_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Pyotr_Krasnov_cos_pau"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Pyotr_Krasnov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Pyotr_Krasnov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Pyotr_Krasnov_cos_pau"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_manoeuvre
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Boris_V_Annenkov_cos_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Boris_V_Annenkov_cos_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Boris_V_Annenkov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Boris_V_Annenkov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Boris_V_Annenkov_cos_npo"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Bronislav_V_Kaminski_cos_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Bronislav_V_Kaminski_cos_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Bronislav_V_Kaminski_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Bronislav_V_Kaminski_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Bronislav_V_Kaminski_cos_npo"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_fire_support
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Pavel_N_Shatilov_cos_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Pavel_N_Shatilov_cos_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Pavel_N_Shatilov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Pavel_N_Shatilov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Pavel_N_Shatilov_cos_npo"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_fire_support
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Vasily_V_Biskupsky_cos_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Vasily_V_Biskupsky_cos_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Vasily_V_Biskupsky_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Vasily_V_Biskupsky_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Vasily_V_Biskupsky_cos_npo"
+			}
+			traits = {
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+			cancel_if_invalid = no
+		}
+
+	}
+
+	chief_of_army = { ### Chief of Army ###
+
+		RUS_Ivan_Belov_carm_sde = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Ivan_Belov_carm_sde"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Ivan_Belov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Ivan_Belov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Ivan_Belov_carm_sde"
+			}
+			traits = {
+				chief_of_army
+				carm_static_defence_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Mikhail_D_Bonch_Bruyevich_carm_sde = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Mikhail_D_Bonch_Bruyevich_carm_sde"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Mikhail_D_Bonch_Bruyevich_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Mikhail_D_Bonch_Bruyevich_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Mikhail_D_Bonch_Bruyevich_carm_sde"
+			}
+			traits = {
+				chief_of_army
+				carm_static_defence_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Nikolai_N_Dukhonin_carm_sli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Nikolai_N_Dukhonin_carm_sli"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Nikolai_N_Dukhonin_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Nikolai_N_Dukhonin_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Nikolai_N_Dukhonin_carm_sli"
+			}
+			traits = {
+				chief_of_army
+				carm_decisive_battle_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Nikolai_A_Lokhvitski_carm_mli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Nikolai_A_Lokhvitski_carm_mli"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Nikolai_A_Lokhvitski_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Nikolai_A_Lokhvitski_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Nikolai_A_Lokhvitski_carm_mli"
+			}
+			traits = {
+				chief_of_army
+				carm_static_defence_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Ivan_P_Romanovsky_carm_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Ivan_P_Romanovsky_carm_sco"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Ivan_P_Romanovsky_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Ivan_P_Romanovsky_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Ivan_P_Romanovsky_carm_sco"
+			}
+			traits = {
+				chief_of_army
+				carm_decisive_battle_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Aleksandr_Rodzyanko_carm_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Aleksandr_Rodzyanko_carm_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Aleksandr_Rodzyanko_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Aleksandr_Rodzyanko_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Aleksandr_Rodzyanko_carm_ade"
+			}
+			traits = {
+				chief_of_army
+				carm_guns_and_butter_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Alexei_P_Arkhangelskiy_carm_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Alexei_P_Arkhangelskiy_carm_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Alexei_P_Arkhangelskiy_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Alexei_P_Arkhangelskiy_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Alexei_P_Arkhangelskiy_carm_ade"
+			}
+			traits = {
+				chief_of_army
+				carm_decisive_battle_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Anton_I_Denikin_carm_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Anton_I_Denikin_carm_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Anton_I_Denikin_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Anton_I_Denikin_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Anton_I_Denikin_carm_ade"
+			}
+			traits = {
+				chief_of_army
+				carm_static_defence_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Dmitri_Pavlovich_Romanov_carm_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Dmitri_Pavlovich_Romanov_carm_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Dmitri_Pavlovich_Romanov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Dmitri_Pavlovich_Romanov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Dmitri_Pavlovich_Romanov_carm_ade"
+			}
+			traits = {
+				chief_of_army
+				carm_guns_and_butter_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Jevgenij_von_Rommel_carm_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Jevgenij_von_Rommel_carm_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Jevgenij_von_Rommel_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Jevgenij_von_Rommel_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Jevgenij_von_Rommel_carm_ade"
+			}
+			traits = {
+				chief_of_army
+				carm_armoured_spearhead_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Pyotr_N_Wrangel_carm_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Pyotr_N_Wrangel_carm_pau"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Pyotr_N_Wrangel_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Pyotr_N_Wrangel_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Pyotr_N_Wrangel_carm_pau"
+			}
+			traits = {
+				chief_of_army
+				carm_decisive_battle_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Sergei_L_Markov_carm_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Sergei_L_Markov_carm_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Sergei_L_Markov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Sergei_L_Markov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Sergei_L_Markov_carm_ade"
+			}
+			traits = {
+				chief_of_army
+				carm_armoured_spearhead_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Lavr_G_Kornilov_carm_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Lavr_G_Kornilov_carm_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Lavr_G_Kornilov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Lavr_G_Kornilov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Lavr_G_Kornilov_carm_npo"
+			}
+			traits = {
+				chief_of_army
+				carm_decisive_battle_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Lavrentij_Kornilov_carm_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Lavrentij_Kornilov_carm_pau"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Lavrentij_Kornilov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Lavrentij_Kornilov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Lavrentij_Kornilov_carm_pau"
+			}
+			traits = {
+				chief_of_army
+				carm_guns_and_butter_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Mikhail_Drozdovsky_carm_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Mikhail_Drozdovsky_carm_pau"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Mikhail_Drozdovsky_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Mikhail_Drozdovsky_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Mikhail_Drozdovsky_carm_pau"
+			}
+			traits = {
+				chief_of_army
+				carm_armoured_spearhead_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Pyotr_Krasnov_carm_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Pyotr_Krasnov_carm_pau"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Pyotr_Krasnov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Pyotr_Krasnov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Pyotr_Krasnov_carm_pau"
+			}
+			traits = {
+				chief_of_army
+				carm_guns_and_butter_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Aleksandr_S_Antonov_carm_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Aleksandr_S_Antonov_carm_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Aleksandr_S_Antonov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Aleksandr_S_Antonov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Aleksandr_S_Antonov_carm_npo"
+			}
+			traits = {
+				chief_of_army
+				carm_doctrine_of_autonomy
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Konstantin_P_Voskoboinik_carm_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Konstantin_P_Voskoboinik_carm_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Konstantin_P_Voskoboinik_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Konstantin_P_Voskoboinik_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Konstantin_P_Voskoboinik_carm_npo"
+			}
+			traits = {
+				chief_of_army
+				carm_decisive_battle_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Pavel_N_Shatilov_carm_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Pavel_N_Shatilov_carm_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Pavel_N_Shatilov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Pavel_N_Shatilov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Pavel_N_Shatilov_carm_npo"
+			}
+			traits = {
+				chief_of_army
+				carm_elastic_defence_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+	}
+
+	chief_of_navy = { ### Chief of Navy ###
+		RUS_Mikhail_Berens_cnav_mli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Mikhail_Berens_cnav_mli"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Mikhail_Berens_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Mikhail_Berens_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Mikhail_Berens_cnav_mli"
+			}
+			traits = {
+				chief_of_navy
+				cnav_power_projection_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Nestor_A_Monastyrev_cnav_mli = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Nestor_A_Monastyrev_cnav_mli"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Nestor_A_Monastyrev_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Nestor_A_Monastyrev_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Nestor_A_Monastyrev_cnav_mli"
+			}
+			traits = {
+				chief_of_navy
+				cnav_open_seas_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Ivan_F_Bosrem_cnav_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Ivan_F_Bosrem_cnav_sco"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Ivan_F_Bosrem_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Ivan_F_Bosrem_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Ivan_F_Bosrem_cnav_sco"
+			}
+			traits = {
+				chief_of_navy
+				cnav_indirect_approach_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Robert_von_Wiren_cnav_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Robert_von_Wiren_cnav_sco"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Robert_von_Wiren_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Robert_von_Wiren_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Robert_von_Wiren_cnav_sco"
+			}
+			traits = {
+				chief_of_navy
+				cnav_decisive_battle_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Dmitri_Nenyukov_cnav_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Dmitri_Nenyukov_cnav_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Dmitri_Nenyukov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Dmitri_Nenyukov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Dmitri_Nenyukov_cnav_ade"
+			}
+			traits = {
+				chief_of_navy
+				cnav_open_seas_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Vasily_Kanin_cnav_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Vasily_Kanin_cnav_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Vasily_Kanin_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Vasily_Kanin_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Vasily_Kanin_cnav_ade"
+			}
+			traits = {
+				chief_of_navy
+				cnav_decisive_battle_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Boris_Makaroff_cnav_pau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Boris_Makaroff_cnav_pau"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Boris_Makaroff_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Boris_Makaroff_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Boris_Makaroff_cnav_pau"
+			}
+			traits = {
+				chief_of_navy
+				cnav_decisive_battle_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Boris_A_Vilkitsky_cnav_npo = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Boris_A_Vilkitsky_cnav_npo"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Boris_A_Vilkitsky_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Boris_A_Vilkitsky_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Boris_A_Vilkitsky_cnav_npo"
+			}
+			traits = {
+				chief_of_navy
+				cnav_indirect_approach_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+	}
+
+	chief_of_air_force = { ### Chief of Air Force ###
+	
+		RUS_Aleksandr_P_Kutepov_cair_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Aleksandr_P_Kutepov_cair_sco"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Aleksandr_P_Kutepov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Aleksandr_P_Kutepov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Aleksandr_P_Kutepov_cair_sco"
+			}
+			traits = {
+				chief_of_air_force
+				cair_battlefield_support_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Igor_I_Sikorsky_cair_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Igor_I_Sikorsky_cair_sco"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Igor_I_Sikorsky_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Igor_I_Sikorsky_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Igor_I_Sikorsky_cair_sco"
+			}
+			traits = {
+				chief_of_air_force
+				cair_carpet_bombing_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Vyacheslav_Tkachov_cair_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Vyacheslav_Tkachov_cair_sco"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Vyacheslav_Tkachov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Vyacheslav_Tkachov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Vyacheslav_Tkachov_cair_sco"
+			}
+			traits = {
+				chief_of_air_force
+				cair_battlefield_support_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Yevgeny_K_Miller_cair_sco = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Yevgeny_K_Miller_cair_sco"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Yevgeny_K_Miller_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Yevgeny_K_Miller_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Yevgeny_K_Miller_cair_sco"
+			}
+			traits = {
+				chief_of_air_force
+				cair_vertical_envelopment_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+		RUS_Anton_V_Turkul_cair_ade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Anton_V_Turkul_cair_ade"}
+			allowed = { original_tag = RUS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					NOT = { has_country_flag = Anton_V_Turkul_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Anton_V_Turkul_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Anton_V_Turkul_cair_ade"
+			}
+			traits = {
+				chief_of_air_force
+				cair_air_superiority_doctrine
+			}
+			cancel_if_invalid = no
+		}
+
+	}
+}

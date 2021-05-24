@@ -1,0 +1,10083 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			# Game Rules - Decolonization
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = americas_colonization_status
+						option = AMERICAS_DECOLONIZED
+					}
+				}
+				ENG = {
+					release = BLZ
+					release = BAH
+					release = GYA
+					release = JAM
+					release = TRI
+					release = BAS
+				}
+				ARG = {
+					transfer_state = 299
+					transfer_state = 720
+				}
+				KNE = {
+					release = CRC
+					release = SUR
+				}
+				SUR = {
+					annex_country = {
+						target = KNE
+						transfer_troops = no
+					}
+				}
+				FRA = {
+					release = GDL
+					release = CAY
+				}
+				USA = {
+					release = PUE
+				}
+				PAN = {
+					transfer_state = 685
+				}
+				ENG = {
+					set_autonomy = { target = CAN autonomy_state = autonomy_free }
+					remove_from_faction = CAN
+				}
+				CAN = {
+					drop_cosmetic_tag = yes
+					annex_country = {
+						target = NFL
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = americas_colonization_status
+						option = AMERICAS_COLONIZED
+					}
+				}
+				USA = {
+					annex_country = {
+						target = HAI
+						transfer_troops = yes
+					}
+				}
+				ENG = {
+					annex_country = {
+						target = CAN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NFL
+						transfer_troops = yes
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = africa_colonization_status
+						option = AFRICA_DECOLONIZED
+					}
+				}
+				FRA = {
+					set_autonomy = { target = MOR autonomy_state = autonomy_free }
+					set_autonomy = { target = TUN autonomy_state = autonomy_free }
+					release = DJI
+					release = MAD
+					release = ALG
+					remove_from_faction = MOR
+					remove_from_faction = TUN
+				}
+				MOR = {
+					drop_cosmetic_tag = yes
+				}
+				TUN = {
+					drop_cosmetic_tag = yes
+				}				
+				
+				MOR = {
+					transfer_state = 1002
+					transfer_state = 699
+				}
+				
+				NFQ = {
+					release = GAB
+					release = RCG
+					release = CAR
+					release = CHA
+					release = EQG
+					release = CMR
+				}
+				
+				GAB = {
+					annex_country = {
+						target = NFQ
+						transfer_troops = no
+					}
+				}
+				
+				NFA = {
+					release = IVO
+					release = SEN
+					release = NGR
+					release = MLI
+					release = MRT
+					release = VOL
+					release = DAH
+					release = GNA
+					release = MOR
+					release = WES
+					release = TOG
+				}
+				
+				IVO = {
+					annex_country = {
+						target = NFA
+						transfer_troops = no
+					}
+				}
+					
+				ITA = {
+					set_autonomy = { target = LBA autonomy_state = autonomy_free }
+					release = LBA
+					release = ERI
+					release = SOM
+					release = CMR
+				}
+				LBA = {
+					drop_cosmetic_tag = yes
+				}
+				SOM = {
+					transfer_state = 269
+					transfer_state = 933
+				}
+				ENG = {
+					release = SUD
+					release = EGY
+					release = UGA
+					release = TZN
+					release = KEN
+					release = ZIM
+					release = BOT
+					release = NGA
+					release = GHA
+					release = SIE
+					release = GAM
+					release = RHO
+				}
+				LBA = {
+					transfer_state = 769
+				}
+				BEL = {
+					release = COG
+					release = RWA
+					release = BRD
+				}
+				SAF = {
+					release = NMB
+				}
+				PRR = {
+					release = MZB
+					release = ANG
+					release = GNB
+				}	
+				MOR = {
+					transfer_state = 897
+					transfer_state = 290
+					transfer_state = 1002
+					transfer_state = 699
+				}
+				ENG = {
+					set_autonomy = { target = SAF autonomy_state = autonomy_free }
+					remove_from_faction = SAF
+				}
+				# SAF = {
+					# retire_country_leader = yes
+				# }
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = africa_colonization_status
+						option = AFRICA_COLONIZED
+					}
+				}
+				FRA = {
+					annex_country = {
+						target = MOR
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NFA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NFQ
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = TUN
+						transfer_troops = yes
+					}					
+				}
+				ITA = {
+					annex_country = {
+						target = LBA
+						transfer_troops = yes
+					}
+				}
+				ENG = {
+					annex_country = {
+						target = EGY
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = KEN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = RHO
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SAF
+						transfer_troops = yes
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = asia_colonization_status
+						option = ASIA_DECOLONIZED
+					}
+				}
+				ENG = {
+					release = FIJ
+					release = MLD
+					release = MAL
+					release = SRL
+					release = KUW
+					release = UAE
+					release = OMA
+					release = BRM
+					release = YEM
+				}
+				MAL = {
+					transfer_state = 821
+				}
+				FIJ = {
+					transfer_state = 635
+					transfer_state = 641
+				}
+				ENG = {
+					white_peace = {
+						tag = IND
+					}
+				}
+				IND = {
+					annex_country = {
+						target = RAJ
+						transfer_troops = no
+					}
+					white_peace = {
+						tag = RAJ
+					}
+					white_peace = {
+						tag = ENG
+					}
+					transfer_state = 321
+					transfer_state = 320
+					transfer_state = 733
+				}
+				AST = {
+					release = PNG
+				}
+				ENG = {
+					set_autonomy = { target = RAJ autonomy_state = autonomy_free }
+					set_autonomy = { target = AST autonomy_state = autonomy_free }
+					set_autonomy = { target = NZL autonomy_state = autonomy_free }
+					set_autonomy = { target = BEA autonomy_state = autonomy_free }
+					set_autonomy = { target = IRQ autonomy_state = autonomy_free }
+					set_autonomy = { target = ISR autonomy_state = autonomy_free }
+					remove_from_faction = IRQ
+					remove_from_faction = ISR
+					remove_from_faction = RAJ
+					remove_from_faction = AST
+					remove_from_faction = NZL
+					remove_from_faction = BEA
+				}
+				INS = {
+					annex_country = {
+						target = BEA
+						transfer_troops = yes
+					}
+				}
+				USA = {
+					release = PHI
+				}
+				FRA = {
+					set_autonomy = { target = PHN autonomy_state = autonomy_free }
+					set_autonomy = { target = FIC autonomy_state = autonomy_free }
+					release = VIN
+					release = PHN
+					remove_from_faction = PHN
+				}
+				PHN = {
+					drop_cosmetic_tag = yes
+				}				
+				FIC = {
+					release = CAM
+					release = LAO
+					release = VIN
+				}
+				CHI = {
+					transfer_state = 728
+					transfer_state = 729
+					transfer_state = 326
+					transfer_state = 591
+				}
+				ZHI = {
+					transfer_state = 894
+				}
+				PRR = {
+					release = INS
+				}
+				if = {
+					limit = {
+						PRR = {
+							owns_state = 721
+						}
+					}
+					INS = {
+						transfer_state = 721
+					}
+				}
+				TUR = {
+					transfer_state = 345
+					transfer_state = 344
+					transfer_state = 350
+				}
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = asia_colonization_status
+						option = ASIA_COLONIZED
+					}
+				}
+				FRA = {
+					annex_country = {
+						target = PHN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = FIC
+						transfer_troops = yes
+					}
+				}
+				ENG = {
+					annex_country = {
+						target = RAJ
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ISR
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = IRQ
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = BEA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = AST
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NZL
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = BRM
+						transfer_troops = yes
+					}
+				}
+			}			
+
+		
+			# Game Rules - Fragmentation
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = eng_fragmentation_status
+						option = ENG_FRAGMENTED
+					}
+				}
+				ENG = {
+					release = SCO
+					release = WLS
+					release = IRE
+					release = MLT
+					release = CYP
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = eng_fragmentation_status
+						option = ENG_PUPPETS
+					}
+				}
+				ENG = {
+					release = SCO
+					release = WLS
+					release = IRE
+					release = MLT
+					release = CYP
+				}
+				ENG = {
+					puppet = SCO
+					puppet = WLS
+					puppet = IRE
+				}
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = fra_fragmentation_status
+						option = FRA_FRAGMENTED
+					}
+				}
+				FRA = {
+					release = BRI
+					release = OCC
+					release = NRM
+					release = COR
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = fra_fragmentation_status
+						option = FRA_PUPPETS
+					}
+				}
+				FRA = {
+					release = BRI
+					release = OCC
+					release = NRM
+					release = COR
+				}
+				FRA = {
+					puppet = BRI
+					puppet = OCC
+					puppet = NRM
+					puppet = COR
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = ita_fragmentation_status
+						option = ITA_FRAGMENTED
+					}
+				}
+				ITA = {
+					release = SIC
+					release = NAP
+					release = LOM
+					release = PIE
+					release = SRV
+					release = SAR
+					release = AUS
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = ita_fragmentation_status
+						option = ITA_PUPPETS
+					}
+				}
+				ITA = {
+					release = SIC
+					release = NAP
+					release = LOM
+					release = PIE
+					release = SRV
+					release = SAR
+					release = AUS
+				}
+				ITA = {
+					puppet = SIC
+					puppet = NAP
+					puppet = LOM
+					puppet = PIE
+					puppet = SRV
+					puppet = SAR
+				}
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = ger_fragmentation_status
+						option = GER_FRAGMENTED
+					}
+				}
+				GER = {
+					release = BAY
+					release = HAN
+					release = BAW
+					release = SAX
+					release = POM
+					release = HES
+					release = SIL
+					release = ERM
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = ger_fragmentation_status
+						option = GER_PUPPETS
+					}
+				}
+				GER = {
+					release = BAY
+					release = HAN
+					release = BAW
+					release = SAX
+					release = POM
+					release = HES
+					release = SIL
+					release = ERM
+				}
+				GER = {
+					puppet = BAY
+					puppet = HAN
+					puppet = BAW
+					puppet = SAX
+					puppet = POM
+					puppet = HES
+					puppet = SIL
+					puppet = ERM
+				}
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = yug_fragmentation_status
+						option = YUG_FRAGMENTED
+					}
+				}
+				SER = {
+					release = SLV
+					release = BOS
+					release = MAC
+					release = CRO
+					release = MNT
+					release = ALB
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = yug_fragmentation_status
+						option = YUG_ANNEXED
+					}
+				}
+				BUL = {
+					transfer_state = 106
+					transfer_state = 787
+					transfer_state = 942
+				}
+				ALB = {
+					transfer_state = 931
+					transfer_state = 941
+				}
+				HUN = {
+					transfer_state = 45
+				}
+				ITA = {
+					transfer_state = 103
+					transfer_state = 789
+				}
+				AUS = {
+					transfer_state = 102
+					transfer_state = 767
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = sov_fragmentation_status
+						option = SOV_FRAGMENTED
+					}
+				}
+				SOV = {
+					release = KYR
+					release = KAZ
+				}
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = jap_fragmentation_status
+						option = JAP_WWI_BORDERS
+					}
+				}
+				JAP = {
+					release = INS
+					release = FIJ
+				}
+				ZHI = {
+					transfer_state = 869
+				}
+				if = {
+					limit = {
+						RUS = {
+							exists = yes
+						}
+					}
+					RUS = {
+						transfer_state = 655
+					}
+				}
+				if = {
+					limit = {
+						RUS = {
+							exists = no
+						}
+					}
+					SOV = {
+						transfer_state = 655
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = jap_fragmentation_status
+						option = JAP_KOREA
+					}
+				}
+				JAP = {
+					release = INS
+					release = FIJ
+				}
+				ZHI = {
+					transfer_state = 869
+				}
+				if = {
+					limit = {
+						RUS = {
+							exists = yes
+						}
+					}
+					RUS = {
+						transfer_state = 655
+						transfer_state = 537
+					}
+				}
+				if = {
+					limit = {
+						RUS = {
+							exists = no
+						}
+					}
+					SOV = {
+						transfer_state = 655
+						transfer_state = 537
+					}
+				}
+				CHI = {
+					transfer_state = 524
+				}
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = jap_fragmentation_status
+						option = JAP_HOME_ISLANDS
+					}
+				}
+				JAP = {
+					release = INS
+					release = FIJ
+					release = KOR
+				}
+				ZHI = {
+					transfer_state = 869
+				}
+				MAN = {
+					transfer_state = 793
+				}
+				if = {
+					limit = {
+						RUS = {
+							exists = yes
+						}
+					}
+					RUS = {
+						transfer_state = 655
+						transfer_state = 537
+					}
+				}
+				if = {
+					limit = {
+						RUS = {
+							exists = no
+						}
+					}
+					SOV = {
+						transfer_state = 655
+						transfer_state = 537
+					}
+				}
+				CHI = {
+					transfer_state = 524
+				}
+			}
+			
+#			if = {
+#				limit = {
+#					has_game_rule = {
+#						rule = raj_fragmentation_status
+#						option = RAJ_FRAGMENTED
+#					}
+#				}
+#				RAJ = {
+#					release = BAN
+#					release = PAK
+#					release = BRM
+#				}
+#			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = rhi_political_status
+						option = FRA_RHINE
+					}
+				}
+				FRA = {
+					annex_country = {
+						target = RHI
+						transfer_troops = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = rhi_political_status
+						option = GER_RHINE
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = RHI
+					}
+					THIS = {
+						add_core_of = GER
+					}
+				}
+				GER = {
+					annex_country = {
+						target = RHI
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = rhi_political_status
+						option = DIVIDED_RHINE
+					}
+				}
+				FRA = {
+					transfer_state = 42
+				}
+				LUX = {
+					transfer_state = 868
+				}
+				BEL = {
+					transfer_state = 746
+				}
+				GER = {
+					annex_country = {
+						target = RHI
+						transfer_troops = no
+					}
+				}
+				51 = {
+					add_core_of = GER
+				}
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = sho_political_status
+						option = SHO_DEN_ANNEXED
+					}
+				}
+				DEN = {
+					annex_country = {
+						target = SHO
+						transfer_troops = yes
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = sho_political_status
+						option = SHO_GER_ANNEXED
+					}
+				}
+				GER = {
+					annex_country = {
+						target = SHO
+						transfer_troops = yes
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = hol_political_status
+						option = HOL_ANNEX_KNE
+					}
+				}
+				HOL = {
+					annex_country = {
+						target = KNE
+						transfer_troops = yes
+					}
+				}
+			}
+			
+			if =  {
+				limit = {
+					has_game_rule = {
+						rule = hol_political_status
+						option = KNE_ANNEX_HOL
+					}
+				}
+				KNE = {
+					set_capital = 7
+					annex_country = {
+						target = HOL
+						transfer_troops = yes
+					}
+				}
+			}
+			
+			if =  {
+				limit = {
+					has_game_rule = {
+						rule = hol_political_status
+						option = HOL_ANNEX_INS
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = INS
+					}
+					HOL = {
+						transfer_state = PREV
+					}
+				}
+				if = {
+					limit = {
+						HOL = {
+							owns_state = 333
+						}
+						MAL = {
+							exists = yes
+						}
+					}
+					MAL = {
+						transfer_state = 333
+					}
+				}
+				if = {
+					limit = {
+						HOL = {
+							owns_state = 333
+						}
+						ENG = {
+							exists = yes
+						}
+					}
+					ENG = {
+						transfer_state = 333
+					}
+				}
+				
+				if = {
+					limit = {
+						BEA = {
+							is_puppet_of = ENG
+						}
+					}
+					ENG = {
+						annex_country = {
+							target = BEA
+							transfer_troops = no
+						}
+					}
+				}
+				
+				if = {
+					limit = {
+						MAL = {
+							is_puppet_of = ENG
+						}
+					}
+					MAL = {
+						annex_country = {
+							target = BEA
+							transfer_troops = no
+						}
+					}
+				}
+							
+			}
+			
+			if =  {
+				limit = {
+					has_game_rule = {
+						rule = hol_political_status
+						option = KNE_ANNEX_INS
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = INS
+					}
+					KNE = {
+						transfer_state = PREV
+					}
+				}
+				if = {
+					limit = {
+						KNE = {
+							owns_state = 333
+						}
+						MAL = {
+							exists = yes
+						}
+					}
+					MAL = {
+						transfer_state = 333
+					}
+				}
+				if = {
+					limit = {
+						KNE = {
+							owns_state = 333
+						}
+						ENG = {
+							exists = yes
+						}
+					}
+					ENG = {
+						transfer_state = 333
+					}
+				}
+				
+				if = {
+					limit = {
+						BEA = {
+							is_puppet_of = ENG
+						}
+					}
+					ENG = {
+						annex_country = {
+							target = BEA
+							transfer_troops = no
+						}
+					}
+				}
+				
+				if = {
+					limit = {
+						MAL = {
+							is_puppet_of = ENG
+						}
+					}
+					MAL = {
+						annex_country = {
+							target = BEA
+							transfer_troops = no
+						}
+					}
+				}
+			}
+			
+			if =  {
+				limit = {
+					has_game_rule = {
+						rule = hol_political_status
+						option = HOL_ANNEX_BOTH
+					}
+				}
+				
+				HOL = {
+					annex_country = {
+						target = KNE
+						transfer_troops = yes
+					}
+				}
+				
+				every_state = {
+					limit = {
+						is_core_of = INS
+					}
+					HOL = {
+						transfer_state = PREV
+					}
+				}
+				if = {
+					limit = {
+						HOL = {
+							owns_state = 333
+						}
+						MAL = {
+							exists = yes
+						}
+					}
+					MAL = {
+						transfer_state = 333
+					}
+				}
+				if = {
+					limit = {
+						HOL = {
+							owns_state = 333
+						}
+						ENG = {
+							exists = yes
+						}
+					}
+					ENG = {
+						transfer_state = 333
+					}
+				}
+				
+				if = {
+					limit = {
+						BEA = {
+							is_puppet_of = ENG
+						}
+					}
+					ENG = {
+						annex_country = {
+							target = BEA
+							transfer_troops = no
+						}
+					}
+				}
+		
+				if = {
+					limit = {
+						MAL = {
+							is_puppet_of = ENG
+						}
+					}
+					MAL = {
+						annex_country = {
+							target = BEA
+							transfer_troops = no
+						}
+					}
+				}
+			}
+			
+			if =  {
+				limit = {
+					has_game_rule = {
+						rule = hol_political_status
+						option = KNE_ANNEX_BOTH
+					}
+				}
+				
+				KNE = {
+					set_capital = 7
+					annex_country = {
+						target = HOL
+						transfer_troops = yes
+					}
+				}
+				
+				every_state = {
+					limit = {
+						is_core_of = INS
+					}
+					KNE = {
+						transfer_state = PREV
+					}
+				}
+				if = {
+					limit = {
+						KNE = {
+							owns_state = 333
+						}
+						MAL = {
+							exists = yes
+						}
+					}
+					MAL = {
+						transfer_state = 333
+					}
+				}
+				if = {
+					limit = {
+						KNE = {
+							owns_state = 333
+						}
+						ENG = {
+							exists = yes
+						}
+					}
+					ENG = {
+						transfer_state = 333
+					}
+				}
+				
+				if = {
+					limit = {
+						BEA = {
+							is_puppet_of = ENG
+						}
+					}
+					ENG = {
+						annex_country = {
+							target = BEA
+							transfer_troops = no
+						}
+					}
+				}
+				
+				if = {
+					limit = {
+						MAL = {
+							is_puppet_of = ENG
+						}
+					}
+					MAL = {
+						annex_country = {
+							target = BEA
+							transfer_troops = no
+						}
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = spr_political_status
+						option = SPF_VICTORY
+					}
+				}
+				SPF = {
+					annex_country = {
+						target = SPR
+						transfer_troops = no
+					}
+					annex_country = {
+						target = SPA
+						transfer_troops = no
+					}
+					annex_country = {
+						target = SPM
+						transfer_troops = no
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = spr_political_status
+						option = SPR_VICTORY
+					}
+				}
+				SPR = {
+					annex_country = {
+						target = SPF
+						transfer_troops = no
+					}
+					annex_country = {
+						target = SPA
+						transfer_troops = no
+					}
+					annex_country = {
+						target = SPM
+						transfer_troops = no
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = spr_political_status
+						option = SPA_VICTORY
+					}
+				}
+				SPA = {
+					annex_country = {
+						target = SPF
+						transfer_troops = no
+					}
+					annex_country = {
+						target = SPR
+						transfer_troops = no
+					}
+					annex_country = {
+						target = SPM
+						transfer_troops = no
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = spr_political_status
+						option = SPM_VICTORY
+					}
+				}
+				SPM = {
+					annex_country = {
+						target = SPF
+						transfer_troops = no
+					}
+					annex_country = {
+						target = SPR
+						transfer_troops = no
+					}
+					annex_country = {
+						target = SPA
+						transfer_troops = no
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = por_political_status
+						option = POR_VICTORY
+					}
+				}
+				POR = {
+					annex_country = {
+						target = PRR
+						transfer_troops = no
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = por_political_status
+						option = PRR_VICTORY
+					}
+				}
+				PRR = {
+					annex_country = {
+						target = POR
+						transfer_troops = no
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = raj_political_status
+						option = RAJ_VICTORY
+					}
+				}
+				if = {
+					limit = {
+						RAJ = {
+							exists = no
+						}
+					}
+					ENG = {
+						annex_country = {
+							target = IND
+							transfer_troops = no
+						}
+					}
+				}
+				RAJ = {
+					annex_country = {
+						target = IND
+						transfer_troops = no
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = raj_political_status
+						option = IND_VICTORY
+					}
+				}
+				IND = {
+					annex_country = {
+						target = RAJ
+						transfer_troops = no
+					}
+				}
+				ENG = {
+					white_peace = {
+						tag = IND
+					}
+				}
+				if = {
+					limit = {
+						RAJ = {
+							exists = no
+						}
+					}
+					every_state = {
+						limit = {
+							is_on_continent = south_asia
+							is_owned_by = ENG
+						}
+						IND = {
+							transfer_state = PREV
+						}
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = sov_political_status
+						option = SOV_VICTORY
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = RUS
+					}
+					THIS = {
+						add_core_of = SOV
+					}
+				}
+				
+				SOV = {
+					annex_country = {
+						target = RUS
+						transfer_troops = yes
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = sov_political_status
+						option = RUS_VICTORY
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SOV
+					}
+					THIS = {
+						add_core_of = RUS
+					}
+				}
+				
+				RUS = {
+					set_capital = 219
+					annex_country = {
+						target = SOV
+						transfer_troops = yes
+					}
+				}
+			}
+			
+#			if = {
+#				limit = {
+#					has_game_rule = {
+#						rule = ger_fleeing_status
+#						option = GER_AI_FLEEING
+#					}
+#				}
+#				if = {
+#					limit = {
+#						FRA = {
+#							is_ai = no
+#						}
+#					}
+#					GER = {
+#						set_country_flag = GER_fra_no_flee
+#					}
+#				}
+#				
+#				if = {
+#					limit = {
+#						ITA = {
+#							is_ai = no
+#						}
+#					}
+#					GER = {
+#						set_country_flag = GER_ita_no_flee
+#					}
+#				}
+	
+#				if = {
+#					limit = {
+#						ENG = {
+#							is_ai = no
+#						}
+#					}
+#					GER = {
+#						set_country_flag = GER_eng_no_flee
+#					}
+#				}
+#				
+#				if = {
+#					limit = {
+#						SOV = {
+#							is_ai = no
+#						}
+#					}
+#					GER = {
+#						set_country_flag = GER_sov_no_flee
+#					}
+#				}
+#			}
+			
+#			if = {
+#				limit = {
+#					has_game_rule = {
+#						rule = ger_fleeing_status
+#						option = GER_PLAYER_FLEEING
+#					}
+#				}
+#				if = {
+#					limit = {
+#						FRA = {
+#							is_ai = yes
+#						}
+#					}
+#					GER = {
+#						set_country_flag = GER_fra_no_flee
+#					}
+#				}
+#				
+#				if = {
+#					limit = {
+#						ITA = {
+#							is_ai = yes
+#						}
+#					}
+#					GER = {
+#						set_country_flag = GER_ita_no_flee
+#					}
+#				}
+#	
+#				if = {
+#					limit = {
+#						ENG = {
+#							is_ai = yes
+#						}
+#					}
+#					GER = {
+#						set_country_flag = GER_eng_no_flee
+#					}
+#				}
+#				
+#				if = {
+#					limit = {
+#						SOV = {
+#							is_ai = yes
+#						}
+#					}
+#					GER = {
+#						set_country_flag = GER_sov_no_flee
+#					}
+#				}
+#			}
+			
+#			if = {
+#				limit = {
+#					has_game_rule = {
+#						rule = ger_fleeing_status
+#						option = GER_NO_FLEEING
+#					}
+#				}
+#				if = {
+#					limit = {
+#						FRA = {
+#							exists = yes
+#						}
+#					}
+#					GER = {
+#						set_country_flag = GER_fra_no_flee
+#					}
+#				}
+#				
+#				if = {
+#					limit = {
+#						ITA = {
+#							exists = yes
+#						}
+#					}
+#					GER = {
+#						set_country_flag = GER_ita_no_flee
+#					}
+#				}
+#	
+#				if = {
+#					limit = {
+#						ENG = {
+#							exists = yes
+#						}
+#					}
+#					GER = {
+#						set_country_flag = GER_eng_no_flee
+#					}
+#				}
+#				
+#				if = {
+#					limit = {
+#						SOV = {
+#							exists = yes
+#						}
+#					}
+#					GER = {
+#						set_country_flag = GER_sov_no_flee
+#					}
+#				}
+#			}
+			
+#			if = {
+#				limit = {
+#					has_game_rule = {
+#						rule = ger_leader_status
+#						option = GER_HITLER
+#					}
+#				}
+#				GER = {
+#					set_country_flag = GER_leader_hitler
+#					create_country_leader = {
+#						name = "Adolf Hitler"
+#						desc = "POLITICS_ADOLF_HITLER_DESC"
+#						picture = "Portrait_Germany_Adolf_Hitler.dds"
+#						expire = "1965.1.1"
+#						ideology = valkist_subtype
+#					}
+#				}
+#			}
+			
+#			if = {
+#				limit = {
+#					has_game_rule = {
+#						rule = ger_leader_status
+#						option = GER_STRASSER
+#					}
+#				}
+#				GER = {
+#					set_country_flag = GER_leader_strasser
+#					create_country_leader = {
+#						name = "Otto Strasser"
+#						desc = "POLITICS_OTTO_STRASSER_DESC"
+#						picture = "Portrait_Kiel_Otto_Strasser.tga"
+#						expire = "1965.1.1"
+#						ideology = valkist_subtype
+#					}
+#				}
+#			}
+			
+#			if = {
+#				limit = {
+#					has_game_rule = {
+#						rule = ger_leader_status
+#						option = GER_GOERING
+#					}
+#				}
+#				GER = {
+#					set_country_flag = GER_leader_goring
+#					create_country_leader = {
+#						name = "Hermann Goring"
+#						desc = "POLITICS_HERMANN_GORING_DESC"
+#						picture = "Portrait_Germany_Hermann_Goring.tga"
+#						expire = "1965.1.1"
+#						ideology = valkist_subtype
+#					}
+#				}
+#			}
+			
+#			if = {
+#				limit = {
+#					has_game_rule = {
+#						rule = ger_leader_status
+#						option = GER_WILlIAM
+#					}
+#				}
+#				GER = {
+#					set_country_flag = GER_leader_william
+#					create_country_leader = {
+#						name = "William III"
+#						desc = "POLITICS_WILLIAM_III_DESC"
+#						picture = "Portrait_Germany_William_III.tga"
+#						expire = "1965.1.1"
+#						ideology = valkist_subtype
+#					}
+#				}
+#			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = gen_random_ideologies
+						option = IDEOLOGIES_MINORS
+					}
+				}
+				every_country = {
+					limit = {
+						exists = yes
+						is_major = no
+					}
+					random_list = {
+						#fixed_random_seed = no
+						10 = {
+							set_politics = {
+								ruling_party = vanguardist 
+								elections_allowed = yes
+							}
+							add_popularity = {
+								ideology = vanguardist
+								popularity = 0.25
+							}
+						}
+						10 = {
+							set_politics = {
+								ruling_party = collectivist 
+								elections_allowed = yes
+							}
+							add_popularity = {
+								ideology = collectivist
+								popularity = 0.25
+							}
+						}
+						10 = {
+							set_politics = {
+								ruling_party = libertarian_socialist 
+								elections_allowed = yes
+							}
+							add_popularity = {
+								ideology = libertarian_socialist
+								popularity = 0.25
+							}
+						}
+						10 = {
+							set_politics = {
+								ruling_party = social_democrat 
+								elections_allowed = yes
+							}
+							add_popularity = {
+								ideology = social_democrat
+								popularity = 0.25
+							}
+						}
+						10 = {
+							set_politics = {
+								ruling_party = social_liberal 
+								elections_allowed = yes
+							}
+							add_popularity = {
+								ideology = social_liberal
+								popularity = 0.25
+							}
+						}
+						10 = {
+							set_politics = {
+								ruling_party = market_liberal 
+								elections_allowed = yes
+							}
+							add_popularity = {
+								ideology = market_liberal
+								popularity = 0.25
+							}
+						}
+						10 = {
+							set_politics = {
+								ruling_party = social_conservative 
+								elections_allowed = yes
+							}
+							add_popularity = {
+								ideology = social_conservative
+								popularity = 0.25
+							}
+						}
+						10 = {
+							set_politics = {
+								ruling_party = authoritarian_democrat  
+								elections_allowed = yes
+							}
+							add_popularity = {
+								ideology = authoritarian_democrat
+								popularity = 0.25
+							}
+						}
+						10 = {
+							set_politics = {
+								ruling_party = paternal_autocrat 
+								elections_allowed = yes
+							}
+							add_popularity = {
+								ideology = paternal_autocrat
+								popularity = 0.25
+							}
+						}
+						10 = {
+							set_politics = {
+								ruling_party = national_populist 
+								elections_allowed = yes
+							}
+							add_popularity = {
+								ideology = national_populist
+								popularity = 0.25
+							}
+						}
+						10 = {
+							set_politics = {
+								ruling_party = valkist 
+								elections_allowed = yes
+							}
+							add_popularity = {
+								ideology = valkist
+								popularity = 0.25
+							}
+						}
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = gen_random_ideologies
+						option = IDEOLOGIES_MAJORS
+					}
+				}
+				every_country = {
+					limit = {
+						exists = yes
+						is_major = yes
+					}
+					random_list = {
+						#fixed_random_seed = no
+						10 = {
+							set_politics = {
+								ruling_party = vanguardist 
+								elections_allowed = yes
+							}
+							add_popularity = {
+								ideology = vanguardist
+								popularity = 0.25
+							}
+						}
+						10 = {
+							set_politics = {
+								ruling_party = collectivist 
+								elections_allowed = yes
+							}
+							add_popularity = {
+								ideology = collectivist
+								popularity = 0.25
+							}
+						}
+						10 = {
+							set_politics = {
+								ruling_party = libertarian_socialist 
+								elections_allowed = yes
+							}
+							add_popularity = {
+								ideology = libertarian_socialist
+								popularity = 0.25
+							}
+						}
+						10 = {
+							set_politics = {
+								ruling_party = social_democrat 
+								elections_allowed = yes
+							}
+							add_popularity = {
+								ideology = social_democrat
+								popularity = 0.25
+							}
+						}
+						10 = {
+							set_politics = {
+								ruling_party = social_liberal 
+								elections_allowed = yes
+							}
+							add_popularity = {
+								ideology = social_liberal
+								popularity = 0.25
+							}
+						}
+						10 = {
+							set_politics = {
+								ruling_party = market_liberal 
+								elections_allowed = yes
+							}
+							add_popularity = {
+								ideology = market_liberal
+								popularity = 0.25
+							}
+						}
+						10 = {
+							set_politics = {
+								ruling_party = social_conservative 
+								elections_allowed = yes
+							}
+							add_popularity = {
+								ideology = social_conservative
+								popularity = 0.25
+							}
+						}
+						10 = {
+							set_politics = {
+								ruling_party = authoritarian_democrat  
+								elections_allowed = yes
+							}
+							add_popularity = {
+								ideology = authoritarian_democrat
+								popularity = 0.25
+							}
+						}
+						10 = {
+							set_politics = {
+								ruling_party = paternal_autocrat 
+								elections_allowed = yes
+							}
+							add_popularity = {
+								ideology = paternal_autocrat
+								popularity = 0.25
+							}
+						}
+						10 = {
+							set_politics = {
+								ruling_party = national_populist 
+								elections_allowed = yes
+							}
+							add_popularity = {
+								ideology = national_populist
+								popularity = 0.25
+							}
+						}
+						10 = {
+							set_politics = {
+								ruling_party = valkist 
+								elections_allowed = yes
+							}
+							add_popularity = {
+								ideology = valkist
+								popularity = 0.25
+							}
+						}
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = gen_random_ideologies
+						option = IDEOLOGIES_EVERYONE
+					}
+				}
+				every_country = {
+					limit = {
+						exists = yes
+					}
+					random_list = {
+						#fixed_random_seed = no
+						10 = {
+							set_politics = {
+								ruling_party = vanguardist 
+								elections_allowed = yes
+							}
+							add_popularity = {
+								ideology = vanguardist
+								popularity = 0.25
+							}
+						}
+						10 = {
+							set_politics = {
+								ruling_party = collectivist 
+								elections_allowed = yes
+							}
+							add_popularity = {
+								ideology = collectivist
+								popularity = 0.25
+							}
+						}
+						10 = {
+							set_politics = {
+								ruling_party = libertarian_socialist 
+								elections_allowed = yes
+							}
+							add_popularity = {
+								ideology = libertarian_socialist
+								popularity = 0.25
+							}
+						}
+						10 = {
+							set_politics = {
+								ruling_party = social_democrat 
+								elections_allowed = yes
+							}
+							add_popularity = {
+								ideology = social_democrat
+								popularity = 0.25
+							}
+						}
+						10 = {
+							set_politics = {
+								ruling_party = social_liberal 
+								elections_allowed = yes
+							}
+							add_popularity = {
+								ideology = social_liberal
+								popularity = 0.25
+							}
+						}
+						10 = {
+							set_politics = {
+								ruling_party = market_liberal 
+								elections_allowed = yes
+							}
+							add_popularity = {
+								ideology = market_liberal
+								popularity = 0.25
+							}
+						}
+						10 = {
+							set_politics = {
+								ruling_party = social_conservative 
+								elections_allowed = yes
+							}
+							add_popularity = {
+								ideology = social_conservative
+								popularity = 0.25
+							}
+						}
+						10 = {
+							set_politics = {
+								ruling_party = authoritarian_democrat  
+								elections_allowed = yes
+							}
+							add_popularity = {
+								ideology = authoritarian_democrat
+								popularity = 0.25
+							}
+						}
+						10 = {
+							set_politics = {
+								ruling_party = paternal_autocrat 
+								elections_allowed = yes
+							}
+							add_popularity = {
+								ideology = paternal_autocrat
+								popularity = 0.25
+							}
+						}
+						10 = {
+							set_politics = {
+								ruling_party = national_populist 
+								elections_allowed = yes
+							}
+							add_popularity = {
+								ideology = national_populist
+								popularity = 0.25
+							}
+						}
+						10 = {
+							set_politics = {
+								ruling_party = valkist 
+								elections_allowed = yes
+							}
+							add_popularity = {
+								ideology = valkist
+								popularity = 0.25
+							}
+						}
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = gen_generic_focus
+						option = GENERIC_FOCUS_MINORS
+					}
+				}
+				every_country = {
+					limit = {
+						exists = yes
+						is_major = no
+					}
+					THIS = {
+						load_focus_tree = generic_focus
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = gen_generic_focus
+						option = GENERIC_FOCUS_MAJORS
+					}
+				}
+				every_country = {
+					limit = {
+						exists = yes
+						is_major = yes
+					}
+					THIS = {
+						load_focus_tree = generic_focus
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = gen_generic_focus
+						option = GENERIC_FOCUS_EVERYONE
+					}
+				}
+				every_country = {
+					limit = {
+						exists = yes
+					}
+					THIS = {
+						load_focus_tree = generic_focus
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = gen_faction_rules
+						option = GENERIC_NO_FACTIONS
+					}
+				}
+				every_country = {
+					limit = {
+						exists = yes
+						is_faction_leader = yes
+					}
+					THIS = {
+						dismantle_faction = yes
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = gen_faction_rules
+						option = GENERIC_NO_PUPPETS
+					}
+				}
+				every_country = {
+					limit = {
+						exists = yes
+						is_faction_leader = yes
+					}
+					THIS = {
+						dismantle_faction = yes
+					}
+					
+					ENG = {
+						set_autonomy = { target = RAJ autonomy_state = autonomy_free }
+						set_autonomy = { target = CAN autonomy_state = autonomy_free }
+						set_autonomy = { target = AST autonomy_state = autonomy_free }
+						set_autonomy = { target = NZL autonomy_state = autonomy_free }
+						set_autonomy = { target = RAJ autonomy_state = autonomy_free }
+						set_autonomy = { target = ISR autonomy_state = autonomy_free }
+						set_autonomy = { target = IRQ autonomy_state = autonomy_free }
+						set_autonomy = { target = EGY autonomy_state = autonomy_free }
+						set_autonomy = { target = KEN autonomy_state = autonomy_free }
+						set_autonomy = { target = RHO autonomy_state = autonomy_free }
+						set_autonomy = { target = SAF autonomy_state = autonomy_free }
+					}
+					
+					FRA = {
+						set_autonomy = { target = RHI autonomy_state = autonomy_free }
+						set_autonomy = { target = MOR autonomy_state = autonomy_free }
+						set_autonomy = { target = NFA autonomy_state = autonomy_free }
+						set_autonomy = { target = NFQ autonomy_state = autonomy_free }
+						set_autonomy = { target = VIN autonomy_state = autonomy_free }
+						set_autonomy = { target = PHN autonomy_state = autonomy_free }
+					}
+					
+					ITA = {
+						set_autonomy = { target = LBA autonomy_state = autonomy_free }
+					}
+					
+					SOV = {
+						set_autonomy = { target = EST autonomy_state = autonomy_free }
+					}
+					
+				}
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = gen_faction_rules
+						option = GENERIC_MINOR_FACTIONS
+					}
+				}
+				every_country = {
+					limit = {
+						exists = yes
+						is_major = no
+						has_war = no
+						is_faction_leader = no
+					}
+					random_list = {
+						15 = {
+							ENG = {
+								add_to_faction = PREV
+							}
+						}
+						15 = {
+							FRA = {
+								add_to_faction = PREV
+							}
+						}
+						15 = {
+							GER = {
+								add_to_faction = PREV
+							}
+						}
+						15 = {
+							SOV = {
+								add_to_faction = PREV
+							}
+						}
+						40 = {
+							add_political_power = 1
+						}
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = gen_faction_rules
+						option = GENERIC_MAJOR_FACTIONS
+					}
+				}
+				every_country = {
+					limit = {
+						exists = yes
+						has_war = no
+						is_faction_leader = no
+					}
+					random_list = {
+						15 = {
+							ENG = {
+								add_to_faction = PREV
+							}
+						}
+						15 = {
+							FRA = {
+								add_to_faction = PREV
+							}
+						}
+						15 = {
+							GER = {
+								add_to_faction = PREV
+							}
+						}
+						15 = {
+							SOV = {
+								add_to_faction = PREV
+							}
+						}
+						40 = {
+							add_political_power = 1
+						}
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = gen_faction_rules
+						option = GENERIC_EXPAND_FACTIONS
+					}
+				}
+				every_country = {
+					limit = {
+						exists = yes
+						is_major = no
+						has_war = no
+						is_in_faction = no
+						is_puppet = no
+					}
+					random_list = {
+						15 = {
+							ENG = {
+								add_to_faction = PREV
+							}
+						}
+						15 = {
+							FRA = {
+								add_to_faction = PREV
+							}
+						}
+						15 = {
+							GER = {
+								add_to_faction = PREV
+							}
+						}
+						15 = {
+							SOV = {
+								add_to_faction = PREV
+							}
+						}
+						40 = {
+							add_political_power = 1
+						}
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = allow_join_faction
+						option = JOIN_ALLOWED
+					}
+				}
+				every_country = {
+					limit = {
+						exists = yes
+					}
+					set_rule = {
+						can_join_factions = yes
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = allow_create_faction
+						option = CREATE_ALLOWED
+					}
+				}
+				every_country = {
+					limit = {
+						exists = yes
+					}
+					set_rule = {
+						can_create_factions = yes
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = gen_random_power
+						option = GEN_RANDOM_POWER_YES
+					}
+				}
+				random_country = {
+					limit = {
+						exists = yes
+						is_puppet = no
+						num_of_civilian_factories > 5
+					}
+					add_ideas = GEN_super_power
+				}
+			}
+
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = gen_random_power
+						option = GEN_RANDOM_POWER_ALIEN
+					}
+				}
+				random_country = {
+					limit = {
+						exists = yes
+						is_puppet = no
+						num_of_civilian_factories > 5
+						OR = {
+							NOT = {
+								any_owned_state = {
+									is_on_continent = europe
+								}
+							}
+							num_of_military_factories > 10
+						}
+						OR = {
+							is_in_faction = no
+							is_faction_leader = yes
+						}
+					}
+					load_focus_tree = generic_focus
+					
+					add_ideas = {
+						GEN_super_power
+						GEN_HOG_Val
+						GEN_FOR_Val
+						GEN_ECO_Val
+						GEN_SEC_Val
+					}
+					
+					set_cosmetic_tag = GEN_ALIEN
+					
+					dismantle_faction = yes
+					
+					set_politics = {
+						ruling_party = valkist
+					}
+					
+					add_popularity = {
+						ideology = valkist
+						popularity = 0.99
+					}
+					
+					set_party_name = { 
+						ideology = valkist 
+						long_name = "The High Council" 
+						name = "The High Council" 
+					}
+					
+					create_country_leader = {
+						name = "Gecko"
+						desc = "POLITICS_XENU_DESC"
+						picture = "gfx/leaders/GEN/Portrait_Xenu.tga"
+						expire = "1965.1.1"
+						ideology = valkist_subtype
+						traits = {
+							
+						}
+					}
+					
+					create_wargoal = {
+						target = ENG
+						type = annex_everything
+					}
+					
+					create_wargoal = {
+						target = FRA
+						type = annex_everything
+					}
+					
+					create_wargoal = {
+						target = GER
+						type = annex_everything
+					}
+					
+					create_wargoal = {
+						target = SOV
+						type = annex_everything
+					}
+					
+					create_wargoal = {
+						target = USA
+						type = annex_everything
+					}
+					
+					create_wargoal = {
+						target = JAP
+						type = annex_everything
+					}
+					
+
+					every_country = {
+						limit = {
+							exists = yes
+							is_neighbor_of = PREV
+						}
+						THIS = {
+							declare_war_on = {
+								target = PREV.PREV
+								type = annex_everything
+							}
+						}
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = gen_random_resource
+						option = GEN_RANDOM_RESOURCE_YES
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = oil
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = oil
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = oil
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = oil
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						is_on_continent = north_africa
+					}
+					add_resource = {
+						type = oil
+						amount = 50
+					}
+				}
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = oil
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = oil
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = oil
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = oil
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = oil
+						amount = 50
+					}
+				}
+				
+#
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = aluminium
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = aluminium
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = aluminium
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = aluminium
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = aluminium
+						amount = 50
+					}
+				}
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = aluminium
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = aluminium
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = aluminium
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = aluminium
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = aluminium
+						amount = 50
+					}
+				}
+#
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = rubber
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = rubber
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = rubber
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = rubber
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = rubber
+						amount = 50
+					}
+				}
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = rubber
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = rubber
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = rubber
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = rubber
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = rubber
+						amount = 50
+					}
+				}
+				
+#
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = tungsten
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = tungsten
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = tungsten
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = tungsten
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = tungsten
+						amount = 50
+					}
+				}
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = tungsten
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = tungsten
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = tungsten
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = tungsten
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = tungsten
+						amount = 50
+					}
+				}
+				
+#
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = steel
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = steel
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = steel
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = steel
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = steel
+						amount = 50
+					}
+				}
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = steel
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = steel
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = steel
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = steel
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = steel
+						amount = 50
+					}
+				}
+#
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = chromium
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = chromium
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = chromium
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = chromium
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = chromium
+						amount = 50
+					}
+				}
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = chromium
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = chromium
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = chromium
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = chromium
+						amount = 50
+					}
+				}
+				
+				random_state = {
+					limit = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = middle_east
+							is_on_continent = north_africa
+							is_on_continent = africa
+							is_on_continent = south_asia
+							is_on_continent = australia
+						}
+					}
+					add_resource = {
+						type = chromium
+						amount = 50
+					}
+				}
+			}
+			
+			# if = {
+				# limit = {
+					# has_game_rule = {
+						# rule = gen_random_resource
+						# option = GEN_RANDOM_RESOURCE_REALISTIC
+					# }
+				# }
+
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+							# is_on_continent = middle_east
+							# is_on_continent = north_africa
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+							# is_on_continent = australia
+						# }
+					# }
+					# add_resource = {
+						# type = oil
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+							# is_on_continent = middle_east
+							# is_on_continent = north_africa
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+						# }
+					# }
+					# add_resource = {
+						# type = oil
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = asia
+							# is_on_continent = middle_east
+							# is_on_continent = north_africa
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+						# }
+					# }
+					# add_resource = {
+						# type = oil
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = asia
+							# is_on_continent = middle_east
+							# is_on_continent = north_africa
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+						# }
+					# }
+					# add_resource = {
+						# type = oil
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# is_on_continent = north_africa
+					# }
+					# add_resource = {
+						# type = oil
+						# amount = 50
+					# }
+				# }
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = asia
+							# is_on_continent = middle_east
+							# is_on_continent = north_africa
+							# is_on_continent = africa
+						# }
+					# }
+					# add_resource = {
+						# type = oil
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = asia
+							# is_on_continent = middle_east
+							# is_on_continent = north_africa
+							# is_on_continent = africa
+						# }
+					# }
+					# add_resource = {
+						# type = oil
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = middle_east
+							# is_on_continent = north_africa
+							# is_on_continent = africa
+						# }
+					# }
+					# add_resource = {
+						# type = oil
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = middle_east
+							# is_on_continent = north_africa
+							# is_on_continent = africa
+						# }
+					# }
+					# add_resource = {
+						# type = oil
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = middle_east
+							# is_on_continent = africa
+						# }
+					# }
+					# add_resource = {
+						# type = oil
+						# amount = 50
+					# }
+				# }
+				
+# #
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+							# is_on_continent = middle_east
+							# is_on_continent = north_africa
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+							# is_on_continent = australia
+						# }
+					# }
+					# add_resource = {
+						# type = aluminium
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+							# is_on_continent = middle_east
+							# is_on_continent = north_africa
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+							# is_on_continent = australia
+						# }
+					# }
+					# add_resource = {
+						# type = aluminium
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+							# is_on_continent = south_asia
+							# is_on_continent = australia
+						# }
+					# }
+					# add_resource = {
+						# type = aluminium
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+							# is_on_continent = south_asia
+							# is_on_continent = australia
+						# }
+					# }
+					# add_resource = {
+						# type = aluminium
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+						# }
+					# }
+					# add_resource = {
+						# type = aluminium
+						# amount = 50
+					# }
+				# }
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+						# }
+					# }
+					# add_resource = {
+						# type = aluminium
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+						# }
+					# }
+					# add_resource = {
+						# type = aluminium
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+						# }
+					# }
+					# add_resource = {
+						# type = aluminium
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = europe
+						# }
+					# }
+					# add_resource = {
+						# type = aluminium
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = europe
+						# }
+					# }
+					# add_resource = {
+						# type = aluminium
+						# amount = 50
+					# }
+				# }
+# #
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = south_america
+							# is_on_continent = asia
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+							# is_on_continent = australia
+						# }
+					# }
+					# add_resource = {
+						# type = rubber
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = south_america
+							# is_on_continent = asia
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+							# is_on_continent = australia
+						# }
+					# }
+					# add_resource = {
+						# type = rubber
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = south_america
+							# is_on_continent = asia
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+						# }
+					# }
+					# add_resource = {
+						# type = rubber
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = south_america
+							# is_on_continent = asia
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+						# }
+					# }
+					# add_resource = {
+						# type = rubber
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = south_america
+							# is_on_continent = asia
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+						# }
+					# }
+					# add_resource = {
+						# type = rubber
+						# amount = 50
+					# }
+				# }
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = south_america
+							# is_on_continent = asia
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+						# }
+					# }
+					# add_resource = {
+						# type = rubber
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = asia
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+						# }
+					# }
+					# add_resource = {
+						# type = rubber
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = asia
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+						# }
+					# }
+					# add_resource = {
+						# type = rubber
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = asia
+							# is_on_continent = africa
+						# }
+					# }
+					# add_resource = {
+						# type = rubber
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = asia
+							# is_on_continent = africa
+						# }
+					# }
+					# add_resource = {
+						# type = rubber
+						# amount = 50
+					# }
+				# }
+				
+# #
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+							# is_on_continent = middle_east
+							# is_on_continent = north_africa
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+							# is_on_continent = australia
+						# }
+					# }
+					# add_resource = {
+						# type = tungsten
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+							# is_on_continent = middle_east
+							# is_on_continent = north_africa
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+							# is_on_continent = australia
+						# }
+					# }
+					# add_resource = {
+						# type = tungsten
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+							# is_on_continent = australia
+						# }
+					# }
+					# add_resource = {
+						# type = tungsten
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+							# is_on_continent = australia
+						# }
+					# }
+					# add_resource = {
+						# type = tungsten
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+							# is_on_continent = south_asia
+							# is_on_continent = australia
+						# }
+					# }
+					# add_resource = {
+						# type = tungsten
+						# amount = 50
+					# }
+				# }
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+							# is_on_continent = south_asia
+							# is_on_continent = australia
+						# }
+					# }
+					# add_resource = {
+						# type = tungsten
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+							# is_on_continent = south_asia
+						# }
+					# }
+					# add_resource = {
+						# type = tungsten
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+							# is_on_continent = south_asia
+						# }
+					# }
+					# add_resource = {
+						# type = tungsten
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+						# }
+					# }
+					# add_resource = {
+						# type = tungsten
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+						# }
+					# }
+					# add_resource = {
+						# type = tungsten
+						# amount = 50
+					# }
+				# }
+				
+# #
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+							# is_on_continent = middle_east
+							# is_on_continent = north_africa
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+							# is_on_continent = australia
+						# }
+					# }
+					# add_resource = {
+						# type = steel
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+							# is_on_continent = middle_east
+							# is_on_continent = north_africa
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+							# is_on_continent = australia
+						# }
+					# }
+					# add_resource = {
+						# type = steel
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+							# is_on_continent = middle_east
+							# is_on_continent = north_africa
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+							# is_on_continent = australia
+						# }
+					# }
+					# add_resource = {
+						# type = steel
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+							# is_on_continent = middle_east
+							# is_on_continent = north_africa
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+							# is_on_continent = australia
+						# }
+					# }
+					# add_resource = {
+						# type = steel
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+							# is_on_continent = middle_east
+							# is_on_continent = north_africa
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+							# is_on_continent = australia
+						# }
+					# }
+					# add_resource = {
+						# type = steel
+						# amount = 50
+					# }
+				# }
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+							# is_on_continent = middle_east
+							# is_on_continent = north_africa
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+							# is_on_continent = australia
+						# }
+					# }
+					# add_resource = {
+						# type = steel
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+							# is_on_continent = middle_east
+							# is_on_continent = north_africa
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+							# is_on_continent = australia
+						# }
+					# }
+					# add_resource = {
+						# type = steel
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+							# is_on_continent = middle_east
+							# is_on_continent = north_africa
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+							# is_on_continent = australia
+						# }
+					# }
+					# add_resource = {
+						# type = steel
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+							# is_on_continent = middle_east
+							# is_on_continent = north_africa
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+							# is_on_continent = australia
+						# }
+					# }
+					# add_resource = {
+						# type = steel
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+							# is_on_continent = middle_east
+							# is_on_continent = north_africa
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+							# is_on_continent = australia
+						# }
+					# }
+					# add_resource = {
+						# type = steel
+						# amount = 50
+					# }
+				# }
+# #
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+							# is_on_continent = middle_east
+							# is_on_continent = north_africa
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+							# is_on_continent = australia
+						# }
+					# }
+					# add_resource = {
+						# type = chromium
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = south_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+							# is_on_continent = middle_east
+							# is_on_continent = north_africa
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+							# is_on_continent = australia
+						# }
+					# }
+					# add_resource = {
+						# type = chromium
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+							# is_on_continent = australia
+						# }
+					# }
+					# add_resource = {
+						# type = chromium
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+							# is_on_continent = australia
+						# }
+					# }
+					# add_resource = {
+						# type = chromium
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+							# is_on_continent = australia
+						# }
+					# }
+					# add_resource = {
+						# type = chromium
+						# amount = 50
+					# }
+				# }
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+							# is_on_continent = africa
+							# is_on_continent = south_asia
+							# is_on_continent = australia
+						# }
+					# }
+					# add_resource = {
+						# type = chromium
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+							# is_on_continent = africa
+						# }
+					# }
+					# add_resource = {
+						# type = chromium
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = europe
+							# is_on_continent = asia
+							# is_on_continent = africa
+						# }
+					# }
+					# add_resource = {
+						# type = chromium
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = europe
+						# }
+					# }
+					# add_resource = {
+						# type = chromium
+						# amount = 50
+					# }
+				# }
+				
+				# random_state = {
+					# limit = {
+						# OR = {
+							# is_on_continent = north_america
+							# is_on_continent = europe
+						# }
+					# }
+					# add_resource = {
+						# type = chromium
+						# amount = 50
+					# }
+				# }
+			# }
+			
+			# # Tides of Revolution Easter Egg
+			
+			# if = {
+				# limit = {
+					# has_game_rule = {
+						# rule = gen_tides_of_revolution
+						# option = GEN_TOR_YES
+					# }
+				# }
+				# GER = {
+					# annex_country = {
+						# target = RHI
+						# transfer_troops = yes
+					# }
+				# }
+				# GER = {
+					# annex_country = {
+						# target = SHO
+						# transfer_troops = yes
+					# }
+				# }
+				# every_state = {
+					# limit = {
+						# is_core_of = RHI
+					# }
+					# GER = {
+						# transfer_state = PREV
+					# }
+				# }
+				# GER = {
+					# transfer_state = 541 # Ger South Africa
+					# transfer_state = 546 # Ger East Africa
+					# transfer_state = 964 # Ger East Africa
+					# transfer_state = 966 # Ger West Africa
+					# transfer_state = 967 # Ger West Africa
+					# transfer_state = 817 # Ger West Africa
+					# transfer_state = 977 # Ger Togoland
+					# transfer_state = 856 # Ger New Guinea
+					# transfer_state = 845 # Ger New Guinea
+					# transfer_state = 737 # Ger New Guinea
+					# transfer_state = 86 # Ger Poland
+					# transfer_state = 752 # Ger Poland
+					# transfer_state = 67 # Ger Poland
+					# transfer_state = 188 # Memel
+					# transfer_state = 28 # Alsace
+				# }
+				
+				# every_state = {
+					# limit = {
+						# is_owned_by = GER
+						# is_on_continent = europe
+					# }
+					# THIS = {
+						# add_core_of = GER
+					# }
+				# }
+				
+				# every_state = {
+					# limit = {
+						# is_core_of = INS
+					# }
+					# HOL = {
+						# transfer_state = PREV
+					# }
+				# }
+				# HOL = {
+					# annex_country = {
+						# target = KNE
+						# transfer_troops = yes
+					# }
+				# }
+				# AUS = {
+					# annex_country = {
+						# target = CZE
+						# transfer_troops = yes
+					# }
+					# annex_country = {
+						# target = HUN
+						# transfer_troops = yes
+					# }
+					# annex_country = {
+						# target = SLO
+						# transfer_troops = yes
+					# }
+				# }
+				# every_state = {
+					# limit = {
+						# OR = {
+							# region = 27
+							# is_core_of = SLV
+							# is_core_of = CRO
+							# is_core_of = BOS
+						# }
+					# }
+					# AUS = {
+						# transfer_state = PREV
+					# }
+				# }
+				# AUS = {
+					# transfer_state = 39 # Tirol
+					# transfer_state = 774 # Tirol
+					# transfer_state = 45 # Vojvodina
+					# transfer_state = 985 # Vojvodina
+					# transfer_state = 750 # Vojvodina
+					# transfer_state = 799 # Aus Poland
+					# transfer_state = 88 # Aus Poland
+					# transfer_state = 91 # Aus Poland
+					# transfer_state = 89 # Aus Poland
+					# transfer_state = 937 # Vorarlberg
+					# transfer_state = 80 # Bucovina
+					# transfer_state = 736 # Istria
+					# transfer_state = 770 # Istria
+				# }
+				
+				# every_state = {
+					# limit = {
+						# is_owned_by = AUS
+						# is_on_continent = europe
+					# }
+					# THIS = {
+						# add_core_of = AUS
+					# }
+				# }
+				
+				# RUS = {
+					# annex_country = {
+						# target = SOV
+						# transfer_troops = yes
+					# }
+					# annex_country = {
+						# target = FIN
+						# transfer_troops = yes
+					# }
+					# annex_country = {
+						# target = UKR
+						# transfer_troops = yes
+					# }
+					# annex_country = {
+						# target = BLR
+						# transfer_troops = yes
+					# }
+					# annex_country = {
+						# target = LIT
+						# transfer_troops = yes
+					# }
+					# annex_country = {
+						# target = LAT
+						# transfer_troops = yes
+					# }
+					# annex_country = {
+						# target = EST
+						# transfer_troops = yes
+					# }
+					# annex_country = {
+						# target = FIN
+						# transfer_troops = yes
+					# }
+					# annex_country = {
+						# target = TRK
+						# transfer_troops = yes
+					# }
+					# annex_country = {
+						# target = GOR
+						# transfer_troops = yes
+					# }
+					# annex_country = {
+						# target = GEO
+						# transfer_troops = yes
+					# }
+					# annex_country = {
+						# target = AZR
+						# transfer_troops = yes
+					# }
+					# annex_country = {
+						# target = POL
+						# transfer_troops = no
+					# }
+					# annex_country = {
+						# target = ARM
+						# transfer_troops = no
+					# }
+				# }
+				# every_state = {
+					# limit = {
+						# OR = {
+							# is_core_of = SOV
+							# is_core_of = RUS
+						# }
+						# NOT = {
+							# is_owned_by = JAP
+						# }
+					# }
+					# RUS = {
+						# transfer_state = PREV
+					# }
+				# }
+				# RUS = {
+					# transfer_state = 78 # Bessarabia
+					# transfer_state = 853 # Bessarabia
+					# transfer_state = 655 # North Sakhalin
+				# }
+				
+				# every_state = {
+					# limit = {
+						# is_owned_by = RUS
+						# OR = {
+							# is_on_continent = europe
+							# is_on_continent = asia
+							# is_on_continent = middle_east
+						# }
+					# }
+					# THIS = {
+						# add_core_of = RUS
+					# }
+				# }
+				
+				# # every_state = {
+					# # limit = {
+						# # is_owned_by = RUS
+						# # industrial_complex < 2
+					# # }
+					# # THIS = {
+						# # remove_building = {
+							# # type = industrial_complex
+							# # level = 1
+						# # }
+					# # }
+				# # }				
+				
+				# every_state = {
+					# limit = {
+						# is_owned_by = RUS
+						# industrial_complex > 1
+						# industrial_complex < 3
+					# }
+					# THIS = {
+						# remove_building = {
+							# type = industrial_complex
+							# level = 1
+						# }
+					# }
+				# }				
+				
+				# every_state = {
+					# limit = {
+						# is_owned_by = RUS
+						# industrial_complex > 2
+						# industrial_complex < 4
+					# }
+					# THIS = {
+						# remove_building = {
+							# type = industrial_complex
+							# level = 1
+						# }
+					# }
+				# }				
+				
+				# every_state = {
+					# limit = {
+						# is_owned_by = RUS
+						# industrial_complex > 3
+						# industrial_complex < 5
+					# }
+					# THIS = {
+						# remove_building = {
+							# type = industrial_complex
+							# level = 2
+						# }
+					# }
+				# }
+				
+				# every_state = {
+					# limit = {
+						# is_owned_by = RUS
+						# industrial_complex > 4
+						# industrial_complex < 6
+					# }
+					# THIS = {
+						# remove_building = {
+							# type = industrial_complex
+							# level = 2
+						# }
+					# }
+				# }
+				
+				# # every_state = {
+					# # limit = {
+						# # is_owned_by = RUS
+						# # arms_factory < 2
+					# # }
+					# # THIS = {
+						# # remove_building = {
+							# # type = arms_factory
+							# # level = 1
+						# # }
+					# # }
+				# # }				
+				
+				# every_state = {
+					# limit = {
+						# is_owned_by = RUS
+						# arms_factory > 1
+						# arms_factory < 3
+					# }
+					# THIS = {
+						# remove_building = {
+							# type = arms_factory
+							# level = 1
+						# }
+					# }
+				# }					
+				
+				# every_state = {
+					# limit = {
+						# is_owned_by = RUS
+						# arms_factory > 2
+						# arms_factory < 4
+					# }
+					# THIS = {
+						# remove_building = {
+							# type = arms_factory
+							# level = 2
+						# }
+					# }
+				# }				
+				
+				# every_state = {
+					# limit = {
+						# is_owned_by = RUS
+						# arms_factory > 3
+						# arms_factory < 5
+					# }
+					# THIS = {
+						# remove_building = {
+							# type = arms_factory
+							# level = 2
+						# }
+					# }
+				# }
+				
+				# every_state = {
+					# limit = {
+						# is_owned_by = RUS
+						# arms_factory > 4
+						# arms_factory < 6
+					# }
+					# THIS = {
+						# remove_building = {
+							# type = arms_factory
+							# level = 2
+						# }
+					# }
+				# }
+				
+				# every_state = {
+					# limit = {
+						# is_owned_by = RUS
+						# dockyard > 2
+						# dockyard < 4
+					# }
+					# THIS = {
+						# remove_building = {
+							# type = dockyard
+							# level = 1
+						# }
+					# }
+				# }
+				
+				# every_state = {
+					# limit = {
+						# is_core_of = TUR
+					# }
+					# TUR = {
+						# transfer_state = PREV
+					# }
+				# }
+				# TUR = {
+					# annex_country = {
+						# target = KUR
+						# transfer_troops = yes
+					# }
+					# annex_country = {
+						# target = PHN
+						# transfer_troops = yes
+					# }
+					# annex_country = {
+						# target = IRQ
+						# transfer_troops = yes
+					# }
+					# annex_country = {
+						# target = ISR
+						# transfer_troops = yes
+					# }
+				# }
+				# 341 = {
+					# set_demilitarized_zone = no
+				# }
+				# 347 = {
+					# set_demilitarized_zone = no
+				# }
+				
+				# every_state = {
+					# limit = {
+						# is_owned_by = TUR
+						# OR = {
+							# is_on_continent = europe
+							# is_on_continent = middle_east
+						# }
+					# }
+					# THIS = {
+						# add_core_of = TUR
+					# }
+				# }
+				
+				# BUL = {
+					# transfer_state = 763 # Western Thrace	
+				# }
+				
+				# every_state = {
+					# limit = {
+						# is_owned_by = BUL
+						# is_on_continent = europe
+					# }
+					# THIS = {
+						# add_core_of = BUL
+					# }
+				# }				
+				
+				# every_state = {
+					# limit = {
+						# is_core_of = ALB
+					# }
+					# ALB = {
+						# transfer_state = PREV
+					# }
+				# }
+				# SER = {
+					# release = MNT
+				# }
+				# FRA = {
+					# set_autonomy = { target = MOR autonomy_state = autonomy_free }
+					# set_autonomy = { target = TUN autonomy_state = autonomy_free }
+					# release = DJI
+					# release = MAD
+					# release = ALG
+					# remove_from_faction = MOR
+					# remove_from_faction = TUN
+				# }
+				
+				# MOR = {
+					# drop_cosmetic_tag = yes
+					# release = ALG
+					# release = TUN
+					# release = MRT
+					# release = WES
+				# }
+				
+				# NFQ = {
+					# release = GAB
+					# release = RCG
+					# release = CAR
+					# release = CHA
+					# release = EQG
+					# release = CMR
+				# }
+				
+				# GAB = {
+					# annex_country = {
+						# target = NFQ
+						# transfer_troops = no
+					# }
+				# }
+				
+				# NFA = {
+					# release = IVO
+					# release = SEN
+					# release = NGR
+					# release = MLI
+					# release = MRT
+					# release = VOL
+					# release = DAH
+					# release = GNA
+					# release = MOR
+					# release = WES
+				# }
+				
+				# IVO = {
+					# annex_country = {
+						# target = NFA
+						# transfer_troops = no
+					# }
+				# }
+				
+				# FIC = {
+					# release = CAM
+					# release = LAO
+					# drop_cosmetic_tag = yes
+				# }
+				
+				# VIN = {
+					# annex_country = {
+						# target = FIC
+						# transfer_troops = yes
+					# }
+				# }
+				
+				# CHI = {
+					# transfer_state = 728
+				# }
+				
+				# RAJ = {
+					# annex_country = {
+					# target = IND
+					# transfer_troops = no
+				# }
+				
+				# NFL = {
+					# transfer_state = 818
+				# }
+				
+				# every_state = {
+					# limit = {
+						# is_core_of = MEX
+					# }
+					# MEX = {
+						# transfer_state = PREV
+					# }
+				# }
+				
+				# every_state = {
+					# limit = {
+						# is_owned_by = FRA
+						# NOT = {
+							# OR = {
+								# is_on_continent = europe
+								# is_core_of = FRA
+							# }
+						# }
+					# }
+					# ENG = {
+						# transfer_state = PREV
+					# }
+				# }
+				
+				# every_state = {
+					# limit = {
+						# OR = {
+							# region = 198
+							# region = 120
+							# region = 117
+						# }
+					# }
+					# USB = {
+						# transfer_state = PREV
+					# }
+				# }
+				
+				# every_state = {
+					# limit = {
+						# is_core_of = USA
+					# }
+					# THIS = {
+						# add_core_of = USB
+					# }
+				# }
+				
+				# every_state = {
+					# limit = {
+						# region = 119
+					# }
+					# CSA = {
+						# transfer_state = PREV
+					# }
+				# }
+				
+				# CSA = {
+					# transfer_state = 371
+					# transfer_state = 372
+					# transfer_state = 370
+					# transfer_state = 371
+					# transfer_state = 367
+					# transfer_state = 366
+					# transfer_state = 365
+					# transfer_state = 364
+					# transfer_state = 363
+					# transfer_state = 362
+					# transfer_state = 368
+				# }
+				
+				# every_state = {
+					# limit = {
+						# is_core_of = USA
+					# }
+					# THIS = {
+						# add_core_of = USB
+					# }
+				# }				
+				
+				# every_state = {
+					# limit = {
+						# region = 197
+					# }
+					# CAN = {
+						# transfer_state = PREV
+					# }
+				# }
+				
+				# CAN = {
+					# transfer_state = 685 # Panama Canal
+				# }
+				
+				# ENG = {
+					# annex_country = {
+						# target = BEA
+						# transfer_troops = no
+					# }
+				# }
+				
+				# # ToR scenario set up
+				
+				# every_country = {
+					# limit = {
+						# exists = yes
+						# is_faction_leader = yes
+					# }
+					# THIS = {
+						# dismantle_faction = yes
+					# }
+				# }
+
+				# AUS = {
+					# create_faction = "Freipakt"
+					# add_to_faction = ENG
+					# add_to_faction = USA
+				# }
+				
+				# RUS = {
+					# create_faction = "Russo-German Axis"
+					# add_to_faction = GER
+					# add_to_faction = CSA
+				# }
+				
+				# FRA = {
+					# create_faction = "P.R.I."
+					# add_to_faction = SPA
+					# add_to_faction = USB
+				# }
+				
+				# JAP = {
+					# diplomatic_relation = {
+						# country = RUS
+						# relation = guarantee
+						# active = no
+					# }
+				# }
+				
+				# USA = {
+					# set_autonomy = { 
+						# target = HAI 
+						# autonomy_state = autonomy_free 
+					# }
+				# }				
+				
+				# ITA = {
+					# diplomatic_relation = {
+						# country = ALB
+						# relation = guarantee
+						# active = no
+					# }
+					# diplomatic_relation = {
+						# country = ALB
+						# relation = military_access
+						# active = no
+					# }
+				# }
+				
+				# GER = {
+					# remove_ideas = {
+						# GER_divided_govt
+						# GER_naval_treaty
+					# }
+					# create_country_leader = {
+						# name = "Rudolf Hess"
+						# desc = "POLITICS_RUDOLF_HESS_DESC"
+						# picture = "Portrait_Germany_Rudolf_Hess.tga"
+						# expire = "1965.1.1"
+						# ideology = national_populist_subtype
+						# traits = {}
+					# }
+					# set_cosmetic_tag = TOR_GER			
+					# load_focus_tree = generic_focus
+					# if = {
+						# limit = { 
+							# has_dlc = "Man the Guns" 
+						# }
+						# load_oob = "GER_1936_naval_mtg"
+					# }
+					# if = {
+						# limit = {
+							# NOT = {
+								# has_dlc = "Man the Guns" 
+							# }
+						# }
+						# load_oob = "GER_1936_naval_legacy"
+					# }
+					# if = {
+						# limit = { 
+							# has_dlc = "Man the Guns" 
+						# }
+						# load_oob = "GER_1936_naval_mtg"
+					# }
+					# if = {
+						# limit = {
+							# NOT = {
+								# has_dlc = "Man the Guns" 
+							# }
+						# }
+						# load_oob = "GER_1936_naval_legacy"
+					# }
+					# add_popularity = { 
+						# ideology = national_populist 
+						# popularity = 0.5
+					# }
+					# set_politics = {
+						# ruling_party = national_populist 
+						# elections_allowed = no
+					# }
+				# }
+				
+				# GER = {
+					# change_tag_from = RHI
+				# }
+				# GER = {
+					# change_tag_from = SHO
+				# }				
+				
+				# RUS = {
+					# remove_ideas = {
+						# extensive_conscription
+						# RUS_russian_emigres
+						# RUS_allied_eastern_comission
+						# RUS_democratic_opposition
+						# RUS_old_army
+					# }
+					# create_country_leader = {
+						# name = "Boris Savinkov"
+						# desc = "POLITICS_BORIS_SAVINKOV_DESC"
+						# picture = "Portrait_Russia_Boris_Savinkov.tga"
+						# expire = "1965.1.1"
+						# ideology = national_populist_subtype
+						# traits = {}
+					# }
+					# set_cosmetic_tag = TOR_RUS
+					# load_focus_tree = generic_focus
+					# add_popularity = {
+						# ideology = national_populist 
+						# popularity = 0.5
+					# }
+					# set_politics = {
+						# ruling_party = national_populist 
+						# elections_allowed = no
+					# }
+				# }
+					
+				# RUS = {
+					# change_tag_from = SOV
+				# }
+				# RUS = {
+					# change_tag_from = POL
+				# }
+				# RUS = {
+					# change_tag_from = UKR
+				# }
+				# RUS = {
+					# change_tag_from = BLR
+				# }
+				# RUS = {
+					# change_tag_from = LIT
+				# }
+				# RUS = {
+					# change_tag_from = LAT
+				# }
+				# RUS = {
+					# change_tag_from = EST
+				# }
+				# RUS = {
+					# change_tag_from = FIN
+				# }
+				# RUS = {
+					# change_tag_from = GEO
+				# }
+				# RUS = {
+					# change_tag_from = ARM
+				# }
+				# RUS = {	
+					# change_tag_from = AZR
+				# }
+				# RUS = {
+					# change_tag_from = TRK
+				# }
+				# RUS = {
+					# change_tag_from = GOR
+				# }
+				
+				# FRA = {
+					# remove_ideas = {
+						# FRA_great_war_legacy
+						# FRA_somme
+						# FRA_divided_military_staff
+						# FRA_colonial_profits
+						# GEN_entente_leader
+					# }
+					# load_focus_tree = generic_focus
+					# add_popularity = { 
+						# ideology = collectivist 
+						# popularity = 0.5
+					# }
+					# set_politics = {
+						# ruling_party = collectivist 
+						# elections_allowed = no
+					# }
+				# }
+				
+				# AUS = {
+					# remove_ideas = {
+						# AUS_bundesheer_conscription
+						# GEN_entente_member
+					# }
+					# create_country_leader = {
+						# name = "Karl I"
+						# desc = "POLITICS_KARL_DESC"
+						# picture = "Karl_von_austria.tga"
+						# expire = "1965.1.1"
+						# ideology = social_liberal_subtype
+						# traits = {}
+					# }				
+					# set_cosmetic_tag = TOR_AUS
+					# load_focus_tree = generic_focus
+					# add_popularity = { 
+						# ideology = social_liberal 
+						# popularity = 0.5
+					# }
+					# set_politics = {
+						# ruling_party = social_liberal 
+						# elections_allowed = no
+					# }
+				# }
+				
+				# AUS = {
+					# change_tag_from = HUN
+				# }
+				# AUS = {
+					# change_tag_from = SLO
+				# }
+				# AUS = {
+					# change_tag_from = CZE
+				# }				
+				
+				# ENG = {
+					# remove_ideas = {
+						# undisturbed_isolation
+						# ENG_col_unrest
+						# ENG_irb
+						# ENG_war_fatigue
+					# }
+					# load_focus_tree = generic_focus
+					# add_popularity = { 
+						# ideology = social_democrat 
+						# popularity = 0.5
+					# }
+					# set_politics = {
+						# ruling_party = social_democrat 
+						# elections_allowed = no
+					# }
+				# }
+				
+				# HOL = {
+					# create_country_leader = {
+						# name = "Queen Wilhelmina"
+						# desc = "POLITICS_WILHELMINA_DESC"
+						# picture = "gfx/leaders/KNE/Portrait_Netherlands_Wilhelmina.tga"
+						# expire = "1938.1.1"
+						# ideology = social_conservative_subtype
+						# traits = {
+							
+						# }
+					# }
+					# load_focus_tree = generic_focus
+					# add_popularity = { 
+						# ideology = social_conservative 
+						# popularity = 0.5
+					# }
+					# set_politics = {
+						# ruling_party = social_conservative 
+						# elections_allowed = no
+					# }
+				# }
+				
+				# MEX = {
+					# remove_ideas = {
+						# MEX_nationalist_strife
+						# MEX_basta
+						# MEX_military_corruption
+						# MEX_militias
+						# MEX_rampant_industrialization
+					# }
+					# load_focus_tree = generic_focus
+					# add_popularity = { 
+						# ideology = social_conservative 
+						# popularity = 0.5
+					# }	
+					# set_politics = {
+						# ruling_party = social_conservative 
+						# elections_allowed = no
+					# }
+				# }
+				
+				# TUR = {
+					# change_tag_from = KUR
+				# }
+				# TUR = {
+					# change_tag_from = IRQ
+				# }
+				# TUR = {
+					# change_tag_from = ISR
+				# }
+				# TUR = {
+					# change_tag_from = PHN
+				# }
+		
+				# USA = {
+					# remove_ideas = {
+						# USA_sick_man_america
+						# USA_failed_offensive
+						# USA_malnourished_populace
+						# USA_great_depression
+					# }
+					# destroy_ships = {
+						# type = destroyer
+						# count = 60
+					# }
+					# destroy_ships = {
+						# type = ship_hull_submarine
+						# count = 40
+					# }
+					# destroy_ships = {
+						# type = light_cruiser
+						# count = 6
+					# }
+					# destroy_ships = {
+						# type = heavy_cruiser_1
+						# count = 8
+					# }
+					# destroy_ships = {
+						# type = ship_hull_heavy
+						# count = 8
+					# }
+					# destroy_ships = {
+						# type = ship_hull_carrier
+						# count = 2
+					# }
+					# set_capital = 926
+					# load_focus_tree = generic_focus
+				# }
+				
+				# USB = {
+					# set_capital = 360
+					# set_cosmetic_tag = TOR_CSA
+					# load_focus_tree = generic_focus
+					# add_popularity = { 
+						# ideology = collectivist 
+						# popularity = 0.5
+					# }	
+					# set_politics = {
+						# ruling_party = collectivist 
+						# elections_allowed = no
+					# }
+					# load_oob = USA_1936
+					# if = {
+						# limit = { 
+							# has_dlc = "Man the Guns" 
+						# }
+						# load_oob = "USA_1936_naval_mtg"
+					# }
+					# if = {
+						# limit = {
+							# NOT = {
+								# has_dlc = "Man the Guns" 
+							# }
+						# }
+						# load_oob = "USA_1936_naval_legacy"
+					# }
+					# destroy_ships = {
+						# type = destroyer
+						# count = 90
+					# }
+					# destroy_ships = {
+						# type = ship_hull_submarine
+						# count = 60
+					# }
+					# destroy_ships = {
+						# type = light_cruiser
+						# count = 9
+					# }
+					# destroy_ships = {
+						# type = heavy_cruiser_1
+						# count = 12
+					# }
+					# destroy_ships = {
+						# type = ship_hull_heavy
+						# count = 12
+					# }
+					# destroy_ships = {
+						# type = ship_hull_carrier
+						# count = 2
+					# }					
+				# }
+
+				# CSA = {
+					# set_capital = 362
+					# set_cosmetic_tag = TOR_TEX
+					# load_focus_tree = generic_focus
+					# add_popularity = { 
+						# ideology = national_populist 
+						# popularity = 0.5
+					# }	
+					# set_politics = {
+						# ruling_party = national_populist 
+						# elections_allowed = no
+					# }
+					# load_oob = USA_1936
+					# if = {
+						# limit = { 
+							# has_dlc = "Man the Guns" 
+						# }
+						# load_oob = "USA_1936_naval_mtg"
+					# }
+					# if = {
+						# limit = {
+							# NOT = {
+								# has_dlc = "Man the Guns" 
+							# }
+						# }
+						# load_oob = "USA_1936_naval_legacy"
+					# }
+					# destroy_ships = {
+						# type = destroyer
+						# count = 90
+					# }
+					# destroy_ships = {
+						# type = ship_hull_submarine
+						# count = 60
+					# }
+					# destroy_ships = {
+						# type = light_cruiser
+						# count = 9
+					# }
+					# destroy_ships = {
+						# type = heavy_cruiser_1
+						# count = 12
+					# }
+					# destroy_ships = {
+						# type = ship_hull_heavy
+						# count = 12
+					# }
+					# destroy_ships = {
+						# type = ship_hull_carrier
+						# count = 2
+					# }						
+				# }
+			# }
+		# }
+					
+					
+			# Remove Cores of nations that don't exist for a performance boost			
+
+			if = {
+				limit = {
+					GER = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = GER
+					}
+					THIS = {
+						remove_core_of = GER
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					ENG = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = ENG
+					}
+					THIS = {
+						remove_core_of = ENG
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					SOV = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SOV
+					}
+					THIS = {
+						remove_core_of = SOV
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					SWE = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SWE
+					}
+					THIS = {
+						remove_core_of = SWE
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					FRA = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = FRA
+					}
+					THIS = {
+						remove_core_of = FRA
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					LUX = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = LUX
+					}
+					THIS = {
+						remove_core_of = LUX
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					BEL = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = BEL
+					}
+					THIS = {
+						remove_core_of = BEL
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					HOL = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = HOL
+					}
+					THIS = {
+						remove_core_of = HOL
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					CZE = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = CZE
+					}
+					THIS = {
+						remove_core_of = CZE
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					POL = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = POL
+					}
+					THIS = {
+						remove_core_of = POL
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					AUS = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = AUS
+					}
+					THIS = {
+						remove_core_of = AUS
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					LIT = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = LIT
+					}
+					THIS = {
+						remove_core_of = LIT
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					EST = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = EST
+					}
+					THIS = {
+						remove_core_of = EST
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					LAT = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = LAT
+					}
+					THIS = {
+						remove_core_of = LAT
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					SPR = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SPR
+					}
+					THIS = {
+						remove_core_of = SPR
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					ITA = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = ITA
+					}
+					THIS = {
+						remove_core_of = ITA
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					ROM = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = ROM
+					}
+					THIS = {
+						remove_core_of = ROM
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					YUG = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = YUG
+					}
+					THIS = {
+						remove_core_of = YUG
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					SER = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SER
+					}
+					THIS = {
+						remove_core_of = SER
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					SWI = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SWI
+					}
+					THIS = {
+						remove_core_of = SWI
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					TUR = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = TUR
+					}
+					THIS = {
+						remove_core_of = TUR
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					TRT = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = TRT
+					}
+					THIS = {
+						remove_core_of = TRT
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					GRE = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = GRE
+					}
+					THIS = {
+						remove_core_of = GRE
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					ALB = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = ALB
+					}
+					THIS = {
+						remove_core_of = ALB
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					NOR = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = NOR
+					}
+					THIS = {
+						remove_core_of = NOR
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					DEN = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = DEN
+					}
+					THIS = {
+						remove_core_of = DEN
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					BUL = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = BUL
+					}
+					THIS = {
+						remove_core_of = BUL
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					POR = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = POR
+					}
+					THIS = {
+						remove_core_of = POR
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					FIN = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = FIN
+					}
+					THIS = {
+						remove_core_of = FIN
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					IRE = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = IRE
+					}
+					THIS = {
+						remove_core_of = IRE
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					HUN = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = HUN
+					}
+					THIS = {
+						remove_core_of = HUN
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					AFG = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = AFG
+					}
+					THIS = {
+						remove_core_of = AFG
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					ARG = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = ARG
+					}
+					THIS = {
+						remove_core_of = ARG
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					AST = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = AST
+					}
+					THIS = {
+						remove_core_of = AST
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					BHU = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = BHU
+					}
+					THIS = {
+						remove_core_of = BHU
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					BOL = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = BOL
+					}
+					THIS = {
+						remove_core_of = BOL
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					BRA = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = BRA
+					}
+					THIS = {
+						remove_core_of = BRA
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					CAN = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = CAN
+					}
+					THIS = {
+						remove_core_of = CAN
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					CHI = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = CHI
+					}
+					THIS = {
+						remove_core_of = CHI
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					CHL = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = CHL
+					}
+					THIS = {
+						remove_core_of = CHL
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					COL = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = COL
+					}
+					THIS = {
+						remove_core_of = COL
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					COS = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = COS
+					}
+					THIS = {
+						remove_core_of = COS
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					ECU = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = ECU
+					}
+					THIS = {
+						remove_core_of = ECU
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					ELS = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = ELS
+					}
+					THIS = {
+						remove_core_of = ELS
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					ETH = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = ETH
+					}
+					THIS = {
+						remove_core_of = ETH
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					GUA = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = GUA
+					}
+					THIS = {
+						remove_core_of = GUA
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					HON = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = HON
+					}
+					THIS = {
+						remove_core_of = HON
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					IRQ = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = IRQ
+					}
+					THIS = {
+						remove_core_of = IRQ
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					JAP = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = JAP
+					}
+					THIS = {
+						remove_core_of = JAP
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					KOR = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = KOR
+					}
+					THIS = {
+						remove_core_of = KOR
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					LIB = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = LIB
+					}
+					THIS = {
+						remove_core_of = LIB
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					MEX = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = MEX
+					}
+					THIS = {
+						remove_core_of = MEX
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					MEN = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = MEN
+					}
+					THIS = {
+						remove_core_of = MEN
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					NEP = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = NEP
+					}
+					THIS = {
+						remove_core_of = NEP
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					NIC = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = NIC
+					}
+					THIS = {
+						remove_core_of = NIC
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					NZL = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = NZL
+					}
+					THIS = {
+						remove_core_of = NZL
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					PAN = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = PAN
+					}
+					THIS = {
+						remove_core_of = PAN
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					PER = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = PER
+					}
+					THIS = {
+						remove_core_of = PER
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					PHI = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = PHI
+					}
+					THIS = {
+						remove_core_of = PHI
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					PRU = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = PRU
+					}
+					THIS = {
+						remove_core_of = PRU
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					SAF = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SAF
+					}
+					THIS = {
+						remove_core_of = SAF
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					SAU = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SAU
+					}
+					THIS = {
+						remove_core_of = SAU
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					SIA = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SIA
+					}
+					THIS = {
+						remove_core_of = SIA
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					URG = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = URG
+					}
+					THIS = {
+						remove_core_of = URG
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					VEN = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = VEN
+					}
+					THIS = {
+						remove_core_of = VEN
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					USA = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = USA
+					}
+					THIS = {
+						remove_core_of = USA
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					PAR = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = PAR
+					}
+					THIS = {
+						remove_core_of = PAR
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					CUB = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = CUB
+					}
+					THIS = {
+						remove_core_of = CUB
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					DOM = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = DOM
+					}
+					THIS = {
+						remove_core_of = DOM
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					HAI = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = HAI
+					}
+					THIS = {
+						remove_core_of = HAI
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					YEM = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = YEM
+					}
+					THIS = {
+						remove_core_of = YEM
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					OMA = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = OMA
+					}
+					THIS = {
+						remove_core_of = OMA
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					RAJ = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = RAJ
+					}
+					THIS = {
+						remove_core_of = RAJ
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					CRO = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = CRO
+					}
+					THIS = {
+						remove_core_of = CRO
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					ICE = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = ICE
+					}
+					THIS = {
+						remove_core_of = ICE
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					LEB = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = LEB
+					}
+					THIS = {
+						remove_core_of = LEB
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					JOR = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = JOR
+					}
+					THIS = {
+						remove_core_of = JOR
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					SYR = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SYR
+					}
+					THIS = {
+						remove_core_of = SYR
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					EGY = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = EGY
+					}
+					THIS = {
+						remove_core_of = EGY
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					LBA = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = LBA
+					}
+					THIS = {
+						remove_core_of = LBA
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					WGR = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = WGR
+					}
+					THIS = {
+						remove_core_of = WGR
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					DDR = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = DDR
+					}
+					THIS = {
+						remove_core_of = DDR
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					PAL = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = PAL
+					}
+					THIS = {
+						remove_core_of = PAL
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					ISR = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = ISR
+					}
+					THIS = {
+						remove_core_of = ISR
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					VIN = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = VIN
+					}
+					THIS = {
+						remove_core_of = VIN
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					CAM = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = CAM
+					}
+					THIS = {
+						remove_core_of = CAM
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					MAL = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = MAL
+					}
+					THIS = {
+						remove_core_of = MAL
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					INS = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = INS
+					}
+					THIS = {
+						remove_core_of = INS
+					}
+				}
+				721 = {
+					remove_claim_by = INS
+				}
+			}
+
+			if = {
+				limit = {
+					LAO = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = LAO
+					}
+					THIS = {
+						remove_core_of = LAO
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					MNT = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = MNT
+					}
+					THIS = {
+						remove_core_of = MNT
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					UKR = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = UKR
+					}
+					THIS = {
+						remove_core_of = UKR
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					GEO = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = GEO
+					}
+					THIS = {
+						remove_core_of = GEO
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					KAZ = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = KAZ
+					}
+					THIS = {
+						remove_core_of = KAZ
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					AZR = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = AZR
+					}
+					THIS = {
+						remove_core_of = AZR
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					ARM = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = ARM
+					}
+					THIS = {
+						remove_core_of = ARM
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					BLR = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = BLR
+					}
+					THIS = {
+						remove_core_of = BLR
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					ANG = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = ANG
+					}
+					THIS = {
+						remove_core_of = ANG
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					MZB = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = MZB
+					}
+					THIS = {
+						remove_core_of = MZB
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					ZIM = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = ZIM
+					}
+					THIS = {
+						remove_core_of = ZIM
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					COG = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = COG
+					}
+					THIS = {
+						remove_core_of = COG
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					KEN = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = KEN
+					}
+					THIS = {
+						remove_core_of = KEN
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					PAK = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = PAK
+					}
+					THIS = {
+						remove_core_of = PAK
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					BOT = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = BOT
+					}
+					THIS = {
+						remove_core_of = BOT
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					RHI = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = RHI
+					}
+					THIS = {
+						remove_core_of = RHI
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					KUR = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = KUR
+					}
+					THIS = {
+						remove_core_of = KUR
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					SUD = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SUD
+					}
+					THIS = {
+						remove_core_of = SUD
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					SOM = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SOM
+					}
+					THIS = {
+						remove_core_of = SOM
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					NIG = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = NIG
+					}
+					THIS = {
+						remove_core_of = NIG
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					MOR = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = MOR
+					}
+					THIS = {
+						remove_core_of = MOR
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					TRA = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = TRA
+					}
+					THIS = {
+						remove_core_of = TRA
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					CEN = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = CEN
+					}
+					THIS = {
+						remove_core_of = CEN
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					BOH = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = BOH
+					}
+					THIS = {
+						remove_core_of = BOH
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					MRV = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = MRV
+					}
+					THIS = {
+						remove_core_of = MRV
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					SLO = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SLO
+					}
+					THIS = {
+						remove_core_of = SLO
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					STD = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = STD
+					}
+					THIS = {
+						remove_core_of = STD
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					IND = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = IND
+					}
+					THIS = {
+						remove_core_of = IND
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					PHN = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = PHN
+					}
+					THIS = {
+						remove_core_of = PHN
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					FRP = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = FRP
+					}
+					THIS = {
+						remove_core_of = FRP
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					ZAF = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = ZAF
+					}
+					THIS = {
+						remove_core_of = ZAF
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					UOB = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = UOB
+					}
+					THIS = {
+						remove_core_of = UOB
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					NFL = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = NFL
+					}
+					THIS = {
+						remove_core_of = NFL
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					RHO = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = RHO
+					}
+					THIS = {
+						remove_core_of = RHO
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					DAG = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = DAG
+					}
+					THIS = {
+						remove_core_of = DAG
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					GOR = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = GOR
+					}
+					THIS = {
+						remove_core_of = GOR
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					TRK = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = TRK
+					}
+					THIS = {
+						remove_core_of = TRK
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					CRU = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = CRU
+					}
+					THIS = {
+						remove_core_of = CRU
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					SAX = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SAX
+					}
+					THIS = {
+						remove_core_of = SAX
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					POM = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = POM
+					}
+					THIS = {
+						remove_core_of = POM
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					SHO = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SHO
+					}
+					THIS = {
+						remove_core_of = SHO
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					BRW = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = BRW
+					}
+					THIS = {
+						remove_core_of = BRW
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					HAN = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = HAN
+					}
+					THIS = {
+						remove_core_of = HAN
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					ERM = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = ERM
+					}
+					THIS = {
+						remove_core_of = ERM
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					HES = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = HES
+					}
+					THIS = {
+						remove_core_of = HES
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					BAW = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = BAW
+					}
+					THIS = {
+						remove_core_of = BAW
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					BAY = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = BAY
+					}
+					THIS = {
+						remove_core_of = BAY
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					SIL = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SIL
+					}
+					THIS = {
+						remove_core_of = SIL
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					BRI = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = BRI
+					}
+					THIS = {
+						remove_core_of = BRI
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					OCC = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = OCC
+					}
+					THIS = {
+						remove_core_of = OCC
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					NRM = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = NRM
+					}
+					THIS = {
+						remove_core_of = NRM
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					ORL = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = ORL
+					}
+					THIS = {
+						remove_core_of = ORL
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					GRP = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = GRP
+					}
+					THIS = {
+						remove_core_of = GRP
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					NAP = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = NAP
+					}
+					THIS = {
+						remove_core_of = NAP
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					SIC = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SIC
+					}
+					THIS = {
+						remove_core_of = SIC
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					UPC = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = UPC
+					}
+					THIS = {
+						remove_core_of = UPC
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					LOM = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = LOM
+					}
+					THIS = {
+						remove_core_of = LOM
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					PIE = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = PIE
+					}
+					THIS = {
+						remove_core_of = PIE
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					SRV = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SRV
+					}
+					THIS = {
+						remove_core_of = SRV
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					ITP = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = ITP
+					}
+					THIS = {
+						remove_core_of = ITP
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					COR = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = COR
+					}
+					THIS = {
+						remove_core_of = COR
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					SLV = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SLV
+					}
+					THIS = {
+						remove_core_of = SLV
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					SAR = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SAR
+					}
+					THIS = {
+						remove_core_of = SAR
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					EGL = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = EGL
+					}
+					THIS = {
+						remove_core_of = EGL
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					SCO = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SCO
+					}
+					THIS = {
+						remove_core_of = SCO
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					WLS = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = WLS
+					}
+					THIS = {
+						remove_core_of = WLS
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					ENP = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = ENP
+					}
+					THIS = {
+						remove_core_of = ENP
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					HSR = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = HSR
+					}
+					THIS = {
+						remove_core_of = HSR
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					FLA = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = FLA
+					}
+					THIS = {
+						remove_core_of = FLA
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					WLL = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = WLL
+					}
+					THIS = {
+						remove_core_of = WLL
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					BOS = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = BOS
+					}
+					THIS = {
+						remove_core_of = BOS
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					SPA = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SPA
+					}
+					THIS = {
+						remove_core_of = SPA
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					SPF = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SPF
+					}
+					THIS = {
+						remove_core_of = SPF
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					SPM = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SPM
+					}
+					THIS = {
+						remove_core_of = SPM
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					INC = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = INC
+					}
+					THIS = {
+						remove_core_of = INC
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					TRV = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = TRV
+					}
+					THIS = {
+						remove_core_of = TRV
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					MDR = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = MDR
+					}
+					THIS = {
+						remove_core_of = MDR
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					HYD = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = HYD
+					}
+					THIS = {
+						remove_core_of = HYD
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					ORI = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = ORI
+					}
+					THIS = {
+						remove_core_of = ORI
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					RJH = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = RJH
+					}
+					THIS = {
+						remove_core_of = RJH
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					BAL = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = BAL
+					}
+					THIS = {
+						remove_core_of = BAL
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					PUN = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = PUN
+					}
+					THIS = {
+						remove_core_of = PUN
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					KAS = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = KAS
+					}
+					THIS = {
+						remove_core_of = KAS
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					BIH = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = BIH
+					}
+					THIS = {
+						remove_core_of = BIH
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					MYS = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = MYS
+					}
+					THIS = {
+						remove_core_of = MYS
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					BOM = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = BOM
+					}
+					THIS = {
+						remove_core_of = BOM
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					BPS = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = BPS
+					}
+					THIS = {
+						remove_core_of = BPS
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					UBR = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = UBR
+					}
+					THIS = {
+						remove_core_of = UBR
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					DEI = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = DEI
+					}
+					THIS = {
+						remove_core_of = DEI
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					KNE = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = KNE
+					}
+					THIS = {
+						remove_core_of = KNE
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					PRR = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = PRR
+					}
+					THIS = {
+						remove_core_of = PRR
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					ARB = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = ARB
+					}
+					THIS = {
+						remove_core_of = ARB
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					LMK = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = LMK
+					}
+					THIS = {
+						remove_core_of = LMK
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					GRL = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = GRL
+					}
+					THIS = {
+						remove_core_of = GRL
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					ASR = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = ASR
+					}
+					THIS = {
+						remove_core_of = ASR
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					TUN = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = TUN
+					}
+					THIS = {
+						remove_core_of = TUN
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					ALG = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = ALG
+					}
+					THIS = {
+						remove_core_of = ALG
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					ERI = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = ERI
+					}
+					THIS = {
+						remove_core_of = ERI
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					UBD = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = UBD
+					}
+					THIS = {
+						remove_core_of = UBD
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					BSR = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = BSR
+					}
+					THIS = {
+						remove_core_of = BSR
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					MLT = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = MLT
+					}
+					THIS = {
+						remove_core_of = MLT
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					NFA = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = NFA
+					}
+					THIS = {
+						remove_core_of = NFA
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					NFQ = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = NFQ
+					}
+					THIS = {
+						remove_core_of = NFQ
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					BEA = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = BEA
+					}
+					THIS = {
+						remove_core_of = BEA
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					RUS = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = RUS
+					}
+					THIS = {
+						remove_core_of = RUS
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					VRS = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = VRS
+					}
+					THIS = {
+						remove_core_of = VRS
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					CHI = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = CHI
+					}
+					THIS = {
+						remove_core_of = CHI
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					GXC = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = GXC
+					}
+					THIS = {
+						remove_core_of = GXC
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					GDC = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = GDC
+					}
+					THIS = {
+						remove_core_of = GDC
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					MAN = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = MAN
+					}
+					THIS = {
+						remove_core_of = MAN
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					ZHI = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = ZHI
+					}
+					THIS = {
+						remove_core_of = ZHI
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					SHX = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SHX
+					}
+					THIS = {
+						remove_core_of = SHX
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					SCH = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SCH
+					}
+					THIS = {
+						remove_core_of = SCH
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					YUN = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = YUN
+					}
+					THIS = {
+						remove_core_of = YUN
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					XSM = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = XSM
+					}
+					THIS = {
+						remove_core_of = XSM
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					SIK = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SIK
+					}
+					THIS = {
+						remove_core_of = SIK
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					TIB = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = TIB
+					}
+					THIS = {
+						remove_core_of = TIB
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					MON = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = MON
+					}
+					THIS = {
+						remove_core_of = MON
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					TAN = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = TAN
+					}
+					THIS = {
+						remove_core_of = TAN
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					PRC = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = PRC
+					}
+					THIS = {
+						remove_core_of = PRC
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					BAH = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = BAH
+					}
+					THIS = {
+						remove_core_of = BAH
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					BAN = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = BAN
+					}
+					THIS = {
+						remove_core_of = BAN
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					BLZ = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = BLZ
+					}
+					THIS = {
+						remove_core_of = BLZ
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					BRM = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = BRM
+					}
+					THIS = {
+						remove_core_of = BRM
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					CRC = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = CRC
+					}
+					THIS = {
+						remove_core_of = CRC
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					GDL = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = GDL
+					}
+					THIS = {
+						remove_core_of = GDL
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					GYA = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = GYA
+					}
+					THIS = {
+						remove_core_of = GYA
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					JAM = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = JAM
+					}
+					THIS = {
+						remove_core_of = JAM
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					KYR = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = KYR
+					}
+					THIS = {
+						remove_core_of = KYR
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					MAD = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = MAD
+					}
+					THIS = {
+						remove_core_of = MAD
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					MOL = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = MOL
+					}
+					THIS = {
+						remove_core_of = MOL
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					PNG = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = PNG
+					}
+					THIS = {
+						remove_core_of = PNG
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					PUE = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = PUE
+					}
+					THIS = {
+						remove_core_of = PUE
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					QAT = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = QAT
+					}
+					THIS = {
+						remove_core_of = QAT
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					SRL = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SRL
+					}
+					THIS = {
+						remove_core_of = SRL
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					SUR = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SUR
+					}
+					THIS = {
+						remove_core_of = SUR
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					TAJ = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = TAJ
+					}
+					THIS = {
+						remove_core_of = TAJ
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					TRI = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = TRI
+					}
+					THIS = {
+						remove_core_of = TRI
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					TMS = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = TMS
+					}
+					THIS = {
+						remove_core_of = TMS
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					UAE = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = UAE
+					}
+					THIS = {
+						remove_core_of = UAE
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					UZB = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = UZB
+					}
+					THIS = {
+						remove_core_of = UZB
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					KUW = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = KUW
+					}
+					THIS = {
+						remove_core_of = KUW
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					CYP = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = CYP
+					}
+					THIS = {
+						remove_core_of = CYP
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					DJI = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = DJI
+					}
+					THIS = {
+						remove_core_of = DJI
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					UGA = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = UGA
+					}
+					THIS = {
+						remove_core_of = UGA
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					RWA = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = RWA
+					}
+					THIS = {
+						remove_core_of = RWA
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					BRD = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = BRD
+					}
+					THIS = {
+						remove_core_of = BRD
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					TZN = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = TZN
+					}
+					THIS = {
+						remove_core_of = TZN
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					ZAM = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = ZAM
+					}
+					THIS = {
+						remove_core_of = ZAM
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					MLW = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = MLW
+					}
+					THIS = {
+						remove_core_of = MLW
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					GAB = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = GAB
+					}
+					THIS = {
+						remove_core_of = GAB
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					RCG = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = RCG
+					}
+					THIS = {
+						remove_core_of = RCG
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					EQG = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = EQG
+					}
+					THIS = {
+						remove_core_of = EQG
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					CMR = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = CMR
+					}
+					THIS = {
+						remove_core_of = CMR
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					CAR = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = CAR
+					}
+					THIS = {
+						remove_core_of = CAR
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					CHA = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = CHA
+					}
+					THIS = {
+						remove_core_of = CHA
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					NGA = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = NGA
+					}
+					THIS = {
+						remove_core_of = NGA
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					DAH = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = DAH
+					}
+					THIS = {
+						remove_core_of = DAH
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					TOG = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = TOG
+					}
+					THIS = {
+						remove_core_of = TOG
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					GHA = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = GHA
+					}
+					THIS = {
+						remove_core_of = GHA
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					IVO = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = IVO
+					}
+					THIS = {
+						remove_core_of = IVO
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					VOL = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = VOL
+					}
+					THIS = {
+						remove_core_of = VOL
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					MLI = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = MLI
+					}
+					THIS = {
+						remove_core_of = MLI
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					SIE = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SIE
+					}
+					THIS = {
+						remove_core_of = SIE
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					GNA = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = GNA
+					}
+					THIS = {
+						remove_core_of = GNA
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					GNB = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = GNB
+					}
+					THIS = {
+						remove_core_of = GNB
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					SEN = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = SEN
+					}
+					THIS = {
+						remove_core_of = SEN
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					GAM = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = GAM
+					}
+					THIS = {
+						remove_core_of = GAM
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					NGR = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = NGR
+					}
+					THIS = {
+						remove_core_of = NGR
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					CSA = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = CSA
+					}
+					THIS = {
+						remove_core_of = CSA
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					USB = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = USB
+					}
+					THIS = {
+						remove_core_of = USB
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					MRT = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = MRT
+					}
+					THIS = {
+						remove_core_of = MRT
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					NMB = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = NMB
+					}
+					THIS = {
+						remove_core_of = NMB
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					WES = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = WES
+					}
+					THIS = {
+						remove_core_of = WES
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					BAS = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = BAS
+					}
+					THIS = {
+						remove_core_of = BAS
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					CAY = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = CAY
+					}
+					THIS = {
+						remove_core_of = CAY
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					MLD = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = MLD
+					}
+					THIS = {
+						remove_core_of = MLD
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					FIJ = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = FIJ
+					}
+					THIS = {
+						remove_core_of = FIJ
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					MAC = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = MAC
+					}
+					THIS = {
+						remove_core_of = MAC
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					NIR = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = NIR
+					}
+					THIS = {
+						remove_core_of = NIR
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					FIC = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = FIC
+					}
+					THIS = {
+						remove_core_of = FIC
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					QUE = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = QUE
+					}
+					THIS = {
+						remove_core_of = QUE
+					}
+				}
+			}
+			if = {
+				limit = {
+					GZC = {
+						exists = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = GZC
+					}
+					THIS = {
+						remove_core_of = GZC
+					}
+				}
+			}
+		}
+	}
+}
