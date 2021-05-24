@@ -166,14 +166,22 @@ country_event = { #1936 election
 	immediate = {log = "[GetDateText]: [Root.GetName]: event fra.8"}
 	title = fra.8.t
 	desc = fra.8.d
-	picture = GFX_report_event_bank
+	picture = GFX_report_event_election_vote
+	fire_only_once = yes
 
 	is_triggered_only = yes
 
-	fire_only_once = yes
-
-	mean_time_to_happen = {
-		days = 1
+	trigger = {
+		tag = FRA
+		date > 1936.1.1
+		date < 1937.1.1
+		NOT = {
+			has_country_flag = FRA_1936_elections
+		}
+		OR = {
+			has_country_flag = fra_nuc_bad
+			has_country_flag = fra_nuc_good
+		}
 	}
 
 	option = { #BN victory, only available if the BN survives
@@ -269,6 +277,7 @@ country_event = { #1936 election
 		name = fra.8.g
 		set_politics = {
 			ruling_party = paternal_autocrat
+			elections_allowed = no
 		}
 		set_country_flag = fra_mil_dic
 	}
@@ -3422,24 +3431,24 @@ country_event = { #1940 election
 	id = fra.95
 	title = fra.95.t
 	desc = fra.95.d
-
-	picture = GFX_report_event_diplomacy3
+	picture = GFX_report_event_election_vote
+	fire_only_once = yes
+	is_triggered_only = yes
 
 	trigger = {
 		original_tag = FRA
-		date > 1940.4.1
+		date > 1940.1.1
+		date < 1941.1.1
 		NOT = { has_war_with = GER }
+		NOT = { has_country_flag = fra_1940_elections }
 		has_elected_government = yes
 	}
 
-	mean_time_to_happen = {
-		days = 10
-	}
-
-	fire_only_once = yes
-
 	option = {
 		name = fra.95.a
+		hidden_effect = {
+			set_country_flag = fra_1940_elections
+		}
 		set_politics = {
 			ruling_party = social_democrat
 			elections_allowed = no
@@ -3460,6 +3469,9 @@ country_event = { #1940 election
 
 	option = {
 		name = fra.95.b
+		hidden_effect = {
+			set_country_flag = fra_1940_elections
+		}
 		set_politics = {
 			ruling_party = social_liberal
 			elections_allowed = no
@@ -3480,6 +3492,9 @@ country_event = { #1940 election
 
 	option = {
 		name = fra.95.c
+		hidden_effect = {
+			set_country_flag = fra_1940_elections
+		}
 		set_politics = {
 			ruling_party = market_liberal
 			elections_allowed = no
@@ -3500,6 +3515,9 @@ country_event = { #1940 election
 
 	option = {
 		name = fra.95.e
+		hidden_effect = {
+			set_country_flag = fra_1940_elections
+		}
 		set_politics = {
 			ruling_party = social_conservative
 			elections_allowed = no

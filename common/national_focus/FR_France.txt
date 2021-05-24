@@ -589,10 +589,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = unlocked_later
-				OR = {
-					has_country_flag = fra_nuc_good
-					has_country_flag = fra_nuc_bad
-				}
+				has_country_flag = fra_1936_election
 			}
 		}
 		ai_will_do = {
@@ -608,7 +605,7 @@ focus_tree = {
 		}
 		relative_position_id = fra_nuc_dead
 		completion_reward = {
-			country_event = fra.8
+			add_political_power = 100
 		}
     }	
 	# Military Takeover

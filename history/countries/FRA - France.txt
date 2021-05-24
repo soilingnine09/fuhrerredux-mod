@@ -75,44 +75,29 @@ set_war_support = 0.05
 set_country_flag = coalition_social_liberal
 
 set_politics = {
-
 	ruling_party = social_conservative
 	last_election = "1932.3.5"
 	election_frequency = 48
-	elections_allowed = no
-
+	elections_allowed = yes
 }
 
 set_popularities = {
 	vanguardist = 4
-
 	collectivist = 6
-
 	libertarian_socialist = 1
-
 	social_democrat = 16
-
 	social_liberal = 15
-
 	market_liberal = 21
-
 	social_conservative = 28
-
 	authoritarian_democrat = 7
-
 	paternal_autocrat = 1
-
 	national_populist = 1
-
 	valkist = 0
 }
-
 
 create_faction = continental_entente
 add_to_faction = FRA
 add_to_faction = ITA
-#add_to_faction = BEL
-#add_to_faction = LUX
 add_to_faction = FIC
 add_to_faction = PHN
 
@@ -269,133 +254,103 @@ create_country_leader = {
 	picture = "Portrait_France_marcel_deat.tga"
 	expire = "1965.1.1"
 	ideology = vanguardist_subtype
-	traits = {
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Maurice Thorez"
 	desc = "POLITICS_MAURICE_THOREZ_DESC"
 	picture = "Portrait_France_Maurice_Thorez.tga"
 	expire = "1965.1.1"
 	ideology = collectivist_subtype
-	traits = {
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Sébastien Faure"
 	desc = "POLITICS_SEBASTIEN_FAURE_DESC"
 	picture = "Portrait_France_Sebastien_Faure.tga"
 	expire = "1965.1.1"
 	ideology = libertarian_socialist_subtype
-	traits = {
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Léon Blum"
 	desc = "POLITICS_LEON_BLUM_DESC"
 	picture = "Portrait_France_Blum.tga"
 	expire = "1965.1.1"
 	ideology = social_democrat_subtype
-	traits = {
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Camille Chautemps"
 	desc = "POLITICS_CAMILLE_CHAUTEMPS_DESC"
 	picture = "Portrait_France_Camille_Chautemps.tga"
 	expire = "1965.1.1"
 	ideology = social_liberal_subtype
-	traits = {
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Pierre-Étienne Flandin"
 	desc = "POLITICS_PIERRE_FLANDIN_DESC"
 	picture = "Portrait_France_Flandin.tga"
 	expire = "1965.1.1"
 	ideology = market_liberal_subtype
-	traits = {
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Louis Marin"
 	desc = "POLITICS_LOUIS_MARIN_DESC"
 	picture = "Portrait_France_Louis_Marin.tga"
 	expire = "1965.1.1"
-	
 	ideology = social_conservative_subtype
-	traits = {
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "François de La Rocque"
 	desc = "POLITICS_FRANCOIS_ROCQUE_DESC"
 	picture = "Portrait_France_Francois_de_la_Rocque.tga"
 	expire = "1965.1.1"
 	ideology = authoritarian_democrat_subtype
-	traits = {
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Philippe Pétain"
 	desc = "POLITICS_PHILIPPE_PETAIN_DESC"
 	picture = "Portrait_France_Philippe_Petain.tga"
 	expire = "1965.1.1"
 	ideology = paternal_autocrat_subtype
-	traits = {
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Philippe Henriot"
 	desc = "POLITICS_PHILIPPE_HENRIOT_DESC"
 	picture = "Portrait_FRA_Philippe_Henriot.tga"
 	expire = "1965.1.1"
 	ideology = national_populist_subtype
-	traits = {
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Marcel Bucard"
 	desc = "POLITICS_MARCEL_BUCARD_DESC"
 	picture = "Portrait_FRA_Marcel_Bucard.tga"
 	expire = "1965.1.1"
 	ideology = valkist_subtype
-	traits = {
-	}
+	traits = { }
 }
 
 create_field_marshal = {
 	name = "Maurice Gamelin"
-	picture = "Portrait_France_Maurice_Gamelin.tga"
-	traits = {
-		defensive_doctrine
-		offensive_doctrine
-	}
+	picture = "Portrait_France_Maurice_Gamelin_fx.tga"
+	traits = { defensive_doctrine offensive_doctrine }
 	skill = 2
 	attack_skill = 3
     defense_skill = 3
     planning_skill = 2
     logistics_skill = 2
 }
-
 create_field_marshal = {
 	name = "Philippe Pétain"
-	picture = "Portrait_France_Philippe_Petain.tga"
-	traits = {
-		old_guard
-		organisational_leader
-		inspirational_leader
-	}
+	picture = "Portrait_France_Philippe_Petain_fx.tga"
+	traits = { old_guard organisational_leader inspirational_leader }
 	skill = 3
 	attack_skill = 4
     defense_skill = 3
@@ -405,61 +360,47 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "Alphonse Juin"
-	picture = "Portrait_France_Alphonse_Juin.tga"
-	traits = {  }
+	picture = "Portrait_France_Alphonse_Juin_fx.tga"
+	traits = { }
 	skill = 3
 	attack_skill = 3
     defense_skill = 3
     planning_skill = 4
     logistics_skill = 3
 }
-
 create_corps_commander = {
 	name = "Maurice Janin"
 	picture = "Portrait_France_Maurice_Janin.tga"
-	traits = {
-		politically_connected
-		harsh_leader
-	}
+	traits = { politically_connected harsh_leader }
 	skill = 2
 	attack_skill = 3
 	defense_skill = 1
 	planning_skill = 1
 	logistics_skill = 2
 }
-
 create_corps_commander = {
 	name = "Charles de Gaulle"
 	picture = "Portrait_France_Charles_deGaulle.tga"
-	traits = {
-		panzer_leader
-		urban_assault_specialist
-	}
+	traits = { panzer_leader urban_assault_specialist }
 	skill = 3
 	attack_skill = 4
     defense_skill = 3
     planning_skill = 2
     logistics_skill = 3
 }
-
 create_corps_commander = {
 	name = "Jean de Lattre de Tassigny"
-	picture = "Portrait_France_Jean_Tassigny.tga"
-	traits = {
-		trickster
-		naval_invader
-		jungle_rat
-	}
+	picture = "Portrait_France_Jean_Tassigny_fx.tga"
+	traits = { trickster naval_invader jungle_rat }
 	skill = 4
 	attack_skill = 4
     defense_skill = 4
     planning_skill = 3
     logistics_skill = 4
 }
-
 create_corps_commander = {
 	name = "Maxime Weygand"
-	picture = "Portrait_France_Maxime_Weygand.tga"
+	picture = "Portrait_France_Maxime_Weygand_fx.tga"
 	traits = { old_guard }
 	skill = 2
 	attack_skill = 1
@@ -467,19 +408,35 @@ create_corps_commander = {
     planning_skill = 3
     logistics_skill = 3
 }
-
 create_corps_commander = {
 	name = "Philippe Leclerc"
-	picture = "Portrait_France_Philippe_Leclerc.tga"
-	traits = {
-		panzer_leader
-		desert_fox
-	}
+	picture = "Portrait_France_Philippe_Leclerc_fx.tga"
+	traits = { panzer_leader desert_fox }
 	skill = 4
 	attack_skill = 4
     defense_skill = 3
     planning_skill = 4
     logistics_skill = 3
+}
+create_corps_commander = {
+	name = "François Sevez"
+	picture = "Portrait_France_François_Sevez.tga"
+	traits = {  }
+	skill = 2
+	attack_skill = 1
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Albert d'Amade"
+	picture = "Portrait_France_Albert_Damade.tga"
+	traits = {  }
+	skill = 2
+	attack_skill = 1
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -515,27 +472,6 @@ create_corps_commander = {
     logistics_skill = 1
 }
 
-create_corps_commander = {
-	name = "François Sevez"
-	picture = "Portrait_France_sevez.dds"
-	traits = {  }
-	skill = 2
-	attack_skill = 1
-    defense_skill = 2
-    planning_skill = 2
-    logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Albert d'Amade"
-	picture = "Portrait_France_albert_damade.tga"
-	traits = {  }
-	skill = 2
-	attack_skill = 1
-    defense_skill = 2
-    planning_skill = 2
-    logistics_skill = 2
-}
 
 create_navy_leader = {
 	name = "François Darlan"
