@@ -121,77 +121,56 @@ create_country_leader = {
 	picture = "Portrait_Russia_Grigory_Semyenov.tga"
 	expire = "1965.1.1"
 	ideology = authoritarian_democrat_subtype
-	traits = {
-		
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Michael Alexandrovich Georgievsky"
 	desc = "POLITICS_GEORGIEVSKY_MIKHAIL_ALEXANDROVICH_DESC"
 	picture = "Portrait_Russia_Georgievsky_Mikhail_Alexandrovich.tga"
 	expire = "1965.1.1"
 	ideology = valkist_subtype
-	traits = {
-		
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Alexandr Danilovich Allfyorov"
 	desc = "POLITICS_ALEXANDER_DANILOVICH_ALLFYOROV_DESC"
 	picture = "Portrait_Russia_Alexandr_Danilovich_Allfyorov.tga"
 	expire = "1965.1.1"
 	ideology = social_conservative_subtype
-	traits = {
-		
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Lavr Kornilov"
 	desc = "POLITICS_LAVR_KORNILOV_DESC"
 	picture = "Portrait_Russia_Alexandr_Kolchak.tga"
 	expire = "1965.1.1"
 	ideology = national_populist_subtype
-	traits = {
-		
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Vasily Maklakov"
 	desc = "POLITICS_VASILY_MAKLAKOV_DESC"
 	picture = "Portrait_Russia_Vasily_Maklakov.tga"
 	expire = "1965.1.1"
 	ideology = market_liberal_subtype
-	traits = {
-		
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Nikolai Avksentiev"
 	desc = "POLITICS_NIKOLAI_AVKSENTIEV_DESC"
 	picture = "Portrait_Russia_Nikolai_Avksentiev.tga"
 	expire = "1965.1.1"
 	ideology = social_liberal_subtype
-	traits = {
-		
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Ivan Maysky"
 	desc = "POLITICS_IVAN_MAVSKY_DESC"
 	picture = "Portrait_Russia_Ivan_Mavsky.tga"
 	expire = "1965.1.1"
 	ideology = social_democrat_subtype
-	traits = {
-		
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Pyotr Wrangel"
 	desc = "POLITICS_PYOTR_WRANGEL_DESC"
