@@ -143,7 +143,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Alexander Shliapnikov"
 	desc = "POLITICS_ALEXANDER_SHLIAPNIKOV_DESC"
-	picture = "Portraits_Soviet_Alexander_Shliapnikov.tga"
+	picture = "Portrait_Soviet_Alexander_Shliapnikov.tga"
 	expire = "1965.1.1"
 	ideology = libertarian_socialist_subtype
 	traits = {
@@ -328,7 +328,7 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Mikhail Tukhachevsky"
 	id = 401
-		picture = "Portraits_Soviet_Mikhail_Tukhachevsky1.tga"
+		picture = "Portrait_Soviet_Mikhail_Tukhachevsky.tga"
 	traits = { offensive_doctrine brilliant_strategist career_officer infantry_officer trait_reckless }
 	skill = 4
 
