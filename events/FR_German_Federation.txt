@@ -31,14 +31,14 @@ country_event = {
         name = grp.2.a
 
         add_stability = 0.05
-        remove_ideas = DEU_imprisoned_officers
+        remove_ideas = GRP_imprisoned_officers
     }
 
     option = {
         name = grp.2.b
 
         add_war_support = 0.05
-        remove_ideas = DEU_imprisoned_officers
+        remove_ideas = GRP_imprisoned_officers
 
         create_corps_commander = {
             name = "Heinz Guderian"
@@ -98,14 +98,14 @@ country_event = {
         name = grp.3.a
 
         add_stability = 0.05
-        remove_ideas = DEU_valkist_economy
+        remove_ideas = GRP_valkist_economy
     }
 
     option = {
         name = grp.3.b
 
         add_political_power = -100
-        remove_ideas = DEU_valkist_economy
+        remove_ideas = GRP_valkist_economy
     }
 }
 
@@ -121,14 +121,14 @@ country_event = {
         name = grp.4.a
 
         add_stability = 0.05
-        remove_ideas = DEU_valkist_bureaucracy
+        remove_ideas = GRP_valkist_bureaucracy
     }
 
     option = {
         name = grp.4.b
 
         add_political_power = -100
-        remove_ideas = DEU_valkist_bureaucracy
+        remove_ideas = GRP_valkist_bureaucracy
     }
 }
 
@@ -143,7 +143,7 @@ country_event = {
     option = {
         name = grp.5.a
 
-        remove_ideas = DEU_valkist_society
+        remove_ideas = GRP_valkist_society
         add_stability = 0.05
     }
 
@@ -166,7 +166,7 @@ country_event = {
         name = grp.6.a
 
         hidden_effect = {
-            set_country_flag = DEU_SDP_VICTORY
+            set_country_flag = GRP_SDP_VICTORY
         }
         set_politics = {
             ruling_party = social_democrat
@@ -183,7 +183,7 @@ country_event = {
         name = grp.6.b
 
         hidden_effect = {
-            set_country_flag = DEU_DDP_VICTORY
+            set_country_flag = GRP_DDP_VICTORY
         }
         set_politics = {
             ruling_party = social_liberal
@@ -200,7 +200,7 @@ country_event = {
         name = grp.6.c
 
         hidden_effect = {
-            set_country_flag = DEU_ZENTRUM_VICTORY
+            set_country_flag = GRP_ZENTRUM_VICTORY
         }
         set_politics = {
             ruling_party = social_conservative
@@ -224,14 +224,14 @@ country_event = {
 
     option = {
         name = grp.7.a
-        set_country_flag = DEU_ACCEPTED_INVITE
-        DEU = { country_event = { id = grp.8 days = 1 } }
+        set_country_flag = GRP_ACCEPTED_INVITE
+        GRP = { country_event = { id = grp.8 days = 1 } }
     }
 
     option = {
         name = grp.7.b
         add_political_power = -150
-        DEU = { country_event = { id = grp.9 days = 1 } }
+        GRP = { country_event = { id = grp.9 days = 1 } }
     }
 }
 

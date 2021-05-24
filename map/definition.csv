@@ -13298,7 +13298,11 @@
 13297;235;241;98;land;false;plains;6 #Tdebug says that Asia is 4 but it's actually 6 in the code, thanks Dan
 13298;38;233;8;land;false;plains;6 # ^
 13299;92;78;133;land;true;hills;7
+<<<<<<< HEAD
 13300;15;48;39;land;true;hills;6
+=======
+
+>>>>>>> main
 
 #continents - Do not trust what tdebug says
 #    europe - 1

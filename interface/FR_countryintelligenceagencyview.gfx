@@ -1,0 +1,7 @@
+SpriteTypes = {
+	spriteType = {
+		name = "GFX_intelligence_agency_logo_fr_sia"
+		texturefile = "gfx/interface/operatives/agencies/agency_logo_FR_Siam.dds"
+		noOfFrames = 2
+	}
+}

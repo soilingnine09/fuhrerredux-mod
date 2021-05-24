@@ -1,0 +1,9 @@
+air_wings = {
+	673 = {
+		tac_bomber_equipment_0 = {		
+			owner = "JAP" 
+			amount = 144
+		}
+		name = "588. Sulawesi Hikodan "
+	}
+}

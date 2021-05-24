@@ -1,0 +1,29 @@
+﻿#Small Squadron of Destroyers that the U.S.A gets from "Comission new Destroyers". Buff as needed.
+units = {
+	
+	fleet = {			
+		name = "Destroyer Flotilla"				
+		naval_base = 788
+		task_force = {	
+			name = "Atlantic Flotilla"	
+			location = 788 # Norfolk
+			# 13th Destroyer Division				
+			ship = { name = "USS Clemson " definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }	
+			ship = { name = "USS Chandler " definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }	
+			ship = { name = "USS Southard " definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }		
+			ship = { name = "USS Huey " definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }		
+			ship = { name = "USS Long " definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }	
+			# 14th Destroyer Division				
+			ship = { name = "USS Little " definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }		
+			ship = { name = "USS Gregory " definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }		
+			ship = { name = "USS Stringham " definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }	
+			ship = { name = "USS Colhoun " definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }		
+			# 17th Destroyer Division				
+			ship = { name = "USS Goldsborough " definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }		
+			ship = { name = "USS McFarland " definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }	
+			ship = { name = "USS Reuben James " definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }	
+			ship = { name = "USS Hopkins " definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }		
+			ship = { name = "USS Belknap " definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }
+		}
+	}
+}

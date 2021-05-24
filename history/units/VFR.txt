@@ -1,0 +1,248 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Division d'Infanterie"		
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 } 	
+	}
+}
+division_template = {
+	name = "Division d'Infanterie Motoris�e"	# Division d'Infanterie Motoris�e
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      
+		artillery = { x = 0 y = 1 } 
+		anti_tank = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Division d'Infanterie Alpine"	# Division d'Infanterie Alpine
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }	
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }	
+		mountaineers = { x = 2 y = 1 }	
+		mountaineers = { x = 2 y = 2 }	
+		mountaineers = { x = 3 y = 0 }	
+		mountaineers = { x = 3 y = 1 }	
+		mountaineers = { x = 3 y = 2 }	
+	}
+}
+division_template = {
+	name = "Division de Cavalerie" 	# Division de Cavalerie
+	# Note: Transformed to DLC, DLM divisions, 1936-39 
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }     
+	}
+}
+division_template = {
+	name = "Division L�g�re M�canique" 		
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }		
+		light_armor = { x = 0 y = 1 }		
+		motorized = { x = 1 y = 0 }			
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      
+		anti_tank = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Brigade Coloniale"			
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+
+##### OOB #####
+units = {
+	division= {	
+		name = "Force de d�fense Paris a"
+		location = 11506
+		division_template = "Division d'Infanterie" 	
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Force de d�fense Paris b"
+		location = 11506
+		division_template = "Division d'Infanterie" 	
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Force de d�fense Paris c"
+		location = 11506
+		division_template = "Division d'Infanterie" 	
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Force de d�fense"
+		location = 11548
+		division_template = "Division d'Infanterie" 	
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Force de d�fense"
+		location = 11548
+		division_template = "Division d'Infanterie" 	
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Force de d�fense"
+		location = 3552
+		division_template = "Division d'Infanterie" 	
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Force de d�fense"
+		location = 3552
+		division_template = "Division d'Infanterie" 	
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Force de d�fense"
+		location = 11465
+		division_template = "Division d'Infanterie" 	
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Force de d�fense"
+		location = 11465
+		division_template = "Division d'Infanterie" 	
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Force de d�fense"
+		location = 9737
+		division_template = "Division d'Infanterie" 	
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Force de d�fense"
+		location = 9737
+		division_template = "Division d'Infanterie" 	
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Force de d�fense"
+		location = 6766
+		division_template = "Division d'Infanterie" 	
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Force de d�fense"
+		location = 6766
+		division_template = "Division d'Infanterie" 	
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Force de d�fense"
+		location = 11834
+		division_template = "Division d'Infanterie" 	
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Force de d�fense"
+		location = 11834
+		division_template = "Division d'Infanterie" 	
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Force de d�fense"
+		location = 3594
+		division_template = "Division d'Infanterie" 	
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Force de d�fense"
+		location = 3594
+		division_template = "Division d'Infanterie" 	
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Force de d�fense"
+		location = 3671
+		division_template = "Division d'Infanterie" 	
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Force de d�fense"
+		location = 3671
+		division_template = "Division d'Infanterie" 	
+		start_experience_factor = 0.1
+	}
+	division= {	
+		name = "Force de d�fense"
+		location = 11834
+		division_template = "Division d'Infanterie" 	
+		start_experience_factor = 0.1
+	}
+}						
+
+### Air Wings
+air_wings = {
+
+	# Z.d'Op. A�riennes du Alps -- Marseille
+	21 = {
+		# Groupement de Chasse d'Alps
+		fighter_equipment_0 = {
+			owner = "FRA" 
+			amount = 96
+		}
+		# Groupement de Bombardment 1
+		# Groupement de Bombardment 6
+		# Groupement de Bombardment 9
+		tac_bomber_equipment_1 =  {
+			owner = "FRA" 
+			amount = 90
+		}
+		# Groupement de Bombardment d'Assault 19
+		tac_bomber_equipment_0 =  {
+			owner = "FRA" 
+			amount = 50
+		}
+	}
+}

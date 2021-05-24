@@ -8,7 +8,7 @@ ideas = {
             picture = PHI_promises_of_elections
             modifier = {
                 political_power_cost = 0.25
-                authoritarian_democrat_drift = -0.01
+                authoritarian_democrat_drift = -0.05
             }
         }
         PHI_agriculture_economy = {
@@ -86,7 +86,6 @@ ideas = {
                 stability_factor = 0.1
             }
         }
-
         PHI_social_welfare_department2 = {
             allowed = { is_a_filipino_tag = yes }
             picture = raj_risk_of_famine
@@ -879,13 +878,13 @@ ideas = {
                 for_hawkish_intervener
             }
         }
-        PHI_Ferdinand_Marcos_for_sco = {
+        PHI_Ferdinand_Marcos_for_ade = {
             allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
                 foreign_minister
-                social_conservative
+                authoritarian_democrat
                 for_iron_fisted_brute
             }
         }
@@ -983,13 +982,13 @@ ideas = {
                 eco_construction_magnate
             }
         }
-        PHI_Serafin_Fausto_eco_sco = {
+        PHI_Serafin_Fausto_eco_ade = {
             allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
                 economy_minister
-                social_conservative
+                authoritarian_democrat
                 eco_laissez_faire_capitalist
             }
         }
@@ -999,7 +998,7 @@ ideas = {
             cancel_if_invalid = no
             traits = {
                 economy_minister
-                social_conservative
+                paternal_autocrat
                 eco_military_entrepreneur
             }
         }
@@ -1164,7 +1163,7 @@ ideas = {
         PHI_Luis_Taruc_int_col = {
             allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
-            cancel_if_invalid = yes
+            cancel_if_invalid = no
             traits = {
                 head_of_intel
                 collectivist
@@ -1174,7 +1173,7 @@ ideas = {
         PHI_John_Gilbert_Winant_int_sli = {
             allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
-            cancel_if_invalid = yes
+            cancel_if_invalid = no
             traits = {
                 head_of_intel
                 social_liberal
@@ -1184,7 +1183,7 @@ ideas = {
         PHI_Leslie_Ailen_Wheeler_int_mli = {
             allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
-            cancel_if_invalid = yes
+            cancel_if_invalid = no
             traits = {
                 head_of_intel
                 market_liberal
@@ -1194,7 +1193,7 @@ ideas = {
         PHI_James_Wilson_int_sco = {
             allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
-            cancel_if_invalid = yes
+            cancel_if_invalid = no
             traits = {
                 head_of_intel
                 social_conservative
@@ -1204,7 +1203,7 @@ ideas = {
         PHI_Fidel_Segundo_int_ade = {
             allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
-            cancel_if_invalid = yes
+            cancel_if_invalid = no
             traits = {
                 head_of_intel
                 authoritarian_democrat
@@ -1214,7 +1213,7 @@ ideas = {
         PHI_Benigno_Ramos_int_val = {
             allowed = { is_a_filipino_tag = yes }
             available = { can_replace_minister = no }
-            cancel_if_invalid = yes
+            cancel_if_invalid = no
             traits = {
                 head_of_intel
                 valkist

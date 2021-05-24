@@ -1,0 +1,131 @@
+﻿division_template = {
+	name = "Russian Liberation Division"			
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+	}
+}
+division_template = {
+	name = "Far Eastern Cavalry"
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+        cavalry = { x = 0 y = 3 }
+		cavalry = { x = 0 y = 4 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+}
+
+
+##### OOB #####
+units = {
+	division = {
+		name = "1. Chita Russian Liberation Division"
+		location = 12641 # Chita
+		division_template = "Russian Liberation Division"
+		start_experience_factor = 0.4
+
+	}
+
+	division = {
+		name = "1. Vladivostok Russian Liberation Division"
+		location = 957 # Vladivostok
+		division_template = "Russian Liberation Division"
+		start_experience_factor = 0.4
+
+	}
+
+	division = {
+		name = "2. Vladivostok Russian Liberation Division"
+		location = 957 # Vladivostok
+		division_template = "Russian Liberation Division"
+		start_experience_factor = 0.4
+
+	}
+
+    division = {
+		name = "1. Khabarovsk Russian Liberation Division"
+		location = 12189 # Khabarovsk
+		division_template = "Russian Liberation Division"
+		start_experience_factor = 0.4
+
+	}
+
+    division = {
+		name = "1. Siberian Far Eastern Cavalry"
+		location = 10583 # Bodaybo
+		division_template = "Far Eastern Cavalry"
+		start_experience_factor = 0.4
+
+	}
+
+    division = {
+		name = "1. Uland Ude Russian Liberation Division"
+		location = 7835 # Ulan Ude
+		division_template = "Russian Liberation Division"
+		start_experience_factor = 0.4
+
+	}
+
+    division = {
+		name = "2. Siberian Far Eastern Cavalry"
+		location = 1730 # Amur
+		division_template = "Far Eastern Cavalry"
+		start_experience_factor = 0.4
+
+	}
+
+    division = {
+		name = "3. Siberian Far Eastern Cavalry"
+		location = 7785 # Amur
+		division_template = "Far Eastern Cavalry"
+		start_experience_factor = 0.4
+
+	}
+
+    division = {
+		name = "4. Siberian Far Eastern Cavalry"
+		location = 12575 # Bodayabo
+		division_template = "Far Eastern Cavalry"
+		start_experience_factor = 0.4
+		}
+	}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+		
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "RUS"
+		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "RUS" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 100
+	}
+}

@@ -1,6 +1,6 @@
 ﻿# National Government
 
-capital = 613 # Nanjing, then Wuhan (620).
+capital = 895 # Nanjing, then Wuhan (620).
 
 oob = "KMT_1936"
 
@@ -39,10 +39,6 @@ add_ideas = {
 	CHI_incompetent_army_officials
 	CHI_illiterate_population
 
-	GEN_HOG_Ade
-	GEN_FOR_Ade
-	GEN_ECO_Pau
-	GEN_SEC_Ade
 	semi_presidential_republic
 }
 

@@ -2,6 +2,7 @@
 # created by: dax0102
 
 add_namespace = china
+add_namespace = chinan ###China New Event Under Development of Kaiczer
 
 # Warlord Chiang
 country_event = {
@@ -200,4 +201,189 @@ country_event = {
             type = annex_everything
         }
     }
+}
+#####Zhili Situation in KMT#####
+country_event = {
+	id = chinan.1
+	title = "The Beiyang in Exile"
+	desc = chinan.1.d
+	is_triggered_only = yes
+	option = {
+		name = "That's what we know about them"
+	}
+}
+country_event = { ###Black Wednesday Mission of China###
+	id = chinan.2
+	title = "Black Wednesday and Chinese Economy"
+	desc = chinan.2.d
+	trigger = {
+		tag = CHI
+		ENG = { has_idea = ENG_bw }
+		NOT = {
+			895 = {
+				is_claimed_by = ZHI
+			}
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+	fire_only_once = yes
+	immediate = {
+		CHI_set_zhili_provinces_claim = yes
+		hidden_effect = {
+			country_event = { id = chinan.3 days = 7 }
+			set_country_flag = {
+				flag = CHI_KMT
+				value = 0
+			}
+			set_country_flag = {
+				flag = CHI_LFP
+				value = 0
+			}
+		}
+	}
+	option = {
+		name = "Who cares?"
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.01 }
+		modify_country_flag = {
+			flag = CHI_KMT
+			value = 1
+		}
+	}
+	option = {
+		name = "Protect our economy with all costs"
+		add_popularity = { ideology = paternal_autocrat popularity = 0.02 }
+		modify_country_flag = {
+			flag = CHI_LFP
+			value = 1
+		}
+	}
+}
+country_event = { ###Port Labour Strike the Factory
+	id = chinan.3
+	title = "Labour Strike in Ningbo"
+	desc = chinan.3.d
+	is_triggered_only = yes
+	immediate = {
+		1025 = {
+			damage_building = {
+				type = industrial_complex
+				damage = 1
+			}
+		}
+	}
+	option = {
+		name = "Get rip of them, nobody alives"
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.07 }
+		add_popularity = { ideology = paternal_autocrat popularity = 0.07 }
+		add_stability = -0.1
+		modify_country_flag = {
+			flag = CHI_KMT
+			value = 1
+		}
+		hidden_effect = {
+			country_event = { 
+				id = chinan.4
+				days = 45
+			}
+		}
+	}
+	option = {
+		name = "Invite to our table"
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.03 }
+		add_popularity = { ideology = paternal_autocrat popularity = 0.02 }
+		modify_country_flag = {
+			flag = CHI_LFP
+			value = 1
+		}
+		hidden_effect = {
+			country_event = { 
+				id = chinan.4
+				days = 45
+			}
+		}
+	}
+	option = {
+		name = "Do Nothing"
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.05 }
+		add_popularity = { ideology = paternal_autocrat popularity = 0.04 }
+		add_stability = -0.15
+		add_political_power = -100
+		modify_country_flag = {
+			flag = CHI_LFP
+			value = 1
+		}
+		hidden_effect = {
+			country_event = { 
+				id = chinan.4
+				days = 45
+			}
+		}
+	}
+}
+country_event = { ###Anqing Governor has been found corruption
+	id = chinan.4
+	title = "Anqing Bribery Scandal"
+	desc = chinan.4.d
+	is_triggered_only = yes
+	option = {
+		name = "Our men do nothing wrong"
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.03 }
+		add_political_power = -50
+		modify_country_flag = {
+			flag = CHI_KMT
+			value = 1
+		}
+		hidden_effect = {
+			country_event = { 
+				id = chinan.5
+				days = 60
+			}
+		}
+	}
+	option = {
+		name = "Judicial Yuan will take care of this"
+		add_popularity = { ideology = paternal_autocrat popularity = 0.04 }
+		add_political_power = 20
+		modify_country_flag = {
+			flag = CHI_LFP
+			value = 1
+		}
+		hidden_effect = {
+			country_event = { 
+				id = chinan.5
+				days = 60
+			}
+		}
+	}
+}
+country_event = { ###Judicial Yuan Declare the Government must be dissolved and hold the emergency election
+	id = chinan.5
+	title = "Judgement Without Mercy"
+	desc = chinan.5.d
+	is_triggered_only = yes
+	option = {
+		name = "Let's renew our fate"
+		if = {
+			limit = {
+				has_country_flag = {
+					flag = CHI_KMT
+					value > 1
+				}
+			}
+			add_popularity = { ideology = authoritarian_democrat popularity = 0.1 }
+			set_country_flag = CHI_kmt_faction_selected
+		}
+		if = {
+			limit = {
+				has_country_flag = {
+					flag = CHI_LFP
+					value > 1
+				}
+			}
+			add_popularity = { ideology = paternal_autocrat popularity = 0.1 }
+			set_country_flag = CHI_zhili_faction_selected
+		}
+		clr_country_flag = CHI_KMT
+		clr_country_flag = CHI_LFP
+	}
 }

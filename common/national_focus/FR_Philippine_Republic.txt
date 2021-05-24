@@ -620,7 +620,7 @@ focus_tree = {
         completion_reward = {
             add_stability = 0.05
             add_war_support = 0.05
-            remove_ideas = PHI_thirst_for_democracy
+            remove_ideas = PHI_promise_of_elections
         }
     }
 
@@ -641,8 +641,7 @@ focus_tree = {
         prerequisite = { focus = PHI_valdez_government }
         relative_position_id = PHI_valdez_government
         completion_reward = {
-            set_cosmetic_tag = PHI_state
-            remove_ideas = PHI_thirst_for_democracy
+            remove_ideas = PHI_promise_of_elections
 
             add_popularity = {
                 ideology = paternal_autocrat

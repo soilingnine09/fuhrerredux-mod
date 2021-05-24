@@ -1,0 +1,135 @@
+﻿division_template = {
+	name = "Juntuán"				# Represents: German-trained divisions (better equipment than rest),
+									# 	as well as two-division infantry corps (generally poorly-equipped militias),
+	regiments = {					#	and local militia groups.
+		infantry = { x = 0 y = 0 }	# Note: Chinese divisions were brigade-sized compared other nations' armies
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+
+	priority = 0 # garrison
+}
+division_template = {
+	name = "Sanjiao Jun"			# Represents three-division infantry corps (generally poorly-equipped militias)
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+division_template = {
+	name = "Qibing Jun"		# Represents two-division cavalry corps (generally poorly-equipped)
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+### OOB ###
+units = {
+
+	division = {
+		name = "Shanghai Jingbei"
+		location = 7014
+		division_template = "Juntuán"		
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Lu zhan Shi"
+		location = 7014
+		division_template = "Juntuán"		
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "3 Bubing Shi"
+		location = 10076
+		division_template = "Sanjiao Jun"		
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "Shui Jing Tuan"
+		location = 10076
+		division_template = "Sanjiao Jun"		
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "10 Lujun Shi"
+		location = 10076
+		division_template = "Juntuán"
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "11 Bubing Shi"
+		location = 12076
+		division_template = "Sanjiao Jun"
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "14 Bubing Shi"
+		location = 12076
+		division_template = "Sanjiao Jun"
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "4 Juntuán"
+		location = 12076
+		division_template = "Juntuán"
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "18 Juntuán"
+		location = 12076
+		division_template = "Juntuán"
+		start_equipment_factor = 0.7
+
+	}
+
+	division = {
+		name = "2 Lujun Shi"
+		location = 11913
+		division_template = "Juntuán"
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Peixun Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "1 Nanking Jingbei"
+		location = 11913
+		division_template = "Juntuán"		
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "2 Nanking Jingbei"
+		location = 11913
+		division_template = "Juntuán"		
+		start_equipment_factor = 0.5
+	}
+}
+
+instant_effect = {
+	#No instant production
+}

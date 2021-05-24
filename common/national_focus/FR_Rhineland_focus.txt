@@ -1596,7 +1596,7 @@ focus = {
 #Focus for French Military Mandate 
 focus = { 
 	id = RHI_french_military_mandate 
-	icon = GFX_RHI_enslaved
+	icon = GFX_Rhineland_French
 	bypass = {} 
 	mutually_exclusive = { focus = RHI_rhenish_armed_forces} 
 	mutually_exclusive = { focus =RHI_rhenish_french_cooperation} 
@@ -1634,8 +1634,7 @@ focus = {
 #Focus for Rhenish Conscription 
 focus = { 
 	id = RHI_rhenish_conscription 
-	icon = GFX_RHI_Mandate_Puppet_People
-	###GFX_focus_generic_strike_at_democracy2
+	icon = GFX_focus_generic_strike_at_democracy2
 	bypass = {} 
 	mutually_exclusive = { focus = RHI_french_enlistment} 
 	prerequisite = { focus = RHI_french_military_mandate} 

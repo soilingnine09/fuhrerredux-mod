@@ -94,31 +94,7 @@ guiTypes = {
 			maxHeight = 20
 		}
 	}
-	####
-	#Seperatist Burma
-	####
-	containerWindowType = {
-		name = "shan_state_influence_map_decision_ui"
-		position = { x = 0 y = 0 }
-		size = { width = 100% height= 300 }
-		iconType = {
-			name = "shan_state_icon"
-			spriteType = "GFX_shan_state_influence"
-			position = { x = 30 y = -30 }
-			pdx_tooltip  = "Shan_influence"
-		}
-	}
-	containerWindowType = {
-		name = "mon_state_influence_map_decision_ui"
-		position = { x = 0 y = 0 }
-		size = { width = 100% height= 300 }
-		iconType = {
-			name = "mon_state_icon"
-			spriteType = "GFX_mon_state_influence"
-			position = { x = 30 y = -30 }
-			pdx_tooltip  = "Mon_influence"
-		}
-	}
+	
 	##############
 	#Royalist Coup
 	##############

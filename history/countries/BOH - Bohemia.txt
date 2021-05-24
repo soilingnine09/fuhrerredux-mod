@@ -154,10 +154,3 @@ create_country_leader = {
 		#
 	}
 }
-
-create_country_leader = {
-	name = "Alexis Langlois"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
-	expire = "1965.1.1"
-	ideology = paternal_autocrat_subtype
-}

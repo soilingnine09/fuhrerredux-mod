@@ -86,11 +86,6 @@ set_popularities = {
     valkist = 0
 }
 
-add_ideas = {
-	party_pop_0_40
-
-}
-
 ######### LEADERS
 
 create_country_leader = {
@@ -99,9 +94,7 @@ create_country_leader = {
 	picture = "Nicolae_Ceausescu.dds"
 	expire = "1965.1.1"
 	ideology = vanguardist_subtype
-	traits = { charismatic
-		#
-	}
+	traits = { charismatic }
 }
 
 create_country_leader = {
@@ -110,9 +103,7 @@ create_country_leader = {
 	picture = "Petru_Groza.dds"
 	expire = "1965.1.1"
 	ideology = collectivist_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
 
 create_country_leader = {
@@ -121,81 +112,70 @@ create_country_leader = {
 	picture = "Mihai_Dumitru_Ralea.dds"
 	expire = "1965.1.1"
 	ideology = libertarian_socialist_subtype
-	traits = {
-		#
-	}
+	traits = {  }
 }
 
 create_country_leader = {
 	name = "Regency Council"
-	desc = "POLITICS_MICHAEL_REGENCY_DESC"
-	picture = "Michael_Regency.tga"
+	desc = "POLITICS_REGENCY_COUNCIL_DESC"
+	picture = "Portrait_Romania_Regency_Council.tga"
 	expire = "2017.12.5"
 	ideology = social_democrat_subtype
-	traits = { 
-	}
+	traits = { }
 }
 
 create_country_leader = {
 	name = "Regency Council"
-	desc = "POLITICS_MICHAEL_REGENCY_DESC"
-	picture = "Michael_Regency.tga"
+	desc = "POLITICS_REGENCY_COUNCIL_DESC"
+	picture = "Portrait_Romania_Regency_Council.tga"
 	expire = "2017.12.5"
 	ideology = social_liberal_subtype
-	traits = { 
-	}
+	traits = { }
 }
 
 create_country_leader = {
 	name = "Regency Council"
-	desc = "POLITICS_MICHAEL_REGENCY_DESC"
-	picture = "Michael_Regency.tga"
+	desc = "POLITICS_REGENCY_COUNCIL_DESC"
+	picture = "Portrait_Romania_Regency_Council.tga"
 	expire = "2017.12.5"
 	ideology = market_liberal_subtype
-	traits = { 
-	}
+	traits = { }
 }
 
 create_country_leader = {
 	name = "Regency Council"
-	desc = "POLITICS_MICHAEL_REGENCY_DESC"
-	picture = "Michael_Regency.tga"
+	desc = "POLITICS_REGENCY_COUNCIL_DESC"
+	picture = "Portrait_Romania_Regency_Council.tga"
 	expire = "2017.12.5"
 	ideology = social_conservative_subtype
-	traits = { 
-	}
+	traits = { }
 }
 
 create_country_leader = {
 	name = "Regency Council"
-	desc = "POLITICS_MICHAEL_REGENCY_DESC"
-	picture = "Michael_Regency.tga"
+	desc = "POLITICS_REGENCY_COUNCIL_DESC"
+	picture = "Portrait_Romania_Regency_Council.tga"
 	expire = "2017.12.5"
 	ideology = authoritarian_democrat_subtype
-	traits = { 
-	}
+	traits = { }
 }
 
 create_country_leader = {
 	name = "Regency Council"
-	desc = "POLITICS_MICHAEL_REGENCY_DESC"
-	picture = "Michael_Regency.tga"
+	desc = "POLITICS_REGENCY_COUNCIL_DESC"
+	picture = "Portrait_Romania_Regency_Council.tga"
 	expire = "2017.12.5"
 	ideology = paternal_autocrat_subtype
-	traits = { charismatic
-		#
-	}
+	traits = { }
 }
 
 create_country_leader = {
-	name = "A.S.R. Nicholas I"
+	name = "Nicholas I"
 	desc = "POLITICS_NICHOLAS_I_DESC"
 	picture = "Portrait_Romania_Nicholas_I.tga"
 	expire = "1965.1.1"
 	ideology = paternal_autocrat_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
 
 create_country_leader = {
@@ -204,9 +184,7 @@ create_country_leader = {
 	picture = "Portrait_Romania_codreanu.dds"
 	expire = "1965.1.1"
 	ideology = national_populist_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
 
 create_country_leader = {
@@ -215,9 +193,7 @@ create_country_leader = {
 	picture = "Octavian_Goga.dds"
 	expire = "1965.1.1"
 	ideology = valkist_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
 
 ######### GENERALS & NAVY

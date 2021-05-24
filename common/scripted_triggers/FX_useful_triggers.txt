@@ -4,9 +4,8 @@ has_socialist_government = {
         tooltip = FX_is_socialist_tt
         OR = {
             has_government = vanguardist
-            has_government = orthodox_marxist
-            has_government = revolutionary_socialist
-            has_government = democratic_socialist
+            has_government = collectivist
+            has_government = libertarian_socialist
         }
     }
 }

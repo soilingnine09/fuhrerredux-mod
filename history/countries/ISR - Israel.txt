@@ -26,6 +26,20 @@ add_ideas = {
 	parliamentary_republic
 }
 
+ENG = {
+	if = {
+		limit = { has_dlc = "Together for Victory" }
+		set_autonomy = {
+			target = PREV
+			autonomous_state = autonomy_protectorate
+			freedom_level = 0.5
+		}
+	}
+	else = {
+		puppet = PREV
+	}
+}
+
 set_politics = {
 	ruling_party = market_liberal
 	last_election = "1933.3.5"
@@ -122,39 +136,4 @@ create_country_leader = {
 	traits = {
 
 	}
-}
-
-
-
-
-
-
-
-
-create_country_leader = {
-	name = "Durans Doyle"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-	expire = "1965.1.1"
-	ideology = vanguardist_subtype
-}
-
-create_country_leader = {
-	name = "Slamet Jefferson"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-	expire = "1965.1.1"
-	ideology = collectivist_subtype
-}
-
-create_country_leader = {
-	name = "Ramazan Chavez"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
-	expire = "1965.1.1"
-	ideology = national_populist_subtype
-}
-
-create_country_leader = {
-	name = "Lennie Wallis"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
-	expire = "1965.1.1"
-	ideology = valkist_subtype
 }

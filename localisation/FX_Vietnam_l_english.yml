@@ -1,0 +1,74 @@
+﻿l_english:
+
+### Country Names
+VIN_vanguardist:0 "Socialist Republic of Vietnam"
+VIN_vanguardist_ADJ:0 "Vietnamese"
+VIN_vanguardist_DEF:0 "The Socialist Republic of Vietnam"
+VIN_collectivist:0 "Socialist Republic of Vietnam"
+VIN_collectivist_ADJ:0 "Vietnamese"
+VIN_collectivist_DEF:0 "The Socialist Republic of Vietnam"
+VIN_libertarian_socialist:0 "The Socialist Republic of Vietnam"
+VIN_libertarian_socialist_ADJ:0 "Vietnamese"
+VIN_libertarian_socialist_DEF:0 "The Socialist Republic of Vietnam"
+VIN_social_democrat:0 "Republic of Vietnam"
+VIN_social_democrat_ADJ:0 "Vietnamese"
+VIN_social_democrat_DEF:0 "Republic of Vietnam"
+VIN_social_liberal:0 "Republic of Vietnam"
+VIN_social_liberal_ADJ:0 "Vietnamese"
+VIN_social_liberal_DEF:0 "Republic of Vietnam of Vietnam"
+VIN_market_liberal:0 "Vietnam"
+VIN_market_liberal_ADJ:0 "Vietnamese"
+VIN_market_liberal_DEF:0 "Republic of Vietnam"
+VIN_social_conservative:0 "Republic of Vietnam"
+VIN_social_conservative_ADJ:0 "Vietnamese"
+VIN_social_conservative_DEF:0 "Republic of Vietnam"
+VIN_authoritarian_democrat:0 "Vietnamese Imperial State"
+VIN_authoritarian_democrat_ADJ:0 "Vietnamese"
+VIN_authoritarian_democrat_DEF:0 "Vietnamese Imperial State"
+VIN_paternal_autocrat:0 "Vietnamese Imperial State"
+VIN_paternal_autocrat_ADJ:0 "Vietnamese"
+VIN_paternal_autocrat_DEF:0 "Vietnamese Imperial State"
+VIN_national_populist:0 "Dai Viet"
+VIN_national_populist_ADJ:0 "Vietnamese"
+VIN_national_populist_DEF:0 "Dai Viet"
+VIN_valkist:0 "Cơ quan có thẩm quyền của Việt Nam"
+VIN_valkist_ADJ:0 "Vietnamese"
+VIN_valkist_DEF:0 "Cơ quan có thẩm quyền của Việt Nam"
+
+################
+### BOOKMARK ###
+################
+################
+### POLITICS ###
+################
+
+VIN_vanguardist_party:0 "Viet Minh"
+VIN_vanguardist_party_long:0 "Viet Minh"
+VIN_collectivist_party:0 "Viet Minh"
+VIN_collectivist_party_long:0 "Viet Minh"
+VIN_libertarian_socialist_party:0 "Viet Minh"
+VIN_libertarian_socialist_party_long:0 "Viet Minh"
+VIN_social_democrat_party:0 "Viet Minh"
+VIN_social_democrat_party_long:0 "Viet Minh"
+VIN_social_liberal_party:0 "Viet Minh"
+VIN_social_liberal_party_long:0 "Viet Minh"
+VIN_market_liberal_party:0 "Constitutionalists"
+VIN_market_liberal_party_long:0 "Constitutionalist Party"
+VIN_social_conservative_party:0 "Collaborationists"
+VIN_social_conservative_party_long:0 "Collaborationists"
+VIN_authoritarian_democrat_party:0 "Viet Minh"
+VIN_authoritarian_democrat_party_long:0 "Viet Minh"
+VIN_paternal_autocrat_party:0 "Viet Minh"
+VIN_paternal_autocrat_party_long:0 "Viet Minh"
+VIN_national_populist_party:0 "Viet Minh"
+VIN_national_populist_party_long:0 "Viet Minh"
+VIN_valkist_party:0 "Viet Minh"
+VIN_valkist_party_long:0 "Viet Minh"
+
+#############
+### FOCUS ###
+#############
+
+#############
+### IDEAS ###
+#############

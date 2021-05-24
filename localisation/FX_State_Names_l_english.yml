@@ -1,7 +1,4 @@
 ﻿l_english:
- STATE_1020:0 "Moulmein"
- STATE_1019:0 "Pattani"
- STATE_1018:0 "Phuket"
  STATE_1:0 "Corsica"
  STATE_2:0 "Latium"
  STATE_3:0 "Schweiz"
@@ -1019,6 +1016,7 @@
  STATE_1015:0 "Pau"
  STATE_1016:0 "Roussillon"
  STATE_1017:0 "La Rochelle"
+<<<<<<< HEAD:localisation/FX_State_Names_l_english.yml
 <<<<<<< Updated upstream:localisation/FR_State_Names_l_english.yml
  STATE_1021:0 "Kengtung"
  STATE_1022:0 "Hanthawaddy"
@@ -1038,3 +1036,6 @@
  STATE_1029:0 "Aden Colony"
  STATE_1030:0 "Aksai Chin"
 >>>>>>> Stashed changes:localisation/FX_State_Names_l_english.yml
+=======
+ STATE_1020:0 "Yantai"
+>>>>>>> main:localisation/FR_State_Names_l_english.yml

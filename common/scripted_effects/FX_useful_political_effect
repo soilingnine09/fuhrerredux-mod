@@ -1,5 +1,5 @@
 
-remove_every_ministers = {
+remove_every_minister = {
     hidden_effect = {
         remove_ideas_with_trait = head_of_government
         remove_ideas_with_trait = foreign_minister

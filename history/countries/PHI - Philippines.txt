@@ -10,6 +10,8 @@ if = {
 	}
 }
 
+country_event = { id = phi.29 days = 366 }
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -49,17 +51,14 @@ if = {
 	}
 }
 
-# 54th Independence Day
-country_event = { id = phi.51 days = 893 }
-
 add_ideas = {
 	PHI_promise_of_elections
 	PHI_agriculture_economy
 	PHI_marxist_professors
 
 	PHI_Jose_P_Laurel_hog_ade
-	PHI_Ferdinand_Marcos_for_sco
-	PHI_Serafin_Fausto_eco_sco
+	PHI_Ferdinand_Marcos_for_ade
+	PHI_Serafin_Fausto_eco_ade
 	PHI_Benigno_Aquino_Sr_sec_ade
 	PHI_Fidel_Segundo_int_ade
 	presidential_republic
@@ -93,7 +92,7 @@ create_country_leader = {
 	picture = "Portrait_Philippines_Luis_Taruc.tga"
 	expire = "1943.6.2"
 	ideology = vanguardist_subtype
-	traits = { prince_of_terror }
+	traits = { }
 }
 create_country_leader = {
 	name = "Pedro Abad Santos"
@@ -101,7 +100,7 @@ create_country_leader = {
 	picture = "Portrait_Philippines_Pedro_Abad_Santos.tga"
 	expire = "1950.3.10"
 	ideology = collectivist_subtype
-	traits = { reluctant_interventionist }
+	traits = { }
 }
 create_country_leader = {
 	name = "Crisanto Evangelista"
@@ -109,7 +108,7 @@ create_country_leader = {
 	picture = "Portrait_Philippines_Crisanto_Evangelista.tga"
 	expire = "1950.3.10"
 	ideology = libertarian_socialist_subtype
-	traits = { reluctant_interventionist }
+	traits = { }
 }
 create_country_leader = {
 	name = "Lope K. Santos"
@@ -117,15 +116,15 @@ create_country_leader = {
 	picture = "Portrait_Philippines_Lope_K_Santos.tga"
 	expire = "1946.6.2"
 	ideology = social_democrat_subtype
-	traits = { popular_figurehead }
+	traits = { }
 }
 create_country_leader = {
-	name = "Manuel Roxas"
-	desc = "POLITICS_MANUEL_ROXAS_DESC"
-	picture = "Portrait_Philippines_Manuel_Roxas.tga"
+	name = "Elpidio Quirino"
+	desc = "POLITICS_ELPIDIO_QUIRINO_DESC"
+	picture = "Portrait_Philippines_Elpidio_Quirino.tga"
 	expire = "1955.2.1"
 	ideology = social_liberal_subtype
-	traits = { financial_expert }
+	traits = { }
 }
 create_country_leader = {
 	name = "Manuel Roxas"
@@ -133,7 +132,7 @@ create_country_leader = {
 	picture = "Portrait_Philippines_Manuel_Roxas.tga"
 	expire = "1955.2.1"
 	ideology = market_liberal_subtype
-	traits = { financial_expert }
+	traits = { }
 }
 create_country_leader = {
 	name = "Manuel Luis Quezón"
@@ -141,7 +140,7 @@ create_country_leader = {
 	picture = "Portrait_Philippines_Manuel_Luis_Quezon_KR.tga"
 	expire = "1964.2.6"
 	ideology = social_conservative_subtype
-	traits = { war_industrialist }
+	traits = { }
 }
 create_country_leader = {
 	name = "Jose P. Laurel"
@@ -149,7 +148,7 @@ create_country_leader = {
 	picture = "Portrait_Philippines_Jose_P_Laurel.tga"
 	expire = "1970.1.26"
 	ideology = authoritarian_democrat_subtype
-	traits = { the_absentee_president }
+	traits = { }
 }
 create_country_leader = {
 	name = "Basilio J. Valdez"
@@ -157,7 +156,7 @@ create_country_leader = {
 	picture = "Portrait_Philippines_Basilio_J_Valdez.tga"
 	expire = "1970.1.26"
 	ideology = paternal_autocrat_subtype
-	traits = { war_industrialist }
+	traits = { }
 }
 create_country_leader = {
 	name = "Emilio Aguinaldo"
@@ -165,7 +164,7 @@ create_country_leader = {
 	picture = "Portrait_Philippines_Emilio_Aguinaldo.tga"
 	expire = "1964.2.6"
 	ideology = national_populist_subtype
-	traits = { nationalist_symbol }
+	traits = { }
 }
 create_country_leader = {
 	name = "Benigno Ramos"
@@ -173,7 +172,7 @@ create_country_leader = {
 	picture = "Portrait_Philippines_Benigno_Ramos.tga"
 	expire = "1946.6.2"
 	ideology = valkist_subtype
-	traits = { popular_figurehead }
+	traits = { }
 }
 
 ### Field Marshal

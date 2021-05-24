@@ -1,0 +1,44 @@
+﻿l_russian:
+
+flag_alignment_tip:0 "[THIS.GetName]"
+main_factions_tip:0 "Правящая партия: [THIS.GetRulingParty]\nИдеология партии: [THIS.GetRulingIdeology]\nПоддержка партии: [THIS.GetPartySupport]%"
+
+chart_button_label:0 "Диаграмма выравнивания"
+
+### Alignment Triangle main factions ###
+
+### Vanilla Code
+axis_title:0"[GER.GetFactionName]"
+allies_title:0"[ENG.GetFactionName]"
+comintern_title:0"[SOV.GetFactionName]"
+
+
+### TEAW Code
+#axis_title:0"[GER.GetFactionName]"
+#allies_title:0"[FRA.GetFactionName]"
+#comintern_title:0"[SOV.GetFactionName]"
+
+### FR Code
+#axis_title:0"[GER.GetFactionName]"
+#allies_title:0"[FRA.GetFactionName]"
+#comintern_title:0"[SOV.GetFactionName]"
+
+### KR Code
+#axis_title:0"[GER.GetFactionName]"
+#allies_title:0"[CAN.GetFactionName]"
+#comintern_title:0"[FRA.GetFactionName]"
+
+### RF Code
+# axis_title:0 "[FRA.GetFactionName]"
+# allies_title:0"[ENG.GetFactionName]"
+# comintern_title:0"[GER.GetFactionName]"
+
+### TNO Code
+#axis_title:0 "[GER.GetFactionName]"
+#allies_title:0"[USA.GetFactionName]"
+#comintern_title:0"[JAP.GetFactionName]"
+
+### BIce Code
+# axis_title:0 "[GER.GetFactionName]"
+# allies_title:0"[ENG.GetFactionName]"
+# comintern_title:0"[SOV.GetFactionName]"

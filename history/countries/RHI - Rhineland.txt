@@ -248,19 +248,3 @@ create_corps_commander = {
 	logistics_skill = 2
 	id = 3306
 }
-
-
-
-create_country_leader = {
-	name = "Firuz Kohout"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = social_liberal_subtype
-}
-
-create_country_leader = {
-	name = "Ratimir McAlister"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = market_liberal_subtype
-}

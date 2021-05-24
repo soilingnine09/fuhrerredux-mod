@@ -52,7 +52,7 @@ set_popularities = {
 create_country_leader = {
 	name = "José Luis Tejada Sorzano"
 	desc = "POLITICS_JOSE_LUIS_TEJADA_SORZANO_DESC"
-	picture = "JoseLuisTejada.tga"
+	picture = "Portrait_BOL_Jose_Luis_Tejada.tga"
 	expire = "1965.1.1"
 	ideology = market_liberal_subtype
 	traits = {
@@ -62,7 +62,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Bautista Saavedra Mallea"
 	desc = "POLITICS_JOSE_LUIS_TEJADA_SORZANO_DESC"
-	picture = "BautistaSaavedra.tga"
+	picture = "Portrait_BOL_Bautista_Saavedra.tga"
 	expire = "1965.1.1"
 	ideology = social_liberal_subtype
 	traits = {
@@ -72,7 +72,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Santos Marka T'ula"
 	desc = "POLITICS_SANTOS_MARKA_DESC"
-	picture = "SantosMarka.tga"
+	picture = "Portrait_BOL_Santos_Marka.tga"
 	expire = "1965.1.1"
 	ideology = valkist_subtype
 	traits = {
@@ -83,7 +83,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Tristán Marof"
 	desc = "POLITICS_TRISTAN_MAROF_DESC"
-	picture = "TristanMarof.tga"
+	picture = "Portrait_BOL_Tristan_Marof.tga"
 	expire = "1965.1.1"
 	ideology = vanguardist_subtype
 	traits = {
@@ -94,7 +94,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "José Antonio Arze"
 	desc = "POLITICS_ARZE_DESC"
-	picture = "JoseAntonioArze.tga"
+	picture = "Portrait_BOL_Arze_Arze.tga"
 	expire = "1965.1.1"
 	ideology = collectivist_subtype
 	traits = {
@@ -105,7 +105,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Carlos Salazar Mostajo"
 	desc = "POLITICS_CARLOS_MOSTAJO_DESC"
-	picture = "CarlosMostajo.tga"
+	picture = "Portrait_BOL_Carlos_Mostajo.tga"
 	expire = "1965.1.1"
 	ideology = libertarian_socialist_subtype
 	traits = {
@@ -127,7 +127,7 @@ create_country_leader = {
 
 create_field_marshal = {
 	name = "Enrique Peñaranda"
-	picture = "BOL_Enrique_Castillo.tga"
+	picture = "Portrait_BOL_Enrique_Castillo.tga"
 	traits = {}
 	skill = 3
 	attack_skill = 2
@@ -137,7 +137,7 @@ create_field_marshal = {
 }
 create_corps_commander = {
 	name = "Bernardino Bilbao Rioja "
-	picture = "BOL_Bernardino_Bilbao_Rioja.tga"
+	picture = "Portrait_BOL_Bernardino_Bilbao_Rioja.tga"
 	traits = {}
 	skill = 2
 	attack_skill = 2
@@ -147,7 +147,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "David Toro"
-	picture = "BOL_David_Toro.tga"
+	picture = "Portrait_BOL_David_Toro.tga"
 	traits = {}
 	skill = 2
 	attack_skill = 1
@@ -157,7 +157,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Carlos Quintanilla Quiroga"
-	picture = "BOL_Carlos_Quintanilla_Quiroga.tga"
+	picture = "Portrait_BOL_Carlos_Quintanilla_Quiroga.tga"
 	traits = {}
 	skill = 3
 	attack_skill = 3
@@ -167,7 +167,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Germán Busch"
-	picture = "BOL_German_Busch.tga"
+	picture = "Portrait_BOL_German_Busch.tga"
 	traits = {}
 	skill = 2
 	attack_skill = 2
@@ -177,32 +177,3 @@ create_corps_commander = {
 }
 
 
-
-
-create_country_leader = {
-	name = "Arne Narang"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = social_democrat_subtype
-}
-
-create_country_leader = {
-	name = "Oved Elwes"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = social_conservative_subtype
-}
-
-create_country_leader = {
-	name = "Arkadios Merricks"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
-	expire = "1965.1.1"
-	ideology = authoritarian_democrat_subtype
-}
-
-create_country_leader = {
-	name = "Alexis Langlois"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
-	expire = "1965.1.1"
-	ideology = paternal_autocrat_subtype
-}

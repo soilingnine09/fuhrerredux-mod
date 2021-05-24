@@ -1,0 +1,24 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_idea_CHI_illiterate_population"
+        texturefile = "gfx/interface/ideas/CHI/CHI_illiterate_population.tga"
+    }
+    
+    spriteType = {
+        name = "GFX_idea_PHI_aeda_economic_aid"
+        texturefile = "gfx/interface/ideas/PHI/ideas/PHI_aeda_economic_aid.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_aeda_construction_subsidies"
+        texturefile = "gfx/interface/ideas/PHI/ideas/PHI_aeda_construction_subsidies.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_aeda_resource_exploration"
+        texturefile = "gfx/interface/ideas/PHI/ideas/PHI_aeda_resource_exploration.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_promises_of_elections"
+        texturefile = "gfx/interface/ideas/PHI/ideas/PHI_promises_of_election.tga"
+    }
+}

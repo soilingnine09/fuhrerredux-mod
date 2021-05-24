@@ -1,0 +1,71 @@
+﻿l_english:
+
+#UK Related stuff
+WAR_NAME_IND_ENG:0 "Indian Rebellion of 1936"
+WAR_NAME_ENG_IND:0 "Imperial Reconquest of India"
+WAR_NAME_ENG_IRE:0 "The Second IRB Rising"
+WAR_NAME_ENG_CAN:0 "Imperial Restoration of Order to Canada"
+WAR_NAME_ENG_AST:0 "Imperial Restoration of Order to Australia"
+WAR_NAME_ENG_NZL:0 "Imperial Restoration of Order to New Zealand"
+WAR_NAME_ENG_SAF:0 "Imperial Restoration of Order to South Africa"
+WAR_NAME_SAF_ZAF:0 "The Fourth Boer War"
+
+#India
+WAR_NAME_INC_IND:0 "Communist Reunification of India"
+WAR_NAME_INC_HYD:0 "The Princely War"
+WAR_NAME_RAJ_IND:0 "Imperial Reconquest of India"
+
+#Spanish Civil War
+WAR_NAME_SPA_SPF:0 "Spanish Anarchist and Falangist Conflict"
+WAR_NAME_SPF_SPA:0 "Spanish Anarchist and Falangist Conflict"
+WAR_NAME_SPR_SPF:0 "Spanish Republican and Falangist Conflict"
+WAR_NAME_SPF_SPR:0 "Spanish Republican and Falangist Conflict"
+WAR_NAME_SPM_SPF:0 "Spanish Anarchist and Falangist Conflict"
+WAR_NAME_SPF_SPM:0 "Spanish Monarchist and Falangist Conflict"
+WAR_NAME_SPA_SPF:0 "Spanish Monarchist and Falangist Conflict"
+WAR_NAME_SPA_SPR:0 "Spanish Anarchist and Republican Conflict"
+WAR_NAME_SPR_SPA:0 "Spanish Anarchist and Republican Conflict"
+WAR_NAME_SPM_SPA:0 "Spanish Anarchist and Monarchist Conflict"
+WAR_NAME_SPA_SPM:0 "Spanish Anarchist and Monarchist Conflict"
+WAR_NAME_SPM_SPR:0 "Spanish Monarchist and Republican Conflict"
+WAR_NAME_SPR_SPM:0 "Spanish Monarchist and Republican Conflict"
+
+#Portuguese Civil War
+WAR_NAME_POR_PRR:0 "Portuguese Civil War"
+WAR_NAME_PRR_POR:0 "Portuguese Civil War"
+
+#Turkish Civil War
+WAR_NAME_TUR_TRT:0 "Turkish Civil War"
+WAR_NAME_TRT_TUR:0 "Turkish Civil War"
+
+#Bulgarian Civil War
+WAR_NAME_BUL_BSR:0 "Bulgarian Civil War"
+WAR_NAME_BSR_BUL:0 "Bulgarian Civil War"
+
+#2nd Russian Civil War
+WAR_NAME_SOV_RUS:0 "Second Russian Civil War"
+WAR_NAME_RUS_SOV:0 "Second Russian Civil War"
+
+#Second Great War
+WAR_NAME_GER_FRA:0 "The Second Great War"
+WAR_NAME_FRA_GER:0 "The Second Great War"
+
+#Third Mexican-American WAR
+WAR_NAME_MEX_USA:0 "Third Mexican-American War"
+WAR_NAME_USA_MEX:0 "Third Mexican-American War"
+
+#Franco-Swiss war
+WAR_NAME_FRA_SWI:0 "The Romandie War"
+WAR_NAME_SWI_FRA:0 "The Romandie War"
+
+#Italo-Swiss war
+WAR_NAME_ITA_SWI:0 "The Tessin War"
+WAR_NAME_SWI_ITA:0 "The Tessin War"
+
+#Franco-Italian war
+WAR_NAME_ITA_FRA:0 "The War of the Mediterranean"
+WAR_NAME_SWI_FRA:0 "The War of the Mediterranean"
+
+#Dahomey-Togoland war
+WAR_NAME_DAH_TOG:0 "War of Togolese independence"
+WAR_NAME_TOG_DAH:0 "War of Togolese independence"

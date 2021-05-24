@@ -1,0 +1,25 @@
+
+state={
+	id=1025
+	name="STATE_1025"
+	resources={
+	}
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 4
+		}
+		victory_points = {
+			9974 5
+		}
+	}
+
+	provinces={
+		9974
+	}
+	manpower=282000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

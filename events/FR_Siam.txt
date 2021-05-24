@@ -16,8 +16,8 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = siambw.1
+#country_event = {
+	#id = siambw.1
 	title = "Effects from Black Wednesday"
 	desc = siambw.1
 	immediate = { ROOT = { set_country_flag = royal_market_crash } }
@@ -40,7 +40,7 @@ country_event = {
 		}
 		SIA_swap_the_focus = yes
 	}
-}
+#}
 country_event = {
 	id = siambw.2
 	title = "Meeting of Economists"
