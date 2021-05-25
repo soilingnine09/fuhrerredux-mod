@@ -452,7 +452,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Jacques Massu"
-	picture = "Portrait_France_Generic_land_4.dds"
+	picture = "Portrait_France_Jacques_Massu.tga"
 	traits = {  }
 	skill = 2
 	attack_skill = 2
@@ -475,21 +475,21 @@ create_corps_commander = {
 
 create_navy_leader = {
 	name = "François Darlan"
-		picture = "Portrait_France_Francois_Darlan.dds"
+		picture = "Portrait_France_Francois_Darlan_fx.tga"
 	traits = { superior_tactician }
 	skill = 5
 }
 
 create_navy_leader = {
 	name = "Jean-Marie Charles Abrial"
-		picture = "Portrait_France_Jean-Marie_Charles_Abrial.dds"
+		picture = "Portrait_France_Jean-Marie_Charles_Abrial_fx.tga"
 	traits = { superior_tactician }
 	skill = 3
 }
 
 create_navy_leader = {
 	name = "Jean-Pierre Esteva"
-		picture = "Portrait_France_Jean-Pierre_Esteva.dds"
+		picture = "Portrait_France_Jean-Pierre_Esteva_fx.tga"
 	traits = { seawolf }
 	skill = 2
 }
