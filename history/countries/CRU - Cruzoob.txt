@@ -54,26 +54,22 @@ set_popularities = {
 create_country_leader = {
 	name = "Francisco May Pech"
 	desc = "POLITICS_FRANCISCO_MAY_DESC"
-	picture = "FranciscoMay.tga"
+	picture = "Portrait_Cruzoob_Francisco_May.tga"
 	expire = "1965.1.1"
 	ideology = valkist_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
-
 
 create_corps_commander = {
 	name = "Francisco May Pech"
-	portrait_path = "gfx/leaders/CRU/FranciscoMay.tga"
+	picture = "Portrait_Cruzoob_Francisco_May.tga"
 	traits = { }
 	skill = 3
 }
 
-
 create_navy_leader = {
 	name = "Francisco May Pech"
-	portrait_path = "gfx/leaders/CRU/FranciscoMay.tga"
+	picture = "Portrait_Cruzoob_Francisco_May.tga"
 	traits = { superior_tactician }
 	skill = 3
 }

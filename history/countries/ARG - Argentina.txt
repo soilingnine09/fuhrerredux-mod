@@ -91,140 +91,107 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Agustín Pedro Justo"
-	desc = "POLITICS_AGUSTIN_PEDRO_JUSTO_DESC"
-	picture = "AgustinJusto.tga"
-	expire = "1965.1.1"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-		#
-	}
-}
-
-
-
-create_country_leader = {
-	name = "Manuel Domecq García"
-	desc = "POLITICS_NIMO_DE_ANQUIN_DESC"
-	picture = "Manuel_Domecq.tga"
-	expire = "1965.1.1"
-	ideology = national_populist_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Alfredo Palacios"
-	desc = "POLITICS_MARCELO_ALVEAR_DESC"
-	picture = "AlfredoPalacios.tga"
-	expire = "1965.1.1"
-	ideology = social_democrat_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
 	name = "Liborio Justo"
 	desc = "POLITICS_LIBORIO_JUSTO_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
 	expire = "1965.1.1"
 	ideology = vanguardist_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
-
+create_country_leader = {
+	name = "Fanny Edelman"
+	desc = "POLITICS_FANNY_EDELMAN_DESC"
+	picture = "Portrait_Argentina_Fanny_Edelman.tga"
+	expire = "1965.1.1"
+	ideology = vanguardist_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Rodolfo Ghioldi"
+	desc = "POLITICS_RODOLFO_GHIOLDI_DESC"
+	picture = "Portrait_Argentina_Rodolfo_Ghioldi.tga"
+	expire = "1965.1.1"
+	ideology = collectivist_subtype
+	traits = { }
+}
 create_country_leader = {
 	name = "José Grunfeld"
-	desc = "POLITICS_SEVERINO_DESC"
-	picture = "Jose_Grunfeld.tga"
+	desc = "POLITICS_JOSE_GRUNFELD_DESC"
+	picture = "Portrait_Argentina_Jose_Grunfeld.tga"
 	expire = "1965.1.1"
 	ideology = libertarian_socialist_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
-
+create_country_leader = {
+	name = "Alfredo Palacios"
+	desc = "POLITICS_MARCELO_ALVEAR_DESC"
+	picture = "Portrait_Argentina_Alfredo_Palacios.tga"
+	expire = "1965.1.1"
+	ideology = social_democrat_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Enrique Martínez"
+	desc = "POLITICS_ENRIQUE_MARTINEZ_DESC"
+	picture = "Portrait_Argentina_Enrique_Martinez.tga"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = { }
+}
 create_country_leader = {
 	name = "Vicente Gallo"
 	desc = "POLITICS_VICENTE_GALLO_DESC"
-	picture = "VicenteGallo.tga"
+	picture = "Portrait_Argentina_Vicente_Gallo.tga"
 	expire = "1965.1.1"
 	ideology = market_liberal_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Carlos Saavedra Lamas"
 	desc = "POLITICS_CARLOS_SAAVEDRA_DESC"
-	picture = "CarlosLamas.tga"
+	picture = "Portrait_Argentina_Carlos_Lamas.tga"
 	expire = "1965.1.1"
 	ideology = social_conservative_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
-
+create_country_leader = {
+	name = "Agustín Pedro Justo"
+	desc = "POLITICS_AGUSTIN_PEDRO_JUSTO_DESC"
+	picture = "Portrait_Argentina_Agustin_Justo.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+	traits = { }
+}
 create_country_leader = {
 	name = "Edelmiro Farrell"
 	desc = "POLITICS_EDELMIRO_FARRELL_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
 	expire = "1965.1.1"
 	ideology = paternal_autocrat_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
-
+create_country_leader = {
+	name = "Manuel Domecq García"
+	desc = "POLITICS_MANUEL_DOMECQ_GARCIA_DESC"
+	picture = "Portrait_Argentina_Manuel_Domecq_Garcia.tga"
+	expire = "1965.1.1"
+	ideology = national_populist_subtype
+	traits = { }
+}
 create_country_leader = {
 	name = "Leopoldo Lugones"
 	desc = "POLITICS_LEOPOLDO_LUGONES_DESC"
-	picture = "LeopoldoLugones.tga"
+	picture = "Portrait_Argentina_Leopoldo_Lugones.tga"
 	expire = "1965.1.1"
 	ideology = valkist_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
 
-create_country_leader = {
-	name = "Enrique Martínez"
-	desc = "POLITICS_ENRIQUE_MARTINEZ_DESC"
-	picture = "EnriqueMartinez.tga"
-	expire = "1965.1.1"
-	ideology = social_liberal_subtype
-	traits = {
-		#
-	}
-}
 
-create_country_leader = {
-	name = "Rodolfo Ghioldi"
-	desc = "POLITICS_RGhio_DESC"
-	picture = "RodolfoGhioldi.tga"
-	expire = "1965.1.1"
-	ideology = collectivist_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Fanny Edelman"
-	desc = "POLITICS_FNEDEL_DESC"
-	picture = "FannyEdelman.tga"
-	expire = "1965.1.1"
-	ideology = vanguardist_subtype
-	traits = {
-		#
-	}
-}
+
 create_field_marshal = {
 	name = "Arturo Rawson"
-	picture = "gfx/leaders/ARG/ArturoRawson.tga"
+	picture = "Portrait_Argentina_Arturo_Rawson.tga"
 	traits = { defensive_doctrine }
 	skill = 3
 	attack_skill = 3
@@ -232,10 +199,9 @@ create_field_marshal = {
 	planning_skill = 2
 	logistics_skill = 3
 }
-
 create_corps_commander = {
 	name = "Juan Pistarini"
-	picture = "gfx/leaders/ARG/JuanPistarini.tga"
+	picture = "Portrait_Argentina_Juan_Pistarini.tga"
 	traits = { urban_assault_specialist fortress_buster }
 	skill = 4
 	attack_skill = 4
@@ -245,7 +211,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Agustín Justo"
-	picture = "gfx/leaders/ARG/AgustinJusto.tga"
+	picture = "Portrait_Argentina_Agustin_Justo.tga"
 	traits = { }
 	skill = 3
 	attack_skill = 3
@@ -255,7 +221,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Manuel A. Rodríguez"
-	picture = "gfx/leaders/ARG/ManuelARodriguez.tga"
+	picture = "Portrait_Argentina_Manuel_Rodriguez.tga"
 	traits = { }
 	skill = 3
 	attack_skill = 3
@@ -265,7 +231,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Basilio Pertiné"
-	picture = "gfx/leaders/ARG/ARG_Basilio_Pertine.tga"
+	picture = "Portrait_Argentina_Basilio_Pertine.tga"
 	traits = { }
 	skill = 2
 	attack_skill = 3
