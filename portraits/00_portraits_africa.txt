@@ -4,13 +4,13 @@ BRD = {
 	army = {
 		male = {
 			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_1.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_1.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_2.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_3.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_4.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_5.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_6.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_7.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_1.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_2.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_3.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_4.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_5.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_6.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_7.tga"
 		}
 	}
 }
@@ -19,13 +19,13 @@ CAR = {
 	army = {
 		male = {
 			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_1.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_1.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_2.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_3.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_4.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_5.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_6.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_7.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_1.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_2.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_3.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_4.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_5.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_6.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_7.tga"
 		}
 	}
 }
@@ -34,13 +34,13 @@ CMR = {
 	army = {
 		male = {
 			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_1.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_1.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_2.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_3.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_4.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_5.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_6.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_7.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_1.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_2.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_3.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_4.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_5.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_6.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_7.tga"
 		}
 	}
 }
@@ -49,13 +49,13 @@ COG = {
 	army = {
 		male = {
 			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_1.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_1.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_2.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_3.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_4.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_5.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_6.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_7.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_1.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_2.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_3.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_4.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_5.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_6.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_7.tga"
 		}
 	}
 }
@@ -64,13 +64,13 @@ DAH = {
 	army = {
 		male = {
 			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_1.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_1.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_2.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_3.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_4.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_5.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_6.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_7.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_1.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_2.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_3.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_4.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_5.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_6.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_7.tga"
 		}
 	}
 }
@@ -79,13 +79,13 @@ GAB = {
 	army = {
 		male = {
 			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_1.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_1.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_2.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_3.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_4.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_5.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_6.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_7.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_1.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_2.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_3.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_4.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_5.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_6.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_7.tga"
 		}
 	}
 }
@@ -94,13 +94,13 @@ GHA = {
 	army = {
 		male = {
 			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_1.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_1.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_2.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_3.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_4.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_5.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_6.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_7.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_1.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_2.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_3.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_4.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_5.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_6.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_7.tga"
 		}
 	}
 }
@@ -109,13 +109,13 @@ KEN = {
 	army = {
 		male = {
 			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_1.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_1.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_2.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_3.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_4.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_5.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_6.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_7.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_1.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_2.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_3.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_4.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_5.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_6.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_7.tga"
 		}
 	}
 }
@@ -124,13 +124,13 @@ MLW = {
 	army = {
 		male = {
 			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_1.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_1.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_2.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_3.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_4.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_5.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_6.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_7.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_1.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_2.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_3.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_4.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_5.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_6.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_7.tga"
 		}
 	}
 }
@@ -139,13 +139,13 @@ NMB = {
 	army = {
 		male = {
 			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_1.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_1.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_2.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_3.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_4.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_5.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_6.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_7.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_1.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_2.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_3.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_4.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_5.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_6.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_7.tga"
 		}
 	}
 }
@@ -154,13 +154,13 @@ NGA = {
 	army = {
 		male = {
 			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_1.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_1.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_2.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_3.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_4.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_5.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_6.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_7.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_1.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_2.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_3.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_4.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_5.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_6.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_7.tga"
 		}
 	}
 }
@@ -169,13 +169,13 @@ RWA = {
 	army = {
 		male = {
 			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_1.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_1.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_2.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_3.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_4.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_5.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_6.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_7.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_1.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_2.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_3.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_4.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_5.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_6.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_7.tga"
 		}
 	}
 }
@@ -184,13 +184,13 @@ TOG = {
 	army = {
 		male = {
 			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_1.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_1.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_2.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_3.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_4.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_5.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_6.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_7.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_1.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_2.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_3.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_4.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_5.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_6.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_7.tga"
 		}
 	}
 }
@@ -199,13 +199,13 @@ TZN = {
 	army = {
 		male = {
 			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_1.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_1.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_2.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_3.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_4.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_5.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_6.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_7.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_1.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_2.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_3.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_4.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_5.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_6.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_7.tga"
 		}
 	}
 }
@@ -214,13 +214,13 @@ UGA = {
 	army = {
 		male = {
 			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_1.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_1.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_2.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_3.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_4.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_5.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_6.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_7.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_1.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_2.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_3.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_4.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_5.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_6.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_7.tga"
 		}
 	}
 }
@@ -229,14 +229,1061 @@ ZAM = {
 	army = {
 		male = {
 			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_1.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_1.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_2.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_3.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_4.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_5.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_6.tga"
-			"gfx/leaders/Generic/Portrait_German_Africa_Generic_land_7.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_1.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_2.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_3.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_4.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_5.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_6.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_7.tga"
 		}
 	}
 }
 
+NFA = {
+	army = {
+		male = {
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_1.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_2.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_3.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_4.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_5.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_6.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_7.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_8.tga"
+		}
+	}
+
+	navy = {
+		male = {
+			"gfx/leaders/Generic/Portrait_Africa_Generic_navy_new_1.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_navy_new_2.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_navy_new_3.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_navy_new_4.tga"
+		}
+	}
+
+	political = {
+		vanguardist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_8.tga"
+			}
+		}
+		collectivist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+			}
+		}
+		libertarian_socialist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+			}
+		}
+		social_democrat = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_2.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+		social_liberal = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_2.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+		market_liberal = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_2.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+		social_conservative = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_2.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+			}
+		}
+		authoritarian_democrat = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+		paternal_autocrat = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_8.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+			}
+		}
+		national_populist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+		}
+		valkist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+	}
+}
+
+NFQ = {
+	army = {
+		male = {
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_1.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_2.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_3.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_4.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_5.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_6.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_7.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_8.tga"
+		}
+	}
+
+	navy = {
+		male = {
+			"gfx/leaders/Generic/Portrait_Africa_Generic_navy_new_1.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_navy_new_2.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_navy_new_3.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_navy_new_4.tga"
+		}
+	}
+
+	political = {
+		vanguardist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_8.tga"
+			}
+		}
+		collectivist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+			}
+		}
+		libertarian_socialist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+			}
+		}
+		social_democrat = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_2.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+		social_liberal = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_2.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+		market_liberal = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_2.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+		social_conservative = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_2.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+			}
+		}
+		authoritarian_democrat = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+		paternal_autocrat = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_8.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+			}
+		}
+		national_populist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+		}
+		valkist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+	}
+}
+
+ETH = {
+	army = {
+		male = {
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_1.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_2.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_3.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_4.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_5.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_6.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_7.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_8.tga"
+		}
+	}
+
+	navy = {
+		male = {
+			"gfx/leaders/Generic/Portrait_Africa_Generic_navy_new_1.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_navy_new_2.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_navy_new_3.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_navy_new_4.tga"
+		}
+	}
+
+	political = {
+		vanguardist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_8.tga"
+			}
+		}
+		collectivist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+			}
+		}
+		libertarian_socialist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+			}
+		}
+		social_democrat = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_2.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+		social_liberal = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_2.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+		market_liberal = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_2.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+		social_conservative = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_2.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+			}
+		}
+		authoritarian_democrat = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+		paternal_autocrat = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_8.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+			}
+		}
+		national_populist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+		}
+		valkist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+	}
+}
+
+IVO = {
+	army = {
+		male = {
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_1.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_2.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_3.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_4.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_5.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_6.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_7.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_8.tga"
+		}
+	}
+
+	navy = {
+		male = {
+			"gfx/leaders/Generic/Portrait_Africa_Generic_navy_new_1.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_navy_new_2.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_navy_new_3.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_navy_new_4.tga"
+		}
+	}
+
+	political = {
+		vanguardist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_8.tga"
+			}
+		}
+		collectivist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+			}
+		}
+		libertarian_socialist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+			}
+		}
+		social_democrat = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_2.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+		social_liberal = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_2.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+		market_liberal = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_2.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+		social_conservative = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_2.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+			}
+		}
+		authoritarian_democrat = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+		paternal_autocrat = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_8.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+			}
+		}
+		national_populist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+		}
+		valkist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+	}
+}
+
+DAH = {
+	army = {
+		male = {
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_1.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_2.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_3.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_4.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_5.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_6.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_7.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_8.tga"
+		}
+	}
+
+	navy = {
+		male = {
+			"gfx/leaders/Generic/Portrait_Africa_Generic_navy_new_1.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_navy_new_2.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_navy_new_3.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_navy_new_4.tga"
+		}
+	}
+
+	political = {
+		vanguardist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_8.tga"
+			}
+		}
+		collectivist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+			}
+		}
+		libertarian_socialist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+			}
+		}
+		social_democrat = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_2.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+		social_liberal = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_2.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+		market_liberal = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_2.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+		social_conservative = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_2.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+			}
+		}
+		authoritarian_democrat = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+		paternal_autocrat = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_8.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+			}
+		}
+		national_populist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+		}
+		valkist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+	}
+}
+
+TOG = {
+	army = {
+		male = {
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_1.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_2.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_3.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_4.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_5.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_6.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_7.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_8.tga"
+		}
+	}
+
+	navy = {
+		male = {
+			"gfx/leaders/Generic/Portrait_Africa_Generic_navy_new_1.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_navy_new_2.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_navy_new_3.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_navy_new_4.tga"
+		}
+	}
+
+	political = {
+		vanguardist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_8.tga"
+			}
+		}
+		collectivist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+			}
+		}
+		libertarian_socialist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+			}
+		}
+		social_democrat = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_2.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+		social_liberal = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_2.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+		market_liberal = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_2.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+		social_conservative = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_2.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+			}
+		}
+		authoritarian_democrat = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+		paternal_autocrat = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_8.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+			}
+		}
+		national_populist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+		}
+		valkist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+	}
+}
+
+VOL = {
+	army = {
+		male = {
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_1.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_2.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_3.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_4.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_5.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_6.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_7.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_8.tga"
+		}
+	}
+
+	navy = {
+		male = {
+			"gfx/leaders/Generic/Portrait_Africa_Generic_navy_new_1.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_navy_new_2.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_navy_new_3.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_navy_new_4.tga"
+		}
+	}
+
+	political = {
+		vanguardist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_8.tga"
+			}
+		}
+		collectivist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+			}
+		}
+		libertarian_socialist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+			}
+		}
+		social_democrat = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_2.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+		social_liberal = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_2.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+		market_liberal = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_2.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+		social_conservative = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_2.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+			}
+		}
+		authoritarian_democrat = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+		paternal_autocrat = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_8.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+			}
+		}
+		national_populist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+		}
+		valkist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+	}
+}
+
+COG = {
+	army = {
+		male = {
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_1.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_2.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_3.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_4.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_5.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_6.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_7.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_8.tga"
+		}
+	}
+
+	navy = {
+		male = {
+			"gfx/leaders/Generic/Portrait_Africa_Generic_navy_new_1.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_navy_new_2.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_navy_new_3.tga"
+			"gfx/leaders/Generic/Portrait_Africa_Generic_navy_new_4.tga"
+		}
+	}
+
+	political = {
+		vanguardist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_8.tga"
+			}
+		}
+		collectivist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+			}
+		}
+		libertarian_socialist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+			}
+		}
+		social_democrat = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_2.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+		social_liberal = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_2.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+		market_liberal = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_2.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+		social_conservative = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_2.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+			}
+		}
+		authoritarian_democrat = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+		paternal_autocrat = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_land_new_8.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+			}
+		}
+		national_populist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+		}
+		valkist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_8.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
+				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
+		}
+	}
+}
