@@ -5652,7 +5652,10 @@ focus_tree = {
 		available = {
 			has_capitulated = no
 			has_government = paternal_autocrat
+			OR = {
 			GRP = { is_subject_of = FRA }
+			BRW = { is_subject_of = FRA }
+			}
 		}
 		completion_reward = {
 			FRA = {

@@ -97,7 +97,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Walther schreiber"
+	name = "Walther Schreiber"
 	desc = "POLITICS_WALTHER_SCHREIBER_DESC"
 	picture = "Portrait_Ermland_Walther_Schreiber.tga"
 	expire = "1965.1.1"
