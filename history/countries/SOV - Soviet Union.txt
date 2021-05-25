@@ -105,10 +105,10 @@ add_ideas = {
 	SOV_political_divide
 	unpopular_conscription
 	unbalanced_economy
-	GEN_HOG_Col
-	GEN_FOR_Col
-	GEN_ECO_Col
-	GEN_SEC_Col
+	SOV_Aleksandra_Kollontay_hog_col
+	SOV_Georgiy_Malenkov_for_col
+	SOV_Sergey_Kirov_eco_col
+	SOV_Pyetr_Popkov_sec_col
 	workers_republic
 }
 
@@ -118,7 +118,7 @@ create_country_leader = {
 	picture = "Portrait_Soviet_Vyacheslav_Molotov.tga"
 	expire = "1965.1.1"
 	ideology = vanguardist_subtype
-	traits = {  SOV_the_bureaucrat }
+	traits = { SOV_the_bureaucrat }
 }
 create_country_leader = {
 	name = "Vladimir Lenin"

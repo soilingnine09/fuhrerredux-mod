@@ -1236,32 +1236,32 @@ country_event = {
 
 	option = { 
 		name = "Long Live Socialism!"
-			set_country_flag = SOV_regime_stabilized
-			clr_country_flag = SOV_struggle_time
-			set_country_flag = SOV_molotov
-			remove_ideas = SOV_political_divide
-			load_focus_tree = sov_focus_molotov
-			set_variable = {
-				soviet_corruption = 0
-			}
-			news_event = {
-				id = worldnews.136
-			}	
-			set_politics = {
-				ruling_party = vanguardist
-				elections_allowed = no
-			}
-			add_popularity = {
-				ideology = vanguardist
-				popularity = 0.15
-			}
-			SOV = {
-				add_ideas = {
-					SOV_Andery_Vyshinsky_for
-					SOV_Lazar_Kaganovich_eco
-					SOV_Nikolai_Yezhov_sec
-				}
-			}
+		set_country_flag = SOV_regime_stabilized
+		clr_country_flag = SOV_struggle_time
+		set_country_flag = SOV_molotov
+		remove_ideas = SOV_political_divide
+		load_focus_tree = sov_focus_molotov
+		set_variable = {
+			soviet_corruption = 0
+		}
+		news_event = {
+			id = worldnews.136
+		}	
+		set_politics = {
+			ruling_party = vanguardist
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = vanguardist
+			popularity = 0.15
+		}
+		remove_every_minister = yes
+		add_ideas = {
+			SOV_Vyacheslav_Molotov_for
+			SOV_Karl_Radek_for_van
+			SOV_Mikhail_Tomskiy_eco_van
+			SOV_Genrikh_Yagoda_sec_van
+		}
 		add_political_power = 100
 		add_stability = 0.1
 	}
@@ -1278,41 +1278,41 @@ country_event = {
 
 	option = { 
 		name = "Long Live Socialism!"
-			load_focus_tree = sov_focus_bukharin
-			set_country_flag = SOV_bukharin_in_power
-			set_country_flag = SOV_regime_stabilized
-			clr_country_flag = SOV_struggle_time
-			remove_ideas = SOV_political_divide
-			set_variable = {
-				soviet_corruption = 0
+		load_focus_tree = sov_focus_bukharin
+		set_country_flag = SOV_bukharin_in_power
+		set_country_flag = SOV_regime_stabilized
+		clr_country_flag = SOV_struggle_time
+		remove_ideas = SOV_political_divide
+		set_variable = {
+			soviet_corruption = 0
+		}
+		news_event = {
+			id = worldnews.135	
+		}	
+		add_popularity = {
+			ideology = libertarian_socialist
+			popularity = 0.15
+		}
+		create_country_leader = {
+			name = "Nikolai Bukharin"
+			desc = "NIKOLAI_BUKHARIN_DESC"
+			picture = "Portrait_Soviet_Nikolai_Bukharin.tga"
+			expire = "1965.1.1"
+			ideology = libertarian_socialist_subtype
+			traits = { SOV_the_theorist
 			}
-			news_event = {
-				id = worldnews.135	
-			}	
-			add_popularity = {
-				ideology = libertarian_socialist
-				popularity = 0.15
-			}
-			create_country_leader = {
-				name = "Nikolai Bukharin"
-				desc = "NIKOLAI_BUKHARIN_DESC"
-				picture = "Portrait_Soviet_Nikolai_Bukharin.tga"
-				expire = "1965.1.1"
-				ideology = libertarian_socialist_subtype
-				traits = { SOV_the_theorist
-				}
-			}
-			set_politics = {
-				ruling_party = libertarian_socialist
-				elections_allowed = no
-			}
-			SOV = {
-				add_ideas = {
-					SOV_Maxim_Gorky_for
-					SOV_Alexander_Bogdanov_eco
-					SOV_Anatoly_Lunacharsky_sec
-				}
-			}
+		}
+		set_politics = {
+			ruling_party = libertarian_socialist
+			elections_allowed = no
+		}
+		remove_every_minister = yes
+		add_ideas = {
+			SOV_Nikolay_Bukharin_hog_lib
+			SOV_Mariya_Spiridonova_for_lib
+			SOV_Matvey_Skobelev_eco_lib
+			SOV_Pavel_Sudoplatov_sec_lib
+		}
 		add_political_power = 100
 		add_stability = 0.1
 	}
@@ -2469,23 +2469,25 @@ country_event = {
 			set_politics = {
 				ruling_party = libertarian_socialist
 				elections_allowed = no
-			}
-			add_ideas = {
-				SOV_Maxim_Gorky_for
-				SOV_Alexander_Bogdanov_eco
-				SOV_Anatoly_Lunacharsky_sec
-			}			
+			}		
 			add_popularity = {
 				ideology = libertarian_socialist
 				popularity = 0.15
 			}
 			create_country_leader = {
-			name = "Alexander Shliapnikov"
-			desc = "POLITICS_ALEXANDER_SHLIAPNIKOV_DESC"
-			picture = "Portrait_Soviet_Alexander_Shliapnikov.tga"
-			expire = "1965.1.1"
-			ideology = libertarian_socialist_subtype
-			traits = { SOV_the_metallworker }
+				name = "Alexander Shliapnikov"
+				desc = "POLITICS_ALEXANDER_SHLIAPNIKOV_DESC"
+				picture = "Portrait_Soviet_Alexander_Shliapnikov.tga"
+				expire = "1965.1.1"
+				ideology = libertarian_socialist_subtype
+				traits = { SOV_the_metallworker }
+			}
+			remove_every_minister = yes
+			add_ideas = {
+				SOV_Nikolay_Bukharin_hog_lib
+				SOV_Mariya_Spiridonova_for_lib
+				SOV_Matvey_Skobelev_eco_lib
+				SOV_Pavel_Sudoplatov_sec_lib
 			}
 		}
 	}
@@ -3074,13 +3076,12 @@ country_event = {
 				ideology = vanguardist
 				popularity = 0.15
 			}
-			SOV = {
-				add_ideas = {
-					SOV_Vyacheslav_Molotov_for
-					SOV_Lazar_Kaganovich_eco
-					SOV_Vasily_Blokhin_sec
-					one_party_dictatorship
-				}
+			remove_every_minister = yes
+			add_ideas = {
+				SOV_Vyacheslav_Molotov_for
+				SOV_Karl_Radek_for_van
+				SOV_Mikhail_Tomskiy_eco_van
+				SOV_Genrikh_Yagoda_sec_van
 			}
 			create_country_leader = {
 				name = "Nikolai Yezhov"
@@ -3178,13 +3179,12 @@ country_event = {
 				ideology = vanguardist
 				popularity = 0.15
 			}
-			SOV = {
-				add_ideas = {
-					SOV_Andery_Vyshinsky_for
-					SOV_Lazar_Kaganovich_eco
-					SOV_Vasily_Blokhin_sec
-					one_party_dictatorship
-				}
+			remove_every_minister = yes
+			add_ideas = {
+				SOV_Vyacheslav_Molotov_for
+				SOV_Karl_Radek_for_van
+				SOV_Mikhail_Tomskiy_eco_van
+				SOV_Genrikh_Yagoda_sec_van
 			}
 			create_country_leader = {
 				name = "Kliment Voroshilov"

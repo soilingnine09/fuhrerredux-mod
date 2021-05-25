@@ -1,0 +1,126 @@
+spriteTypes = {
+
+    ####################################################
+    # SOV
+
+    ### Head of Government
+    spriteType = {
+        name = "GFX_idea_SOV_Vyacheslav_Molotov_hog_van"
+        texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Vyacheslav_Molotov.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_SOV_Aleksandra_Kollontay_hog_col"
+        texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Aleksandra_Kollontay.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_SOV_Nikolay_Bukharin_hog_lib"
+        texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Nikolay_Bukharin.tga"
+    }
+    ### Foreign Minister
+    spriteType = {
+        name = "GFX_idea_SOV_Karl_Radek_for_van"
+        texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Karl_Radek.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_SOV_Georgiy_Malenkov_for_col"
+        texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Georgiy_Malenkov.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_SOV_Mariya_Spiridonova_for_lib"
+        texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Mariya_Spiridonova.tga"
+    }
+    ### Economy Minister
+    spriteType = {
+        name = "GFX_idea_SOV_Mikhail_Tomskiy_eco_van"
+        texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Mikhail_Tomskiy.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_SOV_Sergey_Kirov_eco_col"
+        texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Sergey_Kirov.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_SOV_Matvey_Skobelev_eco_lib"
+        texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Matvey_Skobelev.tga"
+    }
+    ### Security Minister
+    spriteType = {
+        name = "GFX_idea_SOV_Genrikh_Yagoda_sec_van"
+        texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Genrikh_Yagoda.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_SOV_Pyetr_Popkov_sec_col"
+        texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Pyetr_Popkov.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_SOV_Pavel_Sudoplatov_sec_lib"
+        texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Pavel_Sudoplatov.tga"
+    }
+    ### Chief of Staff
+    spriteType = {
+        name = "GFX_idea_SOV_Aleksandr_Vasilevskiy_cos"
+        texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Aleksandr_Vasilevskiy.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_SOV_Aleksandr_Yegorov_cos"
+        texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Aleksandr_Yegorov.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_SOV_Boris_Shaposhnikov_cos"
+        texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Boris_Shaposhnikov.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_SOV_Kirill_Meretskov_cos"
+        texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Kirill_Meretskov.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_SOV_Mikhail_Tukhachevskiy_cos"
+        texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Mikhail_Tukhachevskiy.tga"
+    }
+    ### Chief of Army
+    spriteType = {
+        name = "GFX_idea_SOV_Aleksandr_Yegorov_carm"
+        texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Aleksandr_Yegorov.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_SOV_Ivan_Konev_carm"
+        texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Ivan_Konev.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_SOV_Rodion_Malinovskiy_carm"
+        texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Rodion_Malinovskiy.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_SOV_Vasiliy_Blyukher_carm"
+        texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Vasiliy_Blyukher.tga"
+    }
+    ### Chief of Navy
+    spriteType = {
+        name = "GFX_idea_SOV_Ivan_Isakov_cnav"
+        texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Ivan_Isakov.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_SOV_Mikhail_Viktorov_cnav"
+        texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Mikhail_Viktorov.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_SOV_Nikolay_Kuznetsov_cnav"
+        texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Nikolay_Kuznetsov.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_SOV_Vladimir_Orlov_cnav"
+        texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Vladimir_Orlov.tga"
+    }
+    # Chief of Air Force
+    spriteType = {
+        name = "GFX_idea_SOV_Aleksandr_Golovanov_cair"
+        texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Aleksandr_Golovanov.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_SOV_Aleksandr_Kazakov_cair"
+        texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Aleksandr_Kazakov.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_SOV_Aleksandr_Novikov_cair"
+        texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Aleksandr_Novikov.tga"
+    }
+}
