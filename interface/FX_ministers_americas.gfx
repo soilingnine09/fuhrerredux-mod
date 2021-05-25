@@ -1,0 +1,377 @@
+spriteTypes = {
+
+    ####################################################
+    # USA
+    ### Head of Government
+    spriteType = {
+        name = "GFX_idea_USA_Jack_Reed_hog_col"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Jack_Reed.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Floyd_B_Olson_hog_sde"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Floyd_B_Olson.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Glen_H_Taylor_hog_sde"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Glen_H_Taylor.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Henry_Wallace_hog_sde"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Henry_Wallace.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Philip_La_Follette_hog_sde"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Philip_La_Follette.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Huey_Long_hog_sde"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Huey_Long.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Alf_Landon_hog_sli"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Alf_Landon.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Charles_L_McNary_hog_sli"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Charles_L_McNary.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Earl_Warren_hog_sli"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Earl_Warren.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Harold_Stassen_hog_sli"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Harold_Stassen.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Herbert_Hoover_hog_sli"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Herbert_Hoover.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_John_W_Bricker_hog_sli"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_John_W_Bricker.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Quentin_Roosevelt_hog_sli"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Quentin_Roosevelt.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Quentin_Roosevelt_II_hog_sli"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Quentin_Roosevelt_II.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Thomas_Dewey_hog_sli"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Thomas_Dewey.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Adlai_Stevenson_hog_mli"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Adlai_Stevenson.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Alben_W_Barkley_hog_mli"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Alben_W_Barkley.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Dwight_D_Eisenhower_hog_mli"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Dwight_D_Eisenhower.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Harry_Truman_hog_mli"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Harry_Truman.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_James_E_Murray_hog_mli"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_James_E_Murray.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Wendell_Willkie_hog_mli"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Wendell_Willkie.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_William_Averell_Harriman_hog_mli"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_William_Averell_Harriman.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Douglas_MacArthur_hog_sco"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Douglas_MacArthur.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Happy_Chandler_hog_sco"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Happy_Chandler.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Harry_F_Byrd_hog_sco"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Harry_F_Byrd.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_James_Eastland_hog_sco"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_James_Eastland.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_John_Nance_Garner_hog_sco"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_John_Nance_Garner.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_John_Sparkman_hog_sco"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_John_Sparkman.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Richard_Russell_Jr_hog_sco"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Richard_Russell_Jr.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Strom_Thurmond_hog_sco"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Strom_Thurmond.tga"
+    }
+    ### Foreign Minister
+    spriteType = {
+        name = "GFX_idea_USA_Eugene_Dennis_for_col"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Eugene_Dennis.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Adolf_Augustus_Berle_Jr_for_sde"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Adolf_Augustus_Berle_Jr.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_George_Catlett_Marshall_Jr_for_sde"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_George_Catlett_Marshall_Jr.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Hugh_Simons_Gibson_for_sde"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Hugh_Simons_Gibson.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Henry_Lewis_Stimson_for_sli"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Henry_Lewis_Stimson.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_John_Bassett_Moore_for_sli"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_John_Bassett_Moore.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Cordell_Hull_for_mli"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Cordell_Hull.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Henry_Morgenthau_Jr_for_mli"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Henry_Morgenthau_Jr.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Dean_Gooderham_Acheson_for_sco"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Dean_Gooderham_Acheson.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_James_Watson_Gerard_Jr_for_sco"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_James_Watson_Gerard_Jr.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_William_Averell_Harriman_for_sco"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_William_Averell_Harriman.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Charles_Coughlin_for_ade"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Charles_Coughlin.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_John_Davison_Rockefeller_Jr_for_pau"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_John_Davison_Rockefeller_Jr.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_John_William_Davis_for_npo"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_John_William_Davis.tga"
+    }
+    ### Economy Minister
+    spriteType = {
+        name = "GFX_idea_USA_Paul_Mattick_eco_col"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Paul_Mattick.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Hjalmar_Petersen_eco_sde"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Hjalmar_Petersen.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Jesse_Holman_Jones_eco_sde"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Jesse_Holman_Jones.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Charles_Edison_eco_sli"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Charles_Edison.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Alfred_Emanuel_Smith_eco_mli"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Alfred_Emanuel_Smith.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Daniel_Calhoun_Roper_eco_mli"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Daniel_Calhoun_Roper.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_William_Daniel_Leahy_eco_sco"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_William_Daniel_Leahy.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Henry_Ford_eco_pau"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Henry_Ford.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Robert_Abercrombie_Lovett_eco_pau"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Robert_Abercrombie_Lovett.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_William_Harrison_Standley_eco_pau"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_William_Harrison_Standley.tga"
+    }
+    ### Security Minister
+    spriteType = {
+        name = "GFX_idea_USA_John_Abt_sec_col"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_John_Abt.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Elmer_Austin_Benson_sec_sde"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Elmer_Austin_Benson.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Konrad_Knute_Solberg_sec_sde"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Konrad_Knute_Solberg.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Charles_Douglas_Jackson_sec_sli"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Charles_Douglas_Jackson.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Charles_Evans_Hughes_Sr_sec_sli"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Charles_Evans_Hughes_Sr.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Alben_W_Barkley_sec_mli"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Alben_W_Barkley.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Robert_Ferdinand_Wagner_I_sec_mli"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Robert_Ferdinand_Wagner_I.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Martin_Dies_Jr_sec_sco"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Martin_Dies_Jr.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Joel_Bennett_Clark_sec_pau"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Joel_Bennett_Clark.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_William_Randolph_Hearst_Sr_sec_pau"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_William_Randolph_Hearst_Sr.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Gerald_K_Smith_sec_npo"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Gerald_K_Smith.tga"
+    }
+    ### Chief of Staff
+    spriteType = {
+        name = "GFX_idea_USA_Douglas_MacArthur_cos"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Douglas_MacArthur.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Joseph_Lawton_Collins_cos"
+        texturefile = "USA_Joseph_Lawton_Collins.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Malin_Craig_cos"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Malin_Craig.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Omar_Nelson_Bradley_cos"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Omar_Nelson_Bradley.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Walter_Bedell_Smith_cos"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Walter_Bedell_Smith.tga"
+    }
+    ### Chief of Army
+    spriteType = {
+        name = "GFX_idea_USA_Alexander_Vandegrift_carm"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Alexander_Vandegrift.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Dwight_D_Eisenhower_carm"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Dwight_D_Eisenhower.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Joseph_T_McNarney_carm"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Joseph_T_McNarney.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Kenneth_George_Althaus_carm"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Kenneth_George_Althaus.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Samuel_D_Sturgis_Jr_carm"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Samuel_D_Sturgis_Jr.tga"
+    }
+    ### Chief of Navy
+    spriteType = {
+        name = "GFX_idea_USA_Chester_William_Nimitz_Sr_cnav"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Chester_William_Nimitz_Sr.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Ernest_Joseph_King_cnav"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Ernest_Joseph_King.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Frank_Jack_Fletcher_cnav"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Frank_Jack_Fletcher.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Samuel_Murray_Robinson_cnav"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Samuel_Murray_Robinson.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Thomas_C_Kinkaid_cnav"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Thomas_C_Kinkaid.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Thomas_Charles_Hart_cnav"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Thomas_Charles_Hart.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_William_Daniel_Leahy_cnav"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_William_Daniel_Leahy.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_William_Halsey_Jr_cnav"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_William_Halsey_Jr.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_William_Harrison_Standley_cnav"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_William_Harrison_Standley.tga"
+    }
+    ### Chief of Air Force
+    spriteType = {
+        name = "GFX_idea_USA_Carl_Andrew_Spaatz_cair"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Carl_Andrew_Spaatz.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Edward_Vernon_Rickenbacker_cair"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Edward_Vernon_Rickenbacker.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Hoyt_Sanford_Vandenberg_cair"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Hoyt_Sanford_Vandenberg.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Ira_Clarence_Eaker_cair"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Ira_Clarence_Eaker.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_James_Harold_Doolittle_cair"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_James_Harold_Doolittle.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Joseph_Warren_Stilwell_cair"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Joseph_Warren_Stilwell.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_USA_Nathan_Bedford_Forrest_III_cair"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Nathan_Bedford_Forrest_III.tga"
+    }
+}

@@ -52287,26 +52287,28 @@ country_event = {
 		if = {
 			limit = {
 				has_country_flag = USA_republican_won
-				has_country_flag = USA_landon }
+				has_country_flag = USA_landon
+			}
 
-			set_politics = {ruling_party = market_liberal elections_allowed = no }
-
-			add_popularity = { ideology = market_liberal popularity = 0.15 }
+			set_politics = {
+				ruling_party = market_liberal 
+				elections_allowed = yes
+			}
+			add_popularity = { 
+				ideology = market_liberal 
+				popularity = 0.15
+			}
+			remove_every_minister = yes
+			add_ideas = {
+				USA_Alf_Landon_hog_mli
+				USA_Cordell_Hull_for_mli
+				USA_Alfred_Emanuel_Smith_eco_mli
+				USA_Robert_Ferdinand_Wagner_I_sec_mli
+			}
 
 			hidden_effect = {
-				create_country_leader = {
-					name = "Alf Landon"
-					desc = "POLITICS_ALF_LANDON_PELLEY_DESC"
-					picture = "Portrait_USA_Alf_Landon.tga"
-					expire = "1965.1.1"
-					ideology = market_liberal_subtype
-					traits = {}
-				}
+				retire_ideology_leader = market_liberal
 				set_country_flag = USA_1936_landon_won
-				remove_ideas_with_trait = head_of_government
-				remove_ideas_with_trait = foreign_minister
-				remove_ideas_with_trait = economy_minister
-				remove_ideas_with_trait = security_minister
 				every_country = {
 					limit = {
 						OR = {
@@ -52317,34 +52319,31 @@ country_event = {
 					news_event = { id = worldnews.107 }
 				}
 			}
-			add_ideas = USA_Alf_Landon_hog
-			add_ideas = USA_William_Averell_Harriman_for
-			add_ideas = USA_Robert_A_Taft_eco
-			add_ideas = USA_Henry_A_Arnold_sec
 		}
 		if = {
 			limit = {
 				has_country_flag = USA_republican_won
-				has_country_flag = USA_roosevelt }
+				has_country_flag = USA_roosevelt
+			}
 
-			set_politics = {ruling_party = social_liberal elections_allowed = no }
-
-			add_popularity = { ideology = social_liberal popularity = 0.25 }
+			set_politics = {
+				ruling_party = social_liberal 
+				elections_allowed = yes
+			}
+			add_popularity = { 
+				ideology = social_liberal
+				popularity = 0.25
+			}
+			remove_every_minister = yes
+			add_ideas = {
+				USA_Quentin_Roosevelt_hog_sli
+				USA_Henry_Lewis_Stimson_for_sli
+				USA_Charles_Edison_eco_sli
+				USA_Charles_Evans_Hughes_Sr_sec_sli
+			}
 
 			hidden_effect = {
-				create_country_leader = {
-					name = "Quentin Roosevelt"
-					desc = "POLITICS_QUENTIN_ROOSEVELT_DESC"
-					picture = "Portrait_USA_Quentin_Roosevelt.tga"
-					expire = "1947.1.1"
-					ideology = social_liberal_subtype
-					traits = {}
-				}
 				set_country_flag = USA_1936_roosevelt_won
-				remove_ideas_with_trait = head_of_government
-				remove_ideas_with_trait = foreign_minister
-				remove_ideas_with_trait = economy_minister
-				remove_ideas_with_trait = security_minister
 				every_country = {
 					limit = {
 						OR = {
@@ -52355,35 +52354,31 @@ country_event = {
 					news_event = { id = worldnews.106 }
 				}
 			}
-			add_ideas = USA_Quentin_Roosevelt_hog
-			add_ideas = USA_Harry_Hopkins_for
-			add_ideas = USA_Rexford_Tugwell_eco
-			add_ideas = USA_Frank_Knox_sec
-
 		}
 		if = {
 			limit = {
 				has_country_flag = USA_democrat_won
-				has_country_flag = USA_garner }
+				has_country_flag = USA_garner
+			}
 
-			set_politics = {ruling_party = social_conservative elections_allowed = no }
-
-			add_popularity = { ideology = social_conservative popularity = 0.25 }
+			set_politics = {
+				ruling_party = social_conservative 
+				elections_allowed = yes
+			}
+			add_popularity = { 
+				ideology = social_conservative 
+				popularity = 0.25
+			}
+			remove_every_minister = yes
+			add_ideas = {
+				USA_John_Nance_Garner_hog_sco
+				USA_Dean_Gooderham_Acheson_for_sco
+				USA_William_Daniel_Leahy_eco_sco
+				USA_Martin_Dies_Jr_sec_sco
+			}
 
 			hidden_effect = {
-				create_country_leader = {
-					name = "John Nance Garner"
-					desc = "POLITICS_JOHN_NANCE_GARNER_DESC"
-					picture = "Portrait_USA_John_Nance_Garner.tga"
-					expire = "1965.1.1"
-					ideology = social_conservative_subtype
-					traits = {}
-				}
 				set_country_flag = USA_1936_garner_won
-				remove_ideas_with_trait = head_of_government
-				remove_ideas_with_trait = foreign_minister
-				remove_ideas_with_trait = economy_minister
-				remove_ideas_with_trait = security_minister
 				every_country = {
 					limit = {
 						OR = {
@@ -52394,35 +52389,31 @@ country_event = {
 					news_event = { id = worldnews.108 }
 				}
 			}
-			add_ideas = USA_John_Nance_Garner_hog
-			add_ideas = USA_George_F_Kennan_for
-			add_ideas = USA_Howard_Eldred_Kirshner_eco
-			add_ideas = USA_Harry_S_Truman_sec
-
 		}
 		if = {
 			limit = {
 				has_country_flag = USA_democrat_won
-				has_country_flag = USA_long }
+				has_country_flag = USA_long
+			}
 
-			set_politics = {ruling_party = social_democrat elections_allowed = no }
-
-			add_popularity = { ideology = social_democrat popularity = 0.25 }
+			set_politics = {
+				ruling_party = social_democrat
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.25
+			}
+			remove_every_minister = yes
+			add_ideas = {
+				USA_Huey_Long_hog_sde
+				USA_George_Catlett_Marshall_Jr_for_sde
+				USA_Hjalmar_Petersen_eco_sde
+				USA_Konrad_Knute_Solberg_sec_sde
+			}
 
 			hidden_effect = {
-				create_country_leader = {
-					name = "Huey Long"
-					desc = "POLITICS_HUEY_LONG_DESC"
-					picture = "Portrait_USA_Huey_Long.tga"
-					expire = "1965.1.1"
-					ideology = social_democrat_subtype
-					traits = {}
-				}
 				set_country_flag = USA_1936_long_won
-				remove_ideas_with_trait = head_of_government
-				remove_ideas_with_trait = foreign_minister
-				remove_ideas_with_trait = economy_minister
-				remove_ideas_with_trait = security_minister
 				every_country = {
 					limit = {
 						OR = {
@@ -52433,10 +52424,6 @@ country_event = {
 					news_event = { id = worldnews.105 }
 				}
 			}
-			add_ideas = USA_Huey_Long_hog
-			add_ideas = USA_Joseph_E_Davies_for
-			add_ideas = USA_Francis_Townsend_eco
-			add_ideas = USA_Frederick_Steiwer_sec
 		}
 		hidden_effect = {
 			clr_country_flag = USA_garner_won_mississippi
