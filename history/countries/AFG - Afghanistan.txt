@@ -138,39 +138,6 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Unspecified"
-	desc = "POLITICS_GUL_PACHA_ULFAT_DESC"
-	picture = "Portrait_Afghanistan_Gul_Pacha_Ulfat.tga"
-	expire = "1965.1.1"
-	ideology = market_liberal_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Unspecified"
-	desc = "POLITICS_GUL_PACHA_ULFAT_DESC"
-	picture = "Portrait_Afghanistan_Gul_Pacha_Ulfat.tga"
-	expire = "1965.1.1"
-	ideology = social_conservative_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Unspecified"
-	desc = "POLITICS_GUL_PACHA_ULFAT_DESC"
-	picture = "Portrait_Afghanistan_Gul_Pacha_Ulfat.tga"
-	expire = "1965.1.1"
-	ideology = valkist_subtype
-	traits = {
-		#
-	}
-}
-
 create_field_marshal = {
 	name = "Sardar Shah Wali Khan"
 	picture = "Portrait_Afghanistan_Shah_Wali_Khan.tga"

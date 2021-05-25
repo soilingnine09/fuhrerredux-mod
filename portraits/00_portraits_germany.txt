@@ -156,6 +156,18 @@ PRU = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_12.tga"
 			}
 		}
+		valkist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_12.tga"
+			}
+		}
 	}
 }
 
@@ -304,6 +316,18 @@ WGR = {
 			}
 		}
 		national_populist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_12.tga"
+			}
+		}
+		valkist = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
@@ -474,6 +498,18 @@ DDR = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_12.tga"
 			}
 		}
+		valkist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_12.tga"
+			}
+		}
 	}
 }
 
@@ -622,6 +658,18 @@ SAX = {
 			}
 		}
 		national_populist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_12.tga"
+			}
+		}
+		valkist = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
@@ -792,6 +840,18 @@ POM = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_12.tga"
 			}
 		}
+		valkist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_12.tga"
+			}
+		}
 	}
 }
 
@@ -940,6 +1000,18 @@ SHO = {
 			}
 		}
 		national_populist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_12.tga"
+			}
+		}
+		valkist = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
@@ -1110,6 +1182,18 @@ BRW = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_12.tga"
 			}
 		}
+		valkist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_12.tga"
+			}
+		}
 	}
 }
 
@@ -1258,6 +1342,18 @@ HAN = {
 			}
 		}
 		national_populist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_12.tga"
+			}
+		}
+		valkist = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
@@ -1428,6 +1524,18 @@ ERM = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_12.tga"
 			}
 		}
+		valkist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_12.tga"
+			}
+		}
 	}
 }
 
@@ -1576,6 +1684,18 @@ HES = {
 			}
 		}
 		national_populist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_12.tga"
+			}
+		}
+		valkist = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
@@ -1746,6 +1866,18 @@ BAW = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_12.tga"
 			}
 		}
+		valkist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_12.tga"
+			}
+		}
 	}
 }
 
@@ -1894,6 +2026,18 @@ BAY = {
 			}
 		}
 		national_populist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_12.tga"
+			}
+		}
+		valkist = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
@@ -2064,6 +2208,18 @@ SIL = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_12.tga"
 			}
 		}
+		valkist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_12.tga"
+			}
+		}
 	}
 }
 
@@ -2212,6 +2368,18 @@ GRP = {
 			}
 		}
 		national_populist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_12.tga"
+			}
+		}
+		valkist = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
@@ -2403,6 +2571,18 @@ GEX = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_12.tga"
 			}
 		}
+		valkist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_12.tga"
+			}
+		}
 	}
 }
 
@@ -2552,6 +2732,18 @@ MAF = {
 			}
 		}
 		national_populist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_12.tga"
+			}
+		}
+		valkist = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"

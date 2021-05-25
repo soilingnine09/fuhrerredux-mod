@@ -150,6 +150,13 @@ ARM = {
 				"gfx/leaders/Generic/Portrait_Arabia_Generic_new_3.tga"
 			}
 		}
+		valkist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Arabia_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Arabia_Generic_new_6.tga"
+				"gfx/leaders/Generic/Portrait_Arabia_Generic_new_3.tga"
+			}
+		}
 	}
 }
 
@@ -258,6 +265,13 @@ AZR = {
 			}
 		}
 		national_populist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Arabia_Generic_new_4.tga"
+				"gfx/leaders/Generic/Portrait_Arabia_Generic_new_6.tga"
+				"gfx/leaders/Generic/Portrait_Arabia_Generic_new_3.tga"
+			}
+		}
+		valkist = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Arabia_Generic_new_4.tga"
 				"gfx/leaders/Generic/Portrait_Arabia_Generic_new_6.tga"
@@ -453,6 +467,18 @@ GEO = {
 			}
 		}
 		national_populist = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_12.tga"
+			}
+		}
+		valkist = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
