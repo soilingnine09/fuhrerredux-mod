@@ -2659,7 +2659,7 @@ country_event = {
             }
             BRW = {
                 add_state_core = PREV
-                add_state_core = PREV
+                transfer_state = PREV
             }
         }
         every_owned_state = {
