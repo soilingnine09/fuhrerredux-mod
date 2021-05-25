@@ -102,7 +102,7 @@ on_actions = {
                     ROOT = { tag = PHI }
                 }
                 ROOT = {
-                    country_event = { id = phi.49 days = 2 }
+                    country_event = { id = phi.31 days = 2 }
                 }
             }
         }

@@ -788,6 +788,10 @@ country_event = { # Demands
             remove_ideas = PHI_worker_strikes1
         }
         hidden_effect = {
+            set_politics = {
+                ruling_party = authoritarian_democrat
+                elections_allowed = yes
+            }
             clr_country_flag = PHI_1936_elections_cancelled
         }
     }
@@ -870,6 +874,7 @@ country_event = { # Civil War!
 
                 set_capital = 623
                 load_oob = PHI_civil_war
+                add_ideas = PHI_the_filipino_civil_war
             }
             PHR = {
                 add_state_core = 327
@@ -882,6 +887,7 @@ country_event = { # Civil War!
                     target = PHI
                     type = annex_everything
                 }
+                add_ideas = PHI_the_filipino_civil_war
             }
         }
     }
@@ -1384,6 +1390,19 @@ country_event = { # Independence Day
         hidden_effect = {
             country_event = { id = phi.30 days = 365 }
         }
+    }
+}
+
+country_event = { # Insurrection Crushed
+    id = phi.31
+    title = phi.31.t
+    desc = phi.31.d
+    picture = GFX_report_event_spain_civil_war_volunteers_02
+    is_triggered_only = yes
+
+    option = {
+        name = phi.31.a
+        remove_ideas = PHI_the_filipino_civil_war
     }
 }
 

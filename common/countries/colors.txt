@@ -866,12 +866,10 @@ GAB = {
 	color = rgb { 130 167 18 }
 	color_ui = rgb { 130 167 18 }
 }
-
 DAH = {
 	color = rgb { 38 147 125 }
 	color_ui = rgb { 38 147 125 }
 }
-
 TAU = {
 	color = rgb { 128  64  64 }
 	color_ui = rgb { 128  64  64 }
@@ -879,6 +877,10 @@ TAU = {
 NKR = {
 	color = rgb { 182  48  29 }
 	color_ui = rgb { 182  48  29 }
+}
+PHR = {
+	color = rgb { 222 41 16 }
+	color_ui = rgb { 222 41 16 }
 }
 
 #################################

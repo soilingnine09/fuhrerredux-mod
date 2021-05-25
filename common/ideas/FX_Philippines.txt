@@ -418,6 +418,14 @@ ideas = {
                 industrial_capacity_dockyard = -0.25
             }
         }
+        PHI_the_filipino_civil_war = {
+            allowed = { is_a_filipino_tag = yes }
+            modifier = {
+                conscription_factor = 0.15
+                army_core_attack_factor = 0.05
+                army_core_defence_factor = 0.05
+            }
+        }
         PHI_government_housing = {
             allowed = { is_a_filipino_tag = yes }
             picture = generic_build_infrastructure
