@@ -1,5 +1,3 @@
-### African tags using the German Askari military portraits
-
 BRD = {
 	army = {
 		male = {

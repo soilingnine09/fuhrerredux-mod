@@ -1,8 +1,8 @@
 ideas = {
     country = {
 
-        DEU_valkist_society = {
-            allowed = { original_tag = DEU }
+        GRP_valkist_society = {
+            allowed = { original_tag = GRP }
 
             available = { 
                 NOT = { has_government = valkist }
@@ -17,8 +17,8 @@ ideas = {
             }
         }
 
-        DEU_valkist_economy = {
-            allowed = { original_tag = DEU }
+        GRP_valkist_economy = {
+            allowed = { original_tag = GRP }
 
             available = {
                 NOT = { has_government = valkist }
@@ -32,8 +32,8 @@ ideas = {
             }
         }
 
-        DEU_valkist_bureaucracy = {
-            allowed = { original_tag = DEU }
+        GRP_valkist_bureaucracy = {
+            allowed = { original_tag = GRP }
 
             available = {
                 NOT = { has_government = valkist }
@@ -50,8 +50,8 @@ ideas = {
             }
         }
 
-        DEU_imprisoned_officers = {
-            allowed = { original_tag = DEU }
+        GRP_imprisoned_officers = {
+            allowed = { original_tag = GRP }
 
             available = {
                 NOT = { has_government = valkist }
@@ -67,8 +67,8 @@ ideas = {
             }
         }
 
-        DEU_economic_downhill = {
-            allowed = { original_tag = DEU }
+        GRP_economic_downhill = {
+            allowed = { original_tag = GRP }
 
             available = {
                 NOT = { has_government = valkist }
@@ -82,8 +82,8 @@ ideas = {
             }
         }
 
-        DEU_steady_economic_recovery = {
-            allowed = { original_tag = DEU }
+        GRP_steady_economic_recovery = {
+            allowed = { original_tag = GRP }
 
             available = {
                 NOT = { has_government = valkist }
@@ -97,8 +97,8 @@ ideas = {
             }
         }
 
-        DEU_bundeswehr = {
-            allowed = { original_tag = DEU }
+        GRP_bundeswehr = {
+            allowed = { original_tag = GRP }
 
             picture = HUN_secret_rearmament
 
@@ -108,8 +108,8 @@ ideas = {
             }
         }
 
-        DEU_new_labour_code_idea = {
-            allowed = { original_tag = DEU }
+        GRP_new_labour_code_idea = {
+            allowed = { original_tag = GRP }
 
             picture = country_focus_efficency
 
@@ -120,8 +120,8 @@ ideas = {
             }
         }
 
-        DEU_food_self_suffiency = {
-            allowed = { original_tag = DEU }
+        GRP_food_self_suffiency = {
+            allowed = { original_tag = GRP }
 
             picture = generic_agrarian_reform
 
@@ -130,8 +130,8 @@ ideas = {
             }
         }
 
-        DEU_labour_unions = {
-            allowed = { original_tag = DEU }
+        GRP_labour_unions = {
+            allowed = { original_tag = GRP }
 
             picture = generic_production_bonus
 
@@ -141,8 +141,8 @@ ideas = {
             }
         }
 
-        DEU_unemployment_benefits = {
-            allowed = { original_tag = DEU }
+        GRP_unemployment_benefits = {
+            allowed = { original_tag = GRP }
 
             picture = raj_risk_of_famine
 
@@ -153,8 +153,8 @@ ideas = {
             }
         }
 
-        DEU_consumer_protectionism = {
-            allowed = { original_tag = DEU }
+        GRP_consumer_protectionism = {
+            allowed = { original_tag = GRP }
 
             picture = ROM_king_carol_ii_hedonist
 
@@ -163,8 +163,8 @@ ideas = {
             }
         }
 
-        DEU_the_church = {
-            allowed = { original_tag = DEU }
+        GRP_the_church = {
+            allowed = { original_tag = GRP }
 
             picture = IRE_catholic
 
@@ -175,8 +175,8 @@ ideas = {
             }
         }
 
-        DEU_economic_protectionism = {
-            allowed = { original_tag = DEU }
+        GRP_economic_protectionism = {
+            allowed = { original_tag = GRP }
 
             picture = generic_goods_red_bonus
 
@@ -185,8 +185,8 @@ ideas = {
             }
         }
 
-        DEU_bastion_of_democracy = {
-            allowed = { original_tag = DEU }
+        GRP_bastion_of_democracy = {
+            allowed = { original_tag = GRP }
 
             picture = generic_democratic_drift_bonus
 
@@ -196,8 +196,8 @@ ideas = {
             }
         }
 
-        DEU_a_new_and_better_germany = {
-            allowed = { original_tag = DEU }
+        GRP_a_new_and_better_germany = {
+            allowed = { original_tag = GRP }
 
             picture = triumphant_will
 
@@ -207,7 +207,7 @@ ideas = {
             }
         }
 
-        DEU_european_trade_agreements = {
+        GRP_european_trade_agreements = {
             picture = capital_outflow
 
             modifier = {
@@ -217,7 +217,7 @@ ideas = {
             }
         }
         
-        DEU_european_passport_union = {
+        GRP_european_passport_union = {
             picture = generic_democratic_drift_bonus
 
             modifier = {
@@ -225,7 +225,7 @@ ideas = {
             }
         }
 
-        DEU_european_parliament = {
+        GRP_european_parliament = {
             picture = generic_victors_of_ww1
 
             modifier = {

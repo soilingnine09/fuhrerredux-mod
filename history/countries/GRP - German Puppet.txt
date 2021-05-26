@@ -41,10 +41,11 @@ set_technology = {
 
 add_ideas = {
 	party_pop_0_40
-	GEN_hog_mli
-	GEN_for_mli
-	GEN_eco_mli
-	GEN_sec_mli
+	DEU_valkist_society
+	DEU_valkist_economy
+	DEU_valkist_bureaucracy
+	DEU_imprisoned_officers
+	DEU_economic_downhill
 	parliamentary_republic
 }
 

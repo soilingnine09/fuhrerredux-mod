@@ -32,10 +32,6 @@ on_actions = {
 				country_event = gov.0
 		   }
 		}
-<<<<<<< Updated upstream
-	 }
-
-=======
 	}
 	on_startup = {
 		effect = {
@@ -109,7 +105,6 @@ on_actions = {
 			clear_array = ROOT.CHI_claim_province
 		}
 	}
->>>>>>> Stashed changes
 	on_startup = {
 	    effect = {
 

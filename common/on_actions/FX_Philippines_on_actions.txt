@@ -40,7 +40,7 @@ on_actions = {
                     limit = {
                         has_game_rule = {
                             rule = PHI_AI_BEHAVIOR
-                            option = PHI_RETURN_TO_THE_PAST
+                            option = PHI_BACK_TO_THE_PAST
                         }
                     }
                     set_country_flag = PHI_ai_chosen
