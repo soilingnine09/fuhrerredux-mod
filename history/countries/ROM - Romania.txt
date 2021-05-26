@@ -55,10 +55,10 @@ if = {
 add_ideas = {
 	GEN_entente_member
 	rom_regency
-	GEN_HOG_Sde
+	GEN_hog_sde
 	GEN_FOR_Sde
-	GEN_ECO_Sde
-	GEN_SEC_Sde
+	GEN_eco_sde
+	GEN_sec_sde
 	constitutional_monarchy
 }
 

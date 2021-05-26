@@ -19,10 +19,10 @@ add_ideas = {
 	unbalanced_industry
 	iliterate_population
 	parliamentary_republic
-	GEN_HOG_Sli
-	GEN_FOR_Sli
-	GEN_ECO_Sli
-	GEN_SEC_Sli
+	GEN_hog_sli
+	GEN_for_sli
+	GEN_eco_sli
+	GEN_sec_sli
 }
 
 set_convoys = 40

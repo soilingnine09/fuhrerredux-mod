@@ -63,9 +63,9 @@ add_ideas = {
 	low_economic_mobilisation
 	GEN_entente_member
 	SPR_Manuel_Azana_Diaz_hog_sli
-	GEN_FOR_Sli
-	GEN_ECO_Sli
-	GEN_SEC_Sli
+	GEN_for_sli
+	GEN_eco_sli
+	GEN_sec_sli
 	parliamentary_republic
 }
 

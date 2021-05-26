@@ -10,10 +10,10 @@ set_technology = {
 
 add_ideas = {
 	party_pop_0_30
-	GEN_HOG_Pau
-	GEN_FOR_Pau
-	GEN_ECO_Pau
-	GEN_SEC_Pau
+	GEN_hog_pau
+	GEN_for_pau
+	GEN_eco_pau
+	GEN_sec_pau
 	absolute_monarchy
 }
 

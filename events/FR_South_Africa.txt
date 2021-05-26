@@ -2971,10 +2971,10 @@ country_event = { # Fate of East Africa
 					popularity = 60
 				}
 				add_ideas = {
-					GEN_HOG_Val
-					GEN_FOR_Val
-					GEN_ECO_Val
-					GEN_SEC_Val
+					GEN_hog_val
+					GEN_for_val
+					GEN_eco_val
+					GEN_sec_val
 					limited_conscription
 				}
 			}
@@ -3228,10 +3228,10 @@ country_event = { # Fate of Egypt
 					popularity = 60
 				}
 				add_ideas = {
-					GEN_HOG_Val
-					GEN_FOR_Val
-					GEN_ECO_Val
-					GEN_SEC_Val
+					GEN_hog_val
+					GEN_for_val
+					GEN_eco_val
+					GEN_sec_val
 					limited_conscription
 				}
 			}
@@ -3364,10 +3364,10 @@ country_event = { # Fate of Abyssinia
 					popularity = 60
 				}
 				add_ideas = {
-					GEN_HOG_Val
-					GEN_FOR_Val
-					GEN_ECO_Val
-					GEN_SEC_Val
+					GEN_hog_val
+					GEN_for_val
+					GEN_eco_val
+					GEN_sec_val
 					limited_conscription
 				}
 			}

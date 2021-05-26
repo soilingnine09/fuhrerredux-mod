@@ -92,10 +92,10 @@ add_ideas = {
 	extensive_conscription
 	KNE_military_refugees
 	constitutional_monarchy
-	GEN_HOG_Sco
-	GEN_FOR_Sco
-	GEN_ECO_Sco
-	GEN_SEC_Sco	
+	GEN_hog_sco
+	GEN_for_sco
+	GEN_eco_sco
+	GEN_sec_sco	
 }
 
 create_country_leader = {

@@ -633,9 +633,9 @@ on_actions = {
 					ROOT = {
 						add_ideas = {
 							GEN_hog_van
-							GEN_FOR_Van
-							GEN_ECO_Van
-							GEN_SEC_Van
+							GEN_for_van
+							GEN_eco_van
+							GEN_sec_van
 						}
 					}
 				}
@@ -647,10 +647,10 @@ on_actions = {
 					}
 					ROOT = {
 						add_ideas = {
-							GEN_HOG_Col
-							GEN_FOR_Col
-							GEN_ECO_Col
-							GEN_SEC_Col
+							GEN_hog_col
+							GEN_for_col
+							GEN_eco_col
+							GEN_sec_col
 						}
 					}
 				}
@@ -663,9 +663,9 @@ on_actions = {
 					ROOT = {
 						add_ideas = {
 							GEN_hog_lib
-							GEN_FOR_Lis
-							GEN_ECO_Lis
-							GEN_SEC_Lis
+							GEN_for_lib
+							GEN_eco_lib
+							GEN_sec_lib
 						}
 					}
 				}
@@ -677,10 +677,10 @@ on_actions = {
 					}
 					ROOT = {
 						add_ideas = {
-							GEN_HOG_Sde
+							GEN_hog_sde
 							GEN_FOR_Sde
-							GEN_ECO_Sde
-							GEN_SEC_Sde
+							GEN_eco_sde
+							GEN_sec_sde
 						}
 					}
 				}
@@ -692,10 +692,10 @@ on_actions = {
 					}
 					ROOT = {
 						add_ideas = {
-							GEN_HOG_Sli
-							GEN_FOR_Sli
-							GEN_ECO_Sli
-							GEN_SEC_Sli
+							GEN_hog_sli
+							GEN_for_sli
+							GEN_eco_sli
+							GEN_sec_sli
 						}
 					}
 				}
@@ -707,10 +707,10 @@ on_actions = {
 					}
 					ROOT = {
 						add_ideas = {
-							GEN_HOG_Mli
-							GEN_FOR_Mli
-							GEN_ECO_Mli
-							GEN_SEC_Mli
+							GEN_hog_mli
+							GEN_for_mli
+							GEN_eco_mli
+							GEN_sec_mli
 						}
 					}
 				}
@@ -722,10 +722,10 @@ on_actions = {
 					}
 					ROOT = {
 						add_ideas = {
-							GEN_HOG_Mli
-							GEN_FOR_Mli
-							GEN_ECO_Mli
-							GEN_SEC_Mli
+							GEN_hog_mli
+							GEN_for_mli
+							GEN_eco_mli
+							GEN_sec_mli
 						}
 					}
 				}
@@ -737,10 +737,10 @@ on_actions = {
 					}
 					ROOT = {
 						add_ideas = {
-							GEN_HOG_Sco
-							GEN_FOR_Sco
-							GEN_ECO_Sco
-							GEN_SEC_Sco
+							GEN_hog_sco
+							GEN_for_sco
+							GEN_eco_sco
+							GEN_sec_sco
 						}
 					}
 				}
@@ -752,10 +752,10 @@ on_actions = {
 					}
 					ROOT = {
 						add_ideas = {
-							GEN_HOG_Ade
-							GEN_FOR_Ade
-							GEN_ECO_Ade
-							GEN_SEC_Ade
+							GEN_hog_ade
+							GEN_for_ade
+							GEN_eco_ade
+							GEN_sec_ade
 						}
 					}
 				}
@@ -767,10 +767,10 @@ on_actions = {
 					}
 					ROOT = {
 						add_ideas = {
-							GEN_HOG_Pau
-							GEN_FOR_Pau
-							GEN_ECO_Pau
-							GEN_SEC_Pau
+							GEN_hog_pau
+							GEN_for_pau
+							GEN_eco_pau
+							GEN_sec_pau
 						}
 					}
 				}
@@ -782,20 +782,20 @@ on_actions = {
 					}
 					ROOT = {
 						add_ideas = {
-							GEN_HOG_Npo
-							GEN_FOR_Npo
-							GEN_ECO_Npo
-							GEN_SEC_Npo
+							GEN_hog_npo
+							GEN_for_npo
+							GEN_eco_npo
+							GEN_sec_npo
 						}
 					}
 				}
 				else = {
 					ROOT = {
 						add_ideas = {
-							GEN_HOG_Val
-							GEN_FOR_Val
-							GEN_ECO_Val
-							GEN_SEC_Val
+							GEN_hog_val
+							GEN_for_val
+							GEN_eco_val
+							GEN_sec_val
 						}
 					}
 				}

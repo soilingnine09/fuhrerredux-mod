@@ -27,10 +27,10 @@ add_ideas = {
 	INS_war_for_insulindian_independence_idea
 	INS_non_existing_economy_idea
 	INS_political_instability_idea
-	GEN_HOG_Ade
-	GEN_FOR_Ade
-	GEN_ECO_Ade
-	GEN_SEC_Ade	
+	GEN_hog_ade
+	GEN_for_ade
+	GEN_eco_ade
+	GEN_sec_ade	
 	presidential_republic
 }
 

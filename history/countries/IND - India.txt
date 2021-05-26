@@ -47,7 +47,7 @@ if = {
 add_ideas = {
 	BHC_Hemanta_Kumar_Sarkar_hog_tot
 	BHC_Sardul_Singh_Caveeshar_for_tot
-	GEN_ECO_Npo
+	GEN_eco_npo
 	BHC_Subhas_Chandra_Bose_sec_tot
 	revolutionary_movement
 }

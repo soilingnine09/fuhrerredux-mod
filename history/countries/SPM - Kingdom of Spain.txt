@@ -61,9 +61,9 @@ add_ideas = {
 	extensive_conscription
 	low_economic_mobilisation
 	SPM_Jose_Sanjurjo_Sacanell_hog_ade
-	GEN_FOR_Pau
-	GEN_ECO_Pau
-	GEN_SEC_Pau
+	GEN_for_pau
+	GEN_eco_pau
+	GEN_sec_pau
 	absolute_monarchy
 }
 

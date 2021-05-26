@@ -51,10 +51,10 @@ add_ideas = {
 	
 	BEA_disputes_between_british_and_dutch_idea
 	BEA_colonial_nation_idea
-	GEN_HOG_Pau
-	GEN_FOR_Pau
-	GEN_ECO_Pau
-	GEN_SEC_Pau
+	GEN_hog_pau
+	GEN_for_pau
+	GEN_eco_pau
+	GEN_sec_pau
 	colonial_government
 }
 

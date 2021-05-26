@@ -88,10 +88,10 @@ add_ideas = {
 	SHO_hamburg_legacy
 	SHO_nazbol_gang
 	SHO_political_repression
-	GEN_HOG_Ade
-	GEN_ECO_Ade
-	GEN_SEC_Ade
-	GEN_FOR_Ade
+	GEN_hog_ade
+	GEN_eco_ade
+	GEN_sec_ade
+	GEN_for_ade
 	republican_dictatorship
 }
 

@@ -46,10 +46,10 @@ set_war_support = 0.40
 
 add_ideas = {
 	party_pop_0_40
-	GEN_HOG_Sde
+	GEN_hog_sde
 	GEN_FOR_Sde
-	GEN_ECO_Sde
-	GEN_SEC_Sde
+	GEN_eco_sde
+	GEN_sec_sde
 	parliamentary_republic
 }
 

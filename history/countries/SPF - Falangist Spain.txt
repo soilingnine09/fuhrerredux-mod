@@ -62,9 +62,9 @@ add_ideas = {
 	extensive_conscription
 	low_economic_mobilisation
 	SPF_Jose_Antonio_Primo_de_Rivera_hog_npo
-	GEN_FOR_Npo
-	GEN_ECO_Pau
-	GEN_SEC_Pau
+	GEN_for_npo
+	GEN_eco_pau
+	GEN_sec_pau
 	one_party_dictatorship
 }
 

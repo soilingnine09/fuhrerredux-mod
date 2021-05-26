@@ -29,10 +29,10 @@ set_war_support = 0.55
 
 add_ideas = {
 	party_pop_0_30
-	GEN_HOG_Sco
-	GEN_FOR_Sco
-	GEN_ECO_Sco
-	GEN_SEC_Sco
+	GEN_hog_sco
+	GEN_for_sco
+	GEN_eco_sco
+	GEN_sec_sco
 	parliamentary_republic
 }
 

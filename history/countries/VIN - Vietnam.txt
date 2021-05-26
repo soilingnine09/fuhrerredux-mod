@@ -50,10 +50,10 @@ if = {
 }
 
 add_ideas = {
-	GEN_HOG_Col
-	GEN_FOR_Col
-	GEN_ECO_Col
-	GEN_SEC_Col
+	GEN_hog_col
+	GEN_for_col
+	GEN_eco_col
+	GEN_sec_col
 	VIN_unstable_state
 	VIN_bandits
 

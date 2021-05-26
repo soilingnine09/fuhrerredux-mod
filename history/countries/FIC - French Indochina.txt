@@ -39,10 +39,10 @@ add_ideas = {
 	FIC_vietnamese_unrest
 	FIC_the_indochinese_apparatus
 	FIC_salt_opium_alcohol
-	GEN_HOG_Pau
-	GEN_FOR_Pau
-	GEN_ECO_Pau
-	GEN_SEC_Pau
+	GEN_hog_pau
+	GEN_for_pau
+	GEN_eco_pau
+	GEN_sec_pau
 	colonial_government
 }
 

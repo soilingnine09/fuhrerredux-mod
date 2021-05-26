@@ -18,10 +18,10 @@ add_ideas = {
 	low_economic_mobilisation
 	extensive_conscription
 	#CRU_mayan_ascension
-	GEN_HOG_Val
-	GEN_FOR_Val
-	GEN_ECO_Val
-	GEN_SEC_Val
+	GEN_hog_val
+	GEN_for_val
+	GEN_eco_val
+	GEN_sec_val
 	one_party_dictatorship
 }
 set_country_flag = monroe_doctrine
