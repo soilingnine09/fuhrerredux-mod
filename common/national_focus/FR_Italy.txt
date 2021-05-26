@@ -4968,7 +4968,7 @@
 							traits = {}
 						}
 						add_ideas = {
-							GEN_HOG_Van
+							GEN_hog_van
 							GEN_FOR_Van
 							GEN_ECO_Van
 							GEN_SEC_Van

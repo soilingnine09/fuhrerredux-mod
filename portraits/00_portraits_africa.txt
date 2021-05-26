@@ -357,6 +357,7 @@ NFA = {
 				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
 				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
 		}
 		valkist = {
 			male = {
@@ -488,6 +489,7 @@ NFQ = {
 				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
 				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
 		}
 		valkist = {
 			male = {
@@ -619,6 +621,7 @@ ETH = {
 				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
 				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
 		}
 		valkist = {
 			male = {
@@ -750,6 +753,7 @@ IVO = {
 				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
 				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
 		}
 		valkist = {
 			male = {
@@ -881,6 +885,7 @@ DAH = {
 				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
 				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
 		}
 		valkist = {
 			male = {
@@ -1012,6 +1017,7 @@ TOG = {
 				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
 				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
 		}
 		valkist = {
 			male = {
@@ -1143,6 +1149,7 @@ VOL = {
 				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
 				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
 		}
 		valkist = {
 			male = {
@@ -1274,6 +1281,7 @@ COG = {
 				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
 				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
 		}
 		valkist = {
 			male = {

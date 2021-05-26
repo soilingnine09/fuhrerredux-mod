@@ -17,7 +17,7 @@ set_war_support = 0.24
 
 add_ideas = {
 	party_pop_0_50
-	GEN_HOG_Lis
+	GEN_hog_lib
 	GEN_FOR_Lis
 	GEN_ECO_Lis
 	GEN_SEC_Lis

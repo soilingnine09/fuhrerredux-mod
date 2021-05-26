@@ -21,7 +21,7 @@ set_technology = {
 
 add_ideas = {
 	party_pop_0_70
-	GEN_HOG_Van
+	GEN_hog_van
 	GEN_FOR_Van
 	GEN_ECO_Van
 	GEN_SEC_Van

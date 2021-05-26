@@ -26,7 +26,7 @@ set_cosmetic_tag = KAZ_SSR
 
 add_ideas = {
 	party_pop_0_60
-	GEN_HOG_Lis
+	GEN_hog_lib
 	GEN_FOR_Lis
 	GEN_ECO_Lis
 	GEN_SEC_Lis

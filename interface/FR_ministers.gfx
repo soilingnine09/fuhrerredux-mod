@@ -1104,7 +1104,7 @@ spriteType = { #Auto-Generated
 ###########
 
 spriteType = { #Auto-Generated
-  name = "GFX_idea_GEN_HOG_Van"
+  name = "GFX_idea_GEN_hog_van"
   texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
 }
 
@@ -1114,7 +1114,7 @@ spriteType = { #Auto-Generated
 }
 
 spriteType = { #Auto-Generated
-  name = "GFX_idea_GEN_HOG_Lis"
+  name = "GFX_idea_GEN_hog_lib"
   texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
 }
 

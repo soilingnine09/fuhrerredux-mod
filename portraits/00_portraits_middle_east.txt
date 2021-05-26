@@ -1779,7 +1779,7 @@ ISR = {
 		}
 		authoritarian_democrat = {
 			male = {
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_3.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
 			}
@@ -1795,14 +1795,14 @@ ISR = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 			}
 		}
 		valkist = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 			}
 		}
 	}
@@ -2371,7 +2371,7 @@ GEO = {
 		}
 		authoritarian_democrat = {
 			male = {
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_3.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
 			}
@@ -2387,14 +2387,14 @@ GEO = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 			}
 		}
 		valkist = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 			}
 		}
 	}
@@ -2475,7 +2475,7 @@ GOR = {
 		}
 		authoritarian_democrat = {
 			male = {
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_3.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
 			}
@@ -2491,14 +2491,14 @@ GOR = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 			}
 		}
 		valkist = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 			}
 		}
 	}

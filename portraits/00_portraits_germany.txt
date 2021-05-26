@@ -126,7 +126,7 @@ PRU = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_3.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
@@ -137,7 +137,7 @@ PRU = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -148,7 +148,7 @@ PRU = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -160,7 +160,7 @@ PRU = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -297,7 +297,7 @@ WGR = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_3.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
@@ -308,7 +308,7 @@ WGR = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -319,7 +319,7 @@ WGR = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -331,7 +331,7 @@ WGR = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -468,7 +468,7 @@ DDR = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_3.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
@@ -479,7 +479,7 @@ DDR = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -490,7 +490,7 @@ DDR = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -502,7 +502,7 @@ DDR = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -639,7 +639,7 @@ SAX = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_3.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
@@ -650,7 +650,7 @@ SAX = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -661,7 +661,7 @@ SAX = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -673,7 +673,7 @@ SAX = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -810,7 +810,7 @@ POM = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_3.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
@@ -821,7 +821,7 @@ POM = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -832,7 +832,7 @@ POM = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -844,7 +844,7 @@ POM = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -981,7 +981,7 @@ SHO = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_3.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
@@ -992,7 +992,7 @@ SHO = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -1003,7 +1003,7 @@ SHO = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -1015,7 +1015,7 @@ SHO = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -1152,7 +1152,7 @@ BRW = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_3.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
@@ -1163,7 +1163,7 @@ BRW = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -1174,7 +1174,7 @@ BRW = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -1186,7 +1186,7 @@ BRW = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -1323,7 +1323,7 @@ HAN = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_3.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
@@ -1334,7 +1334,7 @@ HAN = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -1345,7 +1345,7 @@ HAN = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -1357,7 +1357,7 @@ HAN = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -1494,7 +1494,7 @@ ERM = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_3.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
@@ -1505,7 +1505,7 @@ ERM = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -1516,7 +1516,7 @@ ERM = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -1528,7 +1528,7 @@ ERM = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -1665,7 +1665,7 @@ HES = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_3.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
@@ -1676,7 +1676,7 @@ HES = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -1687,7 +1687,7 @@ HES = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -1699,7 +1699,7 @@ HES = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -1836,7 +1836,7 @@ BAW = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_3.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
@@ -1847,7 +1847,7 @@ BAW = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -1858,7 +1858,7 @@ BAW = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -1870,7 +1870,7 @@ BAW = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -2007,7 +2007,7 @@ BAY = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_3.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
@@ -2018,7 +2018,7 @@ BAY = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -2029,7 +2029,7 @@ BAY = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -2041,7 +2041,7 @@ BAY = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -2178,7 +2178,7 @@ SIL = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_3.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
@@ -2189,7 +2189,7 @@ SIL = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -2200,7 +2200,7 @@ SIL = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -2212,7 +2212,7 @@ SIL = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -2349,7 +2349,7 @@ GRP = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_3.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
@@ -2360,7 +2360,7 @@ GRP = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -2371,7 +2371,7 @@ GRP = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -2383,7 +2383,7 @@ GRP = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -2541,7 +2541,7 @@ GEX = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_3.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
@@ -2552,7 +2552,7 @@ GEX = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -2563,7 +2563,7 @@ GEX = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -2575,7 +2575,7 @@ GEX = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -2713,7 +2713,7 @@ MAF = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_3.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
@@ -2724,7 +2724,7 @@ MAF = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -2735,7 +2735,7 @@ MAF = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -2747,7 +2747,7 @@ MAF = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"

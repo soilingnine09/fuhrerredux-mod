@@ -30,18 +30,18 @@
 #                                      where you choose the historical division name.
 #           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
 #                                      the current game version.
-PRC_INF_01 = 
+ZHI_INF_01 = 
 {
 	name = "Infantry Unit"
 
-	for_countries = { PRC }
+	for_countries = { ZHI }
 
 	can_use = { always = yes }
 
 	division_types = { "infantry" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { PRC_INF_01 }
+	#link_numbering_with = { ZHI_INF_01 }
 
 	fallback_name = "Xin %d Juntuán"
 
@@ -49,7 +49,7 @@ PRC_INF_01 =
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d Lie/115 Bubing Shi" }			# PRC continuously reinforced its three "divisions" with additional troops (columns)
+		1 = { "%d Lie/115 Bubing Shi" }			# ZHI continuously reinforced its three "divisions" with additional troops (columns)
 		21 = { "1 Lie/120 Bubing Shi" }
 		31 = { "1 Lie/129 Bubing Shi" }
 		2 = { "%d Lie/115 Bubing Shi" }			
@@ -88,11 +88,11 @@ PRC_INF_01 =
 	}
 }
 
-PRC_CAV_01 = 
+ZHI_CAV_01 = 
 {
 	name = "Cavalry Unit"
 
-	for_countries = { PRC }
+	for_countries = { ZHI }
 
 	can_use = { always = yes }
 
@@ -134,18 +134,18 @@ PRC_CAV_01 =
 	}
 }
 
-PRC_MOT_01 = 
+ZHI_MOT_01 = 
 {
 	name = "Motorized Unit"
 
-	for_countries = { PRC }
+	for_countries = { ZHI }
 
 	can_use = { always = yes }
 
 	division_types = { "motorized" }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { PRC_INF_01 }
+	link_numbering_with = { ZHI_INF_01 }
 
 	fallback_name = "Xin %d Juntuán"
 
@@ -153,7 +153,7 @@ PRC_MOT_01 =
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d Lie/115 Bubing Shi" }			# PRC continuously reinforced its three "divisions" with additional troops (columns)
+		1 = { "%d Lie/115 Bubing Shi" }			# ZHI continuously reinforced its three "divisions" with additional troops (columns)
 		21 = { "1 Lie/120 Bubing Shi" }
 		31 = { "1 Lie/129 Bubing Shi" }
 		2 = { "%d Lie/115 Bubing Shi" }			
@@ -192,18 +192,18 @@ PRC_MOT_01 =
 	}
 }
 
-PRC_MEC_01 = 
+ZHI_MEC_01 = 
 {
 	name = "Mechanized Unit"
 
-	for_countries = { PRC }
+	for_countries = { ZHI }
 
 	can_use = { always = yes }
 
 	division_types = { "mechanized" }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { PRC_INF_01 }
+	link_numbering_with = { ZHI_INF_01 }
 
 	fallback_name = "Xin %d Juntuán"
 
@@ -211,7 +211,7 @@ PRC_MEC_01 =
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d Lie/115 Bubing Shi" }			# PRC continuously reinforced its three "divisions" with additional troops (columns)
+		1 = { "%d Lie/115 Bubing Shi" }			# ZHI continuously reinforced its three "divisions" with additional troops (columns)
 		21 = { "1 Lie/120 Bubing Shi" }
 		31 = { "1 Lie/129 Bubing Shi" }
 		2 = { "%d Lie/115 Bubing Shi" }			
@@ -254,18 +254,18 @@ PRC_MEC_01 =
 #CHI_PAR_01 -- airborne linked to CHI naming group 
 #CHI_MAR_01 -- marines linked to CHI naming group 
 
-PRC_MNT_01 = 
+ZHI_MNT_01 = 
 {
 	name = "Mountain Unit"
 
-	for_countries = { PRC }
+	for_countries = { ZHI }
 
 	can_use = { always = yes }
 
 	division_types = { "mountaineers" }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { PRC_INF_01 }
+	link_numbering_with = { ZHI_INF_01 }
 
 	fallback_name = "Xin %d Juntuán"
 
@@ -273,7 +273,7 @@ PRC_MNT_01 =
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d Lie/115 Bubing Shi" }			# PRC continuously reinforced its three (then four) "divisions" with additional troops (columns)
+		1 = { "%d Lie/115 Bubing Shi" }			# ZHI continuously reinforced its three (then four) "divisions" with additional troops (columns)
 		21 = { "1 Lie/120 Bubing Shi" }
 		31 = { "1 Lie/129 Bubing Shi" }
 		2 = { "%d Lie/115 Bubing Shi" }			
@@ -312,11 +312,11 @@ PRC_MNT_01 =
 	}
 }
 
-PRC_GAR_01 = 
+ZHI_GAR_01 = 
 {
 	name = "Garrison Unit"
 
-	for_countries = { PRC }
+	for_countries = { ZHI }
 
 	can_use = { always = yes }
 

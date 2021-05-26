@@ -1,12 +1,12 @@
 ﻿l_english:
 
-##GEN_HOG_Van:0 "Alexander Smirnov"
+##GEN_hog_van:0 "Alexander Smirnov"
 GEN_Alexander_Smirnov_dead:0 " is incapable of holding any posts."
 GEN_Alexander_Smirnov_fired:0 " is incapable of holding any posts."
 ##GEN_HOG_Col:0 "Dmitry Kuznetsov"
 Dmitry_Kuznetsov_dead:0 " is incapable of holding any posts."
 Dmitry_Kuznetsov_hog_fired:0 " is incapable of holding any posts."
-#GEN_HOG_Lis:0 "Mathias Hansen"
+#GEN_hog_lib:0 "Mathias Hansen"
 Mathias_Hansen_dead:0 " is incapable of holding any posts."
 Mathias_Hansen_hog_fired:0 " is incapable of holding any posts."
 #GEN_HOG_Sde:0 "Louis Martin"
