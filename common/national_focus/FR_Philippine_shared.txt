@@ -1503,7 +1503,7 @@ shared_focus = {
     y = 1
     cost = 6
     available_if_capitulated = yes
-    available = { has_trade_with_japan = yes }
+    available = { has_country_flag = PHI_japanese_trade }
     prerequisite = { focus = PHI_japanese_trade_deal }
     relative_position_id = PHI_japanese_trade_deal
     completion_reward = {
@@ -1610,7 +1610,7 @@ shared_focus = {
     y = 1
     cost = 6
     available_if_capitulated = yes
-    available = { has_trade_with_britain = yes }
+    available = { has_country_flag = PHI_british_trade }
     prerequisite = { focus = PHI_british_trade_deal }
     relative_position_id = PHI_british_trade_deal
     completion_reward = {
@@ -2155,7 +2155,7 @@ shared_focus = {
     y = 1
     cost = 6
     available_if_capitulated = yes
-    available = { has_trade_with_germany = yes }
+    available = { has_country_flag = PHI_german_trade }
     prerequisite = { focus = PHI_german_trade_deal }
     relative_position_id = PHI_german_trade_deal
     completion_reward = {
@@ -2255,7 +2255,7 @@ shared_focus = {
     y = 1
     cost = 6
     available_if_capitulated = yes
-    available = { has_trade_with_america = yes }
+    available = { has_country_flag = PHI_american_trade }
     prerequisite = { focus = PHI_american_trade_deal }
     relative_position_id = PHI_american_trade_deal
     completion_reward = {

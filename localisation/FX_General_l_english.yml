@@ -166,7 +166,6 @@ head_of_government:0 "Head of Government"
 foreign_minister:0 "Foreign Minister"
 economy_minister:0 "Economic Minister"
 security_minister:0 "Security Minister"
-head_of_intel:0 "Head of Intelligence"
 
 ### Company Groups
 chemical_producer:0 "Chemical Producer"

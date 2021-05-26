@@ -165,7 +165,7 @@ continent = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_8.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_3.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
@@ -176,7 +176,7 @@ continent = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_8.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -187,7 +187,7 @@ continent = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_8.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -199,7 +199,7 @@ continent = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_8.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -335,7 +335,7 @@ continent = {
 		authoritarian_democrat = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_8.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_3.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
@@ -345,7 +345,7 @@ continent = {
 		paternal_autocrat = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_8.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -356,7 +356,7 @@ continent = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_8.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -368,7 +368,7 @@ continent = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_8.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -526,7 +526,7 @@ continent = {
 				"gfx/leaders/Generic/Portrait_South_America_Generic_new_4.tga"
 				"gfx/leaders/Generic/Portrait_South_America_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_8.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_3.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_11.tga"
@@ -681,7 +681,7 @@ continent = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_8.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_11.tga"
@@ -691,7 +691,7 @@ continent = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_8.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
@@ -702,7 +702,7 @@ continent = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_8.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
@@ -713,7 +713,7 @@ continent = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_8.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
@@ -841,6 +841,7 @@ continent = {
 				"gfx/leaders/Generic/Portrait_Africa_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Africa_Generic_new_3.tga"
 				"gfx/leaders/Generic/Portrait_Africa_Generic_new_6.tga"
+			}
 		}
 		valkist = {
 			male = {
@@ -2062,7 +2063,7 @@ LEC = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_8.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_3.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
@@ -2073,7 +2074,7 @@ LEC = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_8.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -2084,7 +2085,7 @@ LEC = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_8.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -2096,7 +2097,7 @@ LEC = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_8.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"

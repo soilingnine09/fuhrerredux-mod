@@ -223,7 +223,6 @@ country_event = { # Trip to Congress
                 PHI_Ferdinand_Marcos_for_ade
                 PHI_Serafin_Fausto_eco_ade
                 PHI_Jose_Yulo_sec_sco
-                PHI_Fidel_Segundo_int_ade
             }
             country_event = { id = phi.7 days = 14 }
             news_event = news.1
@@ -280,7 +279,6 @@ country_event = { # Presidential Elections
             PHI_Manuel_Quadrino_for_sco
             PHI_Jose_G_David_eco_sco
             PHI_Tirano_Craveza_sec_sco
-            PHI_James_Wilson_int_sco
         }
         hidden_effect = {
             set_country_flag = PHI_had_1936_elections
@@ -361,7 +359,6 @@ country_event = { # Presidential Elections
             PHI_Ferdinand_Marcos_for_ade
             PHI_Diosdado_P_Macapagal_eco_sde
             PHI_Jose_G_Lukban_sec_val
-            PHI_Benigno_Ramos_int_val
         }
         hidden_effect = {
             set_country_flag = PHI_had_1936_elections
@@ -690,7 +687,6 @@ country_event = { # March on Manila
             PHI_Ferdinand_Marcos_for_ade
             PHI_Ramon_Alcaraz_eco_pau
             PHI_Rafael_Jalandoni_sec_pau
-            PHI_Fidel_Segundo_int_ade
         }
         hidden_effect = {
             set_country_flag = PHI_aguinaldo_coup_tt
@@ -816,7 +812,6 @@ country_event = { # Army Coup
             PHI_Vicente_P_Lim_for_pau
             PHI_Ramon_Alcaraz_eco_pau
             PHI_Rafael_Jalandoni_sec_pau
-            PHI_Fidel_Segundo_int_ade
         }
         hidden_effect = {
             set_country_flag = PHI_military_junta_tt
@@ -922,7 +917,6 @@ country_event = { # Revolutionary Congress
             PHI_Casto_Alejandrino_for_col
             PHI_Herminegildo_Cruz_eco_col
             PHI_Guillermo_Capadocia_sec_col
-            PHI_Luis_Taruc_int_col
         }
         hidden_effect = {
             set_country_flag = PHI_had_revolutionary_congress
@@ -941,11 +935,10 @@ country_event = { # Revolutionary Congress
         }
         remove_every_minister = yes
         add_ideas = {
-            PHI_Luis_Taruc_int_col
+            PHI_Luis_Taruc_hog_van
             PHI_Casto_Alejandrino_for_col
             PHI_Herminegildo_Cruz_eco_col
             PHI_Guillermo_Capadocia_sec_col
-            PHI_Luis_Taruc_int_col
         }
         hidden_effect = {
             set_country_flag = PHI_had_revolutionary_congress
@@ -1215,7 +1208,6 @@ country_event = { # 1940 Presidential Elections
                 PHI_Manuel_Quadrino_for_sco
                 PHI_Jose_G_David_eco_sco
                 PHI_Tirano_Craveza_sec_sco
-                PHI_James_Wilson_int_sco
             }
         }
         else_if = {
@@ -1225,7 +1217,6 @@ country_event = { # 1940 Presidential Elections
                 PHI_Manuel_Quadrino_for_sco
                 PHI_Jose_G_David_eco_sco
                 PHI_Tirano_Craveza_sec_sco
-                PHI_James_Wilson_int_sco
             }
         }
         else_if = {
@@ -1235,7 +1226,6 @@ country_event = { # 1940 Presidential Elections
                 PHI_Ferdinand_Marcos_for_ade
                 PHI_Jose_G_David_eco_sco
                 PHI_Tirano_Craveza_sec_sco
-                PHI_James_Wilson_int_sco
             }
         }
         hidden_effect = {
@@ -1260,7 +1250,6 @@ country_event = { # 1940 Presidential Elections
                 PHI_Quentin_Paredes_for_mli
                 PHI_Antonio_de_las_Alas_eco_sli
                 PHI_Roman_Apolinario_sec_mli
-                PHI_Leslie_Ailen_Wheeler_int_mli
             }
         }
         else_if = {
@@ -1274,7 +1263,6 @@ country_event = { # 1940 Presidential Elections
                 PHI_Joaquin_Elizalde_for_sli
                 PHI_Manuel_Quadrino_eco_sli
                 PHI_Alberto_Ramos_sec_sli
-                PHI_Leslie_Ailen_Wheeler_int_mli
             }
         }
         else_if = {
@@ -1288,7 +1276,6 @@ country_event = { # 1940 Presidential Elections
                 PHI_Quentin_Paredes_for_mli
                 PHI_Ramon_Magsaysay_eco_mli
                 PHI_Ramon_Quisumbing_sec_mli
-                PHI_Leslie_Ailen_Wheeler_int_mli
             }
         }
         hidden_effect = {
@@ -1313,7 +1300,6 @@ country_event = { # 1940 Presidential Elections
                 PHI_Rafael_Liwanag_for_sde
                 PHI_Carlos_P_Garcia_eco_sde
                 PHI_Jose_M_Crisol_sec_sde
-                PHI_John_Gilbert_Winant_int_sli
             }
         }
         else_if = {
@@ -1323,7 +1309,6 @@ country_event = { # 1940 Presidential Elections
                 PHI_Rafael_Liwanag_for_sde
                 PHI_Diosdado_P_Macapagal_eco_sde
                 PHI_Pardo_de_Tavera_sec_sde
-                PHI_John_Gilbert_Winant_int_sli
             }
         }
         else_if = {
@@ -1333,7 +1318,6 @@ country_event = { # 1940 Presidential Elections
                 PHI_Rafael_Liwanag_for_sde
                 PHI_Carlos_P_Garcia_eco_sde
                 PHI_Pardo_de_Tavera_sec_sde
-                PHI_John_Gilbert_Winant_int_sli
             }
         }
         hidden_effect = {

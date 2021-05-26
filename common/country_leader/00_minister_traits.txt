@@ -958,59 +958,6 @@ leader_traits = {
 	}
 
 	########################################
-	## INTELLIGENCE MINISTERS
-	########################################
-
-	int_technical_specialist = {
-		decryption = 0.5
-				research_speed_factor = 0.0255
-
-		random = no
-	}
-
-	int_logistics_specialist = {
-		decryption = 0.5
-		air_strategic_bomber_bombing_factor = 0.05
-		supply_consumption_factor = -0.025
-
-		random = no
-	}
-
-	int_political_specialist = {
-		decryption = 1
-		political_power_gain = 0.05
-
-		random = no
-	}
-
-	int_dismal_enigma = {
-		encryption_factor = 1
-
-		random = no
-	}
-
-	int_industrial_specialist = {
-		decryption = 0.5
-				research_speed_factor = 0.02
-
-		random = no
-	}
-
-	int_naval_intelligence_specialist = {
-		decryption = 0.5
-		sortie_efficiency = 0.1
-
-		random = no
-	}
-
-	int_o = { #ormonde winter
-		encryption_factor = 1
-		decryption = 1
-
-		random = no
-	}
-
-	########################################
 	## CHIEF OF STAFF
 	########################################
 

@@ -24,7 +24,6 @@ add_ideas = {
 	PHI_Casto_Alejandrino_for_col
 	PHI_Herminegildo_Cruz_eco_col
 	PHI_Guillermo_Capadocia_sec_col
-	PHI_Luis_Taruc_int_col
 	revolutionary_movement
 }
 

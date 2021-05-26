@@ -324,6 +324,10 @@ PHI = {
 	color = rgb { 248 198 0 }
 	color_ui = rgb { 255 198 0 }
 }
+PHR = {
+	color = rgb { 222 41 16 }
+	color_ui = rgb { 222 41 16 }
+}
 PRU = {
 	color = rgb { 151  39  39 }
 	color_ui = rgb { 151  39  39 }
@@ -565,32 +569,26 @@ PHN = {
 	color = rgb { 15 90 240 }
 	color_ui = rgb { 15  90  240 }
 }
-
 COR = {
 	color = rgb { 220 220 220 }
 	color_ui = rgb { 220 220 220 }
 }
-
 SAR = {
 	color = rgb{ 216  25  33 }
 	color_ui = rgb{ 216  25  33 }
 }
-
 SPF = {
 	color = rgb { 169 128 40 }
 	color_ui = rgb { 194 133 35 }
 }
-
 SPA = {
 	color = rgb { 189 31 53 }
 	color_ui = rgb { 224 56 48 }
 }
-
 SPM = {
 	color = rgb { 199 181 65 } #222 205 94 is much more tame. 242 205 94 
 	color_ui = rgb { 194 176 30 }
 }
-
 SPR = {# 220 180 6 # 200 130 222 # 179 138 184 # 189 110 211 
 	color = rgb { 164 113 159 }
 	color_ui = rgb { 179 138 164 }

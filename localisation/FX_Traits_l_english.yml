@@ -118,15 +118,6 @@ sec_secret_police_chief:0 "Secret Police Chief"
 sec_silent_lawyer:0 "Silent Lawyer"
 sec_regionalist:0 "Regionalist"
 
-### Intelligence Minister ###
-int_technical_specialist:0 "Technical Specialist"
-int_logistics_specialist:0 "Logistics Specialist"
-int_political_specialist:0 "Political Specialist"
-int_dismal_enigma:0 "Dismal Enigma"
-int_industrial_specialist:0 "Industrial Specialist"
-int_naval_intelligence_specialist:0 "Naval Intelligence Specialist"
-int_o:0 ""O""
-
 ### Chief of Staff
 cos_school_of_manoeuvre:0 "School of Manoeuvre"
 cos_school_of_fire_support:0 "School of Fire Support"
