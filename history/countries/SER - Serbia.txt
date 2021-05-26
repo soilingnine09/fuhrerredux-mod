@@ -56,10 +56,10 @@ set_convoys = 42
 
 add_ideas = {
 	party_pop_0_50
-	GEN_HOG_Ade
-	GEN_FOR_Ade
-	GEN_ECO_Ade
-	GEN_SEC_Ade
+	GEN_hog_ade
+	GEN_for_ade
+	GEN_eco_ade
+	GEN_sec_ade
 	GEN_entente_member
 	constitutional_monarchy
 }

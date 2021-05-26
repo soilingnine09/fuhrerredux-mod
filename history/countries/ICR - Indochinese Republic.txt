@@ -27,9 +27,9 @@ set_politics = {
 }
 add_ideas = {
 	presidential_republic
-	GEN_HOG_Npo
-	GEN_FOR_Npo
-	GEN_ECO_Npo
+	GEN_hog_npo
+	GEN_for_npo
+	GEN_eco_npo
 	GEN_INT_Npo
 }
 set_popularities = {

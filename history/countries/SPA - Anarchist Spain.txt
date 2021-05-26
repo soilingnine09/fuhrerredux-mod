@@ -62,9 +62,9 @@ add_ideas = {
 	extensive_conscription
 	low_economic_mobilisation
 	SPA_Jose_Diaz_Ramos_hog_col
-	GEN_FOR_Col
-	GEN_ECO_Col
-	GEN_SEC_Col
+	GEN_for_col
+	GEN_eco_col
+	GEN_sec_col
 	workers_republic
 }
 

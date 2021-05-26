@@ -4968,10 +4968,10 @@
 							traits = {}
 						}
 						add_ideas = {
-							GEN_HOG_Van
-							GEN_FOR_Van
-							GEN_ECO_Van
-							GEN_SEC_Van
+							GEN_hog_van
+							GEN_for_van
+							GEN_eco_van
+							GEN_sec_van
 						}
 						copy_government_idea_of_ROOT = yes
 					}
@@ -5000,10 +5000,10 @@
 							traits = {}
 						}
 						add_ideas = {
-							GEN_HOG_Col
-							GEN_FOR_Col
-							GEN_ECO_Col
-							GEN_SEC_Col
+							GEN_hog_col
+							GEN_for_col
+							GEN_eco_col
+							GEN_sec_col
 						}
 						copy_government_idea_of_ROOT = yes					
 					}
@@ -5020,10 +5020,10 @@
 							popularity = 0.2
 						}
 						add_ideas = {
-							GEN_HOG_Sco
-							GEN_FOR_Sco
-							GEN_ECO_Sco
-							GEN_SEC_Sco
+							GEN_hog_sco
+							GEN_for_sco
+							GEN_eco_sco
+							GEN_sec_sco
 						}
 						copy_government_idea_of_ROOT = yes						
 						create_country_leader = {

@@ -49,10 +49,10 @@ if = {
 }
 
 add_ideas = {
-	GEN_HOG_Ade
+	GEN_hog_ade
 	DEH_Alfred_Knox_eco_ade
-	GEN_SEC_Ade
-	GEN_FOR_Ade
+	GEN_sec_ade
+	GEN_for_ade
 	colonial_government
 }
 

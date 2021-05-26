@@ -52,7 +52,7 @@ create_country_leader = {
 	picture = "gfx/leaders/PHI/Portrait_Philippines_Luis_Taruc.tga"
 	expire = "1943.6.2"
 	ideology = vanguardist_subtype
-	traits = { prince_of_terror }
+	traits = { }
 }
 create_country_leader = {
 	name = "Pedro Abad Santos"
@@ -60,7 +60,7 @@ create_country_leader = {
 	picture = "gfx/leaders/PHI/Portrait_Philippines_Pedro_Abad_Santos.tga"
 	expire = "1950.3.10"
 	ideology = collectivist_subtype
-	traits = { reluctant_interventionist }
+	traits = { }
 }
 create_country_leader = {
 	name = "Crisanto Evangelista"
@@ -68,7 +68,7 @@ create_country_leader = {
 	picture = "gfx/leaders/PHI/Portrait_Philippines_Crisanto_Evangelista.tga"
 	expire = "1950.3.10"
 	ideology = libertarian_socialist_subtype
-	traits = { reluctant_interventionist }
+	traits = { }
 }
 
 create_corps_commander = {

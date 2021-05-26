@@ -4,10 +4,10 @@ add_ideas = {
 	party_pop_0_30
 	limited_conscription
 	BRA_political_instability
-	GEN_HOG_Mli
-	GEN_FOR_Mli
-	GEN_ECO_Mli
-	GEN_SEC_Mli
+	GEN_hog_mli
+	GEN_for_mli
+	GEN_eco_mli
+	GEN_sec_mli
 	presidential_republic
 }
 oob = "BRA_1936"

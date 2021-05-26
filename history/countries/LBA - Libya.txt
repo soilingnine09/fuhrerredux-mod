@@ -32,10 +32,10 @@ if = {
 		}
 		add_ideas = {
 			limited_conscription
-			GEN_HOG_Ade
-			GEN_FOR_Ade
-			GEN_ECO_Ade
-			GEN_SEC_Ade
+			GEN_hog_ade
+			GEN_for_ade
+			GEN_eco_ade
+			GEN_sec_ade
 			colonial_government
 		}		
 	}
@@ -60,10 +60,10 @@ if = {
 		add_ideas = {
 			limited_conscription
 			ITA_guerrilla_conflict
-			GEN_HOG_Ade
-			GEN_FOR_Ade
-			GEN_ECO_Ade
-			GEN_SEC_Ade
+			GEN_hog_ade
+			GEN_for_ade
+			GEN_eco_ade
+			GEN_sec_ade
 			colonial_government
 		}
 	}

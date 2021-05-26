@@ -43,20 +43,20 @@ country_event = {
             }
 
             swap_ideas = {
-                remove_idea = GEN_HOG_Ade
-                add_idea = GEN_HOG_Pau
+                remove_idea = GEN_hog_ade
+                add_idea = GEN_hog_pau
             }
             swap_ideas = {
-                remove_idea = GEN_FOR_Ade
-                add_idea = GEN_FOR_Pau
+                remove_idea = GEN_for_ade
+                add_idea = GEN_for_pau
             }
             swap_ideas = {
-                remove_idea = GEN_ECO_Ade
-                add_idea = GEN_ECO_Pau
+                remove_idea = GEN_eco_ade
+                add_idea = GEN_eco_pau
             }
             swap_ideas = {
-                remove_idea = GEN_SEC_Ade
-                add_idea = GEN_SEC_Pau
+                remove_idea = GEN_sec_ade
+                add_idea = GEN_sec_pau
             }
         }
     }

@@ -837,10 +837,6 @@ MON = {
 	color = rgb { 153 142 92 }
 	color_ui = rgb { 153 142 92 }
 }
-PRC = {
-	color = rgb { 153 142 92 }
-	color_ui = rgb { 153 142 92 }
-}
 MEN = {
 	color = rgb { 153 142 92 }
 	color_ui = rgb { 153 142 92 }
@@ -849,27 +845,22 @@ TAN = {
 	color = rgb { 152 130 191 }
 	color_ui = rgb { 198 169 248 }
 }
-
 FIC = {
 	color = rgb { 0 50 160 }
 	color_ui = rgb { 0 37 124 }
 }
-
 QUE = {
 	color = rgb { 17 16 203 }
 	color_ui = rgb { 17 16 203 }
 }
-
 GAB = {
 	color = rgb { 130 167 18 }
 	color_ui = rgb { 130 167 18 }
 }
-
 DAH = {
 	color = rgb { 38 147 125 }
 	color_ui = rgb { 38 147 125 }
 }
-
 TAU = {
 	color = rgb { 128  64  64 }
 	color_ui = rgb { 128  64  64 }

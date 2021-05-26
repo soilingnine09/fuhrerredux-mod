@@ -11472,10 +11472,10 @@ country_event = { # Germany - The fate for occupied France
 				popularity = 60
 			}
 			add_ideas = {
-				GEN_HOG_Val
-				GEN_FOR_Val
-				GEN_ECO_Val
-				GEN_SEC_Val
+				GEN_hog_val
+				GEN_for_val
+				GEN_eco_val
+				GEN_sec_val
 				limited_conscription
 			}
         }
@@ -12485,10 +12485,10 @@ option = { # Puppet Italy
 					popularity = 60
 				}
 				add_ideas = {
-					GEN_HOG_Val
-					GEN_FOR_Val
-					GEN_ECO_Val
-					GEN_SEC_Val
+					GEN_hog_val
+					GEN_for_val
+					GEN_eco_val
+					GEN_sec_val
 					limited_conscription
 				}
 					#create_country_leader = {
@@ -13822,10 +13822,10 @@ option = { # Puppet Britain
 			copy_government_idea_of_ROOT = yes
             set_politics = { ruling_party = valkist }
 			add_ideas = {
-				GEN_HOG_Val
-				GEN_FOR_Val
-				GEN_ECO_Val
-				GEN_SEC_Val
+				GEN_hog_val
+				GEN_for_val
+				GEN_eco_val
+				GEN_sec_val
 				limited_conscription
 			}
 			create_country_leader = {
@@ -13924,10 +13924,10 @@ option = { # Divide the isles
 				popularity = 60
 			}
 			add_ideas = {
-				GEN_HOG_Val
-				GEN_FOR_Val
-				GEN_ECO_Val
-				GEN_SEC_Val
+				GEN_hog_val
+				GEN_for_val
+				GEN_eco_val
+				GEN_sec_val
 				limited_conscription
 			}
 			create_country_leader = {
@@ -13997,10 +13997,10 @@ option = { # Divide the isles
 			popularity = 60
 		}
 		add_ideas = {
-			GEN_HOG_Val
-			GEN_FOR_Val
-				GEN_ECO_Val
-			GEN_SEC_Val
+			GEN_hog_val
+			GEN_for_val
+				GEN_eco_val
+			GEN_sec_val
 			limited_conscription
 		}
 		create_country_leader = {
@@ -14052,10 +14052,10 @@ option = { # Divide the isles
 				popularity = 60
 			}
 			add_ideas = {
-				GEN_HOG_Val
-				GEN_FOR_Val
-				GEN_ECO_Val
-				GEN_SEC_Val
+				GEN_hog_val
+				GEN_for_val
+				GEN_eco_val
+				GEN_sec_val
 				limited_conscription
 			}
 			create_country_leader = {

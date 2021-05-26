@@ -3559,7 +3559,7 @@ PRU = {
 	}
 }
 
-PRC = {
+ZHI = {
 	air_wing_names_template = AIR_WING_NAME_CHI_FALLBACK
 
 	#Air wings can only be named through archetype

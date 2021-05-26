@@ -19,10 +19,10 @@ set_technology = {
 }
 
 add_ideas = {
-	GEN_HOG_Npo
-	GEN_FOR_Npo
-	GEN_ECO_Npo
-	GEN_SEC_Npo
+	GEN_hog_npo
+	GEN_for_npo
+	GEN_eco_npo
+	GEN_sec_npo
 	parliamentary_republic
 }
 

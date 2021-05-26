@@ -16,10 +16,10 @@ add_ideas = {
 	unbalanced_industry
 	iliterate_population
 
-	GEN_HOG_Ade
-	GEN_ECO_Ade
-	GEN_SEC_Ade
-	GEN_FOR_Ade
+	GEN_hog_ade
+	GEN_eco_ade
+	GEN_sec_ade
+	GEN_for_ade
 	parliamentary_republic
 }
 

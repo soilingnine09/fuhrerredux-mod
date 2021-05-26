@@ -29,9 +29,9 @@ set_popularities = {
 
 add_ideas = {
 	party_pop_0_10
-	GEN_HOG_Ade
-	GEN_FOR_Ade
-	GEN_ECO_Ade
-	GEN_SEC_Ade
+	GEN_hog_ade
+	GEN_for_ade
+	GEN_eco_ade
+	GEN_sec_ade
 	presidential_republic
 }

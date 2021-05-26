@@ -448,7 +448,7 @@ GEO = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_3.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_7.tga"
@@ -459,7 +459,7 @@ GEO = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -470,7 +470,7 @@ GEO = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"
@@ -482,7 +482,7 @@ GEO = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_16.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_13.tga"
-				"gfx/leaders/Generic/Portrait_Europe_Generic_new_14.tga"
+				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_15.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_1.tga"
 				"gfx/leaders/Generic/Portrait_Europe_Generic_new_5.tga"

@@ -74,10 +74,10 @@ set_popularities = {
 
 add_ideas = {
 	party_pop_0_40
-	GEN_HOG_Mli
-	GEN_FOR_Mli
-	GEN_ECO_Mli
-	GEN_SEC_Mli
+	GEN_hog_mli
+	GEN_for_mli
+	GEN_eco_mli
+	GEN_sec_mli
 	parliamentary_republic
 }
 

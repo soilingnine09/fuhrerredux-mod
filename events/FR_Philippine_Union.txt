@@ -19,5 +19,6 @@ country_event = {
             remove_core_of = PHI
         }
         set_country_flag = PHI_worker_victory_tt
+        remove_ideas = PHI_the_filipino_civil_war
     }
 }

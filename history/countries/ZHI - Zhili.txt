@@ -1,4 +1,4 @@
-﻿capital = 895
+﻿capital = 597
 
 oob = "ZHI_1936"
 

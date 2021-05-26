@@ -22,10 +22,10 @@ set_technology = {
 
 add_ideas = {
 	party_pop_0_50
-	GEN_HOG_Col
-	GEN_FOR_Col
-	GEN_ECO_Col
-	GEN_SEC_Col
+	GEN_hog_col
+	GEN_for_col
+	GEN_eco_col
+	GEN_sec_col
 	workers_republic
 }
 

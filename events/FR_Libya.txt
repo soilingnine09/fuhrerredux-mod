@@ -341,10 +341,10 @@ country_event = { # Italy installs Idris
 			traits = {}
 		}
 		add_ideas = {
-			GEN_HOG_Sco
-			GEN_FOR_Sco
-			GEN_ECO_Sco
-			GEN_SEC_Sco
+			GEN_hog_sco
+			GEN_for_sco
+			GEN_eco_sco
+			GEN_sec_sco
 		}			
 		add_political_power = 50
 		add_stability = 0.1

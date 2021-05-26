@@ -18,10 +18,10 @@ add_ideas = {
 	life_of_goral
 	polish_strike
 	one_party_dictatorship
-	GEN_HOG_Val
-	GEN_FOR_Val
-	GEN_ECO_Val
-	GEN_SEC_Val
+	GEN_hog_val
+	GEN_for_val
+	GEN_eco_val
+	GEN_sec_val
 }
 
 set_technology = {

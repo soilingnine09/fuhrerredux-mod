@@ -38,10 +38,10 @@ if = {
 add_ideas = {
 	unbalanced_industry
 	iliterate_population
-	GEN_HOG_Sde
+	GEN_hog_sde
 	GEN_FOR_Sde
-	GEN_ECO_Sde
-	GEN_SEC_Sde
+	GEN_eco_sde
+	GEN_sec_sde
 	semi_presidential_republic
 }
 

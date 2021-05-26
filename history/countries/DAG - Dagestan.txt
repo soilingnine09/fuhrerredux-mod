@@ -40,10 +40,10 @@ set_technology = {
 
 add_ideas = {
 	party_pop_0_60
-	GEN_HOG_Lis
-	GEN_FOR_Lis
-	GEN_ECO_Lis
-	GEN_SEC_Lis
+	GEN_hog_lib
+	GEN_for_lib
+	GEN_eco_lib
+	GEN_sec_lib
 	workers_republic
 }
 
