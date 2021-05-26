@@ -49,9 +49,7 @@ PHI_default_plan = {
         
         PHI_department_of_foreign_affairs                       # 21 days
         PHI_no_more_colonialism                                 # 35 days
-        PHI_demand_aeda                                         # 35 days
-        PHI_demand_french_colonial_holdings                     # 70 days
-        PHI_demand_british_colonial_holdings                    # 70 days
+
     }
 
     weight = {
@@ -72,6 +70,9 @@ PHI_default_plan = {
     focus_factors = {
         PHI_rotc_focus
         PHI_root_out_communists
+        PHI_demand_aeda
+        PHI_demand_french_colonial_holdings
+        PHI_demand_british_colonial_holdings
     }
 }
 
@@ -125,7 +126,6 @@ PHI_alternate_plan_1 = {
         PHI_filipino_high_command                               # 70 days
         PHI_standardization_of_equipment                        # 35 days
         PHI_department_of_finance_focus                         # 35 days
-        PHI_increase_research                                   # 35 days
         PHI_worker_subsidies_focus                              # 70 days
         PHI_battlefield_support                                 # 70 days
         PHI_modernize_cas_equipment                             # 70 days

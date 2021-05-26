@@ -1227,7 +1227,7 @@ country_event = { # 1940 Presidential Elections
         else_if = {
             limit = { has_country_flag = PHI_osmena_nominated }
             add_ideas = {
-                PHI_Sergio_Osmena_hog_sco
+                PHI_Sergio_P_Osmena_hog_sco
                 PHI_Manuel_Quadrino_for_sco
                 PHI_Jose_G_David_eco_sco
                 PHI_Tirano_Craveza_sec_sco

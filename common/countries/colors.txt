@@ -324,6 +324,10 @@ PHI = {
 	color = rgb { 248 198 0 }
 	color_ui = rgb { 255 198 0 }
 }
+PHR = {
+	color = rgb { 222 41 16 }
+	color_ui = rgb { 222 41 16 }
+}
 PRU = {
 	color = rgb { 151  39  39 }
 	color_ui = rgb { 151  39  39 }
@@ -839,10 +843,6 @@ MON = {
 	color = rgb { 153 142 92 }
 	color_ui = rgb { 153 142 92 }
 }
-PRC = {
-	color = rgb { 153 142 92 }
-	color_ui = rgb { 153 142 92 }
-}
 MEN = {
 	color = rgb { 153 142 92 }
 	color_ui = rgb { 153 142 92 }
@@ -851,17 +851,14 @@ TAN = {
 	color = rgb { 152 130 191 }
 	color_ui = rgb { 198 169 248 }
 }
-
 FIC = {
 	color = rgb { 0 50 160 }
 	color_ui = rgb { 0 37 124 }
 }
-
 QUE = {
 	color = rgb { 17 16 203 }
 	color_ui = rgb { 17 16 203 }
 }
-
 GAB = {
 	color = rgb { 130 167 18 }
 	color_ui = rgb { 130 167 18 }
@@ -877,10 +874,6 @@ TAU = {
 NKR = {
 	color = rgb { 182  48  29 }
 	color_ui = rgb { 182  48  29 }
-}
-PHR = {
-	color = rgb { 222 41 16 }
-	color_ui = rgb { 222 41 16 }
 }
 
 #################################

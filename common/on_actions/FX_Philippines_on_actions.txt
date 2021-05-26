@@ -36,7 +36,7 @@ on_actions = {
                     set_country_flag = PHI_ai_chosen
                     set_country_flag = PHI_natpop_behavior
                 }
-                else_if - {
+                else_if = {
                     limit = {
                         has_game_rule = {
                             rule = PHI_AI_BEHAVIOR
