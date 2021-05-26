@@ -13,10 +13,10 @@ add_ideas = {
 	JAP_interservice_rivalry_balanced
 	jap_wnt
 	JAP_duplicate_research_efforts
-	GEN_hog_sco
-	GEN_for_sco
-	GEN_eco_sco
-	GEN_sec_sco
+	JAP_Inukai_Tsuyoshi_hog_sco
+	JAP_Yoshizawa_Kenkichi_for_sco
+	JAP_Tsushima_Juichi_eco_sco
+	JAP_Suzuki_Kisaburo_sec_sco
 	constitutional_monarchy
 }
 
