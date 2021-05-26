@@ -1,0 +1,253 @@
+spriteTypes = {
+
+    ####################################################
+    # EST
+    ### Head of Government
+    spriteType = {
+        name = "GFX_idea_EST_Arnold_Veimer_hog_van"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Arnold_Veimer.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Johannes_Lauristin_hog_van"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Johannes_Lauristin.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Johannes_Vares_Barbaruse_hog_van"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Johannes_Vares_Barbaruse.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Oskar_Sepre_hog_van"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Oskar_Sepre.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Jueri_Uluots_hog_mli"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Jueri_Uluots.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Kaarel_Liidak_hog_mli"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Kaarel_Liidak.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Otto_Tief_hog_mli"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Otto_Tief.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Jueri_Uluots_hog_ade"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Jueri_Uluots.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Kaarel_Eenpalu_hog_ade"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Kaarel_Eenpalu.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Konstantin_Paets_hog_ade"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Konstantin_Paets.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Hjalmar_Maee_hog_npo"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Hjalmar_Maee.tga"
+    }
+    ### Foreign Minister
+    spriteType = {
+        name = "GFX_idea_EST_Hans_Kruus_for_van"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Hans_Kruus.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Johannes_Lauristin_for_van"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Johannes_Lauristin.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Nigol_Andresen_for_van"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Nigol_Andresen.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_August_Rei_for_mli"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_August_Rei.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Kaarel_Liidak_for_mli"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Kaarel_Liidak.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Ants_Piip_for_ade"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Ants_Piip.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Friedrich_Karl_Akel_for_ade"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Friedrich_Karl_Akel.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Julius_Seljamaa_for_ade"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Julius_Seljamaa.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Karl_Selter_for_ade"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Karl_Selter.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Hjalmar_Maee_for_npo"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Hjalmar_Maee.tga"
+    }
+    ### Economy Minister
+    spriteType = {
+        name = "GFX_idea_EST_Juhan_Narma_Nihtig_eco_van"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Juhan_Narma_Nihtig.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Nikolaus_Pilankor_eco_van"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Nikolaus_Pilankor.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Paul_Keerdo_eco_van"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Paul_Keerdo.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Hugo_Paertelpoeg_eco_mli"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Hugo_Paertelpoeg.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Leo_Sepp_eco_mli"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Leo_Sepp.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Karl_Selter_eco_ade"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Karl_Selter.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Konstantin_Paets_eco_ade"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Konstantin_Paets.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Otto_Tief_eco_ade"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Otto_Tief.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Alfred_Vendt_eco_pau"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Alfred_Vendt.tga"
+    }
+    ### Security Minister
+    spriteType = {
+        name = "GFX_idea_EST_Aleksander_Rusev_sec_van"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Aleksander_Rusev.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Andrey_Murro_sec_van"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Andrey_Murro.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Boris_Kumm_sec_van"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Boris_Kumm.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Maksim_Unt_sec_van"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Maksim_Unt.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_August_Juerima_sec_mli"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_August_Juerima.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Johannes_Klesment_sec_mli"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Johannes_Klesment.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Richard_Veermaa_sec_mli"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Richard_Tomberg.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Julius_Seljamaa_sec_ade"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Julius_Seljamaa.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Kaarel_Eenpalu_sec_ade"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Kaarel_Eenpalu.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Karl_Sigismund_Litzmann_sec_npo"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Karl_Sigismund_Litzmann.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Oskar_Angelus_sec_npo"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Oskar_Angelus.tga"
+    }
+    ### Chief of Staff
+    spriteType = {
+        name = "GFX_idea_EST_Nikolay_G_Karotamm_cos"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Nikolay_G_Karotamm.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Alexander_Jaakson_cos"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Alexander_Jaakson.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Johan_Holberg_cos"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Johan_Holberg.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Nikolai_Reek_cos"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Nikolai_Reek.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Johannes_Soodla_cos"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Johannes_Soodla.tga"
+    }
+    ### Chief of Army
+    spriteType = {
+        name = "GFX_idea_EST_Nikolay_G_Karotamm_carm"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Nikolay_G_Karotamm.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Richard_Veermaa_carm"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Richard_Veermaa.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Johan_Laidoner_carm"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Johan_Laidoner.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Alfons_Rebane_carm"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Alfons_Rebane.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Juhan_Tuuling_carm"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Juhan_Tuuling.tga"
+    }
+    ### Chief of Navy
+    spriteType = {
+        name = "GFX_idea_EST_Johannes_Vares_Barbaruse_cnav"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Johannes_Vares_Barbaruse.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Oskar_Eiriksson_cnav"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Oskar_Eiriksson.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Alex_Nirk_cnav"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Alex_Nirk.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Voldemar_Mere_cnav"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Voldemar_Mere.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Alfred_Vendt_cnav"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Alfred_Vendt.tga"
+    }
+    ### Chief of Air Force
+    spriteType = {
+        name = "GFX_idea_EST_Oskar_Eiriksson_cair"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Oskar_Eiriksson.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Leo_Sepp_cair"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Leo_Sepp.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Richard_Tomberg_cair"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Richard_Tomberg.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_EST_Juhan_Tuuling_cair"
+        texturefile = "gfx/interface/ideas/EST/ministers/EST_Juhan_Tuuling.tga"
+    }
+}

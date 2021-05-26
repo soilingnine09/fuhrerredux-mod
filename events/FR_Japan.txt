@@ -2238,46 +2238,43 @@ country_event = {
 	
 	option = {
 		name = "Minseito secures their place!"
-		add_popularity = { ideology = market_liberal popularity = 0.1 }
-		set_politics = { ruling_party = market_liberal }
 		ai_chance = {
 			factor = 40
 		}
+		
+		add_popularity = { ideology = market_liberal popularity = 0.1 }
+		set_politics = { ruling_party = market_liberal }
+		remove_every_minister = yes
+		add_ideas = {
+			JAP_Hamaguchi_Osachi_hog_mli
+			JAP_Shidehara_Kijuro_for_mli
+			JAP_Inoue_Junnosuke_eco_mli
+			JAP_Saito_Takao_sec_mli
+		}
 		hidden_effect = {
-			add_ideas = {
-				GEN_hog_mli
-				GEN_for_mli
-				GEN_eco_mli
-				GEN_sec_mli
-			}
 			set_country_flag = jap_minseito_36 
 			set_country_flag = jap_ele_36_done
-			country_event = {
-				id = japele.2
-				days = 7
-			}
+			country_event = { id = japele.2 days = 7 }
 		}
 	}
 	option = {
 		name = "Seiyukai gets the majority!"
-		add_popularity = { ideology = social_conservative popularity = 0.1 }
-		set_politics = { ruling_party = social_conservative }
 		ai_chance = {
 			factor = 40
 		}
+		add_popularity = { ideology = social_conservative popularity = 0.1 }
+		set_politics = { ruling_party = social_conservative }
+		remove_every_minister = yes
+		add_ideas = {
+			JAP_Inukai_Tsuyoshi_hog_sco
+			JAP_Yoshizawa_Kenkichi_for_sco
+			JAP_Tsushima_Juichi_eco_sco
+			JAP_Suzuki_Kisaburo_sec_sco
+		}
 		hidden_effect = {
-			add_ideas = {
-				GEN_hog_sco
-				GEN_for_sco
-				GEN_eco_sco
-				GEN_sec_sco
-			}
 			set_country_flag = jap_seiyukai_36 
 			set_country_flag = jap_ele_36_done
-			country_event = {
-				id = japele.2
-				days = 7
-			}
+			country_event = { id = japele.2 days = 7 }
 		}
 	}
 }
@@ -2358,13 +2355,12 @@ country_event = {
 		trigger = { has_country_flag = jap_minseito_36 }
 		add_popularity = { ideology = market_liberal popularity = 0.1 }
 		set_politics = { ruling_party = market_liberal }
-		hidden_effect = {
-			add_ideas = {
-				GEN_hog_mli
-				GEN_for_mli
-				GEN_eco_mli
-				GEN_sec_mli
-			}
+		remove_every_minister = yes
+		add_ideas = {
+			JAP_Hamaguchi_Osachi_hog_mli
+			JAP_Shidehara_Kijuro_for_mli
+			JAP_Inoue_Junnosuke_eco_mli
+			JAP_Saito_Takao_sec_mli
 		}
 	}
 
@@ -2373,14 +2369,13 @@ country_event = {
 		trigger = { has_country_flag = jap_seiyukai_36 }
 		add_popularity = { ideology = market_liberal popularity = 0.1 }
 		set_politics = { ruling_party = market_liberal }
-		hidden_effect = {
-			add_ideas = {
-				GEN_hog_mli
-				GEN_for_mli
-				GEN_eco_mli
-				GEN_sec_mli
-			}
-		}		
+		remove_every_minister = yes
+		add_ideas = {
+			JAP_Hamaguchi_Osachi_hog_mli
+			JAP_Shidehara_Kijuro_for_mli
+			JAP_Inoue_Junnosuke_eco_mli
+			JAP_Saito_Takao_sec_mli
+		}	
 	}
 
 	option = {
@@ -2388,14 +2383,13 @@ country_event = {
 		trigger = { has_country_flag = jap_seiyukai_36 }
 		add_popularity = { ideology = social_conservative popularity = 0.1 }
 		set_politics = { ruling_party = social_conservative }
-		hidden_effect = {
-			add_ideas = {
-				GEN_hog_sco
-				GEN_for_sco
-				GEN_eco_sco
-				GEN_sec_sco
-			}
-		}		
+		remove_every_minister = yes
+		add_ideas = {
+			JAP_Inukai_Tsuyoshi_hog_sco
+			JAP_Yoshizawa_Kenkichi_for_sco
+			JAP_Tsushima_Juichi_eco_sco
+			JAP_Suzuki_Kisaburo_sec_sco
+		}
 	}
 
 	option = {
@@ -2403,13 +2397,12 @@ country_event = {
 		trigger = { has_country_flag = jap_minseito_36 }
 		add_popularity = { ideology = social_conservative popularity = 0.1 }
 		set_politics = { ruling_party = social_conservative }
-		hidden_effect = {
-			add_ideas = {
-				GEN_hog_sco
-				GEN_for_sco
-				GEN_eco_sco
-				GEN_sec_sco
-			}
+		remove_every_minister = yes
+		add_ideas = {
+			JAP_Inukai_Tsuyoshi_hog_sco
+			JAP_Yoshizawa_Kenkichi_for_sco
+			JAP_Tsushima_Juichi_eco_sco
+			JAP_Suzuki_Kisaburo_sec_sco
 		}		
 	}
 
@@ -2417,14 +2410,13 @@ country_event = {
 		name = "Taishūtō won!"
 		add_popularity = { ideology = social_democrat popularity = 0.1 }
 		set_politics = { ruling_party = social_democrat }
-		hidden_effect = {
-			add_ideas = {
-				GEN_hog_sde
-				GEN_FOR_Sde
-				GEN_eco_sde
-				GEN_sec_sde
-			}
-		}		
+		remove_every_minister = yes
+		add_ideas = {
+			JAP_Katayama_Tetsu_hog_sde
+			JAP_Katayama_Tetsu_for_sde
+			JAP_Mizutani_Chozaburo_eco_sde
+			JAP_Matsuoka_Komakichi_sec_sde
+		}	
 	}
 }
 
@@ -2587,19 +2579,19 @@ country_event = {
 		name = "Neglect led us to the fall of democracy."
 		set_politics = {
 			ruling_party = authoritarian_democrat
+			elections_allowed = no
 		}
 		add_popularity = {
 			ideology = authoritarian_democrat
 			popularity = 0.15
 		}
 		complete_national_focus = jap_the_admiral_plot
-		hidden_effect = {
-			add_ideas = {
-				GEN_hog_ade
-				GEN_for_ade
-				GEN_eco_ade
-				GEN_sec_ade
-			}
+		remove_every_minister = yes
+		add_ideas = {
+			JAP_Nakajima_Chikuhei_hog_ade
+			JAP_Hirota_Koki_for_ade
+			JAP_Ogawa_Gotaro_eco_ade
+			JAP_Nagai_Ryutaro_sec_ade
 		}		
 		hidden_effect = {
 			set_country_flag = JAP_militarism_prevails
@@ -2649,13 +2641,12 @@ country_event = {
 			ideology = national_populist 
 			popularity = 0.15
 		}
-		hidden_effect = {
-			add_ideas = {
-				GEN_hog_npo
-				GEN_for_npo
-				GEN_eco_npo
-				GEN_sec_npo
-			}
+		remove_every_minister = yes
+		add_ideas = {
+			JAP_Konoe_Fumimaro_hog_npo
+			JAP_Okawa_Shumei_for_npo
+			JAP_Suzuki_Teiichi_eco_npo
+			JAP_Suetsugu_Nobumasa_sec_npo
 		}		
 		complete_national_focus = jap_the_army_coup
 		hidden_effect = {

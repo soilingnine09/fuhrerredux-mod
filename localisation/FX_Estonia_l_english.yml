@@ -1,4 +1,5 @@
 ﻿l_english:
+EST_FUHRERREDUX_DESC:0 "Estonia have in many centuries been under the control of foreign powers. Finally, in 1918, at the closing stages of the Great War, Estonia saw a chance to gain independence and managed to achieve it.\n\nSince then, Estonia have seen much of political instability and turbulence, leading to a declaration of Martial Laws and the current regime under Konstantin Päts' Patriotic League. His power, however, is not all secure.."
 
 ### Country Names
 EST_vanguardist:0 "Commune of Estonia"
@@ -358,12 +359,11 @@ estonia.107.d:0 ""
 estonia.107.a:0 "Our Movement Will Build Estonia"
 
 ### Ministers ###
-
-### Head of Government ###
-EST_Arnold_Veimer_hog_tot:0 "Arnold Veimer"
-EST_Johannes_Lauristin_hog_tot:0 "Johannes Lauristin"
-EST_Johannes_Vares_Barbaruse_hog_tot:0 "Johannes Vares-Barbaruse"
-EST_Oskar_Sepre_hog_tot:0 "Oskar Sepre"
+# Head of Government
+EST_Arnold_Veimer_hog_van:0 "Arnold Veimer"
+EST_Johannes_Lauristin_hog_van:0 "Johannes Lauristin"
+EST_Johannes_Vares_Barbaruse_hog_van:0 "Johannes Vares-Barbaruse"
+EST_Oskar_Sepre_hog_van:0 "Oskar Sepre"
 EST_Jueri_Uluots_hog_mli:0 "Jüri Uluots"
 EST_Kaarel_Liidak_hog_mli:0 "Kaarel Liidak"
 EST_Otto_Tief_hog_mli:0 "Otto Tief"
@@ -371,12 +371,10 @@ EST_Jueri_Uluots_hog_ade:0 "Jüri Uluots"
 EST_Kaarel_Eenpalu_hog_ade:0 "Kaarel Eenpalu"
 EST_Konstantin_Paets_hog_ade:0 "Konstantin Päts"
 EST_Hjalmar_Maee_hog_npo:0 "Hjalmar Mäe"
-
-### Person of Influence ###
-## Foreign Minister
-EST_Hans_Kruus_for_tot:0 "Hans Kruus"
-EST_Johannes_Lauristin_for_tot:0 "Johannes Lauristin"
-EST_Nigol_Andresen_for_tot:0 "Nigol Andresen"
+# Foreign Minister
+EST_Hans_Kruus_for_van:0 "Hans Kruus"
+EST_Johannes_Lauristin_for_van:0 "Johannes Lauristin"
+EST_Nigol_Andresen_for_van:0 "Nigol Andresen"
 EST_August_Rei_for_mli:0 "August Rei"
 EST_Kaarel_Liidak_for_mli:0 "Kaarel Liidak"
 EST_Ants_Piip_for_ade:0 "Ants Piip"
@@ -384,21 +382,21 @@ EST_Friedrich_Karl_Akel_for_ade:0 "Friedrich Karl Akel"
 EST_Julius_Seljamaa_for_ade:0 "Julius Seljamaa"
 EST_Karl_Selter_for_ade:0 "Karl Selter"
 EST_Hjalmar_Maee_for_npo:0 "Hjalmar Mäe"
-## Economy Minister
-EST_Juhan_Narma_Nihtig_eco_tot:0 "Juhan Narma-Nihtig"
-EST_Nikolaus_Pilankor_eco_tot:0 "Nikolaus Pilankor"
-EST_Paul_Keerdo_eco_tot:0 "Paul Keerdo"
+# Economy Minister
+EST_Juhan_Narma_Nihtig_eco_van:0 "Juhan Narma-Nihtig"
+EST_Nikolaus_Pilankor_eco_van:0 "Nikolaus Pilankor"
+EST_Paul_Keerdo_eco_van:0 "Paul Keerdo"
 EST_Hugo_Paertelpoeg_eco_mli:0 "Hugo Pärtelpoeg"
 EST_Leo_Sepp_eco_mli:0 "Leo Sepp"
 EST_Karl_Selter_eco_ade:0 "Karl Selter"
 EST_Konstantin_Paets_eco_ade:0 "Konstantin Päts"
 EST_Otto_Tief_eco_ade:0 "Otto Tief"
 EST_Alfred_Vendt_eco_pau:0 "Alfred Vendt"
-## Security Minister
-EST_Aleksander_Rusev_sec_tot:0 "Aleksander Rusev"
-EST_Andrey_Murro_sec_tot:0 "Andrey Murro"
-EST_Boris_Kumm_sec_tot:0 "Boris Kumm"
-EST_Maksim_Unt_sec_tot:0 "Maksim Unt"
+# Security Minister
+EST_Aleksander_Rusev_sec_van:0 "Aleksander Rusev"
+EST_Andrey_Murro_sec_van:0 "Andrey Murro"
+EST_Boris_Kumm_sec_van:0 "Boris Kumm"
+EST_Maksim_Unt_sec_van:0 "Maksim Unt"
 EST_August_Juerima_sec_mli:0 "August Jürima"
 EST_Johannes_Klesment_sec_mli:0 "Johannes Klesment"
 EST_Richard_Veermaa_sec_mli:0 "Richard Veermaa"
@@ -406,33 +404,29 @@ EST_Julius_Seljamaa_sec_ade:0 "Julius Seljamaa"
 EST_Kaarel_Eenpalu_sec_ade:0 "Kaarel Eenpalu"
 EST_Karl_Sigismund_Litzmann_sec_npo:0 "Karl Sigismund Litzmann"
 EST_Oskar_Angelus_sec_npo:0 "Oskar Angelus"
-
-### Chief of Staff ###
-EST_Nikolay_G_Karotamm_cos_tot:0 "Nikolay G. Karotamm"
-EST_Alexander_Jaakson_cos_mli:0 "Alexander Jaakson"
-EST_Johan_Holberg_cos_mli:0 "Johan Holberg"
-EST_Nikolai_Reek_cos_ade:0 "Nikolai Reek"
-EST_Johannes_Soodla_cos_npo:0 "Johannes Soodla"
-
-### Chief of Army ###
-EST_Nikolay_G_Karotamm_carm_tot:0 "Nikolay G. Karotamm"
-EST_Richard_Veermaa_carm_mli:0 "Richard Veermaa"
-EST_Johan_Laidoner_carm_ade:0 "Johan Laidoner"
-EST_Alfons_Rebane_carm_npo:0 "Alfons Rebane"
-EST_Juhan_Tuuling_carm_npo:0 "Juhan Tuuling"
-
-### Chief of Navy ###
-EST_Johannes_Vares_Barbaruse_cnav_tot:0 "Johannes Vares-Barbaruse"
-EST_Oskar_Eiriksson_cnav_tot:0 "Oskar Eiriksson"
-EST_Alex_Nirk_cnav_mli:0 "Alex Nirk"
-EST_Voldemar_Mere_cnav_ade:0 "Voldemar Mere"
-EST_Alfred_Vendt_cnav_pau:0 "Alfred Vendt"
-
-### Chief of Air Force ###
-EST_Oskar_Eiriksson_cair_tot:0 "Oskar Eiriksson"
-EST_Leo_Sepp_cair_mli:0 "Leo Sepp"
-EST_Richard_Tomberg_cair_ade:0 "Richard Tomberg"
-EST_Juhan_Tuuling_cair_npo:0 "Juhan Tuuling"
+# Chief of Staff
+EST_Nikolay_G_Karotamm_cos:0 "Nikolay G. Karotamm"
+EST_Alexander_Jaakson_cos:0 "Alexander Jaakson"
+EST_Johan_Holberg_cos:0 "Johan Holberg"
+EST_Nikolai_Reek_cos:0 "Nikolai Reek"
+EST_Johannes_Soodla_cos:0 "Johannes Soodla"
+# Chief of Army
+EST_Nikolay_G_Karotamm_carm:0 "Nikolay G. Karotamm"
+EST_Richard_Veermaa_carm:0 "Richard Veermaa"
+EST_Johan_Laidoner_carm:0 "Johan Laidoner"
+EST_Alfons_Rebane_carm:0 "Alfons Rebane"
+EST_Juhan_Tuuling_carm:0 "Juhan Tuuling"
+# Chief of Navy
+EST_Johannes_Vares_Barbaruse_cnav:0 "Johannes Vares-Barbaruse"
+EST_Oskar_Eiriksson_cnav:0 "Oskar Eiriksson"
+EST_Alex_Nirk_cnav:0 "Alex Nirk"
+EST_Voldemar_Mere_cnav:0 "Voldemar Mere"
+EST_Alfred_Vendt_cnav:0 "Alfred Vendt"
+# Chief of Air Force
+EST_Oskar_Eiriksson_cair:0 "Oskar Eiriksson"
+EST_Leo_Sepp_cair:0 "Leo Sepp"
+EST_Richard_Tomberg_cair:0 "Richard Tomberg"
+EST_Juhan_Tuuling_cair:0 "Juhan Tuuling"
  
 ### Companies ###
 arsenal_tallinn:0 "Arsenal Tallinn"
@@ -443,4 +437,3 @@ EST_military_rule_flag:0 "The Estonian Military have taken power"
 EST_vaps_movement_siezes_power_flag:0 "The Vaps Movement have taken power"
 EST_effect_london_crash_flag:0 "The London Stock Market Crash has occurred"
 
-EST_FUHRERREDUX_DESC:0 "Estonia have in many centuries been under the control of foreign powers. Finally, in 1918, at the closing stages of the Great War, Estonia saw a chance to gain independence and managed to achieve it.\n\nSince then, Estonia have seen much of political instability and turbulence, leading to a declaration of Martial Laws and the current regime under Konstantin Päts' Patriotic League. His power, however, is not all secure.."

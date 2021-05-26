@@ -2996,56 +2996,6 @@ spriteType = { #Auto-Generated
   name = "GFX_idea_CZE_Charles_Pergler_sec_npo"
   texturefile = "gfx/interface/ideas/CZE/ministers/CZE_Charles_Pergler.tga"
 }
-#####
-#Jap#
-#####
-  #Chief of Staff
-  spriteType = { #Auto-Generated
-    name = "GFX_idea_JAP_hitoshi_imamura_cos"
-    texturefile = "gfx/interface/ideas/JAP/ministers/JAP_Imamura_Hitoshi.dds"
-  }
-  spriteType = { #Auto-Generated
-    name = "GFX_idea_JAP_yasuji_okamura_cos"
-    texturefile = "gfx/interface/ideas/JAP/ministers/JAP_Okamura_Yasuji.dds"
-  }
-  spriteType = { #Auto-Generated
-    name = "GFX_idea_JAP_shunroku_hata_cos"
-    texturefile = "gfx/interface/ideas/JAP/ministers/JAP_Hata_Shunroku.dds"
-  }
-  #Chief of Navy
-  spriteType = { #Auto-Generated
-    name = "GFX_idea_JAP_soemu_toyoda_cnav"
-    texturefile = "gfx/interface/ideas/JAP/ministers/JAP_Toyoda_Soemu.dds"
-  }
-  spriteType = { #Auto-Generated
-    name = "GFX_idea_JAP_chuichi_nagumo_cnav"
-    texturefile = "gfx/interface/ideas/CAN/ministers/CAN_George_Eulas_Foster.dds"
-  }
-  #Chief of Airforce
-  spriteType = { #Auto-Generated
-    name = "GFX_idea_JAP_mitsuo_fuchida_cair"
-    texturefile = "gfx/interface/ideas/CAN/ministers/CAN_George_Eulas_Foster.dds"
-  }
-  spriteType = { #Auto-Generated
-    name = "GFX_idea_JAP_tateo_kato_cair"
-    texturefile = "gfx/interface/ideas/CAN/ministers/CAN_George_Eulas_Foster.dds"
-  }
-  spriteType = { #Auto-Generated
-    name = "GFX_idea_JAP_matome_ugaki_cair"
-    texturefile = "gfx/interface/ideas/CAN/ministers/CAN_George_Eulas_Foster.dds"
-  }
-  spriteType = { #Auto-Generated
-    name = "GFX_idea_JAP_nishizo_tsukahara_cair"
-    texturefile = "gfx/interface/ideas/CAN/ministers/CAN_George_Eulas_Foster.dds"
-  }
-  spriteType = { #Auto-Generated
-    name = "GFX_idea_JAP_yoji_ito"
-    texturefile = "gfx/interface/ideas/CAN/ministers/CAN_George_Eulas_Foster.dds"
-  }
-  spriteType = { #Auto-Generated
-    name = "GFX_idea_rolls_royce_jap"
-    texturefile = "gfx/interface/ideas/ENG/companies/rolls_royce.dds"
-  }
 ##############################
 ########## ZHILI #############
 ##############################
