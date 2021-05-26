@@ -5165,6 +5165,7 @@ country_event = {
     trigger = {
         NOT = {
             tag = PHI
+            tag = PHR
             has_country_flag = PHI_OCCUPIED
             country_exists = PHI
         }
