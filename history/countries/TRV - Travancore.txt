@@ -33,21 +33,17 @@ set_politics = {
 }
 
 set_popularities = {
-vanguardist = 0
-collectivist = 17
-libertarian_socialist = 0
-social_democrat = 6
-social_liberal = 7
-market_liberal = 15
-social_conservative = 14
-authoritarian_democrat = 0
-paternal_autocrat = 41
-national_populist = 0
-valkist = 0
-
-}
-
-add_ideas = {
+	vanguardist = 0
+	collectivist = 17
+	libertarian_socialist = 0
+	social_democrat = 6
+	social_liberal = 7
+	market_liberal = 15
+	social_conservative = 14
+	authoritarian_democrat = 0
+	paternal_autocrat = 41
+	national_populist = 0
+	valkist = 0
 }
 
 create_country_leader = {
@@ -56,8 +52,6 @@ create_country_leader = {
 	picture = "Chithira_Thirunal_Balarama_Varma.tga"
 	expire = "1965.1.1"
 	ideology = paternal_autocrat_subtype
-	traits = {
-		
-	}
+	traits = { }
 }
 

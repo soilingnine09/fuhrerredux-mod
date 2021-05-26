@@ -21,7 +21,7 @@ set_stability = 0.5
 set_war_support = 0.31
 set_politics = {	
 	ruling_party = national_populist
-	last_election = "[ROOT.GetDate]"
+	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -34,25 +34,15 @@ add_ideas = {
 }
 set_popularities = {
 	vanguardist = 10
-
 	collectivist = 20
-
 	libertarian_socialist = 7
-
 	social_democrat = 1
-
 	social_liberal = 1
-
 	market_liberal = 1
-
 	social_conservative = 10
-
 	authoritarian_democrat = 12
-
 	paternal_autocrat = 2
-
 	national_populist = 35
-
 	valkist = 1
 }
 create_country_leader = {
@@ -61,53 +51,63 @@ create_country_leader = {
 	picture = "Portrait_VIN_Nguyen_Ai_Quoc.tga"
 	expire = "1965.1.1"
 	ideology = vanguardist_subtype
+	traits = { }
 }
 create_country_leader = {
 	name = "Bui Bang Doan"
+	desc = "POLITICS_BUI_BANG_DOAN_DESC"
 	picture = "Portrait_VIN_Bui_Bang_Doan.tga"
 	expire = "1965.1.1"
 	ideology = collectivist_subtype
+	traits = { }
 }
 create_country_leader = {
 	name = "Nguyen Xien"
+	desc = "POLITICS_NGUYEN_XIEN_DESC"
 	picture = "Portrait_Indochina_Nguyen_Xien.tga"
 	expire = "1965.1.1"
 	ideology = libertarian_socialist_subtype
+	traits = { }
 }
 create_country_leader = {
 	name = "Prince Boun Oum"
+	desc = "POLITICS_PRINCE_BOUN_OUM_DESC"
 	picture = "Portrait_Indochina_Boun_Oum.tga"
 	expire = "1965.1.1"
 	ideology = market_liberal_subtype
+	traits = { }
 }
 create_country_leader = {
 	name = "Prince Boun Oum"
+	desc = "POLITICS_PRINCE_BOUN_OUM_DESC"
 	picture = "Portrait_Indochina_Boun_Oum.tga"
 	expire = "1965.1.1"
 	ideology = social_democrat_subtype
+	traits = { }
 }
 create_country_leader = {
 	name = "Ngo Din Diem"
+	desc = "POLITICS_NGO_DIN_DIEM_DESC"
 	picture = "Portrait_VIN_Ngo_Dinh_Diem.tga"
 	expire = "1965.1.1"
 	ideology = social_liberal_subtype
+	traits = { }
 }
 create_country_leader = {
 	name = "Norodom Sihanouk"
+	desc = "POLITICS_NORODOM_SIHANOUK_DESC"
 	picture = "Portrait_Indochina_Norodom_Sihanouk.tga"
 	expire = "1965.1.1"
 	ideology = social_conservative_subtype
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Cuong De"
 	desc = "POLITICS_COUNG_DE_DESC"
 	picture = "Portrait_VIN_Cuong_De.tga"
 	expire = "1965.1.1"
 	ideology = authoritarian_democrat_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
 create_country_leader = {
 	name = "Cuong De"
@@ -115,21 +115,23 @@ create_country_leader = {
 	picture = "Portrait_VIN_Cuong_De.tga"
 	expire = "1965.1.1"
 	ideology = paternal_autocrat_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
 create_country_leader = {
 	name = "Nguyen Thai Hoc"
+	desc = "POLITICS_NGUYEN_THAI_HOC_DESC"
 	picture = "Portrait_VIN_Nguyen_Thai_Hoc.tga"
 	expire = "1965.1.1"
 	ideology = national_populist_subtype
+	traits = { }
 }
 create_country_leader = {
 	name = "Nguyen Phan Long"
+	desc = "POLITICS_NGUYEN_PHAN_LONG"
 	picture = "Portrait_VIN_Nguyen_Phan_Long.tga"
 	expire = "1965.1.1"
 	ideology = valkist_subtype
+	traits = { }
 }
 ##Commander of Indochinese Liberation Armed Forces
 create_corps_commander = {
