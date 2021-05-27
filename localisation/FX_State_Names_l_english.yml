@@ -1012,18 +1012,10 @@
  STATE_1011:0 "Nakhon Ratchasima"
  STATE_1012:0 "Northeast Malay"
  STATE_1013:0 "Prachinburi"
- STATE_1014:0 "Greater Bangkok"
+ STATE_1014:0 "Phra Nakorn"
  STATE_1015:0 "Pau"
  STATE_1016:0 "Roussillon"
  STATE_1017:0 "La Rochelle"
-<<<<<<< HEAD:localisation/FX_State_Names_l_english.yml
-<<<<<<< Updated upstream:localisation/FR_State_Names_l_english.yml
- STATE_1021:0 "Kengtung"
- STATE_1022:0 "Hanthawaddy"
- STATE_1023:0 "Phnom Penh"
-=======
- STATE_1018:0 "Central Mongolia"
- STATE_1019:0 "Southwest Mongolia"
  STATE_1020:0 "Yantai"
  STATE_1021:0 "Fuzhou"
  STATE_1022:0 "Shangsha"
@@ -1035,7 +1027,4 @@
  STATE_1028:0 "Taizhou"
  STATE_1029:0 "Aden Colony"
  STATE_1030:0 "Aksai Chin"
->>>>>>> Stashed changes:localisation/FX_State_Names_l_english.yml
-=======
- STATE_1020:0 "Yantai"
->>>>>>> main:localisation/FR_State_Names_l_english.yml
+ STATE_1031:0 "Suizhou"

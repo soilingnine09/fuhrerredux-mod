@@ -1,0 +1,19 @@
+state={
+	id=1031
+	name="STATE_1031"
+	provinces={
+		7167 7637 9959 10462 
+	}
+	manpower=2918390
+	history = {
+		owner = ZHI
+		add_claim_by = CHI
+		add_claim_by = MAN
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+		}
+	}
+	state_category = city
+	buildings_max_level_factor=1.000
+}

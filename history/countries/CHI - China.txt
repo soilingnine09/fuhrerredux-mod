@@ -126,9 +126,9 @@ create_country_leader = {
 	traits = {}
 }
 create_country_leader = {
-	name = "He Yingqin"
-	desc = "POLITICS_HE_YINGQIN_DESC"
-	picture = "Portrait_China_He_Yingqin.tga"
+	name = "Qi Xieyuang"
+	desc = "POLITICS_QI_XIEYUAN_DESC"
+	picture = "gfx/leaders/ZHI/Portrait_ZHI_Qi_Xieyuan.tga"
 	expire = "1965.1.1"
 	ideology = paternal_autocrat_subtype
 	traits = {}

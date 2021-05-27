@@ -16,3 +16,4 @@ set_technology = {
 	### Air ###
 	early_fighter = 1
 }
+
