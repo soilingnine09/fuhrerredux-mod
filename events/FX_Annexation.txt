@@ -40,7 +40,7 @@ country_event = {
         puppet = AFG
     }
     option = { # Annex
-        name = annexation.1.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = AFG_OCCUPIED
         add_political_power = -50
@@ -81,7 +81,7 @@ country_event = {
         puppet = ALB
     }
     option = {
-        name = annexation.2.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = ALB_OCCUPIED
         add_political_power = -50
@@ -122,7 +122,7 @@ country_event = {
         puppet = ARB
     }
     option = {
-        name = annexation.3.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = ARB_OCCUPIED
         add_political_power = -50
@@ -163,7 +163,7 @@ country_event = {
         puppet = ARG
     }
     option = {
-        name = annexation.4.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = ARG_OCCUPIED
         add_political_power = -50
@@ -204,7 +204,7 @@ country_event = {
         puppet = ARM
     }
     option = {
-        name = annexation.5.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = ARM_OCCUPIED
         add_political_power = -50
@@ -245,7 +245,7 @@ country_event = {
         puppet = AST
     }
     option = {
-        name = annexation.6.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = AST_OCCUPIED
         add_political_power = -50
@@ -287,7 +287,7 @@ country_event = {
         puppet = AUS
     }
     option = {
-        name = annexation.7.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = AUS_OCCUPIED
         add_political_power = -50
@@ -328,7 +328,7 @@ country_event = {
         puppet = AZR
     }
     option = {
-        name = annexation.8.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = AZR_OCCUPIED
         add_political_power = -50
@@ -371,7 +371,7 @@ country_event = {
         puppet = BAL
     }
     option = {
-        name = annexation.9.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = BAL_OCCUPIED
         add_political_power = -50
@@ -413,7 +413,7 @@ country_event = {
         puppet = BAW
     }
     option = {
-        name = annexation.8.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = BAW_OCCUPIED
         add_political_power = -50
@@ -456,7 +456,7 @@ country_event = {
         puppet = BAY
     }
     option = {
-        name = annexation.11.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = BAY_OCCUPIED
         add_political_power = -50
@@ -499,7 +499,7 @@ country_event = {
         puppet = INS
     }
     option = {
-        name = annexation.12.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = INS_OCCUPIED
         add_political_power = -50
@@ -519,6 +519,9 @@ country_event = {
             tag = BEL
             has_country_flag = BE_OCCUPIED
             country_exists = BEL
+            country_exists = FLA
+            country_exists = WLL
+            has_global_flag = belgium_balkanized
         }
         ROOT = {
             has_war = no
@@ -546,6 +549,37 @@ country_event = {
     }
     option = {
         name = annexation.13.b
+        every_owned_state = {
+            limit = {
+                OR = {
+                    state = 806
+                    state = 802
+                    state = 34
+                    is_fully_controlled_by = ROOT
+                    NOT = { is_core_of = ROOT }
+                    NOT = { is_claimed_by = ROOT }
+                }
+                WLL = { transfer_state = PREV }
+            }
+        }
+        every_owned_state = {
+            limit = {
+                OR = {
+                    state = 6
+                    state = 867
+                }
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            FLA = { transfer_state = PREV }
+        }
+        puppet = WLL
+        puppet = FLA
+        set_global_flag = belgium_balkanized
+    }
+    option = {
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = BEL_OCCUPIED
         add_political_power = -50
@@ -586,7 +620,7 @@ country_event = {
         puppet = BHU
     }
     option = {
-        name = annexation.14.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = BHU_OCCUPIED
         add_political_power = -50
@@ -604,6 +638,8 @@ country_event = {
     trigger = {
         NOT = {
             tag = BIH
+            tag = IND
+            tag = INC
             has_country_flag = BIH_OCCUPIED
             country_exists = BIH
         }
@@ -627,7 +663,7 @@ country_event = {
         puppet = BIH
     }
     option = {
-        name = annexation.15.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = BIH_OCCUPIED
         add_political_power = -50
@@ -678,7 +714,7 @@ country_event = {
         }
     }
     option = {
-        name = annexation.16.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = BLR_OCCUPIED
         add_political_power = -50
@@ -719,7 +755,7 @@ country_event = {
         puppet = BOL
     }
     option = {
-        name = annexation.17.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = BOL_OCCUPIED
         add_political_power = -50
@@ -760,7 +796,7 @@ country_event = {
         puppet = BOM
     }
     option = {
-        name = annexation.18.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = BOM_OCCUPIED
         add_political_power = -50
@@ -801,7 +837,7 @@ country_event = {
         puppet = BOS
     }
     option = {
-        name = annexation.19.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = BOS_OCCUPIED
         add_political_power = -50
@@ -877,7 +913,7 @@ country_event = {
         puppet = BPS
     }
     option = {
-        name = annexation.20.e
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = BRA_OCCUPIED
         add_political_power = -50
@@ -920,7 +956,7 @@ country_event = {
         puppet = BRI
     }
     option = {
-        name = annexation.21.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = BRI_OCCUPIED
         add_political_power = -50
@@ -939,7 +975,6 @@ country_event = {
         has_global_flag = germany_balkanized
         NOT = {
             tag = BRM
-            tag = GER
             has_country_flag = BRM_OCCUPIED
             country_exists = BRM
         }
@@ -963,7 +998,7 @@ country_event = {
         puppet = BRM
     }
     option = {
-        name = annexation.22.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = BRM_OCCUPIED
         add_political_power = -50
@@ -1006,7 +1041,7 @@ country_event = {
         puppet = BRW
     }
     option = {
-        name = annexation.23.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = BRW_OCCUPIED
         add_political_power = -50
@@ -1049,7 +1084,7 @@ country_event = {
         puppet = BUL
     }
     option = {
-        name = annexation.24.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = BUL_OCCUPIED
         add_political_power = -50
@@ -1091,7 +1126,7 @@ country_event = {
         puppet = CAM
     }
     option = {
-        name = annexation.25.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = CAM_OCCUPIED
         add_political_power = -50
@@ -1132,7 +1167,7 @@ country_event = {
         puppet = CAN
     }
     option = {
-        name = annexation.26.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = CAN_OCCUPIED
         add_political_power = -50
@@ -1173,7 +1208,7 @@ country_event = {
         puppet = CEN
     }
     option = {
-        name = annexation.27.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = CEN_OCCUPIED
         add_political_power = -50
@@ -1214,7 +1249,7 @@ country_event = {
         puppet = CHI
     }
     option = {
-        name = annexation.28.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = CHI_OCCUPIED
         add_political_power = -50
@@ -1255,7 +1290,7 @@ country_event = {
         puppet = CHL
     }
     option = {
-        name = annexation.29.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = CHL_OCCUPIED
         add_political_power = -50
@@ -1297,7 +1332,7 @@ country_event = {
         puppet = COG
     }
     option = {
-        name = annexation.30.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = COG_OCCUPIED
         add_political_power = -50
@@ -1338,7 +1373,7 @@ country_event = {
         puppet = COL
     }
     option = {
-        name = annexation.31.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = COL_OCCUPIED
         add_political_power = -50
@@ -1379,7 +1414,7 @@ country_event = {
         puppet = COS
     }
     option = {
-        name = annexation.31.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = COS_OCCUPIED
         add_political_power = -50
@@ -1421,7 +1456,7 @@ country_event = {
         puppet = CRC
     }
     option = {
-        name = annexation.31.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = CRC_OCCUPIED
         add_political_power = -50
@@ -1462,7 +1497,7 @@ country_event = {
         puppet = CRO
     }
     option = {
-        name = annexation.34.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = CRO_OCCUPIED
         add_political_power = -50
@@ -1505,6 +1540,13 @@ country_event = {
     }
     option = {
         name = annexation.35.b
+        trigger = { MEX = { is_ally_of_ROOT = yes } }
+        MEX = {
+            transfer_state = 881
+        }
+    }
+    option = {
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = CRU_OCCUPIED
         add_political_power = -50
@@ -1545,7 +1587,7 @@ country_event = {
         puppet = CUB
     }
     option = {
-        name = annexation.36.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = CUB_OCCUPIED
         add_political_power = -50
@@ -1587,7 +1629,7 @@ country_event = {
         puppet = CYP
     }
     option = {
-        name = annexation.37.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = CYP_OCCUPIED
         add_political_power = -50
@@ -1649,7 +1691,7 @@ country_event = {
         }
     }
     option = {
-        name = annexation.38.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = CZE_OCCUPIED
         add_political_power = -50
@@ -1691,7 +1733,7 @@ country_event = {
         puppet = INS
     }
     option = {
-        name = annexation.39.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = DEI_OCCUPIED
         add_political_power = -50
@@ -1738,7 +1780,7 @@ country_event = {
         }
     }
     option = {
-        name = annexation.40.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = DEN_OCCUPIED
         add_political_power = -50
@@ -1779,7 +1821,7 @@ country_event = {
         puppet = DOM
     }
     option = {
-        name = annexation.41.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = DOM_OCCUPIED
         add_political_power = -50
@@ -1820,7 +1862,7 @@ country_event = {
         puppet = ECU
     }
     option = {
-        name = annexation.42.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = ECU_OCCUPIED
         add_political_power = -50
@@ -1862,7 +1904,7 @@ country_event = {
         puppet = EGY
     }
     option = {
-        name = annexation.43.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = EGY_OCCUPIED
         add_political_power = -50
@@ -1903,7 +1945,7 @@ country_event = {
         puppet = ELS
     }
     option = {
-        name = annexation.44.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = ELS_OCCUPIED
         add_political_power = -50
@@ -2034,7 +2076,7 @@ country_event = {
         }
     }
     option = {
-        name = annexation.45.c
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = ENG_OCCUPIED
         add_political_power = -50
@@ -2077,7 +2119,7 @@ country_event = {
         puppet = ERM
     }
     option = {
-        name = annexation.46.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = ERM_OCCUPIED
         add_political_power = -50
@@ -2118,7 +2160,7 @@ country_event = {
         puppet = EST
     }
     option = {
-        name = annexation.47.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = EST_OCCUPIED
         add_political_power = -50
@@ -2159,7 +2201,7 @@ country_event = {
         puppet = ETH
     }
     option = {
-        name = annexation.48.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = ETH_OCCUPIED
         add_political_power = -50
@@ -2251,7 +2293,7 @@ country_event = {
         puppet = ICR
     }
     option = {
-        name = annexation.49.c
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = FIC_OCCUPIED
         add_political_power = -50
@@ -2292,7 +2334,7 @@ country_event = {
         puppet = FIN
     }
     option = {
-        name = annexation.50.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = FIN_OCCUPIED
         add_political_power = -50
@@ -2334,7 +2376,7 @@ country_event = {
         puppet = FLA
     }
     option = {
-        name = annexation.51.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = FLA_OCCUPIED
         add_political_power = -50
@@ -2499,7 +2541,7 @@ country_event = {
         FRA = { set_cosmetic_tag = FRA_SSR }
     }
     option = {
-        name = annexation.52.e
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = FRA_OCCUPIED
         add_political_power = -50
@@ -2540,7 +2582,7 @@ country_event = {
         puppet = GEO
     }
     option = {
-        name = annexation.53.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = GEO_OCCUPIED
         add_political_power = -50
@@ -2796,7 +2838,7 @@ country_event = {
         set_global_flag = germany_balkanized
     }
     option = {
-        name = annexation.54.e
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = GER_OCCUPIED
         add_political_power = -50
@@ -2837,7 +2879,7 @@ country_event = {
         puppet = GOR
     }
     option = {
-        name = annexation.55.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = GOR_OCCUPIED
         add_political_power = -50
@@ -2878,7 +2920,7 @@ country_event = {
         puppet = GRE
     }
     option = {
-        name = annexation.56.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = GRE_OCCUPIED
         add_political_power = -50
@@ -2919,7 +2961,7 @@ country_event = {
         puppet = GUA
     }
     option = {
-        name = annexation.57.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = GUA_OCCUPIED
         add_political_power = -50
@@ -2960,7 +3002,7 @@ country_event = {
         puppet = HAI
     }
     option = {
-        name = annexation.58.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = HAI_OCCUPIED
         add_political_power = -50
@@ -3003,7 +3045,7 @@ country_event = {
         puppet = HAN
     }
     option = {
-        name = annexation.59.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = HAN_OCCUPIED
         add_political_power = -50
@@ -3046,7 +3088,7 @@ country_event = {
         puppet = HES
     }
     option = {
-        name = annexation.60.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = HES
         add_political_power = -50
@@ -3092,7 +3134,7 @@ country_event = {
         }
     }
     option = {
-        name = annexation.61.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = HOL_OCCUPIED
         add_political_power = -50
@@ -3166,7 +3208,7 @@ country_event = {
         }
     }
     option = {
-        name = annexation.62.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = HSR_OCCUPIED
         add_political_power = -50
@@ -3209,7 +3251,7 @@ country_event = {
         puppet = HYD
     }
     option = {
-        name = annexation.63.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = HYD_OCCUPIED
         add_political_power = -50
@@ -3250,7 +3292,7 @@ country_event = {
         puppet = ICE
     }
     option = {
-        name = annexation.64.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = ICE_OCCUPIED
         add_political_power = -50
@@ -3307,7 +3349,7 @@ country_event = {
         puppet = INC
     }
     option = {
-        name = annexation.65.c
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = IND_OCCUPIED
         add_political_power = -50
@@ -3348,7 +3390,7 @@ country_event = {
         puppet = INS
     }
     option = {
-        name = annexation.66.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = INS_OCCUPIED
         add_political_power = -50
@@ -3399,7 +3441,7 @@ country_event = {
         }
     }
     option = {
-        name = annexation.67.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = IRE_OCCUPIED
         add_political_power = -50
@@ -3440,7 +3482,7 @@ country_event = {
         puppet = IRQ
     }
     option = {
-        name = annexation.68.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = IRQ_OCCUPIED
         add_political_power = -50
@@ -3481,7 +3523,7 @@ country_event = {
         puppet = ISR
     }
     option = {
-        name = annexation.69.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = ISR_OCCUPIED
         add_political_power = -50
@@ -3641,7 +3683,7 @@ country_event = {
         set_global_flag = italy_balkanized
     }
     option = {
-        name = annexation.70.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = ITA_OCCUPIED
         add_political_power = -50
@@ -3682,7 +3724,7 @@ country_event = {
         puppet = JAP
     }
     option = {
-        name = annexation.71.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = JAP_OCCUPIED
         add_political_power = -50
@@ -3725,7 +3767,7 @@ country_event = {
         puppet = KAS
     }
     option = {
-        name = annexation.72.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = KAS_OCCUPIED
         add_political_power = -50
@@ -3769,7 +3811,7 @@ country_event = {
         puppet = KAS
     }
     option = {
-        name = annexation.73.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = KAZ_OCCUPIED
         add_political_power = -50
@@ -3814,7 +3856,7 @@ country_event = {
         puppet = KEN
     }
     option = {
-        name = annexation.74.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = KEN_OCCUPIED
         add_political_power = -50
@@ -3858,7 +3900,7 @@ country_event = {
         puppet = KNE
     }
     option = {
-        name = annexation.75.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = KNE_OCCUPIED
         add_political_power = -50
@@ -3903,7 +3945,7 @@ country_event = {
         puppet = KOR
     }
     option = {
-        name = annexation.76.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = KOR_OCCUPIED
         add_political_power = -50
@@ -3947,7 +3989,7 @@ country_event = {
         puppet = KUR
     }
     option = {
-        name = annexation.77.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = KUR_OCCUPIED
         add_political_power = -50
@@ -3992,7 +4034,7 @@ country_event = {
         puppet = KUW
     }
     option = {
-        name = annexation.78.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = KUW_OCCUPIED
         add_political_power = -50
@@ -4044,7 +4086,7 @@ country_event = {
         puppet = LAO
     }
     option = {
-        name = annexation.79.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = LAO_OCCUPIED
         add_political_power = -50
@@ -4087,7 +4129,7 @@ country_event = {
         puppet = LAT
     }
     option = {
-        name = annexation.80.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = LAT_OCCUPIED
         add_political_power = -50
@@ -4130,7 +4172,7 @@ country_event = {
         puppet = LBA
     }
     option = {
-        name = annexation.81.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = LBA_OCCUPIED
         add_political_power = -50
@@ -4173,7 +4215,7 @@ country_event = {
         puppet = LIB
     }
     option = {
-        name = annexation.82.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = LIB_OCCUPIED
         add_political_power = -50
@@ -4222,7 +4264,7 @@ country_event = {
         }
     }
     option = {
-        name = annexation.83.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = LIT_OCCUPIED
         add_political_power = -50
@@ -4266,7 +4308,7 @@ country_event = {
         puppet = LOM
     }
     option = {
-        name = annexation.84.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = LOM_OCCUPIED
         add_political_power = -50
@@ -4310,7 +4352,7 @@ country_event = {
         puppet = LUX
     }
     option = {
-        name = annexation.85.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = LUX_OCCUPIED
         add_political_power = -50
@@ -4353,7 +4395,7 @@ country_event = {
         puppet = MAN
     }
     option = {
-        name = annexation.86.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = MAN_OCCUPIED
         add_political_power = -50
@@ -4398,7 +4440,7 @@ country_event = {
         puppet = MDR
     }
     option = {
-        name = annexation.87.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = MDR_OCCUPIED
         add_political_power = -50
@@ -4441,7 +4483,7 @@ country_event = {
         puppet = MEX
     }
     option = {
-        name = annexation.88.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = MEX_OCCUPIED
         add_political_power = -50
@@ -4494,7 +4536,7 @@ country_event = {
         puppet = MON
     }
     option = {
-        name = annexation.89.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = MON_OCCUPIED
         add_political_power = -50
@@ -4537,7 +4579,7 @@ country_event = {
         puppet = MOR
     }
     option = {
-        name = annexation.90.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = MOR_OCCUPIED
         add_political_power = -50
@@ -4580,7 +4622,7 @@ country_event = {
         puppet = MYS
     }
     option = {
-        name = annexation.91.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = MYS_OCCUPIED
         add_political_power = -50
@@ -4625,7 +4667,7 @@ country_event = {
         puppet = NAP
     }
     option = {
-        name = annexation.92.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = NAP_OCCUPIED
         add_political_power = -50
@@ -4668,7 +4710,7 @@ country_event = {
         puppet = NEP
     }
     option = {
-        name = annexation.93.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = NEP_OCCUPIED
         add_political_power = -50
@@ -4696,7 +4738,7 @@ country_event = {
     }
     option = { # Puppet
         name = annexation.94.a
-        ai_chance = { base = 95 }
+        ai_chance = { base = 75 }
         every_owned_state = {
             limit = {
                 is_core_of = NFL
@@ -4704,14 +4746,26 @@ country_event = {
                 NOT = { is_core_of = ROOT }
                 NOT = { is_claimed_by = ROOT }
             }
-            NFL = {
-                transfer_state = PREV
-            }
+            NFL = { transfer_state = PREV }
         }
         puppet = NFL
     }
     option = {
         name = annexation.94.b
+        ai_chance = { base = 20 }
+        trigger = { CAN = { is_ally_of_ROOT = yes } }
+        every_owned_state = {
+            limit = {
+                is_core_of = NFL
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            CAN = { transfer_state = PREV }
+        }
+    }
+    option = {
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = NFL_OCCUPIED
         add_political_power = -50
@@ -4754,7 +4808,7 @@ country_event = {
         puppet = NIC
     }
     option = {
-        name = annexation.95.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = NIC_OCCUPIED
         add_political_power = -50
@@ -4797,7 +4851,7 @@ country_event = {
         puppet = NOR
     }
     option = {
-        name = annexation.96.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = NOR_OCCUPIED
         add_political_power = -50
@@ -4841,7 +4895,7 @@ country_event = {
         puppet = NRM
     }
     option = {
-        name = annexation.97.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = NRM_OCCUPIED
         add_political_power = -50
@@ -4884,7 +4938,7 @@ country_event = {
         puppet = NZL
     }
     option = {
-        name = annexation.98.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = NZL_OCCUPIED
         add_political_power = -50
@@ -4928,7 +4982,7 @@ country_event = {
         puppet = OCC
     }
     option = {
-        name = annexation.99.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = OCC_OCCUPIED
         add_political_power = -50
@@ -4975,7 +5029,7 @@ country_event = {
         puppet = OMA
     }
     option = {
-        name = annexation.100.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = OMA_OCCUPIED
         add_political_power = -50
@@ -5020,7 +5074,7 @@ country_event = {
         puppet = ORI
     }
     option = {
-        name = annexation.101.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = ORI_OCCUPIED
         add_political_power = -50
@@ -5063,7 +5117,7 @@ country_event = {
         puppet = PER
     }
     option = {
-        name = annexation.102.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = PER_OCCUPIED
         add_political_power = -50
@@ -5107,7 +5161,7 @@ country_event = {
         puppet = PHI
     }
     option = {
-        name = annexation.103.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = PHI_OCCUPIED
         add_political_power = -50
@@ -5150,7 +5204,7 @@ country_event = {
         puppet = PHN
     }
     option = {
-        name = annexation.104.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = PHN_OCCUPIED
         add_political_power = -50
@@ -5195,7 +5249,7 @@ country_event = {
         puppet = PIE
     }
     option = {
-        name = annexation.105.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = PIE_OCCUPIED
         add_political_power = -50
@@ -5239,7 +5293,7 @@ country_event = {
         puppet = PNG
     }
     option = {
-        name = annexation.106.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = PNG_OCCUPIED
         add_political_power = -50
@@ -5292,7 +5346,7 @@ country_event = {
         }
     }
     option = {
-        name = annexation.107.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = POL_OCCUPIED
         add_political_power = -50
@@ -5337,7 +5391,7 @@ country_event = {
         puppet = POM
     }
     option = {
-        name = annexation.109.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = POM_OCCUPIED
         add_political_power = -50
@@ -5374,6 +5428,21 @@ country_event = {
                 NOT = { is_core_of = ROOT }
                 NOT = { is_claimed_by = ROOT }
             }
+            PRR = {
+                transfer_state = PREV
+            }
+        }
+        puppet = PRR
+    }
+    option = { # Puppet - Monarchy
+        name = annexation.109.b
+        every_owned_state = {
+            limit = {
+                is_core_of = POR
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
             POR = {
                 transfer_state = PREV
             }
@@ -5381,7 +5450,7 @@ country_event = {
         puppet = POR
     }
     option = {
-        name = annexation.109.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = POR_OCCUPIED
         add_political_power = -50
@@ -5424,7 +5493,7 @@ country_event = {
         puppet = PRU
     }
     option = {
-        name = annexation.110.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = PRU_OCCUPIED
         add_political_power = -50
@@ -5468,7 +5537,7 @@ country_event = {
         puppet = PUE
     }
     option = {
-        name = annexation.111.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = PUE_OCCUPIED
         add_political_power = -50
@@ -5513,7 +5582,7 @@ country_event = {
         puppet = PUN
     }
     option = {
-        name = annexation.112.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = PRU_OCCUPIED
         add_political_power = -50
@@ -5557,7 +5626,7 @@ country_event = {
         puppet = QUE
     }
     option = {
-        name = annexation.113.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = QUE_OCCUPIED
         add_political_power = -50
@@ -5601,7 +5670,7 @@ country_event = {
         puppet = RHI
     }
     option = {
-        name = annexation.114.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = RHI_OCCUPIED
         add_political_power = -50
@@ -5645,7 +5714,7 @@ country_event = {
         puppet = RHO
     }
     option = {
-        name = annexation.115.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = RHO_OCCUPIED
         add_political_power = -50
@@ -5690,7 +5759,7 @@ country_event = {
         puppet = RJH
     }
     option = {
-        name = annexation.116.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = RJH_OCCUPIED
         add_political_power = -50
@@ -5733,7 +5802,7 @@ country_event = {
         puppet = ROM
     }
     option = {
-        name = annexation.117.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = ROM_OCCUPIED
         add_political_power = -50
@@ -5782,7 +5851,7 @@ country_event = {
         puppet = RUS
     }
     option = {
-        name = annexation.118.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = RUS_OCCUPIED
         add_political_power = -50
@@ -5825,7 +5894,7 @@ country_event = {
         puppet = SAF
     }
     option = {
-        name = annexation.119.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = SAF_OCCUPIED
         add_political_power = -50
@@ -5869,7 +5938,7 @@ country_event = {
         puppet = SAR
     }
     option = {
-        name = annexation.120.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = SAR_OCCUPIED
         add_political_power = -50
@@ -5913,7 +5982,7 @@ country_event = {
         puppet = SAX
     }
     option = {
-        name = annexation.121.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = SAX_OCCUPIED
         add_political_power = -50
@@ -5956,7 +6025,7 @@ country_event = {
         puppet = SCH
     }
     option = {
-        name = annexation.122.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = SCH_OCCUPIED
         add_political_power = -50
@@ -6006,7 +6075,7 @@ country_event = {
         }
     }
     option = {
-        name = annexation.123.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = SCO_OCCUPIED
         add_political_power = -50
@@ -6049,7 +6118,7 @@ country_event = {
         puppet = SER
     }
     option = {
-        name = annexation.124.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = SER_OCCUPIED
         add_political_power = -50
@@ -6092,7 +6161,7 @@ country_event = {
         puppet = SHO
     }
     option = {
-        name = annexation.125.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = SHO_OCCUPIED
         add_political_power = -50
@@ -6135,7 +6204,7 @@ country_event = {
         puppet = SHX
     }
     option = {
-        name = annexation.126.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = SHX_OCCUPIED
         add_political_power = -50
@@ -6178,7 +6247,7 @@ country_event = {
         puppet = SIA
     }
     option = {
-        name = annexation.127.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = SIA_OCCUPIED
         add_political_power = -50
@@ -6223,7 +6292,7 @@ country_event = {
         puppet = SIC
     }
     option = {
-        name = annexation.128.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = SIC_OCCUPIED
         add_political_power = -50
@@ -6266,7 +6335,7 @@ country_event = {
         puppet = SIK
     }
     option = {
-        name = annexation.129.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = SIK_OCCUPIED
         add_political_power = -50
@@ -6311,7 +6380,7 @@ country_event = {
         puppet = SIL
     }
     option = {
-        name = annexation.130.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = SIL_OCCUPIED
         add_political_power = -50
@@ -6361,7 +6430,7 @@ country_event = {
         }
     }
     option = {
-        name = annexation.131.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = SLO_OCCUPIED
         add_political_power = -50
@@ -6404,7 +6473,7 @@ country_event = {
         puppet = SLV
     }
     option = {
-        name = annexation.132.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = SLV_OCCUPIED
         add_political_power = -50
@@ -6467,7 +6536,7 @@ country_event = {
         puppet = SOV
     }
     option = {
-        name = annexation.133.c
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = SOV_OCCUPIED
         add_political_power = -50
@@ -6632,7 +6701,7 @@ country_event = {
         }
         puppet = SPF
     }
-    option = {
+    option = { # Puppet - Anarchist
         name = annexation.134.e
         ai_chance = { base = 95 }
         trigger = {
@@ -6680,7 +6749,7 @@ country_event = {
         }
     }
     option = {
-        name = annexation.134.f
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = SPR_OCCUPIED
         add_political_power = -50
@@ -6726,7 +6795,7 @@ country_event = {
         puppet = SRV
     }
     option = {
-        name = annexation.135.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = SRV_OCCUPIED
         add_political_power = -50
@@ -6770,7 +6839,7 @@ country_event = {
         puppet = SWE
     }
     option = {
-        name = annexation.136.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = SWE_OCCUPIED
         add_political_power = -50
@@ -6814,7 +6883,7 @@ country_event = {
         puppet = SWI
     }
     option = {
-        name = annexation.137.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = SWI_OCCUPIED
         add_political_power = -50
@@ -6858,7 +6927,7 @@ country_event = {
         puppet = TIB
     }
     option = {
-        name = annexation.138.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = TIB_OCCUPIED
         add_political_power = -50
@@ -6903,7 +6972,7 @@ country_event = {
         puppet = TRK
     }
     option = {
-        name = annexation.139.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = TRK_OCCUPIED
         add_political_power = -50
@@ -6949,7 +7018,7 @@ country_event = {
         puppet = TRV
     }
     option = {
-        name = annexation.140.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = TRV_OCCUPIED
         add_political_power = -50
@@ -6993,7 +7062,7 @@ country_event = {
         puppet = TUN
     }
     option = {
-        name = annexation.141.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = TUN_OCCUPIED
         add_political_power = -50
@@ -7037,7 +7106,7 @@ country_event = {
         puppet = TUR
     }
     option = {
-        name = annexation.142.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = TUR_OCCUPIED
         add_political_power = -50
@@ -7091,7 +7160,7 @@ country_event = {
         }
     }
     option = {
-        name = annexation.143.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = UKR_OCCUPIED
         add_political_power = -50
@@ -7135,7 +7204,7 @@ country_event = {
         puppet = URG
     }
     option = {
-        name = annexation.144.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = URG_OCCUPIED
         add_political_power = -50
@@ -7184,7 +7253,7 @@ country_event = {
         }
     }
     option = {
-        name = annexation.145.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = USA_OCCUPIED
         add_political_power = -50
@@ -7229,7 +7298,7 @@ country_event = {
         puppet = VIN
     }
     option = {
-        name = annexation.146.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = VIN_OCCUPIED
         add_political_power = -50
@@ -7274,7 +7343,7 @@ country_event = {
         puppet = WLL
     }
     option = {
-        name = annexation.147.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = WLL_OCCUPIED
         add_political_power = -50
@@ -7325,7 +7394,7 @@ country_event = {
         }
     }
     option = {
-        name = annexation.148.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = WLS_OCCUPIED
         add_political_power = -50
@@ -7369,7 +7438,7 @@ country_event = {
         puppet = XSM
     }
     option = {
-        name = annexation.149.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = XSM_OCCUPIED
         add_political_power = -50
@@ -7413,7 +7482,7 @@ country_event = {
         puppet = YEM
     }
     option = {
-        name = annexation.150.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = YEM_OCCUPIED
         add_political_power = -50
@@ -7457,7 +7526,7 @@ country_event = {
         puppet = YUN
     }
     option = {
-        name = annexation.151.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = YUN_OCCUPIED
         add_political_power = -50
@@ -7501,7 +7570,7 @@ country_event = {
         puppet = ZHI
     }
     option = {
-        name = annexation.151.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = ZHI_OCCUPIED
         add_political_power = -50
@@ -7548,7 +7617,7 @@ country_event = {
         puppet = MAL
     }
     option = {
-        name = annexation.152.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = MAL_OCCUPIED
         add_political_power = -50
@@ -7591,7 +7660,7 @@ country_event = {
         puppet = COR
     }
     option = {
-        name = annexation.154.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = COR_OCCUPIED
         add_political_power = -50
@@ -7632,7 +7701,7 @@ country_event = {
         puppet = HON
     }
     option = {
-        name = annexation.155.b
+        name = annexation.occupation
         ai_chance = { factor = 5 }
         set_country_flag = HON_OCCUPIED
         add_political_power = -50
