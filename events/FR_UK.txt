@@ -34,7 +34,6 @@ country_event = {
 	
 	option = {
 		name = "Interesting times ahead"
-		news_event = { id = uknews.5 }
 		hidden_effect = {
 			country_event = { id = uk.80 months = 3 }
 			IF = {
@@ -3929,6 +3928,7 @@ country_event = {
 		NOT = { has_war_with = IND }
 		NOT = { ENG = { has_country_flag = indian_armistice2 } }
 		IND = { exists = no }
+		RAJ = { has_country_flag = RAJ_the_revolt } 
 	}
 	
 	fire_only_once = yes

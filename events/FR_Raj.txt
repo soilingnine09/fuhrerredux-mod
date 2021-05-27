@@ -299,6 +299,7 @@ country_event = { #The Revolt Begins
 
 	option = {
 		name = raj.7.a
+		set_country_flag = RAJ_the_revolt
 		remove_ideas = RAJ_Incoming_Revolt
 		hidden_effect = {
 			if = {

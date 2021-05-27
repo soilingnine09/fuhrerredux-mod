@@ -600,61 +600,6 @@ news_event = {
 
 }
 
-###########################
-# - London Stock Market Crash					# - OLD, KEEPING AS TEMP
-###########################
-
-#news_event = {
-	#id = uknews.2
-	#title = "London Stock Market Crash"
-	#desc = uknews.2.d
-	#picture = GFX_news_event_gathering_protest
-
-	#major = yes
-
-	#trigger = {
-		#ENG = { has_country_flag = black_wednesday }
-		#NOT = { has_global_flag = london_crash }
-		#NOT = { tag = ENG }
-	#}
-
-	#mean_time_to_happen = {
-		#days = 1
-	#}
-
-	#immediate = { set_global_flag = london_crash }
-
-	#option = {
-		#trigger = {
-			#OR = {
-				#tag = CAN
-				#tag = AST
-				#tag = NZL
-				#tag = SAF
-				#tag = RAJ
-			#}
-		#}
-		#name = "This is sure to affect the entire Empire"
-		#add_political_power = -100
-	#}
-
-	#option = {
-		#trigger = {
-			#NOT = {
-				#AND = {
-					#tag = CAN
-					#tag = AST
-					#tag = NZL
-					#tag = SAF
-					#tag = RAJ
-				#}
-			#}
-		#}
-		#name = "Unstable times ahead"
-	#}
-
-#}
-
 ####################
 ### Germany News ###
 ####################
