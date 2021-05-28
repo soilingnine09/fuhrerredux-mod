@@ -44,13 +44,13 @@ set_popularities = {
 
 add_ideas = {
 	party_pop_0_00
-   	 hun_trianon
-   	 hun_economic_ruin
+   	hun_trianon
+   	hun_economic_ruin
     disarmed_nation
-	GEN_hog_ade
-	GEN_for_ade
-	GEN_eco_ade
-	GEN_sec_ade
+	HUN_Doeme_Sztojay_hog_npo
+	HUN_Ferenc_Szalasi_for_npo
+	HUN_Jeno_Racz_eco_npo
+	HUN_Andor_Jaross_sec_npo
 	parliamentary_republic
 }
 

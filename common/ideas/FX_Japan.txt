@@ -1914,4 +1914,42 @@ ideas = {
 			}
 		}
 	}
+	### Theorist
+	theorist = {
+		JAP_Yamashita_Tomoyuki_theo = {
+			allowed = { original_tag = JAP }
+			traits = { land_doctrine_theorist }
+			research_bonus = {
+				cat_grand_battle_plan = 0.1
+			}
+		}
+		JAP_Umezu_Yoshijiro_theo = {
+			allowed = { original_tag = JAP }
+			traits = { land_doctrine_theorist }
+			research_bonus = {
+				cat_superior_firepower = 0.1
+			}
+		}
+		JAP_Yamamoto_Isoroku_theo = {
+			allowed = { original_tag = JAP }
+			traits = { naval_doctrine_theorist }
+			research_bonus = {
+				naval_doctrine = 0.1
+			}
+		}
+		JAP_Nagano_Osami_theo = {
+			allowed = { original_tag = JAP }
+			traits = { naval_doctrine_theorist }
+			research_bonus = {
+				naval_doctrine = 0.1
+			}
+		}
+		JAP_Teramoto_Kumaichi_theo = {
+			allowed = { original_tag = JAP }
+			traits = { air_doctrine_theorist }
+			research_bonus = {
+				air_doctrine = 0.1
+			}
+		}
+	}
 }

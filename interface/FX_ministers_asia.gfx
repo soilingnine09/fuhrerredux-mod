@@ -2,6 +2,7 @@ spriteTypes = {
 
     ####################################################
     # JAP
+    
     ### Head of Government
     spriteType = {
         name = "GFX_idea_JAP_Oyama_Ikuo_hog_col"
@@ -405,6 +406,27 @@ spriteTypes = {
     spriteType = {
         name = "GFX_idea_JAP_Yamashita_Tomoyuki_cair"
         texturefile = "gfx/interface/ideas/JAP/ministers/JAP_Yamashita_Tomoyuki.tga"
+    }
+    ### Theorist
+    spriteType = {
+        name = "GFX_idea_JAP_Yamashita_Tomoyuki_theo"
+        texturefile = "gfx/interface/ideas/JAP/ministers/JAP_Yamashita_Tomoyuki.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_JAP_Yamamoto_Isoroku_theo"
+        texturefile = "gfx/interface/ideas/JAP/ministers/JAP_Yamamoto_Isoroku.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_JAP_Nagano_Osami_theo"
+        texturefile = "gfx/interface/ideas/JAP/ministers/JAP_Nagano_Osami.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_JAP_Umezu_Yoshijiro_theo"
+        texturefile = "gfx/interface/ideas/JAP/ministers/JAP_Umezu_Yoshijiro.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_JAP_Teramoto_Kumaichi_theo"
+        texturefile = "gfx/interface/ideas/JAP/ministers/JAP_Teramoto_Kumaichi.tga"
     }
 
     ####################################################

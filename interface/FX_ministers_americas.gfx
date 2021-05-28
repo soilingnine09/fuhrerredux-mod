@@ -2,6 +2,7 @@ spriteTypes = {
 
     ####################################################
     # USA
+    
     ### Head of Government
     spriteType = {
         name = "GFX_idea_USA_Jack_Reed_hog_col"

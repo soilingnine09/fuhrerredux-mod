@@ -972,9 +972,12 @@ JAP_Shimada_Shigetaro_cnav:0 "Shimada Shigetaro"
 JAP_Teramoto_Kumaichi_cair:0 "Teramoto Kumaichi"
 JAP_Sugawara_Michio_cair:0 "Sugawara Michio"
 JAP_Yamashita_Tomoyuki_cair:0 "Yamashita Tomoyuki"
-
-#theorists
-JAP_yoji_ito:0 "Yoji Ito"
+### Theorists
+JAP_Yamashita_Tomoyuki_theo:0 "Yamashita Tomoyuki"
+JAP_Umezu_Yoshijiro_theo:0 "Umezu Yoshijiro"
+JAP_Yamamoto_Isoroku_theo:0 "Yamamoto Isoroku"
+JAP_Nagano_Osami_theo:0 "Nagano Osami"
+JAP_Teramoto_Kumaichi_theo:0 "Teramoto Kumaichi"
 
 #Fleet Name
 FLEET_NAME_JAP:0 "Kaigun Kantai $NUMBER$"

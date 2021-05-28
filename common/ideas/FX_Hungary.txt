@@ -1,0 +1,1074 @@
+#################
+# Hungary Ideas #
+#############################
+#   Made by Darknight1342   #
+#############################
+
+ideas = {
+	country = {
+		hun_trianon = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea hun_trianon"}
+			picture = HUN_treaty_of_triannon
+			modifier = {
+				training_time_army_factor = 0.5
+				conscription_factor = -0.90
+				mobilization_speed = -1
+			}
+		}
+		hun_economic_ruin = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea hun_economic_ruin"}
+			picture = great_depression
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.5
+				local_resources_factor = -0.05
+				consumer_goods_factor = 0.3
+				production_factory_max_efficiency_factor = -0.5
+			}
+		}
+		hun_economic_ruin_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea hun_economic_ruin_1"}
+			picture = great_depression
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.3
+				local_resources_factor = -0.05
+				consumer_goods_factor = 0.25
+				production_factory_max_efficiency_factor = -0.3
+			}
+		}
+		hun_economic_ruin_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea hun_economic_ruin_2"}
+			picture = great_depression
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.1
+				local_resources_factor = -0.05
+				consumer_goods_factor = 0.2
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+		hun_recovered_economy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea hun_recovered_economy"}
+			picture = chi_hyper_inflation3
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.03
+				consumer_goods_factor = -0.02
+				production_factory_max_efficiency_factor = 0.03
+			}
+		}
+		hun_secret_rearm = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea hun_secret_rearm"}
+			picture = ast_volunteer_defence_corps
+			modifier = {
+				production_factory_max_efficiency_factor = 0.03
+				industrial_capacity_factory = 0.03
+			}
+		}
+		hun_secret_rearm_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea hun_secret_rearm_2"}
+			picture = ast_volunteer_defence_corps
+			modifier = {
+				production_factory_max_efficiency_factor = 0.03
+				industrial_capacity_factory = 0.03
+				conscription = 0.03
+			}
+		}
+		hun_secret_police = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea hun_secret_police"}
+			picture = generic_spy_coup
+			modifier = {
+				encryption_factor = 0.1
+				enemy_justify_war_goal_time = 0.1
+				political_power_gain = 0.1
+			}
+		}
+		hun_vengeful = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea hun_vengeful"}
+			picture = vittoria_mutilata
+			modifier = {
+				conscription = 0.03
+				offence = 0.03
+			}
+		}
+		hun_aircraft_boost = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea hun_aircraft_boost"}
+			picture = generic_bomber_production_diverted
+			equipment_bonus = {
+				fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				CAS_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+			}
+		}
+		hun_rebuilt_airforce = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea hun_rebuilt_airforce"}
+			picture = air_support_focus
+			equipment_bonus = {
+				fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				CAS_equipment = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				strat_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				tac_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				transport_plane_equipment = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+			}
+		}
+		hun_attack_air = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea hun_attack_air"}
+			picture = generic_air_payment
+			modifier = {
+				air_interception_attack_factor = 0.02
+				air_air_superiority_attack_factor = 0.02
+				air_close_air_support_attack_factor = 0.02
+				air_strategic_bomber_attack_factor = 0.02
+			}
+		}
+		hun_defend_air = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea hun_defend_air"}
+			picture = generic_air_bonus
+			modifier = {
+				air_interception_defence_factor = 0.02
+				air_air_superiority_defence_factor = 0.02
+				air_close_air_support_defence_factor = 0.02
+				air_strategic_bomber_defence_factor = 0.02
+			}
+		}
+		hun_youth_army_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea hun_youth_army_idea"}
+			picture = generic_infantry_bonus
+			modifier = {
+				conscription = 0.05
+			}
+		}
+		hun_factory_cap = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea hun_factory_cap"}
+			picture = generic_goods_red_bonus
+			modifier = {
+				production_factory_max_efficiency_factor = 0.15
+			}
+		}
+		hun_factory_ret = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea hun_factory_ret"}
+			picture = syndicalist_industry_idea
+			modifier = {
+				line_change_production_efficiency_factor = 0.15
+			}
+		}
+		hun_rearmed = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea hun_rearmed"}
+			picture = ast_volunteer_defence_corps
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.10
+				conscription = 0.05
+			}
+		}
+		hun_slovak_loyalty = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea hun_slovak_loyalty"}
+			picture = MON_conscript_conquered
+		}
+		hun_ger_industry = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea hun_ger_industry"}
+			picture = generic_central_management
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		######################
+		### HABSBURG IDEAS ###
+		######################
+		hun_hab_broken_econ = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea hun_hab_broken_econ"}
+			picture = ROM_king_carol_emptied_accounts
+			modifier = {
+				political_power_factor = -0.30
+				production_factory_max_efficiency_factor = -0.20
+				consumer_goods_factor = 0.10
+			}
+		}
+		hun_hab_imp_education = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea hun_hab_imp_education"}
+			picture = can_patriation
+			modifier = {
+				research_speed_factor = 0.02
+			}
+		}
+		hun_hab_imp_education_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea hun_hab_imp_education_2"}
+			picture = can_patriation
+			modifier = {
+				research_speed_factor = 0.04
+			}
+		}
+		hun_hab_econ_eval = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea hun_hab_econ_eval"}
+			picture = HUN_treaty_of_triannon
+			modifier = {
+				political_power_factor = -0.20
+				production_factory_max_efficiency_factor = -0.15
+				consumer_goods_factor = 0.07
+			}
+		}
+		hun_hab_econ_eval_2 = {#have I ever told you the definition of insanity?
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea hun_hab_econ_eval_2"}
+			picture = HUN_treaty_of_triannon
+			modifier = {
+				political_power_factor = -0.10
+				production_factory_max_efficiency_factor = -0.10
+				consumer_goods_factor = 0.05
+			}
+		}
+		hun_hab_good_money = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea hun_hab_good_money"}
+			picture = FRA_national_mobilization_focus
+			modifier = {
+				political_power_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				consumer_goods_factor = -0.05
+			}
+		}
+	}
+	### Head of Government
+	head_of_government = {
+		HUN_Laszlo_Rajk_hog_van = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				vanguardist
+				hog_red_chairmen
+			}
+		}
+		HUN_Sandor_Garbai_hog_col = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				collectivist
+				hog_revanchist_conspirator
+			}
+		}
+		HUN_Arpad_Szakasits_hog_sde = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_democrat
+				hog_silent_workhorse
+			}
+		}
+		HUN_Karoly_Rassay_hog_sli = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_liberal
+				hog_sincere_internationalist
+			}
+		}
+		HUN_Bela_Miklos_de_Dalnok_hog_sco = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_conservative
+				hog_smiling_oilman
+			}
+		}
+		HUN_Endre_Bajcsy_Zsilinszky_hog_sco = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_conservative
+				hog_silent_workhorse
+			}
+		}
+		HUN_Ferenc_Nagy_hog_sco = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_conservative
+				hog_corporate_suit
+			}
+		}
+		HUN_Janos_Esterhazy_hog_sco = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_conservative
+				hog_happy_amateur
+			}
+		}
+		HUN_Zoltan_Tildy_hog_sco = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_conservative
+				hog_naive_optimist
+			}
+		}
+		HUN_Ferenc_Keresztes_Fischer_hog_ade = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_corporate_suit
+			}
+		}
+		HUN_Geza_Lakatos_de_Csikszentsimon_hog_ade = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_old_compromiser
+			}
+		}
+		HUN_Istvan_Bethlen_hog_ade = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_political_protege
+			}
+		}
+		HUN_Karoly_Bartha_de_Dalnokfalva_hog_ade = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_pragmatic_statesman
+			}
+		}
+		HUN_Pal_Teleki_de_Szek_hog_ade = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_accomplished_diplomat
+			}
+		}
+		HUN_Dezso_Pattantyus_Abraham_hog_pau = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_backroom_backstabber
+			}
+		}
+		HUN_Gyula_Goemboes_de_Jakfa_hog_pau = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_charismatic_charmer
+			}
+		}
+		HUN_Kalman_Daranyi_de_Pusztaszentgyoergyi_hog_pau = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_local_tyrant
+			}
+		}
+		HUN_Laszlo_Bardossy_hog_pau = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_smiling_oilman
+			}
+		}
+		HUN_Doeme_Sztojay_hog_npo = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				national_populist
+				hog_revanchist_conspirator
+			}
+		}
+	}
+	### Foreign Minister
+	foreign_minister = {
+		HUN_Erik_Molnar_for_van = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				vanguardist
+				for_biased_intellectual
+			}
+		}
+		HUN_Mate_Zalka_for_van = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				vanguardist
+				for_radical_among_moderates
+			}
+		}
+		HUN_Jozsef_Pogany_for_col = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				collectivist
+				for_ideological_crusader
+			}
+		}
+		HUN_Imre_Csaky_for_mli = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				market_liberal
+				for_apologetic_clerk
+			}
+		}
+		HUN_Moric_Esterhazy_for_mli = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				market_liberal
+				for_moderate_among_radicals
+			}
+		}
+		HUN_Francois_Deak_for_sco = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_conservative
+				for_relations_expert
+			}
+		}
+		HUN_Janos_Gyoengyoesi_for_sco = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_conservative
+				for_world_patrician
+			}
+		}
+		HUN_Edgar_Keksz_for_ade = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				authoritarian_democrat
+				for_the_cloak_n_dagger_schemer
+			}
+		}
+		HUN_Pal_Teleki_de_Szek_for_ade = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				authoritarian_democrat
+				for_iron_fisted_brute
+			}
+		}
+		HUN_Gustav_Hennyey_for_pau = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				authoritarian_democrat
+				for_hawkish_intervener
+			}
+		}
+		HUN_Istvan_Csaky_for_pau = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_biased_intellectual
+			}
+		}
+		HUN_Jeno_Ghyczy_for_pau = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_apologetic_clerk
+			}
+		}
+		HUN_Kalman_Kanya_for_pau = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_general_staffer
+			}
+		}
+		HUN_Miklos_Kallay_de_Nagykallo_for_pau = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_foreign_sympathizer
+			}
+		}
+		HUN_Ferenc_Szalasi_for_npo = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				national_populist
+				for_general_staffer
+			}
+		}
+		HUN_Gabor_Kemeny_for_npo = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				national_populist
+				for_great_compromiser
+			}
+		}
+	}
+	### Economy Minister
+	economy_minister = {
+		HUN_Erno_Gero_eco_van = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				vanguardist
+				eco_planned_economy_proponent
+			}
+		}
+		HUN_Zoltan_Vas_eco_van = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				vanguardist
+				eco_resource_industrialist
+			}
+		}
+		HUN_Rezso_Fiedler_eco_col = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				vanguardist
+				eco_imbedded_unioneer
+			}
+		}
+		HUN_Bela_Zsedenyi_eco_sli = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_liberal
+				eco_industrialiser
+			}
+		}
+		HUN_Gusztav_Gratz_eco_mli = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				market_liberal
+				eco_laissez_faire_capitalist
+			}
+		}
+		HUN_Miklos_Olgyay_eco_sco = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_conservative
+				eco_mixed_economy
+			}
+		}
+		HUN_Imre_Oltvanyi_eco_ade = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				authoritarian_democrat
+				eco_railway_magnate
+			}
+		}
+		HUN_Istvan_Winchkler_eco_ade = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				authoritarian_democrat
+				eco_construction_magnate
+			}
+		}
+		HUN_Bela_Imredy_de_Omoravia_eco_pau = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_administrative_genius
+			}
+		}
+		HUN_Laszlo_Endre_eco_pau = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_keynesian_economy
+			}
+		}
+		HUN_Lajos_Remenyi_Schneller_eco_pau = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_oil_baron
+			}
+		}
+		HUN_Tihamer_Fabinyi_eco_pau = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_trade_proponent
+			}
+		}
+		HUN_Jeno_Racz_eco_npo = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				national_populist
+				eco_military_entrepreneur
+			}
+		}
+	}
+	### Security Minister
+	security_minister = {
+		HUN_Ferenc_Erdei_sec_van = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				vanguardist
+				sec_man_of_the_people
+			}
+		}
+		HUN_Imre_Nagy_sec_van = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				vanguardist
+				sec_back_stabber
+			}
+		}
+		HUN_Matyas_Rakosi_sec_van = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				vanguardist
+				sec_secret_police_chief
+			}
+		}
+		HUN_Mihaly_Farkas_sec_van = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				vanguardist
+				sec_efficient_sociopath
+			}
+		}
+		HUN_Bela_Vago_sec_col = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				collectivist
+				sec_health_and_safety
+			}
+		}
+		HUN_Jozsef_Revai_sec_col = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				collectivist
+				sec_prince_of_terror
+			}
+		}
+		HUN_Karoly_Peyer_sec_sde = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_democrat
+				sec_health_and_safety
+			}
+		}
+		HUN_Oszkar_Jaszi_sec_sli = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_liberal
+				sec_man_of_the_people
+			}
+		}
+		HUN_Gabor_Ugron_sec_mli = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				market_liberal
+				sec_prince_of_terror
+			}
+		}
+		HUN_Jozsef_Szell_sec_sco = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_conservative
+				sec_preserver_of_culture
+			}
+		}
+		HUN_Miklos_Bonczos_sec_sco = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_conservative
+				sec_silent_lawyer
+			}
+		}
+		HUN_Laszlo_Baky_sec_ade = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_crime_fighter
+			}
+		}
+		HUN_Miklos_Banffy_sec_ade = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_crooked_kleptocrat
+			}
+		}
+		HUN_Kalman_Szell_sec_pau = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_driven_recruiter
+			}
+		}
+		HUN_Miklos_Kozma_sec_pau = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_great_soul
+			}
+		}
+		HUN_Andor_Jaross_sec_npo = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				national_populist
+				sec_efficient_sociopath
+			}
+		}
+		HUN_Gabor_Vajna_sec_npo = {
+			allowed = { original_tag = HUN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				national_populist
+				sec_silent_lawyer
+			}
+		}
+	}
+	### Chief of Staff
+	chief_of_staff = {
+		HUN_Antal_Lehar_cos = {
+			allowed = { original_tag = HUN }
+			traits = {
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+		}
+		HUN_Ferenc_Szombathelyi_cos = {
+			allowed = { original_tag = HUN }
+			traits = {
+				chief_of_staff
+				cos_school_of_psychology
+			}
+		}
+		HUN_Gusztav_Cziegler_cos = {
+			allowed = { original_tag = HUN }
+			traits = {
+				chief_of_staff
+				cos_school_of_manoeuvre
+			}
+		}
+		HUN_Vilmos_Roder_cos = {
+			allowed = { original_tag = HUN }
+			traits = {
+				chief_of_staff
+				cos_school_of_fire_support
+			}
+		}
+		HUN_Sandor_Szurmay_cos = {
+			allowed = { original_tag = HUN }
+			traits = {
+				chief_of_staff
+				cos_school_of_defence
+			}
+		}
+		HUN_Vilmos_Nagy_de_Nagybaczon_cos = {
+			allowed = { original_tag = HUN }
+			traits = {
+				chief_of_staff
+				cos_school_of_commando_operations
+			}
+		}
+		HUN_Karoly_Beregfy_cos = {
+			allowed = { original_tag = HUN }
+			traits = {
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+		}
+	}
+	### Chief of Army
+	chief_of_army = {
+		HUN_Nikolaj_Berzin_carm = {
+			allowed = { original_tag = HUN }
+			traits = { 
+				chief_of_army
+				carm_armoured_spearhead_doctrine
+			}
+		}
+		HUN_Janos_Voeroes_carm = {
+			allowed = { original_tag = HUN }
+			traits = { 
+				chief_of_army
+				carm_commando_doctrine
+			}
+		}
+		HUN_Hugo_Sonyi_carm = {
+			allowed = { original_tag = HUN }
+			traits = { 
+				chief_of_army
+				carm_doctrine_of_autonomy
+			}
+		}
+		HUN_Henrik_Werth_carm = {
+			allowed = { original_tag = HUN }
+			traits = { 
+				chief_of_army
+				carm_elastic_defence_doctrine
+			}
+		}
+		HUN_Kalman_Shvoy_carm = {
+			allowed = { original_tag = HUN }
+			traits = { 
+				chief_of_army
+				carm_guns_and_butter_doctrine
+			}
+		}
+		HUN_Ferenc_Feketehalmy_Czeydner_carm = {
+			allowed = { original_tag = HUN }
+			traits = { 
+				chief_of_army
+				carm_static_defence_doctrine
+			}
+		}
+		HUN_Lajos_Csatay_de_Csataj_carm = {
+			allowed = { original_tag = HUN }
+			traits = { 
+				chief_of_army
+				carm_decisive_battle_doctrine
+			}
+		}
+	}
+	### Chief of Navy
+	chief_of_navy = {
+		HUN_Kalman_Hardy_cnav = {
+			allowed = { original_tag = HUN }
+			traits = {
+				chief_of_navy
+				cnav_base_control_doctrine
+			}
+		}
+		HUN_Rezso_Kasztner_cnav = {
+			allowed = { original_tag = HUN }
+			traits = {
+				chief_of_navy
+				cnav_decisive_battle_doctrine
+			}
+		}
+		HUN_Miklos_Horthy_de_Nagybanya_cnav = {
+			allowed = { original_tag = HUN }
+			traits = {
+				chief_of_navy
+				cnav_indirect_approach_doctrine
+			}
+		}
+		HUN_Sandor_Csia_cnav_npo = {
+			allowed = { original_tag = HUN }
+			traits = {
+				chief_of_navy
+				cnav_power_projection_doctrine
+			}
+		}
+	}
+	### Chief of Air Force
+	chief_of_air_force = {
+		HUN_Bela_Rakosi_cair = {
+			allowed = { original_tag = HUN }
+			traits = {
+				chief_of_air_force
+				cair_air_superiority_doctrine
+			}
+		}
+		HUN_Kalman_Ternegg_Ratz_cair = {
+			allowed = { original_tag = HUN }
+			traits = {
+				chief_of_air_force
+				cair_battlefield_support_doctrine
+			}
+		}
+		HUN_Ferenc_Feketehalmy_Czeydner_cair = {
+			allowed = { original_tag = HUN }
+			traits = {
+				chief_of_air_force
+				cair_carpet_bombing_doctrine
+			}
+		}
+		HUN_Laszlo_Tomor_cair = {
+			allowed = { original_tag = HUN }
+			traits = {
+				chief_of_air_force
+				cair_vertical_envelopment_doctrine
+			}
+		}
+	}
+}
