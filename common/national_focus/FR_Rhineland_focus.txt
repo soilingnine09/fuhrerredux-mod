@@ -58,7 +58,7 @@ focus = {
  }
 focus = { 
 	id = RHI_independence_2
-	icon =GFX_RHI_independence
+	icon = GFX_goal_army_guy_2
 	bypass = {} 
 	prerequisite = { focus = RHI_independence_1 } 
 	available = {}
@@ -77,7 +77,7 @@ focus = {
  }
  focus = { 
 	id = RHI_independence_3
-	icon = GFX_RHI_independence
+	icon = GFX_goal_factory_complex
 	bypass = {} 
 	prerequisite = { focus = RHI_independence_2 } 
 	available = {}
@@ -92,7 +92,7 @@ focus = {
  }
  focus = { 
 	id = RHI_independence_4
-	icon = GFX_RHI_independence
+	icon = GFX_goal_enlist_the_police
 	bypass = {} 
 	prerequisite = { focus = RHI_independence_3 } 
 	available = {}
@@ -146,7 +146,7 @@ focus = {
  }
 focus = { 
 	id = RHI_autonomy_2
-	icon = GFX_RHI_autonomy
+	icon = GFX_goal_generic_forceful_treaty
 	bypass = {} 
 	prerequisite = { focus = RHI_autonomy_1 } 
 	available = {}
@@ -166,7 +166,7 @@ focus = {
  }
 focus = { 
 	id = RHI_autonomy_3
-	icon = GFX_RHI_autonomy
+	icon = GFX_goal_revolution_tools
 	bypass = {} 
 	prerequisite = { focus = RHI_autonomy_2 } 
 	available = {}
@@ -182,7 +182,7 @@ focus = {
  }
  focus = { 
 	id = RHI_autonomy_4
-	icon = GFX_RHI_autonomy
+	icon = GFX_goal_national_mobilization
 	bypass = {} 
 	prerequisite = { focus = RHI_autonomy_3 } 
 	available = {}
@@ -200,7 +200,7 @@ focus = {
  }
 focus = { 
 	id = RHI_mandate_1
-	icon = GFX_RHI_Mandate_Puppet_Eco
+	icon = GFX_RHI_Mandate_Flag
 	bypass = {} 
 	mutually_exclusive = { focus = RHI_autonomy_1} 
 	mutually_exclusive = { focus = RHI_independence_1} 
@@ -236,7 +236,7 @@ focus = {
  }
 focus = { 
 	id = RHI_mandate_2
-	icon = GFX_RHI_Mandate_Flag
+	icon = GFX_goal_generic_fortify_city
 	bypass = {} 
 	prerequisite = { focus = RHI_mandate_1 } 
 	available = {}
@@ -256,7 +256,7 @@ focus = {
  }
 focus = { 
 	id = RHI_mandate_3
-	icon = GFX_RHI_Mandate_Flag
+	icon = GFX_goal_step_on_skull
 	bypass = {} 
 	prerequisite = { focus = RHI_mandate_2 } 
 	available = {}
@@ -272,7 +272,7 @@ focus = {
  }
 focus = { 
 	id = RHI_mandate_4
-	icon = GFX_RHI_Mandate_Gov
+	icon = GFX_focus_generic_self_management
 	bypass = {} 
 	prerequisite = { focus = RHI_mandate_3 } 
 	available = {}
@@ -321,7 +321,7 @@ focus = {
  }
 focus = { 
 	id = RHI_valkist_2
-	icon = GFX_goal_ideology_valkist
+	icon = GFX_focus_ger_reichskommisariats
 	bypass = {} 
 	prerequisite = { focus = RHI_valkist_1 } 
 	available = {}
@@ -340,7 +340,7 @@ focus = {
  }
 focus = { 
 	id = RHI_valkist_3
-	icon = GFX_goal_ideology_valkist
+	icon = GFX_DAH_Topke
 	bypass = {} 
 	prerequisite = { focus = RHI_valkist_2 } 
 	available = {}
@@ -356,7 +356,7 @@ focus = {
  }
  focus = { 
 	id = RHI_valkist_4
-	icon = GFX_goal_ideology_valkist
+	icon = GFX_focus_ger_oppose_hitler
 	bypass = {} 
 	prerequisite = { focus = RHI_valkist_3 } 
 	available = {}

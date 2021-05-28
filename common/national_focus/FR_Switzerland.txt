@@ -276,7 +276,7 @@ focus_tree = {
 
   focus = {
 		id = SWI_request_access_through_italian_ports
-		icon = GFX_goal_generic_elections
+		icon = GFX_goal_SWI_flagship
     prerequisite = { focus = SWI_looking_for_new_trading_partners }
 		x = 4
 		y = 5
@@ -432,7 +432,7 @@ focus_tree = {
 
   focus = {
 		id = SWI_italians_for_switzerland
-		icon = GFX_goal_generic_elections
+		icon = GFX_goal_italianfed
     prerequisite = { focus = SWI_national_unity_campaigns }
 		x = 4
 		y = 7
@@ -455,7 +455,7 @@ focus_tree = {
 
   focus = {
 		id = SWI_suppress_the_VWF
-		icon = GFX_goal_generic_elections
+		icon = GFX_goal_generic_political_pressure
     prerequisite = { focus = SWI_all_germans_for_switzerland }
 		x = 0
 		y = 8
@@ -492,7 +492,7 @@ focus_tree = {
 
   focus = {
 		id = SWI_suppress_the_FVP
-		icon = GFX_goal_generic_elections
+		icon = GFX_goal_step_on_skull
     prerequisite = { focus = SWI_all_franks_for_switzerland }
 		x = 2
 		y = 8
@@ -567,7 +567,7 @@ focus_tree = {
 
   focus = {
 		id = SWI_french_refuge
-		icon = GFX_goal_generic_elections
+		icon = GFX_goal_natfrance
     prerequisite = { focus = SWI_grand_ethnic_coalition }
 		x = 1
 		y = 10
@@ -591,7 +591,7 @@ focus_tree = {
 
   focus = {
 		id = SWI_german_refuge
-		icon = GFX_goal_generic_elections
+		icon = GFX_goal_germany
     prerequisite = { focus = SWI_grand_ethnic_coalition }
 		x = 3
 		y = 10
@@ -615,7 +615,7 @@ focus_tree = {
 
   focus = {
 		id = SWI_great_war_refugee_policy
-		icon = GFX_goal_generic_elections
+		icon = GFX_goal_conspiracy
     prerequisite = { focus = SWI_french_refuge focus = SWI_german_refuge }
 		x = 2
 		y = 11
@@ -957,7 +957,7 @@ focus_tree = {
 
   focus = {
 		id = SWI_SUP_christian_reform
-		icon = GFX_goal_generic_elections
+		icon = GFX_BEL_Improve_Catholic_Relations
     prerequisite = { focus = SWI_SUP_discredit_radicals }
 		x = 13
 		y = 5
@@ -1396,7 +1396,7 @@ focus_tree = {
 
   focus = {
 		id = SWI_north_rhine_economy
-		icon = GFX_goal_generic_elections
+		icon = GFX_goal_production
     prerequisite = { focus = SWI_status_quo_conservatism }
 		x = 25
 		y = 6
@@ -1492,7 +1492,7 @@ focus_tree = {
 
   focus = {
 		id = SWI_defending_republican_ideals
-		icon = GFX_goal_support_democracy
+		icon = GFX_goal_SWI_reduit
     prerequisite = { focus = SWI_economic_mobilization }
 		x = 29
 		y = 6
@@ -1510,7 +1510,7 @@ focus_tree = {
 
   focus = {
 		id = SWI_the_future_of_nationalization
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_goal_SWI_defense
     prerequisite = { focus = SWI_protectionist_economy focus = SWI_defending_republican_ideals focus = SWI_north_rhine_economy focus = SWI_embrace_armed_neutrality }
 		x = 25
 		y = 7
@@ -1590,7 +1590,7 @@ focus_tree = {
 
 	focus = {
 		id = SWI_a_swiss_education
-		icon = GFX_goal_SWI_black_spot
+		icon = GFX_goal_SWI_prosperity
     prerequisite = { focus = SWI_protectionist_economy focus = SWI_defending_republican_ideals focus = SWI_north_rhine_economy focus = SWI_embrace_armed_neutrality }
 		x = 29
 		y = 7
@@ -1846,7 +1846,7 @@ focus_tree = {
 
   focus = {
 		id = SWI_german_immigration
-		icon = GFX_goal_generic_elections
+		icon = GFX_goal_conspiracy
     prerequisite = { focus = SWI_break_bread_with_the_germans }
 		x = 14
 		y = 9
@@ -1869,7 +1869,7 @@ focus_tree = {
 
   focus = {
 		id = SWI_peace_with_the_reich
-		icon = GFX_goal_generic_elections
+		icon = GFX_goal_germany
     prerequisite = { focus = SWI_german_immigration }
 		x = 14
 		y = 10
@@ -1919,7 +1919,7 @@ focus_tree = {
 
   focus = {
 		id = SWI_air_action_over_switzerland
-		icon = GFX_goal_generic_elections
+		icon = GFX_goal_fortify_the_westwall
     prerequisite = { focus = SWI_break_bread_with_the_french }
 		x = 16
 		y = 9
@@ -1979,7 +1979,7 @@ focus_tree = {
 
   focus = {
 		id = SWI_peace_with_the_republic
-		icon = GFX_goal_generic_elections
+		icon = GFX_goal_natfrance
     prerequisite = { focus = SWI_air_action_over_switzerland }
 		x = 16
 		y = 10
@@ -2029,7 +2029,7 @@ focus_tree = {
 
   focus = {
 		id = SWI_the_vorarlberg_question
-		icon = GFX_goal_generic_elections
+		icon = GFX_goal_generic_improve_relations
     prerequisite = { focus = SWI_break_bread_with_the_austrians }
 		x = 18
 		y = 9
@@ -2057,7 +2057,7 @@ focus_tree = {
 
   focus = {
 		id = SWI_peace_with_the_east
-		icon = GFX_goal_generic_elections
+		icon = GFX_goal_austria
     prerequisite = { focus = SWI_the_vorarlberg_question }
 		x = 18
 		y = 10
@@ -2108,7 +2108,7 @@ focus_tree = {
   ### Support in the defense of Italy ###
   focus = {
 		id = SWI_northern_wall
-		icon = GFX_goal_generic_elections
+		icon = GFX_goal_skull_fortification
     prerequisite = { focus = SWI_break_bread_with_the_italians }
 		x = 20
 		y = 9
@@ -2200,7 +2200,7 @@ focus_tree = {
 
   focus = {
 		id = SWI_peace_with_the_kingdom
-		icon = GFX_goal_generic_elections
+		icon = GFX_goal_italianfed
     prerequisite = { focus = SWI_northern_wall }
 		x = 20
 		y = 10

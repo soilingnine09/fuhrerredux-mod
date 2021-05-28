@@ -1,63 +1,72 @@
 spriteTypes = {
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_focus_philippines_constabulary"
 		texturefile = "gfx/interface/goals/PHI_goal_constabulary.dds"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_focus_philippines_defense"
 		texturefile = "gfx/interface/goals/PHI_goal_defense.dds"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_focus_philippines_democracy"
 		texturefile = "gfx/interface/goals/PHI_goal_democracy.dds"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_focus_philippines_renounce_colonialism"
 		texturefile = "gfx/interface/goals/PHI_goal_renounce_colonialism.dds"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_focus_philippines_army"
 		texturefile = "gfx/interface/goals/PHI_goal_army.tga"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_focus_philippines_navy"
 		texturefile = "gfx/interface/goals/PHI_goal_navy.tga"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_focus_philippines_air_force"
 		texturefile = "gfx/interface/goals/PHI_goal_air_force.tga"
 	}
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_focus_zapadoslavia_poland"
 		texturefile = "gfx/interface/goals/CZE_March_on_Krakow.tga"
 	}
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_focus_zapadoslavia_panslavic"
 		texturefile = "gfx/interface/goals/CZE_Panslavic_Dream.tga"
 	}
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_focus_zapadoslavia_silesia"
 		texturefile = "gfx/interface/goals/CZE_Silesia_Minorities.tga"
 	}
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_focus_unite_west_slavs"
 		texturefile = "gfx/interface/goals/CZE_Unite_West_Slavs.tga"
 	}
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_focus_zapadoslavia"
 		texturefile = "gfx/interface/goals/CZE_Zapadoslavia.tga"
 	}
 	
+	spriteType = {
+		name = "GFX_goal_flag_german_empire"
+		texturefile = "gfx/interface/goals/goal_flag_german_empire.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_flag_austria_empire"
+		texturefile = "gfx/interface/goals/goal_flag_austria_empire.tga"
+	}
 }

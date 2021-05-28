@@ -1378,7 +1378,7 @@
 
 	shared_focus = {
 		id = MAN_union_elimination
-		icon = GFX_UK_ban_unions
+		icon = GFX_goal_anti_comintern_pact
     prerequisite = { focus = MAN_the_power_of_the_unions }
 		mutually_exclusive = { focus = MAN_union_integration }
 		mutually_exclusive = { focus = MAN_union_compromise }

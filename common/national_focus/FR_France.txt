@@ -2641,7 +2641,7 @@ focus_tree = {
 	# Industry for an Empire
 	focus = {
 		id = fra_imperial_industry
-		icon = GFX_focus_generic_the_giant_wakes
+		icon = GFX_DAH_FR_Prod
 		x = 48
 		y = 0
 		cost = 5
@@ -3399,7 +3399,7 @@ focus_tree = {
 	# African Expeditions
 	focus = {
 		id = fra_african_expeditions
-		icon = GFX_goal_MAF_Cape_Cairo
+		icon = GFX_NATFRA_africa
 		x = 7
 		y = 1
 		cost = 5
