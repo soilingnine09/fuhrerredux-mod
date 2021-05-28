@@ -197,6 +197,7 @@ country_event = {
 	trigger = {
 		tag = RHI
 		date > 1936.9.2
+		ENG = { has_country_flag = ENG_stock_crash }
 	}
 	
 	mean_time_to_happen = {

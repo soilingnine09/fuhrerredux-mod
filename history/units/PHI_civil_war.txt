@@ -86,7 +86,7 @@ units = {
 	}
 	division = {
 		name = "10th Infantry Division"
-		location = 12118
+		location = 1288
 		division_template = "Infantry Division"		
 		start_experience_factor = 0.1
 	}
@@ -104,7 +104,7 @@ units = {
 	}
 	division = {
 		name = "3rd Militia Brigade"
-		location = 12112
+		location = 10165
 		division_template = "Militia Brigade"		
 		start_experience_factor = 0.1
 	}

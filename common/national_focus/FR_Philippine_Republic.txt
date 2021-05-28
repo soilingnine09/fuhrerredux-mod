@@ -543,7 +543,7 @@ focus_tree = {
         prerequisite = { focus = PHI_aguinaldo_coup }
         relative_position_id = PHI_aguinaldo_coup
         completion_reward = {
-            add_ideas = PHI_secret_police
+            add_ideas = PHI_intelligence_agency
         }
     }
 
@@ -747,7 +747,7 @@ focus_tree = {
         }
         relative_position_id = PHI_abolish_the_assembly
         completion_reward = {
-            add_ideas = PHI_secret_police
+            add_ideas = PHI_intelligence_agency
         }
     }
 

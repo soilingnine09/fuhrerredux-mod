@@ -1222,4 +1222,58 @@ ideas = {
             }
         }
     }
+    ### Theorist
+    theorist = {
+        USA_Douglas_MacArthur_theo = {
+            allowed = { original_tag = USA }
+            traits = {
+                land_doctrine_theorist
+            }
+            research_bonus = {
+                cat_superior_firepower = 0.1
+            }
+        }
+        USA_Omar_Nelson_Bradley_cos = {
+            allowed = { original_tag = USA }
+            traits = {
+                cat_mobile_warfare = 0.1
+            }
+        }
+        USA_Chester_William_Nimitz_Sr_theo = {
+            allowed = { original_tag = USA }
+            traits = {
+                naval_doctrine_theorist
+            }
+            research_bonus = {
+                naval_doctrine = 0.1
+            }
+        }
+        USA_Ernest_Joseph_King_theo = {
+            allowed = { original_tag = USA }
+            traits = {
+                naval_doctrine_theorist
+            }
+            research_bonus = {
+                naval_doctrine = 0.1
+            }
+        }
+        USA_James_Harold_Doolittle_theo = {
+            allowed = { original_tag = USA }
+            traits = {
+                air_doctrine_theorist
+            }
+            research_bonus = {
+                air_doctrine = 0.1
+            }
+        }
+        USA_Joseph_Warren_Stilwell_theo = {
+            allowed = { original_tag = USA }
+            traits = {
+                air_doctrine_theorist
+            }
+            research_bonus = {
+                air_doctrine = 0.1
+            }
+        }
+    }
 }

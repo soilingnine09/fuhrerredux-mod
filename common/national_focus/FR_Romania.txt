@@ -1,14 +1,14 @@
 focus_tree = {
 	id = FR_Romania
 
-	# country = {
-		# factor = 0
+	 country = {
+		 factor = 0
 
-		# modifier = {
-			# add = 10
-			# tag = ROM
-		# }
-	# }
+		 modifier = {
+			add = 10
+			tag = ROM
+		 }
+	}
 
 	default = no
 

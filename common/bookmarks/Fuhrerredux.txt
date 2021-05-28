@@ -9,7 +9,7 @@ bookmarks = {
 
         #### Majors
         "USA" = {
-            history = "USA_FUHERREDUX_DESC"
+            history = "USA_FUHRERREDUX_DESC"
             ideology = market_liberal
             ideas = {
                 USA_failed_offensive
@@ -17,7 +17,9 @@ bookmarks = {
                 USA_sick_man_america
             }
             focuses = {
-
+                USA_military_review
+                USA_it_will_never_happen_here
+                USA_question_of_foriegn_holdings
             }
         }
         "SOV" = {
@@ -29,7 +31,7 @@ bookmarks = {
                 SOV_lacking_industrialization
             }
             focuses = {
-                SOV_kickstart_industrialization
+                SOV_start_congress
                 SOV_red_army
                 SOV_Premier_Lenin
             }

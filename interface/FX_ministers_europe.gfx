@@ -123,4 +123,21 @@ spriteTypes = {
         name = "GFX_idea_SOV_Aleksandr_Novikov_cair"
         texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Aleksandr_Novikov.tga"
     }
+    # Theorist
+    spriteType = {
+        name = "GFX_idea_SOV_Aleksandr_Yegorov_theo"
+        texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Aleksandr_Yegorov.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_SOV_Ivan_Konev_theo"
+        texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Ivan_Konev.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_SOV_Nikolay_Kuznetsov_theo"
+        texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Nikolay_Kuznetsov.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_SOV_Nikolay_Kuznetsov_theo"
+        texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Nikolay_Kuznetsov.tga"
+    }
 }

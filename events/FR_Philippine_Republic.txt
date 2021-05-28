@@ -870,19 +870,25 @@ country_event = { # Civil War!
                 set_capital = 623
                 load_oob = PHI_civil_war
                 add_ideas = PHI_the_filipino_civil_war
+                every_owned_state = {
+                    limit = { is_core_of = PHI }
+                    add_core_of = PHR
+                }
             }
             PHR = {
-                add_state_core = 327
-                add_state_core = 624
                 transfer_state = 327
                 transfer_state = 624
 
                 load_oob = PHR_civil_war
+                add_ideas = PHI_the_filipino_civil_war
+            }
+            PHI = {
+                set_province_controller = 1288
+                set_province_controller = 10165
                 declare_war_on = {
-                    target = PHI
+                    target = PHR
                     type = annex_everything
                 }
-                add_ideas = PHI_the_filipino_civil_war
             }
         }
     }
@@ -1387,6 +1393,10 @@ country_event = { # Insurrection Crushed
     option = {
         name = phi.31.a
         remove_ideas = PHI_the_filipino_civil_war
+        every_owned_state = {
+            limit = { is_core_of = PHR }
+            remove_core_of = PHR
+        }
     }
 }
 
