@@ -84,6 +84,7 @@ has_no_unique_companies = {
             original_tag = PHR
             original_tag = GRE
             original_tag = SOV
+            original_tag = SWI
         }
     }
 }
