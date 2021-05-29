@@ -62,7 +62,6 @@ add_ideas = {
 	constitutional_monarchy
 }
 
-
 set_convoys = 17
 
 set_politics = {	

@@ -47,10 +47,7 @@ focus = {
 			log = "[GetDateText]: [Root.GetName]: Focus RHI_independence_1"
 		remove_from_faction = RHI
 		remove_ideas = {RHI_S_political_powderkeg }
-		set_autonomy = { 
-			target = RHI
-			autonomy_state = autonomy_free 
-		}
+		FRA = { end_puppet = RHI }
 	}
 	ai_will_do = { factor = 40 } 
 	x =1

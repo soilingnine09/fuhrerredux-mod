@@ -2275,7 +2275,7 @@ focus_tree = {
 	# Mechanizing the Army
 	focus = {
 		id = fra_mechanize_army
-		icon = GFX_goal_RUS_Markov_plan
+		icon = GFX_focus_generic_license_production
 		x = -1
 		y = 1
 		cost = 10
@@ -2770,7 +2770,7 @@ focus_tree = {
 	# Hydroelectric
 	focus = {
 		id = fra_hydro_electric
-		icon = GFX_goal_generic_navy_cruiser
+		icon = GFX_goal_dam
 		cost = 5
 		x = 0
 		y = 1
@@ -3066,7 +3066,7 @@ focus_tree = {
 	# Quality Weaponsmithing
 	focus = {
 		id = fra_good_guns
-		icon = GFX_goal_military_academy
+		icon = GFX_goal_production
 		x = -1
 		y = 1
 		cost = 5
@@ -3090,7 +3090,7 @@ focus_tree = {
 	# Extensive Quality Control
 	focus = {
 		id = fra_quality_control
-		icon = GFX_SIA_jungletraining
+		icon = GFX_goal_generic_small_arms
 		x = 0
 		y = 1
 		cost = 5
@@ -3111,7 +3111,7 @@ focus_tree = {
 	# Streamline Weapons Production
 	focus = {
 		id = fra_lower_costs
-		icon = GFX_focus_generic_aluminum
+		icon = GFX_goal_state_economy
 		x = 0
 		y = 1
 		cost = 5
@@ -3184,7 +3184,7 @@ focus_tree = {
 	# Mass Rifle Production
 	focus = {
 		id = fra_many_guns
-		icon = GFX_focus_secret_rearmament
+		icon = GFX_goal_national_arsenal
 		x = 1
 		y = 1
 		cost = 5

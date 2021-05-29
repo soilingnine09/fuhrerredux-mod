@@ -66,8 +66,8 @@ country_event = {
 			#country_event = { id = uk.120 months = 24 }
 		}
 		hidden_effect = {	# - Anglo-American Conference
-			#country_event = { id = anam.1 months = 10 }
-			#USA = { country_event = { id = anam.1 months = 10 } }
+			#country_event = { id = nato.1 months = 10 }
+			#USA = { country_event = { id = nato.1 months = 10 } }
 		}
 	}
 }

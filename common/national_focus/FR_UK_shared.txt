@@ -6428,8 +6428,8 @@
 		#}
 		#available_if_capitulated = no  
 	#completion_reward = {
-			#country_event = { id = anam.11 }
-			#USA = { country_event = { id = anam.11 } }
+			#country_event = { id = nato.11 }
+			#USA = { country_event = { id = nato.11 } }
 			#IF = {
 				#limit = {
 					#OR = {
@@ -6437,7 +6437,7 @@
 						#AST = { is_puppet_of = ENG }
 					#}
 				#}
-				#AST = { country_event = { id = anam.11 } }
+				#AST = { country_event = { id = nato.11 } }
 			#}
 			#IF = {
 				#limit = {
@@ -6446,7 +6446,7 @@
 						#NZL = { is_puppet_of = ENG }
 					#}
 				#}
-				#NZL = { country_event = { id = anam.11 } }
+				#NZL = { country_event = { id = nato.11 } }
 			#}
 		#}
 	#}
@@ -6534,8 +6534,8 @@
 			#}
 			#custom_effect_tooltip = AA_mil_diff_tt
 			#hidden_effect = {
-				#country_event = { id = anam.12 days = 90 }
-				#USA = { country_event = { id = anam.12 days = 90 } }
+				#country_event = { id = nato.12 days = 90 }
+				#USA = { country_event = { id = nato.12 days = 90 } }
 			#}
 		#}
 	#}
@@ -6592,7 +6592,7 @@
 					#}
 				#}
 			#}
-			#country_event = { id = anam.13 hours = 1 }
+			#country_event = { id = nato.13 hours = 1 }
 		#}
 	#}
 	

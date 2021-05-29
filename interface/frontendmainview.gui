@@ -343,41 +343,40 @@ guiTypes = {
 			position = { x = 19 y = 0 }
 			quadTextureSprite ="homepage"
 			clicksound = click_default
-			pdx_tooltip = "FR_MENU_HOMEPAGE"
-			web_link = "https://discord.gg/7Q6VuRN"
+			pdx_tooltip = "FX_MENU_HOMEPAGE"
+			web_link = "https://discord.gg/dVT7bHNVgY"
 		}
 		ButtonType = {
 			name = "forum_button"
 			position = { x = 59 y = 0 }
 			quadTextureSprite ="forum"
 			clicksound = click_default
-			pdx_tooltip = "FR_MENU_FORUM"
-			web_link = "https://www.reddit.com/r/Fuhrerreich/"
+			pdx_tooltip = "FX_MENU_FORUM"
+			web_link = "https://www.reddit.com/r/Fuhrerredux/"
 		}
 		ButtonType = {
 			name = "facebook_button"
 			position = { x = 99 y = 0 }
 			quadTextureSprite ="facebook"
 			clicksound = click_default
-			pdx_tooltip = "FR_MENU_FACEBOOK"
-			web_link = "https://steamcommunity.com/sharedfiles/filedetails/?id=1850690189"
+			pdx_tooltip = "FX_MENU_FACEBOOK"
+			web_link = "https://steamcommunity.com/sharedfiles/filedetails/?id=2419457479"
 		}			
-		
+
 		ButtonType = {
 			name = "twitter_button"
 			position = { x = 139 y = 0 }
 			quadTextureSprite ="twitter"
 			#clicksound = click_default
-			pdx_tooltip = "FR_MENU_TWITTER"
+			pdx_tooltip = "FX_MENU_TWITTER"
 			web_link = "https://twitter.com/FuhrerreichHoI4"
 		}
-		
 		ButtonType = {
 			name = "patreon_button"
 			position = { x = 179 y = 0 }
 			quadTextureSprite ="privacy"
 			#clicksound = click_default
-			pdx_tooltip = "FR_MENU_PRIVACY_POLICY"
+			pdx_tooltip = "FX_MENU_PRIVACY_POLICY"
 			web_link = "https://www.patreon.com/Fuhrerreich"
 		}
 		
@@ -386,7 +385,7 @@ guiTypes = {
 			position = { x = 9999 y = 9999 }
 			quadTextureSprite ="privacy"
 			#clicksound = click_default
-			pdx_tooltip = "FR_MENU_PRIVACY_POLICY"
+			pdx_tooltip = "FX_MENU_PRIVACY_POLICY"
 		}
 	}
 	## This position needs updated

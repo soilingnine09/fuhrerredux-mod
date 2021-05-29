@@ -146,13 +146,13 @@ fra_invest_government_desc:0 "The investigations of both the capitalists and the
 fra_the_trial:0 "Trial of the Eleven"
 fra_the_trial_desc:0 "The financial scandal has developed into a full-blown crisis, and we have been forced to put eleven members of our very own government in front of a special court in order to determine the severity of their punishment. The Bloc National will be shaken forever by the end of this trial, but what remains to be seen is whether the coalition will be able to survive..."
 ###
-fra_nuc_dead:0 "The Bloc National disbanded"
+fra_nuc_dead:0 "The Bloc National Disbanded"
 fra_nuc_dead_desc:0 "With the conclusion of the trial of the eleven, the remaining leaders of the Bloc National have found it impossible to keep the coalition together and run an effective government with popular support."
 ###
 fra_prov_govt:0 "Military Takeover"
 fra_prov_govt_desc:0 "The sitting government is clearly unable to deal with the mountain of problems which our country has faced in the past months. The financial scandal and rising German aggression have put far too much strain on the French government. The French military, outraged by the total investigation by the government into them, has forcefully taken control of Paris, declaring a "Government of National Salvation" in order to stabalize the situation."
 ###
-fra_nuc_alive:0 "The Bloc National survives"
+fra_nuc_alive:0 "The Bloc National Survives"
 fra_nuc_alive_desc:0 "The trial of the eleven forced a shakeup in the French government, and the Bloc National has come out of it stronger than ever. Now we are ready to face the new decade with renewed vigour and determination to lead Franc further to greatness."
 ###
 fra_1936_election:0 "The 1936 Elections"
@@ -479,10 +479,10 @@ fra_mas_contracts_desc:0 "The Manufacture d'armes de Saint-Étienne, or MAS, is 
 fra_women_army:0 "Women in the Army"
 fra_women_army_desc:0 "We have a giant untapped source of manpower in our female population. Women all across the country have shown great intrest in becoming medics, engineers, and even soldiers in our army. We would be fools to let this oppertunity go to waste."
 ###
-fra_many_guns:0 "Mass Rifle production"
+fra_many_guns:0 "Mass Rifle Production"
 fra_many_guns_desc:0 "For many years our army has suffered from a critical lack of rifles, and what good is a soldier if they don't have a gun in their hands? We must remedy this crisis as soon as possible."
 ###
-fra_many_soldiers:0 "Mass Mobilization Initative"
+fra_many_soldiers:0 "Mass Mobilization Initiative"
 fra_many_soldiers_desc:0 "A war cannot be fought without men to fight it, we need to ensure that our regiments are always at full strength if we are to compete with the Prussian military doctrine which ravaged our army in the last war."
 ###
 fra_native_regiments:0 "Native Conscription"
