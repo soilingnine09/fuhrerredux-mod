@@ -2156,15 +2156,18 @@ country_event = {
 			ruling_party = paternal_autocrat
 			elections_allowed = no
 		}
+		remove_every_minister = yes
+		add_ideas = {
+			ENG_Edward_VIII_hog_pau
+			ENG_John_Hugo_Russell_for_pau
+			ENG_Noel_Pemberton_Billing_eco_pau
+			ENG_Jeffrey_Hamm_sec_pau
+		}
 		add_popularity = { ideology = paternal_autocrat popularity = 0.40 }
 		set_country_flag = direct_rule_from_buckingham
 		hidden_effect = {
 			country_event = { id = uk.38 days = 30 }
 			add_ideas = absolute_monarchy
-			swap_ideas = { remove_idea = ENG_Samuel_Hoare_hog add_idea = ENG_Edward_VIII_hog }
-			swap_ideas = { remove_idea = ENG_John_Anderson_for add_idea = ENG_Douglas_Hogg_for }
-			swap_ideas = { remove_idea = ENG_Neville_Chamberlain_eco add_idea = ENG_Gascogne_Cecil_eco }
-			swap_ideas = { remove_idea = ENG_John_Gilmour_sec add_idea = ENG_John_Davidson_sec }
 			BHU = { news_event = { id = uknews.17 } }
 			CAN = { country_event = { id = empire.3 hours = 8 } }
 			AST = { country_event = { id = empire.3 hours = 8 } }
@@ -2231,15 +2234,18 @@ country_event = {
 			ruling_party = authoritarian_democrat
 			elections_allowed = no
 		}
+		remove_every_minister = yes
+		add_ideas = {
+			ENG_Jack_Churchill_hog_ade
+			ENG_Claude_Auchinleck_for_ade
+			ENG_Louis_Mountbatten_eco_ade
+			ENG_Trafford_Leigh_Mallory_ade
+		}
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.40 }
 		set_country_flag = military_control
 		hidden_effect = {
 			country_event = { id = uk.110 days = 30 }
 			add_ideas = military_junta
-			swap_ideas = { remove_idea = ENG_Samuel_Hoare_hog add_idea = ENG_Jack_Churchill_hog }
-			swap_ideas = { remove_idea = ENG_John_Anderson_for add_idea = ENG_Alan_Cunningham_for }
-			swap_ideas = { remove_idea = ENG_Neville_Chamberlain_eco add_idea = ENG_Claude_Auchinleck_eco }
-			swap_ideas = { remove_idea = ENG_John_Gilmour_sec add_idea = ENG_Bruce_Fraser_sec }
 			BHU = { news_event = { id = uknews.17 } }
 			CAN = { country_event = { id = empire.3 hours = 8 } }
 			AST = { country_event = { id = empire.3 hours = 8 } }
@@ -2454,6 +2460,14 @@ country_event = {							##### - TO DO: ADD MORE EVENTS FOR BREAK-UP OF THE EMPIR
 				ruling_party = social_conservative
 				elections_allowed = no
 			}
+			remove_every_minister = yes
+			add_ideas = {
+				ENG_Anthony_Eden_hog_sco
+				ENG_Robert_Boothby_for_sco
+				ENG_John_Siddeley_eco_sco
+				ENG_Philip_Lloyd_Greame_eco_sco
+			}
+
 			IF = {
 				limit = {
 					AND = {
@@ -2480,10 +2494,6 @@ country_event = {							##### - TO DO: ADD MORE EVENTS FOR BREAK-UP OF THE EMPIR
 			}
 			add_popularity = { ideology = market_liberal popularity = 0.05 }
 			set_country_flag = tory_coal
-			hidden_effect = {
-				swap_ideas = { remove_idea = ENG_John_Anderson_for add_idea = ENG_Alfred_Brown_for }
-				swap_ideas = { remove_idea = ENG_Neville_Chamberlain_eco add_idea = ENG_John_Simon_eco }
-			}
 		}
 	}
 	
@@ -2504,6 +2514,14 @@ country_event = {							##### - TO DO: ADD MORE EVENTS FOR BREAK-UP OF THE EMPIR
 				ruling_party = social_democrat
 				elections_allowed = no
 			}
+			remove_every_minister = yes
+			add_ideas = {
+				ENG_Arthur_Greenwood_hog_sde
+				ENG_Herbert_Morrison_for_sde
+				ENG_Oswald_Mosley_eco_sde
+				ENG_James_Chuter_Ede_sec_sde
+			}
+
 			IF = {
 				limit = {
 					AND = {
@@ -2530,12 +2548,6 @@ country_event = {							##### - TO DO: ADD MORE EVENTS FOR BREAK-UP OF THE EMPIR
 			}
 			add_popularity = { ideology = libertarian_socialist popularity = 0.05 }
 			set_country_flag = labour_ilp
-			hidden_effect = {
-				swap_ideas = { remove_idea = ENG_Samuel_Hoare_hog add_idea = ENG_Arthur_Greenwood_hog }
-				swap_ideas = { remove_idea = ENG_John_Anderson_for add_idea = ENG_Herbert_Morrison_for }
-				swap_ideas = { remove_idea = ENG_Neville_Chamberlain_eco add_idea = ENG_Oswald_Mosley_eco }
-				swap_ideas = { remove_idea = ENG_John_Gilmour_sec add_idea = ENG_Sydney_Olivier_sec }
-			}
 			country_event = { id = uk.140 days = 30 }
 		}
 	}
@@ -2636,6 +2648,13 @@ country_event = {
 				ruling_party = social_conservative
 				elections_allowed = no
 			}
+			remove_every_minister = yes
+			add_ideas = {
+				ENG_Anthony_Eden_hog_sco
+				ENG_Robert_Boothby_for_sco
+				ENG_John_Siddeley_eco_sco
+				ENG_Philip_Lloyd_Greame_eco_sco
+			}
 			IF = {
 				limit = {
 					AND = {
@@ -2662,10 +2681,6 @@ country_event = {
 			}
 			add_popularity = { ideology = market_liberal popularity = 0.05 }
 			set_country_flag = tory_coal
-			hidden_effect = {
-				swap_ideas = { remove_idea = ENG_John_Anderson_for add_idea = ENG_Alfred_Brown_for }
-				swap_ideas = { remove_idea = ENG_Neville_Chamberlain_eco add_idea = ENG_John_Simon_eco }
-			}
 		}
 	}
 	
@@ -2686,6 +2701,15 @@ country_event = {
 				ruling_party = social_democrat
 				elections_allowed = no
 			}
+			remove_every_minister = yes
+			remove_every_minister = yes
+			add_ideas = {
+				ENG_Arthur_Greenwood_hog_sde
+				ENG_Herbert_Morrison_for_sde
+				ENG_Oswald_Mosley_eco_sde
+				ENG_James_Chuter_Ede_sec_sde
+			}
+
 			IF = {
 				limit = {
 					AND = {
@@ -2712,12 +2736,6 @@ country_event = {
 			}
 			add_popularity = { ideology = libertarian_socialist popularity = 0.05 }
 			set_country_flag = labour_ilp
-			hidden_effect = {
-				swap_ideas = { remove_idea = ENG_Samuel_Hoare_hog add_idea = ENG_Arthur_Greenwood_hog }
-				swap_ideas = { remove_idea = ENG_John_Anderson_for add_idea = ENG_Herbert_Morrison_for }
-				swap_ideas = { remove_idea = ENG_Neville_Chamberlain_eco add_idea = ENG_Oswald_Mosley_eco }
-				swap_ideas = { remove_idea = ENG_John_Gilmour_sec add_idea = ENG_Sydney_Olivier_sec }
-			}
 			country_event = { id = uk.140 days = 30 }
 		}
 	}
@@ -5352,6 +5370,13 @@ country_event = {
 		set_politics = {
 			ruling_party = libertarian_socialist
 			elections_allowed = no
+		}
+		remove_every_minister = yes
+		add_ideas = {
+			ENG_Oswald_Mosley_hog_lib
+			ENG_Herbert_Morrison_for_sde
+			ENG_Oswald_Mosley_eco_sde
+			ENG_James_Chuter_Ede_sec_sde
 		}
 		hidden_effect = {
 			country_event = { id = uk.148 days = 7 }
