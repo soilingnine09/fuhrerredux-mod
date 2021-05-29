@@ -1610,7 +1610,7 @@ focus_tree = {
   ### Increase relation with the Germanosphere ###
   focus = {
 		id = SWI_chief_ambassadorship_founded_in_bern
-		icon = GFX_goal_generic_elections
+		icon = GFX_goal_SWI_government
 		mutually_exclusive = { focus = SWI_chief_ambassadorship_founded_in_geneva focus = SWI_chief_ambassadorship_founded_in_lugano}
     # prerequisite = { focus = SWI_SDPS_factories_for_the_people focus = SWI_SUP_christian_reform focus = SWI_political_statutes }
     # prerequisite = { focus = SWI_SDPS_the_government_will_fill_the_vacuum focus = SWI_SUP_school_reform focus = SWI_liberal_hegemony }
@@ -1666,7 +1666,7 @@ focus_tree = {
   ### Increase relation with the Francosphere ###
   focus = {
 		id = SWI_chief_ambassadorship_founded_in_geneva
-		icon = GFX_goal_generic_elections
+		icon = GFX_goal_SWI_government
 		mutually_exclusive = { focus = SWI_chief_ambassadorship_founded_in_bern focus = SWI_chief_ambassadorship_founded_in_lugano}
     # prerequisite = { focus = SWI_SDPS_factories_for_the_people focus = SWI_SUP_christian_reform focus = SWI_political_statutes }
     # prerequisite = { focus = SWI_SDPS_the_government_will_fill_the_vacuum focus = SWI_SUP_school_reform focus = SWI_liberal_hegemony }
@@ -1752,7 +1752,7 @@ focus_tree = {
   focus = {
 		id = SWI_chief_ambassadorship_founded_in_lugano
 		mutually_exclusive = { focus = SWI_chief_ambassadorship_founded_in_bern focus = SWI_chief_ambassadorship_founded_in_geneva}
-		icon = GFX_goal_generic_elections
+		icon = GFX_goal_SWI_government
     # prerequisite = { focus = SWI_SDPS_factories_for_the_people focus = SWI_SUP_christian_reform focus = SWI_political_statutes }
     # prerequisite = { focus = SWI_SDPS_the_government_will_fill_the_vacuum focus = SWI_SUP_school_reform focus = SWI_liberal_hegemony }
     # prerequisite = { focus = SWI_SDPS_defense_doctrines focus = SWI_SUP_fortress_confederation focus = SWI_the_future_of_nationalization }

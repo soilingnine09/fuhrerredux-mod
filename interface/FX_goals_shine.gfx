@@ -385,7 +385,7 @@ spriteTypes = {
     }
 
     spriteType = {
-        name = "GFX_goal_flag_german_empire"
+        name = "GFX_goal_flag_german_empire_shine"
         texturefile = "gfx/interface/goals/goal_flag_german_empire.tga"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
@@ -417,7 +417,7 @@ spriteTypes = {
     }
 
     spriteType = {
-        name = "GFX_goal_flag_austria_empire"
+        name = "GFX_goal_flag_austria_empire_shine"
         texturefile = "gfx/interface/goals/goal_flag_austria_empire.tga"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
@@ -435,6 +435,38 @@ spriteTypes = {
 
         animation = {
             animationmaskfile = "gfx/interface/goals/goal_flag_austria_empire.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+
+    spriteType = {
+        name = "GFX_goal_SWI_government_shine"
+        texturefile = "gfx/interface/goals/SWI_government.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SWI_government.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SWI_government.tga"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = 90.0
             animationlooping = no

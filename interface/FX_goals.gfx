@@ -69,4 +69,9 @@ spriteTypes = {
 		name = "GFX_goal_flag_austria_empire"
 		texturefile = "gfx/interface/goals/goal_flag_austria_empire.tga"
 	}
+
+	spriteType = {
+		name = "GFX_goal_SWI_government"
+		texturefile = "gfx/interface/goals/SWI_government.tga"
+	}
 }
