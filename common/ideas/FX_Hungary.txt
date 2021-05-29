@@ -1071,4 +1071,23 @@ ideas = {
 			}
 		}
 	}
+	### Theorist
+	theorist = {
+		HUN_Henrik_Werth_theo = {
+			allowed = { original_tag = HUN }
+			traits = { land_doctrine_theorist }
+			research_bonus = { land_doctrine = 0.1 }
+		}
+		HUN_Miklos_Horthy_de_Nagybanya_theo = {
+			allowed = { original_tag = HUN }
+			traits = { naval_doctrine_theorist }
+			research_bonus = { naval_doctrine = 0.1 }
+		}
+		HUN_Kalman_Ternegg_Ratz_theo = {
+			allowed = { original_tag = HUN }
+			traits = { air_doctrine_theorist }
+			research_bonus = { air_doctrine = 0.1 }
+		}
+
+	}
 }

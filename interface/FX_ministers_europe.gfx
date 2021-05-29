@@ -140,4 +140,383 @@ spriteTypes = {
         name = "GFX_idea_SOV_Nikolay_Kuznetsov_theo"
         texturefile = "gfx/interface/ideas/SOV/ministers/SOV_Nikolay_Kuznetsov.tga"
     }
+
+    ####################################################
+    # SWI
+
+    ### Head of Government
+	spriteType = {
+		name = "GFX_idea_SWI_Marino_Bodenmann_hog_van"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Marino_Bodenmann.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Jules_Humbert_Droz_hog_col"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Jules_Humbert_Droz.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Enrico_Celio_hog_sde"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Enrico_Celio.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Ernst_Nobs_hog_sde"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Ernst_Nobs.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Charles_Oser_hog_sli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Charles_Oser.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Eduard_von_Steiger_hog_sli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Eduard_von_Steiger.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Giuseppe_Motta_hog_sli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Giuseppe_Motta.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Max_Petitpierre_hog_sli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Max_Petitpierre.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Philipp_Etter_hog_sli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Philipp_Etter.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Albert_Meyer_hog_mli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Albert_Meyer.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Ernst_Wetter_hog_mli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Ernst_Wetter.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Johannes_Baumann_hog_mli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Johannes_Baumann.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Karl_Kobelt_hog_mli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Karl_Kobelt.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Marcel_Pilet_Golaz_hog_mli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Marcel_Pilet_Golaz.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Walther_Stampfli_hog_mli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Walther_Stampfli.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Oskar_Leimgruber_hog_sco"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Oskar_Leimgruber.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Franz_Burri_hog_pau"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Franz_Burri.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Johann_Otto_Kellerhals_hog_npo"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Johann_Otto_Kellerhals.tga"
+	}
+
+	### Person of Influence
+	# Foreign Minister
+	spriteType = {
+		name = "GFX_idea_SWI_Jakob_Herzog_for_van"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Jakob_Herzog.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Rudolf_Gelpke_for_col"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Rudolf_Gelpke.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Enrico_Celio_for_sde"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Enrico_Celio.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Giuseppe_Motta_for_sli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Giuseppe_Motta.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Jakob_I_Huber_for_sli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Jakob_I_Huber.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Karl_Zeltner_for_sli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Karl_Zeltner.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Leo_Niklaus_Lejeune_for_sli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Leo_Niklaus_Lejeune.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Max_Kaufmann_for_sli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Max_Kaufmann.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Max_Petitpierre_for_sli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Max_Petitpierre.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Justus_Stoecklin_for_mli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Justus_Stoecklin.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Marcel_Pilet_Golaz_for_mli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Marcel_Pilet_Golaz.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Walther_Stampfli_for_mli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Walther_Stampfli.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Jacob_Lorenz_for_pau"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Jacob_Lorenz.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Ernst_Leonhardt_for_npo"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Ernst_Leonhardt.tga"
+	}
+
+	# Economy Minister
+	spriteType = {
+		name = "GFX_idea_SWI_Franz_Welti_eco_van"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Franz_Welti.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Charles_Naine_eco_col"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Charles_Naine.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Ernst_Nobs_eco_sde"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Ernst_Nobs.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Leo_Schweizer_eco_sde"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Leo_Schweizer.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Otto_Gass_eco_sde"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Otto_Gass.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Werner_Jenni_eco_sde"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Werner_Jenni.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Ernst_Weber_eco_sli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Ernst_Weber.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Jakob_I_Huber_eco_sli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Jakob_I_Huber.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Jakob_Mosimann_eco_sli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Jakob_Mosimann.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Leonardo_Castelli_eco_sli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Leonardo_Castelli.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Ernst_Wetter_eco_mli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Ernst_Wetter.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Friedrich_Traugott_Wahlen_eco_mli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Friedrich_Traugott_Wahlen.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Karl_Kobelt_eco_mli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Karl_Kobelt.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Rudolf_Minger_eco_mli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Rudolf_Minger.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Hans_Oehler_eco_pau"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Hans_Oehler.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Max_Leo_Keller_eco_npo"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Max_Leo_Keller.tga"
+	}
+
+	# Security Minister
+	spriteType = {
+		name = "GFX_idea_SWI_Heinrich_Abbegg_sec_van"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Heinrich_Abbegg.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Ernest_Paul_Graber_sec_col"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Ernest_Paul_Graber.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Fritz_Platten_sec_col"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Fritz_Platten.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Ernst_Loeliger_sec_sde"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Ernst_Loeliger.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Guido_Miescher_sec_sde"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Guido_Miescher.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Hans_Leupin_sec_sde"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Hans_Leupin.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Traugott_Meyer_sec_sde"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Traugott_Meyer.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Edmund_Schulthess_sec_sli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Edmund_Schulthess.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Eduard_von_Steiger_sec_sli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Eduard_von_Steiger.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Felix_Calonder_sec_sli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Felix_Calonder.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Gonzague_de_Reynold_sec_sli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Gonzague_de_Reynold.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Hugo_Gschwind_sec_sli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Hugo_Gschwind.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Max_Waibel_sec_sli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Max_Waibel.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Philipp_Etter_sec_sli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Philipp_Etter.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Heinrich_Rothmund_sec_mli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Heinrich_Rothmund.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Johannes_Baumann_sec_mli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Johannes_Baumann.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Paul_Frutig_sec_mli"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Paul_Frutig.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Franz_Burri_sec_pau"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Franz_Burri.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Arthur_Fonjallaz_sec_npo"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Arthur_Fonjallaz.tga"
+	}
+
+
+	### Chief of Staff
+	spriteType = {
+		name = "GFX_idea_SWI_Traugott_Meyer_cos"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Traugott_Meyer.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Paul_Guertler_cos"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Paul_Guertler.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Henri_Guisan_cos"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Henri_Guisan.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Jakob_I_Huber_cos"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Jakob_I_Huber.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Hans_Max_Huber_cos"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Hans_Max_Huber.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Eugen_Bircher_cos"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Eugen_Bircher.tga"
+	}
+
+	### Chief of Army
+	spriteType = {
+		name = "GFX_idea_SWI_Paul_Rossy_carm"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Paul_Rossy.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Henri_Guisan_carm"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Henri_Guisan.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Ernst_Laur_carm"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Ernst_Laur.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Eugen_Bircher_carm"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Eugen_Bircher.tga"
+	}
+
+	### Chief of Navy
+	spriteType = {
+		name = "GFX_idea_SWI_Rene_von_Graffenried_cnav"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Rene_von_Graffenried.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Hans_Oehler_cnav"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Hans_Oehler.tga"
+	}
+
+	### Chief of Air Force
+	spriteType = {
+		name = "GFX_idea_SWI_JD_de_Montenach_cair"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_JD_de_Montenach.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Etienne_Primault_cair"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Etienne_Primault.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Fritz_Rihner_cair"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Fritz_Rihner.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Carl_Burckhardt_de_Reynold_cair"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Carl_Burckhardt_de_Reynold.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Oskar_Bider_cair"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Oskar_Bider.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SWI_Alfred_Sarasin_cair"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Alfred_Sarasin.tga"
+	}
+
+    ### Theorist
+    spriteType = {
+		name = "GFX_idea_SWI_Henri_Guisan_theo"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Henri_Guisan.tga"
+	}
+    spriteType = {
+		name = "GFX_idea_SWI_Eugen_Bircher_theo"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Eugen_Bircher.tga"
+	}
+    spriteType = {
+		name = "GFX_idea_SWI_Rene_von_Graffenried_theo"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Rene_von_Graffenried.tga"
+	}
+    spriteType = {
+		name = "GFX_idea_SWI_Carl_Burckhardt_de_Reynold_theo"
+		texturefile = "gfx/interface/ideas/SWI/ministers/SWI_Carl_Burckhardt_de_Reynold.tga"
+	}
 }

@@ -46,6 +46,7 @@ has_no_unique_ministers = {
             original_tag = GRE
             original_tag = SOV
             original_tag = HUN
+            original_tag = SWI
         }
     }
 }

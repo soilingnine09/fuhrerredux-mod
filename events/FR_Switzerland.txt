@@ -1155,49 +1155,57 @@ country_event = {
 
 	is_triggered_only = yes
 
-  option = {
+  	option = {
 		name = "The SDPS have taken majority in the houses!"
-    complete_national_focus = SWI_the_seats_run_in_favor_of
+    	complete_national_focus = SWI_the_seats_run_in_favor_of
 		add_popularity = { ideology = social_democrat popularity = 0.10 }
 		add_popularity = { ideology = libertarian_socialist popularity = 0.05 }
 
 		hidden_effect = {
-
-		set_politics = {
-        ruling_party = social_democrat
-        elections_allowed = no
-      }
-		SWI = { country_event = { id = swi.102 days = 12 } }
-
+			set_politics = {
+        		ruling_party = social_democrat
+    			elections_allowed = no
+      		}
+			remove_every_minister = yes
+			add_ideas = {
+				SWI_Ernst_Nobs_hog_sde
+				SWI_Enrico_Celio_for_sde
+				SWI_Leo_Schweizer_eco_sde
+				SWI_Hans_Leupin_sec_sde
+			}
+			SWI = { country_event = { id = swi.102 days = 12 } }
 		}
 	}
 
 	option = {
 		name = "The SUP's numbers swell!"
-    complete_national_focus = SWI_the_seats_run_in_favor_of
+    	complete_national_focus = SWI_the_seats_run_in_favor_of
 		add_popularity = { ideology = social_liberal popularity = 0.15 }
 
 		hidden_effect = {
-
-		set_politics = {
-        ruling_party = social_liberal
-        elections_allowed = no
-      }
-		SWI = { country_event = { id = swi.103 days = 13 } }
-
+			set_politics = {
+        		ruling_party = social_liberal
+        		elections_allowed = no
+      		}
+			remove_every_minister = yes
+			add_ideas = {
+				SWI_Eduard_von_Steiger_hog_sli
+				SWI_Giuseppe_Motta_for_sli
+				SWI_Karl_Zeltner_for_sli
+				SWI_Jakob_Mosimann_eco_sli
+			}
+			SWI = { country_event = { id = swi.103 days = 13 } }
 		}
 	}
 
 	option = {
 		name = "The coalition between the FDP and CDVP has held."
-    complete_national_focus = SWI_the_seats_run_in_favor_of
+    	complete_national_focus = SWI_the_seats_run_in_favor_of
 		add_popularity = { ideology = market_liberal popularity = 0.15 }
 		add_popularity = { ideology = social_conservative popularity = 0.15 }
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.05 }
 		hidden_effect = {
-
-		SWI = { country_event = { id = swi.104 days = 14 } }
-
+			SWI = { country_event = { id = swi.104 days = 14 } }
 		}
 	}
 }
@@ -1215,7 +1223,7 @@ country_event = {
 
   option = {
 		name = "Damnable, and yet..."
-    complete_national_focus = SWI_SDPS_member_enters_councilship
+    	complete_national_focus = SWI_SDPS_member_enters_councilship
 		add_popularity = { ideology = libertarian_socialist popularity = 0.05 }
 		add_popularity = { ideology = social_democrat popularity = 0.10 }
 	}
@@ -1234,7 +1242,7 @@ country_event = {
 
   option = {
 		name = "What an interesting proposition."
-    complete_national_focus = SWI_SUP_member_enters_councilship
+    	complete_national_focus = SWI_SUP_member_enters_councilship
 		add_popularity = { ideology = social_liberal popularity = 0.15 }
 	}
 }
@@ -1252,7 +1260,7 @@ country_event = {
 
   option = {
 		name = "Good to know! Now let's get down to business."
-    complete_national_focus = SWI_status_quo_council_membership
+    	complete_national_focus = SWI_status_quo_council_membership
 		add_popularity = { ideology = market_liberal popularity = 0.05 }
 		add_popularity = { ideology = social_conservative popularity = 0.05 }
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.05 }
@@ -1272,7 +1280,7 @@ country_event = {
 
   option = {
 		name = "Good to know! Now let's get down to business."
-    complete_national_focus = SWI_status_quo_council_membership
+    	complete_national_focus = SWI_status_quo_council_membership
 		add_popularity = { ideology = market_liberal popularity = 0.07 }
 		add_popularity = { ideology = social_conservative popularity = 0.05 }
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.05 }
@@ -1451,8 +1459,15 @@ country_event = {
   option = {
 		name = "Then lets get some work done."
 		set_politics = {
-				ruling_party = social_conservative
-				elections_allowed = no
+			ruling_party = social_conservative
+			elections_allowed = no
+		}
+		remove_every_minister = yes
+		add_ideas = {
+			SWI_Oskar_Leimgruber_hog_sco
+			SWI_Walther_Stampfli_for_mli
+			SWI_Rudolf_Minger_eco_mli
+			SWI_Paul_Frutig_sec_mli
 		}
 		complete_national_focus = SWI_CDVP_becomes_senior_member
 	}
