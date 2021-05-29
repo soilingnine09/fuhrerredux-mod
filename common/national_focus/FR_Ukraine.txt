@@ -9,14 +9,14 @@
 focus_tree = {
 	id = FR_Ukraine
 
-	# country = {
-		# factor = 0
+	country = {
+		factor = 0
 
-		# modifier = {
-			# add = 10
-			# tag = UKR
-		# }
-	# }
+		modifier = {
+			add = 10
+			tag = UKR
+		}
+	}
 
 	default = no
 

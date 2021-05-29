@@ -29,16 +29,16 @@ country_event = { #black wednesday
 
 	fire_only_once = yes
 
-	# trigger = {
-		# tag = UKR
-		# date > 1936.7.7
-	# }
+	trigger = {
+		tag = UKR
+		date > 1936.7.7
+	}
 	
 	is_triggered_only = yes 
 
-	# mean_time_to_happen = {
-		# days = 3
-	# }
+	mean_time_to_happen = {
+		days = 3
+	}
 
 	option = {
 		name = ukraine.2.a
@@ -117,11 +117,11 @@ country_event = { #socdem speech
 		}
 		add_popularity = {
     		ideology = social_democrat
-    		popularity = -0.03
+    		popularity = -0.3
 		}
 		add_popularity = {
     		ideology = market_liberal
-    		popularity = 0.03
+    		popularity = 0.3
 		}
 	}
 
@@ -140,15 +140,15 @@ country_event = { #socdem speech
 		}
 		add_popularity = {
     		ideology = national_populist
-    		popularity = 0.03
+    		popularity = 0.2
 		}
 		add_popularity = {
     		ideology = social_democrat
-    		popularity = -0.03
+    		popularity = -0.3
 		}
 		add_popularity = {
     		ideology = market_liberal
-    		popularity = -0.03
+    		popularity = -0.3
 		}
 	}
 }
@@ -185,11 +185,11 @@ country_event = { #radio broadcast
 		}
 		add_popularity = {
     		ideology = social_democrat
-    		popularity = 0.03
+    		popularity = 0.3
 		}
 		add_popularity = {
     		ideology = market_liberal
-    		popularity = -0.01
+    		popularity = -0.1
 		}
 	}
 
@@ -215,7 +215,7 @@ country_event = { #radio broadcast
 		}
 		add_popularity = {
     		ideology = market_liberal
-    		popularity = 0.03
+    		popularity = 0.3
 		}
 	}
 
@@ -245,11 +245,11 @@ country_event = { #radio broadcast
 		}
 		add_popularity = {
     		ideology = social_democrat
-    		popularity = -0.03
+    		popularity = -0.3
 		}
 		add_popularity = {
     		ideology = national_populist
-    		popularity = 0.06
+    		popularity = 0.26
 		}
 	}
 }
@@ -286,7 +286,7 @@ country_event = { #rada member assassinated
 		}
 		add_popularity = {
     		ideology = social_democrat
-    		popularity = 0.06
+    		popularity = 0.6
 		}
 	}
 
@@ -312,7 +312,7 @@ country_event = { #rada member assassinated
 		}
 		add_popularity = {
 			ideology = market_liberal
-			popularity = 0.04
+			popularity = 0.14
 		}
 	}
 
@@ -342,7 +342,7 @@ country_event = { #rada member assassinated
 		}
 		add_popularity = {
 			ideology = national_populist
-			popularity = 0.06
+			popularity = 0.16
 		}
 	}
 }
@@ -406,6 +406,25 @@ country_event = { #elections over
 		}
 		hidden_effect = {
 			complete_national_focus = ukr_rada_nationalist
+		}
+	}
+
+	option = {
+		name = ukraine.7.d
+		trigger = {
+			national_populist < 0.5
+			social_democrat < 0.5
+			market_liberal < 0.5
+		}
+		set_politics = {
+			ruling_party = paternal_autocrat
+		}
+		add_popularity = {
+    		ideology = paternal_autocrat
+    		popularity = 0.7
+		}
+		hidden_effect = {
+			complete_national_focus = ukr_rada_junta
 		}
 	}
 }
