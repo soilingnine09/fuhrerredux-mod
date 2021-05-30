@@ -254,7 +254,7 @@ focus_tree = {
     # The Modern Age
     focus = {
         id = CHI_the_modern_age
-        icon = GFX_IRE_Capital
+        icon = GFX_goal_CHI_the_modern_age
         x = 9
         y = 1
         cost = 3

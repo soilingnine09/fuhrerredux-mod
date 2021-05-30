@@ -71,7 +71,22 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_goal_flag_cruzoob"
+		texturefile = "gfx/interface/goals/goal_flag_cruzoob.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_flag_nanjing_government"
+		texturefile = "gfx/interface/goals/goal_flag_nanjing_government.tga"
+	}
+
+	spriteType = {
 		name = "GFX_goal_SWI_government"
 		texturefile = "gfx/interface/goals/SWI_government.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_CHI_the_modern_age"
+		texturefile = "gfx/interface/goals/goal_CHI_the_modern_age.tga"
 	}
 }
