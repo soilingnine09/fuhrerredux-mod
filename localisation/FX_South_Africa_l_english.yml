@@ -908,7 +908,7 @@ ZAF_Disorganized_Rebels_desc:0 "Our rebellion against the South African traitors
 ZAF_Help_tooltip:0 "§GThis will unlock decisions to aid in the war effort.§!\n"
 
 #### Focus ####
-ZAF_Something_Terrible:0 "Something Terrible"
+ZAF_Something_Terrible:0 "Start the Fire"
 ZAF_Something_Terrible_desc:0 "The traitors of South Africa shall tremble! We have caught them by surprise, and are now engaged in the fight for the very survival and independence of our nation! Ex Vires Imperium!"
 ZAF_Chaos_Ladder:0 "Chaos is a Ladder"
 ZAF_Chaos_Ladder_desc:0 "The fight we now embark upon will be a long and brutal one. If we are to have any chance at defeating the traitors of South Africa, we must maintain the element of surprise, and strike with no holds barred."
@@ -916,9 +916,10 @@ ZAF_Rile_Populace:0 "Rile up the Populace"
 ZAF_Rile_Populace_desc:0 "The population of the Boer states must be fully brought onboard our efforts. Without them, our movement will not have soldiers and workers, and will be doomed to fail. We must make every outreach possible to recruit them."
 ZAF_German_Separatists:0 "Support Separatists in Kalahari"
 ZAF_German_Separatists_desc:0 "Southwest Africa, given to the Union after the Great War, was once a German colony. As such, there are many in hiding there who are ready to rise up against the South African traitors. All that they would need is a little push..."
-ZAF_Total_War:0 "Total War"
+ZAF_Total_War:0 "War of Survival"
 ZAF_Total_War_desc:0 "If we are to win this fight, we must recruit as much of the populace as possible. Fill the militias with men and women alike; children too if they're old enough. This is a fight for our very survival!"
 ZAF_Foreign_Aid:0 "Foreign Aid"
 ZAF_Foreign_Aid_desc:0 "As much as we'd like to show the world just how strong we are by defeating the traitors single-handedly, we will require some degree of foreign aid if we are to survive. We must set aside our pride and ask nations sympathetic to our cause for support."
 ZAF_Way_to_Independence:0 "Way to Independence"
 ZAF_Way_to_Independence_desc:0 "We have secured all of our bases, and waged total war against the traitors in South Africa. Our path to reclaiming our nation is tried and true, and all that remains is to win our war for independence."
+
