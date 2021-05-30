@@ -933,6 +933,134 @@ CRC = {
 	color = rgb { 255 102 102 }
 	color_ui = rgb { 255 102 102 }
 }
+CAR = {
+	color = rgb { 153 0 0 }
+	color_ui = rgb { 153 0 0 }
+}
+CHA = {
+	color = rgb { 204 255 204 }
+	color_ui = rgb { 204 255 204 }
+}
+CMR = {
+	color = rgb { 255 51 0 }
+	color_ui = rgb { 255 51 0 }
+}
+NGA = {
+	color = rgb { 255 204 102 }
+	color_ui = rgb { 255 204 102 }
+}
+EQG = {
+	color = rgb { 255 204 0 }
+	color_ui = rgb { 255 204 0 }
+}
+GHA = {
+	color = rgb { 102 102 51 }
+	color_ui = rgb { 102 102 51 }
+}
+SIE = {
+	color = rgb { 204 102 255 }
+	color_ui = rgb { 204 102 255 }
+}
+GNB = {
+	color = rgb { 153 102 0 }
+	color_ui = rgb { 153 102 0 }
+}
+UGA = {
+	color = rgb { 255 80 80 }
+	color_ui = rgb { 255 80 80 }
+}
+TZN = {
+	color = rgb { 255 204 153 }
+	color_ui = rgb { 255 204 153 }
+}
+ZAM = {
+	color = rgb { 102 102 255 }
+	color_ui = rgb { 102 102 255 }
+}
+NMB = {
+	color = rgb { 229 204 255 }
+	color_ui = rgb { 229 204 255 }
+}
+SOM = {
+	color = rgb { 0 128 131 }
+	color_ui = rgb { 0 128 131 }
+}
+ERI = {
+	color = rgb { 153 51 0 }
+	color_ui = rgb { 153 51 0 }
+}
+DJI = {
+	color = rgb { 0 102 153 }
+	color_ui = rgb { 0 102 153 }
+}
+SLV = {
+	color = rgb { 102 178 255 }
+	color_ui = rgb { 102 178 255 }
+}
+MAC = {
+	color = rgb { 255 51 51 }
+	color_ui = rgb { 255 51 51 }
+}
+GDL = {
+	color = rgb { 153 255 255 }
+	color_ui = rgb { 153 255 255 }
+}
+BAS = {
+	color = rgb { 255 102 102 }
+	color_ui = rgb { 255 102 102 }
+}
+TRI = {
+	color = rgb { 96 96 96 }
+	color_ui = rgb { 96 96 96 }
+}
+JAM = {
+	color = rgb { 102 102 0 }
+	color_ui = rgb { 102 102 0 }
+}
+BAH = {
+	color = rgb { 204 255 204 }
+	color_ui = rgb { 204 255 204 }
+}
+KUW = {
+	color = rgb { 153 76 0 }
+	color_ui = rgb { 153 76 0 }
+}
+BRD = {
+	color = rgb { 204 153 0 }
+	color_ui = rgb { 204 153 0 }
+}
+RWA = {
+	color = rgb { 255 255 102 }
+	color_ui = rgb { 255 255 102 }
+}
+BRM = {
+	color = rgb { 76 153 0 }
+	color_ui = rgb { 76 153 0 }
+}
+BLZ = {
+	color = rgb { 0 204 204 }
+	color_ui = rgb { 0 204 204 }
+}
+SUR = {
+	color = rgb { 255 178 102 }
+	color_ui = rgb { 255 178 102 }
+}
+GYA = {
+	color = rgb { 255 204 153 }
+	color_ui = rgb { 255 204 153 }
+}
+CAY = {
+	color = rgb { 51 153 255 }
+	color_ui = rgb { 51 153 255 }
+}
+SRL = {
+	color = rgb { 204 0 102 }
+	color_ui = rgb { 204 0 102 }
+}
+MLD = {
+	color = rgb { 178 255 102 }
+	color_ui = rgb { 178 255 102 }
+}
 
 #################################
 #################################
