@@ -1,0 +1,78 @@
+spriteTypes = {
+
+    ################################################
+    # SWI
+
+    spriteType = {
+		name = "GFX_idea_brown_boveri"
+		texturefile = "gfx/interface/ideas/SWI/companies/brown_boveri.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_swi_ptt"
+		texturefile = "gfx/interface/ideas/SWI/companies/swi_ptt.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_sulzer_ag"
+		texturefile = "gfx/interface/ideas/SWI/companies/sulzer.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_lonza_elektrizitatswerke"
+		texturefile = "gfx/interface/ideas/SWI/companies/lonza_elektrizitatswerke.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_waffenfabrik_solothurn"
+		texturefile = "gfx/interface/ideas/SWI/companies/waffenfabrik_solothurn.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_schweizerische_industrie_gesellschaft"
+		texturefile = "gfx/interface/ideas/SWI/companies/schweizerische_industrie_gesellschaft.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_waffenfabrik_bern"
+		texturefile = "gfx/interface/ideas/SWI/companies/waffenfabrik_bern.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_oerlikon"
+		texturefile = "gfx/interface/ideas/SWI/companies/oerlikon.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_swi_steel"
+		texturefile = "gfx/interface/ideas/SWI/companies/swi_steel.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_swi_saurer"
+		texturefile = "gfx/interface/ideas/SWI/companies/swi_saurer.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_swi_fbw"
+		texturefile = "gfx/interface/ideas/SWI/companies/swi_fbw.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_eidgenossische_konstruktionswerkstatte"
+		texturefile = "gfx/interface/ideas/SWI/companies/eidgenossische_konstruktionswerkstatte.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_berna"
+		texturefile = "gfx/interface/ideas/SWI/companies/berna.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_eidgenossisches_flugzeugwerk"
+		texturefile = "gfx/interface/ideas/SWI/companies/eidgenossisches_flugzeugwerk.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_flug_fahrzeugwerke_altenrhein"
+		texturefile = "gfx/interface/ideas/SWI/companies/flug_fahrzeugwerke_altenrhein.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_pilatus"
+		texturefile = "gfx/interface/ideas/SWI/companies/pilatus.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_swissair"
+		texturefile = "gfx/interface/ideas/SWI/companies/swissair.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_werner_risch"
+		texturefile = "gfx/interface/ideas/SWI/companies/werner_risch.tga"
+	}
+}

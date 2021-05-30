@@ -6566,436 +6566,181 @@ country_event = { #fate of the British Isles ~~~NOT THE REST OF THE EMPIRE~~~
 			base = 100
 		}
 		hidden_effect = {
-			release_puppet = ENG
-			if = {
+			every_owned_state = {
 				limit = {
-					FRA = {
-						NOT = {
-							has_country_flag = FRA_monarchy
-						}
+					OR = {
+						state = 122
 					}
-					ENG = {
-						is_puppet_of = FRA
-					}
-				}
-				ENG = {
-					set_cosmetic_tag = ENG_FRA_puppet_republic
-				}
-			}
-			else = {
-				ENG = {
-					set_cosmetic_tag = ENG_FRA_puppet_monarchy
-				}
-			}
-			if = {
-				limit = {
-					AND = {
-						ENG = {
-							is_puppet_of = FRA
-						}
-						FRA = {
-							has_country_flag = FRA_monarchy
-						}
-					}
-				}
-				ENG = {
-					set_politics = {
-						ruling_party = authoritarian_democrat
-						elections_allowed = no
-					}
-					add_popularity = {
-						ideology = authoritarian_democrat
-						popularity = 0.20
-					}
-					create_country_leader = {
-						name = "Viceroy Maxime Weygand"
-						desc = "POLITICS_VICEROY_WEYGAND_DESC"
-						picture = "Portrait_Britain_Maxime_Weygand.tga"
-						expire = "1965.1.1"
-						ideology = authoritarian_democrat_subtype
-						traits = {  }
-					}
-				}
-			}
-			if = {
-				limit = {
-					AND = {
-						ENG = {
-							is_puppet_of = FRA
-						}
-						FRA = {
-							NOT = {
-								has_country_flag = FRA_monarchy
-							}
-						}
-					}
-				}
-				ENG = {
-					set_politics = {
-						ruling_party = authoritarian_democrat
-						elections_allowed = no
-					}
-					add_popularity = {
-						ideology = authoritarian_democrat
-						popularity = 0.20
-					}
-					create_country_leader = {
-						name = "Governor Maxime Weygand"
-						desc = "POLITICS_GOVERNOR_WEYGAND_DESC"
-						picture = "Portrait_Britain_Maxime_Weygand.tga"
-						expire = "1965.1.1"
-						ideology = authoritarian_democrat_subtype
-						traits = {  }
-					}
-				}
-			}
-			if = {
-				limit = {
-					ENG = {
-						owns_state = 122
-						controls_state = 122
-					}
-					WLS = {
-						exists = no
-					}
+					is_fully_controlled_by = ROOT
+					NOT = { is_core_of = ROOT }
+					NOT = { is_claimed_by = ROOT }
 				}
 				WLS = {
-					transfer_state = 122
-				}
-				122 = {
-					add_core_of = WLS
-				}
-				FRA = {
-					puppet = WLS
+					add_state_core = PREV
+					transfer_state = PREV
 				}
 			}
-			if = {
-				limit = {
-					FRA = {
-						NOT = {
-							has_country_flag = FRA_monarchy
-						}
-					}
-					WLS = {
-						is_puppet_of = FRA
+			puppet = WLS
+
+			WLS = {
+				set_politics = {
+					ruling_party = authoritarian_democrat
+					elections_allowed = no
+				}
+				add_popularity = {
+					ideology = authoritarian_democrat
+					popularity = 0.20
+				}
+				create_country_leader = {
+					name = "Philippe Pétain"
+					desc = "POLITICS_VICEROY_PETAIN_DESC"
+					picture = "Portrait_Wales_Philippe_Petain.tga"
+					expire = "1965.1.1"
+					ideology = authoritarian_democrat_subtype
+					traits = {  }
+				}
+
+				if = {
+					limit = {
+						FRA = { has_country_flag = FRA_monarchy }
+						set_cosmetic_tag = WLS_FRA_puppet_monarchy
 					}
 				}
-				WLS = {
+				else = {
 					set_cosmetic_tag = WLS_FRA_puppet_republic
 				}
 			}
-			else = {
-				WLS = {
-					set_cosmetic_tag = WLS_FRA_puppet_monarchy
-				}
-			}
-			if = {
-				limit = {
-					AND = {
-						WLS = {
-							is_puppet_of = FRA
-						}
-						FRA = {
-							has_country_flag = FRA_monarchy
-						}
-					}
-				}
-				WLS = {
-					set_politics = {
-						ruling_party = authoritarian_democrat
-						elections_allowed = no
-					}
-					add_popularity = {
-						ideology = authoritarian_democrat
-						popularity = 0.20
-					}
-					create_country_leader = {
-						name = "Viceroy Philippe Pétain"
-						desc = "POLITICS_VICEROY_PETAIN_DESC"
-						picture = "Portrait_Wales_PhilippePetain.tga"
-						expire = "1965.1.1"
-						ideology = authoritarian_democrat_subtype
-						traits = {  }
-					}
-				}
-			}
-			if = {
-				limit = {
-					AND = {
-						WLS = {
-							is_puppet_of = FRA
-						}
-						FRA = {
-							NOT = {
-								has_country_flag = FRA_monarchy
-							}
-						}
-					}
-				}
-				WLS = {
-					set_politics = {
-						ruling_party = authoritarian_democrat
-						elections_allowed = no
-					}
-					add_popularity = {
-						ideology = authoritarian_democrat
-						popularity = 0.20
-					}
-					create_country_leader = {
-						name = "Governor Philippe Pétain"
-						desc = "POLITICS_VICEROY_PETAIN_DESC"
-						picture = "Portrait_Wales_PhilippePetain.tga"
-						expire = "1965.1.1"
-						ideology = authoritarian_democrat_subtype
-						traits = {  }
-					}
-				}
-			}
 
-			if = {
+			every_owned_state = {
 				limit = {
-					ENG = {
-						owns_state = 133
-						controls_state = 133
-						owns_state = 121
-						controls_state = 121
-						owns_state = 120
-						controls_state = 120
-						owns_state = 136
-						controls_state = 136
+					OR = {
+						state = 133
+						state = 121
+						state = 120
+						state = 136
 					}
+					is_fully_controlled_by = ROOT
+					NOT = { is_core_of = ROOT }
+					NOT = { is_claimed_by = ROOT }
 				}
 				SCO = {
-					transfer_state = 133
-					transfer_state = 121
-					transfer_state = 120
-					transfer_state = 136
-				}
-				133 = {
-					add_core_of = SCO
-				}
-				121 = {
-					add_core_of = SCO
-				}
-				120 = {
-					add_core_of = SCO
-				}
-				136 = {
-					add_core_of = SCO
-				}
-				FRA = {
-					puppet = SCO
+					add_state_core = PREV
+					transfer_state = PREV
 				}
 			}
-			if = {
-				limit = {
-					FRA = {
-						NOT = {
-							has_country_flag = FRA_monarchy
-						}
-					}
-					SCO = {
-						is_puppet_of = FRA
+			puppet = SCO
+
+			SCO = {
+				set_politics = {
+					ruling_party = authoritarian_democrat
+					elections_allowed = no
+				}
+				add_popularity = {
+					ideology = authoritarian_democrat
+					popularity = 0.20
+				}
+				create_country_leader = {
+					name = "Charles de Gaulle"
+					desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
+					picture = "Portrait_Scotland_Charles_de_Gaulle.tga"
+					expire = "1965.1.1"
+					ideology = authoritarian_democrat_subtype
+					traits = {  }
+				}
+
+				if = {
+					limit = {
+						FRA = { has_country_flag = FRA_monarchy }
+						set_cosmetic_tag = SCO_FRA_puppet_monarchy
 					}
 				}
-				SCO = {
+				else = {
 					set_cosmetic_tag = SCO_FRA_puppet_republic
 				}
 			}
-			else = {
-				SCO = {
-					set_cosmetic_tag = SCO_FRA_puppet_monarchy
-				}
-			}
-			if = {
+		
+			every_owned_state = {
 				limit = {
-					AND = {
-						SCO = {
-							is_puppet_of = FRA
-						}
-						FRA = {
-							has_country_flag = FRA_monarchy
-						}
-					}
-				}
-				SCO = {
-					set_politics = {
-						ruling_party = authoritarian_democrat
-						elections_allowed = no
-					}
-					add_popularity = {
-						ideology = authoritarian_democrat
-						popularity = 0.20
-					}
-					create_country_leader = {
-						name = "Viceroy Charles de Gaulle"
-						desc = "POLITICS_VICEROY_DEGAULLE_DESC"
-						picture = "Portrait_Scotland_Charles_deGaulle.tga"
-						expire = "1965.1.1"
-						ideology = authoritarian_democrat_subtype
-						traits = {  }
-					}
-				}
-			}
-			if = {
-				limit = {
-					AND = {
-						SCO = {
-							is_puppet_of = FRA
-						}
-						FRA = {
-							NOT = {
-								has_country_flag = FRA_monarchy
-							}
-						}
-					}
-				}
-				SCO = {
-					set_politics = {
-						ruling_party = authoritarian_democrat
-						elections_allowed = no
-					}
-					add_popularity = {
-						ideology = authoritarian_democrat
-						popularity = 0.20
-					}
-					create_country_leader = {
-						name = "Governor Charles de Gaulle"
-						desc = "POLITICS_GOVERNOR_DEGAULLE_DESC"
-						picture = "Portrait_Scotland_Charles_deGaulle.tga"
-						expire = "1965.1.1"
-						ideology = authoritarian_democrat_subtype
-						traits = {  }
-					}
-				}
-			}
-			if = {
-				limit = {
-					ENG = {
-						owns_state = 815
-						controls_state = 815
-						owns_state = 113
-						controls_state = 113
-						owns_state = 135
-						controls_state = 135
-						owns_state = 816
-						controls_state = 816
-						owns_state = 134
-						controls_state = 134
-						owns_state = 119
-						controls_state = 119
-					}
+					is_core_of = IRE
+					is_fully_controlled_by = ROOT
+					NOT = { is_core_of = ROOT }
+					NOT = { is_claimed_by = ROOT }
 				}
 				IRE = {
-					transfer_state = 815
-					transfer_state = 113
-					transfer_state = 135
-					transfer_state = 816
-					transfer_state = 134
-					transfer_state = 119
-				}
-				815 = {
-					add_core_of = IRE
-				}
-				113 = {
-					add_core_of = IRE
-				}
-				135 = {
-					add_core_of = IRE
-				}
-				816 = {
-					add_core_of = IRE
-				}
-				134 = {
-					add_core_of = IRE
-				}
-				119 = {
-					add_core_of = IRE
-				}
-				FRA = {
-					puppet = IRE
+					transfer_state = PREV
 				}
 			}
-			if = {
-				limit = {
-					AND = {
-						IRE = {
-							is_puppet_of = FRA
-						}
-						FRA = {
-							has_country_flag = FRA_monarchy
-						}
+			puppet = IRE
+
+			IRE = {
+				set_politics = {
+					ruling_party = authoritarian_democrat
+					elections_allowed = no
+				}
+				add_popularity = {
+					ideology = authoritarian_democrat
+					popularity = 0.20
+				}
+				create_country_leader = {
+					name = "Maurice Gamelin"
+					desc = "POLITICS_VICEROY_GAMELIN_DESC"
+					picture = "Portrait_Ireland_Maurice_Gamelin.tga"
+					expire = "1965.1.1"
+					ideology = authoritarian_democrat_subtype
+					traits = {  }
+				}
+
+				if = {
+					limit = {
+						FRA = { has_country_flag = FRA_monarchy }
+						set_cosmetic_tag = IRE_FRA_puppet_monarchy
 					}
 				}
-				IRE = {
-					set_politics = {
-						ruling_party = authoritarian_democrat
-						elections_allowed = no
-					}
-					add_popularity = {
-						ideology = authoritarian_democrat
-						popularity = 0.20
-					}
-					create_country_leader = {
-						name = "Viceroy Maurice Gamelin"
-						desc = "POLITICS_VICEROY_GAMELIN_DESC"
-						picture = "Portrait_Ireland_Maurice_Gamelin.tga"
-						expire = "1965.1.1"
-						ideology = authoritarian_democrat_subtype
-						traits = {  }
-					}
-				}
-			}
-			if = {
-				limit = {
-					AND = {
-						IRE = {
-							is_puppet_of = FRA
-						}
-						FRA = {
-							NOT = {
-								has_country_flag = FRA_monarchy
-							}
-						}
-					}
-				}
-				IRE = {
-					set_politics = {
-						ruling_party = authoritarian_democrat
-						elections_allowed = no
-					}
-					add_popularity = {
-						ideology = authoritarian_democrat
-						popularity = 0.20
-					}
-					create_country_leader = {
-						name = "Governor Maurice Gamelin"
-						desc = "POLITICS_GOVERNOR_DEGAULLE_DESC"
-						picture = "Portrait_Ireland_Maurice_Gamelin.tga"
-						expire = "1965.1.1"
-						ideology = authoritarian_democrat_subtype
-						traits = {  }
-					}
-				}
-			}
-			if = {
-				limit = {
-					FRA = {
-						NOT = {
-							has_country_flag = FRA_monarchy
-						}
-					}
-					IRE = {
-						is_puppet_of = FRA
-					}
-				}
-				IRE = {
+				else = {
 					set_cosmetic_tag = IRE_FRA_puppet_republic
 				}
 			}
-			else = {
-				IRE = {
-					set_cosmetic_tag = IRE_FRA_puppet_monarchy
+
+			every_owned_state = {
+				limit = {
+					is_core_of = ENG
+					is_fully_controlled_by = ROOT
+					NOT = { is_core_of = ROOT }
+					NOT = { is_claimed_by = ROOT }
+				}
+				EGL = {
+					add_state_core = PREV
+					transfer_state = PREV
+				}
+			}
+			puppet = EGL
+
+			EGL = {
+				set_politics = {
+					ruling_party = authoritarian_democrat
+					elections_allowed = no
+				}
+				add_popularity = {
+					ideology = authoritarian_democrat
+					popularity = 0.20
+				}
+				create_country_leader = {
+					name = "Maxime Weygand"
+					desc = "POLITICS_MAXIME_WEYGAND_DESC"
+					picture = "Portrait_England_Maxime_Weygand.tga"
+					expire = "1965.1.1"
+					ideology = authoritarian_democrat_subtype
+					traits = {  }
+				}
+
+				if = {
+					limit = {
+						FRA = { has_country_flag = FRA_monarchy }
+						set_cosmetic_tag = ENG_FRA_puppet_monarchy
+					}
+				}
+				else = {
+					set_cosmetic_tag = ENG_FRA_puppet_republic
 				}
 			}
 		}

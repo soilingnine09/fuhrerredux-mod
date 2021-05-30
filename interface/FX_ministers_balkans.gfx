@@ -365,4 +365,17 @@ spriteTypes = {
 		name = "GFX_idea_HUN_Laszlo_Tomor_cair"
 		texturefile = "gfx/interface/ideas/HUN/ministers/HUN_Laszlo_Tomor.tga"
 	}
+	### Theorist
+	spriteType = {
+		name = "GFX_idea_HUN_Henrik_Werth_theo"
+		texturefile = "gfx/interface/ideas/HUN/ministers/HUN_Henrik_Werth.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_Miklos_Horthy_de_Nagybanya_theo"
+		texturefile = "gfx/interface/ideas/HUN/ministers/HUN_Miklos_Horthy_de_Nagybanya.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_HUN_Kalman_Ternegg_Ratz_theo"
+		texturefile = "gfx/interface/ideas/HUN/ministers/HUN_Kalman_Ternegg_Ratz.tga"
+	}
 }

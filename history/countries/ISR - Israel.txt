@@ -12,7 +12,7 @@ set_research_slots = 3
 set_convoys = 30
 set_stability = 0.50
 set_war_support = 0.50
-set_cosmetic_tag = ISR_JP
+set_cosmetic_tag = ISR_commonwealth
 
 set_country_flag = coalition_social_liberal
 set_country_flag = coalition_social_conservative
@@ -67,9 +67,7 @@ create_country_leader = {
 	picture = "Portrait_ISR_Gerald_Isaacs.tga"
 	expire = "1945.1.1"
 	ideology = libertarian_socialist_subtype
-	traits = {
-
-	}
+	traits = { }
 }
 
 create_country_leader = {
@@ -78,9 +76,7 @@ create_country_leader = {
 	picture = "Portrait_ISR_Chaim_Weizmann.tga"
 	expire = "1945.1.1"
 	ideology = social_democrat_subtype
-	traits = {
-
-	}
+	traits = { }
 }
 
 create_country_leader = {
@@ -89,9 +85,7 @@ create_country_leader = {
 	picture = "Portrait_ISR_Chaim_Weizmann.tga"
 	expire = "1945.1.1"
 	ideology = social_liberal_subtype
-	traits = {
-
-	}
+	traits = { }
 }
 
 create_country_leader = {
@@ -100,9 +94,7 @@ create_country_leader = {
 	picture = "Portrait_ISR_Chaim_Weizmann.tga"
 	expire = "1945.1.1"
 	ideology = market_liberal_subtype
-	traits = {
-
-	}
+	traits = { }
 }
 
 create_country_leader = {
@@ -111,9 +103,7 @@ create_country_leader = {
 	picture = "Portrait_ISR_Chaim_Weizmann.tga"
 	expire = "1945.1.1"
 	ideology = social_conservative_subtype
-	traits = {
-
-	}
+	traits = { }
 }
 
 create_country_leader = {
@@ -122,9 +112,7 @@ create_country_leader = {
 	picture = "Portrait_ISR_Chaim_Weizmann.tga"
 	expire = "1945.1.1"
 	ideology = authoritarian_democrat_subtype
-	traits = {
-
-	}
+	traits = { }
 }
 
 create_country_leader = {
@@ -133,7 +121,5 @@ create_country_leader = {
 	picture = "Portrait_ISR_Chaim_Weizmann.tga"
 	expire = "1945.1.1"
 	ideology = paternal_autocrat_subtype
-	traits = {
-
-	}
+	traits = { }
 }
