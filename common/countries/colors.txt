@@ -858,8 +858,8 @@ GAB = {
 	color_ui = rgb { 130 167 18 }
 }
 DAH = {
-	color = rgb { 38 147 125 }
-	color_ui = rgb { 38 147 125 }
+	color = rgb { 11 84 179 }
+	color_ui = rgb { 11 84 179 }
 }
 TAU = {
 	color = rgb { 128  64  64 }
@@ -868,6 +868,70 @@ TAU = {
 NKR = {
 	color = rgb { 182  48  29 }
 	color_ui = rgb { 182  48  29 }
+}
+SUD = {
+	color = rgb { 135 144 180 }
+	color_ui = rgb { 135 144 180 }
+}
+NGR = {
+	color = rgb { 224 82 6 }
+	color_ui = rgb { 224 82 6 }
+}
+MLI = {
+	color = rgb { 255 255 185 }
+	color_ui = rgb { 255 255 185 }
+}
+MRT = {
+	color = rgb { 168 185 135 }
+	color_ui = rgb { 168 185 135 }
+}
+VOL = {
+	color = rgb { 27 128 45 }
+	color_ui = rgb { 27 128 45 }
+}
+GNA = {
+	color = rgb { 220 29 29 }
+	color_ui = rgb { 220 29 29 }
+}
+IVO = {
+	color = rgb { 135 169 107 }
+	color_ui = rgb { 135 169 107 }
+}
+SEN = {
+	color = rgb { 204 51 0 }
+	color_ui = rgb { 204 51 0 }
+}
+TOG = {
+	color = rgb { 130 130 161 }
+	color_ui = rgb { 130 130 161 }
+}
+ALG = {
+	color = rgb { 230 225 110 }
+	color_ui = rgb { 230 225 110 }
+}
+PUE = {
+	color = rgb { 152 130 191 }
+	color_ui = rgb { 198 169 248 }
+}
+PNG = {
+	color = rgb { 181 180 142 }
+	color_ui = rgb { 222 247 198 }
+}
+WES = {
+	color = rgb { 255 178 102 }
+	color_ui = rgb { 255 178 102 }
+}
+FIJ = {
+	color = rgb { 0 204 204 }
+	color_ui = rgb { 0 204 204 }
+}
+GAM = {
+	color = rgb { 153 0 0 }
+	color_ui = rgb { 153 0 0 }
+}
+CRC = {
+	color = rgb { 255 102 102 }
+	color_ui = rgb { 255 102 102 }
 }
 
 #################################
