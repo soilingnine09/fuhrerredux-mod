@@ -1,0 +1,401 @@
+############################
+# Zapadoslavia Ideas
+###################################
+# Made by Drowse & Preussenball	  #
+###################################
+
+ideas = {
+	country = {
+	
+		CEN_german_strife = {
+			picture = generic_volunteer_expedition_bonus
+			modifier = {
+				stability_factor = -0.2
+			}
+		}
+
+		CEN_failed_state = {
+			picture = generic_disjointed_gov
+			modifier = {
+				political_power_gain = -0.5
+			}
+		}
+	
+		CEN_autonomy_slovakia = {
+			picture = generic_morale_bonus
+			modifier = {
+				consumer_goods_factor = 0.05
+				conscription_factor = -0.05
+			}
+		}
+		
+		CEN_autonomy_sudetanland = { 
+			picture = generic_morale_bonus
+			modifier = {
+				consumer_goods_factor = 0.05
+				conscription_factor = -0.05
+			}
+		}
+
+		
+		CEN_autonomy_poland = { 
+			picture = generic_morale_bonus
+			modifier = {
+				consumer_goods_factor = 0.05
+				conscription_factor = -0.05
+			}
+		}
+
+		
+		CEN_autonomy_galicia = {
+			picture = generic_morale_bonus
+			modifier = {
+				consumer_goods_factor = 0.05
+				conscription_factor = -0.05
+			}
+		}
+		
+		CEN_black_wednesday = {
+			picture = great_depression
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_factory_max_efficiency_factor = -0.3
+				industrial_capacity_factory = -0.3
+				production_speed_buildings_factor = -0.25
+			}
+		}
+		CEN_hindered_welfare = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		CEN_raised_taxes = {
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = 0.05	
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_infrastructure_factor = 0.05
+			}
+		}
+		CEN_centralized_economy = {
+			picture = generic_pp_unity_bonus
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		CEN_reduced_taxes = {
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		CEN_ruble = {
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = -0.05
+				
+			}
+		}
+		CEN_credit_received = {
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.05
+	}
+}
+		CEN_slavic_army_idea = {
+			picture = generic_war_preparations
+			modifier = {
+				land_reinforce_rate = 0.05
+				conscription = 0.015
+				non_core_manpower = 0.01
+				training_time_army_factor = 0.05
+				}
+			}
+		CEN_czech_army_idea = {
+			picture = generic_war_preparations
+			modifier = {
+				land_reinforce_rate = -0.05
+				army_morale_factor = 0.1
+				training_time_army_factor = -0.1
+			}
+		}
+		CEN_black_wednesday_less_bad = {
+			picture = great_depression
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_factory_max_efficiency_factor = -0.15
+				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.12
+				}
+			}
+		CEN_nationalist_unrest = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				conscription = -0.01
+				training_time_army_factor = 0.1
+				
+				}
+			}
+		CEN_polish_unrest = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				conscription = -0.002
+				training_time_army_factor = 0.05
+				
+				}
+			}
+		CEN_german_unrest = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				conscription = -0.003
+				training_time_army_factor = 0.05
+				
+				}
+			}
+		CEN_welfare_reforms_idea = {
+			picture = generic_agrarian_society
+			modifier = {
+				consumer_goods_factor = 0.02
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		CEN_slightly_better = {
+			picture = generic_production_bonus
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.05
+				industry_repair_factor = 0.25
+				political_power_gain = 0.05
+			}
+		}
+		CEN_better_working_conditions_idea = { 
+			picture = generic_production_bonus
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.05
+				industry_repair_factor = 0.5
+				political_power_gain = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+		CEN_healthy_economy = {
+			picture = generic_production_bonus
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_gain = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				}
+			}
+		###
+		CEN_long_live_federation = {
+			picture = generic_morale_bonus
+			modifier = {
+			political_power_gain = 0.05
+			conscription_factor = 0.05
+			non_core_manpower = 0.1
+			}
+		}
+		CEN_better_minimum_wage_idea = {
+			picture = generic_production_bonus
+			modifier = {
+			consumer_goods_factor = -0.05
+			production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		CEN_for_the_people = {
+			picture = generic_morale_bonus
+			modifier = {
+			political_power_gain = 0.1	
+			conscription_factor = 0.05
+			}
+		}
+		CEN_centralization = {
+			picture = generic_intel_bonus
+			modifier = {
+			political_power_gain = 0.2
+			
+			}
+		}
+		CEN_granted_freedoms = {
+			picture = generic_democratic_drift_bonus
+			modifier = {
+			army_core_defence_factor = 0.05	
+			political_power_gain = 0.2
+			production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		CEN_the_republic = {
+			picture = generic_morale_bonus
+			modifier = {
+			political_power_gain = 0.05
+			army_core_defence_factor = 0.1
+			}
+		}
+		CEN_more_privileges = {
+			picture = generic_morale_bonus
+			modifier = {
+			conscription_factor = 0.05
+			political_power_gain = -0.01
+			}
+		}
+		CEN_subsides = {
+			picture = generic_goods_red_bonus
+			modifier = {
+			consumer_goods_factor = 0.05
+			production_speed_buildings_factor = 0.1
+			}
+		}
+		CEN_more_representation = {
+			picture = generic_democratic_drift_bonus
+			modifier = {
+			political_power_gain = -0.1
+			conscription_factor = 0.05
+			army_morale_factor = 0.1
+			}
+		}
+		CEN_czech_legion_unrest = {
+			picture = generic_volunteer_expedition_bonus
+			modifier = {
+			army_core_attack_factor = -0.1
+			experience_gain_army_factor = -0.1
+			}
+		}
+		CEN_poles_conscription = {
+			picture = generic_volunteer_expedition_bonus
+			modifier = {
+				conscription_factor = -0.02
+				army_attack_factor = -0.02
+				}
+			}
+		
+		CEN_industrial_funds = {
+			picture = generic_production_bonus
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		CEN_legacy_legion = {
+			picture = generic_war_preparations
+			modifier = {
+				conscription_factor = 0.02
+				army_attack_factor = 0.05
+				experience_gain_army_factor = 0.05
+			}
+		}
+		CEN_slavic_empire_idea = {
+			picture = generic_democratic_drift_bonus
+			modifier = {
+			consumer_goods_factor = -0.05
+			production_speed_buildings_factor = 0.1
+			conscription_factor = 0.03
+			}
+		}
+		CEN_womens_rights = {
+			picture = generic_democratic_drift_bonus
+			modifier = {
+			political_power_gain = 0.05
+			}
+		}
+		CEN_czechoslovak = {
+			picture = generic_democratic_drift_bonus
+			modifier = {
+			political_power_gain = 0.02
+			training_time_army_factor = -0.05
+			army_core_defence_factor = 0.05
+			}
+		}
+		CEN_arms_deal = {
+			picture = generic_war_preparations
+			research_bonus = {
+				infantry_weapons = 0.05
+				artillery = 0.05 
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.05
+					instant = yes
+					}
+				artillery_equipment = {
+					build_cost_ic = 0.05
+					instant = yes
+					}
+			}
+		}
+		CEN_arms_deal_russia = {
+			picture = generic_war_preparations
+				research_bonus = {
+					infantry_weapons = 0.08
+				}
+				equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.08
+					instant = yes
+				}
+			}
+		}
+		CEN_arms_deal_poland = {
+			picture = generic_war_preparations
+				research_bonus = {
+					artillery = 0.08
+				}
+				equipment_bonus = {
+				artillery_equipment = {
+					build_cost_ic = 0.08
+					instant = yes
+				}
+			}
+		}
+		CEN_military_schools_funding = {
+			picture = generic_war_preparations
+			modifier = {
+			planning_speed = 0.05
+			army_org_Factor = 0.05
+			land_reinforce_rate	= 0.1	
+			}
+		}
+		CEN_legion_integrated = {
+			picture = UK_military_loyal_idea
+			modifier = {
+			army_org_factor = -0.05
+			}
+		}
+		CEN_natpop_youth = {
+			picture = country_focus_army
+			modifier = {
+			conscription = 0.01
+			}
+		}
+		CEN_military_police = {
+			picture = generic_infantry_bonus
+			modifier = {
+			enemy_partisan_effect = -0.15
+			}
+		}
+		CEN_corporatist = {
+			picture = generic_goods_red_bonus
+			modifier = {
+			production_speed_buildings_factor = 0.05
+			industrial_capacity_factory = 0.05
+			}
+		}
+		CEN_arms_industry = {
+			picture = generic_goods_red_bonus
+			equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+		}
+	}
+		CEN_state_unions = {
+			picture = generic_goods_red_bonus
+			modifier = {
+			production_factory_max_efficiency_factor = 0.05
+			production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+}

@@ -58,7 +58,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Karel Kramář"
 	desc = "POLITICS_KAREL_KRAMAR_DESC"
-	picture = "Portrait_CEN_Karel_Kramar.dds"
+	picture = "gfx/leaders/CEN/Portrait_CEN_Karel_Kramar.tga"
 	expire = "1965.1.1"
 	ideology = social_conservative_subtype
 	traits = {
@@ -67,9 +67,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Andrej Hlinka"
+	name = "Jan Rys"
 	desc = "POLITICS_JAROSLAV_KREJCI_DESC"
-	picture = "Portrait_CEN_Jaroslav_Krejci.dds"
+	picture = "gfx/leaders/CEN/JanRys.tga"
 	expire = "1965.1.1"
 	ideology = valkist_subtype
 	traits = {
@@ -98,9 +98,9 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-	name = "Radoja Gajda"
+	name = "Radola Gajda"
 	desc = "POLITICS_RADOLA_GAJDA_DESC"
-	picture = "Portrait_CEN_Radola_Gajda.dds"
+	picture = "gfx/leaders/CEN/Portrait_CEN_Radola_Gajda"
 	expire = "1965.1.1"
 	ideology = national_populist_subtype
 	traits = {
@@ -110,7 +110,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Zdeněk Nejedlý"
 	desc = "POLITICS_ZDENEK_NEJEDLY_DESC"
-	picture = "Portrait_CEN_Nejedly.dds"
+	picture = "gfx/leaders/CEN/Portrait_CEN_Nejedly.tga"
 	expire = "1965.1.1"
 	ideology = social_democrat_subtype
 	traits = {
@@ -120,7 +120,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Zdeněk Nejedlý"
 	desc = "POLITICS_ZDENEK_NEJEDLY_DESC"
-	picture = "Portrait_CEN_Nejedly.dds"
+	picture = "gfx/leaders/CEN/Portrait_CEN_Nejedly.tga"
 	expire = "1965.1.1"
 	ideology = libertarian_socialist_subtype
 	traits = {
@@ -130,7 +130,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Emil Hácha"
 	desc = "POLITICS_EMIL_HACHA_DESC"
-	picture = "Portrait_CEN_Hacha.dds"
+	picture = "gfx/leaders/CEN/Portrait_CEN_Hacha.tga"
 	expire = "1965.1.1"
 	ideology = authoritarian_democrat_subtype
 	traits = {
@@ -138,9 +138,19 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
+	name = "Josef Šnejdárek"
+	desc = "POLITICS_JOSEF_SNEJDAREK_DESC"
+	picture = "gfx/leaders/CEN/JosefSnejdarek.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
 	name = "Milan Hodža"
 	desc = "POLITICS_MILAN_HODZA_DESC"
-	picture = "Portrait_CEN_Milan_Hodza.dds"
+	picture = "gfx/leaders/CEN/Portrait_CEN_Milan_Hodza.tga"
 	expire = "1965.1.1"
 	ideology = social_liberal_subtype
 	traits = {
@@ -150,7 +160,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Milan Hodža"
 	desc = "POLITICS_MILAN_HODZA_DESC"
-	picture = "Portrait_CEN_Milan_Hodza.dds"
+	picture = "gfx/leaders/CEN/Portrait_CEN_Milan_Hodza.tga"
 	expire = "1965.1.1"
 	ideology = market_liberal_subtype
 	traits = {
@@ -159,7 +169,7 @@ create_country_leader = {
 }
 create_field_marshal = {
 	name = "Vojtěch Luža"
-	gfx = "GFX_Portrait_czechoslovakia_vojtech_luza"
+	gfx = "gfx/leaders/CEN/VojtechLuza.tga"
 	traits = { fast_planner offensive_doctrine }
 	skill = 3
 	attack_skill = 3
@@ -170,7 +180,7 @@ create_field_marshal = {
 
 create_field_marshal = {
 	name = "Josef Šnejdárek"
-	gfx = "GFX_Portrait_czechoslovakia_josef_snejdarek"
+	gfx = "gfx/leaders/CEN/JosefSnejdarek.tga"
 	traits = { thorough_planner defensive_doctrine }
 	skill = 3
 	attack_skill = 1
@@ -181,7 +191,7 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "Richard Tesařík"
-	gfx = "GFX_Portrait_czechoslovakia_richard_tesarik"
+	gfx = "gfx/leaders/CEN/Tesarik.tga"
 	traits = { panzer_leader }
 	skill = 2
 	attack_skill = 3
@@ -193,7 +203,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Sergej Vojcechovský"
-	gfx = "GFX_Portrait_czechoslovakia_sergej_vojcechovsky"
+	gfx = "gfx/leaders/CEN/Vojcechovsky.tga"
 	traits = { winter_specialist }
 	skill = 3
 	attack_skill = 3
