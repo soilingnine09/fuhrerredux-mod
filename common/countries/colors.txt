@@ -1061,6 +1061,22 @@ MLD = {
 	color = rgb { 178 255 102 }
 	color_ui = rgb { 178 255 102 }
 }
+ITP = {
+	color = rgb { 59 148 65 }
+	color_ui = rgb { 74 186 82 }
+}
+CYP = {
+	color = rgb { 255 204 0 }
+	color_ui = rgb { 255 204 0 }
+}
+FLA = {
+	color = rgb { 193 171 8 }
+	color_ui = rgb { 193 171 8 }
+}
+MLT = {
+	color = rgb { 255 255 153 }
+	color_ui = rgb { 255 255 153 }
+}
 
 #################################
 #################################
