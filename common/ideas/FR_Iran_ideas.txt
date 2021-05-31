@@ -12,7 +12,7 @@ ideas = {
 			}
 			
 			removal_cost = -1
-			picture = generic_army_problems
+			picture = eng_guided_by_britain
 			
 			#research_bonus = {
 			#	land_doctrine = 0.07
