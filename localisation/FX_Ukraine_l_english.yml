@@ -72,7 +72,7 @@ UKR_valkist_party_long:0 "Orden Lytsariv Boha Sontsia"
 ukr_army_start:0 "Army Reform"
 ukr_army_start_desc:0 "The Ukrainian army is woefully underequiped and and inexperienced, we must extensivly reform the army if we are to compete in the upcoming wars."
 ###
-ukr_army_skoropadksyi:0 "skoropadksyi's Plan"
+ukr_army_skoropadksyi:0 "Skoropadksyi's Plan"
 ukr_army_skoropadksyi_desc:0 "Skoropadksyi champions a doctine of mass assault, we will follow his direction to victory."
 ###
 ukr_army_sinkler:0 "Sinkler's Plan"
@@ -240,7 +240,7 @@ ukr_nat_claim_land_desc:0 "While we may not control the territory of Greater Ukr
 ukr_demo_voting_reform:0 "Voting Reform"
 ukr_demo_voting_reform_desc:0 "The democratic system in our country in flawed and corrupt, we must shake the system up to restore true democracy."
 ###
-ukr_demo_farming_help:0 "Assistance to the farmers"
+ukr_demo_farming_help:0 "Assistance to the Farmers"
 ukr_demo_farming_help_desc:0 "Providing economic and manpower assistance to the farmers in West Ukraine will allow them to produce more food and outpace the growing deficit we have."
 ###
 ukr_demo_left_coop:0 "Cooperation with the Left"
@@ -282,7 +282,7 @@ ukr_soc_extort_kulaks_desc:0 "The Kulaks have long ignored our orders, and have 
 ukr_soc_farm_money:0 "Farming Subsidies"
 ukr_soc_farm_money_desc:0 "The farming communities across Ukraine are teetering on the brink of economic collapse, we must divert funds to these farms to ensure food production is kept up to standard."
 ###
-ukr_soc_purge_right:0 "Destroy hyper-nationalism"
+ukr_soc_purge_right:0 "Destroy Hyper-Nationalism"
 ukr_soc_purge_right_desc:0 "The OUN still holds significant power in the Ukrainian government and is popular with the people, we must campaign against them to ensure they never re-enter the political spectrum."
 ###
 ukr_soc_reorganize_land:0 "Reorganization of land"
@@ -307,9 +307,9 @@ ukr_look_outwards:0 "Look Outwards"
 ukr_look_outwords_desc:0 "With stability restored in Ukraine, we can finally look beyond our borders and begin to fufill the dream of Greater Ukraine."
 ###
 ukr_attack_russia:0 "Begin the Great Struggle"
-ukr_attack_russia_desc:0 "The time has come, we will march to Moscow and burn the Kremlin to the ground. We will avenge our fallen brothers, and free Ukraine from the shackles of Russian opression forever."
+ukr_attack_russia_desc:0 "The time has come, we will march to Moscow and burn the Kremlin to the ground. We will avenge our fallen brothers, and free Ukraine from the shackles of Russian oppression forever."
 ###
-ukr_poland_deal:0 "A deal with Poland"
+ukr_poland_deal:0 "A Deal with Poland"
 ukr_poland_deal_desc:0 "Poland took Galicia from us in the chaos of the 1920s, perhaps we can come to an agreement to regain the territory peacefully and join in an alliance with the Poles."
 ###
 ukr_attack_poland:0 "Attack Poland"
@@ -318,7 +318,7 @@ ukr_attack_poland_desc:0 "The Poles cannot be trusted, we must strike first befo
 ukr_invite_romania:0 "Invite Romania to the Alliance"
 ukr_invite_romania_desc:0 "The Romanians will give us access to the Balkans as well as their vast oil fields, having them on our side is paramount."
 ###
-ukr_core_galicia:0 "Reinstate our rule in Galicia."
+ukr_core_galicia:0 "Reinstate our Rule in Galicia"
 ukr_core_galicia_desc:0 "Now that we are in control of Galicia, we must bring the area back into the fold and administer it properly."
 ###
 ukr_red_revolution:0 "The Crimson Revolution"
@@ -326,7 +326,54 @@ ukr_red_revolution_desc:0 "The Communists have taken control of Kiev, and the re
 ###
 ukr_first_meeting:0 "First Meeting of the Central Committee"
 ukr_first_meeting_desc:0 "The three main leaders of the revolution are spread out across the nation, we must call a meeting of the Central Committee and gather all three men in Kiev to determine the future of our nation."
-
+###
+ukr_prepare_for_war:0 "Prepare for War"
+ukr_prepare_for_war_desc:0 ""
+###
+ukr_infrastructure_effort:0 "Infrastructure Effort"
+ukr_infrastructure_effort_desc:0 ""
+###
+ukr_civilian_initiative:0 "Civilian Initiative"
+ukr_civilian_initiative_desc:0 ""
+###
+ukr_factories_for_farms:0 "Factories for Farms"
+ukr_factories_for_farms_desc:0 ""
+###
+ukr_import_food:0 "Import Food"
+ukr_import_food_desc:0 ""
+###
+ukr_city_highways:0 "City Highways"
+ukr_city_highways_desc:0 ""
+###
+ukr_logistics_improvements:0 "Logistics Improvements"
+ukr_logistics_improvements_desc:0 ""
+###
+ukr_expand_sevastopol:0 "Expand Sevastopol"
+ukr_expand_sevastopol_desc:0 ""
+###
+ukr_crisis_aftermath:0 "Crisis Aftermath"
+ukr_crisis_aftermath_desc:0 ""
+###
+ukr_public_works:0 "Public Works"
+ukr_public_works_desc:0 ""
+###
+ukr_electric_cities:0 "Electric Cities"
+ukr_electric_cities_desc:0 ""
+###
+ukr_crisis_resolved:0 "Crisis Resolved"
+ukr_crisis_resolved_desc:0 ""
+###
+ukr_invite_belarus:0 "Invite Belarus"
+ukr_invite_belarus_desc:0 ""
+###
+ukr_invite_lithuania:0 "Invite Lithuania"
+ukr_invite_lithuania_desc:0 ""
+###
+ukr_towards_ruthenia:0 "Towards Ruthenia"
+ukr_towards_ruthenia_desc:0 ""
+###
+ukr_demand_bessarabia:0 "Demand Bessarabia"
+ukr_demand_bessarabia_desc:0 ""
 
 ##############
 ### EVENTS ###
@@ -561,7 +608,7 @@ ukraine.46.a:0 "Another victory for the people."
 ### SPIRITS ###
 ###############
 
-UKR_famine_spook:0 "Fear of famine"
+UKR_famine_spook:0 "Fear of Famine"
 UKR_famine_spook_desc:0 "The Great Famine during the early 1930s is still fresh in the mind of many Ukrainians, and both our rural and urban population live in daily fear of another famine."
 ###
 UKR_language_problem:0 "The Language Issue"
