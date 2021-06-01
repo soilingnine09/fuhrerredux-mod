@@ -611,20 +611,7 @@ ideas = {
 																		        }
 
 																						security_minister = {
-		MEX_Enrique_Gorostieta_sec = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_Enrique_Gorostieta_sec"}
-																				                    allowed = {original_tag = MEX}
-																				                    available = {
-																																has_government = national_populist
-																				                        NOT = {has_country_flag = Enrique_Gorostieta_dead}
-																				                        NOT = {has_country_flag = Enrique_Gorostieta_fired}
-																				                        NOT = {has_country_flag = ministers_cannot_be_replaced}
-																				                        NOT = {has_country_flag = sec_cannot_be_replaced}
-																				                    }
-																				                    traits = {security_minister national_populist sec_great_soul}
-																				                    cancel_if_invalid = no
-																				                }
-																				        }
+
 
 																								security_minister = {
 		MEX_Jose_Olivares_sec = {
@@ -656,57 +643,4 @@ ideas = {
 																								                    traits = {security_minister valkist sec_crime_fighter}
 																								                    cancel_if_invalid = no
 																								                }
-																								        }
-
-#### INTEL MINISTERS ####
-
-
-
-    head_of_intel = {
-		MEX_Aristeo_Pedroza_int = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_Aristeo_Pedroza_int"}
-                    allowed = {original_tag = MEX}
-                    available = {
-												has_government = authoritarian_democrat
-                        #NOT = {has_country_flag = _dead}
-                        #NOT = {has_country_flag = _fired}
-                        NOT = {has_country_flag = ministers_cannot_be_replaced}
-                        NOT = {has_country_flag = int_cannot_be_replaced}
-                    }
-                    traits = {head_of_intel collectivist int_political_specialist}
-                    cancel_if_invalid = no
-                }
-        }
-
-				head_of_intel = {
-		MEX_Enrique_Gorostieta_int = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_Enrique_Gorostieta_int"}
-												allowed = {original_tag = MEX}
-												available = {
-														has_government = national_populist
-														#NOT = {has_country_flag = _dead}
-														#NOT = {has_country_flag = _fired}
-														NOT = {has_country_flag = ministers_cannot_be_replaced}
-														NOT = {has_country_flag = int_cannot_be_replaced}
-												}
-												traits = {head_of_intel national_populist int_political_specialist}
-												cancel_if_invalid = no
-										}
-						}
-
-						head_of_intel = {
-		MEX_Alfonso_Junco_int = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_Alfonso_Junco_int"}
-				                    allowed = {original_tag = MEX}
-				                    available = {
-																has_government = valkist
-				                        #NOT = {has_country_flag = _dead}
-				                        #NOT = {has_country_flag = _fired}
-				                        NOT = {has_country_flag = ministers_cannot_be_replaced}
-				                        NOT = {has_country_flag = int_cannot_be_replaced}
-				                    }
-				                    traits = {head_of_intel valkist int_political_specialist}
-				                    cancel_if_invalid = no
-				                }
-				        }
-                    }
+                                                                                                        }

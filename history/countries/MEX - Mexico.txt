@@ -56,7 +56,6 @@ add_ideas = {
 	MEX_Jose_de_Leon_Toral_for
 	MEX_Anacleto_Gonzalez_Flores_eco
 	MEX_Aristeo_Pedroza_sec
-	MEX_Enrique_Gorostieta_int
 	one_party_dictatorship
 }
 

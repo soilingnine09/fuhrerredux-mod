@@ -335,46 +335,83 @@ mex_pan_america:0 "Mutual American Defense Pact"
 ##################
 ####  EVENTS  ####
 ##################
-
+mex.1.t:0 "The Status of Mexico"
 mex.1.d:0 "Since the dawn of old Mexico, it had been a battleground. The colonists from Europe arrived, and took advantage of our division. The rest of it is history. Centuries passed, with our people in repression, our old selves stripped away. Then, the Revolution; a battle for self-determination. We had won it, and yet decades down the road, we had lost that path again. A new revolution led to a new dictator. The Americans had come to our country and occupied our land at Veracruz- how could we not push for war when the Germans arrived with a message? Carranza, victor in the war and uniter of the country, was regardless incompetent. No wonder the Americans defeated us when he was so determined to seek compromise from day one! Now we have had another revolution, this time against the Americans. They are weaker than ever; they have broken themselves. Now our unity has been reignited. The Last Election approaches, but no matter what, the war will come just as soon. We can make our country regain itself, we can make our country powerful again. The Germans across the sea have it right- to eliminate the invader, to destroy those who thought they could take advantage and simply get away with it. America will suffer the same fate."
-
+mex.1.a:0 "We will reclaim our birthright..."
+mex.2.t:0 "The Question of Doctrine"
 mex.2.d:0 "Now that our military has advanced, perhaps even beyond [root.getLeader]'s wildest dreams, it is time to put to rest one of the most important and most trying questions a military can face- that of doctrine."
-
+mex.2.a:0 "Rapid movement and agressive tactics will ensure success."
+mex.2.b:0 "Firepower priority will prevent needless deaths in the field."
+mex.2.c:0 "War is fought with a plan in mind after all."
+mex.3.t:0 "Reviewing Pilot Training"
 mex.3.d:0 "Our pilots have, for the past half-decade, mostly stagnated. Currently, much of our army is staffing disrepaired airbases, typically refurnishing them. If we get rid of such an idea and put their reconstruction on hold, we can recover a valuable pool of manpower. Such a measure, however, will invariably damage our airforce and its prospects, at least certainly for the near future."
-
+mex.3.a:0 "Our pilots need strict training, our Airforce must be top-notch!"
+mex.3.b:0 "We can relax standards a bit..."
+mex.4.t:0 "Reviewing the role of Air-Support"
 mex.4.d:0 "Our airforce has advanced! Our leaders of the sky have come out of a grueling conference and debate from the last few weeks, and present some striking ideas. Now, however, it is time for [root.getLeader] to decide once and for all which path we will take."
-
+mex.4.a:0 "Air-support should assist the Army directly"
+mex.4.b:0 "Air-support should assist the war effort by bombing enemy industry."
+mex.5.t:0 "The Synarchists call 'The Last Election'."
 mex.5.d:0 "Our country has been racked by a series of minor politically-motivated violence in the past couple of years. The tension is reaching a breaking point, and the people grow more and more restless. While the Synarchist government is maintaining control, this pressure is severely damaging their political prospects. Now, the Synarchists have come to call what has become known as 'The Last Election', to decide once and for all who will come to rule Mexico. The legitamacy of these results, however, will certainly be suspect."
-
+mex.5.a:0 "The Realistas dominate the polls!"
+mex.5.b:0 "The Synarchists come away with a crushing victory!"
+mex.5.c:0 "The Quetzalcoatls manage a staggering amount of popular support!"
+mex.6.t:0 "The King's Cabinet"
 mex.6.d:0 "The 'People's King', Plutarco Elias Calles, has convened a meeting of utmost importance at the Federal Legislative Palace to appoint a new cabinet of ministers. Some, however, were not invited. There's no telling exactly who will end up in his inner circle..."
-
+mex.6.a:0 "The King assembles a cabinet composed primarily of loyalists."
+mex.6.b:0 "The King assembles a cabinet composed of various democratic sympathizers."
+mex.10.t:0 "Alliance with Central America"
 mex.10.d:0 "Many Central American countries helped up in the imperialist Second Mexican-American War. Though they did not suffer the same embarrassments we did in the war, it is clear that they have not had much to do with us. Now, however, with the United States once again looming over the Latin countries, there has never been a better time to reach out for help, even if we might not necessarily need it."
-
+mex.10.a:0 "Send the offers!"
+mex.11.t:0 "Mexicans suggest an Alliance"
 mex.11.d:0 "Mexico has approached us with an offer to join with them in an alliance against the United States of America. It's certainly a tantilizing offer, but we mustn't ever forget what happened to many of our Central American compatriots in the previous war..."
-
+mex.11.a:0 "We'd rather decline."
+mex.11.b:0 "Sounds reasonable, let's accept."
+mex.12.t:0 "[From.GetName] has declined membership."
 mex.12.d:0 "[From.GetName], the vile bastards, have denied membership to our faction. 'Frankly,' [root.getLeader] said today,'they might as well be our enemies!' It is uncertain what will happen next to relations with our two countries, but one thing is certain- they won't have our back in the coming conflict."
-
+mex.12.a:0 "How unfortunate."
+mex.12.t:0 "[From.GetName] has agreed to join our alliance."
 mex.13.d:0 "The leader of the salient [From.GetName] have agreed to join our alliance against the American swine. They, perhaps unlike others, see the danger of a North America once again dominated by the United States. The 'US' might be stronger than all of us individually, but we are now a small big stronger. In the coming war, that might be all that matters."
-
+mex.13.a:0 "Great!"
+mex.14.t:0 "A New Mexico"
 mex.14.d:0 "not yet implemented. woops."
-
+mex.14.a:0 "Calles is a fine man, and could oversee any parliament in the land."
+mex.14.b:0 "Let us look elsewhere for a fair king."
+mex.15.t:0 "The Question of Parliament"
 mex.15.d:0 "also not yet implemented. double woops."
-
+mex.15.a:0 "The Social Democrats led by Alvaro Obregon."
+mex.15.b:0 "The brother of old Revolutionary Francisco Madero will make a great choice."
+mex.15.c:0 "Ignacio Bonillas always was a fine ruler."
+mex.16.t:0 "Matters of the Economy"
 mex.16.d:0 "Our economy had stagnated under American oppression, as they took the fruits of the Mexican motherland. Now that we have been freed, we have taken a route of industrialization which has damaged our population but brought about unimaginable successes. At this critical juncture, however, we must decide whether to continue this policy in response to the ramping up of hostilities between our country and the United States or scale the policy back."
-
+mex.16.a:0 "Our economic interests lie in continuing industrialization."
+mex.16.b:0 "We need to focus on domestic development."
+mex.17.t:0 "Review of Synarchism"
 mex.17.d:0 "The old synarchist regime of yesteryear pursued a policy of National Synarchism, one which we have been swift to co-op in the past months. It is time, however, for us to review the usefulness and necessity of synarchism and its populist roots..."
-
+mex.17.a:0 "Class collaboration."
+mex.17.b:0 "Did our ancient ancestors uphold such ridiculous tradition?"
+mex.17.c:0 "Synarchism? Socialism!"
+mex.18.t:0 "Battle for the United States"
 mex.18.d:0 "The war has come! Now we must reach a conclusion- how far will we go to restore ourselves and defeat the Northern Menace? The may be stronger than us even now, and any distance will have to be hardfought, involving all able men of Mexico. Will we simply reclaim our old borders which we lost than a century ago, or subjugate all of America? We will likely be able to broken peace for just Baja California, our lost possession of the First Great War, once we have conquered the near South of the United States of America."
-
+mex.18.a:0 "We will reclaim our southern territories, and restore Mexico as it once was."
+mex.18.b:0 "We will race to Washington; we will crush vile Colombia!"
+mex.19.t:0 "Bowing Out"
 mex.19.d:0 "We control the necessary parts of the United States to bow out of this war and demand our lost possession of Baja California. The Northern Menace will likely accept. Either that, of course, or their population will deeply divide against them. Either way, we will surely profit."
-
+mex.19.a:0 "Send the offer."
+mex.19.b:0 "What a ridiculous notion."
+mex.20.t:0 "We Have Broken Columbia"
 mex.20.d:0 "The frontlines bring incredible news! Just this last fortnight, we have secured the scorching desert states of the United States of America. Our 'Bronze Sun' doctrine has officially been fulfilled, and we can demand of Columbia that they return our land to us! The local populations will likely be indignant at the offer, but when did their opinion ever matter?"
-
-mex.21.d:0 "The American delegration from Washington has detailed the refusal of Columbia to submit to our military prowess, despite our desires and expectations. There is only one response to such an action..."
-
+mex.20.a:0 "Send the offer."
+mex.20.b:0 "We will finish this war!"
+mex.21.t:0 "The [USA.GetAdjective] Refuse"
+mex.21.d:0 "The [USA.GetAdjective] delegation from Washington has detailed the refusal of Columbia to submit to our military prowess, despite our desires and expectations. There is only one response to such an action..."
+mex.21.a:0 "Then they know what their fate will be."
+mex.22.t:0 "Cinco de Mayo"
 mex.22.d:0 "While Cinco de Mayo is our main holiday in celebration of our freedom, layered into it is memories of our freedom achieved just years ago. If we were to lose again to vile Columbia, these raucous celebrations may be forced underground..."
-
+mex.22.a:0 "Let us hope that never happens!"
+mex.23.t:0 "Cinco de Mayo"
 mex.23.d:0 "While Cinco de Mayo is our main holiday in celebration of our freedom, layered into it is memories of our freedom achieved just years ago. If we were to lose again to vile Columbia, these raucous celebrations may be forced underground..."
+mex.23.a:0 "Let us hope that never happens!"
 #################
 ### MINISTERS ###
 #################
@@ -423,21 +460,16 @@ MEX_Felix_Diaz_sec:0 "Felix Diaz"
 MEX_Joaquin_Amaro_sec:0 "Joaquin Amaro"
 MEX_Aristeo_Pedroza_sec:0 "Aristeo Pedroza"
 MEX_Jesus_Augustin_Castro_sec:0 "Jesus Agustin Castro"
-MEX_Enrique_Gorostieta_sec:0 "Enrique Gorostieta"
 MEX_Jose_Olivares_sec:0 "Jose Olivares"
 MEX_Alfonso_Junco_sec:0 "Alfonso Junco"
-
-MEX_Aristeo_Pedroza_int:0 "Aristeo Pedroza"
-MEX_Enrique_Gorostieta_int:0 "Enrique Gorostieta"
-MEX_Alfonso_Junco_int:0 "Alfonso Junco"
 
 ##################
 ##   TOOLTIPS   ##
 ##################
 
-1_MEX_tt: "The Realistas will put their people into office. Most of them will share their leader's position."
-2_MEX_tt: "The Synarchists will continue to hold their grip on power, perhaps for the forseeable future. No government positions will change as a result of these election results."
-3_MEX_tt: "The Quetzalcoatls, also known as the Valkistas, will create a new government molded to their party decrees. Most of those ministers and cabinet members will share their leader's position."
+MEX_pataut_tt:0 "The Realistas will put their people into office. Most of them will share their leader's position."
+MEX_natpop_tt:0 "The Synarchists will continue to hold their grip on power, perhaps for the forseeable future. No government positions will change as a result of these election results."
+MEX_valkist_tt:0 "The Quetzalcoatls, also known as the Valkistas, will create a new government molded to their party decrees. Most of those ministers and cabinet members will share their leader's position."
 4_MEX_tt: "Unfortunately, this path has not yet been implemented."
 5_MEX_tt: "Mexico has elected to take American possessions, especially those that it owned less than a century ago."
 6_MEX_tt: "Mexico has elected to shatter vile Columbia, and will not stop until it has subjugated the entire nation."
