@@ -50,7 +50,7 @@ focus_tree = {
 
 	focus = {
 		id = MEX_royalists
-		icon = GFX_focus_generic_home_defense
+		icon = GFX_goal_MEX_calles
 		prerequisite = { focus = MEX_final_election }
 		mutually_exclusive = { focus = MEX_valkists focus = MEX_national_synarchist_union }
 		x = 2
@@ -625,7 +625,7 @@ focus_tree = {
 
 	focus = {
 		id = MEX_ejercito_mexicano
-		icon = GFX_goal_generic_axis_build_infantry
+		icon = GFX_goal_MEX_army
 		x = 12
 		y = 0
 		cost = 5
@@ -908,7 +908,7 @@ focus_tree = {
 
 	focus = {
 		id = MEX_armada_de_mexico
-		icon = GFX_goal_generic_build_navy #GFX_goal_generic_build_airforce
+		icon = GFX_goal_MEX_navy
 		x = 19
 		y = 0
 		cost = 5
@@ -1143,7 +1143,7 @@ focus_tree = {
 
 	focus = {
 		id = MEX_fuerza_aerea_mexicana
-		icon = GFX_goal_generic_build_airforce
+		icon = GFX_goal_MEX_air_force
 		x = 25
 		y = 0
 		cost = 5

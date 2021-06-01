@@ -42,6 +42,39 @@ country_event = { # Education Curriculum
     }
 }
 
+country_event = { # Cristero Exiles
+    id = cruzoob.3
+    title = cruzoob.3.t
+    desc = cruzoob.3.d
+    picture = GFX_report_event_french_resistance_01
+    fire_only_once = yes
+
+    trigger = {
+        original_tag = CRU
+        MEX = { has_government = paternal_autocrat }
+    }
+
+    mean_time_to_happen = {
+        months = 3
+    }
+
+    option = {
+        name = cruzoob.3.a
+        set_country_flag = CRU_has_cristero_exiles
+        add_manpower = 5000
+        create_corps_commander = {
+            name = "Enrique Gorostieta"
+            picture = "Portrait_Cruzoob_Enrique_Gorostieta.tga"
+            traits = { }
+            skill = 2
+            attack_skill = 3
+            defense_skill = 2
+            planning_skill = 3
+            logistics_skill = 4
+        }
+    }
+}
+
 country_event = { # Ask for German Advisors
     id = cruzoob.100
     title = cruzoob.100.t

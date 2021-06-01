@@ -251,17 +251,6 @@ create_country_leader = {
 	}
 }
 
-#create_country_leader = {
-#	name = "Darknight"
-#	desc = "POLITICS_DARK_DESC"
-#	picture = "Portrait_darknight.tga"
-#	expire = "1965.1.1"
-#	ideology = valkist_subtype
-#	traits = {
-#		hates_democracy
-#	}
-#}
-
 add_namespace = {
 	name = "ger_unit_leader"
 	type = unit_leader

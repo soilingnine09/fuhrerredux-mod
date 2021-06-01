@@ -1002,9 +1002,7 @@ focus_tree = {
         y = 1
         cost = 6
         available = { 
-            MEX = {
-                NOT = { has_government = national_populist }
-            }
+            MEX = { has_government = paternal_autocrat }
         }
         prerequisite = { focus = CRU_found_a_training_school }
         relative_position_id = CRU_found_a_training_school

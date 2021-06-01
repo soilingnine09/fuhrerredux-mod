@@ -119,4 +119,29 @@ spriteTypes = {
 		name = "GFX_goal_generic_seize_investments"
 		texturefile = "gfx/interface/goals/generic_seize_investments.tga"
 	}
+
+	spriteType = {
+		name = "GFX_goal_MEX_army"
+		texturefile = "gfx/interface/goals/MEX_army.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_MEX_navy"
+		texturefile = "gfx/interface/goals/MEX_navy.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_MEX_air_force"
+		texturefile = "gfx/interface/goals/MEX_air_force.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_MEX_calles"
+		texturefile = "gfx/interface/goals/MEX_calles.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_MEX_flag"
+		texturefile = "gfx/interface/goals/MEX_flag.dds"
+	}
 }
