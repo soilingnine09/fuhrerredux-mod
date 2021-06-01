@@ -4458,6 +4458,7 @@ country_event = {
     trigger = {
         NOT = {
             tag = MEX
+            tag = CRU
             has_country_flag = MEX_OCCUPIED
             country_exists = MEX
         }

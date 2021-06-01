@@ -13,11 +13,11 @@ set_technology = {
 }
 
 add_ideas = {
-	party_pop_0_60
-
 	low_economic_mobilisation
 	extensive_conscription
-	#CRU_mayan_ascension
+	CRU_spirit_of_the_faithful1
+	CRU_mayan_ascension1
+	CRU_non_existent_industry
 	GEN_hog_val
 	GEN_for_val
 	GEN_eco_val
@@ -27,8 +27,8 @@ add_ideas = {
 set_country_flag = monroe_doctrine
 
 set_convoys = 5
-set_stability = 0.76
-set_war_support = 0.63
+set_stability = 0.37
+set_war_support = 0.45
 
 set_politics = {	
 	ruling_party = valkist
@@ -41,14 +41,14 @@ set_popularities = {
     vanguardist = 0
     collectivist = 0
     libertarian_socialist = 0
-    social_democrat = 4
+    social_democrat = 2
     social_liberal = 0
-    market_liberal = 4
-    social_conservative = 12
-    authoritarian_democrat = 0
-    paternal_autocrat = 15
-    national_populist = 0
-    valkist = 65
+    market_liberal = 2
+    social_conservative = 4
+    authoritarian_democrat = 6
+    paternal_autocrat = 10
+    national_populist = 18
+    valkist = 58
 }
 
 create_country_leader = {
@@ -64,7 +64,11 @@ create_corps_commander = {
 	name = "Francisco May Pech"
 	picture = "Portrait_Cruzoob_Francisco_May.tga"
 	traits = { }
-	skill = 3
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2	
 }
 
 create_navy_leader = {
