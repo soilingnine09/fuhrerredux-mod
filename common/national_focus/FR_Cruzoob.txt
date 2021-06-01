@@ -729,8 +729,10 @@ focus_tree = {
         x = 1
         y = 1
         cost = 6
-        prerequisite = { focus = CRU_drift_to_the_north }
-        prerequisite = { focus = CRU_continue_south }
+        prerequisite = { 
+            focus = CRU_drift_to_the_north 
+            focus = CRU_continue_south
+        }
         relative_position_id = CRU_drift_to_the_north
         completion_reward = {
             custom_effect_tooltip = CRU_can_integrate_states
@@ -933,6 +935,8 @@ focus_tree = {
         prerequisite = { focus = CRU_repurpose_civilian_trucks }
         relative_position_id = CRU_repurpose_civilian_trucks
         completion_reward = {
+            custom_effect_tooltip = available_designer
+            show_ideas_tooltip = CRU_yucatan_arsenal
             random_owned_controlled_state = {
                 limit = {
                     free_building_slots = {

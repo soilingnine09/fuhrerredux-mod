@@ -15,14 +15,16 @@ set_technology = {
 add_ideas = {
 	low_economic_mobilisation
 	extensive_conscription
+	one_party_dictatorship
+
 	CRU_spirit_of_the_faithful1
 	CRU_mayan_ascension1
 	CRU_non_existent_industry
-	GEN_hog_val
-	GEN_for_val
-	GEN_eco_val
-	GEN_sec_val
-	one_party_dictatorship
+
+	CRU_Francisco_May_Pech_hog_val
+	CRU_Carlos_Jesus_Torre_Repetto_for_sde
+	CRU_Nicolas_Camara_Vales_eco_mli
+	CRU_Ricardo_Lopez_Mendez_sec_sli
 }
 set_country_flag = monroe_doctrine
 
@@ -52,9 +54,49 @@ set_popularities = {
 }
 
 create_country_leader = {
+	name = "Felipe Carrillo Puerto"
+	desc = "POLTIICS_FELIPE_CARRILLO_PUERTO_DESC"
+	picture = "Portrait_Cruzoob_Felipe_Carrillo_Puerto.tga"
+	expire = "1965.1.1"
+	ideology = radical_socialist_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Álvaro Torre Díaz"
+	desc = "POLTICS_ALVARO_TORRE_DIAZ_DESC"
+	picture = "Portrait_Cruzoob_Alvaro_Diaz.tga"
+	expire = "1965.1.1"
+	ideology = social_democrat_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Alfredo Barrera Vásquez"
+	desc = "POLTICS_ALFREDO_BARRERA_VASQUEZ_DESC"
+	picture = "Portrait_Cruzoob_Alfredo_Vasquez.tga"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Gustavo Arce Correa"
+	desc = "POLTICS_GUSTAVO_ARCE_CORREA_DESC"
+	picture = "Portrait_Cruzoob_Gustavo_Correa.tga"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Salvador Alvarado Rubio"
+	desc = "POLITICS_SALVADOR_ALVARADO_RUBIO_DESC"
+	picture = "Portrait_Cruzoob_Salvador_Alvarado.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = { }
+}
+create_country_leader = {
 	name = "Francisco May Pech"
-	desc = "POLITICS_FRANCISCO_MAY_DESC"
-	picture = "Portrait_Cruzoob_Francisco_May.tga"
+	desc = "POLITICS_FRANCISCO_MAY_PECH_DESC"
+	picture = "Portrait_Cruzoob_Francisco_May_Pech.tga"
 	expire = "1965.1.1"
 	ideology = valkist_subtype
 	traits = { }
@@ -62,20 +104,31 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Francisco May Pech"
-	picture = "Portrait_Cruzoob_Francisco_May.tga"
-	traits = { }
+	picture = "Portrait_Cruzoob_Francisco_May_Pech.tga"
+	traits = { infantry_leader }
 	skill = 2
 	attack_skill = 2
 	defense_skill = 2
 	planning_skill = 3
 	logistics_skill = 2	
 }
-
-create_navy_leader = {
-	name = "Francisco May Pech"
-	picture = "Portrait_Cruzoob_Francisco_May.tga"
-	traits = { superior_tactician }
-	skill = 3
+create_corps_commander = {
+	name = "Manuel Castilla Brito"
+	picture = "Portrait_Cruzoob_Manuel_Castilla_Brito.tga"
+	traits = { trickster politically_connected }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
 }
-
-
+create_corps_commander = {
+	name = "Salvador Alvarado Rubio"
+	picture = "Portrait_Cruzoob_Salvador_Alvarado.tga"
+	traits = { organizer old_guard }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 1
+}

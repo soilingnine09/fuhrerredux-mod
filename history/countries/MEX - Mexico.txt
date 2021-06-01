@@ -44,19 +44,19 @@ set_country_flag = monroe_doctrine
 
 add_ideas = {
 	party_pop_0_30
+	one_party_dictatorship
+
 	MEX_nationalist_strife
 	#MEX_legacy_of_los_fanaticos
 	MEX_basta
 	MEX_military_corruption
 	MEX_militias
 	MEX_rampant_industrialization
-	#limited_conscription
-	#low_economic_mobilisation
+
 	MEX_Salvador_Abascal_hog
 	MEX_Jose_de_Leon_Toral_for
 	MEX_Anacleto_Gonzalez_Flores_eco
 	MEX_Aristeo_Pedroza_sec
-	one_party_dictatorship
 }
 
 set_convoys = 60
@@ -90,6 +90,14 @@ create_country_leader = {
 	desc = "POLITICS_DIONISIO_ENCINA_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_1.dds"
 	expire = "1965.1.1"
+	ideology = vanguardist_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Vicente Lombado"
+	desc = "POLITICS_VICENTE_LOMBARDO_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_1.dds"
+	expire = "1965.1.1"
 	ideology = collectivist_subtype
 	traits = { }
 }
@@ -120,7 +128,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Lázaro Cárdenas"
 	desc = "POLITICS_LAZARO_CARDENAS_DESC"
-	picture = "Portrait_Mexico_Lazaro_Cardenas.dds"
+	picture = "Portrait_Mexico_Lazaro_Cardenas_fx.tga"
 	expire = "1965.1.1"
 	ideology = authoritarian_democrat_subtype
 	traits = { }
