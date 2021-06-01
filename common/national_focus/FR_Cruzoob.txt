@@ -482,9 +482,9 @@ focus_tree = {
         }
     }
 
-    # Joint Army Excersises
+    # Joint Army Exercises
     focus = {
-        id = CRU_joint_army_excersises
+        id = CRU_joint_army_exercises
         icon = GFX_goal_cavalry
         x = -1
         y = 1
@@ -557,8 +557,8 @@ focus_tree = {
             }
         }
         mutually_exclusive = { focus = CRU_join_the_stahlpakt }
-        prerequisite = { focus = CRU_joint_army_excersises }
-        relative_position_id = CRU_joint_army_excersises
+        prerequisite = { focus = CRU_joint_army_exercises }
+        relative_position_id = CRU_joint_army_exercises
         completion_reward = {
             BOL = { country_event = cruzoob.113 }
         }
@@ -608,7 +608,7 @@ focus_tree = {
     # Creating Our New Generation
     focus = {
         id = CRU_creating_our_new_generation
-        icon = GFX_focus_generic_concessions
+        icon = GFX_goal_CRU_chichen_itza
         x = 0
         y = 1
         cost = 6
@@ -1210,7 +1210,7 @@ focus_tree = {
     # Defend our Faith and Culture
     focus = {
         id = CRU_defend_our_faith_and_culture
-        icon = GFX_goal_panzerwaffe
+        icon = GFX_goal_CRU_mayan_clubs
         x = 0
         y = 1
         cost = 6

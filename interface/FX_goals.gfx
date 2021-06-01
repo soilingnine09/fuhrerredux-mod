@@ -116,6 +116,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_goal_CRU_mayan_clubs"
+		texturefile = "gfx/interface/goals/CRU_maya_clubs.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_CRU_chichen_itza"
+		texturefile = "gfx/interface/goals/CRU_chichen_itza.tga"
+	}
+
+	spriteType = {
 		name = "GFX_goal_generic_seize_investments"
 		texturefile = "gfx/interface/goals/generic_seize_investments.tga"
 	}

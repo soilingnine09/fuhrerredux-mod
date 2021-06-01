@@ -44,8 +44,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ENG/ministers/ENG_Robert_Vansittart.tga"
 	}
 	spriteType = {
+		name = "GFX_idea_ENG_Jack_Churchill_hog_ade"
+		texturefile = "gfx/interface/ideas/ENG/ministers/ENG_Jack_Churchill.tga"
+	}
+	spriteType = {
 		name = "GFX_idea_ENG_Henry_Page_Croft_hog_ade"
 		texturefile = "gfx/interface/ideas/ENG/ministers/ENG_Henry_Page_Croft.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_Edward_VIII_hog_pau"
+		texturefile = "gfx/interface/ideas/ENG/ministers/ENG_King_Edward_VIII.tga"
 	}
 	spriteType = {
 		name = "GFX_idea_ENG_Bernard_Montgomery_hog_pau"
