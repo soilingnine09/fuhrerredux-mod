@@ -1746,25 +1746,13 @@ country_event = { #factionsomglol
     option = {
         name = cze.149.a
         ai_chance = { factor = 60 }
-        hidden_effect = {
-            create_country_leader = {
-                name = "Klement Gottwald"
-                desc = "POLITICS_KLEMENT_GOTTWALD_DESC"
-                picture = "Portrait_Czech_Klement_Gottwald.dds"
-                expire = "1965.1.1"
-                ideology = vanguardist_subtype
-                traits = {
-                #
-                }
-            }
-        }
 		add_ideas = one_party_dictatorship
         set_politics = {
             ruling_party = vanguardist
         }
         hidden_effect = {
             remove_ideas_with_trait = head_of_government
-            }
+        }
         add_ideas = CZE_Klement_Gottwald_hog_van
         add_popularity = {
             ideology = vanguardist

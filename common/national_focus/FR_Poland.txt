@@ -4306,10 +4306,10 @@ focus = {
 	ai_will_do = { factor = 10 }
 	will_lead_to_war_with = EST
 	x = 79
-	y = 5
+	y = 6
 	cost = 5
 
-	prerequisite = { focus = POL_latvian_ultimatum }
+	prerequisite = { focus = POL_baltic_soviet_republic_ultimatum }
 	mutually_exclusive = { focus = POL_bear_and_a_bird }
 
 	available_if_capitulated = no  
@@ -4332,11 +4332,11 @@ focus = {
 	}
 	will_lead_to_war_with = EST
 	x = 79
-	y = 6
+	y = 5
 	cost = 5
 
 	prerequisite = {
-		focus = POL_strike_socialism
+		focus = POL_latvian_ultimatum
 	}
 	bypass = {
 		EST = {

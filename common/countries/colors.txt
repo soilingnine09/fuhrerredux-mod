@@ -858,8 +858,8 @@ GAB = {
 	color_ui = rgb { 130 167 18 }
 }
 DAH = {
-	color = rgb { 38 147 125 }
-	color_ui = rgb { 38 147 125 }
+	color = rgb { 11 84 179 }
+	color_ui = rgb { 11 84 179 }
 }
 TAU = {
 	color = rgb { 128  64  64 }
@@ -868,6 +868,214 @@ TAU = {
 NKR = {
 	color = rgb { 182  48  29 }
 	color_ui = rgb { 182  48  29 }
+}
+SUD = {
+	color = rgb { 135 144 180 }
+	color_ui = rgb { 135 144 180 }
+}
+NGR = {
+	color = rgb { 224 82 6 }
+	color_ui = rgb { 224 82 6 }
+}
+MLI = {
+	color = rgb { 255 255 185 }
+	color_ui = rgb { 255 255 185 }
+}
+MRT = {
+	color = rgb { 168 185 135 }
+	color_ui = rgb { 168 185 135 }
+}
+VOL = {
+	color = rgb { 27 128 45 }
+	color_ui = rgb { 27 128 45 }
+}
+GNA = {
+	color = rgb { 220 29 29 }
+	color_ui = rgb { 220 29 29 }
+}
+IVO = {
+	color = rgb { 135 169 107 }
+	color_ui = rgb { 135 169 107 }
+}
+SEN = {
+	color = rgb { 204 51 0 }
+	color_ui = rgb { 204 51 0 }
+}
+TOG = {
+	color = rgb { 130 130 161 }
+	color_ui = rgb { 130 130 161 }
+}
+ALG = {
+	color = rgb { 230 225 110 }
+	color_ui = rgb { 230 225 110 }
+}
+PUE = {
+	color = rgb { 152 130 191 }
+	color_ui = rgb { 198 169 248 }
+}
+PNG = {
+	color = rgb { 181 180 142 }
+	color_ui = rgb { 222 247 198 }
+}
+WES = {
+	color = rgb { 255 178 102 }
+	color_ui = rgb { 255 178 102 }
+}
+FIJ = {
+	color = rgb { 0 204 204 }
+	color_ui = rgb { 0 204 204 }
+}
+GAM = {
+	color = rgb { 153 0 0 }
+	color_ui = rgb { 153 0 0 }
+}
+CRC = {
+	color = rgb { 255 102 102 }
+	color_ui = rgb { 255 102 102 }
+}
+CAR = {
+	color = rgb { 153 0 0 }
+	color_ui = rgb { 153 0 0 }
+}
+CHA = {
+	color = rgb { 204 255 204 }
+	color_ui = rgb { 204 255 204 }
+}
+CMR = {
+	color = rgb { 255 51 0 }
+	color_ui = rgb { 255 51 0 }
+}
+NGA = {
+	color = rgb { 255 204 102 }
+	color_ui = rgb { 255 204 102 }
+}
+EQG = {
+	color = rgb { 255 204 0 }
+	color_ui = rgb { 255 204 0 }
+}
+GHA = {
+	color = rgb { 102 102 51 }
+	color_ui = rgb { 102 102 51 }
+}
+SIE = {
+	color = rgb { 204 102 255 }
+	color_ui = rgb { 204 102 255 }
+}
+GNB = {
+	color = rgb { 153 102 0 }
+	color_ui = rgb { 153 102 0 }
+}
+UGA = {
+	color = rgb { 255 80 80 }
+	color_ui = rgb { 255 80 80 }
+}
+TZN = {
+	color = rgb { 255 204 153 }
+	color_ui = rgb { 255 204 153 }
+}
+ZAM = {
+	color = rgb { 102 102 255 }
+	color_ui = rgb { 102 102 255 }
+}
+NMB = {
+	color = rgb { 229 204 255 }
+	color_ui = rgb { 229 204 255 }
+}
+SOM = {
+	color = rgb { 0 128 131 }
+	color_ui = rgb { 0 128 131 }
+}
+ERI = {
+	color = rgb { 153 51 0 }
+	color_ui = rgb { 153 51 0 }
+}
+DJI = {
+	color = rgb { 0 102 153 }
+	color_ui = rgb { 0 102 153 }
+}
+SLV = {
+	color = rgb { 102 178 255 }
+	color_ui = rgb { 102 178 255 }
+}
+MAC = {
+	color = rgb { 255 51 51 }
+	color_ui = rgb { 255 51 51 }
+}
+GDL = {
+	color = rgb { 153 255 255 }
+	color_ui = rgb { 153 255 255 }
+}
+BAS = {
+	color = rgb { 255 102 102 }
+	color_ui = rgb { 255 102 102 }
+}
+TRI = {
+	color = rgb { 96 96 96 }
+	color_ui = rgb { 96 96 96 }
+}
+JAM = {
+	color = rgb { 102 102 0 }
+	color_ui = rgb { 102 102 0 }
+}
+BAH = {
+	color = rgb { 204 255 204 }
+	color_ui = rgb { 204 255 204 }
+}
+KUW = {
+	color = rgb { 153 76 0 }
+	color_ui = rgb { 153 76 0 }
+}
+BRD = {
+	color = rgb { 204 153 0 }
+	color_ui = rgb { 204 153 0 }
+}
+RWA = {
+	color = rgb { 255 255 102 }
+	color_ui = rgb { 255 255 102 }
+}
+BRM = {
+	color = rgb { 76 153 0 }
+	color_ui = rgb { 76 153 0 }
+}
+BLZ = {
+	color = rgb { 0 204 204 }
+	color_ui = rgb { 0 204 204 }
+}
+SUR = {
+	color = rgb { 255 178 102 }
+	color_ui = rgb { 255 178 102 }
+}
+GYA = {
+	color = rgb { 255 204 153 }
+	color_ui = rgb { 255 204 153 }
+}
+CAY = {
+	color = rgb { 51 153 255 }
+	color_ui = rgb { 51 153 255 }
+}
+SRL = {
+	color = rgb { 204 0 102 }
+	color_ui = rgb { 204 0 102 }
+}
+MLD = {
+	color = rgb { 178 255 102 }
+	color_ui = rgb { 178 255 102 }
+}
+ITP = {
+	color = rgb { 59 148 65 }
+	color_ui = rgb { 74 186 82 }
+}
+CYP = {
+	color = rgb { 255 204 0 }
+	color_ui = rgb { 255 204 0 }
+}
+FLA = {
+	color = rgb { 193 171 8 }
+	color_ui = rgb { 193 171 8 }
+}
+MLT = {
+	color = rgb { 255 255 153 }
+	color_ui = rgb { 255 255 153 }
 }
 
 #################################
