@@ -24,7 +24,7 @@ add_ideas = {
 	CRU_Francisco_May_Pech_hog_val
 	CRU_Carlos_Jesus_Torre_Repetto_for_sde
 	CRU_Nicolas_Camara_Vales_eco_mli
-	CRU_Ricardo_Lopez_Mendez_sec_sli
+	CRU_Miguel_Alonzo_Romero_sec_sli
 }
 set_country_flag = monroe_doctrine
 

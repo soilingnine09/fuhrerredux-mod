@@ -449,7 +449,7 @@ focus_tree = {
         prerequisite = { focus = CRU_seeking_new_friends }
         relative_position_id = CRU_seeking_new_friends
         completion_reward = {
-            reverse_add_opinion_modifier = {
+            add_opinion_modifier = {
                 modifier = CRU_improved_relations
                 target = GER
             }
@@ -474,7 +474,7 @@ focus_tree = {
         prerequisite = { focus = CRU_seeking_new_friends }
         relative_position_id = CRU_seeking_new_friends
         completion_reward = {
-            reverse_add_opinion_modifier = {
+            add_opinion_modifier = {
                 modifier = CRU_improved_relations
                 target = BOL
             }
@@ -584,7 +584,7 @@ focus_tree = {
         }
         relative_position_id = CRU_seeking_new_friends
         completion_reward = {
-            reverse_add_opinion_modifier = {
+            add_opinion_modifier = {
                 modifier = CRU_improved_relations
                 target = PHI
             }
@@ -601,7 +601,7 @@ focus_tree = {
         prerequisite = { focus = CRU_establish_relations_in_the_pacific }
         relative_position_id = CRU_establish_relations_in_the_pacific 
         completion_reward = {
-            PHI = { country_event = cruzoob.117 }
+            PHI = { country_event = cruzoob.116 }
         }
     }
 

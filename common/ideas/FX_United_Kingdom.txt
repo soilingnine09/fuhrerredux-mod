@@ -2987,41 +2987,41 @@ ideas = {
 		ENG_John_Vereker_carm = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea john_vereker"}
 			allowed = { original_tag = ENG }
-			traits = { carm_decisive_battle_doctrine }
-			ai_will_do = {
-				factor = 2
+			traits = {
+				chief_of_army
+				carm_decisive_battle_doctrine
 			}
 		}
 		ENG_Edmund_Ironside_carm = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea edmund_ironside"}
 			allowed = { original_tag = ENG }
-			traits = { carm_static_defence_doctrine }
-			ai_will_do = {
-				factor = 2
+			traits = {
+				chief_of_army
+				carm_static_defence_doctrine
 			}
 		}
-		ENG_Alan_Brooke_carm = {
+		ENG_Miles_Dempsey_carm = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea alan_brooke"}
 			allowed = { original_tag = ENG }
-			traits = { carm_guns_and_butter_doctrine }
-			ai_will_do = {
-				factor = 1
+			traits = {
+				chief_of_army
+				carm_guns_and_butter_doctrine
 			}
 		}
 		ENG_John_Dill_carm = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea alan_brooke"}
 			allowed = { original_tag = ENG }
-			traits = { carm_commando_doctrine }
-			ai_will_do = {
-				factor = 1
+			traits = {
+				chief_of_army
+				carm_commando_doctrine
 			}
 		}
 		ENG_Harold_Alexander_carm = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea alan_brooke"}
 			allowed = { original_tag = ENG }
-			traits = { carm_elastic_defence_doctrine }
-			ai_will_do = {
-				factor = 1
+			traits = {
+				chief_of_army
+				carm_elastic_defence_doctrine
 			}
 		}	
 	}
@@ -3030,49 +3030,49 @@ ideas = {
 		ENG_Ernle_Chatfield_cnav = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ernle_chatfield"}
 			allowed = { original_tag = ENG }
-			traits = { cnav_open_seas_doctrine }
-			ai_will_do = {
-				factor = 1
+			traits = {
+				chief_of_navy
+				cnav_open_seas_doctrine
 			}
 		}
 		ENG_Dudley_Pound_cnav = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea dudley_pound"}
 			allowed = { original_tag = ENG }
-			traits = { cnav_power_projection_doctrine }
-			ai_will_do = {
-				factor = 1
+			traits = {
+				chief_of_navy
+				cnav_power_projection_doctrine
 			}
 		}
 		ENG_Louis_Mountbatten_cnav = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea andrew_cunningham"}
 			allowed = { original_tag = ENG }
-			traits = { navy_chief_naval_aviation_2 }
-			ai_will_do = {
-				factor = 0.5
+			traits = {
+				chief_of_navy
+				cnav_decisive_battle_doctrine
 			}
 		}
 		ENG_Roger_Keyes_cnav = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea winston_churchill"}
 			allowed = { original_tag = ENG }
-			traits = { navy_chief_decisive_battle_1 navy_chief_old_guard }
-			ai_will_do = {
-				factor = 0.5
+			traits = {
+				chief_of_navy
+				cnav_open_seas_doctrine
 			}
 		}
 		ENG_Philip_Vian_cnav = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea leo_amery"}
 			allowed = { original_tag = ENG }
-			traits = { navy_chief_naval_aviation_2 navy_fleet_logistics_1 }
-			ai_will_do = {
-				factor = 0.5
+			traits = {
+				chief_of_navy
+				cnav_base_control_doctrine
 			}
 		}
 		ENG_Tom_Phillips_cnav = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea viscount_cooper"}
 			allowed = { original_tag = ENG }
-			traits = { navy_chief_maneuver_2 navy_capital_ship_2 }
-			ai_will_do = {
-				factor = 0.5
+			traits = {
+				chief_of_navy
+				cnav_open_seas_doctrine
 			}
 		}
 	}
@@ -3081,41 +3081,41 @@ ideas = {
 		ENG_Arthur_Tedder_cair = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea cyril_newall"}
 			allowed = { original_tag = ENG }
-			traits = { air_chief_reform_1 cair_air_superiority_doctrine }
-			ai_will_do = {
-				factor = 1
+			traits = {
+				chief_of_air_force
+				cair_carpet_bombing_doctrine
 			}
 		}
 		ENG_Charles_Portal_cair = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea charles_portal"}
 			allowed = { original_tag = ENG }
-			traits = { air_chief_night_operations_1 cair_battlefield_support_doctrine }
-			ai_will_do = {
-				factor = 1
+			traits = {
+				chief_of_air_force
+				cair_naval_aviation_doctrine
 			}
 		}
 		ENG_Hugh_Trenchard_cair = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea edward_ellington"}
 			allowed = { original_tag = ENG }
-			traits = { air_chief_safety_1 cair_carpet_bombing_doctrine }
-			ai_will_do = {
-				factor = 1
+			traits = {
+				chief_of_air_force
+				cair_vertical_envelopment_doctrine
 			}
 		}
 		ENG_Trafford_Leigh_Mallory_cair = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea edward_ellington"}
 			allowed = { original_tag = ENG }
-			traits = { air_chief_night_operations_1 cair_the_red_baron }
-			ai_will_do = {
-				factor = 1
+			traits = {
+				chief_of_air_force
+				cair_battlefield_support_doctrine
 			}
 		}
 		ENG_John_Chamier_cair = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea edward_ellington"}
 			allowed = { original_tag = ENG }
-			traits = { air_chief_reform_1 cair_battlefield_support_doctrine }
-			ai_will_do = {
-				factor = 1
+			traits = {
+				chief_of_air_force
+				cair_air_superiority_doctrine
 			}
 		}
 	}
@@ -3124,7 +3124,7 @@ ideas = {
 		ENG_John_Vereker_cos = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea john_vereker"}
 			allowed = { original_tag = ENG }
-			traits = { cos_school_of_fire_support }
+			traits = { chief_of_staff cos_school_of_fire_support }
 			ai_will_do = {
 				factor = 2
 			}
@@ -3132,7 +3132,7 @@ ideas = {
 		ENG_Edmund_Ironside_cos = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea edmund_ironside"}
 			allowed = { original_tag = ENG }
-			traits = { cos_school_of_mass_combat }
+			traits = { chief_of_staff cos_school_of_mass_combat }
 			ai_will_do = {
 				factor = 2
 			}
@@ -3140,7 +3140,7 @@ ideas = {
 		ENG_Alan_Brooke_cos = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea alan_brooke"}
 			allowed = { original_tag = ENG }
-			traits = { cos_school_of_fire_support }
+			traits = { chief_of_staff cos_school_of_fire_support }
 			ai_will_do = {
 				factor = 1
 			}
@@ -3148,7 +3148,7 @@ ideas = {
 		ENG_John_Dill_cos = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea alan_brooke"}
 			allowed = { original_tag = ENG }
-			traits = { cos_school_of_manoeuvre }
+			traits = { chief_of_staff cos_school_of_manoeuvre }
 			ai_will_do = {
 				factor = 1
 			}
@@ -3156,7 +3156,7 @@ ideas = {
 		ENG_Harold_Alexander_cos = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea alan_brooke"}
 			allowed = { original_tag = ENG }
-			traits = { cos_school_of_psychology }
+			traits = { chief_of_staff cos_school_of_psychology }
 			ai_will_do = {
 				factor = 1
 			}
@@ -3683,7 +3683,7 @@ ideas = {
 				sec_media_magnate
 			}
 		}
-		ENG_Trafford_Leigh_Mallory_ade = {
+		ENG_Trafford_Leigh_Mallory_sec_ade = {
 			allowed = { original_tag = ENG }
 			available = { can_replace_minister = no }
 			cancel_if_invalid = no

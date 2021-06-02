@@ -453,194 +453,161 @@ ideas = {
     security_minister = {
 		MEX_Andres_Molina_Enriquez_sec = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_Andres_Molina_Enriquez_sec"}
-                    allowed = {original_tag = MEX}
-                    available = {
-												has_government = vanguardist
-                        NOT = {has_country_flag = Andres_Molina_Enriquez_dead}
-                        NOT = {has_country_flag = Andres_Molina_Enriquez_fired}
-                        NOT = {has_country_flag = ministers_cannot_be_replaced}
-                        NOT = {has_country_flag = sec_cannot_be_replaced}
-                    }
-                    traits = {security_minister vanguardist sec_driven_recruiter}
-                    cancel_if_invalid = no
+                allowed = {original_tag = MEX}
+                available = {
+                    as_government = vanguardist
+                    NOT = {has_country_flag = Andres_Molina_Enriquez_dead}
+                    NOT = {has_country_flag = Andres_Molina_Enriquez_fired}
+                    NOT = {has_country_flag = ministers_cannot_be_replaced}
+                    NOT = {has_country_flag = sec_cannot_be_replaced}
                 }
+                traits = {security_minister vanguardist sec_driven_recruiter}
+                cancel_if_invalid = no
+            }
         }
-
-				security_minister = {
 		MEX_Narciso_Bassols_sec = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_Narciso_Bassols_sec"}
-		                    allowed = {original_tag = MEX}
-		                    available = {
-														has_government = collectivist
-		                        NOT = {has_country_flag = Narciso_Bassols_dead}
-		                        NOT = {has_country_flag = Narciso_Bassols_fired}
-		                        NOT = {has_country_flag = ministers_cannot_be_replaced}
-		                        NOT = {has_country_flag = sec_cannot_be_replaced}
-		                    }
-		                    traits = {security_minister collectivist sec_prince_of_terror}
-		                    cancel_if_invalid = no
-		                }
-		        }
-
-						security_minister = {
+            allowed = {original_tag = MEX}
+            available = {
+                has_government = collectivist
+                NOT = {has_country_flag = Narciso_Bassols_dead}
+                NOT = {has_country_flag = Narciso_Bassols_fired}
+                NOT = {has_country_flag = ministers_cannot_be_replaced}
+                NOT = {has_country_flag = sec_cannot_be_replaced}
+            }
+            traits = {security_minister collectivist sec_prince_of_terror}
+            cancel_if_invalid = no
+        }
 		MEX_Francisco_Jose_Mugica_sec = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_Francisco_Jose_Mugica_sec"}
-				                    allowed = {original_tag = MEX}
-				                    available = {
-																has_government = libertarian_socialist
-				                        NOT = {has_country_flag = Francisco_Jose_Mugica_dead}
-				                        NOT = {has_country_flag = Francisco_Jose_Mugica_fired}
-				                        NOT = {has_country_flag = ministers_cannot_be_replaced}
-				                        NOT = {has_country_flag = sec_cannot_be_replaced}
-				                    }
-				                    traits = {security_minister libertarian_socialist sec_compassionate_gentleman}
-				                    cancel_if_invalid = no
-				                }
-				        }
-
-								security_minister = {
+                allowed = {original_tag = MEX}
+                available = {
+                    has_government = libertarian_socialist
+                    NOT = {has_country_flag = Francisco_Jose_Mugica_dead}
+                    NOT = {has_country_flag = Francisco_Jose_Mugica_fired}
+                    NOT = {has_country_flag = ministers_cannot_be_replaced}
+                    NOT = {has_country_flag = sec_cannot_be_replaced}
+                }
+                traits = {security_minister libertarian_socialist sec_compassionate_gentleman}
+                cancel_if_invalid = no
+            }
+        }
 		MEX_Pascual_Ortiz_Rubio_sec = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_Pascual_Ortiz_Rubio_sec"}
-						                    allowed = {original_tag = MEX}
-						                    available = {
-																		has_government = social_democrat
-						                        NOT = {has_country_flag = Pascual_Ortiz_Rubio_dead}
-						                        NOT = {has_country_flag = Pascual_Ortiz_Rubio_fired}
-						                        NOT = {has_country_flag = ministers_cannot_be_replaced}
-						                        NOT = {has_country_flag = sec_cannot_be_replaced}
-						                    }
-						                    traits = {security_minister social_democrat sec_silent_lawyer}
-						                    cancel_if_invalid = no
-						                }
-						        }
-
-										security_minister = {
+            allowed = {original_tag = MEX}
+            available = {
+                has_government = social_democrat
+                NOT = {has_country_flag = Pascual_Ortiz_Rubio_dead}
+                NOT = {has_country_flag = Pascual_Ortiz_Rubio_fired}
+                NOT = {has_country_flag = ministers_cannot_be_replaced}
+                NOT = {has_country_flag = sec_cannot_be_replaced}
+            }
+            traits = {security_minister social_democrat sec_silent_lawyer}
+            cancel_if_invalid = no
+        }
 		MEX_Abelardo_Rodriguez_sec = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_Abelardo_Rodriguez_sec"}
-								                    allowed = {original_tag = MEX}
-								                    available = {
-																				has_government = social_liberal
-								                        NOT = {has_country_flag = Abelardo_Rodriguez_dead}
-								                        NOT = {has_country_flag = Abelardo_Rodriguez_fired}
-								                        NOT = {has_country_flag = ministers_cannot_be_replaced}
-								                        NOT = {has_country_flag = sec_cannot_be_replaced}
-								                    }
-								                    traits = {security_minister social_liberal sec_secret_police_chief}
-								                    cancel_if_invalid = no
-								                }
-								        }
-
-												security_minister = {
+            allowed = {original_tag = MEX}
+            available = {
+                has_government = social_liberal
+                NOT = {has_country_flag = Abelardo_Rodriguez_dead}
+                NOT = {has_country_flag = Abelardo_Rodriguez_fired}
+                NOT = {has_country_flag = ministers_cannot_be_replaced}
+                NOT = {has_country_flag = sec_cannot_be_replaced}
+            }
+            traits = {security_minister social_liberal sec_secret_police_chief}
+            cancel_if_invalid = no
+        }
 		MEX_Guadalupe_Sanchez_sec = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_Guadalupe_Sanchez_sec"}
-										                    allowed = {original_tag = MEX}
-										                    available = {
-																						has_government = market_liberal
-										                        NOT = {has_country_flag = Guadalupe_Sanchez_dead}
-										                        NOT = {has_country_flag = Guadalupe_Sanchez_fired}
-										                        NOT = {has_country_flag = ministers_cannot_be_replaced}
-										                        NOT = {has_country_flag = sec_cannot_be_replaced}
-										                    }
-										                    traits = {security_minister market_liberal sec_crooked_kleptocrat}
-										                    cancel_if_invalid = no
-										                }
-										        }
-
-														security_minister = {
+            allowed = {original_tag = MEX}
+            available = {
+                                        has_government = market_liberal
+                NOT = {has_country_flag = Guadalupe_Sanchez_dead}
+                NOT = {has_country_flag = Guadalupe_Sanchez_fired}
+                NOT = {has_country_flag = ministers_cannot_be_replaced}
+                NOT = {has_country_flag = sec_cannot_be_replaced}
+            }
+            traits = {security_minister market_liberal sec_crooked_kleptocrat}
+            cancel_if_invalid = no
+        }
 		MEX_Felix_Diaz_sec = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_Felix_Diaz_sec"}
-												                    allowed = {original_tag = MEX}
-												                    available = {
-																								has_government = social_conservative
-												                        NOT = {has_country_flag = Felix_Diaz_dead}
-												                        NOT = {has_country_flag = Felix_Diaz_fired}
-												                        NOT = {has_country_flag = ministers_cannot_be_replaced}
-												                        NOT = {has_country_flag = sec_cannot_be_replaced}
-												                    }
-												                    traits = {security_minister social_conservative sec_crime_fighter}
-												                    cancel_if_invalid = no
-												                }
-												        }
-
-																security_minister = {
+            allowed = {original_tag = MEX}
+            available = {
+                has_government = social_conservative
+                NOT = {has_country_flag = Felix_Diaz_dead}
+                NOT = {has_country_flag = Felix_Diaz_fired}
+                NOT = {has_country_flag = ministers_cannot_be_replaced}
+                NOT = {has_country_flag = sec_cannot_be_replaced}
+            }
+            traits = {security_minister social_conservative sec_crime_fighter}
+            cancel_if_invalid = no
+        }
 		MEX_Joaquin_Amaro_sec = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_Joaquin_Amaro_sec"}
-														                    allowed = {original_tag = MEX}
-														                    available = {
-																										has_government = authoritarian_democrat
-														                        NOT = {has_country_flag = Joaquin_Amaro_dead}
-														                        NOT = {has_country_flag = Joaquin_Amaro_fired}
-														                        NOT = {has_country_flag = ministers_cannot_be_replaced}
-														                        NOT = {has_country_flag = sec_cannot_be_replaced}
-														                    }
-														                    traits = {security_minister authoritarian_democrat sec_man_of_the_people}
-														                    cancel_if_invalid = no
-														                }
-														        }
-
-																		security_minister = {
+            allowed = {original_tag = MEX}
+            available = {
+                has_government = authoritarian_democrat
+                NOT = {has_country_flag = Joaquin_Amaro_dead}
+                NOT = {has_country_flag = Joaquin_Amaro_fired}
+                NOT = {has_country_flag = ministers_cannot_be_replaced}
+                NOT = {has_country_flag = sec_cannot_be_replaced}
+            }
+            traits = {security_minister authoritarian_democrat sec_man_of_the_people}
+            cancel_if_invalid = no
+        }
 		MEX_Aristeo_Pedroza_sec = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_Aristeo_Pedroza_sec"}
-																                    allowed = {original_tag = MEX}
-																                    available = {
-																												has_government = authoritarian_democrat
-																                        NOT = {has_country_flag = Aristeo_Pedroza_dead}
-																                        NOT = {has_country_flag = Aristeo_Pedroza_fired}
-																                        NOT = {has_country_flag = ministers_cannot_be_replaced}
-																                        NOT = {has_country_flag = sec_cannot_be_replaced}
-																                    }
-																                    traits = {security_minister authoritarian_democrat sec_secret_police_chief}
-																                    cancel_if_invalid = no
-																                }
-																        }
-
-																				security_minister = {
+            allowed = {original_tag = MEX}
+            available = {
+                has_government = authoritarian_democrat
+                NOT = {has_country_flag = Aristeo_Pedroza_dead}
+                NOT = {has_country_flag = Aristeo_Pedroza_fired}
+                NOT = {has_country_flag = ministers_cannot_be_replaced}
+                NOT = {has_country_flag = sec_cannot_be_replaced}
+            }
+            traits = {security_minister authoritarian_democrat sec_secret_police_chief}
+            cancel_if_invalid = no
+        }
 		MEX_Jesus_Augustin_Castro_sec = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_Jesus_Augustin_Castro_sec"}
-																		                    allowed = {original_tag = MEX}
-																		                    available = {
-																														has_government = paternal_autocrat
-																		                        NOT = {has_country_flag = Jesus_Augustin_Castro_dead}
-																		                        NOT = {has_country_flag = Jesus_Augustin_Castro_fired}
-																		                        NOT = {has_country_flag = ministers_cannot_be_replaced}
-																		                        NOT = {has_country_flag = sec_cannot_be_replaced}
-																		                    }
-																		                    traits = {security_minister paternal_autocrat sec_driven_recruiter}
-																		                    cancel_if_invalid = no
-																		                }
-																		        }
-
-																						security_minister = {
-
-
-																								security_minister = {
+            allowed = {original_tag = MEX}
+            available = {
+                has_government = paternal_autocrat
+                NOT = {has_country_flag = Jesus_Augustin_Castro_dead}
+                NOT = {has_country_flag = Jesus_Augustin_Castro_fired}
+                NOT = {has_country_flag = ministers_cannot_be_replaced}
+                NOT = {has_country_flag = sec_cannot_be_replaced}
+            }
+            traits = {security_minister paternal_autocrat sec_driven_recruiter}
+            cancel_if_invalid = no
+        }
 		MEX_Jose_Olivares_sec = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_Jose_Olivares_sec"}
-																						                    allowed = {original_tag = MEX}
-																						                    available = {
-																																		has_government = valkist
-																						                        NOT = {has_country_flag = Jose_Olivares_dead}
-																						                        NOT = {has_country_flag = Jose_Olivares_fired}
-																						                        NOT = {has_country_flag = ministers_cannot_be_replaced}
-																						                        NOT = {has_country_flag = sec_cannot_be_replaced}
-																						                    }
-																						                    traits = {security_minister valkist sec_back_stabber}
-																						                    cancel_if_invalid = no
-																						                }
-																						        }
-
-																										security_minister = {
-		MEX_Alfonso_Junco_sec = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_Alfonso_Junco_sec"}
-																								                    allowed = {original_tag = MEX}
-																								                    available = {
-																																				has_government = valkist
-																								                        NOT = {has_country_flag = Alfonso_Junco_dead}
-																								                        NOT = {has_country_flag = Alfonso_Junco_fired}
-																								                        NOT = {has_country_flag = ministers_cannot_be_replaced}
-																								                        NOT = {has_country_flag = sec_cannot_be_replaced}
-																								                    }
-																								                    traits = {security_minister valkist sec_crime_fighter}
-																								                    cancel_if_invalid = no
-																								                }
-                                                                                                        }
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_Jose_Olivares_sec"}
+            allowed = {original_tag = MEX}
+            available = {
+                has_government = valkist
+                NOT = {has_country_flag = Jose_Olivares_dead}
+                NOT = {has_country_flag = Jose_Olivares_fired}
+                NOT = {has_country_flag = ministers_cannot_be_replaced}
+                NOT = {has_country_flag = sec_cannot_be_replaced}
+            }
+            traits = {security_minister valkist sec_back_stabber}
+            cancel_if_invalid = no
+        }
+        MEX_Alfonso_Junco_sec = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_Alfonso_Junco_sec"}
+            allowed = {original_tag = MEX}
+            available = {
+                has_government = valkist
+                NOT = {has_country_flag = Alfonso_Junco_dead}
+                NOT = {has_country_flag = Alfonso_Junco_fired}
+                NOT = {has_country_flag = ministers_cannot_be_replaced}
+                NOT = {has_country_flag = sec_cannot_be_replaced}
+            }
+            traits = {security_minister valkist sec_crime_fighter}
+            cancel_if_invalid = no
+        }
+    }
+}
