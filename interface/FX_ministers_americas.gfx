@@ -1,9 +1,348 @@
 spriteTypes = {
 
     ####################################################
+    # MEX
+    ### Head of Government
+    spriteType = {
+        name = "GFX_idea_MEX_Emiliano_Zapata_hog_van"
+        texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Emiliano_Zapata.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_MEX_Fidel_Velazquez_hog_col"
+        texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Fidel_Velazquez.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_MEX_Rosendo_Salazar_hog_col"
+        texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Rosendo_Salazar.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_MEX_Vicente_Lombardo_Toledano_hog_col"
+        texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Vicente_Lombardo_Toledano.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_MEX_Antonio_Irineo_Villarreal_hog_lib"
+        texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Antonio_Irineo_Villarreal.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_MEX_Pancho_Villa_hog_sde"
+        texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Pancho_Villa.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_MEX_Ruben_Jaramillo_hog_sde"
+        texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Ruben_Jaramillo.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_MEX_Manuel_Avila_Camacho_hog_sde"
+        texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Manuel_Avila_Camacho.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_MEX_Miguel_Aleman_Valdes_hog_sli"
+        texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Miguel_Aleman_Valdes.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_MEX_Pascual_Ortiz_Rubio_hog_sli"
+        texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Pascual_Ortiz_Rubio.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_MEX_Emilio_Portes_Gil_hog_sco"
+        texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Emilio_Portes_Gil.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_MEX_Abelardo_L_Rodriguez_hog_sco"
+        texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Abelardo_L_Rodriguez.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_MEX_Lazaro_Cardenas_hog_ade"
+        texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Lazaro_Cardenas.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_MEX_Aquiles_Elorduy_hog_ade"
+        texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Aquiles_Elorduy.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_MEX_Plutarco_Elias_Calles_hog_pau"
+        texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Plutarco_Elias_Calles.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_MEX_Alberto_B_Gutierrez_hog_npo"
+        texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Alberto_B_Gutierrez.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_MEX_Jose_Antonio_Urquiza_hog_val"
+        texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Jose_Antonio_Urquiza.tga"
+    }
+    # Foreign Minister
+    spriteType = {
+		name = "GFX_idea_MEX_Manuel_C_Tellez_for_van"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Manuel_C_Tellez.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Amalia_Gonzalez_Caballero_de_Castillo_Ledon_for_col"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Amalia_Gonzalez_Caballero_de_Castillo_Ledon.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Evelio_Vadillo_for_col"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Evelio_Vadillo.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Juan_Sarabia_for_col"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Juan_Sarabia.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Francisco_Castillo_Najera_for_lib"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Francisco_Castillo_Najera.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Gilberto_Bosques_Saldivar_for_lib"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Gilberto_Bosques_Saldivar.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Gildardo_Magana_Cerda_for_lib"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Gildardo_Magana_Cerda.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Ezequiel_Padilla_Penaloza_for_sde"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Ezequiel_Padilla_Penaloza.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Isidro_Fabela_for_sde"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Isidro_Fabela.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Jaime_Torres_Bodet_for_sde"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Jaime_Torres_Bodet.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Fernando_Rodarte_Fernandez_for_ade"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Fernando_Rodarte_Fernandez.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Victorino_Barcenas_for_ade"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Victorino_Barcenas.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Pazcual_Diaz_Barreto_for_pau"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Pazcual_Diaz_Barreto.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Alfonso_Junco_for_npo"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Alfonso_Junco.tga"
+	}
+    spriteType = {
+		name = "GFX_idea_MEX_Jose_de_Leon_Toral_for_val"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Jose_de_Leon_Toral.tga"
+	}
+    # Economy Minister
+    spriteType = {
+		name = "GFX_idea_MEX_Luis_N_Morones_eco_van"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Luis_N_Morones.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Antonio_Diaz_Soto_y_Gama_eco_col"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Antonio_Diaz_Soto_y_Gama.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Fidel_Velazquez_eco_col"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Fidel_Velazquez.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Adolfo_Ruiz_Cortines_eco_lib"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Adolfo_Ruiz_Cortines.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Magdaleno_Aguilar_Castillo_eco_lib"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Magdaleno_Aguilar_Castillo.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Serafin_M_Robles_Morales_eco_lib"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Serafin_M_Robles_Morales.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Alberto_J_Pani_eco_sde"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Alberto_J_Pani.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Efrain_Buenrostro_Ochoa_eco_sde"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Efrain_Buenrostro_Ochoa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Primo_Villa_Michel_eco_sde"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Primo_Villa_Michel.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Aaron_Saenz_eco_ade"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Aaron_Saenz.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Pastor_Castro_Tinoco_eco_ade"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Pastor_Castro_Tinoco.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Miguel_Palomar_y_Vizcarra_eco_pau"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Miguel_Palomar_y_Vizcarra.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Pedro_Zuloaga_Irigoiti_eco_npo"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Pedro_Zuloaga_Irigoiti.tga"
+	}
+    # Security Minister
+    spriteType = {
+		name = "GFX_idea_MEX_Jose_Manuel_Puig_Casauranc_sec_van"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Jose_Manuel_Puig_Casauranc.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Elisa_Acuna_sec_col"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Elisa_Acuna.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Ricardo_Flores_Magon_sec_col"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Ricardo_Flores_Magon.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Rosendo_Salazar_sec_col"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Rosendo_Salazar.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Rafael_Buelna_sec_lib"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Rafael_Buelna.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Rafael_Pascasio_Gamboa_sec_lib"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Rafael_Pascasio_Gamboa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Ruben_Jaramillo_sec_lib"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Ruben_Jaramillo.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Genaro_Estrada_sec_sde"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Genaro_Estrada.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Miguel_Aleman_Valdes_sec_sde"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Miguel_Aleman_Valdes.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Roque_Estrada_Reynoso_sec_sde"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Roque_Estrada_Reynoso.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Efrain_Gonzalez_Luna_sec_ade"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Efrain_Gonzalez_Luna.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Jose_Reyes_Vega_sec_pau"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Jose_Reyes_Vega.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Daniel_Cosio_Villegas_sec_npo"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Daniel_Cosio_Villegas.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Victoriano_Ramirez_sec_val"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Victoriano_Ramirez.tga"
+	}
+    ## Chief of Staff
+	spriteType = {
+		name = "GFX_idea_MEX_Aristeo_Pedroza_cos"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Aristeo_Pedroza.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Enrique_Goroztieta_Velarde_cos"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Enrique_Goroztieta_Velarde.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Francisco_Mendoza_Palma_cos"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Francisco_Mendoza_Palma.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Genovevo_de_la_O_cos"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Genovevo_de_la_O.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Gilberto_Limon_Marquez_cos"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Gilberto_Limon_Marquez.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Gildardo_Magana_cos"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Gildardo_Magana.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Miguel_Aleman_Gonzalez_cos"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Miguel_Aleman_Gonzalez.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Panuncio_Martinez_cos"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Panuncio_Martinez.tga"
+	}
+	# Chief of Army
+	spriteType = {
+		name = "GFX_idea_MEX_Aristeo_Pedroza_carm"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Aristeo_Pedroza.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Francisco_Mendoza_Palma_carm"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Francisco_Mendoza_Palma.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Gilberto_Limon_Marquez_carm"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Gilberto_Limon_Marquez.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Jesus_Salgado_carm"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Jesus_Salgado.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Manuel_Michel_carm"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Manuel_Michel.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Margarita_Neri_carm"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Margarita_Neri.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Panuncio_Martinez_carm"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Panuncio_Martinez.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Ruben_Jaramillo_carm"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Ruben_Jaramillo.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Victoriano_Ramirez_carm"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Victoriano_Ramirez.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Victorino_Barcenas_carm"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Victorino_Barcenas.tga"
+	}
+	# Chief of Navy
+	spriteType = {
+		name = "GFX_idea_MEX_Heriberto_Jara_Corona_cnav"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Heriberto_Jara_Corona.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Jesus_Agustin_Castro_cnav"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Jesus_Agustin_Castro.tga"
+	}
+	# Chief of Air Force
+	spriteType = {
+		name = "GFX_idea_MEX_Eduardo_Aldasoro_Suarez_cair"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Eduardo_Aldasoro_Suarez.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Gustavo_Salinas_Camina_cair"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Gustavo_Salinas_Camina.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Luis_Farell_cair"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Luis_Farell.tga"
+	}
+
+
+    ####################################################
     # CRU
     ### Head of Government
-    ## Head of Government
 	spriteType = {
 		name = "GFX_idea_CRU_Elvia_Carrillo_Puerto_hog_lib"
 		texturefile = "gfx/interface/ideas/CRU/ministers/CRU_Elvia_Carrillo_Puerto.tga"
