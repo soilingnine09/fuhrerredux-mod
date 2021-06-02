@@ -700,16 +700,6 @@ ideas = {
 				eco_planned_economy_proponent
 			}
 		}
-		MEX_Antonio_Diaz_Soto_y_Gama_eco_col = {
-			allowed = { original_tag = MEX }
-			available = { can_replace_minister = no }
-			cancel_if_invalid = no
-			traits = {
-				economy_minister
-				collectivist
-				eco_railway_magnate
-			}
-		}
 		MEX_Fidel_Velazquez_eco_col = {
 			allowed = { original_tag = MEX }
 			available = { can_replace_minister = no }
@@ -718,6 +708,16 @@ ideas = {
 				economy_minister
 				collectivist
 				eco_reformer
+			}
+		}
+		MEX_Antonio_Diaz_Soto_y_Gama_eco_lib = {
+			allowed = { original_tag = MEX }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				libertarian_socialist
+				eco_railway_magnate
 			}
 		}
 		MEX_Adolfo_Ruiz_Cortines_eco_lib = {

@@ -1,7 +1,0 @@
-spriteTypes = {	
-	spriteType = {
-		name = "GFX_etnente_mana"
-		texturefile = "gfx/flags/small/ALB.tga"
-		legacy_lazy_load = no
-	}
-}

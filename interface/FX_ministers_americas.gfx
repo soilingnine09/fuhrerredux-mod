@@ -138,12 +138,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Luis_N_Morones.tga"
 	}
 	spriteType = {
-		name = "GFX_idea_MEX_Antonio_Diaz_Soto_y_Gama_eco_col"
-		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Antonio_Diaz_Soto_y_Gama.tga"
-	}
-	spriteType = {
 		name = "GFX_idea_MEX_Fidel_Velazquez_eco_col"
 		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Fidel_Velazquez.tga"
+	}
+    spriteType = {
+		name = "GFX_idea_MEX_Antonio_Diaz_Soto_y_Gama_eco_lib"
+		texturefile = "gfx/interface/ideas/MEX/ministers/MEX_Antonio_Diaz_Soto_y_Gama.tga"
 	}
 	spriteType = {
 		name = "GFX_idea_MEX_Adolfo_Ruiz_Cortines_eco_lib"
