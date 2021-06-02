@@ -227,9 +227,11 @@ focus_tree = {
         prerequisite = { focus = CRU_rural_development }
         relative_position_id = CRU_rural_development
         completion_reward = {
-            add_opinion_modifier = {
-                target = USA
-                modifier = ITA_hates_govt
+            USA = {
+                add_opinion_modifier = {
+                    target = ROOT
+                    modifier = CRU_seized_our_investments
+                }
             }
             add_offsite_building = {
                 type = industrial_complex
@@ -453,9 +455,11 @@ focus_tree = {
         prerequisite = { focus = CRU_seeking_new_friends }
         relative_position_id = CRU_seeking_new_friends
         completion_reward = {
-            add_opinion_modifier = {
-                modifier = CRU_improved_relations
-                target = GER
+            GER = {
+                reverse_add_opinion_modifier = {
+                    modifier = CRU_improved_relations
+                    target = ROOT
+                }
             }
             set_country_flag = CRU_improved_relations_with_ger
         }
@@ -478,9 +482,11 @@ focus_tree = {
         prerequisite = { focus = CRU_seeking_new_friends }
         relative_position_id = CRU_seeking_new_friends
         completion_reward = {
-            add_opinion_modifier = {
-                modifier = CRU_improved_relations
-                target = BOL
+            BOL = {
+                reverse_add_opinion_modifier = {
+                    modifier = CRU_improved_relations
+                    target = ROOT
+                }
             }
             set_country_flag = CRU_improved_relations_with_bol
         }
@@ -588,9 +594,11 @@ focus_tree = {
         }
         relative_position_id = CRU_seeking_new_friends
         completion_reward = {
-            add_opinion_modifier = {
-                modifier = CRU_improved_relations
-                target = PHI
+            PHI = {
+                reverse_add_opinion_modifier = {
+                    modifier = CRU_improved_relations
+                    target = ROOT
+                }
             }
         }
     }

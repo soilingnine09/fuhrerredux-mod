@@ -106,6 +106,7 @@ CRU_integrate_state:0 "Integrate §Y[FROM.GetName]§!"
 
 ### Opinion Modifiers
 CRU_improved_relations:0 "Improved Relations"
+CRU_seized_our_investments:0 "Seized our Investments"
 
 ### Ideas
 CRU_spirit_of_the_faithful1:0 "Spirit of the Faithful"
