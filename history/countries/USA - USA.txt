@@ -334,7 +334,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Jonathan Wainwright"
-	picture = "Portrait_USA_Jonathan_Wainwright.dds"
+	picture = "Portrait_USA_Jonathan_Wainwright_fx.tga"
 	traits = {  }
 	skill = 1
 	attack_skill = 1
@@ -446,7 +446,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Maurice Rose"
-	picture = "Portrait_USA_Maurice_Rose.dds"
+	picture = "Portrait_USA_Maurice_Rose_fx.tga"
 	traits = { armor_officer trait_reckless brilliant_strategist  }
 	skill = 3
 	attack_skill = 4

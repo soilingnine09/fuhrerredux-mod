@@ -289,127 +289,95 @@ country_event = { id = uk.1 days = 1 }
 create_country_leader = {
 	name = "Jock Haston"
 	desc = "POLITICS_JOCK_HASTON_DESC"
-	picture = "Portrait_UoB_Haston.tga"
+	picture = "Portrait_Britain_Jock_Haston.png"
 	expire = "1955.1.1"
 	ideology = vanguardist_subtype
-	traits = {
-
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Arthur MacManus"
 	desc = "POLITICS_ARTHUR_MACMANUS_DESC"
-	picture = "Portrait_UoB_MacManus.tga"
+	picture = "Portrait_Britain_Arthur_MacManus.tga"
 	expire = "1955.1.1"
 	ideology = collectivist_subtype
-	traits = {
-
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Clement Attlee"
 	desc = "POLITICS_CLEMENT_ATTLEE_DESC"
-	picture = "Portrait_UoB_Attlee.tga"
+	picture = "Portrait_Britain_Clement_Attlee.tga"
 	expire = "1955.1.1"
 	ideology = libertarian_socialist_subtype
-	traits = {
-
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "George V"
 	desc = "POLITICS_GEORGE_V_DESC"
 	picture = "Portrait_Britain_George_V.tga"
 	expire = "1938.1.1"
 	ideology = social_democrat_subtype
-	traits = {
-
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "George V"
 	desc = "POLITICS_GEORGE_V_DESC"
 	picture = "Portrait_Britain_George_V.tga"
 	expire = "1938.1.1"
 	ideology = social_liberal_subtype
-	traits = {
-
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "George V"
 	desc = "POLITICS_GEORGE_V_DESC"
 	picture = "Portrait_Britain_George_V.tga"
 	expire = "1938.1.1"
 	ideology = market_liberal_subtype
-	traits = {
-
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "George V"
 	desc = "POLITICS_GEORGE_V_DESC"
 	picture = "Portrait_Britain_George_V.tga"
 	expire = "1938.1.1"
 	ideology = social_conservative_subtype
-	traits = {
-
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "George V"
 	desc = "POLITICS_GEORGE_V_DESC"
 	picture = "Portrait_Britain_George_V.tga"
 	expire = "1938.1.1"
 	ideology = authoritarian_democrat_subtype
-	traits = {
-
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "George V"
 	desc = "POLITICS_GEORGE_V_DESC"
 	picture = "Portrait_Britain_George_V.tga"
 	expire = "1938.1.1"
 	ideology = paternal_autocrat_subtype
-	traits = {
-
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "George V"
 	desc = "POLITICS_GEORGE_V_DESC"
 	picture = "Portrait_Britain_George_V.tga"
 	expire = "1938.1.1"
 	ideology = national_populist_subtype
-	traits = {
-
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "George V"
 	desc = "POLITICS_GEORGE_V_DESC"
 	picture = "Portrait_Britain_George_V.tga"
 	expire = "1938.1.1"
 	ideology = valkist_subtype
-	traits = {
-
-	}
+	traits = { }
 }
 
 create_field_marshal = {
 	name = "Alan Brooke"
-	picture = "Portrait_Britain_Alan_Brooke1.tga"
+	picture = "Portrait_Britain_Alan_Brooke_fx.tga"
 	traits = { defensive_doctrine trait_cautious career_officer }
 	skill = 5
 	attack_skill = 3
@@ -420,7 +388,7 @@ create_field_marshal = {
 
 create_field_marshal = {
 	name = "Bernard Montgomery"
-	picture = "Portrait_Britain_Bernard_Montgomery1.tga"
+	picture = "Portrait_Britain_Bernard_Montgomery_fx.tga"
 	traits = { logistics_wizard offensive_doctrine media_personality trait_cautious inflexible_strategist organizer }
 	skill = 4
 	attack_skill = 2
@@ -431,7 +399,7 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "Claude Auchinleck"
-	picture = "Portrait_Britain_Claude_Auchinleck1.tga"
+	picture = "Portrait_Britain_Claude_Auchinleck_fx.tga"
 	traits = { inflexible_strategist career_officer }
 	skill = 5
 	attack_skill = 3
@@ -453,7 +421,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Alan Cunningham"
-	picture = "Portrait_Britain_Alan_Cunningham1.tga"
+	picture = "Portrait_Britain_Alan_Cunningham_fx.tga"
 	traits = {}
 	skill = 4
 	attack_skill = 4
@@ -464,7 +432,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "William Slim"
-	picture = "Portrait_Britain_William_Slim.dds"
+	picture = "Portrait_Britain_William_Slim_fx.tga"
 	traits = { trickster war_hero }
 	skill = 5
 	attack_skill = 3
@@ -475,7 +443,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Richard O'Connor"
-	picture = "Portrait_Britain_Richard_OConnor.tga"
+	picture = "Portrait_Britain_Richard_OConnor_fx.tga"
 	traits = {  }
 	skill = 4
 	attack_skill = 2
@@ -497,7 +465,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "George Giffard"
-	picture = "Portrait_Britain_George_Giffard1.tga"
+	picture = "Portrait_Britain_George_Giffard_fx.tga"
 	traits = { career_officer }
 	skill = 3
 	attack_skill = 2
@@ -508,7 +476,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Harold Alexander"
-	picture = "Portrait_Britain_Harold_Alexander.tga"
+	picture = "Portrait_Britain_Harold_Alexander_fx.tga"
 	traits = { politically_connected }
 	skill = 5
 	attack_skill = 4
@@ -530,7 +498,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Thomas Jacomb Hutton"
-		picture = "Portrait_Britain_Thomas_Jacomb_Hutton.tga"
+	picture = "Portrait_Britain_Thomas_Jacomb_Hutton.tga"
 	traits = { old_guard }
 	skill = 2
 	attack_skill = 2
@@ -541,7 +509,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Arthur Percival"
-		picture = "Portrait_Britain_Arthur_Percival1.tga"
+	picture = "Portrait_Britain_Arthur_Percival_fx.tga"
 	traits = {  trait_cautious }
 	skill = 2
 	attack_skill = 2
@@ -552,7 +520,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Merton Beckwith-Smith"
-		picture = "Portrait_Britain_Merton_Beckwith_Smith.dds"
+	picture = "Portrait_Britain_Merton_Beckwith_Smith.dds"
 	traits = { commando }
 	skill = 1
 	attack_skill = 1
@@ -596,7 +564,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "William Gott"
-		picture = "Portrait_Britain_William_Gott.tga"
+	picture = "Portrait_Britain_William_Gott.tga"
 	traits = { armor_officer war_hero inflexible_strategist }
 	skill = 3
 	attack_skill = 2
@@ -607,7 +575,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Jock Campbell"
-		picture = "Portrait_Britain_Jock_Campbell.dds"
+	picture = "Portrait_Britain_Jock_Campbell.dds"
 	traits = { armor_officer  }
 	skill = 4
 	attack_skill = 4
@@ -643,7 +611,6 @@ create_corps_commander = {
 	picture = "Portrait_Britain_Brian_Horrocks.dds"
 	traits = {  armor_officer career_officer war_hero }
 	skill = 3
-
 	attack_skill = 1
 	defense_skill = 3
 	planning_skill = 3
@@ -664,7 +631,7 @@ create_corps_commander = {
 create_navy_leader = {
 	name = "James Fownes Somerville" # Aristocrat
 	id = 983
-		picture = "Portrait_Britain_James_Fownes_Somerville.dds"
+	picture = "Portrait_Britain_James_Fownes_Somerville.dds"
 	traits = { superior_tactician aviation_enthusiast navy_career_officer }
 	skill = 5
 	attack_skill = 4
@@ -676,7 +643,7 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Henry Harwood" # Aristocrat
 	id = 984
-		picture = "Portrait_Britain_Henry_Harwood.dds"
+	picture = "Portrait_Britain_Henry_Harwood.dds"
 	traits = { old_guard_navy bold }
 	skill = 3
 	attack_skill = 3
@@ -688,7 +655,7 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Andrew Cunningham"
 	id = 985
-		picture = "Portrait_Britain_Andrew_Cunningham.dds"
+	picture = "Portrait_Britain_Andrew_Cunningham_fx.tga"
 	traits = { blockade_runner superior_tactician navy_career_officer bold gunnery_expert}
 	skill = 5
 	attack_skill = 5
@@ -700,7 +667,7 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Bruce Fraser"
 	id = 986
-		picture = "Portrait_Britain_Bruce_Fraser.dds"
+	picture = "Portrait_Britain_Bruce_Fraser.dds"
 	traits = { aviation_enthusiast naval_lineage blockade_runner }
 	skill = 4
 	attack_skill = 3
@@ -712,7 +679,7 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "John Tovey" # Aristocrat
 	id = 987
-		picture = "Portrait_Britain_John_Tovey1.tga"
+	picture = "Portrait_Britain_John_Tovey_fx.tga"
 	traits = { gentlemanly naval_lineage superior_tactician }
 	skill = 4
 	attack_skill = 3
@@ -724,7 +691,7 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Bernard Rawlings" # Aristocrat
 	id = 988
-		picture = "Portrait_Britain_Bernard_Rawlings.dds"
+	picture = "Portrait_Britain_Bernard_Rawlings.dds"
 	traits = { gentlemanly }
 	skill = 3
 	attack_skill = 3
@@ -736,7 +703,7 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "John Cunningham"
 	id = 989
-		picture = "Portrait_Britain_John_Cunningham.dds"
+	picture = "Portrait_Britain_John_Cunningham_fx.tga"
 	traits = { navy_career_officer green_water_expert }
 	skill = 4
 	attack_skill = 2
@@ -748,7 +715,7 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Charles Forbes"
 	id = 990
-		picture = "Portrait_Britain_Charles_Forbes.dds"
+	picture = "Portrait_Britain_Charles_Forbes.dds"
 	traits = { gunnery_expert fly_swatter }
 	skill = 3
 	attack_skill = 3
@@ -760,7 +727,7 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Algernon Willis"
 	id = 991
-		picture = "Portrait_Britain_Algernon_Willis.dds"
+	picture = "Portrait_Britain_Algernon_Willis.dds"
 	traits = { battleship_adherent spotter }
 	skill = 3
 	attack_skill = 3
@@ -772,7 +739,7 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Arthur Power"
 	id = 992
-		picture = "Portrait_Britain_Arthur_Power.dds"
+	picture = "Portrait_Britain_Arthur_Power.dds"
 	traits = { gunnery_expert }
 	skill = 2
 	attack_skill = 3
