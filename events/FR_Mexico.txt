@@ -165,13 +165,13 @@ country_event = {
 		}
 		remove_every_minister = yes
 		add_ideas = {
-			MEX_Plutarco_Elias_Calles_hog_pau
-			MEX_Pazcual_Diaz_Barreto_for_pau
-			MEX_Miguel_Palomar_y_Vizcarra_eco_pau
-			MEX_Jose_Reyes_Vega_sec_pau
+			MEX_Plutarco_Elias_Calles_hog
+			MEX_Saturnino_Cedillo_for
+			MEX_Emilio_Portes_Gil_eco
+			MEX_Jesus_Augustin_Castro_sec
 		}
 		set_global_flag = MEX_ROYALISTS
-		ai_chance = { factor = 40 }
+		ai_chance = { factor = 20 }
 	}
 
 	option = {
@@ -179,7 +179,7 @@ country_event = {
 
 		custom_effect_tooltip = MEX_natpop_tt
 		set_global_flag = MEX_SYNARCHISTS
-		ai_chance = { factor = 30 }
+		ai_chance = { factor = 50 }
 	}
 
 	option = {
@@ -196,11 +196,11 @@ country_event = {
 		}
 		remove_every_minister = yes
 		add_ideas = {
-			MEX_Jose_Antonio_Urquiza_hog_val
-			MEX_Jose_de_Leon_Toral_for_val
+			MEX_Nicolas_Rodriguez_Carrasco_hog
+			MEX_Manuel_Torres_Bueno_for
 			MEX_Jose_Antonio_Urquiza_eco
-			MEX_Pedro_Zuloaga_Irigoiti_eco_npo
-			MEX_Victoriano_Ramirez_sec_val
+			MEX_Felix_Diaz_sec
+			MEX_Alfonso_Junco_sec
 		}
 		set_global_flag = MEX_VALKISTS
 		ai_chance = { factor = 30 }
@@ -234,7 +234,9 @@ country_event = {
 			popularity = 0.25
 		}
 		set_global_flag = MEX_DEMOCRATIC_CABINENT
-		ai_chance = { factor = 30 }
+		ai_chance = {
+			factor = 20
+		}
 	}
 }
 
