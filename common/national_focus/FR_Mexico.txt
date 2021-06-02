@@ -24,7 +24,7 @@ focus_tree = {
 
 	focus = {
 		id = MEX_final_election
-		icon = GFX_goal_generic_elections
+		icon = GFX_goal_MEX_flag
 		x = 4
 		y = 0
 		cost = 5

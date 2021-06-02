@@ -154,4 +154,14 @@ spriteTypes = {
 		name = "GFX_goal_MEX_flag"
 		texturefile = "gfx/interface/goals/MEX_flag.dds"
 	}
+
+	spriteType = {
+		name = "GFX_goal_IRQ_smuggle_guns"
+		texturefile = "gfx/interface/goals/goal_IRQ_smuggle_guns.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_IRQ_revolt"
+		texturefile = "gfx/interface/goals/goal_IRQ_revolt.tga"
+	}
 }
