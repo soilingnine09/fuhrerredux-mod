@@ -195,7 +195,7 @@ spriteType = { #Auto-Generated
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GER_Lujo_Brentano_eco_lis"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
@@ -265,7 +265,7 @@ spriteType = { #Auto-Generated
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GER_Wilhelm_Groener_sec_sco"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
@@ -410,7 +410,7 @@ spriteType = { #Auto-Generated
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GER_Walther_Steffens_cnav_col"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
@@ -539,57 +539,57 @@ spriteType = { #Auto-Generated
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_ITA_Edmondo_Rossoni_sec_npo"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_ITA_Giulio_Benedetti_sec_sli"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_ITA_Armando_Borghi_sec_lis"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_ITA_Francesco_Rota_eco_adm"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_ITA_Amilcare_de_Ambris_eco_npo"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_ITA_Piero_Calamandrei_eco_sli"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_ITA_Raffaele_Guariglia_for_adm"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_ITA_Ernesto_Rossi_for_sli"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_ITA_Filoppo_Corridoni_hog_npo"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_ITA_Luigi_Capello_hog_adm"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_ITA_Mario_Pannunzio_hog_sli"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
@@ -730,170 +730,170 @@ spriteType = { #Auto-Generated
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_hog_van"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_hog_col"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_hog_lib"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_hog_sde"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_hog_sli"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_hog_mli"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_hog_sco"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_hog_ade"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_hog_pau"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_hog_npo"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_hog_val"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_for_van"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_for_col"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_for_lib"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_FOR_Sde"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_for_sli"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_for_mli"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_for_sco"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_for_ade"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_for_pau"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_for_npo"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_for_val"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_eco_van"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_eco_col"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_eco_lib"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_eco_sde"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_eco_sli"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_eco_mli"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_eco_sco"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_eco_ade"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_eco_pau"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_eco_npo"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_eco_val"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 
@@ -901,190 +901,57 @@ spriteType = { #Auto-Generated
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_sec_van"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_sec_col"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_sec_lib"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_sec_sde"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_sec_sli"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_sec_mli"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_sec_sco"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_sec_ade"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_sec_pau"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_sec_npo"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 spriteType = { #Auto-Generated
   name = "GFX_idea_GEN_sec_val"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
-}
-
-
-
-
-spriteType = { #Auto-Generated
-  name = "GFX_idea_GEN_INT_Van"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
-}
-
-spriteType = { #Auto-Generated
-  name = "GFX_idea_GEN_INT_Col"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
-}
-
-spriteType = { #Auto-Generated
-  name = "GFX_idea_GEN_INT_Lis"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
-}
-
-spriteType = { #Auto-Generated
-  name = "GFX_idea_GEN_INT_Sli"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
-}
-
-spriteType = { #Auto-Generated
-  name = "GFX_idea_GEN_INT_Sde"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
-}
-
-spriteType = { #Auto-Generated
-  name = "GFX_idea_GEN_INT_Mli"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
-}
-
-spriteType = { #Auto-Generated
-  name = "GFX_idea_GEN_INT_Sco"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
-}
-
-spriteType = { #Auto-Generated
-  name = "GFX_idea_GEN_INT_Ade"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
-}
-
-spriteType = { #Auto-Generated
-  name = "GFX_idea_GEN_INT_Pau"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
-}
-
-spriteType = { #Auto-Generated
-  name = "GFX_idea_GEN_INT_Npo"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
-}
-
-spriteType = { #Auto-Generated
-  name = "GFX_idea_GEN_INT_Val"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
-}
-
-spriteType = { #Auto-Generated
-  name = "GFX_idea_GEN_cos_school_of_manoeuvre"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
-}
-
-spriteType = { #Auto-Generated
-  name = "GFX_idea_GEN_cos_school_of_fire_support"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
-}
-
-spriteType = { #Auto-Generated
-  name = "GFX_idea_GEN_cos_school_of_mass_combat"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
-}
-
-spriteType = { #Auto-Generated
-  name = "GFX_idea_GEN_cos_school_of_defence"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
-}
-
-spriteType = { #Auto-Generated
-  name = "GFX_idea_GEN_carm_elastic_defence_doctrine"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
-}
-
-spriteType = { #Auto-Generated
-  name = "GFX_idea_GEN_carm_decisive_battle_doctrine"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
-}
-
-spriteType = { #Auto-Generated
-  name = "GFX_idea_GEN_cnav_decisive_battle_doctrine"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
-}
-
-spriteType = { #Auto-Generated
-  name = "GFX_idea_GEN_cnav_indirect_approach_doctrine"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
-}
-
-spriteType = { #Auto-Generated
-  name = "GFX_idea_GEN_cnav_power_projection_doctrine"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
-}
-
-spriteType = { #Auto-Generated
-  name = "GFX_idea_GEN_cair_air_superiority_doctrine"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
-}
-
-spriteType = { #Auto-Generated
-  name = "GFX_idea_GEN_cair_battlefield_support_doctrine"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
-}
-
-spriteType = { #Auto-Generated
-  name = "GFX_idea_GEN_cair_naval_aviation_doctrine"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
-}
-
-spriteType = { #Auto-Generated
-  name = "GFX_idea_GEN_air_doctrine_theorist"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
-}
-
-spriteType = { #Auto-Generated
-  name = "GFX_idea_GEN_naval_doctrine_theorist"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
-}
-
-spriteType = { #Auto-Generated
-  name = "GFX_idea_GEN_land_doctrine_theorist"
-  texturefile = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Groener.tga"
+  texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 }
 
 #########
