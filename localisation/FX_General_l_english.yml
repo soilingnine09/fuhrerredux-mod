@@ -8,7 +8,7 @@ OTHER_FUHRERREDUX_DESC:0 "It is 1936, and the world is on a brink of a new, inev
 
 ### Intro Screen
 FX_SPLASH_TITLE:0 "Welcome to Fuhrerredux"
-FX_SPLASH_CREDITS:0 "§YBrought to you by the FX Team:§!\ndax0102, Todd Howard, Captain Kaiczer, dhdjk, alden102, AmCath, and Lextzo.\n\n§YCredits to the FR Team:§!\nDarknight1342, Jespertjee, Trimeon, Drowse, Spocklan116, Steffplays123, Arser, Kalmoire, Kaiserman, LuxLoser, Milekhippy, Terran117, Freidrich von Omansich, Kano901, Raptor Jesus, Hellbat, Santander, JacNoLie, Bern, Jeanne bim Rolterstard-Würfsache, and LoneTechWolf."
+FX_SPLASH_CREDITS:0 "§YBrought to you by the FX Team:§!\ndax0102, Todd Howard, Captain Kaiczer, dhdjk, alden102, AmCath, and Lextzo.\n\n§YCredits and a big thank you to the FR and KR Teams."
 
 ### Intro Event
 intro.1.t:0 "Führerredux Build 0.1.0"
