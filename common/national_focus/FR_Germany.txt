@@ -8830,7 +8830,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_bock_reform"
 			create_corps_commander = {
 				name = "Fedor von Bock"
-				picture = "Portrait_Germany_Fedor_von_Bock.dds"
+				picture = "Portrait_Germany_Fedor_Bock_fx.tga"
 				traits = { harsh_leader trait_cautious }
 				skill = 4
 				id = 9
@@ -9076,7 +9076,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_guderian_reform"
 		create_corps_commander = {
 				name = "Heinz Guderian"
-				picture = "Portrait_Germany_Heinz_Guderian.dds"
+				picture = "Portrait_Germany_Heinz_Guderian_fx.tga"
 				traits = { trickster brilliant_strategist panzer_leader armor_officer career_officer }
 				skill = 4
 				id = 6
@@ -9859,13 +9859,13 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_saalwachter"
 			set_country_flag = GER_picked_saalwachter
-		create_navy_leader = {
-	name = "Alfred Saalwächter"
-		picture = "Portrait_Germany_Alfred_Saalwachter.dds"
-	traits = { old_guard_navy }
-	skill = 4
-	id = 28
-}
+			create_navy_leader = {
+				name = "Alfred Saalwächter"
+				picture = "Portrait_Germany_Alfred_Saalwachter_fx.tga"
+				traits = { old_guard_navy }
+				skill = 4
+				id = 28
+			}
 			add_tech_bonus = {
 				name = nav_doctrine_bonus
 				bonus = 0.3
@@ -9902,18 +9902,14 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_donitz"
-		set_country_flag = GER_picked_donitz
-		
-create_navy_leader = {
-	name = "Karl Dönitz"
-		picture = "Portrait_Germany_Karl_Donitz.dds"
-	traits = { seawolf }
-	skill = 5
-	id = 26
-}
-
-
-
+			set_country_flag = GER_picked_donitz
+			create_navy_leader = {
+				name = "Karl Dönitz"
+				picture = "Portrait_Germany_Karl_Donitz_fx.tga"
+				traits = { seawolf }
+				skill = 5
+				id = 26
+			}
 			add_tech_bonus = {
 				name = nav_doctrine_bonus
 				bonus = 0.3
@@ -9950,15 +9946,15 @@ create_navy_leader = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_raeder"
-		set_country_flag =  GER_picked_raeder
+			set_country_flag =  GER_picked_raeder
 		
-create_navy_leader = {
-	name = "Erich Raeder"
-		picture = "Portrait_Germany_Erich_Raeder.dds"
-	traits = { blockade_runner }
-	skill = 4
-	id = 27
-}
+			create_navy_leader = {
+				name = "Erich Raeder"
+				picture = "Portrait_Germany_Erich_Raeder_fx.tga"
+				traits = { blockade_runner }
+				skill = 4
+				id = 27
+			}
 			add_tech_bonus = {
 				name = nav_doctrine_bonus
 				bonus = 0.3
