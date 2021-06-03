@@ -71,69 +71,70 @@ set_popularities = {
     authoritarian_democrat = 5
 }
 
-create_country_leader = {
-	name = "Plinio Correa"
-	desc = "POLITICS_GETULIO_VARGAS_DESC"
-	picture = "PlinioCorrea.tga"
-	expire = "1965.1.1"
-	ideology = paternal_autocrat_subtype
-	traits = {
-		#
-	}
-}
 
-create_country_leader = {
-	name = "Gustavo Dodt Barroso"
-	desc = "POLITICS_GETULIO_VARGAS_DESC"
-	picture = "GustavoBarroso.tga"
-	expire = "1965.1.1"
-	ideology = valkist_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Getulio Vargas"
-	desc = "POLITICS_GETULIO_VARGAS_DESC"
-	picture = "Vargas.tga"
-	expire = "1965.1.1"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Plínio Salgado"
-	desc = "POLITICS_PLINIO_SALGADO_DESC"
-	picture = "Portrait_Brazil_Plinio_Salgado.tga"
-	expire = "1965.1.1"
-	ideology = national_populist_subtype
-	traits = {
-		#
-	}
-}
 create_country_leader = {
 	name = "Luís Carlos Prestes"
 	desc = "POLITICS_LUIS_CARLOS_PRESTES_DESC"
-	picture = "Luis_Prestes.tga"
+	picture = "Portrait_Brazil_Luis_Prestes.tga"
 	expire = "1965.1.1"
 	ideology = collectivist_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
-
+create_country_leader = {
+	name = "João Mangabeira"
+	desc = "POLITICS_JOAO_MANGABEIRA_DESC"
+	picture = "Portrait_Brazil_Joao_Mangabeira.tga"
+	expire = "1965.1.1"
+	ideology = social_democrat_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Júlio Prestes"
+	desc = "POLITICS_JULIO_PRESTES_DESC"
+	picture = "Portrait_Brazil_Julio_Prestes.tga"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = { }
+}
 create_country_leader = {
 	name = "Armando Salles"
 	desc = "POLITICS_ARMANDO_SALES_DESC"
-	picture = "ArmandoSalles.tga"
+	picture = "Portrait_Brazil_Armando_Salles.tga"
 	expire = "1965.1.1"
 	ideology = market_liberal_subtype
-	traits = {
-		#
-	}
+	traits = { }
+}
+create_country_leader = {
+	name = "Otávio Mangabeira"
+	desc = "POLITICS_OTAVIO_MANGABEIRA_DESC"
+	picture = "Portrait_BRA_Otavio_Mangabeira.tga"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Getulio Vargas"
+	desc = "POLITICS_GETULIO_VARGAS_DESC"
+	picture = "Portrait_Brazil_Getulio_Vargas.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Plinio Correa"
+	desc = "POLITICS_PLINIO_CORREA_DESC"
+	picture = "Portrait_Brazil_Plinio_Correa.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Gustavo Dodt Barroso"
+	desc = "POLITICS_GUSTAVO_DODT_BARROSO_DESC"
+	picture = "Portrait_Brazil_Gustavo_Dodt_Barroso.tga"
+	expire = "1965.1.1"
+	ideology = valkist_subtype
+	traits = { }
 }
 
 set_convoys = 40
@@ -180,7 +181,7 @@ create_corps_commander = {
 }
 create_field_marshal = {
 	name = "Mascarenhas de Morais"
-	portrait_path = "gfx/leaders/BRA/BRA_Mascarenhas_Morais.tga"
+	picture = "Portrait_Brazil_Mascarenhas_Morais.tga"
 	traits = { }
 	skill = 4
 	attack_skill = 4
@@ -190,7 +191,7 @@ create_field_marshal = {
 }
 create_navy_leader = {
 	name = "Isaías de Noronha"
-	portrait_path = "gfx/leaders/BRA/BRA_Isaias_Noronha.tga"
+	picture = "Portrait_Brazil_Isaias_de_Noronha.tga"
 	traits = {  }
 	skill = 3
 }
