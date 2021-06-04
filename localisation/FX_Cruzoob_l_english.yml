@@ -99,8 +99,8 @@ CRU_BOL_accord:0 "Pact of Indigenous Rejuvenation"
 
 ### Tooltips
 CRU_can_integrate_states:0 "§GWe can now integrate states from occupied territories§!"
-CRU_has_army_exercises_with_ger:0 "We have army exercises with §Y[GER.GetName]§!"
-CRU_has_army_exercises_with_bol:0 "We have army exercises with §Y[BOL.GetName]§!"
+CRU_has_army_exercises_with_ger:0 "We have army exercises with @GER §YGermany§!"
+CRU_has_army_exercises_with_bol:0 "We have army exercises with @BOL §YBolivia§!"
 
 ### Decisions
 CRU_spreading_our_culture:0 "Spreading our Culture"

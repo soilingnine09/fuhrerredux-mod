@@ -542,7 +542,7 @@ focus_tree = {
                 is_faction_leader = yes
                 NOT = { has_war_with = ROOT }
             }
-            has_country_flag = CRU_has_exercises_with_ger
+            has_country_flag = CRU_has_army_exercises_with_ger
         }
         mutually_exclusive = { focus = CRU_a_native_alliance }
         prerequisite = { focus = CRU_friends_in_europe }
@@ -566,7 +566,7 @@ focus_tree = {
                 NOT = { has_war_with = ROOT }
                 has_government = valkist
             }
-            has_country_flag = CRU_has_exercises_with_bol
+            has_country_flag = CRU_has_army_exercises_with_bol
         }
         mutually_exclusive = { focus = CRU_join_the_stahlpakt }
         prerequisite = { focus = CRU_joint_army_exercises }
