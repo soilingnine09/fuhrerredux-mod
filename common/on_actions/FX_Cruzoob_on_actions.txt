@@ -1,0 +1,10 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            random_country = {
+                limit = { tag = CRU }
+                country_event = { id = cruzoob.0 days = 2 }
+            }
+        }
+    }
+}
