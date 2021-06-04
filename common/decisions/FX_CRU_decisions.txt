@@ -1,8 +1,8 @@
 CRU_mexican_infiltration = {
     CRU_fund_worker_strikes = {
         icon = GFX_decision_generic_civil_support
-        days_remove = 60
-        days_re_enable = 180
+        days_remove = 40
+        days_re_enable = 120
         
         available = {
             NOT = { has_country_flag = CRU_infiltrating_mexico }
@@ -13,6 +13,7 @@ CRU_mexican_infiltration = {
         remove_effect = {
             custom_effect_tooltip = CRU_fund_worker_strikes_tt
             hidden_effect = {
+                clr_country_flag = CRU_infiltrating_mexico
                 random_list = {
                     60 = { country_event = cruzoob.4 }
                     40 = { country_event = cruzoob.5 }
@@ -22,8 +23,8 @@ CRU_mexican_infiltration = {
     }
     CRU_siphon_state_funds = {
         icon = GFX_decision_hol_attract_foreign_investors
-        days_remove = 60
-        days_re_enable = 180
+        days_remove = 40
+        days_re_enable = 120
 
         available = {
             NOT = { has_country_flag = CRU_infiltrating_mexico }
@@ -34,6 +35,7 @@ CRU_mexican_infiltration = {
         remove_effect = {
             custom_effect_tooltip = CRU_siphon_state_funds_tt
             hidden_effect = {
+                clr_country_flag = CRU_infiltrating_mexico
                 random_list = {
                     60 = { country_event = cruzoob.6 }
                     40 = { country_event = cruzoob.7 }
@@ -43,8 +45,8 @@ CRU_mexican_infiltration = {
     }
     CRU_promote_anti_government_propaganda = {
         icon = GFX_decision_hol_radio_oranje
-        days_remove = 60
-        days_re_enable = 180
+        days_remove = 40
+        days_re_enable = 120
 
         available = {
             NOT = { has_country_flag = CRU_infiltrating_mexico }
@@ -55,6 +57,7 @@ CRU_mexican_infiltration = {
         remove_effect = {
             custom_effect_tooltip = CRU_promote_anti_government_propaganda_tt
             hidden_effect = {
+                clr_country_flag = CRU_infiltrating_mexico
                 random_list = {
                     60 = { country_event = cruzoob.8 }
                     40 = { country_event = cruzoob.9 }
@@ -64,8 +67,8 @@ CRU_mexican_infiltration = {
     }
     CRU_steal_stockpiled_equipment = {
         icon = GFX_decision_ger_military_buildup
-        days_remove = 60
-        days_re_enable = 180
+        days_remove = 40
+        days_re_enable = 120
 
         available = {
             NOT = { has_country_flag = CRU_infiltrating_mexico }
@@ -76,6 +79,7 @@ CRU_mexican_infiltration = {
         remove_effect = {
             custom_effect_tooltip = CRU_steal_stockpiled_equipment_tt
             hidden_effect = {
+                clr_country_flag = CRU_infiltrating_mexico
                 random_list = {
                     60 = { country_event = cruzoob.10 }
                     40 = { country_event = cruzoob.11}
