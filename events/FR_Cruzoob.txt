@@ -103,6 +103,127 @@ country_event = { # Cristero Exiles
     }
 }
 
+country_event = { # Fund Worker Strikes
+    id = cruzoob.4
+    title = cruzoob.4.t
+    desc = cruzoob.4.d
+    picture = GFX_report_event_crowd_in_prague
+    is_triggered_only = yes
+
+    option = {
+        name = cruzoob.4.a
+        MEX = {
+            add_timed_idea = {
+                idea = CRU_worker_strikes
+                days = 30
+            }
+        }
+    }
+}
+
+country_event = { # Fund Worker Strikes - Failed
+    id = cruzoob.5
+    title = cruzoob.5.t
+    desc = cruzoob.5.d
+    picture = GFX_report_event_german_detained_china
+    is_triggered_only = yes
+
+    option = {
+        name = cruzoob.5.a
+        add_political_power = -10
+    }
+}
+
+country_event = { # Siphon State Funds
+    id = cruzoob.6
+    title = cruzoob.6.t
+    desc = cruzoob.6.d
+    picture = GFX_report_event_generic_factory
+    is_triggered_only = yes
+
+    option = {
+        name = cruzoob.6
+        add_timed_idea = {
+            idea = CRU_siphoned_funds
+            days = 30
+        }
+    }
+}
+
+country_event = { # Siphon State Funds - Failed
+    id = cruzoob.7
+    title = cruzoob.7.t
+    desc = cruzoob.7.d
+    picture = GFX_report_event_generic_factory
+    is_triggered_only = yes
+
+    option = {
+        name = cruzoob.7.a
+        add_political_power = -10
+    }
+}
+
+country_event = { # Promote Anti-Government Propaganda
+    id = cruzoob.8
+    title = cruzoob.8.t
+    desc = cruzoob.8.d
+    picture = GFX_report_event_communist_leader
+    is_triggered_only = yes
+
+    option = {
+        name = cruzoob.8
+        MEX = {
+            add_timed_idea = {
+                idea = CRU_anti_government_propaganda
+                days = 30
+            }
+        }
+    }
+}
+
+country_event = { # Promote Anti-Government Propaganda - Failed
+    id = cruzoob.9
+    title = cruzoob.9.t
+    desc = cruzoob.9.d
+    picture = GFX_report_event_journalists_speech
+    is_triggered_only = yes
+
+    option = {
+        name = cruzoob.9.a
+        add_political_power = -10
+    }
+}
+
+country_event = { # Steal Stockpiled Equipment
+    id = cruzoob.10
+    title = cruzoob.10.t
+    desc = cruzoob.10.d
+    picture = GFX_report_event_generic_factory
+    is_triggered_only = yes
+
+    option = {
+        name = cruzoob.10
+        add_equipment_to_stockpile = {
+            type = infantry_equipment_0
+            amount = 100
+            producer = MEX
+        }
+    }
+}
+
+country_event = { # Steal Stockpiled Equipment - Failed
+    id = cruzoob.11
+    title = cruzoob.11.t
+    desc = cruzoob.11.d
+    picture = GFX_report_event_journalists_speech
+    is_triggered_only = yes
+
+    option = {
+        name = cruzoob.11.a
+        add_political_power = -10
+    }
+}
+
 country_event = { # Ask for German Advisors
     id = cruzoob.100
     title = cruzoob.100.t

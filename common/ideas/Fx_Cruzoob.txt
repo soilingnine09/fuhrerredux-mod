@@ -7,16 +7,18 @@ ideas = {
             allowed = { original_tag = CRU }
             picture = PAP_tenth_crusade
             modifier = {
-                army_org_factor = 0.05
-                out_of_supply_factor = -0.05
+                industrial_capacity_factory = 0.05
+                industrial_capacity_dockyard = 0.05
+                production_speed_buildings_factor = 0.05
             }
         }
         CRU_spirit_of_the_faithful2 = {
             allowed = { original_tag = CRU }
             picture = PAP_tenth_crusade
             modifier = {
-                army_org_factor = 0.1
-                out_of_supply_factor = -0.1
+                industrial_capacity_factory = 0.15
+                industrial_capacity_dockyard = 0.15
+                production_speed_buildings_factor = 0.15
             }
         }
         CRU_non_existent_industry = {
@@ -30,6 +32,8 @@ ideas = {
             allowed = { original_tag = CRU }
             picture = triumphant_will
             modifier = {
+                army_org_factor = 0.05
+                out_of_supply_factor = -0.05
                 conscription_factor = 0.05
                 army_core_attack_factor = 0.05
                 army_core_defence_factor = 0.05
@@ -39,6 +43,8 @@ ideas = {
             allowed = { original_tag = CRU }
             picture = triumphant_will
             modifier = {
+                army_org_factor = 0.15
+                out_of_supply_factor = -0.15
                 conscription_factor = 0.15
                 army_core_attack_factor = 0.05
                 army_core_defence_factor = 0.05
@@ -48,6 +54,8 @@ ideas = {
             allowed = { original_tag = CRU }
             picture = triumphant_will
             modifier = {
+                army_org_factor = 0.15
+                out_of_supply_factor = -0.15
                 surrender_limit = 0.1
                 conscription_factor = 0.15
                 army_core_attack_factor = 0.05
@@ -144,6 +152,28 @@ ideas = {
             picture = tfv_can_conscription_crisis
             modifier = {
                 training_time_factor = -0.15
+            }
+        }
+        # Mexican Debuff
+        CRU_worker_strikes = {
+            picture = FRA_factory_strikes
+            modifier = {
+                industrial_capacity_factory = -0.05
+                industrial_capacity_dockyard = -0.05
+            }
+        }
+        CRU_siphoned_funds = {
+            picture = generic_foreign_capital
+            modifier = {
+                consumer_goods_factor = -0.05
+                production_speed_buildings_factor = 0.15
+            }
+        }
+        CRU_anti_government_propaganda = {
+            picture = chi_war_of_resistance2
+            modifier = {
+                stability_factor = -0.05
+                war_support_factor = -0.05
             }
         }
     }

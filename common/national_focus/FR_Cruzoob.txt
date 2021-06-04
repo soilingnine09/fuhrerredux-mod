@@ -372,12 +372,7 @@ focus_tree = {
         prerequisite = { focus = CRU_waiting_and_preparing }
         relative_position_id = CRU_waiting_and_preparing
         completion_reward = {
-            add_tech_bonus = {
-                category = encryption_tech
-                category = decryption_tech
-                bonus = 0.75
-                uses = 2
-            }
+            unlock_decision_category_tooltip = CRU_mexican_infiltration
             hidden_effect = {
                 country_event = { id = cruzoob.103 days = 120 }
             }
