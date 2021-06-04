@@ -99,11 +99,9 @@ set_politics = {
 }
 
 create_country_leader = {
-	
-	name = " Marcus James Hugins"
+	name = "Marcus James Hugins"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
 	expire = "1965.1.1"
 	ideology = paternal_autocrat_subtype
-	traits = { 		
-	}
+	traits = { }
 }

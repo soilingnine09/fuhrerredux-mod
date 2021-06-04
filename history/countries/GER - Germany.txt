@@ -140,116 +140,95 @@ set_popularities = {
     valkist = 40
 }
 
-
 create_country_leader = {
-	name = "Adam Dressler"
-	desc = "POLITICS_ADAM_DRESSLER_DESC"
-	picture = "Portrait_Germany_Adam_Dressler_old.tga"
+	name = "Wilhelm Pieck"
+	desc = "POLITICS_WILHELM_PIECK_DESC"
+	picture = "Portrait_Germany_Wilhelm_Pieck_fx.tga"
 	expire = "1965.1.1"
-	ideology = valkist_subtype
-	traits = {
-	}
+	ideology = vanguardist_subtype
+	traits = { }
 }
-
-create_country_leader = {
-	name = "Hermann Göring"
-	desc = "POLITICS_HERMANN_GORING_DESC"
-	picture = "Portrait_Germany_Hermann_Goring.tga"
-	expire = "1965.1.1"
-	ideology = national_populist_subtype
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Ritter von Leeb"
-	desc = "POLITICS_RITTER_VON_LEEB_DESC"
-	picture = "Portrait_Germany_Ritter_Von_Leeb.tga"
-	expire = "1965.1.1"
-	ideology = paternal_autocrat_subtype
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Wilhelm III"
-	desc = "POLITICS_WILHELM_III_DESC"
-	picture = "Portrait_Germany_William_III.tga"
-	expire = "1965.1.1"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Heinrich Brüning"
-	desc = "POLITICS_HEINRICH_BRUNING_DESC"
-	picture = "Portrait_Germany_Heinrich_Bruning.tga"
-	expire = "1965.1.1"
-	ideology = social_conservative_subtype
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Gustav Stresemann"
-	desc = "POLITICS_GUSTAV_STRESEMANN_DESC"
-	picture = "Portrait_Germany_Gustav_Stresemann.tga"
-	expire = "1965.1.1"
-	ideology = market_liberal_subtype
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Theodor Heuss"
-	desc = "POLITICS_THEODOR_HEUSS_DESC"
-	picture = "Portrait_Germany_Heuss_Theodor.tga"
-	expire = "1965.1.1"
-	ideology = social_liberal_subtype
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Otto Wels"
-	desc = "POLITICS_OTTO_WELS_DESC"
-	picture = "Portrait_Germany_Otto_Wels.tga"
-	expire = "1965.1.1"
-	ideology = social_democrat_subtype
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Walter Ulbricht"
-	desc = "POLITICS_WLATER_ULBRICHT_DESC"
-	picture = "Portrait_Germany_Walter_Ulbricht.tga"
-	expire = "1965.1.1"
-	ideology = libertarian_socialist_subtype
-	traits = {
-	}
-}
-
 create_country_leader = {
 	name = "Ernst Thälmann"
 	desc = "POLITICS_ERNST_THALMANN_DESC"
 	picture = "Portrait_Germany_Ernst_Thalmann.tga"
 	expire = "1965.1.1"
 	ideology = collectivist_subtype
-	traits = {
-	}
+	traits = { }
+}
+create_country_leader = {
+	name = "Walter Ulbricht"
+	desc = "POLITICS_WLATER_ULBRICHT_DESC"
+	picture = "Portrait_Germany_Walter_Ulbricht.tga"
+	expire = "1965.1.1"
+	ideology = libertarian_socialist_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Otto Wels"
+	desc = "POLITICS_OTTO_WELS_DESC"
+	picture = "Portrait_Germany_Otto_Wels.tga"
+	expire = "1965.1.1"
+	ideology = social_democrat_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Theodor Heuss"
+	desc = "POLITICS_THEODOR_HEUSS_DESC"
+	picture = "Portrait_Germany_Heuss_Theodor.tga"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Gustav Stresemann"
+	desc = "POLITICS_GUSTAV_STRESEMANN_DESC"
+	picture = "Portrait_Germany_Gustav_Stresemann.tga"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Heinrich Brüning"
+	desc = "POLITICS_HEINRICH_BRUNING_DESC"
+	picture = "Portrait_Germany_Heinrich_Bruning.tga"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Wilhelm III"
+	desc = "POLITICS_WILHELM_III_DESC"
+	picture = "Portrait_Germany_William_III.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Ritter von Leeb"
+	desc = "POLITICS_RITTER_VON_LEEB_DESC"
+	picture = "Portrait_Germany_Wilhelm_Ritter_von_Leeb_fx.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Hermann Göring"
+	desc = "POLITICS_HERMANN_GORING_DESC"
+	picture = "Portrait_Germany_Hermann_Goring_fx.tga"
+	expire = "1965.1.1"
+	ideology = national_populist_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Adam Dressler"
+	desc = "POLITICS_ADAM_DRESSLER_DESC"
+	picture = "Portrait_Germany_Adam_Dressler_old.tga"
+	expire = "1965.1.1"
+	ideology = valkist_subtype
+	traits = { }
 }
 
-create_country_leader = {
-	name = "Wilhelm Pieck"
-	desc = "POLITICS_WILHELM_PIECK_DESC"
-	picture = "Portrait_Germany_Wilhelm_Pieck.tga"
-	expire = "1965.1.1"
-	ideology = vanguardist_subtype
-	traits = {
-	}
-}
 
 add_namespace = {
 	name = "ger_unit_leader"
@@ -258,8 +237,7 @@ add_namespace = {
 
 create_field_marshal = {
 	name = "Gerd von Rundstedt"
-	desc = "GER_Gerd_von_Rundstedt_desc"
-	picture = "Portrait_Germany_Gerd_von_Rundstedt.dds"
+	picture = "Portrait_Germany_Gerd_von_Rundstedt_fx.tga"
 	traits = { defensive_doctrine offensive_doctrine old_guard }
 	skill = 3
 	attack_skill = 3
@@ -268,11 +246,9 @@ create_field_marshal = {
 	logistics_skill = 2
 	id = 1
 }
-
 create_field_marshal = {
 	name = "Günther von Kluge"
-	desc = "GER_Gunter_von_Kluge_desc"
-	picture = "Portrait_Germany_Gunther_von_Kluge.dds"
+	picture = "Portrait_Germany_Gunther_Kluge_fx.tga"
 	traits = { offensive_doctrine armor_officer }
 	skill = 3
 	id = 2
@@ -281,88 +257,9 @@ create_field_marshal = {
 	planning_skill = 2
 	logistics_skill = 3
 }
-
-create_corps_commander = {
-	name = "Friedrich Paulus"
-	desc = "GER_Friedrich_Paulus_desc"
-	picture = "Portrait_Germany_Friedrich_Paulus.dds"
-	traits = { trait_cautious armor_officer }
-	skill = 1
-	id = 3
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Erwin Rommel"
-	desc = "GER_Erwin_Rommel_desc"
-	picture = "Portrait_Germany_Erwin_Rommel.dds"
-	traits = { trait_reckless war_hero armor_officer media_personality }
-	skill = 4
-	id = 4
-	attack_skill = 4
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Erich von Manstein"
-	desc = "GER_Erich_von_Manstein_desc"
-	picture = "Portrait_Germany_Erich_von_Manstein.dds"
-	traits = { trickster armor_officer brilliant_strategist trait_engineer }
-	skill = 4
-	id = 5
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 4
-}
-
-create_corps_commander = {
-	name = "Wilhelm List"
-	desc = "GER_Wilhelm_List_desc"
-	picture = "Portrait_Germany_Wilhelm_List.dds"
-	traits = { career_officer inflexible_strategist }
-	skill = 2
-	id = 7
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Ewald von Kleist"
-	desc = "GER_Ewald_von_Kleist_desc"
-	picture = "Portrait_Germany_Ewald_von_Kleist.dds"
-	traits = { armor_officer trait_cautious }
-	skill = 2
-	id = 8
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-# create_corps_commander = {
-	# name = "Fedor von Bock"
-	# picture = "Portrait_Germany_Fedor_von_Bock.dds"
-	# traits = { harsh_leader trait_cautious }
-	# skill = 4
-	# id = 9
-	# attack_skill = 4
-	# defense_skill = 3
-	# planning_skill = 4
-	# logistics_skill = 2
-# }
-
 create_field_marshal = {
 	name = "Walter Model"
-	desc = "GER_Walter_Model_desc"
-	picture = "Portrait_Germany_Walter_Model.dds"
+	picture = "Portrait_Germany_Walter_Model_fx.tga"
 	traits = { defensive_doctrine brilliant_strategist trait_cautious politically_connected }
 	skill = 3
 	id = 10
@@ -372,6 +269,61 @@ create_field_marshal = {
 	logistics_skill = 2
 }
 
+create_corps_commander = {
+	name = "Friedrich Paulus"
+	picture = "Portrait_Germany_Friedrich_Paulus_fx.tga"
+	traits = { trait_cautious armor_officer }
+	skill = 1
+	id = 3
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Erwin Rommel"
+	picture = "Portrait_Germany_Erwin_Rommel_fx.tga"
+	traits = { trait_reckless war_hero armor_officer media_personality }
+	skill = 4
+	id = 4
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Erich von Manstein"
+	picture = "Portrait_Germany_Erich_von_Manstein_fx.tga"
+	traits = { trickster armor_officer brilliant_strategist trait_engineer }
+	skill = 4
+	id = 5
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "Wilhelm List"
+	picture = "Portrait_Germany_Wilhelm_List.dds"
+	traits = { career_officer inflexible_strategist }
+	skill = 2
+	id = 7
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Ewald von Kleist"
+	picture = "Portrait_Germany_Ewald_von_Kleist_fx.tga"
+	traits = { armor_officer trait_cautious }
+	skill = 2
+	id = 8
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
 create_corps_commander = {
 	name = "Maximilian von Weichs"
 	desc = "GER_Mazimilian_von_Weichs"
@@ -384,11 +336,9 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 4
 }
-
 create_corps_commander = {
 	name = "Wilhelm Ritter von Leeb"
-	desc = "GER_Wilhelm_Ritter_von_Leeb_desc"
-	picture = "Portrait_Germany_Wilhelm_Ritter_von_Leeb.dds"
+	picture = "Portrait_Germany_Wilhelm_Ritter_von_Leeb_fx.tga"
 	traits = { old_guard infantry_officer }
 	skill = 3
 	id = 13
@@ -397,7 +347,6 @@ create_corps_commander = {
 	planning_skill = 1
 	logistics_skill = 2
 }
-
 create_corps_commander = {
 	name = "Georg-Hans Reinhardt"
 	picture = "Portrait_Germany_Georg_von_Reinhardt.dds"
@@ -409,10 +358,8 @@ create_corps_commander = {
 	planning_skill = 4
 	logistics_skill = 3
 }
-
 create_corps_commander = {
 	name = "Walter Krüger"
-	desc = "GER_Walter_Kruger_desc"
 	picture = "Portrait_Germany_Walter_Kruger.dds"
 	traits = { armor_officer trait_reckless politically_connected}
 	skill = 3
@@ -422,7 +369,6 @@ create_corps_commander = {
 	planning_skill = 1
 	logistics_skill = 3
 }
-
 create_corps_commander = {
 	name = "Kurt Student"
 	picture = "Portrait_Germany_Kurt_Student.dds"
@@ -434,11 +380,9 @@ create_corps_commander = {
 	planning_skill = 4
 	logistics_skill = 3
 }
-
 create_corps_commander = {
 	name = "Erwin von Witzleben"
-	desc = "GER_Erwin_von_Witzleben_desc"
-	picture = "Portrait_Germany_Erwin_von_Witzleben.dds"
+	picture = "Portrait_Germany_Erwin_von_Witzleben_fx.tga"
 	traits = { infantry_officer career_officer }
 	skill = 4
 	id = 17
@@ -447,10 +391,9 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 4
 }
-
 create_corps_commander = {
 	name = "Hermann Hoth"
-	picture = "Portrait_Germany_Herman_Hoth.dds"
+	picture = "Portrait_Germany_Hermann_Hoth_fx.tga"
 	traits = { trait_reckless armor_officer }
 	skill = 3
 	id = 18
@@ -459,7 +402,6 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 3
 }
-
 create_corps_commander = {
 	name = "Johannes Blaskowitz"
 	picture = "Portrait_Germany_Johannes_Blaskowitz.dds"
@@ -471,10 +413,8 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 2
 }
-
 create_corps_commander = {
 	name = "Paul Hausser"
-	desc = "GER_Paul_Hausser_desc"
 	picture = "Portrait_Germany_Paul_Hausser.dds"
 	traits = {  armor_officer politically_connected }
 	skill = 4
@@ -484,10 +424,8 @@ create_corps_commander = {
 	planning_skill = 4
 	logistics_skill = 3
 }
-
 create_corps_commander = {
 	name = "Friedrich Schulz"
-	desc = "GER_Friedrich_Schulz_desc"
 	picture = "Portrait_Germany_Friedrich_Schulz.dds"
 	traits = { infantry_officer }
 	skill = 3
@@ -497,10 +435,9 @@ create_corps_commander = {
 	planning_skill = 1
 	logistics_skill = 3
 }
-
 create_corps_commander = {
 	name = "Georg von Küchler"
-	picture = "Portrait_Germany_Georg_von_Kuchler.dds"
+	picture = "Portrait_Germany_Georg_Kuchler_fx.tga"
 	traits = {  }
 	skill = 4
 	id = 22
@@ -509,11 +446,9 @@ create_corps_commander = {
 	planning_skill = 4
 	logistics_skill = 4
 }
-
 create_corps_commander = {
 	name = "Alfred Jodl"
-	desc = "GER_Alfred_Jodl_desc"
-	picture = "Portrait_Germany_Alfred_Jodl.dds"
+	picture = "Portrait_Germany_Alfred_Ferdinand_Jodl.tga"
 	traits = { politically_connected career_officer }
 	skill = 3
 	id = 23
@@ -522,7 +457,6 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 3
 }
-
 create_corps_commander = {
 	name = "Sepp Dietrich"
 	desc = "GER_Sepp_Dietrich_desc"
@@ -535,10 +469,9 @@ create_corps_commander = {
 	planning_skill = 4
 	logistics_skill = 4
 }
-
 create_corps_commander = {
 	name = "Hasso von Manteuffel"
-	picture = "HassoVonManteuffel.tga"
+	picture = "Portrait_Germany_Hasso_von_Manteuffel.tga"
 	traits = { armor_officer career_officer trait_cautious }
 	skill = 4
 	id = 25
@@ -547,11 +480,9 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 3
 }
-
 create_corps_commander = {
 	name = "Albert Kesselring"
-	desc = "GER_Albert_Kesselring_desc"
-	picture = "Portrait_Germany_Albert_Kesselring.dds"
+	picture = "Portrait_Germany_Albert_Kesselring_fx.tga"
 	traits = { brilliant_strategist trait_cautious war_hero }
 	skill = 4
 	id = 32
@@ -560,49 +491,40 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 4
 }
-
 create_corps_commander = {
 	name = "Gotthard Heinrici"
-	picture = "Portrait_Germany_Gotthard_Heinrici.dds"
+	picture = "Portrait_Germany_Gotthard_Heinrici_fx.tga"
 	traits = { trait_engineer infantry_officer }
 	skill = 3
-
 	id = 33
 	attack_skill = 3
 	defense_skill = 4
 	planning_skill = 3
 	logistics_skill = 3
 }
-
-
 create_corps_commander = {
 	name = "Friedrich Dollmann"
-	portrait_path = "gfx/leaders/GER/Friedrich_Dollmann.tga"
+	picture = "Portrait_Germany_Friedrich_Dollmann.tga"
 	traits = { trait_engineer infantry_officer }
 	skill = 3
-
 	id = 44
 	attack_skill = 3
 	defense_skill = 4
 	planning_skill = 3
 	logistics_skill = 3
 }
-
 create_corps_commander = {
 	name = "Eduard Deisenhofer"
-	picture = "Portrait_Eduard_Deisenhofer.tga"
+	picture = "Portrait_Germany_Eduard_Deisenhofer.tga"
 	traits = { }
 	skill = 2
-	
 	attack_skill = 2
 	defense_skill = 2
 	planning_skill = 2
 	logistics_skill = 2
 }
-
 create_corps_commander = {
 	name = "Ernst-Eberhard Hell"
-	desc = "GER_Ernst_Eberhard_hell_desc"
 	picture = "Portrait_Germany_Ernst-Eberhard_Hell.dds"
 	traits = { winter_specialist trait_engineer war_hero }
 	skill = 3
@@ -612,7 +534,6 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 2
 }
-
 create_corps_commander = {
 	name = "Felix Steiner"
 	desc = "GER_Felix_Steiner_desc"
@@ -625,11 +546,9 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 2
 }
-
 create_corps_commander = {
 	name = "Otto Kumm"
-	desc = ""
-	portrait_path = "gfx/leaders/GER/Otto_Kumm.tga"
+	picture = "Portrait_Germany_Otto_Kumm.tga"
 	traits = {  }
 	skill = 3
 	attack_skill = 3
@@ -637,11 +556,9 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 2
 }
-
-
 create_corps_commander = {
 	name = "Adolf Strauss"
-	portrait_path = "gfx/leaders/GER/AdolfStrauss.tga"
+	picture = "Portrait_Germany_Adolf_Strauss.tga"
 	traits = {  }
 	skill = 2
 	id = 36
@@ -650,14 +567,9 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 2
 }
-
-
-
-
 create_corps_commander = {
 	name = "Carl Heinrich von Stuelpnagel"
-	desc = "GER_Carl_Heinrich_desc"
-	portrait_path = "gfx/leaders/GER/CarlHeinrichVonStuelpNagel.tga"
+	picture = "Portrait_Germany_Carl_Heinrich_von_Stuelpnagel.tga"
 	traits = { infantry_officer  }
 	skill = 3
 	id = 37
@@ -666,11 +578,9 @@ create_corps_commander = {
 	planning_skill = 4
 	logistics_skill = 2
 }
-
 create_corps_commander = {
 	name = "Erich Hoepner"
-	desc = "GER_Erich_Hoepner_desc"
-	portrait_path = "gfx/leaders/GER/ErichHoepner.tga"
+	picture = "Portrait_Germany_Erich_Hoepner.tga"
 	traits = { armor_officer  cavalry_officer  }
 	skill = 4
 	id = 38
@@ -679,13 +589,9 @@ create_corps_commander = {
 	planning_skill = 1
 	logistics_skill = 2
 }
-
-
-
 create_corps_commander = {
 	name = "Eugen Ritter von Schobert"
-	desc = "GER_Eugen_Schobert_desc"
-	portrait_path = "gfx/leaders/GER/EugenRittervonSchobert.tga"
+	picture = "Portrait_Eugen_Ritter_von_Schobert.tga"
 	traits = { politically_connected harsh_leader }
 	skill = 3
 	id = 39
@@ -694,13 +600,11 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 2
 }
-
-
 create_corps_commander = {
 	name = "Ferdinand Schoerner"
 	desc = "GER_Ferdinand_Schoerner_desc"
-	portrait_path = "gfx/leaders/GER/FerdinandSchoerner.tga"
-	traits = {politically_connected	trait_reckless harsh_leader infantry_officer   }
+	picture = "Portrait_Germany_Ferdinand_Schorner_fx.tga"
+	traits = { politically_connected	trait_reckless harsh_leader infantry_officer }
 	skill = 3
 	id = 40
 	attack_skill = 3
@@ -708,41 +612,29 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 2
 }
-
-
 create_corps_commander = {
 	name = "Rüdiger von der Goltz"
-	desc = ""
-	portrait_path = "gfx/leaders/GER/rudiger_von_der_goltz.tga"
+	picture = "Portrait_Germany_Rudiger_von_der_Goltz.tga"
 	traits = { trait_reckless harsh_leader }
 	skill = 3
-
 	attack_skill = 3
 	defense_skill = 1
 	planning_skill = 1
 	logistics_skill = 3
 }
-
-
 create_corps_commander = {
 	name = "Willy Rohr"
-	desc = ""
-	portrait_path = "gfx/leaders/GER/willy_rohr.tga"
+	picture = "Portrait_Germany_Willy_Rohr.tga"
 	traits = { infantry_officer }
 	skill = 3
-
 	attack_skill = 4
 	defense_skill = 1
 	planning_skill = 3
 	logistics_skill = 2
 }
-
-
-
 create_corps_commander = {
 	name = "Gottlob Berger"
-	desc = "GER_Gottlob_Berger_desc"
-	portrait_path = "gfx/leaders/GER/gottlobberger.tga"
+	picture = "Portrait_Germany_Gottlob_Berger.tga"
 	traits = { trait_reckless harsh_leader }
 	skill = 1
 	id = 41
@@ -751,12 +643,9 @@ create_corps_commander = {
 	planning_skill = 1
 	logistics_skill = 1
 }
-
-
 create_corps_commander = {
 	name = "Helmuth Weidling"
-	desc = "GER_Helmuth_Weidling_desc"
-	portrait_path = "gfx/leaders/GER/HelmuthWeidling.tga"
+	picture = "Portrait_Germany_Helmuth_Weidling.tga"
 	traits = { bearer_of_artillery fortress_buster  }
 	skill = 3
 	id = 42
@@ -765,12 +654,9 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 2
 }
-
-
 create_corps_commander = {
 	name = "Josias zu Waldeck-Pyrmont"
-	desc = "GER_Waldeck_Pyrmont_desc"
-	portrait_path = "gfx/leaders/GER/JosiasWaldeckPyrmont.tga"
+	picture = "Portrait_Germany_Josias_Waldeck_Pyrmont.tga"
 	traits = {  }
 	skill = 1
 	id = 43
@@ -779,12 +665,9 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 2
 }
-
-
 create_corps_commander = {
 	name = "Wilhelm Bittrich"
-	desc = "GER_Wilhelm_bittrich_desc"
-	portrait_path = "gfx/leaders/GER/Wilhelm_Bittrich.tga"
+	picture = "Portrait_Germany_Wilhelm_Bittrich.tga"
 	traits = { armor_officer  cavalry_officer }
 	skill = 3
 	attack_skill = 3
@@ -792,12 +675,9 @@ create_corps_commander = {
 	planning_skill = 1
 	logistics_skill = 2
 }
-
-
 create_corps_commander = {
 	name = "Walther Wenck"
-	desc = "GER_Walther_Wenck_desc"
-	portrait_path = "gfx/leaders/GER/WaltherWenck.tga"
+	picture = "Portrait_Germany_Walther_Wenck.tga"
 	traits = {  armor_officer  infantry_officer}
 	skill = 3
 	attack_skill = 3
@@ -805,12 +685,10 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 3
 }
-
-
 create_corps_commander = {
 	name = "Walther von Reichenau"
 	desc = "GER_von_Reichenau_desc"
-	portrait_path = "gfx/leaders/GER/Portrait_Germany_WaltervonReichenau.tga"
+	picture = "Portrait_Germany_Walter_von_Reichenau.tga"
 	traits = { career_officer skilled_staffer expert_delegator }
 	skill = 3
 	attack_skill = 3
@@ -818,12 +696,9 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 2
 }
-
-
 create_corps_commander = {
 	name = "Albert Ritter von Beckh"
-	desc = "GER_von_Beckh_desc"
-	portrait_path = "gfx/leaders/GER/Albert_Ritter_von_Beckh.tga"
+	picture = "Portrait_Germany_Albert_Ritter_von_Beckh.tga"
 	traits = {  }
 	skill = 3
 	attack_skill = 2
@@ -831,12 +706,9 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 2
 }
-
-
 create_corps_commander = {
 	name = "Alfred von Randow"
-	desc = "GER_von_Randow_desc"
-	portrait_path = "gfx/leaders/GER/Alfred_von_Randow.tga"
+	picture = "Portrait_Germany_Alfred_von_Randow.tga"
 	traits = { skilled_staffer infantry_officer }
 	skill = 4
 	attack_skill = 3
@@ -844,12 +716,9 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 4
 }
-
-
 create_corps_commander = {
 	name = "Eugen Meindl"
-	desc = "GER_Meindl_desc"
-	portrait_path = "gfx/leaders/GER/Eugen_Meindl.tga"
+	picture = "Portrait_Germany_Eugen_Meindl.tga"
 	traits = { career_officer commando  }
 	skill = 3
 	attack_skill = 3
@@ -857,12 +726,9 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 2
 }
-
-
 create_corps_commander = {
 	name = "Franz von Stephani"
-	desc = "GER_von_Stephani_desc"
-	portrait_path = "gfx/leaders/GER/Franz_von_Stephani.tga"
+	picture = "Portrait_Germany_Franz_von_Stephani.tga"
 	traits = { politically_connected }
 	skill = 3
 	attack_skill = 3
@@ -870,12 +736,9 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 2
 }
-
-
 create_corps_commander = {
 	name = "Heinrich von Bayern"
-	desc = "GER_von_Bayern_desc"
-	portrait_path = "gfx/leaders/GER/H_von_Bayern.tga"
+	picture = "Portrait_Germany_Heinrich_von_Bayern.tga"
 	traits = { politically_connected commando trait_mountaineer  }
 	skill = 3
 	attack_skill = 3
@@ -883,11 +746,9 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 2
 }
-
 create_corps_commander = {
 	name = "Franz Ritter von Epp"
-	desc = "GER_von_Epp_desc"
-	portrait_path = "gfx/leaders/GER/Franz_Ritter_von_Epp.tga"
+	picture = "Portrait_Germany_Franz_Ritter_von_Epp.tga"
 	traits = { politically_connected }
 	skill = 3
 	attack_skill = 3
@@ -895,12 +756,9 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 2
 }
-
-
 create_corps_commander = {
 	name = "Max Otto von Stierlitz"
-	desc = "GER_von_Stierlitz_desc"
-	portrait_path = "gfx/leaders/GER/Max_Otto_von_Stierlitz.tga"
+	picture = "Portrait_Germany_Max_Otto_von_Stierlitz.tga"
 	traits = { politically_connected }
 	skill = 3
 	attack_skill = 3
@@ -908,11 +766,9 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 2
 }
-
-
 create_corps_commander = {
 	name = "Walter Caspari"
-	portrait_path = "gfx/leaders/GER/Caspari.tga"
+	picture = "Portrait_Germany_Walter_Caspari.tga"
 	traits = { infantry_officer }
 	skill = 3
 	attack_skill = 3
@@ -920,11 +776,9 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 3
 }
-
-
 create_corps_commander = {
 	name = "Gerhard Rossbach"
-	portrait_path = "gfx/leaders/GER/Rossbach.tga"
+	picture = "Portrait_Germany_Gerhard_Rossbach.tga"
 	traits = { politically_connected  }
 	skill = 4
 	attack_skill = 4
@@ -932,11 +786,9 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 3
 }
-
-
 create_corps_commander = {
 	name = "Walter Weiss"
-	portrait_path = "gfx/leaders/GER/Walter_Wei.tga"
+	picture = "Portrait_Germany_Walter_Weiss.tga"
 	traits = { }
 	skill = 3
 	attack_skill = 3
@@ -944,12 +796,9 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 2
 }
-
-
-
 create_corps_commander = {
 	name = "Albert Wodrig"
-	portrait_path = "gfx/leaders/GER/Albert_Wodrig.tga"
+	picture = "Portrait_Germany_Albert_Wodrig.tga"
 	traits = { }
 	skill = 3
 	attack_skill = 3
@@ -957,11 +806,9 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 2
 }
-
-
 create_corps_commander = {
 	name = "Erwin Jaenecke"
-	portrait_path = "gfx/leaders/GER/Erwin_Jaenecke.tga"
+	picture = "Portrait_Germany_Erwin_Jaenecke.tga"
 	traits = { }
 	skill = 3
 	attack_skill = 3
@@ -969,11 +816,9 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 2
 }
-
-
 create_corps_commander = {
 	name = "Heinrich Schulz"
-	portrait_path = "gfx/leaders/GER/Heinrich_Schulz.tga"
+	picture = "Portrait_Germany_Heinrich_Schulz.tga"
 	traits = { }
 	skill = 3
 	attack_skill = 3
@@ -981,12 +826,9 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 2
 }
-
-
-
 create_corps_commander = {
 	name = "Friedrich Fromm"
-	portrait_path = "gfx/leaders/GER/Friedrich_Fromm.tga"
+	picture = "Portrait_Germany_Friedrich_Fromm.tga"
 	traits = { }
 	skill = 3
 	attack_skill = 3
@@ -994,11 +836,9 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 2
 }
-
-
 create_corps_commander = {
 	name = "Karl Adolf Hollidt"
-	portrait_path = "gfx/leaders/GER/Karl_Adolf_Hollidt.tga"
+	picture = "Portrait_Germany_Karl_Adolf_Hollidt.tga"
 	traits = { }
 	skill = 3
 	attack_skill = 3
@@ -1006,10 +846,9 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 3
 }
-
 create_corps_commander = {
 	name = "Georg Lindemann"
-	portrait_path = "gfx/leaders/GER/Georg_Lindemann.tga"
+	picture = "Portrait_Germany_Georg_Lindemann.tga"
 	traits = { }
 	skill = 3
 	attack_skill = 3
@@ -1017,11 +856,9 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 2
 }
-
 create_corps_commander = {
 	name = "Artur Mahraun"
-	desc = "GER_Mahraun_desc"
-	portrait_path = "gfx/leaders/GER/Artur_Mahraun.tga"
+	picture = "Portrait_Germany_Artur_Mahraun.tga"
 	traits = { politically_connected infantry_officer }
 	skill = 3
 	attack_skill = 3
@@ -1029,23 +866,9 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 2
 }
-
-create_corps_commander = {
-	name = "Ferdinand Jodl"
-	desc = "GER_Jodl_desc"
-	portrait_path = "gfx/leaders/GER/Ferdinand_Jodl.tga"
-	traits = { politically_connected }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 2
-}
-
 create_corps_commander = {
 	name = "Horst Sabac el Cher"
-	desc = "GER_el_cher_desc"
-	portrait_path = "gfx/leaders/GER/horstsabacelcher.tga"
+	picture = "Portrait_Germany_Horst_Sabac_el_Cher.tga"
 	traits = { politically_connected }
 	skill = 1
 	attack_skill = 1
@@ -1053,12 +876,9 @@ create_corps_commander = {
 	planning_skill = 1
 	logistics_skill = 2
 }
-
-
 create_corps_commander = {
 	name = "Theodor Busse"
-	desc = "GER_Theodor_Busse_desc"
-	portrait_path = "gfx/leaders/GER/Theodor_Busse.tga"
+	picture = "Portrait_Germany_Theodor_Busse.tga"
 	traits = { armor_officer  cavalry_officer }
 	skill = 3
 	attack_skill = 3
@@ -1066,12 +886,9 @@ create_corps_commander = {
 	planning_skill = 1
 	logistics_skill = 2
 }
-
-
 create_corps_commander = {
 	name = "Hermann Balck"
-	desc = "GER_Hermann_Balck_desc"
-	portrait_path = "gfx/leaders/GER/Hermann_Balck.tga"
+	picture = "Portrait_Germany_Hermann_Balck.tga"
 	traits = { armor_officer  cavalry_officer }
 	skill = 3
 	attack_skill = 3
@@ -1079,11 +896,9 @@ create_corps_commander = {
 	planning_skill = 1
 	logistics_skill = 2
 }
-
-
 create_corps_commander = {
 	name = "Karl Strecker"
-	portrait_path = "gfx/leaders/GER/Karl_Strecker.tga"
+	picture = "Portrait_Germany_Karl_Strecker.tga"
 	traits = { }
 	skill = 2
 	attack_skill = 2
@@ -1091,11 +906,9 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 4
 }
-
 create_corps_commander = {
 	name = "Rudolf Schmidt"
-	desc = "GER_Schmidt_desc"
-	portrait_path = "gfx/leaders/GER/Rudolf_Schmidt.tga"
+	picture = "Portrait_Germany_Rudolf_Schmidt.tga"
 	traits = { infantry_officer skilled_staffer expert_delegator }
 	skill = 3
 	attack_skill = 3
@@ -1104,52 +917,24 @@ create_corps_commander = {
 	logistics_skill = 2
 }
 
-# create_navy_leader = {
-	# name = "Karl Dönitz"
-	# desc = "GER_Karl_Donitz_desc"
-	# picture = "Portrait_Germany_Karl_Donitz.dds"
-	# traits = { seawolf }
-	# skill = 5
-	# id = 26
-# }
-
-# create_navy_leader = {
-	# name = "Erich Raeder"
-	# desc = "GER_Erich_Raeder_desc"
-	# picture = "Portrait_Germany_Erich_Raeder.dds"
-	# traits = { blockade_runner }
-	# skill = 4
-	# id = 27
-# }
-
-# create_navy_leader = {
-	# name = "Alfred Saalwächter"
-	# desc = "GER_Alfred_Saalwachter_desc"
-	# picture = "Portrait_Germany_Alfred_Saalwachter.dds"
-	# traits = { old_guard_navy }
-	# skill = 4
-	# id = 28
-# }
 
 create_navy_leader = {
 	name = "Hermann Boehm"
-	picture = "Portrait_Germany_Hermann_Boehm.dds"
+	picture = "Portrait_Germany_Hermann_Boehm_fx.tga"
 	traits = { superior_tactician }
 	skill = 4
 	id = 29
 }
-
 create_navy_leader = {
 	name = "Wilhelm Marschall"
-	picture = "Portrait_Germany_Wilhelm_Marschall.dds"
+	picture = "Portrait_Germany_Wilhelm_Marschall_fx.tga"
 	traits = { old_guard_navy }
 	skill = 4
 	id = 30
 }
-
 create_navy_leader = {
 	name = "Günther Lütjens"
-	picture = "Portrait_Germany_Gunter_Lutjens.dds"
+	picture = "Portrait_Germany_Gunther_Lutjens_fx.tga"
 	traits = { superior_tactician }
 	skill = 3
 	id = 31

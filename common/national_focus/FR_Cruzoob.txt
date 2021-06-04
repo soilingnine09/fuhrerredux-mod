@@ -63,10 +63,10 @@ focus_tree = {
                     }
                 }
 
-                add_extra_state_shared_building_slots = 1
+                add_extra_state_shared_building_slots = 2
                 add_building_construction = {
                     type = industrial_complex
-                    level = 1
+                    level = 2
                     instant_build = yes
                 }
             }
@@ -92,10 +92,10 @@ focus_tree = {
                     }
                 }
 
-                add_extra_state_shared_building_slots = 1
+                add_extra_state_shared_building_slots = 2
                 add_building_construction = {
                     type = arms_factory
-                    level = 1
+                    level = 2
                     instant_build = yes
                 }
             }
@@ -192,7 +192,7 @@ focus_tree = {
             random_owned_controlled_state = {
                 limit = {
                     free_building_slots = {
-                        building = arms_factory
+                        building = industrial_complex
                         size > 0
                         include_locked = yes
                     }
@@ -235,7 +235,7 @@ focus_tree = {
             }
             add_offsite_building = {
                 type = industrial_complex
-                level = 2
+                level = 3
             }
         }
     }
@@ -542,6 +542,7 @@ focus_tree = {
                 is_faction_leader = yes
                 NOT = { has_war_with = ROOT }
             }
+            has_country_flag = CRU_has_exercises_with_ger
         }
         mutually_exclusive = { focus = CRU_a_native_alliance }
         prerequisite = { focus = CRU_friends_in_europe }
@@ -565,6 +566,7 @@ focus_tree = {
                 NOT = { has_war_with = ROOT }
                 has_government = valkist
             }
+            has_country_flag = CRU_has_exercises_with_bol
         }
         mutually_exclusive = { focus = CRU_join_the_stahlpakt }
         prerequisite = { focus = CRU_joint_army_exercises }
