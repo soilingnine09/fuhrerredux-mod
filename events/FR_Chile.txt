@@ -104,12 +104,7 @@ country_event = { #military steps in
 		}
 
 		set_global_flag = CARLOS_COUP
-			hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-			}
+		remove_every_minister = yes
 		add_ideas = {
 			CHL_Carlos_Ibanez_hog_pau
 			CHL_Alberto_Edwards_Vives_for_pau
@@ -142,110 +137,60 @@ country_event = { #40 elections
 	mean_time_to_happen = { days = 1 }
 	option = {
 		name = chl.3.a
-			hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-			}
-		add_ideas = CHL_Eduardo_Cruz_Coke_hog_sco
-		add_ideas = CHL_Rafael_Gumucio_Vergara_for_sco
-		add_ideas = CHL_Ramon_Subercaseaux_Perez_eco_sco
-		add_ideas = CHL_Eduardo_Frei_Montalva_sec_sco
+		remove_every_minister = yes
+		add_ideas = {
+			CHL_Eduardo_Cruz_Coke_hog_sco
+			CHL_Rafael_Gumucio_Vergara_for_sco
+			CHL_Ramon_Subercaseaux_Perez_eco_sco
+			CHL_Eduardo_Frei_Montalva_sec_sco
+		}
 		set_politics = {
 			ruling_party = social_conservative
 		}
-			add_popularity = {
-				ideology = social_conservative popularity = 0.2
+		add_popularity = {
+			ideology = social_conservative popularity = 0.2
 		}
 		hidden_effect = {
 			set_global_flag = ECCWON
-			set_politics = { ruling_party = social_conservative }
-			create_country_leader = {
-				name = "Eduardo Cruz-Coke"
-				desc = "ECC_DESC"
-				picture = "ECC.tga"
-				expire = "1965.1.1"
-				ideology = social_conservative_subtype
-				traits = {
-				}
-			}
-			random_country = {
-				limit = { NOT = { TAG = CHL } }
-			}
 		}
 	}
 
 	option = {
 		name = chl.3.b
-			hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-			}
-		add_ideas = CHL_Gustavo_Ross_hog_mli
-		add_ideas = CHL_Manuel_Rivas_Vicuna_for_mli
-		add_ideas = CHL_Jorge_Silva_Somarriva_eco_mli
-		add_ideas = CHL_Enrique_Zanartu_Prieto_sec_mli
+		remove_every_minister = yes
+		add_ideas = {
+			CHL_Gustavo_Ross_hog_mli
+			CHL_Manuel_Rivas_Vicuna_for_mli
+			CHL_Jorge_Silva_Somarriva_eco_mli
+			CHL_Enrique_Zanartu_Prieto_sec_mli
+		}
 		set_politics = {
 			ruling_party = market_liberal
 		}
-			add_popularity = {
-				ideology = market_liberal popularity = 0.25
+		add_popularity = {
+			ideology = market_liberal popularity = 0.25
 		}
 		hidden_effect = {
 			set_global_flag = GRWON
-			set_politics = { ruling_party = market_liberal }
-			create_country_leader = {
-				name = "Gustavo Ross"
-				desc = "GR_DESC"
-				picture = "gustavo_ross.tga"
-				expire = "1965.1.1"
-				ideology = market_liberal_subtype
-				traits = {
-				}
-			}
-			random_country = {
-				limit = { NOT = { TAG = CHL } }
-			}
 		}
 	}
 
 	option = {
 		name = chl.3.c
-			hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-			}
-		add_ideas = CHL_Marmaduque_Grove_hog_sde
-		add_ideas = CHL_Salvador_Allende_for_sde
-		add_ideas = CHL_Bernardo_Ibanez_Aguila_eco_lso
-		add_ideas = CHL_Arturo_Bianchi_sec_sde
+		remove_every_minister = yes
+		add_ideas = {
+			CHL_Marmaduque_Grove_hog_sde
+			CHL_Salvador_Allende_for_sde
+			CHL_Bernardo_Ibanez_Aguila_eco_lso
+			CHL_Arturo_Bianchi_sec_sde
+		}
 		set_politics = {
 			ruling_party = social_democrat
 		}
-			add_popularity = {
-				ideology = social_democrat popularity = 0.25
+		add_popularity = {
+			ideology = social_democrat popularity = 0.25
 		}
-		hidden_effect = {
-			set_global_flag = MGWON
-			set_politics = { ruling_party = social_democrat }
-			create_country_leader = {
-				name = "Marmaduque Grove"
-				desc = "MG_DESC"
-				picture = "Marmaduque_Grove.tga"
-				expire = "1965.1.1"
-				ideology = social_democrat_subtype
-				traits = {
-				}
-			}
-			random_country = {
-				limit = { NOT = { TAG = CHL } }
-			}
-		}
+		set_global_flag = MGWON
 	}
 
 	option = {
@@ -257,20 +202,18 @@ country_event = { #40 elections
 		set_politics = {
 			ruling_party = social_liberal
 		}
-			add_popularity = {
-				ideology = social_liberal popularity = 0.1
-			}
-		set_global_flag = JARWON
+		add_popularity = {
+			ideology = social_liberal popularity = 0.1
+		}
 		hidden_effect = {
-			set_politics = { ruling_party = social_liberal }
+			set_global_flag = JARWON
 			create_country_leader = {
 				name = "Juan Antonio Rios"
-				desc = "JAR_DESC"
-				picture = "JuanAntonioRios.tga"
+				desc = "POLITICS_JUAN_ANTONIO_RIOS"
+				picture = "Portrait_Chile_Juan_Antonio_Rios.tga"
 				expire = "1965.1.1"
 				ideology = social_liberal_subtype
-				traits = {
-				}
+				traits = { }
 			}
 		}
 	}
@@ -326,26 +269,15 @@ country_event = { #Blanche takes over
 			ruling_party = authoritarian_democrat
 		}
 		add_popularity = {
-				ideology = authoritarian_democrat popularity = 0.2
+			ideology = authoritarian_democrat popularity = 0.2
 		}
-			hidden_effect = {
+		hidden_effect = {
 			remove_ideas_with_trait = head_of_government
-			}
-
+		}
 		add_ideas = CHL_Bartolome_Blanche_hog_ade
 		hidden_effect = {
 			set_country_flag = BLANCHEDEM
 			clr_global_flag = CARLOS_COUP
-			set_politics = { ruling_party = authoritarian_democrat }
-			create_country_leader = {
-				name = "Bartolomé Blanche"
-				desc = "BB_DESC"
-				picture = "Bartolome_Blanche.tga"
-				expire = "1965.1.1"
-				ideology = authoritarian_democrat_subtype
-				traits = {
-				}
-			}
 			random_country = {
 				limit = { NOT = { TAG = CHL } }
 			}
@@ -360,24 +292,20 @@ country_event = { #Blanche takes over
 		set_politics = {
 			ruling_party = paternal_autocrat
 		}
-			hidden_effect = {
+		hidden_effect = {
 			remove_ideas_with_trait = head_of_government
-			}
+		}
 		add_ideas = CHL_Bartolome_Blanche_hog_pau
 		hidden_effect = {
 			set_country_flag = BLANCHEPATER
 			set_politics = { ruling_party = paternal_autocrat }
 			create_country_leader = {
 				name = "Bartolomé Blanche"
-				desc = "BB_DESC"
-				picture = "Bartolome_Blanche.tga"
+				desc = "POLITICS_BARTOLOME_BLANCHE"
+				picture = "Portrait_Chile_Bartolome_Blanche.tga"
 				expire = "1965.1.1"
 				ideology = paternal_autocrat_subtype
-				traits = {
-				}
-			}
-			random_country = {
-				limit = { NOT = { TAG = CHL } }
+				traits = { }
 			}
 		}
 	}
@@ -403,7 +331,7 @@ country_event = { #what about socialism
 		name = chl.14.a
 		ai_chance = { factor = 50 }
 		add_popularity = {
-				ideology = social_democrat popularity = 0.05
+			ideology = social_democrat popularity = 0.05
 		}
 		country_event = { 
 			days = 100
@@ -414,7 +342,7 @@ country_event = { #what about socialism
 		name = chl.14.b
 		ai_chance = { factor = 50 }
 		add_popularity = {
-				ideology = social_democrat popularity = -0.05
+			ideology = social_democrat popularity = -0.05
 		}
 		add_political_power = -50
 		country_event = { 
@@ -433,122 +361,76 @@ country_event = { #blanche open elections
 	is_triggered_only = yes
 	option = {
 		name = chl.15.a
-			hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-			}
-		add_ideas = CHL_Eduardo_Cruz_Coke_hog_sco
-		add_ideas = CHL_Rafael_Gumucio_Vergara_for_sco
-		add_ideas = CHL_Ramon_Subercaseaux_Perez_eco_sco
-		add_ideas = CHL_Eduardo_Frei_Montalva_sec_sco
-		add_ideas = presidential_republic
+		remove_every_minister = yes
+		add_ideas = {
+			CHL_Eduardo_Cruz_Coke_hog_sco
+			CHL_Rafael_Gumucio_Vergara_for_sco
+			CHL_Ramon_Subercaseaux_Perez_eco_sco
+			CHL_Eduardo_Frei_Montalva_sec_sco
+			presidential_republic
+		}
 		set_politics = {
 			ruling_party = social_conservative
 		}
-			add_popularity = {
-				ideology = social_conservative popularity = 0.2
+		add_popularity = {
+			ideology = social_conservative popularity = 0.2
 		}
 		hidden_effect = {
 			set_global_flag = ECCWON
-			set_politics = { ruling_party = social_conservative }
-			create_country_leader = {
-				name = "Eduardo Cruz-Coke"
-				desc = "ECC_DESC"
-				picture = "ECC.tga"
-				expire = "1965.1.1"
-				ideology = social_conservative_subtype
-				traits = {
-				}
-			}
-			random_country = {
-				limit = { NOT = { TAG = CHL } }
-			}
 		}
 	}
 
 	option = {
 		name = chl.15.b
-			hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-			}
-		add_ideas = CHL_Gustavo_Ross_hog_mli
-		add_ideas = CHL_Manuel_Rivas_Vicuna_for_mli
-		add_ideas = CHL_Jorge_Silva_Somarriva_eco_mli
-		add_ideas = CHL_Enrique_Zanartu_Prieto_sec_mli
-		add_ideas = presidential_republic
+		remove_every_minister = yes
+		add_ideas = {
+			CHL_Gustavo_Ross_hog_mli
+			CHL_Manuel_Rivas_Vicuna_for_mli
+			CHL_Jorge_Silva_Somarriva_eco_mli
+			CHL_Enrique_Zanartu_Prieto_sec_mli
+			presidential_republic
+		}
 		set_politics = {
 			ruling_party = market_liberal
 		}
-			add_popularity = {
-				ideology = market_liberal popularity = 0.25
+		add_popularity = {
+			ideology = market_liberal popularity = 0.25
 		}
 		hidden_effect = {
 			set_global_flag = GRWON
-			set_politics = { ruling_party = market_liberal }
-			create_country_leader = {
-				name = "Gustavo Ross"
-				desc = "GR_DESC"
-				picture = "gustavo_ross.tga"
-				expire = "1965.1.1"
-				ideology = market_liberal_subtype
-				traits = {
-				}
-			}
-			random_country = {
-				limit = { NOT = { TAG = CHL } }
-			}
 		}
 	}
 
 	option = {
 		name = chl.15.c
-			hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-			}
-		add_ideas = CHL_Marmaduque_Grove_hog_sde
-		add_ideas = CHL_Salvador_Allende_for_sde
-		add_ideas = CHL_Bernardo_Ibanez_Aguila_eco_lso
-		add_ideas = CHL_Arturo_Bianchi_sec_sde
-		add_ideas = presidential_republic
+		remove_every_minister = yes
+		add_ideas = {
+			CHL_Marmaduque_Grove_hog_sde
+			CHL_Salvador_Allende_for_sde
+			CHL_Bernardo_Ibanez_Aguila_eco_lso
+			CHL_Arturo_Bianchi_sec_sde
+			presidential_republic
+		}
 		set_politics = {
 			ruling_party = social_democrat
 		}
-			add_popularity = {
-				ideology = social_democrat popularity = 0.25
+		add_popularity = {
+			ideology = social_democrat popularity = 0.25
 		}
 		hidden_effect = {
 			set_global_flag = MGWON
-			set_politics = { ruling_party = social_democrat }
-			create_country_leader = {
-				name = "Marmaduque Grove"
-				desc = "MG_DESC"
-				picture = "Marmaduque_Grove.tga"
-				expire = "1965.1.1"
-				ideology = social_democrat_subtype
-				traits = {
-				}
-			}
-			random_country = {
-				limit = { NOT = { TAG = CHL } }
-			}
 		}
 	}
 
 	option = {
 		name = chl.15.e
-			hidden_effect = {
+		hidden_effect = {
 			remove_ideas_with_trait = head_of_government
-			}
-		add_ideas = CHL_Juan_Antonio_Rios_hog_sli
-		add_ideas = presidential_republic
+		}
+		add_ideas = {
+			CHL_Juan_Antonio_Rios_hog_sli
+			presidential_republic
+		}
 		set_politics = {
 			ruling_party = social_liberal
 		}
@@ -557,18 +439,13 @@ country_event = { #blanche open elections
 		}
 		set_global_flag = JARWON
 		hidden_effect = {
-			set_politics = { ruling_party = social_liberal }
 			create_country_leader = {
 				name = "Juan Antonio Rios"
-				desc = "JAR_DESC"
-				picture = "JuanAntonioRios.tga"
+				desc = "POLITICS_JUAN_ANTONIO_RIOS"
+				picture = "Portrait_Chile_Juan_Antonio_Rios.tga"
 				expire = "1965.1.1"
 				ideology = social_liberal_subtype
-				traits = {
-				}
-			}
-			random_country = {
-				limit = { NOT = { TAG = CHL } }
+				traits = { }
 			}
 		}
 	}
@@ -583,79 +460,55 @@ country_event = { #blanche no left elections
 	is_triggered_only = yes
 	option = {
 		name = chl.16.a
-			hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-			}
-		add_ideas = CHL_Eduardo_Cruz_Coke_hog_sco
-		add_ideas = CHL_Rafael_Gumucio_Vergara_for_sco
-		add_ideas = CHL_Ramon_Subercaseaux_Perez_eco_sco
-		add_ideas = CHL_Eduardo_Frei_Montalva_sec_sco
-		add_ideas = presidential_republic
+		remove_every_minister = yes
+		add_ideas = {
+			CHL_Eduardo_Cruz_Coke_hog_sco
+			CHL_Rafael_Gumucio_Vergara_for_sco
+			CHL_Ramon_Subercaseaux_Perez_eco_sco
+			CHL_Eduardo_Frei_Montalva_sec_sco
+			presidential_republic
+		}
 		set_politics = {
 			ruling_party = social_conservative
 		}
-			add_popularity = {
-				ideology = social_conservative popularity = 0.2
+		add_popularity = {
+			ideology = social_conservative popularity = 0.2
 		}
 		hidden_effect = {
 			set_global_flag = ECCWON
-			set_politics = { ruling_party = social_conservative }
-			create_country_leader = {
-				name = "Eduardo Cruz-Coke"
-				desc = "ECC_DESC"
-				picture = "ECC.tga"
-				expire = "1965.1.1"
-				ideology = social_conservative_subtype
-				traits = {
-				}
-			}
 		}
 	}
 
 	option = {
 		name = chl.16.b
-			hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-			}
-		add_ideas = CHL_Gustavo_Ross_hog_mli
-		add_ideas = CHL_Manuel_Rivas_Vicuna_for_mli
-		add_ideas = CHL_Jorge_Silva_Somarriva_eco_mli
-		add_ideas = CHL_Enrique_Zanartu_Prieto_sec_mli
-		add_ideas = presidential_republic
+		remove_every_minister = yes
+		add_ideas = {
+			CHL_Gustavo_Ross_hog_mli
+			CHL_Manuel_Rivas_Vicuna_for_mli
+			CHL_Jorge_Silva_Somarriva_eco_mli
+			CHL_Enrique_Zanartu_Prieto_sec_mli
+			presidential_republic
+		}
 		set_politics = {
 			ruling_party = market_liberal
 		}
-			add_popularity = {
-				ideology = market_liberal popularity = 0.25
+		add_popularity = {
+			ideology = market_liberal popularity = 0.25
 		}
 		hidden_effect = {
 			set_global_flag = GRWON
-			set_politics = { ruling_party = market_liberal }
-			create_country_leader = {
-				name = "Gustavo Ross"
-				desc = "GR_DESC"
-				picture = "gustavo_ross.tga"
-				expire = "1965.1.1"
-				ideology = market_liberal_subtype
-				traits = {
-				}
-			}
 		}
 	}
 
 	option = {
 		name = chl.16.c
-			hidden_effect = {
-				remove_ideas_with_trait = head_of_government
-			}
-		add_ideas = CHL_Juan_Antonio_Rios_hog_sli
-		add_ideas = presidential_republic
+		hidden_effect = {
+			remove_ideas_with_trait = head_of_government
+		}
+		add_ideas = {
+			CHL_Juan_Antonio_Rios_hog_sli
+			presidential_republic
+		}
 		set_politics = {
 			ruling_party = social_liberal
 		}
@@ -663,30 +516,14 @@ country_event = { #blanche no left elections
 			ideology = social_liberal popularity = 0.1
 		}
 		set_global_flag = JARWON
-		set_politics = { 
-			ruling_party = social_liberal 
-		}
-		add_popularity = {
-			ideology = social_liberal
-			popularity = 0.1
-		}
 		hidden_effect = {
-			set_politics = { ruling_party = social_liberal }
 			create_country_leader = {
 				name = "Juan Antonio Rios"
-				desc = "JAR_DESC"
-				picture = "JuanAntonioRios.tga"
+				desc = "POLITICS_JUAN_ANTONIO_RIOS"
+				picture = "Portrait_Chile_Juan_Antonio_Rios.tga"
 				expire = "1965.1.1"
 				ideology = social_liberal_subtype
-				traits = {
-				}
-			}
-			random_country = {
-				limit = {
-					NOT = {
-						TAG = CHL
-					}
-				}
+				traits = { }
 			}
 		}
 	}
@@ -891,18 +728,17 @@ country_event = { #new indigenist government
 		add_popularity = {
 				ideology = valkist popularity = 0.2
 		}
-			hidden_effect = {
+		hidden_effect = {
 			remove_ideas_with_trait = head_of_government
-			}
+		}
 		hidden_effect = {
 			create_country_leader = {
 				name = "Rayén Quitral"
-				desc = "RayQ_DESC"
-				picture = "RayenQuitral.tga"
+				desc = "POLITICS_RAYEN_QUITRAL_DESC"
+				picture = "Portrait_Chile_Rayen_Quitral.tga"
 				expire = "1965.1.1"
 				ideology = valkist_subtype
-				traits = {
-				}
+				traits = { }
 			}
 			random_country = {
 				limit = { NOT = { TAG = CHL } }
