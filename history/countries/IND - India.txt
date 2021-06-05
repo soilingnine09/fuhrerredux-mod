@@ -56,8 +56,6 @@ set_convoys = 20
 set_stability = 0.6
 set_war_support = 0.6
 
-set_cosmetic_tag = IND_revolt # Indian Revolt
-
 set_politics = {
 	ruling_party = national_populist
 	last_election = "1935.11.14"

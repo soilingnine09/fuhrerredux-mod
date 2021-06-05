@@ -202,7 +202,7 @@ country_event = { # Steal Stockpiled Equipment
     is_triggered_only = yes
 
     option = {
-        name = cruzoob.10
+        name = cruzoob.10.a
         add_equipment_to_stockpile = {
             type = infantry_equipment_0
             amount = 100

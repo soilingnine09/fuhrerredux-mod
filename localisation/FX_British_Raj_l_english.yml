@@ -854,7 +854,7 @@ natind.5.d:0 "India is an incredibly diverse nation, filled with many different 
 #####Decisions#####
 
 # - Revolt
-IND_revolt:0 "Our Rebellion"
+IND_revolt_decisions:0 "Our Rebellion"
 IND_rally1:0 "Arm the Cities"
 IND_rally2:0 "Organize the Fanatics"
 IND_rally3:0 "Orchestrate Prison Breaks"

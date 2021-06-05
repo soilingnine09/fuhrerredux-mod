@@ -71,15 +71,6 @@ country_event = { #coup succeeds
 		}
 		hidden_effect = {
 			set_politics = { ruling_party = collectivist }
-			create_country_leader = {
-				name = "Carlos Salazar Mostajo"
-				desc = "POLITICS_CARLOS_MOSTAJO_DESC"
-				picture = "CarlosMostajo.tga"
-				expire = "1965.1.1"
-				ideology = collectivist_subtype
-				traits = {
-				}
-			}
 		}
 		hidden_effect = {
 			remove_ideas_with_trait = head_of_government
@@ -383,12 +374,11 @@ country_event = { #death of general
 			remove_unit_leader = 943
 			create_country_leader = {
 				name = "Eduardo Nina Quispe"
-				desc = "EDUARDONINA_DESC"
-				picture = "Portrait_BOL_Eduardo_Nina_Quispe.tga"
+				desc = "POLITICS_EDUARDO_NINA_QUISPE_DESC"
+				picture = "Portrait_Bolivia_Eduardo_Nina_Quispe.tga"
 				expire = "1965.1.1"
 				ideology = valkist_subtype
-				traits = {
-				}
+				traits = { }
 			}
 			random_country = {
 				limit = { NOT = { TAG = BOL } }
@@ -462,15 +452,6 @@ country_event = { #workers congress 40 part 2
 		hidden_effect = {
 			set_country_flag = BOL_intbois
 			set_politics = { ruling_party = vanguardist }
-			create_country_leader = {
-				name = "Tristán Marof"
-				desc = "TRISTANMORAF_DESC"
-				picture = "TristanMarof.tga"
-				expire = "1965.1.1"
-				ideology = vanguardist_subtype
-				traits = {
-				}
-			}
 		}
 		hidden_effect = {
 			remove_ideas_with_trait = head_of_government
@@ -496,15 +477,6 @@ country_event = { #workers congress 40 part 2
 		hidden_effect = {
 			set_country_flag = BOL_colliesbois
 			set_politics = { ruling_party = collectivist }
-			create_country_leader = {
-				name = "José Antonio Arze"
-				desc = "ARZE_DESC"
-				picture = "JoseAntonioArze.tga"
-				expire = "1965.1.1"
-				ideology = collectivist_subtype
-				traits = {
-				}
-			}
 			random_country = {
 				limit = { NOT = { TAG = BOL } }
 			}
@@ -533,15 +505,6 @@ country_event = { #workers congress 40 part 2
 		hidden_effect = {
 			set_country_flag = BOL_libboring
 			set_politics = { ruling_party = libertarian_socialist }
-			create_country_leader = {
-				name = "Carlos Salazar Mostajo"
-				desc = "POLITICS_CARLOS_MOSTAJO_DESC"
-				picture = "CarlosMostajo.tga"
-				expire = "1965.1.1"
-				ideology = libertarian_socialist_subtype
-				traits = {
-				}
-			}
 			random_country = {
 				limit = { NOT = { TAG = BOL } }
 			}

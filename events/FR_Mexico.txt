@@ -219,9 +219,12 @@ country_event = {
 	option = {
 		name = mex.6.a
 		hidden_effect = {
-			add_popularity = { ideology = paternal_autocrat popularity = 0.15 }
+			add_popularity = { 
+				ideology = paternal_autocrat 
+				popularity = 0.15
+			}
 		}
-		set_global_flag = MEX_LOYALIST_CABINENT
+		set_global_flag = MEX_LOYALIST_CABINET
 		ai_chance = {
 			factor = 80
 		}
@@ -233,7 +236,7 @@ country_event = {
 			ideology = authoritarian_democrat
 			popularity = 0.25
 		}
-		set_global_flag = MEX_DEMOCRATIC_CABINENT
+		set_global_flag = MEX_DEMOCRATIC_CABINET
 		ai_chance = { factor = 30 }
 	}
 }

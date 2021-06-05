@@ -102,7 +102,7 @@ create_country_leader = {
 	traits = { }
 }
 
-create_corps_commander = {
+create_field_marshal = {
 	name = "Francisco May Pech"
 	picture = "Portrait_Cruzoob_Francisco_May_Pech.tga"
 	traits = { infantry_leader }

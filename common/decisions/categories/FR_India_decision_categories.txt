@@ -1,4 +1,4 @@
-IND_revolt = {
+IND_revolt_decisions = {
 	priority = {
         base = 100	
     }
