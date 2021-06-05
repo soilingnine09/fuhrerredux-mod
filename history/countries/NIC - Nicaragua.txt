@@ -64,11 +64,10 @@ create_country_leader = {
 }
 
 create_field_marshal = {
-	name = "José León Castro"
-	portrait_path = "gfx/leaders/NIC/Portrait_Nicaragua_Anastasio_Somoza_Garcia_fx.tga"
+	name = "Anastasio Somoza García"
+	picture = "Portrait_Nicaragua_Anastasio_Somoza_Garcia_fx.tga"
 	traits = { }
 	skill = 2
-	id = 1603
 	attack_skill = 3
 	defense_skill = 1
 	planning_skill = 2

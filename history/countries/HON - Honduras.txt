@@ -71,7 +71,7 @@ create_country_leader = {
 ### Field Marshals ###
 create_field_marshal = {
 	name = "José León Castro"
-	portrait_path = "gfx/leaders/HON/Portrait_HON_Jose_Leon_Castro.tga"
+	portrait_path = "gfx/leaders/HON/Portrait_Honduras_Jose_Leon_Castro.tga"
 	traits = { jungle_rat adaptable }
 	skill = 2
 	id = 1603
