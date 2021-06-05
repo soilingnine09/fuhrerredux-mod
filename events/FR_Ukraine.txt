@@ -369,6 +369,13 @@ country_event = { #elections over
     		ideology = social_democrat
     		popularity = 0.07
 		}
+		remove_every_minister = yes
+		add_ideas = {
+			UKR_Andrey_Livytskyi_hog_sde
+			UKR_Nikolai_Skrypnik_for_sde
+			UKR_Nikolai_Shrag_eco_sli
+			UKR_Ivan_Feshenko_Chopovsky_sec_sli
+		}
 		
 		hidden_effect = {
 			complete_national_focus = ukr_rada_socialist
@@ -386,7 +393,15 @@ country_event = { #elections over
 		add_popularity = {
     		ideology = market_liberal
     		popularity = 0.07
-			}
+		}
+		remove_every_minister = yes
+		add_ideas = {
+			UKR_Vladimir_Vynnychenko_hog_sco
+			UKR_Alexander_Shulgin_for_sco
+			UKR_Nikolai_Shrag_eco_sli
+			UKR_Ivan_Feshenko_Chopovsky_sec_sli
+		}
+
 		hidden_effect = {
 			complete_national_focus = ukr_rada_democratic
 		}
@@ -404,6 +419,14 @@ country_event = { #elections over
     		ideology = national_populist
     		popularity = 0.07
 		}
+		remove_every_minister = yes
+		add_ideas = {
+			UKR_Dmitri_Dontsov_hog_npo
+			UKR_Mikola_Lebed_for_npo
+			UKR_Mikola_Stsiborsky_eco_pau
+			UKR_Mikhaylo_Kolodzinsky_sec_npo
+		}
+
 		hidden_effect = {
 			complete_national_focus = ukr_rada_nationalist
 		}
@@ -423,6 +446,14 @@ country_event = { #elections over
     		ideology = paternal_autocrat
     		popularity = 0.7
 		}
+		remove_every_minister = yes
+		add_ideas = {
+			UKR_Pavlo_Skoropadsky_hog_pau
+			UKR_Konstantin_Prisovsky_for_pau
+			UKR_Mikola_Stsiborsky_eco_pau
+			UKR_Sergei_Kubiyovich_sec_pau
+		}
+
 		hidden_effect = {
 			complete_national_focus = ukr_rada_junta
 		}
@@ -1618,8 +1649,8 @@ country_event = { #kosier fights back
 		retire_country_leader = yes
 		create_country_leader = {
 			name = "Stanislav Kosior"
-			desc = ""
-			picture = "Portrait_UKR_stanislav_kosior.tga"
+			desc = "POLITICS_STANISLAV_KOSIOR_DESC"
+			picture = "Portrait_Ukraine_Stanislav_Kosior.tga"
 			expire = "1953.3.1"
 			ideology = vanguardist_subtype
 			traits = {	
@@ -1628,6 +1659,13 @@ country_event = { #kosier fights back
 		add_ideas = workers_republic
 		set_politics = {
 			ruling_party = vanguardist
+		}
+		remove_every_minister = yes
+		add_ideas = {
+			UKR_Oleksander_Shumsky_hog_van
+			UKR_Vlas_Chubar_for_van
+			UKR_Grigorij_Petrovsky_eco_col
+			UKR_Emanoil_Kviring_sec_van
 		}
 	}
 
@@ -1666,16 +1704,22 @@ country_event = { #khruschev fights back
 		retire_country_leader = yes
 		create_country_leader = {
 			name = "Nikita Khruschev"
-			desc = ""
-			picture = "Portrait_UKR_nikita_khruschev.tga"
+			desc = "POLITICS_NIKITA_KHRUSCHEV_DESC"
+			picture = "Portrait_Ukraine_Nikita_Khruschev.tga"
 			expire = "1953.3.1"
 			ideology = collectivist_subtype
-			traits = {
-			}
+			traits = { }
 		}
 		add_ideas = workers_republic
 		set_politics = {
 			ruling_party = collectivist
+		}
+		remove_every_minister = yes
+		add_ideas = {
+			UKR_Oleksander_Shumsky_hog_van
+			UKR_Grigori_Sokolnikov_for_col
+			UKR_Grigorij_Petrovsky_eco_col
+			UKR_Khrystian_G_Rakovsky_sec_col
 		}
 	}
 
@@ -1712,16 +1756,22 @@ country_event = { #Makhno fights back
 		retire_country_leader = yes
 		create_country_leader = {
 			name = "Nestor Makhno"
-			desc = ""
-			picture = "Portrait_UKR_nestor_makhno.tga"
+			desc = "POLITICS_NESTOR_MAKHNO_DESC"
+			picture = "Portrait_Ukraine_Nestor_Makhno.tga"
 			expire = "1953.3.1"
 			ideology = libertarian_socialist_subtype
-			traits = {
-			}
+			traits = { }
 		}
 		add_ideas = workers_republic
 		set_politics = {
 			ruling_party = libertarian_socialist
+		}
+		remove_every_minister = yes
+		add_ideas = {
+			UKR_Oleksander_Shumsky_hog_van
+			UKR_Grigori_Sokolnikov_for_col
+			UKR_Grigorij_Petrovsky_eco_col
+			UKR_Khrystian_G_Rakovsky_sec_col
 		}
 	}
 

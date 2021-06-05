@@ -69,10 +69,10 @@ add_ideas = {
 	party_pop_0_30
 	UKR_famine_spook
 	UKR_language_problem
-	GEN_hog_sde
-	GEN_FOR_Sde
-	GEN_eco_sde
-	GEN_sec_sde
+	UKR_Andrey_Livytskyi_hog_sde
+	UKR_Nikolai_Skrypnik_for_sde
+	UKR_Nikolai_Shrag_eco_sli
+	UKR_Ivan_Feshenko_Chopovsky_sec_sli
 	parliamentary_republic
 }
 
@@ -99,128 +99,93 @@ set_popularities = {
 
 create_country_leader = {
 	name = "The Central Committee"
-	desc = ""
 	picture = "Portrait_UKR_central_committee.dds"
-	expire = "1953.3.1"
+	expire = "1965.1.1"
 	ideology = vanguardist_subtype
-	traits = {
-		
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "The Central Committee"
-	desc = ""
 	picture = "Portrait_UKR_central_committee.dds"
-	expire = "1953.3.1"
+	expire = "1965.1.1"
 	ideology = collectivist_subtype
-	traits = {
-		
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "The Central Committee"
-	desc = ""
 	picture = "Portrait_UKR_central_committee.dds"
-	expire = "1953.3.1"
+	expire = "1965.1.1"
 	ideology = libertarian_socialist_subtype
-	traits = {
-		
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Andriy Livytskyi"
-	desc = ""
-	picture = "Portrait_UKR_andriy_livytskyi.tga"
-	expire = "1953.3.1"
+	desc = "POLITICS_ANDRIY_LIVYTSKYI_DESC"
+	picture = "Portrait_Ukraine_Andriy_Livytskyi.tga"
+	expire = "1965.1.1"
 	ideology = social_democrat_subtype
-	traits = {
-		
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Serhij Jefremov"
-	desc = ""
-	picture = "Portrait_UKR_serhij_kefremov.dds"
-	expire = "1953.3.1"
+	desc = "POLITICS_SERHIJ_JEFREMOV_DESC"
+	picture = "gfx/leaders/Generic/Portrait_Europe_Generic_new_2.tga"
+	expire = "1965.1.1"
 	ideology = social_liberal_subtype
-	traits = {
-		
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Serhiy Ostapenko"
-	desc = ""
-	picture = "Portrait_UKR_serhiy_ostapenko.dds"
-	expire = "1953.3.1"
+	desc = "POLITICS_SERHIY_OSTAPENKO_DESC"
+	picture = "gfx/leaders/Generic/Portrait_Europe_Generic_new_12.tga"
+	expire = "1965.1.1"
 	ideology = market_liberal_subtype
-	traits = {
-		
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Oleksander Shulhyn"
-	desc = ""
-	picture = "Portrait_UKR_oleksander_shulhyn.dds"
-	expire = "1953.3.1"
+	desc = "POLITICS_OLEKSANDER_SHULHYN_DESC"
+	picture = "Portrait_Ukraine_Oleksandr_Shumskyi.tga"
+	expire = "1965.1.1"
 	ideology = social_conservative_subtype
-	traits = {
-		
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Pavlo Skoropadskyi"
-	desc = ""
-	picture = "Portrait_UKR_pavlo_skoropadskyi.dds"
-	expire = "1953.3.1"
+	desc = "POLITICS_PAVLO_SKOROPADSKYI_DESC"
+	picture = "Portrait_Ukraine_Pavlo_Skoropadsky.tga"
+	expire = "1965.1.1"
 	ideology = authoritarian_democrat_subtype
-	traits = {
-		
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Ivan Chernyakhovsky"
-	desc = ""
-	picture = "Portrait_UKR_ivan_chernyakhovsky.dds"
-	expire = "1953.3.1"
+	desc = "POLITICS_IVAN_CHERNYAKHOVSKY_DESC"
+	picture = "gfx/leaders/Generic/Portrait_Europe_Generic_new_11.tga"
+	expire = "1965.1.1"
 	ideology = paternal_autocrat_subtype
-	traits = {
-		
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Dmitri Dontsov"
-	desc = ""
-	picture = "Portrait_UKR_dmitri_dontsov.dds"
-	expire = "1953.3.1"
+	desc = "POLITICS_DMITRI_DONTSOV_DESC"
+	picture = "Portrait_Ukraine_Dmitri_Dontsov.tga"
+	expire = "1965.1.1"
 	ideology = national_populist_subtype
-	traits = {
-		
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Volodymyr Shayan"
-	desc = ""
-	picture = "Portrait_UKR_volodymyr_shayan.dds"
-	expire = "1953.3.1"
+	desc = "POLITICS_VOLODYMYR_SHAYAN_DESC"
+	picture = "Portrait_Ukraine_Volodymyr_Shayan.tga"
+	expire = "1965.1.1"
 	ideology = valkist_subtype
-	traits = {
-		
-	}
+	traits = { }
 }
 
 create_field_marshal = {
 	name = "Semen Goruk"
-	portrait_path = "gfx/leaders/UKR/Semen_Goruk.tga"
+	portrait_path = "gfx/leaders/UKR/Portrait_Ukraine_Semen_Goruk.tga"
 	traits = { war_hero armor_officer fortress_buster }
 	skill = 4
 	attack_skill = 4
@@ -228,10 +193,9 @@ create_field_marshal = {
 	planning_skill = 2
 	logistics_skill = 3
 }
-
 create_field_marshal = {
 	name = "Mykola Kapustiansky"
-	portrait_path = "gfx/leaders/UKR/Mykola_Kapustiansky.tga"
+	portrait_path = "gfx/leaders/UKR/Portrait_Ukraine_Mykola_Kapustiansky.tga"
 	traits = { defensive_doctrine infantry_officer  }
 	skill = 4
 	attack_skill = 2
@@ -239,10 +203,9 @@ create_field_marshal = {
 	planning_skill = 2
 	logistics_skill = 3
 }
-
 create_field_marshal = {
 	name = "Arnold Wolf"
-	portrait_path = "gfx/leaders/UKR/Arnold_Wolf.tga"
+	portrait_path = "gfx/leaders/UKR/Portrait_Ukraine_Arnold_Wolf.tga"
 	traits = { harsh_leader old_guard winter_specialist }
 	skill = 3
 	attack_skill = 3
@@ -250,10 +213,9 @@ create_field_marshal = {
 	planning_skill = 3
 	logistics_skill = 2
 }
-
 create_field_marshal = {
 	name = "Vasyl Dmytrovych Bilinchak"
-	portrait_path = "gfx/leaders/UKR/Vasyl_Dmytrovych_Bilinchak.tga"
+	portrait_path = "gfx/leaders/UKR/Portrait_Ukraine_Vasyl_Dmytrovych_Bilinchak.tga"
 	traits = { trickster trait_engineer }
 	skill = 3
 	attack_skill = 2
@@ -264,7 +226,7 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "Dmytro Bilinchuck"
-	portrait_path = "gfx/leaders/UKR/Dmytro_Bilinchuck.tga"
+	portrait_path = "gfx/leaders/UKR/Portrait_Ukraine_Dmytro_Bilinchuck.tga"
 	traits = { trait_mountaineer }
 	skill = 3
 	attack_skill = 4
@@ -272,10 +234,9 @@ create_corps_commander = {
 	planning_skill = 1
 	logistics_skill = 2
 }
-
 create_corps_commander = {
 	name = "Dmytro Vitivsky"
-	portrait_path = "gfx/leaders/UKR/Dmytro_Vitivsky.tga"
+	portrait_path = "gfx/leaders/UKR/Portrait_Ukraine_Dmytro_Vitivsky.tga"
 	traits = { trait_cautious armor_officer }
 	skill = 3
 	attack_skill = 3
@@ -283,10 +244,9 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 3
 }
-
 create_corps_commander = {
 	name = "Osyp Bukszovanyj"
-	portrait_path = "gfx/leaders/UKR/Osyp_Bukszovanyj.tga"
+	portrait_path = "gfx/leaders/UKR/Portrait_Ukraine_Osyp_Bukszovanyj.tga"
 	traits = { commando }
 	skill = 2
 	attack_skill = 3
@@ -294,10 +254,9 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 1
 }
-
 create_corps_commander = {
 	name = "Ivan Kedulich"
-	portrait_path = "gfx/leaders/UKR/Ivan_Kedulich.tga"
+	portrait_path = "gfx/leaders/UKR/Portrait_Ukraine_Ivan_Kedulich.tga"
 	traits = { career_officer }
 	skill = 2
 	attack_skill = 1
@@ -305,10 +264,9 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 2
 }
-
 create_corps_commander = {
 	name = "Sergii Sydorenko"
-	portrait_path = "gfx/leaders/UKR/Sergii_Sydorenko.tga"
+	portrait_path = "gfx/leaders/UKR/Portrait_Ukraine_Sergii_Sydorenko.tga"
 	traits = { politically_connected }
 	skill = 1
 	attack_skill = 2
@@ -319,14 +277,13 @@ create_corps_commander = {
 
 create_navy_leader = {
 	name = "Svatoslav Shramenko"
-	portrait_path = "gfx/leaders/UKR/Svatoslav_Shramenko.tga"
+	portrait_path = "gfx/leaders/UKR/Portrait_Ukraine_Svatoslav_Shramenko.tga"
 	traits = {  }
 	skill = 4
 }
-
 create_navy_leader = {
 	name = "Volodimir Savchenco-Bilinskii"
-	portrait_path = "gfx/leaders/UKR/Volodimir_Savchenco-Bilinskii.tga"
+	portrait_path = "gfx/leaders/UKR/Portrait_Ukraine_Volodimir_Savchenco-Bilinskii.tga"
 	traits = { old_guard_navy }
 	skill = 4
 }

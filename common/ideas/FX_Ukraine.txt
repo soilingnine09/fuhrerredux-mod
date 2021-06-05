@@ -1,0 +1,936 @@
+#######################
+# Ukraine Union Ideas #
+#########################
+# Made by darknight1342 #
+#########################
+
+ideas = {
+	country = {
+		UKR_famine_spook = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_famine_spook"}
+			picture = raj_risk_of_famine
+			modifier = {
+				stability_factor = -0.03
+			}
+		}
+		UKR_language_problem = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_language_problem"}
+			picture = great_depression
+			modifier = {
+				stability_factor = -0.03
+			}
+		}
+		UKR_modern_army = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_modern_army"}
+			picture = generic_manpower_bonus
+			modifier = {
+				army_org = 3
+				max_planning = 0.10
+				defence = 0.1
+			}
+		}
+		UKR_ger_modern_army = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_ger_modern_army"}
+			picture = generic_manpower_bonus
+			modifier = {
+				army_org = 3
+				max_planning = 0.20
+				defence = 0.1
+			}
+		}
+		UKR_eng_modern_army = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_eng_modern_army"}
+			picture = generic_manpower_bonus
+			modifier = {
+				army_org = 8
+				max_planning = 0.10
+				defence = 0.1
+			}
+		}
+		UKR_fra_modern_army = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_fra_modern_army"}
+			picture = generic_manpower_bonus
+			modifier = {
+				army_org = 3
+				max_planning = 0.10
+				defence = 0.3
+			}
+		}
+		UKR_fighter_quantity = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_fighter_quantity"}
+			picture = generic_air_bonus
+			equipment_bonus = {
+				fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+			}
+		}
+		UKR_minority_happy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_minority_happy"}
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = 0.03
+			}
+		}
+		UKR_lsmc = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_lsmc"}
+			picture = the_great_depression
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				production_speed_infrastructure_factor = -0.2
+				production_oil_factor = -0.5
+				consumer_goods_factor = 0.03
+			}
+		}
+		UKR_admin_reforms = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_admin_reforms"}
+			picture = generic_constitutional_guarantee
+			modifier = {
+				political_power_gain = 0.05
+				#economy_cost_factor = 0.90 #The wiki says this is okay, but the error log says otherwise. -darknight 1342
+			}
+		}
+		UKR_german_economy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_german_economy"}
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = -0.02
+			}
+		}
+		UKR_admin_reforms2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_admin_reforms2"}
+			picture = generic_constitutional_guarantee
+			modifier = {
+				political_power_gain = 0.3
+#				economy_cost_factor = 0.80 #invalid modifier, increased pp gain from 0.2 to 0.3 to compensate
+			}
+		}
+		UKR_black_sea_ger = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_black_sea_ger"}
+			picture = idea_hun_treaty_of_trianon
+			modifier = {
+				stability_factor = 0.02
+			}
+		}
+		UKR_culture = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_culture"}
+			picture = idea_generic_army_war_college
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		UKR_centralize = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_centralize"}
+			picture = generic_local_self_management
+			modifier = {
+				political_power_gain = 0.1
+			}
+		}
+		UKR_secret_police = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_secret_police"}
+			picture = idea_ast_classify_aliens
+			modifier = {
+				resistance_damage_to_garrison = -0.2
+			}
+		}
+		UKR_state_militarism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_state_militarism"}
+			picture = idea_ast_volunteer_defence_corps
+			modifier = {
+				conscription_factor = 0.05
+			}
+		}
+		UKR_voting_reform = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_voting_reform"}
+			picture = generic_pp_unity_bonus
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		UKR_big_corn = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_big_corn"}
+			picture = idea_generic_agrarian_reform
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		UKR_left_coop = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_left_coop"}
+			picture = idea_generic_deal_with_the_devil
+			modifier = {
+				political_power_gain = 0.03
+				libertarian_socialist_drift = 0.03
+			}
+		}
+		UKR_breadbasket = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_breadbasket"}
+			picture = generic_goods_red_bonus
+			modifier = {
+				local_resources_factor = 0.05
+			}
+		}
+		UKR_farmer_unions = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_farmer_unions"}
+			picture = generic_production_bonus
+			modifier = {
+				local_resources_factor = 0.03
+				political_power_gain = 0.01
+			}
+		}
+		UKR_agriculture_boost = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_agriculture_boost"}
+			picture = idea_generic_agrarian_reform
+			modifier = {
+				consumer_goods_factor = -0.02
+			}
+		}
+		UKR_farm_money = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_farm_money"}
+			picture = idea_generic_agrarian_reform
+			modifier = {
+				stability_factor = 0.03
+				out_of_supply_factor = -0.03
+			}
+		}
+		UKR_ukriane_language = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_ukriane_language"}
+			picture = generic_morale_bonus
+			modifier = {
+				stability_factor = 0.02
+			}
+		}
+		UKR_russian_language = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_russian_language"}
+			picture = generic_morale_bonus
+			modifier = {
+				stability_factor = 0.03
+			}
+		}
+		UKR_bilingual = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_bilingual"}
+			picture = generic_morale_bonus
+			modifier = {
+				stability_factor = 0.04
+			}
+		}
+		UKR_socialist_republic = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_socialist_republic"}
+			picture = FRA_scw_intervention_republicans_focus
+			modifier = {
+				stability_factor = 0.03
+			}
+		}
+		UKR_expansionism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_expansionism"}
+			picture = generic_manpower_bonus
+			modifier = {
+				conscription_factor = 0.02
+			}
+		}
+		UKR_lsmc2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_lsmc2"}
+			picture = the_great_depression
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				production_speed_infrastructure_factor = -0.1
+				production_oil_factor = -0.4
+				consumer_goods_factor = 0.02
+			}
+		}
+		UKR_lsmc3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_lsmc3"}
+			picture = the_great_depression
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				production_oil_factor = -0.4
+				consumer_goods_factor = 0.02
+			}
+		}
+		UKR_lsmc4 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_lsmc4"}
+			picture = the_great_depression
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				production_oil_factor = -0.4
+			}
+		}
+		UKR_economic_boost = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_economic_boost"}
+			picture = idea_generic_political_support
+			modifier = {
+				consumer_goods_factor = -0.01
+				production_speed_buildings_factor = 0.1
+				stability_factor = 0.03
+			}
+		}
+		UKR_wartime_prep = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_wartime_prep"}
+			picture = idea_generic_political_support
+			modifier = {
+				consumer_goods_factor = -0.03
+			}
+		}
+		UKR_infrastructure_effort = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_infrastructure_effort"}
+			picture = idea_generic_build_infrastructure
+			modifier = {
+				production_speed_infrastructure_factor = 0.2
+			}
+		}
+		UKR_industrial_effort = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_industrial_effort"}
+			picture = idea_man_five_year_plan_industry
+			modifier = {
+				production_speed_industrial_complex_factor = 0.2
+			}
+		}
+		UKR_food_imports = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_food_imports"}
+			picture = idea_generic_agrarian_reform
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_infrastructure_factor = 0.3
+				production_speed_industrial_complex_factor = 0.3
+			}
+		}
+		UKR_logistics = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_logistics"}
+			picture = generic_acquire_tanks
+			modifier = {
+				out_of_supply_factor = -0.15
+				supply_consumption_factor = -0.20
+			}
+		}
+	}
+	### Head of Government
+	head_of_government = {
+		UKR_Oleksander_Shumsky_hog_van = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				vanguardist
+				hog_red_chairmen
+			}
+		}
+		UKR_Andrey_Livytskyi_hog_sde = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_democrat
+				hog_pragmatic_statesman
+			}
+		}
+		UKR_Vladimir_Vynnychenko_hog_sco = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_conservative
+				hog_silent_workhorse
+			}
+		}
+		UKR_Boris_Martos_hog_ade = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_smiling_oilman
+			}
+		}
+		UKR_Mikhail_Bulgakov_hog_ade = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_political_protege
+			}
+		}
+		UKR_Nikolai_Boretsky_hog_ade = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_democratic_tyrant
+			}
+		}
+		UKR_Patriarch_Mstyslav_hog_ade = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_backroom_backstabber
+			}
+		}
+		UKR_Vyacheslav_Prokopovich_hog_ade = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_accomplished_diplomat
+			}
+		}
+		UKR_Pavlo_Skoropadsky_hog_pau = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_corporate_suit
+			}
+		}
+		UKR_Dmitri_Dontsov_hog_npo = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				national_populist
+				hog_determined_populist
+			}
+		}
+	}
+	### Foreign Minister
+	foreign_minister = {
+		UKR_Stanislav_Kosior_for_van = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				vanguardist
+				for_ideological_crusader
+			}
+		}
+		UKR_Vlas_Chubar_for_van = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				vanguardist
+				for_iron_fisted_brute
+			}
+		}
+		UKR_Grigori_Sokolnikov_for_col = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				collectivist
+				for_the_cloak_n_dagger_schemer
+			}
+		}
+		UKR_Nikolai_Skrypnik_for_sde = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_democrat
+				for_apologetic_clerk
+			}
+		}
+		UKR_Alexander_Shulgin_for_sco = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_democrat
+				for_general_staffer
+			}
+		}
+		UKR_Konstantin_Prisovsky_for_pau = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_great_compromiser
+			}
+		}
+		UKR_Yuri_Lipa_for_pau = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_relations_expert
+			}
+		}
+		UKR_Dmitri_Doroshenko_for_npo = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				national_populist
+				for_biased_intellectual
+			}
+		}
+		UKR_Mikola_Lebed_for_npo = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				national_populist
+				for_radical_among_moderates
+			}
+		}
+	}
+	### Economy Minister
+	economy_minister = {
+		UKR_Grigorij_Petrovsky_eco_col = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				collectivist
+				eco_planned_economy_proponent
+			}
+		}
+		UKR_Panas_P_Lyubchenko_eco_col = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				collectivist
+				eco_reformer
+			}
+		}
+		UKR_Yuri_Kotsiubinsky_eco_col = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				collectivist
+				eco_vernacular_industrialiser
+			}
+		}
+		UKR_Nikolai_Shrag_eco_sli = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_liberal
+				eco_the_minister_for_everything
+			}
+		}
+		UKR_Vladimir_Tarnovsky_eco_sco = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_conservative
+				eco_military_entrepreneur
+			}
+		}
+		UKR_Kirill_Osmak_eco_ade = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				authoritarian_democrat
+				eco_mixed_economy
+			}
+		}
+		UKR_Sergei_Ostapenko_eco_ade = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				authoritarian_democrat
+				eco_imbedded_unioneer
+			}
+		}
+		UKR_Mikola_Stsiborsky_eco_pau = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_industrialiser
+			}
+		}
+	}
+	### Security Minister
+	security_minister = {
+		UKR_Emanoil_Kviring_sec_van = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				vanguardist
+				sec_compassionate_gentleman
+			}
+		}
+		UKR_Leonid_Melnikov_sec_van = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				vanguardist
+				sec_crime_fighter
+			}
+		}
+		UKR_Khrystian_G_Rakovsky_sec_col = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				collectivist
+				sec_efficient_sociopath
+			}
+		}
+		UKR_Vladimir_Antonov_Ovseyenko_sec_col = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				collectivist
+				sec_health_and_safety
+			}
+		}
+		UKR_Ivan_Feshenko_Chopovsky_sec_sli = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_liberal
+				sec_man_of_the_people
+			}
+		}
+		UKR_Daniil_Skoropadsky_sec_ade = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_media_magnate
+			}
+		}
+		UKR_Igor_Kistyakovsky_sec_ade = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_driven_recruiter
+			}
+		}
+		UKR_Vladimir_Chekhovsky_sec_ade = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_back_stabber
+			}
+		}
+		UKR_Vladimir_Khitrovo_sec_ade = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_health_and_safety
+			}
+		}
+		UKR_Sergei_Kubiyovich_sec_pau = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_preserver_of_culture
+			}
+		}
+		UKR_Dmitri_Dontsov_sec_npo = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				national_populist
+				sec_prince_of_terror
+			}
+		}
+		UKR_Mikhaylo_Kolodzinsky_sec_npo = {
+			allowed = { original_tag = UKR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				national_populist
+				sec_regionalist
+			}
+		}
+	}
+	### Chief of Staff
+	chief_of_staff = {
+		UKR_Vitaly_Primakov_cos_col = {
+			allowed = { original_tag = UKR }
+			available = { has_socialist_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_staff
+				cos_school_of_commando_operations
+			}
+		}
+		UKR_Emelian_Volokh_cos_lib = {
+			allowed = { original_tag = UKR }
+			available = { has_socialist_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_staff
+				cos_school_of_fire_support
+			}
+		}
+		UKR_Sydor_Kovpak_cos = {
+			allowed = { original_tag = UKR }
+			available = { has_socialist_government = no }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_staff
+				cos_school_of_fire_support
+			}
+		}
+		UKR_Mikhail_Omelianovych_Pavlenko_cos = {
+			allowed = { original_tag = UKR }
+			available = { has_socialist_government = no }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_staff
+				cos_school_of_commando_operations
+			}
+		}
+		UKR_Vsevolod_Petrov_cos = {
+			allowed = { original_tag = UKR }
+			available = { has_socialist_government = no }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_staff
+				cos_school_of_defence
+			}
+		}
+		UKR_Pavlo_Skoropadsky_cos = {
+			allowed = { original_tag = UKR }
+			available = { has_socialist_government = no }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_staff
+				cos_school_of_psychology
+			}
+		}
+	}
+	### Chief of Army
+	chief_of_army = {
+		UKR_Yan_Gamarnik_carm_lib = {
+			allowed = { original_tag = UKR }
+			available = { has_socialist_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				carm_armoured_spearhead_doctrine
+			}
+		}
+		UKR_Veniamin_Ruvinski_carm = {
+			allowed = { original_tag = UKR }
+			available = { has_socialist_government = no }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				carm_armoured_spearhead_doctrine
+			}
+		}
+		UKR_Vladimir_Salski_carm = {
+			allowed = { original_tag = UKR }
+			available = { has_socialist_government = no }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				carm_commando_doctrine
+			}
+		}
+		UKR_Vladislav_Dashkevich_Gorbatsky_carm = {
+			allowed = { original_tag = UKR }
+			available = { has_socialist_government = no }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				carm_decisive_battle_doctrine
+			}
+		}
+		UKR_Alexander_Dolgorukov_carm = {
+			allowed = { original_tag = UKR }
+			available = { has_socialist_government = no }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				carm_doctrine_of_autonomy
+			}
+		}
+		UKR_Pavlo_Shandruk_carm = {
+			allowed = { original_tag = UKR }
+			available = { has_socialist_government = no }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				carm_elastic_defence_doctrine
+			}
+		}
+		UKR_Vladimir_Sinkler_carm = {
+			allowed = { original_tag = UKR }
+			available = { has_socialist_government = no }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				carm_guns_and_butter_doctrine
+			}
+		}
+		UKR_Taras_Bulba_Borovets_carm = {
+			allowed = { original_tag = UKR }
+			available = { has_socialist_government = no }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				carm_static_defence_doctrine
+			}
+		}
+		UKR_Vladimir_Sikevich_carm = {
+			allowed = { original_tag = UKR }
+			available = { has_socialist_government = no }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				carm_guns_and_butter_doctrine
+			}
+		}
+		UKR_Roman_Shukhevich_carm = {
+			allowed = { original_tag = UKR }
+			available = { has_socialist_government = no }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				carm_doctrine_of_autonomy
+			}
+		}
+	}
+	### Chief of Navy
+	chief_of_navy = {
+		UKR_Ivan_Isakov_cnav_van = {
+			allowed = { original_tag = UKR }
+			available = { has_socialist_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_navy
+				cnav_base_control_doctrine
+			}
+		}
+		UKR_Sergei_Gorshkov_cnav_van = {
+			allowed = { original_tag = UKR }
+			available = { has_socialist_government = no }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_navy
+				cnav_decisive_battle_doctrine
+			}
+		}
+		UKR_Vladimir_Pilipenko_cnav = {
+			allowed = { original_tag = UKR }
+			available = { has_socialist_government = no }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_navy
+				cnav_indirect_approach_doctrine
+			}
+		}
+		UKR_Andrey_Pokrovsky_cnav = {
+			allowed = { original_tag = UKR }
+			available = { has_socialist_government = no }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_navy
+				cnav_open_seas_doctrine
+			}
+		}
+		UKR_Nikolai_Maximov_cnav = {
+			allowed = { original_tag = UKR }
+			available = { has_socialist_government = no }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_navy
+				cnav_power_projection_doctrine
+			}
+		}
+		UKR_Vladimir_Savchenko_Belski_cnav = {
+			allowed = { original_tag = UKR }
+			available = { has_socialist_government = no }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_navy
+				cnav_base_control_doctrine
+			}
+		}
+	}
+	### Chief of Air Force
+	chief_of_air_force = {
+		UKR_Grigori_Shtern_cair_van = {
+			allowed = { original_tag = UKR }
+			available = { has_socialist_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_air_force
+				cair_air_superiority_doctrine
+			}
+		}
+		UKR_Vyacheslav_Tkachev_cair = {
+			allowed = { original_tag = UKR }
+			available = { has_socialist_government = no }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_navy
+				cair_battlefield_support_doctrine
+			}
+		}
+	}
+}
