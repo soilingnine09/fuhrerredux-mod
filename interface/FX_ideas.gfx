@@ -1,8 +1,12 @@
 spriteTypes = {
 
     spriteType = {
-        name = "GFX_idea_CHI_illiterate_population"
-        texturefile = "gfx/interface/ideas/CHI/CHI_illiterate_population.tga"
+        name = "GFX_idea_generic_research_increase"
+        texturefile = "gfx/interface/ideas/ideas/generic_research_increase.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_generic_research_reduction"
+        texturefile = "gfx/interface/ideas/ideas/generic_research_reduction.tga"
     }
     
     spriteType = {

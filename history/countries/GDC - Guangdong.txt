@@ -16,7 +16,7 @@ set_technology = {
 
 add_ideas = {
 	party_pop_0_30
-	unbalanced_industry
+	backwards_economy
 	iliterate_population
 	parliamentary_republic
 	GEN_hog_sli

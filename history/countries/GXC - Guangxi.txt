@@ -13,7 +13,7 @@ set_war_support = 0.50
 
 add_ideas = {
 	party_pop_0_90
-	unbalanced_industry
+	backwards_economy
 	iliterate_population
 
 	GEN_hog_ade

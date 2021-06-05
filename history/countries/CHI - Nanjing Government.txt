@@ -32,13 +32,12 @@ if = {
 	}
 }
 
-
 add_ideas = {
-	CHI_backwards_economy1
+	backwards_economy
+	iliterate_population
 	CHI_factionism
 	CHI_incompetent_army_officials
-	CHI_illiterate_population
-
+	
 	semi_presidential_republic
 }
 

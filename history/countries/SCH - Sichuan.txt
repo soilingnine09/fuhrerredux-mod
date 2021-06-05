@@ -13,7 +13,7 @@ set_technology = {
 
 add_ideas = {
 	party_pop_0_60
-	unbalanced_industry
+	backwards_economy
 	iliterate_population
 
 	GEN_hog_sco

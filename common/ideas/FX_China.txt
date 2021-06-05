@@ -4,7 +4,7 @@ ideas = {
 		iliterate_population = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea iliterate_population"}
 			removal_cost = -1
-			picture = CHI_illiterate_population
+			picture = generic_research_reduction
 
 			allowed = {
 				always = no
@@ -28,7 +28,7 @@ ideas = {
 		iliterate_population_no_armor = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea iliterate_population_no_armor"}
 			removal_cost = -1
-			picture = SIA_military_expenditure_cut
+			picture = generic_research_reduction
 
 			allowed = {
 				always = no
@@ -51,7 +51,7 @@ ideas = {
 		iliterate_population_1 = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea iliterate_population_1"}
 			removal_cost = -1
-			picture = SIA_military_expenditure_cut
+			picture = generic_research_reduction
  			allowed = {
 				always = no
 			}
@@ -72,7 +72,7 @@ ideas = {
 		iliterate_population_1_no_armor = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea iliterate_population_1_no_armor"}
 			removal_cost = -1
-			picture = SIA_military_expenditure_cut
+			picture = generic_research_reduction
  			allowed = {
 				always = no
 			}
@@ -92,7 +92,7 @@ ideas = {
 		iliterate_population_2 = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea iliterate_population_2"}
 			removal_cost = -1
-			picture = SIA_military_expenditure_cut
+			picture = generic_research_reduction
  			allowed = {
 				always = no
 			}
@@ -113,7 +113,7 @@ ideas = {
 		iliterate_population_2_no_armor = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea iliterate_population_2_no_armor"}
 			removal_cost = -1
-			picture = SIA_military_expenditure_cut
+			picture = generic_research_reduction
  			allowed = {
 				always = no
 			}
@@ -133,7 +133,7 @@ ideas = {
 		only_armor = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea iliterate_population_2"}
 			removal_cost = -1
-			picture = SIA_military_expenditure_cut
+			picture = generic_research_reduction
  			allowed = {
 				always = no
 			}
@@ -146,8 +146,8 @@ ideas = {
 		}
 
 		#########################
-		unbalanced_industry = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea unbalanced_industry"}
+		backwards_economy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea backwards_economy"}
 			removal_cost = -1
 			picture = KTG_Industrial_Crisis_Town
 			allowed = {
@@ -239,8 +239,8 @@ ideas = {
 			}
 		}
 
-		unbalanced_industry_1 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea unbalanced_industry_1"}
+		backwards_economy_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea backwards_economy_1"}
 			removal_cost = -1
 			picture = backward_industry
 			allowed = {
@@ -331,8 +331,8 @@ ideas = {
 				}			
 			}
 		}
-		unbalanced_industry_2 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea unbalanced_industry_2"}
+		backwards_economy_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea backwards_economy_2"}
 			removal_cost = -1
 			picture = backward_industry
 			allowed = {
@@ -423,8 +423,8 @@ ideas = {
 				}			
 			}
 		}
-		unbalanced_industry_3 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea unbalanced_industry_3"}
+		backwards_economy_3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea backwards_economy_3"}
 			removal_cost = -1
 			picture = backward_industry
 			allowed = {

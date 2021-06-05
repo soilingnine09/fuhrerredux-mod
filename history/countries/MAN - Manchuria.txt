@@ -46,7 +46,7 @@ add_ideas = {
 	MAN_political_reform
 	MAN_antijapanese_sentiment
 	MAN_warlord_ubiquity
-    unbalanced_industry
+    backwards_economy
     iliterate_population
 	MAN_Zhang_Council_hog
 	MAN_Huang_Fu_for

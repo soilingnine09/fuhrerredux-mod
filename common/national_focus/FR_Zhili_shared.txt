@@ -1836,8 +1836,8 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ZHI_industrial_rev"
 			swap_ideas = {
-				remove_idea = unbalanced_industry 
-				add_idea = unbalanced_industry_1
+				remove_idea = backwards_economy 
+				add_idea = backwards_economy_1
 			}
 		}
 	}
@@ -1867,8 +1867,8 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ZHI_mass_production"
 			swap_ideas = {
-				add_idea = unbalanced_industry_2
-				remove_idea = unbalanced_industry_1 
+				add_idea = backwards_economy_2
+				remove_idea = backwards_economy_1 
 			}
 		}
 	}
@@ -1898,8 +1898,8 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ZHI_efficiency"
 			swap_ideas = {
-				add_idea = unbalanced_industry_3
-				remove_idea = unbalanced_industry_2 
+				add_idea = backwards_economy_3
+				remove_idea = backwards_economy_2 
 			}
 		}
 	}
@@ -2024,7 +2024,7 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ZHI_industry_giant"
-		remove_ideas = unbalanced_industry_3
+		remove_ideas = backwards_economy_3
 		add_ideas = ZHI_massive_industrial_effort
 		}
 	}

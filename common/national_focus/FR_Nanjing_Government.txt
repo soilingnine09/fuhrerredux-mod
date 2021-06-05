@@ -321,7 +321,7 @@ focus_tree = {
         prerequisite = { focus = CHI_radar_research }
         prerequisite = { focus = CHI_electronics_research }
         completion_reward = {
-            remove_ideas = CHI_illiterate_population
+            remove_ideas = iliterate_population
             add_research_slot = 1
         }
     }
@@ -551,8 +551,8 @@ focus_tree = {
         prerequisite = { focus = CHI_new_industrial_techniques }
         completion_reward = {
             swap_ideas = {
-                remove_idea = CHI_backwards_economy1
-                add_idea = CHI_backwards_economy2
+                remove_idea = backwards_economy
+                add_idea = backwards_economy_1
             }
         }
     }
@@ -733,7 +733,7 @@ focus_tree = {
         prerequisite = { focus = CHI_state_weapons_factories }
         prerequisite = { focus = CHI_the_university_of_nanjing }
         completion_reward = {
-            remove_ideas = CHI_backwards_economy2
+            remove_ideas = backwards_economy_1
             add_ideas = CHI_growing_economy
         }
     }
