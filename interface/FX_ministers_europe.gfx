@@ -1114,4 +1114,643 @@ spriteTypes = {
 		name = "GFX_idea_UKR_Vyacheslav_Tkachev_cair"
 		texturefile = "gfx/interface/ideas/UKR/ministers/UKR_Vyacheslav_Tkachev.tga"
 	}
+
+	####################################################
+    # RUS
+	### Head of Government
+	spriteType = {
+		name = "GFX_idea_RUS_Vladimir_M_Zenzinov_hog_sde"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Vladimir_M_Zenzinov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Venedikt_Miakotin_hog_sli"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Venedikt_Miakotin.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Pavel_N_Milyukov_hog_mli"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Pavel_N_Milyukov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Vasily_G_Boldyrev_hog_sco"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Vasily_G_Boldyrev.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Georgiy_P_Ignatiev_hog_sco"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Georgiy_P_Ignatiev.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Nikolai_S_Trubetskoy_hog_sco"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Nikolai_S_Trubetskoy.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Alexandr_Danilovich_Allfyorov_hog_sco"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Alexandr_Danilovich_Allfyorov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Anton_I_Denikin_hog_sco"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Anton_I_Denikin.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Felix_F_Yusupov_hog_sco"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Felix_F_Yusupov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Sergei_L_Markov_hog_sco"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Sergei_L_Markov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Abram_Dragomirov_hog_ade"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Abram_Dragomirov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Pavel_Bermondt_Avalov_hog_ade"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Pavel_Bermondt_Avalov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Aleksandr_S_Lukomsky_hog_ade"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Aleksandr_S_Lukomsky.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Anatoly_Pepelyayev_hog_ade"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Anatoly_Pepelyayev.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Patriarch_Kiril_hog_ade"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Patriarch_Kiril.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Vasily_Kanin_hog_ade"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Vasily_Kanin.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Pyotr_N_Wrangel_hog_pau"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Pyotr_N_Wrangel.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Lev_N_Gumilov_hog_pau"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Lev_N_Gumilov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Regency_Council_hog_pau"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Regency_Council.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Lavr_G_Kornilov_hog_npo"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Lavr_G_Kornilov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Vladimir_M_Purishkevich_hog_npo"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Vladimir_M_Purishkevich.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Nikolai_V_Ustryalov_hog_npo"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Nikolai_V_Ustryalov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Pavel_N_Shatilov_hog_npo"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Pavel_N_Shatilov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Sergei_G_Romanovski_hog_npo"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Sergei_G_Romanovski.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Viktor_L_Pokrovsky_hog_npo"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Viktor_L_Pokrovsky.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Viktor_M_Baydalakov_hog_val"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Viktor_M_Baydalakov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Arkadiy_Stolypin_hog_val"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Arkadiy_Stolypin.tga"
+	}
+  	### Foreign Minister
+	spriteType = {
+		name = "GFX_idea_RUS_Fanni_Y_Kaplan_for_sde"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Fanni_Y_Kaplan.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Viktor_M_Chernov_for_sde"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Viktor_M_Chernov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Ariadna_V_Tyrkova_Williams_for_sli"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Ariadna_V_Tyrkova_Williams.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Georgiy_V_Vernadsky_for_sli"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Georgiy_V_Vernadsky.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Mikhail_I_Tereshchenko_for_sli"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Mikhail_I_Tereshchenko.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Nikolai_V_Nekrasov_for_sli"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Nikolai_V_Nekrasov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Pyotr_B_Struve_for_sli"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Pyotr_B_Struve.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Aleksandr_I_Konovalov_for_mli"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Aleksandr_I_Konovalov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Alexei_M_Nikitin_for_mli"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Alexei_M_Nikitin.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Pavel_N_Milyukov_for_mli"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Pavel_N_Milyukov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Vasily_G_Boldyrev_for_sco"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Vasily_G_Boldyrev.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Georgiy_P_Ignatiev_for_sco"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Georgiy_P_Ignatiev.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Nikolai_S_Trubetskoy_for_sco"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Nikolai_S_Trubetskoy.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Vladimir_D_Nabokov_for_sco"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Vladimir_D_Nabokov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Vladimir_P_Paley_for_sco"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Vladimir_P_Paley.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Mikhail_A_Taube_for_ade"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Mikhail_A_Taube.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Vasily_Kanin_for_ade"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Vasily_Kanin.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Vladimir_Galitzine_for_ade"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Vladimir_Galitzine.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Alexei_A_Ignatiev_for_pau"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Alexei_A_Ignatiev.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Boris_V_Stuermer_for_pau"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Boris_V_Stuermer.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Lev_N_Gumilov_for_pau"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Lev_N_Gumilov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Aleksandr_Dikgof_Derental_for_npo"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Aleksandr_Dikgof_Derental.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Aleksandr_L_Kazembek_for_npo"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Aleksandr_L_Kazembek.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Aleksei_N_Tolstoy_for_npo"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Aleksei_N_Tolstoy.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Dmitri_M_Odinets_for_npo"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Dmitri_M_Odinets.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Sergei_G_Romanovski_for_npo"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Sergei_G_Romanovski.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Alexander_Vuyrgler_for_val"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Alexander_Vuyrgler.tga"
+	}
+	### Economy Minister
+	spriteType = {
+		name = "GFX_idea_RUS_Vladimir_M_Zenzinov_eco_sde"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Vladimir_M_Zenzinov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Andrei_D_Sakharov_eco_sli"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Andrei_D_Sakharov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Alexey_Peshekhonov_eco_sli"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Alexey_Peshekhonov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Mikhail_I_Tereshchenko_eco_sli"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Mikhail_I_Tereshchenko.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Vadim_V_Rudnev_eco_sli"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Vadim_V_Rudnev.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Vladimir_P_Smirnov_eco_sli"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Vladimir_P_Smirnov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Aleksandr_I_Konovalov_eco_mli"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Aleksandr_I_Konovalov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Mikhail_V_Bernacki_eco_mli"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Mikhail_V_Bernacki.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Wassily_Leontief_eco_mli"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Wassily_Leontief.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Ivan_G_Erdeli_eco_sco"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Ivan_G_Erdeli.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Sergei_Bulgakov_eco_sco"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Sergei_Bulgakov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Alexei_P_Arkhangelskiy_eco_ade"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Alexei_P_Arkhangelskiy.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Dmitri_Pavlovich_Romanov_eco_ade"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Dmitri_Pavlovich_Romanov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Mikhail_Rodzyanko_eco_ade"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Mikhail_Rodzyanko.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Pavel_N_Ignatiev_eco_ade"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Pavel_N_Ignatiev.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Vladimir_N_Kokovtsov_eco_ade"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Vladimir_N_Kokovtsov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Vladimir_von_Kappel_eco_sco"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Vladimir_von_Kappel.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Aleksei_I_Putilov_eco_pau"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Aleksei_I_Putilov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Alexei_A_Ignatiev_eco_pau"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Alexei_A_Ignatiev.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Ivan_P_Romanovsky_eco_pau"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Ivan_P_Romanovsky.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Nikanor_V_Savic_eco_pau"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Nikanor_V_Savic.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Nikolai_A_Maklakov_eco_pau"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Nikolai_A_Maklakov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Andrey_I_Zankevich_eco_npo"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Andrey_I_Zankevich.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Nikolai_P_Krasnov_eco_npo"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Nikolai_P_Krasnov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Nikolai_V_Ustryalov_eco_npo"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Nikolai_V_Ustryalov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Yuri_V_Kluchnikov_eco_npo"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Yuri_V_Kluchnikov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Georgiy_Gins_eco_val"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Georgiy_Gins.tga"
+	}
+	### Security Minister
+	spriteType = {
+		name = "GFX_idea_RUS_Grigory_Gershuni_sec_sde"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Grigory_Gershuni.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Iraklij_G_Tsereteliy_sec_sde"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Iraklij_G_Tsereteliy.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Vladimir_L_Burtsev_sec_sde"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Vladimir_L_Burtsev.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Andrei_I_Shingarev_sec_mli"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Andrei_I_Shingarev.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Vasily_A_Kharlamov_sec_mli"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Vasily_A_Kharlamov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Vasily_A_Maklakov_sec_mli"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Vasily_A_Maklakov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Aleksandr_D_Protopopov_sec_sco"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Aleksandr_D_Protopopov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Matvey_Skobelev_sec_sco"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Matvey_Skobelev.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Nikolai_Gredeskul_sec_sco"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Nikolai_Gredeskul.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Vasily_Shulgin_sec_sco"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Vasily_Shulgin.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Vladimir_D_Nabokov_sec_sco"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Vladimir_D_Nabokov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Felix_F_Yusupov_sec_sco"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Felix_F_Yusupov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Mikhail_Rodzyanko_sec_ade"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Mikhail_Rodzyanko.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Pavel_N_Ignatiev_sec_ade"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Pavel_N_Ignatiev.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Pyotr_N_Wrangel_sec_pat"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Pyotr_N_Wrangel.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Sergei_L_Markov_sec_ade"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Sergei_L_Markov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Sergei_P_Melgunov_sec_ade"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Sergei_P_Melgunov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Sergius_of_Nizhny_Novgorod_sec_ade"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Sergius_of_Nizhny_Novgorod.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Vladimir_N_Kokovtsov_sec_ade"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Vladimir_N_Kokovtsov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Aleksandr_P_Balk_sec_pau"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Aleksandr_P_Balk.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Nikolai_P_Vladimir_sec_pau"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Nikolai_P_Vladimir.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Pyotr_Krasnov_sec_pau"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Pyotr_Krasnov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Vladimir_M_Purishkevich_sec_pau"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Vladimir_M_Purishkevich.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Vladimir_Malyshkin_sec_pau"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Vladimir_Malyshkin.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Aleksandr_A_Galich_sec_npo"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Aleksandr_A_Galich.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Anatoly_MacReady_Stenroos_sec_npo"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Anatoly_MacReady_Stenroos.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Bronislav_V_Kaminski_sec_npo"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Bronislav_V_Kaminski.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Emma_Dikgof_Derental_sec_npo"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Emma_Dikgof_Derental.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Grigorij_R_Semyonov_sec_npo"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Grigorij_R_Semyonov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Ivan_A_Ilyin_sec_npo"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Ivan_A_Ilyin.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Viktor_L_Pokrovsky_sec_npo"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Viktor_L_Pokrovsky.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Vladimir_V_Manstein_sec_npo"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Vladimir_V_Manstein.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Anton_Tourkul_sec_val"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Anton_V_Turkul.tga"
+	}
+	### Chief of Staff
+	spriteType = {
+		name = "GFX_idea_RUS_Mikhail_D_Bonch_Bruyevich_cos"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Mikhail_D_Bonch_Bruyevich.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Nikolai_F_Vatutin_cos"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Nikolai_F_Vatutin.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Nikolai_N_Dukhonin_cos"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Nikolai_N_Dukhonin.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Vasily_A_Kharlamov_cos"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Vasily_A_Kharlamov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Jevgenij_von_Rommel_cos"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Jevgenij_von_Rommel.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Anton_I_Denikin_cos_"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Anton_I_Denikin.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Pyotr_N_Wrangel_cos"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Pyotr_N_Wrangel.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Sergei_L_Markov_cos"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Sergei_L_Markov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Ivan_P_Romanovsky_cos"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Ivan_P_Romanovsky.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Lavr_G_Kornilov_cos"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Lavr_G_Kornilov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Mikhail_Drozdovsky"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Mikhail_Drozdovsky.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Pyotr_Krasnov_cos"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Pyotr_Krasnov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Boris_V_Annenkov_cos"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Boris_V_Annenkov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Bronislav_V_Kaminski_cos"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Bronislav_V_Kaminski.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Pavel_N_Shatilov_cos"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Pavel_N_Shatilov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Vasily_V_Biskupsky_cos"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Vasily_V_Biskupsky.tga"
+	}
+	### Chief of Army
+	spriteType = {
+		name = "GFX_idea_RUS_Ivan_Belov_carm_sde"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Ivan_Belov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Mikhail_D_Bonch_Bruyevich_carm_sde"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Mikhail_D_Bonch_Bruyevich.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Nikolai_N_Dukhonin_carm_sli"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Nikolai_N_Dukhonin.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Nikolai_A_Lokhvitski_carm_mli"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Nikolai_A_Lokhvitski.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Ivan_P_Romanovsky_carm_sco"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Ivan_P_Romanovsky.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Aleksandr_Rodzyanko_carm_ade"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Aleksandr_Rodzyanko.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Alexei_P_Arkhangelskiy_carm_ade"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Alexei_P_Arkhangelskiy.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Dmitri_Pavlovich_Romanov_carm_ade"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Dmitri_Pavlovich_Romanov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Jevgenij_von_Rommel_carm_ade"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Jevgenij_von_Rommel.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Lavrentij_Kornilov_carm"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Lavrentij_Kornilov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Mikhail_Drozdovsky_carm"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Mikhail_Drozdovsky.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Pyotr_Krasnov_carm"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Pyotr_Krasnov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Aleksandr_S_Antonov_carm"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Aleksandr_S_Antonov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Konstantin_P_Voskoboinik_carm"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Konstantin_P_Voskoboinik.tga"
+	}
+	### Chief of Navy
+	spriteType = {
+		name = "GFX_idea_RUS_Mikhail_Berens_cnav_mli"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Mikhail_Berens.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Nestor_A_Monastyrev_cnav_mli"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Nestor_A_Monastyrev.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Ivan_F_Bosrem_cnav_sco"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Ivan_F_Bosrem.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Robert_von_Wiren_cnav_sco"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Robert_von_Wiren.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Dmitri_Nenyukov_cnav_ade"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Dmitri_Nenyukov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Vasily_Kanin_cnav_ade"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Vasily_Kanin.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Boris_Makaroff_cnav_pau"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Boris_Makaroff.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Boris_A_Vilkitsky_cnav_npo"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Boris_A_Vilkitsky.tga"
+	}
+	### Chief of Air Force
+	spriteType = {
+		name = "GFX_idea_RUS_Aleksandr_P_Kutepov_cair"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Aleksandr_P_Kutepov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Igor_I_Sikorsky_cair"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Igor_I_Sikorsky.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Vyacheslav_Tkachov_cair"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Vyacheslav_Tkachov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Yevgeny_K_Miller_cair"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Yevgeny_K_Miller.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Anton_V_Turkul_cair"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Anton_V_Turkul.tga"
+	}
 }

@@ -75,17 +75,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Manuel Estrada Cabrera"
 	desc = "POLITICS_MANUEL_ESTRADA_CABRERA_DESC"
-	picture = "Portrait_Guatemala_Manuel_Estrada_Cabrera.tga"
+	picture = "gfx/leaders/Generic/Portrait_South_America_Generic_new_6.tga"
 	expire = "1965.1.1"
 	ideology = market_liberal_subtype
-	traits = { }
-}
-create_country_leader = {
-	name = "Juan Federico Ponce Vaides"
-	desc = "POLITICS_JUAN_FEDERICO_PONCE_VAIDES_DESC"
-	picture = "Portrait_Guatemala_Juan_Federico_Ponce_Vaides.tga"
-	expire = "1965.1.1"
-	ideology = authoritarian_democrat_subtype
 	traits = { }
 }
 create_country_leader = {
@@ -95,4 +87,39 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = authoritarian_democrat_subtype
 	traits = { }
+}
+
+create_field_marshal = {
+	name = "Lázaro Chacón González"
+	portrait_path = "gfx/leaders/GUA/Portrait_Guatemala_Lazaro_Chacon_Gonzalez.tga"
+	id = 6968
+	traits = { career_officer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_field_marshal = {
+	name = "José María Orellana"
+	portrait_path = "gfx/leaders/GUA/Portrait_Guatemala_Jose_Maria_Orellana.tga"
+	id = 6967
+	traits = { old_guard politically_connected infantry_officer trait_engineer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Jacobo Árbenz"
+	portrait_path = "gfx/leaders/GUA/Portrait_Guatemala_Jacobo_Arbenz.tga"
+	id = 6970
+	traits = { infantry_officer career_officer }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
 }

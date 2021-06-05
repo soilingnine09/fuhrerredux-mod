@@ -3,8 +3,6 @@
 ##################
 
 ideas = {
-
-		
 	country = {
 		MON_without_khan = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MON_without_khan"}
@@ -15,8 +13,6 @@ ideas = {
 				war_support_factor = 0.1
 			}
 		}
-	}
-	country = {
 		MON_tuva_nationalism = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MON_tuva_nationalism"}
 			picture = FRA_scw_intervention_republicans_focus
@@ -24,11 +20,9 @@ ideas = {
 				stability_factor = -0.01
 			}
 		}
-	}
-	country = {
 		MON_nomad = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MON_nomad"}
-			picture = MON_nomad
+			picture = prc_low_popular_support3
 			modifier = {
 				production_factory_max_efficiency_factor = -0.1
 				production_factory_efficiency_gain_factor = -0.05
@@ -36,8 +30,6 @@ ideas = {
 				conscription = 0.035
 			}
 		}
-	}
-	country = {
 		MON_doctrine = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MON_doctrine"}
 			picture = MON_doctrine
@@ -51,8 +43,6 @@ ideas = {
 				}
 			}
 		}
-	}
-	country = {
 		MON_industrial_combine = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MON_industrial_combine"}
 			picture = man_five_year_plan_industry
