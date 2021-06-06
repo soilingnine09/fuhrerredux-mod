@@ -1,4 +1,403 @@
 spriteTypes = {
+	
+	####################################################
+    # FRA
+	### Head of Government
+	spriteType = {
+		name = "GFX_idea_FRA_Georges_Valois_hog_van"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Georges_Valois.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Benoit_Frachon_hog_col"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Benoit_Frachon.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Marceau_Pivert_hog_col"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Marceau_Pivert.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Benoit_Broutchoux_hog_lib"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Benoit_Broutchoux.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Daniel_Guerin_hog_lib"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Daniel_Guerin.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Leon_Blum_hog_sde"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Leon_Blum.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Paul_Ramadier_hog_sde"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Paul_Ramadier.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Camille_Chautemps_hog_sli"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Camille_Chautemps.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Edouard_Daladier_hog_sli"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Edouard_Daladier.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Paul_Reynaud_hog_mli"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Paul_Reynaud.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Jean_Ybarnegaray_hog_sco"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Jean_Ybarnegaray.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Francois_de_la_Rocque_hog_ade"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Francois_de_la_Rocque.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Jean_Mermoz_hog_ade"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Jean_Mermoz.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Maurice_Janin_hog_ade"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Maurice_Janin.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Ernest_Mercier_hog_pau"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Ernest_Mercier.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Louis_Franchet_d'Esperey_hog_pau"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Louis_Franchet_d'Esperey.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Louis_Alexandre_Audibert_hog_pau"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Louis_Alexandre_Audibert.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Philippe_Petain_hog_pau"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Philippe_Petain.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Charles_de_Gaulle_hog_npo"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Charles_de_Gaulle.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Charles_Maurras_hog_npo"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Charles_Maurras.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Jacques_Doriot_hog_val"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Jacques_Doriot.tga"
+	}
+	# Foreign Minister
+	spriteType = {
+		name = "GFX_idea_FRA_Jacques_Duclos_for_van"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Jacques_Duclos.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Charles_Rappoport_for_col"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Charles_Rappoport.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Nestor_Makhno_for_lib"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Nestor_Makhno.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Pierre_Laval_for_sde"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Pierre_Laval.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Edouard_Daladier_for_sli"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Edouard_Daladier.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_George_Bonnet_for_sli"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_George_Bonnet.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Camille_Barrere_for_sco"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Camille_Barrere.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Georges_Mandel_for_sco"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Georges_Mandel.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Jean_Ybarnegaray_for_sco"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Jean_Ybarnegaray.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Louis_Marin_for_sco"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Louis_Marin.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Jean_Mermoz_for_ade"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Jean_Mermoz.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Paul_Baudouin_for_ade"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Paul_Baudouin.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Joseph_Darnand_for_pau"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Joseph_Darnand.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Maurice_Pujo_for_npo"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Maurice_Pujo.tga"
+	}
+	### Economy Minister
+	spriteType = {
+		name = "GFX_idea_FRA_Marcel_Deat_eco_van"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Marcel_Deat.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Daniel_Renoult_eco_col"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Daniel_Renoult.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Leon_Jouhaux_eco_col"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Leon_Jouhaux.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Henri_Tanguy_eco_lib"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Henri_Tanguy.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Jean_Zay_eco_sde"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Jean_Zay.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Edouard_Daladier_eco_sli"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Edouard_Daladier.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Andre_Tardieu_eco_mli"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Andre_Tardieu.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Paul_Reynaud_eco_mli"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Paul_Reynaud.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Pierre_Etienne_Flandin_eco_mli"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Pierre_Etienne_Flandin.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Charles_Vallin_eco_ade"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Charles_Vallin.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Marie_Eugene_Debeney_eco_ade"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Marie_Eugene_Debeney.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Eugene_Schueller_eco_pau"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Eugene_Schueller.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Francois_Coty_eco_pau"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Francois_Coty.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Eugene_Deloncle_eco_npo"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Eugene_Deloncle.tga"
+	}
+	### Security Minister
+	spriteType = {
+		name = "GFX_idea_FRA_Claudine_Chomat_sec_van"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Claudine_Chomat.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Henri_Bonnet_sec_col"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Henri_Bonnet.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Henri_Gourdeaux_sec_col"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Henri_Gourdeaux.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_May_Picqueray_sec_lib"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_May_Picqueray.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Sebastien_Faure_sec_lib"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Sebastien_Faure.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Albert_Sarraut_sec_sli"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Albert_Sarraut.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Jean_Fabry_sec_sli"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Jean_Fabry.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Louis_Marin_sec_sco"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Louis_Marin.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Francois_de_la_Rocque_sec_ade"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Francois_de_la_Rocque.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Ernest_Mercier_sec_pau"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Ernest_Mercier.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_George_Lamirand_sec_pau"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_George_Lamirand.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Louis_Renault_sec_pau"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Louis_Renault.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Eugene_Deloncle_sec_npo"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Eugene_Deloncle.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Henri_Massis_sec_npo"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Henri_Massis.tga"
+	}
+	### Chief of Staff
+	spriteType = {
+		name = "GFX_idea_FRA_Henri_Amiel_cos_sli"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Henri_Amiel.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Antoine_Bethouart_cos_sco"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Antoine_Bethouart.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Bernard_Serrigny_cos_ade"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Bernard_Serrigny.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Charles_Huntzinger_cos_ade"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Charles_Huntzinger.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Eugene_Bridoux_cos_ade"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Eugene_Bridoux.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Francois_Darlan_cos_ade"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Francois_Darlan.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Henri_Albert_Niessel_cos_ade"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Henri_Albert_Niessel.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Henri_Dentz_cos_ade"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Henri_Dentz.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Jean_de_Lattre_de_Tassigny_cos_ade"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Jean_de_Lattre_de_Tassigny.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Philippe_de_Hauteclocque_cos_ade"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Philippe_de_Hauteclocque.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Louis_Franchet_d'Esperey_cos_pau"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Louis_Franchet_d'Esperey.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Charles_de_Gaulle_cos_npo"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Charles_de_Gaulle.tga"
+	}
+	### Chief of Army
+	spriteType = {
+		name = "GFX_idea_FRA_Gabriel_Puaux_carm_sli"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Gabriel_Puaux.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Alphonse_Juin_carm_sco"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Alphonse_Juin.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Jean_Touzet_du_Vigier_carm_sco"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Jean_Touzet_du_Vigier.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Joseph_de_Goislard_de_Monsabert_carm_sco"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Joseph_de_Goislard_de_Monsabert.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Eugene_Bridoux_carm_ade"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Eugene_Bridoux.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Jean_de_Lattre_de_Tassigny_carm_ade"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Jean_de_Lattre_de_Tassigny.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Maurice_Janin_carm_ade"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Maurice_Janin.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Maxime_Weygand_carm_ade"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Maxime_Weygand.tga"
+	}
+	### Chief of Navy
+	spriteType = {
+		name = "GFX_idea_FRA_Francois_Carre_de_Lusancay_cnav_sli"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Francois_Carre_de_Lusancay.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Louis_Finet_cnav_sli"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Louis_Finet.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Francois_Darlan_cnav_ade"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Francois_Darlan.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Georges_Thierry_d'Argenlieu_cnav_ade"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Georges_Thierry_d'Argenlieu.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Jean_Esteva_cnav_ade"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Jean_Esteva.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Jean_Marie_Abrial_cnav_ade"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Jean_Marie_Abrial.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Marie_Jean_Lucien_Lacaze_cnav_ade"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Marie_Jean_Lucien_Lacaze.tga"
+	}
+	### Chief of Air Force
+	spriteType = {
+		name = "GFX_idea_FRA_Henri_Soulat_cair_sli"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Henri_Soulat.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Antonin_Brocard_cair_mli"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Antonin_Brocard.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Henri_Amiel_cair_sco"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Henri_Amiel.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Marie_Charles_Duval_cair_sco"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Marie_Charles_Duval.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Jean_Bergeret_cair_ade"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Jean_Bergeret.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Jean_Mermoz_cair_ade"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Jean_Mermoz.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Rene_Paul_Fonck_cair_ade"
+		texturefile = "gfx/interface/ideas/FRA/ministers/FRA_Rene_Paul_Fonck.tga"
+	}
 
 	####################################################
     # ENG

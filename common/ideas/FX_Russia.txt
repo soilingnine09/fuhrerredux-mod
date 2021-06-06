@@ -2245,9 +2245,9 @@ ideas = {
 		}
 		RUS_Boris_Makaroff_theo = {
 			allowed = { original_tag = RUS }
-			traits = { navy_doctrine_theorist }
+			traits = { naval_doctrine_theorist }
 			research_bonus = {
-				navy_doctrine = 0.1
+				naval_doctrine = 0.1
 			}
 		}
 	}
