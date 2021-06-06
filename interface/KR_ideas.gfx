@@ -27,54 +27,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ideas/SWE_douglas_army_spirit.dds"
 	}
 
-	spriteType = {
-		name = "GFX_idea_disaster"
-		texturefile = "gfx/interface/stability_disaster.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_very_low_stability"
-		texturefile = "gfx/interface/stability_very_low.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_low_stability"
-		texturefile = "gfx/interface/stability_low.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_normal_stability"
-		texturefile = "gfx/interface/stability_average.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_good_stability"
-		texturefile = "gfx/interface/stability_high2.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_very_good_stability"
-		texturefile = "gfx/interface/stability_very_high.dds"
-	}
-
-	### Political power ###
-
-	spriteType = {
-		name = "GFX_idea_very_low_popularity"
-		texturefile = "gfx/interface/party_popularity_1.tga"
-	}
-	spriteType = {
-		name = "GFX_idea_low_popularity"
-		texturefile = "gfx/interface/party_popularity_2.tga"
-	}
-	spriteType = {
-		name = "GFX_idea_normal_popularity"
-		texturefile = "gfx/interface/party_popularity_3.tga"
-	}
-	spriteType = {
-		name = "GFX_idea_high_popularity"
-		texturefile = "gfx/interface/party_popularity_4.tga"
-	}
-	spriteType = {
-		name = "GFX_idea_very_high_popularity"
-		texturefile = "gfx/interface/party_popularity_5.tga"
-	}
-
 	### Company Slots ###
 
 	spriteType = {

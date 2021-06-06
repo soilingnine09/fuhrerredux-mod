@@ -184,18 +184,12 @@ country_event = {
 
 		set_politics = { ruling_party = national_populist elections_allowed = no }
 
-		hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-		}
-
+		remove_every_minister = yes
 		add_ideas = {
 			presidential_republic
-			TUR_Ahmed_Necdet_Pasa_hog_npo
+			TUR_Hueseyin_Nihal_Pasa_hog_npo
 			TUR_Zeki_Velidi_Pasa_for_npo
-			TUR_Mehmed_Recep_Pasa_eco_npo
+			TUR_Mehmed_Sefik_Pasa_eco_pau
 			TUR_Sadri_Maksudi_Bey_sec_npo
 		}
 
@@ -248,9 +242,7 @@ country_event = {
 				picture = "Portrait_TUR_Ahmed_Nihad.tga"
 				expire = "1965.1.1"
 				ideology = social_liberal_subtype
-				traits = {
-
-				}
+				traits = { }
 			}
 		}
 	}
@@ -269,18 +261,12 @@ country_event = {
 
 		set_politics = { ruling_party = authoritarian_democrat elections_allowed = no }
 
-		hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-		}
-
+		remove_every_minister = yes
 		add_ideas = {
 			presidential_republic
 			TUR_Hueseyin_Rauf_Pasa_hog_ade
-			TUR_Kazim_Fikri_Pasa_for_ade
-			TUR_Mahmud_Celal_Pasa_eco_ade
+			TUR_Selahattin_Pasa_for_ade
+			TUR_Resad_Muhlis_Bey_eco_ade
 			TUR_Yunus_Nadi_Bey_sec_ade
 		}
 
@@ -334,9 +320,7 @@ country_event = {
 				picture = "Portrait_TUR_Ahmed_Nihad.tga"
 				expire = "1965.1.1"
 				ideology = social_liberal_subtype
-				traits = {
-
-				}
+				traits = { }
 			}
 		}
 	}
@@ -369,15 +353,11 @@ country_event = {
 		hidden_effect = {
 			set_politics = { ruling_party = social_liberal elections_allowed = no }
 
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-
+			remove_every_minister = yes
 			add_ideas = {
 				TUR_Prens_Sabahaddin_Efendi_hog_sli
-				TUR_Osman_Kemal_Bey_for_sli
-				TUR_Resad_Muhlis_Bey_eco_sli
+				TUR_Ali_Fuad_Pasa_for_sli
+				TUR_Berc_Keresteciyan_Bey_eco_sli
 				TUR_Agaoglu_Ahmed_Pasa_sec_sli
 			}
 
@@ -387,20 +367,15 @@ country_event = {
 				picture = "Portrait_TUR_Ahmed_Nihad.tga"
 				expire = "1965.1.1"
 				ideology = social_liberal_subtype
-				traits = {
-
-				}
+				traits = { }
 			}
-
 			create_country_leader = {
 				name = "Ahmed IV"
 				desc = "POLITICS_AHMED_NIHAD_DESC"
 				picture = "Portrait_TUR_Ahmed_Nihad.tga"
 				expire = "1965.1.1"
 				ideology = paternal_autocrat_subtype
-				traits = {
-
-				}
+				traits = { }
 			}
 
 			add_ideas = TUR_a_moderate_empire_idea
@@ -423,18 +398,12 @@ country_event = {
 
 		set_politics = { ruling_party = paternal_autocrat elections_allowed = no }
 
-		hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-		}
-
+		remove_every_minister = yes
 		add_ideas = {
-			TUR_Hueseyin_Avni_Pasa_hog_pau
+			TUR_Hueseyin_Selahattin_Pasa_hog_pau
 			TUR_Sueleyman_Sefik_Pasa_for_pau
-			TUR_Haci_Oemer_Bey_eco_pau
-			TUR_Mehmed_Esad_Pasa_sec_pau
+			TUR_Mehmed_Nuri_Bey_eco_pau
+			TUR_Mustafa_Fevzi_Pasa_sec_pau
 		}
 
 		hidden_effect = {
@@ -451,11 +420,8 @@ country_event = {
 				picture = "Portrait_TUR_Osman_Fuad.tga"
 				expire = "1965.1.1"
 				ideology = paternal_autocrat_subtype
-				traits = {
-
-				}
+				traits = { }
 			}
-
 			create_country_leader = {
 				name = "Prens Mehmed Sabâhaddin Efendi"
 				desc = "POLITICS_MEHMED_SABAHADDIN_DESC"
@@ -2718,16 +2684,12 @@ country_event = {
 					absolute_monarchy
 				}
 
-				remove_ideas_with_trait = head_of_government
-				remove_ideas_with_trait = foreign_minister
-				remove_ideas_with_trait = economy_minister
-				remove_ideas_with_trait = security_minister
-
+				remove_every_minister = yes
 				add_ideas = {
-					TUR_Hueseyin_Avni_Pasa_hog_pau
+					TUR_Hueseyin_Selahattin_Pasa_hog_pau
 					TUR_Sueleyman_Sefik_Pasa_for_pau
-					TUR_Haci_Oemer_Bey_eco_pau
-					TUR_Mehmed_Esad_Pasa_sec_pau
+					TUR_Mehmed_Nuri_Bey_eco_pau
+					TUR_Mehmed_Sefik_Pasa_eco_pau
 				}
 
 				create_field_marshal = {
@@ -3730,19 +3692,13 @@ country_event = {
 
 				set_politics = { ruling_party = authoritarian_democrat elections_allowed = no }
 
-				hidden_effect = {
-					remove_ideas_with_trait = head_of_government
-					remove_ideas_with_trait = foreign_minister
-					remove_ideas_with_trait = economy_minister
-					remove_ideas_with_trait = security_minister
-				}
-
+				remove_every_minister = yes
 				add_ideas = {
 					presidential_republic
-					TUR_Hueseyin_Rauf_Pasa_hog_ade
-					TUR_Kazim_Fikri_Pasa_for_ade
-					TUR_Mahmud_Celal_Pasa_eco_ade
-					TUR_Yunus_Nadi_Bey_sec_ade
+					TUR_Mustafa_Kemal_Pasa_hog_ade
+					TUR_Tevfik_Ruestue_Bey_for_ade
+					TUR_Mehmed_Sakir_Pasa_eco_ade
+					TUR_Mustafa_Necati_Pasa_sec_ade
 				}
 
 				add_ideas = TUR_civil_war_idea
@@ -3763,33 +3719,25 @@ country_event = {
 					picture = "Portrait_TRT_Ismet_Pasa.tga"
 					expire = "1965.1.1"
 					ideology = authoritarian_democrat_subtype
-					traits = {
-
-					}
+					traits = { }
 				}
-
 				create_country_leader = {
 					name = "Prens Mehmed Sabâhaddin Efendi"
 					desc = "POLITICS_MEHMED_SABAHADDIN_DESC"
 					picture = "Portrait_TUR_Mehmet_Sabahaddin.tga"
 					expire = "1965.1.1"
 					ideology = social_liberal_subtype
-					traits = {
-						
-					}
+					traits = { }
 				}
-
 				create_country_leader = {
 					name = "Osman Bey"
 					desc = "POLITICS_OSMAN_BOLUKBASI_DESC"
 					picture = ""
 					expire = "1965.1.1"
 					ideology = paternal_autocrat_subtype
-					traits = {
-
-					}
+					traits = { }
 				}
-
+				
 				create_field_marshal = {
 					name = "Mustafa Fevzi Paşa"
 					picture = "Portrait_TUR_Fevzi_Cakmak.tga"
