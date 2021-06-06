@@ -1753,4 +1753,17 @@ spriteTypes = {
 		name = "GFX_idea_RUS_Anton_V_Turkul_cair"
 		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Anton_V_Turkul.tga"
 	}
+	### Theorist
+	spriteType = {
+		name = "GFX_idea_RUS_Dmitri_Pavlovich_Romanov_theo"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Dmitri_Pavlovich_Romanov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Aleksandr_P_Kutepov_theo"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Aleksandr_P_Kutepov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Boris_Makaroff_theo"
+		texturefile = "gfx/interface/ideas/RUS/ministers/RUS_Boris_Makaroff.tga"
+	}
 }

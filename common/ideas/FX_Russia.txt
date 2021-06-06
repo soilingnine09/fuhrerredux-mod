@@ -2227,6 +2227,30 @@ ideas = {
 			}
 		}
 	}
+	### Theorist
+	theorist = {
+		RUS_Dmitri_Pavlovich_Romanov_theo = {
+			allowed = { original_tag = RUS }
+			traits = { land_doctrine_theorist }
+			research_bonus = {
+				land_doctrine = 0.1
+			}
+		}
+		RUS_Aleksandr_P_Kutepov_theo = {
+			allowed = { original_tag = RUS }
+			traits = { air_doctrine_theorist }
+			research_bonus = {
+				air_doctrine = 0.1
+			}
+		}
+		RUS_Boris_Makaroff_theo = {
+			allowed = { original_tag = RUS }
+			traits = { navy_doctrine_theorist }
+			research_bonus = {
+				navy_doctrine = 0.1
+			}
+		}
+	}
 }
 
 

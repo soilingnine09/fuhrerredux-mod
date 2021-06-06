@@ -6,7 +6,7 @@ ideas = {
 	
 		ENG_col_unrest = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ENG_col_unrest"}
-			picture = FRA_factory_strikes
+			picture = MEX_revolutionary_army
 		
 			allowed = {
 				always = no
@@ -23,7 +23,7 @@ ideas = {
 		
 		ENG_col_uprising = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ENG_col_uprising"}
-			picture = FRA_factory_strikes
+			picture = MEX_revolutionary_army
 		
 			allowed = {
 				always = no
@@ -40,7 +40,7 @@ ideas = {
 		
 		ENG_col_uprising1 = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ENG_col_uprising1"}
-			picture = FRA_factory_strikes
+			picture = MEX_revolutionary_army
 		
 			allowed = {
 				always = no
@@ -57,7 +57,7 @@ ideas = {
 		
 		ENG_col_uprising2 = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ENG_col_uprising2"}
-			picture = FRA_factory_strikes
+			picture = MEX_revolutionary_army
 		
 			allowed = {
 				always = no
@@ -73,7 +73,7 @@ ideas = {
 		
 		ENG_col_uprising_france = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ENG_col_uprising_france"}
-			picture = FRA_factory_strikes
+			picture = MEX_revolutionary_army
 		
 			allowed = {
 				always = no
@@ -90,7 +90,7 @@ ideas = {
 		
 		ENG_war_fatigue = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ENG_war_fatigue"}
-			picture = generic_victors_of_ww1
+			picture = ENG_the_war_to_end_all_wars
 		
 			allowed = {
 				always = no
@@ -2203,7 +2203,7 @@ ideas = {
 		
 		ENG_irb = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ENG_irb"}
-			picture = generic_disjointed_gov
+			picture = IRE_flag
 		
 			allowed = {
 				always = no
