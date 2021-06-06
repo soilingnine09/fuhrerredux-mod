@@ -244,16 +244,15 @@ ideas = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_militias"}
             picture = generic_morale_bonus
             modifier = {
-             	army_org_factor = -0.1
-             	max_planning = -0.25
-             	planning_speed = -0.25
+             	conscription_factor = 0.05
+				army_org_factor = -0.025
             }
         }
 		MEX_colegio_militar = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_colegio_militar"}
             picture = generic_morale_bonus
             modifier = {
-             	#army_org_factor = 0.05
+             	army_org_factor = 0.05
              	army_leader_start_level = 1
              	max_planning = 0.1
              	planning_speed = 0.1
@@ -296,70 +295,77 @@ ideas = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_basta"}
             picture = generic_manpower_bonus
             modifier = {
-                stability_factor = 0.05
+				conscription_factor = 0.05
 				army_morale_factor = 0.05
-				planning_speed = -0.05
-				conscription_factor = 0.02
+				army_attack_factor = 0.05
+                army_defence_factor = 0.05
+				training_time_factor = -0.05
             }
         }
 		MEX_basta2 = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_basta2"}
 			picture = generic_manpower_bonus
 			modifier = {
-				stability_factor = 0.07
+				conscription_factor = 0.05
 				army_morale_factor = 0.05
-				planning_speed = -0.06
-				conscription_factor = 0.03
+				army_attack_factor = 0.075
+                army_defence_factor = 0.075
+				training_time_factor = -0.05
             }
         }
 		MEX_basta3 = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_basta3"}
 			picture = generic_manpower_bonus
 			modifier = {
-				stability_factor = 0.09
-				army_morale_factor = 0.05
-				planning_speed = -0.08
 				conscription_factor = 0.05
+				army_morale_factor = 0.075
+				army_attack_factor = 0.075
+                army_defence_factor = 0.075
+				training_time_factor = -0.05
             }
         }
 		MEX_basta4 = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_basta4"}
 			picture = generic_manpower_bonus
 			modifier = {
-				stability_factor = 0.11
-				army_morale_factor = 0.1
-				planning_speed = -0.1
 				conscription_factor = 0.05
+				army_morale_factor = 0.1
+				army_attack_factor = 0.1
+                army_defence_factor = 0.1
+				training_time_factor = -0.05
             }
         }
 		MEX_basta5 = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_basta5"}
 			picture = generic_manpower_bonus
 			modifier = {
-				stability_factor = 0.12
+				conscription_factor = 0.1
 				army_morale_factor = 0.1
-				planning_speed = -0.13
-				conscription_factor = 0.07
+				army_attack_factor = 0.1
+                army_defence_factor = 0.1
+				training_time_factor = -0.05
             }
         }
 		MEX_basta6 = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_basta6"}
 			picture = generic_manpower_bonus
 			modifier = {
-				stability_factor = 0.13
-				army_morale_factor = 0.12
-				planning_speed = -0.13
-				conscription_factor = 0.09
+				conscription_factor = 0.1
+				army_morale_factor = 0.1
+				army_attack_factor = 0.1
+                army_defence_factor = 0.1
+				training_time_factor = -0.75
             }
         }
 		MEX_basta7 = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_basta7"}
 			picture = generic_manpower_bonus
 			modifier = {
-				stability_factor = 0.15
-				army_morale_factor = 0.15
-				planning_speed = -0.2
 				conscription_factor = 0.1
+				army_morale_factor = 0.1
+				army_attack_factor = 0.1
+                army_defence_factor = 0.1
+				training_time_factor = -0.1
             }
         }
 	}
