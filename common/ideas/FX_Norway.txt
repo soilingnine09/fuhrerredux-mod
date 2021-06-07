@@ -1,0 +1,2647 @@
+ideas = {
+	country = {
+		NOR_socialism_surrounded_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_socialism_surrounded_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_collectivism_rising 
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.05
+				libertarian_socialist_drift = 0.01
+			}
+		}
+		NOR_monarchist_right_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_monarchist_right_idea"}
+			allowed = { original_tag = NOR }
+			picture = ast_abandon_the_westminster_system
+			modifier = {
+				stability_factor = -0.10
+				political_power_gain = -0.20
+				paternal_autocrat_drift = 0.01
+			}
+		}
+		NOR_war_on_samfundsvernet_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_war_on_samfundsvernet_idea"}
+			allowed = { original_tag = NOR }
+			picture = german_advisors
+			modifier = {
+				stability_factor = -0.10
+				conscription_factor = -0.05
+				political_power_gain = -0.20
+				national_populist_drift = 0.01
+				valkist_drift = 0.01
+			}
+		}
+		NOR_samfundsvernets_rule_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_samfundsvernets_rule_idea"}
+			allowed = { original_tag = NOR }
+			picture = german_advisors
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.10
+				national_populist_drift = 0.01
+				valkist_drift = 0.01
+			}
+		}
+		NOR_military_deserters_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_military_deserters_idea"}
+			allowed = { original_tag = NOR }
+			picture = death_men
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.10
+				conscription_factor = -0.50
+				army_morale_factor = -0.25
+				army_attack_factor = -0.30
+				army_defence_factor = -0.15
+			}
+		}
+		NOR_naval_deserters_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_naval_deserters_idea"}
+			allowed = { original_tag = NOR }
+			picture = escort_effort_focus
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				conscription_factor = -0.15
+				navy_capital_ship_attack_factor = -0.15
+				navy_capital_ship_defence_factor = -0.10
+				navy_submarine_attack_factor = -0.20
+				navy_submarine_defence_factor = -0.10
+				navy_screen_attack_factor = -0.15
+				navy_screen_defence_factor = -0.10
+			}
+		}
+		NOR_effect_london_crash_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_effect_london_crash_idea"}
+			allowed = { original_tag = NOR }
+			picture = great_depression
+			modifier = {
+				consumer_goods_factor = 0.10
+				production_speed_buildings_factor = -0.20
+				industrial_capacity_factory = -0.20
+			}
+		}
+		### Focus Tree
+		NOR_lower_corporate_tax_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_lower_corporate_tax_idea"}
+			allowed = { original_tag = NOR }
+			picture = NOR_labour_agreement
+			modifier = {
+				political_power_gain = -0.07
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		NOR_lower_corporate_tax_idea1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_lower_corporate_tax_idea1"}
+			allowed = { original_tag = NOR }
+			picture = NOR_labour_agreement
+			modifier = {
+				political_power_gain = -0.07
+				production_factory_efficiency_gain_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		NOR_lower_corporate_tax_idea2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_lower_corporate_tax_idea2"}
+			allowed = { original_tag = NOR }
+			picture = NOR_labour_agreement
+			modifier = {
+				political_power_gain = -0.12
+				production_factory_efficiency_gain_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				global_building_slots_factor = 0.10
+			}
+		}
+		NOR_strenghten_nationalized_sector_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_strenghten_nationalized_sector_idea"}
+			allowed = { original_tag = NOR }
+			picture = NOR_planned_economy
+			modifier = {
+				political_power_gain = 0.10
+				global_building_slots_factor = -0.08
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		NOR_strenghten_nationalized_sector_idea1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_strenghten_nationalized_sector_idea1"}
+			allowed = { original_tag = NOR }
+			picture = NOR_planned_economy
+			modifier = {
+				political_power_gain = 0.10
+				global_building_slots_factor = -0.08
+				production_speed_buildings_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+		NOR_strenghten_nationalized_sector_idea2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_strenghten_nationalized_sector_idea2"}
+			allowed = { original_tag = NOR }
+			picture = NOR_planned_economy
+			modifier = {
+				political_power_gain = 0.12
+				global_building_slots_factor = -0.08
+				production_speed_buildings_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				industrial_capacity_factory = 0.07
+			}
+		}
+		NOR_new_farmer_quotas_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_new_farmer_quotas_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_production_bonus
+			modifier = {
+				consumer_goods_factor = -0.02
+				local_resources_factor = 0.05
+			}
+		}
+		NOR_establish_labour_welfare_administration_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_establish_labour_welfare_administration_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_production_bonus
+			modifier = {
+				consumer_goods_factor = 0.02
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		NOR_corn_import_tariffs_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_corn_import_tariffs_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_wall_line
+			modifier = {
+				local_resources_factor = 0.08
+			}
+		}
+		NOR_cut_development_aid_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_cut_development_aid_idea"}
+			allowed = { original_tag = NOR }
+			picture = idea_guns_shield
+			modifier = {
+				political_power_gain = 0.05
+			}
+		}
+		NOR_increase_taxes_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_increase_taxes_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_intel_bonus
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = -0.05
+			}
+		}
+		NOR_temporary_rations_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_temporary_rations_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		NOR_naval_agreement_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_naval_agreement_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_sea_focused_navy
+			modifier = {
+				stability_factor = 0.10
+				experience_gain_army_factor = 0.10
+				production_speed_arms_factory_factor = 0.10
+				production_speed_dockyard_factor = -0.15
+				production_speed_naval_base_factor = -0.10
+				navy_max_range_factor = -0.10
+			}
+		}
+		NOR_specialized_army_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_specialized_army_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_manpower_bonus
+			modifier = {
+				conscription = 0.01
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				winter_attrition_factor = -0.15
+			}
+		}
+		NOR_anti_milita_act_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_anti_milita_act_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_manpower_bonus
+			modifier = {
+				conscription = 0.01
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				winter_attrition_factor = -0.15
+				political_power_gain = 0.10
+				army_org_Factor = 0.05
+			}
+		}
+		NOR_strong_in_numbers_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_strong_in_numbers_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_manpower_bonus
+			modifier = {
+				conscription = 0.02
+				winter_attrition_factor = -0.15
+			}
+		}
+		NOR_start_state_milita_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_start_state_milita_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_manpower_bonus
+			modifier = {
+				conscription = 0.03
+				winter_attrition_factor = -0.15
+				political_power_gain = -0.05
+				army_org_Factor = -0.05
+			}
+		}
+		NOR_experienced_general_staff_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_experienced_general_staff_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_manpower_bonus
+			modifier = {
+				conscription = 0.03
+				planning_speed = 0.15
+				winter_attrition_factor = -0.15
+				political_power_gain = -0.05
+				army_org_Factor = -0.05
+			}
+		}
+		NOR_provide_new_equipment_manuals_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_provide_new_equipment_manuals_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_production_bonus
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		NOR_new_production_quotas_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_new_production_quotas_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_production_bonus
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		NOR_small_ship_efficency_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_small_ship_efficency_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_navy_bonus
+			modifier = {
+				navy_screen_attack_factor = 0.10
+				navy_screen_defence_factor = 0.10
+			}
+		}
+		NOR_protect_our_coast_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_protect_our_coast_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_navy_bonus
+			modifier = {
+				navy_screen_attack_factor = 0.10
+				navy_screen_defence_factor = 0.15
+				production_speed_coastal_bunker_factor = 0.15
+			}
+		}
+		NOR_focus_new_flagships_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_focus_new_flagships_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_navy_bonus
+			modifier = {
+				navy_capital_ship_attack_factor = 0.05
+				navy_capital_ship_defence_factor = 0.05
+			}
+			
+		}
+		NOR_new_manuals_for_big_ships_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_new_manuals_for_big_ships_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_navy_bonus
+			modifier = {
+				navy_capital_ship_attack_factor = 0.05
+				navy_capital_ship_defence_factor = 0.05
+			}
+			equipment_bonus = {
+				light_cruiser = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				heavy_cruiser = {
+					build_cost_ic = -0.10 instant = yes
+				}
+			}
+		}
+		NOR_protect_our_waters_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_protect_our_waters_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_navy_bonus
+			modifier = {
+				navy_capital_ship_attack_factor = 0.10
+				navy_capital_ship_defence_factor = 0.05
+				production_speed_dockyard_factor = 0.15
+			}
+			equipment_bonus = {
+				light_cruiser = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				heavy_cruiser = {
+					build_cost_ic = -0.10 instant = yes
+				}
+			}
+		}
+		NOR_internal_control_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_internal_control_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_spy_political
+			modifier = {
+				conscription_factor = 0.10
+				political_power_gain = 0.10
+				paternal_autocrat_drift = -0.02
+				national_populist_drift = -0.02
+				valkist_drift = -0.02
+			}
+		}
+		NOR_internal_control_idea1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_internal_control_idea1"}
+			allowed = { original_tag = NOR }
+			picture = generic_spy_political
+			modifier = {
+				conscription_factor = 0.15
+				political_power_gain = 0.10
+				vanguardist_drift = -0.01
+				paternal_autocrat_drift = -0.03
+				national_populist_drift = -0.03
+				valkist_drift = -0.03
+			}
+		}
+		NOR_internal_control_idea2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_internal_control_idea2"}
+			allowed = { original_tag = NOR }
+			picture = generic_spy_political
+			modifier = {
+				conscription_factor = 0.10
+				political_power_gain = 0.15
+				social_conservative_drift = -0.01
+				authoritarian_democrat_drift = -0.01
+				paternal_autocrat_drift = -0.03
+				national_populist_drift = -0.03
+				valkist_drift = -0.03
+			}
+		}
+		NOR_monarchist_right_idea1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_monarchist_right_idea1"}
+			allowed = { original_tag = NOR }
+			picture = ast_abandon_the_westminster_system
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.10
+				paternal_autocrat_drift = 0.01
+			}
+		}
+		NOR_war_on_samfundsvernet_idea1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_war_on_samfundsvernet_idea1"}
+			allowed = { original_tag = NOR }
+			picture = generic_valkist_support
+			modifier = {
+				stability_factor = -0.05
+				conscription_factor = -0.03
+				political_power_gain = -0.10
+				national_populist_drift = 0.01
+				valkist_drift = 0.01
+			}
+		}
+		NOR_grow_welfare_state_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_grow_welfare_state_idea"}
+			allowed = { original_tag = NOR }
+			picture = NOR_labour_agreement
+			modifier = {
+				consumer_goods_factor = 0.10
+				industrial_capacity_factory = 0.10
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		NOR_agrarian_subsidies_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_agrarian_subsidies_idea"}
+			allowed = { original_tag = NOR }
+			picture = NOR_labour_agreement
+			modifier = {
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = 0.15
+				production_factory_efficiency_gain_factor = 0.05
+				monthly_population = 0.10
+				global_building_slots_factor = 0.10
+			}
+		}
+		NOR_socialist_secret_police_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_socialist_secret_police_idea"}
+			allowed = { original_tag = NOR }
+			picture = NOR_secret_police_spirit
+			modifier = {
+				political_power_gain = 0.05
+				drift_defence_factor = 0.15
+				decryption_factor = 0.1
+				encryption_factor = 0.1
+			}
+		}
+		NOR_adopt_keynes_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_adopt_keynes_idea"}
+			allowed = { original_tag = NOR }
+			picture = NOR_labour_agreement
+			modifier = {
+				political_power_gain = 0.05
+				production_speed_buildings_factor = -0.10
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+		NOR_liberal_welfare_plan_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_liberal_welfare_plan_idea"}
+			allowed = { original_tag = NOR }
+			picture = NOR_labour_agreement
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = 0.07
+				production_factory_efficiency_gain_factor = 0.03
+				political_power_gain = 0.05
+				production_speed_buildings_factor = -0.10
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+		NOR_samfundsvernet_peaceful_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_samfundsvernet_peaceful_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_valkist_support
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.05
+			}
+		}
+		NOR_lower_taxes_rich_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_lower_taxes_rich_idea"}
+			allowed = { original_tag = NOR }
+			picture = NOR_labour_agreement
+			modifier = {
+				political_power_gain = -0.05
+				production_factory_efficiency_gain_factor = 0.05
+				global_building_slots_factor = 0.05
+			}
+		}
+		
+		NOR_found_christian_trade_union_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_found_christian_trade_union_idea"}
+			allowed = { original_tag = NOR }
+			picture = IRE_catholic
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.05
+				authoritarian_democrat_drift = 0.02
+				social_conservative_drift = 0.02
+			}
+		}
+		NOR_found_christian_trade_union_idea1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_found_christian_trade_union_idea1"}
+			allowed = { original_tag = NOR }
+			picture = IRE_catholic
+			modifier = {
+				consumer_goods_factor = 0.08
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.07
+				authoritarian_democrat_drift = 0.02
+				social_conservative_drift = 0.02
+				market_liberal_drift = 0.02
+				political_power_gain = -0.10
+			}
+		}
+		NOR_principles_of_democracy_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_principles_of_democracy_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_morale_bonus
+			modifier = {
+				political_power_gain = -0.05
+				vanguardist_drift = -0.01
+				collectivist_drift = -0.01
+				paternal_autocrat_drift = -0.01
+				national_populist_drift = -0.01
+				valkist_drift = -0.01
+			}
+		}
+		NOR_peoples_king_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_peoples_king_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_morale_bonus
+			modifier = {
+				conscription_factor = 0.10
+				army_morale_factor = 0.05
+				authoritarian_democrat_drift = 0.01
+				paternal_autocrat_drift = 0.01
+			}
+		}
+		NOR_assure_loyalty_police_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_assure_loyalty_police_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_intel_bonus
+			modifier = {
+				resistance_damage_to_garrison = -0.10
+				foreign_subversive_activites = -0.10
+				decryption_factor = 0.1
+				encryption_factor = 0.1
+			}
+		}
+		NOR_royal_privleges_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_royal_privleges_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_intel_bonus
+			modifier = {
+				resistance_damage_to_garrison = -0.10
+				foreign_subversive_activites = -0.10
+				decryption_factor = 0.1
+				encryption_factor = 0.1
+				conscription_factor = 0.10
+				army_morale_factor = 0.05
+				paternal_autocrat_drift = 0.02
+			}
+		}
+		NOR_long_live_king_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_long_live_king_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_intel_bonus
+			modifier = {
+				resistance_damage_to_garrison = -0.10
+				foreign_subversive_activites = -0.10
+				decryption_factor = 0.1
+				encryption_factor = 0.1
+				stability_factor = 0.10
+				conscription_factor = 0.15
+				army_morale_factor = 0.05
+				monthly_population = 0.25
+				paternal_autocrat_drift = 0.02
+			}
+		}
+		NOR_loyal_police_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_loyal_police_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_intel_bonus
+			modifier = {
+				resistance_damage_to_garrison = -0.15
+				foreign_subversive_activites = -0.10
+				decryption_factor = 0.1
+				encryption_factor = 0.1
+			}
+		}
+		NOR_introduce_arbeidsteneste_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_introduce_arbeidsteneste_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_production_bonus
+			modifier = {
+				production_speed_bunker_factor = 0.20
+				production_speed_coastal_bunker_factor = 0.15
+				local_resources_factor = 0.15
+			}
+		}
+		NOR_militarize_society_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_militarize_society_idea"}
+			allowed = { original_tag = NOR }
+			picture = idea_generic_army
+			modifier = {
+				conscription = 0.015
+				army_attack_factor = 0.10
+			}
+		}
+		NOR_no_king_of_communist_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_no_king_of_communist_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_morale_bonus
+			modifier = {
+				political_power_factor = 0.05
+				vanguardist_drift = -0.02
+				collectivist_drift = -0.02
+				libertarian_socialist_drift = -0.02
+				social_democrat_drift = -0.01
+			}
+		}
+		NOR_work_camps_for_commies_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_work_camps_for_commies_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_production_bonus
+			modifier = {
+				production_speed_bunker_factor = 0.20
+				production_speed_coastal_bunker_factor = 0.15
+				local_resources_factor = 0.15
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+			}
+		}
+		NOR_st_olavs_spirit_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_st_olavs_spirit_idea"}
+			allowed = { original_tag = NOR }
+			picture = FRA_scw_intervention_nationalists_focus
+			modifier = {
+				stability_factor = 0.05
+				national_populist_drift = 0.02
+			}
+		}
+		NOR_promote_christian_valkism_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_promote_christian_valkism_idea"}
+			allowed = { original_tag = NOR }
+			picture = FRA_scw_intervention_nationalists_focus
+			modifier = {
+				stability_factor = 0.05
+				national_populist_drift = 0.05
+				monthly_population = 0.05
+			}
+		}
+		NOR_loyal_priestes_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_loyal_priestes_idea"}
+			allowed = { original_tag = NOR }
+			picture = FRA_scw_intervention_nationalists_focus
+			modifier = {
+				stability_factor = 0.10
+				national_populist_drift = 0.05
+				monthly_population = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+		NOR_northern_crusaders_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_northern_crusaders_idea"}
+			allowed = { original_tag = NOR }
+			picture = FRA_scw_intervention_nationalists_focus
+			modifier = {
+				stability_factor = 0.10
+				national_populist_drift = 0.05
+				monthly_population = 0.05
+				army_morale_factor = 0.08
+				conscription_factor = 0.05
+			}
+		}
+		NOR_long_live_nation_natpop_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_long_live_nation_natpop_idea"}
+			allowed = { original_tag = NOR }
+			picture = FRA_scw_intervention_nationalists_focus
+			modifier = {
+				stability_factor = 0.10
+				national_populist_drift = 0.05
+				monthly_population = 0.10
+				army_morale_factor = 0.08
+				conscription_factor = 0.10
+			}
+		}
+		NOR_odins_spirit_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_odins_spirit_idea"}
+			allowed = { original_tag = NOR }
+			picture = FRA_army_of_aggression_focus
+			modifier = {
+				war_support_factor = 0.05
+				valkist_drift = 0.02
+			}
+		}
+		NOR_sea_raids_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_sea_raids_idea"}
+			allowed = { original_tag = NOR }
+			picture = FRA_army_of_aggression_focus
+			modifier = {
+				war_support_factor = 0.05
+				valkist_drift = 0.02
+				navy_max_range_factor = 0.05
+			}
+		}
+		NOR_purify_society_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_purify_society_idea"}
+			allowed = { original_tag = NOR }
+			picture = FRA_army_of_aggression_focus
+			modifier = {
+				war_support_factor = 0.10
+				valkist_drift = 0.05
+				navy_max_range_factor = 0.05
+				monthly_population = -0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+		NOR_long_live_nation_valkist_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_long_live_nation_valkist_idea"}
+			allowed = { original_tag = NOR }
+			picture = FRA_army_of_aggression_focus
+			modifier = {
+				war_support_factor = 0.10
+				valkist_drift = 0.05
+				navy_max_range_factor = 0.05
+				monthly_population = -0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				army_morale_factor = 0.10
+			}
+		}
+		NOR_greater_norway_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_greater_norway_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_morale_bonus
+			modifier = {
+				stability_factor = 0.05
+				monthly_population = 0.10
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+		NOR_labour_conferrence_1_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_1_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				justify_war_goal_time = -0.15
+				political_power_gain = 0.10
+			}
+		}
+		NOR_labour_conferrence_11_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_11_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				justify_war_goal_time = -0.10
+				conscription_factor = 0.25
+				army_attack_factor = 0.05
+			}
+		}
+		NOR_labour_conferrence_111_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_111_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				justify_war_goal_time = -0.10
+				conscription_factor = 0.25
+				army_attack_factor = 0.05
+				
+				stability_factor = -0.10
+				political_power_gain = 0.20
+				industrial_capacity_factory = 0.10
+				global_building_slots_factor = 0.05
+			}
+		}
+		NOR_labour_conferrence_112_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_112_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				political_power_gain = 0.10
+				justify_war_goal_time = -0.10
+				conscription_factor = 0.25
+				army_attack_factor = 0.05
+				local_resources_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		NOR_labour_conferrence_113_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_113_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				justify_war_goal_time = -0.10
+				conscription_factor = 0.25
+				army_attack_factor = 0.05
+				
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		NOR_labour_conferrence_12_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_12_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				political_power_gain = 0.10
+				justify_war_goal_time = 0.05
+				stability_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+		NOR_labour_conferrence_121_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_121_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				justify_war_goal_time = 0.05
+				army_defence_factor = 0.05
+				stability_factor = -0.05
+				political_power_gain = 0.20
+				industrial_capacity_factory = 0.10
+				global_building_slots_factor = 0.05
+			}
+		}
+		NOR_labour_conferrence_122_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_122_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				political_power_gain = 0.10
+				justify_war_goal_time = 0.05
+				stability_factor = 0.05
+				army_defence_factor = 0.05
+				local_resources_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		NOR_labour_conferrence_123_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_123_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				justify_war_goal_time = 0.05
+				stability_factor = 0.05
+				army_defence_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		NOR_labour_conferrence_13_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_13_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				political_power_gain = 0.10
+				production_speed_arms_factory_factor = -0.15
+				consumer_goods_factor = -0.05
+			}
+		}
+		NOR_labour_conferrence_131_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_131_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				production_speed_arms_factory_factor = -0.15
+				consumer_goods_factor = -0.05
+				stability_factor = -0.10
+				political_power_gain = 0.20
+				industrial_capacity_factory = 0.10
+				global_building_slots_factor = 0.05
+			}
+		}
+		NOR_labour_conferrence_132_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_132_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				political_power_gain = 0.10
+				production_speed_arms_factory_factor = -0.15
+				consumer_goods_factor = -0.10
+				local_resources_factor = 0.05
+			}
+		}
+		NOR_labour_conferrence_133_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_133_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				political_power_gain = 0.10
+				production_speed_arms_factory_factor = -0.15
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		NOR_labour_conferrence_2_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_2_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				social_liberal_acceptance = -70
+				market_liberal_acceptance = -90
+				social_conservative_acceptance = -90
+				authoritarian_democrat_acceptance = -70
+			}
+		}
+		NOR_labour_conferrence_21_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_21_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				social_liberal_acceptance = -70
+				market_liberal_acceptance = -90
+				social_conservative_acceptance = -90
+				authoritarian_democrat_acceptance = -70
+				conscription_factor = 0.25
+				army_attack_factor = 0.05
+			}
+		}
+		NOR_labour_conferrence_211_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_211_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				social_liberal_acceptance = -70
+				market_liberal_acceptance = -90
+				social_conservative_acceptance = -90
+				authoritarian_democrat_acceptance = -70
+				conscription_factor = 0.25
+				army_attack_factor = 0.05
+				stability_factor = -0.10
+				political_power_gain = 0.10
+				industrial_capacity_factory = 0.10
+				global_building_slots_factor = 0.05
+			}
+		}
+		NOR_labour_conferrence_212_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_212_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				social_liberal_acceptance = -70
+				market_liberal_acceptance = -90
+				social_conservative_acceptance = -90
+				authoritarian_democrat_acceptance = -70
+				conscription_factor = 0.25
+				army_attack_factor = 0.05
+				local_resources_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		NOR_labour_conferrence_213_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_213_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				social_liberal_acceptance = -70
+				market_liberal_acceptance = -90
+				social_conservative_acceptance = -90
+				authoritarian_democrat_acceptance = -70
+				conscription_factor = 0.25
+				army_attack_factor = 0.05
+				political_power_gain = -0.10
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		NOR_labour_conferrence_22_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_22_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				social_liberal_acceptance = -70
+				market_liberal_acceptance = -90
+				social_conservative_acceptance = -90
+				authoritarian_democrat_acceptance = -70
+				justify_war_goal_time = 0.05
+				stability_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+		NOR_labour_conferrence_221_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_221_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				social_liberal_acceptance = -70
+				market_liberal_acceptance = -90
+				social_conservative_acceptance = -90
+				authoritarian_democrat_acceptance = -70
+				justify_war_goal_time = 0.05
+				stability_factor = -0.05
+				army_defence_factor = 0.05
+				political_power_gain = 0.10
+				industrial_capacity_factory = 0.10
+				global_building_slots_factor = 0.05
+			}
+		}
+		NOR_labour_conferrence_222_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_222_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				social_liberal_acceptance = -70
+				market_liberal_acceptance = -90
+				social_conservative_acceptance = -90
+				authoritarian_democrat_acceptance = -70
+				justify_war_goal_time = 0.05
+				stability_factor = 0.05
+				army_defence_factor = 0.05
+				local_resources_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		NOR_labour_conferrence_223_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_223_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				social_liberal_acceptance = -70
+				market_liberal_acceptance = -90
+				social_conservative_acceptance = -90
+				authoritarian_democrat_acceptance = -70
+				justify_war_goal_time = 0.05
+				stability_factor = 0.05
+				army_defence_factor = 0.05
+				political_power_gain = -0.10
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		NOR_labour_conferrence_23_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_23_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				social_liberal_acceptance = -70
+				market_liberal_acceptance = -90
+				social_conservative_acceptance = -90
+				authoritarian_democrat_acceptance = -70
+				production_speed_arms_factory_factor = -0.15
+				consumer_goods_factor = -0.05
+			}
+		}
+		NOR_labour_conferrence_231_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_231_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				social_liberal_acceptance = -70
+				market_liberal_acceptance = -90
+				social_conservative_acceptance = -90
+				authoritarian_democrat_acceptance = -70
+				production_speed_arms_factory_factor = -0.15
+				consumer_goods_factor = -0.05
+				stability_factor = -0.10
+				political_power_gain = 0.10
+				industrial_capacity_factory = 0.10
+				global_building_slots_factor = 0.05
+			}
+		}
+		NOR_labour_conferrence_232_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_232_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				social_liberal_acceptance = -70
+				market_liberal_acceptance = -90
+				social_conservative_acceptance = -90
+				authoritarian_democrat_acceptance = -70
+				production_speed_arms_factory_factor = -0.15
+				consumer_goods_factor = -0.10
+				local_resources_factor = 0.05
+			}
+		}
+		NOR_labour_conferrence_233_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_233_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				social_liberal_acceptance = -70
+				market_liberal_acceptance = -90
+				social_conservative_acceptance = -90
+				authoritarian_democrat_acceptance = -70
+				production_speed_arms_factory_factor = -0.15
+				consumer_goods_factor = -0.05
+				political_power_gain = -0.10
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		NOR_labour_conferrence_3_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_3_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				join_faction_tension = 0.15
+				ai_get_ally_desire_factor = -100
+			}
+		}
+		NOR_labour_conferrence_31_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_31_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				join_faction_tension = 0.15
+				ai_get_ally_desire_factor = -100
+				conscription_factor = 0.25
+				army_attack_factor = 0.05
+			}
+		}
+		NOR_labour_conferrence_311_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_311_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				join_faction_tension = 0.15
+				ai_get_ally_desire_factor = -100
+				conscription_factor = 0.25
+				army_attack_factor = 0.05
+				stability_factor = -0.10
+				political_power_gain = 0.10
+				industrial_capacity_factory = 0.10
+				global_building_slots_factor = 0.05
+			}
+		}
+		NOR_labour_conferrence_312_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_312_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				join_faction_tension = 0.15
+				ai_get_ally_desire_factor = -100
+				conscription_factor = 0.25
+				army_attack_factor = 0.05
+				local_resources_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		NOR_labour_conferrence_313_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_313_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				join_faction_tension = 0.15
+				ai_get_ally_desire_factor = -100
+				conscription_factor = 0.25
+				army_attack_factor = 0.05
+				political_power_gain = -0.10
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		NOR_labour_conferrence_32_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_32_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				join_faction_tension = 0.15
+				ai_get_ally_desire_factor = -100
+				
+				justify_war_goal_time = 0.05
+				stability_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+		NOR_labour_conferrence_321_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_321_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				join_faction_tension = 0.15
+				ai_get_ally_desire_factor = -100
+				justify_war_goal_time = 0.05
+				stability_factor = -0.05
+				army_defence_factor = 0.05
+				political_power_gain = 0.10
+				industrial_capacity_factory = 0.10
+				global_building_slots_factor = 0.05
+			}
+		}
+		NOR_labour_conferrence_322_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_322_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				join_faction_tension = 0.15
+				ai_get_ally_desire_factor = -100
+				justify_war_goal_time = 0.05
+				stability_factor = 0.05
+				army_defence_factor = 0.05
+				local_resources_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		NOR_labour_conferrence_323_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_323_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				join_faction_tension = 0.15
+				ai_get_ally_desire_factor = -100
+				justify_war_goal_time = 0.05
+				stability_factor = 0.05
+				army_defence_factor = 0.05
+				political_power_gain = -0.10
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		NOR_labour_conferrence_33_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_33_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				join_faction_tension = 0.15
+				ai_get_ally_desire_factor = -100
+				
+				production_speed_arms_factory_factor = -0.15
+				consumer_goods_factor = -0.05
+			}
+		}
+		NOR_labour_conferrence_331_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_331_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				join_faction_tension = 0.15
+				ai_get_ally_desire_factor = -100
+				production_speed_arms_factory_factor = -0.15
+				consumer_goods_factor = -0.05
+				stability_factor = -0.10
+				political_power_gain = 0.10
+				industrial_capacity_factory = 0.10
+				global_building_slots_factor = 0.05
+			}
+		}
+		NOR_labour_conferrence_332_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_332_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				join_faction_tension = 0.15
+				ai_get_ally_desire_factor = -100
+				production_speed_arms_factory_factor = -0.15
+				consumer_goods_factor = -0.10
+				local_resources_factor = 0.05
+			}
+		}
+		NOR_labour_conferrence_333_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_labour_conferrence_333_idea"}
+			allowed = { original_tag = NOR }
+			picture = UK_economy_syn_idea
+			modifier = {
+				join_faction_tension = 0.15
+				ai_get_ally_desire_factor = -100
+				production_speed_arms_factory_factor = -0.15
+				consumer_goods_factor = -0.05
+				political_power_gain = -0.10
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		### New Ideas
+		NOR_government_president_struggle_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_government_president_struggle_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_disjointed_gov
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = -0.25
+				drift_defence_factor = -0.20
+			}
+		}
+		NOR_anti_socialist_protests_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_anti_socialist_protests_idea"}
+			allowed = { original_tag = NOR }
+			picture = chi_war_of_resistance2
+			modifier = {
+				consumer_goods_factor = 0.05
+				political_power_gain = -0.20
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				conscription_factor = -0.10
+			}
+		}
+		NOR_anti_socialist_protests_idea1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_anti_socialist_protests_idea1"}
+			allowed = { original_tag = NOR }
+			picture = chi_war_of_resistance2
+			modifier = {
+				consumer_goods_factor = 0.03
+				political_power_gain = -0.14
+				stability_factor = -0.10
+				war_support_factor = -0.10
+				conscription_factor = -0.07
+			}
+		}
+		NOR_anti_socialist_protests_idea2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_anti_socialist_protests_idea2"}
+			allowed = { original_tag = NOR }
+			picture = chi_war_of_resistance2
+			modifier = {
+				consumer_goods_factor = 0.01
+				political_power_gain = -0.08
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				conscription_factor = -0.04
+			}
+		}
+		NOR_revolution_before_liberty_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_revolution_before_liberty_idea"}
+			allowed = { original_tag = NOR }
+			picture = jap_the_unthinkable_option
+			modifier = {
+				collectivist_drift = 0.01
+				stability_factor = 0.05
+				drift_defence_factor = 0.10
+				political_power_gain = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+		NOR_repress_church_activities_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_repress_church_activities_idea"}
+			allowed = { original_tag = NOR }
+			picture = jap_the_unthinkable_option
+			modifier = {
+				collectivist_drift = 0.01
+				stability_factor = 0.03
+				drift_defence_factor = 0.15
+				political_power_gain = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+		NOR_collectivized_agriculture_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_collectivized_agriculture_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_agrarian_reform
+			modifier = {
+				consumer_goods_factor = -0.03
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.03
+			}
+		}
+		NOR_challenge_traditional_roles_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_challenge_traditional_roles_idea"}
+			allowed = { original_tag = NOR }
+			picture = economic_control_icon
+			modifier = {
+				weekly_manpower = 750
+				industrial_capacity_factory = 0.10
+				monthly_population = -0.10
+			}
+		}
+		NOR_a_social_democracy_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_a_social_democracy_idea"}
+			allowed = { original_tag = NOR }
+			picture = generic_morale_bonus
+			modifier = {
+				political_power_gain = -0.10
+				collectivist_drift = 0.01
+				libertarian_socialist_drift = 0.02
+				social_democrat_drift = 0.01
+			}
+		}
+		NOR_conservative_welfare_plan_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_conservative_welfare_plan_idea"}
+			allowed = { original_tag = NOR }
+			picture = IRE_catholic
+			modifier = {
+				consumer_goods_factor = 0.08
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.07
+				authoritarian_democrat_drift = 0.02
+				social_conservative_drift = 0.02
+			}
+		}
+		NOR_gain_support_lower_christianity_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_gain_support_lower_christianity_idea"}
+			allowed = { original_tag = NOR }
+			picture = IRE_catholic
+			modifier = {
+				consumer_goods_factor = 0.02
+				drift_defence_factor = 0.10
+				monthly_population = 0.05
+			}
+		}
+		NOR_strengthen_royal_patriotism_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_strengthen_royal_patriotism_idea"}
+			allowed = { original_tag = NOR }
+			picture = ast_abandon_the_westminster_system
+			modifier = {
+				conscription_factor = 0.10
+				army_morale_factor = 0.05
+			}
+		}
+	}
+	### Companies
+	industrial_concern = {
+
+		norsk_hydro = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea norsk_hydro"}
+			allowed = { original_tag = NOR }
+			traits = { industrial_manufacturer }
+			modifier = {
+				production_speed_arms_factory_factor = 0.125
+				production_speed_industrial_complex_factor = 0.125
+			}
+			research_bonus = {
+				industry = 0.15
+			}
+		}
+		christiania_spigerverk = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea christiania_spigerverk"}
+			allowed = { original_tag = NOR }
+			visible	= {
+				OR = {
+					original_tag = NOR
+					owns_state = 110 # Oslo
+				}
+			}
+			traits = { industrial_manufacturer }
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				local_resources_factor = 0.15
+			}
+			research_bonus = {
+				industry = 0.1
+			}
+		}
+		tandbergs_radiofabrikk = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea tandbergs_radiofabrikk"}
+			allowed = { original_tag = NOR }
+			visible	= {
+				OR = {
+					original_tag = NOR
+					owns_state = 110 # Oslo
+				}
+			}
+			traits = {electronics_manufacturer }
+			modifier = {
+				production_speed_radar_station_factor = 0.1
+			}
+			research_bonus = {
+				electronics = 0.1
+				industry = 0.1
+			}
+		}
+		ostlandske_petroleum = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ostlandske_petroleum"}
+			allowed = { original_tag = NOR }
+			visible	= {
+				OR = {
+					original_tag = NOR
+					owns_state = 110 # Oslo
+				}
+			}
+			traits = { chemical_producer }
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.1
+			}
+			research_bonus = {
+				synth_resources = 0.1
+				industry = 0.1
+			}
+		}
+		vestlandske_petroleum = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOR_vestlandske_petroleum"}
+			allowed = { original_tag = NOR }
+			traits = { chemical_producer }
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.08
+			}
+			research_bonus = {
+				synth_resources = 0.12
+				industry = 0.05
+			}
+		}		
+	}
+	### Weapons Manufacturer
+	weapons_manufacturer = {
+		designer = yes
+
+		raufoss = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea raufoss"}
+			allowed = { original_tag = NOR }
+			visible	= {
+				OR = {
+					original_tag = NOR
+					owns_state = 110 # Oslo
+				}
+			}
+			traits = { infantry_equipment_producer_offense_1 }
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
+		}
+		kr_kongsberg = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea kr_kongsberg"}
+			allowed = { original_tag = NOR }
+			traits = { artillery_producer_offense_1 }
+			research_bonus = {
+				artillery = 0.1
+			}
+		}
+		norsk_sprengstoff = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea norsk_sprengstoff"}
+			allowed = { original_tag = NOR }
+			visible	= {
+				OR = {
+					original_tag = NOR
+					owns_state = 110 # Oslo
+				}
+			}
+			traits = { artillery_producer_mass_1 }
+			research_bonus = {
+				artillery = 0.1
+			}
+		}
+		norsk_automobil = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea norsk_automobil"}
+			allowed = { original_tag = NOR }
+			visible	= {
+				OR = {
+					original_tag = NOR
+					owns_state = 110 # Oslo
+				}
+			}
+			traits = { motorised_equipment_producer_offense_0 }
+			research_bonus = {
+				motorized_equipment = 0.1
+			}
+		}
+	}
+	### Heavy Equipment Manufacturer
+	tank_manufacturer = {
+		designer = yes
+		thunes_mek = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea thunes_mek"}
+			allowed = { original_tag = NOR }
+			visible	= {
+				OR = {
+					original_tag = NOR
+					owns_state = 110 # Oslo
+				}
+			}
+			traits = { small_tank_producer_offense_0 }
+			research_bonus = {
+				armor = 0.1
+			}
+		}
+		norges_statsbaner = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea norges_statsbaner"}
+			allowed = { original_tag = NOR }
+			visible	= {
+				OR = {
+					original_tag = NOR
+					owns_state = 110 # Oslo
+				}
+			}
+			traits = { small_tank_producer_defense_0 }
+			research_bonus = {
+				armor = 0.1
+			}
+		}
+	}
+
+#### Air and Naval Manufacturer ####
+	air_naval_manufacturer = {
+		designer = yes
+
+		marinens_hovedverft = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea marinens_hovedverft"}
+			allowed = { original_tag = NOR }
+			traits = { cruiser_producer_defense_1 }
+			research_bonus = {
+				naval_equipment = 0.1
+			}
+		}
+		nylands_verksted = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea nylands_verksted"}
+			allowed = {
+				OR = {
+					original_tag = NOR
+					#original_tag = SCA
+				}
+			}
+			visible	= {
+				OR = {
+					original_tag = NOR
+					owns_state = 110 # Oslo
+				}
+			}
+			traits = { small_ship_producer_offense_1 }
+			research_bonus = {
+				naval_equipment = 0.1
+			}
+		}
+		kjeller_flyfabrikk = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea kjeller_flyfabrikk"}
+			allowed = { original_tag = NOR }
+			traits = { fighter_producer_offense_1 }
+			research_bonus = {
+				air_equipment = 0.1
+			}
+		}
+		marinens_flyvebaat = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea marinens_flyvebaat"}
+			allowed = {
+				OR = {
+					original_tag = NOR
+					#original_tag = SCA
+				}
+			}
+			visible	= {
+				OR = {
+					original_tag = NOR
+					owns_state = 110 # Oslo
+				}
+			}
+			traits = { nav_cas_producer_defense_1 }
+			research_bonus = {
+				air_equipment = 0.1
+			}
+		}
+	}
+	### Ministers
+	# Head of Government
+	head_of_government = {
+		NOR_Haakon_Meyer_hog_van = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				vanguardist
+				hog_red_chairmen
+			}
+		}
+		NOR_Halvard_Olsen_hog_van = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				vanguardist
+				hog_ambitious_union_boss
+			}
+		}
+		NOR_Haakon_Lie_hog_col = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				collectivist
+				hog_charismatic_charmer
+			}
+		}
+		NOR_Konrad_Nordahl_hog_col = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				collectivist
+				hog_red_chairmen
+			}
+		}
+		NOR_Olav_Scheflo_hog_lib = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				libertarian_socialist
+				hog_privileged_socialist
+			}
+		}
+		NOR_Sverre_Stoestad_hog_lib = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				libertarian_socialist
+				hog_silent_workhorse
+			}
+		}
+		NOR_Johan_Nygaardsvold_hog_sde = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_democrat
+				hog_naive_optimist
+			}
+		}
+		NOR_Magnus_Nilssen_hog_sde = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_democrat
+				hog_happy_amateur
+			}
+		}
+		NOR_Haakon_Five_hog_sli = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_liberal
+				hog_naive_optimist
+			}
+		}
+		NOR_Johan_Ludwig_Mowinckel_hog_sli = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_liberal
+				hog_accomplished_diplomat
+			}
+		}
+		NOR_Carl_Joachim_Hambro_hog_mli = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				market_liberal
+				hog_corporate_suit
+			}
+		}
+		NOR_Johan_Henrik_Andresen_hog_mli = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				market_liberal
+				hog_pragmatic_statesman
+			}
+		}
+		NOR_Einar_Borch_hog_sco = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_conservative
+				hog_silent_workhorse
+			}
+		}
+		NOR_Jens_Hundseid_hog_sco = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_conservative
+				hog_smiling_oilman
+			}
+		}
+		NOR_Carl_Gulbranson_hog_ade = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_happy_amateur
+			}
+		}
+		NOR_Johan_Bernhard_Hjort_hog_ade = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_naive_optimist
+			}
+		}
+		NOR_Gulbrand_Lunde_hog_pau = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_pragmatic_statesman
+			}
+		}
+		NOR_Vidkun_Quisling_hog_npo = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				national_populist
+				hog_local_tyrant
+			}
+		}
+		NOR_Jonas_Lie_hog_npo = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				national_populist
+				hog_naive_optimist
+			}
+		}
+		NOR_Karl_Marthinsen_hog_npo = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				national_populist
+				hog_backroom_backstabber
+			}
+		}
+	}
+	### Foreign Minister
+	foreign_minister = {
+		NOR_Albin_Eines_for_van = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				vanguardist
+				for_ideological_crusader
+			}
+		}
+		NOR_Elias_Volan_for_van = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				vanguardist
+				for_biased_intellectual
+			}
+		}
+		NOR_Arnulf_Oeverland_for_col = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				collectivist
+				for_iron_fisted_brute
+			}
+		}
+		NOR_Arvid_Gilbert_Hansen_for_col = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				collectivist
+				for_radical_among_moderates
+			}
+		}
+		NOR_Nordahl_Grieg_for_lib = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				libertarian_socialist
+				for_the_cloak_n_dagger_schemer
+			}
+		}
+		NOR_Wilhelm_Morgenstierne_for_lib = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				libertarian_socialist
+				for_relations_expert
+			}
+		}
+		NOR_Halvdan_Koht_for_sde = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_democrat
+				for_world_patrician
+			}
+		}
+		NOR_Trygve_Lie_for_sde = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_democrat
+				for_hawkish_intervener
+			}
+		}
+		NOR_Erik_Colban_for_sli = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_liberal
+				for_moderate_among_radicals
+			}
+		}
+		NOR_Jacob_Worm_Mueller_for_sli = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_liberal
+				for_foreign_sympathizer
+			}
+		}
+		NOR_Arne_Scheel_for_mli = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				market_liberal
+				for_general_staffer
+			}
+		}
+		NOR_Ivar_Lykke_for_mli = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				market_liberal
+				for_apologetic_clerk
+			}
+		}
+		NOR_Birger_Braadland_for_sco = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_conservative
+				for_great_compromiser
+			}
+		}
+		NOR_Jon_Leirfall_for_sco = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_conservative
+				for_hawkish_intervener
+			}
+		}
+		NOR_Adolf_Hoel_for_ade = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				authoritarian_democrat
+				for_relations_expert
+			}
+		}
+		NOR_Victor_Mogens_for_ade = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				authoritarian_democrat
+				for_biased_intellectual
+			}
+		}
+		NOR_Albert_Viljam_Hagelin_for_pau = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_general_staffer
+			}
+		}
+		NOR_Finn_Stoeren_for_pau = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_relations_expert
+			}
+		}
+		NOR_Axel_Stang_for_npo = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				national_populist
+				for_apologetic_clerk
+			}
+		}
+		NOR_Johan_Lippestad_for_npo = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				national_populist
+				for_iron_fisted_brute
+			}
+		}
+	}
+	### Economy Minister
+	economy_minister = {
+		NOR_Haavard_Langseth_eco_van = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				vanguardist
+				eco_planned_economy_proponent
+			}
+		}
+		NOR_Johan_Strand_Johansen_eco_van = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				vanguardist
+				eco_reformer
+			}
+		}
+		NOR_Fredrik_Monsen_eco_col = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				collectivist
+				eco_trade_proponent
+			}
+		}
+		NOR_Ole_Colbjoernsen_eco_col = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				collectivist
+				eco_imbedded_unioneer
+			}
+		}
+		NOR_Adolf_Indreboe_eco_lib = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				libertarian_socialist
+				eco_industrialiser
+			}
+		}
+		NOR_Ragnar_Frisch_eco_lib = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				libertarian_socialist
+				eco_administrative_genius
+			}
+		}
+		NOR_Kornelius_Bergsvik_eco_sde = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_democrat
+				eco_balanced_budget_economy
+			}
+		}
+		NOR_Oscar_Torp_eco_sde = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_democrat_drift
+				eco_construction_magnate
+			}
+		}
+		NOR_Jens_Isak_Kobro_eco_sli = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_liberal
+				eco_industrialiser
+			}
+		}
+		NOR_Per_Berg_Lund_eco_sli = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_liberal
+				eco_reformer
+			}
+		}
+		NOR_Ole_Baeroee_eco_mli = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				market_liberal
+				eco_balanced_budget_economy
+			}
+		}
+		NOR_Sven_Nielsen_eco_mli = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				market_liberal
+				eco_bank_president
+			}
+		}
+		NOR_Jon_Sundby_eco_sco = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_conservative
+				eco_administrative_genius
+			}
+		}
+		NOR_Nicolai_Rygg_eco_sco = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_conservative
+				eco_balanced_budget_economy
+			}
+		}
+		NOR_Alf_Larsen_Whist_eco_ade = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				authoritarian_democrat
+				eco_trade_proponent
+			}
+		}
+		NOR_Axel_Aubert_eco_ade = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				authoritarian_democrat
+				eco_the_minister_for_everything
+			}
+		}
+		NOR_Eivind_Blehr_eco_pau = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_socred_economist
+			}
+		}
+		NOR_Frederik_Prytz_eco_pau = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				paternal_autocrate
+				eco_resource_industrialist
+			}
+		}
+		NOR_Carl_Froelich_Hanssen_eco_npo = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				national_populist
+				eco_military_entrepreneur
+			}
+		}
+		NOR_Tormod_Hustad_eco_npo = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				national_populist
+				eco_mixed_economy
+			}
+		}
+	}
+	### Security Minister
+	security_minister = {
+		NOR_Henry_Wilhelm_Kristiansen_sec_van = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				vanguardist
+				sec_secret_police_chief
+			}
+		}
+		NOR_Sverre_Krogh_sec_van = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				vanguardist
+				sec_efficient_sociopath
+			}
+		}
+		NOR_Emil_Stang_sec_col = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				collectivist
+				sec_silent_lawyer
+			}
+		}
+		NOR_Olav_Hindahl_sec_col = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				collectivist
+				sec_prince_of_terror
+			}
+		}
+		NOR_Alfred_Madsen_sec_lib = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				libertarian_socialist
+				sec_compassionate_gentleman
+			}
+		}
+		NOR_Jakob_Friis_sec_lib = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				libertarian_socialist
+				sec_crime_fighter
+			}
+		}
+		NOR_Paul_Hartmann_sec_sde = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_democrat
+				sec_driven_recruiter
+			}
+		}
+		NOR_Terje_Wold_sec_sde = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_democrat
+				sec_man_of_the_people
+			}
+		}
+		NOR_Arne_Sunde_sec_sli = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_liberal
+				sec_media_magnate
+			}
+		}
+		NOR_Haakon_Sund_sec_sli = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_liberal
+				sec_silent_lawyer
+			}
+		}
+		NOR_Harald_Gram_sec_mli = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				market_liberal
+				sec_back_stabber
+			}
+		}
+		NOR_Odd_Klingenberg_sec_mli = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				market_liberal
+				sec_crime_fighter
+			}
+		}
+		NOR_Ivar_Kirkeby_Garstad_sec_sco = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_conservative
+				sec_efficient_sociopath
+			}
+		}
+		NOR_Nils_Traedal_sec_sco = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_conservative
+				sec_man_of_the_people
+			}
+		}
+		NOR_Herman_Harris_Aall_sec_ade = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_media_magnate
+			}
+		}
+		NOR_Ragnar_Skancke_sec_ade = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_efficient_sociopath
+			}
+		}
+		NOR_Per_von_Hirsch_sec_pau = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_driven_recruiter
+			}
+		}
+		NOR_Rolf_Joergen_Fuglesang_sec_pau = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_compassionate_gentleman
+			}
+		}
+		NOR_Arnvid_Vasbotten_sec_npo = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				national_populist
+				sec_back_stabber
+			}
+		}
+		NOR_Sverre_Riisnaes_sec_npo = {
+			allowed = { original_tag = NOR }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				national_populist
+				sec_efficient_sociopath
+			}
+		}
+	}
+	### Chief of Staff
+	chief_of_staff = {
+		NOR_Andreas_Wettre_cos = {
+			allowed = { original_tag = NOR }
+			traits = {
+				chief_of_staff
+				cos_school_of_commando_operations
+			}
+		}
+		NOR_Hans_Reidar_Holtermann_cos = {
+			allowed = { original_tag = NOR }
+			traits = {
+				chief_of_staff
+				cos_school_of_defence
+			}
+		}
+		NOR_Carl_Johan_Erichsen_cos = {
+			allowed = { original_tag = NOR }
+			traits = {
+				chief_of_staff
+				cos_school_of_fire_support
+			}
+		}
+		NOR_William_Steffens_cos = {
+			allowed = { original_tag = NOR }
+			traits = {
+				chief_of_staff
+				cos_school_of_manoeuvre
+			}
+		}
+		NOR_Wilhelm_von_Tangen_Hansteen_cos = {
+			allowed = { original_tag = NOR }
+			traits = {
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+		}
+	}
+	### Chief of Army
+	chief_of_army = {
+		NOR_Arne_Gauslaa_carm_van = {
+			allowed = { original_tag = NOR }
+			available = { has_socialist_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				vanguardist
+				carm_doctrine_of_autonomy
+			}
+		}
+		NOR_Otto_Ruge_carm_sde = {
+			allowed = { original_tag = NOR }
+			available = { has_democratic_government = no }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				social_democrat
+				carm_guns_and_butter_doctrine
+			}
+		}
+		NOR_Carl_Gustav_Fleischer_carm_sli = {
+			allowed = { original_tag = NOR }
+			available = { has_democratic_government = no }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				social_liberal
+				carm_static_defence_doctrine
+			}
+		}
+		NOR_Kristian_Laake_carm_sli = {
+			allowed = { original_tag = NOR }
+			available = { has_democratic_government = no }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				social_liberal
+				carm_decisive_battle_doctrine
+			}
+		}
+		NOR_Oliver_Moeystad_carm_pau = {
+			allowed = { original_tag = NOR }
+			available = { has_authoritarian_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				paternal_autocrat
+				carm_commando_doctrine
+			}
+		}
+	}
+	### Chief of Navy
+	chief_of_navy = {
+		NOR_Olaf_Kullmann_cnav_col = {
+			allowed = { original_tag = NOR }
+			available = { has_socialist_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_navy
+				collectivist
+				cnav_decisive_battle_doctrine
+			}
+		}
+		NOR_Elias_Corneliussen_cnav_sde = {
+			allowed = { original_tag = NOR }
+			available = { has_democratic_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_navy
+				social_democrat
+				cnav_indirect_approach_doctrine
+			}
+		}
+		NOR_Henry_Diesen_cnav_sde = {
+			allowed = { original_tag = NOR }
+			available = { has_democratic_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_navy
+				social_democrat
+				cnav_open_seas_doctrine
+			}
+		}
+		NOR_Edvard_Christian_Danielsen_cnav_sli = {
+			allowed = { original_tag = NOR }
+			available = { has_democratic_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_navy
+				social_liberal
+				cnav_power_projection_doctrine
+			}
+		}
+		NOR_Kjeld_Stub_Irgens_cnav_pau = {
+			allowed = { original_tag = NOR }
+			available = { has_authoritarian_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_navy
+				paternal_autocrat
+				cnav_indirect_approach_doctrine
+			}
+		}
+	}
+	### Chief of Air Force
+	chief_of_air_force = {
+		NOR_Georg_Jacob_Falck_Bull_cair_lib = {
+			allowed = { original_tag = NOR }
+			available = { has_socialist_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_air_force
+				libertarian_socialist
+				cair_air_superiority_doctrine
+			}
+		}
+		NOR_Bjarne_Oeen_cair_sde = {
+			allowed = { original_tag = NOR }
+			available = { has_socialist_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_air_force
+				social_democrat
+				cair_air_superiority_doctrine
+			}
+		}
+		NOR_Ole_Reistad_cair_sli = {
+			allowed = { original_tag = NOR }
+			available = { has_democratic_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_air_force
+				social_liberal
+				cair_battlefield_support_doctrine
+			}
+		}
+		NOR_Birger_Fredrik_Motzfeldt_cair_mli = {
+			allowed = { original_tag = NOR }
+			available = { has_democratic_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_air_force
+				market_liberal
+				cair_carpet_bombing_doctrine
+			}
+		}
+		NOR_Hjalmar_Riiser_Larsen_cair_sco = {
+			allowed = { original_tag = NOR }
+			available = { has_democratic_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_air_force
+				social_conservative
+				cair_naval_aviation_doctrine
+			}
+		}
+		NOR_Tryggve_Gran_cair_pau = {
+			allowed = { original_tag = NOR }
+			available = { has_authoritarian_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_air_force
+				paternal_autocrat
+				cair_battlefield_support_doctrine
+			}
+		}
+	}
+}

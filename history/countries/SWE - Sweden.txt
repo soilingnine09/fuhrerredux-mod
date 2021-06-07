@@ -10,10 +10,10 @@ add_ideas = {
 	SWE_unbroken_neutrality_idea
 	SWE_political_wounds_idea
 	
-	SWE_Arvid_Lindman_hog_sco
-	SWE_Ernst_Trygger_for_sco
-	SWE_Nils_Wohlin_eco_sco
-	SWE_Carlos_Adlercreutz_sec_ade
+	SWE_Goesta_Bagge_hog_sco
+	SWE_Christian_Guenther_for_sco
+	SWE_Ernst_Trygger_eco_sco
+	SWE_Knut_Ewerloef_sec_sco
 	constitutional_monarchy
 }
 
