@@ -744,7 +744,7 @@ focus_tree = {
 
 	focus = {
 		id = MEX_mobility_priority
-		icon = GFX_goal_RUS_Markov_plan
+		icon = GFX_goal_generic_army_tanks2
 		prerequisite = { focus = MEX_the_question_of_doctrine }
 		mutually_exclusive = { focus = MEX_firepower_priority focus = MEX_planning_priority }
 		x = 10
@@ -752,7 +752,7 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			has_global_flag = MEX_MOBILE_WARFARE
+			has_country_flag = MEX_mobile_warfare_tt
 		}
 
 		available_if_capitulated = yes
@@ -769,7 +769,7 @@ focus_tree = {
 
 	focus = {
 		id = MEX_firepower_priority
-		icon = GFX_goal_doctrine_fire_superiority
+		icon = GFX_goal_artillery
 		prerequisite = { focus = MEX_the_question_of_doctrine }
 		mutually_exclusive = { focus = MEX_mobility_priority focus = MEX_planning_priority }
 		x = 12
@@ -777,7 +777,7 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			has_global_flag = MEX_SUPERIOR_FIREPOWER
+			has_country_flag = MEX_superior_firepower_tt
 		}
 
 		available_if_capitulated = yes
@@ -802,7 +802,7 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			has_global_flag = MEX_GRAND_BATTLEPLAN
+			has_country_flag = MEX_grand_battleplan_tt
 		}
 
 		available_if_capitulated = yes

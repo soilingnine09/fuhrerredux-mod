@@ -73,3 +73,47 @@ news_event = {
     show_major = { NOT = { tag = PHI } }
     option = { name = news.7.a }
 }
+
+news_event = {
+	id = news.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event usanews.1"}
+	title = news.8.t
+	desc = news.8.d
+	picture = GFX_news_event_second_american_civil_war
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		trigger = {
+			OR = {
+				tag = USA
+				tag = MEX
+			}
+		}
+		name = news.8.a
+		hidden_effect = {
+			if = {
+				limit = { original_tag = MEX }
+				MEX = { country_event = { id = usa.21 days = 60 } }
+			}
+			else_if = {
+				limit = { original_tag = USA }
+				375 = { set_state_flag = skirmishes }
+				376 = { set_state_flag = skirmishes }
+				377 = { set_state_flag = skirmishes }
+				378 = { set_state_flag = skirmishes }
+			}
+			set_country_flag = border_clashes
+		}
+	}
+
+	option = {
+		trigger = {
+			AND = {
+				NOT = { tag = USA }
+				NOT = { tag = MEX }
+			}
+		}
+		name = news.8.b
+	}
+}

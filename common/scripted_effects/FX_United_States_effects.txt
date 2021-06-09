@@ -1,0 +1,74 @@
+USA_lessen_effects_of_depression = {
+    if = {
+        limit = { has_idea = USA_the_greater_depression }
+        swap_ideas = {
+            remove_idea = USA_the_greater_depression
+            add_idea = USA_the_greater_depression_1
+        }
+    }
+    else_if = {
+        limit = { has_idea = USA_the_greater_depression_1 }
+        swap_ideas = {
+            remove_idea = USA_the_greater_depression_1
+            add_idea = USA_the_greater_depression_2
+        }
+    }
+    else_if = {
+        limit = { has_idea = USA_the_greater_depression_2 }
+        swap_ideas = {
+            remove_idea = USA_the_greater_depression_2
+            add_idea = USA_the_greater_depression_3
+        }
+    }
+    else_if = {
+        limit = { has_idea = USA_the_greater_depression_3 }
+        swap_ideas = {
+            remove_idea = USA_the_greater_depression_3
+            add_idea = USA_the_greater_depression_4
+        }
+    }
+    else_if = {
+        limit = { has_idea = USA_the_greater_depression_4 }
+        swap_ideas = {
+            remove_idea = USA_the_greater_depression_4
+            add_idea = USA_the_greater_depression_5
+        }
+    }
+    else_if = {
+        limit = { has_idea = USA_the_greater_depression_5 }
+        swap_ideas = {
+            remove_idea = USA_the_greater_depression_5
+            add_idea = USA_the_greater_depression_6
+        }
+    }
+    else_if = {
+        limit = { has_idea = USA_the_greater_depression_6 }
+        swap_ideas = {
+            remove_idea = USA_the_greater_depression_6
+            add_idea = USA_the_greater_depression_7
+        }
+    }
+    else = {
+        remove_ideas = USA_the_greater_depression_7
+    }
+}
+
+USA_lessen_effects_of_malnourishment = {
+    if = {
+        limit = { has_idea = USA_malnourished_populace }
+        swap_ideas = {
+            remove_idea = USA_malnourished_populace
+            add_idea = USA_malnourished_populace_1
+        }
+    }
+    else_if = {
+        limit = { has_idea = USA_malnourished_populace_1 }
+        swap_ideas = {
+            remove_idea = USA_malnourished_populace_1
+            add_idea = USA_malnourished_populace_2
+        }
+    }
+    else = {
+        remove_ideas = USA_malnourished_populace_2
+    }
+}

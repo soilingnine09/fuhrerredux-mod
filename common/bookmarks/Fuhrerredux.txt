@@ -12,14 +12,12 @@ bookmarks = {
             history = "USA_FUHRERREDUX_DESC"
             ideology = market_liberal
             ideas = {
-                USA_failed_offensive
+                USA_the_greater_depression
                 USA_malnourished_populace
-                USA_sick_man_america
+                USA_failed_offensive
             }
             focuses = {
-                USA_military_review
-                USA_it_will_never_happen_here
-                USA_question_of_foriegn_holdings
+                
             }
         }
         "SOV" = {

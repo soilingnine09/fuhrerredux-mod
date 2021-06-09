@@ -1,0 +1,653 @@
+# United States Events
+# created by: dax0102
+
+add_namespace = usa
+
+country_event = { # Intro
+    id = usa.0
+    title = usa.0.t
+    desc = usa.0.d
+    picture = GFX_report_event_generic_riot
+    is_triggered_only = yes
+
+    option = {
+        name = usa.0.a
+    }
+}
+
+country_event = { # 1936 Elections
+    id = usa.1
+    title = usa.1.t
+    desc = usa.1.d
+    picture = GFX_report_event_election_vote
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    trigger = {
+        tag = USA
+        date > 1936.1.1
+        date < 1937.1.1
+        NOT = { has_country_flag = USA_had_1936_elections }
+    }
+
+    option = { # Long
+        name = usa.1.a
+        set_politics = {
+            ruling_party = social_democrat
+            elections_allowed = yes
+        }
+        add_popularity = {
+            ideology = social_democrat
+            popularity = 0.1
+        }
+        remove_every_minister = yes
+        add_ideas = {
+            USA_Huey_Long_hog_sde
+            USA_George_Catlett_Marshall_Jr_for_sde
+            USA_Jesse_Holman_Jones_eco_sde
+            USA_Konrad_Knute_Solberg_sec_sde
+        }
+        hidden_effect = {
+            set_country_flag = USA_had_1936_elections
+        }
+    }
+    option = { # Roosevelt
+        name = usa.1.b
+        set_politics = {
+            ruling_party = social_liberal
+            elections_allowed = yes
+        }
+        add_popularity = {
+            ideology = social_liberal
+            popularity = 0.1
+        }
+        remove_every_minister = yes
+        add_ideas = {
+            USA_Quentin_Roosevelt_hog_sli
+            USA_Henry_Lewis_Stimson_for_sli
+            USA_Charles_Edison_eco_sli
+            USA_Charles_Douglas_Jackson_sec_sli
+        }
+    }
+    option = { # Landon
+        name = usa.1.c
+        set_politics = {
+            ruling_party = market_liberal
+            elections_allowed = yes
+        }
+        add_popularity = {
+            ideology = market_liberal
+            popularity = 0.1
+        }
+        remove_every_minister = yes
+        add_ideas = {
+            USA_Alf_Landon_hog_mli
+            USA_Henry_Morgenthau_Jr_for_mli
+            USA_Daniel_Calhoun_Roper_eco_mli
+            USA_Robert_Ferdinand_Wagner_I_sec_mli
+        }
+    }
+    option = { # Garner
+        name = usa.1.d
+        set_politics = {
+            ruling_party = social_conservative
+            elections_allowed = yes
+        }
+        add_popularity = {
+            ideology = social_conservative
+            popularity = 0.1
+        }
+        remove_every_minister = yes
+        add_ideas = {
+            USA_John_Nance_Garner_hog_sco
+            USA_Dean_Gooderham_Acheson_for_sco
+            USA_William_Daniel_Leahy_eco_sco
+            USA_Martin_Dies_Jr_sec_sco
+        }
+    }
+}
+
+country_event = { # Panic at Houston
+	id = usa.2
+	title = usa.2.t
+	desc = usa.2.d
+	picture = GFX_report_event_generic_riot
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		USA = { exists = yes }
+	}
+
+	mean_time_to_happen = {
+		days = 48
+	}
+
+	option = {
+		name = usa.2.a
+		add_political_power = -125
+		add_stability = -0.05
+		375 = {
+            damage_building = { type = infrastructure damage = 0.75 }
+        }
+    }
+}
+
+country_event = { # Air Force Debate
+    id = usa.3
+    title = usa.3.t
+    desc = usa.3.d
+    is_triggered_only = yes
+
+    option = {
+        name = usa.3.a
+        air_experience = 25
+        complete_national_focus = USA_create_the_usaf
+    }
+    option = {
+        name = usa.3.b
+        air_experience = 25
+        complete_national_focus = USA_expand_the_usaac
+    }
+}
+
+country_event = { # USA Demand Mexican Submission
+    id = usa.4
+    title = usa.4.t
+    desc = usa.4.d
+    picture = report_event_generic_conference
+    is_triggered_only = yes
+
+    option = {
+        name = usa.4.a
+        ai_chance = { base = 90 }
+        add_political_power = 100
+        add_stability = 0.05
+        add_war_support = 0.05
+        FROM = { country_event = usa.5 }
+    }
+    option = {
+        name = usa.4.b
+        ai_chance = { base = 10 }
+        FROM = { puppet = ROOT }
+    }
+}
+
+country_event = { # Mexican Response
+    id = usa.5
+    title = usa.5.t
+    desc = usa.5.d
+    picture = report_event_generic_conference
+    is_triggered_only = yes
+
+    option = {
+        name = usa.5.a
+        create_wargoal = {
+            target = MEX
+            type = annex_everything
+        }
+        news_event = { id = worldnews.104 }
+    }
+}
+
+country_event = {
+    id = usa.6
+    title = usa.6.t
+    desc = usa.6.d
+    fire_only_once = yes
+    hidden = yes
+    immediate = { news_event = news.8 }
+    mean_time_to_happen = { days = 0 }
+
+    trigger = {
+        original_tag = USA
+        date > 1936.5.1
+    }
+}
+
+country_event = {
+	id = usa.7
+	title = usa.7.t
+	desc = usa.7.d
+	picture = report_event_merchant_ship_01
+	is_triggered_only = yes
+
+	immediate = { modify_country_flag = { flag = border_clashes value = 1 } }
+
+	option = {
+		name = usa.7.a
+		add_political_power = -50
+		add_manpower = -20000
+		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -1000 producer = MEX }
+		hidden_effect = {
+			USA = { country_event = { id = usa.8 hours = 8 } }
+
+			if = {
+				limit = {
+					has_country_flag = { flag = border_clashes value < 6 }
+				}
+				country_event = { id = usa.7 days = 120 }
+				USA = { country_event = { id = usa.12 days = 9 } }
+				country_event = { id = usa.12 days = 18 }
+			}
+		}
+	}
+	option = {
+		name = usa.7.b
+		add_political_power = -50
+		hidden_effect = {
+			USA = { country_event = { id = usa.9 hours = 8 } }
+			if = {
+				limit = {
+					has_country_flag = { flag = border_clashes value < 6 }
+				}
+				country_event = { id = usa.7 days = 120 }
+				USA = { country_event = { id = usa.12 days = 9 } }
+				country_event = { id = usa.12 days = 18 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = usa.8
+	title = usa.8.t
+	desc = usa.8.d
+	picture = report_event_merchant_ship_01
+	is_triggered_only = yes
+
+	option = {
+		name = usa.8.a
+		add_political_power = -100
+		hidden_effect = {
+			MEX = { country_event = { id = usa.11 hours = 8 } }
+		}
+	}
+
+	option = {
+		name = usa.8.b
+		add_political_power = -25
+		add_manpower = -10000
+		random_owned_state = {
+			limit = {
+				has_state_flag = skirmishes
+			}
+			damage_building = {
+                type = industrial_complex
+                damage = 0.5
+            }
+			damage_building = {
+                type = infrastructure
+                damage = 0.5
+            }
+		}
+		hidden_effect = {
+			MEX = { country_event = { id = usa.10 hours = 8 } }
+		}
+	}
+}
+
+country_event = {
+	id = usa.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event usa.23"}
+	title = usa.9.t
+	desc = usa.23.d
+	picture = report_event_merchant_ship_01
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.9.a
+		add_political_power = -50
+		add_stability = -0.01
+		random_owned_state = {
+			limit = {
+				has_state_flag = skirmishes
+			}
+			damage_building = {
+                type = industrial_complex
+                damage = 0.5
+            }
+			damage_building = {
+                type = infrastructure
+                damage = 0.5
+            }
+		}
+		hidden_effect = {
+			MEX = { country_event = { id = usa.11 hours = 8 } }
+		}
+	}
+
+	option = {
+		name = 
+		add_political_power = -100
+		add_manpower = -10000
+		hidden_effect = {
+			MEX = { country_event = { id = usa.10 hours = 8 } }
+		}
+	}
+}
+
+country_event = {
+	id = usa.10
+	title = usa.10.t
+	desc = usa.10.d
+	picture = report_event_merchant_ship_01
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.10.a
+		add_political_power = -150
+		random_list = {
+			75 = { MEX_increase_nationalism = yes }
+			25 = { #This does nothing }
+		}
+	}
+	option = {
+		name = usa.10.b
+		add_political_power = -25
+		add_manpower = 5000
+		random_list = {
+			10 = { MEX_increase_nationalism = yes }
+			90 = { #This does nothing }
+		}
+	}
+}
+
+country_event = {
+    id = usa.11
+    title = usa.11.t
+    desc = usa.11.d
+    picture = report_event_merchant_ship_01
+    is_triggered_only = yes
+
+    option = {
+        name = usa.11.a
+        add_political_power = 50
+        random_list = {
+            10 = { MEX_increase_nationalism = yes }
+            90 = { }
+        }
+    }
+}
+
+country_event = {
+	id = usa.12
+	title = usa.12.t
+	desc = usa.26.d
+	picture = report_event_merchant_ship_01
+	is_triggered_only = yes
+
+	option = {
+		trigger = { original_tag = USA }
+		name = usa.12.a
+		add_political_power = 50
+	}
+
+	option = {
+		trigger = { original_tag = MEX }
+		name = usa.12.b
+		add_political_power = -150
+		MEX_increase_nationalism = yes
+	}
+	option = {
+		trigger = { original_tag = MEX }
+		name = usa.12.c
+	}
+}
+
+country_event = { # Surrender to Mexico
+    id = usa.13
+    title = usa.13.t
+    desc = usa.13.d
+    picture = report_event_merchant_ship_01
+    is_triggered_only = yes
+
+    option = {
+        name = usa.13.a
+        ai_chance = { base = 95 }
+        FROM = { whitepeace = ROOT }
+        transfer_state = 484
+        transfer_state = 743
+        transfer_state = 378
+        transfer_state = 930
+        transfer_state = 928
+        transfer_state = 923
+        transfer_state = 922
+        transfer_state = 921
+        transfer_state = 375
+        transfer_state = 919
+        transfer_state = 377
+        transfer_state = 376
+        transfer_state = 920
+        transfer_state = 926
+        transfer_state = 925
+        transfer_state = 929
+        USA = { country_event = usa.100 days = 14 }
+    }
+    option = {
+        name = usa.13.b
+        ai_chance = { base = 5 }
+        set_country_flag = MEX_crush_united_states
+        add_political_power = -100
+    }
+}
+
+country_event = {
+	id = usa.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event usa.30"}
+	title = usa.14.t
+	desc = usa.14.d
+	picture = report_event_merchant_ship_01
+
+	trigger = {
+		tag = USA
+		date > 1936.3.21
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	fire_only_once = yes
+
+	option = {
+		name = usa.14.a
+        kill_ideology_leader = libertarian_socialist
+        create_country_leader = {
+            name = "John Reed"
+            desc = "POLITICS_JOHN_REED_DESC"
+            picture = "Portrait_USA_John_Reed.tga"
+            expire = "1965.1.1"
+            ideology = libertarian_socialist_subtype
+        }
+	}
+}
+
+
+country_event = { # Start of the Collapse - Riots
+    id = usa.100
+    title = usa.100.t
+    desc = usa.100.d
+    picture = GFX_report_event_generic_riot
+    is_triggered_only = yes
+
+    option = {
+        name = usa.100.a
+        hidden_effect = {
+            country_event = { id = usa.101 days = 12 }
+        }
+    }
+}
+
+country_event = { # Internal Political Turmoil
+    id = usa.101
+    title = usa.101.t
+    desc = usa.101.d
+    picture = GFX_report_event_generic_riot
+    is_triggered_only = yes
+
+    option = {
+        name = usa.101.a
+        hidden_effect = {
+            country_event = { id = 102 days = 3 }
+        }
+    }
+}
+
+country_event = { # New England Seceeds
+    id = usa.102
+    title = usa.102.t
+    desc = usa.102.d
+    picture = GFX_report_event_generic_riot
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            every_owned_state = {
+                limit = {
+                    OR = {
+                        state = 357
+                        state = 358
+                        state = 359
+                        state = 837
+                        state = 838
+                        state = 839
+                        state = 840
+                        state = 841 
+                    }
+                }
+                NEE = {
+                    add_state_core = PREV
+                    transfer_state = PREV
+                }
+                USA = {
+                    remove_state_core = PREV
+                    add_state_claim = PREV
+                }
+            }
+        }
+    }
+
+    option = {
+        name = usa.102.a
+        hidden_effect = {
+
+            country_event = { id = usa.103 days = 5 }
+        }
+    }
+}
+
+country_event = { # Midwest Seceeds
+    id = usa.103
+    title = usa.103.t
+    desc = usa.103.d
+    picture = GFX_report_event_generic_riot
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            every_owned_state = {
+                limit = {
+                    OR = {
+                        state = 373
+                        state = 374
+                        state = 381
+                        state = 382
+                        state = 383
+                        state = 384
+                        state = 388
+                        state = 389
+                        state = 390
+                        state = 391
+                        state = 392
+                    }
+                }
+                CLB = {
+                    add_state_core = PREV
+                    transfer_state = PREV
+                }
+                USA = {
+                    remove_state_core = PREV
+                    add_state_claim = PREV
+                }
+            }
+        }
+    }
+
+    option = {
+        name = usa.103.a
+        hidden_effect = {
+            country_event = { id = usa.104 days = 4 }
+        }
+    }
+}
+
+country_event = { # Rust Belt
+    id = usa.104
+    title = usa.104.t
+    desc = usa.104.d
+    picture = GFX_report_event_generic_riot
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            every_owned_state = {
+                limit = {
+                    OR = {
+                        state = 843
+                        state = 396
+                        state = 395
+                        state = 394
+                        state = 393
+                        state = 369
+                        state = 360
+                        state = 261
+                    }
+                }
+                RBL = {
+                    add_state_core = PREV
+                    transfer_state = PREV
+                }
+                USA = {
+                    remove_state_core = PREV
+                    add_state_claim = PREV
+                }
+            }
+        }
+    }
+
+    option = {
+        name = usa.104.a
+        hidden_effect = {
+            country_event = { id = usa.105 days = 14 }
+        }
+    }
+}
+
+country_event = { # Canada Seizes Cascadia
+    id = usa.105
+    title = usa.105.t
+    desc = usa.105.d
+    picture = GFX_report_event_generic_riot
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            every_owned_state = {
+                limit = {
+                    OR = {
+                        state = 385
+                        state = 386
+                        state = 387
+                    }
+                }
+                ENG = {
+                    transfer_state = PREV
+                }
+                CAS = {
+                    add_state_core = PREV
+                }
+            }
+        }
+    }
+}

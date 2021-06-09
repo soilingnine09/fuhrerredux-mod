@@ -109,10 +109,9 @@ set_popularities = {
 
 add_ideas = {
 	party_pop_0_20
-	USA_sick_man_america
-	USA_failed_offensive
+	USA_the_greater_depression
 	USA_malnourished_populace
-	USA_great_depression
+	USA_failed_offensive
 
 	limited_conscription
 
@@ -147,9 +146,9 @@ create_country_leader = {
 	traits = { }
 }
 create_country_leader = {
-	name = "Norman Thomas"
-	desc = "POLITICS_NORMAN_THOMAS_DESC"
-	picture = "Portrait_USA_Norman_Thomas.tga"
+	name = "Eugene Debs"
+	desc = "POLITICS_EUGENE_DEBS_DESC"
+	picture = "Portrait_USA_Eugene_Debs.tga"
 	expire = "1965.1.1"
 	ideology = libertarian_socialist_subtype
 	traits = { }

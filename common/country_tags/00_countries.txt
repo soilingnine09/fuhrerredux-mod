@@ -97,8 +97,11 @@ SLV = "countries/EastEuropean.txt" # Slovenia
 
 ### North America
 USA = "countries/WestEuropean.txt" # United States
-CSA = "countries/WestEuropean.txt" # Confederate States
-USB = "countries/WestEuropean.txt" # Neutral Bloc
+NEE = "countries/WestEuropean.txt" # New England
+RBL = "countries/WestEuropean.txt" # Rust Belt
+CLB = "countries/WestEuropean.txt" # Columbia
+CAS = "countries/WestEuropean.txt" # Cascadia
+NID = "countries/WestEuropean.txt" # Native Indians
 QUE = "countries/WestEuropean.txt" # Quebec
 
 ### South America

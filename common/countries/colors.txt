@@ -1077,6 +1077,26 @@ MLT = {
 	color = rgb { 255 255 153 }
 	color_ui = rgb { 255 255 153 }
 }
+NEE = {
+	color = rgb { 0 107 51 }
+	color_ui = rgb { 0 107 51 }
+}
+CLB = {
+	color = rgb { 60 59 110 }
+	color_ui = rgb { 60 59 110 }
+}
+CAS = {
+	color = rgb { 178 34 52 }
+	color_ui = rgb { 178 34 52 }
+}
+RBL = {
+	color = rgb { 204 81 39 }
+	color_ui = rgb { 204 81 39 }
+}
+NID = {
+	color = rgb { 242 205 94 }
+	color_ui = rgb { 255 255 122 }
+}
 
 #################################
 #################################
