@@ -155,6 +155,7 @@ ideas = {
         }
         USA_efficient_command_structure = {
             allowed = { original_tag = USA }
+            picture = german_advisors
             modifier = {
                 army_org_factor = 0.05
                 planning_speed = 0.15
@@ -166,6 +167,14 @@ ideas = {
             picture = UoB_women_soldiers
             modifier = {
                 repair_speed_factor = 0.15
+            }
+        }
+        USA_advisors = {
+            allowed = { original_tag = USA }
+            picture = advisors_USA
+            modifier = {
+                army_org_factor = 0.05
+                planning_speed = 0.05
             }
         }
     }

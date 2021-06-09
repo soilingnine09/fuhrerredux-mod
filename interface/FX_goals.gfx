@@ -148,20 +148,24 @@ spriteTypes = {
 		name = "GFX_goal_IRQ_revolt"
 		texturefile = "gfx/interface/goals/goal_IRQ_revolt.tga"
 	}
-	spriteType = {# US Army
+	spriteType = {
 		name = "GFX_goal_USA_army"
 		texturefile = "gfx/interface/goals/USA_army.dds"
 	}
-	spriteType = {# US Navy
+	spriteType = {
 		name = "GFX_goal_USA_navy"
 		texturefile = "gfx/interface/goals/USA_navy.tga"
 	}
-	spriteType = {# US Air Force
+	spriteType = {
 		name = "GFX_goal_USA_airforce"
 		texturefile = "gfx/interface/goals/USA_airforce.dds"
 	}
-	spriteType = {# US Air Army Corps
+	spriteType = {
 		name = "GFX_goal_USA_usaac"
 		texturefile = "gfx/interface/goals/USA_usaac.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_ENG_entente"
+		texturefile = "gfx/interface/goals/ENG_entente.tga"
 	}
 }

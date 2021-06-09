@@ -203,6 +203,8 @@ country_event = {
         original_tag = USA
         date > 1936.5.1
     }
+
+    option = { name = usa.6.a }
 }
 
 country_event = {
@@ -289,7 +291,6 @@ country_event = {
 
 country_event = {
 	id = usa.9
-	immediate = {log = "[GetDateText]: [Root.GetName]: event usa.23"}
 	title = usa.9.t
 	desc = usa.23.d
 	picture = report_event_merchant_ship_01
@@ -317,9 +318,8 @@ country_event = {
 			MEX = { country_event = { id = usa.11 hours = 8 } }
 		}
 	}
-
 	option = {
-		name = 
+		name = usa.9.b
 		add_political_power = -100
 		add_manpower = -10000
 		hidden_effect = {
@@ -333,7 +333,6 @@ country_event = {
 	title = usa.10.t
 	desc = usa.10.d
 	picture = report_event_merchant_ship_01
-
 	is_triggered_only = yes
 
 	option = {
@@ -367,7 +366,7 @@ country_event = {
         add_political_power = 50
         random_list = {
             10 = { MEX_increase_nationalism = yes }
-            90 = { }
+            90 = { #This does nothing }
         }
     }
 }
@@ -461,6 +460,182 @@ country_event = {
             ideology = libertarian_socialist_subtype
         }
 	}
+}
+
+country_event = { # Join Entente
+    id = usa.15
+    title = usa.15.t
+    desc = usa.15.d
+    picture = GFX_report_event_soldiers_marching
+    is_triggered_only = yes
+
+    option = {
+        name = usa.15.a
+        ai_chance = { base = 90 }
+        add_to_faction = FROM
+    }
+    option = {
+        name = usa.15.b
+        ai_chance = { base = 10 }
+        FROM = { country_event = usa.16 }
+    }
+}
+
+country_event = {
+    id = usa.16
+    title = usa.16.t
+    desc = usa.16.d
+    picture = GFX_report_event_generic_sign_treaty2
+    is_triggered_only = yes
+
+    option = {
+        name = usa.16.a
+    }
+}
+
+country_event = {
+    id = usa.17
+    title = usa.17.t
+    desc = usa.17.d
+    picture = GFX_report_event_generic_sign_treaty2
+    is_triggered_only = yes
+
+    option = {
+        name = usa.17.a
+        ai_chance = { base = 90 }
+        diplomatic_relation = { 
+            country = USA 
+            relation = non_aggression_pact
+        }
+        give_military_access = USA
+        FROM = { country_event = usa.18 }
+    }
+    option = {
+        name = usa.17.b
+        ai_chance = { base = 10 }
+        FROM = { country_event = usa.19 }
+    }
+}
+
+country_event = {
+    id = usa.18
+    title = usa.18.t
+    desc = usa.18.d
+    picture = GFX_report_event_generic_sign_treaty2
+    is_triggered_only = yes
+
+    option = {
+        name = usa.18.a
+        give_military_access = PHI
+        set_country_flag = USA_san_francisco_conference_success
+    }
+}
+
+country_event = {
+    id = usa.19
+    title = usa.19.t
+    desc = usa.19.d
+    picture = GFX_report_event_generic_sign_treaty2
+    is_triggered_only = yes
+
+    option = {
+        name = usa.19.a
+        add_political_power = -10
+    }
+}
+
+country_event = {
+    id = usa.20
+    title = usa.20.t
+    desc = usa.20.d
+    picture = GFX_report_event_german_advisors_remain
+    is_triggered_only = yes
+
+    option = {
+        name = usa.20.a
+        ai_chance = { base = 90 }
+        add_ideas = USA_advisors
+        FROM = { country_event = usa.21 }
+    }
+    option = {
+        name = usa.20.b
+        ai_chance = { base = 10 }
+        FROM = { country_event = usa.22 }
+    }
+}
+
+country_event = {
+    id = usa.21
+    title = usa.21.t
+    desc = usa.21.d
+    picture = GFX_report_event_generic_sign_treaty2
+    is_triggered_only = yes
+
+    option = {
+        name = usa.21.a
+        add_political_power = 10
+    }
+}
+
+country_event = {
+    id = usa.22
+    title = usa.22.t
+    desc = usa.22.d
+    picture = GFX_report_event_generic_sign_treaty2
+    is_triggered_only = yes
+
+    option = {
+        name = usa.22.a
+        add_political_power = -10
+    }
+}
+
+country_event = {
+    id = usa.23
+    title = usa.23.t
+    desc = usa.23.d
+    picture = GFX_report_event_german_advisors_remain
+    is_triggered_only = yes
+
+    option = {
+        name = usa.23.a
+        ai_chance = { base = 90 }
+        FROM = {
+            puppet = ROOT
+            country_event = usa.24
+        }
+    }
+    option = {
+        name = usa.23.b
+        ai_chance = { base = 10 }
+        FROM = { country_event = usa.25 }
+    }
+}
+
+country_event = {
+    id = usa.24
+    title = usa.24.t
+    desc = usa.24.d
+    picture = GFX_report_event_generic_sign_treaty2
+    is_triggered_only = yes
+
+    option = {
+        name = usa.24.a
+        add_political_power = 10
+    }
+}
+
+country_event = {
+    id = usa.25
+    title = usa.25.t
+    desc = usa.25.d
+    picture = GFX_report_event_generic_sign_treaty2
+    is_triggered_only = yes
+
+    option = {
+        name = usa.25.a
+        add_political_power = -10
+    }
 }
 
 

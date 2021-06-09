@@ -11,6 +11,10 @@ focus_tree = {
 		}
 	}
 
+	initial_show_position = {
+        focus = USA_last_minute_reforms
+    }
+
 	# Last Minute Reforms
 	focus = {
 		id = USA_last_minute_reforms
@@ -473,7 +477,7 @@ focus_tree = {
 		id = USA_the_army_reformed
 		icon = GFX_goal_COS_American_Staff
 		x = 0
-		y = 1
+		y = 2
 		cost = 6
 		prerequisite = {
 			focus = USA_tank_production_initiatives
@@ -481,7 +485,7 @@ focus_tree = {
 			focus = USA_modernize_training
 			focus = USA_logistics_improvements
 		}
-		relative_position_id = USA_standardized_equipment_manufacturing
+		relative_position_id = USA_modernize_training
 		completion_reward = {
 			remove_ideas = USA_failed_offensive
 		}
@@ -748,7 +752,7 @@ focus_tree = {
 	focus = {
 		id = USA_address_the_navy
 		icon = GFX_goal_USA_navy
-		x = 14
+		x = 12
 		y = 6
 		cost = 6
 		completion_reward = {
@@ -872,6 +876,7 @@ focus_tree = {
 	# Doctrine Improvements
 	focus = {
 		id = USA_doctrine_improvements
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		x = 0
 		y = 1
 		cost = 6
@@ -889,6 +894,7 @@ focus_tree = {
 	# Amphibious Transports
 	focus = {
 		id = USA_amphibious_transports
+		icon = GFX_goal_generic_occupy_states_coastal 
 		x = 0
 		y = 1
 		cost = 6
@@ -944,7 +950,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 6
-		available = { has_full_control_of = 378 }
+		available = { controls_state = 378 }
 		mutually_exclusive = { focus = USA_expand_the_port_of_boston }
 		prerequisite = { focus = USA_cruiser_modernization }
 		relative_position_id = USA_cruiser_modernization
@@ -974,7 +980,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 6
-		available = { has_full_control_of = 357 }
+		available = { controls_state = 357 }
 		mutually_exclusive = { focus = USA_expand_the_port_of_los_angeles }
 		prerequisite = { focus = USA_cruiser_modernization }
 		relative_position_id = USA_cruiser_modernization
@@ -1254,6 +1260,246 @@ focus_tree = {
 			add_timed_idea = {
 				idea = USA_recovering_from_the_depression
 				days = 360
+			}
+		}
+	}
+
+	##########################################################
+
+	# America on the World Stage
+	focus = {
+		id = USA_america_on_the_world_stage
+		icon = GFX_goal_usa
+		x = 21
+		y = 7
+		cost = 6
+		available = {
+			USA_has_great_depression = no
+			USA_mexican_disaster_happened = no
+		}
+	}
+
+	# Reconciliation with the Entente
+	focus = {
+		id = USA_reconciliation_with_the_entente
+		icon = GFX_goal_ENG_entente
+		x = -3
+		y = 1
+		cost = 6
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = USA_entente_is_formed_tt
+				ENG = { is_in_faction_with = FRA }
+			}
+			NOT = { has_war_with = ENG }
+			NOT = { has_war_with = FRA }
+		}
+		prerequisite = { focus = USA_america_on_the_world_stage }
+		relative_position_id = USA_america_on_the_world_stage
+		completion_reward = {
+			ENG = {
+                reverse_add_opinion_modifier = {
+                    modifier = USA_reconciliation
+                    target = ROOT
+                }
+            }
+			FRA = {
+                reverse_add_opinion_modifier = {
+                    modifier = USA_reconciliation
+                    target = ROOT
+                }
+            }
+		}
+	}
+
+	# Join our Old Allies
+	focus = {
+		id = USA_join_our_old_allies
+		icon = GFX_goal_generic_improve_relations
+		x = 0
+		y = 1
+		cost = 6
+		available = {
+			NOT = { has_war_with = ENG }
+			NOT = { has_war_with = FRA }
+		}
+		prerequisite = { focus = USA_reconciliation_with_the_entente }
+		relative_position_id = USA_reconciliation_with_the_entente
+		completion_reward = {
+			if = {
+				limit = {
+					FRA = { is_faction_leader = yes }
+				}
+				FRA = { country_event = usa.15 }
+			}
+			else_if = {
+				limit = {
+					ENG = { is_faction_leader = yes }
+				}
+				ENG = { country_event = usa.15 }
+			}
+		}
+	}
+
+	# Crush the German Menace
+	focus = {
+		id = USA_crush_the_german_menace
+		icon = GFX_focus_attack_germany
+		x = -1
+		y = 1
+		cost = 6
+		bypass = {
+			has_war_with = GER
+		}
+		will_lead_a_war_with = GER
+		prerequisite = { focus = USA_join_our_old_allies }
+		relative_position_id = USA_join_our_old_allies
+		completion_reward = {
+			create_wargoal = {
+				target = GER
+				type = annex_everything
+			}
+		}
+	}
+
+	# Crush the Soviet Menace
+	focus = {
+		id = USA_crush_the_soviet_menace
+		icon = GFX_focus_attack_soviet
+		x = 1
+		y = 1
+		cost = 6
+		bypass = {
+			has_war_with = SOV
+		}
+		will_lead_a_war_with = SOV
+		prerequisite = { focus = USA_join_our_old_allies }
+		relative_position_id = USA_join_our_old_allies
+		completion_reward = {
+			create_wargoal = {
+				target = SOV
+				type = annex_everything
+			}
+		}
+	}
+
+	# Our Pacific Friend
+	focus = {
+		id = USA_our_pacific_friend
+		icon = GFX_goal_flag_phillipines
+		x = 0
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_america_on_the_world_stage }
+		relative_position_id = USA_america_on_the_world_stage
+		completion_reward = {
+			PHI = {
+                reverse_add_opinion_modifier = {
+                    modifier = PHI_diplomatic_mission
+                    target = ROOT
+                }
+            }
+		}
+	}
+
+	# San Francisco Conference
+	focus = {
+		id = USA_san_francisco_conference
+		icon = GFX_goal_USA_golden_gate
+		x = -1
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_our_pacific_friend }
+		relative_position_id = USA_our_pacific_friend
+		completion_reward = {
+			PHI = { country_event = usa.17 }
+		}
+	}
+
+	# Send Advisors
+	focus = {
+		id = USA_send_advisors
+		icon = GFX_goal_national_mobilization
+		x = 1
+		y = 1
+		cost = 6
+		available = { has_country_flag = USA_san_francisco_conference_success }
+		prerequisite = { focus = USA_our_pacific_friend }
+		relative_position_id = USA_our_pacific_friend
+		completion_reward = {
+			PHI = { country_event = usa.20 }
+		}
+	}
+
+	# Take Down the Japanese Hegemony
+	focus = {
+		id = USA_take_down_the_japanese_hegemony
+		icon = GFX_focus_attack_japan
+		x = 0
+		y = 2
+		cost = 6
+		available = { has_country_flag = USA_san_francisco_conference_success }
+		prerequisite = { focus = USA_send_advisors }
+		prerequisite = { focus = USA_san_francisco_conference }
+		relative_position_id = USA_our_pacific_friend
+		completion_reward = {
+			create_wargoal = {
+				target = JAP
+				type = annex_everything
+			}
+		}
+	}
+
+	# Protection for Central America
+	focus = {
+		id = USA_protection_for_central_america
+		icon = GFX_goal_army_guy_2
+		x = 2
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_america_on_the_world_stage }
+		relative_position_id = USA_america_on_the_world_stage
+		completion_reward = {
+			if = {
+				limit = { country_exists = GUA }
+				GUA = { country_event = usa.23 }
+			}
+			if = {
+				limit = { country_exists = ELS }
+				ELS = { country_event = usa.23 }
+			}
+			if = {
+				limit = { country_exists = HON }
+				HON = { country_event = usa.23 }
+			}
+			if = {
+				limit = { country_exists = NIC }
+				NIC = { country_event = usa.23 }
+			}
+			if = {
+				limit = { country_exists = PAN }
+				PAN = { country_event = usa.23 }
+			}
+			if = {
+				limit = { country_exists = COS }
+				COS = { country_event = usa.23 }
+			}
+		}
+	}
+
+	# The Mexican Question
+	focus = {
+		id = USA_the_mexican_question
+		icon = GFX_goal_mexico
+		x = 0
+		y = 2
+		cost = 6
+		prerequisite = { focus = USA_protection_for_central_america }
+		relative_position_id = USA_protection_for_central_america
+		completion_reward = {
+			create_wargoal = {
+				target = MEX
+				type = annex_everything
 			}
 		}
 	}

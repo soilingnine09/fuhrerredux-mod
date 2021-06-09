@@ -34,4 +34,9 @@ spriteTypes = {
         name = "GFX_idea_PHI_promises_of_elections"
         texturefile = "gfx/interface/ideas/PHI/ideas/PHI_promises_of_election.tga"
     }
+
+    spriteType = {
+        name = "GFX_idea_advisors_USA"
+        texturefile = "gfx/interface/ideas/ideas/idea_advisors_USA.tga"
+    }
 }
