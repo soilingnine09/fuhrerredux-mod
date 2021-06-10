@@ -1,4 +1,4 @@
-USA_lessen_effects_of_depression = {
+USA_decrease_effects_of_the_depression = {
     if = {
         limit = { has_idea = USA_the_greater_depression }
         swap_ideas = {
@@ -48,12 +48,33 @@ USA_lessen_effects_of_depression = {
             add_idea = USA_the_greater_depression_7
         }
     }
+    else_if = {
+        limit = { has_idea = USA_the_greater_depression_7 }
+        swap_ideas = {
+            remove_idea = USA_the_greater_depression_7
+            add_idea = USA_the_greater_depression_8
+        }
+    }
+    else_if = {
+        limit = { has_idea = USA_the_greater_depression_8 }
+        swap_ideas = {
+            remove_idea = USA_the_greater_depression_8
+            add_idea = USA_the_greater_depression_9
+        }
+    }
+    else_if = {
+        limit = { has_idea = USA_the_greater_depression_9 }
+        swap_ideas = {
+            remove_idea = USA_the_greater_depression_9
+            add_idea = USA_the_greater_depression_10
+        }
+    }
     else = {
-        remove_ideas = USA_the_greater_depression_7
+        remove_ideas = USA_the_greater_depression_10
     }
 }
 
-USA_lessen_effects_of_malnourishment = {
+USA_decrease_effects_of_malnourishment = {
     if = {
         limit = { has_idea = USA_malnourished_populace }
         swap_ideas = {
@@ -68,7 +89,21 @@ USA_lessen_effects_of_malnourishment = {
             add_idea = USA_malnourished_populace_2
         }
     }
+    else_if = {
+        limit = { has_idea = USA_malnourished_populace_2 }
+        swap_ideas = {
+            remove_idea = USA_malnourished_populace_2
+            add_idea = USA_malnourished_populace_3
+        }
+    }
+    else_if = {
+        limit = { has_idea = USA_malnourished_populace_3 }
+        swap_ideas = {
+            remove_idea = USA_malnourished_populace_3
+            add_idea = USA_malnourished_populace_4
+        }
+    }
     else = {
-        remove_ideas = USA_malnourished_populace_2
+        remove_ideas = USA_malnourished_populace_4
     }
 }

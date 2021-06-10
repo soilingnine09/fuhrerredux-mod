@@ -9,7 +9,7 @@ ideas = {
             picture = usa_great_depression
             modifier = {
                 consumer_goods_factor = 0.5
-                production_factory_max_efficiency_factor = -0.15
+                production_factory_max_efficiency_factor = -0.25
                 industrial_capacity_factory = -0.35
                 industrial_capacity_dockyard = -0.35
             }
@@ -18,107 +18,175 @@ ideas = {
             allowed = { original_tag = USA }
             picture = usa_great_depression
             modifier = {
-                consumer_goods_factor = 0.5
-                production_factory_max_efficiency_factor = -0.15
-                industrial_capacity_factory = -0.25
-                industrial_capacity_dockyard = -0.25
+                consumer_goods_factor = 0.45
+                production_factory_max_efficiency_factor = -0.25
+                industrial_capacity_factory = -0.35
+                industrial_capacity_dockyard = -0.35
             }
         }
         USA_the_greater_depression_2 = {
             allowed = { original_tag = USA }
             picture = usa_great_depression
             modifier = {
-                consumer_goods_factor = 0.35
-                production_factory_max_efficiency_factor = -0.15
-                industrial_capacity_factory = -0.25
-                industrial_capacity_dockyard = -0.25
+                consumer_goods_factor = 0.45
+                production_factory_max_efficiency_factor = -0.2
+                industrial_capacity_factory = -0.35
+                industrial_capacity_dockyard = -0.35
             }
         }
         USA_the_greater_depression_3 = {
             allowed = { original_tag = USA }
             picture = usa_great_depression
             modifier = {
-                consumer_goods_factor = 0.35
-                production_factory_max_efficiency_factor = -0.1
-                industrial_capacity_factory = -0.25
-                industrial_capacity_dockyard = -0.25
+                consumer_goods_factor = 0.4
+                production_factory_max_efficiency_factor = -0.2
+                industrial_capacity_factory = -0.35
+                industrial_capacity_dockyard = -0.35
             }
         }
         USA_the_greater_depression_4 = {
             allowed = { original_tag = USA }
             picture = usa_great_depression
             modifier = {
-                consumer_goods_factor = 0.25
-                production_factory_max_efficiency_factor = -0.1
-                industrial_capacity_factory = -0.25
-                industrial_capacity_dockyard = -0.25
+                consumer_goods_factor = 0.4
+                production_factory_max_efficiency_factor = -0.2
+                industrial_capacity_factory = -0.3
+                industrial_capacity_dockyard = -0.3
             }
         }
         USA_the_greater_depression_5 = {
             allowed = { original_tag = USA }
             picture = usa_great_depression
             modifier = {
-                consumer_goods_factor = 0.25
-                production_factory_max_efficiency_factor = -0.1
-                industrial_capacity_factory = -0.15
-                industrial_capacity_dockyard = -0.15
+                consumer_goods_factor = 0.35
+                production_factory_max_efficiency_factor = -0.2
+                industrial_capacity_factory = -0.3
+                industrial_capacity_dockyard = -0.3
+            }
+        }
+        USA_the_greater_depression_5 = {
+            allowed = { original_tag = USA }
+            picture = usa_great_depression
+            modifier = {
+                consumer_goods_factor = 0.35
+                production_factory_max_efficiency_factor = -0.2
+                industrial_capacity_factory = -0.25
+                industrial_capacity_dockyard = -0.25
             }
         }
         USA_the_greater_depression_6 = {
             allowed = { original_tag = USA }
             picture = usa_great_depression
             modifier = {
-                consumer_goods_factor = 0.25
-                production_factory_max_efficiency_factor = -0.05
-                industrial_capacity_factory = -0.15
-                industrial_capacity_dockyard = -0.15
+                consumer_goods_factor = 0.3
+                production_factory_max_efficiency_factor = -0.2
+                industrial_capacity_factory = -0.25
+                industrial_capacity_dockyard = -0.25
             }
         }
         USA_the_greater_depression_7 = {
             allowed = { original_tag = USA }
             picture = usa_great_depression
             modifier = {
+                consumer_goods_factor = 0.3
+                production_factory_max_efficiency_factor = -0.15
+                industrial_capacity_factory = -0.25
+                industrial_capacity_dockyard = -0.25
+            }
+        }
+        USA_the_greater_depression_7 = {
+            allowed = { original_tag = USA }
+            picture = usa_great_depression
+            modifier = {
+                consumer_goods_factor = 0.3
+                production_factory_max_efficiency_factor = -0.15
+                industrial_capacity_factory = -0.2
+                industrial_capacity_dockyard = -0.2
+            }
+        }
+        USA_the_greater_depression_8 = {
+            allowed = { original_tag = USA }
+            picture = usa_great_depression
+            modifier = {
                 consumer_goods_factor = 0.25
-                production_factory_max_efficiency_factor = -0.05
-                industrial_capacity_factory = -0.1
-                industrial_capacity_dockyard = -0.1
+                production_factory_max_efficiency_factor = -0.15
+                industrial_capacity_factory = -0.2
+                industrial_capacity_dockyard = -0.2
+            }
+        }
+        USA_the_greater_depression_9 = {
+            allowed = { original_tag = USA }
+            picture = usa_great_depression
+            modifier = {
+                consumer_goods_factor = 0.25
+                production_factory_max_efficiency_factor = -0.15
+                industrial_capacity_factory = -0.15
+                industrial_capacity_dockyard = -0.15
+            }
+        }
+        USA_the_greater_depression_10 = {
+            allowed = { original_tag = USA }
+            picture = usa_great_depression
+            modifier = {
+                consumer_goods_factor = 0.2
+                production_factory_max_efficiency_factor = -0.15
+                industrial_capacity_factory = -0.15
+                industrial_capacity_dockyard = -0.15
             }
         }
         USA_recovering_from_the_depression = {
             allowed = { original_tag = USA }
             picture = usa_great_depression
             modifier = {
-                consumer_goods_factor = 0.15
-                production_factory_max_efficiency_factor = -0.05
-                industrial_capacity_factory = -0.1
-                industrial_capacity_dockyard = -0.1
+                consumer_goods_factor = 0.2
+                production_factory_max_efficiency_factor = -0.1
+                industrial_capacity_factory = -0.15
+                industrial_capacity_dockyard = -0.15
             }
         }
         USA_malnourished_populace = {
             allowed = { original_tag = USA }
             picture = raj_risk_of_famine
             modifier = {
-                conscription_factor = -0.15
-                production_speed_buildings_factor = -0.15
-                supply_consumption_factor = 0.15
+                conscription_factor = -0.35
+                production_speed_buildings_factor = -0.25
+                supply_consumption_factor = 0.40
             }
         }
         USA_malnourished_populace_1 = {
             allowed = { original_tag = USA }
             picture = raj_risk_of_famine
             modifier = {
-                conscription_factor = -0.1
-                production_speed_buildings_factor = -0.1
-                supply_consumption_factor = 0.1
+                conscription_factor = -0.35
+                production_speed_buildings_factor = -0.25
+                supply_consumption_factor = 0.25
             }
         }
         USA_malnourished_populace_2 = {
             allowed = { original_tag = USA }
             picture = raj_risk_of_famine
             modifier = {
-                conscription_factor = -0.05
-                production_speed_buildings_factor = -0.05
-                supply_consumption_factor = 0.05
+                conscription_factor = -0.25
+                production_speed_buildings_factor = -0.25
+                supply_consumption_factor = 0.25
+            }
+        }
+        USA_malnourished_populace_3 = {
+            allowed = { original_tag = USA }
+            picture = raj_risk_of_famine
+            modifier = {
+                conscription_factor = -0.25
+                production_speed_buildings_factor = -0.15
+                supply_consumption_factor = 0.25
+            }
+        }
+        USA_malnourished_populace_4 = {
+            allowed = { original_tag = USA }
+            picture = raj_risk_of_famine
+            modifier = {
+                conscription_factor = -0.15
+                production_speed_buildings_factor = -0.15
+                supply_consumption_factor = 0.15
             }
         }
         USA_failed_offensive = {
@@ -170,11 +238,46 @@ ideas = {
             }
         }
         USA_advisors = {
-            allowed = { original_tag = USA }
             picture = advisors_USA
             modifier = {
                 army_org_factor = 0.05
                 planning_speed = 0.05
+            }
+        }
+        USA_workers_rights = {
+            allowed = { original_tag = USA }
+            picture = generic_production_bonus
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.15
+            }
+        }
+        USA_worker_agreements = {
+            allowed = { original_tag = USA }
+            picture = generic_production_bonus
+            modifier = {
+                production_factory_max_efficiency_factor = 0.15
+            }
+        }
+        USA_public_works = {
+            allowed = { original_tag = USA }
+            picture = ast_all_in
+            modifier = {
+                production_speed_buildings_factor = 0.05
+            }
+        }
+        USA_limited_union_activities = {
+            allowed = { original_tag = USA }
+            picture = generic_oppression
+            modifier = {
+                industrial_capacity_factory = 0.05
+                industrial_capacity_dockyard = 0.05
+            }
+        }
+        USA_construction_subsidies = {
+            allowed = { original_tag = USA }
+            picture = ast_all_in
+            modifier = {
+                production_speed_buildings_factor = 0.05
             }
         }
     }

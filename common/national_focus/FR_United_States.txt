@@ -19,9 +19,12 @@ focus_tree = {
 	focus = {
 		id = USA_last_minute_reforms
 		icon = GFX_goal_USA_new_deal
-		x = 4
+		x = 3
 		y = 0
 		cost = 2
+		available = {
+			USA_1936_elections_happened = no
+		}
 		completion_reward = {
 			add_political_power = 100
 		}
@@ -51,7 +54,7 @@ focus_tree = {
 		prerequisite = { focus = USA_last_minute_reforms }
 		relative_position_id = USA_last_minute_reforms
 		completion_reward = {
-			USA_lessen_effects_of_malnourishment = yes
+			USA_decrease_effects_of_malnourishment = yes
 		}
 	}
 
@@ -65,7 +68,7 @@ focus_tree = {
 		prerequisite = { focus = USA_pass_the_economic_stilmulus_bill }
 		relative_position_id = USA_pass_the_economic_stilmulus_bill
 		completion_reward = {
-			USA_lessen_effects_of_depression = yes
+			USA_decrease_effects_of_the_depression = yes
 		}
 	}
 
@@ -79,7 +82,7 @@ focus_tree = {
 		prerequisite = { focus = USA_pass_the_economic_stilmulus_bill }
 		relative_position_id = USA_pass_the_economic_stilmulus_bill
 		completion_reward = {
-			USA_lessen_effects_of_depression = yes
+			USA_decrease_effects_of_the_depression = yes
 		}
 	}
 
@@ -93,7 +96,7 @@ focus_tree = {
 		prerequisite = { focus = USA_pass_the_economic_stilmulus_bill }
 		relative_position_id = USA_pass_the_economic_stilmulus_bill
 		completion_reward = {
-			USA_lessen_effects_of_depression = yes
+			USA_decrease_effects_of_the_depression = yes
 		}
 	}
 
@@ -110,7 +113,7 @@ focus_tree = {
 		}
 		relative_position_id = USA_increase_corporate_taxes
 		completion_reward = {
-			USA_lessen_effects_of_malnourishment = yes
+			USA_decrease_effects_of_malnourishment = yes
 		}
 	}
 
@@ -127,7 +130,7 @@ focus_tree = {
 		}
 		relative_position_id = USA_increase_corporate_taxes
 		completion_reward = {
-			USA_lessen_effects_of_depression = yes
+			USA_decrease_effects_of_the_depression = yes
 		}
 	}
 
@@ -142,7 +145,7 @@ focus_tree = {
 		prerequisite = { focus = USA_liquidate_failing_companies }
 		relative_position_id = USA_increase_corporate_taxes
 		completion_reward = {
-			USA_lessen_effects_of_depression = yes
+			USA_decrease_effects_of_the_depression = yes
 		}
 	}
 
@@ -152,7 +155,7 @@ focus_tree = {
 	focus = {
 		id = USA_review_the_army
 		icon = GFX_goal_USA_army
-		x = 13
+		x = 12
 		y = 0
 		cost = 6
 		completion_reward = {
@@ -497,7 +500,7 @@ focus_tree = {
 	focus = {
 		id = USA_air_force_debate
 		icon = GFX_goal_generic_air_fighter2
-		x = 20
+		x = 19
 		y = 0
 		cost = 6
 		completion_reward = {
@@ -752,7 +755,7 @@ focus_tree = {
 	focus = {
 		id = USA_address_the_navy
 		icon = GFX_goal_USA_navy
-		x = 12
+		x = 11
 		y = 6
 		cost = 6
 		completion_reward = {
@@ -1049,10 +1052,7 @@ focus_tree = {
 		y = 0
 		cost = 0
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = unlocked_later
-				has_country_flag = USA_had_1936_elections
-			}
+			USA_1936_elections_happened = yes
 		}
 	}
 
@@ -1065,7 +1065,7 @@ focus_tree = {
 		cost = 0
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = USA_president_long_elected_tt
+				tooltip = USA_president_long_tt
 				has_country_flag = USA_had_1936_elections
 				has_government = social_democrat
 			}
@@ -1078,12 +1078,12 @@ focus_tree = {
 	focus = {
 		id = USA_president_roosevelt
 		icon = GFX_goal_ideology_social_liberal
-		x = -1
+		x = 3
 		y = 1
 		cost = 0
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = USA_president_roosevelt_elected_tt
+				tooltip = USA_president_roosevelt_tt
 				has_country_flag = USA_had_1936_elections
 				has_government = social_liberal
 			}
@@ -1096,12 +1096,12 @@ focus_tree = {
 	focus = {
 		id = USA_president_landon
 		icon = GFX_goal_ideology_market_liberal
-		x = 1
+		x = 7
 		y = 1
 		cost = 0
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = USA_president_landon_elected_tt
+				tooltip = USA_president_landon_tt
 				has_country_flag = USA_had_1936_elections
 				has_government = market_liberal
 			}
@@ -1114,12 +1114,12 @@ focus_tree = {
 	focus = {
 		id = USA_president_garner
 		icon = GFX_goal_ideology_social_conservative
-		x = 3
+		x = 12
 		y = 1
 		cost = 0
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = USA_president_garner_elected_tt
+				tooltip = USA_president_garner_tt
 				has_country_flag = USA_had_1936_elections
 				has_government = social_conservative
 			}
@@ -1132,13 +1132,13 @@ focus_tree = {
 	focus = {
 		id = USA_start_welfare_for_the_poor
 		icon = GFX_focus_generic_concessions
-		x = 0
+		x = -2
 		y = 1
-		cost = 10
+		cost = 6
 		prerequisite = { focus = USA_president_long }
 		relative_position_id = USA_president_long
 		completion_reward = {
-			USA_lessen_effects_of_depression = yes
+			USA_decrease_effects_of_malnourishment = yes
 		}
 	}
 
@@ -1148,11 +1148,209 @@ focus_tree = {
 		icon = GFX_goal_gold_up
 		x = 0
 		y = 1
-		cost = 10
-		prerequisite = { focus = USA_start_welfare_for_the_poor }
-		relative_position_id = USA_start_welfare_for_the_poor
+		cost = 6
+		prerequisite = { focus = USA_president_long }
+		relative_position_id = USA_president_long
 		completion_reward = {
-			USA_lessen_effects_of_depression = yes
+			USA_decrease_effects_of_the_depression = yes
+		}
+	}
+
+	# Secure Workers' Rights
+	focus = {
+		id = USA_secure_workers_rights
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_president_long }
+		relative_position_id = USA_president_long
+		completion_reward = {
+			add_ideas = USA_workers_rights
+		}
+	}
+
+	# Share Our Wealth
+	focus = {
+		id = USA_share_our_wealth
+		icon = GFX_focus_generic_concessions
+		x = 0
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_secure_workers_rights }
+		prerequisite = { focus = USA_start_welfare_for_the_poor }
+		prerequisite = { focus = USA_economic_reforms }
+		relative_position_id = USA_economic_reforms
+		completion_reward = {
+			USA_decrease_effects_of_the_depression = yes
+		}
+	}
+
+	# Improve Interstate Infrastructure
+	focus = {
+		id = USA_improve_interstate_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 0
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_share_our_wealth }
+		relative_position_id = USA_share_our_wealth
+		completion_reward = {
+			random_owned_controlled_state = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+			random_owned_controlled_state = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+			random_owned_controlled_state = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+		}
+	}
+
+	# Free Basic Education
+	focus = {
+		id = USA_free_basic_education
+		icon = GFX_goal_great_science
+		x = -2
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_share_our_wealth }
+		relative_position_id = USA_share_our_wealth
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	# Import Regulation
+	focus = {
+		id = USA_import_regulation
+		icon = GFX_goal_generic_positive_trade_relations_gold
+		x = 1
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_free_basic_education }
+		prerequisite = { focus = USA_improve_interstate_infrastructure }
+		relative_position_id = USA_free_basic_education
+		completion_reward = {
+			USA_decrease_effects_of_the_depression = yes
+		}
+	}
+
+	# New Industries
+	focus = {
+		id = USA_new_industries
+		icon = GFX_goal_factory_complex
+		x = 1
+		y = 3
+		cost = 6
+		prerequisite = { focus = USA_import_regulation }
+		prerequisite = { focus = USA_federal_pensions_reform }
+		relative_position_id = USA_share_our_wealth 
+		completion_reward = {
+			USA_decrease_effects_of_the_depression = yes
+			add_timed_idea = {
+				idea = USA_recovering_from_the_depression
+				days = 360
+			}
+		}
+	}
+	
+	# Tax Reforms
+	focus = {
+		id = USA_tax_reforms
+		icon = GFX_goal_generic_foreign_investments
+		x = 3
+		y = 2
+		cost = 6
+		prerequisite = {
+			focus = USA_president_long
+			focus = USA_president_roosevelt
+		}
+		relative_position_id = USA_president_long
+		completion_reward = {
+			USA_decrease_effects_of_the_depression = yes
+		}
+	}
+
+	# Agricultural Adjustment Act
+	focus = {
+		id = USA_agricultural_adjustment_act
+		icon = GFX_goal_generic_agricultural_aid
+		x = -1
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_tax_reforms }
+		relative_position_id = USA_tax_reforms
+		completion_reward = {
+			USA_decrease_effects_of_malnourishment = yes
+		}
+	}
+
+	# Light the Union
+	focus = {
+		id = USA_light_the_union
+		icon = GFX_goal_generic_lightbulb
+		x = 1
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_tax_reforms }
+		relative_position_id = USA_tax_reforms
+		completion_reward = {
+			add_tech_bonus = {
+				category = electronics
+				bonus = 1.0
+				uses = 1
+			}
+		}
+	}
+
+	# Second Homestead Act
+	focus = {
+		id = USA_second_homestead_act
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		x = 3
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_tax_reforms }
+		relative_position_id = USA_tax_reforms
+		completion_reward = {
+			random_owned_controlled_state = {
+                limit = {
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 0
+                        include_locked = yes
+                    }
+                }
+				add_extra_state_shared_building_slots = 1
+            }
+		}
+	}
+
+	# Federal Pensions Reform
+	focus = {
+		id = USA_federal_pensions_reform
+		icon = GFX_goal_government_icon
+		x = 0
+		y = 2
+		cost = 6
+		prerequisite = { focus = USA_tax_reforms }
+		relative_position_id = USA_tax_reforms
+		completion_reward = {
+			USA_decrease_effects_of_the_depression = yes
 		}
 	}
 
@@ -1160,13 +1358,13 @@ focus_tree = {
 	focus = {
 		id = USA_increase_tariffs
 		icon = GFX_goal_generic_positive_trade_relations_gold
-		x = 0
+		x = -2
 		y = 1
-		cost = 10
+		cost = 6
 		prerequisite = { focus = USA_president_roosevelt }
 		relative_position_id = USA_president_roosevelt
 		completion_reward = {
-			USA_lessen_effects_of_depression = yes
+			USA_decrease_effects_of_the_depression = yes
 		}
 	}
 
@@ -1176,25 +1374,221 @@ focus_tree = {
 		icon = GFX_goal_bag_of_money
 		x = 0
 		y = 1
-		cost = 10
-		prerequisite = { focus = USA_increase_tariffs }
-		relative_position_id = USA_increase_tariffs
+		cost = 6
+		prerequisite = { focus = USA_president_roosevelt }
+		relative_position_id = USA_president_roosevelt
 		completion_reward = {
-			USA_lessen_effects_of_depression = yes
+			USA_decrease_effects_of_the_depression = yes
 		}
 	}
 
-	# Tax Reforms
+	# Compact with the Workers
 	focus = {
-		id = USA_tax_reforms
-		icon = GFX_goal_generic_foreign_investments
+		id = USA_compact_with_the_workers
+		icon = GFX_goal_economic_control
+		x = 2
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_president_roosevelt }
+		relative_position_id = USA_president_roosevelt
+		completion_reward = {
+			add_ideas = USA_worker_agreements
+		}
+	}
+
+	# Nationwide Social Security
+	focus = {
+		id = USA_nationwide_social_security
+		icon = GFX_focus_generic_self_management
 		x = 0
 		y = 1
-		cost = 10
+		cost = 6
+		prerequisite = { focus = USA_economic_investments }
+		prerequisite = { focus = USA_increase_tariffs }
+		prerequisite = { focus = USA_compact_with_the_workers }
+		relative_position_id = USA_economic_investments
+		completion_reward = {
+			USA_decrease_effects_of_the_depression = yes
+		}
+	}
+
+	# Economic Rehabilitation
+	focus = {
+		id = USA_economic_rehabilitation
+		icon = GFX_focus_mex_privatisation
+		x = -2
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_federal_pensions_reform }
+		prerequisite = { focus = USA_public_works_administration }
+		relative_position_id = USA_public_works_administration
+		completion_reward = {
+			USA_decrease_effects_of_the_depression = yes
+			add_timed_idea = {
+				idea = USA_recovering_from_the_depression
+				days = 360
+			}
+		}
+	}
+
+	# Education for All
+	focus = {
+		id = USA_education_for_all
+		icon = GFX_goal_double_research
+		x = 1
+		y = 1
+		cost = 6
+		prerequisite = {
+			focus = USA_compact_with_the_workers
+			focus = USA_private_partnerships
+		}
+		relative_position_id = USA_compact_with_the_workers
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	# Bridge the Racial Gap
+	focus = {
+		id = USA_bridge_the_racial_gap
+		icon = GFX_goal_liberty
+		x = 1
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_education_for_all }
+		relative_position_id = USA_education_for_all
+		completion_reward = {
+			USA_decrease_effects_of_malnourishment = yes
+		}
+	}
+
+	# Develop the Rural Regions
+	focus = {
+		id = USA_develop_the_rural_regions
+		icon = GFX_goal_generic_construction2
+		x = -1
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_education_for_all }
+		relative_position_id = USA_education_for_all
+		completion_reward = {
+			random_owned_controlled_state = {
+                limit = {
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 0
+                        include_locked = yes
+                    }
+                }
+            }
+		}
+	}
+
+	# Public Works Administration
+	focus = {
+		id = USA_public_works_administration
+		icon = GFX_goal_construction_engineering
+		x = -1
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_develop_the_rural_regions }
+		relative_position_id = USA_develop_the_rural_regions
+		completion_reward = {
+			add_ideas = USA_public_works
+		}
+	}
+
+	# Hydroelectric Conquest
+	focus = {
+		id = USA_hydroelectric_conquest
+		icon = GFX_goal_dam
+		x = 1
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_develop_the_rural_regions }
+		relative_position_id = USA_develop_the_rural_regions
+		completion_reward = {
+			unlock_decision_category_tooltip = USA_hydroelectric
+		}
+	}
+
+	# Industrial Recovery Program
+	focus = {
+		id = USA_industrial_recovery_program
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 0
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_lower_the_income_tax }
+		prerequisite = { focus = USA_public_works_administration }
+		relative_position_id = USA_hydroelectric_conquest
+		completion_reward = {
+			USA_decrease_effects_of_the_depression = yes
+			add_timed_idea = {
+				idea = USA_recovering_from_the_depression
+				days = 360
+			}
+		}
+	}
+
+	# Ensure Press Freedoms
+	focus = {
+		id = USA_ensure_press_freedoms
+		icon = GFX_goal_big_news
+		x = 1
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_private_partnerships }
+		relative_position_id = USA_private_partnerships
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+
+	# Increase Public Salaries
+	focus = {
+		id = USA_increase_public_salaries
+		icon = GFX_goal_gold_reserve
+		x = 2
+		y = 1
+		cost = 6
 		prerequisite = { focus = USA_president_landon }
 		relative_position_id = USA_president_landon
 		completion_reward = {
-			USA_lessen_effects_of_depression = yes
+			USA_decrease_effects_of_the_depression = yes
+		}
+	}
+
+	# Banking Reforms
+	focus = {
+		id = USA_banking_reforms
+		icon = GFX_goal_generic_banking_legislation
+		x = 0
+		y = 2
+		cost = 6
+		prerequisite = { 
+			focus = USA_increase_public_salaries
+			focus = USA_privitization_of_services
+		}
+		relative_position_id = USA_increase_public_salaries
+		completion_reward = {
+			USA_decrease_effects_of_the_depression = yes
+		}
+	}
+
+	# Lower the Income Tax
+	focus = {
+		id = USA_lower_the_income_tax
+		icon = GFX_DAH_Topke
+		x = 0
+		y = 2
+		cost = 6
+		prerequisite = { focus = USA_ensure_press_freedoms }
+		prerequisite = { focus = USA_banking_reforms }
+		relative_position_id = USA_ensure_press_freedoms
+		completion_reward = {
+			USA_decrease_effects_of_the_depression = yes
 		}
 	}
 
@@ -1204,11 +1598,11 @@ focus_tree = {
 		icon = GFX_goal_collaborate_local_elites
 		x = 0
 		y = 1
-		cost = 10
-		prerequisite = { focus = USA_tax_reforms }
-		relative_position_id = USA_tax_reforms
+		cost = 6
+		prerequisite = { focus = USA_president_landon }
+		relative_position_id = USA_president_landon
 		completion_reward = {
-			USA_lessen_effects_of_depression = yes
+			USA_decrease_effects_of_the_depression = yes
 		}
 	}
 
@@ -1216,13 +1610,16 @@ focus_tree = {
 	focus = {
 		id = USA_bureaucratic_reforms
 		icon = GFX_goal_Centralised_Government
-		x = 0
+		x = -1
 		y = 1
-		cost = 10
-		prerequisite = { focus = USA_president_garner }
+		cost = 6
+		prerequisite = { 
+			focus = USA_president_garner
+			focus = USA_president_landon
+		}
 		relative_position_id = USA_president_garner
 		completion_reward = {
-			USA_lessen_effects_of_depression = yes
+			add_political_power = 150
 		}
 	}
 
@@ -1230,13 +1627,201 @@ focus_tree = {
 	focus = {
 		id = USA_privitization_of_services
 		icon = GFX_goal_generic_seize_investments
-		x = 0
+		x = -1
 		y = 1
-		cost = 10
+		cost = 6
 		prerequisite = { focus = USA_bureaucratic_reforms }
 		relative_position_id = USA_bureaucratic_reforms
 		completion_reward = {
-			USA_lessen_effects_of_depression = yes
+			USA_decrease_effects_of_the_depression = yes
+		}
+	}
+
+	# Mining Grants
+	focus = {
+		id = USA_mining_grants
+		icon = GFX_goal_generic_production
+		x = 0
+		y = 2
+		cost = 6
+		prerequisite = { focus = USA_privitization_of_services }
+		relative_position_id = USA_privitization_of_services
+		completion_reward = {
+			add_tech_bonus = {
+				technology = excavation1
+				technology = excavation2
+				technology = excavation3
+				technology = excavation4
+				bonus = 1.0
+				uses = 1
+			}
+		}
+	}
+
+	# Review the Anti-Trust Laws
+	focus = {
+		id = USA_review_the_anti_trust_laws
+		icon = GFX_goal_DOM_End_Judicial_Corruption
+		x = 0
+		y = 2
+		cost = 6
+		prerequisite = { focus = USA_president_garner }
+		prerequisite = { focus = USA_bureaucratic_reforms }
+		relative_position_id = USA_president_garner
+		completion_reward = {
+			USA_decrease_effects_of_the_depression = yes
+		}
+	}
+
+	# Pass the Workers Relations Act
+	focus = {
+		id = USA_pass_the_workers_relations_act
+		icon = GFX_goal_munitions_factories
+		x = 0
+		y = 2
+		cost = 6
+		prerequisite = {
+			focus = USA_privitization_of_services
+			focus = USA_review_the_anti_trust_laws
+		}
+		relative_position_id = USA_bureaucratic_reforms
+		completion_reward = {
+			USA_decrease_effects_of_malnourishment = yes
+		}
+	}
+
+	# Medical Emergency Fund
+	focus = {
+		id = USA_medical_emergency_fund
+		icon = GFX_goal_generic_medical
+		x = 0
+		y = 2
+		cost = 6
+		prerequisite = { focus = USA_review_the_anti_trust_laws }
+		relative_position_id = USA_review_the_anti_trust_laws
+		completion_reward = {
+			USA_decrease_effects_of_malnourishment = yes
+		}
+	}
+
+	# Morality and Values
+	focus = {
+		id = USA_morality_and_values
+		icon = GFX_goal_CRU_church
+		x = 2
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_president_garner }
+		relative_position_id = USA_president_garner
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+
+	# Limit Union Activities
+	focus = {
+		id = USA_limit_union_activities
+		icon = GFX_goal_generic_crush_unions
+		x = -1
+		y = 2
+		cost = 6
+		prerequisite = { focus = USA_morality_and_values }
+		relative_position_id = USA_morality_and_values
+		completion_reward = {
+			add_ideas = USA_limited_union_activities
+		}
+	}
+
+	# Centers for Higher Learning
+	focus = {
+		id = USA_centers_for_higher_learning
+		icon = GFX_goal_KTG_Bookstack
+		x = 0
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_morality_and_values }
+		relative_position_id = USA_morality_and_values
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	# Construction Subsidies
+	focus = {
+		id = USA_construction_subsidies
+		icon = GFX_goal_generic_construction
+		x = 2
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_morality_and_values }
+		relative_position_id = USA_morality_and_values
+		completion_reward = {
+			add_ideas = USA_construction_subsidies
+		}
+	}
+
+	# Expand Public Housing
+	focus = {
+		id = USA_expand_public_housing
+		icon = GFX_goal_generic_build_housing
+		x = -1
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_construction_subsidies }
+		relative_position_id = USA_construction_subsidies
+		completion_reward = {
+			random_owned_controlled_state = {
+                limit = {
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 0
+                        include_locked = yes
+                    }
+                }
+				add_extra_state_shared_building_slots = 1
+            }
+		}
+	}
+
+	# Improve Urban Infrastructure
+	focus = {
+		id = USA_improve_urban_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 1
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_construction_subsidies }
+		relative_position_id = USA_construction_subsidies
+		completion_reward = {
+            random_owned_controlled_state = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+			random_owned_controlled_state = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+        }
+	}
+
+	# Fight Inflation Struggles
+	focus = {
+		id = USA_fight_inflation_struggles
+		icon = GFX_focus_empty_coffers
+		x = -2
+		y = 2
+		cost = 2
+		prerequisite = { focus = USA_construction_subsidies }
+		relative_position_id = USA_construction_subsidies
+		completion_reward = {
+			USA_decrease_effects_of_the_depression = yes
 		}
 	}
 
@@ -1245,18 +1830,14 @@ focus_tree = {
 		id = USA_recovery_from_the_depression
 		icon = GFX_focus_generic_the_giant_wakes
 		x = 0
-		y = 4
-		cost = 10
-		prerequisite = { 
-			focus = USA_economic_reforms
-			focus = USA_economic_investments
-			focus = USA_private_partnerships
-			focus = USA_privitization_of_services
-		}
-		relative_position_id = USA_elections_of_1936
+		y = 2
+		cost = 6
+		prerequisite = { focus = USA_medical_emergency_fund }
+		prerequisite = { focus = USA_limit_union_activities }
+		prerequisite = { focus = USA_fight_inflation_struggles }
+		relative_position_id = USA_limit_union_activities
 		completion_reward = {
-			USA_lessen_effects_of_depression = yes
-			USA_lessen_effects_of_malnourishment = yes
+			USA_decrease_effects_of_the_depression = yes
 			add_timed_idea = {
 				idea = USA_recovering_from_the_depression
 				days = 360
@@ -1270,7 +1851,7 @@ focus_tree = {
 	focus = {
 		id = USA_america_on_the_world_stage
 		icon = GFX_goal_usa
-		x = 21
+		x = 20
 		y = 7
 		cost = 6
 		available = {

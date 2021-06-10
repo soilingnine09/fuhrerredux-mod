@@ -1,6 +1,34 @@
 spriteTypes = {
 
 	spriteType = {
+		name = "GFX_goal_generic_lightbulb"
+		texturefile = "gfx/interface/goals/generic_lightbulb.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_agricultural_aid"
+		texturefile = "gfx/interface/goals/generic_agricultural_aid.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_banking_legislation"
+		texturefile = "gfx/interface/goals/generic_banking_legislation.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_build_housing"
+		texturefile = "gfx/interface/goals/generic_build_housing.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_crush_unions"
+		texturefile = "gfx/interface/goals/generic_crush_unions.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_medical"
+		texturefile = "gfx/interface/goals/generic_medical.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_investments"
+		texturefile = "gfx/interface/goals/generic_investments.tga"
+	}
+	spriteType = {
 		name = "GFX_goal_generic_seize_investments"
 		texturefile = "gfx/interface/goals/generic_seize_investments.tga"
 	}
