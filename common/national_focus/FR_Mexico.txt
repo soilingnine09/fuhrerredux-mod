@@ -575,8 +575,10 @@ focus_tree = {
 		available_if_capitulated = no
 		available = {
 			is_subject = no
-		}
-		completion_reward = {
+			custom_trigger_tooltip = {
+				tooltip = unlocked_later
+				has_country_flag = USA_border_city_attacked
+			}
 		}
 	}
 

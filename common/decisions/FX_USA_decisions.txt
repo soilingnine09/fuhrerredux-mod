@@ -7,6 +7,7 @@ foreign_politics = {
         available = {
             USA_1936_elections_happened = yes
             USA_mexican_disaster_happened = no
+            date > 1938.1.1
         }
         remove_effect = {
             MEX = { country_event = usa.4 }
@@ -38,7 +39,7 @@ foreign_politics = {
             }
         }
         complete_effect = {
-            MEX = { country_event = usa.13 }
+            MEX = { country_event = usa.27 }
         }
     }
 }

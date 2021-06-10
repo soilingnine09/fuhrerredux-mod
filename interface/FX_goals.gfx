@@ -196,4 +196,28 @@ spriteTypes = {
 		name = "GFX_goal_ENG_entente"
 		texturefile = "gfx/interface/goals/ENG_entente.tga"
 	}
+	spriteType = {
+		name = "GFX_goal_RUS_army"
+		texturefile = "gfx/interface/goals/RUS_army.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_RUS_navy"
+		texturefile = "gfx/interface/goals/RUS_navy.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_RUS_airforce"
+		texturefile = "gfx/interface/goals/RUS_airforce.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_CAN_army"
+		texturefile = "gfx/interface/goals/CAN_army.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_CAN_navy"
+		texturefile = "gfx/interface/goals/CAN_navy.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_CAN_airforce"
+		texturefile = "gfx/interface/goals/CAN_airforce.tga"
+	}
 }

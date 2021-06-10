@@ -1047,7 +1047,7 @@ focus_tree = {
 	# Elections of 1936
 	focus = {
 		id = USA_elections_of_1936
-		icon = GFX_goal_usa
+		icon = GFX_goal_generic_elections
 		x = 28
 		y = 0
 		cost = 0
@@ -1131,7 +1131,7 @@ focus_tree = {
 	# Start Welfare for the Poor
 	focus = {
 		id = USA_start_welfare_for_the_poor
-		icon = GFX_focus_generic_concessions
+		icon = GFX_goal_famine
 		x = -2
 		y = 1
 		cost = 6
@@ -1159,7 +1159,7 @@ focus_tree = {
 	# Secure Workers' Rights
 	focus = {
 		id = USA_secure_workers_rights
-		icon = GFX_goal_generic_consumer_goods
+		icon = GFX_goal_production
 		x = 2
 		y = 1
 		cost = 6
@@ -1237,7 +1237,7 @@ focus_tree = {
 	# Import Regulation
 	focus = {
 		id = USA_import_regulation
-		icon = GFX_goal_generic_positive_trade_relations_gold
+		icon = GFX_goal_generic_trade
 		x = 1
 		y = 1
 		cost = 6
@@ -1415,7 +1415,7 @@ focus_tree = {
 	# Economic Rehabilitation
 	focus = {
 		id = USA_economic_rehabilitation
-		icon = GFX_focus_mex_privatisation
+		icon = GFX_goal_generic_consumer_goods
 		x = -2
 		y = 1
 		cost = 6
@@ -1480,6 +1480,7 @@ focus_tree = {
                         include_locked = yes
                     }
                 }
+				add_extra_state_shared_building_slots = 1
             }
 		}
 	}
@@ -1549,7 +1550,7 @@ focus_tree = {
 	# Increase Public Salaries
 	focus = {
 		id = USA_increase_public_salaries
-		icon = GFX_goal_gold_reserve
+		icon = GFX_focus_mex_privatisation
 		x = 2
 		y = 1
 		cost = 6

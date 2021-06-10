@@ -8,17 +8,19 @@ USA_1936_elections_happened = {
 USA_has_great_depression = {
     custom_trigger_tooltip = {
         tooltip = USA_has_great_depression_tt
-        has_idea = USA_the_greater_depression
-        has_idea = USA_the_greater_depression_1
-        has_idea = USA_the_greater_depression_2
-        has_idea = USA_the_greater_depression_3
-        has_idea = USA_the_greater_depression_4
-        has_idea = USA_the_greater_depression_5
-        has_idea = USA_the_greater_depression_6
-        has_idea = USA_the_greater_depression_7
-        has_idea = USA_the_greater_depression_8
-        has_idea = USA_the_greater_depression_9
-        has_idea = USA_the_greater_depression_10
+        OR = {
+            has_idea = USA_the_greater_depression
+            has_idea = USA_the_greater_depression_1
+            has_idea = USA_the_greater_depression_2
+            has_idea = USA_the_greater_depression_3
+            has_idea = USA_the_greater_depression_4
+            has_idea = USA_the_greater_depression_5
+            has_idea = USA_the_greater_depression_6
+            has_idea = USA_the_greater_depression_7
+            has_idea = USA_the_greater_depression_8
+            has_idea = USA_the_greater_depression_9
+            has_idea = USA_the_greater_depression_10
+        }
     }
 }
 

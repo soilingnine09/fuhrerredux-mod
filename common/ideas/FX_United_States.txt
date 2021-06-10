@@ -284,13 +284,13 @@ ideas = {
     ### Ministers
     # Head of Government
     head_of_government = {
-        USA_Jack_Reed_hog_col = {
+        USA_Jack_Reed_hog_lib = {
             allowed = { original_tag = USA }
             available = { can_replace_hog = no }
             cancel_if_invalid = no
             traits = {
                 head_of_government
-                collectivist
+                libertarian_socialist
                 hog_red_chairmen
             }
         }

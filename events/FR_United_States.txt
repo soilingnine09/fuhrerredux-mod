@@ -190,7 +190,7 @@ country_event = { # Mexican Response
     }
 }
 
-country_event = {
+country_event = { # Some triggering event ask the FR devs
     id = usa.6
     title = usa.6.t
     desc = usa.6.d
@@ -207,66 +207,54 @@ country_event = {
     option = { name = usa.6.a }
 }
 
-country_event = {
+country_event = { # Border Skirmish
 	id = usa.7
 	title = usa.7.t
 	desc = usa.7.d
 	picture = report_event_merchant_ship_01
 	is_triggered_only = yes
 
-	immediate = { modify_country_flag = { flag = border_clashes value = 1 } }
+	immediate = { 
+        modify_country_flag = { flag = border_clashes value = 1 }
+    }
 
-	option = {
+	option = { # Endorse 
 		name = usa.7.a
 		add_political_power = -50
 		add_manpower = -20000
 		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -1000 producer = MEX }
 		hidden_effect = {
 			USA = { country_event = { id = usa.8 hours = 8 } }
-
-			if = {
-				limit = {
-					has_country_flag = { flag = border_clashes value < 6 }
-				}
-				country_event = { id = usa.7 days = 120 }
-				USA = { country_event = { id = usa.12 days = 9 } }
-				country_event = { id = usa.12 days = 18 }
-			}
 		}
 	}
-	option = {
+	option = { # Cannot Condone
 		name = usa.7.b
 		add_political_power = -50
 		hidden_effect = {
 			USA = { country_event = { id = usa.9 hours = 8 } }
-			if = {
-				limit = {
-					has_country_flag = { flag = border_clashes value < 6 }
-				}
-				country_event = { id = usa.7 days = 120 }
-				USA = { country_event = { id = usa.12 days = 9 } }
-				country_event = { id = usa.12 days = 18 }
-			}
 		}
 	}
 }
 
-country_event = {
+country_event = { # Border City Attacked
 	id = usa.8
 	title = usa.8.t
 	desc = usa.8.d
 	picture = report_event_merchant_ship_01
 	is_triggered_only = yes
 
-	option = {
+    immediate = {
+        MEX = { set_country_flag = USA_border_city_attacked }
+    }
+
+	option = { # Declare Martial Law
 		name = usa.8.a
 		add_political_power = -100
-		hidden_effect = {
-			MEX = { country_event = { id = usa.11 hours = 8 } }
+        hidden_effect = {
+			MEX = { country_event = { id = usa.10 hours = 8 } }
 		}
 	}
-
-	option = {
+	option = { # Deploy the National Guard in the Area
 		name = usa.8.b
 		add_political_power = -25
 		add_manpower = -10000
@@ -283,21 +271,21 @@ country_event = {
                 damage = 0.5
             }
 		}
-		hidden_effect = {
-			MEX = { country_event = { id = usa.10 hours = 8 } }
-		}
 	}
 }
 
-country_event = {
+country_event = { # Mexican Nationalists Attacked Border Area
 	id = usa.9
 	title = usa.9.t
 	desc = usa.23.d
 	picture = report_event_merchant_ship_01
-
 	is_triggered_only = yes
 
-	option = {
+    immediate = {
+        MEX = { set_country_flag = USA_border_city_attacked }
+    }
+
+	option = { # Defuse the Situation
 		name = usa.9.a
 		add_political_power = -50
 		add_stability = -0.01
@@ -314,11 +302,8 @@ country_event = {
                 damage = 0.5
             }
 		}
-		hidden_effect = {
-			MEX = { country_event = { id = usa.11 hours = 8 } }
-		}
 	}
-	option = {
+	option = { # Declare Martial Law
 		name = usa.9.b
 		add_political_power = -100
 		add_manpower = -10000
@@ -328,138 +313,91 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = { # US Troops Rebuke our Attack!
 	id = usa.10
 	title = usa.10.t
 	desc = usa.10.d
 	picture = report_event_merchant_ship_01
 	is_triggered_only = yes
 
-	option = {
+	option = { # Attack the Troops!
 		name = usa.10.a
-		add_political_power = -150
-		random_list = {
-			75 = { MEX_increase_nationalism = yes }
-			25 = { #This does nothing }
-		}
+        USA = { country_event = usa.11 hours = 14 }
 	}
-	option = {
+	option = { # Show our plight to the masses
 		name = usa.10.b
-		add_political_power = -25
 		add_manpower = 5000
-		random_list = {
-			10 = { MEX_increase_nationalism = yes }
-			90 = { #This does nothing }
-		}
+		MEX_increase_nationalism = yes
 	}
 }
 
-country_event = {
+country_event = { # Troops Attacked!
     id = usa.11
     title = usa.11.t
     desc = usa.11.d
     picture = report_event_merchant_ship_01
     is_triggered_only = yes
 
-    option = {
+    option = { # War 
         name = usa.11.a
-        add_political_power = 50
-        random_list = {
-            10 = { MEX_increase_nationalism = yes }
-            90 = { #This does nothing }
+        create_wargoal = {
+            target = MEX
+            type = annex_everything
         }
+    }
+    option = { # Try demanding them to stop
+        name = usa.11.b
+        MEX = { country_event = { id = usa.12 hours = 4 } } 
     }
 }
 
-country_event = {
+country_event = { # US Demands Mexico to Stop
 	id = usa.12
 	title = usa.12.t
 	desc = usa.26.d
 	picture = report_event_merchant_ship_01
 	is_triggered_only = yes
 
-	option = {
-		trigger = { original_tag = USA }
-		name = usa.12.a
-		add_political_power = 50
-	}
-
-	option = {
-		trigger = { original_tag = MEX }
-		name = usa.12.b
-		add_political_power = -150
-		MEX_increase_nationalism = yes
-	}
-	option = {
-		trigger = { original_tag = MEX }
-		name = usa.12.c
-	}
+    option = { # Mexico doesn't want to stop
+        name = usa.12.a
+        FROM = { country_event = usa.13 }
+    }
+    option = { # Mexico backs down
+        name = usa.12.b
+        FROM = { country_event = usa.14 }
+    }
 }
 
-country_event = { # Surrender to Mexico
+country_event = { # Mexican Response
     id = usa.13
     title = usa.13.t
     desc = usa.13.d
-    picture = report_event_merchant_ship_01
+    picture = report_event_generic_conference
     is_triggered_only = yes
 
-    option = {
+    option = { # Declare war on Mexico
         name = usa.13.a
-        ai_chance = { base = 95 }
-        FROM = { whitepeace = ROOT }
-        transfer_state = 484
-        transfer_state = 743
-        transfer_state = 378
-        transfer_state = 930
-        transfer_state = 928
-        transfer_state = 923
-        transfer_state = 922
-        transfer_state = 921
-        transfer_state = 375
-        transfer_state = 919
-        transfer_state = 377
-        transfer_state = 376
-        transfer_state = 920
-        transfer_state = 926
-        transfer_state = 925
-        transfer_state = 929
-        USA = { country_event = usa.100 days = 14 }
+        create_wargoal = {
+            target = MEX
+            type = annex_everything
+        }
     }
-    option = {
+    option = { # Back down
         name = usa.13.b
-        ai_chance = { base = 5 }
-        set_country_flag = MEX_crush_united_states
         add_political_power = -100
     }
 }
 
-country_event = {
-	id = usa.14
-	immediate = {log = "[GetDateText]: [Root.GetName]: event usa.30"}
-	title = usa.14.t
-	desc = usa.14.d
-	picture = report_event_merchant_ship_01
+country_event = { # Mexico Stopped
+    id = usa.14
+    title = usa.14.t
+    desc = usa.14.d
+    picture = report_event_generic_conference
+    is_triggered_only = yes
 
-	trigger = {
-		tag = USA
-		date > 1936.3.21
-	}
-	mean_time_to_happen = {
-		days = 1
-	}
-	fire_only_once = yes
-
-	option = {
-		name = usa.14.a
-        kill_ideology_leader = libertarian_socialist
-        create_country_leader = {
-            name = "John Reed"
-            desc = "POLITICS_JOHN_REED_DESC"
-            picture = "Portrait_USA_John_Reed.tga"
-            expire = "1965.1.1"
-            ideology = libertarian_socialist_subtype
-        }
-	}
+    option = {
+        name = usa.14.a
+    }
 }
 
 country_event = { # Join Entente
@@ -481,7 +419,7 @@ country_event = { # Join Entente
     }
 }
 
-country_event = {
+country_event = { # Entente Entry Denied
     id = usa.16
     title = usa.16.t
     desc = usa.16.d
@@ -493,7 +431,7 @@ country_event = {
     }
 }
 
-country_event = {
+country_event = { # San Francisco Conference
     id = usa.17
     title = usa.17.t
     desc = usa.17.d
@@ -517,8 +455,8 @@ country_event = {
     }
 }
 
-country_event = {
-    id = usa.18
+country_event = { # SF Conference Success
+    id = usa.18 
     title = usa.18.t
     desc = usa.18.d
     picture = GFX_report_event_generic_sign_treaty2
@@ -531,7 +469,7 @@ country_event = {
     }
 }
 
-country_event = {
+country_event = { # SF Conference Failure
     id = usa.19
     title = usa.19.t
     desc = usa.19.d
@@ -544,7 +482,7 @@ country_event = {
     }
 }
 
-country_event = {
+country_event = { # Send Advisors
     id = usa.20
     title = usa.20.t
     desc = usa.20.d
@@ -564,7 +502,7 @@ country_event = {
     }
 }
 
-country_event = {
+country_event = { # Accepted Advisors
     id = usa.21
     title = usa.21.t
     desc = usa.21.d
@@ -577,7 +515,7 @@ country_event = {
     }
 }
 
-country_event = {
+country_event = { # Advisors Refused
     id = usa.22
     title = usa.22.t
     desc = usa.22.d
@@ -590,14 +528,14 @@ country_event = {
     }
 }
 
-country_event = {
+country_event = { # Protection for Central America
     id = usa.23
     title = usa.23.t
     desc = usa.23.d
     picture = GFX_report_event_german_advisors_remain
     is_triggered_only = yes
 
-    option = {
+    option = { # Accept
         name = usa.23.a
         ai_chance = { base = 90 }
         FROM = {
@@ -605,14 +543,14 @@ country_event = {
             country_event = usa.24
         }
     }
-    option = {
+    option = { # Refuse
         name = usa.23.b
         ai_chance = { base = 10 }
         FROM = { country_event = usa.25 }
     }
 }
 
-country_event = {
+country_event = { # Accepted Protection
     id = usa.24
     title = usa.24.t
     desc = usa.24.d
@@ -625,7 +563,7 @@ country_event = {
     }
 }
 
-country_event = {
+country_event = { # Refuse Protection
     id = usa.25
     title = usa.25.t
     desc = usa.25.d
@@ -638,6 +576,70 @@ country_event = {
     }
 }
 
+country_event = { # Death of Eugene Debs
+	id = usa.26
+	title = usa.26.t
+	desc = usa.26.d
+	picture = report_event_merchant_ship_01
+
+	trigger = {
+		tag = USA
+		date > 1936.3.21
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	fire_only_once = yes
+
+	option = {
+		name = usa.26.a
+        kill_ideology_leader = libertarian_socialist
+        create_country_leader = {
+            name = "John Reed"
+            desc = "POLITICS_JOHN_REED_DESC"
+            picture = "Portrait_USA_John_Reed.tga"
+            expire = "1965.1.1"
+            ideology = libertarian_socialist_subtype
+        }
+	}
+}
+
+country_event = { # Surrender to Mexico
+    id = usa.27
+    title = usa.27.t
+    desc = usa.27.d
+    picture = report_event_merchant_ship_01
+    is_triggered_only = yes
+
+    option = {
+        name = usa.27.a
+        ai_chance = { base = 95 }
+        FROM = { whitepeace = ROOT }
+        transfer_state = 484
+        transfer_state = 743
+        transfer_state = 378
+        transfer_state = 930
+        transfer_state = 928
+        transfer_state = 923
+        transfer_state = 922
+        transfer_state = 921
+        transfer_state = 375
+        transfer_state = 919
+        transfer_state = 377
+        transfer_state = 376
+        transfer_state = 920
+        transfer_state = 926
+        transfer_state = 925
+        transfer_state = 929
+        USA = { country_event = usa.100 days = 14 }
+    }
+    option = {
+        name = usa.27.b
+        ai_chance = { base = 5 }
+        set_country_flag = MEX_crush_united_states
+        add_political_power = -100
+    }
+}
 
 country_event = { # Start of the Collapse - Riots
     id = usa.100

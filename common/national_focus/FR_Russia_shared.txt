@@ -2,7 +2,7 @@
 ###Army
 shared_focus = {	
 		id = RUS_army
-		icon = GFX_goal_RAJ_The_Army
+		icon = GFX_goal_RUS_army
 		available = {
 		    has_country_flag = RUS_ready_militarise
 		}
@@ -838,7 +838,7 @@ shared_focus = {
 
 shared_focus = {
         id = RUS_airforce
-		icon = GFX_goal_RAJ_The_Airforce
+		icon = GFX_goal_RUS_airforce
 		available = {
 		    has_country_flag = RUS_ready_militarise
 		}
@@ -1084,7 +1084,7 @@ shared_focus = {
 ###Navy
 shared_focus = {
         id = RUS_navy
-		icon = GFX_goal_RAJ_The_Navy
+		icon = GFX_goal_RUS_navy
 		available = {
 		    has_country_flag = RUS_ready_militarise
 		}
