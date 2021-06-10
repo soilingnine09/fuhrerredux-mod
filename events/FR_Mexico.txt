@@ -527,7 +527,7 @@ country_event = {
 	}
 
 	option = {
-        name = 
+        name = mex.23.a
 		add_political_power = 20
 
 		hidden_effect = {

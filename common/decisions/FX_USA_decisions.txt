@@ -2,11 +2,13 @@ foreign_politics = {
     USA_demand_mexican_submission = {
         icon = GFX_decision_generic_civil_support
         cost = 100
+        days_remove = 30
         allowed = { original_tag = USA }
         available = {
-            has_country_flag = USA_had_1936_elections
+            USA_1936_elections_happened = yes
+            USA_mexican_disaster_happened = no
         }
-        complete_effect = {
+        remove_effect = {
             MEX = { country_event = usa.4 }
         }
     }
