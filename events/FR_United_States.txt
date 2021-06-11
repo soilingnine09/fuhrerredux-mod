@@ -862,8 +862,14 @@ country_event = { # New England Seceeds
     option = {
         name = usa.102.a
         hidden_effect = {
-
             country_event = { id = usa.103 days = 5 }
+        }
+    }
+    option = {
+        name = usa.102.b
+        hidden_effect = {
+            country_event = { id = usa.103 days = 5 }
+            NEE = { change_tag_from = ROOT }
         }
     }
 }
@@ -911,6 +917,13 @@ country_event = { # Midwest Seceeds
             country_event = { id = usa.104 days = 4 }
         }
     }
+    option = {
+        name = usa.103.b
+        hidden_effect = {
+            country_event = { id = usa.104 days = 4 }
+            CLB = { change_tag_from = ROOT }
+        }
+    }
 }
 
 country_event = { # Rust Belt
@@ -953,9 +966,16 @@ country_event = { # Rust Belt
             country_event = { id = usa.105 days = 14 }
         }
     }
+    option = {
+        name = usa.104.b
+        hidden_effect = {
+            country_event = { id = usa.105 days = 14 }
+            RBL = { change_tag_from = ROOT }
+        }
+    }
 }
 
-country_event = { # Canada Seizes Cascadia
+country_event = { # UK Seizes Cascadia, Puerto Rico, Alaska
     id = usa.105
     title = usa.105.t
     desc = usa.105.d
@@ -972,12 +992,15 @@ country_event = { # Canada Seizes Cascadia
                         state = 387
                     }
                 }
-                CAS = {
-                    transfer_state = PREV
-                    add_state_core = PREV
-                }
+                CAS = { add_state_core = PREV }
+                ENG = { transfer_state = PREV }
             }
-            ENG = { puppet = CAS }
+            ENG = { 
+                puppet = CAS
+                transfer_state = 686
+                transfer_state = 463
+                transfer_state = 629
+            }
         }
     }
     
@@ -985,6 +1008,8 @@ country_event = { # Canada Seizes Cascadia
         name = usa.105.a
         hidden_effect = {
             country_event = { usa.106 hours = 12 }
+            PAN = { country_event = { id = usa.108 hours = 12 } }
+            ENG = { country_event = { id = usa.110 days = 2 } }
         }
     }
 }
@@ -998,6 +1023,7 @@ country_event = { # Collapse of the Union
     option = {
         name = usa.106.a
         add_ideas = USA_anarchy_and_chaos
+        set_cosmetic_tag = USA_federal
         hidden_effect = {
             country_event = { id = usa.107 days = 3 }
         }
@@ -1125,5 +1151,130 @@ country_event = { # Emergency Congress Session
             USA_William_Harrison_Standley_eco_pau
             USA_Joel_Bennett_Clark_sec_pau
         }
+    }
+}
+
+country_event = { # Panama Canal - Panama
+    id = usa.108
+    title = usa.108.t
+    desc = usa.108.d
+    picture = GFX_report_event_generic_riot
+    is_triggered_only = yes
+
+    option = {
+        name = usa.108.a
+        transfer_state = 685
+        USA = { country_event = usa.109 }
+    }
+    option = {
+        name = usa.108.b
+        add_political_power = -50
+    }
+}
+
+country_event = {
+    id = usa.109
+    title = usa.109.t
+    desc = usa.109.d
+    picture = report_event_generic_conference
+    is_triggered_only = yes
+
+    option = {
+        name = usa.109.a
+        ai_chance = { base = 50 }
+        create_wargoal = {
+            target = PAN
+            type = annex_everything
+        }
+    }
+    option = {
+        name = usa.109.b
+        ai_chance = { base = 50 }
+        add_political_power = -50
+    }
+}
+
+country_event = { # Cascadian Question
+    id = usa.110
+    title = usa.110.t
+    desc = usa.110.d
+    picture = report_event_generic_conference
+    is_triggered_only = yes
+
+    option = {
+        name = usa.110.a
+        every_owned_state = {
+            limit = {
+                is_core_of = CAS
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            CAS = { transfer_state = PREV }
+        }
+    }
+    option = {
+        name = usa.110.b
+        every_owned_state = {
+            limit = {
+                is_core_of = CAS
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            CAN = { transfer_state = PREV }
+        }
+    }
+}
+
+country_event = {
+    id = usa.111
+    title = usa.111.t
+    desc = usa.111.d
+    picture = report_event_generic_conference
+    is_triggered_only = yes
+
+    option = {
+        name = usa.111.a
+        if = {
+            limit = { country_exists = CAS }
+            USA = {
+                annex_country = {
+                    target = CAS
+                    transfer_troops = no
+                }
+            }
+        }
+        else = {
+            USA = {
+                transfer_state = 385
+                transfer_state = 386
+                transfer_state = 287
+            }
+        }
+    }
+    option = {
+        name = usa.111.b
+        USA = { country_event = usa.112 }
+    }
+}
+
+country_event = {
+    id = usa.112
+    title = usa.112.t
+    desc = usa.112.d
+    picture = report_event_generic_conference
+    is_triggered_only = yes
+
+    option = {
+        name = usa.112.a
+        create_wargoal = {
+            target = FROM
+            type = annex_everything
+        }
+    }
+    option = {
+        name = usa.112.b
+        add_political_power = -100
     }
 }
