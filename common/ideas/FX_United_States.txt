@@ -280,6 +280,56 @@ ideas = {
                 production_speed_buildings_factor = 0.05
             }
         }
+        USA_anarchy_and_chaos = {
+            allowed = { original_tag = USA }
+            picture = hol_liberation
+            modifier = {
+                stability_factor = -0.45
+                war_support_factor = -0.45
+            }
+        }
+        USA_anarchy_and_chaos_1 = {
+            allowed = { original_tag = USA }
+            picture = hol_liberation
+            modifier = {
+                stability_factor = -0.35
+                war_support_factor = -0.35
+            }
+        }
+        USA_anarchy_and_chaos_2 = {
+            allowed = { original_tag = USA }
+            picture = hol_liberation
+            modifier = {
+                stability_factor = -0.25
+                war_support_factor = -0.25
+            }
+        }
+        USA_anarchy_and_chaos_3 = {
+            allowed = { original_tag = USA }
+            picture = hol_liberation
+            modifier = {
+                stability_factor = -0.15
+                war_support_factor = -0.25
+            }
+        }
+        USA_unification_spirit = {
+            allowed = { original_tag = USA }
+            picture = USA_fighting_for_america
+            modifier = {
+                conscription_factor = 0.15
+                army_speed_factor = 0.15
+                army_morale_factor = 0.15
+                army_org_regain = 0.05
+            }
+        }
+        USA_american_gis = {
+            allowed = { original_tag = USA }
+            picture = army_cooperation
+            modifier = {
+                army_attack_factor = 0.05
+                army_defence_factor = 0.05
+            }
+        }
     }
     ### Ministers
     # Head of Government
@@ -585,6 +635,17 @@ ideas = {
                 hog_corporate_suit
             }
         }
+        USA_Douglas_MacArthur_hog_pau = {
+            allowed = { original_tag = USA }
+            available = { can_replace_hog = no }
+            visible = { USA_mexican_disaster_happened = yes }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                paternal_autocrat
+                hog_old_general
+            }
+        }
     }
     ### Foreign Minister
     foreign_minister = {
@@ -718,13 +779,13 @@ ideas = {
                 for_iron_fisted_brute
             }
         }
-        USA_John_William_Davis_for_npo = {
+        USA_John_William_Davis_for_pau = {
             allowed = { original_tag = USA }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
                 foreign_minister
-                national_populist
+                paternal_autocrat
                 for_the_cloak_n_dagger_schemer
             }
         }

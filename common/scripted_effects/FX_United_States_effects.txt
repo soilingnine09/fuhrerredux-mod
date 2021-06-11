@@ -107,3 +107,30 @@ USA_decrease_effects_of_malnourishment = {
         remove_ideas = USA_malnourished_populace_4
     }
 }
+
+USA_stabilize_america = {
+    if = {
+        limit = { has_idea = USA_anarchy_and_chaos }
+        swap_ideas = {
+            remove_idea = USA_anarchy_and_chaos
+            add_idea = USA_anarchy_and_chaos_1
+        }
+    }
+    else_if = {
+        limit = { has_idea = USA_anarchy_and_chaos_1 }
+        swap_ideas = {
+            remove_idea = USA_anarchy_and_chaos_1
+            add_idea = USA_anarchy_and_chaos_2
+        }
+    }
+    else_if = {
+        limit = { has_idea = USA_anarchy_and_chaos_2 }
+        swap_ideas = {
+            remove_idea = USA_anarchy_and_chaos_2
+            add_idea = USA_anarchy_and_chaos_3
+        }
+    }
+    else = {
+        remove_ideas = USA_anarchy_and_chaos_3
+    }
+}

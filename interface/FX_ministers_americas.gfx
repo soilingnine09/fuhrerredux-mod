@@ -653,6 +653,10 @@ spriteTypes = {
         name = "GFX_idea_USA_Strom_Thurmond_hog_sco"
         texturefile = "gfx/interface/ideas/USA/ministers/USA_Strom_Thurmond.tga"
     }
+    spriteType = {
+        name = "GFX_idea_USA_Douglas_MacArthur_hog_pau"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Douglas_MacArthur.tga"
+    }
     ### Foreign Minister
     spriteType = {
         name = "GFX_idea_USA_Eugene_Dennis_for_col"
@@ -707,7 +711,7 @@ spriteTypes = {
         texturefile = "gfx/interface/ideas/USA/ministers/USA_John_Davison_Rockefeller_Jr.tga"
     }
     spriteType = {
-        name = "GFX_idea_USA_John_William_Davis_for_npo"
+        name = "GFX_idea_USA_John_William_Davis_for_pau"
         texturefile = "gfx/interface/ideas/USA/ministers/USA_John_William_Davis.tga"
     }
     ### Economy Minister

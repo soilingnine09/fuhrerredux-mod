@@ -15,6 +15,8 @@ focus_tree = {
         focus = USA_last_minute_reforms
     }
 
+	continuous_focus_position = { x = 3000 y = 1000 }
+
 	# Last Minute Reforms
 	focus = {
 		id = USA_last_minute_reforms
@@ -480,7 +482,7 @@ focus_tree = {
 		id = USA_the_army_reformed
 		icon = GFX_goal_COS_American_Staff
 		x = 0
-		y = 2
+		y = 1
 		cost = 6
 		prerequisite = {
 			focus = USA_tank_production_initiatives
@@ -488,7 +490,7 @@ focus_tree = {
 			focus = USA_modernize_training
 			focus = USA_logistics_improvements
 		}
-		relative_position_id = USA_modernize_training
+		relative_position_id = USA_standardized_equipment_manufacturing
 		completion_reward = {
 			remove_ideas = USA_failed_offensive
 		}
@@ -755,7 +757,7 @@ focus_tree = {
 	focus = {
 		id = USA_address_the_navy
 		icon = GFX_goal_USA_navy
-		x = 11
+		x = 3
 		y = 6
 		cost = 6
 		completion_reward = {
@@ -1852,7 +1854,7 @@ focus_tree = {
 	focus = {
 		id = USA_america_on_the_world_stage
 		icon = GFX_goal_usa
-		x = 20
+		x = 24
 		y = 7
 		cost = 6
 		available = {
@@ -2084,5 +2086,356 @@ focus_tree = {
 				type = annex_everything
 			}
 		}
+	}
+
+	##########################################################
+
+	# The Emergency Government
+	focus = {
+		id = USA_the_emergency_government
+		icon = GFX_goal_USA_eagle
+		x = 13
+		y = 6
+		cost = 2
+		available = {
+			USA_mexican_disaster_happened = yes
+		}
+	}
+
+	# Emergency Powers to the President
+	focus = {
+		id = USA_emergency_powers_to_the_president
+		icon = GFX_goal_ideology_authoritarian_democrat
+		x = -4
+		y = 1
+		cost = 6
+		available = { has_country_flag = USA_emergency_powers }
+		prerequisite = { focus = USA_the_emergency_government }
+		relative_position_id = USA_the_emergency_government
+	}
+
+	# Temporary Military Dictatorship
+	focus = {
+		id = USA_temporary_military_dictatorship
+		icon = GFX_goal_ideology_paternal_autocrat
+		x = 4
+		y = 1
+		cost = 6
+		available = { has_country_flag = USA_military_junta }
+		prerequisite = { focus = USA_the_emergency_government }
+		relative_position_id = USA_the_emergency_government
+	}
+
+	# Restore Order
+	focus = {
+		id = USA_restore_order
+		icon = GFX_goal_national_mobilization
+		x = 0
+		y = 2
+		cost = 6
+		prerequisite = {
+			focus = USA_emergency_powers_to_the_president
+			focus = USA_temporary_military_dictatorship
+		}
+		relative_position_id = USA_the_emergency_government
+		completion_reward = {
+			USA_stabilize_america = yes
+		}
+	}
+
+	# Assure the People
+	focus = {
+		id = USA_assure_the_people
+		icon = GFX_goal_generic_national_unity
+		x = -1
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_emergency_powers_to_the_president }
+		relative_position_id = USA_emergency_powers_to_the_president
+		completion_reward = {
+			USA_stabilize_america = yes
+		}
+	}
+
+	# Calm the Businessmen
+	focus = {
+		id = USA_calm_the_businessmen
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 1
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_emergency_powers_to_the_president }
+		relative_position_id = USA_emergency_powers_to_the_president
+		completion_reward = {
+			USA_stabilize_america = yes
+		}
+	}
+
+	# Arrest Dissidents
+	focus = {
+		id = USA_arrest_dissidents
+		icon = GFX_goal_generic_political_pressure
+		x = 1
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_temporary_military_dictatorship }
+		relative_position_id = USA_temporary_military_dictatorship
+		completion_reward = {
+			USA_stabilize_america = yes
+		}
+	}
+
+	# Federal Bureau of Investigation
+	focus = {
+		id = USA_use_the_fbi
+		icon = GFX_goal_secret_agents
+		x = -1
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_temporary_military_dictatorship }
+		relative_position_id = USA_temporary_military_dictatorship
+		completion_reward = {
+			USA_stabilize_america = yes
+		}
+	}
+
+	# Civilian Public Service
+	focus = {
+		id = USA_civilian_public_service
+		icon = GFX_goal_generic_construct_civ_factory
+		x = -2
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_restore_order }
+		relative_position_id = USA_restore_order
+		completion_reward = {
+			random_owned_controlled_state = {
+                limit = {
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 0
+                        include_locked = yes
+                    }
+                }
+
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }
+			random_owned_controlled_state = {
+                limit = {
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 0
+                        include_locked = yes
+                    }
+                }
+
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }
+		}
+	}
+
+	# Kickstart New Recruitment Campaigns
+	focus = {
+		id = USA_kickstart_new_recruitment_campaigns
+		icon = GFX_goal_conspiracy
+		x = 0
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_restore_order }
+		relative_position_id = USA_restore_order
+		completion_reward = {
+			add_manpower = 10000
+		}
+	}
+
+	# Military Industrial Complex
+	focus = {
+		id = USA_military_industrial_complex
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 2
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_restore_order }
+		relative_position_id = USA_restore_order
+		completion_reward = {
+			random_owned_controlled_state = {
+                limit = {
+                    free_building_slots = {
+                        building = arms_factory
+                        size > 0
+                        include_locked = yes
+                    }
+                }
+
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = arms_factory
+                    level = 2
+                    instant_build = yes
+                }
+            }
+			random_owned_controlled_state = {
+                limit = {
+                    free_building_slots = {
+                        building = arms_factory
+                        size > 0
+                        include_locked = yes
+                    }
+                }
+
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = arms_factory
+                    level = 2
+                    instant_build = yes
+                }
+            }
+		}
+	}
+
+	# Call the Reservists
+	focus = {
+		id = USA_call_the_reservists
+		icon = GFX_goal_army_guy_2
+		x = -1
+		y = 2
+		cost = 6
+		prerequisite = { focus = USA_assure_the_people }
+		prerequisite = { focus = USA_calm_the_businessmen }
+		relative_position_id = USA_calm_the_businessmen
+		completion_reward = {
+			custom_effect_tooltip = USA_call_the_reservists_tt
+			hidden_effect = {
+				load_oob = "USA_reservists"
+			}
+		}
+	}
+
+	# Recall the Veterans
+	focus = {
+		id = USA_recall_the_veterans
+		icon = GFX_focus_generic_military_mission
+		x = 1
+		y = 2
+		cost = 6
+		prerequisite = { focus = USA_use_the_fbi }
+		prerequisite = { focus = USA_arrest_dissidents }
+		relative_position_id = USA_use_the_fbi
+		completion_reward = {
+			custom_effect_tooltip = USA_recall_the_veterans_tt
+			hidden_effect = {
+				load_oob = "USA_veterans"
+			}
+		}
+	}
+
+	# The GI Bill
+	focus = {
+		id = USA_the_gi_bill
+		icon = GFX_goal_USA_national_guard
+		x = 0
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_civilian_public_service }
+		prerequisite = { focus = USA_kickstart_new_recruitment_campaigns }
+		prerequisite = { focus = USA_military_industrial_complex }
+		relative_position_id = USA_kickstart_new_recruitment_campaigns
+		completion_reward = {
+			add_ideas = USA_american_gis
+		}
+	}
+
+	# Crushing the Traitors
+	focus = {
+		id = USA_crushing_the_traitors
+		icon = GFX_goal_step_on_skull
+		x = 0
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_the_gi_bill }
+		prerequisite = {
+			focus = USA_recall_the_veterans
+			focus = USA_call_the_reservists
+		}
+		relative_position_id = USA_the_gi_bill
+		completion_reward = {
+			USA_stabilize_america = yes
+			add_ideas = USA_unification_spirit
+		}
+	}
+
+	# The Rust Belt
+	focus = {
+		id = USA_the_rust_belt
+		x = 2
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_crushing_the_traitors }
+		relative_position_id = USA_crushing_the_traitors
+	}
+
+	# The Midwest
+	focus = {
+		id = USA_the_midwest
+		x = -2
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_crushing_the_traitors }
+		relative_position_id = USA_crushing_the_traitors
+	}
+
+	# New England
+	focus = {
+		id = USA_new_england
+		x = 0
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_crushing_the_traitors }
+		relative_position_id = USA_crushing_the_traitors
+	}
+
+	# Third Times the Charm
+	focus = {
+		id = USA_third_times_the_charm
+		x = -1
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_new_england }
+		prerequisite = { focus = USA_the_midwest }
+		prerequisite = { focus = USA_the_rust_belt }
+		relative_position_id = USA_new_england
+	}
+
+	# Demand Cascadia
+	focus = {
+		id = USA_demand_cascadia
+		x = 1
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_new_england }
+		prerequisite = { focus = USA_the_midwest }
+		prerequisite = { focus = USA_the_rust_belt }
+		relative_position_id = USA_new_england
+	}
+
+	# United, once more!
+	focus = {
+		id = USA_united_once_more
+		x = 1
+		y = 1
+		cost = 6
+		prerequisite = { focus = USA_demand_cascadia }
+		prerequisite = { focus = USA_third_times_the_charm }
+		relative_position_id = USA_third_times_the_charm
 	}
 }

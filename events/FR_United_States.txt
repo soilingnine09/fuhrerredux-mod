@@ -68,6 +68,9 @@ country_event = { # 1936 Elections
             USA_Charles_Edison_eco_sli
             USA_Charles_Douglas_Jackson_sec_sli
         }
+        hidden_effect = {
+            set_country_flag = USA_had_1936_elections
+        }
     }
     option = { # Landon
         name = usa.1.c
@@ -86,6 +89,9 @@ country_event = { # 1936 Elections
             USA_Daniel_Calhoun_Roper_eco_mli
             USA_Robert_Ferdinand_Wagner_I_sec_mli
         }
+        hidden_effect = {
+            set_country_flag = USA_had_1936_elections
+        }
     }
     option = { # Garner
         name = usa.1.d
@@ -103,6 +109,9 @@ country_event = { # 1936 Elections
             USA_Dean_Gooderham_Acheson_for_sco
             USA_William_Daniel_Leahy_eco_sco
             USA_Martin_Dies_Jr_sec_sco
+        }
+        hidden_effect = {
+            set_country_flag = USA_had_1936_elections
         }
     }
 }
@@ -222,7 +231,13 @@ country_event = { # Border Skirmish
 		name = usa.7.a
 		add_political_power = -50
 		add_manpower = -20000
-		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -1000 producer = MEX }
+        ai_chance = {
+            base = 60
+        }
+		add_equipment_to_stockpile = { 
+            type = infantry_equipment_0 
+            amount = -1000
+        }
 		hidden_effect = {
 			USA = { country_event = { id = usa.8 hours = 8 } }
 		}
@@ -230,6 +245,9 @@ country_event = { # Border Skirmish
 	option = { # Cannot Condone
 		name = usa.7.b
 		add_political_power = -50
+        ai_chance = {
+            base = 40
+        }
 		hidden_effect = {
 			USA = { country_event = { id = usa.9 hours = 8 } }
 		}
@@ -250,14 +268,20 @@ country_event = { # Border City Attacked
 	option = { # Declare Martial Law
 		name = usa.8.a
 		add_political_power = -100
+        ai_chance = {
+            base = 50
+        }
         hidden_effect = {
 			MEX = { country_event = { id = usa.10 hours = 8 } }
 		}
 	}
-	option = { # Deploy the National Guard in the Area
+	option = { # Let the police handle the situation
 		name = usa.8.b
 		add_political_power = -25
 		add_manpower = -10000
+        ai_chance = {
+            base = 50
+        }
 		random_owned_state = {
 			limit = {
 				has_state_flag = skirmishes
@@ -289,6 +313,9 @@ country_event = { # Mexican Nationalists Attacked Border Area
 		name = usa.9.a
 		add_political_power = -50
 		add_stability = -0.01
+        ai_chance = {
+            base = 40
+        }
 		random_owned_state = {
 			limit = {
 				has_state_flag = skirmishes
@@ -307,6 +334,9 @@ country_event = { # Mexican Nationalists Attacked Border Area
 		name = usa.9.b
 		add_political_power = -100
 		add_manpower = -10000
+        ai_chance = {
+            base = 80
+        }
 		hidden_effect = {
 			MEX = { country_event = { id = usa.10 hours = 8 } }
 		}
@@ -322,10 +352,16 @@ country_event = { # US Troops Rebuke our Attack!
 
 	option = { # Attack the Troops!
 		name = usa.10.a
+        ai_chance = {
+            base = 50
+        }
         USA = { country_event = usa.11 hours = 14 }
 	}
 	option = { # Show our plight to the masses
 		name = usa.10.b
+        ai_chance = {
+            base = 50
+        }
 		add_manpower = 5000
 		MEX_increase_nationalism = yes
 	}
@@ -340,6 +376,9 @@ country_event = { # Troops Attacked!
 
     option = { # War 
         name = usa.11.a
+        ai_chance = {
+            base = 80
+        }
         create_wargoal = {
             target = MEX
             type = annex_everything
@@ -347,6 +386,9 @@ country_event = { # Troops Attacked!
     }
     option = { # Try demanding them to stop
         name = usa.11.b
+        ai_chance = {
+            base = 20
+        }
         MEX = { country_event = { id = usa.12 hours = 4 } } 
     }
 }
@@ -360,10 +402,16 @@ country_event = { # US Demands Mexico to Stop
 
     option = { # Mexico doesn't want to stop
         name = usa.12.a
+        ai_chance = {
+            base = 50
+        }
         FROM = { country_event = usa.13 }
     }
     option = { # Mexico backs down
         name = usa.12.b
+        ai_chance = {
+            base = 50
+        }
         FROM = { country_event = usa.14 }
     }
 }
@@ -377,6 +425,9 @@ country_event = { # Mexican Response
 
     option = { # Declare war on Mexico
         name = usa.13.a
+        ai_chance = {
+            base = 50
+        }
         create_wargoal = {
             target = MEX
             type = annex_everything
@@ -384,6 +435,9 @@ country_event = { # Mexican Response
     }
     option = { # Back down
         name = usa.13.b
+        ai_chance = {
+            base = 50
+        }
         add_political_power = -100
     }
 }
@@ -641,6 +695,106 @@ country_event = { # Surrender to Mexico
     }
 }
 
+country_event = { # 1940 Elections
+    id = usa.28
+    title = usa.28.t
+    desc = usa.28.d
+    picture = GFX_report_event_election_vote
+    is_triggered_only = yes
+
+    trigger = {
+        tag = USA
+        date > 1940.1.1
+        date < 1941.1.1
+        NOT = { has_country_flag = USA_had_1940_elections }
+    }
+
+    option = { # Long
+        name = usa.28.a
+        set_politics = {
+            ruling_party = social_democrat
+            elections_allowed = yes
+        }
+        add_popularity = {
+            ideology = social_democrat
+            popularity = 0.1
+        }
+        remove_every_minister = yes
+        add_ideas = {
+            USA_Huey_Long_hog_sde
+            USA_George_Catlett_Marshall_Jr_for_sde
+            USA_Jesse_Holman_Jones_eco_sde
+            USA_Konrad_Knute_Solberg_sec_sde
+        }
+        hidden_effect = {
+            set_country_flag = USA_had_1940_elections
+        }
+    }
+    option = { # Roosevelt
+        name = usa.28.b
+        set_politics = {
+            ruling_party = social_liberal
+            elections_allowed = yes
+        }
+        add_popularity = {
+            ideology = social_liberal
+            popularity = 0.1
+        }
+        remove_every_minister = yes
+        add_ideas = {
+            USA_Quentin_Roosevelt_hog_sli
+            USA_Henry_Lewis_Stimson_for_sli
+            USA_Charles_Edison_eco_sli
+            USA_Charles_Douglas_Jackson_sec_sli
+        }
+        hidden_effect = {
+            set_country_flag = USA_had_1940_elections
+        }
+    }
+    option = { # Landon
+        name = usa.28.c
+        set_politics = {
+            ruling_party = market_liberal
+            elections_allowed = yes
+        }
+        add_popularity = {
+            ideology = market_liberal
+            popularity = 0.1
+        }
+        remove_every_minister = yes
+        add_ideas = {
+            USA_Alf_Landon_hog_mli
+            USA_Henry_Morgenthau_Jr_for_mli
+            USA_Daniel_Calhoun_Roper_eco_mli
+            USA_Robert_Ferdinand_Wagner_I_sec_mli
+        }
+        hidden_effect = {
+            set_country_flag = USA_had_1940_elections
+        }
+    }
+    option = { # Garner
+        name = usa.28.d
+        set_politics = {
+            ruling_party = social_conservative
+            elections_allowed = yes
+        }
+        add_popularity = {
+            ideology = social_conservative
+            popularity = 0.1
+        }
+        remove_every_minister = yes
+        add_ideas = {
+            USA_John_Nance_Garner_hog_sco
+            USA_Dean_Gooderham_Acheson_for_sco
+            USA_William_Daniel_Leahy_eco_sco
+            USA_Martin_Dies_Jr_sec_sco
+        }
+        hidden_effect = {
+            set_country_flag = USA_had_1940_elections
+        }
+    }
+}
+
 country_event = { # Start of the Collapse - Riots
     id = usa.100
     title = usa.100.t
@@ -818,13 +972,158 @@ country_event = { # Canada Seizes Cascadia
                         state = 387
                     }
                 }
-                ENG = {
-                    transfer_state = PREV
-                }
                 CAS = {
+                    transfer_state = PREV
                     add_state_core = PREV
                 }
             }
+            ENG = { puppet = CAS }
+        }
+    }
+    
+    option = {
+        name = usa.105.a
+        hidden_effect = {
+            country_event = { usa.106 hours = 12 }
+        }
+    }
+}
+
+country_event = { # Collapse of the Union
+    id = usa.106
+    title = usa.106.t
+    desc = usa.106.d
+    is_triggered_only = yes
+
+    option = {
+        name = usa.106.a
+        add_ideas = USA_anarchy_and_chaos
+        hidden_effect = {
+            country_event = { id = usa.107 days = 3 }
+        }
+    }
+}
+
+country_event = { # Emergency Congress Session
+    id = usa.107
+    title = usa.107.t
+    desc = usa.107.d
+    is_triggered_only = yes
+
+    option = {
+        name = usa.107.a
+        hidden_effect = {
+            if = {
+                limit = { 
+                    has_country_leader = { name = "Huey Long" }
+                }
+                create_country_leader = {
+                    name = "Huey Long"
+                    desc = "POLITICS_HUEY_LONG_DESC"
+                    picture = "Portrait_USA_Huey_Long.tga"
+                    expire = "1965.1.1"
+                    ideology = authoritarian_democrat_subtype
+                    traits = { }
+                }
+            }
+            else_if = {
+                limit = {
+                    has_country_leader = { name = "Quentin Roosevelt" }
+                }
+                create_country_leader = {
+                    name = "Quentin Roosevelt"
+                    desc = "POLITICS_QUENTIN_ROOSEVELT_DESC"
+                    picture = "Portrait_USA_Quentin_Roosevelt.tga"
+                    expire = "1965.1.1"
+                    ideology = authoritarian_democrat_subtype
+                    traits = { }
+                }
+            }
+            else_if = {
+                limit = {
+                    has_country_leader = { name = "Alf Landon" }
+                }
+                create_country_leader = {
+                    name = "Alf Landon"
+                    desc = "POLITICS_ALF_LANDON_DESC"
+                    picture = "Portrait_USA_Alf_Landon_fx.tga"
+                    expire = "1965.1.1"
+                    ideology = authoritarian_democrat_subtype
+                    traits = { }
+                }
+            }
+            else_if = {
+                limit = {
+                    has_country_leader = { name = "John Nance Garner" }
+                }
+                create_country_leader = {
+                    name = "John Nance Garner"
+                    desc = "POLITICS_JOHN_NANCE_GARNER_DESC"
+                    picture = "Portrait_USA_John_Nance_Garner.tga"
+                    expire = "1965.1.1"
+                    ideology = authoritarian_democrat_subtype
+                    traits = { }
+                }
+            }
+            else = {
+                create_country_leader = {
+                    name = "Charles Curtis"
+                    desc = "POLITICS_CHARLES_CURTIS_DESC"
+                    picture = "Portrait_USA_Charles_Curtis.tga"
+                    expire = "1965.1.1"
+                    ideology = authoritarian_democrat_subtype
+                    traits = { }
+                }
+            }
+
+            set_country_flag = USA_emergency_powers
+            set_party_name = {
+                ideology = authoritarian_democrat
+                name = USA_emergency_government_party
+                long_name = USA_emergency_government_party_long
+            }
+        }
+        set_politics = {
+            ruling_party = authoritarian_democrat
+            elections_allowed = no
+        }
+        add_popularity = {
+            ideology = authoritarian_democrat
+            popularity = 0.15
+        }
+    }
+    option = {
+        name = usa.107.b
+        hidden_effect = {
+            create_country_leader = {
+                name = "Douglas MacArthur"
+                desc = "POLITICS_DOUGLAS_MACARTHUR_DESC"
+                picture = "Portrait_USA_Douglas_MacArthur_fx.tga"
+                expire = "1965.1.1"
+                ideology = paternal_autocrat_subtype
+                traits = { }
+            }
+            set_country_flag = USA_military_junta
+            set_party_name = {
+                ideology = paternal_autocrat
+                name = USA_emergency_government_party
+                long_name = USA_emergency_government_party_long
+            }
+        }
+        set_politics = {
+            ruling_party = paternal_autocrat
+            elections_allowed = no
+        }
+        add_popularity = {
+            ideology = paternal_autocrat
+            popularity = 0.15
+        }
+        remove_every_minister = yes
+        add_ideas = {
+            USA_Douglas_MacArthur_hog_pau
+            USA_John_William_Davis_for_pau
+            USA_William_Harrison_Standley_eco_pau
+            USA_Joel_Bennett_Clark_sec_pau
         }
     }
 }
