@@ -94,7 +94,7 @@ country_event = { # 1936 Elections
         }
     }
     option = { # Garner
-        name = usa.1.d
+        name = usa.1.e
         set_politics = {
             ruling_party = social_conservative
             elections_allowed = yes
@@ -585,9 +585,33 @@ country_event = { # Advisors Refused
 country_event = { # Protection for Central America
     id = usa.23
     title = usa.23.t
-    desc = usa.23.d
     picture = GFX_report_event_german_advisors_remain
     is_triggered_only = yes
+
+    desc = {
+        text = usa.23.d
+        trigger = {
+            MEX = {
+                OR = {
+                    exists = yes
+                    NOT = { is_subject_of = ROOT }
+                    NOT = { is_in_faction_with = ROOT }
+                }
+            }
+        }
+    }
+    desc = {
+        text = usa.23.d_no_mex
+        trigger = {
+            MEX = {
+                OR = {
+                    exists = no
+                    is_subject_of = ROOT
+                    is_in_faction_with = ROOT
+                }
+            }
+        }
+    }
 
     option = { # Accept
         name = usa.23.a
@@ -627,6 +651,13 @@ country_event = { # Refuse Protection
     option = {
         name = usa.25.a
         add_political_power = -10
+    }
+    option = {
+        name = usa.25.b
+        create_wargoal = {
+            target = FROM
+            type = annex_everything
+        }
     }
 }
 
@@ -1201,7 +1232,7 @@ country_event = { # Cascadian Question
     picture = report_event_generic_conference
     is_triggered_only = yes
 
-    option = {
+    option = { # To Cascadia
         name = usa.110.a
         every_owned_state = {
             limit = {
@@ -1213,7 +1244,7 @@ country_event = { # Cascadian Question
             CAS = { transfer_state = PREV }
         }
     }
-    option = {
+    option = { # To Canada
         name = usa.110.b
         every_owned_state = {
             limit = {

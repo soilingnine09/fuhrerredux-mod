@@ -17,7 +17,9 @@ bookmarks = {
                 USA_failed_offensive
             }
             focuses = {
-                
+                USA_last_minute_reforms
+                USA_elections_of_1936
+                USA_reconciliation_with_the_entente
             }
         }
         "SOV" = {
