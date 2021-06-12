@@ -384,13 +384,13 @@ focus_tree = {
 					limit = {
 						has_dlc = "Man the Guns"
 					}
-					load_OOB = ENG_tempest_oob_mtg
+					load_OOB = ENG_tempest_mtg
 				}
 				IF = {
 					limit = {
 						NOT = { has_dlc = "Man the Guns" }
 					}
-					load_OOB = ENG_tempest_oob_legacy
+					load_OOB = ENG_tempest_legacy
 				}
 			}
 		}
@@ -419,13 +419,13 @@ focus_tree = {
 					limit = {
 						has_dlc = "Man the Guns"
 					}
-					load_OOB = ENG_eclipse_oob_mtg
+					load_OOB = ENG_eclipse_mtg
 				}
 				IF = {
 					limit = {
 						NOT = { has_dlc = "Man the Guns" }
 					}
-					load_OOB = ENG_eclipse_oob_legacy
+					load_OOB = ENG_eclipse_legacy
 				}
 			}
 		}
@@ -454,13 +454,13 @@ focus_tree = {
 					limit = {
 						has_dlc = "Man the Guns"
 					}
-					load_OOB = ENG_steelshield_oob_mtg
+					load_OOB = ENG_steelshield_mtg
 				}
 				IF = {
 					limit = {
 						NOT = { has_dlc = "Man the Guns" }
 					}
-					load_OOB = ENG_steelshield_oob_legacy
+					load_OOB = ENG_steelshield_legacy
 				}
 			}
 		}
@@ -492,13 +492,13 @@ focus_tree = {
 					limit = {
 						has_dlc = "Man the Guns"
 					}
-					load_OOB = ENG_grip_oob_mtg
+					load_OOB = ENG_grip_mtg
 				}
 				IF = {
 					limit = {
 						NOT = { has_dlc = "Man the Guns" }
 					}
-					load_OOB = ENG_grip_oob_legacy
+					load_OOB = ENG_grip_legacy
 				}
 			}
 		}

@@ -1,6 +1,6 @@
 ﻿capital = 803
 
-oob = "AUS_1936"
+oob = "AUS"
 
 set_research_slots = 3
 set_stability = 0.61

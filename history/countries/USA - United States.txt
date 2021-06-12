@@ -1,20 +1,16 @@
 ﻿capital = 361
-
-oob = "USA_1936"
+oob = "USA"
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "USA_1936_naval_mtg"
+		set_naval_oob = "USA_naval_mtg"
 	else = {
-		set_naval_oob = "USA_1936_naval_legacy"
+		set_naval_oob = "USA_naval_legacy"
 	}
 }
 
 set_research_slots = 4
-
 add_political_power = -100
-
-country_event = { id = usa.election.1936.1 days = 2}
 
 # Starting tech
 set_technology = {

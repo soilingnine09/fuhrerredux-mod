@@ -1,14 +1,19 @@
 ﻿capital = 278
 
-oob = "ARG_1936"
+oob = "ARG"
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "ARG_1936_naval_mtg"
+		set_naval_oob = "ARG_naval_mtg"
 	else = {
-		set_naval_oob = "ARG_1936_naval_legacy"
+		set_naval_oob = "ARG_naval_legacy"
 	}
 }
+
+set_stability = 0.45
+set_war_support = 0.45
 set_research_slots = 3
+set_convoys = 120
+
 add_ideas = {
 	party_pop_0_10
 	civilian_economy
@@ -66,9 +71,6 @@ if = {
 	}
 }
 
-set_stability = 0.45
-set_war_support = 0.45
-set_convoys = 120
 set_politics = {
 	ruling_party = social_liberal
 	last_election = "1931.11.8"

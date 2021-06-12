@@ -1,4 +1,5 @@
 capital = 357
+oob = "NEE"
 
 # Starting tech
 set_technology = {

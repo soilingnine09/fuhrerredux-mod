@@ -699,7 +699,15 @@ country_event = { # Surrender to Mexico
     option = {
         name = usa.27.a
         ai_chance = { base = 95 }
+        if = {
+            limit = { FROM = { is_faction_leader = yes } }
+            every_country = {
+                limit = { is_in_faction_with = FROM }
+                whitepeace = ROOT
+            }
+        }
         FROM = { whitepeace = ROOT }
+
         transfer_state = 484
         transfer_state = 743
         transfer_state = 378

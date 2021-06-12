@@ -13,7 +13,6 @@ set_technology = {
 
 #Events
 
-
 add_ideas = {
 	party_pop_0_30
 	backwards_economy
