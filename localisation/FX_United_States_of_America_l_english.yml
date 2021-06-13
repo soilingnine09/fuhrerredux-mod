@@ -225,9 +225,9 @@ USA_healing_past_wounds_desc:0 "If we are to be an effective fighting force we m
 
 #U.S NAVY
 USA_united_states_navy:0 "Review the U.S Navy"
-USA_united_states_navy_desc:0 ""
+USA_united_states_navy_desc:0 "The USN, or the United States Navy is the primary naval defense force of the United States. It is one of the largest navies on the planet. However, much like the Army and the Air-Force, the Navy still is also rusted, and needs a bit more greasing to kick back into high gear. We now must begin our review of the Navy so that it can once again rule the seas!"
 USA_finish_naval_program:0 "Revive the 1928 Navy Expansion Program"
-USA_finish_naval_program_desc:0 ""
+USA_finish_naval_program_desc:0 "In 1928, a new expansion plan for the Navy was proposed in the Congress. Construction of more than 74 Naval Vessels was proposed. However, the plan was halted midway due to lack of resources. If we want the USN to rule the waves, we must continue the 1928 Naval Expansion Plan and also modernize our current fleet."
 USA_open_up_new_dockyards:0 "Open up Dockyards"
 USA_open_up_new_dockyards_desc:0 ""
 USA_reaching_into_the_pacific:0 "Reaching into the Pacific"
