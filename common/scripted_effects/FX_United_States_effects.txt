@@ -123,14 +123,7 @@ USA_stabilize_america = {
             add_idea = USA_anarchy_and_chaos_2
         }
     }
-    else_if = {
-        limit = { has_idea = USA_anarchy_and_chaos_2 }
-        swap_ideas = {
-            remove_idea = USA_anarchy_and_chaos_2
-            add_idea = USA_anarchy_and_chaos_3
-        }
-    }
     else = {
-        remove_ideas = USA_anarchy_and_chaos_3
+        remove_ideas = USA_anarchy_and_chaos_2
     }
 }

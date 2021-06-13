@@ -708,23 +708,22 @@ country_event = { # Surrender to Mexico
         }
         FROM = { whitepeace = ROOT }
 
-        transfer_state = 484
-        transfer_state = 743
-        transfer_state = 378
-        transfer_state = 930
-        transfer_state = 928
-        transfer_state = 923
-        transfer_state = 922
-        transfer_state = 921
-        transfer_state = 375
-        transfer_state = 919
-        transfer_state = 377
-        transfer_state = 376
-        transfer_state = 920
-        transfer_state = 926
-        transfer_state = 925
-        transfer_state = 929
-        USA = { country_event = usa.100 days = 14 }
+        transfer_state = 375 # Texas
+        transfer_state = 376 # New Mexico
+        transfer_state = 377 # Arizona
+        transfer_state = 378 # California
+        transfer_state = 379 # Nevada
+        transfer_state = 380 # Utah 
+        transfer_state = 484 # Baja California
+        transfer_state = 919 # East Texas
+        transfer_state = 920 # Panhandle
+        transfer_state = 921 # Transpecos
+        transfer_state = 926 # Bay Area
+        transfer_state = 927 # Northern California
+        transfer_state = 928 # Southern California
+        hidden_effect = {
+            USA = { country_event = usa.100 days = 14 }
+        }
     }
     option = {
         name = usa.27.b
@@ -1275,26 +1274,14 @@ country_event = {
 
     option = {
         name = usa.111.a
-        if = {
-            limit = { country_exists = CAS }
-            USA = {
-                annex_country = {
-                    target = CAS
-                    transfer_troops = no
-                }
-            }
-        }
-        else = {
-            USA = {
-                transfer_state = 385
-                transfer_state = 386
-                transfer_state = 287
-            }
+        every_owned_state = {
+            limit = { is_claimed_by = FROM }
+            FROM = { transfer_state = PREV }
         }
     }
     option = {
         name = usa.111.b
-        USA = { country_event = usa.112 }
+        FROM = { country_event = usa.112 }
     }
 }
 

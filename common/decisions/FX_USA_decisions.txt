@@ -81,3 +81,60 @@ USA_hydroelectric = {
         }
     }
 }
+
+USA_american_unification = {
+    USA_attack_traitors = {
+        icon = GFX_decision_generic_prepare_civil_war
+
+        target_trigger = {
+            FROM = {
+                OR = {
+                    tag = RBL
+                    tag = CLB
+                    tag = NEE
+                    tag = CAS
+                }
+            }
+        }
+
+        visible = {
+            country_exists = FROM
+            is_neighbor_of = FROM
+        }
+        available = { has_war = no }
+        complete_effect = {
+            create_wargoal = {
+                target = FROM
+                type = annex_everything
+            }
+        }
+    }
+
+    USA_demand_territory = {
+        icon = GFX_decision_eng_trade_unions_support
+
+        target_trigger = {
+            FROM = {
+                OR = {
+                    tag = MEX
+                    tag = CAN
+                    tag = ENG
+                }
+            }
+        }
+
+        visible = { 
+            FROM = {
+                is_neighbor_of = ROOT
+                any_owned_state = { is_core_of = ROOT }
+            }
+        }
+        available = { 
+            has_war = no
+            is_neighbor_of = FROM
+        }
+        complete_effect = {
+            FROM = { country_event = usa.111 }
+        }
+    }
+}

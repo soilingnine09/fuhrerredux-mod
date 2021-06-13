@@ -2059,7 +2059,7 @@ focus_tree = {
 	# Protection for Central America
 	focus = {
 		id = USA_protection_for_central_america
-		icon = GFX_goal_army_guy_2
+		icon = GFX_goal_USA_protection_for_central_america
 		x = 2
 		y = 1
 		cost = 6
@@ -2386,10 +2386,10 @@ focus_tree = {
 		}
 	}
 
-	# Crushing the Traitors
+	# Consolidate America
 	focus = {
-		id = USA_crushing_the_traitors
-		icon = GFX_goal_step_on_skull
+		id = USA_consolidate_america
+		icon = GFX_goal_authoritarian
 		x = 0
 		y = 1
 		cost = 6
@@ -2400,240 +2400,7 @@ focus_tree = {
 		}
 		relative_position_id = USA_the_gi_bill
 		completion_reward = {
-			USA_stabilize_america = yes
-			add_ideas = USA_unification_spirit
-		}
-	}
-
-	# The Rust Belt
-	focus = {
-		id = USA_the_rust_belt
-		x = 2
-		y = 1
-		cost = 6
-		available = {
-			RBL = {
-				exists = yes
-				NOT = { is_in_faction_with = ROOT }
-				NOT = { is_subject_of = ROOT }
-			}
-		}
-		bypass = {
-			OR = {
-				any_owned_state = {
-					is_core_of = RBL
-				}
-				RBL = { has_war_with = ROOT }
-			}
-		}
-		prerequisite = { focus = USA_crushing_the_traitors }
-		relative_position_id = USA_crushing_the_traitors
-		completion_reward = {
-			create_wargoal = {
-				target = RBL
-				type = annex_everything
-			}
-		}
-	}
-
-	# The Midwest
-	focus = {
-		id = USA_the_midwest
-		x = -2
-		y = 1
-		cost = 6
-		available = {
-			CLB = {
-				exists = yes
-				NOT = { is_in_faction_with = ROOT }
-				NOT = { is_subject_of = ROOT }
-			}
-		}
-		bypass = {
-			OR = {
-				any_owned_state = {
-					is_core_of = CLB
-				}
-				CLB = { has_war_with = ROOT }
-			}
-		}
-		prerequisite = { focus = USA_crushing_the_traitors }
-		relative_position_id = USA_crushing_the_traitors
-		completion_reward = {
-			create_wargoal = {
-				target = CLB
-				type = annex_everything
-			}
-		}
-	}
-
-	# New England
-	focus = {
-		id = USA_new_england
-		x = 0
-		y = 1
-		cost = 6
-		available = {
-			NEE = {
-				exists = yes
-				NOT = { is_in_faction_with = ROOT }
-				NOT = { is_subject_of = ROOT }
-			}
-		}
-		bypass = {
-			OR = {
-				any_owned_state = {
-					is_core_of = NEE
-				}
-				NEE = { has_war_with = ROOT }
-			}
-		}
-		prerequisite = { focus = USA_crushing_the_traitors }
-		relative_position_id = USA_crushing_the_traitors
-		completion_reward = {
-			create_wargoal = {
-				target = NEE
-				type = annex_everything
-			}
-		}
-	}
-
-	# Third Times the Charm
-	focus = {
-		id = USA_third_times_the_charm
-		x = -1
-		y = 1
-		cost = 6
-		will_lead_to_war_with = MEX
-		available = {
-			378 = {
-				OWNER = { 
-					NOT = {
-						tag = USA
-						is_in_faction_with = ROOT
-					}
-				}
-			}
-		}
-		bypass = {
-			OR = {
-				any_owned_state = {
-					AND = {
-						state = 484
-						state = 743
-						state = 378
-						state = 930
-						state = 928
-						state = 923
-						state = 922
-						state = 921
-						state = 375
-						state = 919
-						state = 377
-						state = 376
-						state = 920
-						state = 926
-						state = 925
-						state = 929
-					}
-				}
-				MEX = { 
-					OR = {
-						has_war_with = ROOT
-						is_subject_of = ROOT
-						is_in_faction_with = ROOT
-					} 
-				}
-			}
-		}
-		prerequisite = { focus = USA_new_england }
-		prerequisite = { focus = USA_the_midwest }
-		prerequisite = { focus = USA_the_rust_belt }
-		relative_position_id = USA_new_england
-		completion_reward = {
-			378 = {
-				OWNER = {
-					ROOT = {
-						create_wargoal = {
-							target = PREV
-							type = annex_everything
-						}
-					}
-				}
-			}
-		}
-	}
-
-	# Demand Cascadia
-	focus = {
-		id = USA_demand_cascadia
-		x = 1
-		y = 1
-		cost = 6
-		available = {
-			385 = {
-				OWNER = {
-					NOT = {
-						tag = USA
-						is_in_faction_with = ROOT
-					}
-				}
-			}
-			386 = {
-				OWNER = {
-					NOT = {
-						tag = USA
-						is_in_faction_with = ROOT
-					}
-				}
-			}
-			387 = {
-				OWNER = {
-					NOT = {
-						tag = USA
-						is_in_faction_with = ROOT
-					}
-				}
-			}
-		}
-		bypass = {
-			any_owned_state = {
-				OR = {
-					is_core_of = CAS
-					AND = {
-						state = 385
-						state = 386
-						state = 387
-					}
-				}
-			}
-		}
-		prerequisite = { focus = USA_new_england }
-		prerequisite = { focus = USA_the_midwest }
-		prerequisite = { focus = USA_the_rust_belt }
-		relative_position_id = USA_new_england
-		completion_reward = {
-			385 = {
-				OWNER = { country_event = usa.111 }
-			}
-		}
-	}
-
-	# United, once more!
-	focus = {
-		id = USA_united_once_more
-		x = 1
-		y = 1
-		cost = 6
-		prerequisite = { focus = USA_demand_cascadia }
-		prerequisite = { focus = USA_third_times_the_charm }
-		relative_position_id = USA_third_times_the_charm
-		completion_reward = {
-			if = {
-				limit = { has_idea = USA_unification_spirit }
-				remove_ideas = USA_unification_spirit
-			}
-			drop_cosmetic_tag = USA_federal
+			unlock_decision_category_tooltip = USA_american_unification
 		}
 	}
 }

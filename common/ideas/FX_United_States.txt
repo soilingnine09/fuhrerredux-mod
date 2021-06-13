@@ -284,19 +284,11 @@ ideas = {
             allowed = { original_tag = USA }
             picture = hol_liberation
             modifier = {
-                stability_factor = -0.45
-                war_support_factor = -0.45
-            }
-        }
-        USA_anarchy_and_chaos_1 = {
-            allowed = { original_tag = USA }
-            picture = hol_liberation
-            modifier = {
                 stability_factor = -0.35
                 war_support_factor = -0.35
             }
         }
-        USA_anarchy_and_chaos_2 = {
+        USA_anarchy_and_chaos_1 = {
             allowed = { original_tag = USA }
             picture = hol_liberation
             modifier = {
@@ -304,12 +296,12 @@ ideas = {
                 war_support_factor = -0.25
             }
         }
-        USA_anarchy_and_chaos_3 = {
+        USA_anarchy_and_chaos_2 = {
             allowed = { original_tag = USA }
             picture = hol_liberation
             modifier = {
                 stability_factor = -0.15
-                war_support_factor = -0.25
+                war_support_factor = -0.15
             }
         }
         USA_unification_spirit = {

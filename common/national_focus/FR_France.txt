@@ -5045,7 +5045,7 @@ focus_tree = {
 	# Strengthen the Petain Government
 	focus = {
 		id = fra_strong_petain
-		icon = GFX_focus_generic_strike_at_democracy2
+		icon = GFX_goal_NFA_Petain
 		x = 32
 		y = 8
 		cost = 5
@@ -5175,7 +5175,7 @@ focus_tree = {
 	# Education Reform
 	focus = {
 		id = fra_education_reform
-		icon = GFX_goal_liberty
+		icon = GFX_goal_KTG_Bookstack
 		x = 1
 		y = 1
 		cost = 5
@@ -5334,7 +5334,7 @@ focus_tree = {
 	# Restoration of the Monarchy
 	focus = {
 		id = fra_restore_chin
-		icon = GFX_goal_NFA_French_Kingdom
+		icon = GFX_goal_NFA_restauration
 		x = 0
 		y = 1
 		cost = 10
@@ -5635,10 +5635,10 @@ focus_tree = {
 			add_political_power = 100
 		}
 	}
-	# Proclaim the Empire
+	# The Kingdom Restored!
 	focus = {
-		id = fra_empire
-		icon = GFX_goal_NFA_French_Empire
+		id = fra_kingdom_restored
+		icon = GFX_goal_NFA_French_Kingdom
 		x = 1
 		y = 1
 		cost = 10

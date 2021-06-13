@@ -656,7 +656,7 @@ focus_tree = {
     # Drift to the North
     focus = {
         id = CRU_drift_to_the_north
-        icon = GFX_goal_usa
+        icon = GFX_goal_generic_attack_usa
         x = -1
         y = 1
         cost = 6
@@ -678,7 +678,7 @@ focus_tree = {
     # Continue South
     focus = {
         id = CRU_continue_south
-        icon = GFX_goal_panama
+        icon = GFX_goal_USA_protection_for_central_america
         x = 1
         y = 1
         cost = 6

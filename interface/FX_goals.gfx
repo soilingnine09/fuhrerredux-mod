@@ -1,6 +1,10 @@
 spriteTypes = {
 
 	spriteType = {
+		name = "GFX_goal_generic_attack_usa"
+		texturefile = "gfx/interface/goals/generic_attack_usa.tga"
+	}
+	spriteType = {
 		name = "GFX_goal_generic_lightbulb"
 		texturefile = "gfx/interface/goals/generic_lightbulb.tga"
 	}
@@ -193,6 +197,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/USA_usaac.dds"
 	}
 	spriteType = {
+		name = "GFX_goal_USA_protection_for_central_america"
+		texturefile = "gfx/interface/goals/USA_protection_for_central_america.tga"
+	}
+	spriteType = {
 		name = "GFX_goal_ENG_entente"
 		texturefile = "gfx/interface/goals/ENG_entente.tga"
 	}
@@ -219,5 +227,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_goal_CAN_airforce"
 		texturefile = "gfx/interface/goals/CAN_airforce.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_NFA_restauration"
+		texturefile = "gfx/interface/goals/NFA_restauration.tga"
 	}
 }
