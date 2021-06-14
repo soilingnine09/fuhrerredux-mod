@@ -2,6 +2,70 @@
 # European Region
 
 spriteTypes = {
+
+	####################################################
+    # ITA
+	### Head of Government
+	spriteType = {
+		name = "GFX_idea_ITA_Palmiro_Togliatti_hog_van"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Palmiro_Togliatti.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Antonio_Gramsci_hog_col"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Antonio_Gramsci.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Pietro_Nenni_hog_lib"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Pietro_Nenni.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Giacomo_Matteotti_hog_lib"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Giacomo_Matteotti.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Don_Luigi_Sturzo_hog_sde"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Don_Luigi_Sturzo.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Giuseppe_Saragat_hog_sde"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Giuseppe_Saragat.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Ferruccio_Parri_hog_sli"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Ferruccio_Parri.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Ivanoe_Bonomi_hog_sli"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Ivanoe_Bonomi.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Luigi_Einaudi_hog_mli"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Luigi_Einaudi.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Alcide_De_Gasperi_hog_sco"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Alcide_De_Gasperi.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Cesare_Forni_hog_ade"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Cesare_Forni.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Pietro_Badoglio_hog_pau"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Pietro_Badoglio.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Italo_Balbo_hog_npo"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Italo_Balbo.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Giovanni_Giuriati_hog_npo"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Giovanni_Giuriati.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Gabriele_D_Annunzio_hog_val"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Gabriele_D_Annunzio.tga"
+	}
 	
 	####################################################
     # FRA

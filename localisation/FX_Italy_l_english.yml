@@ -2598,6 +2598,24 @@ latin_committee_name_desc:0 ""
 soviet_rome_name:0 "Moscow-Rome Pact"
 soviet_rome_name_desc:0 ""
 
+### Ministers
+# Head of Government
+ITA_Palmiro_Togliatti_hog_van:0 "Palmiro Togliatti"
+ITA_Antonio_Gramsci_hog_col:0 "Antonio Gramsci"
+ITA_Pietro_Nenni_hog_lib:0 "Pietro Nenni"
+ITA_Giacomo_Matteotti_hog_lib:0 "Giacomo Matteotti"
+ITA_Don_Luigi_Sturzo_hog_sde:0 "Don Luigi Sturzo"
+ITA_Giuseppe_Saragat_hog_sde:0 "Giuseppe Saragat"
+ITA_Ferruccio_Parri_hog_sli:0 "Ferruccio Parri"
+ITA_Ivanoe_Bonomi_hog_sli:0 "Ivanoe Bonomi"
+ITA_Luigi_Einaudi_hog_mli:0 "Luigi Einaudi"
+ITA_Alcide_De_Gasperi_hog_sco:0 "Alcide De Gasperi"
+ITA_Cesare_Forni_hog_ade:0 "Cesare Forni"
+ITA_Pietro_Badoglio_hog_pau:0 "Pietro Badoglio"
+ITA_Italo_Balbo_hog_npo:0 "Italo Balbo"
+ITA_Giovanni_Giuriati_hog_npo:0 "Giovanni Giuriati"
+ITA_Gabriele_D_Annunzio_hog_val:0 "Gabrielle D'Annunzio"
+
 ### Ministers ###
 ITA_Giuseppe_Saragat_for_hog:0 "Giuseppe Saragat"
 Giuseppe_Saragat_dead:0 " is incapable of holding any posts."
