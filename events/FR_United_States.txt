@@ -1061,8 +1061,10 @@ country_event = { # Collapse of the Union
     option = {
         name = usa.106.a
         add_ideas = USA_anarchy_and_chaos
+        set_country_flag = USA_enable_emergency_government
         set_cosmetic_tag = USA_federal
         hidden_effect = {
+            load_focus_tree = usa_emergency_focus
             country_event = { id = usa.107 days = 3 }
         }
     }
