@@ -16,7 +16,7 @@ foreign_politics = {
     USA_whitepeace_mexico = {
         icon = GFX_decision_generic_political_discourse
         cost = 50
-        allowed = { original_tag = MEX }
+        allowed = { original_tag = USA }
         available = {
             has_war_with = MEX
             MEX = {

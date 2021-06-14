@@ -722,7 +722,7 @@ country_event = { # Surrender to Mexico
         transfer_state = 927 # Northern California
         transfer_state = 928 # Southern California
         hidden_effect = {
-            USA = { country_event = usa.100 days = 14 }
+            USA = { country_event = { id = usa.100 days = 14 } }
         }
     }
     option = {
@@ -858,7 +858,7 @@ country_event = { # Internal Political Turmoil
     option = {
         name = usa.101.a
         hidden_effect = {
-            country_event = { id = 102 days = 3 }
+            country_event = { id = usa.102 days = 3 }
         }
     }
 }
@@ -1045,7 +1045,7 @@ country_event = { # UK Seizes Cascadia, Puerto Rico, Alaska
     option = {
         name = usa.105.a
         hidden_effect = {
-            country_event = { usa.106 hours = 12 }
+            country_event = { id = usa.106 hours = 12 }
             PAN = { country_event = { id = usa.108 hours = 12 } }
             ENG = { country_event = { id = usa.110 days = 2 } }
         }
@@ -1066,6 +1066,7 @@ country_event = { # Collapse of the Union
         hidden_effect = {
             load_focus_tree = usa_emergency_focus
             country_event = { id = usa.107 days = 3 }
+            news_event = news.9
         }
     }
 }

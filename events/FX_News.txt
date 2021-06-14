@@ -117,3 +117,14 @@ news_event = {
 		name = news.8.b
 	}
 }
+
+news_event = { # Collapse of the United States
+    id = news.9
+    title = news.9.t
+    desc = news.9.d
+    picture = GFX_news_event_PHI_manila_uprising
+    major = yes
+    is_triggered_only = yes
+    show_major = { NOT = { tag = USA } }
+    option = { name = news.9.a }
+}

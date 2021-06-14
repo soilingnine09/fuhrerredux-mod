@@ -7679,6 +7679,7 @@ country_event = {
     trigger = {
         NOT = {
             tag = HON
+            tag = GUA
             has_country_flag = HON_OCCUPIED
             country_exists = HON
         }

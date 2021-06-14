@@ -21,13 +21,12 @@ country_event = {
         name = guatemala.1.a
         ai_chance = { factor = 100 }
         GUA = {
-        annex_country = { target = HON }
-        every_owned_state = {
-            limit = {
-                NOT = { is_core_of = GUA }
-                OR = { is_core_of = HON }
-            }
-            add_core_of = ROOT
+            annex_country = { target = HON }
+            every_owned_state = {
+                limit = {
+                    OR = { is_core_of = HON }
+                }
+                ROOT = { add_state_core = PREV }
             }
         }
         set_cosmetic_tag = GUA_centroamerica

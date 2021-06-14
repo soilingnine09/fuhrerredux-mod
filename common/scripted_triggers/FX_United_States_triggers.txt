@@ -33,23 +33,5 @@ USA_mexican_disaster_happened = {
             country_exists = RBL
             country_exists = CAS
         }
-        MEX = {
-            owns_state = 484
-            owns_state = 743
-            owns_state = 378
-            owns_state = 930
-            owns_state = 928
-            owns_state = 923
-            owns_state = 922
-            owns_state = 921
-            owns_state = 375
-            owns_state = 919
-            owns_state = 377
-            owns_state = 376
-            owns_state = 920
-            owns_state = 926
-            owns_state = 925
-            owns_state = 929
-        }
     }
 }
