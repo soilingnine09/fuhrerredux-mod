@@ -197,9 +197,10 @@ country_event = { # Fate of the PPI
 			long_name = "Partito Socialista Democratico Italiano"
 			name = "PSDI"
 		}
+		remove_every_minister = yes
 		add_ideas = {
 			ITA_Alcide_De_Gasperi_hog_sco
-			ITA_Giuseppe_Micheli_for_sco
+			ITA_Giuseppe_Pella_for_sco
 			ITA_Giovanni_Gronchi_eco_sco
 			ITA_Giovanni_Uberti_sec_sco
 		}
@@ -1190,11 +1191,12 @@ country_event = { # Commies win
 				}
 				news_event = { id = itanews.20 } 
 			}
+			remove_every_minister = yes
 			add_ideas = {
-				ITA_Antonio_Gramsci_hog_int
-				ITA_Angelo_Tasca_for_int
-				ITA_Antonio_Graziadei_eco_int
-				ITA_Umberto_Terracini_sec_col
+				ITA_Antonio_Gramsci_hog_col
+				ITA_Vincenzo_Vacirca_for_col
+				ITA_Alceste_De_Ambris_eco_col
+				ITA_Vittorio_Vidali_sec_col
 			}	
 		}
 	}
@@ -1267,11 +1269,12 @@ country_event = { # Commies win
 				}
 				news_event = { id = itanews.20 } 
 			}
+			remove_every_minister = yes
 			add_ideas = {
-				SRI_Pietro_Nenni_for_syn
-				ITA_Umberto_Marzocchi_for_lis
-				ITA_Carlo_Tresca_eco_lis
-				ITA_Armando_Borghi_sec_lis
+				ITA_Pietro_Nenni_hog_lib
+				ITA_Altiero_Spinelli_for_lib
+				ITA_Achille_Grandi_eco_lib
+				ITA_Francesco_De_Martino_sec_lib
 			}
 		}
 	}
@@ -1346,11 +1349,12 @@ country_event = { # Soc Dem win
 			limit = {
 				has_completed_focus = ITA_conservative_ppi
 			}
+			remove_every_minister = yes
 			add_ideas = {
-				ITA_Giuseppe_Saragat_for_hog
-				ITA_Ivan_Matteo_Lombardo_for_sde
+				ITA_Giuseppe_Saragat_hog_sde
+				ITA_Paolo_Treves_for_sde
 				ITA_Giuseppe_Romita_eco_sde
-				ITA_Carlo_Rossell_sec_sde
+				ITA_Enrico_Mole_sec_sde
 			}
 		}
 	}
@@ -1428,7 +1432,7 @@ country_event = { # liberal win
 			}
 			add_ideas = {
 				ITA_Luigi_Einaudi_hog_mli
-				ITA_Nicolo_Carandini_for_mli
+				ITA_Manlio_Brosio_for_mli
 				ITA_Marcello_Soleri_eco_mli
 				ITA_Manlio_Brosio_sec_mli
 			}
@@ -1513,9 +1517,10 @@ country_event = { # conservative win
 				}
 				news_event = { id = itanews.20 } 
 			}
+			remove_every_minister = yes
 			add_ideas = {
 				ITA_Alcide_De_Gasperi_hog_sco
-				ITA_Giuseppe_Micheli_for_sco
+				ITA_Giuseppe_Pella_for_sco
 				ITA_Giovanni_Gronchi_eco_sco
 				ITA_Giovanni_Uberti_sec_sco
 			}
@@ -1604,11 +1609,10 @@ country_event = { # nationalist win
 				news_event = { id = itanews.20 } 
 			}
 			add_ideas = {
-				#ITA_Giovanni_Giuriati_hog_npo
-				ITA_Gabriele_Annunzio_hog_val
-				SRI_Sergio_Panunzio_for_tot
-				SRI_Edmondo_Rossoni_eco_tot
-				SRI_Luigi_Razza_sec_tot
+				ITA_Gabriele_D_Annunzio_hog_val
+				ITA_Giacomo_Acerbo_for_val
+				ITA_Edmondo_Rossoni_eco_val
+				ITA_Luigi_Razza_sec_val
 			}
 		}
 	}
@@ -1653,8 +1657,9 @@ country_event = { # nationalist win
 				}
 				news_event = { id = itanews.20 } 
 			}
+			remove_every_minister = yes
 			add_ideas = {
-				ITA_Italo_Balbo_hog_val
+				ITA_Italo_Balbo_hog_npo
 				ITA_Dino_Alfieri_for_npo
 				ITA_Giuseppe_Volpi_eco_npo
 				ITA_Alessandro_Pavolini_sec_npo
@@ -1790,21 +1795,13 @@ country_event = { # Italian Civil War - Commies
 				add_war_support = -0.1
 				set_cosmetic_tag = PIE_socialist
 				add_ideas = {
-					ITA_Palmiro_Togliatti_hog_int
-					ITA_Bruno_Fortichiari_for_int
-					ITA_Mario_Montagnana_eco_int
-					ITA_Ruggero_Grieco_sec_int
+					GEN_hog_van
+					GEN_for_van
+					GEN_eco_van
+					GEN_sec_van
 					revolutionary_movement
 				}
 				set_capital = 159
-				every_state = {
-					limit = {
-						is_core_of = ITA
-					}
-					THIS = {
-						
-					}
-				}
 				add_popularity = {
 					ideology = vanguardist
 					popularity = 0.4
@@ -1869,10 +1866,10 @@ country_event = { # Italian Civil War - Nationalists
 			hidden_effect = {
 				set_cosmetic_tag = SCI_nationalist
 				add_ideas = {
-					ITA_Giovanni_Giuriati_hog_npo
-					SRI_Sergio_Panunzio_for_tot
-					SRI_Edmondo_Rossoni_eco_tot
-					SRI_Luigi_Razza_sec_tot
+					GEN_hog_npo
+					GEN_for_val
+					GEN_eco_val
+					GEN_sec_val
 					revolutionary_movement
 				}
 				set_capital = 117
@@ -2845,7 +2842,7 @@ country_event = { # Forming government - foreign minister
 		}	
 		name = ita.50.a
 		add_ideas = {
-			ITA_Angelo_Tasca_for_int
+			ITA_Sergio_Panunzio_for_van
 		}	
 		add_stability = 0.05
 	}
@@ -2862,7 +2859,7 @@ country_event = { # Forming government - foreign minister
 		}	
 		name = ita.50.b
 		add_ideas = {
-			ITA_Umberto_Marzocchi_for_lis
+			ITA_Altiero_Spinelli_for_lib
 		}
 		add_stability = 0.05
 	}
@@ -2879,10 +2876,10 @@ country_event = { # Forming government - foreign minister
 			limit = {
 				has_completed_focus = ITA_conservative_ppi
 			}
-			add_ideas = ITA_Ivan_Matteo_Lombardo_for_sde
+			add_ideas = ITA_Nicolo_Carandini_for_sde
 		}
 		else = {
-			add_ideas = SIC_Gaetano_Martino_for_sde
+			add_ideas = ITA_Gaetano_Martino_for_sde
 		}
 		add_stability = 0.05
 	}
@@ -2896,7 +2893,7 @@ country_event = { # Forming government - foreign minister
 		}	
 		name = ita.50.e
 		add_ideas = {
-			ITA_Nicolo_Carandini_for_mli
+			ITA_Manlio_Brosio_for_mli
 		}
 		add_stability = 0.05
 	}
@@ -2909,7 +2906,7 @@ country_event = { # Forming government - foreign minister
 			}
 		}	
 		name = ita.50.f
-		add_ideas = ITA_Giuseppe_Micheli_for_sco
+		add_ideas = ITA_Giuseppe_Pella_for_sco
 		add_stability = 0.05
 	}
 	
@@ -2942,7 +2939,7 @@ country_event = { # Forming government - foreign minister
 		}	
 		name = ita.50.h
 		add_ideas = {
-			SRI_Sergio_Panunzio_for_tot
+			ITA_Giacomo_Acerbo_for_val
 		}
 		add_stability = 0.05
 	}
@@ -3035,7 +3032,7 @@ country_event = { # Forming government - economic minister
 		}	
 		name = ita.51.a
 		add_ideas = {
-			ITA_Antonio_Graziadei_eco_int
+			ITA_Alceste_De_Ambris_eco_col
 		}	
 		add_stability = 0.05
 	}
@@ -3052,7 +3049,7 @@ country_event = { # Forming government - economic minister
 		}	
 		name = ita.51.b
 		add_ideas = {
-			ITA_Carlo_Tresca_eco_lis
+			ITA_Achille_Grandi_eco_lib
 		}
 		add_stability = 0.05
 	}
@@ -3072,7 +3069,7 @@ country_event = { # Forming government - economic minister
 			add_ideas = ITA_Giuseppe_Romita_eco_sde
 		}
 		else = {
-			add_ideas = SIC_Rocco_Gullo_eco_sde
+			add_ideas = ITA_Rocco_Gullo_eco_sde
 		}
 		add_stability = 0.05
 	}
@@ -3132,7 +3129,7 @@ country_event = { # Forming government - economic minister
 		}	
 		name = ita.51.h
 		add_ideas = {
-			SRI_Edmondo_Rossoni_eco_tot
+			ITA_Edmondo_Rossoni_eco_val
 		}
 		add_stability = 0.05
 	}
@@ -3225,7 +3222,7 @@ country_event = { # Forming government - economic minister
 		}	
 		name = ita.52.a
 		add_ideas = {
-			ITA_Umberto_Terracini_sec_col
+			ITA_Vittorio_Vidali_sec_col
 		}	
 		add_stability = 0.05
 	}
@@ -3242,7 +3239,7 @@ country_event = { # Forming government - economic minister
 		}	
 		name = ita.52.b
 		add_ideas = {
-			ITA_Armando_Borghi_sec_lis
+			ITA_Francesco_De_Martino_sec_lib
 		}
 		add_stability = 0.05
 	}
@@ -3255,15 +3252,8 @@ country_event = { # Forming government - economic minister
 			}
 		}	
 		name = ita.52.c
-		if = {
-			limit = {
-				has_completed_focus = ITA_conservative_ppi
-			}
-			add_ideas = ITA_Carlo_Rossell_sec_sde
-		}
-		else = {
-			add_ideas = SIC_Enrico_Mole_sec_sde
-		}
+		
+		add_ideas = ITA_Enrico_Mole_sec_sde
 		add_stability = 0.05
 	}
 	
@@ -3322,7 +3312,7 @@ country_event = { # Forming government - economic minister
 		}	
 		name = ita.52.h
 		add_ideas = {
-			SRI_Luigi_Razza_sec_tot
+			ITA_Luigi_Razza_sec_val
 		}
 		add_stability = 0.05
 	}
@@ -15103,10 +15093,10 @@ country_event = { # Fate of the Left
 		}
 		
 		add_ideas = {
-			ITA_Palmiro_Togliatti_hog_int
-			ITA_Bruno_Fortichiari_for_int
-			ITA_Mario_Montagnana_eco_int
-			ITA_Ruggero_Grieco_sec_int
+			ITA_Palmiro_Togliatti_hog_van
+			ITA_Sergio_Panunzio_for_van
+			ITA_Nicola_Bombacci_eco_van
+			ITA_Ruggiero_Grieco_sec_van
 			one_party_dictatorship
 		}		
 			
@@ -15155,10 +15145,10 @@ country_event = { # Fate of the Left
 		}
 
 		add_ideas = {
-			ITA_Antonio_Gramsci_hog_int
-			ITA_Angelo_Tasca_for_int
-			ITA_Antonio_Graziadei_eco_int
-			ITA_Umberto_Terracini_sec_col
+			ITA_Antonio_Gramsci_hog_col
+			ITA_Vincenzo_Vacirca_for_col
+			ITA_Alceste_De_Ambris_eco_col
+			ITA_Vittorio_Vidali_sec_col
 			workers_republic
 		}		
 			
@@ -15206,10 +15196,10 @@ country_event = { # Fate of the Left
 		}
 		
 		add_ideas = {
-			ITA_Antonio_Gramsci_hog_int
-			ITA_Angelo_Tasca_for_int
-			ITA_Antonio_Graziadei_eco_int
-			ITA_Umberto_Terracini_sec_col
+			ITA_Antonio_Gramsci_hog_col
+			ITA_Vincenzo_Vacirca_for_col
+			ITA_Alceste_De_Ambris_eco_col
+			ITA_Vittorio_Vidali_sec_col
 			workers_republic
 		}	
 			
@@ -15245,10 +15235,10 @@ country_event = { # Fate of the Left
 		}
 		
 		add_ideas = {
-			SRI_Pietro_Nenni_for_syn
-			ITA_Umberto_Marzocchi_for_lis
-			ITA_Carlo_Tresca_eco_lis
-			ITA_Armando_Borghi_sec_lis
+			ITA_Giacomo_Matteotti_hog_lib
+			ITA_Altiero_Spinelli_for_lib
+			ITA_Achille_Grandi_eco_lib
+			ITA_Francesco_De_Martino_sec_lib
 		}
 	}
 	
@@ -15265,10 +15255,10 @@ country_event = { # Fate of the Left
 		}
 		
 		add_ideas = {
-			SRI_Pietro_Nenni_for_syn
-			ITA_Umberto_Marzocchi_for_lis
-			ITA_Carlo_Tresca_eco_lis
-			ITA_Armando_Borghi_sec_lis
+			ITA_Pietro_Nenni_hog_lib
+			ITA_Altiero_Spinelli_for_lib
+			ITA_Achille_Grandi_eco_lib
+			ITA_Francesco_De_Martino_sec_lib
 		}
 	}
 }
@@ -15783,7 +15773,7 @@ country_event = { #Italy - Pick Nat Pops or Valkists
 		}
 		hidden_effect = {
 			add_ideas = {
-				ITA_Italo_Balbo_hog_val
+				ITA_Italo_Balbo_hog_npo
 				ITA_Dino_Alfieri_for_npo
 				ITA_Giuseppe_Volpi_eco_npo
 				ITA_Alessandro_Pavolini_sec_npo
@@ -15813,9 +15803,9 @@ country_event = { #Italy - Pick Nat Pops or Valkists
 		hidden_effect = {
 			add_ideas = {
 				ITA_Gabriele_Annunzio_hog_val
-				SRI_Sergio_Panunzio_for_tot
-				SRI_Edmondo_Rossoni_eco_tot
-				SRI_Luigi_Razza_sec_tot
+				ITA_Giacomo_Acerbo_for_val
+				ITA_Edmondo_Rossoni_eco_val
+				ITA_Luigi_Razza_sec_val
 			}
 		}
 	}	

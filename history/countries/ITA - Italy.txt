@@ -21,10 +21,11 @@ add_ideas = {
 	ITA_political_radicalization
 	ITA_ppi_stagnation
 	GEN_entente_leader
-	ITA_Don_Luigi_Sturzo_hog_sco
-	SIC_Gaetano_Martino_for_sde
-	SIC_Rocco_Gullo_eco_sde
-	SIC_Enrico_Mole_sec_sde
+
+	ITA_Don_Luigi_Sturzo_hog_sde
+	ITA_Gaetano_Martino_for_sde
+	ITA_Rocco_Gullo_eco_sde
+	ITA_Enrico_Mole_sec_sde
 	
 	constitutional_monarchy
 }

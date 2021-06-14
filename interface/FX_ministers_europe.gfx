@@ -8,7 +8,7 @@ spriteTypes = {
 	### Head of Government
 	spriteType = {
 		name = "GFX_idea_ITA_Palmiro_Togliatti_hog_van"
-		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Palmiro_Togliatti.tga"
+		texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 	}
 	spriteType = {
 		name = "GFX_idea_ITA_Antonio_Gramsci_hog_col"
@@ -63,8 +63,232 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Giovanni_Giuriati.tga"
 	}
 	spriteType = {
-		name = "GFX_idea_ITA_Gabriele_D_Annunzio_hog_val"
-		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Gabriele_D_Annunzio.tga"
+		name = "GFX_idea_ITA_Gabrielle_D_Annunzio_hog_val"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Gabrielle_D_Annunzio.tga"
+	}
+	### Foreign Minister
+	spriteType = {
+		name = "GFX_idea_ITA_Sergio_Panunzio_for_van"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Sergio_Panunzio.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Vincenzo_Vacirca_for_col"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Vincenzo_Vacirca.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Altiero_Spinelli_for_lib"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Altiero_Spinelli.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Gaetano_Martino_for_sde"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Gaetano_Martino.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Paolo_Treves_for_sde"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Paolo_Treves.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Nicolo_Carandini_for_sde"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Nicolo_Carandini.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Manlio_Brosio_for_mli"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Manlio_Brosio.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Giuseppe_Pella_for_sco"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Giuseppe_Pella.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Raffaele_Guariglia_for_ade"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Raffaele_Guariglia.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Amadeo_di_Savoia_Aosta_for_pau"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Amadeo_di_Savoia_Aosta.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Dino_Alfieri_for_npo"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Dino_Alfieri.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Giacomo_Acerbo_for_val"
+		texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+	}
+	### Economy Minister
+	spriteType = {
+		name = "GFX_idea_ITA_Nicola_Bombacci_eco_van"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Nicola_Bombacci.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Alceste_De_Ambris_eco_col"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Alceste_De_Ambris.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Achille_Grandi_eco_lib"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Achille_Grandi.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Giuseppe_Romita_eco_sde"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Giuseppe_Romita.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Rocco_Gullo_eco_sde"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Rocco_Gullo.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Piero_Calamandrei_eco_sli"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Piero_Calamandrei.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Marcello_Soleri_eco_mli"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Marcello_Soleri.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Giovanni_Gronchi_eco_sco"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Giovanni_Gronchi.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Antonio_Mosconi_eco_ade"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Antonio_Mosconi.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Alfredo_Covelli_eco_pau"
+		texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Giuseppe_Volpi_eco_npo"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Giuseppe_Volpi.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Edmondo_Rossoni_eco_val"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Edmondo_Rossoni.tga"
+	}
+	### Security Minister
+	spriteType = {
+		name = "GFX_idea_ITA_Ruggiero_Grieco_sec_van"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Ruggiero_Grieco.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Vittorio_Vidali_sec_col"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Vittorio_Vidali.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Francesco_De_Martino_sec_lib"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Francesco_De_Martino.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Enrico_Mole_sec_sde"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Enrico_Mole.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Pietro_Mastino_sec_sli"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Pietro_Mastino.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Manlio_Brosio_sec_mli"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Manlio_Brosio.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Giovanni_Uberti_sec_sco"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Giovanni_Uberti.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Giacomo_Carboni_sec_ade"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Giacomo_Carboni.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Luigi_Arborio_Mella_di_Sant'Elia_sec_pau"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Luigi_Arborio_Mella_di_Sant'Elia.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Alessandro_Pavolini_sec_npo"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Alessandro_Pavolini.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Luigi_Razza_sec_val"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Luigi_Razza.tga"
+	}
+	### Chief of Staff
+	spriteType = {
+		name = "GFX_idea_ITA_Mario_Roatta_cos"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Mario_Roatta.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Vittorio_Ambrosio_cos"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Vittorio_Ambrosio.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Alfredo_Guzzoni_cos"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Alfredo_Guzzoni.tga"
+	}
+	### Chief of Army
+	spriteType = {
+		name = "GFX_idea_ITA_Pietro_Badoglio_carm"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Pietro_Badoglio.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Ugo_Cavallero_carm"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Ugo_Cavallero.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Emilio_de_Bono_carm"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Emilio_de_Bono.tga"
+	}
+	### Chief of Navy
+	spriteType = {
+		name = "GFX_idea_ITA_Domenico_Cavagnari_cnav"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Domenico_Cavagnari.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Arturo_Riccardi_cnav"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Arturo_Riccardi.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Inigo_Campioni_cnav"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Inigo_Campioni.tga"
+	}
+	### Chief of Air Force
+	spriteType = {
+		name = "GFX_idea_ITA_Italo_Balbo_cair"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Italo_Balbo.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Rino_Corso_Fougier_cair"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Rino_Corso_Fougier.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Francesco_Pricolo_cair"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Francesco_Pricolo.tga"
+	}
+	### Theorist
+	spriteType = {
+		name = "GFX_idea_ITA_Giovanni_Messe_theo"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Giovanni_Messe.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Rodolfo_Graziani_theo"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Rodolfo_Graziani.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Arturo_Riccardi_theo"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Arturo_Riccardi.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Angelo_Iachino_theo"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Angelo_Iachino.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Amedeo_Mecozzi_theo"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Amedeo_Mecozzi.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Renato_Sandalli_theo"
+		texturefile = "gfx/interface/ideas/ITA/ministers/ITA_Renato_Sandalli.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_Gaetano_Crocco_theo"
+		texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
 	}
 	
 	####################################################

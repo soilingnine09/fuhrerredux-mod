@@ -5367,7 +5367,7 @@ focus_tree = {
 	# Revoke the Legality of Strikes
 	focus = {
 		id = fra_illegal_strikes
-		icon = GFX_goal_anti_comintern_pact
+		icon = GFX_goal_generic_crush_unions
 		x = -4
 		y = 1
 		cost = 5
