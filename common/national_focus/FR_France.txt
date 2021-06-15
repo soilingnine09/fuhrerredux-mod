@@ -4894,6 +4894,7 @@ focus_tree = {
 		icon = GFX_goal_Catholic_France
 		x = 25
 		y = 8
+		cost = 5
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = unlocked_later
