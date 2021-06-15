@@ -889,7 +889,7 @@ focus = {
 }
 focus = {
 	id = ukr_rada_nationalist
-	icon = GFX_focus_generic_support_the_left_right
+	icon = GFX_goal_ideology_national_populist
 	cost = 5
 	x = 29
 	y = 1
@@ -914,7 +914,7 @@ focus = {
 }
 focus = {
 	id = ukr_rada_junta
-	icon = GFX_focus_generic_tank_production
+	icon = GFX_goal_ideology_paternal_autocrat
 	cost = 5
 	x = 23
 	y = 1
@@ -939,7 +939,7 @@ focus = {
 }
 focus = {
 	id = ukr_rada_democratic
-	icon = GFX_focus_generic_treaty
+	icon = GFX_goal_ideology_market_liberal
 	cost = 5
 	x = 35
 	y = 1
@@ -964,7 +964,7 @@ focus = {
 }
 focus = {
 	id = ukr_rada_socialist
-	icon = GFX_focus_generic_soviet_politics
+	icon = GFX_goal_ideology_social_democrat
 	cost = 5
 	x = 41
 	y = 1
@@ -1013,7 +1013,7 @@ focus = {
 }
 focus = {
 	id = ukr_junta_german_economy
-	icon = GFX_goal_generic_intelligence_exchange
+	icon = GFX_goal_germany
 	cost = 5
 	x = 23
 	y = 3
@@ -1043,7 +1043,7 @@ focus = {
 }
 focus = {
 	id = ukr_junta_widescale_reforms
-	icon = GFX_goal_generic_forceful_treaty
+	icon = GFX_goal_COS_Ferrer_Coup
 	cost = 5
 	x = 23
 	y = 4
@@ -1109,7 +1109,7 @@ focus = {
 }
 focus = {
 	id = ukr_junta_destroy_commies
-	icon = GFX_goal_generic_war_with_comintern
+	icon = GFX_goal_anti_comintern_pact
 	cost = 5
 	x = 21
 	y = 4
@@ -1188,7 +1188,7 @@ focus = {
 }
 focus = {
 	id = ukr_junta_puppet_rada
-	icon = GFX_focus_generic_self_management
+	icon = GFX_goal_DEI_focus_disband_volksraad
 	cost = 5
 	x = 25
 	y = 4
@@ -1257,7 +1257,7 @@ focus = {
 ########################
 focus = {
 	id = ukr_nat_purge_reds
-	icon = GFX_goal_generic_war_with_comintern
+	icon = GFX_goal_backstab
 	cost = 5
 	x = 27
 	y = 2
@@ -1305,7 +1305,7 @@ focus = {
 }
 focus = {
 	id = ukr_nat_centralize
-	icon = GFX_focus_generic_self_management
+	icon = GFX_goal_Centralised_Government
 	cost = 5
 	x = 31
 	y = 2
@@ -1417,7 +1417,7 @@ focus = {
 }
 focus = {
 	id = ukr_nat_secret_police
-	icon = GFX_goal_generic_major_war
+	icon = GFX_goal_secret_agents
 	cost = 5
 	x = 29
 	y = 4
@@ -1502,7 +1502,7 @@ focus = {
 #######################
 focus = {
 	id = ukr_demo_voting_reform
-	icon = GFX_focus_generic_treaty
+	icon = GFX_goal_government_icon
 	cost = 5
 	x = 33
 	y = 2
@@ -1522,7 +1522,7 @@ focus = {
 }
 focus = {
 	id = ukr_demo_farming_help
-	icon = GFX_focus_generic_the_giant_wakes
+	icon = GFX_DAH_Topke
 	cost = 5
 	x = 35
 	y = 2
@@ -1577,7 +1577,7 @@ focus = {
 }
 focus = {
 	id = ukr_demo_public_works
-	icon = GFX_goal_generic_consumer_goods
+	icon = GFX_goal_generic_construction
 	cost = 5
 	x = 34
 	y = 3
@@ -1651,7 +1651,7 @@ focus = {
 }
 focus = {
 	id = ukr_demo_ukraine_language
-	icon = GFX_goal_generic_demand_territory
+	icon = GFX_goal_ukraine
 	cost = 5
 	x = 33
 	y = 4
@@ -1681,7 +1681,7 @@ focus = {
 }
 focus = {
 	id = ukr_demo_farming_innovation
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_goal_agriculture
 	cost = 5
 	x = 35
 	y = 4
@@ -1704,7 +1704,7 @@ focus = {
 }
 focus = {
 	id = ukr_demo_farm_union
-	icon = GFX_goal_generic_national_unity
+	icon = GFX_goal_revolution_tools
 	cost = 5
 	x = 37
 	y = 4
@@ -1732,7 +1732,7 @@ focus = {
 }
 focus = {
 	id = ukr_demo_british_pact
-	icon = GFX_goal_anschluss
+	icon = GFX_focus_chi_british_cooperation
 	cost = 5
 	x = 34
 	y = 5
@@ -1763,7 +1763,7 @@ focus = {
 }
 focus = {
 	id = ukr_demo_french_pact
-	icon = GFX_goal_anschluss
+	icon = GFX_focus_chi_reach_out_to_france
 	cost = 5
 	x = 36
 	y = 5
@@ -1794,7 +1794,7 @@ focus = {
 }
 focus = {
 	id = ukr_demo_bastion
-	icon = GFX_focus_generic_support_the_left_right
+	icon = GFX_goal_liberty
 	cost = 5
 	x = 35
 	y = 6
@@ -1879,7 +1879,7 @@ focus = {
 }
 focus = {
 	id = ukr_soc_farm_money
-	icon = GFX_goal_generic_intelligence_exchange
+	icon = GFX_focus_AUS_agriculture
 	cost = 5
 	x = 39
 	y = 3
@@ -1899,7 +1899,7 @@ focus = {
 }
 focus = {
 	id = ukr_soc_purge_right
-	icon = GFX_goal_generic_major_war
+	icon = GFX_goal_step_on_skull
 	cost = 5
 	x = 41
 	y = 3
@@ -2011,7 +2011,7 @@ focus = {
 }
 focus = {
 	id = ukr_soc_socialist_haven
-	icon = GFX_goal_generic_soviet_construction
+	icon = GFX_goal_great_science
 	cost = 5
 	x = 40
 	y = 5
@@ -2035,7 +2035,7 @@ focus = {
 }
 focus = {
 	id = ukr_soc_russian_pact
-	icon = GFX_goal_support_communism
+	icon = GFX_goal_tripartite_pact
 	cost = 5
 	x = 42
 	y = 5
@@ -2064,7 +2064,7 @@ focus = {
 }
 focus = {
 	id = ukr_soc_socialist_republic
-	icon = GFX_goal_support_communism
+	icon = GFX_goal_red_star_green_wreath
 	cost = 5
 	x = 41
 	y = 6

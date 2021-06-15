@@ -216,7 +216,6 @@ PHR_valkist_party_long:0 "Lapiang Sakdalista"
 PHI_economic_investment:0 "Provided Economic Investments"
 PHI_trade_treaty_accepted:0 "Trade Treaty Accepted"
 PHI_trade_treaty_refused:0 "Trade Treaty Refused"
-PHI_aid_accepted:0 "Provided Aid"
 PHI_diplomatic_mission:0 "Diplomatic Mission"
 
 ### Decisions

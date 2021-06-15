@@ -8,7 +8,7 @@ OTHER_FUHRERREDUX_DESC:0 "It is 1936, and the world is on a brink of a new, inev
 
 ### Intro Screen
 FX_SPLASH_TITLE:0 "Welcome to Fuhrerredux"
-FX_SPLASH_CREDITS:0 "§YBrought to you by the FX Team:§!\ndax0102, Todd Howard, Captain Kaiczer, dhdjk, alden102, AmCath, and Lextzo.\n\n§YCredits to the FR Team:§!\nDarknight1342, Jespertjee, Trimeon, Drowse, Spocklan116, Steffplays123, Arser, Kalmoire, Kaiserman, LuxLoser, Milekhippy, Terran117, Freidrich von Omansich, Kano901, Raptor Jesus, Hellbat, Santander, JacNoLie, Bern, Jeanne bim Rolterstard-Würfsache, and LoneTechWolf."
+FX_SPLASH_CREDITS:0 "§YBrought to you by the FX Team:§!\ndax, Todd Howard, Captain Kaiczer, Dej, alden102, AmCath, Lextzo, BobRossHD, AmCath, JoeBidenWhatAreYouHiding, David Lu, NeitHof, Aureum, Murphy, Log, and El Raymondo.\n\n\n§CCredits and a big thank you to the FR and KR Teams."
 
 ### Intro Event
 intro.1.t:0 "Führerredux Build 0.1.0"
@@ -60,17 +60,17 @@ national_populist_noun:0 "National Populism"
 valkist_noun:0 "Valkism"
 
 ### Ideology Desc
-vanguardist_desc:0 "National Collectivist"
-collectivist_desc:0 "Socialist"
-libertarian_socialist_desc:0 "Libertarian"
-social_democrat_desc:0 "Social Democrat"
-social_liberal_desc:0 "Social Liberal"
-market_liberal_desc:0 "Market Liberal"
-social_conservative_desc:0 "Social Conservative"
-authoritarian_democrat_desc:0 "Authoritarian Democrat"
-paternal_autocrat_desc:0 "Paternal Autocrat"
-national_populist_desc:0 "National Populist"
-valkist_desc:0 "Valkist"
+vanguardist_desc:0 "Revolutionary"
+collectivist_desc:0 "Revolutionary"
+libertarian_socialist_desc:0 "Revolutionary"
+social_democrat_desc:0 "Democratic-Elected"
+social_liberal_desc:0 "Democratic-Elected"
+market_liberal_desc:0 "Democratic-Elected"
+social_conservative_desc:0 "Democratic-Elected"
+authoritarian_democrat_desc:0 "Authoritarian"
+paternal_autocrat_desc:0 "Authoritarian"
+national_populist_desc:0 "Dictatorial"
+valkist_desc:0 "Dictatorial"
 
 ### Ideology Drift
 vanguardist_drift:0 "Daily National Collectivist support"

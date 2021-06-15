@@ -15883,9 +15883,9 @@ country_event = {
 					has_government = paternal_autocrat
 				}
 				create_country_leader = { 
-					name = "H.R.H. George I" 
+					name = "George I" 
 					desc = "POLITICS_GEORGE_I_DESC" 
-					picture = "gfx/leaders/ENG/Portrait_ITP_George.tga" 
+					picture = "gfx/leaders/ENG/Portrait_Britain_George_VI.tga" 
 					expire = "1965.1.1" 
 					ideology = paternal_autocrat_subtype
 				}
@@ -15898,7 +15898,7 @@ country_event = {
 				add_popularity = { ideology = authoritarian_democrat popularity = 0.2 }
 				create_country_leader = { 
 					name = "Military Administration" 
-					desc = "POLITICS_GEORGE_I_DESC" 
+					desc = "POLITICS_MILITARY_ADMINISTRATION_DESC" 
 					picture = "gfx/leaders/USA/Portrait_USA_Council_of_Patriots.tga" 
 					expire = "1965.1.1" 
 					ideology = authoritarian_democrat_subtype
@@ -15929,9 +15929,9 @@ country_event = {
 		ITP = {
 			set_cosmetic_tag = ENG_ITP
 			create_country_leader = { 
-				name = "H.R.H. George I" 
+				name = "George I" 
 				desc = "POLITICS_GEORGE_I_DESC" 
-				picture = "gfx/leaders/ENG/Portrait_ITP_George.tga" 
+				picture = "gfx/leaders/ENG/Portrait_Britain_George_VI.tga" 
 				expire = "1965.1.1" 
 				ideology = paternal_autocrat_subtype
 			}

@@ -407,14 +407,13 @@ country_event {
 			ideology = social_liberal popularity = 0.10
 		}
 		add_political_power = 10
-		remove_ideas_with_trait = head_of_government
-		remove_ideas_with_trait = foreign_minister
-		remove_ideas_with_trait = economy_minister
-		remove_ideas_with_trait = security_minister
-		add_ideas = NOR_Jacob_Stenersen_Worm_Muller_hog_sli
-		add_ideas = NOR_Halvard_Lange_for_sde
-		add_ideas = NOR_Gunnar_Jahn_eco_sli
-		add_ideas = NOR_Arne_Sunde_sec_sli
+		remove_every_minister = yes
+		add_ideas = {
+			NOR_Haakon_Five_hog_sli
+			NOR_Jacob_Worm_Mueller_for_sli
+			NOR_Jens_Isak_Kobro_eco_sli
+			NOR_Arne_Sunde_sec_sli
+		}
 		
 		remove_ideas = NOR_socialism_surrounded_idea
 		remove_ideas = NOR_monarchist_right_idea
@@ -455,14 +454,13 @@ country_event {
 			ideology = social_conservative popularity = 0.05
 		}
 		add_political_power = 10
-		remove_ideas_with_trait = head_of_government
-		remove_ideas_with_trait = foreign_minister
-		remove_ideas_with_trait = economy_minister
-		remove_ideas_with_trait = security_minister
-		add_ideas = NOR_Carl_Joachim_Hambro_hog_mli
-		add_ideas = NOR_Ivar_Lykke_for_mli
-		add_ideas = NOR_Jon_Sundby_eco_sco
-		add_ideas = NOR_Johan_Cappelen_sec_mli
+		remove_every_minister = yes
+		add_ideas = {
+			NOR_Carl_Joachim_Hambro_hog_mli
+			NOR_Arne_Scheel_for_mli
+			NOR_Sven_Nielsen_eco_mli
+			NOR_Harald_Gram_sec_mli
+		}
 		
 		remove_ideas = NOR_socialism_surrounded_idea
 		remove_ideas = NOR_monarchist_right_idea
@@ -533,9 +531,15 @@ country_event = {
 		}
 		add_popularity = { ideology = collectivist popularity = 0.08 }
 		add_popularity = { ideology = libertarian_socialist popularity = -0.10 }
-		add_ideas = NOR_Peder_Furubotn_hog_col
-		remove_ideas_with_trait = economy_minister
-		add_ideas = NOR_Axel_Somme_eco_col
+		
+		remove_every_minister = yes
+		add_ideas = {
+			NOR_Konrad_Nordahl_hog_col
+			NOR_Nordahl_Grieg_for_lib
+			NOR_Fredrik_Monsen_eco_col
+			NOR_Alfred_Madsen_sec_lib
+		}
+
 		hidden_effect = {
 			clr_country_flag = coalition_collectivist
 			set_country_flag = coalition_libertarian_socialist
@@ -722,14 +726,13 @@ country_event = {
 		add_popularity = { ideology = paternal_autocrat popularity = 0.05 }
 		add_popularity = { ideology = national_populist popularity = 0.05 }
 		add_popularity = { ideology = valkist popularity = 0.05 }
-		remove_ideas_with_trait = head_of_government
-		remove_ideas_with_trait = foreign_minister
-		remove_ideas_with_trait = economy_minister
-		remove_ideas_with_trait = security_minister
-		add_ideas = NOR_Ragnvald_Hvoslef_hog_pau
-		add_ideas = NOR_Stein_Barth_Heyerdahl_for_val
-		add_ideas = NOR_Jon_Sundby_eco_sco
-		add_ideas = NOR_Ingvald_Maryllus_Emil_Smith_Kielland_sec_npo
+		remove_every_minister = yes
+		add_ideas = {
+			NOR_Karl_Marthinsen_hog_npo
+			NOR_Axel_Stang_for_npo
+			NOR_Tormod_Hustad_eco_npo
+			NOR_Sverre_Riisnaes_sec_npo
+		}
 		
 		remove_ideas = NOR_military_deserters_idea
 		remove_ideas = NOR_naval_deserters_idea
@@ -795,14 +798,13 @@ country_event = {
 		}
 		add_popularity = { ideology = market_liberal popularity = 0.15 }
 		add_popularity = { ideology = social_conservative popularity = 0.05 }
-		remove_ideas_with_trait = head_of_government
-		remove_ideas_with_trait = foreign_minister
-		remove_ideas_with_trait = economy_minister
-		remove_ideas_with_trait = security_minister
-		add_ideas = NOR_Carl_Joachim_Hambro_hog_mli
-		add_ideas = NOR_Ivar_Lykke_for_mli
-		add_ideas = NOR_Jon_Sundby_eco_sco
-		add_ideas = NOR_Anders_Lange_sec_ade
+		remove_every_minister = yes
+		add_ideas = {
+			NOR_Carl_Joachim_Hambro_hog_mli
+			NOR_Arne_Scheel_for_mli
+			NOR_Sven_Nielsen_eco_mli
+			NOR_Harald_Gram_sec_mli
+		}
 		set_country_flag = NOR_hoyre_victory_flag
 		
 		clr_country_flag = coalition_paternal_autocrat
@@ -821,14 +823,13 @@ country_event = {
 			ruling_party = paternal_autocrat elections_allowed = no
 		}
 		add_popularity = { ideology = paternal_autocrat popularity = 0.20 }
-		remove_ideas_with_trait = head_of_government
-		remove_ideas_with_trait = foreign_minister
-		remove_ideas_with_trait = economy_minister
-		remove_ideas_with_trait = security_minister
-		add_ideas = NOR_King_Haakon_VII_hog_npo
-		add_ideas = NOR_Rudolf_Reader_for_npo
-		add_ideas = NOR_Bernt_Holtsmark_eco_npo
-		add_ideas = NOR_Ingvald_Maryllus_Emil_Smith_Kielland_sec_npo
+		remove_every_minister = yes
+		add_ideas = {
+			NOR_Gulbrand_Lunde_hog_pau:
+			NOR_Finn_Stoeren_for_pau
+			NOR_Frederik_Prytz_eco_pau
+			NOR_Per_von_Hirsch_sec_pau
+		}
 		set_country_flag = NOR_monarchist_victory_flag
 		set_cosmetic_tag = NOR_KING
 		remove_ideas = NOR_monarchist_right_idea
@@ -1280,14 +1281,13 @@ country_event = {
 		add_popularity = { ideology = market_liberal popularity = 0.10 }
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.20 }
 		add_popularity = { ideology = paternal_autocrat popularity = -0.20 }
-		remove_ideas_with_trait = head_of_government
-		remove_ideas_with_trait = foreign_minister
-		remove_ideas_with_trait = economy_minister
-		remove_ideas_with_trait = security_minister
-		add_ideas = NOR_Carl_Joachim_Hambro_hog_mli
-		add_ideas = NOR_Birger_Braadland_for_sco
-		add_ideas = NOR_Jon_Sundby_eco_sco
-		add_ideas = NOR_Johan_Cappelen_sec_mli
+		remove_every_minister = yes
+		add_ideas = {
+			NOR_Carl_Joachim_Hambro_hog_mli
+			NOR_Birger_Braadland_for_sco
+			NOR_Axel_Aubert_eco_ade
+			NOR_Per_von_Hirsch_sec_pau
+		}
 		set_country_flag = coalition_paternal_autocrat
 		set_country_flag = coalition_market_liberal
 		hidden_effect = {
@@ -1314,14 +1314,13 @@ country_event = {
 		}
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.20 }
 		add_popularity = { ideology = paternal_autocrat popularity = -0.20 }
-		remove_ideas_with_trait = head_of_government
-		remove_ideas_with_trait = foreign_minister
-		remove_ideas_with_trait = economy_minister
-		remove_ideas_with_trait = security_minister
-		add_ideas = NOR_Joakim_Lehmkuhl_hog_ade
-		add_ideas = NOR_Victor_Mogens_for_ade
-		add_ideas = NOR_Einar_Borch_eco_sco
-		add_ideas = NOR_Anders_Lange_sec_ade
+		remove_every_minister = yes
+		add_ideas = {
+			NOR_Johan_Bernhard_Hjort_hog_ade
+			NOR_Birger_Braadland_for_sco
+			NOR_Eivind_Blehr_eco_pau
+			NOR_Ragnar_Skancke_sec_ade
+		}
 		set_country_flag = coalition_paternal_autocrat
 		hidden_effect = {
 			create_country_leader = {
@@ -3075,14 +3074,13 @@ country_event {
 			ideology = social_liberal popularity = 0.01
 		}
 		add_political_power = 10
-		remove_ideas_with_trait = head_of_government
-		remove_ideas_with_trait = foreign_minister
-		remove_ideas_with_trait = economy_minister
-		remove_ideas_with_trait = security_minister
-		add_ideas = NOR_Aksel_Zachariassen_hog_lso
-		add_ideas = NOR_Arvid_Gilbert_Hansen_for_col
-		add_ideas = NOR_Christopher_Hornsrud_eco_lso
-		add_ideas = NOR_Oscar_Torp_sec_sde
+		remove_every_minister = yes
+		add_ideas = {
+			NOR_Sverre_Stoestad_hog_lib
+			NOR_Wilhelm_Morgenstierne_for_lib
+			NOR_Adolf_Indreboe_eco_lib
+			NOR_Jakob_Friis_sec_lib
+		}
 		
 		set_country_flag = NOR_ap_1940_victory_flag
 		hidden_effect = {
@@ -3173,14 +3171,13 @@ country_event {
 			ideology = social_conservative popularity = 0.01
 		}
 		add_political_power = 10
-		remove_ideas_with_trait = head_of_government
-		remove_ideas_with_trait = foreign_minister
-		remove_ideas_with_trait = economy_minister
-		remove_ideas_with_trait = security_minister
-		add_ideas = NOR_Carl_Joachim_Hambro_hog_mli
-		add_ideas = NOR_Erik_Colban_for_sli
-		add_ideas = NOR_Jon_Sundby_eco_sco
-		add_ideas = NOR_Johan_Cappelen_sec_mli
+		remove_every_minister = yes
+		add_ideas = {
+			NOR_Carl_Joachim_Hambro_hog_mli
+			NOR_Arne_Scheel_for_mli
+			NOR_Sven_Nielsen_eco_mli
+			NOR_Harald_Gram_sec_mli
+		}
 		
 		set_country_flag = NOR_hoyre_1940_victory_flag
 		hidden_effect = {
@@ -3282,14 +3279,13 @@ country_event {
 			ideology = collectivist popularity = 0.05
 		}
 		add_political_power = 10
-		remove_ideas_with_trait = head_of_government
-		remove_ideas_with_trait = foreign_minister
-		remove_ideas_with_trait = economy_minister
-		remove_ideas_with_trait = security_minister
-		add_ideas = NOR_Peder_Furubotn_hog_col
-		add_ideas = NOR_Nordahl_Grieg_for_van
-		add_ideas = NOR_Arvid_Gilbert_Hansen_for_col
-		add_ideas = NOR_Kirsten_Hansteen_sec_col
+		remove_every_minister = yes
+		add_ideas = {
+			NOR_Konrad_Nordahl_hog_col
+			NOR_Arvid_Gilbert_Hansen_for_col
+			NOR_Ole_Colbjoernsen_eco_col
+			NOR_Olav_Hindahl_sec_col
+		}
 		set_country_flag = NOR_radical_1940_victory_flag
 		hidden_effect = {
 			if = {
@@ -3353,14 +3349,13 @@ country_event {
 			ideology = libertarian_socialist popularity = 0.05
 		}
 		add_political_power = 10
-		remove_ideas_with_trait = head_of_government
-		remove_ideas_with_trait = foreign_minister
-		remove_ideas_with_trait = economy_minister
-		remove_ideas_with_trait = security_minister
-		add_ideas = NOR_Aksel_Zachariassen_hog_lso
-		add_ideas = NOR_Trygve_Lie_for_lso
-		add_ideas = NOR_Christopher_Hornsrud_eco_lso
-		add_ideas = NOR_Fredrik_Monsen_sec_lso
+		remove_every_minister = yes
+		add_ideas = {
+			NOR_Sverre_Stoestad_hog_lib
+			NOR_Nordahl_Grieg_for_lib
+			NOR_Adolf_Indreboe_eco_lib
+			NOR_Alfred_Madsen_sec_lib
+		}
 		set_country_flag = NOR_moderates_1940_victory_flag
 		hidden_effect = {
 			if = {
@@ -3429,14 +3424,13 @@ country_event {
 			name = NOR_AP_social_democrat_party
 		}
 		add_political_power = 10
-		remove_ideas_with_trait = head_of_government
-		remove_ideas_with_trait = foreign_minister
-		remove_ideas_with_trait = economy_minister
-		remove_ideas_with_trait = security_minister
-		add_ideas = NOR_Einar_Gerhardsen_hog_sde
-		add_ideas = NOR_Halvard_Lange_for_sde
-		add_ideas = NOR_Oscar_Torp_eco_sde
-		add_ideas = NOR_Arne_Sunde_sec_sli
+		remove_every_minister = yes
+		add_ideas = {
+			NOR_Johan_Nygaardsvold_hog_sde
+			NOR_Halvdan_Koht_for_sde
+			NOR_Kornelius_Bergsvik_eco_sde
+			NOR_Paul_Hartmann_sec_sde
+		}
 		set_country_flag = NOR_rightwings_1940_victory_flag
 		hidden_effect = {
 			if = {
@@ -3520,14 +3514,13 @@ country_event {
 			ideology = collectivist popularity = 0.04
 		}
 		add_political_power = 10
-		remove_ideas_with_trait = head_of_government
-		remove_ideas_with_trait = foreign_minister
-		remove_ideas_with_trait = economy_minister
-		remove_ideas_with_trait = security_minister
-		add_ideas = NOR_Aksel_Zachariassen_hog_lso
-		add_ideas = NOR_Arvid_Gilbert_Hansen_for_col
-		add_ideas = NOR_Christopher_Hornsrud_eco_lso
-		add_ideas = NOR_Fredrik_Monsen_sec_lso
+		remove_every_minister = yes
+		add_ideas = {
+			NOR_Olav_Scheflo_hog_lib
+			NOR_Arvid_Gilbert_Hansen_for_col
+			NOR_Adolf_Indreboe_eco_lib
+			NOR_Jakob_Friis_sec_lib
+		}
 		
 		set_country_flag = NOR_ap_1940_victory_flag
 		
@@ -3700,14 +3693,13 @@ country_event {
 			ideology = social_conservative popularity = 0.04
 		}
 		add_political_power = 10
-		remove_ideas_with_trait = head_of_government
-		remove_ideas_with_trait = foreign_minister
-		remove_ideas_with_trait = economy_minister
-		remove_ideas_with_trait = security_minister
-		add_ideas = NOR_Carl_Joachim_Hambro_hog_mli
-		add_ideas = NOR_Ivar_Lykke_for_mli
-		add_ideas = NOR_Jon_Sundby_eco_sco
-		add_ideas = NOR_Johan_Cappelen_sec_mli
+		remove_every_minister = yes
+		add_ideas = {
+			NOR_Carl_Joachim_Hambro_hog_mli
+			NOR_Arne_Scheel_for_mli
+			NOR_Sven_Nielsen_eco_mli
+			NOR_Harald_Gram_sec_mli
+		}
 		
 		set_country_flag = NOR_hoyre_1940_victory_flag
 		
@@ -3821,14 +3813,13 @@ country_event {
 			ideology = social_liberal popularity = 0.02
 		}
 		add_political_power = 10
-		remove_ideas_with_trait = head_of_government
-		remove_ideas_with_trait = foreign_minister
-		remove_ideas_with_trait = economy_minister
-		remove_ideas_with_trait = security_minister
-		add_ideas = NOR_Jacob_Stenersen_Worm_Muller_hog_sli
-		add_ideas = NOR_Halvard_Lange_for_sde
-		add_ideas = NOR_Gunnar_Jahn_eco_sli
-		add_ideas = NOR_Arne_Sunde_sec_sli
+		remove_every_minister = yes
+		add_ideas = {
+			NOR_Haakon_Five_hog_sli
+			NOR_Jacob_Worm_Mueller_for_sli
+			NOR_Jens_Isak_Kobro_eco_sli
+			NOR_Arne_Sunde_sec_sli
+		}
 		
 		set_country_flag = NOR_venstre_1940_victory_flag
 		
@@ -4023,14 +4014,13 @@ country_event {
 			ideology = social_liberal popularity = 0.01
 		}
 		add_political_power = 10
-		remove_ideas_with_trait = head_of_government
-		remove_ideas_with_trait = foreign_minister
-		remove_ideas_with_trait = economy_minister
-		remove_ideas_with_trait = security_minister
-		add_ideas = NOR_Aksel_Zachariassen_hog_lso
-		add_ideas = NOR_Arvid_Gilbert_Hansen_for_col
-		add_ideas = NOR_Christopher_Hornsrud_eco_lso
-		add_ideas = NOR_Oscar_Torp_sec_sde
+		remove_every_minister = yes
+		add_ideas = {
+			NOR_Sverre_Stoestad_hog_lib
+			NOR_Arnulf_Oeverland_for_col
+			NOR_Ragnar_Frisch_eco_lib
+			NOR_Paul_Hartmann_sec_sde
+		}
 		
 		set_country_flag = NOR_ap_1944_victory_flag
 		
@@ -4071,14 +4061,13 @@ country_event {
 			ideology = social_conservative popularity = 0.01
 		}
 		add_political_power = 10
-		remove_ideas_with_trait = head_of_government
-		remove_ideas_with_trait = foreign_minister
-		remove_ideas_with_trait = economy_minister
-		remove_ideas_with_trait = security_minister
-		add_ideas = NOR_Carl_Joachim_Hambro_hog_mli
-		add_ideas = NOR_Erik_Colban_for_sli
-		add_ideas = NOR_Jon_Sundby_eco_sco
-		add_ideas = NOR_Johan_Cappelen_sec_mli
+		remove_every_minister = yes
+		add_ideas = {
+			NOR_Carl_Joachim_Hambro_hog_mli
+			NOR_Erik_Colban_for_sli
+			NOR_Sven_Nielsen_eco_mli
+			NOR_Ivar_Kirkeby_Garstad_sec_sco
+		}
 		
 		set_country_flag = NOR_hoyre_1944_victory_flag
 		
@@ -4138,14 +4127,13 @@ country_event {
 			ideology = social_liberal popularity = 0.01
 		}
 		add_political_power = 10
-		remove_ideas_with_trait = head_of_government
-		remove_ideas_with_trait = foreign_minister
-		remove_ideas_with_trait = economy_minister
-		remove_ideas_with_trait = security_minister
-		add_ideas = NOR_Aksel_Zachariassen_hog_lso
-		add_ideas = NOR_Arvid_Gilbert_Hansen_for_col
-		add_ideas = NOR_Christopher_Hornsrud_eco_lso
-		add_ideas = NOR_Oscar_Torp_sec_sde
+		remove_every_minister = yes
+		add_ideas = {
+			NOR_Sverre_Stoestad_hog_lib
+			NOR_Arnulf_Oeverland_for_col
+			NOR_Ragnar_Frisch_eco_lib
+			NOR_Paul_Hartmann_sec_sde
+		}
 		
 		set_country_flag = NOR_ap_1944_victory_flag
 		
@@ -4186,14 +4174,12 @@ country_event {
 			ideology = social_conservative popularity = 0.01
 		}
 		add_political_power = 10
-		remove_ideas_with_trait = head_of_government
-		remove_ideas_with_trait = foreign_minister
-		remove_ideas_with_trait = economy_minister
-		remove_ideas_with_trait = security_minister
-		add_ideas = NOR_Carl_Joachim_Hambro_hog_mli
-		add_ideas = NOR_Erik_Colban_for_sli
-		add_ideas = NOR_Jon_Sundby_eco_sco
-		add_ideas = NOR_Johan_Cappelen_sec_mli
+		add_ideas = {
+			NOR_Carl_Joachim_Hambro_hog_mli
+			NOR_Erik_Colban_for_sli
+			NOR_Sven_Nielsen_eco_mli
+			NOR_Ivar_Kirkeby_Garstad_sec_sco
+		}
 		
 		set_country_flag = NOR_hoyre_1944_victory_flag
 		
@@ -5328,14 +5314,13 @@ country_event = {
 		add_popularity = { ideology = market_liberal popularity = 0.10 }
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.20 }
 		add_popularity = { ideology = paternal_autocrat popularity = -0.20 }
-		remove_ideas_with_trait = head_of_government
-		remove_ideas_with_trait = foreign_minister
-		remove_ideas_with_trait = economy_minister
-		remove_ideas_with_trait = security_minister
-		add_ideas = NOR_Carl_Joachim_Hambro_hog_mli
-		add_ideas = NOR_Birger_Braadland_for_sco
-		add_ideas = NOR_Jon_Sundby_eco_sco
-		add_ideas = NOR_Johan_Cappelen_sec_mli
+		remove_every_minister = yes
+		add_ideas = {
+			NOR_Carl_Joachim_Hambro_hog_mli
+			NOR_Birger_Braadland_for_sco
+			NOR_Axel_Aubert_eco_ade
+			NOR_Per_von_Hirsch_sec_pau
+		}
 		clr_country_flag = coalition_social_conservative
 		set_country_flag = coalition_paternal_autocrat
 		set_country_flag = coalition_market_liberal
@@ -5364,14 +5349,13 @@ country_event = {
 		add_popularity = { ideology = social_conservative popularity = 0.10 }
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.20 }
 		add_popularity = { ideology = paternal_autocrat popularity = -0.20 }
-		remove_ideas_with_trait = head_of_government
-		remove_ideas_with_trait = foreign_minister
-		remove_ideas_with_trait = economy_minister
-		remove_ideas_with_trait = security_minister
-		add_ideas = NOR_Nils_Lavik_hog_sco
-		add_ideas = NOR_Victor_Mogens_for_ade
-		add_ideas = NOR_Ingebrigt_Bjoro_eco_sco
-		add_ideas = NOR_Petter_Morch_Koren_sec_sco
+		remove_every_minister = yes
+		add_ideas = {
+			NOR_Jens_Hundseid_hog_sco
+			NOR_Birger_Braadland_for_sco
+			NOR_Nicolai_Rygg_eco_sco
+			NOR_Ivar_Kirkeby_Garstad_sec_sco
+		}
 		clr_country_flag = coalition_market_liberal
 		set_country_flag = coalition_paternal_autocrat
 		set_country_flag = coalition_social_conservative
@@ -5399,14 +5383,13 @@ country_event = {
 		}
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.20 }
 		add_popularity = { ideology = paternal_autocrat popularity = -0.20 }
-		remove_ideas_with_trait = head_of_government
-		remove_ideas_with_trait = foreign_minister
-		remove_ideas_with_trait = economy_minister
-		remove_ideas_with_trait = security_minister
-		add_ideas = NOR_Joakim_Lehmkuhl_hog_ade
-		add_ideas = NOR_Victor_Mogens_for_ade
-		add_ideas = NOR_Einar_Borch_eco_sco
-		add_ideas = NOR_Anders_Lange_sec_ade
+		remove_every_minister = yes 
+		add_ideas = {
+			NOR_Carl_Gulbranson_hog_ade
+			NOR_Victor_Mogens_for_ade
+			NOR_Nicolai_Rygg_eco_sco
+			NOR_Ragnar_Skancke_sec_ade
+		}
 		clr_country_flag = coalition_market_liberal
 		clr_country_flag = coalition_social_conservative
 		set_country_flag = coalition_paternal_autocrat
@@ -5433,14 +5416,13 @@ country_event = {
 		}
 		add_popularity = { ideology = paternal_autocrat popularity = 0.10 }
 		add_popularity = { ideology = authoritarian_democrat popularity = -0.10 }
-		remove_ideas_with_trait = head_of_government
-		remove_ideas_with_trait = foreign_minister
-		remove_ideas_with_trait = economy_minister
-		remove_ideas_with_trait = security_minister
-		add_ideas = NOR_Rudolf_Raeder_hog_npo
-		add_ideas = NOR_Victor_Mogens_for_ade
-		add_ideas = NOR_Bernt_Holtsmark_eco_npo
-		add_ideas = NOR_Ingvald_Maryllus_Emil_Smith_Kielland_sec_npo
+		remove_every_minister = yes
+		add_ideas = {
+			NOR_Gulbrand_Lunde_hog_pau
+			NOR_Victor_Mogens_for_ade
+			NOR_Axel_Aubert_eco_ade
+			NOR_Arnvid_Vasbotten_sec_npo
+		}
 		clr_country_flag = coalition_paternal_autocrat
 		set_country_flag = coalition_authoritarian_democrat
 		hidden_effect = {

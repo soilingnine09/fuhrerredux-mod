@@ -36,7 +36,7 @@ set_popularities = {
 
 add_ideas = {
 	party_pop_0_30
-	unbalanced_industry
+	backwards_economy
 	iliterate_population
 	GEN_hog_ade
 	GEN_eco_ade

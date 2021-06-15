@@ -72,7 +72,12 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_goal_flag_cruzoob"
-		texturefile = "gfx/interface/goals/goal_flag_cruzoob.tga"
+		texturefile = "gfx/interface/goals/goal_flag_cruzoob.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_flag_wuliwya_suyu"
+		texturefile = "gfx/interface/goals/goal_flag_wuliwya_suyu.tga"
 	}
 
 	spriteType = {
@@ -88,5 +93,75 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_goal_CHI_the_modern_age"
 		texturefile = "gfx/interface/goals/goal_CHI_the_modern_age.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_generic_foreign_investments"
+		texturefile = "gfx/interface/goals/generic_foreign_investments.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_CRU_church"
+		texturefile = "gfx/interface/goals/SHX_Christian_Influence.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_CRU_watch_the_mexicans"
+		texturefile = "gfx/interface/goals/CRU_watch_the_mexicans.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_CRU_mayan_warrior"
+		texturefile = "gfx/interface/goals/goal_mayan_warrior.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_CRU_mayan_clubs"
+		texturefile = "gfx/interface/goals/CRU_maya_clubs.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_CRU_chichen_itza"
+		texturefile = "gfx/interface/goals/CRU_chichen_itza.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_generic_seize_investments"
+		texturefile = "gfx/interface/goals/generic_seize_investments.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_MEX_army"
+		texturefile = "gfx/interface/goals/MEX_army.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_MEX_navy"
+		texturefile = "gfx/interface/goals/MEX_navy.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_MEX_air_force"
+		texturefile = "gfx/interface/goals/MEX_air_force.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_MEX_calles"
+		texturefile = "gfx/interface/goals/MEX_calles.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_MEX_flag"
+		texturefile = "gfx/interface/goals/MEX_flag.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_IRQ_smuggle_guns"
+		texturefile = "gfx/interface/goals/goal_IRQ_smuggle_guns.tga"
+	}
+
+	spriteType = {
+		name = "GFX_goal_IRQ_revolt"
+		texturefile = "gfx/interface/goals/goal_IRQ_revolt.tga"
 	}
 }

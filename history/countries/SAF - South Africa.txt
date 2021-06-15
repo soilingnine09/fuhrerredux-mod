@@ -88,183 +88,311 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Lord Hyde"
-	desc = "POLITICS_LORD_HYDE_DESC"
-	picture = "Portrait_Lord_Hyde.tga"
+	name = "Moses Kotane"
+	desc = "POLITICS_MOSES_KOTANE_DESC"
+	picture = "Portrait_South_Africa_Moses_Kotane.tga"
 	expire = "1965.1.1"
 	ideology = vanguardist_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
 create_country_leader = {
-	name = "Lord Hyde"
-	desc = "POLITICS_LORD_HYDE_DESC"
-	picture = "Portrait_Lord_Hyde.tga"
+	name = "Clement Kadalie"
+	desc = "POLITICS_CLEMENT_KADALIE_DESC"
+	picture = "Portrait_South_Africa_Clement_Kadalie.tga"
 	expire = "1965.1.1"
 	ideology = collectivist_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
 create_country_leader = {
-	name = "Lord Hyde"
-	desc = "POLITICS_LORD_HYDE_DESC"
-	picture = "Portrait_Lord_Hyde.tga"
+	name = "David Ivon Jones"
+	desc = "POLITICS_DAVID_IVON_JONES_DESC"
+	picture = "Portrait_South_Africa_David_Ivon_Jones.tga"
 	expire = "1965.1.1"
 	ideology = libertarian_socialist_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
 create_country_leader = {
-	name = "Lord Hyde"
-	desc = "POLITICS_LORD_HYDE_DESC"
-	picture = "Portrait_Lord_Hyde.tga"
+	name = "Nicolaas Jacobus de Wet"
+	desc = "POLITICS_NICOLAAS_JACOBUS_DE_WET_DESC"
+	picture = "Portrait_South_Africa_Nicolaas_Jacobus_de_Wet.tga"
 	expire = "1965.1.1"
 	ideology = social_democrat_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
 create_country_leader = {
-	name = "Lord Hyde"
-	desc = "POLITICS_LORD_HYDE_DESC"
-	picture = "Portrait_Lord_Hyde.tga"
+	name = "Jan Hendrik Hofmeyr"
+	desc = "POLITICS_JAN_HENDRIK_HOFMEYR_DESC"
+	picture = "Portrait_South_Africa_Jan_Hendrik_Hofmeyr.tga"
 	expire = "1965.1.1"
 	ideology = social_liberal_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
 create_country_leader = {
-	name = "Lord Hyde"
-	desc = "POLITICS_LORD_HYDE_DESC"
-	picture = "Portrait_Lord_Hyde.tga"
+	name = "Nicolaas Havenga"
+	desc = "POLITICS_NICOLAAS_HAVENGA_DESC"
+	picture = "Portrait_South_Africa_Nicolaas_Havenga.tga"
 	expire = "1965.1.1"
 	ideology = market_liberal_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
 create_country_leader = {
-	name = "Lord Hyde"
-	desc = "POLITICS_LORD_HYDE_DESC"
-	picture = "Portrait_Lord_Hyde.tga"
+	name = "Patrick Duncan"
+	desc = "POLITICS_PATRICK_DUNCAN_DESC"
+	picture = "Portrait_South_Africa_Patrick_Duncan.tga"
 	expire = "1965.1.1"
 	ideology = social_conservative_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
 create_country_leader = {
-	name = "Lord Hyde"
-	desc = "POLITICS_LORD_HYDE_DESC"
-	picture = "Portrait_Lord_Hyde.tga"
+	name = "J. B. M. Hertzog"
+	desc = "POLITICS_J_B_M_HERTZOG_DESC"
+	picture = "Portrait_South_Africa_JBM_Hertzog.tga"
 	expire = "1965.1.1"
 	ideology = authoritarian_democrat_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
 create_country_leader = {
-	name = "Lord Hyde"
-	desc = "POLITICS_LORD_HYDE_DESC"
-	picture = "Portrait_Lord_Hyde.tga"
-	expire = "1965.1.1"
-	ideology = paternal_autocrat_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Lord Hyde"
-	desc = "POLITICS_LORD_HYDE_DESC"
-	picture = "Portrait_Lord_Hyde.tga"
+	name = "D. F. Malan"
+	desc = "POLITICS_DF_MALAN_DESC"
+	picture = "Portrait_South_Africa_DF_Malan.tga"
 	expire = "1965.1.1"
 	ideology = national_populist_subtype
-	traits = {
-		#
-	}
+	traits = { }
+}
+
+
+create_country_leader = {
+	name = "Lord Hyde"
+	desc = "POLITICS_LORD_HYDE_DESC"
+	picture = "Portrait_South_Africa_Lord_Hyde.tga"
+	expire = "1965.1.1"
+	ideology = vanguardist_subtype
+	traits = { }
 }
 create_country_leader = {
 	name = "Lord Hyde"
 	desc = "POLITICS_LORD_HYDE_DESC"
-	picture = "Portrait_Lord_Hyde.tga"
+	picture = "Portrait_South_Africa_Lord_Hyde.tga"
+	expire = "1965.1.1"
+	ideology = collectivist_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Lord Hyde"
+	desc = "POLITICS_LORD_HYDE_DESC"
+	picture = "Portrait_South_Africa_Lord_Hyde.tga"
+	expire = "1965.1.1"
+	ideology = libertarian_socialist_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Lord Hyde"
+	desc = "POLITICS_LORD_HYDE_DESC"
+	picture = "Portrait_South_Africa_Lord_Hyde.tga"
+	expire = "1965.1.1"
+	ideology = social_democrat_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Lord Hyde"
+	desc = "POLITICS_LORD_HYDE_DESC"
+	picture = "Portrait_South_Africa_Lord_Hyde.tga"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Lord Hyde"
+	desc = "POLITICS_LORD_HYDE_DESC"
+	picture = "Portrait_South_Africa_Lord_Hyde.tga"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Lord Hyde"
+	desc = "POLITICS_LORD_HYDE_DESC"
+	picture = "Portrait_South_Africa_Lord_Hyde.tga"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Lord Hyde"
+	desc = "POLITICS_LORD_HYDE_DESC"
+	picture = "Portrait_South_Africa_Lord_Hyde.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Lord Hyde"
+	desc = "POLITICS_LORD_HYDE_DESC"
+	picture = "Portrait_South_Africa_Lord_Hyde.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Lord Hyde"
+	desc = "POLITICS_LORD_HYDE_DESC"
+	picture = "Portrait_South_Africa_Lord_Hyde.tga"
+	expire = "1965.1.1"
+	ideology = national_populist_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Lord Hyde"
+	desc = "POLITICS_LORD_HYDE_DESC"
+	picture = "Portrait_South_Africa_Lord_Hyde.tga"
 	expire = "1965.1.1"
 	ideology = valkist_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
 
 
-#create_country_leader = {
-#	name = "J. B. M. Hertzog"
-#	desc = "POLITICS_J_B_M_HERTZOG_DESC"
-#	picture = "GFX_SAF_james_hertzog"
-#	expire = "1965.1.1"
-#	ideology = social_conservative_subtype
-#	traits = {
-		#
-#	}
-#}
-
-#create_country_leader = {
-#	name = "Patrick Duncan"
-#	desc = "POLITICS_PATRICK_DUNCAN_DESC"
-#	picture = "GFX_SAF_james_hertzog"
-#	expire = "1965.1.1"
-#	ideology = social_conservative_subtype
-#	traits = {
-		#
-#	}
-#}
-
-#create_country_leader = {
-#	name = "D. F. Malan"
-#	desc = "POLITICS_DF_MALAN_DESC"
-#	picture = "GFX_SAF_daniel_malan"
-#	expire = "1965.1.1"
-#	ideology = national_populist_subtype
-#	traits = {
-		#
-#	}
-#}
-
-#create_country_leader = {
-#	name = "Moses Kotane"
-#	desc = "POLITICS_MOSES_KOTANE_DESC"
-#	picture = "GFX_SAF_moses_kotane"
-#	expire = "1965.1.1"
-#	ideology = collectivist_subtype
-#	traits = {
-#		#
-#	}
-#}
-#
-#create_country_leader = {
-#	name = "Pixley Ka Isaka Seme"
-#	desc = "POLITICS_PIXLEY_SEME_DESC"
-#	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_3.dds"
-#	expire = "1965.1.1"
-#	ideology = market_liberal_subtype
-#	traits = {
-#		#
-#	}
-#}
+create_field_marshal = {
+	name = "Jan Smuts"
+	picture = "Portrait_South_Africa_Jan_Smuts.tga"
+	traits = { offensive_doctrine old_guard politically_connected }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+	id = 970
+}
 
 create_corps_commander = {
-	name = "George Edwin Brink"
-	gfx = "GFX_SAF_george_edwin_brink"
-	traits = { desert_fox  }
-	skill = 4
+	name = "Leonard Beyers"
+	picture = "Portrait_South_Africa_Leonard_Beyers.tga"
+	traits = { career_officer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 971
+}
+create_corps_commander = {
+	name = "George Brink"
+	picture = "Portrait_South_Africa_George_Brink.tga"
+	traits = { old_guard commando }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+	id = 972
+}
+create_corps_commander = {
+	name = "Dan Pienaar"
+	picture = "Portrait_South_Africa_Dan_Pienaar.tga"
+	traits = { old_guard artillery_officer desert_fox }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+	id = 973
+}
+create_corps_commander = {
+	name = "Hendrik Klopper"
+	picture = "Portrait_South_Africa_Hendrik_Klopper.tga"
+	traits = { infantry_officer trait_engineer }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+	id = 974
+}
+create_corps_commander = {
+	name = "Isaac Pierre de Villiers"
+	picture = "Portrait_South_Africa_Isaac_de_Villiers.tga"
+	traits = { old_guard }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 975
+}
+create_corps_commander = {
+	name = "Nick Bierman"
+	picture = "Portrait_South_Africa_Nick_Bierman.tga"
+	traits = { armor_officer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 976
+}
+create_corps_commander = {
+	name = "Evered Poole"
+	picture = "Portrait_South_Africa_Evered_Poole.tga"
+	traits = { politically_connected trickster }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+	id = 977
+}
+create_corps_commander = {
+	name = "Christiaan du Toit"
+	picture = "Portrait_South_Africa_Christiaan_du_Toit.tga"
+	traits = { artillery_officer infantry_officer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 978
+}
+create_corps_commander = {
+	name = "Christoffel Venter"
+	picture = "Portrait_South_Africa_Christoffel_Venter.tga"
+	traits = { trait_engineer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 979
+}
+create_corps_commander = {
+	name = "Adolph Malan"
+	picture = "Portrait_South_Africa_Adolph_Malan.tga"
+	traits = { politically_connected trait_cautious }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	id = 98001
 }
 
 create_navy_leader = {
 	name = "Guy Hallifax"
-	gfx = "GFX_SAF_guy_halifax"
-	traits = { }
-	skill = 3
+	picture = "Portrait_South_Africa_Guy_Hallifax.tga"
+	traits = { blockade_runner }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 3
+	coordination_skill = 2
+	id = 9802
+}
+create_navy_leader = {
+	name = "Pieter de Waal"
+	picture = "Portrait_South_Africa_Pieter_de_Waal.tga"
+	traits = { spotter }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
 }
 

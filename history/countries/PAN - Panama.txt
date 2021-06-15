@@ -45,21 +45,16 @@ set_popularities = {
 create_country_leader = {
 	name = "Harmodio Arias Madrid"
 	desc = "POLITICS_HARMODIO_ARIAS_MADRID_DESC"
-	picture = "Portrait_PAN_Harmodio_Madrid.tga"
+	picture = "Portrait_Panama_Harmodio_Diaz_Madrid_fx.tga"
 	expire = "1965.1.1"
 	ideology = market_liberal_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Harmodio Arias Madrid"
 	desc = "POLITICS_HARMODIO_ARIAS_MADRID_DESC"
-	picture = "Portrait_PAN_Harmodio_Madrid.tga"
+	picture = "Portrait_Panama_Harmodio_Diaz_Madrid_fx.tga"
 	expire = "1965.1.1"
 	ideology = social_conservative_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }

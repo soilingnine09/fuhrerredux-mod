@@ -808,7 +808,7 @@
 		add_political_power = -50
 
 		swap_ideas = {
-			remove_idea = unbalanced_industry
+			remove_idea = backwards_economy
 			add_idea = MAN_equipment_woes_1
 		}
 

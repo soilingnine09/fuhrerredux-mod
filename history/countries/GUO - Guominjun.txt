@@ -14,7 +14,7 @@ set_technology = {
 }
 
 add_ideas = {
-	unbalanced_industry
+	backwards_economy
 	iliterate_population
 
 	GEN_hog_ade

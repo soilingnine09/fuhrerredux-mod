@@ -1,0 +1,639 @@
+# Cruzoob Ideas, Ministers and Companies
+# created by: dax0102
+
+ideas = {
+    country = {
+        CRU_spirit_of_the_faithful1 = {
+            allowed = { original_tag = CRU }
+            picture = PAP_tenth_crusade
+            modifier = {
+                industrial_capacity_factory = 0.05
+                industrial_capacity_dockyard = 0.05
+                production_speed_buildings_factor = 0.05
+            }
+        }
+        CRU_spirit_of_the_faithful2 = {
+            allowed = { original_tag = CRU }
+            picture = PAP_tenth_crusade
+            modifier = {
+                industrial_capacity_factory = 0.15
+                industrial_capacity_dockyard = 0.15
+                production_speed_buildings_factor = 0.15
+            }
+        }
+        CRU_non_existent_industry = {
+            allowed = { original_tag = CRU }
+            picture = raj_risk_of_famine
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.15
+            }
+        }
+        CRU_mayan_ascension1 = {
+            allowed = { original_tag = CRU }
+            picture = triumphant_will
+            modifier = {
+                army_org_factor = 0.05
+                out_of_supply_factor = -0.05
+                conscription_factor = 0.05
+                army_core_attack_factor = 0.05
+                army_core_defence_factor = 0.05
+            }
+        }
+        CRU_mayan_ascension2 = {
+            allowed = { original_tag = CRU }
+            picture = triumphant_will
+            modifier = {
+                army_org_factor = 0.15
+                out_of_supply_factor = -0.15
+                conscription_factor = 0.15
+                army_core_attack_factor = 0.05
+                army_core_defence_factor = 0.05
+            }
+        }
+        CRU_mayan_ascension3 = {
+            allowed = { original_tag = CRU }
+            picture = triumphant_will
+            modifier = {
+                army_org_factor = 0.15
+                out_of_supply_factor = -0.15
+                surrender_limit = 0.1
+                conscription_factor = 0.15
+                army_core_attack_factor = 0.05
+                army_core_defence_factor = 0.05
+            }
+        }
+        CRU_general_staff = {
+            allowed = { original_tag = CRU }
+            picture = german_advisors
+            modifier = {
+                max_planning_factor = 0.15
+                planning_speed = 0.15
+                army_org_regain = 0.05
+            }
+        }
+        CRU_training_school = {
+            allowed = { original_tag = CRU }
+            picture = chi_army_corruption3
+            modifier = {
+                army_attack_factor = 0.05
+                army_defence_factor = 0.05
+            }
+        }
+        CRU_cristero_exodus = {
+            allowed = { original_tag = CRU }
+            picture = vittoria_mutilata
+            modifier = {
+                army_morale_factor = 0.05
+                recon_factor = 0.05
+            }
+        }
+        CRU_aircraft_purchase = {
+            allowed = { original_tag = CRU }
+            picture = capital_outflow
+            modifier = {
+                consumer_goods_factor = 0.02
+            }
+        }
+        CRU_naval_purchase = {
+            allowed = { original_tag = CRU }
+            picture = capital_outflow
+            modifier = {
+                consumer_goods_factor = 0.02
+            }
+        }
+        CRU_tourism = {
+            allowed = { original_tag = CRU }
+            picture = ROM_king_carol_ii_hedonist
+            modifier = {
+                monthly_population = 0.15
+                consumer_goods_factor = -0.05
+            }
+        }
+        CRU_german_advisors = {
+            allowed = { original_tag = CRU }
+            picture = german_advisors
+            modifier = {
+                army_org_factor = 0.05
+            }
+        }
+        CRU_labour_regulations = {
+            allowed = { original_tag = CRU }
+            picture = generic_production_bonus
+            modifier = {
+                industrial_capacity_factory = 0.15
+                industrial_capacity_dockyard = 0.15
+            }
+        }
+        CRU_reformed_bureaucracy = {
+            allowed = { original_tag = CRU }
+            picture = generic_neutrality_drift_bonus
+            modifier = {
+                stability_factor = 0.15
+                war_support_factor = 0.15
+                political_power_gain = 0.15
+            }
+        }
+        CRU_christian_curriculum = {
+            allowed = { original_tag = CRU }
+            picture = generic_research_bonus
+            modifier = {
+                conscription_factor = 0.05
+            }
+        }
+        CRU_mayan_curriculum = {
+            allowed = { original_tag = CRU }
+            picture = jap_duplicate_research
+            modifier = {
+                research_speed_factor = 0.05
+            }
+        }
+        CRU_waiting_and_preparing_idea = {
+            allowed = { original_tag = CRU }
+            picture = tfv_can_conscription_crisis
+            modifier = {
+                training_time_factor = -0.15
+            }
+        }
+        # Mexican Debuff
+        CRU_worker_strikes = {
+            picture = FRA_factory_strikes
+            modifier = {
+                industrial_capacity_factory = -0.05
+                industrial_capacity_dockyard = -0.05
+            }
+        }
+        CRU_siphoned_funds = {
+            picture = generic_foreign_capital
+            modifier = {
+                consumer_goods_factor = -0.05
+                production_speed_buildings_factor = 0.15
+            }
+        }
+        CRU_anti_government_propaganda = {
+            picture = chi_war_of_resistance2
+            modifier = {
+                stability_factor = -0.05
+                war_support_factor = -0.05
+            }
+        }
+    }
+    # Head of Government
+    head_of_government = {
+        CRU_Elvia_Carrillo_Puerto_hog_lib = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                libertarian_socialist
+                hog_privileged_socialist
+            }
+        }
+        CRU_Felipe_Carrillo_Puerto_hog_lib = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                libertarian_socialist
+                hog_ambitious_union_boss
+            }
+        }
+        CRU_Alvaro_Torre_Diaz_hog_sde = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                social_democrat
+                hog_silent_workhorse
+            }
+        }
+        CRU_Rafael_E_Melgar_hog_sde = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                social_democrat
+                hog_pragmatic_statesman
+            }
+        }
+        CRU_Alfredo_Barrera_Vasquez_hog_sli = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                social_liberal
+                hog_naive_optimist
+            }
+        }
+        CRU_Arturo_Campillo_Seyde_hog_sli = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                social_liberal
+                hog_happy_amateur
+            }
+        }
+        CRU_Carlos_R_Menendez_hog_mli = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                market_liberal
+                hog_corporate_suit
+            }
+        }
+        CRU_Gustavo_Arce_Correa_hog_mli = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                market_liberal
+                hog_accomplished_diplomat
+            }
+        }
+        CRU_Manuel_Gomez_Morin_hog_sco = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                social_conservative
+                hog_naive_optimist
+            }
+        }
+        CRU_Salvador_Alvarado_Rubio_hog_pau = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                paternal_autocrat
+                hog_local_tyrant
+            }
+        }
+        CRU_Tomas_Garrido_Canabal_hog_npo = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                national_populist
+                hog_respected_war_hero
+            }
+        }
+        CRU_Francisco_May_Pech_hog_val = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                valkist
+                hog_reformist_soldier
+            }
+        }
+    }
+    # Foreign Ministers
+    foreign_minister = {
+        CRU_Alma_Marie_Sullivan_Reed_for_lib = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                libertarian_socialist
+                for_ideological_crusader
+            }
+        }
+        CRU_Jose_Clemente_Orozco_for_lib = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                libertarian_socialist
+                for_radical_among_moderates
+            }
+        }
+        CRU_Carlos_Jesus_Torre_Repetto_for_sde = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                social_democrat
+                for_apologetic_clerk
+            }
+        }
+        CRU_Ermilo_Abreu_Gomez_for_sde = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                social_democrat
+                for_foreign_sympathizer
+            }
+        }
+        CRU_Miguel_Alonzo_Romero_for_sli = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                social_liberal
+                for_relations_expert
+            }
+        }
+        CRU_Roberto_Reyes_Barreiro_for_sli = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                social_liberal
+                for_great_compromiser
+            }
+        }
+        CRU_Nicolas_Camara_Vales_for_mli = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                market_liberal
+                for_apologetic_clerk
+            }
+        }
+        CRU_Rodolfo_Menendez_Mena_for_mli = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                market_liberal
+                for_general_staffer
+            }
+        }
+    }
+    # Economy Minister
+    economy_minister = {
+        CRU_Elvia_Carrillo_Puerto_eco_lib = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                libertarian_socialist
+                eco_planned_economy_proponent
+            }
+        }
+        CRU_Raquel_Dzib_Cicero_eco_lib = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                libertarian_socialist
+                eco_reformer
+            }
+        }
+        CRU_Augusto_Harold_Alvarez_Garcia_eco_sde = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                social_democrat
+                eco_reformer
+            }
+        }
+        CRU_Consuelo_Zavala_Castillo_eco_sde = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                social_democrat
+                eco_the_minister_for_everything
+            }
+        }
+        CRU_Eleuterio_Avila_eco_sde = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                social_democrat
+                eco_trade_proponent
+            }
+        }
+        CRU_Mauro_Graciano_Ricalde_Gamboa_eco_sli = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                social_liberal
+                eco_imbedded_unioneer
+            }
+        }
+        CRU_Ricardo_Lopez_Mendez_eco_sli = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                social_liberal
+                eco_bank_president
+            }
+        }
+        CRU_Gustavo_Arce_Correa_eco_mli = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                market_liberal
+                eco_construction_magnate
+            }
+        }
+        CRU_Nicolas_Camara_Vales_eco_mli = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                market_liberal
+                eco_administrative_genius
+            }
+        }
+    }
+    # Security Minister
+    security_minister = {
+        CRU_Elvia_Carrillo_Puerto_sec_lib = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                libertarian_socialist
+                sec_man_of_the_people
+            }
+        }
+        CRU_Maria_Rosa_Torre_Gonzalez_sec_lib = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                libertarian_socialist
+                sec_silent_lawyer
+            }
+        }
+        CRU_Ermilo_Abreu_Gomez_sec_sde = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                social_democrat
+                sec_driven_recruiter
+            }
+        }
+        CRU_Rafael_E_Melgar_sec_sde = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                social_democrat
+                sec_man_of_the_people
+            }
+        }
+        CRU_Miguel_Alonzo_Romero_sec_sli = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                social_liberal
+                sec_media_magnate
+            }
+        }
+        CRU_Ricardo_Lopez_Mendez_sec_sli = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                social_liberal
+                sec_health_and_safety
+            }
+        }
+        CRU_Gustavo_Arce_Correa_sec_mli = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                market_liberal
+                sec_efficient_sociopath
+            }
+        }
+        CRU_Rodolfo_Menendez_Mena_sec_mli = {
+            allowed = { original_tag = CRU }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                market_liberal
+                sec_compassionate_gentleman
+            }
+        }
+    }
+    # Chief of Staff
+    chief_of_staff = {
+        CRU_Francisco_May_Pech_cos = {
+            allowed = { original_tag = CRU }
+            cancel_if_invalid = no
+            traits = {
+                chief_of_staff
+                cos_school_of_commando_operations
+            }
+        }
+        CRU_Salvador_Alvarado_Rubio_cos = {
+            allowed = { original_tag = CRU }
+            cancel_if_invalid = no
+            traits = {
+                chief_of_staff
+                cos_school_of_psychology
+            }
+        }
+        CRU_Tomas_Garrido_Canabal_cos = {
+            allowed = { original_tag = CRU }
+            cancel_if_invalid = no
+            traits = {
+                chief_of_staff
+                cos_school_of_fire_support
+            }
+        }
+    }
+    # Chief of Army
+    chief_of_army = {
+        CRU_Francisco_May_Pech_carm = {
+            allowed = { original_tag = CRU }
+            cancel_if_invalid = no
+            traits = {
+                chief_of_army
+                carm_commando_doctrine
+            }
+        }
+        CRU_Salvador_Alvarado_Rubio_carm = {
+            allowed = { original_tag = CRU }
+            cancel_if_invalid = no
+            traits = {
+                chief_of_army
+                carm_guns_and_butter_doctrine
+            }
+        }
+        CRU_Tomas_Garrido_Canabal_carm = {
+            allowed = { original_tag = CRU }
+            cancel_if_invalid = no
+            traits = {
+                chief_of_army
+                carm_decisive_battle_doctrine
+            }
+        }
+    }
+    # Theorist
+    theorist = {
+        CRU_Francisco_May_Pech_theo = {
+            allowed = { original_tag = CRU }
+            traits = { land_doctrine_theorist }
+            research_bonus = {
+                land_doctrine = 0.1
+            }
+        }
+    }
+    # Weapons
+    weapons_manufacturer = {
+        designer = yes
+        CRU_yucatan_arsenal = {
+            allowed = { original_tag = CRU }
+            available = { has_completed_focus = CRU_fund_yucatan_arsenal }
+            picture = generic_infantry_equipment_manufacturer_2
+            traits = { infantry_equipment_producer_offense_2 }
+            research_bonus = {
+                infantry_weapons = 0.15
+            }
+        }
+    }
+}

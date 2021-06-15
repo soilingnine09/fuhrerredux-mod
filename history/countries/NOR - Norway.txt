@@ -4,22 +4,6 @@ oob = "NOR_1936"
 
 set_research_slots = 3
 
-add_ideas = {
-	party_pop_0_40
-	limited_conscription
-	
-	NOR_monarchist_right_idea
-	NOR_war_on_samfundsvernet_idea
-	NOR_socialism_surrounded_idea
-	
-	#Ministers#
-	NOR_Alfred_Madsen_hog_lso
-	NOR_Nordahl_Grieg_for_col
-	NOR_Christopher_Hornsrud_eco_lso
-	NOR_Fredrik_Monsen_sec_lso
-	
-	presidential_republic
-}
 
 if = {
     limit = { has_dlc = "Man the Guns" }
@@ -78,6 +62,23 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 
+}
+
+add_ideas = {
+	party_pop_0_40
+	limited_conscription
+	
+	NOR_monarchist_right_idea
+	NOR_war_on_samfundsvernet_idea
+	NOR_socialism_surrounded_idea
+	
+	#Ministers#
+	NOR_Sverre_Stoestad_hog_lib
+	NOR_Nordahl_Grieg_for_lib
+	NOR_Adolf_Indreboe_eco_lib
+	NOR_Alfred_Madsen_sec_lib
+	
+	presidential_republic
 }
 
 set_popularities = {

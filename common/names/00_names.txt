@@ -72,24 +72,33 @@ ENG = {
 
 SOV = {
 	male = {
-		names = { Aleksander Alexei Andrei Anton Boris Dmitry Fyodor Gennady 
-                                 Giorgi Grigoriy Igor Ilya Ivan Kirill Konstantin Lavr Leonid Lev Maxim 
-                                 Mikhail Nikita Nikolai Oleg Pavel Pyotr Roman Semyon Sergei 
-                                 Valery Vasily Viktor Vladimir Vladislav Yegor Yevgeny Yuri
+		names = {
+			Aleksander Alexei Andrei Anton Boris Dmitry Fyodor Gennady 
+            Giorgi Grigoriy Igor Ilya Ivan Kirill Konstantin Lavr Leonid Lev Maxim 
+            Mikhail Nikita Nikolai Oleg Pavel Pyotr Roman Semyon Sergei 
+            Valery Vasily Viktor Vladimir Vladislav Yegor Yevgeny Yuri
 		}
 	}
 	female = {
-		names = { Jelena Ludmila }
+		names = {
+			Aleksandra Anna Albina Aglaya Alla Angelina Albina Antonina Valentina Valeriya Vera Vasilisa Varvara Veronika 
+			Viktoriya Galina Darya Yevgeniya Evdokiya Yekaterina Yelena Yelizaveta Zhanna Zinaida Zoya Inga Inna
+			Irina Karina Klavdiya Kseniya Lidiya Ella Larisa Liliya Lyubov Lyudmila Margarita Marina Marfa Matryona 
+			Nadezhda Natalya Nina Oksana Olga Pelageya Polina Praskovya Raisa Svetlana Snezhana Sofiya Taisiya Tamara
+			Tatyana Faina Feodora Yuliya Yana
+		}
 	}
 	surnames = { 
 			Alexseyev Antonov Azarov Badanov Brusilov Budyonny Chibisov Denikin 
-                        Dragomirov Frolov Golivin Grishin Gurko Ivanov Ivannikov Konev Konstantinov Kornilov 
-                        Kolchak Kuropatkin Lazarev Makarov Menshikov Nakhimov Nebogatov 
-                        Nikolaevich Nikitin Ostrovsky Pavlov Putyatin Romanov Rozhestvensky Skobelev 
-                        Shuvalov Surkov Tukhachevsky Yegorov Yudenich Vorontsov Voroshilov Zavoyko
-	
+            Dragomirov Frolov Golivin Grishin Gurko Ivanov Ivannikov Konev Konstantinov Kornilov 
+            Kolchak Kuropatkin Lazarev Makarov Menshikov Nakhimov Nebogatov 
+            Nikolaevich Nikitin Ostrovsky Pavlov Putyatin Romanov Rozhestvensky Skobelev 
+            Shuvalov Surkov Tukhachevsky Yegorov Yudenich Vorontsov Voroshilov Zavoyko
 	}
-	callsigns = { Anvil Hammer Fury Arrow Storm Bear "White Lily" Devil Eagle Falcon Fox Snowflake Greasy Guardian Gunman Hawk Hardball Howl Blizzard Husky Ice Killer Steel Iron Skull Striker Thunder Warrior Wardog Vodka }
+	callsigns = { 
+		Anvil Hammer Fury Arrow Storm Bear "White Lily" Devil Eagle Falcon Fox Snowflake Greasy Guardian Gunman Hawk Hardball Howl Blizzard 
+		Husky Ice Killer Steel Iron Skull Striker Thunder Warrior Wardog Vodka
+	}
 }
 
 FRA = {
@@ -386,25 +395,155 @@ LAT = {
 ###############################################################
 # Eastern Europe
 ###############################################################
-ROM = {
+RUS = {
 	male = {
-		names = { Adrian Alexandru Andrei Anton Artur Bogdan Carol Cezar Constantin Constin
-			Cosmin Daniel Dumitru Emanuel Eremia Eugen Ferdinand Flaviu Florea Gheorghe
-			Grigore Henric Horatiu Iacob Ilie Ioan Ion Iosif Iulian
-			Iuliu Laurentiu Leontin Luca Lucian Mihai Mircea Nicolae Ovidiu Petru
-			Radu Sergiu Silviu Simion Stefan Valeriu Vasile Victor Vintila Vlad
-		  }
+		names = {
+			Aleksandr Aleksey Anatoliy Andrey Anton Arkadiy Arseniy Artemiy Artyom Artur Afanasiy Bogdan Boris Vadim Valeriy Vasiliy Viktor Vladimir Vladislav Vyacheslav Vsevolod Gennadiy Giorgiy Grigoriy Gleb Gerasim Gavriil
+			Denis Dmitriy Yegor Yevgeniy Zinoviy Igor Ilya Ivan Kirill Konstantin Kuzma Lavrentiy Leonid Lev Makar Matvey Maksim Mitrofan Mikhail Nikita Nikolay Oleg Pavel Pyotr Rodion Roman Ruslan Svyatoslav Semyon Sergey
+			Stanislav Stepan Taras Timofey Fyodor Filipp Khariton Khristofor Eduard Yuriy Yakov
+		}
+		surnames = {
+			Ivanov Smirnov Kuznetsov Popov Vasilyev Petrov Sokolov Mikhaylov Novikov Fyodorov Morozov Volkov Alekseyev Lebedev Semyonov Yegorov Pavlov Kozlov Stepanov Nikolayev Orlov Andreyev Makarov Nikitin Zakharov Zaytsev
+			Solovyev Borisov Yakovlev Grigoryev Romanov Vorobyev Sergeyev Kuzmin Frolov Aleksandrov Dmitriyev Korolyov Gusev Kiselyov Ilyin Maksimov Polyakov Sorokin Vinogradov Kovalyov Belov Medvedev Antonov Tarasov Baranov
+			Filippov Komarov Davydov Belyayev Gerasimov Bogdanov Osipov Sidorov Matveyev Markov Mironov Krylov Kulikov Karpov Melnikov Denisov Gavrilov Kazakov Afanasyev Timofeyev Fomin Chernov
+		}
 	}
 	female = {
-		names = { Andrea
-		 }
+		names = {
+			Aleksandra Anna Albina Aglaya Alla Angelina Albina Antonina Valentina Valeriya Vera Vasilisa Varvara Veronika Viktoriya Galina Darya Yevgeniya Evdokiya Yekaterina Yelena Yelizaveta Zhanna Zinaida Zoya Inga Inna
+			Irina Karina Klavdiya Kseniya Lidiya Ella Larisa Liliya Lyubov Lyudmila Margarita Marina Marfa Matryona Nadezhda Natalya Nina Oksana Olga Pelageya Polina Praskovya Raisa Svetlana Snezhana Sofiya Taisiya Tamara
+			Tatyana Faina Feodora Yuliya Yana
+		}
+		surnames = {
+			Ivanova Smirnova Kuznetsova Popova Vasilyeva Petrova Sokolova Mikhaylova Novikova Fyodorova Morozova Volkova Alekseyeva Lebedeva Semyonova Yegorova Pavlova Kozlova Stepanova Nikolayeva Orlova Andreyeva Makarova
+			Nikitina Zakharova Zaytseva Solovyeva Borisova Yakovleva Grigoryeva Romanova Vorobyeva Sergeyeva Kuzmina Frolova Aleksandrova Dmitriyeva Korolyova Guseva Kiselyova Ilyina Maksimova Polyakova Sorokina Vinogradova
+			Kovalyova Belova Medvedeva Antonova Tarasova Baranova Filippova Komarova Davydova Belyayeva Gerasimova Bogdanova Osipova Sidorova Matveyeva Markova Mironova Krylova Kulikova Karpova Melnikova Denisova Gavrilova
+			Kazakova Afanasyeva Timofeyeva Fomina Chernova
+		}
+	}
+	callsigns = {
+		13 33 Furious Arrow Vortex Warlock Colonist Eagle Falcon Baron Snowflake Scout Shcherba Lily Baida Fright Fakir Hedgehopper Hawk Colorad Howl Blizzard Dawn Steel Iron Gull Thunder Swallow Dragon Flyer
+		Beard Cherry Skomorokh Maestro Tiger Hot Kid Gypsy Navel Mordvin Varangian Swan Magpie Maple Pike Beagle "White Lily" "White Hundred"
+	}
+}
+
+BLR = {
+	male = {
+		names = {
+			Aleksandr Aleksey Anatoliy Andrey Anton Arkadiy Arseniy Artemiy Artyom Artur Afanasiy Bogdan Boris Vadim Valeriy Vasiliy Viktor Vladimir Vladislav Vyacheslav Vsevolod Gennadiy Giorgiy Grigoriy Gleb Gerasim Gavriil
+			Denis Dmitriy Yegor Yevgeniy Zinoviy Igor Ilya Ivan Kirill Konstantin Kuzma Lavrentiy Leonid Lev Makar Matvey Maksim Mitrofan Mikhail Nikita Nikolay Oleg Pavel Pyotr Rodion Roman Ruslan Svyatoslav Semyon Sergey
+			Stanislav Stepan Taras Timofey Fyodor Filipp Khariton Khristofor Eduard Yuriy Yakov
+		}
+		surnames = {
+			Ivanov Smirnov Kuznetsov Popov Vasilyev Petrov Sokolov Mikhaylov Novikov Fyodorov Morozov Volkov Alekseyev Lebedev Semyonov Yegorov Pavlov Kozlov Stepanov Nikolayev Orlov Andreyev Makarov Nikitin Zakharov Zaytsev
+			Solovyev Borisov Yakovlev Grigoryev Romanov Vorobyev Sergeyev Kuzmin Frolov Aleksandrov Dmitriyev Korolyov Gusev Kiselyov Ilyin Maksimov Polyakov Sorokin Vinogradov Kovalyov Belov Medvedev Antonov Tarasov Baranov
+			Filippov Komarov Davydov Belyayev Gerasimov Bogdanov Osipov Sidorov Matveyev Markov Mironov Krylov Kulikov Karpov Melnikov Denisov Gavrilov Kazakov Afanasyev Timofeyev Fomin Chernov
+		}
+	}
+	female = {
+		names = {
+			Aleksandra Anna Albina Aglaya Alla Angelina Albina Antonina Valentina Valeriya Vera Vasilisa Varvara Veronika Viktoriya Galina Darya Yevgeniya Evdokiya Yekaterina Yelena Yelizaveta Zhanna Zinaida Zoya Inga Inna
+			Irina Karina Klavdiya Kseniya Lidiya Ella Larisa Liliya Lyubov Lyudmila Margarita Marina Marfa Matryona Nadezhda Natalya Nina Oksana Olga Pelageya Polina Praskovya Raisa Svetlana Snezhana Sofiya Taisiya Tamara
+			Tatyana Faina Feodora Yuliya Yana
+		}
+		surnames = {
+			Ivanova Smirnova Kuznetsova Popova Vasilyeva Petrova Sokolova Mikhaylova Novikova Fyodorova Morozova Volkova Alekseyeva Lebedeva Semyonova Yegorova Pavlova Kozlova Stepanova Nikolayeva Orlova Andreyeva Makarova
+			Nikitina Zakharova Zaytseva Solovyeva Borisova Yakovleva Grigoryeva Romanova Vorobyeva Sergeyeva Kuzmina Frolova Aleksandrova Dmitriyeva Korolyova Guseva Kiselyova Ilyina Maksimova Polyakova Sorokina Vinogradova
+			Kovalyova Belova Medvedeva Antonova Tarasova Baranova Filippova Komarova Davydova Belyayeva Gerasimova Bogdanova Osipova Sidorova Matveyeva Markova Mironova Krylova Kulikova Karpova Melnikova Denisova Gavrilova
+			Kazakova Afanasyeva Timofeyeva Fomina Chernova
+		}
+	}
+	callsigns = {
+		13 33 Furious Arrow Vortex Warlock Colonist Eagle Falcon Baron Snowflake Scout Shcherba Lily Baida Fright Fakir Hedgehopper Hawk Colorad Howl Blizzard Dawn Steel Iron Gull Thunder Swallow Dragon Flyer
+		Beard Cherry Skomorokh Maestro Tiger Hot Kid Gypsy Navel Mordvin Varangian Swan Magpie Maple Pike Beagle "White Lily" "White Hundred"
+	}
+}
+
+UKR = {
+	male = {
+		names = {
+			Aleksandr Aleksey Anatoliy Andrey Anton Arkadiy Arseniy Artemiy Artyom Artur Afanasiy Bogdan Boris Vadim Valeriy Vasiliy Viktor Vladimir Vladislav Vyacheslav Vsevolod Gennadiy Giorgiy Grigoriy Gleb Gerasim Gavriil
+			Denis Dmitriy Yegor Yevgeniy Zinoviy Igor Ilya Ivan Kirill Konstantin Kuzma Lavrentiy Leonid Lev Makar Matvey Maksim Mitrofan Mikhail Nikita Nikolay Oleg Pavel Pyotr Rodion Roman Ruslan Svyatoslav Semyon Sergey
+			Stanislav Stepan Taras Timofey Fyodor Filipp Khariton Khristofor Eduard Yuriy Yakov
+		}
+		surnames = {
+			Ivanov Smirnov Kuznetsov Popov Vasilyev Petrov Sokolov Mikhaylov Novikov Fyodorov Morozov Volkov Alekseyev Lebedev Semyonov Yegorov Pavlov Kozlov Stepanov Nikolayev Orlov Andreyev Makarov Nikitin Zakharov Zaytsev
+			Solovyev Borisov Yakovlev Grigoryev Romanov Vorobyev Sergeyev Kuzmin Frolov Aleksandrov Dmitriyev Korolyov Gusev Kiselyov Ilyin Maksimov Polyakov Sorokin Vinogradov Kovalyov Belov Medvedev Antonov Tarasov Baranov
+			Filippov Komarov Davydov Belyayev Gerasimov Bogdanov Osipov Sidorov Matveyev Markov Mironov Krylov Kulikov Karpov Melnikov Denisov Gavrilov Kazakov Afanasyev Timofeyev Fomin Chernov
+		}
+	}
+	female = {
+		names = {
+			Aleksandra Anna Albina Aglaya Alla Angelina Albina Antonina Valentina Valeriya Vera Vasilisa Varvara Veronika Viktoriya Galina Darya Yevgeniya Evdokiya Yekaterina Yelena Yelizaveta Zhanna Zinaida Zoya Inga Inna
+			Irina Karina Klavdiya Kseniya Lidiya Ella Larisa Liliya Lyubov Lyudmila Margarita Marina Marfa Matryona Nadezhda Natalya Nina Oksana Olga Pelageya Polina Praskovya Raisa Svetlana Snezhana Sofiya Taisiya Tamara
+			Tatyana Faina Feodora Yuliya Yana
+		}
+		surnames = {
+			Ivanova Smirnova Kuznetsova Popova Vasilyeva Petrova Sokolova Mikhaylova Novikova Fyodorova Morozova Volkova Alekseyeva Lebedeva Semyonova Yegorova Pavlova Kozlova Stepanova Nikolayeva Orlova Andreyeva Makarova
+			Nikitina Zakharova Zaytseva Solovyeva Borisova Yakovleva Grigoryeva Romanova Vorobyeva Sergeyeva Kuzmina Frolova Aleksandrova Dmitriyeva Korolyova Guseva Kiselyova Ilyina Maksimova Polyakova Sorokina Vinogradova
+			Kovalyova Belova Medvedeva Antonova Tarasova Baranova Filippova Komarova Davydova Belyayeva Gerasimova Bogdanova Osipova Sidorova Matveyeva Markova Mironova Krylova Kulikova Karpova Melnikova Denisova Gavrilova
+			Kazakova Afanasyeva Timofeyeva Fomina Chernova
+		}
+	}
+	callsigns = {
+		13 33 Furious Arrow Vortex Warlock Colonist Eagle Falcon Baron Snowflake Scout Shcherba Lily Baida Fright Fakir Hedgehopper Hawk Colorad Howl Blizzard Dawn Steel Iron Gull Thunder Swallow Dragon Flyer
+		Beard Cherry Skomorokh Maestro Tiger Hot Kid Gypsy Navel Mordvin Varangian Swan Magpie Maple Pike Beagle "White Lily" "White Hundred"
+	}
+}
+
+ROM = {
+	male = {
+		names = { 
+			Achim Adrian Alexandru Alexei Alin Andrei Anghel Anton Atanasie Aurel Avram Barbu Benone 
+			Bogdan Bucur Camil Carol Catalin Cazimir Cezar Chivu Ciprian Claudiu Codrin Constantin Cornel 
+			Corneliu Corvin Cosmin Cristian Dan Daniel Darius David Decebal Dinu Dorin Dorinel Dragos Dumitru 
+			Emanuel Eremia Eugeniu Eugen Felix Francisc Florea Florin Gabriel Gelu George Gheorghe Gigel Gogu 
+			Grigore Horatiu Horea Horia Iacob Iancu Ilie Ioan Ion Iorgu Iosif Iulian Iuliu Lascar Lazar Leon 
+			Luca Marcel Marcu Marian Marin Marius Matei Mihai Mihail Mircea Miron Mugur Nae Nelu Nicolae Nistor 
+			Octav Octavian Ovidiu Pamfil Paul Pavel Petre Petru Pompiliu Radu Raul Razvan Robert Romica Romulus Scarlat 
+			Sebastian Serban Sever Silviu Simion Sorin Stefan Teodor Tiberiu Timotei Traian Tudor Valentin Vasile 
+			Victor Vintila Vitalie Vlad Vladimir Zamfir
+		}
+	}
+	female = {
+		names = { 
+			Ada Alina Alexandra Alexandrina Amalia Ana Anastasia Anca Ancuta Andrada Andreea 
+			Angela Antonia Aurelia Aurica Bianca Brindusa Camelia Carina Carmen Casandra Catalina 
+			Cezara Claudia Codruta Constanta Cornelia Cosmina Cristina Daciana Daiana Dana Daniela 
+			Daria Delia Denisa Diana Dora Ecaterina Elena Elisabeta Elvira Emilia Eugenia Felicia 
+			Filofteia Florica Florina Francesca Gabriela Geanina Georgeta Georgiana Geta Gina 
+			Gratiela Hortensia Ileana Ilinca Ioana Ionela Iosefina Irina Iulia Iuliana Izabela 
+			Larisa Laura Lavinia Lacramioara Leana Lenuta Lia Lidia Loredana Lorena Lucretia 
+			Lucia Malina Mara Marcela Maria Mariana Marilena Marinela Madalina Medeea Melania Mia 
+			Mihaela Mioara Minodora Mirabela  Mirela Miruna Mona Monica Nadia Narcisa Natalia Natasa 
+			Nicoleta Nina Nona Nora Oana Octavia Olga Olivia Otilia Paraschiva Patricia Paula Paulina 
+			Petronela Petruta Pompilia Raluca Ramona Rebeca Roberta Rodica Roxana Roxelana Ruxandra Sabrina 
+			Sanda Septimia Silvia Simina Simona Smaranda Sorana Sorina Stana Stefania Stela Suzana Tamara Tania 
+			Tatiana Tanta Teea Teodora Teodosia Timeea Valentina Valeria Varvara Vasilica Veronica Victoria Violeta 
+			Viorica Voichita Xenia Zamfira Zenobia Zoe
+		}
 	}
 	surnames = {
-		Chifu Angelescu Antonescu Argetoianu Averescu Baldescu Barozzi Berindei Cernat Christecu Cihoski
-		Ciuperca Coanda Crainiceanu Critescu Culcer Cuza Dona Dragalina Dumitrescu
-		Falcoianu Florescu Gardescu Grigorescu Froza Harjeu Holban Iancovescu Iliasevici Iliescu
-		Ionascu Ionescu Ionitiu Koslinski Lahovary Lupescu Mardarescu Murgescu Poenaru Prezan
-		Salajan Samsonovici Schitiu Scodrea Slaniceanu Steflea Tatarascu Tenescu Vaitoianu Zottu
+		Adamescu Adomnitei Alexandrescu Aldea Alexie Amariei Antonescu Andronic Andreescu Andrei Anghelescu Ardelean 
+		Arion Baciu Badea Bacovia Badulescu Baritiu Barbu Bibescu Birzan Blaga Bogdanescu Boldea Bologa Borsan Bratu 
+		Branescu Branzovenescu Breaz Brediceanu Budisteanu Bulai Butucel Buzdugan Calinic Callimachi Cantacuzino Caciulatu 
+		Camarasu Catavencu Cazacu Chencean Chivu Ciobanu Cipariu Ciubotaru Ciuhodaru Cimpean Codreanu Coman Comaneci Comanici 
+		Costache Costea Costinescu Covaci Creanga Cristea Dabija Dacian Daniel Danciulescu Davideanu Davila Dejeu Diaconescu 
+		Dinescu Dinu Dobre Domsa Dorobantu Dragan Dragomir Dumitrascu Efremescu Elefteriade Eftimiu Enache Enescu Farcas Farfuridi 
+		Fagadaru Feldiorean Fenesi Ferechiu Filotti Filimon Fintaneanu Fisigoi Florea Frasin Funeriu Gadrauteanu Gaistean Geambasu 
+		Georgian Gheorghiu Gheorghidiu Ghica Ghibanescu Gilca Giurgiuveanu Godeanu Golescu Greuceanu Grigorescu Hategan Halalai
+		Halmastean Heghedus Helesteanu Herdelea Homostean Hopartean Horodisteanu Hurezeanu Iacobici Iliese Iliescu Ion Ionescu 
+		Iordache Iorgovan Ipate Irimia Istrate Ivanescu Lacatus Lacusta Lazarescu Lecca Leonida Lese Lipan Lovinescu Lucescu 
+		Lupescu Macarie Macelaru Machidon Maghiran Maior Marinescu Manea Manastire Manole Marandici Marza Marin Marinescu
+		Matei Matiesan Melenciuc Mihaiescu Mironovici Mitrea Mizil Mocanu Morar Moromete Mugur Muntean Murea Mureseanu 
+		Murgulescu Nastasiu Nastase Nedelcu Nichifor Nicolaescu Nistor Novac Oancea Odobescu Onofrei Oprea Oprescu Oprisan 
+		Ormindean Oltean Pantelimon Palarieru Pacurar Paduraru Pavelescu Pescaru Penes Petrescu Pitaru Pogon Poenaru 
+		Popa Popescu Porcar Preda Preoteasa Prisacariu Pricop Proscan Prunariu Puscas Radu Radoi Racovita Rebreanu 
+		Roman Rogojeanu Rosetti Ruican Rus Sabin Samsonovici Satmarean Scripcariu Segarcea Seicaru Serban Serbanescu 
+		Severin Simion Sincai Soare Somesean Starcea Stefanescu Stirbei Sturza Surugiu Suciu Sutu Tanase Tarniceriu 
+		Tasca Tataru Teodorovici Teodosie Timplaru Toparceanu Trahanache Trandafir Trifan Tulcan Tunar Turcan Turturea 
+		Tutoveanu Ursachianu Ungureanu Vacarescu Vaida Vasilescu Velea Verdes Victor Vingarzan Visinescu Vladescu Voicu 
+		Voinea Vulcanescu Vulpe Zagan Zamfir Zamfirescu Zavoreanu Zegrean Zidaru Zugravescu
 	 }
 	callsigns = { }
 }
@@ -740,11 +879,16 @@ POR = {
 			José Júlio Leopoldo Luís Manuel Mário Miguel Nicolau Nuno Orlando 
 			Óscar Pascoal Paulo Pedro Rafael Raul Roberto Rodrigo Rui Santiago 
 			Sebastião Teodoro Teófilo Tiago Tomé Urbano Vasco Vicente Vitorino Vitório
-		
 		  }
 	}
 	female = {
-		names = { }
+		names = {
+			Ada Adelaide Adele Adriana Alessa Alessandra Alessia Antonia Arianna Barbara Beatrice 
+			Benedetta Berenice Bianca Carola Carolina Cassandra Caterina Cecilia Celeste Clara Elena 
+			Emilia Francesca Giorgia Giulia Jessica Linda Lisa Livia  Lucia Lucrezia Ludovica Luisa 
+			Martina Monica Nadia Nunzia Olivia Rebecca Rosina Serena Silvia Sofia Sophia Stella Teresa 
+			Veronica Virginia
+		}
 	}
 	surnames = { 
 		Amaral Barreto Bleck Braga Cabral Capelo Carmona Coelho Correia Coutinho
@@ -757,6 +901,40 @@ POR = {
 	 }
 	callsigns = { }
 }
+
+PRR = {
+	male = {
+		names = { 
+			Abel Adriano Afonso Alberto Alexandre Alfredo Álvaro André António Aquilino 
+			Artur Augusto Bartolomeu Bernardo Bruno Caetano Cândido Carlos Christovão Cláudio
+			Damião Daniel David Dinis Diogo Duarte Ernesto Estêvão Eugénio Fernando 
+			Filipe Francisco Gastão Hermenegildo Ignácio JErónimo João Joaquim Jorge
+			José Júlio Leopoldo Luís Manuel Mário Miguel Nicolau Nuno Orlando 
+			Óscar Pascoal Paulo Pedro Rafael Raul Roberto Rodrigo Rui Santiago 
+			Sebastião Teodoro Teófilo Tiago Tomé Urbano Vasco Vicente Vitorino Vitório
+		  }
+	}
+	female = {
+		names = {
+			Ada Adelaide Adele Adriana Alessa Alessandra Alessia Antonia Arianna Barbara Beatrice 
+			Benedetta Berenice Bianca Carola Carolina Cassandra Caterina Cecilia Celeste Clara Elena 
+			Emilia Francesca Giorgia Giulia Jessica Linda Lisa Livia  Lucia Lucrezia Ludovica Luisa 
+			Martina Monica Nadia Nunzia Olivia Rebecca Rosina Serena Silvia Sofia Sophia Stella Teresa 
+			Veronica Virginia
+		}
+	}
+	surnames = { 
+		Amaral Barreto Bleck Braga Cabral Capelo Carmona Coelho Correia Coutinho
+		"da Costa" "da Cunha" "da Silva" "de Albuquerque" "de Almeida" "de Arriaga" "de Bragança" "de Bragança-Coburgo" "de Carvalho" 
+		"de Castro" "de Gusmão" "de Lacerda" "de Mesquita" "de Moura" "de Noronha" "de Oliveira" "de Paiva" "de Sousa" "de Vasconcelos"
+		Dias "dos Reis" "dos Santos" Fernandes Ferreira Figueira "Freire de Andrade" Gago Gil Gomes
+		Herculano Ivens Keil Lopes Machado Magalhães Mendes Moniz Mouzinho Nogueira 
+		Nunes Ortigão Pereira Pinheiro Pinto Pires Pomar Pulido Queiroz Quintanilha
+		Ribeiro Rodrigues Salazar Sampaio Sérgio Silveira Tavares Teixeira Vidigal Vieira
+	 }
+	callsigns = { }
+}
+
 IRE = {
 	male = {
 		names = { Alexander Arthur Brian Cathal Christopher Con Daniel Denis Desmond Éamon
@@ -818,8 +996,90 @@ SPR = {
 		Maroto Márquez Martínez-Campos Maura Menéndez Miaja Millán-Astray Mina Mola Muñoz 
 		Narváez O'Donnell Ortega Pavía Pérez  Rodríguez Rojo Ruiz 
 		Sanjurjo Serrano Silvestre Topete Valdés Varela Villapol Villar Weyler Yagüe
-	
-	
+	}
+	callsigns = { }
+}
+
+SPM = {
+	male = {
+		names = { 
+			Agustín Alberto Alejandro Alfonso Álvaro Antonio Arsenio Augusto Baldomero
+			Baltasar Benito Bernardino Bernardo Calixto Carlos Celestino Claudio Cristobal Dámaso
+			Diego Dionisio Eduardo Emilio Estanislao Federico Felipe Félix Fernando Francisco
+			Gabino Gabriel Gaspar Genaro Gonzalo Ignacio Isidro Jacobo Jaime
+			Joaquín José  Juan Julio Leopoldo Lorenzo 
+			Luis Manuel Marcelo Mariano Mateo Melchor Miguel Nicolás Pablo Pascual
+			Pedro Rafael Raimundo Ramón Ricardo Santiago Sebastián Segismundo Valeriano Vicente 
+		  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { 
+		Blázquez
+		Acuña Aguirre Allendesalazar Alonso Álvarez  Aranda  Asensio
+		Aznar Barradas Bugallal Cabrera Cano Cervera "de Albornoz" 
+		"de Carvajal" "de la Fuente" "de Orleans" Díaz Espartero Fernández   Franco 
+		García  González Heredia Hernández Herrera Hevia  Linares López 
+		Maroto Márquez Martínez-Campos Maura Menéndez Miaja Millán-Astray Mina Mola Muñoz 
+		Narváez O'Donnell Ortega Pavía Pérez  Rodríguez Rojo Ruiz 
+		Sanjurjo Serrano Silvestre Topete Valdés Varela Villapol Villar Weyler Yagüe
+	}
+	callsigns = { }
+}
+
+SPA = {
+	male = {
+		names = { 
+			Agustín Alberto Alejandro Alfonso Álvaro Antonio Arsenio Augusto Baldomero
+			Baltasar Benito Bernardino Bernardo Calixto Carlos Celestino Claudio Cristobal Dámaso
+			Diego Dionisio Eduardo Emilio Estanislao Federico Felipe Félix Fernando Francisco
+			Gabino Gabriel Gaspar Genaro Gonzalo Ignacio Isidro Jacobo Jaime
+			Joaquín José  Juan Julio Leopoldo Lorenzo 
+			Luis Manuel Marcelo Mariano Mateo Melchor Miguel Nicolás Pablo Pascual
+			Pedro Rafael Raimundo Ramón Ricardo Santiago Sebastián Segismundo Valeriano Vicente 
+		  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { 
+		Blázquez
+		Acuña Aguirre Allendesalazar Alonso Álvarez  Aranda  Asensio
+		Aznar Barradas Bugallal Cabrera Cano Cervera "de Albornoz" 
+		"de Carvajal" "de la Fuente" "de Orleans" Díaz Espartero Fernández   Franco 
+		García  González Heredia Hernández Herrera Hevia  Linares López 
+		Maroto Márquez Martínez-Campos Maura Menéndez Miaja Millán-Astray Mina Mola Muñoz 
+		Narváez O'Donnell Ortega Pavía Pérez  Rodríguez Rojo Ruiz 
+		Sanjurjo Serrano Silvestre Topete Valdés Varela Villapol Villar Weyler Yagüe
+	}
+	callsigns = { }
+}
+
+SPF = {
+	male = {
+		names = { 
+			Agustín Alberto Alejandro Alfonso Álvaro Antonio Arsenio Augusto Baldomero
+			Baltasar Benito Bernardino Bernardo Calixto Carlos Celestino Claudio Cristobal Dámaso
+			Diego Dionisio Eduardo Emilio Estanislao Federico Felipe Félix Fernando Francisco
+			Gabino Gabriel Gaspar Genaro Gonzalo Ignacio Isidro Jacobo Jaime
+			Joaquín José  Juan Julio Leopoldo Lorenzo 
+			Luis Manuel Marcelo Mariano Mateo Melchor Miguel Nicolás Pablo Pascual
+			Pedro Rafael Raimundo Ramón Ricardo Santiago Sebastián Segismundo Valeriano Vicente 
+		  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { 
+		Blázquez
+		Acuña Aguirre Allendesalazar Alonso Álvarez  Aranda  Asensio
+		Aznar Barradas Bugallal Cabrera Cano Cervera "de Albornoz" 
+		"de Carvajal" "de la Fuente" "de Orleans" Díaz Espartero Fernández   Franco 
+		García  González Heredia Hernández Herrera Hevia  Linares López 
+		Maroto Márquez Martínez-Campos Maura Menéndez Miaja Millán-Astray Mina Mola Muñoz 
+		Narváez O'Donnell Ortega Pavía Pérez  Rodríguez Rojo Ruiz 
+		Sanjurjo Serrano Silvestre Topete Valdés Varela Villapol Villar Weyler Yagüe
 	}
 	callsigns = { }
 }
@@ -1827,7 +2087,11 @@ MEX = {
 		  }
 	}
 	female = {
-		names = { }
+		names = {
+			Adelita Araceli Belén Camila Candelaria Chavela Consuelo Cristina Delfina Esperanza
+			Fidelia Graciela Isadora Isabella Jimena Ximena Luciana Lucrecia María Marisol
+			Noemí Nohemi Valentina Valeria Rocío Socorro Sofía Teófila Amaranta Úrsula Rebeca Remedios
+		}
 	}
 	surnames = { 
 		Martinez Almonte Álvarez Arista Barragán Bocanegra Bravo Bustamante Canalizo Carranza Caserta
@@ -1850,7 +2114,11 @@ CRU = {
 		  }
 	}
 	female = {
-		names = { }
+		names = {
+			Adelita Araceli Belén Camila Candelaria Chavela Consuelo Cristina Delfina Esperanza
+			Fidelia Graciela Isadora Isabella Jimena Ximena Luciana Lucrecia María Marisol
+			Noemí Nohemi Valentina Valeria Rocío Socorro Sofía Teófila Amaranta Úrsula Rebeca Remedios
+		}
 	}
 	surnames = { 
 		Martinez Almonte Álvarez Arista Barragán Bocanegra Bravo Bustamante Canalizo Carranza Caserta
@@ -1873,7 +2141,11 @@ COS = {
 		  }
 	}
 	female = {
-		names = { }
+		names = {
+			Adelita Araceli Belén Camila Candelaria Chavela Consuelo Cristina Delfina Esperanza
+			Fidelia Graciela Isadora Isabella Jimena Ximena Luciana Lucrecia María Marisol
+			Noemí Nohemi Valentina Valeria Rocío Socorro Sofía Teófila Amaranta Úrsula Rebeca Remedios
+		}
 	}
 	surnames = { 
 		Aguilar Andino Araujo Arbenz Barahona Barillas Barrios Cabañas Cárdenas Carrera
@@ -1895,7 +2167,11 @@ ELS = {
 		  }
 	}
 	female = {
-		names = { }
+		names = {
+			Adelita Araceli Belén Camila Candelaria Chavela Consuelo Cristina Delfina Esperanza
+			Fidelia Graciela Isadora Isabella Jimena Ximena Luciana Lucrecia María Marisol
+			Noemí Nohemi Valentina Valeria Rocío Socorro Sofía Teófila Amaranta Úrsula Rebeca Remedios
+		}
 	}
 	surnames = { 
 		Aguilar Andino Araujo Arbenz Barahona Barillas Barrios Cabañas Cárdenas Carrera
@@ -1917,7 +2193,11 @@ GUA = {
 		  }
 	}
 	female = {
-		names = { }
+		names = {
+			Adelita Araceli Belén Camila Candelaria Chavela Consuelo Cristina Delfina Esperanza
+			Fidelia Graciela Isadora Isabella Jimena Ximena Luciana Lucrecia María Marisol
+			Noemí Nohemi Valentina Valeria Rocío Socorro Sofía Teófila Amaranta Úrsula Rebeca Remedios
+		}
 	}
 	surnames = { 
 		Aguilar Andino Araujo Arbenz Barahona Barillas Barrios Cabañas Cárdenas Carrera
@@ -1939,7 +2219,11 @@ HON = {
 		  }
 	}
 	female = {
-		names = { }
+		names = {
+			Adelita Araceli Belén Camila Candelaria Chavela Consuelo Cristina Delfina Esperanza
+			Fidelia Graciela Isadora Isabella Jimena Ximena Luciana Lucrecia María Marisol
+			Noemí Nohemi Valentina Valeria Rocío Socorro Sofía Teófila Amaranta Úrsula Rebeca Remedios
+		}
 	}
 	surnames = { 
 		Aguilar Andino Araujo Arbenz Barahona Barillas Barrios Cabañas Cárdenas Carrera
@@ -1962,7 +2246,11 @@ NIC = {
 		  }
 	}
 	female = {
-		names = { }
+		names = {
+			Adelita Araceli Belén Camila Candelaria Chavela Consuelo Cristina Delfina Esperanza
+			Fidelia Graciela Isadora Isabella Jimena Ximena Luciana Lucrecia María Marisol
+			Noemí Nohemi Valentina Valeria Rocío Socorro Sofía Teófila Amaranta Úrsula Rebeca Remedios
+		}
 	}
 	surnames = { 
 		Aguilar Andino Araujo Arbenz Barahona Barillas Barrios Cabañas Cárdenas Carrera
@@ -1984,7 +2272,11 @@ PAN = {
 		  }
 	}
 	female = {
-		names = { }
+		names = {
+			Adelita Araceli Belén Camila Candelaria Chavela Consuelo Cristina Delfina Esperanza
+			Fidelia Graciela Isadora Isabella Jimena Ximena Luciana Lucrecia María Marisol
+			Noemí Nohemi Valentina Valeria Rocío Socorro Sofía Teófila Amaranta Úrsula Rebeca Remedios
+		}
 	}
 	surnames = { 
 		Aguilar Andino Araujo Arbenz Barahona Barillas Barrios Cabañas Cárdenas Carrera
@@ -2007,7 +2299,11 @@ CUB = {
 		  }
 	}
 	female = {
-		names = { }
+		names = {
+			Adelita Araceli Belén Camila Candelaria Chavela Consuelo Cristina Delfina Esperanza
+			Fidelia Graciela Isadora Isabella Jimena Ximena Luciana Lucrecia María Marisol
+			Noemí Nohemi Valentina Valeria Rocío Socorro Sofía Teófila Amaranta Úrsula Rebeca Remedios
+		}
 	}
 	surnames = { 
 		Acosta Alfau Báez Batista Bayo Cabral Carmona Castillo Castro Cisneros
@@ -2031,7 +2327,11 @@ DOM = {
 		 }
 	}
 	female = {
-		names = { }
+		names = {
+			Adelita Araceli Belén Camila Candelaria Chavela Consuelo Cristina Delfina Esperanza
+			Fidelia Graciela Isadora Isabella Jimena Ximena Luciana Lucrecia María Marisol
+			Noemí Nohemi Valentina Valeria Rocío Socorro Sofía Teófila Amaranta Úrsula Rebeca Remedios
+		}
 	}
 	surnames = { 
 		Acosta Alfau Báez Batista Bayo Cabral Carmona Castillo Castro Cisneros
@@ -2053,7 +2353,11 @@ HAI = {
 		 }
 	}
 	female = {
-		names = { }
+		names = {
+			Adelita Araceli Belén Camila Candelaria Chavela Consuelo Cristina Delfina Esperanza
+			Fidelia Graciela Isadora Isabella Jimena Ximena Luciana Lucrecia María Marisol
+			Noemí Nohemi Valentina Valeria Rocío Socorro Sofía Teófila Amaranta Úrsula Rebeca Remedios
+		}
 	}
 	surnames = {
 		Alexis Ardouin Auguste Bellegarde Boisrond-Canal Bonnet Borno Boyer Brutus Christophe
@@ -2081,7 +2385,9 @@ BRA = {
 		  }
 	}
 	female = {
-		names = { }
+		names = {
+			Aldara Beatriz Berengaria Branca Blanche Constance Estevainha Stephania Fruilhe Guiomar Joana Leonor Margarida Maria Sancha Teresa Constança
+		}
 	}
 	surnames = { 
 		Barreto Bernardes Bittencourt Brandão Bras "Cabral da Silva" Caldwell Constant Costa "da Camara"
@@ -2105,7 +2411,11 @@ ARG = {
 		  }
 	}
 	female = {
-		names = { }
+		names = {
+			Adelita Araceli Belén Camila Candelaria Chavela Consuelo Cristina Delfina Esperanza
+			Fidelia Graciela Isadora Isabella Jimena Ximena Luciana Lucrecia María Marisol
+			Noemí Nohemi Valentina Valeria Rocío Socorro Sofía Teófila Amaranta Úrsula Rebeca Remedios
+		}
 	}
 	surnames = { 
 		Aguirre Avellaneda Báez Balcarce Bareiro Berro Brown Caballero Cruz "de Alvear"
@@ -2129,7 +2439,11 @@ CHL = {
 		  }
 	}
 	female = {
-		names = { }
+		names = {
+			Adelita Araceli Belén Camila Candelaria Chavela Consuelo Cristina Delfina Esperanza
+			Fidelia Graciela Isadora Isabella Jimena Ximena Luciana Lucrecia María Marisol
+			Noemí Nohemi Valentina Valeria Rocío Socorro Sofía Teófila Amaranta Úrsula Rebeca Remedios
+		}
 	}
 	surnames = { 
 		Abaroa Ágreda Altamirano Arteaga Ballivián Baquedano Belzú Blanche Blanco Bulnes
@@ -2163,7 +2477,8 @@ COL = {
 		Pezet Rebolledo Ruíz-Tagle Salaverry "Santa María" Siles Sotomayor Toro Valencia Zañartu Zapata
 	
 	}
-	callsigns = { }
+	callsigns = {
+	}
 }
 BOL = {
 	male = {
@@ -2177,7 +2492,11 @@ BOL = {
 		  }
 	}
 	female = {
-		names = { }
+		names = {
+			Adelita Araceli Belén Camila Candelaria Chavela Consuelo Cristina Delfina Esperanza
+			Fidelia Graciela Isadora Isabella Jimena Ximena Luciana Lucrecia María Marisol
+			Noemí Nohemi Valentina Valeria Rocío Socorro Sofía Teófila Amaranta Úrsula Rebeca Remedios
+		}
 	}
 	surnames = { 
 		Abaroa Ágreda Altamirano Arteaga Ballivián Baquedano Belzú Blanche Blanco Bulnes
@@ -2201,7 +2520,11 @@ ECU = {
 		  }
 	}
 	female = {
-		names = { }
+		names = {
+			Adelita Araceli Belén Camila Candelaria Chavela Consuelo Cristina Delfina Esperanza
+			Fidelia Graciela Isadora Isabella Jimena Ximena Luciana Lucrecia María Marisol
+			Noemí Nohemi Valentina Valeria Rocío Socorro Sofía Teófila Amaranta Úrsula Rebeca Remedios
+		}
 	}
 	surnames = { 
 		Abaroa Ágreda Altamirano Arteaga Ballivián Baquedano Belzú Blanche Blanco Bulnes
@@ -2225,7 +2548,11 @@ PAR = {
 		  }
 	}
 	female = {
-		names = { }
+		names = {
+			Adelita Araceli Belén Camila Candelaria Chavela Consuelo Cristina Delfina Esperanza
+			Fidelia Graciela Isadora Isabella Jimena Ximena Luciana Lucrecia María Marisol
+			Noemí Nohemi Valentina Valeria Rocío Socorro Sofía Teófila Amaranta Úrsula Rebeca Remedios
+		}
 	}
 	surnames = { 
 		Abaroa Ágreda Altamirano Arteaga Ballivián Baquedano Belzú Blanche Blanco Bulnes
@@ -2249,7 +2576,11 @@ PRU = {
 		  }
 	}
 	female = {
-		names = { }
+		names = {
+			Adelita Araceli Belén Camila Candelaria Chavela Consuelo Cristina Delfina Esperanza
+			Fidelia Graciela Isadora Isabella Jimena Ximena Luciana Lucrecia María Marisol
+			Noemí Nohemi Valentina Valeria Rocío Socorro Sofía Teófila Amaranta Úrsula Rebeca Remedios
+		}
 	}
 	surnames = { 
 		Abaroa Ágreda Altamirano Arteaga Ballivián Baquedano Belzú Blanche Blanco Bulnes
@@ -2272,7 +2603,11 @@ URG = {
 		  }
 	}
 	female = {
-		names = { }
+		names = {
+			Adelita Araceli Belén Camila Candelaria Chavela Consuelo Cristina Delfina Esperanza
+			Fidelia Graciela Isadora Isabella Jimena Ximena Luciana Lucrecia María Marisol
+			Noemí Nohemi Valentina Valeria Rocío Socorro Sofía Teófila Amaranta Úrsula Rebeca Remedios
+		}
 	}
 	surnames = { 
 		Aguirre Avellaneda Báez Balcarce Bareiro Berro Brown Caballero Cruz "de Alvear"
@@ -2296,7 +2631,11 @@ VEN = {
 		  }
 	}
 	female = {
-		names = { }
+		names = {
+			Adelita Araceli Belén Camila Candelaria Chavela Consuelo Cristina Delfina Esperanza
+			Fidelia Graciela Isadora Isabella Jimena Ximena Luciana Lucrecia María Marisol
+			Noemí Nohemi Valentina Valeria Rocío Socorro Sofía Teófila Amaranta Úrsula Rebeca Remedios
+		}
 	}
 	surnames = { 
 		Abaroa Ágreda Altamirano Arteaga Ballivián Baquedano Belzú Blanche Blanco Bulnes

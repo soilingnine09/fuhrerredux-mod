@@ -36,8 +36,8 @@ if = {
 
 add_ideas = {
 	party_pop_0_60
-	#unbalanced_industry
-	#iliterate_population
+	backwards_economy
+	iliterate_population
 	
 	military_junta
 }

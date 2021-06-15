@@ -91,128 +91,90 @@ set_popularities = {
     valkist = 24
 }
 
-create_country_leader = {
-	name = "Juan Esteban Montero"
-	desc = "POLITICS_ARTURO_ALESSANDRI_DESC"
-	picture = "JEMontero.tga"
-	expire = "1965.1.1"
-	ideology = social_liberal_subtype
-	traits = {
-		#
-	}
-}
-
-
-
-create_country_leader = {
-	name = "Jorge González von Marées"
-	desc = "POLITICS_JORGE_GONZÁLEZ_VON_MARÉES_DESC"
-	picture = "jgvm.tga"
-	expire = "1965.1.1"
-	ideology = valkist_subtype
-	traits = {
-		#
-	}
-}
 
 create_country_leader = {
 	name = "Carlos Contreras Labarca"
 	desc = "POLITICS_CARLOS_CONTRERAS_LABARCA_DESC"
-	picture = "Carlos_Contreras_Labarca.tga"
+	picture = "Portrait_Chile_Carlos_Contreras_Labarca.tga"
 	expire = "1965.1.1"
 	ideology = collectivist_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
-
+create_country_leader = {
+	name = "Manuel Rojas"
+	desc = "POLITICS_MANUEL_ROJAS_DESC"
+	picture = "Portrait_Chile_Manuel_Rojas.tga"
+	expire = "1965.1.1"
+	ideology = libertarian_socialist_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Marmaduque Grove"
+	desc = "POLITICS_MARMADUQUE_GROVE_DESC"
+	picture = "Portrait_Chile_Marmaduque_Grove.tga"
+	expire = "1965.1.1"
+	ideology = social_democrat_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Juan Esteban Montero"
+	desc = "POLITICS_JUAN_ESTEBAN_MONTERO_DESC"
+	picture = "Portrait_Chile_Juan_Esteban_Montero.tga"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Gustavo Ross"
+	desc = "POLITICS_GUSTAVO_ROSS_DESC"
+	picture = "Portrait_Chile_Gustavo_Ross.tga"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Eduardo Cruz-Coke"
+	desc = "POLITICS_EDUARDO_CRUZ_COKE_DESC"
+	picture = "Portrait_Eduardo_Cruz_Coke.tga"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Bartolomé Blanche"
+	desc = "POLITICS_BARTOLOME_BLANCHE_DESC"
+	picture = "Portrait_Chile_Bartolome_Blanche.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+	traits = { }
+}
 create_country_leader = {
 	name = "Carlos Ibañez del Campo"
 	desc = "POLITICS_CARLOS_CONTRERAS_LABARCA_DESC"
-	picture = "General_Ibanez.tga"
+	picture = "Portrait_Chile_Carlos_Ibanez_Campo.tga"
 	expire = "1965.1.1"
 	ideology = paternal_autocrat_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
-
-create_country_leader = {
-	name = "Bartolomé Blanche"
-	desc = "BB_DESC"
-	picture = "Bartolome_Blanche.tga"
-	expire = "1965.1.1"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Marmaduque Grove"
-	desc = "MG_DESC"
-	picture = "Marmaduque_Grove.tga"
-	expire = "1965.1.1"
-	ideology = social_democrat_subtype
-	traits = {
-		#
-	}
-}
-
 create_country_leader = {
 	name = "Raúl Olivares"
-	desc = "RO_DESC"
-	picture = "Raul_Olivares.dds"
+	desc = "POLITICS_RAUL_OLIVARES_DESC"
+	picture = "Portrait_Chile_Raul_Olivares.tga"
 	expire = "1965.1.1"
 	ideology = national_populist_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
-
 create_country_leader = {
-	name = "Gustavo Ross"
-	desc = "GR_DESC"
-	picture = "gustavo_ross.tga"
+	name = "Jorge González von Marées"
+	desc = "POLITICS_JORGE_GONZÁLEZ_VON_MARÉES_DESC"
+	picture = "Portrait_Chile_Jorge_Gonzales_von_Marees.tga"
 	expire = "1965.1.1"
-	ideology = market_liberal_subtype
-	traits = {
-		#
-	}
+	ideology = valkist_subtype
+	traits = { }
 }
 
-create_country_leader = {
-	name = "Eduardo Cruz-Coke"
-	desc = "ECC_DESC"
-	picture = "ECC.tga"
-	expire = "1965.1.1"
-	ideology = social_conservative_subtype
-	traits = {
-		#
-	}
-}
 
-create_country_leader = {
-	name = "Manuel Rojas"
-	desc = "MR_DESC"
-	picture = "Manuel_Rojas.tga"
-	expire = "1965.1.1"
-	ideology = libertarian_socialist_subtype
-	traits = {
-		#
-	}
-}
 
-create_corps_commander = {
-	name = "Oscar Otárola Escudero"
-	portrait_path = "gfx/leaders/CHL/CHL_Oscar_Escudero_Otarola.tga"
-	traits = { trait_mountaineer }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 2
-	planning_skill = 4
-	logistics_skill = 3
-}
 
 create_field_marshal = {
 	name = "Carlos Fuentes Rabe"
@@ -224,7 +186,6 @@ create_field_marshal = {
 	planning_skill = 4
 	logistics_skill = 2
 }
-
 create_field_marshal = {
 	name = "Luis Altamirano"
 	portrait_path = "gfx/leaders/CHL/CHL_Luis_Altamirano.tga"
@@ -237,8 +198,28 @@ create_field_marshal = {
 }
 
 create_corps_commander = {
+	name = "Arturo Puga"
+	picture = "Portrait_Chile_Arturo_Puga.tga"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Oscar Otárola Escudero"
+	picture = "Portrait_Chile_Oscar_Escudero_Otarola.tga"
+	traits = { trait_mountaineer }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}
+create_corps_commander = {
 	name = "Carlos Ibañez del Campo"
-	portrait_path = "gfx/leaders/CHL/General_Ibanez.tga"
+	picture = "Portrait_Chile_Carlos_Ibanez_Campo.tga"
 	traits = { trait_mountaineer }
 	skill = 3
 	attack_skill = 2
@@ -247,10 +228,9 @@ create_corps_commander = {
 	logistics_skill = 3
 	id= 942
 }
-
 create_corps_commander = {
 	name = "Bartolomé Blanche"
-	portrait_path = "gfx/leaders/CHL/Bartolome_Blanche.tga"
+	picture = "Portrait_Chile_Bartolome_Blanche.tga"
 	traits = { }
 	skill = 3
 	attack_skill = 3
@@ -258,17 +238,17 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 2
 }
-
 create_corps_commander = {
-	name = "Arturo Puga"
-	portrait_path = "gfx/leaders/CHL/CHL_Arturo_Puga.tga"
-	traits = { }
+	name = "Juan Pablo Bennett"
+	picture = "Portrait_Chile_Bartomole_Bennett.tga"
+	traits = { harsh_leader inflexible_strategist trait_mountaineer }
 	skill = 2
 	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
+	defense_skill = 2
+	planning_skill = 1
 	logistics_skill = 2
 }
+
 
 ### Ship Variants ###
 

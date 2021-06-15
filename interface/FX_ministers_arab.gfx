@@ -1,0 +1,373 @@
+# Fuhrerredux Minister Sprites
+# Middle East Region
+
+spriteTypes = {
+
+    ####################################################
+    # TUR
+    ### Head of Government
+	spriteType = {
+		name = "GFX_idea_TUR_Sefik_Huesnue_Bey_hog_col"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Sefik_Huesnue_Bey.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Hasan_Ali_Pasa_hog_sde"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Hasan_Ali_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Ali_Fethi_Pasa_hog_sli"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Ali_Fethi_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Ali_Kemal_Bey_hog_sli"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Ali_Kemal_Bey.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Prens_Sabahaddin_Efendi_hog_sli"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Prens_Sabahaddin_Efendi.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Musa_Kazim_Karabekir_Pasa_hog_mli"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Musa_Kazim_Karabekir_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Ali_Suekrue_Pasa_hog_sco"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Ali_Suekrue_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Shakib_Arslan_hog_sco"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Shakib_Arslan.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Mehmed_Cavid_Bey_hog_ade"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Mehmed_Cavid_Bey.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Mehmed_Vehip_Pasa_hog_ade"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Mehmed_Vehip_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Mustafa_Ismet_Pasa_hog_ade"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Mustafa_Ismet_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Mustafa_Kemal_Pasa_hog_ade"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Mustafa_Kemal_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Hueseyin_Selahattin_Pasa_hog_pau"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Hueseyin_Selahattin_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Mustafa_Fevzi_Pasa_hog_pau"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Mustafa_Fevzi_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Hueseyin_Nihal_Pasa_hog_npo"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Hueseyin_Nihal_Pasa.tga"
+	}
+	### Foreign Minister
+	spriteType = {
+		name = "GFX_idea_TUR_Ali_Fuad_Pasa_for_sli"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Ali_Fuad_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Ali_Kemal_Bey_for_sli"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Ali_Kemal_Bey.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Haqqi_al_Azm_for_sli"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Haqqi_al_Azm.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Prens_Sabahaddin_Efendi_for_sli"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Prens_Sabahaddin_Efendi.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Ali_Adnan_Bey_for_mli"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Ali_Adnan_Bey.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Koeprueluezade_Mehmed_Fuad_Pasa_for_mli"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Koeprueluezade_Mehmed_Fuad_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Riza_Nur_Pasa_for_mli"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Riza_Nur_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Hashim_al_Atassi_for_sco"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Hashim_al_Atassi.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Muhammed_Hamdi_Yazir_for_sco"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Muhammed_Hamdi_Yazir.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Filibeli_Hilmi_Bey_for_ade"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Filibeli_Hilmi_Bey.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Hueseyin_Numan_Pasa_for_ade"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Hueseyin_Numan_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Mehmed_Suekrue_Pasa_for_ade"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Mehmed_Suekrue_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Mustafa_Ismet_Pasa_for_ade"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Mustafa_Ismet_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Selahattin_Pasa_for_ade"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Selahattin_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Tevfik_Ruestue_Bey_for_ade"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Tevfik_Ruestue_Bey.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Fahrettin_Pasa_for_pau"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Fahrettin_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Sueleyman_Sefik_Pasa_for_pau"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Sueleyman_Sefik_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Ahmed_Necdet_Pasa_for_npo"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Ahmed_Necdet_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Zeki_Velidi_Pasa_for_npo"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Zeki_Velidi_Pasa.tga"
+	}
+	### Economy Minister
+	spriteType = {
+		name = "GFX_idea_TUR_Berc_Keresteciyan_Bey_eco_sli"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Berc_Keresteciyan_Bey.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Haci_Oemer_Bey_eco_mli"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Haci_Oemer_Bey.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Hueseyin_Huesnue_Pasa_eco_mli"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Hueseyin_Huesnue_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Koeprueluezade_Mehmed_Fuad_Pasa_eco_mli"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Koeprueluezade_Mehmed_Fuad_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Mahmud_Celal_Pasa_eco_mli"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Mahmud_Celal_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Mehmet_Fahrettin_Pasa_eco_mli"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Mehmet_Fahrettin_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Mustafa_Abduelhalik_Pasa_eco_mli"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Mustafa_Abduelhalik_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Zuehtue_Hilmi_Pasa_eco_mli"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Zuehtue_Hilmi_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Abduelmuhsin_el_Sadun_Pasa_eco_sco"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Abduelmuhsin_el_Sadun_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Ali_Fuad_Pasa_eco_sco"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Ali_Fuad_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Hasan_Huesnue_Pasa_eco_ade"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Hasan_Huesnue_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Kara_Kemal_Bey_eco_ade"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Kara_Kemal_Bey.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Mehmed_Cavid_Bey_eco_ade"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Mehmed_Cavid_Bey.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Mehmed_Sakir_Pasa_eco_ade"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Mehmed_Sakir_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Mustafa_Seref_Pasa_eco_ade"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Mustafa_Seref_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Resad_Muhlis_Bey_eco_ade"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Resad_Muhlis_Bey.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Sevket_Rasid_Bey_eco_ade"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Sevket_Rasid_Bey.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Sirri_Bey_eco_ade"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Sirri_Bey.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Mehmed_Nuri_Bey_eco_pau"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Mehmed_Nuri_Bey.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Mehmed_Sefik_Pasa_eco_pau"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Mehmed_Sefik_Pasa.tga"
+	}
+	### Security Minister
+	spriteType = {
+		name = "GFX_idea_TUR_Agaoglu_Ahmed_Pasa_sec_sli"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Agaoglu_Ahmed_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Feridun_Fikri_Pasa_sec_sli"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Feridun_Fikri_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Ibrahim_Refik_Pasa_sec_sli"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Ibrahim_Refik_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Bekir_Refik_Pasa_sec_mli"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Bekir_Refik_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Musa_Kazim_Karabekir_Pasa_sec_mli"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Musa_Kazim_Karabekir_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Refik_Sevket_Pasa_sec_mli"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Refik_Sevket_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Mustafa_Sabri_Effendi_sec_sco"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Mustafa_Sabri_Effendi.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Ahmed_Naci_Pasa_sec_ade"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Ahmed_Naci_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Ali_Riza_Pasa_sec_ade"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Ali_Riza_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Kazim_Fikri_Pasa_sec_ade"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Kazim_Fikri_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Mehmed_Semsettin_Pasa_sec_ade"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Mehmed_Semsettin_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Mustafa_Necati_Pasa_sec_ade"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Mustafa_Necati_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Yunus_Nadi_Bey_sec_ade"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Yunus_Nadi_Bey.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Mehmed_Recep_Pasa_sec_pau"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Mehmed_Recep_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Mustafa_Fevzi_Pasa_sec_pau"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Mustafa_Fevzi_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Sadri_Maksudi_Bey_sec_npo"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Sadri_Maksudi_Bey.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Yusuf_Kemal_Pasa_sec_npo"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Yusuf_Kemal_Pasa.tga"
+	}
+	### Chief of Staff
+	spriteType = {
+		name = "GFX_idea_TUR_Mehmed_Cemal_Pasa_cos_sco"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Mehmed_Cemal_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Kazim_Pasa_cos_pau"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Kazim_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Mustafa_Fevzi_Pasa_cos_pau"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Mustafa_Fevzi_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Osman_Fuad_Efendi_cos_pau"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Osman_Fuad_Efendi.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Salih_Pasa_cos_pau"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Salih_Pasa.tga"
+	}
+	### Chief of Army
+	spriteType = {
+		name = "GFX_idea_TUR_Asim_Pasa_carm_pau"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Asim_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Cemil_Cahit_Pasa_carm_pau"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Cemil_Cahit_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Fahrettin_Pasa_carm_pau"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Fahrettin_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Fakhri_Pasa_carm_pau"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Fakhri_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Mustafa_Pasa_carm_pau"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Mustafa_Pasa.tga"
+	}
+	### Chief of Navy
+	spriteType = {
+		name = "GFX_idea_TUR_Mahmud_Muhtar_Pasa_cnav_ade"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Mahmud_Muhtar_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Suekrue_Pasa_cnav_ade"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Suekrue_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Hueseyin_Rauf_Pasa_cnav_pau"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Hueseyin_Rauf_Pasa.tga"
+	}
+	### Chief of Air Force
+	spriteType = {
+		name = "GFX_idea_TUR_Irfan_Bey_cair_sli"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Irfan_Bey.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Vecihi_Pasa_cair_sli"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Vecihi_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Ahmet_Ali_Pasa_cair_sco"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Ahmet_Ali_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Sakir_Fevzi_Pasa_cair_ade"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Sakir_Fevzi_Pasa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_Ismail_Sefik_Bey_cair_pau"
+		texturefile = "gfx/interface/ideas/TUR/ministers/TUR_Ismail_Sefik_Bey.tga"
+	}
+
+}

@@ -76,7 +76,7 @@ set_country_flag = coalition_social_liberal
 
 set_politics = {
 	ruling_party = social_conservative
-	last_election = "1932.3.5"
+	last_election = "1932.8.5"
 	election_frequency = 48
 	elections_allowed = yes
 }
@@ -239,12 +239,12 @@ add_ideas = {
 	FRA_divided_military_staff
 	FRA_colonial_profits
 	GEN_entente_leader
-	#low_popularity
-	#normal_popularity
-	NFA_Joachim_Prince_de_Murat_hog_sco
-	NFA_Pierre_Pflimlin_for_sco
-	FRA_Antoine_Henri_Queuille_eco_sco #A good old useless air support proponent.
-	NFA_Paul_Coste_Floret_sec_sco
+	
+	FRA_Jean_Ybarnegaray_hog_sco
+	FRA_Georges_Mandel_for_sco
+	FRA_Andre_Tardieu_eco_mli
+	FRA_Jean_Fabry_sec_sli
+	
 	parliamentary_republic
 }
 

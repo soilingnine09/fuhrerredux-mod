@@ -148,7 +148,6 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 1
 }
-
 create_corps_commander = {
 	name = "Frank Messervy"
 	desc = "RAJ_frank_messervy_desc"
@@ -160,7 +159,6 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 3	
 }
-
 create_corps_commander = {
 	name = "Douglas Gracey"
 	desc = "RAJ_douglas_gracey_desc"
@@ -172,7 +170,6 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 3	
 }
-
 create_navy_leader = {
 	name = "Herbert Fitzherbert"
 	desc = "RAJ_herbert_fitzherbert_desc"

@@ -6,11 +6,10 @@
 
 add_namespace = mex
 
-# intro
-country_event = {
+country_event = { # Intro
 	id = mex.1
 	immediate = {log = "[GetDateText]: [Root.GetName]: event mex.1"}
-	title = "The Status of Mexico"
+	title = mex.1.t
 	desc = mex.1.d
 	picture = GFX_report_event_generic_riot
 
@@ -26,381 +25,232 @@ country_event = {
 	}
 
 	option = {
-		name = "We will reclaim our birthright..."
+		name = mex.1.a
 	}
 }
 
-country_event = {
+country_event = { # Question of Doctrine
 	id = mex.2
 	immediate = {log = "[GetDateText]: [Root.GetName]: event mex.2"}
-	title = "The Question of Doctrine"
+	title = mex.2.t
 	desc = mex.2.d
 	picture = GFX_report_event_military_planning
-
 	is_triggered_only = yes
-
 	fire_only_once = yes
 
 	option = {
-		name = "Rapid movement and agressive tactics will ensure success."
+		name = mex.2.a
 
 		add_tech_bonus = {
-  				bonus = 0.5
- 				uses = 1
- 				category = armor
-			}
-
+			bonus = 0.5
+			uses = 1
+			category = armor
+		}
 		add_tech_bonus = {
-  				bonus = 0.5
- 				uses = 1
- 				category = motorized_equipment
-			}
+			bonus = 0.5
+			uses = 1
+			category = motorized_equipment
+		}
 
 		set_global_flag = MEX_MOBILE_WARFARE
-
-		ai_chance = {
-			factor = 15
-		}
+		ai_chance = { factor = 15 }
 	}
 
 	option = {
-		name = "Firepower priority will prevent needless deaths in the field."
+		name = mex.2.b
 
 		add_tech_bonus = {
-  				bonus = 0.5
- 				uses = 1
- 				category = artillery
-			}
-
+			bonus = 0.5
+			uses = 1
+			category = artillery
+		}
 		add_tech_bonus = {
-  				bonus = 0.5
- 				uses = 1
- 				category = support_tech
-			}
+			bonus = 0.5
+			uses = 1
+			category = support_tech
+		}
 
 		set_global_flag = MEX_SUPERIOR_FIREPOWER
-
-		ai_chance = {
-			factor = 50
-		}
+		ai_chance = { factor = 50 }
 	}
 
 	option = {
-		name = "War is fought with a plan in mind after all."
+		name = mex.2.c
 
 		add_tech_bonus = {
-  				bonus = 0.75
- 				uses = 1
- 				category = cat_grand_battle_plan
-			}
-
+			bonus = 0.75
+			uses = 1
+			category = cat_grand_battle_plan
+		}
 		army_experience = 25
 
 		set_global_flag = MEX_GRAND_BATTLEPLAN
-
-		ai_chance = {
-			factor = 35
-		}
+		ai_chance = { factor = 35 }
 	}
 }
 
-country_event = {
+country_event = { # Reviewing Pilot Training
 	id = mex.3
 	immediate = {log = "[GetDateText]: [Root.GetName]: event mex.3"}
-	title = "Reviewing Pilot Training"
+	title = mex.3.t
 	desc = mex.3.d
 	picture = GFX_report_event_military_planning
-
 	is_triggered_only = yes
-
 	fire_only_once = yes
 
 	option = {
-		name = "Our pilots need strict training, our Airforce must be top-notch!"
+		name = mex.3.a
 
 		air_experience = 50
-
 		set_global_flag = MEX_ELABORATE_PILOT_TRAINING
-
-		ai_chance = {
-			factor = 50
-		}
+		ai_chance = { factor = 50 }
 	}
 
 	option = {
-		name = "We can relax standards a bit..."
+		name = mex.3.b
 
 		air_experience = -25
-
 		add_manpower = 55000
-
 		set_global_flag = MEX_LOW_STANDARD_PILOTS
-
-		ai_chance = {
-			factor = 50
-		}
+		ai_chance = { factor = 50 }
 	}
 }
 
 country_event = {
 	id = mex.4
 	immediate = {log = "[GetDateText]: [Root.GetName]: event mex.4"}
-	title = "Reviewing the role of Air-Support"
+	title = mex.4.t
 	desc = mex.4.d
 	picture = GFX_report_event_military_planning
-
 	is_triggered_only = yes
-
 	fire_only_once = yes
 
-	option = {
-		name = "Air-support should assist the Army directly"
+	option = { # Air-support should assist the Army directly
+		name = mex.4.a
 
 		add_equipment_to_stockpile = { type = CAS_equipment_1 amount = 150 producer = MEX }
-
 		set_global_flag = MEX_CAS_SUPPORT
-
-		ai_chance = {
-			factor = 50
-		}
+		ai_chance = { factor = 50 }
 	}
 
 	option = {
-		name = "Air-support should assist the war effort by bombing enemy industry."
+		name = mex.4.b
 
 		add_equipment_to_stockpile = { type = tac_bomber_equipment_0 amount = 150 producer = MEX }
-
 		set_global_flag = MEX_TAC_BOMBER_SUPPORT
-
-		ai_chance = {
-			factor = 50
-		}
+		ai_chance = { factor = 50 }
 	}
 }
 
 country_event = {
 	id = mex.5
 	immediate = {log = "[GetDateText]: [Root.GetName]: event mex.5"}
-	title = "The Synarchists call 'The Last Election'."
+	title = mex.5.t
 	desc = mex.5.d
 	picture = report_event_generic_conference
-
 	is_triggered_only = yes
-
 	fire_only_once = yes
 
 	option = {
-		name = "The Realistas dominate the polls!"
+		name = mex.5.a
 
-		custom_effect_tooltip = 1_MEX_tt
-
-		hidden_effect = {
-
-		swap_ideas = {
-		remove_idea = MEX_Salvador_Abascal_hog
-		add_idea = MEX_Plutarco_Elias_Calles_hog
- 			}
-
-			swap_ideas = {
-			remove_idea = MEX_Jose_de_Leon_Toral_for
-			add_idea = MEX_Saturnino_Cedillo_for
-	 			}
-
-				swap_ideas = {
-				remove_idea = MEX_Anacleto_Gonzalez_Flores_eco
-				add_idea = MEX_Emilio_Portes_Gil_eco
-		 			}
-
-					swap_ideas = {
-					remove_idea = MEX_Aristeo_Pedroza_sec
-					add_idea = MEX_Jesus_Augustin_Castro_sec
-			 			}
-
-						swap_ideas = {
-						remove_idea = MEX_Enrique_Gorostieta_int
-						add_idea = MEX_Alfonso_Junco_int
-				 			}
-			add_ideas = absolute_monarchy
-			set_politics = {
-					ruling_party = paternal_autocrat
-					elections_allowed = no
-            }
-
-                set_popularities = {
-                    vanguardist = 0
-                    collectivist = 0
-                    libertarian_socialist = 0
-                    social_democrat = 0
-                    social_liberal = 0
-                    market_liberal = 6
-                    social_conservative = 16
-                    authoritarian_democrat = 20
-                    paternal_autocrat = 42
-                    national_populist = 11
-                    valkist = 5
-                }
-			}
+		custom_effect_tooltip = MEX_pataut_tt
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.25
+		}
+		remove_every_minister = yes
+		add_ideas = {
+			MEX_Plutarco_Elias_Calles_hog_pau
+			MEX_Pazcual_Diaz_Barreto_for_pau
+			MEX_Miguel_Palomar_y_Vizcarra_eco_pau
+			MEX_Jose_Reyes_Vega_sec_pau
+		}
 		set_global_flag = MEX_ROYALISTS
-		ai_chance = {
-			factor = 20
-		}
+		ai_chance = { factor = 40 }
 	}
 
 	option = {
-		name = "The Synarchists come away with a crushing victory!"
+		name = mex.5.b
 
-		custom_effect_tooltip = 2_MEX_tt
-
-		hidden_effect = {
-			set_politics = {
-					ruling_party = national_populist
-					elections_allowed = no
-            }
-
-                set_popularities = {
-                    vanguardist = 2
-                    collectivist = 4
-                    libertarian_socialist = 2
-                    social_democrat = 3
-                    social_liberal = 2
-                    market_liberal = 4
-                    social_conservative = 5
-                    authoritarian_democrat = 3
-                    paternal_autocrat = 10
-                    national_populist = 54
-                    valkist = 11
-                }
-			}
+		custom_effect_tooltip = MEX_natpop_tt
 		set_global_flag = MEX_SYNARCHISTS
-		ai_chance = {
-			factor = 50
-		}
+		ai_chance = { factor = 30 }
 	}
 
 	option = {
-		name = "The Quetzalcoatls manage a staggering amount of popular support!"
+		name = mex.5.c
 
-		custom_effect_tooltip = 3_MEX_tt
-
-		hidden_effect = {
-
-		swap_ideas = {
-		remove_idea = MEX_Salvador_Abascal_hog
-		add_idea = MEX_Nicolas_Rodriguez_Carrasco_hog
- 			}
-
-			swap_ideas = {
-			remove_idea = MEX_Jose_de_Leon_Toral_for
-			add_idea = MEX_Manuel_Torres_Bueno_for
-	 			}
-
-				swap_ideas = {
-				remove_idea = MEX_Anacleto_Gonzalez_Flores_eco
-				add_idea = MEX_Jose_Antonio_Urquiza_eco
-		 			}
-
-					swap_ideas = {
-					remove_idea = MEX_Aristeo_Pedroza_sec
-					add_idea = MEX_Felix_Diaz_sec
-			 			}
-
-						swap_ideas = {
-						remove_idea = MEX_Enrique_Gorostieta_int
-						add_idea = MEX_Alfonso_Junco_int
-				 			}
-
-			set_politics = {
-					ruling_party = valkist
-					elections_allowed = no
-            }
-
-                set_popularities = {
-                    vanguardist = 0
-                    collectivist = 2
-                    libertarian_socialist = 0
-                    social_democrat = 0
-                    social_liberal = 0
-                    market_liberal = 0
-                    social_conservative = 5
-                    authoritarian_democrat = 11
-                    paternal_autocrat = 16
-                    national_populist = 22
-                    valkist = 44
-                }
-			}
-		set_global_flag = MEX_VALKISTS
-		ai_chance = {
-			factor = 30
+		custom_effect_tooltip = MEX_valkist_tt
+		set_politics = {
+			ruling_party = valkist
+			elections_allowed = no
 		}
+		add_popularity = {
+			ideology = valkist
+			popularity = 0.25
+		}
+		remove_every_minister = yes
+		add_ideas = {
+			MEX_Jose_Antonio_Urquiza_hog_val
+			MEX_Jose_de_Leon_Toral_for_val
+			MEX_Jose_Antonio_Urquiza_eco
+			MEX_Pedro_Zuloaga_Irigoiti_eco_npo
+			MEX_Victoriano_Ramirez_sec_val
+		}
+		set_global_flag = MEX_VALKISTS
+		ai_chance = { factor = 30 }
 	}
 }
 
 country_event = {
 	id = mex.6
 	immediate = {log = "[GetDateText]: [Root.GetName]: event mex.6"}
-	title = "The King's Cabinet"
+	title = mex.6.t
 	desc = mex.6.d
 	picture = report_event_generic_conference
-
 	is_triggered_only = yes
-
 	fire_only_once = yes
 
 	option = {
-		name = "The King assembles a cabinet composed primarily of loyalists."
+		name = mex.6.a
 		hidden_effect = {
-			add_popularity = { ideology = paternal_autocrat popularity = 0.15 }
+			add_popularity = { 
+				ideology = paternal_autocrat 
+				popularity = 0.15
+			}
 		}
-		#set_politics = {
-		#	ruling_party = paternal_autocrat
-		#	elections_allowed = no
-		#}
-		set_global_flag = MEX_LOYALIST_CABINENT
+		set_global_flag = MEX_LOYALIST_CABINET
 		ai_chance = {
 			factor = 80
 		}
 	}
 
 	option = {
-		name = "The King assembles a cabinet composed of various democratic sympathizers."
-		hidden_effect = {
-			set_politics = {
-					ruling_party = national_populist
-					elections_allowed = no
-            }
-
-                set_popularities = {
-                    vanguardist = 0
-                    collectivist = 0
-                    libertarian_socialist = 0
-                    social_democrat = 12
-                    social_liberal = 0
-                    market_liberal = 22
-                    social_conservative = 17
-                    authoritarian_democrat = 42
-                    paternal_autocrat = 5
-                    national_populist = 1
-                    valkist = 1
-                }
-			}
-		set_global_flag = MEX_DEMOCRATIC_CABINENT
-		ai_chance = {
-			factor = 20
+		name = mex.6.b
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.25
 		}
+		set_global_flag = MEX_DEMOCRATIC_CABINET
+		ai_chance = { factor = 30 }
 	}
 }
 
 country_event = {
 	id = mex.10
 	immediate = {log = "[GetDateText]: [Root.GetName]: event mex.10"}
-    title = "Alliance with Central America"
+    title = mex.10.t
     desc = mex.10.d
     picture = report_event_generic_conference
-
     is_triggered_only = yes
 
     option = {
-        name = "Send the offers!"
+        name = mex.10.a
         create_faction = mex_pan_america
         "PAN" = { country_event = { id = mex.11 days = 1 }}
         COS = { country_event = { id = mex.11 days = 1 }}
@@ -414,52 +264,47 @@ country_event = {
 country_event = {
 	id = mex.11
 	immediate = {log = "[GetDateText]: [Root.GetName]: event mex.11"}
-    title = "Mexicans suggest an Alliance"
+    title = mex.11.t
     desc = mex.11.d
     picture = report_event_generic_conference
 
     is_triggered_only = yes
-
     option = {
         ai_chance = { factor = 30 }
-        name = "We'd rather decline."
-        MEX = { country_event = { id = mex.12 days = 0 }}
+        name = mex.11.a
+        MEX = { country_event = mex.12 }
     }
-
     option = {
-        name = "Sounds reasonable, let's accept."
+        name = mex.11.b
         ai_chance = { factor = 70 }
-        MEX = { country_event = { id = mex.13 days = 0 }}
+        MEX = { country_event = mex.13 }
         FROM = { add_to_faction = ROOT }
     }
 }
 country_event = {
 	id = mex.12
 	immediate = {log = "[GetDateText]: [Root.GetName]: event mex.12"}
-    title = "[From.GetName] has declined membership."
+    title = mex.12.t
     desc = mex.12.d
     picture = report_event_generic_conference
-
     is_triggered_only = yes
 
     option = {
-        name = "How unfortunate."
-        ai_chance = { factor = 100 }
+        name = mex.12.a
     }
 }
 
 country_event = {
 	id = mex.13
 	immediate = {log = "[GetDateText]: [Root.GetName]: event mex.13"}
-    title = "[From.GetName] has agreed to join our alliance."
+    title = mex.13.t
     desc = mex.13.d
     picture = report_event_generic_conference
-
     is_triggered_only = yes
 
     option = {
         ai_chance = { factor = 100 }
-        name = "Great!"
+        name = mex.13.a
         add_political_power = 10
     }
 }
@@ -467,7 +312,7 @@ country_event = {
 country_event = {
 	id = mex.14
 	immediate = {log = "[GetDateText]: [Root.GetName]: event mex.14"}
-    title = "A New Mexico"
+    title = mex.14.t
     desc = mex.14.d
     picture = report_event_generic_conference
 
@@ -475,23 +320,23 @@ country_event = {
 
     option = {
         ai_chance = { factor = 40 }
-        name = "Calles is a fine man, and could oversee any parliament in the land."
+        name = mex.14.a
         add_political_power = 10
-				MEX = { country_event = { id = mex.15 days = 0 }}
+		MEX = { country_event = { id = mex.15 days = 0 } }
     }
 
-		option = {
+	option = {
         ai_chance = { factor = 60 }
-        name = "Let us look elsewhere for a fair king."
+        name = mex.14.b
         add_political_power = 10
-				USA = { country_event = { id = US.16 days = 0 }}
+		USA = { country_event = { id = US.16 days = 0 } }
     }
 }
 
 country_event = {
 	id = mex.15
 	immediate = {log = "[GetDateText]: [Root.GetName]: event mex.15"}
-    title = "The Question of Parliament"
+    title = mex.15.t
     desc = mex.15.d
     picture = report_event_generic_conference
 
@@ -499,75 +344,67 @@ country_event = {
 
     option = {
         ai_chance = { factor = 20 }
-        name = "The Social Democrats led by Alvaro Obregon."
+        name = mex.15.a
         add_political_power = -10
-			add_ideas = presidential_republic
-				set_politics = {ruling_party = social_democrat elections_allowed = no }
-				add_popularity = { ideology = social_democrat popularity = 0.40 }
+		add_ideas = presidential_republic
+		set_politics = {ruling_party = social_democrat elections_allowed = no }
+		add_popularity = { ideology = social_democrat popularity = 0.40 }
     }
 
-		option = {
+	option = {
         ai_chance = { factor = 30 }
-        name = "The brother of old Revolutionary Francisco Madero will make a great choice."
+        name = mex.15.b
         add_political_power = -10
-				add_ideas = presidential_republic
-				set_politics = {ruling_party = social_liberal elections_allowed = no }
-				add_popularity = { ideology = social_liberal popularity = 0.40 }
+		add_ideas = presidential_republic
+		set_politics = {ruling_party = social_liberal elections_allowed = no }
+		add_popularity = { ideology = social_liberal popularity = 0.40 }
     }
 
-		option = {
+	option = {
         ai_chance = { factor = 50 }
-        name = "Ignacio Bonillas always was a fine ruler."
+        name = mex.15.c
         add_political_power = 50
-				add_ideas = presidential_republic
-				set_politics = {ruling_party = social_conservative elections_allowed = no }
-				add_popularity = { ideology = social_conservative popularity = 0.35 }
+		add_ideas = presidential_republic
+		set_politics = {ruling_party = social_conservative elections_allowed = no }
+		add_popularity = { ideology = social_conservative popularity = 0.35 }
     }
 }
 
 country_event = {
 	id = mex.16
 	immediate = {log = "[GetDateText]: [Root.GetName]: event mex.16"}
-	title = "Matters of the Economy"
+	title = mex.16.t
 	desc = mex.16.d
 	picture = GFX_report_event_military_planning
-
 	is_triggered_only = yes
 
 	option = {
-		name = "Our economic interests lie in continuing industrialization."
+		name = mex.16.a
 
 		set_country_flag = MEX_CONTINUE_INDUSTRIALIZATION
-
 		swap_ideas = {
-  				remove_idea = MEX_rampant_industrialization
- 				add_idea = MEX_not_so_rampant_industrialization
- 			}
-
-		ai_chance = {
-			factor = 80
+			remove_idea = MEX_rampant_industrialization
+			add_idea = MEX_not_so_rampant_industrialization
 		}
+
+		ai_chance = { factor = 80 }
 	}
 
 	option = {
-		name = "We need to focus on domestic development."
+		name = mex.16.b
 
 		set_country_flag = MEX_DOMESTIC_DEVELOPMENT
-
 		remove_ideas = MEX_rampant_industrialization
-
 		add_political_power = 50
 
-		ai_chance = {
-			factor = 20
-		}
+		ai_chance = { factor = 20 }
 	}
 }
 
 country_event = {
 	id = mex.17
 	immediate = {log = "[GetDateText]: [Root.GetName]: event mex.17"}
-    title = "Review of Synarchism"
+    title = mex.17.t
     desc = mex.17.d
     picture = report_event_generic_conference
 
@@ -575,19 +412,19 @@ country_event = {
 
     option = {
         ai_chance = { factor = 33 }
-        name = "Class collaboration."
+        name = mex.17.a
         add_ideas = MEX_the_drive_for_national_autarky
     }
 
-		option = {
+	option = {
         ai_chance = { factor = 34 }
-        name = "Did our ancient ancestors uphold such ridiculous tradition?"
+        name = mex.17.b
         add_ideas = MEX_the_people_against_synarchism
     }
 
-		option = {
+	option = {
         ai_chance = { factor = 33 }
-        name = "Synarchism? Socialism!"
+        name = mex.17.c
         add_ideas = MEX_synarchism_revoked
     }
 }
@@ -595,78 +432,57 @@ country_event = {
 country_event = {
 	id = mex.18
 	immediate = {log = "[GetDateText]: [Root.GetName]: event mex.18"}
-    title = "Battle for the United States"
+    title = mex.18.t
     desc = mex.18.d
     picture = report_event_generic_conference
-
-		fire_only_once = yes
-
+	fire_only_once = yes
     is_triggered_only = yes
 
-		option = {
+	option = {
         ai_chance = { factor = 73 }
-        name = "We will reclaim our southern territories, and restore Mexico as it once was."
+        name = mex.18.a
         set_country_flag = MEX_southern_states
-				complete_national_focus = MEX_california_arizona_new_mexico
+		complete_national_focus = MEX_california_arizona_new_mexico
     }
 
-		option = {
+	option = {
         ai_chance = { factor = 27 }
-        name = "We will race to Washington; we will crush vile Colombia!"
+        name = mex.18.b
         set_country_flag = MEX_crush_united_states
-				complete_national_focus = MEX_the_bronze_sun
+		complete_national_focus = MEX_the_bronze_sun
     }
 }
 
 country_event = {
 	id = mex.19
 	immediate = {log = "[GetDateText]: [Root.GetName]: event mex.19"}
-    title = "Bowing Out"
+    title = mex.19.t
     desc = mex.19.d
     picture = report_event_generic_conference
+	fire_only_once = yes
 
-		fire_only_once = yes
+	trigger = {
+		has_war_with = USA
+		controls_state = 743
+		controls_state = 484
+		controls_state = 923
+		controls_state = 377
+		controls_state = 922
+		controls_state = 930
+		controls_state = 378
+		controls_state = 928
+		controls_state = 929
+	}
 
-		trigger = {
-					has_war_with = USA
-           743 = {
-                    is_fully_controlled_by = MEX
-           }
-           484 = {
-                   is_fully_controlled_by = MEX
-           }
-					 923 = {
-                   is_fully_controlled_by = MEX
-           }
-					 377 = {
-                   is_fully_controlled_by = MEX
-           }
-					 922 = {
-                   is_fully_controlled_by = MEX
-           }
-					 930 = {
-                   is_fully_controlled_by = MEX
-           }
-					 378 = {
-                   is_fully_controlled_by = MEX
-           }
-					 928 = {
-                   is_fully_controlled_by = MEX
-           }
-					 929 = {
-                   is_fully_controlled_by = MEX
-           }
-		}
-
-		option = {
+	option = {
         ai_chance = { factor = 70 }
-        name = "Send the offer."
-				country_event = { id = usa.32 hours = 4 }
+        name = mex.19.a
+		country_event = { id = usa.32 hours = 4 }
     }
 
-		option = {
+	option = {
         ai_chance = { factor = 30 }
-        name = "What a ridiculous notion."
+        name = mex.19.b
         add_political_power = 20
     }
 }
@@ -674,93 +490,49 @@ country_event = {
 country_event = {
 	id = mex.20
 	immediate = {log = "[GetDateText]: [Root.GetName]: event mex.20"}
-    title = "We Have Broken Columbia"
+    title = mex.20.t
     desc = mex.20.d
     picture = report_event_generic_conference
 
-		fire_only_once = yes
+	fire_only_once = yes
 
-		trigger = {
-					has_war_with = USA
-					has_global_flag = MEX_southern_states
-           484 = {
-                   is_fully_controlled_by = MEX
-           }
-					 923 = {
-                   is_fully_controlled_by = MEX
-           }
-					 377 = {
-                   is_fully_controlled_by = MEX
-           }
-					 922 = {
-                   is_fully_controlled_by = MEX
-           }
-					 930 = {
-                   is_fully_controlled_by = MEX
-           }
-					 378 = {
-                   is_fully_controlled_by = MEX
-           }
-					 928 = {
-                   is_fully_controlled_by = MEX
-           }
-					 929 = {
-                   is_fully_controlled_by = MEX
-           }
-					 921 = {
-                   is_fully_controlled_by = MEX
-           }
-					 375 = {
-                   is_fully_controlled_by = MEX
-           }
-					 919 = {
-                   is_fully_controlled_by = MEX
-           }
-					 920 = {
-                   is_fully_controlled_by = MEX
-           }
-					 376 = {
-                   is_fully_controlled_by = MEX
-           }
-					 380 = {
-                   is_fully_controlled_by = MEX
-           }
-					 382 = {
-                   is_fully_controlled_by = MEX
-           }
-					 371 = {
-                   is_fully_controlled_by = MEX
-           }
-					 374 = {
-                   is_fully_controlled_by = MEX
-           }
-					 383 = {
-                   is_fully_controlled_by = MEX
-           }
-					 932 = {
-                   is_fully_controlled_by = MEX
-           }
-					 929 = {
-                   is_fully_controlled_by = MEX
-           }
-					 926 = {
-                   is_fully_controlled_by = MEX
-           }
-					 925 = {
-                   is_fully_controlled_by = MEX
-           }
-		}
+	trigger = {
+		has_war_with = USA
+		has_global_flag = MEX_southern_states
+		controls_state = 484
+		controls_state = 923
+		controls_state = 377
+		controls_state = 922
+		controls_state = 930
+		controls_state = 378
+		controls_state = 928
+		controls_state = 929
+		controls_state = 921
+		controls_state = 375
+		controls_state = 919
+		controls_state = 920
+		controls_state = 376
+		controls_state = 380
+		controls_state = 382
+		controls_state = 371
+		controls_state = 374
+		controls_state = 383
+		controls_state = 932
+		controls_state = 929
+		controls_state = 926
+		controls_state = 925
+	}
 
-		option = {
+	option = {
         ai_chance = { factor = 95 }
-        name = "Send the offer."
-				country_event = { id = usa.33 hours = 4 }
+        name = mex.20.a
+		country_event = { id = usa.33 hours = 4 }
     }
 
-		option = {
+	option = {
         ai_chance = { factor = 5 }
-        name = "We will finish this war!"
-				set_country_flag = MEX_crush_united_states
+        name = mex.20.b
+		set_country_flag = MEX_crush_united_states
         add_political_power = -100
     }
 }
@@ -768,69 +540,64 @@ country_event = {
 country_event = {
 	id = mex.21
 	immediate = {log = "[GetDateText]: [Root.GetName]: event mex.21"}
-    title = "The Americans Refuse"
+    title = mex.21.t
     desc = mex.21.d
     picture = report_event_generic_conference
 
     is_triggered_only = yes
 
-		option = {
-        name = "Then they know what their fate will be."
+	option = {
+        name = mex.21.a
         set_country_flag = MEX_crush_united_states
-				add_political_power = 50
+		add_political_power = 50
     }
 }
 
 country_event = {
 	id = mex.22
 	immediate = {log = "[GetDateText]: [Root.GetName]: event mex.22"}
-    title = "Cinco de Mayo"
+    title = mex.22.t
     desc = mex.22.d
     picture = report_event_cinco_de_mayo
+	fire_only_once = yes
 
-		trigger = {
-			tag = MEX
-			MEX = { exists = yes }
-			date > 1936.5.04
-			NOT = {
-				is_puppet_of = USA
-			}
+	trigger = {
+		tag = MEX
+		country_exists = MEX
+		date > 1936.5.04
+		NOT = {
+			is_puppet_of = USA
 		}
+	}
 
-		fire_only_once = yes
+	option = {
+        name = mex.22.a
+		add_political_power = 20
 
-		option = {
-        name = "Let us hope that never happens!"
-				add_political_power = 20
-
-				hidden_effect = {
-				MEX = { country_event = { id = mex.23 months = 12 }}
-				}
-
+		hidden_effect = {
+			MEX = { country_event = { id = mex.23 months = 12 } }
+		}
     }
 }
 
 country_event = {
 	id = mex.23
 	immediate = {log = "[GetDateText]: [Root.GetName]: event mex.23"}
-    title = "Cinco de Mayo"
+    title = mex.23.t
     desc = mex.23.d
     picture = report_event_cinco_de_mayo
 
-		is_triggered_only = yes
-		trigger = {
-			NOT = {
-				is_puppet_of = USA
-			}
+	is_triggered_only = yes
+	trigger = {
+		NOT = { is_puppet_of = USA }
+	}
+
+	option = {
+        name = 
+		add_political_power = 20
+
+		hidden_effect = {
+			MEX = { country_event = { id = mex.23 months = 12 } }
 		}
-
-		option = {
-        name = "Let us hope that never happens!"
-				add_political_power = 20
-
-				hidden_effect = {
-				MEX = { country_event = { id = mex.23 months = 12 }}
-				}
-
     }
 }

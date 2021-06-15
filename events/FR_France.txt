@@ -211,6 +211,13 @@ country_event = { #1936 election
 		set_politics = {
 			ruling_party = social_democrat
 		}
+		remove_every_minister = yes
+		add_ideas = {
+			FRA_Paul_Ramadier_hog_sde
+			FRA_Pierre_Laval_for_sde
+			FRA_Jean_Zay_eco_sde
+			FRA_Albert_Sarraut_sec_sli
+		}
 		ai_chance = {
 			factor = 160
 		}
@@ -229,6 +236,13 @@ country_event = { #1936 election
     		ideology = social_liberal
     		popularity = -0.07
 		}
+		remove_every_minister = yes
+		add_ideas = {
+			FRA_Edouard_Daladier_hog_sli
+			FRA_George_Bonnet_for_sli
+			FRA_Andre_Tardieu_eco_mli
+			FRA_Jean_Fabry_sec_sli
+		}
 		custom_effect_tooltip = fra_nuc_dissolve_rs
 		ai_chance = {
 			factor = 160
@@ -245,6 +259,13 @@ country_event = { #1936 election
 		add_popularity = {
     		ideology = social_conservative
     		popularity = -0.1
+		}
+		remove_every_minister = yes
+		add_ideas = {
+			FRA_Jean_Ybarnegaray_hog_sco
+			FRA_Camille_Barrere_for_sco
+			FRA_Pierre_Etienne_Flandin_eco_mli
+			FRA_Jean_Fabry_sec_sli
 		}
 		custom_effect_tooltip = fra_nuc_dissolve_dra
 		ai_chance = {
@@ -441,6 +462,13 @@ country_event = { #Petain's power is questioned
 			ideology = authoritarian_democrat
 			popularity = 0.10
 		}
+		remove_every_minister = yes
+		add_ideas = {
+			FRA_Jean_Mermoz_hog_ade
+			FRA_Paul_Baudouin_for_ade
+			FRA_Marie_Eugene_Debeney_eco_ade
+			FRA_Francois_de_la_Rocque_sec_ade
+		}
 		set_country_flag = fra_prov_bad
 		set_country_flag = fra_christan_democracy
 	}
@@ -463,8 +491,13 @@ country_event = { #restoration of the monarchy
 			ideology = paternal_autocrat
 			popularity = 0.15
 		}
+		remove_every_minister = yes
 		add_ideas = {
 			FRA_low_legitimacy
+			FRA_Louis_Alexandre_Audibert_hog_pau
+			FRA_Joseph_Darnand_for_pau
+			FRA_Eugene_Schueller_eco_pau
+			FRA_George_Lamirand_sec_pau
 		}
 		create_country_leader = {
 			name = "Jean III"
@@ -787,7 +820,14 @@ country_event = {
 		set_politics = {
 			ruling_party = paternal_autocrat
 		}
-		add_ideas = FRA_junta_control
+		remove_every_minister = yes
+		add_ideas = {
+			FRA_junta_control
+			FRA_Philippe_Petain_hog_pau
+			FRA_Paul_Baudouin_for_ade
+			FRA_Francois_Coty_eco_pau
+			FRA_Louis_Renault_sec_pau
+		}
 		hidden_effect = {
 			set_country_flag = fra_mil_dic
 		}
@@ -821,6 +861,13 @@ country_event = {
 		set_politics = {
 			ruling_party = social_democrat
 		}
+		remove_every_minister = yes
+		add_ideas = {
+			FRA_Paul_Ramadier_hog_sde
+			FRA_Pierre_Laval_for_sde
+			FRA_Jean_Zay_eco_sde
+			FRA_Albert_Sarraut_sec_sli
+		}
 	}
 
 	option = {
@@ -828,12 +875,26 @@ country_event = {
 		set_politics = {
 			ruling_party = social_liberal
 		}
+		remove_every_minister = yes
+		add_ideas = {
+			FRA_Edouard_Daladier_hog_sli
+			FRA_George_Bonnet_for_sli
+			FRA_Andre_Tardieu_eco_mli
+			FRA_Jean_Fabry_sec_sli
+		}
 	}
 
 	option = {
 		name = fra.23.c
 		set_politics = {
 			ruling_party = social_conservative
+		}
+		remove_every_minister = yes
+		add_ideas = {
+			FRA_Jean_Ybarnegaray_hog_sco
+			FRA_Camille_Barrere_for_sco
+			FRA_Pierre_Etienne_Flandin_eco_mli
+			FRA_Jean_Fabry_sec_sli
 		}
 	}
 }
@@ -3480,13 +3541,12 @@ country_event = { #1940 election
 			ideology = social_liberal
 			popularity = 0.05
 		}
-		create_country_leader = {
-			name = "Camille Cheautemps"
-			desc = "POLITICS_CAMILLE_CHEAUTEMPS_DESC"
-			picture = "Portrait_France_Camille_Chautemps.tga"
-			expire = "1965.1.1"
-			ideology = social_liberal_subtype
-			traits = {  }
+		remove_every_minister = yes
+		add_ideas = {
+			FRA_Edouard_Daladier_hog_sli
+			FRA_George_Bonnet_for_sli
+			FRA_Andre_Tardieu_eco_mli
+			FRA_Jean_Fabry_sec_sli
 		}
 	}
 
@@ -3502,6 +3562,13 @@ country_event = { #1940 election
 		add_popularity = {
 			ideology = market_liberal
 			popularity = 0.05
+		}
+		remove_every_minister = yes
+		add_ideas = {
+			FRA_Paul_Reynaud_hog_mli
+			FRA_Camille_Barrere_for_sco
+			FRA_Andre_Tardieu_eco_mli
+			FRA_Albert_Sarraut_sec_sli
 		}
 		create_country_leader = {
 			name = "Pierre-Étienne Flandin"
@@ -3525,6 +3592,13 @@ country_event = { #1940 election
 		add_popularity = {
 			ideology = social_conservative
 			popularity = 0.05
+		}
+		remove_every_minister = yes
+		add_ideas = {
+			FRA_Jean_Ybarnegaray_hog_sco
+			FRA_Camille_Barrere_for_sco
+			FRA_Pierre_Etienne_Flandin_eco_mli
+			FRA_Jean_Fabry_sec_sli
 		}
 		create_country_leader = {
 			name = "Joseph Laniel"

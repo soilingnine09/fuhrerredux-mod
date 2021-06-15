@@ -90,7 +90,7 @@ guiTypes = {
 		## facebook etc.
 		ButtonType = {
 			name = "homepage_button"
-			position = { x = 19 y = 0 }
+			position = { x = 79 y = 349 }
 			quadTextureSprite ="homepage"
 			clicksound = click_default
 			pdx_tooltip = "FX_MENU_HOMEPAGE"
@@ -98,7 +98,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "forum_button"
-			position = { x = 59 y = 0 }
+			position = { x = 119 y = 349 }
 			quadTextureSprite ="forum"
 			clicksound = click_default
 			pdx_tooltip = "FX_MENU_FORUM"
@@ -106,29 +106,19 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "facebook_button"
-			position = { x = 99 y = 0 }
+			position = { x = 159 y = 349 }
 			quadTextureSprite ="facebook"
 			clicksound = click_default
 			pdx_tooltip = "FX_MENU_FACEBOOK"
 			web_link = "https://steamcommunity.com/sharedfiles/filedetails/?id=2419457479"
 		}			
-		
 		ButtonType = {
 			name = "twitter_button"
-			position = { x = 179 y = 349 }
+			position = { x = 199 y = 349 }
 			quadTextureSprite ="twitter"
 			#clicksound = click_default
 			pdx_tooltip = "FR_MENU_TWITTER"
 			web_link = "https://twitter.com/FuhrerreichHoI4"
-		}
-		
-		ButtonType = {
-			name = "patreon_button"
-			position = { x = 219 y = 349 }
-			quadTextureSprite ="privacy"
-			#clicksound = click_default
-			pdx_tooltip = "FR_MENU_PRIVACY_POLICY"
-			web_link = "https://www.patreon.com/Fuhrerreich"
 		}
 		
 		ButtonType = {

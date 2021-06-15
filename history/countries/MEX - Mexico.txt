@@ -44,20 +44,19 @@ set_country_flag = monroe_doctrine
 
 add_ideas = {
 	party_pop_0_30
+	one_party_dictatorship
+
 	MEX_nationalist_strife
 	#MEX_legacy_of_los_fanaticos
 	MEX_basta
 	MEX_military_corruption
 	MEX_militias
 	MEX_rampant_industrialization
-	#limited_conscription
-	#low_economic_mobilisation
-	MEX_Salvador_Abascal_hog
-	MEX_Jose_de_Leon_Toral_for
-	MEX_Anacleto_Gonzalez_Flores_eco
-	MEX_Aristeo_Pedroza_sec
-	MEX_Enrique_Gorostieta_int
-	one_party_dictatorship
+
+	MEX_Alberto_B_Gutierrez_hog_npo
+	MEX_Alfonso_Junco_for_npo
+	MEX_Pedro_Zuloaga_Irigoiti_eco_npo
+	MEX_Daniel_Cosio_Villegas_sec_npo
 }
 
 set_convoys = 60
@@ -87,27 +86,35 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Dionisio Encina"
-	desc = "POLITICS_DIONISIO_ENCINA_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_1.dds"
+	name = "Emiliano Zapata"
+	desc = "POLITICS_EMILIANO_ZAPATA_DESC"
+	picture = "Portrait_Mexico_Emiliano_Zapata.tga"
+	expire = "1965.1.1"
+	ideology = vanguardist_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Vicente Toledano"
+	desc = "POLITICS_VICENTE_TOLEDANO_DESC"
+	picture = "Portrait_Mexico_Vincente_Toledano.tga"
 	expire = "1965.1.1"
 	ideology = collectivist_subtype
 	traits = { }
 }
 create_country_leader = {
 	name = "Antonio Díaz Soto y Gama"
-	desc = "GAMA_DESC"
+	desc = "POLITICS_ANTONIO_DIAZ_SOTO_Y_GAMA_DESC"
 	picture = "Portrait_Mexico_Antonio_Diaz_Soto_y_Gama.tga"
 	expire = "1965.1.1"
 	ideology = libertarian_socialist_subtype
 	traits = { }
 }
 create_country_leader = {
-	name = "Manuel Gómez Morín"
-	desc = "POLITICS_MANUEL_GOMEZ_MORIN_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
+	name = "Pascual Ortiz Rubio"
+	desc = "POLITICS_PASCUAL_ORTIZ_RUBIO_DESC"
+	picture = "Portrait_Mexico_Pascual_Rubio.tga"
 	expire = "1965.1.1"
-	ideology = social_conservative_subtype
+	ideology = social_democrat_subtype
 	traits = { }
 }
 create_country_leader = {
@@ -121,7 +128,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Lázaro Cárdenas"
 	desc = "POLITICS_LAZARO_CARDENAS_DESC"
-	picture = "Portrait_Mexico_Lazaro_Cardenas.dds"
+	picture = "Portrait_Mexico_Lazaro_Cardenas_fx.tga"
 	expire = "1965.1.1"
 	ideology = authoritarian_democrat_subtype
 	traits = { }
@@ -145,31 +152,125 @@ create_country_leader = {
 create_country_leader = {
 	name = "Nicolas Rodriguez Carrasco"
 	desc = "POLITICS_SALVADOR_ABASCAL_DESC"
-	picture = "portrait_MEX_Nicolas_Rodriguez_Carrasco.tga"
+	picture = "Portrait_Mexico_Nicolas_Rodriguez_Carrasco.tga"
 	expire = "1965.1.1"
 	ideology = valkist_subtype
 	traits = { }
 }
 
-create_corps_commander = {
-	name = "Luis Farell"
-	portrait_path = "gfx/leaders/MEX/MEX_Luis_Farell.dds"
-	traits = { }
-	skill = 3
-}
 
 create_corps_commander = {
-	name = "Gildardo Magaña"
-	portrait_path = "gfx/leaders/MEX/MEX_Gilardo_Magana.dds"
-	traits = { desert_fox }
-	skill = 3
+	name = "Juan G. Cabral"
+	picture = "Portrait_Mexico_Juan_G_Cabral.tga"
+	traits = { career_officer trait_engineer fortress_buster }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
 }
+create_corps_commander = {
+	name = "Pablo Quiroga Escamilla"
+	picture = "Portrait_Mexico_Pablo_Quiroga_Escamilla.tga"
+	traits = { old_guard war_hero infantry_leader }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Joaquín Amaro Dominguez"
+	picture = "Portrait_Mexico_Joaquin_Amaro_Dominguez.tga"
+	traits = { career_officer war_hero commando }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Francisco Luis Urquizo"
+	picture = "Portrait_Mexico_Francisco_Luis_Urquizo.tga"
+	traits = { old_guard politically_connected infantry_leader }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Pablo Macias Valenzuela"
+	picture = "Portrait_Mexico_Pablo_Macias_Valenzuela.tga"
+	traits = { career_officer politically_connected infantry_leader }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Abelardo L. Rodríguez"
+	picture = "Portrait_Mexico_Abelardo_L_Rodriguez.tga"
+	traits = { career_officer politically_connected infantry_leader }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Maximino Avila Camacho"
+	picture = "Portrait_Mexico_Maximino_Avila_Camacho.tga"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+Base FR Commanders
+#create_corps_commander = {
+#	name = "Luis Farell"
+#	portrait_path = "gfx/leaders/MEX/MEX_Luis_Farell.dds"
+#	traits = { }
+#	skill = 3
+#}
+
+#create_corps_commander = {
+#	name = "Gildardo Magaña"
+#	portrait_path = "gfx/leaders/MEX/MEX_Gilardo_Magana.dds"
+#	traits = { desert_fox }
+#	skill = 3
+#}
+
+#create_navy_leader = {
+#	name = "Paul Suarez"
+#	portrait_path = "gfx/leaders/MEX/MEX_Paul_Suarez.dds"
+#	traits = { superior_tactician }
+#	skill = 3
+#}
 
 create_navy_leader = {
-	name = "Paul Suarez"
-	portrait_path = "gfx/leaders/MEX/MEX_Paul_Suarez.dds"
-	traits = { superior_tactician }
-	skill = 3
+	name = "Othon Blanco Nunez de Caceres"
+	picture = "Portrait_Mexico_Othon_Blanco_Nunez_de_Caceres.tga"
+	traits = { old_guard superior_tactician }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+create_navy_leader = {
+	name = "Manuel Zermeno Araico"
+	picture = "Portrait_Mexico_Manuel_Zermeno_Araico.tga"
+	traits = { blockade_runner }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
 }
 
 ### VARIANTS ###

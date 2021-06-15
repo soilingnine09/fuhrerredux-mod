@@ -1,8 +1,10 @@
+# Fuhrerredux Minister Sprites
+# East Asian Region
+
 spriteTypes = {
 
     ####################################################
     # JAP
-    
     ### Head of Government
     spriteType = {
         name = "GFX_idea_JAP_Oyama_Ikuo_hog_col"

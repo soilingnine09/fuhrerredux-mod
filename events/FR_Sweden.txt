@@ -329,14 +329,13 @@ country_event = {
 			ruling_party = social_democrat
 			elections_allowed = no
 		}
-		remove_ideas_with_trait = head_of_government
-		remove_ideas_with_trait = foreign_minister
-		remove_ideas_with_trait = economy_minister
-		remove_ideas_with_trait = security_minister
-		add_ideas = SWE_Per_Albin_Hansson_hog_sde
-		add_ideas = SWE_Richard_Sandler_for_sde
-		add_ideas = SWE_Ernst_Wigforss_eco_sde
-		add_ideas = SWE_Hinke_Bergegren_sec_lso
+		remove_every_minister = yes
+		add_ideas = {
+			SWE_Per_Albin_Hansson_hog_sde
+			SWE_Erik_Palmstierna_for_sde
+			SWE_Anna_Johansson_Visborg_eco_sde
+			SWE_Karl_Kilbom_sec_lib
+		}
 		set_country_flag = SWE_socdem_victory_flag
 		load_focus_tree = FR_Sweden_Left_Wing
 		
@@ -365,14 +364,13 @@ country_event = {
 			ruling_party = social_conservative
 			elections_allowed = no
 		}
-		remove_ideas_with_trait = head_of_government
-		remove_ideas_with_trait = foreign_minister
-		remove_ideas_with_trait = economy_minister
-		remove_ideas_with_trait = security_minister
-		add_ideas = SWE_Arvid_Lindman_hog_sco
-		add_ideas = SWE_Ernst_Trygger_for_sco
-		add_ideas = SWE_Carl_Gustaf_Ekman_eco_mli
-		add_ideas = SWE_Harald_Malmberg_sec_sco
+		remove_every_minister = yes
+		add_ideas = {
+			SWE_Fritiof_Domoe_hog_sco
+			SWE_Martin_Skoglund_for_sco
+			SWE_Goesta_Bagge_eco_sco
+			SWE_Carlos_Adlercreutz_sec_ade
+		}
 		set_country_flag = SWE_soccon_victory_flag
 		set_country_flag = SWE_borgarliga_blocket_flag
 		
@@ -393,14 +391,13 @@ country_event = {
 			ruling_party = social_conservative
 			elections_allowed = no
 		}
-		remove_ideas_with_trait = head_of_government
-		remove_ideas_with_trait = foreign_minister
-		remove_ideas_with_trait = economy_minister
-		remove_ideas_with_trait = security_minister
-		add_ideas = SWE_Arvid_Lindman_hog_sco
-		add_ideas = SWE_Martin_Ekstroem_for_npo
-		add_ideas = SWE_Nils_Wohlin_eco_sco
-		add_ideas = SWE_Carlos_Adlercreutz_sec_ade
+		remove_every_minister = yes
+		add_ideas = {
+			SWE_Fritiof_Domoe_hog_sco
+			SWE_Erik_von_Rosen_for_npo
+			SWE_Ernst_Trygger_eco_sco
+			SWE_Carlos_Adlercreutz_sec_ade
+		}
 		set_country_flag = SWE_soccon_victory_flag
 		set_country_flag = SWE_deal_with_devil_flag
 		
@@ -654,7 +651,7 @@ country_event = {
 				create_country_leader = {
 					name = "Gustaf VI Adolf"
 					desc = ""
-					picture = "Portrait_King_Gustaf_VI_Adolf_of_Sweden.tga"
+					picture = "Portrait_Sweden_Gustaf_VI.tga"
 					expire = "1965.1.1"
 					ideology = social_conservative_subtype
 					traits = {
@@ -671,7 +668,7 @@ country_event = {
 				create_country_leader = {
 					name = "Gustaf VI Adolf"
 					desc = ""
-					picture = "Portrait_King_Gustaf_VI_Adolf_of_Sweden.tga"
+					picture = "Portrait_Sweden_Gustaf_VI.tga"
 					expire = "1965.1.1"
 					ideology = authoritarian_democrat_subtype
 					traits = {
@@ -688,7 +685,7 @@ country_event = {
 				create_country_leader = {
 					name = "Gustaf VI Adolf"
 					desc = ""
-					picture = "Portrait_King_Gustaf_VI_Adolf_of_Sweden.tga"
+					picture = "Portrait_Sweden_Gustaf_VI.tga"
 					expire = "1965.1.1"
 					ideology = paternal_autocrat_subtype
 					traits = {
@@ -705,7 +702,7 @@ country_event = {
 				create_country_leader = {
 					name = "Gustaf VI Adolf"
 					desc = ""
-					picture = "Portrait_King_Gustaf_VI_Adolf_of_Sweden.tga"
+					picture = "Portrait_Sweden_Gustaf_VI.tga"
 					expire = "1965.1.1"
 					ideology = national_populist_subtype
 					traits = {
@@ -752,14 +749,13 @@ country_event = {
 		
 		hidden_effect = {
 			141 = { set_demilitarized_zone = no }
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-			add_ideas = SWE_Sven_Linderot_hog_col
-			add_ideas = SWE_Hugo_Sillen_for_van
-			add_ideas = SWE_Gustav_Sjoestroem_eco_lso
-			add_ideas = SWE_Gunnar_Oehman_sec_col
+			remove_every_minister = yes
+			add_ideas = {
+				SWE_Frans_Severin_hog_col
+				SWE_Albert_Jensen_for_col
+				SWE_Gustav_Sjoestroem_eco_col
+				SWE_Folke_Fridell_sec_col
+			}
 			diplomatic_relation = {
 				country = FIN
 				relation = guarantee
@@ -1012,14 +1008,13 @@ country_event = {
 			ruling_party = social_conservative elections_allowed = no
 		}
 		hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-			add_ideas = SWE_Arvid_Lindman_hog_sco
-			add_ideas = SWE_Ernst_Trygger_for_sco
-			add_ideas = SWE_Carl_Gustaf_Ekman_eco_mli
-			add_ideas = SWE_Karl_Gustaf_Westman_sec_sli
+			remove_every_minister = yes
+			add_ideas = {
+				SWE_Goesta_Bagge_hog_sco
+				SWE_Gustaf_Andersson_i_Rasjoen_for_mli
+				SWE_Ernst_Trygger_eco_sco
+				SWE_Jarl_Hjalmarson_sec_sco
+			}
 			
 			clr_country_flag = coalition_social_conservative
 			set_country_flag = coalition_authoritarian_democrat
@@ -1037,14 +1032,13 @@ country_event = {
 			ruling_party = market_liberal elections_allowed = no
 		}
 		hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-			add_ideas = SWE_Bertil_Ohlin_hog_mli
-			add_ideas = SWE_Ernst_Trygger_for_sco
-			add_ideas = SWE_Carl_Gustaf_Ekman_eco_mli
-			add_ideas = SWE_Karl_Gustaf_Westman_sec_sli
+			remove_every_minister = yes
+			add_ideas = {
+				SWE_Bertil_Ohlin_hog_mli
+				SWE_Martin_Skoglund_for_sco
+				SWE_Gustav_Cassel_eco_mli
+				SWE_Thorwald_Bergquist_sec_mli
+			}
 			
 			clr_country_flag = coalition_social_conservative
 			set_country_flag = coalition_authoritarian_democrat
@@ -1062,14 +1056,13 @@ country_event = {
 			ruling_party = social_liberal elections_allowed = no
 		}
 		hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-			add_ideas = SWE_Axel_Pehrsson_Bramstorp_hog_sli
-			add_ideas = SWE_Ernst_Trygger_for_sco
-			add_ideas = SWE_Carl_Gustaf_Ekman_eco_mli
-			add_ideas = SWE_Karl_Gustaf_Westman_sec_sli
+			remove_every_minister = yes
+			add_ideas = {
+				SWE_Axel_Pehrsson_Bramstorp_hog_sli
+				SWE_Karl_Gustaf_Westman_for_sli
+				SWE_Arthur_Heiding_eco_sli
+				SWE_Karl_Gustaf_Westman_sec_sli
+			}
 			
 			clr_country_flag = coalition_social_conservative
 			set_country_flag = coalition_authoritarian_democrat
@@ -1218,14 +1211,13 @@ country_event = {
 			ruling_party = national_populist
 			elections_allowed = no
 		}
-		remove_ideas_with_trait = head_of_government
-		remove_ideas_with_trait = foreign_minister
-		remove_ideas_with_trait = economy_minister
-		remove_ideas_with_trait = security_minister
-		add_ideas = SWE_Per_Engdahl_hog_npo
-		add_ideas = SWE_Martin_Ekstroem_for_npo
-		add_ideas = SWE_Arthur_Linden_eco_ade
-		add_ideas = SWE_Konrad_Hallgren_sec_npo
+		remove_every_minister = yes
+		add_ideas = {
+			SWE_Axel_Gyllenkrok_hog_npo
+			SWE_Sven_Olov_Lindholm_for_npo
+			SWE_Elof_Eriksson_eco_npo
+			SWE_Martin_Ekstroem_sec_npo
+		}
 		set_country_flag = SWE_far_right_victory_flag
 		load_focus_tree = FR_Sweden_Nationalist
 		
@@ -1514,7 +1506,7 @@ country_event = {
 				create_country_leader = {
 					name = "Gustaf VI Adolf"
 					desc = ""
-					picture = "Portrait_King_Gustaf_VI_Adolf_of_Sweden.tga"
+					picture = "Portrait_Sweden_Gustaf_VI.tga"
 					expire = "1965.1.1"
 					ideology = social_conservative_subtype
 					traits = {
@@ -1531,7 +1523,7 @@ country_event = {
 				create_country_leader = {
 					name = "Gustaf VI Adolf"
 					desc = ""
-					picture = "Portrait_King_Gustaf_VI_Adolf_of_Sweden.tga"
+					picture = "Portrait_Sweden_Gustaf_VI.tga"
 					expire = "1965.1.1"
 					ideology = authoritarian_democrat_subtype
 					traits = {
@@ -1548,7 +1540,7 @@ country_event = {
 				create_country_leader = {
 					name = "Gustaf VI Adolf"
 					desc = ""
-					picture = "Portrait_King_Gustaf_VI_Adolf_of_Sweden.tga"
+					picture = "Portrait_Sweden_Gustaf_VI.tga"
 					expire = "1965.1.1"
 					ideology = paternal_autocrat_subtype
 					traits = {
@@ -1565,7 +1557,7 @@ country_event = {
 				create_country_leader = {
 					name = "Gustaf VI Adolf"
 					desc = ""
-					picture = "Portrait_King_Gustaf_VI_Adolf_of_Sweden.tga"
+					picture = "Portrait_Sweden_Gustaf_VI.tga"
 					expire = "1965.1.1"
 					ideology = national_populist_subtype
 					traits = {
@@ -1604,14 +1596,13 @@ country_event = {
 		load_focus_tree = FR_Sweden_Nationalist
 		hidden_effect = {
 			141 = { set_demilitarized_zone = no }
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-			add_ideas = SWE_Per_Engdahl_hog_npo
-			add_ideas = SWE_Martin_Ekstroem_for_npo
-			add_ideas = SWE_Birger_Furugard_eco_npo
-			add_ideas = SWE_Konrad_Hallgren_sec_npo
+			remove_every_minister = yes
+			add_ideas = {
+				SWE_Martin_Ekstroem_hog_npo
+				SWE_Erik_von_Rosen_for_npo
+				SWE_Arthur_Linden_eco_npo
+				SWE_Martin_Ekstroem_sec_npo
+			}
 			diplomatic_relation = {
 				country = FIN
 				relation = guarantee
@@ -1872,22 +1863,18 @@ country_event = {
 				create_country_leader = {
 					name = "Per Albin Hansson"
 					desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
-					picture = "Portrait_Per_Albin_Hansson.tga"
+					picture = "Portrait_Sweden_Per_Albin_Hansson.tga"
 					expire = "1965.1.1"
 					ideology = social_democrat_subtype
-					traits = {
-						#
-					}
+					traits = { }
 				}
 				create_country_leader = {
 					name = "Gösta Bagge"
 					desc = "POLITICS_GOSTA_BAGGE_DESC"
-					picture = "Portrait_Gosta_Bagge.tga"
+					picture = "Portrait_Sweden_Gosta_Bagge.tga"
 					expire = "1965.1.1"
 					ideology = social_conservative_subtype
-					traits = {
-						#
-					}
+					traits = { }
 				}
 			}
 		}
@@ -2909,14 +2896,13 @@ country_event = {
 			long_name = SWE_pataut_monarchy_long
 			name = SWE_pataut_monarchy
 		}
-		remove_ideas_with_trait = head_of_government
-		remove_ideas_with_trait = foreign_minister
-		remove_ideas_with_trait = economy_minister
-		remove_ideas_with_trait = security_minister
-		add_ideas = SWE_Axel_Rappe_hog_pau
-		add_ideas = SWE_Folke_Bernadotte_for_pau
-		add_ideas = SWE_Marcus_Wallenberg_eco_pau
-		add_ideas = SWE_Prince_Gustaf_Adolf_sec_pau
+		remove_every_minister = yes
+		add_ideas = {
+			SWE_Helge_Jung_hog_pau
+			SWE_Gunnar_Berggren_for_pau
+			SWE_Marcus_Wallenberg_eco_pau
+			SWE_Axel_Rappe_sec_pau
+		}
 		set_country_flag = SWE_far_right_victory_flag
 		set_country_flag = SWE_power_to_king_flag
 	}
@@ -3506,14 +3492,13 @@ country_event = {
 			ruling_party = libertarian_socialist
 			elections_allowed = no
 		}
-		remove_ideas_with_trait = head_of_government
-		remove_ideas_with_trait = foreign_minister
-		remove_ideas_with_trait = economy_minister
-		remove_ideas_with_trait = security_minister
-		add_ideas = SWE_Nils_Flyg_hog_lso
-		add_ideas = SWE_Albin_Stroem_for_lso
-		add_ideas = SWE_Gustav_Sjoestroem_eco_lso
-		add_ideas = SWE_Karl_Kilbom_sec_lso
+		remove_every_minister = yes
+		add_ideas = {
+			SWE_Karin_Boye_hog_lib
+			SWE_Fredrik_Stroem_for_lib
+			SWE_Oesten_Unden_eco_lib
+			SWE_Karl_Kilbom_sec_lib
+		}
 		set_country_flag = SWE_lib_soc_victory_flag
 		set_country_flag = SWE_socialist_diplomacy_available
 		
@@ -3529,14 +3514,13 @@ country_event = {
 		add_popularity = { ideology = libertarian_socialist popularity = -0.02 }
 		add_popularity = { ideology = vanguardist popularity = -0.02 }
 		add_ideas = workers_republic
-		remove_ideas_with_trait = head_of_government
-		remove_ideas_with_trait = foreign_minister
-		remove_ideas_with_trait = economy_minister
-		remove_ideas_with_trait = security_minister
-		add_ideas = SWE_Sven_Linderot_hog_col
-		add_ideas = SWE_Fredrik_Stroem_for_col
-		add_ideas = SWE_Set_Persson_eco_col
-		add_ideas = SWE_Gunnar_Oehman_sec_col
+		remove_every_minister = yes
+		add_ideas = {
+			SWE_Frans_Severin_hog_col
+			SWE_Albert_Jensen_for_col
+			SWE_Gustav_Sjoestroem_eco_col
+			SWE_Folke_Fridell_sec_col
+		}
 		set_country_flag = SWE_collie_victory_flag
 		set_country_flag = SWE_socialist_diplomacy_available
 	}
@@ -3552,14 +3536,13 @@ country_event = {
 			ruling_party = vanguardist
 			elections_allowed = no
 		}
-		remove_ideas_with_trait = head_of_government
-		remove_ideas_with_trait = foreign_minister
-		remove_ideas_with_trait = economy_minister
-		remove_ideas_with_trait = security_minister
-		add_ideas = SWE_Hilding_Hagberg_hog_van
-		add_ideas = SWE_Hugo_Sillen_for_van
-		add_ideas = SWE_Knut_Olsson_eco_van
-		add_ideas = SWE_Gustav_Johansson_sec_van
+		remove_every_minister = yes
+		add_ideas = {
+			SWE_Sven_Linderot_hog_van
+			SWE_Hilding_Hagberg_for_van
+			SWE_Sven_Linderot_eco_van
+			SWE_Arvid_Olsson_sec_van
+		}
 		set_country_flag = SWE_vanguard_victory_flag
 		set_country_flag = SWE_socialist_diplomacy_available
 		

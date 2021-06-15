@@ -10,10 +10,10 @@ add_ideas = {
 	SWE_unbroken_neutrality_idea
 	SWE_political_wounds_idea
 	
-	SWE_Arvid_Lindman_hog_sco
-	SWE_Ernst_Trygger_for_sco
-	SWE_Nils_Wohlin_eco_sco
-	SWE_Carlos_Adlercreutz_sec_ade
+	SWE_Goesta_Bagge_hog_sco
+	SWE_Christian_Guenther_for_sco
+	SWE_Ernst_Trygger_eco_sco
+	SWE_Knut_Ewerloef_sec_sco
 	constitutional_monarchy
 }
 
@@ -107,129 +107,97 @@ add_manpower = 50000
 create_country_leader = {
 	name = "Sven Linderot"
 	desc = "POLITICS_SVEN_LINDEROT_DESC"
-	picture = "Portrait_Sven_Linderot.tga"
+	picture = "Portrait_Sweden_Sven_Linderot.tga"
 	expire = "1965.1.1"
 	ideology = vanguardist_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Sven Linderot"
 	desc = "POLITICS_SVEN_LINDEROT_DESC"
-	picture = "Portrait_Sven_Linderot.tga"
+	picture = "Portrait_Sweden_Sven_Linderot.tga"
 	expire = "1965.1.1"
 	ideology = collectivist_subtype
-	traits = {
-		#
-	}
+	traits = { } 
 }
-
 create_country_leader = {
 	name = "Nils Flyg"
 	desc = "POLITICS_NILS_FLYG_DESC"
-	picture = "Portrait_Nils_Flyg.tga"
+	picture = "Portrait_Sweden_Nils_Flyg.tga"
 	expire = "1965.1.1"
 	ideology = libertarian_socialist_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Gustaf V"
 	desc = "POLITICS_GUSTAF_V_DESC"
-	picture = "Portrait_King_Gustaf_V_of_Sweden.tga"
+	picture = "Portrait_Sweden_Gustaf_V.tga"
 	expire = "1965.1.1"
 	ideology = social_democrat_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Gustaf V"
 	desc = "POLITICS_GUSTAF_V_DESC"
-	picture = "Portrait_King_Gustaf_V_of_Sweden.tga"
+	picture = "Portrait_Sweden_Gustaf_V.tga"
 	expire = "1965.1.1"
 	ideology = social_liberal_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Gustaf V"
 	desc = "POLITICS_GUSTAF_V_DESC"
-	picture = "Portrait_King_Gustaf_V_of_Sweden.tga"
+	picture = "Portrait_Sweden_Gustaf_V.tga"
 	expire = "1965.1.1"
 	ideology = market_liberal_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Gustaf V"
 	desc = "POLITICS_GUSTAF_V_DESC"
-	picture = "Portrait_King_Gustaf_V_of_Sweden.tga"
+	picture = "Portrait_Sweden_Gustaf_V.tga"
 	expire = "1965.1.1"
 	ideology = social_conservative_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Gustaf V"
 	desc = "POLITICS_GUSTAF_V_DESC"
-	picture = "Portrait_King_Gustaf_V_of_Sweden.tga"
+	picture = "Portrait_Sweden_Gustaf_V.tga"
 	expire = "1965.1.1"
 	ideology = authoritarian_democrat_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Gustaf V"
 	desc = "POLITICS_GUSTAF_V_DESC"
-	picture = "Portrait_King_Gustaf_V_of_Sweden.tga"
+	picture = "Portrait_Sweden_Gustaf_V.tga"
 	expire = "1965.1.1"
 	ideology = paternal_autocrat_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Gustaf V"
 	desc = "POLITICS_GUSTAF_V_DESC"
-	picture = "Portrait_King_Gustaf_V_of_Sweden.tga"
+	picture = "Portrait_Sweden_Gustaf_V.tga"
 	expire = "1965.1.1"
 	ideology = national_populist_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
-
 create_country_leader = {
 	name = "Sven-Olov Lindholm"
 	desc = "POLITICS_SVEN_OLOV_LINDHOLM_DESC"
-	picture = "Portrait_Sven_Olov_Lindholm.tga"
+	picture = "Portrait_Sweden_Sven_Olov_Lindholm.tga"
 	expire = "1965.1.1"
 	ideology = valkist_subtype
-	traits = {
-		#
-	}
+	traits = { }
 }
 
 # Military Commanders #
 
 create_field_marshal = {
 	name = "Olof Thörnell"
-	portrait_path = "gfx/leaders/SWE/Portrait_SWE_Olof_Thornell.tga"
+	picture = "Portrait_Sweden_Olof_Thornell.tga"
 	traits = { old_guard defensive_doctrine }
 	skill = 3
 	attack_skill = 3
@@ -238,10 +206,9 @@ create_field_marshal = {
     logistics_skill = 3
 	id = 3000
 }
-
 create_field_marshal = {
 	name = "Oscar Nygren"
-	portrait_path = "gfx/leaders/SWE/Portrait_SWE_Oscar_Nygren.tga"
+	picture = "Portrait_Sweden_Oscar_Nygren.tga"
 	traits = { thorough_planner }
 	skill = 3
 	attack_skill = 3
@@ -253,7 +220,7 @@ create_field_marshal = {
 
 #create_corps_commander = {
 #	name = "Axel Rappe"
-#	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+#	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 #	traits = { trickster bearer_of_artillery }
 #	skill = 3
 #	attack_skill = 3
@@ -265,7 +232,7 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "Archibald Douglas"
-	portrait_path = "gfx/leaders/SWE/Portrait_SWE_Archibald_Douglas.tga"
+	picture = "Portrait_Sweden_Archibald_Douglas.tga"
 	traits = { cavalry_officer }
 	skill = 3
 	attack_skill = 3
@@ -274,10 +241,9 @@ create_corps_commander = {
     logistics_skill = 4
 	id = 3003
 }
-
 create_corps_commander = {
 	name = "Carl Gustaf Hammarskjöld"
-	portrait_path = "gfx/leaders/SWE/Portrait_SWE_Carl_Gustaf_Hammarskjold.tga"
+	picture = "Portrait_Sweden_Carl_Gustaf_Hammarskjold.tga"
 	traits = { old_guard politically_connected }
 	skill = 2
 	attack_skill = 3
@@ -286,10 +252,9 @@ create_corps_commander = {
     logistics_skill = 3
 	id = 3004
 }
-
 create_corps_commander = {
 	name = "Helge Jung"
-	portrait_path = "gfx/leaders/SWE/Portrait_SWE_Helge_Jung.tga"
+	picture = "Portrait_Sweden_Helge_Jung.tga"
 	traits = { organizer }
 	skill = 2
 	attack_skill = 3
@@ -298,10 +263,9 @@ create_corps_commander = {
     logistics_skill = 2
 	id = 3005
 }
-
 create_corps_commander = {
 	name = "Erik af Edholm"
-	portrait_path = "gfx/leaders/SWE/Portrait_SWE_Erik_af_Edholm.tga"
+	picture = "Portrait_Sweden_Erik_af_Edholm.tga"
 	traits = { trickster bearer_of_artillery }
 	skill = 1
 	attack_skill = 2
@@ -310,10 +274,9 @@ create_corps_commander = {
     logistics_skill = 2
 	id = 3006
 }
-
 create_corps_commander = {
 	name = "Carl August Ehrensvärd"
-	portrait_path = "gfx/leaders/SWE/Portrait_SWE_Carl_August_Ehrensvard.tga"
+	picture = "Portrait_Sweden_Carl_August_Ehrensvard.tga"
 	traits = { panzer_leader }
 	skill = 1
 	attack_skill = 2
@@ -322,12 +285,186 @@ create_corps_commander = {
     logistics_skill = 1
 	id = 3007
 }
+create_corps_commander = {
+	name = "Ernst Linder"
+	picture = "Portrait_Sweden_Ernst_Linder.tga"
+	traits = { trickster winter_specialist }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Folke Bernadotte"
+	picture = "Portrait_Sweden_Folke_Bernadotte_Army.tga"
+	traits = { politically_connected }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Harald Malmberg"
+	picture = "Portrait_Sweden_Harald_Malmberg.tga"
+	traits = { trait_reckless }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Gilbert Hamilton"
+	picture = "Portrait_Sweden_Gilbert_Hamilton.tga"
+	traits = { cavalry_officer trickster winter_specialist }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Ivar Holmquist"
+	picture = "Portrait_Sweden_Ivar_Holmquist.tga"
+	traits = { commando politically_connected }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Ernst af Klercker"
+	picture = "Portrait_Sweden_Ernst_Klercker.tga"
+	traits = { old_guard career_officer infantry_leader }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Nils Björk"
+	picture = "Portrait_Sweden_Nils_Bjork.tga"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Henry Peyron"
+	picture = "Portrait_Sweden_Henry_Peyron.tga"
+	traits = { career_officer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
 
 create_navy_leader = {
-	name = "Claes Lindström"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
-	traits = { blockade_runner }
-	skill = 4
+	name = "Erik Anderberg"
+	picture = "Portrait_Sweden_Erik_Anderberg.tga"
+	traits = { spotter fly_swatter }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+create_navy_leader = {
+	name = "Fabian Tamm"
+	picture = "Portrait_Sweden_Fabian_Tamm.tga"
+	traits = { superior_tactician blockade_runner }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 3
+}
+create_navy_leader = {
+	name = "Otto Lybeck"
+	picture = "Portrait_Sweden_Otto_Lybeck.tga"
+	traits = { }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+create_navy_leader = {
+	name = "Bertil of Sweden"
+	picture = "Portrait_Sweden_Prince_Bertil.tga"
+	traits = { }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 1
+}
+create_navy_leader = {
+	name = "Charles de Champs"
+	picture = "Portrait_Sweden_Charles_Champs.tga"
+	traits = { ironside old_guard_navy }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	maneuvering_skill = 3
+	coordination_skill = 1
+}
+create_navy_leader = {
+	name = "Claës Lindsström"
+	picture = "Portrait_Sweden_Claes_Lindsstrom.tga"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 2
+}
+create_navy_leader = {
+	name = "Gunnar Bjurner"
+	picture = "Portrait_Sweden_Gunnar_Bjurner.tga"
+	traits = { }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+create_navy_leader = {
+	name = "Gösta Ehrensvärd"
+	picture = "Portrait_Sweden_Gosta_Ehrensvard.tga"
+	traits = { }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+create_navy_leader = {
+	name = "Harald Åkermark"
+	picture = "Portrait_Sweden_Harald_Akermark.tga"
+	traits = { }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+create_navy_leader = {
+	name = "Jens Stefenson"
+	picture = "Portrait_Sweden_Jens_Stefenson.tga"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 1
 }
 
 ### Ship Variants ###

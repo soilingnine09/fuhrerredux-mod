@@ -778,7 +778,7 @@ country_event = {
         }
         ROOT = {
             has_war = no
-            owns_state = 302
+            owns_state = 439
         }
     }
     option = { # Puppet
@@ -4458,6 +4458,7 @@ country_event = {
     trigger = {
         NOT = {
             tag = MEX
+            tag = CRU
             has_country_flag = MEX_OCCUPIED
             country_exists = MEX
         }

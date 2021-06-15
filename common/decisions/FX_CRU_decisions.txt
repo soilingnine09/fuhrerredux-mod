@@ -1,0 +1,268 @@
+CRU_mexican_infiltration = {
+    CRU_fund_worker_strikes = {
+        icon = GFX_decision_generic_civil_support
+        days_remove = 40
+        days_re_enable = 120
+        
+        available = {
+            NOT = { has_country_flag = CRU_infiltrating_mexico }
+        }
+        complete_effect = {
+            set_country_flag = CRU_infiltrating_mexico
+        }
+        remove_effect = {
+            custom_effect_tooltip = CRU_fund_worker_strikes_tt
+            hidden_effect = {
+                clr_country_flag = CRU_infiltrating_mexico
+                random_list = {
+                    60 = { country_event = cruzoob.4 }
+                    40 = { country_event = cruzoob.5 }
+                }
+            }
+        }
+    }
+    CRU_siphon_state_funds = {
+        icon = GFX_decision_hol_attract_foreign_investors
+        days_remove = 40
+        days_re_enable = 120
+
+        available = {
+            NOT = { has_country_flag = CRU_infiltrating_mexico }
+        }
+        complete_effect = {
+            set_country_flag = CRU_infiltrating_mexico
+        }
+        remove_effect = {
+            custom_effect_tooltip = CRU_siphon_state_funds_tt
+            hidden_effect = {
+                clr_country_flag = CRU_infiltrating_mexico
+                random_list = {
+                    60 = { country_event = cruzoob.6 }
+                    40 = { country_event = cruzoob.7 }
+                }
+            }
+        }
+    }
+    CRU_promote_anti_government_propaganda = {
+        icon = GFX_decision_hol_radio_oranje
+        days_remove = 40
+        days_re_enable = 120
+
+        available = {
+            NOT = { has_country_flag = CRU_infiltrating_mexico }
+        }
+        complete_effect = {
+            set_country_flag = CRU_infiltrating_mexico
+        }
+        remove_effect = {
+            custom_effect_tooltip = CRU_promote_anti_government_propaganda_tt
+            hidden_effect = {
+                clr_country_flag = CRU_infiltrating_mexico
+                random_list = {
+                    60 = { country_event = cruzoob.8 }
+                    40 = { country_event = cruzoob.9 }
+                }
+            }
+        }
+    }
+    CRU_steal_stockpiled_equipment = {
+        icon = GFX_decision_ger_military_buildup
+        days_remove = 40
+        days_re_enable = 120
+
+        available = {
+            NOT = { has_country_flag = CRU_infiltrating_mexico }
+        }
+        complete_effect = {
+            set_country_flag = CRU_infiltrating_mexico
+        }
+        remove_effect = {
+            custom_effect_tooltip = CRU_steal_stockpiled_equipment_tt
+            hidden_effect = {
+                clr_country_flag = CRU_infiltrating_mexico
+                random_list = {
+                    60 = { country_event = cruzoob.10 }
+                    40 = { country_event = cruzoob.11}
+                }
+            }
+        }
+    }
+}
+
+CRU_spreading_our_culture = { # Integrate the Occupied States
+    CRU_integrate_mexican_states = {
+        name = CRU_integrate_state
+        icon = GFX_decision_oppression
+        cost = 25
+        days_remove = 60
+        fire_only_once = yes
+
+        state_target = yes
+        on_map_mode = map_and_decisions_view
+        targets = {
+            277 475 476 477 478 479 480 481 481 483 484 485 949 950
+        }
+        target_trigger = { owns_state = FROM }
+
+        visible = { 
+            has_completed_focus = CRU_the_tables_have_turned
+            FROM = { 
+                NOT = { is_core_of = ROOT }
+            } 
+        }
+        available = { controls_state = FROM }
+        remove_effect = {
+            add_state_core = FROM
+        }
+    }
+    CRU_integrate_guatemalan_states = {
+        name = CRU_integrate_state
+        icon = GFX_decision_oppression
+        cost = 25
+        days_remove = 60
+        fire_only_once = yes
+
+        state_target = yes
+        on_map_mode = map_and_decisions_view
+        targets = {
+            313
+        }
+        target_trigger = { owns_state = FROM }
+
+        visible = { 
+            has_completed_focus = CRU_expanding_our_borders 
+            FROM = { 
+                NOT = { is_core_of = ROOT }
+            } 
+        }
+        available = { controls_state = FROM }
+        remove_effect = {
+            add_state_core = FROM
+        }
+    }
+    CRU_integrate_honduras_states = {
+        name = CRU_integrate_state
+        icon = GFX_decision_oppression
+        cost = 25
+        days_remove = 60
+        fire_only_once = yes
+        
+        state_target = yes
+        on_map_mode = map_and_decisions_view
+        targets = {
+            312
+        }
+        target_trigger = { owns_state = FROM }
+
+        visible = { 
+            has_completed_focus = CRU_expanding_our_borders 
+            FROM = { 
+                NOT = { is_core_of = ROOT }
+            } 
+        }
+        available = { controls_state = FROM }
+        remove_effect = {
+            add_state_core = FROM
+        }
+    }
+    CRU_integrate_el_salvador_states = {
+        name = CRU_integrate_state
+        icon = GFX_decision_oppression
+        cost = 25
+        days_remove = 60
+        fire_only_once = yes
+
+        state_target = yes
+        on_map_mode = map_and_decisions_view
+        targets = {
+            314
+        }
+        target_trigger = { owns_state = FROM }
+        
+        visible = { 
+            has_completed_focus = CRU_expanding_our_borders 
+            FROM = { 
+                NOT = { is_core_of = ROOT }
+            } 
+        }
+        available = { controls_state = FROM }
+        remove_effect = {
+            add_state_core = FROM
+        }
+    }
+    CRU_integrate_nicaraguan_states = {
+        name = CRU_integrate_state
+        icon = GFX_decision_oppression
+        cost = 25
+        days_remove = 60
+        fire_only_once = yes
+
+        state_target = yes
+        on_map_mode = map_and_decisions_view
+        targets = {
+            317
+        }
+        target_trigger = { owns_state = FROM }
+
+        visible = { 
+            has_completed_focus = CRU_expanding_our_borders 
+            FROM = { 
+                NOT = { is_core_of = ROOT }
+            } 
+        }
+        available = { controls_state = FROM }
+        remove_effect = {
+            add_state_core = FROM
+        }
+    }
+    CRU_integrate_costa_rican_states = {
+        name = CRU_integrate_state
+        icon = GFX_decision_oppression
+        cost = 25
+        days_remove = 60
+        fire_only_once = yes
+
+        state_target = yes
+        on_map_mode = map_and_decisions_view
+        targets = {
+            316
+        }
+        target_trigger = { owns_state = FROM }
+
+        visible = { 
+            has_completed_focus = CRU_expanding_our_borders 
+            FROM = { 
+                NOT = { is_core_of = ROOT }
+            } 
+        }
+        available = { controls_state = FROM }
+        remove_effect = {
+            add_state_core = FROM
+        }
+    }
+    CRU_integrate_panamanian_states = {
+        name = CRU_integrate_state
+        icon = GFX_decision_oppression
+        cost = 25
+        days_remove = 60
+        fire_only_once = yes
+
+        state_target = yes
+        on_map_mode = map_and_decisions_view
+        targets = {
+            304
+        }
+        target_trigger = { owns_state = FROM }
+
+        visible = {
+            has_completed_focus = CRU_expanding_our_borders 
+            FROM = { 
+                NOT = { is_core_of = ROOT }
+            } 
+        }
+        available = { controls_state = FROM }
+        remove_effect = {
+            add_state_core = FROM
+        }
+    }
+}

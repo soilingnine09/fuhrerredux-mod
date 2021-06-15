@@ -13,18 +13,18 @@ set_research_slots = 3
 
 add_ideas = {
 	party_pop_0_40
-	# Situational
+	
 	TUR_sick_man_of_europe
 	TUR_opda_idea
-	# Laws
+	
 	civilian_economy
 	export_focus
 	volunteer_only
-	# Ministers
+	
 	TUR_Prens_Sabahaddin_Efendi_hog_sli
-	TUR_Osman_Kemal_Bey_for_sli
-	TUR_Resad_Muhlis_Bey_eco_sli
-	TUR_Agaoglu_Ahmed_Pasa_sec_sli
+	TUR_Haqqi_al_Azm_for_sli
+	TUR_Berc_Keresteciyan_Bey_eco_sli
+	TUR_Feridun_Fikri_Pasa_sec_sli
 	constitutional_monarchy
 }
 

@@ -1,0 +1,2257 @@
+#White Russia Ideas by fbruchmueller
+
+ideas = {
+	country = {
+		RUS_russian_emigres = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_russian_emigres"}
+		    picture = ger_bulwark_against_bolshevism
+            modifier = {	
+				conscription = 0.01
+			}
+			targeted_modifier = {
+				tag = SOV
+				defense_bonus_against = 0.1
+			}
+		}
+		RUS_funding_army = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_funding_army"}
+    		picture = ger_bulwark_against_bolshevism
+			modifier = {
+				conscription = 0.01
+                consumer_goods_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = SOV
+				defense_bonus_against = 0.1
+			}
+	    }
+		RUS_militarism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_militarism"}
+    		picture = ger_bulwark_against_bolshevism
+			modifier = {
+				conscription = 0.05
+                consumer_goods_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = SOV
+				defense_bonus_against = 0.1
+			}
+	    }
+		RUS_allied_eastern_comission = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_allied_eastern_comission"}
+			picture = RUS_Relations_USA_Japan
+            modifier = {	
+                consumer_goods_factor = -0.05
+                political_power_factor = -0.3
+		    }
+	     }
+		RUS_democratic_opposition = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_democratic_opposition"}
+			picture = chi_army_corruption3
+            modifier = {	
+                stability_factor = -0.10
+                conscription_factor = -0.10
+		    }
+	     }
+		RUS_old_army = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_old_army"}
+			picture = Recruitment_Crisis
+            modifier = {	
+              	army_org_Factor = -0.10
+				army_morale_factor = -0.10
+		    }
+	     }
+		RUS_old_army2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_old_army2"}
+			picture = Recruitment_Crisis
+            modifier = {	
+              	army_org_Factor = -0.05
+				army_morale_factor = -0.05
+		    }
+	    }
+		RUS_autarky = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_autarky"}
+			picture = economic_control_icon
+		    equipment_bonus = {
+		        infantry_equipment = {
+			        build_cost_ic = -0.05 instant = yes
+				}
+		        artillery_equipment = {
+			        build_cost_ic = -0.05 instant = yes
+				}
+	    	}
+		}
+		RUS_corruption = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_corruption"}
+			picture = ROM_king_carol_ii_hedonist
+            modifier = {	
+                stability_factor = -0.10
+                consumer_goods_factor = 0.10
+		    }
+	    }
+		RUS_american_influence_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_american_influence_1"}
+	        picture = RUS_American_Backing		
+			allowed = {always = no}
+		    modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.05
+			}
+		}
+		RUS_american_influence_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_american_influence_2"}
+			picture = RUS_American_Backing
+			allowed = {always = no}
+		    modifier = {
+				war_support_factor = -0.05
+				army_org_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		RUS_american_influence_3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_american_influence_3"}
+			picture = RUS_American_Backing
+			allowed = {always = no}
+			modifier = {
+				political_power_factor = -0.20
+				war_support_factor = -0.15
+				stability_factor = -0.05
+				army_org_Factor = -0.15
+				production_factory_max_efficiency_factor = 0.10
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		RUS_american_influence_4 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_american_influence_4"}
+			picture = RUS_American_Backing
+			allowed = {always = no}
+			modifier = {
+				political_power_factor = -0.30
+				war_support_factor = -0.30
+				stability_factor = -0.10
+				army_org_Factor = -0.30
+				production_factory_max_efficiency_factor = 0.15
+			    production_speed_buildings_factor = 0.15
+			}
+		}
+		RUS_japanese_influence_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_japanese_influence_1"}
+		    picture = ZHI_japanese_backing
+		    allowed = {always = no}
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.05
+			}
+		}
+		RUS_japanese_influence_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_japanese_influence_2"}
+			picture = ZHI_japanese_backing
+		    allowed = {always = no}
+			modifier = {
+				war_support_factor = -0.05
+				army_org_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		RUS_japanese_influence_3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_japanese_influence_3"}
+			picture = ZHI_japanese_backing
+			allowed = {always = no}
+			modifier = {
+			    political_power_factor = -0.20
+				war_support_factor = -0.15
+				stability_factor = -0.05
+				army_org_Factor = -0.15
+				production_factory_max_efficiency_factor = 0.10
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		RUS_japanese_influence_4 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_japanese_influence_4"}
+			picture = ZHI_japanese_backing
+		    allowed = {always = no}
+			modifier = {
+			    political_power_factor = -0.30
+			    war_support_factor = -0.30
+				stability_factor = -0.10
+				army_org_Factor = -0.30
+				production_factory_max_efficiency_factor = 0.15
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		RUS_a_modern_army = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_a_modern_army"}
+	        picture = chi_army_corruption3
+		    modifier = {
+			    army_org_Factor = 0.1
+			    army_morale_factor = 0.05			
+			    army_attack_factor = 0.1
+			    army_defence_factor = 0.1
+
+			}
+		}
+		RUS_expand_artillery = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_expand_artillery"}
+			picture = generic_war_preparation
+			equipment_bonus = {
+				artillery = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+		RUS_Black_Wednesday = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Black_Wednesday"}
+        	picture = chi_hyper_inflation5
+        	modifier = {	
+		    	production_factory_max_efficiency_factor = -0.15
+				production_speed_buildings_factor = -0.30
+				industrial_capacity_factory = -0.30
+				consumer_goods_factor = 0.20
+				}
+			}
+		RUS_Black_Wednesday2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Black_Wednesday2"}
+        	picture = chi_hyper_inflation4
+        	modifier = {	
+		    	production_factory_max_efficiency_factor = -0.15
+				industrial_capacity_factory = -0.30
+				consumer_goods_factor = 0.25
+			}
+		}
+		RUS_Black_Wednesday3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Black_Wednesday3"}
+        	picture = chi_hyper_inflation3
+       		modifier = {	
+		    	production_factory_max_efficiency_factor = -0.10
+				industrial_capacity_factory = -0.25
+				consumer_goods_factor = 0.25
+			}
+		}
+		RUS_Black_Wednesday4 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Black_Wednesday4"}
+       	 	picture = chi_hyper_inflation2
+    		modifier = {	
+		    	production_factory_max_efficiency_factor = -0.05
+				industrial_capacity_factory = -0.20
+			}
+		}
+		RUS_Black_Wednesday5 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Black_Wednesday5"}
+        	picture = new_deal
+        	modifier = {	
+		    production_factory_max_efficiency_factor = -0.05
+			industrial_capacity_factory = -0.05
+			}
+		}
+		RUS_modern_economy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_modern_economy"}
+        	picture = new_deal
+        	modifier = {	
+		    production_factory_max_efficiency_factor = 0.1
+			industrial_capacity_factory = 0.05
+			consumer_goods_factor = -0.05
+			}
+		}
+		RUS_Engines_of_War = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Engines_of_War"}
+			picture = man_five_year_plan_industry
+			modifier = {
+			production_speed_arms_factory_factor = 0.10
+			}
+		}
+		RUS_Engines_of_War2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Engines_of_War2"}
+			picture = man_five_year_plan_industry
+			modifier = {
+				production_speed_arms_factory_factor = 0.10
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.04 instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.025 instant = yes
+				}
+			}
+		}
+		RUS_Engines_of_War3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Engines_of_War3"}
+    		picture = man_five_year_plan_industry
+			modifier = {
+				production_speed_arms_factory_factor = 0.20
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.08 instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+		RUS_offensive_spirit = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_offensive_spirit"}
+    		picture = generic_armor
+			modifier = {
+				army_attack_factor = 0.1
+				army_morale_factor = 0.05		
+			}
+	    }
+		RUS_offensive_spirit2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_offensive_spirit2"}
+    		picture = generic_armor
+			modifier = {
+				army_attack_factor = 0.15
+				army_defence_factor = -0.10
+				army_morale_factor = 0.1		
+			}
+	    }
+		RUS_offensive_spirit3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_offensive_spirit3"}
+    		picture = generic_armor
+			modifier = {
+				army_attack_factor = 0.20
+				army_defence_factor = -0.15
+				army_morale_factor = 0.15		
+			}
+	    }
+		RUS_officers = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_officers"}
+    		picture = ast_volunteer_defence_corps
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_morale_factor = 0.05		
+			}
+	    }
+		RUS_officers2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_officers2"}
+    		picture = ast_volunteer_defence_corps
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_morale_factor = 0.1		
+			}
+	    }
+		RUS_officers3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_officers3"}
+    		picture = ast_volunteer_defence_corps
+			modifier = {
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				army_morale_factor = 0.15	
+			}
+	    }
+		RUS_social_welfare = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_social_welfare"}
+	   		picture = state_economy
+			modifier = {
+				stability_factor = 0.10
+			}
+	    }
+		RUS_social_welfare2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_social_welfare2"}
+	   		picture = state_economy
+			modifier = {
+				stability_factor = 0.15
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = 0.05
+			}
+	    }
+		RUS_militarize_education = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_militarize_education"}
+	   		picture = jap_duplicate_research
+			modifier = {
+				conscription = 0.01
+				army_org_factor = 0.05
+			}
+	    }
+		RUS_militarize_education2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_militarize_education2"}
+	   		picture = jap_duplicate_research
+			modifier = {
+				research_speed_factor = 0.03
+				conscription = 0.01
+				army_org_factor = 0.05
+			}
+	    }
+		RUS_mechanize_electrify_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_mechanize_electrify_idea"}
+	   		picture = generic_exploit_mines
+			modifier = {
+				stability_factor = 0.05
+				global_building_slots_factor = 0.05
+				consumer_goods_factor = 0.02
+			}
+	    }
+		RUS_strikes = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_strikes"}
+	   		picture = TUS_syndie_economy
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = 0.05
+			}
+	    }
+		RUS_strikes2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_strikes2"}
+	   		picture = TUS_syndie_economy
+			modifier = {
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = 0.05
+			}
+	    }
+		RUS_free_thought = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_free_thought"}
+	   		picture = jap_supremacy_of_will
+			modifier = {
+				research_speed_factor = 0.03
+			}
+	    }
+		RUS_cheap_credits = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_cheap_credits"}
+	   		picture = man_five_year_plan_industry
+			modifier = {
+				global_building_slots_factor = 0.05
+				consumer_goods_factor = 0.02
+			}
+	    }
+		RUS_social_security = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_social_security"}
+	   		picture = generic_fortify_the_borders
+			modifier = {
+                stability_factor = 0.05
+				consumer_goods_factor = 0.03
+			}
+	    }
+		RUS_ancap = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_ancap"}
+	   		picture = generic_fortify_the_borders
+			modifier = {
+				production_factory_max_efficiency_factor = -0.05
+                stability_factor = -0.02
+				consumer_goods_factor = -0.05
+			}
+	    }
+		RUS_ancap2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_ancap2"}
+	   		picture = generic_fortify_the_borders
+			modifier = {
+				production_factory_max_efficiency_factor = -0.1
+                stability_factor = -0.05
+				consumer_goods_factor = -0.1
+			}
+	    }
+		RUS_ancap3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_ancap3"}
+	   		picture = generic_fortify_the_borders
+			modifier = {
+				production_factory_max_efficiency_factor = -0.1
+                stability_factor = -0.1
+				consumer_goods_factor = -0.15
+			}
+	    }
+		RUS_good_education = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_good_education"}
+	   		picture = jap_supremacy_of_will
+			modifier = {
+				research_speed_factor = 0.05
+				consumer_goods_factor = 0.02
+			}
+	    }
+		RUS_aggresive = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_aggresive"}
+	    	picture = ger_bulwark_against_bolshevism
+        	modifier = {	
+			conscription = 0.05
+			stability_factor = -0.1
+			}
+		}
+		RUS_corporatism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_corporatism"}
+			picture = BRA_faith_unity
+			modifier = {
+				industrial_capacity_factory = 0.05
+				global_building_slots_factor = 0.05	
+			}
+    	}
+		RUS_corporatism2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_corporatism2"}
+			picture = BRA_faith_unity
+			modifier = {
+				industrial_capacity_factory = 0.1
+				global_building_slots_factor = 0.1
+				consumer_goods_factor = 0.02
+			}
+    	}
+		RUS_new_goverment_democracy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_new_goverment_democracy"}
+			picture = chi_war_of_resistance3
+			modifier = {
+				stability_factor = -0.1
+					research_speed_factor = 0.03
+			}
+		}
+		RUS_new_goverment_dictatorship = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_new_goverment_dictatorship"}
+			picture = chi_war_of_resistance3
+			modifier = {
+				stability_factor = -0.1
+					research_speed_factor = 0.03
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		RUS_business_democracy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_business_democracy"}
+			picture = chi_war_of_resistance3
+			modifier = {
+				stability_factor = -0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		RUS_business_dictatorship = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_business_dictatorship"}
+			picture = chi_war_of_resistance3
+			modifier = {
+				stability_factor = -0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		RUS_technocracy_democracy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_technocracy_democracy"}
+			picture = chi_war_of_resistance3
+			modifier = {
+				stability_factor = -0.05
+					research_speed_factor = 0.03
+			}
+		}
+		RUS_technocracy_dictatorship = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_technocracy_dictatorship"}
+			picture = chi_war_of_resistance3
+			modifier = {
+				stability_factor = -0.05
+					research_speed_factor = 0.03
+			}
+		}
+		RUS_christian_socialism_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_christian_socialism_idea"}
+			picture = trotskyite_plot_purged
+			modifier = {
+					industrial_capacity_factory = 0.05
+					consumer_goods_factor = 0.03
+			}
+		}
+		RUS_decentralize_goverment_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_decentralize_goverment_idea"}
+			picture = economic_control_icon
+			modifier = {
+				consumer_goods_factor = -0.03
+			}
+		} 
+		RUS_new_year_act_1932 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_new_year_act_1932"}
+			picture = TUS_syndie_government
+			modifier = {
+				stability_factor = -0.10
+			}
+		}
+		RUS_helping_people = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_helping_people"}
+			picture = generic_production_bonus
+			modifier = {
+				stability_factor = 0.20
+				consumer_goods_factor = 0.05
+			}
+		}
+		RUS_not_1984_swear = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_not_1984_swear"}
+			picture = generic_purge
+			modifier = {
+				stability_factor = -0.10
+				industrial_capacity_factory = 0.10
+			}
+		}
+		RUS_not_1984_swear_women = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_not_1984_swear_women"}
+			picture = generic_purge
+			modifier = {
+				stability_factor = -0.10
+				industrial_capacity_factory = 0.15
+				conscription = 0.005
+			}
+		}
+		RUS_credit_rural = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_credit_rural"}
+			picture = prc_low_popular_support3
+			modifier = {
+				stability_factor = 0.05
+				global_building_slots_factor = 0.05
+				consumer_goods_factor = 0.02
+			}
+		}
+		RUS_modernization_agriculture = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_modernization_agriculture"}
+			picture = prc_low_popular_support3
+			modifier = {
+				stability_factor = 0.05
+				global_building_slots_factor = 0.05
+				industrial_capacity_factory = 0.03
+				consumer_goods_factor = 0.05
+			}
+		}
+		RUS_cooperation = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_cooperation"}
+			picture = prc_low_popular_support3
+			modifier = {
+				stability_factor = 0.05
+				global_building_slots_factor = 0.10
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = 0.05
+			}
+		}
+		RUS_legacy_socialism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_legacy_socialism"}
+			picture = NOR_labour_conflicts
+			modifier = {
+				war_support_factor = -0.60
+				conscription_factor = -0.60
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.25
+			}
+		}
+		RUS_legacy_socialism2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_legacy_socialism2"}
+			picture = NOR_labour_conflicts
+			modifier = {
+				war_support_factor = -0.50
+				conscription_factor = -0.50
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.15
+			}
+		}
+		RUS_legacy_socialism3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_legacy_socialism3"}
+			picture = NOR_labour_conflicts
+			modifier = {
+				war_support_factor = -0.40
+				conscription_factor = -0.40
+				consumer_goods_factor = 0.10
+				industrial_capacity_factory = -0.10
+			}
+		}
+		RUS_legacy_socialism4 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_legacy_socialism4"}
+			picture = NOR_labour_conflicts
+			modifier = {
+				war_support_factor = -0.30
+				conscription_factor = -0.30
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.10
+			}
+		}
+		RUS_legacy_socialism5 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_legacy_socialism5"}
+			picture = NOR_labour_conflicts
+			modifier = {
+				war_support_factor = -0.20
+				conscription_factor = -0.20
+				industrial_capacity_factory = -0.05
+			}
+		}
+		RUS_reperations = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_reperations"}
+			picture = FRA_factory_strikes
+			modifier = {
+				consumer_goods_factor = -0.10
+			}
+		}
+	} 
+	### Companies
+	# Tank Manufacturer
+	tank_manufacturer = {
+		designer = yes
+		stolypinsky_avt_mobilny_zavod = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea stolypinsky_avt_mobilny_zavod"}
+			allowed = { original_tag = RUS }
+			traits = { motorised_equipment_producer_mass_1 }
+			modifier = {}
+			research_bonus = {
+				motorized_equipment = 0.05
+			}
+		}
+	}
+	### Ministers
+	# Head of Government
+	head_of_government = {
+		RUS_Vladimir_M_Zenzinov_hog_sde = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_democrat
+				hog_silent_workhorse
+			}
+		}
+		RUS_Venedikt_Miakotin_hog_sli = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_liberal
+				hog_silent_workhorse
+			}
+		}
+		RUS_Pavel_N_Milyukov_hog_mli = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				market_liberal
+				hog_smiling_oilman
+			}
+		}
+		RUS_Vasily_G_Boldyrev_hog_sco = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_conservative
+				hog_political_protege
+			}
+		}
+		RUS_Georgiy_P_Ignatiev_hog_sco = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_conservative
+				hog_accomplished_diplomat
+			}
+		}
+		RUS_Nikolai_S_Trubetskoy_hog_sco = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_conservative
+				hog_charismatic_charmer
+			}
+		}
+		RUS_Alexandr_Danilovich_Allfyorov_hog_sco = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_conservative
+				hog_democratic_tyrant
+			}
+		}
+		RUS_Anton_I_Denikin_hog_sco = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_conservative
+				hog_old_general
+			}
+		}
+		RUS_Felix_F_Yusupov_hog_sco = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_conservative
+				hog_political_protege
+			}
+		}
+		RUS_Sergei_L_Markov_hog_sco = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_conservative
+				hog_reformist_soldier
+			}
+		}
+		RUS_Abram_Dragomirov_hog_ade = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_respected_war_hero
+			}
+		}
+		RUS_Pavel_Bermondt_Avalov_hog_ade = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_silent_workhorse
+			}
+		}
+		RUS_Aleksandr_S_Lukomsky_hog_ade = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_sincere_internationalist
+			}
+		}
+		RUS_Anatoly_Pepelyayev_hog_ade = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_backroom_backstabber
+			}
+		}
+		RUS_Patriarch_Kiril_hog_ade = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_spiritual_leader
+			}
+		}
+		RUS_Vasily_Kanin_hog_ade = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_state_secularist
+			}
+		}
+		RUS_Pyotr_N_Wrangel_hog_pau = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_old_general
+			}
+		}
+		RUS_Lev_N_Gumilov_hog_pau = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_philosopher_general
+			}
+		}
+		RUS_Regency_Council_hog_pau = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_backroom_backstabber
+			}
+		}
+		RUS_Lavr_G_Kornilov_hog_npo = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				national_populist
+				hog_old_general
+			}
+		}
+		RUS_Vladimir_M_Purishkevich_hog_npo = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				national_populist
+				hog_silent_workhorse
+			}
+		}
+		RUS_Nikolai_V_Ustryalov_hog_npo = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				national_populist
+				hog_pragmatic_statesman
+			}
+		}
+		RUS_Pavel_N_Shatilov_hog_npo = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				national_populist
+				hog_naive_optimist
+			}
+		}
+		RUS_Sergei_G_Romanovski_hog_npo = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				national_populist
+				hog_happy_amateur
+			}
+		}
+		RUS_Viktor_L_Pokrovsky_hog_npo = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				national_populist
+				hog_naive_optimist
+			}
+		}
+		RUS_Viktor_M_Baydalakov_hog_val = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				valkist
+				hog_backroom_backstabber
+			}
+		}
+		RUS_Arkadiy_Stolypin_hog_val = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				valkist
+				hog_local_tyrant
+			}
+		}
+	}
+	### Foreign Minister
+	foreign_minister = {
+		RUS_Fanni_Y_Kaplan_for_sde = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_democrat
+				for_foreign_sympathizer
+			}
+		}
+		RUS_Viktor_M_Chernov_for_sde = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_democrat
+				for_apologetic_clerk
+			}
+		}
+		RUS_Ariadna_V_Tyrkova_Williams_for_sli = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_liberal
+				for_general_staffer
+			}
+		}
+		RUS_Georgiy_V_Vernadsky_for_sli = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_liberal
+				for_relations_expert
+			}
+		}
+		RUS_Mikhail_I_Tereshchenko_for_sli = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_liberal
+				for_world_patrician
+			}
+		}
+		RUS_Nikolai_V_Nekrasov_for_sli = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_liberal
+				for_great_compromiser
+			}
+		}
+		RUS_Pyotr_B_Struve_for_sli = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_liberal
+				for_moderate_among_radicals
+			}
+		}
+		RUS_Aleksandr_I_Konovalov_for_mli = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				market_liberal
+				for_radical_among_moderates
+			}
+		}
+		RUS_Alexei_M_Nikitin_for_mli = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				market_liberal
+				for_relations_expert
+			}
+		}
+		RUS_Pavel_N_Milyukov_for_mli = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				market_liberal
+				for_the_cloak_n_dagger_schemer
+			}
+		}
+		RUS_Vasily_G_Boldyrev_for_sco = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_conservative
+				for_great_compromiser
+			}
+		}
+		RUS_Georgiy_P_Ignatiev_for_sco = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_conservative
+				for_ideological_crusader
+			}
+		}
+		RUS_Nikolai_S_Trubetskoy_for_sco = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_conservative
+				for_iron_fisted_brute
+			}
+		}
+		RUS_Vladimir_D_Nabokov_for_sco = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_conservative
+				for_apologetic_clerk
+			}
+		}
+		RUS_Vladimir_P_Paley_for_sco = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_conservative
+				for_general_staffer
+			}
+		}
+		RUS_Mikhail_A_Taube_for_ade = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				authoritarian_democrat
+				for_ideological_crusader
+			}
+		}
+		RUS_Vasily_Kanin_for_ade = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				authoritarian_democrat
+				for_relations_expert
+			}
+		}
+		RUS_Vladimir_Galitzine_for_ade = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				authoritarian_democrat
+				for_general_staffer
+			}
+		}
+		RUS_Alexei_A_Ignatiev_for_pau = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_biased_intellectual
+			}
+		}
+		RUS_Boris_V_Stuermer_for_pau = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_iron_fisted_brute
+			}
+		}
+		RUS_Lev_N_Gumilov_for_pau = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_world_patrician
+			}
+		}
+		RUS_Aleksandr_Dikgof_Derental_for_npo = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				national_populist
+				for_relations_expert
+			}
+		}
+		RUS_Aleksandr_L_Kazembek_for_npo = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				national_populist
+				for_biased_intellectual
+			}
+		}
+		RUS_Aleksei_N_Tolstoy_for_npo = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				national_populist
+				for_great_compromiser
+			}
+		}
+		RUS_Dmitri_M_Odinets_for_npo = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				national_populist
+				for_radical_among_moderates
+			}
+		}
+		RUS_Sergei_G_Romanovski_for_npo = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				national_populist
+				for_hawkish_intervener
+			}
+		}
+		RUS_Alexander_Vuyrgler_for_val = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				valkist
+				for_relations_expert
+			}
+		}
+	}
+	### Economy Minister
+	economy_minister = {
+		RUS_Vladimir_M_Zenzinov_eco_sde = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_democrat
+				eco_reformer
+			}
+		}
+		RUS_Andrei_D_Sakharov_eco_sli = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_liberal
+				eco_the_minister_for_everything
+			}
+		}
+		RUS_Mikhail_I_Tereshchenko_eco_sli = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_liberal
+				eco_trade_proponent
+			}
+		}
+		RUS_Vadim_V_Rudnev_eco_sli = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_liberal
+				eco_railway_magnate
+			}
+		}
+		RUS_Vladimir_P_Smirnov_eco_sli = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_liberal
+				eco_resource_industrialist
+			}
+		}
+		RUS_Alexey_Peshekhonov_eco_sli = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_liberal
+				eco_socred_economist
+			}
+		}
+		RUS_Aleksandr_I_Konovalov_eco_mli = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				market_liberal
+				eco_bank_president
+			}
+		}
+		RUS_Mikhail_V_Bernacki_eco_mli = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				market_liberal
+				eco_construction_magnate
+			}
+		}
+		RUS_Wassily_Leontief_eco_mli = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				market_liberal
+				eco_industrialiser
+			}
+		}
+		RUS_Ivan_G_Erdeli_eco_sco = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_conservative
+				eco_infantry_proponent
+			}
+		}
+		RUS_Sergei_Bulgakov_eco_sco = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_conservative
+				eco_mixed_economy
+			}
+		}
+		RUS_Vladimir_von_Kappel_eco_sco = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_conservative
+				eco_oil_baron
+			}
+		}
+		RUS_Alexei_P_Arkhangelskiy_eco_ade = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				authoritarian_democrat
+				eco_steel_magnate
+			}
+		}
+		RUS_Dmitri_Pavlovich_Romanov_eco_ade = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				authoritarian_democrat
+				eco_the_minister_for_everything
+			}
+		}
+		RUS_Mikhail_Rodzyanko_eco_ade = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				authoritarian_democrat
+				eco_trade_proponent
+			}
+		}
+		RUS_Pavel_N_Ignatiev_eco_ade = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				authoritarian_democrat
+				eco_administrative_genius
+			}
+		}
+		RUS_Vladimir_N_Kokovtsov_eco_ade = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				authoritarian_democrat
+				eco_balanced_budget_economy
+			}
+		}
+		RUS_Aleksei_I_Putilov_eco_pau = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_construction_magnate
+			}
+		}
+		RUS_Alexei_A_Ignatiev_eco_pau = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_military_entrepreneur
+			}
+		}
+		RUS_Ivan_P_Romanovsky_eco_pau = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_steel_magnate
+			}
+		}
+		RUS_Nikanor_V_Savic_eco_pau = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_tank_proponent
+			}
+		}
+		RUS_Nikolai_A_Maklakov_eco_pau = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_reformer
+			}
+		}
+		RUS_Andrey_I_Zankevich_eco_npo = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				national_populist
+				eco_planned_economy_proponent
+			}
+		}
+		RUS_Nikolai_P_Krasnov_eco_npo = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				national_populist
+				eco_railway_magnate
+			}
+		}
+		RUS_Nikolai_V_Ustryalov_eco_npo = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				national_populist
+				eco_administrative_genius
+			}
+		}
+		RUS_Yuri_V_Kluchnikov_eco_npo = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				national_populist
+				eco_balanced_budget_economy
+			}
+		}
+		RUS_Georgiy_Gins_eco_val = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				valkist
+				eco_construction_magnate
+			}
+		}
+	}
+	### Security Minister
+	security_minister = {
+		RUS_Grigory_Gershuni_sec_sde = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_democrat
+				sec_back_stabber
+			}
+		}
+		RUS_Iraklij_G_Tsereteliy_sec_sde = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_democrat
+				sec_crime_fighter
+			}
+		}
+		RUS_Vladimir_L_Burtsev_sec_sde = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_democrat
+				sec_efficient_sociopath
+			}
+		}
+		RUS_Boris_V_Savinkov_sec_sde = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_democrat
+				sec_man_of_the_people
+			}
+		}
+		RUS_Andrei_I_Shingarev_sec_mli = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				market_liberal
+				sec_media_magnate
+			}
+		}
+		RUS_Vasily_A_Kharlamov_sec_mli = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				market_liberal
+				sec_health_and_safety
+			}
+		}
+		RUS_Vasily_A_Maklakov_sec_mli = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				market_liberal
+				sec_man_of_the_people
+			}
+		}
+		RUS_Aleksandr_D_Protopopov_sec_sco = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_conservative
+				sec_media_magnate
+			}
+		}
+		RUS_Matvey_Skobelev_sec_sco = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_conservative
+				sec_great_soul
+			}
+		}
+		RUS_Nikolai_Gredeskul_sec_sco = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_conservative
+				sec_driven_recruiter
+			}
+		}
+		RUS_Vasily_Shulgin_sec_sco = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_conservative
+				sec_crooked_kleptocrat
+			}
+		}
+		RUS_Vladimir_D_Nabokov_sec_sco = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_conservative
+				sec_compassionate_gentleman
+			}
+		}
+		RUS_Felix_F_Yusupov_sec_ade = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_back_stabber
+			}
+		}
+		RUS_Mikhail_Rodzyanko_sec_ade = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_crime_fighter
+			}
+		}
+		RUS_Pavel_N_Ignatiev_sec_ade = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_health_and_safety
+			}
+		}
+		RUS_Pyotr_N_Wrangel_sec_ade = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_man_of_the_people
+			}
+		}
+		RUS_Sergei_L_Markov_sec_ade = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_media_magnate
+			}
+		}
+		RUS_Sergei_P_Melgunov_sec_ade = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_efficient_sociopath
+			}
+		}
+		RUS_Sergius_of_Nizhny_Novgorod_sec_ade = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_great_soul
+			}
+		}
+		RUS_Vladimir_N_Kokovtsov_sec_ade = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_compassionate_gentleman
+			}
+		}
+		RUS_Aleksandr_P_Balk_sec_pau = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_man_of_the_people
+			}
+		}
+		RUS_Nikolai_P_Vladimir_sec_pau = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_media_magnate
+			}
+		}
+		RUS_Pyotr_Krasnov_sec_pau = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_prince_of_terror
+			}
+		}
+		RUS_Vladimir_M_Purishkevich_sec_pau = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_silent_lawyer
+			}
+		}
+		RUS_Vladimir_Malyshkin_sec_pau = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_compassionate_gentleman
+			}
+		}
+		RUS_Aleksandr_A_Galich_sec_npo = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				national_populist
+				sec_back_stabber
+			}
+		}
+		RUS_Anatoly_MacReady_Stenroos_sec_npo = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				national_populist
+				sec_efficient_sociopath
+			}
+		}
+		RUS_Bronislav_V_Kaminski_sec_npo = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				national_populist
+				sec_regionalist
+			}
+		}
+		RUS_Emma_Dikgof_Derental_sec_npo = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				national_populist
+				sec_efficient_sociopath
+			}
+		}
+		RUS_Grigorij_R_Semyonov_sec_npo = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				national_populist
+				sec_crime_fighter
+			}
+		}
+		RUS_Ivan_A_Ilyin_sec_npo = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				national_populist
+				sec_secret_police_chief
+			}
+		}
+		RUS_Viktor_L_Pokrovsky_sec_npo = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				national_populist
+				sec_back_stabber
+			}
+		}
+		RUS_Vladimir_V_Manstein_sec_npo = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				national_populist
+				sec_health_and_safety
+			}
+		}
+		RUS_Anton_Tourkul_sec_val = {
+			allowed = { original_tag = RUS }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				valkist
+				sec_preserver_of_culture
+			}
+		}	
+	}
+	### Chief of Staff
+	chief_of_staff = {
+		RUS_Mikhail_D_Bonch_Bruyevich_cos = {
+			allowed = { original_tag = RUS }
+			traits = {
+				chief_of_staff
+				cos_school_of_commando_operations
+			}
+		}
+		RUS_Nikolai_N_Dukhonin_cos = {
+			allowed = { original_tag = RUS }
+			traits = {
+				chief_of_staff
+				cos_school_of_defence
+			}
+		}
+		RUS_Vasily_A_Kharlamov_cos = {
+			allowed = { original_tag = RUS }
+			traits = {
+				chief_of_staff
+				cos_school_of_fire_support
+			}
+		}
+		RUS_Jevgenij_von_Rommel_cos = {
+			allowed = { original_tag = RUS }
+			traits = {
+				chief_of_staff
+				cos_school_of_manoeuvre
+			}
+		}
+		RUS_Anton_I_Denikin_cos = {
+			allowed = { original_tag = RUS }
+			traits = {
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+		}
+		RUS_Pyotr_N_Wrangel_cos = {
+			allowed = { original_tag = RUS }
+			traits = {
+				chief_of_staff
+				cos_school_of_psychology
+			}
+		}
+		RUS_Sergei_L_Markov_cos = {
+			allowed = { original_tag = RUS }
+			traits = {
+				chief_of_staff
+				cos_school_of_manoeuvre
+			}
+		}
+		RUS_Ivan_P_Romanovsky_cos = {
+			allowed = { original_tag = RUS }
+			traits = {
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+		}
+		RUS_Lavr_G_Kornilov_cos = {
+			allowed = { original_tag = RUS }
+			traits = {
+				chief_of_staff
+				cos_school_of_psychology
+			}
+		}
+		RUS_Mikhail_Drozdovsky_cos = {
+			allowed = { original_tag = RUS }
+			traits = {
+				chief_of_staff
+				cos_school_of_fire_support
+			}
+		}
+		RUS_Pyotr_Krasnov_cos = {
+			allowed = { original_tag = RUS }
+			traits = {
+				chief_of_staff
+				cos_school_of_defence
+			}
+		}
+		RUS_Boris_V_Annenkov_cos = {
+			allowed = { original_tag = RUS }
+			traits = {
+				chief_of_staff
+				cos_school_of_commando_operations
+			}
+		}
+		RUS_Bronislav_V_Kaminski_cos = {
+			allowed = { original_tag = RUS }
+			traits = {
+				chief_of_staff
+				cos_school_of_fire_support
+			}
+		}
+		RUS_Pavel_N_Shatilov_cos = {
+			allowed = { original_tag = RUS }
+			traits = {
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+		}
+		RUS_Vasily_V_Biskupsky_cos = {
+			allowed = { original_tag = RUS }
+			traits = {
+				chief_of_staff
+				cos_school_of_psychology
+			}
+		}
+	}
+	### Chief of Army
+	chief_of_army = {
+		RUS_Ivan_Belov_carm_sde = {
+			allowed = { original_tag = RUS }
+			available = { has_elected_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				social_democrat
+				carm_commando_doctrine
+			}
+		}
+		RUS_Mikhail_D_Bonch_Bruyevich_carm_sde = {
+			allowed = { original_tag = RUS }
+			available = { has_elected_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				social_democrat
+				carm_guns_and_butter_doctrine
+			}
+		}
+		RUS_Nikolai_N_Dukhonin_carm_sli = {
+			allowed = { original_tag = RUS }
+			available = { has_elected_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				social_liberal
+				carm_decisive_battle_doctrine
+			}
+		}
+		RUS_Nikolai_A_Lokhvitski_carm_mli = {
+			allowed = { original_tag = RUS }
+			available = { has_elected_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				market_liberal
+				carm_doctrine_of_autonomy
+			}
+		}
+		RUS_Ivan_P_Romanovsky_carm_sco = {
+			allowed = { original_tag = RUS }
+			available = { has_elected_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				social_conservative
+				carm_static_defence_doctrine
+			}
+		}
+		RUS_Aleksandr_Rodzyanko_carm_ade = {
+			allowed = { original_tag = RUS }
+			available = { has_authoritarian_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				authoritarian_democrat
+				carm_static_defence_doctrine
+			}
+		}
+		RUS_Alexei_P_Arkhangelskiy_carm_ade = {
+			allowed = { original_tag = RUS }
+			available = { has_authoritarian_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				authoritarian_democrat
+				carm_guns_and_butter_doctrine
+			}
+		}
+		RUS_Anton_I_Denikin_carm_ade = {
+			allowed = { original_tag = RUS }
+			available = { has_authoritarian_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				authoritarian_democrat
+				carm_elastic_defence_doctrine
+			}
+		}
+		RUS_Dmitri_Pavlovich_Romanov_carm_ade = {
+			allowed = { original_tag = RUS }
+			available = { has_authoritarian_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				authoritarian_democrat
+				carm_doctrine_of_autonomy
+			}
+		}
+		RUS_Jevgenij_von_Rommel_carm_ade = {
+			allowed = { original_tag = RUS }
+			available = { has_authoritarian_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				authoritarian_democrat
+				carm_decisive_battle_doctrine
+			}
+		}
+		RUS_Lavrentij_Kornilov_carm_pau = {
+			allowed = { original_tag = RUS }
+			available = { has_dictatorship_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				paternal_autocrat
+				carm_commando_doctrine
+			}
+		}
+		RUS_Mikhail_Drozdovsky_carm_pau = {
+			allowed = { original_tag = RUS }
+			available = { has_dictatorship_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				paternal_autocrat
+				carm_armoured_spearhead_doctrine
+			}
+		}
+		RUS_Pyotr_Krasnov_carm_pau = {
+			allowed = { original_tag = RUS }
+			available = { has_dictatorship_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				paternal_autocrat
+				carm_commando_doctrine
+			}
+		}
+		RUS_Aleksandr_S_Antonov_carm_npo = {
+			allowed = { original_tag = RUS }
+			available = { has_dictatorship_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				national_populist
+				carm_doctrine_of_autonomy
+			}
+		}
+		RUS_Konstantin_P_Voskoboinik_carm_npo = {
+			allowed = { original_tag = RUS }
+			available = { has_dictatorship_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				national_populist
+				carm_guns_and_butter_doctrine
+			}
+		}
+	}
+	### Chief of Navy
+	chief_of_navy = {
+		RUS_Mikhail_Berens_cnav_mli = {
+			allowed = { original_tag = RUS }
+			available = { has_elected_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_navy
+				market_liberal
+				cnav_base_control_doctrine
+			}
+		}
+		RUS_Nestor_A_Monastyrev_cnav_mli = {
+			allowed = { original_tag = RUS }
+			available = { has_elected_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_navy
+				market_liberal
+				cnav_indirect_approach_doctrine
+			}
+		}
+		RUS_Ivan_F_Bosrem_cnav_sco = {
+			allowed = { original_tag = RUS }
+			available = { has_elected_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_navy
+				social_conservative
+				cnav_power_projection_doctrine
+			}
+		}
+		RUS_Robert_von_Wiren_cnav_sco = {
+			allowed = { original_tag = RUS }
+			available = { has_elected_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_navy
+				social_conservative
+				cnav_open_seas_doctrine
+			}
+		}
+		RUS_Dmitri_Nenyukov_cnav_ade = {
+			allowed = { original_tag = RUS }
+			available = { has_authoritarian_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_navy
+				authoritarian_democrat
+				cnav_power_projection_doctrine
+			}
+		}
+		RUS_Vasily_Kanin_cnav_ade = {
+			allowed = { original_tag = RUS }
+			available = { has_authoritarian_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_navy
+				authoritarian_democrat
+				cnav_open_seas_doctrine
+			}
+		}
+		RUS_Boris_Makaroff_cnav_pau = {
+			allowed = { original_tag = RUS }
+			available = { has_authoritarian_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_navy
+				paternal_autocrat
+				cnav_decisive_battle_doctrine
+			}
+		}
+		RUS_Boris_A_Vilkitsky_cnav_npo = {
+			allowed = { original_tag = RUS }
+			available = { has_authoritarian_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_navy
+				national_populist
+				cnav_indirect_approach_doctrine
+			}
+		}
+	}
+	### Chief of Air Force
+	chief_of_air_force = {
+		RUS_Aleksandr_P_Kutepov_cair = {
+			allowed = { original_tag = RUS }
+			traits = {
+				chief_of_air_force
+				cair_battlefield_support_doctrine
+			}
+		}
+		RUS_Igor_I_Sikorsky_cair = {
+			allowed = { original_tag = RUS }
+			traits = {
+				chief_of_air_force
+				cair_carpet_bombing_doctrine
+			}
+		}
+		RUS_Vyacheslav_Tkachov_cair = {
+			allowed = { original_tag = RUS }
+			traits = {
+				chief_of_air_force
+				cair_naval_aviation_doctrine
+			}
+		}
+		RUS_Yevgeny_K_Miller_cair = {
+			allowed = { original_tag = RUS }
+			traits = {
+				chief_of_air_force
+				cair_air_superiority_doctrine
+			}
+		}
+		RUS_Anton_V_Turkul_cair = {
+			allowed = { original_tag = RUS }
+			traits = {
+				chief_of_air_force
+				cair_vertical_envelopment_doctrine
+			}
+		}
+	}
+	### Theorist
+	theorist = {
+		RUS_Dmitri_Pavlovich_Romanov_theo = {
+			allowed = { original_tag = RUS }
+			traits = { land_doctrine_theorist }
+			research_bonus = {
+				land_doctrine = 0.1
+			}
+		}
+		RUS_Aleksandr_P_Kutepov_theo = {
+			allowed = { original_tag = RUS }
+			traits = { air_doctrine_theorist }
+			research_bonus = {
+				air_doctrine = 0.1
+			}
+		}
+		RUS_Boris_Makaroff_theo = {
+			allowed = { original_tag = RUS }
+			traits = { naval_doctrine_theorist }
+			research_bonus = {
+				naval_doctrine = 0.1
+			}
+		}
+	}
+}
+
+
+

@@ -44,13 +44,61 @@ set_popularities = {
     national_populist = 3
     valkist = 0
 }
+
 create_country_leader = {
 	name = "José Agripino Barnet"
 	desc = "POLITICS_JOSE_AGRIPINO_BARNET_DESC"
-	picture = "gfx/leaders/CUB/Portrait_Cuba_Jose_Agripino_Barnet_2.tga"
+	picture = "Portrait_Cuba_Jose_Agripino_Barnet.tga"
 	expire = "1965.1.1"
 	ideology = market_liberal_subtype
-	traits = {
-		#
-	}
+	traits = { }
+}
+
+create_field_marshal = {
+	name = "Martin Diaz Tamayo"
+	picture = "Portrait_Cuba_Martin_Diaz.tga"
+	id = 1452
+	traits = { career_officer politically_connected }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_field_marshal = {
+	name = "Alberto Herrera Franchi"
+	picture = "Portrait_Cuba_Alberto_Herrera_Franchi.tga"
+	id = 1458
+	traits = { career_officer old_guard }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+### Corps Commanders ###
+create_corps_commander = {
+	name = "Manuel Lopez Migoya"
+	picture = "Portrait_Cuba_Manuel_Lopez_Migoya.tga"
+	id = 1456
+	traits = { inflexible_strategist organizer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+### Admirals ###
+
+create_navy_leader = {
+	name = "Ernesto Usatorres Ubieta"
+	picture = "Portrait_Cuba_Ernesto_Usatorres_Ubieta.tga"
+	traits = { air_controller }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
 }
