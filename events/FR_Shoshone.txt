@@ -10,7 +10,7 @@ country_event = { # Independence?
     fire_only_once = yes
     
     trigger = {
-        tag = CLB
+        original_tag = CLB
         country_exists = CLB
         NOT = { country_exists = NID }
     }
@@ -35,5 +35,21 @@ country_event = { # Independence?
     option = {
         name = shoshone.1.b
         NID = { change_tag_from = ROOT }
+    }
+}
+
+country_event = { # Whitepeace?
+    id = shoshone.2
+    title = shoshone.2.t
+    desc = shoshone.2.d
+    is_triggered_only = yes
+
+    option = { # Sure
+        name = shoshone.2.a
+        ROOT = { whitepeace = FROM }
+    }
+    option = { # No.
+        name = shoshone.2.b
+        add_political_power = -20
     }
 }

@@ -54,7 +54,7 @@ units = {
         start_experience_factor = 0.1
     }
     division = {
-        name = "7th Volunteer Division"
+        name = "8th Volunteer Division"
         location = 12535
         division_template = "Volunter Division"
         start_experience_factor = 0.1

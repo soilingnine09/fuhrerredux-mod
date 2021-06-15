@@ -58,3 +58,6 @@ CLB_national_populist_party:0 "APP"
 CLB_national_populist_party_long:0 "American Purity Party"
 CLB_valkist_party:0 "FLD"
 CLB_valkist_party_long:0 "Foundation for the Lord and Democracy"
+
+### Decisions
+CLB_whitepeace_nid:0 "Propose Peace to @NID §Y[NID.GetNameDef]§!"

@@ -89,7 +89,6 @@ set_popularities = {
 
 add_ideas = {
 	party_pop_0_20
-
 	limited_conscription
 
 	GEN_hog_val
@@ -102,8 +101,82 @@ add_ideas = {
 create_country_leader = {
 	name = "William Dudley Pelley"
 	desc = "POLITICS_WILLLIAM_DUDLEY_PELLEY_DESC"
-	picture = "Portrait_Columbia_William_Dudley_Pelley.tga"
+	picture = "Portrait_CLB_William_Dudley_Pelley.tga"
 	expire = "1965.1.1"
 	ideology = valkist_subtype
 	traits = { }
+}
+
+### Field Marshals
+create_field_marshal = {
+	name = "George Van Horn Moseley"
+	portrait_path = "gfx/leaders/CLB/Portrait_CLB_George_Van_Horn_Moseley.tga"
+	traits = { trait_reckless artillery_officer artillery_specialist }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+### Corp Commanders
+create_corps_commander = {
+	name = "Claire Lee Chennault"
+	portrait_path = "gfx/leaders/CLB/Portrait_CLB_Claire_Chennault.tga"
+	traits = { trait_cautious career_officer }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Walton Walker"
+	portrait_path = "gfx/leaders/CLB/Portrait_CLB_Walton_Walker.tga"
+	traits = { politically_connected career_officer panzer_leader }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Clifton B. Cates"
+	portrait_path = "gfx/leaders/CLB/Portrait_CLB_Clifton_Cates.tga"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Lewis Burwell Puller"
+	portrait_path = "gfx/leaders/CLB/Portrait_CLB_Chesty_Puller.tga"
+	traits = { harsh_leader career_officer commando }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Pedro del Valle"
+	portrait_path = "gfx/leaders/CLB/Portrait_CLB_Pedro_Del_Valle.tga"
+	traits = { harsh_leader commando }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Demas T. Craw"
+	portrait_path = "gfx/leaders/CLB/Portrait_CLB_Thurlow_Craw.tga"
+	traits = { trickster }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
 }

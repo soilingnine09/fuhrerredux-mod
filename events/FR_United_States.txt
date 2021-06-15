@@ -894,6 +894,9 @@ country_event = { # New England Seceeds
                     add_state_claim = PREV
                 }
             }
+            NEE = { load_oob = "NEE" }
+            remove_unit_leader = 56 # Mark Clark
+            remove_unit_leader = 80 # Thomas Kinkaid
         }
     }
 
@@ -947,6 +950,7 @@ country_event = { # Midwest Seceeds
                     add_state_claim = PREV
                 }
             }
+            CLB = { load_oob = "CLB" }
         }
     }
 
@@ -996,6 +1000,11 @@ country_event = { # Rust Belt
                     add_state_claim = PREV
                 }
             }
+            RBL = { load_oob = "RBL" }
+            remove_unit_leader = 52 # George Patton
+            remove_unit_leader = 66 # William Simpson
+            remove_unit_leader = 67 # J Lawton Collins
+            remove_unit_leader = 68 # Courtney Hicks Hodges
         }
     }
 

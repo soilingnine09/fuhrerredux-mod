@@ -223,13 +223,13 @@ create_country_leader = {
 }
 
 
-#MILITARY STAFF
+### Field Marshal
 create_field_marshal = {
 	name = "Dwight D. Eisenhower"
-	picture = "Portrait_USA_Dwight_Eisenhower_fx.tga"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Dwight_Eisenhower_fx.tga"
 	traits = { logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected }
 	skill = 5
-	id = 602
+	id = 51
 	attack_skill = 3
 	defense_skill = 3
 	planning_skill = 5
@@ -237,8 +237,8 @@ create_field_marshal = {
 }
 create_field_marshal = {
 	name = "Douglas MacArthur"
-	id = 57
-	picture = "Portrait_USA_Douglas_MacArthur_fx.tga"
+	id = 50
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Douglas_MacArthur_fx.tga"
 	traits = {  offensive_doctrine brilliant_strategist career_officer media_personality politically_connected }
 	skill = 4
 	attack_skill = 4
@@ -247,9 +247,11 @@ create_field_marshal = {
 	logistics_skill = 2
 }
 
+### Corp Commanders
 create_corps_commander = {
 	name = "George S. Patton"
-	picture = "Portrait_USA_George_S_Patton_fx.tga"
+	id = 52
+	portrait_path = "gfx/leaders/RBL/Portrait_RBL_George_S_Patton.tga"
 	traits = {  trickster armor_officer panzer_leader war_hero trait_reckless }
 	skill = 5
 	attack_skill = 7
@@ -259,7 +261,8 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Omar Bradley"
-	picture = "Portrait_USA_Omar_Bradley_fx.tga"
+	id = 53
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Omar_Bradley_fx.tga"
 	traits = {  trait_engineer trait_cautious brilliant_strategist harsh_leader }
 	skill = 5
 	attack_skill = 3
@@ -269,7 +272,8 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Geoffrey Keyes"
-	picture = "Portrait_USA_Geoffrey_Keyes_fx.tga"
+	id = 54
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Geoffrey_Keyes_fx.tga"
 	traits = { armor_officer career_officer }
 	skill = 2
 	attack_skill = 2
@@ -279,7 +283,8 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Lucian Truscott"
-	picture = "Portrait_USA_Lucian_Truscott_fx.tga"
+	id = 55
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Lucian_Truscott_fx.tga"
 	traits = { trait_engineer commando cavalry_officer }
 	skill = 3
 	attack_skill = 3
@@ -289,7 +294,8 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Mark Clark"
-	picture = "Portrait_USA_Mark_W_Clark_fx.tga"
+	id = 56
+	portrait_path = "gfx/leaders/NEE/Portrait_NEE_Mark_Clark.tga"
 	traits = { infantry_officer trait_reckless }
 	skill = 4
 	attack_skill = 5
@@ -299,7 +305,8 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Walter Krueger"
-	picture = "Portrait_USA_Walter_Krueger_fx.tga"
+	id = 57
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Walter_Krueger_fx.tga"
 	traits = { armor_officer career_officer brilliant_strategist }
 	skill = 3
 	attack_skill = 3
@@ -309,7 +316,8 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Lloyd Fredendall"
-	picture = "Portrait_USA_Lloyd_Fredendall_fx.tga"
+	id = 58
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Lloyd_Fredendall_fx.tga"
 	traits = { old_guard infantry_officer inflexible_strategist }
 	skill = 2
 	attack_skill = 3
@@ -319,7 +327,8 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Leslie McNair"
-	picture = "Portrait_USA_Lesley_McNair_fx.tga"
+	id = 59
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Lesley_McNair_fx.tga"
 	traits = {  old_guard career_officer armor_officer }
 	skill = 3
 	attack_skill = 1
@@ -329,7 +338,8 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Jonathan Wainwright"
-	picture = "Portrait_USA_Jonathan_Wainwright_fx.tga"
+	id = 60
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Jonathan_Wainwright_fx.tga"
 	traits = {  }
 	skill = 1
 	attack_skill = 1
@@ -339,7 +349,8 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Russell Hartle"
-	picture = "Portrait_USA_Russell_P_Hartle.dds"
+	id = 61
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Russell_P_Hartle.dds"
 	traits = { infantry_officer }
 	skill = 1
 	rank = 1
@@ -350,7 +361,8 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Leonard Gerow"
-	picture = "Portrait_USA_Leonard_T_Gerow_fx.tga"
+	id = 62
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Leonard_T_Gerow_fx.tga"
 	traits = { infantry_officer }
 	skill = 3
 	attack_skill = 3
@@ -360,7 +372,8 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Edward Brooks"
-	picture = "Portrait_USA_Edward_Brooks_fx.tga"
+	id = 63
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Edward_Brooks_fx.tga"
 	traits = { armor_officer trait_reckless }
 	skill = 2
 	attack_skill = 2
@@ -370,7 +383,8 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Clarence Huebner"
-	picture = "Portrait_USA_Clarence_Huebner_fx.tga"
+	id = 64
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Clarence_Huebner_fx.tga"
 	traits = { old_guard harsh_leader }
 	skill = 2
 	attack_skill = 1
@@ -380,7 +394,8 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Alexander Patch"
-	picture = "Portrait_USA_Alexander_Patch_fx.tga"
+	id = 65
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Alexander_Patch_fx.tga"
 	traits = {  commando infantry_officer }
 	skill = 3
 	attack_skill = 3
@@ -390,7 +405,8 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "William Simpson"
-	picture = "Portrait_USA_William_Hood_Simpson_fx.tga"
+	id = 66
+	portrait_path = "gfx/leaders/RBL/Portrait_RBL_William_Simpson.tga"
 	traits = { infantry_officer }
 	skill = 3
 	attack_skill = 2
@@ -400,7 +416,8 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "J. Lawton Collins"
-	picture = "Portrait_USA_J_Lawton_Collins_fx.tga"
+	id = 67
+	portrait_path = "gfx/leaders/RBL/Portrait_RBL_Joseph_Collins.tga"
 	traits = {  trickster career_officer }
 	skill = 3
 	attack_skill = 3
@@ -410,7 +427,8 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Courtney Hodges"
-	picture = "Portrait_USA_Cortney_Hodges_fx.tga"
+	id = 68
+	portrait_path = "gfx/leaders/RBL/Portrait_RBL_Courtney_Hicks_Hodges.tga"
 	traits = {  panzer_leader career_officer infantry_officer }
 	skill = 4
 	attack_skill = 4
@@ -420,18 +438,19 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Joseph Stilwell"
-	picture = "Portrait_USA_Joseph_Stilwell_fx.tga"
+	id = 69
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Joseph_Stilwell_fx.tga"
 	traits = { politically_connected infantry_officer career_officer harsh_leader }
 	skill = 1
-	id = 601
 	attack_skill = 1
 	defense_skill = 1
 	planning_skill = 1
-	logistics_skill = 1
+	logistics_skill = e
 }
 create_corps_commander = {
 	name = "Oscar Griswold"
-	picture = "Portrait_USA_Oscar_Griswold.dds"
+	id = 70
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Oscar_Griswold.dds"
 	traits = { infantry_officer  }
 	skill = 2
 	attack_skill = 2
@@ -441,7 +460,8 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Maurice Rose"
-	picture = "Portrait_USA_Maurice_Rose_fx.tga"
+	id = 71
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Maurice_Rose_fx.tga"
 	traits = { armor_officer trait_reckless brilliant_strategist  }
 	skill = 3
 	attack_skill = 4
@@ -450,53 +470,105 @@ create_corps_commander = {
 	logistics_skill = 3
 }
 
+### Admirals
 create_navy_leader = {
 	name = "Ernest King"
-	picture = "Portrait_USA_Earnest_King_fx.tga"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Earnest_King_fx.tga"
 	traits = { blockade_runner superior_tactician }
-	skill = 5
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 4
+	id = 72
 }
 create_navy_leader = {
 	name = "Chester W. Nimitz"
-	picture = "Portrait_USA_Chester_W_Nimitz_fx.tga"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Chester_W_Nimitz_fx.tga"
 	traits = { superior_tactician spotter }
 	skill = 5
+	attack_skill = 2
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 2
+	id = 73
 }
 create_navy_leader = {
 	name = "William Halsey, Jr."
-	picture = "Portrait_USA_William_Halsey_Jr_fx.tga"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_William_Halsey_Jr_fx.tga"
 	traits = { superior_tactician spotter }
 	skill = 4
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 3
+	id = 74
 }
 create_navy_leader = {
 	name = "Frank Jack Fletcher"
-	picture = "Portrait_USA_Frank_Jack_Fletcher_fx.tga"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Frank_Jack_Fletcher_fx.tga"
 	traits = { superior_tactician spotter }
 	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 1
+	id = 75
 }
 create_navy_leader = {
 	name = "Raymond A. Spruance"
-	picture = "Portrait_USA_Raymond_A_Spruance_fx.tga"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Raymond_A_Spruance_fx.tga"
 	traits = { superior_tactician }
 	skill = 4
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+	id = 76
 }
 create_navy_leader = {
 	name = "Harold Rainsford Stark"
-	picture = "Portrait_USA_Harold_Rainsford_Stark_fx.tga"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Harold_Rainsford_Stark_fx.tga"
 	traits = { blockade_runner spotter }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+	id = 77
 }
 create_navy_leader = {
 	name = "Arleigh Burke"
-	picture = "Portrait_USA_Arleigh_Burke_fx.tga"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Arleigh_Burke_fx.tga"
 	traits = { old_guard_navy superior_tactician }
 	skill = 4
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+	id = 78
 }
 create_navy_leader = {
 	name = "Charles M. Cooke, Jr."
-	picture = "Portrait_USA_Charles_M_Cooke_fx.tga"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Charles_M_Cooke_fx.tga"
 	traits = {  }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 2
+	id = 79
+}
+create_navy_leader = {
+	name = "Thomas Kinkaid"
+	portrait_path = "gfx/leaders/NEE/Portrait_NEE_Thomas_Kinkaid.tga"
+	traits = { spotter superior_tactician }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 1
+	coordination_skill = 2
+	id = 80
 }
 
 IF = {

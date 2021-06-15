@@ -1,5 +1,5 @@
 capital = 393
-oob = "RBL_1936"
+oob = "RBL"
 
 # Starting tech
 set_technology = {
@@ -106,8 +106,92 @@ add_ideas = {
 create_country_leader = {
 	name = "Henry Ford"
 	desc = "POLITICS_HENRY_FORD_DESC"
-	picture = "Portrait_Rust_Belt_Henry_Ford.tga"
+	picture = "Portrait_RBL_Henry_Ford.tga"
 	expire = "1965.1.1"
 	ideology = paternal_autocrat_subtype
 	traits = { }
+}
+
+### Field Marshal
+create_field_marshal = {
+	name = "Jacob L. Devers"
+	portrait_path = "gfx/leaders/RBL/Portrait_RBL_Jacob_Devers.tga"
+	traits = { trait_reckless artillery_officer artillery_specialist }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+### Corp Commanders
+create_corps_commander = {
+	name = "George S. Patton"
+	portrait_path = "gfx/leaders/RBL/Portrait_RBL_George_S_Patton.tga"
+	traits = { trickster armor_officer panzer_leader war_hero trait_reckless }
+	skill = 5
+	attack_skill = 7
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "William Simpson"
+	portrait_path = "gfx/leaders/RBL/Portrait_RBL_William_Simpson.tga"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "J. Lawton Collins"
+	portrait_path = "gfx/leaders/RBL/Portrait_RBL_Joseph_Collins.tga"
+	traits = { trickster career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Courtney Hodges"
+	portrait_path = "gfx/leaders/RBL/Portrait_RBL_Courtney_Hicks_Hodges.tga"
+	traits = { panzer_leader career_officer infantry_officer }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "Matthew Ridgway"
+	portrait_path = "gfx/leaders/RBL/Portrait_RBL_Matthew_Ridgway.tga"
+	traits = { inflexible_strategist trait_cautious commando }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Bruce C. Clarke"
+	portrait_path = "gfx/leaders/RBL/Portrait_RBL_Bruce_Clarke.tga"
+	traits = { harsh_leader panzer_leader }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Fox Conner"
+	portrait_path = "gfx/leaders/RBL/Portrait_RBL_Fox_Conner.tga"
+	traits = { politically_connected career_officer panzer_leader }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
 }
