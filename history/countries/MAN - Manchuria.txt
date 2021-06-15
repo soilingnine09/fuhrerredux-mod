@@ -1,6 +1,6 @@
 ﻿capital = 608 #Beijing
 
-oob = "MAN_1936"
+oob = "MAN"
 
 set_research_slots = 3
 

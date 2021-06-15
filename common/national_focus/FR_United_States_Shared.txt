@@ -1917,7 +1917,7 @@ shared_focus = {
 # Crush the German Menace
 shared_focus = {
 	id = USA_crush_the_german_menace
-	icon = GFX_focus_attack_germany
+	icon = GFX_goal_generic_attack_german_reich
 	x = -1
 	y = 1
 	cost = 6

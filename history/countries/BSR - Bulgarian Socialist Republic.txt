@@ -1,6 +1,6 @@
 ﻿capital = 48
 
-oob = "INF"
+oob = "00_default_template"
 
 country_event = { id = bulgaria.1 days = 1}
 
