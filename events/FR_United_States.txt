@@ -930,6 +930,7 @@ country_event = { # Midwest Seceeds
                         state = 382
                         state = 383
                         state = 384
+                        state = 387
                         state = 388
                         state = 389
                         state = 390
@@ -1027,7 +1028,6 @@ country_event = { # UK Seizes Cascadia, Puerto Rico, Alaska
                     OR = {
                         state = 385
                         state = 386
-                        state = 387
                     }
                 }
                 CAS = { add_state_core = PREV }

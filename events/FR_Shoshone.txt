@@ -1,0 +1,39 @@
+# Shoshone Confederation Events
+# created by: dax0102
+
+add_namespace = shoshone
+
+country_event = { # Independence?
+    id = shoshone.1
+    title = shoshone.1.t
+    desc = shoshon.1.d
+    fire_only_once = yes
+    
+    trigger = {
+        tag = CLB
+        country_exists = CLB
+        NOT = { country_exists = NID }
+    }
+
+    mean_time_to_happen = {
+        days = 31
+    }
+
+    option = {
+        name = shoshone.1.a
+        hidden_effect = {
+            NID = { 
+                transfer_state = 387
+                load_oob = "NID"
+            }
+        }
+        declare_war_on = {
+            target = NID
+            type = annex_everything
+        }
+    }
+    option = {
+        name = shoshone.1.b
+        NID = { change_tag_from = ROOT }
+    }
+}
