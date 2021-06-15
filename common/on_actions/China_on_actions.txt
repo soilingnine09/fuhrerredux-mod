@@ -1,0 +1,65 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			CHI_set_clique = yes
+			every_state = {
+				limit = {
+					any_of = {
+						array = CHI.core_states
+						NOT = { is_controlled_by = MAN }
+					}
+				}
+				for_each_scope_loop = {
+					array = CHI.core_states
+					MAN = {
+						remove_state_core = PREV
+						add_state_claim = PREV
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					any_of = {
+						array = CHI.core_states
+						NOT = { is_controlled_by = CHI }
+					}
+				}
+				for_each_scope_loop = {
+					array = CHI.core_states
+					CHI = {
+						remove_state_core = PREV
+						add_state_claim = PREV
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = SIK
+						is_core_of = MON
+						is_core_of = TIB
+					}
+					NOT = { 
+						is_claimed_by = CHI
+						is_claimed_by = MON 
+					}
+				}
+				add_to_array = {
+					array = ROOT.chinese_claim
+				}
+				for_each_scope_loop = {
+					array = ROOT.chinese_claim
+					CHI = {
+						remove_state_core = PREV
+						add_state_claim = PREV
+					}
+					MAN = {
+						remove_state_core = PREV
+						add_state_claim = PREV
+					}
+				}
+			}
+			clear_array = ROOT.chinese_claim
+		}
+	}
+}
