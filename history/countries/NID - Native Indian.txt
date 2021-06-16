@@ -10,19 +10,18 @@ set_stability = 0.56
 set_war_support = 0.34
 
 set_politics = {
-	ruling_party = social_liberal
+	ruling_party = social_conservative
 	last_election = "1932.11.15"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	collectivist = 2
-	libertarian_socialist = 30
-	social_democrat = 24
-	social_liberal = 28
-	market_liberal = 10
-	social_conservative = 6
+	libertarian_socialist = 10
+	social_liberal = 22
+	social_conservative = 51
+	authoritarian_democrat = 15
+	valkist = 2
 }
 
 add_ideas = {
@@ -36,11 +35,35 @@ add_ideas = {
 }
 
 create_country_leader = {
+	name = "Archie Phinney"
+	desc = "POLITICS_ARCHIE_PHINNEY_DESC"
+	picture = "Portrait_NID_Archie_Phinney.tga"
+	expire = "1965.1.1"
+	ideology = libertarian_socialist_subtype
+	traits = { }
+}
+create_country_leader = {
 	name = "Zitkala-Sa"
 	desc = "POLITICS_ZITKALA_SA_DESC"
-	picture = "Portrait_Indian_Zitkala_Sa.tga"
+	picture = "Portrait_NID_Zitkala_Sa.tga"
 	expire = "1965.1.1"
 	ideology = social_liberal_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Charles Washakie"
+	desc = "POLITICS_CHARLES_WASHAKIE_DESC"
+	picture = "Portrait_NID_Charles_Washakie.tga"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Council of Elders"
+	desc = "POLITICS_COUNCIL_OF_ELDERS_DESC"
+	picture = "gfx/leaders/USA/Portrait_USA_Council_of_Patriots.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
 	traits = { }
 }
 create_country_leader = {
@@ -48,6 +71,6 @@ create_country_leader = {
 	desc = "POLITICS_ELWOOD_TOWNER_DESC"
 	picture = "Portrait_Indian_Elwood_Towner.tga"
 	expire = "1965.1.1"
-	ideology =valkist_subtype
+	ideology = valkist_subtype
 	traits = { }
 }

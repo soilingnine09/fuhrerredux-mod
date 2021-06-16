@@ -214,6 +214,14 @@ create_country_leader = {
 	traits = { }
 }
 create_country_leader = {
+	name = "Gerald L. K. Smith"
+	desc = "POLITICS_GERALD_L_K_SMITH_DESC"
+	picture = "Portrait_USA_Gerald_L_K_Smith.tga"
+	expire = "1965.1.1"
+	ideology = valkist_subtype
+	traits = { }
+}
+create_country_leader = {
 	name = "William Dudley Pelley"
 	desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
 	picture = "Portrait_USA_William_Dudley_Pelley_fx.tga"

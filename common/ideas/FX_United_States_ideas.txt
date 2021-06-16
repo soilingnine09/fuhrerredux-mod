@@ -854,16 +854,6 @@ ideas = {
                 eco_bank_president
             }
         }
-        USA_Henry_Ford_eco_pau = {
-            allowed = { original_tag = USA }
-            available = { can_replace_minister = no }
-            cancel_if_invalid = no
-            traits = {
-                economy_minister
-                paternal_autocrat
-                eco_military_entrepreneur
-            }
-        }
         USA_Robert_Abercrombie_Lovett_eco_pau = {
             allowed = { original_tag = USA }
             available = { can_replace_minister = no }

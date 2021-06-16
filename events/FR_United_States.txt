@@ -833,6 +833,22 @@ country_event = { # 1940 Elections
     }
 }
 
+country_event = { # Democrats Bashed the Government for Economic Stimulus Bill
+    id = usa.29
+    title = usa.29.t
+    desc = usa.29.d
+    picture = GFX_report_event_usa_election_generic
+    is_triggered_only = yes
+
+    option = {
+        name = usa.29.a
+        add_popularity = {
+            ideology = social_democrat
+            popularity = 0.05
+        }
+    }
+}
+
 country_event = { # Nationwide Riots
     id = usa.100
     title = usa.100.t
@@ -959,6 +975,8 @@ country_event = { # Midwest Seceeds
                 }
             }
             CLB = { load_oob = "CLB" }
+            
+            kill_ideology_leader = valkist
         }
     }
 

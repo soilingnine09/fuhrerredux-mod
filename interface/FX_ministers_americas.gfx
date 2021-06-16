@@ -1359,10 +1359,6 @@ spriteTypes = {
         texturefile = "gfx/interface/ideas/USA/ministers/USA_William_Daniel_Leahy.tga"
     }
     spriteType = {
-        name = "GFX_idea_USA_Henry_Ford_eco_pau"
-        texturefile = "gfx/interface/ideas/USA/ministers/USA_Henry_Ford.tga"
-    }
-    spriteType = {
         name = "GFX_idea_USA_Robert_Abercrombie_Lovett_eco_pau"
         texturefile = "gfx/interface/ideas/USA/ministers/USA_Robert_Abercrombie_Lovett.tga"
     }
