@@ -1031,7 +1031,7 @@ ideas = {
 				hog_local_tyrant
 			}
 		}
-		CAN_Harry_Crerar_hog_pau = {
+		CAN_Henry_Crerar_hog_pau = {
 			allowed = { original_tag = CAN }
 			available = { can_replace_hog = no }
 			cancel_if_invalid = no

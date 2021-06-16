@@ -68,10 +68,10 @@ add_ideas = {
 	party_pop_0_20
 	COL_reparations_to_peru
 	COL_patria_revancha
-	COL_Jorge_Eliecer_Gaitan_hog_pau
-	COL_Erasmo_Valencia_for_pau
-	COL_Carlos_Lozano_y_Lozano_eco_pau
-	COL_Augusto_Ramirez_Moreno_sec_npo
+	COL_Ruben_Piedrahita_Arango_hog_pau
+	COL_Julio_Cesar_Turbay_Ayala_for_pau
+	COL_Gabriel_Paris_Gordillo_eco_pau
+	COL_Alfredo_Vazquez_Carrizosa_sec_pau
 	presidential_republic
 }
 

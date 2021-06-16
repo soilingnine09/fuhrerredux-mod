@@ -3,6 +3,285 @@
 
 spriteTypes = {
 
+	####################################################
+    # COL
+	### Head of Government
+	spriteType = {
+		name = "GFX_idea_COL_Gilberto_Vieira_hog_van"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Gilberto_Vieira.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Diego_Mendoza_Perez_hog_col"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Diego_Mendoza_Perez.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Pedro_Nel_Gomez_Agudelo_hog_col"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Pedro_Nel_Gomez_Agudelo.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Leon_de_Greiff_hog_lib"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Leon_de_Greiff.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Eduardo_Santos_Montejo_hog_sde"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Eduardo_Santos_Montejo.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Ismael_Perdomo_Borrero_hog_sde"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Ismael_Perdomo_Borrero.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Carlos_Arango_Velez_hog_sli"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Carlos_Arango_Velez.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Carlos_Lozano_y_Lozano_hog_sli"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Carlos_Lozano_y_Lozano.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Nemesio_Camacho_Macias_hog_mli"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Nemesio_Camacho_Macias.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Gabriel_Suarez_Orrantia_hog_sco"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Gabriel_Suarez_Orrantia.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Marco_Fidel_Suarez_hog_sco"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Marco_Fidel_Suarez.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Roberto_Urdaneta_Arbelaez_hog_sco"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Roberto_Urdaneta_Arbelaez.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Antonio_Jose_Uribe_Gaviria_hog_ade"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Antonio_Jose_Uribe_Gaviria.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Ruben_Piedrahita_Arango_hog_pau"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Ruben_Piedrahita_Arango.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Laureano_Eleuterio_Gomez_Castro_hog_npo"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Laureano_Eleuterio_Gomez_Castro.tga"
+	}
+	### Foreign Minister
+	spriteType = {
+		name = "GFX_idea_COL_Pedro_Maria_Carreno_for_van"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Pedro_Maria_Carreno.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Pedro_Aquilino_Lopez_Medina_for_col"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Pedro_Aquilino_Lopez_Medina.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Laureano_Garcia_Ortiz_for_lib"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Laureano_Garcia_Ortiz.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Alfonso_Lopez_Michelsen_for_sde"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Alfonso_Lopez_Michelsen.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Alejandro_Galvis_Galvis_for_sli"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Alejandro_Galvis_Galvis.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Francisco_Cardona_Santa_for_sli"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Francisco_Cardona_Santa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Francisco_Jose_Urrutia_Olano_for_mli"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Francisco_Jose_Urrutia_Olano.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Luis_Lopez_de_Mesa_Gomez_for_mli"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Luis_Lopez_de_Mesa_Gomez.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Fernando_Londono_y_Londono_for_sco"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Fernando_Londono_y_Londono.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Juan_Jose_Antonio_Montalvo_Berbeo_for_sco"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Juan_Jose_Antonio_Montalvo_Berbeo.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Miguel_Abadia_Mendez_for_ade"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Miguel_Abadia_Mendez.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Julio_Cesar_Turbay_Ayala_for_pau"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Julio_Cesar_Turbay_Ayala.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Carlos_Eugenio_Restrepo_Restrepo_for_npo"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Carlos_Eugenio_Restrepo_Restrepo.tga"
+	}
+	### Economy Minister
+	spriteType = {
+		name = "GFX_idea_COL_Esteban_Jaramillo_eco_col"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Esteban_Jaramillo.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Clemente_Escalona_Labarces_eco_lib"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Clemente_Escalona_Labarces.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Francisco_Antonio_Barberi_Zamorano_eco_sde"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Francisco_Antonio_Barberi_Zamorano.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Antonio_Jose_Restrepo_Trujillo_eco_sli"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Antonio_Jose_Restrepo_Trujillo.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Carlos_Alberto_Lleras_Restrepo_eco_sli"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Carlos_Alberto_Lleras_Restrepo.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Santander_Araujo_eco_sli"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Santander_Araujo.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Benito_Hernandez_Bustos_eco_mli"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Benito_Hernandez_Bustos.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Julian_Bucheli_Ayerbe_eco_sco"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Julian_Bucheli_Ayerbe.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Gregorio_Obregon_eco_sco"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Gregorio_Obregon.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Pedro_Nel_Ospina_Vazquez_eco_sco"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Pedro_Nel_Ospina_Vazquez.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Luis_Acevedo_eco_ade"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Luis_Acevedo.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Gabriel_Paris_Gordillo_eco_pau"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Gabriel_Paris_Gordillo.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Carlos_Cortes_Vargas_eco_npo"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Carlos_Cortes_Vargas.tga"
+	}
+	### Security Minister
+	spriteType = {
+		name = "GFX_idea_COL_Baldomero_Sanin_Cano_sec_van"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Baldomero_Sanin_Cano.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Santiago_Martinez_Delgado_sec_col"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Santiago_Martinez_Delgado.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Eduardo_Zalamea_Borda_sec_lib"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Eduardo_Zalamea_Borda.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Felix_Restrepo_Mejia_S_J_sec_sde"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Felix_Restrepo_Mejia_S_J.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Dario_Echandia_Olaya_sec_sli"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Dario_Echandia_Olaya.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Tomas_Oziel_Eastman_Lemus_sec_sli"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Tomas_Oziel_Eastman_Lemus.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Tulio_Enrique_Tascon_Quintero_sec_sli"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Tulio_Enrique_Tascon_Quintero.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Humberto_Chica_Pinzon_sec_mli"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Humberto_Chica_Pinzon.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Benjamin_Herrera_Cortes_sec_sco"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Benjamin_Herrera_Cortes.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Enrique_Gomez_Hurtado_sec_sco"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Enrique_Gomez_Hurtado.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Jose_Vicente_Concha_Ferreira_sec_sco"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Jose_Vicente_Concha_Ferreira.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Guillermo_Padilla_Manrique_sec_ade"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Guillermo_Padilla_Manrique.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Alfredo_Vazquez_Carrizosa_sec_pau"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Alfredo_Vazquez_Carrizosa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Alberto_Narino_Cheyne_sec_npo"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Alberto_Narino_Cheyne.tga"
+	}
+	### Chief of Staff
+	spriteType = {
+		name = "GFX_idea_COL_Francisco_Cardona_Santa_cos"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Francisco_Cardona_Santa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Miguel_Abadia_Mendez_cos"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Miguel_Abadia_Mendez.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Ruben_Piedrahita_Arango_cos"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Ruben_Piedrahita_Arango.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Santander_Araujo_cos"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Santander_Araujo.tga"
+	}
+	### Chief of Army
+	spriteType = {
+		name = "GFX_idea_COL_Luis_Acevedo_carm"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Luis_Acevedo.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Clemente_Escalona_Labarces_carm"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Clemente_Escalona_Labarces.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Guillermo_Padilla_Manrique_carm"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Guillermo_Padilla_Manrique.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Gabriel_Paris_Gordillo_carm"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Gabriel_Paris_Gordillo.tga"
+	}
+	### Chief of Navy
+	spriteType = {
+		name = "GFX_idea_COL_Baldomero_Sanin_Cano_cnav"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Baldomero_Sanin_Cano.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Ruben_Piedrahita_Arango_cnav"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Ruben_Piedrahita_Arango.tga"
+	}
+	### Chief of Air Force
+	spriteType = {
+		name = "GFX_idea_COL_Arturo_Lema_Posada_cair"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Arturo_Lema_Posada.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Camilo_Daza_Alvarez_cair"
+		texturefile = "gfx/interface/ideas/COL/ministers/COL_Camilo_Daza_Alvarez.tga"
+	}
+
     ####################################################
     # CAN
     ### Head of Government
