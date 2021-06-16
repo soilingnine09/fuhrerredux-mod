@@ -269,7 +269,7 @@ country_event = { # Border City Attacked
 		name = usa.8.a
 		add_political_power = -100
         ai_chance = {
-            base = 50
+            base = 60
         }
         hidden_effect = {
 			MEX = { country_event = { id = usa.10 hours = 8 } }
@@ -280,7 +280,7 @@ country_event = { # Border City Attacked
 		add_political_power = -25
 		add_manpower = -10000
         ai_chance = {
-            base = 50
+            base = 40
         }
 		random_owned_state = {
 			limit = {
@@ -314,7 +314,7 @@ country_event = { # Mexican Nationalists Attacked Border Area
 		add_political_power = -50
 		add_stability = -0.01
         ai_chance = {
-            base = 40
+            base = 20
         }
 		random_owned_state = {
 			limit = {
@@ -585,7 +585,7 @@ country_event = { # Advisors Refused
 country_event = { # Protection for Central America
     id = usa.23
     title = usa.23.t
-    picture = GFX_report_event_german_advisors_remain
+    picture = GFX_report_event_usa_heavy_cruiser
     is_triggered_only = yes
 
     desc = {
@@ -632,7 +632,7 @@ country_event = { # Accepted Protection
     id = usa.24
     title = usa.24.t
     desc = usa.24.d
-    picture = GFX_report_event_generic_sign_treaty2
+    picture = GFX_report_event_usa_pearl_harbor_airphoto
     is_triggered_only = yes
 
     option = {
@@ -645,7 +645,7 @@ country_event = { # Refuse Protection
     id = usa.25
     title = usa.25.t
     desc = usa.25.d
-    picture = GFX_report_event_generic_sign_treaty2
+    picture = GFX_report_event_usa_pearl_harbor_airphoto2
     is_triggered_only = yes
 
     option = {
@@ -665,7 +665,7 @@ country_event = { # Death of Eugene Debs
 	id = usa.26
 	title = usa.26.t
 	desc = usa.26.d
-	picture = report_event_merchant_ship_01
+	picture = GFX_report_event_usa_funeral
 
 	trigger = {
 		tag = USA
@@ -693,7 +693,7 @@ country_event = { # Surrender to Mexico
     id = usa.27
     title = usa.27.t
     desc = usa.27.d
-    picture = report_event_merchant_ship_01
+    picture = GFX_report_event_soviet_tanks
     is_triggered_only = yes
 
     option = {
@@ -833,11 +833,11 @@ country_event = { # 1940 Elections
     }
 }
 
-country_event = { # Start of the Collapse - Riots
+country_event = { # Nationwide Riots
     id = usa.100
     title = usa.100.t
     desc = usa.100.d
-    picture = GFX_report_event_generic_riot
+    picture = GFX_report_event_worker_protests
     is_triggered_only = yes
 
     option = {
@@ -852,7 +852,7 @@ country_event = { # Internal Political Turmoil
     id = usa.101
     title = usa.101.t
     desc = usa.101.d
-    picture = GFX_report_event_generic_riot
+    picture = GFX_report_event_FDR_speech
     is_triggered_only = yes
 
     option = {
@@ -867,7 +867,7 @@ country_event = { # New England Seceeds
     id = usa.102
     title = usa.102.t
     desc = usa.102.d
-    picture = GFX_report_event_generic_riot
+    picture = GFX_report_event_communist_leader
     is_triggered_only = yes
 
     trigger = {
@@ -923,7 +923,7 @@ country_event = { # Midwest Seceeds
     id = usa.103
     title = usa.103.t
     desc = usa.103.d
-    picture = GFX_report_event_generic_riot
+    picture = GFX_report_event_canada_patriation
     is_triggered_only = yes
 
     trigger = {
@@ -981,7 +981,7 @@ country_event = { # Rust Belt
     id = usa.104
     title = usa.104.t
     desc = usa.104.d
-    picture = GFX_report_event_generic_riot
+    picture = GFX_report_event_fascists_posing
     is_triggered_only = yes
 
     trigger = {
@@ -1039,23 +1039,15 @@ country_event = { # UK Seizes Cascadia, Puerto Rico, Alaska
     id = usa.105
     title = usa.105.t
     desc = usa.105.d
-    picture = GFX_report_event_generic_riot
+    picture = GFX_report_event_usa_heavy_cruiser
     is_triggered_only = yes
 
     immediate = {
         hidden_effect = {
-            every_owned_state = {
-                limit = {
-                    OR = {
-                        state = 385
-                        state = 386
-                    }
-                }
-                CAS = { add_state_core = PREV }
-                ENG = { transfer_state = PREV }
-            }
             ENG = { 
                 puppet = CAS
+                transfer_state = 385
+                transfer_state = 386
                 transfer_state = 686
                 transfer_state = 463
                 transfer_state = 629
@@ -1077,6 +1069,7 @@ country_event = { # Collapse of the Union
     id = usa.106
     title = usa.106.t
     desc = usa.106.d
+    picture = GFX_report_event_usa_macarthur_speech
     is_triggered_only = yes
 
     option = {
@@ -1096,6 +1089,7 @@ country_event = { # Emergency Congress Session
     id = usa.107
     title = usa.107.t
     desc = usa.107.d
+    picture = GFX_report_event_us_panay_demands
     is_triggered_only = yes
 
     option = {
@@ -1220,7 +1214,7 @@ country_event = { # Panama Canal - Panama
     id = usa.108
     title = usa.108.t
     desc = usa.108.d
-    picture = GFX_report_event_generic_riot
+    picture = GFX_report_event_usa_heavy_cruiser
     is_triggered_only = yes
 
     option = {
@@ -1234,16 +1228,16 @@ country_event = { # Panama Canal - Panama
     }
 }
 
-country_event = {
+country_event = { # Panama Canal Captured
     id = usa.109
     title = usa.109.t
     desc = usa.109.d
-    picture = report_event_generic_conference
+    picture = GFX_report_event_usa_heavy_cruiser
     is_triggered_only = yes
 
     option = {
         name = usa.109.a
-        ai_chance = { base = 50 }
+        ai_chance = { base = 20 }
         create_wargoal = {
             target = PAN
             type = annex_everything
@@ -1251,7 +1245,7 @@ country_event = {
     }
     option = {
         name = usa.109.b
-        ai_chance = { base = 50 }
+        ai_chance = { base = 80 }
         add_political_power = -50
     }
 }
@@ -1260,26 +1254,35 @@ country_event = { # Cascadian Question
     id = usa.110
     title = usa.110.t
     desc = usa.110.d
-    picture = report_event_generic_conference
+    picture = GFX_report_event_usa_british_sailors_destroyers
     is_triggered_only = yes
 
     option = { # To Cascadia
         name = usa.110.a
         every_owned_state = {
             limit = {
-                is_core_of = CAS
+                OR = {
+                    state = 385
+                    state = 386
+                }
                 is_fully_controlled_by = ROOT
                 NOT = { is_core_of = ROOT }
                 NOT = { is_claimed_by = ROOT }
             }
-            CAS = { transfer_state = PREV }
+            CAS = {
+                add_state_core = PREV
+                transfer_state = PREV
+            }
         }
     }
     option = { # To Canada
         name = usa.110.b
         every_owned_state = {
             limit = {
-                is_core_of = CAS
+                OR = {
+                    state = 385
+                    state = 386
+                }
                 is_fully_controlled_by = ROOT
                 NOT = { is_core_of = ROOT }
                 NOT = { is_claimed_by = ROOT }
@@ -1289,11 +1292,11 @@ country_event = { # Cascadian Question
     }
 }
 
-country_event = {
+country_event = { # Demand the Return of the Territories
     id = usa.111
     title = usa.111.t
     desc = usa.111.d
-    picture = report_event_generic_conference
+    picture = GFX_report_event_usa_destroyers
     is_triggered_only = yes
 
     option = {
@@ -1309,11 +1312,11 @@ country_event = {
     }
 }
 
-country_event = {
+country_event = { # Rejected the Demand
     id = usa.112
     title = usa.112.t
     desc = usa.112.d
-    picture = report_event_generic_conference
+    picture = GFX_report_event_usa_british_sailors_destroyers
     is_triggered_only = yes
 
     option = {

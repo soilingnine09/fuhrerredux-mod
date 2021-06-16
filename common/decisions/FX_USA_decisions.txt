@@ -4,10 +4,12 @@ foreign_politics = {
         cost = 100
         days_remove = 30
         allowed = { original_tag = USA }
-        available = {
+        visible = { 
             USA_1936_elections_happened = yes
             USA_mexican_disaster_happened = no
-            date > 1938.1.1
+        }
+        available = {
+            USA_has_less_great_depression = yes
         }
         remove_effect = {
             MEX = { country_event = usa.4 }
@@ -17,25 +19,22 @@ foreign_politics = {
         icon = GFX_decision_generic_political_discourse
         cost = 50
         allowed = { original_tag = USA }
+        visible = { has_war_with = MEX }
         available = {
-            has_war_with = MEX
             MEX = {
-                controls_state = 484
-                controls_state = 743
-                controls_state = 378
-                controls_state = 930
-                controls_state = 928
-                controls_state = 923
-                controls_state = 922
-                controls_state = 921
-                controls_state = 375
-                controls_state = 919
-                controls_state = 377
-                controls_state = 376
-                controls_state = 920
-                controls_state = 926
-                controls_state = 925
-                controls_state = 929
+                controls_state = 375 # Texas
+                controls_state = 376 # New Mexico
+                controls_state = 377 # Arizona
+                controls_state = 378 # California
+                controls_state = 379 # Nevada
+                controls_state = 380 # Utah 
+                controls_state = 484 # Baja California
+                controls_state = 919 # East Texas
+                controls_state = 920 # Panhandle
+                controls_state = 921 # Transpecos
+                controls_state = 926 # Bay Area
+                controls_state = 927 # Northern California
+                controls_state = 928 # Southern California
             }
         }
         complete_effect = {

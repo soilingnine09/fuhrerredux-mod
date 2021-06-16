@@ -24,6 +24,19 @@ USA_has_great_depression = {
     }
 }
 
+USA_has_less_great_depression = {
+    custom_trigger_tooltip = {
+        tooltip = USA_has_less_great_depression_tt
+        OR = {
+            has_idea = USA_the_greater_depression_6
+            has_idea = USA_the_greater_depression_7
+            has_idea = USA_the_greater_depression_8
+            has_idea = USA_the_greater_depression_9
+            has_idea = USA_the_greater_depression_10
+        }
+    }
+}
+
 USA_mexican_disaster_happened = {
     custom_trigger_tooltip = {
         tooltip = USA_mexican_disaster_happened_tt
