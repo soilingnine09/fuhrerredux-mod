@@ -4,6 +4,358 @@
 spriteTypes = {
 
 	####################################################
+    # DEN
+	### Head of Government
+	spriteType = {
+		name = "GFX_idea_DEN_Olga_Eggers_hog_van"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Olga_Eggers.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Christian_Eli_Christensen_hog_col"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Christian_Eli_Christensen.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Aksel_Larsen_hog_lib"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Aksel_Larsen.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Hans_Hedtoft_hog_sde"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Hans_Hedtoft.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Thorvald_Stauning_hog_sde"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Thorvald_Stauning.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Vilhelm_Buhl_hog_sde"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Vilhelm_Buhl.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Erik_Scavenius_hog_sli"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Erik_Scavenius.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Peter_Munch_hog_sli"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Peter_Munch.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Knud_Kristensen_hog_mli"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Knud_Kristensen.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Thomas_Madsen_Mygdal_hog_mli"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Thomas_Madsen_Mygdal.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_J_Christmas_Moeller_hog_sco"
+		texturefile = "gfx/interface/ministers/DEN/DEN_J_Christmas_Moeller.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Vilhelm_Fibiger_hog_sco"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Vilhelm_Fibiger.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Knud_Bach_hog_ade"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Knud_Bach.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Victor_Puerschel_hog_ade"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Victor_Puerschel.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Arne_Soerensen_hog_pau"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Arne_Soerensen.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Max_Arildskov_hog_npo"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Max_Arildskov.tga"
+	}
+
+	### Person of Influence
+	# Foreign Minister
+	spriteType = {
+		name = "GFX_idea_DEN_Wilfred_Petersen_for_van"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Wilfred_Petersen.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Ib_Noerlund_for_col"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Ib_Noerlund.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Martin_Andersen_Nexoe_for_col"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Martin_Andersen_Nexoe.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Albert_Olsen_for_lib"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Albert_Olsen.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Hans_C_Hansen_for_sde"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Hans_C_Hansen.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Hans_Hedtoft_for_sde"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Hans_Hedtoft.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Erik_Scavenius_for_sli"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Erik_Scavenius.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Otto_Carl_Mohr_for_sli"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Otto_Carl_Mohr.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Peter_Munch_for_sli"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Peter_Munch.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Gustav_Rasmussen_for_mli"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Gustav_Rasmussen.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Henrik_Hauch_for_mli"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Henrik_Hauch.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Henrik_von_Kauffmann_for_sco"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Henrik_von_Kauffmann.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_J_Christmas_Moeller_for_sco"
+		texturefile = "gfx/interface/ministers/DEN/DEN_J_Christmas_Moeller.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Jack_Westergaard_for_ade"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Jack_Westergaard.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Vilhelm_la_Cour_for_pau"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Vilhelm_la_Cour.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Axel_Christian_Hartel_for_npo"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Axel_Christian_Hartel.tga"
+	}
+
+	# Economy Minister
+	spriteType = {
+		name = "GFX_idea_DEN_Boerge_Jakobsen_eco_van"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Boerge_Jakobsen.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Andreas_Fritzner_eco_col"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Andreas_Fritzner.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Martin_Andersen_Nexoe_eco_col"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Martin_Andersen_Nexoe.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Poul_Gissemann_eco_col"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Poul_Gissemann.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Alfred_Jensen_eco_lib"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Alfred_Jensen.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Niels_Bohr_eco_lib"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Niels_Bohr.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Alsing_Andersen_eco_sde"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Alsing_Andersen.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Jens_Otto_Krag_eco_sde"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Jens_Otto_Krag.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Viggo_Kampmann_eco_sde"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Viggo_Kampmann.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Bertel_Dahlgaard_eco_sli"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Bertel_Dahlgaard.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Knud_Kristensen_eco_mli"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Knud_Kristensen.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Soeren_Brorsen_eco_mli"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Soeren_Brorsen.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Halfdan_Henriksen_eco_sco"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Halfdan_Henriksen.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Ole_Bjoern_Kraft_eco_sco"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Ole_Bjoern_Kraft.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Erik_Grevenkop_Castenskiold_eco_ade"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Erik_Grevenkop_Castenskiold.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Jorgen_Sehested_eco_pau"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Jorgen_Sehested.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Arent_Lemvigh_Mueller_eco_npo"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Arent_Lemvigh_Mueller.tga"
+	}
+
+	# Security Minister
+	spriteType = {
+		name = "GFX_idea_DEN_Harald_Bergstedt_sec_van"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Harald_Bergstedt.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Poul_Gissemann_sec_col"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Poul_Gissemann.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Alsing_Andersen_sec_sde"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Alsing_Andersen.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Karl_Kristian_Steincke_sec_sde"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Karl_Kristian_Steincke.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Joergen_Joergensen_sec_sli"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Joergen_Joergensen.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Harald_Petersen_sec_mli"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Harald_Petersen.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Ivar_Stamm_sec_mli"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Ivar_Stamm.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Aksel_Moeller_sec_sco"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Aksel_Moeller.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Ole_Bjoern_Kraft_sec_sco"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Ole_Bjoern_Kraft.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Knud_Bach_sec_ade"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Knud_Bach.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Eigil_Thune_Jacobsen_sec_pau"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Eigil_Thune_Jacobsen.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Kaj_Munk_sec_pau"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Kaj_Munk.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Anders_Malling_sec_npo"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Anders_Malling.tga"
+	}
+
+
+	### Chief of Staff
+	spriteType = {
+		name = "GFX_idea_DEN_Christian_Eli_Christensen_cos_col"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Christian_Eli_Christensen.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Svend_Wagner_cos_lib"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Svend_Wagner.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Wilhelm_W_Prior_cos_sli"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Wilhelm_W_Prior.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Ebbe_Goertz_cos_mli"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Ebbe_Goertz.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Hans_A_Rolsted_cos_sco"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Hans_A_Rolsted.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Christian_Kryssing_cos_pau"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Christian_Kryssing.tga"
+	}
+
+	### Chief of Army
+	spriteType = {
+		name = "GFX_idea_DEN_Thoeger_Thoegersen_carm_col"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Thoeger_Thoegersen.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Boerge_Thing_carm_lib"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Boerge_Thing.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Erik_With_carm_sde"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Erik_With.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Wilhelm_W_Prior_carm_sli"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Wilhelm_W_Prior.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Ebbe_Goertz_carm_mli"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Ebbe_Goertz.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Christian_X_carm_ade"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Christian_X.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Christian_von_Schalburg_carm_npo"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Christian_von_Schalburg.tga"
+	}
+
+	### Chief of Navy
+	spriteType = {
+		name = "GFX_idea_DEN_Aage_H_Vedel_cnav_sli"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Aage_H_Vedel.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Carl_Hammerich_cnav_mli"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Carl_Hammerich.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Hjalmar_Rechnitzer_cnav_mli"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Hjalmar_Rechnitzer.tga"
+	}
+
+	### Chief of Air Force
+	spriteType = {
+		name = "GFX_idea_DEN_Andreas_Fritzner_cair_col"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Andreas_Fritzner.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Aksel_Larsen_cair_lib"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Aksel_Larsen.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Kaj_Birksted_cair_sde"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Kaj_Birksted.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Svend_Asbjoern_Holten_cair_mli"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Svend_Asbjoern_Holten.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_DEN_Poul_Sommer_cair_pau"
+		texturefile = "gfx/interface/ministers/DEN/DEN_Poul_Sommer.tga"
+	}
+
+	####################################################
     # SWE
 	### Head of Government
 	spriteType = {

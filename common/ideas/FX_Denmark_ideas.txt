@@ -1227,5 +1227,853 @@ ideas = {
 			removal_cost = -1
 		}
 	}
-	
+	### Ministers
+	# Head of Government
+	head_of_government = {
+		DEN_Olga_Eggers_hog_van = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				vanguardist
+				hog_ambitious_union_boss
+			}
+		}
+		DEN_Christian_Eli_Christensen_hog_col = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				collectivist
+				hog_backroom_backstabber
+			}
+		}
+		DEN_Aksel_Larsen_hog_lib = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				libertarian_socialist
+				hog_happy_amateur
+			}
+		}
+		DEN_Hans_Hedtoft_hog_sde = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_democrat
+				hog_naive_optimist
+			}
+		}
+		DEN_Thorvald_Stauning_hog_sde = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_democrat
+				hog_silent_workhorse
+			}
+		}
+		DEN_Vilhelm_Buhl_hog_sde = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_democrat
+				hog_privileged_socialist
+			}
+		}
+		DEN_Erik_Scavenius_hog_sli = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_liberal
+				hog_naive_optimist
+			}
+		}
+		DEN_Peter_Munch_hog_sli = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_liberal
+				hog_happy_amateur
+			}
+		}
+		DEN_Knud_Kristensen_hog_mli = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				market_liberal
+				hog_corporate_suit
+			}
+		}
+		DEN_Thomas_Madsen_Mygdal_hog_mli = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				market_liberal
+				hog_accomplished_diplomat
+			}
+		}
+		DEN_J_Christmas_Moeller_hog_sco = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_conservative
+				hog_backroom_backstabber
+			}
+		}
+		DEN_Vilhelm_Fibiger_hog_sco = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_conservative
+				hog_charismatic_charmer
+			}
+		}
+		DEN_Knud_Bach_hog_ade = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_democratic_tyrant
+			}
+		}
+		DEN_Victor_Puerschel_hog_ade = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_naive_optimist
+			}
+		}
+		DEN_Arne_Soerensen_hog_pau = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_accomplished_diplomat
+			}
+		}
+		DEN_Max_Arildskov_hog_npo = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				national_populist
+				hog_determined_populist
+			}
+		}
+	}
+	# Foreign Minister
+	foreign_minister = {
+		DEN_Wilfred_Petersen_for_van = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				vanguardist
+				for_apologetic_clerk
+			}
+		}
+		DEN_Ib_Noerlund_for_col = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				collectivist
+				for_ideological_crusader
+			}
+		}
+		DEN_Martin_Andersen_Nexoe_for_col = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				collectivist
+				for_biased_intellectual
+			}
+		}
+		DEN_Albert_Olsen_for_lib = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				libertarian_socialist
+				for_iron_fisted_brute
+			}
+		}
+		DEN_Hans_C_Hansen_for_sde = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_democrat
+				for_relations_expert
+			}
+		}
+		DEN_Hans_Hedtoft_for_sde = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_democrat
+				for_general_staffer
+			}
+		}
+		DEN_Erik_Scavenius_for_sli = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_liberal
+				for_foreign_sympathizer
+			}
+		}
+		DEN_Otto_Carl_Mohr_for_sli = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_liberal
+				for_moderate_among_radicals
+			}
+		}
+		DEN_Peter_Munch_for_sli = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_liberal
+				for_world_patrician
+			}
+		}
+		DEN_Gustav_Rasmussen_for_mli = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				market_liberal
+				for_relations_expert
+			}
+		}
+		DEN_Henrik_Hauch_for_mli = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				market_liberal
+				for_apologetic_clerk
+			}
+		}
+		DEN_Henrik_von_Kauffmann_for_sco = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_conservative
+				for_great_compromiser
+			}
+		}
+		DEN_J_Christmas_Moeller_for_sco = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_conservative
+				for_ideological_crusader
+			}
+		}
+		DEN_Jack_Westergaard_for_ade = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				authoritarian_democrat
+				for_relations_expert
+			}
+		}
+		DEN_Vilhelm_la_Cour_for_pau = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_the_cloak_n_dagger_schemer
+			}
+		}
+		DEN_Axel_Christian_Hartel_for_npo = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				national_populist
+				for_biased_intellectual
+			}
+		}
+	}
+	# Economy Minister
+	economy_minister = {
+		DEN_Boerge_Jakobsen_eco_van = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				vanguardist
+				eco_planned_economy_proponent
+			}
+		}
+		DEN_Andreas_Fritzner_eco_col = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				collectivist
+				eco_reformer
+			}
+		}
+		DEN_Martin_Andersen_Nexoe_eco_col = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				collectivist
+				eco_imbedded_unioneer
+			}
+		}
+		DEN_Poul_Gissemann_eco_col = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				collectivist
+				eco_industrialiser
+			}
+		}
+		DEN_Alfred_Jensen_eco_lib = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				libertarian_socialist
+				eco_mixed_economy
+			}
+		}
+		DEN_Niels_Bohr_eco_lib = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				libertarian_socialist
+				eco_trade_proponent
+			}
+		}
+		DEN_Alsing_Andersen_eco_sde = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_democrat
+				eco_balanced_budget_economy
+			}
+		}
+		DEN_Jens_Otto_Krag_eco_sde = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_democrat
+				eco_mixed_economy
+			}
+		}
+		DEN_Viggo_Kampmann_eco_sde = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_democrat
+				eco_industrialiser
+			}
+		}
+		DEN_Bertel_Dahlgaard_eco_sli = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_liberal
+				eco_reformer
+			}
+		}
+		DEN_Knud_Kristensen_eco_mli = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				market_liberal
+				eco_industrialiser
+			}
+		}
+		DEN_Soeren_Brorsen_eco_mli = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				market_liberal
+				eco_bank_president
+			}
+		}
+		DEN_Halfdan_Henriksen_eco_sco = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_conservative
+				eco_laissez_faire_capitalist
+			}
+		}
+		DEN_Ole_Bjoern_Kraft_eco_sco = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_conservative
+				eco_military_entrepreneur
+			}
+		}
+		DEN_Erik_Grevenkop_Castenskiold_eco_ade = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				authoritarian_democrat
+				eco_national_liberal
+			}
+		}
+		DEN_Jorgen_Sehested_eco_pau = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_trade_proponent
+			}
+		}
+		DEN_Arent_Lemvigh_Mueller_eco_npo = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				national_populist
+				eco_vernacular_industrialiser
+			}
+		}
+	}
+	# Security Minister
+	security_minister = {
+		DEN_Harald_Bergstedt_sec_van = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				vanguardist
+				sec_back_stabber
+			}
+		}
+		DEN_Poul_Gissemann_sec_col = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				collectivist
+				sec_compassionate_gentleman
+			}
+		}
+		DEN_Alsing_Andersen_sec_sde = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_democrat
+				sec_driven_recruiter
+			}
+		}
+		DEN_Karl_Kristian_Steincke_sec_sde = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_democrat
+				sec_efficient_sociopath
+			}
+		}
+		DEN_Joergen_Joergensen_sec_sli = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_liberal
+				sec_health_and_safety
+			}
+		}
+		DEN_Harald_Petersen_sec_mli = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				market_liberal
+				sec_man_of_the_people
+			}
+		}
+		DEN_Ivar_Stamm_sec_mli = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				market_liberal
+				sec_prince_of_terror
+			}
+		}
+		DEN_Aksel_Moeller_sec_sco = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_conservative
+				sec_media_magnate
+			}
+		}
+		DEN_Ole_Bjoern_Kraft_sec_sco = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_conservative
+				sec_great_soul
+			}
+		}
+		DEN_Knud_Bach_sec_ade = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_driven_recruiter
+			}
+		}
+		DEN_Eigil_Thune_Jacobsen_sec_pau = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_compassionate_gentleman
+			}
+		}
+		DEN_Kaj_Munk_sec_pau = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_silent_lawyer
+			}
+		}
+		DEN_Anders_Malling_sec_npo = {
+			allowed = { original_tag = DEN }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				national_populist
+				sec_secret_police_chief
+			}
+		}
+	}
+	# Chief of Staff
+	chief_of_staff = {
+		DEN_Christian_Eli_Christensen_cos_col = {
+			allowed = { original_tag = DEN }
+			available = { has_socialist_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_staff
+				collectivist
+				cos_school_of_psychology
+			}
+		}
+		DEN_Svend_Wagner_cos_lib = {
+			allowed = { original_tag = DEN }
+			available = { has_socialist_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_staff
+				libertarian_socialist
+				cos_school_of_mass_combat
+			}
+		}
+		DEN_Wilhelm_W_Prior_cos_sli = {
+			allowed = { original_tag = DEN }
+			available = { has_elected_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_staff
+				social_liberal
+				cos_school_of_commando_operations
+			}
+		}
+		DEN_Ebbe_Goertz_cos_mli = {
+			allowed = { original_tag = DEN }
+			available = { has_elected_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_staff
+				market_liberal
+				cos_school_of_fire_support
+			}
+		}
+		DEN_Hans_A_Rolsted_cos_sco = {
+			allowed = { original_tag = DEN }
+			available = { has_democratic_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_staff
+				social_conservative
+				cos_school_of_manoeuvre
+			}
+		}
+		DEN_Christian_Kryssing_cos_pau = {
+			allowed = { original_tag = DEN }
+			available = { has_authoritarian_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_staff
+				paternal_autocrat
+				cos_school_of_defence
+			}
+		}
+	}
+	# Chief of Army
+	chief_of_army = {
+		DEN_Thoeger_Thoegersen_carm_col = {
+			allowed = { original_tag = DEN }
+			available = { has_socialist_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				collectivist
+				carm_doctrine_of_autonomy
+			}
+		}
+		DEN_Boerge_Thing_carm_lib = {
+			allowed = { original_tag = DEN }
+			available = { has_socialist_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				libertarian_socialist
+				carm_guns_and_butter_doctrine
+			}
+		}
+		DEN_Erik_With_carm_sde = {
+			allowed = { original_tag = DEN }
+			available = { has_democratic_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				social_democrat
+				carm_static_defence_doctrine
+			}
+		}
+		DEN_Wilhelm_W_Prior_carm_sli = {
+			allowed = { original_tag = DEN }
+			available = { has_democratic_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				social_liberal
+				carm_commando_doctrine
+			}
+		}
+		DEN_Ebbe_Goertz_carm_mli = {
+			allowed = { original_tag = DEN }
+			available = { has_democratic_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				market_liberal
+				carm_armoured_spearhead_doctrine
+			}
+		}
+		DEN_Christian_X_carm_ade = {
+			allowed = { original_tag = DEN }
+			available = { has_authoritarian_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				authoritarian_democrat
+				carm_guns_and_butter_doctrine
+			}
+		}
+		DEN_Christian_von_Schalburg_carm_npo = {
+			allowed = { original_tag = DEN }
+			available = { has_authoritarian_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_army
+				national_populist
+				carm_decisive_battle_doctrine
+			}
+		}
+	}
+	### Chief of Navy
+	chief_of_navy = {
+		DEN_Aage_H_Vedel_cnav_sli = {
+			allowed = { original_tag = DEN }
+			traits = {
+				chief_of_navy
+				social_liberal
+				cnav_decisive_battle_doctrine
+			}
+		}
+		DEN_Carl_Hammerich_cnav_mli = {
+			allowed = { original_tag = DEN }
+			traits = {
+				chief_of_navy
+				market_liberal
+				cnav_indirect_approach_doctrine
+			}
+		}
+		DEN_Hjalmar_Rechnitzer_cnav_mli = {
+			allowed = { original_tag = DEN }
+			traits = {
+				chief_of_navy
+				market_liberal
+				cnav_open_seas_doctrine
+			}
+		}
+	}
+	### Chief of Air Force
+	chief_of_air_force = {
+		DEN_Andreas_Fritzner_cair_col = {
+			allowed = { original_tag = DEN }
+			available = { has_socialist_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_air_force
+				collectivist
+				cair_air_superiority_doctrine
+			}
+		}
+		DEN_Aksel_Larsen_cair_lib = {
+			allowed = { original_tag = DEN }
+			available = { has_socialist_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_air_force
+				libertarian_socialist
+				cair_carpet_bombing_doctrine
+			}
+		}
+		DEN_Kaj_Birksted_cair_sde = {
+			allowed = { original_tag = DEN }
+			available = { has_democratic_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_air_force
+				social_democrat
+				cair_battlefield_support_doctrine
+			}
+		}
+		DEN_Svend_Asbjoern_Holten_cair_mli = {
+			allowed = { original_tag = DEN }
+			available = { has_democratic_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_air_force
+				market_liberal
+				cair_air_superiority_doctrine
+			}
+		}
+		DEN_Poul_Sommer_cair_pau = {
+			allowed = { original_tag = DEN }
+			available = { has_dictatorship_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_air_force
+				paternal_autocrat
+				cair_naval_aviation_doctrine
+			}
+		}
+	}
 }
