@@ -870,6 +870,10 @@ country_event = { # New England Seceeds
     picture = GFX_report_event_generic_riot
     is_triggered_only = yes
 
+    trigger = {
+        NOT = { country_exists = NEE }
+    }
+
     immediate = {
         hidden_effect = {
             every_owned_state = {
@@ -921,6 +925,10 @@ country_event = { # Midwest Seceeds
     desc = usa.103.d
     picture = GFX_report_event_generic_riot
     is_triggered_only = yes
+
+    trigger = {
+        NOT = { country_exists = CLB }
+    }
 
     immediate = {
         hidden_effect = {
@@ -975,6 +983,10 @@ country_event = { # Rust Belt
     desc = usa.104.d
     picture = GFX_report_event_generic_riot
     is_triggered_only = yes
+
+    trigger = {
+        NOT = { country_exists = RLB }
+    }
 
     immediate = {
         hidden_effect = {

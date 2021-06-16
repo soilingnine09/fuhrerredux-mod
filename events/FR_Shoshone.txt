@@ -34,6 +34,10 @@ country_event = { # Independence?
     }
     option = {
         name = shoshone.1.b
+        declare_war_on = {
+            target = NID
+            type = annex_everything
+        }
         NID = { change_tag_from = ROOT }
     }
 }
