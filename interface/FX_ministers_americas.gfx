@@ -4,6 +4,342 @@
 spriteTypes = {
 
     ####################################################
+    # CAN
+    ### Head of Government
+	spriteType = {
+		name = "GFX_idea_CAN_Tim_Buck_hog_van"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Tim_Buck.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Richard_Parmater_Pettipiece_hog_col"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Richard_Parmater_Pettipiece.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Claude_Jodoin_hog_lib"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Claude_Jodoin.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Humphrey_Mitchell_hog_lib"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Humphrey_Mitchell.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_JS_Woodsworth_hog_sde"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_JS_Woodsworth.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Major_James_Coldwell_hog_sde"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Major_James_Coldwell.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Louis_St_Laurent_hog_sli"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Louis_St_Laurent.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Charles_Gavan_Power_hog_mli"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Charles_Gavan_Power.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_William_Lyon_Mackenzie_King_hog_mli"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_William_Lyon_Mackenzie_King.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_John_Bracken_hog_sco"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_John_Bracken.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_RB_Bennett_hog_sco"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_RB_Bennett.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Robert_Manion_hog_sco"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Robert_Manion.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Arthur_Meighen_hog_ade"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Arthur_Meighen.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_JH_Blackmore_hog_ade"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_JH_Blackmore.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Henry_Crerar_hog_pau"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Henry_Crerar.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Henry_Herbert_Stevens_hog_npo"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Henry_Herbert_Stevens.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_John_Diefenbaker_hog_npo"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_John_Diefenbaker.tga"
+	}
+	### Foreign Minister
+	spriteType = {
+		name = "GFX_idea_CAN_Alexander_Albert_MacLeod_for_van"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Alexander_Albert_MacLeod.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Joe_Zuken_for_col"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Joe_Zuken.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Humphrey_Mitchell_for_lib"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Humphrey_Mitchell.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Romeo_Mathieu_for_lib"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Romeo_Mathieu.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_David_Lewis_for_sde"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_David_Lewis.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Thomas_C_Douglas_for_sde"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Thomas_C_Douglas.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Louis_St_Laurent_for_sli"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Louis_St_Laurent.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Mitchell_Hepburn_for_sli"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Mitchell_Hepburn.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_George_W_Stephens_for_mli"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_George_W_Stephens.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Vincent_Massey_for_mli"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Vincent_Massey.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Robert_Manion_for_sco"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Robert_Manion.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Sidney_Earle_Smith_for_sco"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Sidney_Earle_Smith.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Ernest_Manning_for_ade"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Ernest_Manning.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_George_A_Drew_for_ade"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_George_A_Drew.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Howard_Charles_Green_for_pau"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Howard_Charles_Green.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Adrien_Arcand_for_npo"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Adrien_Arcand.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_George_A_Drew_for_npo"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_George_A_Drew.tga"
+	}
+	### Economy Minister
+	spriteType = {
+		name = "GFX_idea_CAN_James_Litterick_eco_van"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_James_Litterick.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_William_Kashtan_eco_col"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_William_Kashtan.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_William_Charles_Good_eco_lib"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_William_Charles_Good.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Hazen_Argue_eco_sde"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Hazen_Argue.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Alphonse_Fournier_eco_sli"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Alphonse_Fournier.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Gerry_McGeer_eco_sli"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Gerry_McGeer.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_CD_Howe_eco_mli"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_CD_Howe.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_John_Bracken_eco_sco"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_John_Bracken.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Stephen_Leacock_eco_sco"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Stephen_Leacock.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Andrew_Carnell_eco_ade"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Andrew_Carnell.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Victor_Quelch_eco_ade"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Victor_Quelch.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Lloyd_Samuel_Breadner_eco_pau"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Lloyd_Samuel_Breadner.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_John_Ross_Taylor_eco_npo"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_John_Ross_Taylor.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Murdoch_Alexander_MacPherson_eco_npo"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Murdoch_Alexander_MacPherson.tga"
+	}
+	### Security Minister
+	spriteType = {
+		name = "GFX_idea_CAN_Tom_McEwan_sec_van"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Tom_McEwan.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Norman_Bethune_sec_col"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Norman_Bethune.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Joseph_Andrew_Clarke_sec_lib"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Joseph_Andrew_Clarke.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Clarence_Gillis_sec_sde"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Clarence_Gillis.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Stanley_Knowles_sec_sde"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Stanley_Knowles.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Stuart_Garson_sec_sli"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Stuart_Garson.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Douglas_Abbott_sec_mli"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Douglas_Abbott.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Ernest_Lapointe_sec_mli"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Ernest_Lapointe.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_James_Garfield_Gardiner_sec_mli"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_James_Garfield_Gardiner.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Gordon_Graydon_sec_sco"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Gordon_Graydon.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_John_Diefenbaker_sec_sco"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_John_Diefenbaker.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Solon_Earl_Low_sec_ade"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Solon_Earl_Low.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_WAC_Bennett_sec_ade"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_WAC_Bennett.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Andrew_McNaughton_sec_pau"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Andrew_McNaughton.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Chuck_Crate_sec_npo"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Chuck_Crate.tga"
+	}
+	### Chief of Staff
+	spriteType = {
+		name = "GFX_idea_CAN_Ernest_Ashton_cos"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Ernest_Ashton.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Henry_Crerar_cos"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Henry_Crerar.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Kenneth_Stuart_cos"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Kenneth_Stuart.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Thomas_Victor_Anderson_cos"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Thomas_Victor_Anderson.tga"
+	}
+	### Chief of Army
+	spriteType = {
+		name = "GFX_idea_CAN_Christopher_Vokes_carm"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Christopher_Vokes.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Henry_Crerar_carm"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Henry_Crerar.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Thomas_Victor_Anderson_carm"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Thomas_Victor_Anderson.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Charles_Foulkes_carm"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Charles_Foulkes.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Georges_Vanier_carm"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Georges_Vanier.tga"
+	}
+	### Chief of Navy
+	spriteType = {
+		name = "GFX_idea_CAN_Harold_Taylor_Wood_Grant_cnav"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Harold_Taylor_Wood_Grant.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Percy_Nelles_cnav"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Percy_Nelles.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Leonard_W_Murray_cnav"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Leonard_W_Murray.tga"
+	}
+	### Chief of Air Force
+	spriteType = {
+		name = "GFX_idea_CAN_Clifford_McEwan_cair"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Clifford_McEwan.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_George_Croil_cair"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_George_Croil.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Harold_Edwards_cair"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Harold_Edwards.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_George_Owen_Johnson_cair"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_George_Owen_Johnson.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_William_Avery_Bishop_cair"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_William_Avery_Bishop.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CAN_Lloyd_Samuel_Breadner_cair"
+		texturefile = "gfx/interface/ideas/CAN/ministers/CAN_Lloyd_Samuel_Breadner.tga"
+	}
+
+
+    ####################################################
     # MEX
     ### Head of Government
     spriteType = {

@@ -323,7 +323,7 @@ country_event = {
 		add_stability = -0.05
 		add_popularity = { ideology = social_conservative popularity = -0.05 }
 		set_country_flag = rb_bennett_dead
-		add_ideas = CAN_john_diefenbaker_hog
+		add_ideas = CAN_RB_Bennett_hog_sco
 		hidden_effect = {
 			country_event = { days = 14 id = canada.700 }
 		}
@@ -989,10 +989,10 @@ country_event = {
 			remove_ideas_with_trait = security_minister
 		}
 		add_ideas = {
-			CAN_wl_mackenzie_king_hog
-			CAN_leo_richer_lafleche_for
-			CAN_cd_howe_eco
-			CAN_ernest_lapointe_sec
+			CAN_William_Lyon_Mackenzie_King_hog_mli
+			CAN_George_W_Stephens_for_mli
+			CAN_CD_Howe_eco_mli
+			CAN_Ernest_Lapointe_sec_mli
 		}
 		add_stability = -0.01
 		add_popularity = { ideology = social_liberal popularity = 0.35 }
@@ -1015,10 +1015,10 @@ country_event = {
 			remove_ideas_with_trait = security_minister
 		}
 		add_ideas = {
-			CAN_jh_blackmore_hog
-			CAN_edward_joseph_garland_for
-			CAN_solon_earl_low_eco
-			CAN_wallace_warren_cross_sec
+			CAN_John_Diefenbaker_hog_npo
+			CAN_George_A_Drew_for_npo
+			CAN_Murdoch_Alexander_MacPherson_eco_npo
+			CAN_Chuck_Crate_sec_npo
 		}
 		add_stability = 0.005
 		add_popularity = { ideology = national_populist popularity = 0.2 }
@@ -1040,10 +1040,10 @@ country_event = {
 			remove_ideas_with_trait = security_minister
 		}
 		add_ideas = {
-			CAN_tommy_douglas_hog
-			CAN_humphrey_mitchell_for
-			CAN_humphrey_mitchell_eco
-			CAN_major_james_coldwell_sec
+			CAN_JS_Woodsworth_hog_sde
+			CAN_Thomas_C_Douglas_for_sde
+			CAN_Hazen_Argue_eco_sde
+			CAN_Clarence_Gillis_sec_sde
 		}
 		add_stability = 0.005
 		add_popularity = { ideology = social_democrat popularity = 0.2 }
@@ -1062,10 +1062,10 @@ country_event = {
 			remove_ideas_with_trait = security_minister
 		}
 		add_ideas = {
-			CAN_wl_mackenzie_king_hog
-			CAN_leo_richer_lafleche_for
-			CAN_cd_howe_eco
-			CAN_ernest_lapointe_sec
+			CAN_William_Lyon_Mackenzie_King_hog_mli
+			CAN_Vincent_Massey_for_mli
+			CAN_CD_Howe_eco_mli
+			CAN_Ernest_Lapointe_sec_mli
 		}
 		add_stability = 0.01
 		add_popularity = { ideology = market_liberal popularity = 0.2 }
@@ -1084,10 +1084,10 @@ country_event = {
 			remove_ideas_with_trait = security_minister
 		}
 		add_ideas = {
-			CAN_john_diefenbaker_hog
-			CAN_donald_matheson_sutherland_for
-			CAN_charles_cahan_eco
-			CAN_arthur_meighen_sec
+			CAN_Robert_Manion_hog_sco
+			CAN_Sidney_Earle_Smith_for_sco
+			CAN_Stephen_Leacock_eco_sco
+			CAN_John_Diefenbaker_sec_sco
 		}
 		add_stability = 0.01
 		add_popularity = { ideology = social_conservative popularity = 0.2 }
@@ -1125,10 +1125,10 @@ country_event = {
 			remove_ideas_with_trait = security_minister
 		}
 		add_ideas = {
-			CAN_wl_mackenzie_king_hog
-			CAN_leo_richer_lafleche_for
-			CAN_cd_howe_eco
-			CAN_ernest_lapointe_sec
+			CAN_Louis_St_Laurent_hog_sli
+			CAN_Mitchell_Hepburn_for_sli
+			CAN_Gerry_McGeer_eco_sli
+			CAN_Stuart_Garson_sec_sli
 		}
 		add_stability = -0.01
 		add_popularity = { ideology = social_liberal popularity = 0.2 }
@@ -1150,10 +1150,10 @@ country_event = {
 			remove_ideas_with_trait = security_minister
 		}
 		add_ideas = {
-			CAN_jh_blackmore_hog
-			CAN_edward_joseph_garland_for
-			CAN_solon_earl_low_eco
-			CAN_wallace_warren_cross_sec
+			CAN_John_Diefenbaker_hog_npo
+			CAN_George_A_Drew_for_npo
+			CAN_Murdoch_Alexander_MacPherson_eco_npo
+			CAN_Chuck_Crate_sec_npo
 		}
 		add_stability = 0.005
 		add_popularity = { ideology = national_populist popularity = 0.2 }
@@ -1175,10 +1175,10 @@ country_event = {
 			remove_ideas_with_trait = security_minister
 		}
 		add_ideas = {
-			CAN_tommy_douglas_hog
-			CAN_humphrey_mitchell_for
-			CAN_humphrey_mitchell_eco
-			CAN_major_james_coldwell_sec
+			CAN_Major_James_Coldwell_hog_sde
+			CAN_David_Lewis_for_sde
+			CAN_Hazen_Argue_eco_sde
+			CAN_Clarence_Gillis_sec_sde
 		}
 		add_stability = 0.005
 		add_popularity = { ideology = social_democrat popularity = 0.2 }
@@ -1197,10 +1197,10 @@ country_event = {
 			remove_ideas_with_trait = security_minister
 		}
 		add_ideas = {
-			CAN_wl_mackenzie_king_hog
-			CAN_leo_richer_lafleche_for
-			CAN_cd_howe_eco
-			CAN_ernest_lapointe_sec
+			CAN_William_Lyon_Mackenzie_King_hog_mli
+			CAN_George_W_Stephens_for_mli
+			CAN_CD_Howe_eco_mli
+			CAN_Ernest_Lapointe_sec_mli
 		}
 		add_stability = 0.01
 		add_popularity = { ideology = market_liberal popularity = 0.2 }
@@ -1219,10 +1219,10 @@ country_event = {
 			remove_ideas_with_trait = security_minister
 		}
 		add_ideas = {
-			CAN_john_diefenbaker_hog
-			CAN_donald_matheson_sutherland_for
-			CAN_charles_cahan_eco
-			CAN_arthur_meighen_sec
+			CAN_Robert_Manion_hog_sco
+			CAN_Sidney_Earle_Smith_for_sco
+			CAN_Stephen_Leacock_eco_sco
+			CAN_Gordon_Graydon_sec_sco
 		}
 		add_stability = 0.01
 		add_popularity = { ideology = social_conservative popularity = 0.2 }
@@ -1260,10 +1260,10 @@ country_event = {
 			remove_ideas_with_trait = security_minister
 		}
 		add_ideas = {
-			CAN_wl_mackenzie_king_hog
-			CAN_leo_richer_lafleche_for
-			CAN_cd_howe_eco
-			CAN_ernest_lapointe_sec
+			CAN_William_Lyon_Mackenzie_King_hog_mli
+			CAN_George_W_Stephens_for_mli
+			CAN_CD_Howe_eco_mli
+			CAN_Ernest_Lapointe_sec_mli
 		}
 		add_stability = -0.01
 		add_popularity = { ideology = social_liberal popularity = 0.2 }
@@ -1285,10 +1285,10 @@ country_event = {
 			remove_ideas_with_trait = security_minister
 		}
 		add_ideas = {
-			CAN_jh_blackmore_hog
-			CAN_edward_joseph_garland_for
-			CAN_solon_earl_low_eco
-			CAN_wallace_warren_cross_sec
+			CAN_Henry_Herbert_Stevens_hog_npo
+			CAN_Adrien_Arcand_for_npo
+			CAN_John_Ross_Taylor_eco_npo
+			CAN_Chuck_Crate_sec_npo
 		}
 		add_stability = 0.005
 		add_popularity = { ideology = national_populist popularity = 0.2 }
@@ -1310,10 +1310,10 @@ country_event = {
 			remove_ideas_with_trait = security_minister
 		}
 		add_ideas = {
-			CAN_tommy_douglas_hog
-			CAN_humphrey_mitchell_for
-			CAN_humphrey_mitchell_eco
-			CAN_major_james_coldwell_sec
+			CAN_JS_Woodsworth_hog_sde
+			CAN_David_Lewis_for_sde
+			CAN_Hazen_Argue_eco_sde
+			CAN_Clarence_Gillis_sec_sde
 		}
 		add_stability = 0.005
 		add_popularity = { ideology = social_democrat popularity = 0.2 }
@@ -1332,10 +1332,10 @@ country_event = {
 			remove_ideas_with_trait = security_minister
 		}
 		add_ideas = {
-			CAN_wl_mackenzie_king_hog
-			CAN_leo_richer_lafleche_for
-			CAN_cd_howe_eco
-			CAN_ernest_lapointe_sec
+			CAN_William_Lyon_Mackenzie_King_hog_mli
+			CAN_George_W_Stephens_for_mli
+			CAN_CD_Howe_eco_mli
+			CAN_Ernest_Lapointe_sec_mli
 		}
 		add_stability = 0.01
 		add_popularity = { ideology = market_liberal popularity = 0.2 }
@@ -1354,10 +1354,10 @@ country_event = {
 			remove_ideas_with_trait = security_minister
 		}
 		add_ideas = {
-			CAN_john_diefenbaker_hog
-			CAN_donald_matheson_sutherland_for
-			CAN_charles_cahan_eco
-			CAN_arthur_meighen_sec
+			CAN_RB_Bennett_hog_sco
+			CAN_Robert_Manion_for_sco
+			CAN_Stephen_Leacock_eco_sco
+			CAN_John_Diefenbaker_sec_sco
 		}
 		add_stability = 0.01
 		add_popularity = { ideology = social_conservative popularity = 0.2 }
@@ -2607,10 +2607,10 @@ country_event = {
 		name = "The Progressives join under the Liberals in a Coalition!"
 		add_stability = -0.1
 		add_ideas = {
-			CAN_wl_mackenzie_king_hog
-			CAN_leo_richer_lafleche_for
-			CAN_cd_howe_eco
-			CAN_ernest_lapointe_sec
+			CAN_William_Lyon_Mackenzie_King_hog_mli
+			CAN_George_W_Stephens_for_mli
+			CAN_CD_Howe_eco_mli
+			CAN_Ernest_Lapointe_sec_mli
 		}
 		set_global_flag = CAN_LIBERAL
 		set_politics = {
@@ -2666,10 +2666,10 @@ country_event = {
 		add_popularity = { ideology = collectivist popularity = 0.03 }
 		add_popularity = { ideology = vanguardist popularity = 0.03 }
 		add_ideas = {
-			CAN_tommy_douglas_hog
-			CAN_humphrey_mitchell_for
-			CAN_humphrey_mitchell_eco
-			CAN_major_james_coldwell_sec
+			CAN_JS_Woodsworth_hog_sde
+			CAN_David_Lewis_for_sde
+			CAN_Hazen_Argue_eco_sde
+			CAN_Clarence_Gillis_sec_sde
 		}
 		set_politics = {
 			ruling_party = social_democrat
@@ -2684,10 +2684,10 @@ country_event = {
 		add_popularity = { ideology = collectivist popularity = 0.06 }
 		add_popularity = { ideology = vanguardist popularity = 0.06 }
 		add_ideas = {
-			CAN_tommy_douglas_hog
-			CAN_humphrey_mitchell_for
-			CAN_humphrey_mitchell_eco
-			CAN_major_james_coldwell_sec
+			CAN_JS_Woodsworth_hog_sde
+			CAN_David_Lewis_for_sde
+			CAN_Hazen_Argue_eco_sde
+			CAN_Clarence_Gillis_sec_sde
 		}
 		set_politics = {
 			ruling_party = social_democrat
@@ -2713,10 +2713,10 @@ country_event = {
 		name = "The heir of Laurier has reclaimed his birthright!"
 		set_global_flag = CAN_LIBERAL
 		add_ideas = {
-			CAN_wl_mackenzie_king_hog
-			CAN_leo_richer_lafleche_for
-			CAN_cd_howe_eco
-			CAN_ernest_lapointe_sec
+			CAN_William_Lyon_Mackenzie_King_hog_mli
+			CAN_George_W_Stephens_for_mli
+			CAN_CD_Howe_eco_mli
+			CAN_Ernest_Lapointe_sec_mli
 		}
 		set_politics = {
 			ruling_party = market_liberal
@@ -2845,8 +2845,8 @@ country_event = {
 		}
 		
 		add_ideas = {
-			CAN_john_buchan_hog
-			CAN_donald_matheson_sutherland_for
+			CAN_Howard_Charles_Green_for_pau
+			CAN_Robert_Manion_for_sco
 			CAN_william_aberhart_eco
 			CAN_adrien_arcand_sec
 		}
@@ -2884,10 +2884,10 @@ country_event = {
 		name = "Wait, we won?"
 		set_global_flag = CAN_SOCRED
 		add_ideas = {
-			CAN_jh_blackmore_hog
-			CAN_edward_joseph_garland_for
-			CAN_solon_earl_low_eco
-			CAN_wallace_warren_cross_sec
+			CAN_Henry_Herbert_Stevens_hog_npo
+			CAN_Adrien_Arcand_for_npo
+			CAN_John_Ross_Taylor_eco_npo
+			CAN_Chuck_Crate_sec_npo
 		}
 		set_politics = {
 			ruling_party = national_populist
@@ -2922,10 +2922,10 @@ country_event = {
 		}
 		add_stability = 0.05
 		add_ideas = {
-			CAN_john_buchan_hog
-			CAN_donald_matheson_sutherland_for
-			CAN_william_aberhart_eco
-			CAN_adrien_arcand_sec
+			CAN_Howard_Charles_Green_for_pau
+			CAN_Robert_Manion_for_sco
+			CAN_Lloyd_Samuel_Breadner_eco_pau
+			CAN_Andrew_McNaughton_sec_pau
 		}
 		set_politics = {
 			ruling_party = paternal_autocrat
@@ -2970,10 +2970,10 @@ country_event = {
 			traits = {	}
 		}
 		add_ideas = { #Need to make Ministers for the Military Junta
-			CAN_john_buchan_hog
-			CAN_donald_matheson_sutherland_for
-			CAN_william_aberhart_eco
-			CAN_adrien_arcand_sec
+			CAN_Howard_Charles_Green_for_pau
+			CAN_Robert_Manion_for_sco
+			CAN_Lloyd_Samuel_Breadner_eco_pau
+			CAN_Andrew_McNaughton_sec_pau
 		}
 		set_politics = {
 			ruling_party = authoritarian_democrat

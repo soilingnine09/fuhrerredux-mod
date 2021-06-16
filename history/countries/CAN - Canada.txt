@@ -82,10 +82,10 @@ add_ideas = {
 	CAN_anglo_french_tension
 	CAN_east_west_divide
 	ENG_statute_autonomy
-	CAN_rb_bennett_hog
-	CAN_lester_b_pearson_for
-	CAN_edgar_nelson_rhodes_eco
-	CAN_hugh_guthrie_sec
+	CAN_RB_Bennett_hog_sco
+	CAN_Sidney_Earle_Smith_for_sco
+	CAN_Stephen_Leacock_eco_sco
+	CAN_John_Diefenbaker_sec_sco
 	constitutional_monarchy
 }
 

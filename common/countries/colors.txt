@@ -1086,8 +1086,8 @@ CLB = {
 	color_ui = rgb { 60 59 110 }
 }
 CAS = {
-	color = rgb { 178 34 52 }
-	color_ui = rgb { 178 34 52 }
+	color = rgb { 1 121 111 }
+	color_ui = rgb { 1 121 111 }
 }
 RBL = {
 	color = rgb { 142 142 128 }
