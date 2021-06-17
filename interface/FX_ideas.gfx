@@ -8,6 +8,10 @@ spriteTypes = {
         name = "GFX_idea_generic_research_reduction"
         texturefile = "gfx/interface/ideas/ideas/generic_research_reduction.tga"
     }
+    spriteType = {
+        name = "GFX_idea_generic_socialist_research"
+        texturefile = "gfx/interface/ideas/ideas/generic_socialist_research.tga"
+    }
 
     spriteType = {
         name = "GFX_idea_IRE_flag"

@@ -23,7 +23,7 @@ ideas = {
         }
         PHI_marxist_professors = {
             allowed = { is_a_filipino_tag = yes }
-            picture = generic_collectivism_rising
+            picture = generic_socialist_research
             modifier = {
                 political_power_cost = 0.15
                 research_speed_factor = 0.2
