@@ -60,7 +60,7 @@ ideas = {
         }
         PHI_public_works_department = {
             allowed = { is_a_filipino_tag = yes }
-            picture = generic_build_infrastructure
+            picture = PHI_public_works
             modifier = {
                 production_speed_buildings_factor = 0.2
 				industry_repair_factor = 0.2
@@ -228,7 +228,6 @@ ideas = {
         }
         PHI_general_staff = {
             allowed = { is_a_filipino_tag = yes }
-            picture = general_staff
             modifier = {
                 army_org_factor = 0.1
                 planning_speed = 0.05
@@ -286,7 +285,6 @@ ideas = {
         }
         PHI_nationalism = {
             allowed = { is_a_filipino_tag = yes }
-            picture = ast_abandon_the_westminster_system_fascism
             modifier = {
                 surrender_limit = 0.15
                 conscription = 0.1
@@ -339,7 +337,7 @@ ideas = {
         }
         PHI_for_the_country = {
             allowed = { is_a_filipino_tag = yes }
-            picture = triumphant_will
+            picture = PHI_nationalism
             modifier = {
                 conscription = 0.1
                 army_core_attack_factor = 0.1
@@ -496,7 +494,6 @@ ideas = {
         }
         PHI_german_refugees = {
             allowed = { is_a_filipino_tag = yes }
-            picture = prc_low_popular_support3
             modifier = {
                 consumer_goods_factor = 0.02
                 research_speed_factor = 0.05

@@ -30,7 +30,7 @@ ideas = {
 
 		SWI_the_swiss_banking_act = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWI_the_swiss_banking_act"}
-			picture = HUN_treaty_of_triannons
+			picture = SWI_swiss_banks
 			modifier = {
 				political_power_factor = -0.10
 				stability_factor = 0.05
@@ -76,7 +76,7 @@ ideas = {
 
 		SWI_treaty_of_annecy = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWI_treaty_of_annecy"}
-			picture = HUN_treaty_of_triannon
+			picture = generic_french_swiss_treaty
 			modifier = {
 				consumer_goods_factor = -0.05
 			}
@@ -89,7 +89,7 @@ ideas = {
 
 		SWI_lightened_treaty_of_annecy = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWI_lightened_treaty_of_annecy"}
-			picture = HUN_treaty_of_triannon
+			picture = generic_french_swiss_treaty
 			modifier = {
 				consumer_goods_factor = -0.05
 			}
@@ -102,7 +102,7 @@ ideas = {
 
 		SWI_treaty_of_munich = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWI_treaty_of_munich"}
-			picture = HUN_treaty_of_triannon
+			picture = generic_german_swiss_treaty
 			modifier = {
 				consumer_goods_factor = -0.05
 			}
@@ -115,7 +115,7 @@ ideas = {
 
 		SWI_lightened_treaty_of_munich = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWI_lightened_treaty_of_munich"}
-			picture = HUN_treaty_of_triannon
+			picture = generic_german_swiss_treaty
 			modifier = {
 				consumer_goods_factor = -0.05
 			}
@@ -317,7 +317,7 @@ ideas = {
 
 		SDPS_banking_reforms = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SDPS_banking_reforms"}
-      picture = HUN_treaty_of_triannon
+      picture = SWI_bank_reform
       modifier = {
         stability_factor = 0.05
         political_power_gain = -0.05
@@ -326,7 +326,7 @@ ideas = {
 
 		SUP_banking_reforms = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SUP_banking_reforms"}
-      picture = HUN_treaty_of_triannon
+      picture = SWI_bank_reform
       modifier = {
         stability_factor = 0.05
         consumer_goods_factor = 0.05

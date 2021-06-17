@@ -1867,7 +1867,7 @@ shared_focus = {
 # Reconciliation with the Entente
 shared_focus = {
 	id = USA_reconciliation_with_the_entente
-	icon = GFX_goal_ENG_entente
+	icon = GFX_goal_USA_meet_with_entente
 	x = -3
 	y = 1
 	cost = 6

@@ -379,7 +379,7 @@ focus_tree = {
 
 		focus = {
 		id = BOL_spread_the_revolution_to_chile
-		icon = GFX_goal_chile_war
+		icon = GFX_goal_generic_attack_chile
 		prerequisite = { focus = BOL_support_the_workers_of_chile }
 		available = { 
 			AND = {
@@ -447,7 +447,7 @@ focus_tree = {
 
 		focus = {
 		id = BOL_spread_the_revolution_to_peru
-		icon = GFX_goal_flag_peru_wargoal
+		icon = GFX_goal_generic_attack_peru
 		prerequisite = { focus = BOL_support_the_workers_of_peru }
 		available = { 
 			AND = {
@@ -480,7 +480,7 @@ focus_tree = {
 
 		focus = {
 		id = BOL_bring_chaco_back_to_the_workers
-		icon = GFX_goal_paraguay_war
+		icon = GFX_goal_generic_attack_paraguay
 		prerequisite = { focus = BOL_from_bolivia_to_the_world }
  		ai_will_do = { factor = 45 } 
 		available = { 
@@ -541,7 +541,7 @@ focus_tree = {
 
 		focus = {
 		id = BOL_pact_with_argentina
-		icon = GFX_goal_tripartite_pact
+		icon = GFX_goal_ARG_bolivia_deal
 		prerequisite = { focus = BOL_compromise_with_argentina }
  		ai_will_do = { factor = 50 } 
 		available = {
@@ -568,7 +568,7 @@ focus_tree = {
 
 		focus = {
 		id = BOL_recover_tarija_for_the_workers
-		icon = GFX_goal_argie_wargoal
+		icon = GFX_goal_generic_attack_argentina
 		prerequisite = { focus = BOL_from_bolivia_to_the_world }
  		mutually_exclusive = { focus = BOL_compromise_with_argentina }
 		will_lead_to_war_with = ARG
@@ -1219,7 +1219,7 @@ focus_tree = {
 	}
 		focus = { 
 		id = BOL_war_medicine
-		icon = GFX_goal_hospital
+		icon = GFX_goal_generic_medical
 		prerequisite = { focus = BOL_motorized_divisions }
 		prerequisite = { focus = BOL_rebuilding_our_infantry }
 		prerequisite = { focus = BOL_armored_squadrons }
@@ -1978,7 +1978,7 @@ focus = {
 
 focus = {
 		id = BOL_recover_the_coast
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		icon = GFX_goal_generic_attack_chile
 		prerequisite = { focus = BOL_the_endemic_coast }
 		x = 30
 		y = 9
@@ -2029,7 +2029,7 @@ focus = {
 	}
 focus = {
 		id = BOL_second_war_for_chaco
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		icon = GFX_goal_generic_attack_paraguay
 		prerequisite = { focus = BOL_recovering_our_continent }
 		x = 32
 		y = 8
@@ -2061,7 +2061,7 @@ focus = {
 	
 focus = {
 		id = BOL_the_imperial_territories
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_goal_generic_attack_bolivia
 		prerequisite = { focus = BOL_recovering_our_continent }
 		x = 34
 		y = 8
@@ -2085,7 +2085,7 @@ focus = {
 
 focus = {
 		id = BOL_unite_the_quechua
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		icon = GFX_goal_generic_attack_peru
 		prerequisite = { focus = BOL_the_imperial_territories }
 		x = 34
 		y = 9
@@ -2141,7 +2141,7 @@ focus = {
 	}
 		focus = {
 		id = BOL_retake_tarija
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		icon = GFX_goal_generic_attack_argentina
 		prerequisite = { focus = BOL_second_war_for_chaco }
  		ai_will_do = { factor = 10 }
 		available = {

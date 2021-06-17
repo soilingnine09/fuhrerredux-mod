@@ -7038,7 +7038,7 @@
 	
 	shared_focus = {
 		id = ENG_dip_siam
-		icon = GFX_goal_continuous_suppression
+		icon = GFX_goal_generic_attack_siam
 		available = {
 			SIA = { 
 				exists = yes 

@@ -9,6 +9,54 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/generic_attack_german_reich.tga"
 	}
 	spriteType = {
+		name = "GFX_goal_generic_attack_arabia"
+		texturefile = "gfx/interface/goals/generic_attack_arabia.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_attack_argentina"
+		texturefile = "gfx/interface/goals/generic_attack_argentina.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_attack_bolivia"
+		texturefile = "gfx/interface/goals/generic_attack_bolivia.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_attack_chile"
+		texturefile = "gfx/interface/goals/generic_attack_chile.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_attack_iraq"
+		texturefile = "gfx/interface/goals/generic_attack_iraq.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_attack_peru"
+		texturefile = "gfx/interface/goals/generic_attack_peru.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_attack_siam"
+		texturefile = "gfx/interface/goals/generic_attack_siam.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_attack_paraguay"
+		texturefile = "gfx/interface/goals/generic_attack_paraguay.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_attack_uruguay"
+		texturefile = "gfx/interface/goals/generic_attack_uruguay.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_attack_ecuador"
+		texturefile = "gfx/interface/goals/generic_attack_ecuador.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_attack_colombia"
+		texturefile = "gfx/interface/goals/generic_attack_colombia.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_attack_bohemia"
+		texturefile = "gfx/interface/goals/generic_attack_bohemia.tga"
+	}
+	spriteType = {
 		name = "GFX_goal_generic_lightbulb"
 		texturefile = "gfx/interface/goals/generic_lightbulb.tga"
 	}
@@ -205,8 +253,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/USA_protection_for_central_america.tga"
 	}
 	spriteType = {
-		name = "GFX_goal_ENG_entente"
-		texturefile = "gfx/interface/goals/ENG_entente.tga"
+		name = "GFX_goal_USA_meet_with_entente"
+		texturefile = "gfx/interface/goals/USA_meet_with_entente.tga"
 	}
 	spriteType = {
 		name = "GFX_goal_RUS_army"
@@ -235,5 +283,29 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_goal_NFA_restauration"
 		texturefile = "gfx/interface/goals/NFA_restauration.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_ARG_bolivia_deal"
+		texturefile = "gfx/interface/goals/ARG_bolivia_deal.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_ARG_chile_deal"
+		texturefile = "gfx/interface/goals/ARG_chile_deal.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_ARG_paraguay_deal"
+		texturefile = "gfx/interface/goals/ARG_paraguay_deal.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_ARG_peru_deal"
+		texturefile = "gfx/interface/goals/ARG_peru_deal.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_ARG_uruguay_deal"
+		texturefile = "gfx/interface/goals/ARG_uruguay_deal.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_PRU_chile_deal"
+		texturefile = "gfx/interface/goals/PRU_chile_deal.tga"
 	}
 }

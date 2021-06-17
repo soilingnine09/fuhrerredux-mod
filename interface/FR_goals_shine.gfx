@@ -4967,7 +4967,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_chile_war_shine"
+		name = "GFX_goal_generic_attack_chile_shine"
 		texturefile = "gfx/interface/goals/goal_chile_war.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -5095,7 +5095,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_flag_bolivia_war_shine"
+		name = "GFX_goal_generic_attack_bolivia_shine"
 		texturefile = "gfx/interface/goals/goal_flag_bolivia_war.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -5287,7 +5287,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_argie_wargoal_shine"
+		name = "GFX_goal_generic_attack_argentina_shine"
 		texturefile = "gfx/interface/goals/goal_argie_wargoal.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -5415,7 +5415,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_flag_peru_wargoal_shine"
+		name = "GFX_goal_generic_attack_peru_shine"
 		texturefile = "gfx/interface/goals/goal_flag_peru_wargoal.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {

@@ -226,7 +226,7 @@ ideas = {
 		
 		GER_naval_treaty = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GER_naval_treaty"}
-			picture = GER_naval_restrictions
+			picture = GER_bremen_accord
 			cancel = {
 				OR = {
 					has_war_with = ENG

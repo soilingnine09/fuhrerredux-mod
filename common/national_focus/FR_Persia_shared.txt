@@ -2314,7 +2314,7 @@
 	}
 	shared_focus = {
 		id = PER_claim_mesopotamia
-		icon = GFX_goal_generic_major_war
+		icon = GFX_goal_generic_attack_iraq
 		cost = 10
 		prerequisite = {
 			focus = PER_persian_irridentism
@@ -2336,7 +2336,7 @@
 	}
 	shared_focus = {
 		id = PER_contest_arabian_influence
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_goal_generic_attack_arabia
 		cost = 10
 		prerequisite = {
 			focus = PER_claim_mesopotamia
@@ -2469,7 +2469,7 @@
 	}
 	shared_focus = {
 		id = PER_reclaim_northern_azerbaijan
-		icon = GFX_goal_generic_major_war
+		icon = GFX_goal_Cutdown_Azerbaijan
 		cost = 10
 		prerequisite = {
 			focus = PER_persian_irridentism
@@ -2491,7 +2491,7 @@
 	}
 	shared_focus = {
 		id = PER_war_with_armenia
-		icon = GFX_goal_generic_military_deal
+		icon = GFX_goal_Cutdown_Armenia
 		cost = 10
 		prerequisite = {
 			focus = PER_reclaim_northern_azerbaijan

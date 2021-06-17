@@ -2067,7 +2067,7 @@ focus = {
 
 focus = {
 		id = CHL_retake_tacna
-		icon = GFX_goal_flag_peru_wargoal
+		icon = GFX_goal_generic_attack_peru
 		prerequisite = { focus = CHL_reclaim_tacna }
 		x = 43
 		y = 2
@@ -2141,7 +2141,7 @@ focus = {
 
 focus = {
 		id = CHL_retake_the_patagonia
-		icon = GFX_goal_argie_wargoal
+		icon = GFX_goal_generic_attack_argentina
 		prerequisite = { focus = CHL_reclaim_the_patagonia }
 		x = 45
 		y = 2
@@ -2555,7 +2555,7 @@ focus = {
 
 focus = {
 		id = CHL_intervene_in_bolivia
-		icon = GFX_goal_flag_bolivia_collie
+		icon = GFX_goal_generic_attack_bolivia
 		prerequisite = { focus = CHL_denounce_socialism }
 		will_lead_to_war_with = BOL
 		
@@ -2593,7 +2593,7 @@ focus = {
 
 focus = {
 		id = CHL_intervene_in_argentina
-		icon = GFX_goal_argie_collie
+		icon = GFX_goal_generic_attack_argentina
 		prerequisite = { focus = CHL_denounce_socialism }
 		will_lead_to_war_with = ARG
 		

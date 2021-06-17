@@ -682,7 +682,7 @@ spriteTypes = {
 		texturefile= "gfx/interface/goals/goal_uruguay_war.dds"
 	}
 	SpriteType = {
-		name = "GFX_goal_chile_war"
+		name = "GFX_goal_generic_attack_chile"
 		texturefile= "gfx/interface/goals/goal_chile_war.dds"
 	}
 	SpriteType = {
@@ -698,7 +698,7 @@ spriteTypes = {
 		texturefile= "gfx/interface/goals/goal_flag_brazil_collie.dds"
 	}
 	SpriteType = {
-		name = "GFX_goal_flag_bolivia_war"
+		name = "GFX_goal_generic_attack_bolivia"
 		texturefile= "gfx/interface/goals/goal_flag_bolivia_war.dds"
 	}
 	SpriteType = {
@@ -722,7 +722,7 @@ spriteTypes = {
 		texturefile= "gfx/interface/goals/goal_bra_collie_pact.dds"
 	}
 	SpriteType = {
-		name = "GFX_goal_argie_wargoal"
+		name = "GFX_goal_generic_attack_argentina"
 		texturefile= "gfx/interface/goals/goal_argie_wargoal.dds"
 	}
 	SpriteType = {
@@ -738,7 +738,7 @@ spriteTypes = {
 		texturefile= "gfx/interface/goals/goal_flag_peru_collie.dds"
 	}
 	SpriteType = {
-		name = "GFX_goal_flag_peru_wargoal"
+		name = "GFX_goal_generic_attack_peru"
 		texturefile= "gfx/interface/goals/goal_flag_peru_wargoal.dds"
 	}
 	SpriteType = {

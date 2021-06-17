@@ -240,7 +240,7 @@ focus_tree = {
 
 		focus = { 
 		id = COL_revancha_en_peru
-		icon = GFX_goal_flag_peru_wargoal
+		icon = GFX_goal_generic_attack_peru
 
  		ai_will_do = { factor = 100 } 
  		prerequisite = { focus = COL_preparing_for_liberation }
