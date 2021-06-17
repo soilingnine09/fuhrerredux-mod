@@ -30,7 +30,7 @@ ideas = {
 
 		SWI_the_swiss_banking_act = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWI_the_swiss_banking_act"}
-			picture = generic_constitutional_guarantees
+			picture = HUN_treaty_of_triannons
 			modifier = {
 				political_power_factor = -0.10
 				stability_factor = 0.05
@@ -59,7 +59,7 @@ ideas = {
 
 		SWI_continuing_economic_planning = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWI_continuing_economic_planning"}
-			picture = generic_constitutional_guarantee
+			picture = HUN_treaty_of_triannon
 			modifier = {
 				consumer_goods_factor = -0.10
 			}
@@ -67,7 +67,7 @@ ideas = {
 
 		SWI_weapons_dividends = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWI_weapons_dividends"}
-			picture = generic_constitutional_guarantee
+			picture = HUN_treaty_of_triannon
 			modifier = {
 				consumer_goods_factor = -0.20
         political_power_factor = 0.05
@@ -76,7 +76,7 @@ ideas = {
 
 		SWI_treaty_of_annecy = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWI_treaty_of_annecy"}
-			picture = generic_constitutional_guarantee
+			picture = HUN_treaty_of_triannon
 			modifier = {
 				consumer_goods_factor = -0.05
 			}
@@ -89,7 +89,7 @@ ideas = {
 
 		SWI_lightened_treaty_of_annecy = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWI_lightened_treaty_of_annecy"}
-			picture = generic_constitutional_guarantee
+			picture = HUN_treaty_of_triannon
 			modifier = {
 				consumer_goods_factor = -0.05
 			}
@@ -102,7 +102,7 @@ ideas = {
 
 		SWI_treaty_of_munich = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWI_treaty_of_munich"}
-			picture = generic_constitutional_guarantee
+			picture = HUN_treaty_of_triannon
 			modifier = {
 				consumer_goods_factor = -0.05
 			}
@@ -115,7 +115,7 @@ ideas = {
 
 		SWI_lightened_treaty_of_munich = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWI_lightened_treaty_of_munich"}
-			picture = generic_constitutional_guarantee
+			picture = HUN_treaty_of_triannon
 			modifier = {
 				consumer_goods_factor = -0.05
 			}
@@ -317,7 +317,7 @@ ideas = {
 
 		SDPS_banking_reforms = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SDPS_banking_reforms"}
-      picture = generic_constitutional_guarantee
+      picture = HUN_treaty_of_triannon
       modifier = {
         stability_factor = 0.05
         political_power_gain = -0.05
@@ -326,7 +326,7 @@ ideas = {
 
 		SUP_banking_reforms = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SUP_banking_reforms"}
-      picture = generic_constitutional_guarantee
+      picture = HUN_treaty_of_triannon
       modifier = {
         stability_factor = 0.05
         consumer_goods_factor = 0.05
@@ -335,7 +335,7 @@ ideas = {
 
 		SUP_christian_education = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SUP_christian_education"}
-      picture = generic_constitutional_guarantee
+      picture = HUN_treaty_of_triannon
       modifier = {
         drift_defence_factor = 0.10
         stability_factor = 0.05
@@ -345,7 +345,7 @@ ideas = {
 
 		SDPS_weapons_within_switzerland = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SDPS_weapons_within_switzerland"}
-      picture = generic_constitutional_guarantee
+      picture = HUN_treaty_of_triannon
       modifier = {
         army_attack_factor = 0.05
         }
@@ -358,7 +358,7 @@ ideas = {
 
 		SDPS_socialist_infrastructure_plan_idea = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SDPS_socialist_infrastructure_plan_idea"}
-      picture = generic_constitutional_guarantee
+      picture = HUN_treaty_of_triannon
       modifier = {
         production_speed_infrastructure_factor = 0.80
         }
@@ -366,7 +366,7 @@ ideas = {
 
 		SDPS_defense_planning = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SDPS_defense_planning"}
-      picture = generic_constitutional_guarantee
+      picture = HUN_treaty_of_triannon
       modifier = {
         production_speed_bunker_factor = 0.10
         army_core_defence_factor = 0.10
@@ -375,7 +375,7 @@ ideas = {
 
 		SUP_defense_planning = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SUP_defense_planning"}
-      picture = generic_constitutional_guarantee
+      picture = HUN_treaty_of_triannon
       modifier = {
         production_speed_bunker_factor = 0.25
         army_core_defence_factor = 0.05
@@ -385,7 +385,7 @@ ideas = {
 
 		SDPS_weapons_manufactories_on_state_budgets = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SDPS_weapons_manufactories_on_state_budgets"}
-      picture = generic_constitutional_guarantee
+      picture = HUN_treaty_of_triannon
       modifier = {
         consumer_goods_factor = 0.10
         industrial_capacity_factory = 0.10
@@ -395,7 +395,7 @@ ideas = {
 
 		SUP_health_subsidies = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SUP_health_subsidies"}
-      picture = generic_constitutional_guarantee
+      picture = HUN_treaty_of_triannon
       modifier = {
         consumer_goods_factor = 0.05
         monthly_population = 0.10
@@ -405,7 +405,7 @@ ideas = {
 
 		SUP_school_reform = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SUP_school_reform"}
-      picture = generic_constitutional_guarantee
+      picture = HUN_treaty_of_triannon
       modifier = {
 				research_speed_factor = 0.04
         }
@@ -413,7 +413,7 @@ ideas = {
 
 		SUP_progressive_infrastructure_hard = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SUP_progressive_infrastructure_hard"}
-      picture = generic_constitutional_guarantee
+      picture = HUN_treaty_of_triannon
       modifier = {
         production_speed_infrastructure_factor = 0.35
         }
@@ -421,7 +421,7 @@ ideas = {
 
 		SUP_progressive_infrastructure_soft = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SUP_progressive_infrastructure_soft"}
-      picture = generic_constitutional_guarantee
+      picture = HUN_treaty_of_triannon
       modifier = {
         consumer_goods_factor = 0.03
         production_speed_infrastructure_factor = 0.20
@@ -430,7 +430,7 @@ ideas = {
 
 		SWI_FVP_gains_momentum = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWI_FVP_gains_momentum"}
-      picture = generic_constitutional_guarantee
+      picture = HUN_treaty_of_triannon
       modifier = {
         paternal_autocrat_drift = 0.05
         political_power_factor = -0.10
@@ -439,7 +439,7 @@ ideas = {
 
 		SWI_DNDAP_gains_momentum = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWI_DNDAP_gains_momentum"}
-      picture = generic_constitutional_guarantee
+      picture = HUN_treaty_of_triannon
       modifier = {
         valkist_drift = 0.03
         political_power_factor = -0.10
@@ -448,7 +448,7 @@ ideas = {
 
 		SWI_VWF_gains_momentum = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWI_VWF_gains_momentum"}
-      picture = generic_constitutional_guarantee
+      picture = HUN_treaty_of_triannon
       modifier = {
         valkist_drift = 0.03
         political_power_factor = -0.10
