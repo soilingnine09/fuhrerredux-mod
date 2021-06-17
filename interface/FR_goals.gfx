@@ -478,10 +478,6 @@ spriteTypes = {
 		texturefile= "gfx/interface/goals/goal_bcw_map.tga"
 	}
 	SpriteType = {
-		name = "GFX_goal_brazil_flagg"
-		texturefile= "gfx/interface/goals/goal_brazil_flagg.tga"
-	}
-	SpriteType = {
 		name = "GFX_goal_democracy_brazil"
 		texturefile= "gfx/interface/goals/goal_democracy_brazil.tga"
 	}

@@ -348,6 +348,7 @@ country_event = {
             tag = BAL
             tag = INC
             tag = IND
+            tag = RAJ
             has_country_flag = BAL_OCCUPIED
             country_exists = BAL
         }
@@ -640,6 +641,7 @@ country_event = {
             tag = BIH
             tag = IND
             tag = INC
+            tag = RAJ
             has_country_flag = BIH_OCCUPIED
             country_exists = BIH
         }
@@ -3228,6 +3230,7 @@ country_event = {
             tag = HYD
             tag = INC
             tag = IND
+            tag = RAJ
             has_country_flag = HYD_OCCUPIED
             country_exists = HYD
         }
@@ -3310,6 +3313,7 @@ country_event = {
     trigger = {
         NOT = {
             tag = IND
+            tag = RAJ
             has_country_flag = IND_OCCUPIED
             country_exists = IND
         }
@@ -3744,6 +3748,7 @@ country_event = {
             tag = KAS
             tag = INC
             tag = IND
+            tag = RAJ
             has_country_flag = KAS_OCCUPIED
             country_exists = KAS
         }
@@ -4415,6 +4420,7 @@ country_event = {
             tag = MDR
             tag = IND
             tag = INC
+            tag = RAJ
             has_country_flag = MDR_OCCUPIED
             country_exists = MDR
         }
@@ -5050,6 +5056,7 @@ country_event = {
             tag = ORI
             tag = IND
             tag = INC
+            tag = RAJ
             has_country_flag = ORI_OCCUPIED
             country_exists = ORI
         }
@@ -5558,6 +5565,7 @@ country_event = {
             tag = PUN
             tag = IND
             tag = INC
+            tag = RAJ
             has_country_flag = PUN_OCCUPIED
             country_exists = PUN
         }
@@ -5735,6 +5743,7 @@ country_event = {
             tag = RJH
             tag = IND
             tag = INC
+            tag = RAJ
             has_country_flag = RJH_OCCUPIED
             country_exists = RJH
         }
@@ -6993,6 +7002,7 @@ country_event = {
             tag = TRV
             tag = IND
             tag = INC
+            tag = RAJ
             has_country_flag = TRV_OCCUPIED
             country_exists = TRV
         }

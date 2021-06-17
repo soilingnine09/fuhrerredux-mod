@@ -85,7 +85,7 @@ ideas = {
 		}
 		UKR_admin_reforms = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_admin_reforms"}
-			picture = generic_constitutional_guarantee
+			picture = HUN_treaty_of_triannon
 			modifier = {
 				political_power_gain = 0.05
 				#economy_cost_factor = 0.90 #The wiki says this is okay, but the error log says otherwise. -darknight 1342
@@ -100,7 +100,7 @@ ideas = {
 		}
 		UKR_admin_reforms2 = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_admin_reforms2"}
-			picture = generic_constitutional_guarantee
+			picture = HUN_treaty_of_triannon
 			modifier = {
 				political_power_gain = 0.3
 #				economy_cost_factor = 0.80 #invalid modifier, increased pp gain from 0.2 to 0.3 to compensate
@@ -108,14 +108,14 @@ ideas = {
 		}
 		UKR_black_sea_ger = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_black_sea_ger"}
-			picture = idea_hun_treaty_of_trianon
+			picture = hun_treaty_of_trianon
 			modifier = {
 				stability_factor = 0.02
 			}
 		}
 		UKR_culture = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_culture"}
-			picture = idea_generic_army_war_college
+			picture = generic_army_war_college
 			modifier = {
 				stability_factor = 0.05
 			}
@@ -129,14 +129,14 @@ ideas = {
 		}
 		UKR_secret_police = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_secret_police"}
-			picture = idea_ast_classify_aliens
+			picture = ast_classify_aliens
 			modifier = {
 				resistance_damage_to_garrison = -0.2
 			}
 		}
 		UKR_state_militarism = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_state_militarism"}
-			picture = idea_ast_volunteer_defence_corps
+			picture = ast_volunteer_defence_corps
 			modifier = {
 				conscription_factor = 0.05
 			}
@@ -150,14 +150,14 @@ ideas = {
 		}
 		UKR_big_corn = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_big_corn"}
-			picture = idea_generic_agrarian_reform
+			picture = generic_agrarian_society
 			modifier = {
 				stability_factor = 0.05
 			}
 		}
 		UKR_left_coop = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_left_coop"}
-			picture = idea_generic_deal_with_the_devil
+			picture = generic_deal_with_the_devil
 			modifier = {
 				political_power_gain = 0.03
 				libertarian_socialist_drift = 0.03
@@ -180,14 +180,14 @@ ideas = {
 		}
 		UKR_agriculture_boost = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_agriculture_boost"}
-			picture = idea_generic_agrarian_reform
+			picture = capital_outflow
 			modifier = {
 				consumer_goods_factor = -0.02
 			}
 		}
 		UKR_farm_money = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_farm_money"}
-			picture = idea_generic_agrarian_reform
+			picture = capital_outflow
 			modifier = {
 				stability_factor = 0.03
 				out_of_supply_factor = -0.03
@@ -257,7 +257,7 @@ ideas = {
 		}
 		UKR_economic_boost = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_economic_boost"}
-			picture = idea_generic_political_support
+			picture = ROM_king_carol_ii_hedonist
 			modifier = {
 				consumer_goods_factor = -0.01
 				production_speed_buildings_factor = 0.1
@@ -266,28 +266,28 @@ ideas = {
 		}
 		UKR_wartime_prep = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_wartime_prep"}
-			picture = idea_generic_political_support
+			picture = FRA_factory_strikes
 			modifier = {
 				consumer_goods_factor = -0.03
 			}
 		}
 		UKR_infrastructure_effort = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_infrastructure_effort"}
-			picture = idea_generic_build_infrastructure
+			picture = ast_all_in
 			modifier = {
 				production_speed_infrastructure_factor = 0.2
 			}
 		}
 		UKR_industrial_effort = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_industrial_effort"}
-			picture = idea_man_five_year_plan_industry
+			picture = generic_production_bonus
 			modifier = {
 				production_speed_industrial_complex_factor = 0.2
 			}
 		}
 		UKR_food_imports = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_food_imports"}
-			picture = idea_generic_agrarian_reform
+			picture = raj_risk_of_famine
 			modifier = {
 				consumer_goods_factor = 0.05
 				production_speed_infrastructure_factor = 0.3
