@@ -2923,7 +2923,7 @@ focus_tree = {
 
 	focus = {
 		id = ARG_socialism_across_the_andes
-		icon = GFX_goal_flag_chile_collie
+		icon = GFX_goal_generic_revolution_chile
  		ai_will_do = { factor = 15 } 
  		available = {
 			NOT = {
@@ -2975,7 +2975,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ARG_bolivian_friendship
-		icon = GFX_goal_bol_collie
+		icon = GFX_goal_bolivia
  		ai_will_do = { factor = 15 } 
  		available = {
  			BOL = {
@@ -3045,7 +3045,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ARG_invite_prusoc
-		icon = GFX_goal_peru_alliance
+		icon = GFX_goal_peru
  		ai_will_do = { factor = 15 } 
  		available = {
 			NOT = {
@@ -3083,7 +3083,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ARG_support_bolivian_socialists
-		icon = GFX_goal_flag_bolivia_collie
+		icon = GFX_goal_generic_revolution_bolivia
  		ai_will_do = { factor = 15 } 
  		available = {
 			NOT = {
@@ -3139,7 +3139,7 @@ focus_tree = {
 
 	focus = {
 		id = ARG_bolster_eastern_socialism
-		icon = GFX_goal_flag_uruguay_collie
+		icon = GFX_goal_generic_revolution_uruguay
  		ai_will_do = { factor = 15 } 
  		x =8
  		y =17
@@ -3190,7 +3190,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ARG_dissidents_in_paraguay
-		icon = GFX_goal_flag_paraguay_collie
+		icon = GFX_goal_generic_revolution_paraguay
  		ai_will_do = { factor = 15 } 
  		x =11
  		y =17

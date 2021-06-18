@@ -858,6 +858,7 @@ country_event = { # Last Minute Reforms Showing its Effects
 
     option = {
         name = usa.30.a
+        add_stability = 0.05
         add_popularity = {
             ideology = market_liberal
             popularity = 0.05

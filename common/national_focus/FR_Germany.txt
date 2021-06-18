@@ -1820,7 +1820,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_rhineland_referendum
-		icon = GFX_goal_GER_rhineland_referendum
+		icon = GFX_goal_RHI_referendum
 		will_lead_to_war_with = RHI
 		will_lead_to_war_with = FRA
 		x = -15
@@ -4228,7 +4228,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_polish_war
-		icon = GFX_Conquer_Poland
+		icon = GFX_goal_generic_attack_poland
 		x = 9
 		y = 16
 		cost = 5

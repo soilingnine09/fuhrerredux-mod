@@ -1,6 +1,30 @@
 spriteTypes = {
 
 	spriteType = {
+		name = "GFX_goal_generic_revolution_argentina"
+		texturefile = "gfx/interface/goals/generic_revolution_argentina.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_revolution_bolivia"
+		texturefile = "gfx/interface/goals/generic_revolution_bolivia.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_revolution_chile"
+		texturefile = "gfx/interface/goals/generic_revolution_chile.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_revolution_paraguay"
+		texturefile = "gfx/interface/goals/generic_revolution_paraguay.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_revolution_peru"
+		texturefile = "gfx/interface/goals/generic_revolution_peru.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_revolution_uruguay"
+		texturefile = "gfx/interface/goals/generic_revolution_uruguay.tga"
+	}
+	spriteType = {
 		name = "GFX_goal_generic_attack_usa"
 		texturefile = "gfx/interface/goals/generic_attack_usa.tga"
 	}
@@ -67,6 +91,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_goal_generic_attack_italy"
 		texturefile = "gfx/interface/goals/generic_attack_italy.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_attack_poland"
+		texturefile = "gfx/interface/goals/generic_attack_poland.tga"
 	}
 	spriteType = {
 		name = "GFX_goal_generic_lightbulb"

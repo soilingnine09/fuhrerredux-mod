@@ -359,7 +359,7 @@ focus_tree = {
 }
 		focus = {
 		id = BOL_support_the_workers_of_chile
-		icon = GFX_goal_flag_chile_collie
+		icon = GFX_goal_generic_revolution_chile
 		prerequisite = { focus = BOL_from_bolivia_to_the_world }
  		ai_will_do = { factor = 15 } 
 
@@ -419,7 +419,7 @@ focus_tree = {
 
 		focus = {
 		id = BOL_support_the_workers_of_peru
-		icon = GFX_goal_flag_peru_collie
+		icon = GFX_goal_generic_revolution_peru
 		prerequisite = { focus = BOL_from_bolivia_to_the_world }
  		ai_will_do = { factor = 15 } 
 
@@ -519,7 +519,7 @@ focus_tree = {
 
 		focus = {
 		id = BOL_compromise_with_argentina
-		icon = GFX_goal_argie_collie_deal
+		icon = GFX_goal_generic_revolution_argentina
 		prerequisite = { focus = BOL_from_bolivia_to_the_world }
  		ai_will_do = { factor = 50 } 
 		mutually_exclusive = { focus = BOL_recover_tarija_for_the_workers } 
