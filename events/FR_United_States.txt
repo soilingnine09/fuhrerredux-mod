@@ -353,14 +353,14 @@ country_event = { # US Troops Rebuke our Attack!
 	option = { # Attack the Troops!
 		name = usa.10.a
         ai_chance = {
-            base = 50
+            base = 60
         }
         USA = { country_event = usa.11 hours = 14 }
 	}
 	option = { # Show our plight to the masses
 		name = usa.10.b
         ai_chance = {
-            base = 50
+            base = 40
         }
 		add_manpower = 5000
 		MEX_increase_nationalism = yes
@@ -844,6 +844,22 @@ country_event = { # Democrats Bashed the Government for Economic Stimulus Bill
         name = usa.29.a
         add_popularity = {
             ideology = social_democrat
+            popularity = 0.05
+        }
+    }
+}
+
+country_event = { # Last Minute Reforms Showing its Effects
+    id = usa.30
+    title = usa.30.t
+    desc = usa.30.d
+    picture = GFX_report_event_usa_election_generic
+    is_triggered_only = yes
+
+    option = {
+        name = usa.30.a
+        add_popularity = {
+            ideology = market_liberal
             popularity = 0.05
         }
     }

@@ -57,6 +57,18 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/generic_attack_bohemia.tga"
 	}
 	spriteType = {
+		name = "GFX_goal_generic_attack_belgium"
+		texturefile = "gfx/interface/goals/generic_attack_belgium.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_attack_switzerland"
+		texturefile = "gfx/interface/goals/generic_attack_switzerland.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_attack_italy"
+		texturefile = "gfx/interface/goals/generic_attack_italy.tga"
+	}
+	spriteType = {
 		name = "GFX_goal_generic_lightbulb"
 		texturefile = "gfx/interface/goals/generic_lightbulb.tga"
 	}
@@ -307,5 +319,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_goal_PRU_chile_deal"
 		texturefile = "gfx/interface/goals/PRU_chile_deal.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_RHI_referendum"
+		texturefile = "gfx/interface/goals/RHI_referendum.tga"
 	}
 }

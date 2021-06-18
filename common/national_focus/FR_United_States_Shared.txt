@@ -144,6 +144,9 @@ shared_focus = {
 	relative_position_id = USA_increase_corporate_taxes
 	completion_reward = {
 		USA_decrease_effects_of_the_depression = yes
+		hidden_effect = {
+			country_event = { id = usa.30 days = 4 }
+		}
 	}
 }
 
