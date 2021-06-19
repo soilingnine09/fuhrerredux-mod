@@ -29,6 +29,10 @@ spriteTypes = {
         texturefile = "gfx/interface/ideas/ideas/IRE_flag.tga"
     }
     spriteType = {
+        name = "GFX_idea_MAN_warlord_loyalty"
+        texturefile = "gfx/interface/ideas/ideas/MAN_warlord_loyalty.tga"
+    }
+    spriteType = {
         name = "GFX_idea_MEX_reclaim"
         texturefile = "gfx/interface/ideas/ideas/MEX_reclaim.tga"
     }

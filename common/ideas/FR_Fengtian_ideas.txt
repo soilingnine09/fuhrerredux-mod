@@ -73,7 +73,7 @@ ideas = {
 
 		MAN_warlord_ubiquity = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_warlord_ubiquity"}
-			picture = beiyang_council
+			picture = MAN_warlord_loyalty
 
 
 			allowed = {

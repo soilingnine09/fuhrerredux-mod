@@ -97,6 +97,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/generic_attack_poland.tga"
 	}
 	spriteType = {
+		name = "GFX_goal_generic_attack_austria"
+		texturefile = "gfx/interface/goals/generic_attack_austria.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_attack_romania"
+		texturefile = "gfx/interface/goals/generic_attack_romania.tga"
+	}
+	spriteType = {
 		name = "GFX_goal_generic_lightbulb"
 		texturefile = "gfx/interface/goals/generic_lightbulb.tga"
 	}

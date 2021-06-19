@@ -3103,7 +3103,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_austrian_coup
-		icon = GFX_Mask_of_Valkisim
+		icon = GFX_goal_generic_attack_austria
 		x = -4
 		y = 15
 		cost = 5

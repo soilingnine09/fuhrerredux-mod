@@ -971,7 +971,7 @@ focus_tree = {
 
 	focus = { #demand Transylvania
 		id = hun_demand_transylvania
-		icon = GFX_goal_royalist_romania
+		icon = GFX_goal_generic_attack_romania
 		cost = 10
 		x = 10
 		y = 6
@@ -1107,7 +1107,7 @@ focus_tree = {
 	
 	focus = { #demand Burgenland
 		id = hun_demand_austria
-		icon = GFX_goal_austria
+		icon = GFX_goal_generic_attack_austria
 		cost = 10
 		x = 12
 		y = 6
