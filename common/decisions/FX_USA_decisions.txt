@@ -148,7 +148,7 @@ USA_dealing_with_the_great_depression = {
         days_mission_timeout = 360
         timeout_effect = {
             hidden_effect = {
-                country_event = { id = usa.30 days = 2 }
+                country_event = { id = usa.30 days = 30 }
             }
         }
         complete_effect = {

@@ -129,7 +129,7 @@ country_event = { # Panic at Houston
 	}
 
 	mean_time_to_happen = {
-		days = 48
+		months = 4
 	}
 
 	option = {
@@ -680,9 +680,9 @@ country_event = { # Death of Eugene Debs
 		name = usa.26.a
         kill_ideology_leader = libertarian_socialist
         create_country_leader = {
-            name = "John Reed"
-            desc = "POLITICS_JOHN_REED_DESC"
-            picture = "Portrait_USA_John_Reed.tga"
+            name = "Jack Reed"
+            desc = "POLITICS_JACK_REED_DESC"
+            picture = "Portrait_USA_Jack_Reed.tga"
             expire = "1965.1.1"
             ideology = libertarian_socialist_subtype
         }
@@ -813,8 +813,8 @@ country_event = { # 1940 Elections
             set_country_flag = USA_had_1940_elections
         }
     }
-    option = { # Garner
-        name = usa.28.d
+    option = { # Byrd
+        name = usa.28.e
         set_politics = {
             ruling_party = social_conservative
             elections_allowed = yes
@@ -825,13 +825,45 @@ country_event = { # 1940 Elections
         }
         remove_every_minister = yes
         add_ideas = {
-            USA_John_Nance_Garner_hog_sco
-            USA_Dean_Gooderham_Acheson_for_sco
+            USA_Harry_F_Byrd_hog_sco
+            USA_James_Watson_Gerard_Jr_for_sco
             USA_William_Daniel_Leahy_eco_sco
             USA_Martin_Dies_Jr_sec_sco
         }
         hidden_effect = {
+            kill_ideology_leader = social_conservative
+            create_country_leader = {
+                name = "Harry P. Byrd"
+                desc = "POLITICS_HARRY_P_BYRD_DESC"
+                picture = "Portrait_USA_Harry_F_Byrd.tga"
+                expire = "1965.1.1"
+                ideology = social_conservative_subtype
+                traits = { }
+            }
             set_country_flag = USA_had_1940_elections
+        }
+    }
+    option = {
+        name = usa.28.f
+        trigger = { has_country_flag = USA_socialist_popularity_increasing }
+        set_politics = {
+            ruling_party = libertarian_socialist
+            elections_allowed = yes
+        }
+        add_popularity = {
+            ideology = libertarian_socialist
+            popularity = 0.1
+        }
+        remove_every_minister = yes
+        add_ideas = {
+            USA_Jack_Reed_hog_lib
+            USA_Eugene_Dennis_for_lib
+            USA_Paul_Mattick_eco_lib
+            USA_John_Abt_sec_lib
+        }
+        hidden_effect = {
+            set_country_flag = USA_had_1936_elections
+            country_event = { id = usa.32 days = 45 }
         }
     }
 }
@@ -869,7 +901,7 @@ country_event = { # Last Minute Reforms Showing its Effects
     }
 }
 
-country_event = { # Socialist Popularity Increasing
+country_event = { # Socialists Gaining Popularity
     id = usa.31
     title = usa.31.t
     desc = usa.31.d
@@ -878,11 +910,78 @@ country_event = { # Socialist Popularity Increasing
 
     option = {
         name = usa.31.a
-        set_country_flag = usa.31.a
+        set_country_flag = USA_socialist_popularity_increasing
         add_popularity = {
             ideology = libertarian_socialist
             popularity = 0.15
         }
+    }
+}
+
+country_event = { # MacArthur's Concerns
+    id = usa.32
+    title = usa.32.t
+    desc = usa.32.d
+    picture = GFX_report_event_usa_macarthur_speech
+    is_triggered_only = yes
+
+    option = { # Offer him early retirement
+        name = usa.32.a
+        increase_ruling_party_popularity_by_5 = yes
+        hidden_effect = {
+            country_event = { id = usa.33 days = 2 }
+        }
+    }
+    option = { # Appoint him as Chief of Staff
+        name = usa.32.b
+        add_ideas = USA_Douglas_MacArthur_cos
+    }
+    option = { # Let him be
+        name = usa.32.c
+        add_political_power = 20
+    }
+}
+
+country_event = { # MacArthur Retires in the Philippines
+    id = usa.33
+    title = usa.33.t
+    desc = usa.33.d
+    picture = GFX_report_event_usa_election_generic
+    is_triggered_only = yes
+
+    option = { # Happy Retirement!
+        name = usa.33.a
+        hidden_effect = {
+            set_country_flag = USA_macarthur_retired
+            remove_unit_leader = 50
+            PHI = { country_event = { id = usa.34 days = 2 } }
+        }
+    }
+}
+
+country_event = { # MacArthur Offers Services
+    id = usa.34
+    title = usa.34.t
+    desc = usa.34.d
+    picture = GFX_report_event_us_panay_demands
+    is_triggered_only = yes
+
+    option = { # Accept his offer
+        name = usa.34.a
+        create_field_marshal = {
+            name = "Douglas MacArthur"
+            portrait_path = "gfx/leaders/USA/Portrait_USA_Douglas_MacArthur_fx.tga"
+            traits = {  offensive_doctrine brilliant_strategist career_officer media_personality politically_connected }
+            skill = 4
+            attack_skill = 4
+            defense_skill = 3
+            planning_skill = 4
+            logistics_skill = 2
+        }
+    }
+    option = { # Isn't he retired already?
+        name = usa.34.b
+        add_political_power = -10
     }
 }
 
@@ -1230,13 +1329,28 @@ country_event = { # Emergency Congress Session
     option = {
         name = usa.107.b
         hidden_effect = {
-            create_country_leader = {
-                name = "Douglas MacArthur"
-                desc = "POLITICS_DOUGLAS_MACARTHUR_DESC"
-                picture = "Portrait_USA_Douglas_MacArthur_fx.tga"
-                expire = "1965.1.1"
-                ideology = paternal_autocrat_subtype
-                traits = { }
+            if = {
+                limit = {
+                    NOT = { has_country_flag = USA_macarthur_retired }
+                    create_country_leader = {
+                        name = "Douglas MacArthur"
+                        desc = "POLITICS_DOUGLAS_MACARTHUR_DESC"
+                        picture = "Portrait_USA_Douglas_MacArthur_fx.tga"
+                        expire = "1965.1.1"
+                        ideology = paternal_autocrat_subtype
+                        traits = { }
+                    }
+                }
+            }
+            else = {
+                create_country_leader = {
+                    name = "Dwight Eisenhower"
+                    desc = "POLITICS_DWIGHT_EISENHOWER_DESC"
+                    picture = "Portrait_USA_Dwight_Eisenhower_fx.tga"
+                    expire = "1965.1.1"
+                    ideology = paternal_autocrat_subtype
+                    traits = { }
+                }
             }
             set_country_flag = USA_military_junta
             set_party_name = {
@@ -1254,11 +1368,24 @@ country_event = { # Emergency Congress Session
             popularity = 0.15
         }
         remove_every_minister = yes
-        add_ideas = {
-            USA_Douglas_MacArthur_hog_pau
-            USA_John_William_Davis_for_pau
-            USA_William_Harrison_Standley_eco_pau
-            USA_Joel_Bennett_Clark_sec_pau
+        if = {
+            limit = {
+                NOT = { has_country_flag = USA_macarthur_retired }
+                add_ideas = {
+                    USA_Douglas_MacArthur_hog_pau
+                    USA_John_William_Davis_for_pau
+                    USA_William_Harrison_Standley_eco_pau
+                    USA_Joel_Bennett_Clark_sec_pau
+                }
+            }
+        }
+        else = {
+            add_ideas = {
+                USA_Dwight_Eisenhower_hog_pau
+                USA_John_William_Davis_for_pau
+                USA_William_Harrison_Standley_eco_pau
+                USA_Joel_Bennett_Clark_sec_pau
+            }
         }
     }
 }

@@ -630,7 +630,24 @@ ideas = {
         USA_Douglas_MacArthur_hog_pau = {
             allowed = { original_tag = USA }
             available = { can_replace_hog = no }
-            visible = { USA_union_has_collapsed = yes }
+            visible = { 
+                USA_union_has_collapsed = yes
+                NOT = { has_country_flag = USA_macarthur_retired }
+            }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                paternal_autocrat
+                hog_old_general
+            }
+        }
+        USA_Dwight_Eisenhower_hog_pau = {
+            allowed = { original_tag = USA }
+            available = { can_replace_hog = no }
+            visible = {
+                USA_union_collapsed = yes
+                has_country_flag = USA_macarthur_retired
+            }
             cancel_if_invalid = no
             traits = {
                 head_of_government
@@ -641,13 +658,13 @@ ideas = {
     }
     ### Foreign Minister
     foreign_minister = {
-        USA_Eugene_Dennis_for_col = {
+        USA_Eugene_Dennis_for_lib = {
             allowed = { original_tag = USA }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
                 foreign_minister
-                collectivist
+                libertarian_socialist
                 for_radical_among_moderates
             }
         }
@@ -784,14 +801,14 @@ ideas = {
     }
     ### Economy Minister
     economy_minister = {
-        USA_Paul_Mattick_eco_col = {
+        USA_Paul_Mattick_eco_lib = {
             allowed = { original_tag = USA }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
                 economy_minister
-                collectivist
-                eco_planned_economy_proponent
+                libertarian_socialist
+                eco_imbedded_unioneer
             }
         }
         USA_Hjalmar_Petersen_eco_sde = {
@@ -877,14 +894,14 @@ ideas = {
     }
     ### Security Minister
     security_minister = {
-        USA_John_Abt_sec_col = {
+        USA_John_Abt_sec_lib = {
             allowed = { original_tag = USA }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
                 security_minister
-                collectivist
-                sec_prince_of_terror
+                libertarian_socialist
+                sec_health_and_safety
             }
         }
         USA_Elmer_Austin_Benson_sec_sde = {
@@ -992,16 +1009,10 @@ ideas = {
     chief_of_staff = {
         USA_Douglas_MacArthur_cos = {
             allowed = { original_tag = USA }
+            visible = { NOT = { has_country_flag = USA_macarthur_retired } }
             traits = {
                 chief_of_staff
                 cos_school_of_fire_support
-            }
-        }
-        USA_Joseph_Lawton_Collins_cos = {
-            allowed = { original_tag = USA }
-            traits = {
-                chief_of_staff
-                cos_school_of_psychology
             }
         }
         USA_Malin_Craig_cos = {
@@ -1092,13 +1103,6 @@ ideas = {
             traits = {
                 chief_of_navy
                 cnav_decisive_battle_doctrine
-            }
-        }
-        USA_Thomas_C_Kinkaid_cnav = {
-            allowed = { original_tag = USA }
-            traits = {
-                chief_of_navy
-                cnav_power_projection_doctrine
             }
         }
         USA_Thomas_Charles_Hart_cnav = {
@@ -1193,7 +1197,7 @@ ideas = {
                 cat_superior_firepower = 0.1
             }
         }
-        USA_Omar_Nelson_Bradley_cos = {
+        USA_Omar_Nelson_Bradley_theo = {
             allowed = { original_tag = USA }
             traits = {
                 cat_mobile_warfare = 0.1

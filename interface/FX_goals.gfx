@@ -149,6 +149,22 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/generic_naval_industry.tga"
 	}
 	spriteType = {
+		name = "GFX_goal_PHI_american_trade"
+		texturefile = "gfx/interface/goals/PHI_american_trade.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_PHI_british_trade"
+		texturefile = "gfx/interface/goals/PHI_british_trade.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_PHI_german_trade"
+		texturefile = "gfx/interface/goals/PHI_german_trade.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_PHI_japanese_trade"
+		texturefile = "gfx/interface/goals/PHI_japanese_trade.tga"
+	}
+	spriteType = {
 		name = "GFX_focus_philippines_constabulary"
 		texturefile = "gfx/interface/goals/PHI_goal_constabulary.dds"
 	}
