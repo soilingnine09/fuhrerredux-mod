@@ -1,5 +1,5 @@
 capital = 393
-oob = "RBL"
+oob = "NAR"
 
 # Starting tech
 set_technology = {
@@ -106,7 +106,7 @@ add_ideas = {
 create_country_leader = {
 	name = "Henry Ford"
 	desc = "POLITICS_HENRY_FORD_DESC"
-	picture = "Portrait_RBL_Henry_Ford.tga"
+	picture = "Portrait_NAR_Henry_Ford.tga"
 	expire = "1965.1.1"
 	ideology = paternal_autocrat_subtype
 	traits = { }
@@ -115,7 +115,7 @@ create_country_leader = {
 ### Field Marshal
 create_field_marshal = {
 	name = "Jacob L. Devers"
-	portrait_path = "gfx/leaders/RBL/Portrait_RBL_Jacob_Devers.tga"
+	portrait_path = "gfx/leaders/NAR/Portrait_NAR_Jacob_Devers.tga"
 	traits = { trait_reckless artillery_officer artillery_specialist }
 	skill = 2
 	attack_skill = 3
@@ -127,7 +127,7 @@ create_field_marshal = {
 ### Corp Commanders
 create_corps_commander = {
 	name = "George S. Patton"
-	portrait_path = "gfx/leaders/RBL/Portrait_RBL_George_S_Patton.tga"
+	portrait_path = "gfx/leaders/NAR/Portrait_NAR_George_S_Patton.tga"
 	traits = { trickster armor_officer panzer_leader war_hero trait_reckless }
 	skill = 5
 	attack_skill = 7
@@ -137,7 +137,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "William Simpson"
-	portrait_path = "gfx/leaders/RBL/Portrait_RBL_William_Simpson.tga"
+	portrait_path = "gfx/leaders/NAR/Portrait_NAR_William_Simpson.tga"
 	traits = { infantry_officer }
 	skill = 3
 	attack_skill = 2
@@ -147,7 +147,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "J. Lawton Collins"
-	portrait_path = "gfx/leaders/RBL/Portrait_RBL_Joseph_Collins.tga"
+	portrait_path = "gfx/leaders/NAR/Portrait_NAR_Joseph_Collins.tga"
 	traits = { trickster career_officer }
 	skill = 3
 	attack_skill = 3
@@ -157,7 +157,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Courtney Hodges"
-	portrait_path = "gfx/leaders/RBL/Portrait_RBL_Courtney_Hicks_Hodges.tga"
+	portrait_path = "gfx/leaders/NAR/Portrait_NAR_Courtney_Hicks_Hodges.tga"
 	traits = { panzer_leader career_officer infantry_officer }
 	skill = 4
 	attack_skill = 4
@@ -167,7 +167,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Matthew Ridgway"
-	portrait_path = "gfx/leaders/RBL/Portrait_RBL_Matthew_Ridgway.tga"
+	portrait_path = "gfx/leaders/NAR/Portrait_NAR_Matthew_Ridgway.tga"
 	traits = { inflexible_strategist trait_cautious commando }
 	skill = 2
 	attack_skill = 1
@@ -177,7 +177,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Bruce C. Clarke"
-	portrait_path = "gfx/leaders/RBL/Portrait_RBL_Bruce_Clarke.tga"
+	portrait_path = "gfx/leaders/NAR/Portrait_NAR_Bruce_Clarke.tga"
 	traits = { harsh_leader panzer_leader }
 	skill = 1
 	attack_skill = 2
@@ -187,7 +187,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Fox Conner"
-	portrait_path = "gfx/leaders/RBL/Portrait_RBL_Fox_Conner.tga"
+	portrait_path = "gfx/leaders/NAR/Portrait_NAR_Fox_Conner.tga"
 	traits = { politically_connected career_officer panzer_leader }
 	skill = 1
 	attack_skill = 1

@@ -722,7 +722,10 @@ country_event = { # Surrender to Mexico
         transfer_state = 927 # Northern California
         transfer_state = 928 # Southern California
         hidden_effect = {
-            USA = { country_event = { id = usa.100 days = 14 } }
+            USA = {
+                set_country_flag = USA_political_turmoil
+                country_event = { id = usa.100 days = 14 }
+            }
         }
     }
     option = {
@@ -866,6 +869,23 @@ country_event = { # Last Minute Reforms Showing its Effects
     }
 }
 
+country_event = { # Socialist Popularity Increasing
+    id = usa.31
+    title = usa.31.t
+    desc = usa.31.d
+    picture = GFX_report_event_usa_election_generic
+    is_triggered_only = yes
+
+    option = {
+        name = usa.31.a
+        set_country_flag = usa.31.a
+        add_popularity = {
+            ideology = libertarian_socialist
+            popularity = 0.15
+        }
+    }
+}
+
 country_event = { # Nationwide Riots
     id = usa.100
     title = usa.100.t
@@ -992,7 +1012,6 @@ country_event = { # Midwest Seceeds
                 }
             }
             CLB = { load_oob = "CLB" }
-            
             kill_ideology_leader = valkist
         }
     }
@@ -1020,7 +1039,7 @@ country_event = { # Rust Belt
     is_triggered_only = yes
 
     trigger = {
-        NOT = { country_exists = RLB }
+        NOT = { country_exists = NAR }
     }
 
     immediate = {
@@ -1038,7 +1057,7 @@ country_event = { # Rust Belt
                         state = 261
                     }
                 }
-                RBL = {
+                NAR = {
                     add_state_core = PREV
                     transfer_state = PREV
                 }
@@ -1047,7 +1066,7 @@ country_event = { # Rust Belt
                     add_state_claim = PREV
                 }
             }
-            RBL = { load_oob = "RBL" }
+            NAR = { load_oob = "NAR" }
             remove_unit_leader = 52 # George Patton
             remove_unit_leader = 66 # William Simpson
             remove_unit_leader = 67 # J Lawton Collins
@@ -1065,7 +1084,7 @@ country_event = { # Rust Belt
         name = usa.104.b
         hidden_effect = {
             country_event = { id = usa.105 days = 14 }
-            RBL = { change_tag_from = ROOT }
+            NAR = { change_tag_from = ROOT }
         }
     }
 }
@@ -1080,7 +1099,6 @@ country_event = { # UK Seizes Cascadia, Puerto Rico, Alaska
     immediate = {
         hidden_effect = {
             ENG = { 
-                puppet = CAS
                 transfer_state = 385
                 transfer_state = 386
                 transfer_state = 686
@@ -1110,7 +1128,7 @@ country_event = { # Collapse of the Union
     option = {
         name = usa.106.a
         add_ideas = USA_anarchy_and_chaos
-        set_country_flag = USA_enable_emergency_government
+        set_country_flag = USA_union_collapsed
         set_cosmetic_tag = USA_federal
         hidden_effect = {
             load_focus_tree = usa_emergency_focus
@@ -1285,14 +1303,14 @@ country_event = { # Panama Canal Captured
     }
 }
 
-country_event = { # Cascadian Question
+country_event = { # Oregon Question
     id = usa.110
     title = usa.110.t
     desc = usa.110.d
     picture = GFX_report_event_usa_british_sailors_destroyers
     is_triggered_only = yes
 
-    option = { # To Cascadia
+    option = { # Establish Oregon Administration
         name = usa.110.a
         every_owned_state = {
             limit = {
@@ -1304,7 +1322,7 @@ country_event = { # Cascadian Question
                 NOT = { is_core_of = ROOT }
                 NOT = { is_claimed_by = ROOT }
             }
-            CAS = {
+            ORE = {
                 add_state_core = PREV
                 transfer_state = PREV
             }

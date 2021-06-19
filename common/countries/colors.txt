@@ -1085,15 +1085,15 @@ CLB = {
 	color = rgb { 60 59 110 }
 	color_ui = rgb { 60 59 110 }
 }
-CAS = {
+ORE = {
 	color = rgb { 1 121 111 }
 	color_ui = rgb { 1 121 111 }
 }
-RBL = {
+NAR = {
 	color = rgb { 142 142 128 }
 	color_ui = rgb { 142 142 128 }
 }
-NID = {
+SNE = {
 	color = rgb { 204 81 39 }
 	color_ui = rgb { 204 81 39 }
 }

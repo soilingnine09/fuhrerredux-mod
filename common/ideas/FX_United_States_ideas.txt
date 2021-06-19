@@ -630,7 +630,7 @@ ideas = {
         USA_Douglas_MacArthur_hog_pau = {
             allowed = { original_tag = USA }
             available = { can_replace_hog = no }
-            visible = { USA_mexican_disaster_happened = yes }
+            visible = { USA_union_has_collapsed = yes }
             cancel_if_invalid = no
             traits = {
                 head_of_government

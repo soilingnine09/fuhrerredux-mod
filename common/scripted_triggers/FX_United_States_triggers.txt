@@ -37,9 +37,9 @@ USA_has_less_great_depression = {
     }
 }
 
-USA_mexican_disaster_happened = {
+USA_union_has_collapsed = {
     custom_trigger_tooltip = {
-        tooltip = USA_mexican_disaster_happened_tt
+        tooltip = USA_union_has_collapsed_tt
         OR = {
             country_exists = NEE
             country_exists = CLB

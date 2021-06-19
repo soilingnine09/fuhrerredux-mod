@@ -100,6 +100,19 @@ USA_valkist_party_long:0 "Foundation for the Lord and Democracy"
 USA_emergency_government_party:0 "Emergency Government"
 USA_emergency_government_party_long:0 "Emergency Government"
 
+### Triggers
+USA_1936_elections_happened:0 "The 1936 Elections is over."
+USA_1936_elections_happened_NOT:0 "The 1936 Elections §Rnot§! has not commenced."
+USA_san_francisco_conference_success:0 "§LThe San Francisco Conference is a success§!"
+USA_entente_is_formed_tt:0 "The §YEntente Cordiale§! has been formed"
+USA_has_great_depression_tt:0 "§America is still under the Great Depression§!"
+USA_has_great_depression_tt_NOT:0 "America is §Rnot§! under the Great Depression"
+USA_has_less_great_depression_tt:0 "§America is recovering from the Great Depression§!"
+USA_union_has_collapsed_tt:0 "The Union has collapsed"
+USA_union_has_collapsed_tt_NOT:0 "The Union is still standing."
+USA_emergency_powers:0 "The Congress have opted to give the President his Emergency Powers"
+USA_military_junta:0 "The Congress have opted to allow the military to take control"
+
 ### Ideas
 USA_the_greater_depression:0 "The Great Depression"
 USA_the_greater_depression_desc:0 "The greatest economic disaster in American history, the Great Depression rules contemporary politics."
@@ -158,6 +171,9 @@ USA_construct_dam:0 "Construct Dam in §Y[From.GetName]§!"
 USA_american_unification:0 "Unification of America"
 USA_attack_traitors:0 "Attack §Y[From.GetNameDef]§!"
 USA_demand_territory:0 "Demand Territory from §Y[From.GetNameDef]§!"
+USA_dealing_with_the_great_depression:0 "Dealing with the Great Depression"
+USA_dealing_with_the_great_depression_desc:0 ""
+USA_pass_curtis_reforms:0 "Pass President Curtis' Reforms"
 
 ### Ministers
 # Head of Government
@@ -542,18 +558,6 @@ USA_the_gi_bill_desc:0 ""
 USA_consolidate_america:0 "Consolidate America"
 USA_consolidate_america_desc:0 ""
 
-### Triggers
-USA_1936_elections_happened:0 "§LThe 1936 Elections is over.§!"
-USA_1936_elections_happened_NOT:0 "The 1936 Elections §Rnot§! has not commenced."
-USA_san_francisco_conference_success:0 "§LThe San Francisco Conference is a success§!"
-USA_entente_is_formed_tt:0 "The §YEntente Cordiale§! has been formed"
-USA_has_great_depression_tt:0 "§LAmerica is still under the Great Depression§!"
-USA_has_great_depression_tt_NOT:0 "America is §Rnot§! under the Great Depression"
-USA_has_less_great_depression_tt:0 "§LAmerica is recovering from the Great Depression§!"
-USA_mexican_disaster_happened_tt:0 "§LThe Mexican Disaster has happened§!"
-USA_mexican_disaster_happened_tt_NOT:0 "The Mexican Disaster has §Rnot§! happened"
-USA_emergency_powers:0 "§LThe Congress have opted to give the President his Emergency Powers§!"
-USA_military_junta:0 "§LThe Congress have opted to allow the military to take control§!"
 
 ### Opinions
 USA_reconciliation:0 "Reconciliation"
@@ -671,7 +675,7 @@ usa.30.a:0 "We sure hope so."
 usa.100.t:0 "Nationwide Riots"
 usa.100.d:0 "As we accepted our humiliating defeat in [MEX.GetAdjective] arms we are forced to cede territories to the bastards at the south. This however have lead to massive discontent and dissaproval of our Government; with multiple reports of riots and unrest in many of our rural and urban areas still controlled by the Union."
 usa.100.a:0 "Let the police handle it."
-usa.101.t:0 "Political Turmoil in the Capitol"
+usa.101.t:0 "Turmoil in the Capitol"
 usa.101.d:0 "While we have to do what deemed necessary to the survival of the Union, many politicians, with whom majority of which in the opposition are now openly and brutally attacking the administration in compromising with the [MEX.GetAdjective]s and failing to handle to war situation well. While their opinions doesn't concern us that much, the President is now worried that the country is now divided than ever before."
 usa.101.a:0 "They are just being a headache..."
 usa.102.t:0 "New England Seceeds!"

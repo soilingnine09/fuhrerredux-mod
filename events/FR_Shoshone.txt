@@ -12,7 +12,7 @@ country_event = { # Independence?
     trigger = {
         original_tag = CLB
         country_exists = CLB
-        NOT = { country_exists = NID }
+        NOT = { country_exists = SNE }
     }
 
     mean_time_to_happen = {
@@ -22,23 +22,29 @@ country_event = { # Independence?
     option = {
         name = shoshone.1.a
         hidden_effect = {
-            NID = { 
+            SNE = { 
                 transfer_state = 387
-                load_oob = "NID"
+                load_oob = "SNE"
             }
         }
         declare_war_on = {
-            target = NID
+            target = SNE
             type = annex_everything
         }
     }
     option = {
         name = shoshone.1.b
-        declare_war_on = {
-            target = NID
-            type = annex_everything
+        SNE = {
+            transfer_state = 387
+            load_oob = "SNE"
+            change_tag_from = ROOT
         }
-        NID = { change_tag_from = ROOT }
+        CLB = {
+            declare_war_on = {
+                target = SNE
+                type = annex_everything
+            }
+        }
     }
 }
 

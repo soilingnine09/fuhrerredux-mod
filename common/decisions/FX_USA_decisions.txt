@@ -6,7 +6,7 @@ foreign_politics = {
         allowed = { original_tag = USA }
         visible = { 
             USA_1936_elections_happened = yes
-            USA_mexican_disaster_happened = no
+            USA_union_has_collapsed = no
         }
         available = {
             USA_has_less_great_depression = yes
@@ -88,10 +88,10 @@ USA_american_unification = {
         target_trigger = {
             FROM = {
                 OR = {
-                    tag = RBL
+                    tag = NAR
                     tag = CLB
                     tag = NEE
-                    tag = CAS
+                    tag = ORE
                 }
             }
         }
@@ -134,6 +134,25 @@ USA_american_unification = {
         }
         complete_effect = {
             FROM = { country_event = usa.111 }
+        }
+    }
+}
+USA_dealing_with_the_great_depression = {
+    USA_pass_curtis_reforms = {
+        icon = GFX_decision_eng_trade_unions_support
+        is_good = yes
+
+        available = { has_completed_focus = USA_slow_recovery }
+        activation = { USA_has_great_depression = yes }
+
+        days_mission_timeout = 360
+        timeout_effect = {
+            hidden_effect = {
+                country_event = { id = usa.30 days = 2 }
+            }
+        }
+        complete_effect = {
+            add_stability = 0.15
         }
     }
 }

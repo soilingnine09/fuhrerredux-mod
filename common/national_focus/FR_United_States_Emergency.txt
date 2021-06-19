@@ -25,7 +25,7 @@ focus_tree = {
 		y = 6
 		cost = 2
 		available = {
-			USA_mexican_disaster_happened = yes
+			USA_union_has_collapsed = yes
 		}
 	}
 

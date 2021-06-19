@@ -1858,12 +1858,12 @@ shared_focus = {
 	offset = {
 		x = -11
 		y = 0
-		trigger = { NOT = { has_country_flag = USA_enable_emergency_government } }
+		trigger = { NOT = { has_country_flag = USA_union_collapsed } }
 	}
 	cost = 6
 	available = {
 		USA_has_great_depression = no
-		USA_mexican_disaster_happened = no
+		USA_union_has_collapsed = no
 	}
 }
 
