@@ -1932,7 +1932,7 @@ shared_focus = {
 # Demand British Colonial Holdings
 shared_focus = {
     id = PHI_demand_british_colonial_holdings
-    icon = GFX_goal_generic_more_territorial_claims
+    icon = GFX_focus_attack_britain
     x = -2
     y = 1
     cost = 6
@@ -2019,7 +2019,7 @@ shared_focus = {
 # Demand French Colonial Holdings
 shared_focus = {
     id = PHI_demand_french_colonial_holdings
-    icon = GFX_goal_generic_more_territorial_claims
+    icon = GFX_focus_attack_france
     x = 2
     y = 1
     cost = 6
@@ -2143,7 +2143,7 @@ shared_focus = {
     prerequisite = { focus = PHI_the_fuhrer }
     relative_position_id = PHI_the_fuhrer
     completion_reward = {
-        GER = { country_event = { id = phi.36 } }
+        GER = { country_event = { id = phi.103 } }
     }
 }
 
