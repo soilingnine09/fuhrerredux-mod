@@ -172,9 +172,9 @@ USA_american_unification:0 "Unification of America"
 USA_attack_traitors:0 "Attack §Y[From.GetNameDef]§!"
 USA_demand_territory:0 "Demand Territory from §Y[From.GetNameDef]§!"
 USA_dealing_with_the_great_depression:0 "Dealing with the Great Depression"
-USA_dealing_with_the_great_depression_desc:0 "The Great Depression has been going strong for 7 years now and it has had catastrophic effects on the citizens of the United States, President Curtis have introduced a number of reforms that can help alleviate the effects of the Great Depression before the end of his term in January."
+USA_dealing_with_the_great_depression_desc:0 "The Great Depression has been going strong for 7 years now and it has had catastrophic effects on the citizens of the United States, President Curtis have introduced a number of reforms that can help alleviate the effects of the Great Depression before the end of his term in January. We should immediately pass and implement these reforms to better help our people."
 USA_pass_curtis_reforms:0 "Pass President Curtis' Reforms"
-USA_pass_curtis_reforms_desc:0 "There reforms, while cannot remove the effects of the Great Depression entirely in one swoop, can help lessen its effects on the economy."
+USA_pass_curtis_reforms_desc:0 "These reforms, while cannot remove the effects of the Great Depression entirely in one swoop, can help lessen its effects on the economy."
 
 ### Ministers
 # Head of Government

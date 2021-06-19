@@ -1454,6 +1454,26 @@ country_event = { # Oregon Question
                 transfer_state = PREV
             }
         }
+        ENG = { puppet = ORE }
+        hidden_effect = {
+            ORE = {
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    last_election = "1932.11.15"
+                    election_frequency = 48
+                    elections_allowed = no
+                }
+                set_popularities = {
+                    social_democrat = 18
+                    social_liberal = 3
+                    market_liberal = 6
+                    social_conservative = 13
+                    authoritarian_democrat = 8
+                    paternal_autocrat = 44
+                    national_populist = 8
+                }
+            }
+        }
     }
     option = { # To Canada
         name = usa.110.b

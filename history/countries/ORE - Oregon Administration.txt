@@ -98,9 +98,9 @@ add_ideas = {
 }
 
 create_country_leader = {
-	name = "Claude Auchinleck"
-	desc = "POLITICS_CLAUDE_AUCHINLECK_DESC"
-	picture = "gfx/leaders/ENG/Portrait_Britain_Claude_Auchinleck_fx.tga"
+	name = "Kenneth Anderson"
+	desc = "POLITICS_KENNETH_ANDERSON_DESC"
+	picture = "Portrait_Oregon_Kenneth_Anderson.tga"
 	expire = "1965.1.1"
 	ideology = paternal_autocrat_subtype
 	traits = { }
