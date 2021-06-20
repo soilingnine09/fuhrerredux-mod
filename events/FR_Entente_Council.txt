@@ -1229,13 +1229,8 @@ country_event = { # Partition of the Congo
 			transfer_state = 956
 		}
 		hidden_effect = {
-			every_country = {
-				limit = {
-					exists = yes
-				}
-				news_event = {
-					id = worldnews.144 days = 1
-				}
+			news_event = {
+				id = worldnews.144 days = 1
 			}
 		}
 	}
