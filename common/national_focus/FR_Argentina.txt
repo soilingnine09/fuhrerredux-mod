@@ -4084,7 +4084,7 @@ focus_tree = {
 	}
 		focus = {
 		id = ARG_pact_with_peru
-		icon = GFX_goal_peru_alliance
+		icon = GFX_goal_peru
  		ai_will_do = { factor = 10 }
  		prerequisite = { focus = ARG_pact_of_la_plata }
  		mutually_exclusive = { focus = ARG_pact_with_colombia }

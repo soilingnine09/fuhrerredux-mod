@@ -5842,7 +5842,7 @@ focus_tree = {
 }
 	focus = {
 		id = jap_topple_commies
-		icon = GFX_Cutdown_the_Soviet_Union
+		icon = GFX_focus_attack_soviet
 		cost = 5
 		will_lead_to_war_with = SOV		
 

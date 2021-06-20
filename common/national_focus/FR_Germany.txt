@@ -5514,7 +5514,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_soviet_war
-		icon = GFX_Cutdown_the_Soviet_Union
+		icon = GFX_focus_attack_soviet
 		will_lead_to_war_with = SOV
 		x = 9
 		y = 19

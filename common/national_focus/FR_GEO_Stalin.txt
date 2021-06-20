@@ -283,7 +283,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GEO_STA_invade_soviet
-		icon = GFX_Cutdown_the_Soviet_Union
+		icon = GFX_focus_attack_soviet
 		prerequisite = {
 			focus = GEO_STA_invade_azerbaijan
 			focus = GEO_STA_invade_armenia

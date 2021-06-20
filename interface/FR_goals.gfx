@@ -786,18 +786,6 @@ spriteTypes = {
 		texturefile= "gfx/interface/goals/goal_chile_alliance.dds"
 	}
 	SpriteType = {
-		name = "GFX_goal_uruguay_alliance"
-		texturefile= "gfx/interface/goals/goal_uruguay_alliance.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_peru_alliance"
-		texturefile= "gfx/interface/goals/goal_peru_alliance.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_paraguay_alliance"
-		texturefile= "gfx/interface/goals/goal_paraguay_alliance.dds"
-	}
-	SpriteType = {
 		name = "GFX_goal_collectivist_menace"
 		texturefile= "gfx/interface/goals/goal_collectivist_menace.dds"
 	}

@@ -1282,7 +1282,7 @@ spriteTypes = {
 
     spriteType = {
 		name = "GFX_goal_PHI_british_trade_shine"
-		texturefile = "gfx/interface/goals/british_trade.tga"
+		texturefile = "gfx/interface/goals/PHI_british_trade.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/PHI_british_trade.tga"
