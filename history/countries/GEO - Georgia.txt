@@ -13,15 +13,11 @@ add_ideas = {
 	GEO_separatism
 	limited_conscription
 	limited_exports
-	GEO_akaki_chkhenkeli_hog
-	GEO_grigol_uratadze_for
-	GEO_victor_tevzaia_eco
-	GEO_vlasa_mgeladze_sec
-	GEO_evgen_gvaladze_int
-	GEO_artem_jijikhia_cos
-	GEO_aleksandre_andronikashvili_carm
-	GEO_viktor_lomidze_cnav
-	GEO_vakhtang_makashvili_cair
+	GEO_Akaki_Chkhenkeli_hog_sde
+	GEO_Grigol_Uratadze_for_col
+	GEO_Victor_Tevzaia_eco_sde
+	GEO_Vlasa_Mgeladze_sec_lib
+
 	parliamentary_republic
 }
 
