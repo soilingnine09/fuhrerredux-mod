@@ -126,90 +126,89 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = MEX_constitutional_monarchy
-		icon = GFX_goal_support_democracy
-		prerequisite = { focus = MEX_the_kings_cabinent }
-		mutually_exclusive = { focus = MEX_never_compromise }
-		x = 0
-		y = 5
-		cost = 5
+	#focus = {
+	#	id = MEX_constitutional_monarchy
+	#	icon = GFX_goal_support_democracy
+	#	prerequisite = { focus = MEX_the_kings_cabinent }
+	#	mutually_exclusive = { focus = MEX_never_compromise }
+	#	x = 0
+	#	y = 5
+	#	cost = 5
+	#	available_if_capitulated = yes
+	#
+	#	available = {
+	#		has_global_flag = MEX_DEMOCRATIC_CABINENT
+	#	}
+	#
+	#	completion_reward = {
+	#		log = "[GetDateText]: [Root.GetName]: Focus MEX_constitutional_monarchy"
+    #       custom_effect_tooltip = 4_MEX_tt
+    #    }
+	#			}
+	#
+	#focus = {
+	#	id = MEX_the_brief_reign
+	#	icon = GFX_goal_tfv_sever_ties_with_uk
+	#	prerequisite = { focus = MEX_constitutional_monarchy }
+	#	x = 0
+	#	y = 6
+	#	cost = 5
+	#
+	#	available_if_capitulated = yes
+	#
+	#	completion_reward = {
+	#		log = "[GetDateText]: [Root.GetName]: Focus MEX_the_brief_reign"
+	#		add_political_power = 5
+	#	}
+	#}
 
-		available_if_capitulated = yes
+	#focus = {
+	#	id = MEX_compromise_with_the_north
+	#	icon = GFX_goal_tripartite_pact
+	#	prerequisite = { focus = MEX_the_brief_reign }
+	#	x = 0
+	#	y = 7
+	#	cost = 5
+	#
+	#	available_if_capitulated = yes
+	#
+	#	completion_reward = {
+	#		log = "[GetDateText]: [Root.GetName]: Focus MEX_compromise_with_the_north"
+	#		add_political_power = 5
+	#	}
+	#}
 
-		available = {
-			has_global_flag = MEX_DEMOCRATIC_CABINENT
-		}
+	#focus = {
+	#	id = MEX_settling_anti_american_sentiments
+	#	icon = GFX_goal_usa
+	#	prerequisite = { focus = MEX_compromise_with_the_north }
+	#	x = 0
+	#	y = 8
+	#	cost = 5
+	#
+	#	available_if_capitulated = yes
+	#
+	#	completion_reward = {
+	#		log = "[GetDateText]: [Root.GetName]: Focus MEX_settling_anti_american_sentiments"
+	#		add_political_power = 5
+	#	}
+	#}
 
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus MEX_constitutional_monarchy"
-            custom_effect_tooltip = 4_MEX_tt
-        }
-				}
-
-	focus = {
-		id = MEX_the_brief_reign
-		icon = GFX_goal_tfv_sever_ties_with_uk
-		prerequisite = { focus = MEX_constitutional_monarchy }
-		x = 0
-		y = 6
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus MEX_the_brief_reign"
-			add_political_power = 5
-		}
-	}
-
-	focus = {
-		id = MEX_compromise_with_the_north
-		icon = GFX_goal_tripartite_pact
-		prerequisite = { focus = MEX_the_brief_reign }
-		x = 0
-		y = 7
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus MEX_compromise_with_the_north"
-			add_political_power = 5
-		}
-	}
-
-	focus = {
-		id = MEX_settling_anti_american_sentiments
-		icon = GFX_goal_usa
-		prerequisite = { focus = MEX_compromise_with_the_north }
-		x = 0
-		y = 8
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus MEX_settling_anti_american_sentiments"
-			add_political_power = 5
-		}
-	}
-
-	focus = {
-		id = MEX_finalizing_the_regency
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		prerequisite = { focus = MEX_settling_anti_american_sentiments }
-		x = 0
-		y = 9
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus MEX_finalizing_the_regency"
-			add_political_power = 5
-		}
-	}
+	#focus = {
+	#	id = MEX_finalizing_the_regency
+	#	icon = GFX_goal_tfv_strengthen_commonwealth_ties
+	#	prerequisite = { focus = MEX_settling_anti_american_sentiments }
+	#	x = 0
+	#	y = 9
+	#	cost = 5
+	#
+	#	available_if_capitulated = yes
+	#
+	#	completion_reward = {
+	#		log = "[GetDateText]: [Root.GetName]: Focus MEX_finalizing_the_regency"
+	#		add_political_power = 5
+	#	}
+	#}
 
 	focus = {
 		id = MEX_never_compromise
@@ -221,10 +220,6 @@ focus_tree = {
 		cost = 5
 
 		available_if_capitulated = yes
-
-		available = {
-			has_global_flag = MEX_LOYALIST_CABINET
-		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus MEX_never_compromise"

@@ -1050,12 +1050,6 @@ country_event = {
 		}
 	}
 
-	option = {
-		name = "We cannot risk war with the Yankees"
-		USA = { puppet = MEX }
-	}
-}
-
 country_event = {
 	id = usa.30
 	immediate = {log = "[GetDateText]: [Root.GetName]: event usa.30"}
