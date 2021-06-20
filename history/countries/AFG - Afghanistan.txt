@@ -13,10 +13,10 @@ set_technology = {
 
 add_ideas = {
 	party_pop_0_40
-	GEN_hog_pau
-	GEN_for_pau
-	GEN_eco_pau
-	GEN_sec_pau
+	AFG_Shah_Wali_Khan_hog_ade
+	AFG_Abdul_Hadi_Dawai_for_ade
+	AFG_Ahmad_Ali_Khan_Solaiman_eco_ade
+	AFG_Muhammed_Ghobar_sec_ade
 	constitutional_monarchy
 	
 	AFG_tribal_influences_afghanistan_idea

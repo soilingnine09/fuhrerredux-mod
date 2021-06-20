@@ -50,6 +50,7 @@ has_no_unique_ministers = {
             original_tag = CRU
             original_tag = MEX
             original_tag = UKR
+            original_tag = AFG
         }
     }
 }

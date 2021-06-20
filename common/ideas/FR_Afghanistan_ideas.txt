@@ -906,717 +906,376 @@ ideas = {
 	
 	}
 	
-	head_of_government = { ### Head of Government ###
-		AFG_Khan_Abdul_Ghaffar_Khan_hog_rso = {
+	### Ministers
+	# Head of Government
+	head_of_government = {
+		AFG_Khan_Abdul_Ghaffar_Khan_hog_lib = {
 			allowed = { original_tag = AFG }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = head_of_gov_available
-					always = no
-				}
-			}
+			available = { can_replace_hog = no }
 			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Khan_Abdul_Ghaffar_Khan_hog_rso"
-			}
 			traits = {
 				head_of_government
 				libertarian_socialist
-				hog_flamboyant_tough_guy
+				hog_ambitious_union_boss
 			}
 		}
-
 		AFG_Abdul_Majid_Zabuli_hog_sli = {
 			allowed = { original_tag = AFG }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = head_of_gov_available
-					always = no
-				}
-			}
+			available = { can_replace_hog = no }
 			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Abdul_Majid_Zabuli_hog_sli"
-			}
 			traits = {
 				head_of_government
 				social_liberal
-				hog_corporate_suit
+				hog_charismatic_charmer
 			}
 		}
-
 		AFG_Mohammed_Nadir_Shah_hog_sco = {
 			allowed = { original_tag = AFG }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = head_of_gov_available
-					always = no
-				}
-			}
+			available = { can_replace_hog = no }
 			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Mohammed_Nadir_Shah_hog_sco"
-			}
 			traits = {
 				head_of_government
 				social_conservative
-				hog_old_general
+				hog_happy_amateur
 			}
 		}
-
 		AFG_Abdul_Hadi_Dawai_hog_ade = {
 			allowed = { original_tag = AFG }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = head_of_gov_available
-					always = no
-				}
-			}
+			available = { can_replace_hog = no }
 			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Abdul_Hadi_Dawai_hog_ade"
-			}
-			traits = {
-				head_of_government
-				authoritarian_democrat
-				hog_flamboyant_tough_guy
-			}
-		}
-
-		AFG_Muhammed_Ghobar_hog_ade = {
-			allowed = { original_tag = AFG }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = head_of_gov_available
-					always = no
-				}
-			}
-			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Muhammed_Ghobar_hog_ade"
-			}
 			traits = {
 				head_of_government
 				authoritarian_democrat
 				hog_naive_optimist
 			}
 		}
-
-		AFG_Muhammed_Hashim_hog_ade = {
+		AFG_Muhammed_Ghobar_hog_ade = {
 			allowed = { original_tag = AFG }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = head_of_gov_available
-					always = no
-				}
-			}
+			available = { can_replace_hog = no }
 			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Muhammed_Hashim_hog_ade"
-			}
 			traits = {
 				head_of_government
 				authoritarian_democrat
 				hog_happy_amateur
 			}
 		}
-
-		AFG_Shah_Wali_Khan_hog_ade = {
+		AFG_Muhammed_Hashim_hog_ade = {
 			allowed = { original_tag = AFG }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = head_of_gov_available
-					always = no
-				}
-			}
+			available = { can_replace_hog = no }
 			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Shah_Wali_Khan_hog_ade"
-			}
 			traits = {
 				head_of_government
 				authoritarian_democrat
+				hog_backroom_backstabber
+			}
+		}
+		AFG_Shah_Wali_Khan_hog_ade = {
+			allowed = { original_tag = AFG }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_accomplished_diplomat
+			}
+		}
+		AFG_Inayatullah_Khan_Seraj_hog_pau = {
+			allowed = { original_tag = AFG }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				paternal_autocrat
 				hog_silent_workhorse
 			}
 		}
-
-		AFG_Inayatullah_Khan_Seraj_hog_pau = {
-			allowed = { original_tag = AFG }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = head_of_gov_available
-					always = no
-				}
-			}
-			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Inayatullah_Khan_Seraj_hog_pau"
-			}
-			traits = {
-				head_of_government
-				paternal_autocrat
-				hog_happy_amateur
-			}
-		}
-
 		AFG_Malik_Habibullah_Kalakani_hog_npo = {
 			allowed = { original_tag = AFG }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = head_of_gov_available
-					always = no
-				}
-			}
+			available = { can_replace_hog = no }
 			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Malik_Habibullah_Kalakani_hog_npo"
-			}
 			traits = {
 				head_of_government
 				national_populist
-				hog_local_tyrant
+				hog_old_compromiser
 			}
 		}
-
 	}
-
-	foreign_minister = { ### Person of Influence ###
-		## Foreign Minister ##
-		AFG_Mir_Gul_Khan_Nasir_for_rso = {
+	# Foreign Minister
+	foreign_minister = {
+		AFG_Mir_Gul_Khan_Nasir_for_lib = {
 			allowed = { original_tag = AFG }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_available
-					always = no
-				}
-			}
+			available = { can_replace_minister = no }
 			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Mir_Gul_Khan_Nasir_for_rso"
-			}
 			traits = {
 				foreign_minister
 				libertarian_socialist
-				for_biased_intellectual
+				for_apologetic_clerk
 			}
 		}
-
 		AFG_Ghulam_Mohammad_Farhad_for_sde = {
 			allowed = { original_tag = AFG }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_available
-					always = no
-				}
-			}
+			available = { can_replace_minister = no }
 			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Ghulam_Mohammad_Farhad_for_sde"
-			}
 			traits = {
 				foreign_minister
 				social_democrat
-				for_biased_intellectual
-			}
-		}
-
-		AFG_Ali_Muhammed_Khan_for_sco = {
-			allowed = { original_tag = AFG }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_available
-					always = no
-				}
-			}
-			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Ali_Muhammed_Khan_for_sco"
-			}
-			traits = {
-				foreign_minister
-				social_conservative
-				for_biased_intellectual
-			}
-		}
-
-		AFG_Abdul_Hadi_Dawai_for_ade = {
-			allowed = { original_tag = AFG }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_available
-					always = no
-				}
-			}
-			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Abdul_Hadi_Dawai_for_ade"
-			}
-			traits = {
-				foreign_minister
-				authoritarian_democrat
 				for_great_compromiser
 			}
 		}
-
-		AFG_Haji_Faiz_Muhammed_Zikeria_for_pau = {
+		AFG_Ali_Muhammed_Khan_for_sco = {
 			allowed = { original_tag = AFG }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_available
-					always = no
-				}
-			}
+			available = { can_replace_minister = no }
 			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Haji_Faiz_Muhammed_Zikeria_for_pau"
-			}
 			traits = {
 				foreign_minister
-				paternal_autocrat
+				social_conservative
+				for_general_staffer
+			}
+		}
+		AFG_Abdul_Hadi_Dawai_for_ade = {
+			allowed = { original_tag = AFG }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				authoritarian_democrat
 				for_ideological_crusader
 			}
 		}
-	}
-
-	economy_minister = {
-		## Economy Minister ##
-		AFG_Nur_Muhammad_Taraki_eco_tot = {
+		AFG_Haji_Faiz_Muhammed_Zikeria_for_pau = {
 			allowed = { original_tag = AFG }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_available
-					always = no
-				}
-			}
+			available = { can_replace_minister = no }
 			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Nur_Muhammad_Taraki_eco_tot"
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_relations_expert
 			}
+		}
+	}
+	# Economy Minister
+	economy_minister = {
+		AFG_Nur_Muhammad_Taraki_eco_van = {
+			allowed = { original_tag = AFG }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
 			traits = {
 				economy_minister
 				vanguardist
-				eco_infantry_proponent
+				eco_administrative_genius
 			}
 		}
-
 		AFG_Mohammed_Hashim_Maiwandwal_eco_sde = {
 			allowed = { original_tag = AFG }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_available
-					always = no
-				}
-			}
+			available = { can_replace_minister = no }
 			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Mohammed_Hashim_Maiwandwal_eco_sde"
-			}
 			traits = {
 				economy_minister
 				social_democrat
+				eco_balanced_budget_economy
+			}
+		}
+		AFG_Nasirullah_Husain_eco_sco = {
+			allowed = { original_tag = AFG }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_conservative
+				eco_construction_magnate
+			}
+		}
+		AFG_Ahmad_Ali_Khan_Solaiman_eco_ade = {
+			allowed = { original_tag = AFG }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				authoritarian_democrat
 				eco_industrialiser
 			}
 		}
-
-		AFG_Nasirullah_Husain_eco_sco = {
-			allowed = { original_tag = AFG }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_available
-					always = no
-				}
-			}
-			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Nasirullah_Husain_eco_sco"
-			}
-			traits = {
-				economy_minister
-				social_conservative
-				eco_battle_fleet_proponent
-			}
-		}
-
-		AFG_Ahmad_Ali_Khan_Solaiman_eco_ade = {
-			allowed = { original_tag = AFG }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_available
-					always = no
-				}
-			}
-			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Ahmad_Ali_Khan_Solaiman_eco_ade"
-			}
-			traits = {
-				economy_minister
-				authoritarian_democrat
-				eco_military_entrepreneur
-			}
-		}
-
 		AFG_Mohammed_Daoud_eco_pau = {
 			allowed = { original_tag = AFG }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_available
-					always = no
-				}
-			}
+			available = { can_replace_minister = no }
 			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Mohammed_Daoud_eco_pau"
-			}
 			traits = {
 				economy_minister
 				paternal_autocrat
-				eco_battlefield_support_proponent
+				eco_reformer
 			}
 		}
-
 		AFG_Mirza_Ali_Khan_eco_npo = {
 			allowed = { original_tag = AFG }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_available
-					always = no
-				}
-			}
+			available = { can_replace_minister = no }
 			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Mirza_Ali_Khan_eco_npo"
-			}
 			traits = {
 				economy_minister
 				national_populist
-				eco_infantry_proponent
+				eco_the_minister_for_everything
 			}
 		}
 	}
-
+	# Security Minister
 	security_minister = {
-		## Security Minister ##
-		AFG_Dada_Amir_Haider_Khan_sec_syn = {
+		AFG_Dada_Amir_Haider_Khan_sec_col = {
 			allowed = { original_tag = AFG }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_available
-					always = no
-				}
-			}
+			available = { can_replace_minister = no }
 			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Dada_Amir_Haider_Khan_sec_syn"
-			}
 			traits = {
 				security_minister
 				collectivist
-				sec_man_of_the_people
+				sec_back_stabber
 			}
 		}
-
 		AFG_Abdul_Majid_Zabuli_sec_sli = {
 			allowed = { original_tag = AFG }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_available
-					always = no
-				}
-			}
+			available = { can_replace_minister = no }
 			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Abdul_Majid_Zabuli_sec_sli"
-			}
 			traits = {
 				security_minister
 				social_liberal
-				sec_health_and_safety
+				sec_compassionate_gentleman
 			}
 		}
-
 		AFG_Asadullah_Seraj_Khan_sec_sco = {
 			allowed = { original_tag = AFG }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_available
-					always = no
-				}
-			}
+			available = { can_replace_minister = no }
 			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Asadullah_Seraj_Khan_sec_sco"
-			}
 			traits = {
 				security_minister
 				social_conservative
-				sec_compassionate_gentleman
+				sec_driven_recruiter
 			}
 		}
-
 		AFG_Muhammed_Ghobar_sec_ade = {
 			allowed = { original_tag = AFG }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_available
-					always = no
-				}
-			}
+			available = { can_replace_minister = no }
 			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Muhammed_Ghobar_sec_ade"
-			}
 			traits = {
 				security_minister
 				authoritarian_democrat
-				sec_compassionate_gentleman
+				sec_efficient_sociopath
 			}
 		}
-
 		AFG_Muhammed_Zahir_sec_ade = {
 			allowed = { original_tag = AFG }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_available
-					always = no
-				}
-			}
+			available = { can_replace_minister = no }
 			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Muhammed_Zahir_sec_ade"
-			}
 			traits = {
 				security_minister
 				authoritarian_democrat
-				sec_man_of_the_people
+				sec_silent_lawyer
 			}
 		}
-
 		AFG_Ghulam_Faruq_Usman_sec_pau = {
 			allowed = { original_tag = AFG }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_available
-					always = no
-				}
-			}
+			available = { can_replace_minister = no }
 			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Ghulam_Faruq_Usman_sec_pau"
-			}
 			traits = {
 				security_minister
 				paternal_autocrat
-				sec_crime_fighter
+				sec_secret_police_chief
 			}
 		}
-
 		AFG_Khalilullah_Khalili_sec_npo = {
 			allowed = { original_tag = AFG }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_available
-					always = no
-				}
-			}
+			available = { can_replace_minister = no }
 			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Khalilullah_Khalili_sec_npo"
-			}
 			traits = {
 				security_minister
 				national_populist
 				sec_man_of_the_people
 			}
 		}
-
 	}
-
-	chief_of_staff = { ### Chief of Staff ###
-		AFG_Nasirullah_Husain_cos_sco = {
+	# Chief of Staff
+	chief_of_staff = {
+		AFG_Nasirullah_Husain_cos = {
 			allowed = { original_tag = AFG }
-			available = { }
-			visible = {
-				NOT = { has_country_flag = Nasirullah_Husain_dead }
-			}
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Nasirullah_Husain_cos_sco"
-			}
 			traits = {
 				chief_of_staff
-				cos_school_of_fire_support
+				cos_school_of_commando_operations
 			}
-			cancel_if_invalid = yes
 		}
-
-		AFG_Shah_Mahmud_Khan_cos_ade = {
+		AFG_Shah_Mahmud_Khan_cos = {
 			allowed = { original_tag = AFG }
-			available = { }
-			visible = {
-				NOT = { has_country_flag = Shah_Mahmud_Khan_dead }
-			}
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Shah_Mahmud_Khan_cos_ade"
-			}
-			traits = {
-				chief_of_staff
-				cos_school_of_defence
-			}
-			cancel_if_invalid = yes
-		}
-
-		AFG_Shah_Mahmud_Ghazi_cos_pau = {
-			allowed = { original_tag = AFG }
-			available = { }
-			visible = {
-				NOT = { has_country_flag = Shah_Mahmud_Ghazi_dead }
-			}
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Shah_Mahmud_Ghazi_cos_pau"
-			}
 			traits = {
 				chief_of_staff
 				cos_school_of_psychology
 			}
-			cancel_if_invalid = yes
 		}
-
-		AFG_Malik_Habibullah_Kalakani_cos_npo = {
+		AFG_Shah_Mahmud_Ghazi_cos = {
 			allowed = { original_tag = AFG }
-			available = { }
-			visible = {
-				NOT = { has_country_flag = Malik_Habibullah_Kalakani_dead }
-			}
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Malik_Habibullah_Kalakani_cos_npo"
-			}
 			traits = {
 				chief_of_staff
-				cos_school_of_mass_combat
+				cos_school_of_manoeuvre
 			}
-			cancel_if_invalid = yes
 		}
-
+		AFG_Malik_Habibullah_Kalakani_cos = {
+			allowed = { original_tag = AFG }
+			traits = {
+				chief_of_staff
+				cos_school_of_fire_support
+			}
+		}
 	}
-
-	chief_of_army = { ### Chief of Army ###
-		AFG_Gholam_Wali_carm_sco = {
+	# Chief of Army
+	chief_of_army = {
+		AFG_Gholam_Wali_carm = {
 			allowed = { original_tag = AFG }
-			available = { }
-			visible = {
-				NOT = { has_country_flag = Gholam_Wali_dead }
-			}
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Gholam_Wali_carm_sco"
-			}
-			traits = {
-				chief_of_army
-				carm_guns_and_butter_doctrine
-			}
-			cancel_if_invalid = yes
-		}
-
-		AFG_Ghulam_Nabi_Charkhi_carm_ade = {
-			allowed = { original_tag = AFG }
-			available = { }
-			visible = {
-				NOT = { has_country_flag = Ghulam_Nabi_Charkhi_dead }
-			}
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Ghulam_Nabi_Charkhi_carm_ade"
-			}
-			traits = {
-				chief_of_army
-				carm_elastic_defence_doctrine
-			}
-			cancel_if_invalid = yes
-		}
-
-		AFG_Mohammed_Daoud_carm_pau = {
-			allowed = { original_tag = AFG }
-			available = { }
-			visible = {
-				NOT = { has_country_flag = Mohammed_Daoud_dead }
-			}
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Mohammed_Daoud_carm_pau"
-			}
-			traits = {
-				chief_of_army
-				carm_elastic_defence_doctrine
-			}
-			cancel_if_invalid = yes
-		}
-
-		AFG_Mirza_Ali_Khan_carm_npo = {
-			allowed = { original_tag = AFG }
-			available = { }
-			visible = {
-				NOT = { has_country_flag = Mirza_Ali_Khan_dead }
-			}
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Mirza_Ali_Khan_carm_npo"
-			}
 			traits = {
 				chief_of_army
 				carm_doctrine_of_autonomy
 			}
-			cancel_if_invalid = yes
 		}
-
-	}
-
-	chief_of_navy = { ### Chief of Navy ###
-		AFG_Muhammed_Zahir_cnav_ade = {
+		AFG_Ghulam_Nabi_Charkhi_carm = {
 			allowed = { original_tag = AFG }
-			available = { }
-			visible = {
-				NOT = { has_country_flag = Muhammed_Zahir_dead }
+			traits = {
+				chief_of_army
+				carm_guns_and_butter_doctrine
 			}
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Muhammed_Zahir_cnav_ade"
+		}
+		AFG_Mohammed_Daoud_carm = {
+			allowed = { original_tag = AFG }
+			traits = {
+				chief_of_army
+				carm_static_defence_doctrine
 			}
+		}
+		AFG_Mirza_Ali_Khan_carm = {
+			allowed = { original_tag = AFG }
+			traits = {
+				chief_of_army
+				carm_commando_doctrine
+			}
+		}
+	}
+	# Chief of Navy
+	chief_of_navy = {
+		AFG_Muhammed_Zahir_cnav = {
+			allowed = { original_tag = AFG }
 			traits = {
 				chief_of_navy
-				cnav_indirect_approach_doctrine
+				cnav_decisive_battle_doctrine
 			}
-			cancel_if_invalid = yes
 		}
-
 	}
-
-	chief_of_air_force = { ### Chief of Air Force ###
-		AFG_Muhammed_Zahir_cair_ade = {
+	# Chief of Air Force
+	chief_of_air_force = {
+		AFG_Muhammed_Zahir_cair = {
 			allowed = { original_tag = AFG }
-			available = { }
-			visible = {
-				NOT = { has_country_flag = Muhammed_Zahir_dead }
-			}
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Muhammed_Zahir_cair_ade"
-			}
 			traits = {
 				chief_of_air_force
 				cair_battlefield_support_doctrine
 			}
-			cancel_if_invalid = yes
 		}
-
-		AFG_Mohammed_Daoud_cair_pau = {
+		AFG_Mohammed_Daoud_cair = {
 			allowed = { original_tag = AFG }
-			available = { }
-			visible = {
-				NOT = { has_country_flag = Mohammed_Daoud_dead }
-			}
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea AFG_Mohammed_Daoud_cair_pau"
-			}
 			traits = {
 				chief_of_air_force
-				cair_battlefield_support_doctrine
+				cair_air_superiority_doctrine
 			}
-			cancel_if_invalid = yes
 		}
-
-	}	
+	}
 }
