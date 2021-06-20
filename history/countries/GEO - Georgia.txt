@@ -5,7 +5,21 @@ oob = "GEO"
 set_convoys = 50
 set_stability = 0.53
 set_war_support = 0.5
-set_research_slots = 3
+
+add_ideas = {
+	party_pop_0_60
+	GEO_junker_school
+	GEO_menshevik_schism
+	GEO_separatism
+	limited_conscription
+	limited_exports
+	GEO_Akaki_Chkhenkeli_hog_sde
+	GEO_Grigol_Uratadze_for_col
+	GEO_Victor_Tevzaia_eco_sde
+	GEO_Vlasa_Mgeladze_sec_lib
+
+	parliamentary_republic
+}
 
 set_country_flag = coalition_libertarian_socialist
 

@@ -233,12 +233,10 @@ country_event = { #STALIN'S COUP
 			leave_faction = yes
 		}
 		add_ideas = {
-			GEO_ioseb_jugashvili_hog
-			GEO_levan_gogoberidze_for
-			GEO_alexander_svanidze_eco
-			GEO_georgi_atarbekov_sec
-			GEO_vsevolod_merkulov_int
-			GEO_simon_petrosian_cos
+			GEO_Ioseb_Jugashvili_hog_van
+			GEO_Levan_Gogoberidze_for_van
+			GEO_Alexander_Svanidze_eco_van
+			GEO_Georgi_Atarbekov_sec_van
 		}
 	}
 }
@@ -342,10 +340,7 @@ country_event = {
 	option = {
 		name = ge.1502.b #Make him a head of intel
 		set_country_flag = int_minster_beria
-		remove_ideas_with_trait = head_of_intel
-		add_ideas = {
-			GEO_lavrentiy_beria_int
-		}
+		add_stability = 0.05
 	}
 }
 
@@ -435,11 +430,10 @@ country_event = { #Georgia switches to Soviet Puppet tree, test event
 			clr_country_flag = GEO_brought_back_kvinitadze
 		}
 		add_ideas = {
-			GEO_mamia_orakhelashvili_hog
-			GEO_mikheil_kakhiani_for
-			GEO_beso_lominadze_eco
-			GEO_mikhail_givishiani_sec
-			GEO_sergo_goglidze_int
+			GEO_Mamia_Orakhelashvili_hog_col
+			GEO_Mikheil_Kakhiani_for_van
+			GEO_Beso_Lominadze_eco_col
+			GEO_Mikhail_Givishiani_sec_van
 		}
 		set_country_flag = GEO_isSSR
 	}
@@ -491,11 +485,10 @@ country_event = { #ELECTIONS
 		add_popularity = { ideology = libertarian_socialist popularity = -0.05 }
 		complete_national_focus = GEO_1936_elections
 		add_ideas = {
-			GEO_akaki_chkhenkeli_hog
-			GEO_zurab_avalishvili_for
-			GEO_victor_tevzaia_eco
-			GEO_aslan_abashidze_sec
-			GEO_evgen_gvaladze_int
+			GEO_Akaki_Chkhenkeli_hog_sde
+			GEO_Zurab_Avalishvili_for_sde
+			GEO_Victor_Tevzaia_eco_sde
+			GEO_Aslan_Beg_Abashidze_sec_sde
 		}
 	}
 	option = {
@@ -513,11 +506,10 @@ country_event = { #ELECTIONS
 		add_popularity = { ideology = social_democrat popularity = -0.05 }
 		complete_national_focus = GEO_1936_elections
 		add_ideas = {
-			GEO_irkali_tsereteli_hog
-			GEO_grigol_uratadze_for
-			GEO_giorgi_tsintsadze_eco
-			GEO_vlasa_mgeladze_sec
-			GEO_tevdore_glonti_int
+			GEO_Irkali_Tsereteli_hog_lib
+			GEO_Grigol_Uratadze_for_col
+			GEO_Giorgi_Tsintsadze_eco_lib
+			GEO_Vlasa_Mgeladze_sec_lib
 		}
 	}
 }
@@ -540,11 +532,10 @@ country_event = { #SNAP ELECTIONS
 		add_popularity = { ideology = social_liberal popularity = 0.15 }
 		set_country_flag = SF_won
 		add_ideas = {
-			GEO_ioseb_baratashvili_hog
-			GEO_simon_mdivani_for
-			GEO_grigol_natadze_eco
-			GEO_ioseb_gedevanishvili_sec
-			GEO_grigol_rtskhiladze_int
+			GEO_Ioseb_Baratashvili_hog_sli
+			GEO_Simon_Mdivani_for_sli
+			GEO_Grigol_Natadze_eco_sli
+			GEO_Ioseb_Gedevanishvili_sec_sli
 		}
 	}
 	option = {
@@ -557,11 +548,10 @@ country_event = { #SNAP ELECTIONS
 		add_popularity = { ideology = social_conservative popularity = 0.15 }
 		set_country_flag = EDP_won
 		add_ideas = {
-			GEO_raphiel_ingilo_hog
-			GEO_konstantine_gamsakhurdia_for
-			GEO_aleqsandre_asatiani_eco
-			GEO_leo_kereselidze_sec
-			GEO_spiridon_kedia_int
+			GEO_Raphiel_Ingilo-Ivanitski_sco
+			GEO_Konstantine_Gamsakhurdia_for_sco
+			GEO_Aleqsandre_Asatiani_eco_mli
+			GEO_Leo_Kereselidze_sec_sco
 		}
 	}
 }
@@ -1567,7 +1557,7 @@ country_event = {
 			remove_ideas_with_trait = foreign_minister	
 		}
 		add_ideas = {
-			GEO_haidar_bammat_for
+			GEO_Haidar_Bammat_for_sco
 		}
 	}
 	
