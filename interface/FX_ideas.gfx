@@ -34,4 +34,12 @@ spriteTypes = {
         name = "GFX_idea_PHI_promises_of_elections"
         texturefile = "gfx/interface/ideas/PHI/ideas/PHI_promises_of_election.tga"
     }
+    spriteType = {
+        name = "GFX_idea_SWI_swiss_banks"
+        texturefile = "gfx/interface/ideas/ideas/SWI_swiss_banks.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_SWI_swiss_bank_reform"
+        texturefile = "gfx/interface/ideas/ideas/SWI_bank_reform.tga"
+    }
 }

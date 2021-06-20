@@ -30,7 +30,7 @@ ideas = {
 
 		SWI_the_swiss_banking_act = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWI_the_swiss_banking_act"}
-			picture = HUN_treaty_of_triannons
+			picture = SWI_swiss_banks
 			modifier = {
 				political_power_factor = -0.10
 				stability_factor = 0.05
