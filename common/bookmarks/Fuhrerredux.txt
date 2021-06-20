@@ -111,6 +111,21 @@ bookmarks = {
         }
 
         ### Minors
+		"CRU" = {
+            history = "CRU_FUHRERREDUX_DESC"
+            ideology = valkist
+            minor = yes
+            ideas = {
+               	CRU_spirit_of_the_faithful1
+				CRU_mayan_ascension1
+				CRU_non_existent_industry
+            }
+            focuses = {
+                CRU_the_warriors_of_tomorrow
+				CRU_creating_our_new_generation
+				CRU_defend_our_faith_and_culture
+            }
+        }
         "PHI" = {
             history = "PHI_FUHRERREDUX_DESC"
             ideology = authoritarian_democrat

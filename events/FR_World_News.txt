@@ -655,6 +655,8 @@ news_event = {
 	picture = Ausgleich_start
 
 	is_triggered_only = yes
+	
+	fire_only_once = yes
 
 	
 
@@ -1953,6 +1955,8 @@ news_event = {
 	desc = worldnews.144.d
 	picture = GFX_news_event_FRA_colonial_exhibition
 	is_triggered_only = yes
+	
+	fire_only_once = yes
 	
 	immediate = {
 		set_global_flag = WN_144_DONE

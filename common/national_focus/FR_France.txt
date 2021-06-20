@@ -4911,6 +4911,7 @@ focus_tree = {
 		icon = GFX_goal_VIN_Rights_of_Corporation
 		x = -2
 		y = 1
+		cost = 5
 		available = {
 			has_capitulated = no
 			has_government = authoritarian_democrat
@@ -4929,6 +4930,7 @@ focus_tree = {
 		icon = GFX_focus_chi_reach_out_to_france
 		x = 0
 		y = 1
+		cost = 5
 		available = {
 			has_capitulated = no
 			has_government = authoritarian_democrat
@@ -4947,6 +4949,7 @@ focus_tree = {
 		icon = GFX_focus_ger_oppose_hitler
 		x = 2
 		y = 1
+		cost = 5
 		available = {
 			has_capitulated = no
 			has_government = authoritarian_democrat
@@ -4965,6 +4968,7 @@ focus_tree = {
 		icon = GFX_goal_COS_Ferrer_Coup
 		x = 0
 		y = 1
+		cost = 5
 		prerequisite = {
 			focus = fra_anti_german_propaganda
 		}
@@ -5004,6 +5008,7 @@ focus_tree = {
 		icon = GFX_focus_generic_strike_at_democracy1
 		x = -1
 		y = 1
+		
 		prerequisite = {
 			focus = fra_ban_radicals
 		}
@@ -5025,6 +5030,7 @@ focus_tree = {
 		icon = GFX_focus_generic_diplomatic_treaty
 		x = 1
 		y = 1
+		cost = 5
 		prerequisite = {
 			focus = fra_ban_radicals
 		}
@@ -5636,6 +5642,7 @@ focus_tree = {
 			add_political_power = 100
 		}
 	}
+<<<<<<< HEAD
 	# The Kingdom Restored!
 	focus = {
 		id = fra_kingdom_restored
@@ -5664,6 +5671,35 @@ focus_tree = {
 			}
 		}
 	}
+=======
+	# Proclaim the Empire
+	#focus = {
+	#	id = fra_empire
+	#	icon = GFX_goal_NFA_French_Empire
+	#	x = 1
+	#	y = 1
+	#	cost = 10
+	#	prerequisite = {
+	#		focus = fra_german_war
+	#	}
+	#	prerequisite = {
+	#		focus = fra_distribute_titles
+	#	}
+	#	relative_position_id = fra_german_war
+	#	available = {
+	#		has_capitulated = no
+	#		has_government = paternal_autocrat
+	#		OR = {
+	#		GRP = { is_subject_of = FRA }
+	#		}
+	#	}
+	#	completion_reward = {
+	#		FRA = {
+	#			set_cosmetic_tag = FRA_new_empire
+	#		}
+	#	}
+	#}
+>>>>>>> main
 	# Spreading Christian Beliefs
 	focus = {
 		id = fra_christ_spread
