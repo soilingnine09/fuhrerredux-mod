@@ -5642,7 +5642,6 @@ focus_tree = {
 			add_political_power = 100
 		}
 	}
-<<<<<<< HEAD
 	# The Kingdom Restored!
 	focus = {
 		id = fra_kingdom_restored
@@ -5671,35 +5670,6 @@ focus_tree = {
 			}
 		}
 	}
-=======
-	# Proclaim the Empire
-	#focus = {
-	#	id = fra_empire
-	#	icon = GFX_goal_NFA_French_Empire
-	#	x = 1
-	#	y = 1
-	#	cost = 10
-	#	prerequisite = {
-	#		focus = fra_german_war
-	#	}
-	#	prerequisite = {
-	#		focus = fra_distribute_titles
-	#	}
-	#	relative_position_id = fra_german_war
-	#	available = {
-	#		has_capitulated = no
-	#		has_government = paternal_autocrat
-	#		OR = {
-	#		GRP = { is_subject_of = FRA }
-	#		}
-	#	}
-	#	completion_reward = {
-	#		FRA = {
-	#			set_cosmetic_tag = FRA_new_empire
-	#		}
-	#	}
-	#}
->>>>>>> main
 	# Spreading Christian Beliefs
 	focus = {
 		id = fra_christ_spread

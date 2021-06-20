@@ -862,7 +862,7 @@ country_event = { # 1940 Elections
             USA_John_Abt_sec_lib
         }
         hidden_effect = {
-            set_country_flag = USA_had_1936_elections
+            set_country_flag = USA_had_1940_elections
             country_event = { id = usa.32 days = 45 }
         }
     }
@@ -1048,6 +1048,10 @@ country_event = { # New England Seceeds
                 USA = {
                     remove_state_core = PREV
                     add_state_claim = PREV
+                    delete_unit = {
+                        state = PREV
+                        disband = no
+                    }
                 }
             }
             NEE = { load_oob = "NEE" }
@@ -1108,6 +1112,10 @@ country_event = { # Midwest Seceeds
                 USA = {
                     remove_state_core = PREV
                     add_state_claim = PREV
+                    delete_unit = {
+                        state = PREV
+                        disband = no
+                    }
                 }
             }
             CLB = { load_oob = "CLB" }
@@ -1163,6 +1171,10 @@ country_event = { # Rust Belt
                 USA = {
                     remove_state_core = PREV
                     add_state_claim = PREV
+                    delete_unit = {
+                        state = PREV
+                        disband = no
+                    }
                 }
             }
             NAR = { load_oob = "NAR" }
@@ -1197,12 +1209,23 @@ country_event = { # UK Seizes Cascadia, Puerto Rico, Alaska
 
     immediate = {
         hidden_effect = {
-            ENG = { 
-                transfer_state = 385
-                transfer_state = 386
-                transfer_state = 686
-                transfer_state = 463
-                transfer_state = 629
+            every_owned_state = {
+                limit = {
+                    OR = {
+                        state = 385
+                        state = 386
+                        state = 686
+                        state = 463
+                        state = 629
+                    }
+                }
+                ENG = { transfer_state = PREV }
+                USA = {
+                    delete_unit = {
+                        state = PREV
+                        disband = no
+                    }
+                }
             }
         }
     }
@@ -1332,14 +1355,14 @@ country_event = { # Emergency Congress Session
             if = {
                 limit = {
                     NOT = { has_country_flag = USA_macarthur_retired }
-                    create_country_leader = {
-                        name = "Douglas MacArthur"
-                        desc = "POLITICS_DOUGLAS_MACARTHUR_DESC"
-                        picture = "Portrait_USA_Douglas_MacArthur_fx.tga"
-                        expire = "1965.1.1"
-                        ideology = paternal_autocrat_subtype
-                        traits = { }
-                    }
+                }
+                create_country_leader = {
+                    name = "Douglas MacArthur"
+                    desc = "POLITICS_DOUGLAS_MACARTHUR_DESC"
+                    picture = "Portrait_USA_Douglas_MacArthur_fx.tga"
+                    expire = "1965.1.1"
+                    ideology = paternal_autocrat_subtype
+                    traits = { }
                 }
             }
             else = {
@@ -1352,6 +1375,7 @@ country_event = { # Emergency Congress Session
                     traits = { }
                 }
             }
+            
             set_country_flag = USA_military_junta
             set_party_name = {
                 ideology = paternal_autocrat
