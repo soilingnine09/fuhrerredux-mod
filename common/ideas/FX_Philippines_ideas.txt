@@ -26,29 +26,29 @@ ideas = {
             picture = generic_socialist_research
             modifier = {
                 political_power_cost = 0.15
-                research_speed_factor = 0.2
+                conscription_factor = -0.25
+                research_speed_factor = 0.15
             }
         }
         PHI_marxist_professors_purged1 = {
             picture = officers_purged
             allowed = { is_a_filipino_tag = yes }
             modifier = {
-				research_speed_factor = -0.1
+				research_speed_factor = -0.15
             }
         }
         PHI_marxist_professors_purged2 = {
             allowed = { is_a_filipino_tag = yes }
             picture = officers_purged
             modifier = {
-                stability_factor = 0.1
-				research_speed_factor = 0.2
+				research_speed_factor = 0.15
             }
         }
         PHI_marxist_professors_reformed = {
             allowed = { is_a_filipino_tag = yes }
             picture = generic_army_war_college
             modifier = {
-				research_speed_factor = 0.2
+				research_speed_factor = 0.15
             }
         }
         PHI_finance_department = {

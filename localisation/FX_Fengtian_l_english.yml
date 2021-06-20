@@ -102,55 +102,6 @@ MAN_death_to_pretenders_desc:0 "The Zhili Clique are a thorn in our side- traito
 20_MAN_tt:0 "This focus will §Gautomatically bypass§! if we are at war solely with the Zhili Clique."
 21_MAN_tt:0 "This focus will §Gautomatically bypass§! if we are at war solely with Japan."
 
-#### MINISTERS ####
-
-MAN_Zhang_Council_hog:0 "Zhang Council"
-MAN_Zhang_Xueliang_hog:0 "Zhang Xueliang"
-MAN_Local_Warlords_hog:0 "Local Warlords"
-MAN_Interim_Government_hog:0 "Interim Government"
-MAN_Tang_Hualong_hog:0 "Tang Hualong"
-MAN_Tang_Shaoyi_hog:0 "Tang Shaoyi"
-MAN_TV_Soong_hog:0 "T.V. Soong"
-MAN_Zhang_Zongchang_hog:0 "Zhang Zongchang"
-MAN_Cao_Rulin_hog:0 "Cao Rulin"
-
-MAN_Ruan_Zhenduo_for:0 "Ruan Zhenduo"
-MAN_Yu_Zhishan_for:0 "Yu Zhishan"
-MAN_Chang_Chun_for:0 "Chang Chun"
-MAN_Huang_Fu_for:0 "Huang Fu"
-MAN_Wu_Jinglian_for:0 "Wu Jinglian"
-MAN_Sun_Qichang_for:0 "Sun Qichang"
-MAN_Wang_Yintai_for:0 "Wang Yintai"
-
-MAN_Ruan_Zhenduo_eco:0 "Ruan Zhenduo"
-MAN_Yu_Zhishan_eco:0 "Yu Zhishan"
-MAN_Li_Shaogeng_eco:0 "Li Shaogeng"
-MAN_Lu_Ronghuan_eco:0 "Lu Ronghuan"
-MAN_Chang_Chun_eco:0 "Chang Chun"
-MAN_Pan_Fu_eco:0 "Pan Fu"
-MAN_Y_C_James_Yen_eco:0 "Y.C. James Yen"
-MAN_Sun_Qichang_eco:0 "Sun Qichang"
-MAN_Tang_Yulin_eco:0 "Tang Yulin"
-MAN_Yuan_Jinkai_eco:0 "Yuan Jinkai"
-
-MAN_Ding_Jianxiu_sec:0 "Ding Jianxiu"
-MAN_Yang_Yuting_sec:0 "Yang Yuting"
-MAN_Cao_Rulin_sec:0 "Cao Rulin"
-MAN_Li_Shaogeng_sec:0 "Li Shaogeng"
-MAN_Liang_Shiyi_sec:0 "Liang Shiyi"
-MAN_Y_C_James_Yen_sec:0 "Y.C. James Yen"
-MAN_Ma_Zhanshan_sec:0 "Ma Zhanshan"
-MAN_Tang_Yulin_sec:0 "Tang Yulin"
-MAN_Yuan_Jinkai_sec:0 "Yuan Jinkai"
-
-MAN_Bao_Wenyue_int:0 "Bao Wenyue"
-MAN_Ding_Jianxiu_int:0 "Ding Jianxiu"
-MAN_Lu_Ronghuan_int:0 "Lu Ronghuan"
-MAN_Mo_Dehui_int:0 "Mo Dehui"
-MAN_Wu_Jinglian_int:0 "Wu Jinglian"
-MAN_Tang_Yulin_int:0 "Tang Yulin"
-MAN_Zang_Shiyi_int:0 "Zang Shiyi"
-
 #### FLAGS ####
 
 MAN_in_a_state_of_anarchy:0 " Descending into a state of complete chaos."
@@ -170,94 +121,6 @@ JAP_support_MAN:0 "The Japanese officially support Fengtian."
 JAP_support_ZHI:0 "The Japanese officially support the Zhili."
 MAN_japan_has_subsidized_our_economy:0 "Japan has agreed to assist in the building of our economy."
 MAN_japan_refuses_to_support_our_economy:0 "Japan has refused to subsidize our economy. We even asked very nicely."
-
-  ################################################################################################################################################################################################
-  ### MINISTERS
-  ################################################################################################################################################################################################
-
-### Head of Government ###
-# MAN_Ruan_Zhenduo_hog_mli:0 "Ruan Zhenduo"
-# MAN_Yang_Yuting_hog_mli:0 "Yang Yuting"
-# MAN_Cao_Rulin_hog_sco:0 "Cao Rulin"
-# MAN_Liang_Shiyi_hog_sco:0 "Liang Shiyi"
-# MAN_Chang_Chun_hog_ade:0 "Chang Chun"
- #MAN_Huang_Fu_hog_ade:0 "Huang Fu"
- #MAN_Zhang_Xueliang_hog_pau:0 "Zhang Xueliang"
-# MAN_Zhang_Zuolin_hog_pau:0 "Zhang Zuolin"
-
-### Foreign Minister ###
- #MAN_Ruan_Zhenduo_for_mli:0 "Ruan Zhenduo"
- #MAN_Yu_Zhishan_for_mli:0 "Yu Zhishan"
- #MAN_Chang_Chun_for_ade:0 "Chang Chun"
- #MAN_Huang_Fu_for_ade:0 "Huang Fu"
- #MAN_Wu_Jinglian_for_ade:0 "Wu Jinglian"
-# MAN_Sun_Qichang_for_pau:0 "Sun Qichang"
-# MAN_Wang_Yintai_for_pau:0 "Wang Yintai"
-
-### Economy Minister ###
- #MAN_Ruan_Zhenduo_eco_mli:0 "Ruan Zhenduo"
-# MAN_Yu_Zhishan_eco_mli:0 "Yu Zhishan"
- #MAN_Li_Shaogeng_eco_sco:0 "Li Shaogeng"
- #MAN_Lu_Ronghuan_eco_sco:0 "Lu Ronghuan"
- #MAN_Chang_Chun_eco_ade:0 "Chang Chun"
- #MAN_Pan_Fu_eco_ade:0 "Pan Fu"
-# MAN_Y_C_James_Yen_eco_ade:0 "Y. C. James Yen"
- #MAN_Sun_Qichang_eco_pau:0 "Sun Qichang"
- #MAN_Tang_Yulin_eco_pau:0 "Tang Yulin"
- #MAN_Yuan_Jinkai_eco_pau:0 "Yuan Jinkai"
- #MAN_Zhang_Xueliang_eco_pau:0 "Zhang Xueliang"
-
-### Security Minister ###
-# MAN_Ding_Jianxiu_sec_mli:0 "Ding Jianxiu"
- #MAN_Yang_Yuting_sec_mli:0 "Yang Yuting"
-# MAN_Cao_Rulin_sec_sco:0 "Cao Rulin"
- #MAN_Li_Shaogeng_sec_sco:0 "Li Shaogeng"
- #MAN_Liang_Shiyi_sec_sco:0 "Liang Shiyi"
-# MAN_Y_C_James_Yen_sec_ade:0 "Y. C. James Yen"
-# MAN_Ma_Zhanshan_sec_pau:0 "Ma Zhanshan"
- #MAN_Tang_Yulin_sec_pau:0 "Tang Yulin"
-# MAN_Yuan_Jinkai_sec_pau:0 "Yuan Jinkai"
-
-### Intelligence Minister ###
- MAN_Bao_Wenyue_int_mli:0 "Bao Wenyue"
- MAN_Ding_Jianxiu_int_mli:0 "Ding Jianxiu"
- MAN_Lu_Ronghuan_int_sco:0 "Lu Ronghuan"
- MAN_Mo_Dehui_int_sco:0 "Mo Dehui"
- MAN_Wu_Jinglian_int_ade:0 "Wu Jinglian"
- MAN_Tang_Yulin_int_pau:0 "Tang Yulin"
- MAN_Zang_Shiyi_int_pau:0 "Zang Shiyi"
-
-### Chief of Staff ###
- MAN_Yang_Yuting_cos_mli:0 "Yang Yuting"
- MAN_Zhou_Ziqi_cos_sco:0 "Zhou Ziqi"
- MAN_Ma_Zhanshan_cos_pau:0 "Ma Zhanshan"
- MAN_Wu_Junsheng_cos_pau:0 "Wu Junsheng"
- MAN_Zang_Shiyi_cos_pau:0 "Zang Shiyi"
- MAN_Zhang_Xueliang_cos_pau:0 "Zhang Xueliang"
- MAN_Zhang_Zuolin_cos_pau:0 "Zhang Zuolin"
-
-### Chief of Army ###
- MAN_Bao_Wenyue_carm_mli:0 "Bao Wenyue"
- MAN_Yang_Yuting_carm_mli:0 "Yang Yuting"
- MAN_Yu_Zhishan_carm_mli:0 "Yu Zhishan"
- MAN_Zhou_Ziqi_carm_sco:0 "Zhou Ziqi"
- MAN_Ma_Zhanshan_carm_pau:0 "Ma Zhanshan"
- MAN_Sun_Qichang_carm_pau:0 "Sun Qichang"
- MAN_Wan_Fulin_carm_pau:0 "Wan Fulin"
- MAN_Wu_Junsheng_carm_pau:0 "Wu Junsheng"
- MAN_Zang_Shiyi_carm_pau:0 "Zang Shiyi"
- MAN_Zhang_Zuoxiang_carm_pau:0 "Zhang Zuoxiang"
-
-### Chief of Navy ###
- MAN_Shen_Honglie_cnav_sco:0 "Shen Honglie"
- MAN_Yin_Tsuo_chien_cnav_ade:0 "Yin Tsuo chien"
-
-### Chief of Air Force ###
- MAN_Yang_Yuting_cair_mli:0 "Yang Yuting"
- MAN_Gao_Zhihang_cair_sco:0 "Gao Zhihang"
- MAN_Shen_Honglie_cair_sco:0 "Shen Honglie"
- MAN_Zhou_Ziqi_cair_sco:0 "Zhou Ziqi"
- MAN_Zhang_Xueliang_cair_pau:0 "Zhang Xueliang"
 
 #### IDEAS ####
 
@@ -844,3 +707,86 @@ man.103.d:0 "The Japanese have come into Hsinking and are extracting economic le
 man.104.d:0 "Fengtian has asked for our assistance in their war against the Zhili! They claim that this war is more than a petty squabble, but a fight for the future of China itself."
 man.105.d:0 "The Zhili shall tremble in their rotten boots at the sight of our regiments pouring down the hills into the border provinces of Shandong! We will take from them what we are rightfully owed, and make great boons in the process. We will lose some men, but so will they, so it works our to be in our favor in the end."
 man.106.d:0 "The vile Fengtian soldiers of the north have launched a minor offensive into Shandong, raiding and killing in the process. The state itself has suffered large losses. While they lost some men as well, this will not be their last foray into our lands- no, this is just a warning shot!"
+
+### Ministers
+# Head of Government
+MAN_Ruan_Zhenduo_hog_sde:0 "Ruan Zhenduo"
+MAN_Yang_Yuting_hog_mli:0 "Yang Yuting"
+MAN_Liang_Shiyi_hog_sco:0 "Liang Shiyi"
+MAN_Chen_Jiongming_hog_ade:0 "Chen Jiongming"
+MAN_Huang_Fu_hog_ade:0 "Huang Fu"
+MAN_Jin_Yunpeng_hog_ade:0 "Jin Yunpeng"
+MAN_Wang_Yitang_hog_ade:0 "Wang Yitang"
+MAN_Zhang_Xueliang_hog_pau:0 "Zhang Xueliang"
+MAN_Zhang_Zuolin_hog_pau:0 "Zhang Zuolin"
+MAN_Cao_Rulin_hog_npo:0 "Cao Rulin"
+# Foreign Minister
+MAN_Ruan_Zhenduo_for_sde:0 "Ruan Zhenduo"
+MAN_Yu_Zhishan_for_mli:0 "Yu Zhishan"
+MAN_Huang_Fu_for_ade:0 "Huang Fu"
+MAN_Wang_Yitang_for_ade:0 "Wang Yitang"
+MAN_Wu_Jinglian_for_ade:0 "Wu Jinglian"
+MAN_Sun_Qichang_for_pau:0 "Sun Qichang"
+MAN_Wang_Yintai_for_pau:0 "Wang Yintai"
+MAN_Cao_Rulin_for_npo:0 "Cao Rulin"
+# Economy Minister
+MAN_Ruan_Zhenduo_eco_sde:0 "Ruan Zhenduo"
+MAN_Yu_Zhishan_eco_mli:0 "Yu Zhishan"
+MAN_Li_Shaogeng_eco_sco:0 "Li Shaogeng"
+MAN_Lu_Ronghuan_eco_sco:0 "Lu Ronghuan"
+MAN_Jin_Yunpeng_eco_ade:0 "Jin Yunpeng"
+MAN_Pan_Fu_eco_ade:0 "Pan Fu"
+MAN_Wang_Yitang_eco_ade:0 "Wang Yitang"
+MAN_Sun_Qichang_eco_pau:0 "Sun Qichang"
+MAN_Tang_Yulin_eco_pau:0 "Tang Yulin"
+MAN_Yuan_Jinkai_eco_pau:0 "Yuan Jinkai"
+MAN_Zhang_Xueliang_eco_pau:0 "Zhang Xueliang"
+# Security Minister
+MAN_Ding_Jianxiu_sec_sde:0 "Ding Jianxiu"
+MAN_Yang_Yuting_sec_mli:0 "Yang Yuting"
+MAN_Li_Shaogeng_sec_sco:0 "Li Shaogeng"
+MAN_Liang_Shiyi_sec_sco:0 "Liang Shiyi"
+MAN_Jin_Yunpeng_sec_ade:0 "Jin Yunpeng"
+MAN_Ma_Zhanshan_sec_pau:0 "Ma Zhanshan"
+MAN_Tang_Yulin_sec_pau:0 "Tang Yulin"
+MAN_Yuan_Jinkai_sec_pau:0 "Yuan Jinkai"
+MAN_Cao_Rulin_sec_npo:0 "Cao Rulin"
+# Chief of Staff
+MAN_Yang_Yuting_cos_mli:0 "Yang Yuting"
+MAN_Zhou_Ziqi_cos_sco:0 "Zhou Ziqi"
+MAN_Ma_Zhanshan_cos_pau:0 "Ma Zhanshan"
+MAN_Wu_Junsheng_cos_pau:0 "Wu Junsheng"
+MAN_Zang_Shiyi_cos_pau:0 "Zang Shiyi"
+MAN_Zhang_Xueliang_cos_pau:0 "Zhang Xueliang"
+MAN_Zhang_Zuolin_cos_pau:0 "Zhang Zuolin"
+MAN_Cao_Linsheng_cos:0 "Cao Linsheng"
+MAN_Wang_Chengzhi_cos:0 "Wang Chengzhi"
+MAN_Wen_Yingxing_cos:0 "Wen Yingxing"
+MAN_Zou_Zuohua_cos:0 "Zou Zuohua"
+# Chief of Army
+MAN_Bao_Wenyue_carm_mli:0 "Bao Wenyue"
+MAN_Yang_Yuting_carm_mli:0 "Yang Yuting"
+MAN_Yu_Zhishan_carm_mli:0 "Yu Zhishan"
+MAN_Zhou_Ziqi_carm_sco:0 "Zhou Ziqi"
+MAN_Ma_Zhanshan_carm_pau:0 "Ma Zhanshan"
+MAN_Sun_Qichang_carm_pau:0 "Sun Qichang"
+MAN_Wan_Fulin_carm_pau:0 "Wan Fulin"
+MAN_Wu_Junsheng_carm_pau:0 "Wu Junsheng"
+MAN_Zang_Shiyi_carm_pau:0 "Zang Shiyi"
+MAN_Zhang_Zuoxiang_carm_pau:0 "Zhang Zuoxiang"
+MAN_Xu_Zuyi_carm:0 "Xu Zuyi"
+# Chief of Navy
+MAN_Shen_Honglie_cnav_sco:0 "Shen Honglie"
+MAN_Yin_Tsuo_chien_cnav_ade:0 "Yin Tsuo-chien"
+MAN_Jiang_Xiyuan_cnav:0 "Jiang Xiyuan"
+MAN_Meng_Tieqiao_cnav:0 "Meng Tieqiao"
+MAN_Xie_Gangzhe_cnav:0 "Xie Gangzhe"
+# Chief of Air Force
+MAN_Yang_Yuting_cair_mli:0 "Yang Yuting"
+MAN_Gao_Zhihang_cair_sco:0 "Gao Zhihang"
+MAN_Shen_Honglie_cair_sco:0 "Shen Honglie"
+MAN_Zhou_Ziqi_cair_sco:0 "Zhou Ziqi"
+MAN_Zhang_Xueliang_cair_pau:0 "Zhang Xueliang"
+MAN_Li_Guidan_cair:0 "Li Guidan"
+MAN_Liu_Cuigang_cair:0 "Liu Cuigang"
+MAN_Tong_Yanbo_cair:0 "Tong Yanbo"
