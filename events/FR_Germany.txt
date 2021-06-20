@@ -3314,7 +3314,7 @@ country_event = { # WIP Hungary wants Entente help
 			}
 		}
 
-		every_country = { news_event = worldnews.41 }
+		news_event = worldnews.41
 	}
 
 	option = { # Refuse
@@ -4320,7 +4320,7 @@ country_event = { # WIP Austria wants Entente help
 		153 = {
 			add_core_of = GER
 		}
-		every_country = { news_event = worldnews.41 }
+		news_event = worldnews.41
 	}
 
 	option = { # Refuse

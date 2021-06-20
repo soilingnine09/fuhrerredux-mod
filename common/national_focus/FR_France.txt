@@ -589,7 +589,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = unlocked_later
-				has_country_flag = fra_1936_election
+				has_country_flag = fra_1936_elections
 			}
 		}
 		ai_will_do = {
