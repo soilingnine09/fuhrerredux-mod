@@ -3968,7 +3968,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_baltic_front
-		icon = GFX_goal_POL_lithuanian_king
+		icon = GFX_goal_GER_pressure_the_baltic
 		x = 7
 		y = 16
 		cost = 5

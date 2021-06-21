@@ -4636,7 +4636,7 @@ focus_tree = {
 	}
 	focus = {
 		id = jap_demand_beiyang_submit
-		icon = GFX_goal_beiyang_star
+		icon = GFX_goal_generic_attack_fengtian
 		will_lead_to_war_with = MAN
 		cost = 5					
 
@@ -4716,7 +4716,7 @@ focus_tree = {
 
 	focus = {
 		id = jap_demand_zhili_submit
-		icon = GFX_goal_dragon_of_the_east
+		icon = GFX_goal_generic_attack_zhili
 		will_lead_to_war_with = ZHI
 		cost = 5
 

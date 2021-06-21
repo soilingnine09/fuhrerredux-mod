@@ -105,6 +105,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/generic_attack_romania.tga"
 	}
 	spriteType = {
+		name = "GFX_goal_generic_attack_zhili"
+		texturefile = "gfx/interface/goals/generic_attack_zhili.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_attack_fengtian"
+		texturefile = "gfx/interface/goals/generic_attack_fengtian.tga"
+	}
+	spriteType = {
 		name = "GFX_goal_generic_railroad"
 		texturefile = "gfx/interface/goals/generic_railroad.tga"
 	}
@@ -395,5 +403,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_goal_GER_government"
 		texturefile = "gfx/interface/goals/GER_government.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_GER_pressure_the_baltic"
+		texturefile = "gfx/interface/goals/GER_pressure_the_baltic.tga"
 	}
 }

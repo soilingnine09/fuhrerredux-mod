@@ -1,4 +1,20 @@
 foreign_politics = {
+    USA_support_brazil = {
+        icon = GFX_decision_generic_prepare_civil_war
+        cost = 50
+        allowed = { original_tag = USA }
+        visible = { 
+            BRA = {
+                has_war_with = BPS
+                has_war_with = UBR
+            }
+        }
+        available = { has_war = no }
+        ai_will_do = { factor = 200 }
+        complete_effect = {
+            BRA = { country_event = { id = usa.35 hours = 5 } }
+        }
+    }
     USA_demand_mexican_submission = {
         icon = GFX_decision_generic_civil_support
         cost = 100

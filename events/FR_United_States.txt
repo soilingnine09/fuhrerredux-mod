@@ -991,6 +991,19 @@ country_event = { # MacArthur Offers Services
     }
 }
 
+country_event = { # Support to Brazil
+    id = usa.35
+    title = usa.35.t
+    desc = usa.35.d
+    picture = GFX_report_event_usa_british_sailors_destroyers
+    is_triggered_only = yes
+
+    option = {
+        name = usa.35.a
+        add_ideas = BRA_american_advisors
+    }
+}
+
 country_event = { # Nationwide Riots
     id = usa.100
     title = usa.100.t

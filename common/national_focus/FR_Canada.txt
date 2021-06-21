@@ -2893,7 +2893,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_ccf_universal_healthcare
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_generic_medical
 		prerequisite = { focus = CAN_ccf_universal_pensions }
 		x = 29
 		y = 9
