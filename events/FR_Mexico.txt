@@ -601,3 +601,28 @@ country_event = {
 		}
     }
 }
+
+country_event = {
+	id = mex.24
+	title = mex.24.t
+	desc = mex.24.d
+	picture = report_event_cinco_de_mayo
+	fire_only_once = yes
+
+	trigger = {
+		tag = MEX
+		CRU = {
+			NOT = { is_subject_of = MEX }
+			NOT = { has_war_with = MEX }
+		}
+		date > 1936.3.1
+	}
+
+	option = {
+		name = mex.24.a
+		create_wargoal = {
+			target = CRU
+			type = annex_everything
+		}
+	}
+}
