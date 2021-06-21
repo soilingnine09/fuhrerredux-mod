@@ -360,6 +360,7 @@ country_event = {
     option = { # Puppet
         name = annexation.9.a
         ai_chance = { base = 95 }
+        trigger = { NOT = { tag = ENG } }
         every_owned_state = {
             limit = {
                 is_core_of = BAL
@@ -370,6 +371,19 @@ country_event = {
             BAL = { transfer_state = PREV }
         }
         puppet = BAL
+    }
+    option = {
+        name = annexation.9.b
+        trigger = { tag = ENG } 
+        every_owned_state = {
+            limit = {
+                is_core_of = BAL
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            RAJ = { transfer_state = PREV }
+        }
     }
     option = {
         name = annexation.occupation
@@ -652,6 +666,7 @@ country_event = {
     }
     option = { # Puppet
         name = annexation.15.a
+        trigger = { NOT = { tag = ENG } }
         ai_chance = { base = 95 }
         every_owned_state = {
             limit = {
@@ -663,6 +678,19 @@ country_event = {
             BIH = { transfer_state = PREV }
         }
         puppet = BIH
+    }
+    option = {
+        name = annexation.15.b
+        trigger = { tag = ENG }
+        every_owned_state = {
+            limit = {
+                is_core_of = BIH
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            RAJ = { transfer_state = PREV }
+        }
     }
     option = {
         name = annexation.occupation
@@ -3200,6 +3228,7 @@ country_event = {
     }
     option = { # Puppet
         name = annexation.63.a
+        trigger = { NOT = { tag = ENG } }
         ai_chance = { base = 95 }
         every_owned_state = {
             limit = {
@@ -3211,6 +3240,19 @@ country_event = {
             HYD = { transfer_state = PREV }
         }
         puppet = HYD
+    }
+    option = {
+        name = annexation.63.b
+        trigger = { tag = ENG }
+        every_owned_state = {
+            limit = {
+                is_core_of = HYD
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            RAJ = { transfer_state = PREV }
+        }
     }
     option = {
         name = annexation.occupation
@@ -3273,6 +3315,7 @@ country_event = {
         NOT = {
             tag = IND
             tag = RAJ
+            tag = ENG
             has_country_flag = IND_OCCUPIED
             country_exists = IND
         }
@@ -3718,6 +3761,7 @@ country_event = {
     }
     option = { # Puppet
         name = annexation.72.a
+        trigger = { NOT = { tag = ENG } }
         ai_chance = { base = 95 }
         every_owned_state = {
             limit = {
@@ -3729,6 +3773,19 @@ country_event = {
             KAS = { transfer_state = PREV }
         }
         puppet = KAS
+    }
+    option = {
+        name = annexation.72.b
+        trigger = { tag = ENG }
+        every_owned_state = {
+            limit = {
+                is_core_of = KAS
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            RAJ = { transfer_state = PREV }
+        }
     }
     option = {
         name = annexation.occupation
@@ -4390,6 +4447,7 @@ country_event = {
     }
     option = { # Puppet
         name = annexation.87.a
+        trigger = { NOT = { tag = ENG } }
         ai_chance = { base = 95 }
         every_owned_state = {
             limit = {
@@ -4403,6 +4461,19 @@ country_event = {
             }
         }
         puppet = MDR
+    }
+    option = {
+        name = annexation.87.b
+        trigger = { tag = ENG }
+        every_owned_state = {
+            limit = {
+                is_core_of = MDR
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            RAJ = { transfer_state = PREV }
+        }
     }
     option = {
         name = annexation.occupation
@@ -5026,6 +5097,7 @@ country_event = {
     }
     option = { # Puppet
         name = annexation.101.a
+        trigger = { NOT = { tag = ENG } }
         ai_chance = { base = 95 }
         every_owned_state = {
             limit = {
@@ -5039,6 +5111,19 @@ country_event = {
             }
         }
         puppet = ORI
+    }
+    option = {
+        name = annexation.101.b
+        trigger = { tag = ENG }
+        every_owned_state = {
+            limit = {
+                is_core_of = ORI
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            RAJ = { transfer_state = PREV }
+        }
     }
     option = {
         name = annexation.occupation
@@ -5535,6 +5620,7 @@ country_event = {
     }
     option = { # Puppet
         name = annexation.112.a
+        trigger = { NOT = { tag = ENG } }
         ai_chance = { base = 95 }
         every_owned_state = {
             limit = {
@@ -5548,6 +5634,19 @@ country_event = {
             }
         }
         puppet = PUN
+    }
+    option = {
+        name = annexation.9.b
+        trigger = { tag = ENG }
+        every_owned_state = {
+            limit = {
+                is_core_of = PUN
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            RAJ = { transfer_state = PREV }
+        }
     }
     option = {
         name = annexation.occupation
@@ -5713,6 +5812,7 @@ country_event = {
     }
     option = { # Puppet
         name = annexation.116.a
+        trigger = { NOT = { tag = ENG } }
         ai_chance = { base = 95 }
         every_owned_state = {
             limit = {
@@ -5726,6 +5826,19 @@ country_event = {
             }
         }
         puppet = RJH
+    }
+    option = {
+        name = annexation.9.b
+        trigger = { tag = ENG }
+        every_owned_state = {
+            limit = {
+                is_core_of = RJH
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            RAJ = { transfer_state = PREV }
+        }
     }
     option = {
         name = annexation.occupation
@@ -6972,6 +7085,7 @@ country_event = {
     }
     option = { # Puppet
         name = annexation.140.a
+        trigger = { NOT = { tag = ENG } }
         ai_chance = { base = 95 }
         every_owned_state = {
             limit = {
@@ -6986,6 +7100,19 @@ country_event = {
             }
         }
         puppet = TRV
+    }
+    option = {
+        name = annexation.140.b
+        trigger = { tag = ENG }
+        every_owned_state = {
+            limit = {
+                is_core_of = TRV
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            RAJ = { transfer_state = PREV }
+        }
     }
     option = {
         name = annexation.occupation

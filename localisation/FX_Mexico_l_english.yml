@@ -63,6 +63,9 @@ MEX_national_populist_party_long:0 "Unión Nacional Sinarquista"
 MEX_valkist_party:0 "Quetzacoatls"
 MEX_valkist_party_long:0 "Quetzacoatls"
 
+#### Decisions
+MEX_crush_cruzoob:0 "Reclaim Yucatan"
+
 #### FLAGS ####
 MEX_ROYALISTS:0 "Realistas"
 MEX_SYNARCHISTS:0 "Sinarquistas"
@@ -412,6 +415,9 @@ mex.22.a:0 "Let us hope that never happens!"
 mex.23.t:0 "Cinco de Mayo"
 mex.23.d:0 "While Cinco de Mayo is our main holiday in celebration of our freedom, layered into it is memories of our freedom achieved just years ago. If we were to lose again to vile Columbia, these raucous celebrations may be forced underground..."
 mex.23.a:0 "Let us hope that never happens!"
+mex.24.t:0 "Reclaiming Yucatan"
+mex.24.d:0 "The chaos caused by the American occupation in our lands have allowed the Mayan hardliners to break away and create their own state. While we have done nothing in the past, it is because we are dealing with our own issues internally. But alas, our state is stable and ready to claim the land it has lost south."
+mex.24.a:0 "Prepare to mobilize the army!"
 #################
 ### MINISTERS ###
 #################
