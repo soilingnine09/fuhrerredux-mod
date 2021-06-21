@@ -140,9 +140,9 @@ USA_american_unification = {
 USA_dealing_with_the_great_depression = {
     USA_pass_curtis_reforms = {
         icon = GFX_decision_eng_trade_unions_support
-        is_good = yes
+        is_good = no
 
-        available = { has_completed_focus = USA_slow_recovery }
+        available = { has_completed_focus = USA_slow_recovery } 
         activation = { USA_has_great_depression = yes }
 
         days_mission_timeout = 360
@@ -154,6 +154,7 @@ USA_dealing_with_the_great_depression = {
         }
         complete_effect = {
             add_stability = 0.15
+            
         }
     }
 }

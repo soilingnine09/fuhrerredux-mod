@@ -30,6 +30,12 @@ country_event = { # 1936 Elections
         NOT = { has_country_flag = USA_had_1936_elections }
     }
 
+    immediate = {
+        hidden_effect = {
+            kill_ideology_leader = market_liberal
+        }
+    }
+
     option = { # Long
         name = usa.1.a
         set_politics = {

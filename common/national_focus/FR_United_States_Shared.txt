@@ -103,10 +103,8 @@ shared_focus = {
 	y = 1
 	cost = 6
 	ai_will_do = { factor = 1000 }
-	prerequisite = {
-		focus = USA_economic_incentives
-		focus = USA_increase_corporate_taxes
-	}
+	prerequisite = { focus = USA_economic_incentives }
+	prerequisite = { focus = USA_increase_corporate_taxes }
 	relative_position_id = USA_increase_corporate_taxes
 	completion_reward = {
 		USA_decrease_effects_of_malnourishment = yes
@@ -121,10 +119,8 @@ shared_focus = {
 	y = 1
 	cost = 6
 	ai_will_do = { factor = 1000 }
-	prerequisite = {
-		focus = USA_increase_corporate_taxes
-		focus = USA_decrease_military_spending
-	}
+	prerequisite = { focus = USA_increase_corporate_taxes }
+	prerequisite = { focus = USA_decrease_military_spending }
 	relative_position_id = USA_increase_corporate_taxes
 	completion_reward = {
 		USA_decrease_effects_of_the_depression = yes

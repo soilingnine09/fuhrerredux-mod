@@ -102,7 +102,7 @@ USA_emergency_government_party_long:0 "Emergency Government"
 
 ### Triggers
 USA_1936_elections_happened:0 "§gThe 1936 Elections is over.§!"
-USA_1936_elections_happened_NOT:0 "§gThe 1936 Elections§! §Rnot§! §ghas not commenced.§!"
+USA_1936_elections_happened_NOT:0 "§gThe 1936 Elections has§! §Rnot§! §gyet commenced.§!"
 USA_san_francisco_conference_success:0 "§gThe San Francisco Conference is a success§!"
 USA_entente_is_formed_tt:0 "§gThe§! §YEntente Cordiale§! §ghas been formed§!"
 USA_has_great_depression_tt:0 "§gAmerica is still under the Great Depression§!"
