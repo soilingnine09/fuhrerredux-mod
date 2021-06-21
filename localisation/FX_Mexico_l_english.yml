@@ -63,6 +63,9 @@ MEX_national_populist_party_long:0 "Unión Nacional Sinarquista"
 MEX_valkist_party:0 "Quetzacoatls"
 MEX_valkist_party_long:0 "Quetzacoatls"
 
+#### Decisions
+MEX_crush_cruzoob:0 "Reclaim Yucatan"
+
 #### FLAGS ####
 MEX_ROYALISTS:0 "Realistas"
 MEX_SYNARCHISTS:0 "Sinarquistas"

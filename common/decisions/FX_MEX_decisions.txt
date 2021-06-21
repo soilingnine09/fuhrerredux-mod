@@ -1,0 +1,14 @@
+foreign_politics = {
+    MEX_crush_cruzoob = {
+        allowed = { original_tag = MEX }
+        visible = { country_exists = CRU }
+        available = { date > 1937.1.1 }
+        ai_will_do = { factor = 2000 }
+        complete_effect = {
+            create_wargoal = {
+                target = CRU
+                type = annex_everything
+            }
+        }
+    }
+}
