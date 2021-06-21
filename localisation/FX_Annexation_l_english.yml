@@ -23,8 +23,8 @@ annexation.5.d:0 "After fierce fighting in the Caucasus, we have conquered and a
 annexation.5.a:0 "Liberate Armenia!"
 
 annexation.6.t:0 "The Fate of Australia"
-annexation.6.d:0 ""
-annexation.6.a:0 ""
+annexation.6.d:0 "Austria has been forced to capitulate and our troops are patrolling the streets of Vienna to prevent a rebellion or anything that could cause further instability. However, some have proposed that creating a local Australian government would be more helpful."
+annexation.6.a:0 "Create an Australian puppet"
 
 annexation.7.t:0 "The Fate of Austria"
 annexation.7.d:0 "Austria has been forced to capitulate and our troops are patrolling the streets of Vienna to prevent a rebellion or anything that could cause further instability. However, some have proposed that creating a local Austrian government would be more helpful."
@@ -34,13 +34,14 @@ annexation.8.t:0 "The Fate of Azerbaijan"
 annexation.8.d:0 "After fierce fighting in the Caucasus, we have conquered and annexed Azerbaijan. The Azeri army has surrendered, and their territory is under our control, but the people are still resistant. What should we do with our newly conquered lands?"
 annexation.8.a:0 ""
 
-annexation.9.t:0 "The Fate of BAL"
-annexation.9.d:0 ""
-annexation.9.a:0 ""
+annexation.9.t:0 "The Fate of Baluchistan"
+annexation.9.d:0 "The entirety of Baluchistan has been brought under our control. Currently our armed forces are facing some opposition from the local populations. We could leave it up to local governments in the region to take care of any dissent."
+annexation.9.a:0 "Create a collaborationist government"
+annexation.9.b:0 "Transfer the territory to the Raj"
 
-annexation.10.t:0 "The Fate of BAW"
-annexation.10.d:0 ""
-annexation.10.a:0 ""
+annexation.10.t:0 "The Fate of Baden-Würrtemberg"
+annexation.10.d:0 "The entirety of Baden-Würrtemberg region has been brought under our control. Currently our armed forces are facing some opposition from the local populations. We could leave it up to local governments in the region to take care of any dissent."
+annexation.10.a:0 "Create a collaborationist government"
 
 annexation.11.t:0 "The Fate of Bavaria"
 annexation.11.d:0 "The entire Bavarian region has been brought under our control. Currently our armed forces are facing some opposition from the local populations. We could leave it up to local governments in the region to take care of any dissent."
@@ -59,9 +60,10 @@ annexation.14.t:0 "The Fate of Bhutan"
 annexation.14.d:0 "After our successful campaign in the Himalayas we now have the task to establish new local administrative authority in order to restore peace, however there are several options for our choice..."
 annexation.14.a:0 "Create a puppet Bhutan."
 
-annexation.15.t:0 "The Fate of BIH"
-annexation.15.d:0 ""
-annexation.15.a:0 ""
+annexation.15.t:0 "The Fate of Bihar"
+annexation.15.d:0 "The entirety of Bihar has been brought under our control. Currently our armed forces are facing some opposition from the local populations. We could leave it up to local governments in the region to take care of any dissent."
+annexation.15.a:0 "Create a collaborationist government"
+annexation.15.b:0 "Transfer the territory to the Raj"
 
 annexation.16.t:0 "The Fate of Belarus"
 annexation.16.d:0 "After a short campaign across Belarus, we have managed to shatter the defences of Minsk. Belarus is now in our hands! We must now decide on the future of it."
@@ -91,9 +93,9 @@ annexation.22.t:0 "The Fate of Burma"
 annexation.22.d:0 "Our troops are marching through Rangoon while the Burmese leadership is either in exile or in prison. What shall we do with these lands?"
 annexation.22.a:0 "Liberate and puppet Burma."
 
-annexation.23.t:0 "The Fate of BRW"
-annexation.23.d:0 ""
-annexation.23.a:0 ""
+annexation.23.t:0 "The Fate of Brandenburg"
+annexation.23.d:0 "Our troops are marching through Berlin while the Brandenburgian leadership is either in exile or in prison. What shall we do with these lands?"
+annexation.23.a:0 "Release Brandenburg as a puppet"
 
 annexation.24.t:0 "The Fate of Bulgaria"
 annexation.24.d:0 "After a long fight with the Bulgarians, we have launched a full offensive and forced the Bulgarian Army to surrender. Sofia is now in our hands! What should we do with their lands?"
@@ -104,12 +106,8 @@ annexation.25.d:0 "Our armies have taken control of Phnom Penh, and the local Ca
 annexation.25.a:0 "Set up a puppet Cambodian state."
 
 annexation.26.t:0 "The Fate of Canada"
-annexation.26.d:0 ""
+annexation.26.d:0 "After a long fight with the Canadaians, we have launched a full offensive and forced the Canadian Army to surrender. Sofia is now in our hands! What should we do with their lands?"
 annexation.26.a:0 "Liberate a puppet Canada!"
-
-annexation.27.t:0 "The Fate of Centroslavia"
-annexation.27.d:0 ""
-annexation.27.a:0 ""
 
 annexation.28.t:0 "The Fate of China"
 annexation.28.d:0 "After a long and hard-fought campaign in the vast expanses of China we've finally achieved a historic victory. Now that we've won the war, we must decide how to best secure the peace. How should we go about managing the Chinese lands we've conquered?"
@@ -120,8 +118,8 @@ annexation.29.d:0 "After a long campaign across the hostile Chilean Andes, we ha
 annexation.29.a:0 "Liberate Chile under a friendly government!"
 
 annexation.30.t:0 "The Fate of the Congo"
-annexation.30.d:0 ""
-annexation.30.a:0 ""
+annexation.30.d:0 "After a long and hard-fought campaign in the vast expanses of the Congo we've finally achieved a historic victory. Now that we've won the war, we must decide how to best secure the peace. How should we go about managing the lands we've conquered?"
+annexation.30.a:0 "Release Congo as a puppet!"
 
 annexation.31.t:0 "The Fate of Colombia"
 annexation.31.d:0 "After a campaign across Colombia, we have finally managed to shatter the Colombian defences. Bogotá is now in our hands! We must now decide on the future of Colombia."
@@ -132,15 +130,15 @@ annexation.32.d:0 "Our glorious army corps marched through the land and now occu
 annexation.32.a:0 "Restore a loyal Costa Rican state."
 
 annexation.33.t:0 "The Fate of Curacao"
-annexation.33.d:0 ""
-annexation.33.a:0 ""
+annexation.33.d:0 "After a campaign across Curacao, we have finally managed to shatter the Curacao defences. Bogotá is now in our hands! We must now decide on the future of Curacao."
+annexation.33.a:0 "Setup a puppet government in Curacao"
 
 annexation.34.t:0 "The Fate of Croatia"
 annexation.34.d:0 "We have taken control of the Croatian territories, and there is some degree of resistance among the locals. We must decide what to do with their lands."
 annexation.34.a:0 "We must liberate them."
 
 annexation.35.t:0 "The Fate of Cruzoob"
-annexation.35.d:0 ""
+annexation.35.d:0 "After our successful campaign in the Yucatan we now have the task to establish new local administrative authority in order to restore peace, however there are several options for our choice..."
 annexation.35.a:0 "Setup a puppet Yucatan Government"
 annexation.35.b:0 "Give it to our [MEX.GetAdjective] allies"
 
@@ -157,7 +155,7 @@ annexation.38.d:0 "The ancient heartland of the Czechs have been conquered by ou
 annexation.38.a:0 "Liberate a Czechoslovakian state!"
 
 annexation.39.t:0 "The Fate of the Dutch East Indies"
-annexation.39.d:0 ""
+annexation.39.d:0 "Our armies have managed to take control of Insulindia, and the islands themselves are now occupied by us. We have a few options now. We can either puppet the island or take it for ourselves, seeing as it possesses a key position in South East Asia and has many strategically valuable resources. What shall we do?"
 annexation.39.a:0 "Liberate a friendly Insulindian government!"
 
 annexation.40.t:0 "The Fate of Denmark"
@@ -181,13 +179,13 @@ annexation.44.d:0 "El Salvador has been annexed by our proud armies and our troo
 annexation.44.a:0 "Liberate a loyal El Salvador!"
 
 annexation.45.t:0 "The Fate of Britian"
-annexation.45.d:0 ""
+annexation.45.d:0 "Our armies have managed to take control of the Britain, and the island itself is now occupied by us. We have a few options in front of us, now. We can either puppet the island or take it for ourselves, seeing as it possesses a key position in the Atlantic and is crucial to retaining control of that area. What shall we do?"
 annexation.45.a:0 "Create a loyal British government."
 annexation.45.b:0 "Divide the island between England, Wales and Scotland."
 
-annexation.46.t:0 "The Fate of ERM"
-annexation.46.d:0 ""
-annexation.46.a:0 ""
+annexation.46.t:0 "The Fate of Ermland"
+annexation.46.d:0 "We have taken control of the territories of Ermland, and there is some degree of resistance among the locals. We must decide what to do with their lands."
+annexation.46.a:0 "Create a loyal government in Ermland!"
 
 annexation.47.t:0 "The Fate of Estonia"
 annexation.47.d:0 "Much of Estonia has been brought under our control as our troops occupy the region. We must now decide what to do with it."
@@ -198,7 +196,7 @@ annexation.48.d:0 "After our successful campaign in Ethiopia we now have the tas
 annexation.48.a:0 "Liberate a puppet state of Ethiopia!"
 
 annexation.49.t:0 "The Fate of the French Indochina"
-annexation.49.d:0 ""
+annexation.49.d:0 "Our armies have managed to take control of Indochina, and the islands themselves are now occupied by us. We have a few options now. We can either puppet the island or take it for ourselves, seeing as it possesses a key position in South East Asia and has many strategically valuable resources. What shall we do?"
 annexation.49.a:0 "Liberate Vietnam, Cambodia and Laos!"
 annexation.49.b:0 "Create a unified Indochinese Republic!"
 
@@ -211,7 +209,7 @@ annexation.51.d:0 "After a short campaign across the fields of Flanders we now c
 annexation.51.a:0 "Liberate Flanders"
 
 annexation.52.t:0 "The Fate of France"
-annexation.52.d:0 ""
+annexation.52.d:0 "The French state has been forced to capitulate, and our troops are parading in their capital in Paris. What should we do with the remnants of their state?"
 annexation.52.a:0 "Liberate a loyal French Government!"
 annexation.52.b:0 "Create a divided France"
 
@@ -220,12 +218,12 @@ annexation.53.d:0 "Our armed forces have defeated the Georgian regime and is now
 annexation.53.a:0 "Create a puppet state in Georgia!"
 
 annexation.54.t:0 "The Fate of Germany"
-annexation.54.d:0 ""
+annexation.54.d:0 "The German state has been forced to capitulate, and our troops are parading in their capital in Berlin. What should we do with the remnants of their state?"
 annexation.54.a:0 "Liberate the German Republic!"
 annexation.54.b:0 "Create a fragmented Germany"
 
 annexation.55.t:0 "The Fate of the Mountain Republic"
-annexation.55.d:0 ""
+annexation.55.d:0 "Our armed forces have defeated the Mountain Republic and is now triumphantly marching through the streets in their capital. Now the only thing that remains to do is to determine status of the conquered territory..."
 annexation.55.a:0 "We must liberate them"
 
 annexation.56.t:0 "The Fate of Greece"
@@ -241,12 +239,12 @@ annexation.58.d:0 "After a short campaign on the island of Hispaniola, we have f
 annexation.58.a:0 "Liberate Haiti under a friendly government!"
 
 annexation.59.t:0 "The Fate of Hannover"
-annexation.59.d:0 ""
-annexation.59.a:0 ""
+annexation.59.d:0 "We have taken control of the territories of Hannover, and there is some degree of resistance among the locals. We must decide what to do with their lands."
+annexation.59.a:0 "Create a loyal government in Hannover"
 
 annexation.60.t:0 "The Fate of Hessen"
-annexation.60.d:0 ""
-annexation.60.a:0 ""
+annexation.60.d:0 "We have taken control of the territories of Hessen, and there is some degree of resistance among the locals. We must decide what to do with their lands."
+annexation.60.a:0 "Setup a collaborationist government in Hessen"
 
 annexation.61.t:0 "The Fate of the Netherlands"
 annexation.61.d:0 "After a short campaign across the marshes and the urban centres of the Netherlands, we have managed to take down the proud nation. The Netherlands are now in our hands! We must now decide on its future."
@@ -257,8 +255,9 @@ annexation.62.d:0 "The Hungarian nation has been completely defeated. Our forces
 annexation.62.a:0 "Create a puppet [HUN.GetAdjective] state!"
 
 annexation.63.t:0 "The Fate of Hyderabad"
-annexation.63.d:0 ""
-annexation.63.a:0 ""
+annexation.63.d:0 "We have taken control of the territories of Hyderabad, and there is some degree of resistance among the locals. We must decide what to do with their lands."
+annexation.63.a:0 "Liberate Hyderabad!"
+annexation.63.b:0 "Transfer the territory to the Raj"
 
 annexation.64.t:0 "The Fate of Iceland"
 annexation.64.d:0 "A campaign in the Northern Atlantic has paid off: Iceland has fallen in our hands and the question now is what we should do with this barren island in the northern Atlantic?"
@@ -281,7 +280,7 @@ annexation.68.d:0 "We have conquered the fertile lands of Iraq including the gra
 annexation.68.a:0 "Release the Mesopotamian lands"
 
 annexation.69.t:0 "The Fate of Israel"
-annexation.69.d:0 ""
+annexation.69.d:0 "We have conquered the fertile lands of Israel including the grand and ancient city of Jerusalem. What are we to do with these old Ottoman provinces?"
 annexation.69.a:0 "Create a loyal Israeli state!"
 
 annexation.70.t:0 "The Fate of Italy"
@@ -294,11 +293,12 @@ annexation.71.d:0 "After our successful campaign on the Japanese islands we now 
 annexation.71.a:0 "Create a [JAP.GetAdjective] puppet"
 
 annexation.72.t:0 "The Fate of Kashmir"
-annexation.72.d:0 ""
+annexation.72.d:0 "We have taken control of the territories of Kashmir, and there is some degree of resistance among the locals. We must decide what to do with their lands."
 annexation.72.a:0 "Create a puppet government"
+annexation.72.b:0 "Transfer the territory to the Raj"
 
 annexation.73.t:0 "The Fate of Kazakhstan"
-annexation.73.d:0 ""
+annexation.73.d:0 "We have taken control of the territories of Kazakhstan, and there is some degree of resistance among the locals. We must decide what to do with their lands."
 annexation.73.a:0 "Release a loyal Kazakh Government!"
 
 annexation.74.t:0 "The Fate of Kenya"
@@ -306,8 +306,8 @@ annexation.74.d:0 "The steppes of Kenya are now in our graceful control, what sh
 annexation.74.a:0 "Create a Kenyan state"
 
 annexation.75.t:0 "The Fate of the Dutch Exiled Government"
-annexation.75.d:0 ""
-annexation.75.a:0 ""
+annexation.75.d:0 "We have taken control of the territories of controlled by the exiled Dutch Government, and there is some degree of resistance among the locals. We must decide what to do with their lands."
+annexation.75.a:0 "Puppet the Dutch Exiled Government!"
 
 annexation.76.t:0 "The Fate of Korea"
 annexation.76.d:0 "After the final liberation of the proud nation of Korea we were left with the responsibility of organising the administration of the newly conquered territories, what shall we do?"
@@ -318,7 +318,7 @@ annexation.77.d:0 "Our armies have taken control of the northern part of the Lev
 annexation.77.a:0 "Release a Kurdish state"
 
 annexation.78.t:0 "The Fate of Kuwait"
-annexation.78.d:0 ""
+annexation.78.d:0 "We have taken control of the territories of Kuwait, and there is some degree of resistance among the locals. We must decide what to do with their lands."
 annexation.78.a:0 "Create a puppet state in Kuwait"
 
 annexation.79.t:0 "The Fate of Laos"
@@ -330,7 +330,7 @@ annexation.80.d:0 "Much of Latvia has been brought under our control as our troo
 annexation.80.a:0 "Liberate Latvia!"
 
 annexation.81.t:0 "The Fate of Libya"
-annexation.81.d:0 ""
+annexation.81.d:0 "We have taken control of the territories of Libya, and there is some degree of resistance among the locals. We must decide what to do with their lands."
 annexation.81.a:0 "Create a puppet state in Libya!"
 
 annexation.82.t:0 "The Fate of Liberia"
@@ -346,7 +346,7 @@ annexation.84.d:0 "Our armies have taken control of Lombardy, and the locals are
 annexation.84.a:0 "Release Duchy of Lombardia as a puppet"
 
 annexation.85.t:0 "The Fate of Luxembourg"
-annexation.85.d:0 ""
+annexation.85.d:0 "We have taken control of the territories of Luxembourg, and there is some degree of resistance among the locals. We must decide what to do with their lands."
 annexation.85.a:0 "Liberate Luxembourg"
 
 annexation.86.t:0 "The Fate of Manchuria"
@@ -354,8 +354,9 @@ annexation.86.d:0 "After our successful campaign in Manchuria we now have the ta
 annexation.86.a:0 "Create an independent Manchuria!"
 
 annexation.87.t:0 "The Fate of Madras"
-annexation.87.d:0 ""
+annexation.87.d:0 "We have taken control of the territories of Madras, and there is some degree of resistance among the locals. We must decide what to do with their lands."
 annexation.87.a:0 "Create a puppet state of Madras"
+annexation.87.b:0 "Transfer the territory to the Raj"
 
 annexation.88.t:0 "The Fate of Mexico"
 annexation.88.d:0 "After a long campaign across Mexico, we have finally managed to shatter the Mexican defences. Mexico City is now in our hands! We must now decide on the future of Mexico."
@@ -370,11 +371,11 @@ annexation.90.d:0 "We have freed Morocco from the French and our forces are now 
 annexation.90.a:0 "We must liberate them"
 
 annexation.91.t:0 "The Fate of Mysore"
-annexation.91.d:0 ""
+annexation.91.d:0 "We have taken control of the territories of Mysore, and there is some degree of resistance among the locals. We must decide what to do with their lands."
 annexation.91.a:0 "Liberate Mysore under a friendly government!"
 
 annexation.92.t:0 "The Fate of Naples"
-annexation.92.d:0 ""
+annexation.92.d:0 "We have taken control of the territories of Naples, and there is some degree of resistance among the locals. We must decide what to do with their lands."
 annexation.92.a:0 "Create a puppet state in Naples"
 
 annexation.93.t:0 "The Fate of Nepal"
@@ -382,7 +383,7 @@ annexation.93.d:0 "After our successful campaign in the Himalayas we now have th
 annexation.93.a:0 "Release a [NEP.GetAdjective] puppet state"
 
 annexation.94.t:0 "The Fate of Newfoundland"
-annexation.94.d:0 ""
+annexation.94.d:0 "We have taken control of the territories of Newfoundland, and there is some degree of resistance among the locals. We must decide what to do with their lands."
 annexation.94.a:0 ""
 annexation.94.b:0 "Give it to [CAN.GetNameDef]"
 
@@ -395,7 +396,7 @@ annexation.96.d:0 "The Norwegian Army has surrendered, and we have completely ca
 annexation.96.a:0 "Create a loyal Norwegian state!"
 
 annexation.97.t:0 "The Fate of Normandy"
-annexation.97.d:0 ""
+annexation.97.d:0 "We have taken control of the territories of Normandy, and there is some degree of resistance among the locals. We must decide what to do with their lands."
 annexation.97.a:0 "Create a puppet state in Normandy"
 
 annexation.98.t:0 "The Fate of New Zealand"
@@ -403,7 +404,7 @@ annexation.98.d:0 "The islands of New Zealand have been brought under our contro
 annexation.98.a:0 "Release New Zealand"
 
 annexation.99.t:0 "The Fate of Occitania"
-annexation.99.d:0 ""
+annexation.99.d:0 "We have taken control of the territories of Occitania, and there is some degree of resistance among the locals. We must decide what to do with their lands."
 annexation.99.a:0 "Create a puppet state in Occitania"
 
 annexation.100.t:0 "The Fate of Oman"
@@ -411,8 +412,9 @@ annexation.100.d:0 "After a long fight with the Omani, we have launched a full o
 annexation.100.a:0 "Liberate Oman!"
 
 annexation.101.t:0 "The Fate of Orissa"
-annexation.101.d:0 ""
+annexation.101.d:0 "We have taken control of the territories of Orissa, and there is some degree of resistance among the locals. We must decide what to do with their lands."
 annexation.101.a:0 "Liberate Orissa under a friendly government!"
+annexation.101.b:0 "Transfer the territory to the Raj"
 
 annexation.102.t:0 "The Fate of Persia"
 annexation.102.d:0 "After a long fight with the Persians, we have launched a full offensive and forced the Persian Army to surrender. [266.GetName] is now in our hands!"
@@ -439,7 +441,7 @@ annexation.107.d:0 "Our soldiers are marching through the streets of Warsaw afte
 annexation.107.a:0 "Release a loyal Polish state"
 
 annexation.108.t:0 "The Fate of Pomerania"
-annexation.108.d:0 ""
+annexation.108.d:0 "We have taken control of the territories of Pomerania, and there is some degree of resistance among the locals. We must decide what to do with their lands."
 annexation.108.a:0 "Create a puppet state in Pomerania"
 
 annexation.109.t:0 "The Fate of Portugal"
@@ -456,11 +458,12 @@ annexation.111.d:0 "Following a brief campaign, San Juan has is under our contro
 annexation.111.a:0 "Release an independent Puerto Rico"
 
 annexation.112.t:0 "The Fate of Punjab"
-annexation.112.d:0 ""
+annexation.112.d:0 "We have taken control of the territories of Punjab, and there is some degree of resistance among the locals. We must decide what to do with their lands."
 annexation.112.a:0 "Create a puppet state in Punjab"
+annexation.112.b:0 "Transfer the territory to the Raj"
 
 annexation.113.t:0 "The Fate of Quebec"
-annexation.113.d:0 ""
+annexation.113.d:0 "We have taken control of the territories of Quebec, and there is some degree of resistance among the locals. We must decide what to do with their lands."
 annexation.113.a:0 "Release an independent Quebec"
 
 annexation.114.t:0 "The Fate of the Rhineland"
@@ -468,12 +471,13 @@ annexation.114.d:0 "The entire Rhenish region has been brought under our control
 annexation.114.a:0 "Release a loyal Rhenish state"
 
 annexation.115.t:0 "The Fate of Rhodesia"
-annexation.115.d:0 ""
+annexation.115.d:0 "We have taken control of the territories of Rhodesia, and there is some degree of resistance among the locals. We must decide what to do with their lands."
 annexation.115.a:0 "Create a loyal Rhodesian puppet state!"
 
 annexation.116.t:0 "The Fate of Rajahstan"
-annexation.116.d:0 ""
+annexation.116.d:0 "We have taken control of the territories of Rajahstan, and there is some degree of resistance among the locals. We must decide what to do with their lands."
 annexation.116.a:0 "Create a puppet state in Rajahstan"
+annexation.116.b:0 "Transfer the territory to the Raj"
 
 annexation.117.t:0 "The Fate of Romania"
 annexation.117.d:0 "The Romanian forces have finally capitulated to our superior might. The time as come to decide what to do with their lands."
@@ -484,19 +488,19 @@ annexation.118.d:0 "After a long fight with the Russian state, we have launched 
 annexation.118.a:0 "Create a Russian puppet state!"
 
 annexation.119.t:0 "The Fate of South Africa"
-annexation.119.d:0 ""
+annexation.119.d:0 "After a long fight with the South African state, we have launched a full offensive and forced the South African armed forces to surrender."
 annexation.119.a:0 "Liberate South Africa!"
 
 annexation.120.t:0 "The Fate of Sardinia"
-annexation.120.d:0 ""
+annexation.120.d:0 "We have taken control of the territories of Sardinia, and there is some degree of resistance among the locals. We must decide what to do with their lands."
 annexation.120.a:0 "Release Sardinia as a puppet"
 
 annexation.121.t:0 "The Fate of Saxony"
-annexation.121.d:0 ""
+annexation.121.d:0 "We have taken control of the territories of Saxony, and there is some degree of resistance among the locals. We must decide what to do with their lands."
 annexation.121.a:0 "Liberate Saxony!"
 
 annexation.122.t:0 "The Fate of Sichuan"
-annexation.122.d:0 ""
+annexation.122.d:0 "We have taken control of the territories of Sichuan, and there is some degree of resistance among the locals. We must decide what to do with their lands."
 annexation.122.a:0 "Create a puppet state in Sichuan"
 
 annexation.123.t:0 "The Fate of Scotland"
@@ -508,11 +512,11 @@ annexation.124.d:0 "The Serbian State has been effectively eliminated and their 
 annexation.124.a:0 "We must liberate them!"
 
 annexation.125.t:0 "The Fate of Schleswig-Holstein"
-annexation.125.d:0 ""
+annexation.125.d:0 "We have taken control of the territories of Schleswig-Holstein, and there is some degree of resistance among the locals. We must decide what to do with their lands."
 annexation.125.a:0 "Release Schleswig-Holstein"
 
 annexation.126.t:0 "The Fate of Shanxi"
-annexation.126.d:0 ""
+annexation.126.d:0 "We have taken control of the territories of Shanxi, and there is some degree of resistance among the locals. We must decide what to do with their lands."
 annexation.126.a:0 "Liberate Shanxi"
 
 annexation.127.t:0 "The Fate of Siam"
@@ -528,7 +532,7 @@ annexation.129.d:0 "After our successful campaign in Xinjiang we now have the ta
 annexation.129.a:0 "Create an independent Xinjiang"
 
 annexation.130.t:0 "The Fate of Silesia"
-annexation.130.d:0 ""
+annexation.130.d:0 "We have taken control of the territories of Silesia, and there is some degree of resistance among the locals. We must decide what to do with their lands."
 annexation.130.a:0 "Release Silesia as a puppet"
 
 annexation.131.t:0 "The Fate of Slovakia"
@@ -540,7 +544,7 @@ annexation.132.d:0 "Our troops have occupied the small region of Slovenia, and w
 annexation.132.a:0 "We must liberate them."
 
 annexation.133.t:0 "The Fate of the Soviet Union"
-annexation.133.d:0 ""
+annexation.133.d:0 "After a long fight with the Soviet state, we have launched a full offensive and forced the Red Army to surrender. Moscow is now in our hands and fate of the Soviet nation with it!"
 annexation.133.a:0 "Release a Russian puppet!"
 annexation.133.b:0 "Release a Soviet puppet!"
 
@@ -572,8 +576,9 @@ annexation.139.d:0 "Turkestan has been brought under our control as our troops o
 annexation.139.a:0 "Liberate the Turkestan Republic"
 
 annexation.140.t:0 "The Fate of Travancore"
-annexation.140.d:0 ""
+annexation.140.d:0 "We have taken control of the territories of Travancore, and there is some degree of resistance among the locals. We must decide what to do with their lands."
 annexation.140.a:0 "Create a puppet state in Travancore!"
+annexation.140.b:0 "Transfer the territory to the Raj"
 
 annexation.141.t:0 "The Fate of Tunisia"
 annexation.141.d:0 "After overwhelming the Tunisian defences, we have launched a full offensive and Tunis is now in our hands, along with the rest of Tunisia. The Bey and several nationalists are clamouring for self-governance, and some suggest they should be granted it. Alternatively, we could continue to occupy Tunisia. What should we do?"
@@ -608,7 +613,7 @@ annexation.148.d:0 "Wales has been brought under our control as our troops occup
 annexation.148.a:0 "Release an independent Wales loyal to us!"
 
 annexation.149.t:0 "The Fate of the Ma Clique"
-annexation.149.d:0 ""
+annexation.149.d:0 "We have taken control of the territories of the Ma Clique, and there is some degree of resistance among the locals. We must decide what to do with their lands."
 annexation.149.a:0 "Liberate a friendly government loyal to us!"
 
 annexation.150.t:0 "The Fate of Yemen"
@@ -616,11 +621,11 @@ annexation.150.d:0 "After a long fight with the Yemenites, we have launched a fu
 annexation.150.a:0 "Liberate Yemen!"
 
 annexation.151.t:0 "The Fate of Yunnan"
-annexation.151.d:0 ""
+annexation.151.d:0 "We have taken control of the territories of Yunan, and there is some degree of resistance among the locals. We must decide what to do with their lands."
 annexation.151.a:0 "Liberate a friendly government loyal to us!"
 
 annexation.152.t:0 "The Fate of Zhili"
-annexation.152.d:0 ""
+annexation.152.d:0 "We have taken control of the territories of Zhili, and there is some degree of resistance among the locals. We must decide what to do with their lands."
 annexation.152.a:0 "Liberate a friendly government loyal to us!"
 
 annexation.153.t:0 "The Fate of Malaya"
