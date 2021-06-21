@@ -294,7 +294,7 @@ shared_focus = {
 # Metro Manila
 shared_focus = {
     id = PHI_metro_manila
-    icon = GFX_goal_generic_construct_infrastructure
+    icon = GFX_goal_generic_railway_construction
     x = 0
     y = 1
     cost = 6
@@ -317,7 +317,7 @@ shared_focus = {
 # Expand PNR
 shared_focus = {
     id = PHI_expand_pnr
-    icon = GFX_goal_generic_construct_infrastructure
+    icon = GFX_goal_generic_railroad
     x = 0
     y = 1
     cost = 6
@@ -386,7 +386,7 @@ shared_focus = {
 # The Pan-Philippine Highway
 shared_focus = {
     id = PHI_the_pan_philippine_highway
-    icon = GFX_goal_generic_construct_infrastructure
+    icon = GFX_goal_generic_highway
     x = 0
     y = 1
     cost = 6

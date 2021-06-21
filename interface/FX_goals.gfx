@@ -105,6 +105,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/generic_attack_romania.tga"
 	}
 	spriteType = {
+		name = "GFX_goal_generic_railroad"
+		texturefile = "gfx/interface/goals/generic_railroad.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_railway_construction"
+		texturefile = "gfx/interface/goals/generic_railway_construction.tga"
+	}
+	spriteType = {
 		name = "GFX_goal_generic_lightbulb"
 		texturefile = "gfx/interface/goals/generic_lightbulb.tga"
 	}
@@ -115,6 +123,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_goal_generic_banking_legislation"
 		texturefile = "gfx/interface/goals/generic_banking_legislation.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_highway"
+		texturefile = "gfx/interface/goals/generic_highway.tga"
 	}
 	spriteType = {
 		name = "GFX_goal_generic_build_housing"
@@ -375,5 +387,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_goal_RHI_referendum"
 		texturefile = "gfx/interface/goals/RHI_referendum.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_GER_alliance_with_slovakia"
+		texturefile = "gfx/interface/goals/GER_alliance_with_slovakia.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_GER_government"
+		texturefile = "gfx/interface/goals/GER_government.tga"
 	}
 }

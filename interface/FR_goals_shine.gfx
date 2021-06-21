@@ -11208,10 +11208,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_goal_traitor_clique_shine"
-		texturefile = "gfx/interface/goals/ZHI_traitor_clique.dds"
+		texturefile = "gfx/interface/goals/ZHI_traitor_clique.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ZHI_traitor_clique.dds"
+			animationmaskfile = "gfx/interface/goals/ZHI_traitor_clique.tga"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -11224,7 +11224,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ZHI_traitor_clique.dds"
+			animationmaskfile = "gfx/interface/goals/ZHI_traitor_clique.tga"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no

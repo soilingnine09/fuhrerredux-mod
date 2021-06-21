@@ -124,7 +124,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_idea_POL_advisorbois"
-		texturefile = "gfx/interface/ideas/ideas/POL_advisorbois.dds"
+		texturefile = "gfx/interface/ideas/ideas/POL_advisorbois.tga"
 	}
 	SpriteType = {
 		name = "GFX_idea_POL_ukrainians_happy"

@@ -21,7 +21,7 @@ focus_tree = {
 ## Forming a government
 	focus = {
 		id = GER_form_govt
-		icon = GFX_goal_valkist_star
+		icon = GFX_goal_GER_government
 		x = 6
 		y = 0
 		cost = 2
@@ -2589,7 +2589,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_slovakia_alliance
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_goal_GER_alliance_with_slovakia
 		x = 0
 		y = 15
 		cost = 5
