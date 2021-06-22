@@ -601,6 +601,9 @@ country_event = { # Negotiations in the Provinces
             remove_idea = PHI_worker_strikes2
             add_idea = PHI_worker_strikes1
         }
+        hidden_effect = {
+            country_event = { id = phi.15 days = 12 }
+        }
     }
 }
 
