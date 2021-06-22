@@ -549,7 +549,7 @@ country_event = {
 			NOT = { is_subject_of = MEX }
 			NOT = { has_war_with = MEX }
 		}
-		date > 1936.3.1
+		date > 1938.5.1
 	}
 
 	option = {

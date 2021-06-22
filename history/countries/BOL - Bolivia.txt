@@ -44,10 +44,10 @@ add_ideas = {
 	export_focus
 	volunteer_only
 	BOL_shameful_defeat
-	BOL_Abadon_Saavedra_Mallea_hog_sli
-	BOL_Alberto_Ostria_Gutierrez_for_mli
-	BOL_Gil_Ibarra_Juarez_eco_sli
-	BOL_Mamerto_Urriolagoitia_Harriague_sec_sli
+	BOL_Jose_Tejada_Sorzano_hog_sli
+	BOL_Eduardo_Anze_Matienzo_for_sli
+	BOL_Moritz_Hochschild_eco_mli
+	BOL_Jose_Santos_Quinteros_sec_sli
 	presidential_republic
 }
 

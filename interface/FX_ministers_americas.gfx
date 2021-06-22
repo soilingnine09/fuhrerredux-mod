@@ -1,7 +1,186 @@
 # Fuhrerredux Minister Sprites
-# North and Central America Region
+# North and Latin America Region
 
 spriteTypes = {
+
+	####################################################
+    # BOL
+	### Head of Government
+	spriteType = {
+		name = "GFX_idea_BOL_Guillermo_Lora_hog_van"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Guillermo_Lora.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_Orlando_Capriles_hog_col"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Orlando_Capriles.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_Gustavo_Adolfo_Navarro_hog_lib"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Gustavo_Adolfo_Navarro.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_Jose_Enrique_Hertzog_Garaizabal_hog_sde"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Jose_Enrique_Hertzog_Garaizabal.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_Jose_Tejada_Sorzano_hog_sli"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Jose_Tejada_Sorzano.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_Waldo_Belmonte_Pool_hog_sli"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Waldo_Belmonte_Pool.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_Daniel_Sanchez_Bustamante_Vasquez_hog_mli"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Daniel_Sanchez_Bustamante_Vasquez.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_Bautista_Saavedra_Mallea_hog_sco"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Bautista_Saavedra_Mallea.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_Carlos_Blanco_Galindo_hog_ade"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Carlos_Blanco_Galindo.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_Hugo_Ballivian_Rojas_hog_pau"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Hugo_Ballivian_Rojas.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_Oscar_Unzaga_de_la_Vega_hog_npo"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Oscar_Unzaga_de_la_Vega.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_Gualberto_Villarroel_Lopez_hog_val"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Gualberto_Villarroel_Lopez.tga"
+	}
+	### Foreign Minister
+	spriteType = {
+		name = "GFX_idea_BOL_Carlos_Salinas_Aramayo_for_sde"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Carlos_Salinas_Aramayo.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_Luis_Guachalla_Solares_for_sde"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Luis_Guachalla_Solares.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_Eduardo_Anze_Matienzo_for_sli"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Eduardo_Anze_Matienzo.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_Adolfo_Costa_du_Reis_for_mli"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Adolfo_Costa_du_Reis.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_Alberto_Ostria_Gutierrez_for_sco"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Alberto_Ostria_Gutierrez.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_Enrique_Finot_for_sco"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Enrique_Finot.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_Enrique_Baldivieso_Aparicio_for_pau"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Enrique_Baldivieso_Aparicio.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_Gonzalo_Romero_Alvarez_Garcia_for_npo"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Gonzalo_Romero_Alvarez_Garcia.tga"
+	}
+	### Economy Minister
+	spriteType = {
+		name = "GFX_idea_BOL_Edwin_Moeller_eco_col"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Edwin_Moeller.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_Roberto_Jordan_eco_lib"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Roberto_Jordan.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_Hernando_Siles_Reyes_eco_sde"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Hernando_Siles_Reyes.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_Moritz_Hochschild_eco_mli"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Moritz_Hochschild.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_Abdon_Saavedra_Mallea_eco_sco"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Abdon_Saavedra_Mallea.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_Daniel_Domingo_Salamanca_Urey_eco_sco"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Daniel_Domingo_Salamanca_Urey.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_Walter_Guevara_Arze_eco_sco"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Walter_Guevara_Arze.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_General_Pastor_Baldivieso_eco_ade"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_General_Pastor_Baldivieso.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_Jose_David_Toro_Ruilova_eco_pau"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Jose_David_Toro_Ruilova.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_Juan_Sanjines_eco_npo"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Juan_Sanjines.tga"
+	}
+	### Security Minister
+	spriteType = {
+		name = "GFX_idea_BOL_Mariano_Basptista_sec_lib"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Mariano_Basptista.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_Jose_Santos_Quinteros_sec_sli"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Jose_Santos_Quinteros.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_Tomas_Monje_Gutierrez_sec_sli"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Tomas_Monje_Gutierrez.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_Roberto_Hinojosa_sec_mli"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Roberto_Hinojosa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_German_Butron_sec_sco"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_German_Butron.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_Nestor_Guillen_Olmos_sec_sco"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Nestor_Guillen_Olmos.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_Julian_V_Montellano_Carrasco_sec_npo"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Julian_V_Montellano_Carrasco.tga"
+	}
+	### Chief of Staff
+	spriteType = {
+		name = "GFX_idea_BOL_Gualberto_Villarroel_Lopez_cos"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Gualberto_Villarroel_Lopez.tga"
+	}
+	### Chief of Army
+	spriteType = {
+		name = "GFX_idea_BOL_General_Pastor_Baldivieso_carm"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_General_Pastor_Baldivieso.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_Hugo_Ballivian_Rojas_carm"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Hugo_Ballivian_Rojas.tga"
+	}
+	### Chief of Navy
+	spriteType = {
+		name = "GFX_idea_BOL_Ronan_Monje_Roca_cnav"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Ronan_Monje_Roca.tga"
+	}
+	### Chief of Air Force
+	spriteType = {
+		name = "GFX_idea_BOL_Bernardino_Bilbao_Rioja_cair"
+		texturefile = "gfx/interface/ideas/BOL/ministers/BOL_Bernardino_Bilbao_Rioja.tga"
+	}
 
 	####################################################
     # COL

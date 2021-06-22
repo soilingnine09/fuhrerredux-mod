@@ -1,0 +1,886 @@
+ideas = {
+##############
+# Country ideas
+##############
+	country = {
+	
+		BOL_the_new_suyu = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BOL_the_new_suyu"}
+			allowed = {
+			original_tag = "BOL"
+			}
+
+			picture = generic_morale_bonus
+			modifier = {
+				political_power_gain = 0.1
+				army_morale_factor = 0.06
+			}
+		}
+
+		BOL_socialistic_reforms = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BOL_socialistic_reforms"}
+			allowed = {
+			original_tag = "BOL"
+			}
+
+			picture = generic_collectivism_rising
+			modifier = {
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		BOL_popular_militias = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BOL_popular_militias"}
+			allowed = {
+			original_tag = "BOL"
+			}
+
+			picture = UoB_militia_idea
+			modifier = {
+				army_morale_factor = 0.1
+				conscription = 0.05
+			}
+		}
+
+		BOL_inteligencia_revolucionaria_boliviana = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BOL_inteligencia_revolucionaria_boliviana"}
+			allowed = {
+			original_tag = "BOL"
+			}
+
+			picture = SOV_scientist_defect
+			modifier = {
+				decryption_factor = 0.1 
+				recon_factor = 0.05   
+			}
+		}
+
+		BOL_collectivist_administration = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BOL_collectivist_administration"}
+			allowed = {
+			original_tag = "BOL"
+			}
+
+			picture = generic_agrarian_reform
+			modifier = {
+				global_building_slots_factor = 0.10
+				supply_consumption_factor = -0.05
+			}
+		}
+
+		BOL_provincial_autonomy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BOL_provincial_autonomy"}
+			allowed = {
+			original_tag = "BOL"
+			}
+
+			picture = generic_agrarian_reform
+			modifier = {
+				min_export = -0.05 
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+
+		BOL_communal_councils = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BOL_communal_councils"}
+			allowed = {
+			original_tag = "BOL"
+			}
+
+			picture = generic_agrarian_reform
+			modifier = {
+				political_power_gain = 0.05	
+				stability_factor = 0.1
+			}
+		}
+
+		BOL_community_socialism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BOL_community_socialism"}
+			allowed = {
+			original_tag = "BOL"
+			}
+
+			picture = generic_agrarian_reform
+			modifier = {
+				non_core_manpower = 0.03    	
+				stability_factor = 0.05
+			}
+		}
+
+		BOL_perpetual_revolution = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BOL_perpetual_revolution"}
+			allowed = {
+			original_tag = "BOL"
+			}
+
+			picture = home_of_the_revolution
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				justify_war_goal_time = -0.2
+			}
+		}
+
+		BOL_peoples_high_command = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BOL_peoples_high_command"}
+			allowed = {
+			original_tag = "BOL"
+			}
+
+			picture = trotskyite_plot_purged
+			modifier = {
+				max_planning = 0.15
+				planning_speed = 0.10
+			}
+		}
+
+		BOL_integrated_population = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BOL_integrated_population"}
+			allowed = {
+			original_tag = "BOL"
+			}
+
+			picture = generic_manpower_bonus
+			modifier = {
+				conscription = 0.05
+			}
+		}
+
+		BOL_autochthonous_centralization = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BOL_autochthonous_centralization"}
+			allowed = {
+			original_tag = "BOL"
+			}
+
+			picture = generic_central_management
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		BOL_united_in_diversity = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BOL_united_in_diversity"}
+			allowed = {
+			original_tag = "BOL"
+			}
+
+			picture = generic_central_management
+			modifier = {
+				stability_factor = 0.12
+				monthly_population = 0.05
+			}
+		}		
+
+		BOL_ancestral_revanchist_spirit = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BOL_ancestral_revanchist_spirit"}
+			allowed = {
+			original_tag = "BOL"
+			}
+
+			picture = FRA_scw_intervention_nationalists_focus
+			modifier = {
+				conscription = 0.1
+				land_reinforce_rate = 0.15
+				army_core_attack_factor = 0.1
+			}
+		}
+		BOL_shameful_defeat = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BOL_shameful_defeat"}
+			allowed = {
+			original_tag = "BOL"
+			}
+
+			picture = guns_shield
+			modifier = {
+				political_power_gain = -0.3
+				stability_factor = -0.25
+			}
+		}
+		BOL_states_economic_plan = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BOL_states_economic_plan"}
+			allowed = {
+			original_tag = "BOL"
+			}
+
+			picture = generic_collectivism_rising
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		BOL_planned_demographics = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BOL_planned_demographics"}
+			allowed = {
+			original_tag = "BOL"
+			}
+
+			picture = generic_central_management
+			modifier = {
+				monthly_population = 0.075
+			}
+		}
+		BOL_military_autonomy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BOL_military_autonomy"}
+			allowed = {
+			original_tag = "BOL"
+			}
+
+			picture = generic_central_management
+			modifier = {
+				army_org_factor = 0.05
+				max_planning = 0.10
+			}
+		}
+		BOL_corporatism_native = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BOL_corporatism_native"}
+			allowed = {
+			original_tag = "BOL"
+			}
+
+			picture = generic_central_management
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.025
+			}
+		}
+		BOL_great_suyu = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BOL_great_suyu"}
+			allowed = {
+			original_tag = "BOL"
+			}
+
+			picture = generic_central_management
+			modifier = {
+				political_power_gain = 0.15
+				army_morale_factor = 0.12
+				offence = 0.05
+			}
+		}	
+	}
+	### Companies
+	industrial_concern = {
+
+		SOBOCE = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOBOCE"}
+			allowed = {
+				OR = {
+					original_tag = BOL
+					original_tag = PRU
+				}
+			}
+			visible	= {
+				if = {
+					limit = { original_tag = PRU }
+					has_cosmetic_tag = PBC
+				}
+				else = {
+					hidden_trigger = { always = yes }
+				}
+			}
+			traits = {
+				industrial_manufacturer
+			}
+			modifier = {
+				production_speed_arms_factory_factor = 0.10
+				production_speed_industrial_complex_factor = 0.10
+			}
+			research_bonus = {
+				industry = 0.1
+			}
+		}
+
+		FCAB = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FCAB"}
+			allowed = {
+				OR = {
+					original_tag = BOL
+					original_tag = PRU
+				}
+			}
+			visible	= {
+				if = {
+					limit = { original_tag = PRU }
+					has_cosmetic_tag = PBC
+				}
+				else = {
+					hidden_trigger = { always = yes }
+				}
+			}
+			available = {
+				owns_state = 506
+			}
+			traits = {
+				industrial_manufacturer
+			}
+			modifier = {
+				production_speed_infrastructure_factor = 0.2
+			}
+			research_bonus = {
+				industry = 0.1
+			}
+		}
+
+		UMSA = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea UMSA"}
+			allowed = {
+				original_tag = BOL
+			}
+			traits = {
+				electronics_manufacturer
+			}
+			research_bonus = {
+				electronics = 0.1
+				industry = 0.1
+			}
+		}
+	}	
+	
+	weapons_manufacturer = {
+		designer = yes
+
+		EAA = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EAA"}
+			allowed = {
+				OR = {
+					original_tag = BOL
+					original_tag = PRU
+				}
+			}
+			visible	= {
+				if = {
+					limit = { original_tag = PRU }
+					has_cosmetic_tag = PBC
+				}
+				else = {
+					hidden_trigger = { always = yes }
+				}
+			}
+			traits = {
+				infantry_equipment_producer_offense_1
+			}
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
+		}
+
+		SAG = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SAG"}
+			allowed = {
+				OR = {
+					original_tag = BOL
+					original_tag = PRU
+				}
+			}
+			visible	= {
+				if = {
+					limit = { original_tag = PRU }
+					has_cosmetic_tag = PBC
+				}
+				else = {
+					hidden_trigger = { always = yes }
+				}
+			}
+			traits = {
+				artillery_producer_defense_0
+			}
+			research_bonus = {
+				artillery = 0.1
+			}
+		}
+
+	}
+
+	### Ships/Air ###
+	air_naval_manufacturer = {
+		designer = yes
+
+		EMN = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EMN"}
+			allowed = {
+				OR = {
+					original_tag = BOL
+					original_tag = PRU
+				}
+			}
+			visible	= {
+				if = {
+					limit = { original_tag = PRU }
+					has_cosmetic_tag = PBC
+				}
+				else = {
+					hidden_trigger = { always = yes }
+				}
+			}
+			available = {
+				any_owned_state = {
+					is_coastal = yes
+				}
+			}
+			traits = {
+				cruiser_producer_offense_0
+			}
+			research_bonus = {
+				naval_equipment = 0.1
+			}
+		}
+
+		EMA = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EMA"}
+			allowed = {
+				OR = {
+					original_tag = BOL
+					original_tag = PRU
+				}
+			}
+			visible	= {
+				if = {
+					limit = {
+						original_tag = PRU
+					}
+					has_cosmetic_tag = PBC
+				}
+				else = {
+					hidden_trigger = {
+						always = yes
+					}
+				}
+			}
+			traits = {
+				fighter_producer_mass_0
+			}
+			research_bonus = {
+				air_equipment = 0.1
+			}
+		}
+	}
+	### Head of Government
+	head_of_government = {
+		BOL_Guillermo_Lora_hog_van = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				vanguardist
+				hog_ambitious_union_boss
+			}
+		}
+		BOL_Orlando_Capriles_hog_col = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				collectivist
+				hog_red_chairmen
+			}
+		}
+		BOL_Gustavo_Adolfo_Navarro_hog_lib = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				libertarian_socialist
+				hog_naive_optimist
+			}
+		}
+		BOL_Jose_Enrique_Hertzog_Garaizabal_hog_sde = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_democrat
+				hog_political_protege
+			}
+		}
+		BOL_Jose_Tejada_Sorzano_hog_sli = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_liberal
+				hog_pragmatic_statesman
+			}
+		}
+		BOL_Waldo_Belmonte_Pool_hog_sli = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_liberal
+				hog_happy_amateur
+			}
+		}
+		BOL_Daniel_Sanchez_Bustamante_Vasquez_hog_mli = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				market_liberal
+				hog_corporate_suit
+			}
+		}
+		BOL_Bautista_Saavedra_Mallea_hog_sco = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_conservative
+				hog_naive_optimist
+			}
+		}
+		BOL_Carlos_Blanco_Galindo_hog_ade = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_pragmatic_statesman
+			}
+		}
+		BOL_Hugo_Ballivian_Rojas_hog_pau = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_accomplished_diplomat
+			}
+		}
+		BOL_Oscar_Unzaga_de_la_Vega_hog_npo = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				national_populist
+				hog_determined_populist
+			}
+		}
+		BOL_Gualberto_Villarroel_Lopez_hog_val = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				valkist
+				hog_happy_amateur
+			}
+		}
+	}
+	### Foreign Minister
+	foreign_minister = {
+		BOL_Carlos_Salinas_Aramayo_for_sde = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_democrat
+				for_apologetic_clerk
+			}
+		}
+		BOL_Luis_Guachalla_Solares_for_sde = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_democrat
+				for_relations_expert
+			}
+		}
+		BOL_Eduardo_Anze_Matienzo_for_sli = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_liberal
+				for_moderate_among_radicals
+			}
+		}
+		BOL_Adolfo_Costa_du_Reis_for_mli = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				market_liberal
+				for_biased_intellectual
+			}
+		}
+		BOL_Alberto_Ostria_Gutierrez_for_sco = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_conservative
+				for_great_compromiser
+			}
+		}
+		BOL_Enrique_Finot_for_sco = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_conservative
+				for_general_staffer
+			}
+		}
+		BOL_Enrique_Baldivieso_Aparicio_for_pau = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_iron_fisted_brute
+			}
+		}
+		BOL_Gonzalo_Romero_Alvarez_Garcia_for_npo = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				national_populist
+				for_ideological_crusader
+			}
+		}
+	}
+	### Economy Minister
+	economy_minister = {
+		BOL_Edwin_Moeller_eco_col = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				collectivist
+				eco_planned_economy_proponent
+			}
+		}
+		BOL_Roberto_Jordan_eco_lib = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				libertarian_socialist
+				eco_reformer
+			}
+		}
+		BOL_Hernando_Siles_Reyes_eco_sde = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_democrat
+				eco_the_minister_for_everything
+			}
+		}
+		BOL_Moritz_Hochschild_eco_mli = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				market_liberal
+				eco_construction_magnate
+			}
+		}
+		BOL_Abdon_Saavedra_Mallea_eco_sco = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_conservative
+				eco_industrialiser
+			}
+		}
+		BOL_Daniel_Domingo_Salamanca_Urey_eco_sco = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_conservative
+				eco_mixed_economy
+			}
+		}
+		BOL_Walter_Guevara_Arze_eco_sco = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_conservative
+				eco_resource_industrialist
+			}
+		}
+		BOL_General_Pastor_Baldivieso_eco_ade = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				authoritarian_democrat
+				eco_administrative_genius
+			}
+		}
+		BOL_Jose_David_Toro_Ruilova_eco_pau = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_balanced_budget_economy
+			}
+		}
+		BOL_Juan_Sanjines_eco_npo = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				national_populist
+				eco_corrupt_kleptocrat
+			}
+		}
+	}
+	### Security Minister
+	security_minister = {
+		BOL_Mariano_Basptista_sec_lib = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				libertarian_socialist
+				sec_compassionate_gentleman
+			}
+		}
+		BOL_Jose_Santos_Quinteros_sec_sli = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_liberal
+				sec_silent_lawyer
+			}
+		}
+		BOL_Tomas_Monje_Gutierrez_sec_sli = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_liberal
+				sec_driven_recruiter
+			}
+		}
+		BOL_Roberto_Hinojosa_sec_mli = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				market_liberal
+				sec_efficient_sociopath
+			}
+		}
+		BOL_German_Butron_sec_sco = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_conservative
+				sec_media_magnate
+			}
+		}
+		BOL_Nestor_Guillen_Olmos_sec_sco = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_conservative
+				sec_man_of_the_people
+			}
+		}
+		BOL_Julian_V_Montellano_Carrasco_sec_npo = {
+			allowed = { original_tag = BOL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				national_populist
+				sec_preserver_of_culture
+			}
+		}
+	}
+	### Chief of Staff
+	chief_of_staff = {
+		BOL_Gualberto_Villarroel_Lopez_cos = {
+			allowed = { original_tag = BOL }
+			traits = {
+				chief_of_staff
+				cos_school_of_psychology
+			}
+		}
+	}
+	### Chief of Army
+	chief_of_army = {
+		BOL_General_Pastor_Baldivieso_carm = {
+			allowed = { original_tag = BOL }
+			traits = {
+				chief_of_army
+				carm_doctrine_of_autonomy
+			}
+		}
+		BOL_Hugo_Ballivian_Rojas_carm = {
+			allowed = { original_tag = BOL }
+			traits = {
+				chief_of_army
+				carm_guns_and_butter_doctrine
+			}
+		}
+	}
+	### Chief of Navy
+	chief_of_navy = {
+		BOL_Ronan_Monje_Roca_cnav = {
+			allowed = { original_tag = BOL }
+			traits = {
+				chief_of_navy
+				cnav_indirect_approach_doctrine
+			}
+		}
+	}
+	### Chief of Air Force
+	chief_of_air_force = {
+		BOL_Bernardino_Bilbao_Rioja_cair = {
+			allowed = { original_tag = BOL }
+			traits = {
+				chief_of_air_force
+				cair_air_superiority_doctrine
+			}
+		}
+	}
+}
