@@ -56,7 +56,7 @@ ideas = {
     	}
 		MEX_meritocratic_army = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_meritocratic_army"}
-    		picture = generic_manpower_bonus
+    		picture = vittoria_mutilata
     		modifier = {
 				army_attack_factor = 0.05
 				army_defence_factor = 0.1
@@ -110,7 +110,7 @@ ideas = {
     	}
 		MEX_nationalist_strife = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_nationalist_strife"}
-            picture = vittoria_mutilata
+            picture = generic_disjointed_gov
             modifier = {
              	political_power_factor = -0.15
             }
@@ -154,7 +154,7 @@ ideas = {
             modifier = {
                 production_speed_buildings_factor = 0.1
             }
-            picture = generic_industrial_concern_1
+            picture = ast_all_in
             removal_cost = -1
         }
 		MEX_proyecto_esperanza = {
@@ -164,7 +164,7 @@ ideas = {
             modifier = {
                 production_factory_max_efficiency_factor = 0.1
             }
-            picture = generic_industrial_concern_1
+            picture = generic_production_bonus
             removal_cost = -1
         }
 		MEX_lower_monetary_rates = {
@@ -174,7 +174,7 @@ ideas = {
             modifier = {
                 production_factory_max_efficiency_factor = 0.2
             }
-            picture = generic_goods_red_bonus
+            picture = ROM_king_carol_emptied_accounts
             removal_cost = -1
         }
 		MEX_rampant_industrialization = {
@@ -188,7 +188,7 @@ ideas = {
                 production_factory_max_efficiency_factor = 0.05
                 industrial_capacity_factory = 0.05
             }
-            picture = generic_goods_red_bonus
+            picture = ROM_king_carol_ii_hedonist
             removal_cost = -1
         }
 		MEX_not_so_rampant_industrialization = {
@@ -216,7 +216,7 @@ ideas = {
         }
 		MEX_military_corruption = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_military_corruption"}
-            picture = chi_incompetent_officers
+            picture = MEX_callistas
             modifier = {
             	army_morale_factor = -0.05
              	consumer_goods_factor = 0.05
@@ -241,7 +241,7 @@ ideas = {
         }
 		MEX_militias = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_militias"}
-            picture = generic_morale_bonus
+            picture = MEX_politicised_army
             modifier = {
              	conscription_factor = 0.05
 				army_org_factor = -0.025
@@ -292,7 +292,7 @@ ideas = {
 		}
 		MEX_basta = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_basta"}
-            picture = generic_manpower_bonus
+            picture = vittoria_mutilata
             modifier = {
 				conscription_factor = 0.05
 				army_morale_factor = 0.05
@@ -303,7 +303,7 @@ ideas = {
         }
 		MEX_basta2 = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_basta2"}
-			picture = generic_manpower_bonus
+			picture = vittoria_mutilata
 			modifier = {
 				conscription_factor = 0.05
 				army_morale_factor = 0.05
@@ -314,7 +314,7 @@ ideas = {
         }
 		MEX_basta3 = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_basta3"}
-			picture = generic_manpower_bonus
+			picture = vittoria_mutilata
 			modifier = {
 				conscription_factor = 0.05
 				army_morale_factor = 0.075
@@ -325,7 +325,7 @@ ideas = {
         }
 		MEX_basta4 = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_basta4"}
-			picture = generic_manpower_bonus
+			picture = vittoria_mutilata
 			modifier = {
 				conscription_factor = 0.05
 				army_morale_factor = 0.1
@@ -336,7 +336,7 @@ ideas = {
         }
 		MEX_basta5 = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_basta5"}
-			picture = generic_manpower_bonus
+			picture = vittoria_mutilata
 			modifier = {
 				conscription_factor = 0.1
 				army_morale_factor = 0.1
@@ -347,7 +347,7 @@ ideas = {
         }
 		MEX_basta6 = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_basta6"}
-			picture = generic_manpower_bonus
+			picture = vittoria_mutilata
 			modifier = {
 				conscription_factor = 0.1
 				army_morale_factor = 0.1
@@ -358,7 +358,7 @@ ideas = {
         }
 		MEX_basta7 = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_basta7"}
-			picture = generic_manpower_bonus
+			picture = vittoria_mutilata
 			modifier = {
 				conscription_factor = 0.1
 				army_morale_factor = 0.1
