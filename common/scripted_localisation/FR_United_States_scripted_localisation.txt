@@ -1,0 +1,29 @@
+defined_text = {
+    name = USA_protest_city
+    text = {
+        trigger = {
+            NOT = { country_exists = NAR }
+        }
+        localization_key = VICTORY_POINTS_9450
+    }
+    text = {
+        trigger = {
+            NOT = { country_exists = NEE }
+        }
+        localization_key = VICTORY_POINTS_6732
+    }
+    text = {
+        trigger = {
+            NOT = { country_exists = CLB }
+        }
+        localization_key = VICTORY_POINTS_4569
+    }
+    text = {
+        trigger = {
+            country_exists = NAR
+            country_exists = NEE
+            country_exists = CLB
+        }
+        localization_key = VICTORY_POINTS_7552
+    }
+}
