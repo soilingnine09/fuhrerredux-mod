@@ -18,9 +18,9 @@ focus_tree = {
     }
 
     shared_focus = PHI_industrialization_plan
-    shared_focus = PHI_expand_the_army
-    shared_focus = PHI_expand_the_navy
-    shared_focus = PHI_expand_the_air_force
+    shared_focus = PHI_army_expansion_program
+    shared_focus = PHI_start_naval_buildup
+    shared_focus = PHI_fund_an_air_force
     shared_focus = PHI_department_of_foreign_affairs
 
     ######################################################

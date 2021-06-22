@@ -275,6 +275,7 @@
  hospital_tech:0 "Field Hospitals"
  logistics_tech:0 "Logistics Company"
  recon_tech:0 "Reconnaissance Company"
+ signal_company_tech:0 "Signal Company"
  tech_field_hospital:0 "Field Hospital I"
  tech_field_hospital_desc:0 "A casualty doesn't need to mean a dead soldier. Having immediate medical attention available for our wounded brought back to the rear is the first step towards ensuring this."
  tech_field_hospital2:0 "Field Hospital II"

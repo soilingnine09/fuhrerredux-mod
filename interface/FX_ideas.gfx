@@ -73,6 +73,10 @@ spriteTypes = {
         texturefile = "gfx/interface/ideas/ideas/PHI_public_works.tga"
     }
     spriteType = {
+        name = "GFX_idea_PHI_morale"
+        texturefile = "gfx/interface/ideas/ideas/PHI_morale.tga"
+    }
+    spriteType = {
         name = "GFX_idea_GER_bremen_accord"
         texturefile = "gfx/interface/ideas/ideas/GER_bremen_accord.tga"
     }

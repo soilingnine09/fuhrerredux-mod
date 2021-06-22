@@ -217,6 +217,34 @@ ideas = {
 				industrial_capacity_dockyard = -0.05
             }
         }
+        PHI_equipment_production = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = FRA_factory_strikes
+            equipment_bonus = {
+               infantry_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+				motorized = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+                artillery_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+            }
+        }
+        PHI_tank_production = {
+            allowed = { is_a_filipino_tag = yes }
+            picture = generic_acquire_tanks
+            equipment_bonus = {
+                armor = {
+                    build_cost_ic = -0.15
+                    instant = yes
+                }
+            }
+        }
         PHI_military_academy = {
             allowed = { is_a_filipino_tag = yes }
             picture = HUN_secret_rearmament
@@ -234,7 +262,7 @@ ideas = {
                 no_supply_grace = 48
             }
         }
-        PHI_legacy_of_general_luna = {
+        PHI_strict_army_discipline = {
             allowed = { is_a_filipino_tag = yes }
             picture = chi_army_corruption3
             modifier = {
@@ -243,21 +271,11 @@ ideas = {
                 supply_consumption_factor = -0.2
             }
         }
-        PHI_hell_it_is = {
+        PHI_naval_repair_facilities = {
             allowed = { is_a_filipino_tag = yes }
-            picture = KTG_Industrial_Crisis_Town
+            picture = generic_coastal_defense_ships
             modifier = {
-                air_strategic_bomber_bombing_factor = 0.1
-                air_strategic_bomber_attack_factor = 0.1
-            }
-        }
-        PHI_army_support = {
-            allowed = { is_a_filipino_tag = yes }
-            picture = generic_air_bonus
-            modifier = {
-                air_close_air_support_attack_factor = 0.1
-                air_cas_present_factor = 0.1
-                air_close_air_support_agility_factor = 0.1
+                repair_speed_factor = 0.25
             }
         }
         PHI_tax_reform = {
@@ -408,6 +426,7 @@ ideas = {
         }
         PHI_the_filipino_civil_war = {
             allowed = { is_a_filipino_tag = yes }
+            picture = PHI_morale
             modifier = {
                 conscription_factor = 0.15
                 army_core_attack_factor = 0.05
