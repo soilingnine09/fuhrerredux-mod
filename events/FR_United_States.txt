@@ -216,10 +216,15 @@ country_event = { # Some triggering event ask the FR devs
 
     trigger = {
         original_tag = USA
-        date > 1936.5.1
+        date > 1938.5.1
     }
 
-    option = { name = usa.6.a }
+    option = {
+        name = usa.6.a
+        hidden_effect = {
+            country_event = { id = usa.7 days = 2 }
+        }
+    }
 }
 
 country_event = { # Border Skirmish
@@ -238,7 +243,7 @@ country_event = { # Border Skirmish
 		add_political_power = -50
 		add_manpower = -20000
         ai_chance = {
-            base = 60
+            base = 80
         }
 		add_equipment_to_stockpile = { 
             type = infantry_equipment_0 
@@ -1003,6 +1008,97 @@ country_event = { # Support to Brazil
         add_ideas = BRA_american_advisors
     }
 }
+
+country_event = { # Strikes
+    id = usa.36
+    title = usa.36.t
+    desc = usa.36.d
+    picture = GFX_report_event_worker_protests
+    is_triggered_only = yes
+
+    option = {
+        name = usa.36.a
+        add_ideas = USA_strikes
+        hidden_effect = {
+            country_event = { id = usa.37 days = 7 }
+        }
+    }
+    option = {
+        name = usa.36.b
+        add_ideas = USA_strikes
+        hidden_effect = {
+            50 = { country_event = { id = usa.38 days = 7 } }
+            50 = { country_event = { id = usa.39 days = 7 } }
+        }
+    }
+}
+
+country_event = { # Negotiations Successfull
+    id = usa.37
+    title = usa.37.t
+    desc = usa.37.d
+    picture = GFX_report_event_worker_protests
+    is_triggered_only = yes
+
+    option = {
+        name = usa.37.a
+        remove_ideas = USA_strikes
+    }
+}
+
+country_event = { # Protesters Returning to Work
+    id = usa.38
+    title = usa.38.t
+    desc = usa.38.d
+    picture = GFX_report_event_worker_protests
+    is_triggered_only = yes
+
+    option = {
+        name = usa.38.a
+        remove_ideas = USA_strikes
+        increase_ruling_party_popularity_by_5 = yes
+    }
+}
+
+country_event = { # The Chicago Incident
+    id = usa.39
+    title = usa.39.t
+    desc = usa.39.d
+    picture = GFX_report_event_worker_protests
+    is_triggered_only = yes
+
+    option = {
+        name = usa.39.a
+        remove_ideas = USA_strikes
+        add_popularity = {
+            ideology = libertarian_socialist
+            popularity = 0.05
+        }
+    }
+}
+
+country_event = { # 'Modern Times' released 
+    id = usa.40
+    title = usa.40.t
+    desc = usa.40.d
+    picture = GFX_report_event_journalists_speech
+    fire_only_once = yes
+
+    trigger = {
+        tag = USA
+        date > 1936.2.15
+    }
+
+    mean_time_to_happen = {
+        hours = 12
+    }
+
+    option = {
+        name = usa.40.a
+        add_political_power = 20
+    }
+}
+
 
 country_event = { # Nationwide Riots
     id = usa.100

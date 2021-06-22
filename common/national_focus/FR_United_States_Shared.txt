@@ -1728,6 +1728,9 @@ shared_focus = {
 	relative_position_id = USA_morality_and_values
 	completion_reward = {
 		add_ideas = USA_limited_union_activities
+		hidden_effect = {
+			country_event = { id = usa.36 days = 6 }
+		}
 	}
 }
 
@@ -1986,6 +1989,7 @@ shared_focus = {
 	x = 0
 	y = 1
 	cost = 6
+	available = { PHI = { has_socialist_government = no } }
 	prerequisite = { focus = USA_america_on_the_world_stage }
 	relative_position_id = USA_america_on_the_world_stage
 	completion_reward = {
