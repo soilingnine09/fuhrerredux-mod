@@ -401,17 +401,23 @@ country_event = { # Aftermath of the Assassination
             }
         }
         add_stability = -0.15
-        set_politics = {
-            ruling_party = authoritarian_democrat
-            elections_allowed = no
-        }
         hidden_effect = {
+            set_politics = {
+                ruling_party = authoritarian_democrat
+                elections_allowed = no
+            }
             country_event = { id = phi.8 days = 7 }
         }
     }
     option = { # Continue
         name = phi.7.b
         add_political_power = -100
+        hidden_effect = {
+            set_politics = {
+                ruling_party = authoritarian_democrat
+                elections_allowed = yes
+            }
+        }
     }
 }
 
