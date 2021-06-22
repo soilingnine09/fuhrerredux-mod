@@ -38,18 +38,17 @@ PHI_default_plan = {
 
         # Focus on other buffs
         PHI_department_of_labour_and_employment_focus           # 35 days
-        PHI_expand_the_army                                     # 21 days
+        PHI_army_expansion_program                              # 21 days
         PHI_philippine_military_academy                         # 70 days
-        PHI_valdez_reform                                       # 35 days
-        PHI_expand_the_navy                                     # 21 days 
-        PHI_large_navy                                          # 35 days
-        PHI_expand_the_air_force                                # 21 days
-        PHI_filipino_high_command                               # 70 days
+        PHI_extensive_planning_doctrine                         # 35 days
+        PHI_start_naval_buildup                                 # 21 days 
+        PHI_an_attack_underneath                                # 35 days
+        PHI_fund_an_air_force                                   # 21 days
+        PHI_form_a_general_staff                                # 70 days
         PHI_worker_subsidies_focus                              # 70 days
         
         PHI_department_of_foreign_affairs                       # 21 days
         PHI_no_more_colonialism                                 # 35 days
-
     }
 
     weight = {
