@@ -1048,6 +1048,7 @@ shared_focus = {
 	x = 28
 	y = 0
 	cost = 0
+	ai_will_do = { factor = 2000 }
 	available = {
 		USA_1936_elections_happened = yes
 	}
@@ -1060,6 +1061,7 @@ shared_focus = {
 	x = -3
 	y = 1
 	cost = 0
+	ai_will_do = { factor = 2000 }
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = USA_president_long_tt
@@ -1078,6 +1080,7 @@ shared_focus = {
 	x = 3
 	y = 1
 	cost = 0
+	ai_will_do = { factor = 2000 }
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = USA_president_roosevelt_tt
@@ -1096,6 +1099,7 @@ shared_focus = {
 	x = 7
 	y = 1
 	cost = 0
+	ai_will_do = { factor = 2000 }
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = USA_president_landon_tt
@@ -1114,6 +1118,7 @@ shared_focus = {
 	x = 12
 	y = 1
 	cost = 0
+	ai_will_do = { factor = 2000 }
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = USA_president_garner_tt
@@ -1132,6 +1137,7 @@ shared_focus = {
 	x = -2
 	y = 1
 	cost = 6
+	ai_will_do = { factor = 200 }
 	prerequisite = { focus = USA_president_long }
 	relative_position_id = USA_president_long
 	completion_reward = {
@@ -1146,6 +1152,7 @@ shared_focus = {
 	x = 0
 	y = 1
 	cost = 6
+	ai_will_do = { factor = 200 }
 	prerequisite = { focus = USA_president_long }
 	relative_position_id = USA_president_long
 	completion_reward = {
@@ -1174,6 +1181,7 @@ shared_focus = {
 	x = 0
 	y = 1
 	cost = 6
+	ai_will_do = { factor = 200 }
 	prerequisite = { focus = USA_secure_workers_rights }
 	prerequisite = { focus = USA_start_welfare_for_the_poor }
 	prerequisite = { focus = USA_economic_reforms }
@@ -1238,6 +1246,7 @@ shared_focus = {
 	x = 1
 	y = 1
 	cost = 6
+	ai_will_do = { factor = 200 }
 	prerequisite = { focus = USA_free_basic_education }
 	prerequisite = { focus = USA_improve_interstate_infrastructure }
 	relative_position_id = USA_free_basic_education
@@ -1253,6 +1262,7 @@ shared_focus = {
 	x = 1
 	y = 3
 	cost = 6
+	ai_will_do = { factor = 2000 }
 	prerequisite = { focus = USA_import_regulation }
 	prerequisite = { focus = USA_federal_pensions_reform }
 	relative_position_id = USA_share_our_wealth 
@@ -1272,6 +1282,7 @@ shared_focus = {
 	x = 3
 	y = 2
 	cost = 6
+	ai_will_do = { factor = 200 }
 	prerequisite = {
 		focus = USA_president_long
 		focus = USA_president_roosevelt
@@ -1289,6 +1300,7 @@ shared_focus = {
 	x = -1
 	y = 1
 	cost = 6
+	ai_will_do = { factor = 100 }
 	prerequisite = { focus = USA_tax_reforms }
 	relative_position_id = USA_tax_reforms
 	completion_reward = {
@@ -1344,6 +1356,7 @@ shared_focus = {
 	x = 0
 	y = 2
 	cost = 6
+	ai_will_do = { factor = 200 }
 	prerequisite = { focus = USA_tax_reforms }
 	relative_position_id = USA_tax_reforms
 	completion_reward = {
@@ -1358,6 +1371,7 @@ shared_focus = {
 	x = -2
 	y = 1
 	cost = 6
+	ai_will_do = { factor = 200 }
 	prerequisite = { focus = USA_president_roosevelt }
 	relative_position_id = USA_president_roosevelt
 	completion_reward = {
@@ -1372,6 +1386,7 @@ shared_focus = {
 	x = 0
 	y = 1
 	cost = 6
+	ai_will_do = { factor = 200 }
 	prerequisite = { focus = USA_president_roosevelt }
 	relative_position_id = USA_president_roosevelt
 	completion_reward = {
@@ -1400,6 +1415,7 @@ shared_focus = {
 	x = 0
 	y = 1
 	cost = 6
+	ai_will_do = { factor = 200 }
 	prerequisite = { focus = USA_economic_investments }
 	prerequisite = { focus = USA_increase_tariffs }
 	prerequisite = { focus = USA_compact_with_the_workers }
@@ -1416,6 +1432,7 @@ shared_focus = {
 	x = -2
 	y = 1
 	cost = 6
+	ai_will_do = { factor = 2000 }
 	prerequisite = { focus = USA_federal_pensions_reform }
 	prerequisite = { focus = USA_public_works_administration }
 	relative_position_id = USA_public_works_administration
@@ -1452,6 +1469,7 @@ shared_focus = {
 	x = 1
 	y = 1
 	cost = 6
+	ai_will_do = { factor = 100 }
 	prerequisite = { focus = USA_education_for_all }
 	relative_position_id = USA_education_for_all
 	completion_reward = {
@@ -1517,6 +1535,7 @@ shared_focus = {
 	x = 0
 	y = 1
 	cost = 6
+	ai_will_do = { factor = 2000 }
 	prerequisite = { focus = USA_lower_the_income_tax }
 	prerequisite = { focus = USA_public_works_administration }
 	relative_position_id = USA_hydroelectric_conquest
@@ -1551,6 +1570,7 @@ shared_focus = {
 	x = 2
 	y = 1
 	cost = 6
+	ai_will_do = { factor = 200 }
 	prerequisite = { focus = USA_president_landon }
 	relative_position_id = USA_president_landon
 	completion_reward = {
@@ -1565,6 +1585,7 @@ shared_focus = {
 	x = 0
 	y = 2
 	cost = 6
+	ai_will_do = { factor = 200 }
 	prerequisite = { 
 		focus = USA_increase_public_salaries
 		focus = USA_privitization_of_services
@@ -1582,6 +1603,7 @@ shared_focus = {
 	x = 0
 	y = 2
 	cost = 6
+	ai_will_do = { factor = 200 }
 	prerequisite = { focus = USA_ensure_press_freedoms }
 	prerequisite = { focus = USA_banking_reforms }
 	relative_position_id = USA_ensure_press_freedoms
@@ -1597,6 +1619,7 @@ shared_focus = {
 	x = 0
 	y = 1
 	cost = 6
+	ai_will_do = { factor = 200 }
 	prerequisite = { focus = USA_president_landon }
 	relative_position_id = USA_president_landon
 	completion_reward = {
@@ -1628,6 +1651,7 @@ shared_focus = {
 	x = -1
 	y = 1
 	cost = 6
+	ai_will_do = { factor = 200 }
 	prerequisite = { focus = USA_bureaucratic_reforms }
 	relative_position_id = USA_bureaucratic_reforms
 	completion_reward = {
@@ -1663,6 +1687,7 @@ shared_focus = {
 	x = 0
 	y = 2
 	cost = 6
+	ai_will_do = { factor = 200 }
 	prerequisite = { focus = USA_president_garner }
 	prerequisite = { focus = USA_bureaucratic_reforms }
 	relative_position_id = USA_president_garner
@@ -1678,6 +1703,7 @@ shared_focus = {
 	x = 0
 	y = 2
 	cost = 6
+	ai_will_do = { factor = 100 }
 	prerequisite = {
 		focus = USA_privitization_of_services
 		focus = USA_review_the_anti_trust_laws
@@ -1695,6 +1721,7 @@ shared_focus = {
 	x = 0
 	y = 2
 	cost = 6
+	ai_will_do = { factor = 100 }
 	prerequisite = { focus = USA_review_the_anti_trust_laws }
 	relative_position_id = USA_review_the_anti_trust_laws
 	completion_reward = {
@@ -1819,6 +1846,7 @@ shared_focus = {
 	x = -2
 	y = 2
 	cost = 2
+	ai_will_do = { factor = 200 }
 	prerequisite = { focus = USA_construction_subsidies }
 	relative_position_id = USA_construction_subsidies
 	completion_reward = {
@@ -1833,6 +1861,7 @@ shared_focus = {
 	x = 0
 	y = 2
 	cost = 6
+	ai_will_do = { factor = 2000 }
 	prerequisite = { focus = USA_medical_emergency_fund }
 	prerequisite = { focus = USA_limit_union_activities }
 	prerequisite = { focus = USA_fight_inflation_struggles }

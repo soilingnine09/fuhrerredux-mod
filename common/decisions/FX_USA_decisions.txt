@@ -165,12 +165,12 @@ USA_dealing_with_the_great_depression = {
         timeout_effect = {
             add_stability = -0.15
             hidden_effect = {
-                country_event = { id = usa.30 days = 30 }
+                set_country_flag = USA_socialist_popularity_increasing
+                country_event = { id = usa.31 days = 30 }
             }
         }
         complete_effect = {
             add_stability = 0.15
-            
         }
     }
 }

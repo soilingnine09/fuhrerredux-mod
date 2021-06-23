@@ -4,6 +4,273 @@
 spriteTypes = {
 
 	####################################################
+    # PRU
+	### Head of Government
+	spriteType = {
+		name = "GFX_idea_PRU_Gamaliel_Churata_hog_van"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Gamaliel_Churata.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Victor_Raul_Haya_de_la_Torre_hog_col"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Victor_Raul_Haya_de_la_Torre.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Jose_Galvez_Barrenechea_hog_sde"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Jose_Galvez_Barrenechea.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Luis_Antonio_Eguiguren_hog_sde"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Luis_Antonio_Eguiguren.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Jose_Alcamora_hog_sli"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Jose_Alcamora.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Manuel_Cisneros_Sanchez_hog_mli"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Manuel_Cisneros_Sanchez.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Rafael_Belaunde_Diez_hog_mli"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Rafael_Belaunde_Diez.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Adolfo_Solf_y_Muro_hog_sco"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Adolfo_Solf_y_Muro.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Alberto_Rey_de_Castro_hog_sco"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Alberto_Rey_de_Castro.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Alberto_Roque_Saldias_hog_sco"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Alberto_Roque_Saldias.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_David_S_Ocampo_hog_sco"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_David_S_Ocampo.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Alberto_Zenon_Aguero_hog_ade"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Alberto_Zenon_Aguero.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Ernesto_Montagne_Sanchez_hog_pau"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Ernesto_Montagne_Sanchez.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Manuel_Odria_hog_pau"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Manuel_Odria.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Carlos_Miro_Quesada_hog_npo"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Carlos_Miro_Quesada.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Eloy_G_Ureta_hog_npo"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Eloy_G_Ureta.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Jose_de_la_Riva_Aguero_hog_npo"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Jose_de_la_Riva_Aguero.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Luis_A_Flores_hog_npo"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Luis_A_Flores.tga"
+	}
+	### Foreign Minister
+	spriteType = {
+		name = "GFX_idea_PRU_Cesar_Atahualpa_for_van"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Cesar_Atahualpa.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Jose_Carlos_Mariategui_for_van"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Jose_Carlos_Mariategui.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Cesar_Vallejo_for_col"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Cesar_Vallejo.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Oscar_Miro_Quesada_for_sde"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Oscar_Miro_Quesada.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Javier_Correa_Elias_for_mli"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Javier_Correa_Elias.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Manuel_Prado_y_Ugarteche_for_mli"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Manuel_Prado_y_Ugarteche.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Adolfo_Solf_y_Muro_for_sco"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Adolfo_Solf_y_Muro.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Enrique_Goytisola_Bolognesi_for_sco"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Enrique_Goytisola_Bolognesi.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Alberto_Ulloa_Sotomayor_for_ade"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Alberto_Ulloa_Sotomayor.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Felipe_Tudela_for_pau"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Felipe_Tudela.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Raul_Ferrero_Rebagliati_for_npo"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Raul_Ferrero_Rebagliati.tga"
+	}
+	### Economy Minister
+	spriteType = {
+		name = "GFX_idea_PRU_Manuel_Gonzalez_Prada_eco_van"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Manuel_Gonzalez_Prada.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Antenor_Orrego_eco_col"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Antenor_Orrego.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Antonio_Rodriguez_Ramirez_eco_sde"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Antonio_Rodriguez_Ramirez.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Manuel_Vasquez_Diaz_eco_sde"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Manuel_Vasquez_Diaz.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Guillermo_Almenara_Irigoyen_eco_mli"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Guillermo_Almenara_Irigoyen.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Romulo_Ferrero_eco_mli"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Romulo_Ferrero.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Armando_Revoredo_Iglesias_eco_sco"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Armando_Revoredo_Iglesias.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_David_S_Ocampo_eco_sco"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_David_S_Ocampo.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Eduardo_Rebagliati_Martins_eco_sco"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Eduardo_Rebagliati_Martins.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Oscar_Trelles_Montes_eco_sco"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Oscar_Trelles_Montes.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Nicolas_Lindley_Lopez_eco_pau"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Nicolas_Lindley_Lopez.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Luis_A_Flores_eco_npo"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Luis_A_Flores.tga"
+	}
+	### Security Minister
+	spriteType = {
+		name = "GFX_idea_PRU_Alejandro_Peralta_sec_van"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Alejandro_Peralta.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Carlos_Manuel_Cox_Roose_sec_col"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Carlos_Manuel_Cox_Roose.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Ciro_Alegria_sec_col"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Ciro_Alegria.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Ildefonso_Ballon_Beltran_sec_sde"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Ildefonso_Ballon_Beltran.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Victor_N_Benavente_sec_sde"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Victor_N_Benavente.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Manuel_Gallagher_sec_sli"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Manuel_Gallagher.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Benigno_Ballon_Farfan_sec_sco"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Benigno_Ballon_Farfan.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Ernesto_Montagne_Markholz_sec_pau"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Ernesto_Montagne_Markholz.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Carlos_Miro_Quesada_sec_npo"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Carlos_Miro_Quesada.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Felipe_Sassone_sec_npo"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Felipe_Sassone.tga"
+	}
+	### Chief of Staff
+	spriteType = {
+		name = "GFX_idea_PRU_Fortunato_Quesada_Larrea_cos"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Fortunato_Quesada_Larrea.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Alberto_Zenon_Aguero_cos"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Alberto_Zenon_Aguero.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Gustavo_Jimenez_cos"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Gustavo_Jimenez.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Nicolas_Lindley_Lopez_cos"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Nicolas_Lindley_Lopez.tga"
+	}
+	### Chief of Army
+	spriteType = {
+		name = "GFX_idea_PRU_Eduardo_Montero_Rojas_carm"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Eduardo_Montero_Rojas.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Vladimiro_Lopez_Trigoso_carm"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Vladimiro_Lopez_Trigoso.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Eloy_G_Ureta_carm"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Eloy_G_Ureta.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Oscar_Benavides_Larrea_carm"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Oscar_Benavides_Larrea.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Riccardo_Perez_Godoy_carm"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Riccardo_Perez_Godoy.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Manuel_Odria_Amoretti_carm"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Manuel_Odria_Amoretti.tga"
+	}
+	### Chief of Navy
+	spriteType = {
+		name = "GFX_idea_PRU_Alberto_Roque_Saldias_cnav"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Alberto_Roque_Saldias.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Nicolas_Lindley_Lopez_cnav"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Nicolas_Lindley_Lopez.tga"
+	}
+	### Chief of Air Force
+	spriteType = {
+		name = "GFX_idea_PRU_Manuel_Montero_y_Tirada_cair"
+		texturefile = "gfx/interface/ideas/PRU/ministers/PRU_Manuel_Montero_y_Tirada.tga"
+	}
+
+	####################################################
     # CHL
 	### Head of Government
 	spriteType = {

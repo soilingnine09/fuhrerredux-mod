@@ -14,6 +14,7 @@ shared_focus = {
     x = 17
     y = 0
     cost = 6
+	ai_will_do = { factor = 200 }
     completion_reward = {
         add_tech_bonus = {
             bonus = 1.0
@@ -203,6 +204,7 @@ shared_focus = {
     x = -2
     y = 1
     cost = 6
+	ai_will_do = { factor = 200 }
     prerequisite = { focus = PHI_department_of_public_works_and_highways_focus }
     relative_position_id = PHI_department_of_public_works_and_highways_focus
     completion_reward = {
@@ -232,6 +234,7 @@ shared_focus = {
     x = 0
     y = 1
     cost = 6
+	ai_will_do = { factor = 200 }
     available = { 
         has_full_control_of_state = 623
     }
@@ -269,6 +272,7 @@ shared_focus = {
     x = 0
     y = 1
     cost = 6
+	ai_will_do = { factor = 200 }
     prerequisite = { focus = PHI_fund_armscor }
     relative_position_id = PHI_fund_armscor
     completion_reward = {
@@ -298,6 +302,7 @@ shared_focus = {
     x = 0
     y = 1
     cost = 6
+	ai_will_do = { factor = 200 }
     available = { 
         has_full_control_of_state = 327
     }
@@ -321,6 +326,7 @@ shared_focus = {
     x = 0
     y = 1
     cost = 6
+	ai_will_do = { factor = 200 }
     available = {
         has_full_control_of_state = 623
         has_full_control_of_state = 624
@@ -390,6 +396,7 @@ shared_focus = {
     x = 0
     y = 1
     cost = 6
+	ai_will_do = { factor = 200 }
     available = {
         has_full_control_of_state = 623
         has_full_control_of_state = 624
@@ -459,6 +466,7 @@ shared_focus = {
     x = 2
     y = 1
     cost = 6
+	ai_will_do = { factor = 200 }
     available = {
         has_full_control_of_state = 623
         has_full_control_of_state = 624
@@ -534,6 +542,7 @@ shared_focus = {
     x = 0
     y = 1
     cost = 6
+	ai_will_do = { factor = 200 }
     available = {
         has_full_control_of_state = 625
         has_full_control_of_state = 628
@@ -589,6 +598,7 @@ shared_focus = {
     x = 0
     y = 1
     cost = 6
+	ai_will_do = { factor = 200 }
     available = { 
         has_full_control_of_state = 627
     }
@@ -624,6 +634,7 @@ shared_focus = {
     x = 0
     y = 1
     cost = 6
+	ai_will_do = { factor = 2000 }
     prerequisite = { focus = PHI_the_pan_philippine_highway }
     prerequisite = { focus = PHI_further_military_investments }
     prerequisite = { focus = PHI_mindanao_development }

@@ -165,6 +165,7 @@ USA_american_gis:0 "American GIs"
 USA_strikes:0 "Strikes"
 
 ### Decisions
+USA_support_brazil:0 "Support @BRA §Y[BRA.GetNameDef]§!"
 USA_demand_mexican_submission:0 "Demand [MEX.GetAdjective] Submission"
 USA_whitepeace_mexico:0 "Whitepeace @MEX [MEX.GetName]"
 USA_hydroelectric:0 "Hydroelectric"

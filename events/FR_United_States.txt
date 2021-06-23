@@ -921,7 +921,6 @@ country_event = { # Socialists Gaining Popularity
 
     option = {
         name = usa.31.a
-        set_country_flag = USA_socialist_popularity_increasing
         add_popularity = {
             ideology = libertarian_socialist
             popularity = 0.15
