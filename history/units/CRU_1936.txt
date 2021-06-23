@@ -33,22 +33,35 @@ division_template = {
 units = {
 	##### Ejército de la Plaza #####
 	division= {	
-		name = "1era División de la plaza"
+		name = "1ra división"
 		location = 4965 # Quintana Roo
 		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
-
+	division= {	
+		name = "2da División"
+		location = 4965 # Quintana Roo
+		division_template = "División de Infanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		name = "3ra División"
+		location = 4965 # Quintana Roo
+		division_template = "División de Infanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		name = "1ra División de Caballería"
+		location = 4965 # Quintana Roo
+		division_template = "División de Caballería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
 }
-	##### Naval OOB #####
-				
 
-
-air_wings = {
-
-}
 
 instant_effect = {
 	add_equipment_production = {

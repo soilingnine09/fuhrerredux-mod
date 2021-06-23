@@ -1,0 +1,49 @@
+﻿if = {
+	limit = { 
+		NOT = { has_template = "División de voluntarios" }
+	}
+	division_template = {
+		name = "División de voluntarios"
+
+		regiments = {
+			infantry = { x = 0 y = 0 }
+			infantry = { x = 0 y = 1 }
+			infantry = { x = 1 y = 0 }
+			infantry = { x = 1 y = 1 }
+			infantry = { x = 2 y = 0 }
+			infantry = { x = 2 y = 1 }
+		}
+	}
+}
+
+units = {
+	##### Ejército de la Plaza #####
+	division= {	
+		name = "1ra División de Voluntarios"
+		location = 4965 # Quintana Roo
+		division_template = "División de voluntarios"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		name = "2da División de Voluntarios"
+		location = 4965 # Quintana Roo
+		division_template = "División de voluntarios"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		name = "3ra División de Voluntarios"
+		location = 4965 # Quintana Roo
+		division_template = "División de voluntarios"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		name = "4ta División de Voluntarios "
+		location = 4965 # Quintana Roo
+		division_template = "División de voluntarios"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+}

@@ -224,6 +224,22 @@ country_event = { # Steal Stockpiled Equipment - Failed
     }
 }
 
+country_event = { # Mexican Declaration of War
+    id = cruzoob.12
+    title = cruzoob.12.t
+    desc = cruzoob.12.d
+    picture = GFX_report_event_french_resistance_01
+    is_triggered_only = yes
+
+    option = {
+        name = cruzoob.12.a
+        custom_effect_tooltip = CRU_defence_tt
+        hidden_effect = {
+            load_oob = "CRU_defence"
+        }
+    }
+}
+
 country_event = { # Ask for German Advisors
     id = cruzoob.100
     title = cruzoob.100.t
