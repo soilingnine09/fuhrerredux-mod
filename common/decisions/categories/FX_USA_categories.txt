@@ -16,3 +16,15 @@ USA_dealing_with_the_great_depression = {
     icon = GFX_decision_category_generic_economy
     picture = GFX_decision_cat_generic_mefo_bills
 }
+USA_state_reintegration = {
+    allowed = { original_tag = USA }
+    visible = {
+        has_country_flag = USA_union_collapsed
+        NOT = { country_exists = NEE }
+        NOT = { country_exists = CLB }
+        NOT = { country_exists = NAR }
+        NOT = { country_exists = SNE }
+    }
+    icon = GFX_decision_category_usa_congress
+    priority = 100
+}

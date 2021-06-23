@@ -81,6 +81,10 @@ spriteTypes = {
         texturefile = "gfx/interface/ideas/ideas/GER_bremen_accord.tga"
     }
     spriteType = {
+        name = "GFX_idea_GER_purge_officers"
+        texturefile = "gfx/interface/ideas/ideas/GER_purge_officers.tga"
+    }
+    spriteType = {
         name = "GFX_idea_SWI_swiss_banks"
         texturefile = "gfx/interface/ideas/ideas/SWI_swiss_banks.tga"
     }

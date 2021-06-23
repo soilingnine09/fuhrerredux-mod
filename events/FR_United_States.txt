@@ -1381,6 +1381,13 @@ country_event = { # Emergency Congress Session
     picture = GFX_report_event_us_panay_demands
     is_triggered_only = yes
 
+    immediate = {
+        hidden_effect = {
+            clear_variable = previous_government_type
+            set_variable = { previous_government_type = current_party_ideology_group }
+        }
+    }
+
     option = {
         name = usa.107.a
         hidden_effect = {
@@ -1639,6 +1646,29 @@ country_event = { # Demand the Return of the Territories
 
     option = {
         name = usa.111.a
+        ai_chance = {
+            factor = 20
+            modifier = {
+                tag = ENG
+                has_war_with = GER
+                factor = 3
+            }
+            modifier = {
+                tag = ENG
+                has_war_with = FRA
+                factor = 3
+            }
+            modifier = {
+                tag = ENG
+                has_war_with = FRA
+                FRA = { has_war_with = GER }
+                factor = 0.2
+            }
+            modifier = {
+                tag = MEX
+                factor = 0.8
+            }
+        }
         every_owned_state = {
             limit = { is_claimed_by = FROM }
             FROM = { transfer_state = PREV }
@@ -1646,6 +1676,9 @@ country_event = { # Demand the Return of the Territories
     }
     option = {
         name = usa.111.b
+        ai_chance = {
+            factor = 40
+        }
         FROM = { country_event = usa.112 }
     }
 }
@@ -1667,5 +1700,165 @@ country_event = { # Rejected the Demand
     option = {
         name = usa.112.b
         add_political_power = -100
+    }
+}
+
+country_event = { # Relinquish Emergency Powers
+    id = usa.113
+    title = usa.113.t
+    desc = usa.113.d
+    picture = GFX_report_event_usa_election_generic
+    is_triggered_only = yes
+
+    option = { # The disaster has ended...
+        name = usa.113.a
+        hidden_effect = {
+            if = {
+                limit = { has_variable = previous_government_type }
+                set_politics = {
+                    ruling_party = var:previous_government_type
+                    elections_allowed = yes
+                }
+            }
+            clear_variable = previous_government_type
+            kill_ideology_leader = authoritarian_democrat
+        }
+    }
+}
+
+country_event = { # New Elections!
+    id = usa.114
+    title = usa.114.t
+    desc = usa.114.d
+    picture = GFX_report_event_usa_election_generic
+    is_triggered_only = yes
+
+    option = { # SocDem - Olson
+        name = usa.114.a
+        set_politics = {
+            ruling_party = social_democrat
+            elections_allowed = yes
+            last_election = "1940.11.15"
+        }
+        increase_ruling_party_popularity_by_15 = yes
+        remove_every_minister = yes
+        add_ideas = {
+            USA_Floyd_B_Olson_hog_sde
+            USA_Hugh_Simons_Gibson_for_sde
+            USA_Jesse_Holman_Jones_eco_sde
+            USA_Konrad_Knute_Solberg_sec_sde
+        }
+        hidden_effect = {
+            kill_ideology_leader = social_democrat
+            create_country_leader = {
+                name = "Floyd B. Olson"
+                desc = "POLITICS_FLOYD_B_OLSON_DESC"
+                picture = "Portrait_USA_Floyd_Olson.tga"
+                expire = "1965.1.1"
+                ideology = social_democrat_subtype
+                traits = { }
+            }
+        }
+    }
+    option = { # SocLib - Warren
+        name = usa.114.b
+        set_politics = {
+            ruling_party = social_liberal
+            elections_allowed = yes
+            last_election = "1940.11.15"
+        }
+        increase_ruling_party_popularity_by_15 = yes
+        remove_every_minister = yes
+        add_ideas = {
+            USA_Earl_Warren_hog_sli
+            USA_Henry_Lewis_Stimson_for_sli
+            USA_Charles_Edison_eco_sli
+            USA_Charles_Evans_Hughes_Sr_sec_sli
+        }
+        hidden_effect = {
+            kill_ideology_leader = social_liberal
+            create_country_leader = {
+                name = "Earl Warren"
+                desc = "POLITICS_EARL_WARREN_DESC"
+                picture = "Portrait_USA_Earl_Warren.tga"
+                expire = "1965.1.1"
+                ideology = social_liberal_subtype
+                traits = { }
+            }
+        }
+    }
+    option = { # MarLib - Truman
+        name = usa.114.c
+        set_politics = {
+            ruling_party = market_liberal
+            elections_allowed = yes
+            last_election = "1940.11.15"
+        }
+        increase_ruling_party_popularity_by_15 = yes
+        remove_every_minister = yes
+        add_ideas = {
+            USA_Harry_Truman_hog_mli
+            USA_Henry_Morgenthau_Jr_for_mli
+            USA_Alfred_Emanuel_Smith_eco_mli
+            USA_Alben_W_Barkley_sec_mli
+        }
+        hidden_effect = {
+            kill_ideology_leader = market_liberal
+            create_country_leader = {
+                name = "Harry S. Truman"
+                desc = "POLITICS_HARRY_S_TRUMAN_DESC"
+                picture = "Portrait_USA_Harry_Truman_fx.tga"
+                expire = "1965.1.1"
+                ideology = market_liberal_subtype
+                traits = { }
+            }
+        }
+    }
+    option = { # SocCon - Byrd
+        name = usa.114.e
+        set_politics = {
+            ruling_party = social_conservative
+            elections_allowed = yes
+            last_election = "1940.11.15"
+        }
+        increase_ruling_party_popularity_by_15 = yes
+        add_ideas = {
+            USA_Richard_Russell_Jr_hog_sco
+            USA_James_Watson_Gerard_Jr_for_sco
+            USA_William_Daniel_Leahy_eco_sco
+            USA_Martin_Dies_Jr_sec_sco
+        }
+        hidden_effect = {
+            kill_ideology_leader = social_conservative
+            create_country_leader = {
+                name = "Richard Russell Jr."
+                desc = "POLITICS_RICHARD_RUSSEL_JR_DESC"
+                picture = "Portrait_USA_Richard_Russell_Jr.tga"
+                expire = "1965.1.1"
+                ideology = social_conservative_subtype
+                traits = { }
+            }
+        }
+    }
+}
+
+country_event = { # Return to Civilian Rule?
+    id = usa.115
+    title = usa.115.t
+    desc = usa.115.d
+    picture = GFX_report_event_usa_election_generic
+    is_triggered_only = yes
+
+    option = { # Call Elections
+        name = usa.115.a
+        hidden_effect = {
+            country_event = { id = usa.114 weeks = 1 }
+        }
+    }
+    option = { # The nation needs to be stabilized
+        name = usa.115.b
+        add_political_power = -150
+        add_stability = -0.15
+        add_war_support = -0.15
     }
 }
