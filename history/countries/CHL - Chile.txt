@@ -23,9 +23,9 @@ add_ideas = {
 	CHL_collapsed_economy
 	CHL_political_polarization
 	CHL_Juan_Esteban_Montero_hog_sli
-	CHL_Abraham_Ortega_Aguayo_for_sli
-	CHL_Pedro_Enrique_Alfonso_eco_sli
-	CHL_Marcial_Mora_sec_sli
+	CHL_JRGuiterrez_Allende_for_sli
+	CHL_Arturo_Maschke_eco_sli
+	CHL_Carlos_Valdovinos_Valdovinos_sec_sli
 	presidential_republic
 }
 

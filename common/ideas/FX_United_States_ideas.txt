@@ -223,7 +223,7 @@ ideas = {
         }
         USA_efficient_command_structure = {
             allowed = { original_tag = USA }
-            picture = german_advisors
+            picture = advisors_USA
             modifier = {
                 army_org_factor = 0.05
                 planning_speed = 0.15
