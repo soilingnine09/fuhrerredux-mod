@@ -299,6 +299,22 @@ country_event = { # Mexico: Cruzoob Snatched Chiapas!
     }
 }
 
+country_event = { # Mexican Declaration of War
+    id = cruzoob.15
+    title = cruzoob.15.t
+    desc = cruzoob.15.d
+    picture = GFX_report_event_french_resistance_01
+    is_triggered_only = yes
+
+    option = {
+        name = cruzoob.15.a
+        custom_effect_tooltip = CRU_defence_tt
+        hidden_effect = {
+            load_oob = "CRU_defence"
+        }
+    }
+}
+
 country_event = { # Ask for German Advisors
     id = cruzoob.100
     title = cruzoob.100.t

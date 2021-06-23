@@ -558,5 +558,8 @@ country_event = {
 			target = CRU
 			type = annex_everything
 		}
+		hidden_effect = {
+			CRU = { country_event = { id = cruzoob.15 hours = 8 } }
+		}
 	}
 }

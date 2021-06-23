@@ -33,7 +33,7 @@ division_template = {
 units = {
 	##### Ejército de la Plaza #####
 	division= {	
-		name = "1ra División"
+		name = "1ra división"
 		location = 4965 # Quintana Roo
 		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
@@ -53,8 +53,15 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 	}
-
+	division= {	
+		name = "1ra División de Caballería"
+		location = 4965 # Quintana Roo
+		division_template = "División de Caballería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
 }
+
 
 instant_effect = {
 	add_equipment_production = {
