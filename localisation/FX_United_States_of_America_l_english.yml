@@ -114,6 +114,7 @@ USA_emergency_powers:0 "§gThe Congress have opted to give the President his Eme
 USA_military_junta:0 "§gThe Congress have opted to allow the military to take control§!"
 USA_recovered_territories_from_mexico_tt:0 "§gWe recovered the territories that was surrendered to§! @MEX §Y[MEX.GetName].§!"
 USA_recovered_territories_from_britain_tt:0 "§gWe recovered the territories that was stolen by§! @ENG §Y[ENG.GetName].§!"
+USA_continue_recover_from_depression_tt:0 "§GWe will continue recovering from the Great Depression§!"
 
 ### Ideas
 USA_the_greater_depression:0 "The Great Depression"

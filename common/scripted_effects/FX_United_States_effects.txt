@@ -1,4 +1,5 @@
 USA_decrease_effects_of_the_depression = {
+    custom_effect_tooltip = USA_continue_recover_from_depression_tt
     if = {
         limit = { has_idea = USA_the_greater_depression }
         swap_ideas = {

@@ -197,6 +197,9 @@ USA_state_reintegration = {
         available = { controls_state = FROM }
         remove_effect = {
             add_state_core = FROM
+            hidden_effect = {
+                CLB = { remove_state_core = FROM }
+            }
         }
     }
     USA_integrate_new_english_states = {
@@ -220,6 +223,9 @@ USA_state_reintegration = {
         available = { controls_state = FROM }
         remove_effect = {
             add_state_core = FROM
+            hidden_effect = {
+                NEE = { remove_state_core = FROM }
+            }
         }
     }
     USA_integrate_rust_belt_states = {
@@ -243,6 +249,9 @@ USA_state_reintegration = {
         available = { controls_state = FROM }
         remove_effect = {
             add_state_core = FROM
+            hidden_effect = {
+                NAR = { remove_state_core = FROM }
+            }
         }
     }
     USA_integrate_shoshoni_states = {
@@ -266,6 +275,9 @@ USA_state_reintegration = {
         available = { controls_state = FROM }
         remove_effect = {
             add_state_core = FROM
+            hidden_effect = {
+                SNE = { remove_state_core = FROM }
+            }
         }
     }
     USA_integrate_oregon_states = {
@@ -289,6 +301,9 @@ USA_state_reintegration = {
         available = { controls_state = FROM }
         remove_effect = {
             add_state_core = FROM
+            hidden_effect = {
+                ORE = { remove_state_core = FROM }
+            }
         }
     }
     USA_the_american_rebirth = {
@@ -329,6 +344,13 @@ USA_state_reintegration = {
             NOT = { country_exists = CLB }
             NOT = { country_exists = ORE }
             NOT = { country_exists = SNE }
+            any_owned_state = {
+                NOT = { is_core_of = NEE }
+                NOT = { is_core_of = NAR }
+                NOT = { is_core_of = CLB }
+                NOT = { is_core_of = ORE }
+                NOT = { is_core_of = SNE }
+            }
         }
         complete_effect = {
             drop_cosmetic_tag = USA_federal
