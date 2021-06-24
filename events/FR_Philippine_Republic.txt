@@ -225,7 +225,9 @@ country_event = { # Trip to Congress
                 PHI_Jose_Yulo_sec_sco
             }
             country_event = { id = phi.7 days = 14 }
-            news_event = news.1
+            random_other_country = {
+                news_event = { id = news.1 hours = 12 }
+            }
         }
     }
 }
@@ -286,7 +288,9 @@ country_event = { # Presidential Elections
             country_event = { id = phi.24 days = 1364 }
             country_event = { id = phi.25 days = 1374 }
             country_event = { id = phi.26 days = 1384 }
-            news_event = news.2
+            random_other_country = {
+                news_event = { id = news.2 hours = 12 }
+            }
         }
     }
     option = { # Liberal
@@ -326,7 +330,9 @@ country_event = { # Presidential Elections
             country_event = { id = phi.24 days = 1364 }
             country_event = { id = phi.25 days = 1374 }
             country_event = { id = phi.26 days = 1384 }
-            news_event = news.3
+            random_other_country = {
+                news_event = { id = news.3 hours = 12 }
+            }
         }
     }
     option = { # Sakdalista
@@ -363,7 +369,9 @@ country_event = { # Presidential Elections
         hidden_effect = {
             set_country_flag = PHI_had_1936_elections
             set_country_flag = PHI_sakdalista_victory_tt
-            news_event = news.4
+            random_other_country = {
+                news_event = { id = news.4 hours = 12 }
+            }
         }
     }
 }
@@ -699,7 +707,9 @@ country_event = { # March on Manila
         }
         hidden_effect = {
             set_country_flag = PHI_aguinaldo_coup_tt
-            news_event = news.5
+            random_other_country = {
+                news_event = { id = news.5 hours = 12 }
+            }
         }
     }
 }
@@ -828,7 +838,9 @@ country_event = { # Army Coup
         }
         hidden_effect = {
             set_country_flag = PHI_military_junta_tt
-            news_event = news.6
+            random_other_country = {
+                news_event = { id = news.6 hours = 12 }
+            }
         }
     }
 }
@@ -857,7 +869,9 @@ country_event = { # Civil War!
 
     immediate = {
         hidden_effect = {
-            news_event = news.7
+            random_other_country = {
+                news_event = { id = news.7 hours = 12 }
+            }
             PHI = {
                 if = {
                     limit = { has_idea = PHI_worker_strikes3 }

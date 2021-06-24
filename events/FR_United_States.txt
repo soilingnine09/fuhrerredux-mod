@@ -55,6 +55,9 @@ country_event = { # 1936 Elections
         }
         hidden_effect = {
             set_country_flag = USA_had_1936_elections
+            random_other_country = {
+                news_event = { id = news.11 hours = 12 }
+            }
         }
     }
     option = { # Roosevelt
@@ -76,6 +79,9 @@ country_event = { # 1936 Elections
         }
         hidden_effect = {
             set_country_flag = USA_had_1936_elections
+            random_other_country = {
+                news_event = { id = news.12 hours = 12 }
+            }
         }
     }
     option = { # Landon
@@ -97,6 +103,9 @@ country_event = { # 1936 Elections
         }
         hidden_effect = {
             set_country_flag = USA_had_1936_elections
+            random_other_country = {
+                news_event = { id = news.13 hours = 12 }
+            }
         }
     }
     option = { # Garner
@@ -118,6 +127,9 @@ country_event = { # 1936 Elections
         }
         hidden_effect = {
             set_country_flag = USA_had_1936_elections
+            random_other_country = {
+                news_event = { id = news.14 hours = 12 }
+            }
         }
     }
 }
@@ -1369,7 +1381,9 @@ country_event = { # Collapse of the Union
         hidden_effect = {
             load_focus_tree = usa_emergency_focus
             country_event = { id = usa.107 days = 3 }
-            news_event = news.9
+            random_other_country = {
+                news_event = { id = news.9 hours = 12 }
+            }
         }
     }
 }
@@ -1502,6 +1516,9 @@ country_event = { # Emergency Congress Session
                 ideology = paternal_autocrat
                 name = USA_emergency_government_party
                 long_name = USA_emergency_government_party_long
+            }
+            random_other_country = {
+                news_event = { id = news.10 hours = 12 }
             }
         }
         set_politics = {
@@ -1758,6 +1775,13 @@ country_event = { # New Elections!
                 ideology = social_democrat_subtype
                 traits = { }
             }
+            if = {
+                limit = { has_country_flag = USA_military_junta }
+                random_other_country = {
+                    news_event = { id = news.15 hours = 12 }
+                }
+                clr_country_flag = USA_military_junta
+            }
         }
     }
     option = { # SocLib - Warren
@@ -1784,6 +1808,13 @@ country_event = { # New Elections!
                 expire = "1965.1.1"
                 ideology = social_liberal_subtype
                 traits = { }
+            }
+            if = {
+                limit = { has_country_flag = USA_military_junta }
+                random_other_country = {
+                    news_event = { id = news.15 hours = 12 }
+                }
+                clr_country_flag = USA_military_junta
             }
         }
     }
@@ -1812,6 +1843,13 @@ country_event = { # New Elections!
                 ideology = market_liberal_subtype
                 traits = { }
             }
+            if = {
+                limit = { has_country_flag = USA_military_junta }
+                random_other_country = {
+                    news_event = { id = news.15 hours = 12 }
+                }
+                clr_country_flag = USA_military_junta
+            }
         }
     }
     option = { # SocCon - Byrd
@@ -1837,6 +1875,13 @@ country_event = { # New Elections!
                 expire = "1965.1.1"
                 ideology = social_conservative_subtype
                 traits = { }
+            }
+            if = {
+                limit = { has_country_flag = USA_military_junta }
+                random_other_country = {
+                    news_event = { id = news.15 hours = 12 }
+                }
+                clr_country_flag = USA_military_junta
             }
         }
     }
