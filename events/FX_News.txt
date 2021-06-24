@@ -7,7 +7,7 @@ news_event = { # Laurel Assassinated
     id = news.1
     title = news.1.t
     desc = news.1.d
-    picture = GFX_news_event_assassination_of_alexander_kerensky
+    picture = GFX_news_event_assassination
     major = yes
     is_triggered_only = yes
 
@@ -127,7 +127,7 @@ news_event = { # Southern Agitation
 	immediate = {log = "[GetDateText]: [Root.GetName]: event usanews.1"}
 	title = news.8.t
 	desc = news.8.d
-	picture = GFX_news_event_second_american_civil_war
+	picture = GFX_news_event_USA_southern_agitation
 	major = yes
 	is_triggered_only = yes
 

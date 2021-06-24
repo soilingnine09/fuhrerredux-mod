@@ -10,7 +10,7 @@ news_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event worldnews.1"}
 	title = worldnews.1.t
 	desc = worldnews.1.d
-	picture = GFX_news_event_assassination_of_alexander_kerensky
+	picture = GFX_news_event_assassination
 
 	major = yes
 
@@ -33,7 +33,7 @@ news_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event worldnews.2"}
 	title = "The London Stock Market Crash"
 	desc = uknews.2.d
-	picture = UK_news_parliament
+	picture = GFX_news_event_ENG_parliament
 
 	major = yes
 
@@ -609,7 +609,7 @@ news_event = { # Olympicss event
 	immediate = {log = "[GetDateText]: [Root.GetName]: event worldnews.39"}
 	title = worldnews.39.t
 	desc = worldnews.39.d
-	picture = GFX_news_event_assassination_of_alexander_kerensky
+	picture = GFX_news_event_assassination
 
 	major = yes
 
@@ -1069,87 +1069,6 @@ news_event = {
 }
 
 news_event = {
-	id = worldnews.105
-	immediate = {log = "[GetDateText]: [Root.GetName]: event worldnews.105"}
-	title = "Long Wins The Presidency of the United States"
-	desc = worldnews.105.d
-	picture = GFX_news_event_long
-
-	major = yes
-
-	is_triggered_only = yes
-
-	fire_only_once = yes
-	
-	
-
-	option = {
-		name = "Let's see how dictatorial he actually is..."
-	}
-
-}
-
-news_event = {
-	id = worldnews.106
-	immediate = {log = "[GetDateText]: [Root.GetName]: event worldnews.106"}
-	title = "Roosevelt Wins the Presidency of the United States"
-	desc = worldnews.106.d
-	picture = GFX_Roosevelt_Wins_the_Presidency
-
-	major = yes
-
-	is_triggered_only = yes
-	
-	fire_only_once = yes
-	
-
-	option = {
-		name = "Will he follow his father's legacy?"
-	}
-
-}
-
-news_event = {
-	id = worldnews.107
-	immediate = {log = "[GetDateText]: [Root.GetName]: event worldnews.107"}
-	title = "Landon Wins the Presidency of the United States"
-	desc = worldnews.107.d
-	picture = GFX_Landon_Wins_the_Presidency
-
-	major = yes
-
-	is_triggered_only = yes
-
-	fire_only_once = yes
-	
-	
-
-	option = {
-		name = "Will he just be more of the same?"
-	}
-
-}
-
-news_event = {
-	id = worldnews.108
-	immediate = {log = "[GetDateText]: [Root.GetName]: event worldnews.108"}
-	title = "Garner Wins the Presidency of the United States"
-	desc = worldnews.108.d
-	picture = GFX_news_event_garner
-
-	major = yes
-
-	is_triggered_only = yes
-
-	fire_only_once = yes
-
-	option = {
-		name = "Hopefully he can measure corruption, too."
-	}
-
-}
-
-news_event = {
 	id = worldnews.109
 	immediate = {log = "[GetDateText]: [Root.GetName]: event worldnews.109"}
 	title = "A Strange Interregnum"
@@ -1591,7 +1510,7 @@ news_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event worldnews.130"}
 	title = worldnews.130.t
 	desc = worldnews.130.d
-	picture = GFX_news_event_INC_rebel
+	picture = GFX_news_event_ICR_rebel
 
 	major = yes
 

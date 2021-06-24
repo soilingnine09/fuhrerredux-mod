@@ -1,5 +1,29 @@
 spriteTypes = {
 
+    ### Generic
+    spriteType = {
+		name = "GFX_news_event_second_weltkrieg"
+		texturefile = "gfx/event_news_picture/generic/news_event_second_weltkrieg.dds"
+	}
+    spriteType = {
+		name = "GFX_news_event_assassination"
+		texturefile = "gfx/event_news_picture/generic/news_event_assassination.dds"
+	}
+
+    ### West Europe
+    spriteType = {
+		name = "GFX_news_event_FRA_colonial_exhibition"
+		texturefile = "gfx/event_news_picture/europe/news_event_FRA_paris_colonial_exhibition.tga"	
+    }
+    spriteType = {
+		name = "GFX_news_event_ENG_parliament"
+		texturefile = "gfx/event_news_picture/europe/news_event_ENG_parliament.dds"
+	}
+    spriteType = {
+		name = "GFX_news_event_ITA_parliament"
+		texturefile = "gfx/event_news_picture/europe/news_event_ITA_parliament.dds"
+	}
+
     ### North America
     spriteType = {
         name = "GFX_report_news_event_capture_washington"
@@ -29,30 +53,48 @@ spriteTypes = {
         name = "GFX_report_news_event_USA_victory_celebration"
         texturefile = "gfx/event_news_picture/north_america/news_event_USA_victory_celebration.dds"
     }
+    spriteType = {
+		name = "GFX_news_event_USA_southern_agitation"
+		texturefile = "gfx/event_pictures/news_old/news_event_USA_southern_agitation.dds"
+	}
 
     ### South East Asia
     spriteType = {
 		name = "GFX_news_event_PHI_quezon_inaugurated"
-		texturefile = "gfx/event_news_picture/south_east_asia/news_event_PHI_quezon_inaugurated.tga"
+		texturefile = "gfx/event_news_picture/east_asia/news_event_PHI_quezon_inaugurated.tga"
 	}
 	spriteType = {
 		name = "GFX_news_event_PHI_roxas_inaugurated"
-		texturefile = "gfx/event_news_picture/south_east_asia/news_event_PHI_roxas_inaugurated.tga"
+		texturefile = "gfx/event_news_picture/east_asia/news_event_PHI_roxas_inaugurated.tga"
 	}
 	spriteType = {
 		name = "GFX_news_event_PHI_ramos_inaugurated"
-		texturefile = "gfx/event_news_picture/south_east_asia/news_event_PHI_ramos_inaugurated.tga"
+		texturefile = "gfx/event_news_picture/east_asia/news_event_PHI_ramos_inaugurated.tga"
 	}
 	spriteType = {
 		name = "GFX_news_event_PHI_aguinaldo_coup"
-		texturefile = "gfx/event_news_picture/south_east_asia/news_event_PHI_aguinaldo_coup.tga"
+		texturefile = "gfx/event_news_picture/east_asia/news_event_PHI_aguinaldo_coup.tga"
 	}
 	spriteType = {
 		name = "GFX_news_event_PHI_manila_uprising"
-		texturefile = "gfx/event_news_picture/south_east_asia/news_event_PHI_manila_uprising.tga"
+		texturefile = "gfx/event_news_picture/east_asia/news_event_PHI_manila_uprising.tga"
 	}
 	spriteType = {
 		name = "GFX_news_event_PHI_army_coup"
-		texturefile = "gfx/event_news_picture/south_east_asia/news_event_PHI_army_coup.tga"
+		texturefile = "gfx/event_news_picture/east_asia/news_event_PHI_army_coup.tga"
+	}
+    spriteType = {
+		name = "GFX_news_event_JAP_arrest"
+		texturefile = "gfx/event_news_picture/east_asia/news_event_JAP_arrest.tga"	
+	}
+    spriteType = {
+		name = "GFX_news_event_ICR_rebel"
+		texturefile = "gfx/event_news_picture/east_asia/news_event_ICR_rebel.dds"
+	}
+
+    ### South Asia
+    spriteType = {
+		name = "GFX_news_event_afghan_dehli_war"
+		texturefile = "gfx/event_news_picture/south_asia/news_event_afghan_dehli_war.dds"
 	}
 }
