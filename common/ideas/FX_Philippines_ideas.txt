@@ -1450,7 +1450,7 @@ ideas = {
         }
         PHI_san_miguel_corporation = {
             allowed = { is_a_filipino_tag = yes }
-            picture = generic_industrial_concern_3
+            picture = san_miguel_corporation
             traits = { industrial_concern }
             research_bonus = {
                 industry = 0.15

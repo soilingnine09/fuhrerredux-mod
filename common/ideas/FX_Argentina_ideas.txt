@@ -405,7 +405,7 @@ ideas = {
 			original_tag = "ARG"
 			}
 
-			picture = home_of_the_revolution
+			picture = generic_syndicalist_fort
 			modifier = {
 				defence = 0.05
 				conscription = 0.03  
@@ -630,7 +630,7 @@ ideas = {
 			original_tag = "ARG"
 			}
 
-			picture = idea_generic_agrarian_reform
+			picture = generic_agrarian_society
 			modifier = {
 				global_building_slots_factor = 0.08 				
 				supply_consumption_factor = -0.04
@@ -642,7 +642,7 @@ ideas = {
 			original_tag = "ARG"
 			}
 
-			picture = idea_generic_agrarian_reform
+			picture = generic_agrarian_reform
 			modifier = {
 				global_building_slots_factor = 0.1 				
 				supply_consumption_factor = -0.06
@@ -654,7 +654,7 @@ ideas = {
 			original_tag = "ARG"
 			}
 
-			picture = idea_generic_agrarian_reform
+			picture = generic_agrarian_reform
 			modifier = {
 				global_building_slots_factor = 0.12 				
 				supply_consumption_factor = -0.04
@@ -727,7 +727,7 @@ ideas = {
 			original_tag = "ARG"
 			}
 
-			picture = idea_generic_agrarian_reform
+			picture = prc_low_popular_support3
 			modifier = {
 				consumer_goods_factor = -0.03
 			}
@@ -738,7 +738,7 @@ ideas = {
 			original_tag = "ARG"
 			}
 
-			picture = idea_generic_agrarian_reform
+			picture = generic_central_management
 			modifier = {
 				consumer_goods_factor = -0.05
 				industrial_capacity_factory = 0.1

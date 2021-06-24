@@ -301,7 +301,7 @@ ideas = {
 			cancel = {
 				has_idea = free_trade
 			}
-			picture = HOL_defense_spending_spree
+			picture = generic_political_support
 			modifier = {
 				trade_opinion_factor = -0.25
 				local_resources_factor = 0.25
@@ -311,7 +311,7 @@ ideas = {
 		ITA_help_pope_idea = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_help_pope_idea"}
 			allowed = { original_tag = ITA }
-			picture = hun_treaty_of_trianon
+			picture = PAP_holy_see
 			modifier = {
 				stability_factor = 0.1
 				political_power_gain = 0.1
@@ -1124,7 +1124,7 @@ ideas = {
 		ITA_planning_speed = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_planning_speed"}
 			allowed = { original_tag = ITA }
-			picture = cze_planning_bonus
+			picture = chi_wargaming_division
 			modifier = {
 				max_planning = 0.15 planning_speed = 0.15
 			}

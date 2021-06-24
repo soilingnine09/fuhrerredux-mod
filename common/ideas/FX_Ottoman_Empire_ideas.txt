@@ -272,7 +272,7 @@ ideas = {
 		}
 		TUR_risen_from_the_ashes_idea = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TUR_risen_from_the_ashes_idea"}
-			picture = TUR_autocracy_idea
+			picture = triumphant_will
 			modifier = {
 				political_power_factor = 0.05
 				stability_factor = 0.15

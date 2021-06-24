@@ -23,7 +23,7 @@ ideas = {
 			original_tag = "COL"
 			}
 
-			picture = generic_manpower_bonus
+			picture = vittoria_mutilata
 			modifier = {
 				conscription = 0.04
 				war_support_factor = 0.15
@@ -90,7 +90,7 @@ ideas = {
 			original_tag = "COL"
 			}
 
-			picture = generic_manpower_bonus
+			picture = generic_victors_of_ww1
 			modifier = {
 				paternal_autocrat_drift = 0.02
 			}

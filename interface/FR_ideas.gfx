@@ -194,7 +194,7 @@ spriteTypes = {
 ###Belgium
 	SpriteType = {
 		name = "GFX_idea_BEL_linguistic_debacle"
-		texturefile = "gfx/interface/ideas/ideas/BEL_linguistic_division.dds"
+		texturefile = "gfx/interface/ideas/ideas/BEL_linguistic_division.tga"
 	}
 	SpriteType = {
 		name = "GFX_idea_BEL_improved_working_conditions"
@@ -320,7 +320,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_idea_RUS_Relations_USA_Japan"
-		texturefile = "gfx/interface/ideas/ideas/RUS_Relations_USA_Japan.dds"
+		texturefile = "gfx/interface/ideas/ideas/RUS_Relations_USA_Japan.tga"
 	}
 	spriteType = {
 		name = "GFX_idea_stolypinsky_avt_mobilny_zavod"

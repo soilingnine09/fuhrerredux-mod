@@ -165,7 +165,7 @@ ideas = {
 			original_tag = "BOL"
 			}
 
-			picture = generic_central_management
+			picture = generic_victors_of_ww1
 			modifier = {
 				stability_factor = 0.12
 				monthly_population = 0.05

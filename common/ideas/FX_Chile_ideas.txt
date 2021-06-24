@@ -153,7 +153,7 @@ ideas = {
 			original_tag = "CHL"
 			}
 
-			picture = idea_big_entente_idea
+			picture = ROM_king_carol_ii_hedonist
 			modifier = {
 				army_org_factor = 0.08
 			}
