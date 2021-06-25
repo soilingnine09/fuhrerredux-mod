@@ -2497,10 +2497,6 @@ spriteTypes = {
         texturefile = "gfx/interface/ideas/USA/ministers/USA_Earl_Warren.tga"
     }
     spriteType = {
-        name = "GFX_idea_USA_Harold_Stassen_hog_sli"
-        texturefile = "gfx/interface/ideas/USA/ministers/USA_Harold_Stassen.tga"
-    }
-    spriteType = {
         name = "GFX_idea_USA_Herbert_Hoover_hog_sli"
         texturefile = "gfx/interface/ideas/USA/ministers/USA_Herbert_Hoover.tga"
     }
@@ -2519,6 +2515,10 @@ spriteTypes = {
     spriteType = {
         name = "GFX_idea_USA_Thomas_Dewey_hog_sli"
         texturefile = "gfx/interface/ideas/USA/ministers/USA_Thomas_Dewey.tga"
+    }
+	spriteType = {
+        name = "GFX_idea_USA_Harold_Stassen_hog_mli"
+        texturefile = "gfx/interface/ideas/USA/ministers/USA_Harold_Stassen.tga"
     }
     spriteType = {
         name = "GFX_idea_USA_Adlai_Stevenson_hog_mli"

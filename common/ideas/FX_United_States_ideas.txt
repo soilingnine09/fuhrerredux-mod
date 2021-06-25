@@ -6,7 +6,7 @@ ideas = {
     country = {
 		USA_the_greater_depression = {
             allowed = { original_tag = USA }
-            picture = usa_great_depression
+            picture = generic_economic_turmoil
             modifier = {
                 consumer_goods_factor = 0.5
                 production_factory_max_efficiency_factor = -0.25
@@ -16,7 +16,7 @@ ideas = {
         }
         USA_the_greater_depression_1 = {
             allowed = { original_tag = USA }
-            picture = usa_great_depression
+            picture = generic_economic_turmoil
             modifier = {
                 consumer_goods_factor = 0.45
                 production_factory_max_efficiency_factor = -0.25
@@ -26,7 +26,7 @@ ideas = {
         }
         USA_the_greater_depression_2 = {
             allowed = { original_tag = USA }
-            picture = usa_great_depression
+            picture = generic_economic_turmoil
             modifier = {
                 consumer_goods_factor = 0.45
                 production_factory_max_efficiency_factor = -0.2
@@ -36,7 +36,7 @@ ideas = {
         }
         USA_the_greater_depression_3 = {
             allowed = { original_tag = USA }
-            picture = usa_great_depression
+            picture = generic_economic_turmoil
             modifier = {
                 consumer_goods_factor = 0.4
                 production_factory_max_efficiency_factor = -0.2
@@ -46,7 +46,7 @@ ideas = {
         }
         USA_the_greater_depression_4 = {
             allowed = { original_tag = USA }
-            picture = usa_great_depression
+            picture = generic_economic_turmoil
             modifier = {
                 consumer_goods_factor = 0.4
                 production_factory_max_efficiency_factor = -0.2
@@ -56,7 +56,7 @@ ideas = {
         }
         USA_the_greater_depression_5 = {
             allowed = { original_tag = USA }
-            picture = usa_great_depression
+            picture = generic_economic_turmoil
             modifier = {
                 consumer_goods_factor = 0.35
                 production_factory_max_efficiency_factor = -0.2
@@ -66,7 +66,7 @@ ideas = {
         }
         USA_the_greater_depression_5 = {
             allowed = { original_tag = USA }
-            picture = usa_great_depression
+            picture = generic_economic_turmoil
             modifier = {
                 consumer_goods_factor = 0.35
                 production_factory_max_efficiency_factor = -0.2
@@ -76,7 +76,7 @@ ideas = {
         }
         USA_the_greater_depression_6 = {
             allowed = { original_tag = USA }
-            picture = usa_great_depression
+            picture = generic_economic_turmoil
             modifier = {
                 consumer_goods_factor = 0.3
                 production_factory_max_efficiency_factor = -0.2
@@ -86,7 +86,7 @@ ideas = {
         }
         USA_the_greater_depression_7 = {
             allowed = { original_tag = USA }
-            picture = usa_great_depression
+            picture = generic_economic_turmoil
             modifier = {
                 consumer_goods_factor = 0.3
                 production_factory_max_efficiency_factor = -0.15
@@ -96,7 +96,7 @@ ideas = {
         }
         USA_the_greater_depression_7 = {
             allowed = { original_tag = USA }
-            picture = usa_great_depression
+            picture = generic_economic_turmoil
             modifier = {
                 consumer_goods_factor = 0.3
                 production_factory_max_efficiency_factor = -0.15
@@ -106,7 +106,7 @@ ideas = {
         }
         USA_the_greater_depression_8 = {
             allowed = { original_tag = USA }
-            picture = usa_great_depression
+            picture = generic_economic_turmoil
             modifier = {
                 consumer_goods_factor = 0.25
                 production_factory_max_efficiency_factor = -0.15
@@ -116,7 +116,7 @@ ideas = {
         }
         USA_the_greater_depression_9 = {
             allowed = { original_tag = USA }
-            picture = usa_great_depression
+            picture = generic_economic_turmoil
             modifier = {
                 consumer_goods_factor = 0.25
                 production_factory_max_efficiency_factor = -0.15
@@ -126,7 +126,7 @@ ideas = {
         }
         USA_the_greater_depression_10 = {
             allowed = { original_tag = USA }
-            picture = usa_great_depression
+            picture = generic_economic_turmoil
             modifier = {
                 consumer_goods_factor = 0.2
                 production_factory_max_efficiency_factor = -0.15
@@ -136,7 +136,7 @@ ideas = {
         }
         USA_recovering_from_the_depression = {
             allowed = { original_tag = USA }
-            picture = usa_great_depression
+            picture = generic_economic_turmoil
             modifier = {
                 consumer_goods_factor = 0.2
                 production_factory_max_efficiency_factor = -0.1
@@ -415,16 +415,6 @@ ideas = {
                 hog_accomplished_diplomat
             }
         }
-        USA_Harold_Stassen_hog_sli = {
-            allowed = { original_tag = USA }
-            available = { can_replace_hog = no }
-            cancel_if_invalid = no
-            traits = {
-                head_of_government
-                social_liberal
-                hog_charismatic_charmer
-            }
-        }
         USA_Herbert_Hoover_hog_sli = {
             allowed = { original_tag = USA }
             available = { can_replace_hog = no }
@@ -473,6 +463,16 @@ ideas = {
                 head_of_government
                 social_liberal
                 hog_silent_workhorse
+            }
+        }
+        USA_Harold_Stassen_hog_mli = {
+            allowed = { original_tag = USA }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                market_liberal
+                hog_charismatic_charmer
             }
         }
         USA_Alf_Landon_hog_mli = {

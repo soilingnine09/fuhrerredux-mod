@@ -284,3 +284,20 @@ news_event = { # Restoration of Democracy in the US
         name = news.15.a
     }
 }
+
+news_event = { # Abdülmecid II Assassinated
+    id = news.16
+    title = news.16.t
+    desc = news.16.d
+    picture = GFX_news_event_assassination
+    major = yes
+    is_triggered_only = yes
+
+    show_major = { 
+        NOT = { tag = TUR }
+    }
+
+    option = { 
+        name = news.16.a
+    }
+}

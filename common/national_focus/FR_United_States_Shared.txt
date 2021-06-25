@@ -2151,3 +2151,17 @@ shared_focus = {
 		}
 	}
 }
+
+# Reimpose the Monroe Doctrine
+shared_focus = {
+	id = USA_reimpose_the_monroe_doctrine
+	icon = GFX_goal_USA_monroe_doctrine
+	x = 1
+	y = 1
+	cost = 6
+	prerequisite = { focus = USA_protection_for_central_america }
+	relative_position_id = USA_protection_for_central_america
+	completion_reward = {
+		unlock_decision_category_tooltip = USA_monroe_doctrine
+	}
+}

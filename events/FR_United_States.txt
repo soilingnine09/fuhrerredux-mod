@@ -815,7 +815,7 @@ country_event = { # 1940 Elections
             set_country_flag = USA_had_1940_elections
         }
     }
-    option = { # Landon
+    option = { # Willkie
         name = usa.28.c
         set_politics = {
             ruling_party = market_liberal
@@ -827,16 +827,25 @@ country_event = { # 1940 Elections
         }
         remove_every_minister = yes
         add_ideas = {
-            USA_Alf_Landon_hog_mli
+            USA_Wendell_Willkie_hog_mli
             USA_Henry_Morgenthau_Jr_for_mli
             USA_Daniel_Calhoun_Roper_eco_mli
             USA_Robert_Ferdinand_Wagner_I_sec_mli
         }
         hidden_effect = {
             set_country_flag = USA_had_1940_elections
+            kill_ideology_leader = market_liberal
+            create_country_leader = {
+                name = "Wendell Willkie"
+                desc = "POLITICS_WENDELL_WILLKIE_DESC"
+                picture = "Portrait_USA_Wendell_Willkie_fx.tga"
+                expire = "1965.1.1"
+                ideology = market_liberal_subtype
+                traits = { }
+            }
         }
     }
-    option = { # Byrd
+    option = { # Garner
         name = usa.28.e
         set_politics = {
             ruling_party = social_conservative
@@ -848,21 +857,12 @@ country_event = { # 1940 Elections
         }
         remove_every_minister = yes
         add_ideas = {
-            USA_Harry_F_Byrd_hog_sco
+            USA_John_Nance_Garner_hog_sco
             USA_James_Watson_Gerard_Jr_for_sco
             USA_William_Daniel_Leahy_eco_sco
             USA_Martin_Dies_Jr_sec_sco
         }
         hidden_effect = {
-            kill_ideology_leader = social_conservative
-            create_country_leader = {
-                name = "Harry P. Byrd"
-                desc = "POLITICS_HARRY_P_BYRD_DESC"
-                picture = "Portrait_USA_Harry_F_Byrd.tga"
-                expire = "1965.1.1"
-                ideology = social_conservative_subtype
-                traits = { }
-            }
             set_country_flag = USA_had_1940_elections
         }
     }
@@ -1110,6 +1110,357 @@ country_event = { # 'Modern Times' released
     }
 }
 
+country_event = { # Demand Return of Free Government
+    id = usa.41
+    title = usa.41.t
+    desc = usa.41.d
+    picture = GFX_report_event_generic_read_write
+    is_triggered_only = yes
+
+    option = {
+        name = usa.41.a
+        ai_chance = {
+            factor = 20
+        }
+        add_political_power = -100
+        FROM = { country_event = { id = usa.42 hours = 12 } }
+        hidden_effect = {
+            random_list = {
+                25 = {
+                    set_politics = { ruling_party = social_democrat }
+                }
+                25 = {
+                    set_politics = { ruling_party = social_liberal }
+                }
+                25 = {
+                    set_politics = { ruling_party = market_liberal }
+                }
+                25 = {
+                    set_politics = { ruling_party = social_conservative }
+                }
+            }
+            increase_ruling_party_popularity_by_15 = yes
+        }
+    }
+    option = {
+        name = usa.41.b
+        ai_chance = {
+            factor = 80
+        }
+        FROM = { country_event = { id = usa.43 hours = 12 } }
+    }
+}
+
+country_event = { # Government steps down
+    id = usa.42
+    title = usa.42.t
+    desc = usa.42.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+
+    option = {
+        name = usa.42.a
+        add_political_power = 10
+    }
+}
+
+country_event = { # From refuses American demans
+    id = usa.43
+    title = usa.43.t
+    desc = usa.43.d
+    picture = GFX_report_event_communist_leader
+    is_triggered_only = yes
+
+    option = {
+        name = usa.43.a
+        ai_chance = {
+            factor = 80
+        }
+        create_wargoal = {
+            target = FROM
+            type = annex_everything
+        }
+    }
+    option = {
+        name = usa.43.b
+        ai_chance = {
+            factor = 20
+        }
+        add_political_power = -50
+    }
+}
+
+country_event = { # 1944 Elections
+    id = usa.44
+    title = usa.44.t
+    desc = usa.44.d
+    picture = GFX_report_event_election_vote
+    is_triggered_only = yes
+
+    trigger = {
+        tag = USA
+        date > 1944.1.1
+        date < 1945.1.1
+        NOT = { has_country_flag = USA_had_1944_elections }
+    }
+
+    option = { # Wallace
+        name = usa.44.a
+        set_politics = {
+            ruling_party = social_democrat
+            elections_allowed = yes
+        }
+        add_popularity = {
+            ideology = social_democrat
+            popularity = 0.1
+        }
+        remove_every_minister = yes
+        add_ideas = {
+            USA_Henry_Wallace_hog_sde
+            USA_George_Catlett_Marshall_Jr_for_sde
+            USA_Jesse_Holman_Jones_eco_sde
+            USA_Konrad_Knute_Solberg_sec_sde
+        }
+        hidden_effect = {
+            set_country_flag = USA_had_1944_elections
+            kill_ideology_leader = social_democrat
+            create_country_leader = {
+                name = "Henry Wallace"
+                desc = "POLITICS_HENRY_WALLACE_DESC"
+                picture = "Portrait_USA_Henry_Wallace.tga"
+                expire = "1965.1.1"
+                ideology = social_democrat_subtype
+                traits = { }
+            }
+        }
+    }
+    option = { # Dewey
+        name = usa.44.b
+        set_politics = {
+            ruling_party = social_liberal
+            elections_allowed = yes
+        }
+        add_popularity = {
+            ideology = social_liberal
+            popularity = 0.1
+        }
+        remove_every_minister = yes
+        add_ideas = {
+            USA_Thomas_Dewey_hog_sli
+            USA_Henry_Lewis_Stimson_for_sli
+            USA_Charles_Edison_eco_sli
+            USA_Charles_Douglas_Jackson_sec_sli
+        }
+        hidden_effect = {
+            set_country_flag = USA_had_1944_elections
+            kill_ideology_leader = social_liberal
+            create_country_leader = {
+                name = "Thomas Dewey"
+                desc = "POLITICS_THOMAS_DEWEY_DESC"
+                picture = "Portrait_USA_Thomas_Dewey.tga"
+                expire = "1965.1.1"
+                ideology = social_liberal_subtype
+                traits = { }
+            }
+        }
+    }
+    option = { # Barkley
+        name = usa.44.c
+        set_politics = {
+            ruling_party = market_liberal
+            elections_allowed = yes
+        }
+        add_popularity = {
+            ideology = market_liberal
+            popularity = 0.1
+        }
+        remove_every_minister = yes
+        add_ideas = {
+            USA_Alben_W_Barkley_hog_mli
+            USA_Henry_Morgenthau_Jr_for_mli
+            USA_Daniel_Calhoun_Roper_eco_mli
+            USA_Robert_Ferdinand_Wagner_I_sec_mli
+        }
+        hidden_effect = {
+            set_country_flag = USA_had_1944_elections
+            kill_ideology_leader = social_democrat
+            create_country_leader = {
+                name = "Alben W. Barkley"
+                desc = "POLITICS_ALBEN_W_BARKLEY_DESC"
+                picture = "Portrait_USA_Alben_W_Barkley.tga"
+                expire = "1965.1.1"
+                ideology = market_liberal_subtype
+                traits = { }
+            }
+        }
+    }
+    option = { # Russell
+        name = usa.44.e
+        set_politics = {
+            ruling_party = social_conservative
+            elections_allowed = yes
+        }
+        add_popularity = {
+            ideology = social_conservative
+            popularity = 0.1
+        }
+        remove_every_minister = yes
+        add_ideas = {
+            USA_Richard_Russell_Jr_hog_sco
+            USA_James_Watson_Gerard_Jr_for_sco
+            USA_William_Daniel_Leahy_eco_sco
+            USA_Martin_Dies_Jr_sec_sco
+        }
+        hidden_effect = {
+            set_country_flag = USA_had_1944_elections
+            kill_ideology_leader = social_democrat
+            create_country_leader = {
+                name = "Richard Russell Jr."
+                desc = "POLITICS_RICHARD_RUSSELL_JR_DESC"
+                picture = "Portrait_USA_Richard_Russell_Jr.tga"
+                expire = "1965.1.1"
+                ideology = social_conservative_subtype
+                traits = { }
+            }
+        }
+    }
+}
+
+country_event = { # 1948 Elections
+    id = usa.45
+    title = usa.45.t
+    desc = usa.45.d
+    picture = GFX_report_event_election_vote
+    is_triggered_only = yes
+
+    trigger = {
+        tag = USA
+        date > 1948.1.1
+        date < 1949.1.1
+        NOT = { has_country_flag = USA_had_1948_elections }
+    }
+
+    option = { # La Follette
+        name = usa.45.a
+        set_politics = {
+            ruling_party = social_democrat
+            elections_allowed = yes
+        }
+        add_popularity = {
+            ideology = social_democrat
+            popularity = 0.1
+        }
+        remove_every_minister = yes
+        add_ideas = {
+            USA_Philip_La_Follette_hog_sde
+            USA_George_Catlett_Marshall_Jr_for_sde
+            USA_Jesse_Holman_Jones_eco_sde
+            USA_Konrad_Knute_Solberg_sec_sde
+        }
+        hidden_effect = {
+            set_country_flag = USA_had_1948_elections
+            kill_ideology_leader = social_democrat
+            create_country_leader = {
+                name = "Philip La Follette"
+                desc = "POLITICS_PHILIP_LA_FOLLETTE_DESC"
+                picture = "Portrait_USA_Philip_La_Follette.tga"
+                expire = "1965.1.1"
+                ideology = social_democrat_subtype
+                traits = { }
+            }
+        }
+    }
+    option = { # Bricker
+        name = usa.45.b
+        set_politics = {
+            ruling_party = social_liberal
+            elections_allowed = yes
+        }
+        add_popularity = {
+            ideology = social_liberal
+            popularity = 0.1
+        }
+        remove_every_minister = yes
+        add_ideas = {
+            USA_John_W_Bricker_hog_sli
+            USA_Henry_Lewis_Stimson_for_sli
+            USA_Charles_Edison_eco_sli
+            USA_Charles_Douglas_Jackson_sec_sli
+        }
+        hidden_effect = {
+            set_country_flag = USA_had_1948_elections
+            kill_ideology_leader = social_liberal
+            create_country_leader = {
+                name = "John Bricker"
+                desc = "POLITICS_JOHN_BRICKER_DESC"
+                picture = "Portrait_USA_John_Bricker.tga"
+                expire = "1965.1.1"
+                ideology = social_liberal_subtype
+                traits = { }
+            }
+        }
+    }
+    option = { # Stassen
+        name = usa.45.c
+        set_politics = {
+            ruling_party = market_liberal
+            elections_allowed = yes
+        }
+        add_popularity = {
+            ideology = market_liberal
+            popularity = 0.1
+        }
+        remove_every_minister = yes
+        add_ideas = {
+            USA_Harold_Stassen_hog_mli
+            USA_Henry_Morgenthau_Jr_for_mli
+            USA_Daniel_Calhoun_Roper_eco_mli
+            USA_Robert_Ferdinand_Wagner_I_sec_mli
+        }
+        hidden_effect = {
+            set_country_flag = USA_had_1948_elections
+            kill_ideology_leader = market_liberal
+            create_country_leader = {
+                name = "Harold Stassen"
+                desc = "POLITICS_HAROLD_STASSEN_DESC"
+                picture = "Portrait_USA_Harold Stassen.tga"
+                expire = "1965.1.1"
+                ideology = market_liberal_subtype
+                traits = { }
+            }
+        }
+    }
+    option = { # Russell
+        name = usa.45.e
+        set_politics = {
+            ruling_party = social_conservative
+            elections_allowed = yes
+        }
+        add_popularity = {
+            ideology = social_conservative
+            popularity = 0.1
+        }
+        remove_every_minister = yes
+        add_ideas = {
+            USA_Richard_Russell_Jr_hog_sco
+            USA_James_Watson_Gerard_Jr_for_sco
+            USA_William_Daniel_Leahy_eco_sco
+            USA_Martin_Dies_Jr_sec_sco
+        }
+        hidden_effect = {
+            set_country_flag = USA_had_1944_elections
+            kill_ideology_leader = social_democrat
+            create_country_leader = {
+                name = "Richard Russell Jr."
+                desc = "POLITICS_RICHARD_RUSSELL_JR_DESC"
+                picture = "Portrait_USA_Richard_Russell_Jr.tga"
+                expire = "1965.1.1"
+                ideology = social_conservative_subtype
+                traits = { }
+            }
+        }
+    }
+}
 
 country_event = { # Nationwide Riots
     id = usa.100

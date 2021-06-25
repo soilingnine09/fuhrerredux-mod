@@ -1504,7 +1504,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_JAP_feburary_incident"
-		texturefile= "gfx/interface/goals/JAP_feburary_incident.dds"
+		texturefile= "gfx/interface/goals/JAP_feburary_incident.tga"
 	}
 	SpriteType = {
 		name = "GFX_goal_jap_left"
@@ -1516,7 +1516,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 	name = "GFX_goal_JAP_mil_parl"
-	texturefile = "gfx/interface/goals/goal_JAP_mil_parl.dds"
+	texturefile = "gfx/interface/goals/goal_JAP_mil_parl.tga"
 	}
 	SpriteType = {
 	name = "GFX_goal_JAP_cut_off_british_supplies"
@@ -1561,10 +1561,6 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_goal_JAP_IRAA"
 	texturefile= "gfx/interface/goals/goal_JAP_IRAA.dds"
-	}
-	SpriteType = {
-	name = "GFX_goal_JAP_Korea_Question"
-	texturefile= "gfx/interface/goals/goal_JAP_Korea_Question.dds"
 	}
 	SpriteType = {
 	name = "GFX_goal_JAP_Imperial_Army"

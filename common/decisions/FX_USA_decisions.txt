@@ -384,3 +384,34 @@ USA_state_reintegration = {
         }
     }
 }
+USA_monroe_doctrine = {
+    USA_demand_return_of_free_government = {
+        icon = GFX_decision_generic_civil_support
+        cost = 50
+
+        target_trigger = {
+            FROM = {
+                OR = {
+                    tag = BOL
+                    tag = ARG
+                    tag = COL
+                    tag = PRU
+                    tag = CHL
+                    tag = ECU
+                    tag = UBR
+                    tag = BPS
+                }
+            }
+        }
+
+        visible = { 
+            FROM = { 
+                is_subject = no
+                has_elected_government = no
+            }
+        }
+        complete_effect = {
+            FROM = { country_event = { id = usa.41 hours = 12 } }
+        }
+    }
+}

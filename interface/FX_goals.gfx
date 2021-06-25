@@ -341,6 +341,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/USA_meet_with_entente.tga"
 	}
 	spriteType = {
+		name = "GFX_goal_USA_monroe_doctrine"
+		texturefile = "gfx/interface/goals/USA_monroe_doctrine.tga"
+	}
+	spriteType = {
 		name = "GFX_goal_RUS_army"
 		texturefile = "gfx/interface/goals/RUS_army.dds"
 	}
@@ -406,6 +410,6 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_goal_GER_pressure_the_baltic"
-		texturefile = "gfx/interface/goals/GER_pressure_the_baltic.tga"
+		texturefile = "gfx/interface/goals/GER_pressure_baltic.tga"
 	}
 }

@@ -2510,7 +2510,7 @@ focus_tree = {
 #GER DIPLOMACY
 	focus = {
 		id = jap_friends_with_ger
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_goal_germany
 		cost = 3
 
 		x = 18
@@ -4077,7 +4077,7 @@ focus_tree = {
 
 	focus = {
 		id = jap_suppress_worker_rebellion
-		icon = GFX_goal_continuous_suppression
+		icon = GFX_goal_generic_crush_unions
 		cost = 3
 
 		x = 0
@@ -6124,7 +6124,7 @@ focus_tree = {
 	}
 	focus = {
 		id = jap_korean_project
-		icon = GFX_goal_JAP_Korea_Question
+		icon = GFX_goal_Korea_Colony
 		cost = 5
 
 		x = -2

@@ -2725,6 +2725,38 @@ spriteTypes = {
 	}
 
     spriteType = {
+		name = "GFX_goal_USA_monroe_doctrine_shine"
+		texturefile = "gfx/interface/goals/USA_monroe_doctrine.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/USA_monroe_doctrine.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/USA_monroe_doctrine.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+    spriteType = {
 		name = "GFX_goal_RUS_army_shine"
 		texturefile = "gfx/interface/goals/RUS_army.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -3237,11 +3269,11 @@ spriteTypes = {
 	}
 
     spriteType = {
-		name = "GFX_goal_GER_pressure_the_baltic_shine"
-		texturefile = "gfx/interface/goals/GER_pressure_the_baltic.tga"
+		name = "GFX_goal_GER_pressure_baltic_shine"
+		texturefile = "gfx/interface/goals/GER_pressure_baltic.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_pressure_the_baltic.tga"
+			animationmaskfile = "gfx/interface/goals/GER_pressure_baltic.tga"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -3254,7 +3286,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_pressure_the_baltic.tga"
+			animationmaskfile = "gfx/interface/goals/GER_pressure_baltic.tga"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
