@@ -160,7 +160,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FIN_strengthen_finnish_red_cross
-		icon = GFX_goal_hospital
+		icon = GFX_goal_medical
 		cost = 8.00
 		prerequisite = {
 			focus = FIN_non_partisan_governing

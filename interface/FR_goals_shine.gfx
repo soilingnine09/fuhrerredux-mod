@@ -4423,11 +4423,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_hospital_shine"
-		texturefile = "gfx/interface/goals/goal_hospital.dds"
+		name = "GFX_goal_medical_shine"
+		texturefile = "gfx/interface/goals/goal_medical.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_hospital.dds"
+			animationmaskfile = "gfx/interface/goals/goal_medical.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -4440,7 +4440,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_hospital.dds"
+			animationmaskfile = "gfx/interface/goals/goal_medical.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no

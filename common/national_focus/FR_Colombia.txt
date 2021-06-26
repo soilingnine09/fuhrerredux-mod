@@ -1084,7 +1084,7 @@ focus_tree = {
 	}
 		focus = { 
 		id = COL_sustaining_our_soldiers
-		icon = GFX_goal_hospital
+		icon = GFX_goal_medical
 		prerequisite = { focus = COL_cortes_massive_warfare }
  		ai_will_do = { factor = 10 } 
  		x =39
@@ -1252,7 +1252,7 @@ focus_tree = {
 	}
 		focus = { 
 		id = COL_medical_assistance
-		icon = GFX_goal_hospital
+		icon = GFX_goal_medical
 		prerequisite = { focus = COL_mechanizated_improvements }
 		prerequisite = { focus = COL_artillery_focus }
  		ai_will_do = { factor = 10 } 

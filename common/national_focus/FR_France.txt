@@ -321,7 +321,7 @@ focus_tree = {
     # Investigation of the Capitalists
     focus = {
         id = fra_invest_ic
-		icon = GFX_goal_production
+		icon = GFX_goal_generic_investigate_corruption
 		x = 1
 		y = 1
         cost = 3
@@ -4491,7 +4491,7 @@ focus_tree = {
 	# Impractically Large Ships
 	focus = {
 		id = fra_super_heavy
-		icon = GFX_goal_generic_navy_battleship
+		icon = GFX_goal_generic_navy_battleship2alt
 		x = 0
 		y = 1
 		cost = 10
@@ -4516,7 +4516,7 @@ focus_tree = {
 	# Mobile Airstrips
 	focus = {
 		id = fra_mobile_airports
-		icon = GFX_goal_generic_navy_carrier
+		icon = GFX_goal_generic_sea_focused_navy2
 		x = -4
 		y = 1
 		cost = 5

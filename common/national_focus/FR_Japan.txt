@@ -859,7 +859,7 @@ focus_tree = {
 
 	focus = {
 		id = jap_superior_battlefleet
-		icon = GFX_goal_JAP_superior_battlefleet
+		icon = GFX_goal_generic_navy_battleship3
 
 		x = -1
 		y = 1
@@ -988,7 +988,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_the_yamato
-		icon = GFX_goal_JAP_the_yamato
+		icon = GFX_goal_generic_navy_battleship3a
 
 		x = -2
 		y = 2
@@ -1254,7 +1254,7 @@ focus_tree = {
 
 	focus = {
 		id = jap_third_gen_cv
-		icon = GFX_goal_third_gen_cv
+		icon = GFX_goal_generic_sea_focused_navy2
 
 		x = 0
 		y = 1
@@ -1301,7 +1301,7 @@ focus_tree = {
 
 	focus = {
 		id = jap_fifth_fleet_expansion
-		icon = GFX_goal_zuiho_class
+		icon = GFX_goal_generic_coastal_navy2
 
 		x = 0
 		y = 1
@@ -4243,7 +4243,7 @@ focus_tree = {
 
 	focus = {
 		id = jap_arrest_the_traitor
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_goal_generic_investigate_corruption
 		cost = 5
 
 		x = 1

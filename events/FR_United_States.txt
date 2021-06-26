@@ -1462,6 +1462,97 @@ country_event = { # 1948 Elections
     }
 }
 
+country_event = { # Fruits of Investments
+    id = usa.46
+    title = usa.46.t
+    desc = usa.46.d
+    picture = GFX_report_event_physics_lab_02
+    is_triggered_only = yes
+
+    option = {
+        name = usa.46.a
+        random_owned_controlled_state = {
+            limit = {
+                free_building_slots = {
+                    building = industrial_complex
+                    size > 0
+                    include_locked = yes
+                }
+            }
+
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes
+            }
+        }
+        random_owned_controlled_state = {
+            limit = {
+                free_building_slots = {
+                    building = industrial_complex
+                    size > 0
+                    include_locked = yes
+                }
+            }
+
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes
+            }
+        }
+        random_owned_controlled_state = {
+            limit = {
+                free_building_slots = {
+                    building = industrial_complex
+                    size > 0
+                    include_locked = yes
+                }
+            }
+
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
+}
+
+country_event = { # Concerns in Share our Wealth
+    id = usa.47
+    title = usa.47.t
+    desc = usa.47.d
+    picture = GFX_report_event_canada_ronnie
+    is_triggered_only = yes
+
+    option = {
+        name = usa.47.a
+        add_popularity = {
+            ideology = social_democrat
+            popularity = 0.05
+        }
+        add_popularity = {
+            ideology - social_liberal
+            popularity = 0.05
+        }
+    }
+    option = {
+        name = usa.47.b
+        add_popularity = {
+            ideology = market_liberal
+            popularity = 0.05
+        }
+        add_popularity = {
+            ideology - social_conservative
+            popularity = 0.05
+        }
+    }
+}
+
 country_event = { # Nationwide Riots
     id = usa.100
     title = usa.100.t

@@ -954,7 +954,7 @@ shared_focus = {
 # Logistical Improvements
 shared_focus = {
     id = PHI_logistical_improvements
-    icon = GFX_goal_generic_more_territorial_claims
+    icon = GFX_goal_generic_support_equipment
     x = 1
     y = 1
     cost = 6

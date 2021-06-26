@@ -1388,7 +1388,7 @@ focus_tree = {
 
 		focus = { 
 		id = PRU_reinforce_our_men
-		icon = GFX_focus_generic_support_the_left_right
+		icon = GFX_goal_generic_support_equipment
 		prerequisite = { focus = PRU_mechanized_masses focus = PRU_bring_in_the_tanks }
  		ai_will_do = { factor = 10 } 
  		x =16

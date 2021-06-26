@@ -1543,7 +1543,7 @@ focus_tree = {
 	}
 		focus = {
 		id = ARG_medical_troops
-		icon = GFX_goal_hospital
+		icon = GFX_goal_generic_medical
  		ai_will_do = { factor = 10 } 
  		prerequisite = { focus = ARG_update_infantry focus = ARG_motorize_our_forces }
  		x =27
@@ -2316,7 +2316,7 @@ focus_tree = {
 	}
 		focus = {
 		id = ARG_domecq_plan
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_goal_generic_navy_battleship3alt
  		ai_will_do = { factor = 5 } 
  		x =33
  		y =8
@@ -2465,7 +2465,7 @@ focus_tree = {
 	}
 		focus = {
 		id = ARG_carriers
-		icon = GFX_goal_generic_navy_carrier
+		icon = GFX_goal_generic_sea_focused_navy2
  		ai_will_do = { factor = 10 } 
  		x =35
  		y =10

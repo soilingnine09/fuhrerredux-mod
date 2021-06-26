@@ -1,6 +1,46 @@
 spriteTypes = {
 
 	spriteType = {
+		name = "GFX_goal_generic_army_training"
+		texturefile = "gfx/interface/goals/generic_army_training.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_ban_right_wing"
+		texturefile = "gfx/interface/goals/generic_ban_right_wing.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_buy_ships"
+		texturefile = "gfx/interface/goals/generic_buy_ships.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_coastal_navy2"
+		texturefile = "gfx/interface/goals/generic_coastal_navy2.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_investigate_corruption"
+		texturefile = "gfx/interface/goals/generic_investigate_corruption.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_navy_battleship3"
+		texturefile = "gfx/interface/goals/generic_navy_battleship3.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_navy_battleship3alt"
+		texturefile = "gfx/interface/goals/generic_navy_battleship3alt.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_sea_focused_navy2"
+		texturefile = "gfx/interface/goals/generic_sea_focused_navy2.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_shipyard"
+		texturefile = "gfx/interface/goals/generic_shipyard.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_support_equipment"
+		texturefile = "gfx/interface/goals/generic_support_equipment.tga"
+	}
+	spriteType = {
 		name = "GFX_goal_generic_revolution_argentina"
 		texturefile = "gfx/interface/goals/generic_revolution_argentina.tga"
 	}
@@ -411,5 +451,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_goal_GER_pressure_the_baltic"
 		texturefile = "gfx/interface/goals/GER_pressure_baltic.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_ZHI_request_japanese_funding"
+		texturefile = "gfx/interface/goals/ZHI_request_japanese_funding.tga"
 	}
 }
