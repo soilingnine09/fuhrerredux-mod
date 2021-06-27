@@ -71,14 +71,14 @@ set_stability = 0.56
 set_war_support = 0.34
 
 set_politics = {
-	ruling_party = valkist
+	ruling_party = authoritarian_democrat
 	last_election = "1932.11.15"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = not
 }
 
 set_popularities = {
-	social_liberal = 3
+	social_democrat = 3
 	market_liberal = 6
 	social_conservative = 13
 	authoritarian_democrat = 8
@@ -95,13 +95,73 @@ add_ideas = {
     GEN_for_val
     GEN_eco_val
     GEN_sec_val
-	one_party_dictatorship
+	theocratic_republic
+
+	CLB_enemies_on_all_sides
+	CLB_beginings_of_commonwealth
+	CLB_the_ward_system
+	CLB_democracy_in_limbo
+	CLB_spliting_at_seems
+}
+
+create_country_leader = {
+	name = "George W. Norris"
+	desc = "POLITICS_TOWNSEND_DESC"
+	picture = "Portrait_CLB_George_W_Norris.tga"
+	expire = "1965.1.1"
+	ideology = social_democrat_subtype
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Francis Townsend"
+	desc = "POLITICS_TOWNSEND_DESC"
+	picture = "Portrait_CLB_Townsend.tga"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Charles Coughlin"
+	desc = "POLITICS_Coughlin_DESC"
+	picture = "Portrait_CLB_Charles_Coughlin.tga"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = { }
 }
 
 create_country_leader = {
 	name = "William Dudley Pelley"
 	desc = "POLITICS_WILLLIAM_DUDLEY_PELLEY_DESC"
 	picture = "Portrait_CLB_William_Dudley_Pelley.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+	traits = { american_dressler }
+}
+
+create_country_leader = {
+	name = "Gerald L.K. Smith"
+	desc = "POLITICS_GERALD_LK_SMITH_DESC"
+	picture = "Portrait_CLB_gearld_k_smith.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Gerald L.K. Smith"
+	desc = "POLITICS_GERALD_LK_SMITH_DESC"
+	picture = "Portrait_CLB_gearld_k_smith.tga"
+	expire = "1965.1.1"
+	ideology = national_populist_subtype
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Henry Allen"
+	desc = "POLITICS_HENRY_ALLEN_DESC"
+	picture = "Portrait_CLB_henry_allen.tga"
 	expire = "1965.1.1"
 	ideology = valkist_subtype
 	traits = { }
