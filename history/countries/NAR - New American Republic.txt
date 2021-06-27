@@ -96,6 +96,11 @@ add_ideas = {
 
 	limited_conscription
 
+	NAR_racial_issue
+	NAR_economic_downtrum
+	NAR_unstable_bureaucracy
+	NAR_illegitimate_government
+
 	GEN_hog_pau
     GEN_for_pau
     GEN_eco_pau
