@@ -988,7 +988,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_the_yamato
-		icon = GFX_goal_generic_navy_battleship3a
+		icon = GFX_goal_generic_navy_battleship3alt
 
 		x = -2
 		y = 2
@@ -2055,7 +2055,7 @@ focus_tree = {
 
 	focus = {
 		id = jap_armor_training_program
-		icon = GFX_goal_continuous_armor_production
+		icon = GFX_goal_generic_army_tanks2
 
 		x = 0
 		y = 1

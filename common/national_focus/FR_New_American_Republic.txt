@@ -1,0 +1,1025 @@
+# New American Republic Focus Tree
+# created by: dax0102
+
+focus_tree = {
+    id = new_american_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = NAR
+        }
+    }
+
+    continuous_focus_position = { x = 100 y = 900 }
+
+    # Cement our Authority
+    focus = {
+        id = NAR_cement_our_authority
+        icon = GFX_goal_authoritarian
+        x = 7
+        y = 0
+        cost = 6
+        completion_reward = {
+            add_political_power = 150
+        }
+    }
+
+    # Housing Programs
+    focus = {
+        id = NAR_housing_programs
+        icon = GFX_goal_generic_build_housing
+        x = -6
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_cement_our_authority }
+        relative_position_id = NAR_cement_our_authority
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = {
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 0
+                        include_locked = yes
+                    }
+                }
+			    add_extra_state_shared_building_slots = 1
+            }
+            random_owned_controlled_state = {
+                limit = {
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 0
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 1
+            }
+            random_owned_controlled_state = {
+                limit = {
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 0
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 1
+            }
+        }
+    }
+
+    # New Education Curriculum
+    focus = {
+        id = NAR_new_education_curriculum
+        icon = GFX_goal_KTG_Bookstack
+        x = -1
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_housing_programs }
+        relative_position_id = NAR_housing_programs
+        completion_reward = {
+            add_research_slot = 1
+        }
+    }
+
+    # Get Church Support
+    focus = {
+        id = NAR_get_church_support
+        icon = GFX_BEL_Improve_Catholic_Relations
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_housing_programs }
+        relative_position_id = NAR_housing_programs
+        completion_reward = {
+            add_ideas = NAR_church_support
+        }
+    }
+
+    # Social Reforms
+    focus = {
+        id = NAR_social_reforms
+        icon = GFX_goal_DOM_End_Judicial_Corruption
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_new_education_curriculum }
+        prerequisite = { focus = NAR_get_church_support }
+        relative_position_id = NAR_new_education_curriculum
+        completion_reward = {
+            add_ideas = NAR_social_reforms_idea
+        }
+    }
+
+    # Control the Newspapers
+    focus = {
+        id = NAR_control_the_newspapers
+        icon = GFX_goal_big_news
+        x = 0
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_social_reforms }
+        relative_position_id = NAR_social_reforms
+        completion_reward = {
+            add_ideas = NAR_restricted_press_freedom
+        }
+    }
+
+    # Banking Deregulation
+    focus = {
+        id = NAR_banking_deregulation
+        icon = GFX_goal_generic_banking_legislation
+        x = -3
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_cement_our_authority }
+        relative_position_id = NAR_cement_our_authority
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = NAR_economic_downtrum
+                add_idea = NAR_economic_downtrum_1
+            }
+        }
+    }
+
+    # Bailout American Companies
+    focus = {
+        id = NAR_bailout_american_companies
+        icon = GFX_focus_empty_coffers
+        x = 0
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_banking_deregulation }
+        relative_position_id = NAR_banking_deregulation
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = NAR_economic_downtrum_1
+                add_idea = NAR_economic_downtrum_2
+            }
+        }
+    }
+
+    # Tax Reforms
+    focus = {
+        id = NAR_tax_reforms
+        icon = GFX_goal_bag_of_money
+        x = -1
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_bailout_american_companies }
+        relative_position_id = NAR_bailout_american_companies
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = NAR_economic_downtrum_2
+                add_idea = NAR_economic_downtrum_3
+            }
+        }
+    }
+
+    # Electrification Campaigns
+    focus = {
+        id = NAR_electrification_campaigns
+        icon = GFX_goal_generic_lightbulb
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_bailout_american_companies }
+        relative_position_id = NAR_bailout_american_companies
+        completion_reward = {
+            add_tech_bonus = {
+                category = electronics
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Economic Recovery
+    focus = {
+        id = NAR_economic_recovery
+        icon = GFX_focus_generic_the_giant_wakes
+        x = -1
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_electrification_campaigns }
+        prerequisite = { focus = NAR_tax_reforms }
+        relative_position_id = NAR_electrification_campaigns
+        completion_reward = {
+            remove_ideas = NAR_economic_downtrum_3
+            add_timed_idea = {
+                idea = NAR_recovering_from_recession
+                days = 360
+            }
+        }
+    }
+
+    # Suppress the Minorities
+    focus = {
+        id = NAR_suppress_the_minorities
+        icon = GFX_goal_step_on_skull
+        x = -1
+        y = 1
+        cost = 6
+        mutually_exclusive = { focus = NAR_rights_for_everyone }
+        prerequisite = { focus = NAR_cement_our_authority }
+        relative_position_id = NAR_cement_our_authority
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = NAR_racial_issue
+                add_idea = NAR_suppressed_minorities
+            }
+        }
+    }
+
+    # Rights for Everyone
+    focus = {
+        id = NAR_rights_for_everyone
+        icon = GFX_goal_liberty
+        x = 1
+        y = 1
+        cost = 6
+        mutually_exclusive = { focus = NAR_suppress_the_minorities }
+        prerequisite = { focus = NAR_cement_our_authority }
+        relative_position_id = NAR_cement_our_authority
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = NAR_racial_issue
+                add_idea = NAR_equal_rights_for_minorities
+            }
+        }
+    }
+
+    # Civilian Heroism
+    focus = {
+        id = NAR_civilian_heroism
+        icon = GFX_goal_national_mobilization
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_suppress_the_minorities }
+        prerequisite = { focus = NAR_rights_for_everyone }
+        relative_position_id = NAR_suppress_the_minorities
+        completion_reward = {
+            add_ideas = NAR_civilian_heroism_idea
+        }
+    }
+
+    # Promote Technocratic Management
+    focus = {
+        id = NAR_promote_technocratic_management
+        icon = GFX_focus_generic_self_management
+        x = 0
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_civilian_heroism }
+        relative_position_id = NAR_civilian_heroism
+        completion_reward = {
+            add_tech_bonus = {
+                category = industry
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Begin Civilian Mobilization
+    focus = {
+        id = NAR_begin_civilian_mobilization
+        icon = GFX_goal_conscription
+        x = 0
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_promote_technocratic_management }
+        relative_position_id = NAR_promote_technocratic_management
+        completion_reward = {
+            add_manpower = 15000
+        }
+    }
+
+    # Propaganda Campaigns
+    focus = {
+        id = NAR_propaganda_campaigns
+        icon = GFX_goal_generic_propaganda
+        x = 3
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_cement_our_authority }
+        relative_position_id = NAR_cement_our_authority
+        completion_reward = {
+            add_timed_idea = {
+                idea = NAR_instituting_propaganda
+                days = 180
+            }
+        }
+    }
+
+    # Counter Intelligence Program
+    focus = {
+        id = NAR_counter_intelligence_program
+        icon = GFX_goal_secret_agents
+        x = 0
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_propaganda_campaigns }
+        relative_position_id = NAR_propaganda_campaigns
+        completion_reward = {
+            add_ideas = NAR_cointelpro
+        }
+    }
+
+    # Secure Labour Agreements 
+    focus = {
+        id = NAR_secure_labour_agreements
+        icon = GFX_goal_workers_rights
+        x = -1
+        y = 1
+        cost = 6
+        mutually_exclusive = { focus = NAR_crush_the_unions }
+        prerequisite = { focus = NAR_counter_intelligence_program }
+        relative_position_id = NAR_counter_intelligence_program
+        completion_reward = {
+            add_ideas = NAR_labour_agreement
+        }
+    }
+
+    # Crush the Unions
+    focus = {
+        id = NAR_crush_the_unions
+        icon = GFX_goal_generic_crush_unions
+        x = 1
+        y = 1
+        cost = 6
+        mutually_exclusive = { focus = NAR_secure_labour_agreements }
+        prerequisite = { focus = NAR_counter_intelligence_program }
+        relative_position_id = NAR_counter_intelligence_program
+        completion_reward = {
+            add_ideas = NAR_union_suppression
+        }
+    }
+
+    # Ensure Bureaucratic Loyalty
+    focus = {
+        id = NAR_ensure_bureaucratic_loyalty
+        icon = GFX_goal_Centralised_Government
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = {
+            focus = NAR_crush_the_unions
+            focus = NAR_secure_labour_agreements
+        }
+        relative_position_id = NAR_secure_labour_agreements
+        completion_reward = {
+            remove_ideas = NAR_unstable_bureaucracy
+        }
+    }
+
+    # Reform the Boy Scouts
+    focus = {
+        id = NAR_reform_the_boy_scouts
+        icon = GFX_focus_generic_military_mission
+        x = 6
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_cement_our_authority }
+        relative_position_id = NAR_cement_our_authority
+        completion_reward = {
+            add_ideas = NAR_american_boy_scouts
+        }
+    }
+
+    # Subsidize Research Institutions
+    focus = {
+        id = NAR_subsidize_research_institutions
+        icon = GFX_goal_double_research
+        x = -1
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_reform_the_boy_scouts }
+        relative_position_id = NAR_reform_the_boy_scouts
+        completion_reward = {
+            add_timed_idea = {
+                idea = NAR_research_boost
+                days = 480
+            }
+        }
+    }
+
+    # Fordism
+    focus = {
+        id = NAR_fordism
+        icon = GFX_DAH_Topke
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_reform_the_boy_scouts }
+        relative_position_id = NAR_reform_the_boy_scouts
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = {
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 0
+                        include_locked = yes
+                    }
+                }
+
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    # Purge Opposition
+    focus = {
+        id = NAR_purge_opposition
+        icon = GFX_goal_backstab
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_subsidize_research_institutions }
+        prerequisite = { focus = NAR_fordism }
+        relative_position_id = NAR_subsidize_research_institutions
+        completion_reward = {
+            add_timed_idea = {
+                idea = NAR_the_great_purge
+                days = 360
+            }
+        }
+    }
+
+    # Tackle our Legitimacy
+    focus = {
+        id = NAR_tackle_our_legitimacy
+        icon = GFX_goal_checkmate
+        x = 0
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_purge_opposition }
+        relative_position_id = NAR_purge_opposition
+        completion_reward = {
+            add_political_power = 150
+        }
+    }
+
+    # Republic without Democracy
+    focus = {
+        id = NAR_republic_without_democracy
+        icon = GFX_goal_DEI_focus_disband_volksraad
+        x = 0
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_begin_civilian_mobilization }
+        prerequisite = { focus = NAR_economic_recovery }
+        prerequisite = { focus = NAR_ensure_bureaucratic_loyalty }
+        relative_position_id = NAR_begin_civilian_mobilization
+        completion_reward = {
+            
+        }
+    }
+
+    #################################################################
+
+    # The New American Army
+    focus = {
+        id = NAR_the_new_american_army
+        icon = GFX_goal_generic_axis_build_infantry
+        x = 20
+        y = 0
+        cost = 6
+        completion_reward = {
+            army_experience = 25
+        }
+    }
+
+    # New Army Doctrines
+    focus = {
+        id = NAR_new_army_doctrines
+        icon = GFX_goal_generic_army_doctrines
+        x = 3
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_the_new_american_army }
+        relative_position_id = NAR_the_new_american_army
+        completion_reward = {
+            add_tech_bonus = {
+                category = land_doctrine
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Expand the National Guard
+    focus = {
+        id = NAR_expand_the_national_guard
+        icon = GFX_goal_generic_small_arms
+        x = -2
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_new_army_doctrines }
+        relative_position_id = NAR_new_army_doctrines
+        completion_reward = {
+            custom_effect_tooltip = NAR_expand_the_national_guard_tt
+            hidden_effect = {
+                load_oob = NAR_national_guard
+            }
+        }
+    }
+
+    # War Bonds
+    focus = {
+        id = NAR_war_bonds
+        icon = GFX_goal_generic_foreign_investments
+        x = -1
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_expand_the_national_guard }
+        relative_position_id = NAR_expand_the_national_guard
+        completion_reward = {
+            add_timed_idea = {
+                idea = NAR_war_bonds_idea
+                days = 960
+            }
+        }
+    }
+
+    # Army Bonus Bill
+    focus = {
+        id = NAR_army_bonus_bill
+        icon = GFX_DAH_Topke
+        x = 0
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_war_bonds }
+        relative_position_id = NAR_war_bonds
+        completion_reward = {
+            add_manpower = 15000
+        }
+    }
+
+    # Walkie-Takies
+    focus = {
+        id = NAR_walkie_takies
+        icon = GFX_goal_radio
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_expand_the_national_guard }
+        relative_position_id = NAR_expand_the_national_guard
+        completion_reward = {
+            add_tech_bonus = {
+                category = electronics
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # New Equipment
+    focus = {
+        id = NAR_new_equipment
+        icon = GFX_goal_national_arsenal
+        x = 0
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_walkie_takies }
+        relative_position_id = NAR_walkie_takies
+        completion_reward = {
+            add_tech_bonus = {
+                category = infantry_weapons
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # American Motor Industry
+    focus = {
+        id = NAR_american_motor_industry
+        icon = GFX_goal_generic_army_motorized
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_new_army_doctrines }
+        relative_position_id = NAR_new_army_doctrines
+        completion_reward = {
+            add_tech_bonus = {
+                category = motorized
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Firearm Manufacturers
+    focus = {
+        id = NAR_firearm_manufacturers
+        icon = GFX_goal_generic_army_artillery
+        x = 3
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_new_army_doctrines }
+        relative_position_id = NAR_new_army_doctrines
+        completion_reward = {
+            add_tech_bonus = {
+                category = artillery
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Armoured Research
+    focus = {
+        id = NAR_armoured_research
+        icon = GFX_goal_generic_army_tanks3
+        x = 0
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_american_motor_industry }
+        relative_position_id = NAR_american_motor_industry
+        completion_reward = {
+            add_tech_bonus = {
+                category = armor
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Mechanized Experimentations
+    focus = {
+        id = NAR_mechanized_experimentations
+        icon = GFX_goal_generic_production2
+        x = 0
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_firearm_manufacturers }
+        relative_position_id = NAR_firearm_manufacturers
+        completion_reward = {
+            custom_effect_tooltip = NAR_mechanized_experimentations_tt
+            hidden_effect = {
+                if = {
+                    limit = {
+                        NOT = { has_tech = cat_mechanized_equipment }
+                    }
+                    set_technology = {
+                        echanised_infantry = 1
+                    }
+                }
+                load_oob = NAR_mechanized
+            }
+        }
+    }
+
+    # Military Research
+    focus = {
+        id = NAR_military_research
+        icon = GFX_goal_double_research
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_armoured_research }
+        prerequisite = { focus = NAR_mechanized_experimentations }
+        relative_position_id = NAR_armoured_research
+        completion_reward = {
+            add_timed_idea = {
+                idea = NAR_military_research_prioritization
+                days = 960
+            }
+        }
+    }
+
+    # Joint Chiefs of Staff
+    focus = {
+        id = NAR_joint_chiefs_of_staff
+        icon = GFX_focus_generic_military_mission
+        x = -3
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_the_new_american_army }
+        relative_position_id = NAR_the_new_american_army
+        completion_reward = {
+            add_ideas = NAR_chiefs_of_staff
+        }
+    }
+
+    # Trained Officers
+    focus = {
+        id = NAR_trained_officers
+        icon = GFX_goal_checkmate
+        x = -1
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_joint_chiefs_of_staff }
+        relative_position_id = NAR_joint_chiefs_of_staff
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = NAR_chiefs_of_staff
+                add_idea = NAR_chiefs_of_staff_1
+            }
+        }
+    }
+
+    # Rouse the People
+    focus = {
+        id = NAR_rouse_the_people
+        icon = GFX_goal_national_mobilization
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_joint_chiefs_of_staff }
+        relative_position_id = NAR_joint_chiefs_of_staff
+        completion_reward = {
+            add_tech_bonus = {
+                category = industry
+                bonus = 0.5
+                uses = 1
+            }
+        }
+    }
+
+    # Support Brigades
+    focus = {
+        id = NAR_support_brigades
+        icon = GFX_goal_national_arsenal
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_trained_officers }
+        prerequisite = { focus = NAR_rouse_the_people }
+        relative_position_id = NAR_trained_officers
+        completion_reward = {
+            add_tech_bonus = {
+                category = support_tech
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Army Ranger Corps
+    focus = {
+        id = NAR_army_ranger_corps
+        icon = GFX_goal_offensive_army
+        x = 0
+        y = 2
+        cost = 6
+        prerequisite = { focus = NAR_trained_officers }
+        relative_position_id = NAR_trained_officers
+        completion_reward = {
+            add_tech_bonus = {
+                category = mountaineers_tech
+			    category = marine_tech
+			    category = para_tech
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Increased Weapons Production
+    focus = {
+        id = NAR_increased_weapons_production
+        icon = GFX_goal_industry_air
+        x = 0
+        y = 2
+        cost = 6
+        prerequisite = { focus = NAR_rouse_the_people }
+        relative_position_id = NAR_rouse_the_people
+        completion_reward = {
+            add_ideas = NAR_production_boost
+        }
+    }
+
+    # Defend the New America
+    focus = {
+        id = NAR_defend_the_new_america
+        icon = GFX_goal_generic_occupy_states_ongoing_war
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_army_bonus_bill }
+        prerequisite = { focus = NAR_new_equipment }
+        prerequisite = { focus = NAR_military_research }
+        relative_position_id = NAR_new_equipment
+        completion_reward = {
+            add_tech_bonus = {
+                category = land_doctrine
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    #################################################################
+
+    # The New American Navy
+    focus = {
+        id = NAR_the_new_american_navy
+        icon = GFX_goal_generic_build_navy
+        x = 14
+        y = 6
+        cost = 6
+    }
+
+    # Construct More Ports
+    focus = {
+        id = NAR_construct_more_ports
+        icon = GFX_goal_generic_construction
+        x = -3
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_the_new_american_navy }
+        relative_position_id = NAR_the_new_american_navy
+    }
+
+    # The WAVES
+    focus = {
+        id = NAR_the_waves
+        icon = GFX_goal_generic_production2
+        x = -1
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_the_new_american_navy }
+        relative_position_id = NAR_the_new_american_navy
+    }
+
+    # Transport Equipment
+    focus = {
+        id = NAR_transport_equipment
+        icon = GFX_goal_generic_occupy_states_coastal
+        x = -1
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_construct_more_ports }
+        relative_position_id = NAR_construct_more_ports
+    }
+
+    # Maritime Industry
+    focus = {
+        id = NAR_maritime_industry
+        icon = GFX_goal_generic_naval_industry
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_construct_more_ports }
+        prerequisite = { focus = NAR_the_waves }
+        relative_position_id = NAR_construct_more_ports
+    }
+
+    # Expand the Marine Corps
+    focus = {
+        id = NAR_expand_the_marine_corps
+        icon = GFX_goal_generic_amphibious_assault
+        x = -1
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_maritime_industry }
+        relative_position_id = NAR_maritime_industry
+    }
+
+    # Sempre Fi
+    focus = {
+        id = NAR_sempre_fi
+        icon = GFX_focus_generic_coastal_fort
+        x = 0
+        y = 2
+        cost = 6
+        prerequisite = { focus = NAR_expand_the_marine_corps }
+        prerequisite = { focus = NAR_transport_equipment }
+        relative_position_id = NAR_transport_equipment
+    }
+
+    # New Tactics
+    focus = {
+        id = NAR_new_tactics
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 2
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_the_new_american_navy }
+        relative_position_id = NAR_the_new_american_navy
+    }
+
+    # The American Coast Guard
+    focus = {
+        id = NAR_the_american_coast_guard
+        icon = GFX_GEA_status_of_admirality
+        x = 4
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_the_new_american_navy }
+        relative_position_id = NAR_the_new_american_navy
+    }
+
+    # Submarine Modernization
+    focus = {
+        id = NAR_submarine_modernization
+        icon = GFX_goal_generic_navy_submarine
+        x = -1
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_new_tactics }
+        relative_position_id = NAR_new_tactics
+    }
+
+    # Cruiser Modernization
+    focus = {
+        id = NAR_cruiser_modernization
+        icon = GFX_goal_generic_navy_cruiser
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_new_tactics }
+        relative_position_id = NAR_new_tactics
+    }
+
+    # Battlecruiser Development
+    focus = {
+        id = NAR_battlecruiser_development
+        icon = GFX_goal_generic_coastal_navy2
+        x = 0
+        y = 2
+        cost = 6
+        prerequisite = { focus = NAR_cruiser_modernization }
+        prerequisite = { focus = NAR_new_tactics }
+        relative_position_id = NAR_new_tactics
+    }
+
+    # Carrier Research
+    focus = {
+        id = NAR_carrier_research
+        icon = GFX_goal_generic_navy_carrier
+        x = 0
+        y = 2
+        cost = 6
+        prerequisite = { focus = NAR_the_american_coast_guard }
+        relative_position_id = NAR_the_american_coast_guard
+    }
+
+    # Naval Aviation
+    focus = {
+        id = NAR_naval_aviation
+        icon = GFX_goal_generic_air_fighter2
+        x = -1
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_carrier_research }
+        prerequisite = { focus = NAR_cruiser_modernization }
+        relative_position_id = NAR_carrier_research
+    }
+
+    # Battleship Development
+    focus = {
+        id = NAR_battleship_development
+        icon = GFX_goal_generic_navy_battleship3
+        x = 0
+        y = 2
+        cost = 6
+        prerequisite = { focus = NAR_submarine_modernization }
+        relative_position_id = NAR_submarine_modernization
+    }
+
+    # New Sailors
+    focus = {
+        id = NAR_new_sailors
+        icon = GFX_goal_conscription
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_maritime_industry }
+        relative_position_id = NAR_maritime_industry
+    }
+
+    # Liberty Ships
+    focus = {
+        id = NAR_liberty_ships
+        icon = GFX_goal_generic_navy_cruiser
+        x = 0
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_new_sailors }
+        relative_position_id = NAR_new_sailors
+    }
+
+    # America Rules the Waves
+    focus = {
+        id = NAR_america_rules_the_waves
+        icon = GFX_goal_generic_sea_focused_navy2
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = NAR_liberty_ships }
+        prerequisite = { focus = NAR_battleship_development }
+        prerequisite = { focus = NAR_naval_aviation }
+        prerequisite = { focus = NAR_sempre_fi }
+        relative_position_id = NAR_liberty_ships
+    }
+}

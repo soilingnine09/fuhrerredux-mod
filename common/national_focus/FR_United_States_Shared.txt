@@ -1044,7 +1044,7 @@ shared_focus = {
 # Elections of 1936
 shared_focus = {
 	id = USA_elections_of_1936
-	icon = GFX_goal_generic_elections
+	icon = GFX_goal_USA_elections
 	x = 28
 	y = 0
 	cost = 0
@@ -1493,6 +1493,26 @@ shared_focus = {
 	prerequisite = { focus = USA_education_for_all }
 	relative_position_id = USA_education_for_all
 	completion_reward = {
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+		}
 		random_owned_controlled_state = {
 			limit = {
 				free_building_slots = {

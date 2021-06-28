@@ -385,6 +385,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/USA_monroe_doctrine.tga"
 	}
 	spriteType = {
+		name = "GFX_goal_USA_elections"
+		texturefile = "gfx/interface/goals/USA_elections.tga"
+	}
+	spriteType = {
 		name = "GFX_goal_RUS_army"
 		texturefile = "gfx/interface/goals/RUS_army.dds"
 	}
@@ -455,5 +459,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_goal_ZHI_request_japanese_funding"
 		texturefile = "gfx/interface/goals/ZHI_request_japanese_funding.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_GBR_big_ben"
+		texturefile = "gfx/interface/goals/GBR_big_ben.tga"
 	}
 }
