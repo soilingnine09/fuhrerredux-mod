@@ -36,4 +36,3 @@ tags={
 	"Balance"
 }
 supported_version="1.10.*"
-remote_file_id="2491464633"
