@@ -3077,7 +3077,7 @@ ideas = {
 		}
 		ENG_Winston_Churchill_cnav = {
 			allowed = { original_tag = ENG }
-			#visible = { has_country_flag = ENG_chose_churchill }
+			visible = { has_country_flag = ENG_chose_churchill }
 			traits = {
 				chief_of_navy
 				cnav_power_projection_doctrine
@@ -3085,7 +3085,7 @@ ideas = {
 		}
 		ENG_Leo_Amery_cnav = {
 			allowed = { original_tag = ENG }
-			#visible = { has_country_flag = ENG_chose_amery }
+			visible = { has_country_flag = ENG_chose_amery }
 			traits = {
 				chief_of_navy
 				cnav_decisive_battle_doctrine
@@ -3093,7 +3093,7 @@ ideas = {
 		}
 		ENG_Duff_Cooper_cnav = {
 			allowed = { original_tag = ENG }
-			#visible = { has_country_flag = ENG_chose_cooper }
+			visible = { has_country_flag = ENG_chose_cooper }
 			traits = {
 				chief_of_navy
 				cnav_open_seas_doctrine

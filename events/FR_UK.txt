@@ -16038,8 +16038,8 @@ country_event = {
 		ai_chance = {
 			base = 0
 		}
-		add_ideas = ENG_Winston_Churchill_cnav
 		hidden_effect = { set_country_flag = ENG_chose_churchill }
+		add_ideas = ENG_Winston_Churchill_cnav
 	}
 	
 	option = {
@@ -16051,8 +16051,8 @@ country_event = {
 				add = 50
 			}
 		}
-		add_ideas = ENG_Leo_Amery_cnav
 		hidden_effect = { set_country_flag = ENG_chose_amery }
+		add_ideas = ENG_Leo_Amery_cnav
 	}
 	
 	option = {
@@ -16064,8 +16064,8 @@ country_event = {
 				add = -50
 			}
 		}
-		add_ideas = ENG_Duff_Cooper_cnav
 		hidden_effect = { set_country_flag = ENG_chose_cooper }
+		add_ideas = ENG_Duff_Cooper_cnav
 	}
 }
 
