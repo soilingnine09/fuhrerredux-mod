@@ -442,8 +442,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ENG/ministers/ENG_Robert_Cecil.tga"
 	}
 	spriteType = {
-		name = "GFX_idea_ENG_Robert_Vansittart_hog_sco"
-		texturefile = "gfx/interface/ideas/ENG/ministers/ENG_Robert_Vansittart.tga"
+		name = "GFX_idea_ENG_Samuel_Hoare_hog_sco"
+		texturefile = "gfx/interface/ideas/ENG/ministers/ENG_Samuel_Hoare.tga"
 	}
 	spriteType = {
 		name = "GFX_idea_ENG_Jack_Churchill_hog_ade"
@@ -710,6 +710,18 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_ENG_Tom_Phillips_cnav"
 		texturefile = "gfx/interface/ideas/ENG/ministers/ENG_Tom_Phillips.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_Winston_Churchill_cnav"
+		texturefile = "gfx/interface/ideas/ENG/ministers/ENG_Winston_Churchill.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_Leo_Amery_cnav"
+		texturefile = "gfx/interface/ideas/ENG/ministers/ENG_Leo_Amery.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_Duff_Cooper_cnav"
+		texturefile = "gfx/interface/ideas/ENG/ministers/ENG_Duff_Cooper.tga"
 	}
 
 	### Chief of Air Force

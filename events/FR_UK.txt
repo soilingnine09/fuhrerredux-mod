@@ -2462,7 +2462,7 @@ country_event = {							##### - TO DO: ADD MORE EVENTS FOR BREAK-UP OF THE EMPIR
 			}
 			remove_every_minister = yes
 			add_ideas = {
-				ENG_Anthony_Eden_hog_sco
+				ENG_Samuel_Hoare_hog_sco
 				ENG_Robert_Boothby_for_sco
 				ENG_John_Siddeley_eco_sco
 				ENG_Philip_Lloyd_Greame_eco_sco
@@ -2650,7 +2650,7 @@ country_event = {
 			}
 			remove_every_minister = yes
 			add_ideas = {
-				ENG_Anthony_Eden_hog_sco
+				ENG_Robert_Cecil_hog_sco
 				ENG_Robert_Boothby_for_sco
 				ENG_John_Siddeley_eco_sco
 				ENG_Philip_Lloyd_Greame_eco_sco
@@ -16038,7 +16038,7 @@ country_event = {
 		ai_chance = {
 			base = 0
 		}
-		add_ideas = winston_churchill
+		add_ideas = ENG_Winston_Churchill_cnav
 		hidden_effect = { set_country_flag = ENG_chose_churchill }
 	}
 	
@@ -16051,7 +16051,7 @@ country_event = {
 				add = 50
 			}
 		}
-		add_ideas = leo_amery
+		add_ideas = ENG_Leo_Amery_cnav
 		hidden_effect = { set_country_flag = ENG_chose_amery }
 	}
 	
@@ -16064,7 +16064,7 @@ country_event = {
 				add = -50
 			}
 		}
-		add_ideas = viscount_cooper
+		add_ideas = ENG_Duff_Cooper_cnav
 		hidden_effect = { set_country_flag = ENG_chose_cooper }
 	}
 }
@@ -16084,7 +16084,7 @@ country_event = {
 		original_tag = ENG
 		has_government = social_conservative
 		has_country_flag = tory_maj
-		has_idea = viscount_cooper
+		has_idea = ENG_Duff_Cooper_cnav
 		date > 1938.1.1
 		date < 1938.12.30
 		has_completed_focus = ENG_reorg_admiralty
@@ -16202,7 +16202,7 @@ country_event = {
 	option = {
 		name = "Fire that idiot Cooper at once!"
 		add_political_power = -150
-		remove_ideas = viscount_cooper
+		remove_ideas = ENG_Duff_Cooper_cnav
 		hidden_effect = { country_event = { id = ukadm.12 days = 30 } }
 	}
 }
@@ -16242,7 +16242,10 @@ country_event = {
 		hidden_effect = { country_event = { id = ukadm.10 days = 30 } }
 		hidden_effect = { 
 			load_focus_tree = british_focus_adm 
-			swap_ideas = { remove_idea = ENG_Samuel_Hoare_hog add_idea = ENG_Eden_hog }
+			swap_ideas = {
+				remove_idea = ENG_Samuel_Hoare_hog_sco 
+				add_idea = ENG_Anthony_Eden_hog_sco
+			}
 		}
 	}
 }

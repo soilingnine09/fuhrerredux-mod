@@ -3075,6 +3075,30 @@ ideas = {
 				cnav_open_seas_doctrine
 			}
 		}
+		ENG_Winston_Churchill_cnav = {
+			allowed = { original_tag = ENG }
+			#visible = { has_country_flag = ENG_chose_churchill }
+			traits = {
+				chief_of_navy
+				cnav_power_projection_doctrine
+			}
+		}
+		ENG_Leo_Amery_cnav = {
+			allowed = { original_tag = ENG }
+			#visible = { has_country_flag = ENG_chose_amery }
+			traits = {
+				chief_of_navy
+				cnav_decisive_battle_doctrine
+			}
+		}
+		ENG_Duff_Cooper_cnav = {
+			allowed = { original_tag = ENG }
+			#visible = { has_country_flag = ENG_chose_cooper }
+			traits = {
+				chief_of_navy
+				cnav_open_seas_doctrine
+			}
+		}
 	}
 	
 	chief_of_air_force = {
@@ -3252,6 +3276,16 @@ ideas = {
 				head_of_government
 				social_conservative
 				hog_democratic_tyrant
+			}
+		}
+		ENG_Samuel_Hoare_hog_sco = {
+			allowed = { original_tag = ENG }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_conservative
+				hog_naive_optimist
 			}
 		}
 		ENG_Jack_Churchill_hog_ade = {
