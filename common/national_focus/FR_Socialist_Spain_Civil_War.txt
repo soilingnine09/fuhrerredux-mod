@@ -775,7 +775,7 @@ focus_tree = {
 			has_political_power > 0
 			SPR = { exists = no }
 			SPM = { exists = no }
-			SPA = { exists = no }
+			SPF = { exists = no }
 		}
 		
 		ai_will_do = {
