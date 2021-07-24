@@ -1,5 +1,5 @@
 focus_tree = {
-	id = FR_Socialist_Spain_Ibarruri
+	id = FR_Socialist_Spain_CivilWar
 	country = {
 		factor = 0
 		modifier = {
