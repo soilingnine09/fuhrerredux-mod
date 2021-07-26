@@ -227,6 +227,7 @@ create_field_marshal = {
 	defense_skill = 4
 	planning_skill = 2
 	logistics_skill = 4
+	id = 30001
 }
 
 create_corps_commander = {
@@ -238,6 +239,7 @@ create_corps_commander = {
 	defense_skill = 2
 	planning_skill = 2
 	logistics_skill = 1
+	id = 30002
 }
 
 create_corps_commander = {
@@ -249,6 +251,7 @@ create_corps_commander = {
 	defense_skill = 1
 	planning_skill = 1
 	logistics_skill = 1
+	id = 30003
 }
 
 create_corps_commander = {
@@ -260,6 +263,7 @@ create_corps_commander = {
 	defense_skill = 3
 	planning_skill = 2
 	logistics_skill = 4
+	id = 30004
 }
 
 create_corps_commander = {
@@ -271,6 +275,7 @@ create_corps_commander = {
 	defense_skill = 1
 	planning_skill = 1
 	logistics_skill = 1
+	id = 30005
 }
 
 create_corps_commander = {
@@ -282,6 +287,7 @@ create_corps_commander = {
 	defense_skill = 2
 	planning_skill = 3
 	logistics_skill = 2
+	id = 30006
 }
 
 create_corps_commander = {
@@ -293,6 +299,7 @@ create_corps_commander = {
 	defense_skill = 3
 	planning_skill = 3
 	logistics_skill = 3
+	id = 30007
 }
 
 create_corps_commander = {
@@ -304,6 +311,7 @@ create_corps_commander = {
 	defense_skill = 3
 	planning_skill = 2
 	logistics_skill = 2
+	id = 30008
 }
 
 create_corps_commander = {
@@ -315,6 +323,7 @@ create_corps_commander = {
 	defense_skill = 3
 	planning_skill = 2
 	logistics_skill = 2
+	id = 30009
 }
 
 create_corps_commander = {
@@ -326,6 +335,7 @@ create_corps_commander = {
 	defense_skill = 2
 	planning_skill = 3
 	logistics_skill = 3
+	id = 30010
 }
 
 create_corps_commander = {
@@ -337,6 +347,7 @@ create_corps_commander = {
 	defense_skill = 1
 	planning_skill = 1
 	logistics_skill = 1
+	id = 30011
 }
 
 create_corps_commander = {
@@ -348,6 +359,7 @@ create_corps_commander = {
 	defense_skill = 2
 	planning_skill = 4
 	logistics_skill = 4
+	id = 30012
 }
 
 create_corps_commander = {
@@ -359,6 +371,7 @@ create_corps_commander = {
 	defense_skill = 1
 	planning_skill = 1
 	logistics_skill = 1
+	id = 30013
 }
 
 create_corps_commander = {
@@ -370,6 +383,7 @@ create_corps_commander = {
 	defense_skill = 3
 	planning_skill = 1
 	logistics_skill = 3
+	id = 30014
 }
 
 create_corps_commander = {
@@ -381,6 +395,7 @@ create_corps_commander = {
 	defense_skill = 1
 	planning_skill = 3
 	logistics_skill = 3
+	id = 30015
 }
 
 create_corps_commander = {
@@ -392,6 +407,7 @@ create_corps_commander = {
 	defense_skill = 2
 	planning_skill = 2
 	logistics_skill = 2
+	id = 30016
 }
 
 create_corps_commander = {
@@ -403,6 +419,7 @@ create_corps_commander = {
 	defense_skill = 1
 	planning_skill = 1
 	logistics_skill = 1
+	id = 30017
 }
 create_corps_commander = {
 	name = "Sadao Araki"
@@ -413,6 +430,7 @@ create_corps_commander = {
 	defense_skill = 2
 	planning_skill = 2
 	logistics_skill = 2
+	id = 30018
 }
 
 create_corps_commander = {
@@ -424,6 +442,7 @@ create_corps_commander = {
 	defense_skill = 3
 	planning_skill = 3
 	logistics_skill = 3
+	id = 30019
 }
 create_corps_commander = {
 	name = "Kiichiro Higuchi"
@@ -445,6 +464,7 @@ create_corps_commander = {
 	defense_skill = 2
 	planning_skill = 1
 	logistics_skill = 2
+	id = 30020
 }
 
 create_corps_commander = {
@@ -456,6 +476,7 @@ create_corps_commander = {
 	defense_skill = 2
 	planning_skill = 3
 	logistics_skill = 3
+	id = 30021
 }
 
 create_corps_commander = {
@@ -467,6 +488,7 @@ create_corps_commander = {
 	defense_skill = 2
 	planning_skill = 2
 	logistics_skill = 2
+	id = 30022
 }
 
 create_corps_commander = {
@@ -478,6 +500,7 @@ create_corps_commander = {
 	defense_skill = 1
 	planning_skill = 3
 	logistics_skill = 3
+	id = 30023
 }
 
 create_corps_commander = {
@@ -489,6 +512,7 @@ create_corps_commander = {
 	defense_skill = 2
 	planning_skill = 1
 	logistics_skill = 2
+	id = 30024
 }
 
 create_corps_commander = {
@@ -500,8 +524,17 @@ create_corps_commander = {
 	defense_skill = 2
 	planning_skill = 2
 	logistics_skill = 1
+	id = 30025
 }
-
+#Kodoha Group
+random_unit_leader = {
+	limit = { has_id = 30018 } 
+	save_global_event_target_as = JAP_Sadao_Araki 
+}
+random_unit_leader = {
+	limit = { has_id = 30013 }
+	save_global_event_target_as = JAP_Honjo_Shigeru
+}
 create_navy_leader = {
 	name = "Isoroku Yamamoto"
 		picture = "Portrait_JAP_Isoroku_Yamamoto.tga"

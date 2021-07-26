@@ -3852,7 +3852,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80
 		}		
-
+		select_effect = {
+			country_event = {
+				days = 30
+				id = jap_shogun.3
+			}
+		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus jap_iraa"
 			add_ideas = jap_iraa
@@ -3932,6 +3937,12 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus jap_all_hail_hirohito"
 			add_stability = 0.2
 			add_manpower = 10000
+			hidden_effect = {
+				country_event = {
+					id = jap_shogun.4
+					days = 56
+				}
+			}
 		}
 	}
 
@@ -4068,7 +4079,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 20
 		}		
-
+		select_effect = {
+			country_event = {
+				id = jap_shogun.1
+				days = 7
+			}
+		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus jap_allow_marshall_law"
 			add_ideas =	jap_martial_law
@@ -7290,4 +7306,18 @@ focus_tree = {
 			add_ideas = jap_cut_off_british_supply_lines
 		}
 	}
+}
+focus_tree = {
+
+	id = FR_JAP_Civil_War
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = JAP
+		}
+	}
+	default = no
+	
 }

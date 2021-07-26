@@ -1,0 +1,203 @@
+#####Shogunate of Japan######
+
+##Contributed by Kaiczer##
+
+add_namespace = jap_shogun
+
+##Martial Law after Righteous Incident##
+country_event = {
+	id = jap_shogun.1
+	title = "The Support from Former Leader"
+	desc = jap_shogun.1.d ### Leader of Tokugawa Support the Martial Law 
+	is_triggered_only = yes 
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: Event jap_shogun.1"
+	}
+	option = {
+		name = jap_shogun.1.a ## Who wants the support from them
+		log = "[GetDateText]: [Root.GetName]: Event jap_shogun.1.a"
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.05 }
+		set_country_flag = {
+			flag = JAP_Shogunate
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = jap_shogun.2
+				days = 40
+				random = 25
+			}
+		}
+	}
+}
+country_event = {
+	id = jap_shogun.2 
+	title = "Resignation of Fumimaro Konoe"  
+	desc = jap_shogun.2.d ### Emperor's Address to House of Peers
+	is_triggered_only = yes 
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: Event jap_shogun.2"
+	}
+	option = {
+		name = jap_shogun.2.a ## Appoint Tokugawa Kuniyuki 
+		log = "[GetDateText]: [Root.GetName]: Event jap_shogun.2.a"
+		add_popularity = { ideology = paternal_autocrat popularity = 0.05 } 
+		modify_country_flag = {
+			flag = JAP_Shogunate
+			value = 1
+		}
+	}
+	option = {
+		name = jap_shogun.2.b ## Appoint Yorinaga Matsudaira 
+		log = "[GetDateText]: [Root.GetName]: Event jap_shogun.2.b"
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.05 } 
+	}
+}
+##Infiltration of Tokugawa Restoration##
+country_event = {
+	id = jap_shogun.3
+	title = "Hidden Talk with IJN"
+	desc = jap_shogun.3.d ### Kuniyuki Speech to Powerful Group of Admiral 
+	is_triggered_only = yes  
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: Event jap_shogun.3"
+	}
+	option = {
+		name = jap_shogun.3.a ## Japan shall rule the wave
+		trigger = {
+			JAP = { has_completed_focus = jap_the_admiral_plot }
+		}
+		log = "[GetDateText]: [Root.GetName]: Event jap_shogun.3.a"
+		add_popularity = { ideology = paternal_autocrat popularity = 0.05 } 
+		modify_country_flag = {
+			flag = JAP_Shogunate
+			value = 1
+		}
+	}
+	option = {
+		name = jap_shogun.3.b ## Let's overthrown the army
+		trigger = {
+			JAP = { has_completed_focus = jap_the_army_coup }
+		}
+		log = "[GetDateText]: [Root.GetName]: Event jap_shogun.3.b"
+		add_popularity = { ideology = paternal_autocrat popularity = 0.05 } 
+		modify_country_flag = {
+			flag = JAP_Shogunate
+			value = 2
+		}
+	}
+}
+###Strike Over Government House###
+##Army Route##
+country_event = {
+	id = jap_shogun.4
+	title = "Military Civil War"
+	desc = jap_shogun.4.d ### Announcement of the Death of Prime Minister 
+	is_triggered_only = yes 
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: Event jap_shogun.4"
+		hidden_effect = {
+			country_event = {
+				id = jap_shogun.5
+				days = 180
+				random = 150
+			}
+		}
+	}
+	option = {
+		name = jap_shogun.4.a ## Navy Rises, Army's Demise
+		log = "[GetDateText]: [Root.GetName]: Event jap_shogun.4.a"
+		282 = { set_demilitarized_zone = yes } 
+		remove_every_minister = yes 
+		event_target:JAP_Sadao_Araki = { set_nationality = XXB }
+		event_target:JAP_Honjo_Shigeru = { set_nationality = XXB }
+		#add_ideas = JAP_army_purge
+		set_party_name = {
+			ideology = national_populist
+			name = "Provisional Cabinet"
+			long_name = "Imperial Provisional Cabinet (Teikoku Zantei Naikaku)" 
+		}
+		if = {
+			has_country_flag = {
+				flag = JAP_Shogunate
+				value > 3 
+			}
+			create_country_leader = {
+				name = "Tokugawa Kuniyuki"
+				desc = ""
+				picture = "Portrait_Tokugawa_Kuniyuki.tga"
+				expire = "1989.1.1"
+				ideology = national_populist_subtype
+				traits = {
+				}
+			}
+		}
+		if = {
+			has_country_flag = {
+				flag = JAP_Shogunate
+				value < 4 
+			}
+			create_country_leader = {
+				name = "Yoshida Zengo"
+				desc = ""
+				picture = "Portrait_JAP_Zengo_Yoshida.tga"
+				expire = "1989.1.1"
+				ideology = national_populist_subtype
+				traits = {
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = jap_shogun.5 
+	title = "Recalling the Governor-Generals" 
+	desc = jap_shogun.5.d ### Provisional Prime Minister's Recalling of Governor-Generals 
+	is_triggered_only = yes
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: Event jap_shogun.5"
+	}
+	option = {
+		name = jap_shogun.5.a ## The world we ruled, was the world we knew 
+		log = "[GetDateText]: [Root.GetName]: Event jap_shogun.5.a"
+		add_stability = -0.1
+		add_political_power = -200 
+		custom_effect_tooltip = "The Continent is no longer our rule, she will be rised again" 
+		every_state = {
+			limit = { 
+				OR = {
+					is_claimed_by = CHI 
+					is_claimed_by = MAN
+					is_core_of = KOR
+				}
+				is_controlled_by = JAP 
+			}
+			set_demilitarized_zone = yes 
+		}
+	}
+}
+##Navy Route##
+country_event = {
+	id = jap_shogun.6
+	title = "Promise or Demise"
+	desc = jap_shogun.6.d ### Kuniyuki and Prime Minister Zengo 
+	is_triggered_only = yes 
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: Event jap_shogun.6"
+	}
+	option = {
+		name = jap_shogun.6.a ## You keep the promise, and we too 
+		log = "[GetDateText]: [Root.GetName]: Event jap_shogun.6.a"
+		
+	}
+	option = {
+		name = jap_shogun.6.b ## Step down for new era 
+		log = "[GetDateText]: [Root.GetName]: Event jap_shogun.6.b"
+		
+	}
+	option = {
+		name = jap_shogun.6.c ## We made it, so we deserve it  
+		log = "[GetDateText]: [Root.GetName]: Event jap_shogun.6.c"
+		
+	}
+}
