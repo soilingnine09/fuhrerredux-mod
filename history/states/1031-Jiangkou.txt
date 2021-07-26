@@ -1,0 +1,19 @@
+state={
+	id=1031
+	name="STATE_1031"
+	provinces={
+		1474 7521 7549 7577 
+	}
+	manpower=1239101
+	history = {
+		owner = CHI
+		add_core_of = CHI 
+		add_claim_by = YUN
+		add_claim_by = MAN
+		buildings = {
+			infrastruction = 4
+		}
+	}
+	state_category = town
+	buildings_max_level_factor=1.000
+}

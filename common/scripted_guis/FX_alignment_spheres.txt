@@ -1,0 +1,133 @@
+scripted_gui = {
+	FX_china_sphere_gui = {
+		context_type = selected_country_context
+		parent_window_token = selected_country_view_diplomacy
+		window_name = "china_sphere_button_container"
+		
+		ai_enabled = {
+			always = no
+		}
+		
+		triggers = {
+			FX_left_kmt_button_visible = {
+				has_LeftKMT_leader = yes
+				is_chinese_tag = yes 
+			}
+			FX_right_kmt_button_visible = {
+				has_RightKMT_leader = yes
+				is_chinese_tag = yes 
+			}
+			FX_zhili_button_visible = {
+				has_Zhili_leader = yes
+				is_chinese_tag = yes 
+			}
+			FX_anguojun_button_visible = {
+				has_Anguojun_leader = yes
+				is_chinese_tag = yes 
+			}
+			FX_independent_oppotunist_button_visible = {
+				has_Oppotunist_Independent_leader = yes
+				OR = {
+					is_chinese_tag = yes
+					original_tag = MON
+					original_tag = TIB
+				}
+			}
+		}
+	}
+	china_open_faction_alignment = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "china_open_faction_alignment_container"
+		dirty = china_open_faction_alignment_variable
+
+		ai_enabled = {
+			always = no
+		}
+
+		visible = {
+			OR = {
+				is_chinese_tag = yes
+				tag = ENG
+				tag = JAP
+			}
+		}
+
+		triggers = {
+			FX_chinese_faction_button_click_enabled = {
+				NOT = { has_global_flag = china_alignment_window_open }
+			}
+			FX_left_kmt_button_click_enabled = {
+				NOT = { has_global_flag = china_alignment_window_open }
+			}
+			FX_right_kmt_button_click_enabled = {
+				NOT = { has_global_flag = china_alignment_window_open }
+			}
+			FX_zhili_button_click_enabled = {
+				NOT = { has_global_flag = china_alignment_window_open }
+			}
+			FX_anguojun_button_click_enabled = {
+				NOT = { has_global_flag = china_alignment_window_open }
+			}
+			FX_independent_oppotunist_button_click_enabled = {
+				NOT = { has_global_flag = china_alignment_window_open }
+			}
+		}
+
+		effects = {	
+			FX_chinese_faction_button_click = { CHI_faction_open_gui = yes }
+			FX_left_kmt_button_click = { CHI_faction_open_gui = yes }
+			FX_right_kmt_button_click = { CHI_faction_open_gui = yes }
+			FX_zhili_button_click = { CHI_faction_open_gui = yes }
+			FX_anguojun_button_click = { CHI_faction_open_gui = yes }
+			FX_independent_oppotunist_button_click = { CHI_faction_open_gui = yes }
+		}
+	}
+
+	china_faction_alignment = {
+		context_type = player_context
+		window_name = "faction_alignment_window"
+
+		ai_enabled = {
+			always = no
+		}
+
+		visible = {
+			has_global_flag = china_alignment_window_open
+		}
+
+		dynamic_lists = {
+			FX_china_tags_grid = {
+				array = china_alignment_array
+				change_scope = yes
+
+				entry_container = FX_china_tag_entry
+			}
+		}
+
+		triggers = {
+			major_country_overlay_visible = {
+				is_in_array = { ROOT.china_alignment_array_leaders = THIS }
+			}
+		}
+
+		effects = {
+			button_close_click = {
+				clear_array = china_alignment_array
+				clear_array = china_alignment_array_leaders
+				set_global_flag = {
+					flag = china_alignment_window_open
+					value = 0
+				}
+			}
+		}
+
+		properties = {
+			flag = {
+				image = "[This.GetFlag]"
+			}
+		}
+	}
+
+}
+

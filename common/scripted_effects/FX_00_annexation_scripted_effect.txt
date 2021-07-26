@@ -1,0 +1,29 @@
+recheck_annexation = {
+	hidden_effect = {
+		if = {
+			limit = {
+				NOT = { has_country_flag = FX_checking_for_possible_annexations }
+			}
+			set_country_flag = { flag = FX_checking_for_possible_annexations days = 5 value = 1 }
+			#country_event = { id = annex.1 days = 1 random_days = 3 } ##For Future Use
+			check_possible_annexation_asia = yes
+		}
+	}
+}
+check_possible_annexation_asia = {
+	if = {
+		limit = {
+			NOT = {
+				267 = { is_claimed_by = ROOT }
+				country_exists = AFG 
+				has_country_flag = AFG_OCCUPIED
+			}
+		}
+		random_country = {
+			limit = { 
+				has_full_control_of_state = 267
+			}
+			activate_mission = annexation_AFG
+		}
+	}
+}

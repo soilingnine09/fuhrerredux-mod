@@ -12,7 +12,12 @@ SAF_anti_colonialist_crusade = {
 		original_tag = SAF
 	}
 }
-
+annexation_event = {
+	priority = 90
+	allowed = {
+		always = no 
+	}
+}
 war_measures = {
 	icon = generic_propaganda
 
@@ -41,7 +46,6 @@ foreign_support = {
 prestigious_projects = {
 	
 }
-
 foreign_politics = {
 	icon = generic_political_actions
 	

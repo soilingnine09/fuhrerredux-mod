@@ -1,0 +1,19 @@
+state={
+	id=1032
+	name="STATE_1032"
+	provinces={
+		4532 8095 10616 
+	}
+	manpower=839101
+	history = {
+		owner = YUN
+		add_core_of = YUN 
+		add_claim_by = CHI
+		add_claim_by = MAN
+		buildings = {
+			infrastruction = 4
+		}
+	}
+	state_category = town
+	buildings_max_level_factor=1.000
+}

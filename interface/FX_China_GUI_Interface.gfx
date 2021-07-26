@@ -1,5 +1,27 @@
 spriteTypes = { 
 	spriteType = {
+		name = "GFX_goal_left_kmt"
+		texturefile = "gfx/interface/factionAlignment/LeftKMT_button.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_right_kmt"
+		texturefile = "gfx/interface/factionAlignment/RightKMT_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_zhili"
+		texturefile = "gfx/interface/factionAlignment/Zhili_button.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_anguojun"
+		texturefile = "gfx/interface/factionAlignment/Anguojun_button.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_independentChina"
+		texturefile = "gfx/interface/factionAlignment/OppotunistChina_button.dds"
+	}
+	#####
+	spriteType = {
 		name = "GFX_five_provinces_gui_frame"
 		texturefile = "gfx/interface/decisions/ZHI-LFP/Frame.dds"
 	}

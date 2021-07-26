@@ -204,11 +204,10 @@ BRM = "countries/Asian.txt" # Burma
 GZC = "countries/Asian.txt" # ?
 SIR = "countries/Asian.txt" # Siamese Rebels
 PNG = "countries/Asian.txt" # Papua New Guinea
-MNS = "countries/Asian.txt" # ?
 SCH = "countries/Asian.txt" # Sichuan
 MEN = "countries/Asian.txt" # Mengkukuo
 NKR = "countries/Asian.txt" # North Korea
-SHN = "countries/Asian.txt" # Shan
+ANH = "countries/Asian.txt" # Anhui Clique
 
 ### South Asia
 IND = "countries/Indian.txt" # India

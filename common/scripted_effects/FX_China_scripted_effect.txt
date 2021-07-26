@@ -40,11 +40,102 @@ CHI_zhili_dominant_china_state_claim = {
 ######Chinese Clique Array Set######
 CHI_set_clique = {
 	every_country = {
-		limit = { is_chinese_tag = yes }
-		add_to_array = { 
-			array = global.Chinese_clique
+		limit = { 
+			is_chinese_tag = yes 
+			has_RightKMT_leader = yes
+		}
+		add_to_array = { ROOT.China_RightKMT = THIS }
+	}
+	every_country = {
+		limit = { 
+			is_chinese_tag = yes 
+			has_LeftKMT_leader = yes
+		}
+		add_to_array = { ROOT.China_LeftKMT = THIS }
+	}
+	every_country = {
+		limit = { 
+			is_chinese_tag = yes 
+			has_Anguojun_leader = yes
+		}
+		add_to_array = { ROOT.ChinaAnguojun = THIS }
+	}
+	every_country = {
+		limit = { 
+			is_chinese_tag = yes 
+			has_Zhili_leader = yes
+		}
+		add_to_array = { ROOT.ChinaZhili = THIS }
+	}
+	every_country = {
+		limit = { 
+			is_chinese_tag = yes 
+			OR = {
+				original_tag = TIB 
+				original_tag = MON
+			}
+			has_Oppotunist_Independent_leader = yes 
+		}
+		add_to_array = { ROOT.ChinaIndependent = THIS }
+	}
+}
+CHI_faction_open_gui = {
+	# Right KMT 
+	if = {
+		limit = { 
+			country_exists = CHI 
+		}
+		CHI = {
+			limit = { has_RightKMT_leader = yes }
+			add_to_array = { ROOT.china_alignment_array = CHI }
+			add_to_array = { ROOT.china_alignment_array_leaders = CHI }
 		}
 	}
+	if = {
+		limit = { 
+			country_exists = YUN 
+		}
+		YUN = {
+			limit = { has_RightKMT_leader = yes }
+			add_to_array = { ROOT.china_alignment_array = YUN }
+		}
+	}
+	# Fengtian
+	if = {
+		limit = { 
+			country_exists = MAN 
+		}
+		MAN = {
+			limit = { has_Anguojun_leader = yes }
+			add_to_array = { ROOT.china_alignment_array = MAN }
+			add_to_array = { ROOT.china_alignment_array_leaders = MAN }
+		}
+	}
+	# Zhili
+	if = {
+		limit = { 
+			country_exists = ZHI 
+		}
+		ZHI = {
+			limit = { has_Anguojun_leader = yes }
+			add_to_array = { ROOT.china_alignment_array = ZHI }
+			add_to_array = { ROOT.china_alignment_array_leaders = ZHI }
+		}
+	}
+	# Independent 
+	every_country = {
+		limit = {
+			has_Oppotunist_Independent_leader = yes 
+			OR = {
+				is_chinese_tag = yes
+				original_tag = TIB 
+				original_tag = MON
+			} 
+			exists = yes 
+		}
+		add_to_array = { ROOT.china_alignment_array = THIS }
+	}
+	set_global_flag = china_alignment_window_open
 }
 CHI_remove_core_and_claim_from_dead_clique = {
 	hidden_effect = {

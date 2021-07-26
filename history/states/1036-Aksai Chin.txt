@@ -1,0 +1,20 @@
+
+state={
+	id=1036
+	name="STATE_1036"
+	provinces={
+		5042 13301 13302 
+	}
+	manpower=113110
+	history = {
+		owner = SIK 
+		add_core_of = SIK
+		add_claim_by = MAN
+		add_claim_by = CHI 
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	state_category = rural
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,83 @@
+defined_text = {
+	name = GetFactionAlignment
+	text = {
+		trigger = {
+			tag = CHI
+			has_RightKMT_leader = yes
+		}
+		localization_key = "Right KMT Leader"
+	}
+	text = {
+		trigger = {
+			tag = CHI
+			has_LeftKMT_leader = yes
+		}
+		localization_key = "Left KMT Leader"
+	}
+	text = {
+		trigger = {
+			tag = MAN
+			is_puppet = no 
+			has_Anguojun_leader = yes
+		}
+		localization_key = "Anguojun Leader"
+	}
+	text = {
+		trigger = {
+			tag = ZHI 
+			has_Zhili_leader = yes
+		}
+		localization_key = "Zhili Leader"
+	}
+	text = {
+		trigger = {
+			is_chinese_tag = yes 
+			has_Oppotunist_Independent_leader = yes 
+			NOT = {
+				OR = {
+					original_tag = TIB 
+					original_tag = MON
+				}
+			}
+		}
+		localization_key = "Oppotunist"
+	}
+	text = {
+		trigger = { 
+			OR = {
+				original_tag = TIB 
+				original_tag = MON
+			}
+			has_Oppotunist_Independent_leader = yes 
+		}
+		localization_key = "Independent"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				tag = CHI
+			}
+			is_chinese_tag = yes 
+			has_RightKMT_leader = yes
+		}
+		localization_key = "Right KMT-aligned"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				tag = MAN
+			}
+			is_chinese_tag = yes
+			has_Anguojun_leader = yes
+		}
+		localization_key = "Anguojun-aligned"
+	}
+	text = {
+		trigger = {
+			NOT = { tag = ZHI }
+			is_chinese_tag = yes 
+			has_Zhili_leader = yes
+		}
+		localization_key = "Zhili-aligned"
+	}
+}

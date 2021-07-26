@@ -1,0 +1,20 @@
+state={
+	id=1034
+	name="STATE_1034"
+	provinces={
+		4914 4964 8037 12899 
+	}
+	manpower=313110
+	history = {
+		owner = XSM 
+		add_core_of = XSM
+		add_claim_by = MAN
+		add_claim_by = CHI 
+		add_claim_by = TIB 
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	state_category = rural
+	buildings_max_level_factor=1.000
+}

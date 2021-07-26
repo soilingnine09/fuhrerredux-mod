@@ -4,11 +4,96 @@ is_chinese_tag = {
 		tag = ZHI
 		tag = MAN
 		tag = YUN
-		tag = SZC
+		tag = SCH
 		tag = XSM
 		tag = SHX
 		tag = SIK
 	}
+}
+has_RightKMT_leader = {
+	OR = {
+		has_country_leader = {
+			name = "Chiang Kai-Shek"
+			ruling_only = yes 
+		}
+		has_country_leader = {
+			name = "Li Zongren"
+			ruling_only = yes 
+		}
+		has_country_leader = {
+			name = "Long Yun"
+			ruling_only = yes 
+		}
+	}
+	NOT = {
+		OR = {
+			has_government = social_democrat 
+			has_government = libertarian_socialist 
+			has_government = collectivist
+			has_government = vanguardist
+		}
+	}
+}
+has_LeftKMT_leader = {
+	OR = {
+		has_government = social_democrat 
+		has_government = libertarian_socialist 
+		has_government = collectivist
+		has_government = vanguardist
+	}
+	NOT = {
+		OR = {
+			has_country_leader = {
+				name = "Chiang Kai-Shek"
+				ruling_only = yes 
+			}
+			has_country_leader = {
+				name = "Li Zongren"
+				ruling_only = yes 
+			}
+		}
+	}
+}
+has_Anguojun_leader = {
+	NOT = {
+		has_country_flag = AlignToKMT
+	}
+	OR = {
+		has_country_leader = {
+			name = "Feng Yuxiang"
+			ruling_only = yes 
+		}
+		has_country_leader = {
+			name = "Zhang Zuolin"
+			ruling_only = yes 
+		}
+		has_country_leader = {
+			name = "Zhang Xueliang"
+			ruling_only = yes 
+		}
+	}
+}
+has_Zhili_leader = {
+	OR = {
+		has_country_leader = {
+			name = "Cao Kun"
+			ruling_only = yes 
+		}
+		has_country_leader = {
+			name = "Wu Peifu"
+			ruling_only = yes 
+		}
+		has_country_leader = {
+			name = "Sun Chuanfang"
+			ruling_only = yes 
+		}
+	}
+}
+has_Oppotunist_Independent_leader = {
+	has_Anguojun_leader = no 
+	has_LeftKMT_leader = no 
+	has_RightKMT_leader = no 
+	has_Zhili_leader = no
 }
 select_kmt_faction = {
 	custom_trigger_tooltip = {

@@ -1,0 +1,21 @@
+
+state={
+	id=1035
+	name="STATE_1035"
+	provinces={
+		1882 7940 8018 10834 12846 
+	}
+	manpower=203910
+	history = {
+		owner = XSM 
+		add_core_of = XSM
+		add_claim_by = MAN
+		add_claim_by = CHI 
+		add_claim_by = TIB 
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	state_category = rural
+	buildings_max_level_factor=1.000
+}

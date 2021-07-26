@@ -6,6 +6,11 @@ SIR = {
 	color = rgb { 2 132 178 }
 	color_ui = rgb { 0 147 221 }
 }
+
+ANH = {
+	color = rgb { 125 100 25 }
+	color_ui = rgb { 104 155 27 }
+}
 #reload countrycolors
 
 GER = {

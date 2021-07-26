@@ -13,18 +13,7 @@ country_event = {
     desc = annexation.1.d
     picture = GFX_report_event_czech_soldiers_01
     immediate = { set_country_flag = AFG_OCCUPIED }
-    mean_time_to_happen = { days = 3 }
-    trigger = {
-        NOT = { 
-            tag = AFG
-            has_country_flag = AFG_OCCUPIED
-            country_exists = AFG
-        }
-        ROOT = {
-            has_war = no
-            owns_state = 267
-        }
-    }
+    is_triggered_only = yes 
     option = { # Puppet
         name = annexation.1.a
         ai_chance = { base = 95 }

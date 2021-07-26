@@ -1,0 +1,97 @@
+#capital = 
+
+#oob = "ANH_1936"
+
+set_research_slots = 3
+set_stability = 0.43
+set_war_support = 0.31
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	paratroopers = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1  # PLACEHOLDER
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	strategic_bomber1 = 1
+	naval_bomber1 = 1
+	CAS1 = 1
+	fuel_silos = 1
+}
+
+
+
+add_ideas = {
+	party_pop_0_40
+	GEN_hog_sco
+	GEN_for_sco
+	GEN_eco_sco
+	GEN_sec_sco
+	
+	republican_dictatorship
+}
+
+set_politics = {	
+	ruling_party = paternal_autocrat
+	last_election = "1934.3.26"
+	election_frequency = 60
+	elections_allowed = no
+	
+}
+
+set_popularities = {
+    vanguardist = 5
+    collectivist = 1
+    libertarian_socialist = 5
+    social_democrat = 0
+    social_liberal = 5
+    market_liberal = 5
+    social_conservative = 7
+    authoritarian_democrat = 23
+    paternal_autocrat = 42
+    national_populist = 7
+    valkist = 0
+}
+
+create_country_leader = {
+	name = "Xu Shizheng"
+	desc = ""
+	picture = "Portrait_Xu_Shuzheng.tga"
+	expire = "1953.3.1"
+	ideology = paternal_autocrat_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Ja Lama"
+	desc = ""
+	picture = "Portrait_MON_Ja_Lama.tga"
+	expire = "1953.3.1"
+	ideology = national_populist_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Khorloogiin Choibalsan"
+	desc = ""
+	picture = "Portrait_MON_Khorloogiin_Choibalsan.tga"
+	expire = "1953.3.1"
+	ideology = vanguardist_subtype
+	traits = {
+		
+	}
+}
