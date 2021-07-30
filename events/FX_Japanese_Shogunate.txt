@@ -99,8 +99,16 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = jap_shogun.5
-				days = 180
-				random = 150
+				days = 100
+				random = 70
+			}
+			random_unit_leader = {
+				limit = { has_id = 30018 }
+				save_global_event_target_as = JAP_Sadao_Araki
+			}
+			random_unit_leader = {
+				limit = { has_id = 30013 }
+				save_global_event_target_as = JAP_Honjo_Shigeru
 			}
 		}
 	}
@@ -118,9 +126,11 @@ country_event = {
 			long_name = "Imperial Provisional Cabinet (Teikoku Zantei Naikaku)" 
 		}
 		if = {
-			has_country_flag = {
-				flag = JAP_Shogunate
-				value > 3 
+			limit = {
+				has_country_flag = {
+					flag = JAP_Shogunate
+					value > 3 
+				}
 			}
 			create_country_leader = {
 				name = "Tokugawa Kuniyuki"
@@ -133,9 +143,11 @@ country_event = {
 			}
 		}
 		if = {
-			has_country_flag = {
-				flag = JAP_Shogunate
-				value < 4 
+			limit = {
+				has_country_flag = {
+					flag = JAP_Shogunate
+					value < 4 
+				}
 			}
 			create_country_leader = {
 				name = "Yoshida Zengo"
@@ -174,6 +186,11 @@ country_event = {
 			}
 			set_demilitarized_zone = yes 
 		}
+		country_event = {
+			id = jap_shogun.6
+			days = 40
+			random = 60
+		}
 	}
 }
 ##Navy Route##
@@ -185,19 +202,530 @@ country_event = {
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: Event jap_shogun.6"
 	}
-	option = {
+	option = { ### Continue from Army Route
 		name = jap_shogun.6.a ## You keep the promise, and we too 
 		log = "[GetDateText]: [Root.GetName]: Event jap_shogun.6.a"
-		
+		trigger = {
+			JAP = { has_completed_focus = jap_the_army_coup }
+		}
+		load_focus_tree = FR_JAP_Shogun
+		mark_focus_tree_layout_dirty = yes
+		add_popularity = { ideology = paternal_autocrat popularity = JAP.highest_party_popularity@exclude_ruling_party }
+		set_cosmetic_tag = JAP_Shogunate 
+		set_country_flag = JAP_Shogunate_flag
+		clr_country_flag = JAP_Shogunate
+		JAP_create_shogun_of_japan = yes 
+		282 = { set_demilitarized_zone = no }
+		SP_NS_clear_coalition_effect = yes
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+		}
+		set_party_name = {
+			ideology = paternal_autocrat
+			name = JAP_Shogunate_paternal_autocrat_party
+			long_name = JAP_Shogunate_paternal_autocrat_party_long
+		}
+		set_party_name = {
+			ideology = national_populist
+			name = JAP_Shogunate_national_populist_party
+			long_name = JAP_Shogunate_national_populist_party_long
+		}
+		custom_effect_tooltip = "Our Empire is no longer exist. Someone must rebuild them"
+		hidden_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						is_claimed_by = MAN
+						is_core_of = KOR 
+					} 
+					is_controlled_by = JAP 
+				}
+				set_demilitarized_zone = no 
+			}
+			every_state = {
+				limit = {
+					is_core_of = KOR 
+				}
+				JAP = { add_state_claim = PREV }
+			}
+			release = KOR
+			for_each_scope_loop = {
+				array = KOR.owned_states
+				teleport_armies = {
+					limit = { tag = JAP }
+					to_state = 282
+				}
+			}
+			##Taiwan Back to Legitimate Owner 
+			if = {
+				limit = {
+					CHI = { 
+						check_variable = { num_owned_states > 0 }
+						NOT = {
+							OR = {
+								has_war_with = ZHI 
+								has_war_with = MAN 
+							}
+						} 
+					}
+				}
+				CHI = { transfer_state = 524 }
+			}
+			else_if = {
+				limit = {
+					ZHI = { 
+						check_variable = { num_owned_states > 0 }
+						NOT = {
+							OR = {
+								has_war_with = CHI 
+								has_war_with = MAN 
+							}
+						} 
+					}
+					CHI = { check_variable = { num_owned_states < 0 } }
+					MAN = { check_variable = { num_owned_states < 0 } }
+				}
+				ZHI = { transfer_state = 524 }
+			}
+			else_if = {
+				limit = {
+					MAN = { 
+						check_variable = { num_owned_states > 0 }
+						NOT = {
+							OR = {
+								has_war_with = ZHI 
+								has_war_with = CHI 
+							}
+						} 
+					}
+					CHI = { check_variable = { num_owned_states < 0 } }
+					ZHI = { check_variable = { num_owned_states < 0 } }
+				}
+				MAN = { transfer_state = 524 }
+			}
+			## Liaodong 
+			if = {
+				limit = {
+					MAN = { 
+						check_variable = { num_owned_states > 0 }
+						NOT = {
+							OR = {
+								has_war_with = ZHI 
+								has_war_with = CHI 
+							}
+						} 
+					}
+				}
+				MAN = { transfer_state = 793 }
+			}
+			if = {
+				limit = {
+					ZHI = { 
+						check_variable = { num_owned_states > 0 }
+						NOT = {
+							OR = {
+								has_war_with = MAN 
+								has_war_with = CHI 
+							}
+						} 
+					}
+					OR = {
+						MAN = { is_puppet = yes }
+						MAN = { check_variable = { num_owned_states < 0 } }
+					}
+					CHI = { check_variable = { num_owned_states < 0 } }
+					
+				}
+				ZHI = { transfer_state = 793 }
+			}
+			if = {
+				limit = {
+					CHI = { 
+						check_variable = { num_owned_states > 0 }
+						NOT = {
+							OR = {
+								has_war_with = MAN 
+								has_war_with = ZHI 
+							}
+						} 
+					}
+					OR = {
+						MAN = { is_puppet = yes }
+						MAN = { check_variable = { num_owned_states < 0 } }
+					}
+					ZHI = { check_variable = { num_owned_states < 0 } }
+					
+				}
+				CHI = { transfer_state = 793 }
+			}
+			## Qingdao
+			if = {
+				limit = {
+					ZHI = { 
+						check_variable = { num_owned_states > 0 }
+						NOT = {
+							OR = {
+								has_war_with = MAN 
+								has_war_with = CHI 
+							}
+						} 
+					}
+				}
+				ZHI = { transfer_state = 869 }
+			}
+			if = {
+				limit = {
+					CHI = { 
+						check_variable = { num_owned_states > 0 }
+						NOT = {
+							OR = {
+								has_war_with = MAN 
+								has_war_with = ZHI 
+							}
+						} 
+					}
+					OR = {
+						MAN = { is_puppet = yes }
+						MAN = { check_variable = { num_owned_states < 0 } }
+					}
+					ZHI = { check_variable = { num_owned_states < 0 } }
+					
+				}
+				CHI = { transfer_state = 869 }
+			}
+			if = {
+				limit = {
+					MAN = { 
+						check_variable = { num_owned_states > 0 }
+						NOT = {
+							OR = {
+								has_war_with = CHI 
+								has_war_with = ZHI 
+							}
+						} 
+					}
+					CHI = { check_variable = { num_owned_states < 0 } }
+					ZHI = { check_variable = { num_owned_states < 0 } }
+					
+				}
+				MAN = { transfer_state = 869 }
+			}
+			for_each_scope_loop = {
+				array = CHI.owned_states
+				teleport_armies = {
+					limit = { tag = JAP }
+					to_state = 282
+				}
+			}
+		}
 	}
-	option = {
+	option = { ## Navy Route Ending
 		name = jap_shogun.6.b ## Step down for new era 
 		log = "[GetDateText]: [Root.GetName]: Event jap_shogun.6.b"
-		
+		trigger = {
+			JAP = { has_completed_focus = jap_the_admiral_plot }
+		}
+		add_popularity = { ideology = authoritarian_democrat popularity = JAP.highest_party_popularity@exclude_ruling_party }
+		add_popularity = { ideology = paternal_autocrat popularity = 0.15 }
+		load_focus_tree = FR_JAP_Shogun
+		mark_focus_tree_layout_dirty = yes
+		SP_NS_clear_coalition_effect = yes
+		set_cosmetic_tag = JAP_Shogunate 
+		set_country_flag = JAP_Shogunate_flag
+		set_country_flag = coalition_paternal_autocrat
+		clr_country_flag = JAP_Shogunate
+		JAP_create_shogun_of_japan = yes 
+		282 = { set_demilitarized_zone = no }
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = no
+		}
+		set_party_name = {
+			ideology = paternal_autocrat
+			name = JAP_Shogunate_paternal_autocrat_party
+			long_name = JAP_Shogunate_paternal_autocrat_party_long
+		}
+		set_party_name = {
+			ideology = national_populist
+			name = JAP_Shogunate_national_populist_party
+			long_name = JAP_Shogunate_national_populist_party_long
+		}
 	}
 	option = {
 		name = jap_shogun.6.c ## We made it, so we deserve it  
 		log = "[GetDateText]: [Root.GetName]: Event jap_shogun.6.c"
-		
+		load_focus_tree = FR_JAP_Shogun
+		mark_focus_tree_layout_dirty = yes
+		add_popularity = { ideology = paternal_autocrat popularity = JAP.highest_party_popularity@exclude_ruling_party }
+		set_cosmetic_tag = JAP_Shogunate 
+		set_country_flag = JAP_Shogunate_flag
+		clr_country_flag = JAP_Shogunate
+		JAP_create_shogun_of_japan = yes 
+		282 = { set_demilitarized_zone = no }
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+		}
+		set_party_name = {
+			ideology = paternal_autocrat
+			name = JAP_Shogunate_paternal_autocrat_party
+			long_name = JAP_Shogunate_paternal_autocrat_party_long
+		}
+		set_party_name = {
+			ideology = national_populist
+			name = JAP_Shogunate_national_populist_party
+			long_name = JAP_Shogunate_national_populist_party_long
+		}
+		JAP_setup_civil_war = yes 
+		for_each_scope_loop = {
+			array = JAP.owned_states
+			teleport_armies = {
+				limit = { tag = JAP }
+				to_state = 282
+			}
+		}
+		event_target:JPR_Revolt_General = { set_nationality = JPR }
+		event_target:JPR_Revolt_Admiral = { set_nationality = JPR }
+		JAP = {
+			declare_war_on = {
+				target = JPR 
+				type = annex_everything
+			}
+		}
+		hidden_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						is_claimed_by = MAN
+						is_core_of = KOR 
+					} 
+					is_controlled_by = JAP 
+				}
+				set_demilitarized_zone = no 
+			}
+			every_state = {
+				limit = {
+					is_core_of = KOR 
+				}
+				JAP = { add_state_claim = PREV }
+			}
+			release = KOR
+			for_each_scope_loop = {
+				array = KOR.owned_states
+				teleport_armies = {
+					limit = { tag = JAP }
+					to_state = 282
+				}
+			}
+			##Taiwan Back to Legitimate Owner 
+			if = {
+				limit = {
+					CHI = { 
+						check_variable = { num_owned_states > 0 }
+						NOT = {
+							OR = {
+								has_war_with = ZHI 
+								has_war_with = MAN 
+							}
+						} 
+					}
+				}
+				CHI = { transfer_state = 524 }
+			}
+			else_if = {
+				limit = {
+					ZHI = { 
+						check_variable = { num_owned_states > 0 }
+						NOT = {
+							OR = {
+								has_war_with = CHI 
+								has_war_with = MAN 
+							}
+						} 
+					}
+					CHI = { check_variable = { num_owned_states < 0 } }
+					MAN = { check_variable = { num_owned_states < 0 } }
+				}
+				ZHI = { transfer_state = 524 }
+			}
+			else_if = {
+				limit = {
+					MAN = { 
+						check_variable = { num_owned_states > 0 }
+						NOT = {
+							OR = {
+								has_war_with = ZHI 
+								has_war_with = CHI 
+							}
+						} 
+					}
+					CHI = { check_variable = { num_owned_states < 0 } }
+					ZHI = { check_variable = { num_owned_states < 0 } }
+				}
+				MAN = { transfer_state = 524 }
+			}
+			## Liaodong 
+			if = {
+				limit = {
+					MAN = { 
+						check_variable = { num_owned_states > 0 }
+						NOT = {
+							OR = {
+								has_war_with = ZHI 
+								has_war_with = CHI 
+							}
+						} 
+					}
+				}
+				MAN = { transfer_state = 793 }
+			}
+			if = {
+				limit = {
+					ZHI = { 
+						check_variable = { num_owned_states > 0 }
+						NOT = {
+							OR = {
+								has_war_with = MAN 
+								has_war_with = CHI 
+							}
+						} 
+					}
+					OR = {
+						MAN = { is_puppet = yes }
+						MAN = { check_variable = { num_owned_states < 0 } }
+					}
+					CHI = { check_variable = { num_owned_states < 0 } }
+					
+				}
+				ZHI = { transfer_state = 793 }
+			}
+			if = {
+				limit = {
+					CHI = { 
+						check_variable = { num_owned_states > 0 }
+						NOT = {
+							OR = {
+								has_war_with = MAN 
+								has_war_with = ZHI 
+							}
+						} 
+					}
+					OR = {
+						MAN = { is_puppet = yes }
+						MAN = { check_variable = { num_owned_states < 0 } }
+					}
+					ZHI = { check_variable = { num_owned_states < 0 } }
+					
+				}
+				CHI = { transfer_state = 793 }
+			}
+			## Qingdao
+			if = {
+				limit = {
+					ZHI = { 
+						check_variable = { num_owned_states > 0 }
+						NOT = {
+							OR = {
+								has_war_with = MAN 
+								has_war_with = CHI 
+							}
+						} 
+					}
+				}
+				ZHI = { transfer_state = 869 }
+			}
+			if = {
+				limit = {
+					CHI = { 
+						check_variable = { num_owned_states > 0 }
+						NOT = {
+							OR = {
+								has_war_with = MAN 
+								has_war_with = ZHI 
+							}
+						} 
+					}
+					OR = {
+						MAN = { is_puppet = yes }
+						MAN = { check_variable = { num_owned_states < 0 } }
+					}
+					ZHI = { check_variable = { num_owned_states < 0 } }
+					
+				}
+				CHI = { transfer_state = 869 }
+			}
+			if = {
+				limit = {
+					MAN = { 
+						check_variable = { num_owned_states > 0 }
+						NOT = {
+							OR = {
+								has_war_with = CHI 
+								has_war_with = ZHI 
+							}
+						} 
+					}
+					CHI = { check_variable = { num_owned_states < 0 } }
+					ZHI = { check_variable = { num_owned_states < 0 } }
+					
+				}
+				MAN = { transfer_state = 869 }
+			}
+			for_each_scope_loop = {
+				array = CHI.owned_states
+				teleport_armies = {
+					limit = { tag = JAP }
+					to_state = 282
+				}
+			}
+		}
+	}
+}
+###The End of Civil War###
+##Navy Victory##
+country_event = { ##For AI Test
+	id = jap_shogun.7
+	title = "End of Second Northern Alliance"
+	desc = jap_shogun.7.d ##Navy Declare the State of Emergency
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: Event jap_shogun.7"
+		hidden_effect = {
+			remove_ideas = JPR_surrender_to_tokyo
+		}
+	}
+	is_triggered_only = yes 
+	option = {
+		name = jap_shogun.7.a 
+		log = "[GetDateText]: [Root.GetName]: Event jap_shogun.7.a"
+		every_state = {
+			limit = {
+				is_core_of = JPR 
+			}
+			JAP = { 
+				transfer_state = PREV 
+				add_state_core = PREV
+			}
+			JPR = { remove_state_core = PREV }
+		}
+		drop_cosmetic_tag = yes 
+		set_cosmetic_tag = JAP_military
+		SP_NS_clear_coalition_effect = yes
+		set_politics = {
+			ruling_party = paternal_autocrat
+		}
+		set_country_flag = coalition_national_populist
+		set_cosmetic_tag = coalition_social_conservative
+		set_party_name = {
+			ideology = paternal_autocrat
+			name = "Imperial Admiralty"
+			long_name = "Imperial Board of Admiralty of Japan"
+		}
+		JAP_restore_emperor = yes 
+		clr_country_flag = JAP_Shogunate_flag
+		country_lock_all_division_template = no
+		event_target:JPR_Revolt_General = { set_nationality = JAP }
+		event_target:JPR_Revolt_Admiral = { set_nationality = JAP }
+		##Add Admiral Minister 
 	}
 }

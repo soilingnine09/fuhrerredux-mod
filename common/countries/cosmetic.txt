@@ -337,6 +337,18 @@ MAN_JAP = {
 	color = rgb { 255 120 71 }
 	color_ui = rgb { 255 120 71 }
 }
+JAP_Shogunate_paternal_autocrat = {
+	color = rgb { 179 94 94 }
+	color_ui = rgb { 149 85 85 }
+}
+JAP_Shogunate_authoritarian_democrat = {
+	color = rgb { 216 137 137 }
+	color_ui = rgb { 216 137 137 }
+}
+JAP_Shogunate_national_populist = {
+	color = rgb { 149 58 58 }
+	color_ui = rgb { 149 58 58 }
+}
 KOR_ZHI = {
 	color = rgb { 220 180 20 }
 	color_ui = rgb { 220 180 20 }

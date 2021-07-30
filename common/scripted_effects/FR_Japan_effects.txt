@@ -1,3 +1,113 @@
+JAP_create_shogun_of_japan = {
+	if = {
+		limit = {
+			date < 1940.6.5
+		}
+		create_country_leader = { # Shogun
+			name = "Tokugawa Iesato"
+			desc = ""
+			picture = "Portrait_Tokugawa_Iesato.tga"
+			expire = "1940.6.5"
+			ideology = social_democrat_subtype
+		}
+		create_country_leader = { # Shogun
+			name = "Tokugawa Iesato"
+			desc = ""
+			picture = "Portrait_Tokugawa_Iesato.tga"
+			expire = "1940.6.5"
+			ideology = social_liberal_subtype
+		}
+		create_country_leader = { # Shogun
+			name = "Tokugawa Iesato"
+			desc = ""
+			picture = "Portrait_Tokugawa_Iesato.tga"
+			expire = "1940.6.5"
+			ideology = market_liberal_subtype
+		}
+		create_country_leader = { # Shogun
+			name = "Tokugawa Iesato"
+			desc = ""
+			picture = "Portrait_Tokugawa_Iesato.tga"
+			expire = "1940.6.5"
+			ideology = social_conservative_subtype
+		}
+		create_country_leader = { # Shogun
+			name = "Tokugawa Iesato"
+			desc = ""
+			picture = "Portrait_Tokugawa_Iesato.tga"
+			expire = "1940.6.5"
+			ideology = authoritarian_democrat_subtype
+		}
+		create_country_leader = { # Shogun
+			name = "Tokugawa Iesato"
+			desc = ""
+			picture = "Portrait_Tokugawa_Iesato.tga"
+			expire = "1940.6.5"
+			ideology = paternal_autocrat_subtype
+		}
+		create_country_leader = { # Shogun
+			name = "Tokugawa Iesato"
+			desc = ""
+			picture = "Portrait_Tokugawa_Iesato.tga"
+			expire = "1940.6.5"
+			ideology = national_populist_subtype
+		}
+	}
+	else_if = {
+		limit = {
+			date > 1940.6.5
+		}
+		create_country_leader = { # Shogun
+			name = "Tokugawa Kuniyuki"
+			desc = ""
+			picture = "Portrait_Tokugawa_Kuniyuki.tga"
+			expire = "1940.6.5"
+			ideology = social_democrat_subtype
+		}
+		create_country_leader = { # Shogun
+			name = "Tokugawa Kuniyuki"
+			desc = ""
+			picture = "Portrait_Tokugawa_Kuniyuki.tga"
+			expire = "1940.6.5"
+			ideology = social_liberal_subtype
+		}
+		create_country_leader = { # Shogun
+			name = "Tokugawa Kuniyuki"
+			desc = ""
+			picture = "Portrait_Tokugawa_Kuniyuki.tga"
+			expire = "1940.6.5"
+			ideology = market_liberal_subtype
+		}
+		create_country_leader = { # Shogun
+			name = "Tokugawa Kuniyuki"
+			desc = ""
+			picture = "Portrait_Tokugawa_Kuniyuki.tga"
+			expire = "1940.6.5"
+			ideology = social_conservative_subtype
+		}
+		create_country_leader = { # Shogun
+			name = "Tokugawa Kuniyuki"
+			desc = ""
+			picture = "Portrait_Tokugawa_Kuniyuki.tga"
+			expire = "1940.6.5"
+			ideology = authoritarian_democrat_subtype
+		}
+		create_country_leader = { # Shogun
+			name = "Tokugawa Kuniyuki"
+			desc = ""
+			picture = "Portrait_Tokugawa_Kuniyuki.tga"
+			expire = "1940.6.5"
+			ideology = paternal_autocrat_subtype
+		}
+		create_country_leader = { # Shogun
+			name = "Tokugawa Kuniyuki"
+			desc = ""
+			picture = "Portrait_Tokugawa_Kuniyuki.tga"
+			expire = "1940.6.5"
+			ideology = national_populist_subtype
+		}
+	}
+}
 JAP_interservice_rivalry_towards_army = {
 	
 	if = {

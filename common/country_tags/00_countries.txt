@@ -177,6 +177,7 @@ PHI = "countries/Asian.txt" # Philippines
 PHR = "countries/Asian.txt" # Philippine Revolt
 SIA = "countries/Asian.txt" # Siam
 JAP = "countries/Asian.txt" # Japan
+JPR = "countries/Asian.txt" # Japanese Revolt
 ICR = "countries/Asian.txt" # Indochina
 MAN = "countries/Asian.txt" # Manchuria
 ZHI = "countries/Asian.txt" # Zhili

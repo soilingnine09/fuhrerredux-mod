@@ -201,6 +201,7 @@ create_corps_commander = {
 	defense_skill = 5
 	planning_skill = 3
 	logistics_skill = 4
+	id = 31001
 }
 
 create_field_marshal = {
@@ -216,6 +217,7 @@ create_field_marshal = {
 	defense_skill = 4
 	planning_skill = 3
 	logistics_skill = 2
+	id = 31002
 }
 
 create_field_marshal = {
@@ -526,15 +528,7 @@ create_corps_commander = {
 	logistics_skill = 1
 	id = 30025
 }
-#Kodoha Group
-random_unit_leader = {
-	limit = { has_id = 30018 } 
-	save_global_event_target_as = JAP_Sadao_Araki 
-}
-random_unit_leader = {
-	limit = { has_id = 30013 }
-	save_global_event_target_as = JAP_Honjo_Shigeru
-}
+
 create_navy_leader = {
 	name = "Isoroku Yamamoto"
 		picture = "Portrait_JAP_Isoroku_Yamamoto.tga"
@@ -633,6 +627,7 @@ create_navy_leader = {
 	defense_skill = 2
 	maneuvering_skill = 1
 	coordination_skill = 2
+	id = 30026
 }
 
 create_navy_leader = {

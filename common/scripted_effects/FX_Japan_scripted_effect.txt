@@ -1,0 +1,130 @@
+JAP_setup_civil_war = {
+	every_owned_state = {
+		limit = {
+			OR = {
+				state = 528
+				state = 529
+				state = 530
+				state = 531
+				state = 535
+				state = 526
+			}
+		}
+		JPR = { add_state_core = PREV }
+	}
+	release = JPR
+	JPR = {
+		set_capital = 528
+	}
+	transfer_units_fraction = {
+		target = JPR
+		size = 0.2
+		navy_ratio = 0.1
+	}
+	every_unit_leader = {
+		limit = { NOT = { has_trait = JAP_samurai_lineage } } 
+		save_global_event_target_as = JPR_Revolt_General 
+	}
+	random_naval_leader = {
+		limit = { has_id = 30026 }
+		save_global_event_target_as = JPR_Revolt_Admiral
+	}
+	535 = {
+		create_unit = {
+			division = "division_template = \"Infantry Template\" start_experience_factor = 0.3"
+			owner = JPR
+			count = 4
+		}
+	}
+	535 = {
+		create_unit = {
+			division = "division_template = \"Infantry Template\" start_experience_factor = 0.3"
+			owner = JPR
+			count = 3
+		}
+	}
+	526 = {
+		create_unit = {
+			division = "division_template = \"Infantry Template\" start_experience_factor = 0.3"
+			owner = JPR
+			count = 2
+		}
+	}
+	282 = {
+		create_unit = {
+			division = "division_template = \"Infantry Template\" start_experience_factor = 0.3"
+			owner = JAP
+			count = 3
+		}
+	}
+	for_each_scope_loop = {
+		array = JPR.owned_states
+		add_claim_by = JAP 
+	}
+	random_country = {
+		limit = {
+			OR = {
+				tag = JAP
+				tag = JPR 
+			}
+		}
+		country_lock_all_division_template = yes
+	}
+}
+JAP_restore_emperor = {
+	if = {
+		limit = {
+			date < 1989.1.7
+		}
+		create_country_leader = { # Emperor of Japan
+			name = "Hirohito"
+			desc = ""
+			picture = "Portrait_JAP_Hirohito.tga"
+			expire = "1940.6.5"
+			ideology = social_democrat_subtype
+		}
+		create_country_leader = { # Emperor of Japan
+			name = "Hirohito"
+			desc = ""
+			picture = "Portrait_JAP_Hirohito.tga"
+			expire = "1940.6.5"
+			ideology = social_liberal_subtype
+		}
+		create_country_leader = { # Emperor of Japan
+			name = "Hirohito"
+			desc = ""
+			picture = "Portrait_JAP_Hirohito.tga"
+			expire = "1940.6.5"
+			ideology = market_liberal_subtype
+		}
+		create_country_leader = { # Emperor of Japan
+			name = "Hirohito"
+			desc = ""
+			picture = "Portrait_JAP_Hirohito.tga"
+			expire = "1940.6.5"
+			ideology = social_conservative_subtype
+		}
+		create_country_leader = { # Emperor of Japan
+			name = "Hirohito"
+			desc = ""
+			picture = "Portrait_JAP_Hirohito.tga"
+			expire = "1940.6.5"
+			ideology = authoritarian_democrat_subtype
+		}
+		create_country_leader = { # Emperor of Japan
+			name = "Hirohito"
+			desc = ""
+			picture = "Portrait_JAP_Hirohito.tga"
+			expire = "1940.6.5"
+			ideology = paternal_autocrat_subtype
+		}
+		create_country_leader = { # Emperor of Japan
+			name = "Hirohito"
+			desc = ""
+			picture = "Portrait_JAP_Hirohito.tga"
+			expire = "1940.6.5"
+			ideology = national_populist_subtype
+		}
+	}
+	
+}

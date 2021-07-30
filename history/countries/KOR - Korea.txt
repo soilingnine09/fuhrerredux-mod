@@ -20,11 +20,11 @@ add_ideas = {
 	GEN_for_lib
 	GEN_eco_lib
 	GEN_sec_lib
-	presidential_republic
+	constitutional_monarchy
 }
 
 set_politics = {
-	ruling_party = libertarian_socialist
+	ruling_party = authoritarian_democrat
 	last_election = "1935.9.8"
 	election_frequency = 48
 	elections_allowed = no

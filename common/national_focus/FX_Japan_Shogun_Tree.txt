@@ -1,0 +1,34 @@
+focus_tree = {
+
+	id = FR_JAP_Shogun
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = JAP
+		}
+	}
+	default = no
+	shared_focus = JAP_end_of_civil_war
+	
+}
+shared_focus = {
+	id = JAP_end_of_civil_war
+	icon = GFX_
+	cost = 1
+	x = 13
+	y = 0
+	allow_branch = { has_country_flag = JAP_Shogun_Win }
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = "Second Northern Alliance Becomes Legitimacy Government of Japan"
+			has_country_flag = JAP_Shogun_Win
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_end_of_civil_war"
+		add_stability = 0.1
+		add_political_power = 50
+	}
+}
