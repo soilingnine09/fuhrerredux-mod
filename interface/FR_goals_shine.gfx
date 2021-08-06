@@ -4423,11 +4423,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_hospital_shine"
-		texturefile = "gfx/interface/goals/goal_hospital.dds"
+		name = "GFX_goal_medical_shine"
+		texturefile = "gfx/interface/goals/goal_medical.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_hospital.dds"
+			animationmaskfile = "gfx/interface/goals/goal_medical.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -4440,7 +4440,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_hospital.dds"
+			animationmaskfile = "gfx/interface/goals/goal_medical.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -4967,7 +4967,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_chile_war_shine"
+		name = "GFX_goal_generic_attack_chile_shine"
 		texturefile = "gfx/interface/goals/goal_chile_war.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -5095,7 +5095,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_flag_bolivia_war_shine"
+		name = "GFX_goal_generic_attack_bolivia_shine"
 		texturefile = "gfx/interface/goals/goal_flag_bolivia_war.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -5287,7 +5287,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_argie_wargoal_shine"
+		name = "GFX_goal_generic_attack_argentina_shine"
 		texturefile = "gfx/interface/goals/goal_argie_wargoal.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -5415,7 +5415,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_flag_peru_wargoal_shine"
+		name = "GFX_goal_generic_attack_peru_shine"
 		texturefile = "gfx/interface/goals/goal_flag_peru_wargoal.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -5753,102 +5753,6 @@ spriteTypes = {
 
 		animation = {
 			animationmaskfile = "gfx/interface/goals/goal_chile_alliance.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-
-	SpriteType = {
-		name = "GFX_goal_uruguay_alliance_shine"
-		texturefile = "gfx/interface/goals/goal_uruguay_alliance.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_uruguay_alliance.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-
-		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_uruguay_alliance.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-
-	SpriteType = {
-		name = "GFX_goal_peru_alliance_shine"
-		texturefile = "gfx/interface/goals/goal_peru_alliance.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_peru_alliance.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-
-		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_peru_alliance.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-
-	SpriteType = {
-		name = "GFX_goal_paraguay_alliance_shine"
-		texturefile = "gfx/interface/goals/goal_paraguay_alliance.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_paraguay_alliance.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-
-		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_paraguay_alliance.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -11304,10 +11208,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_goal_traitor_clique_shine"
-		texturefile = "gfx/interface/goals/ZHI_traitor_clique.dds"
+		texturefile = "gfx/interface/goals/ZHI_traitor_clique.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ZHI_traitor_clique.dds"
+			animationmaskfile = "gfx/interface/goals/ZHI_traitor_clique.tga"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -11320,7 +11224,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ZHI_traitor_clique.dds"
+			animationmaskfile = "gfx/interface/goals/ZHI_traitor_clique.tga"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -11592,10 +11496,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_goal_JAP_feburary_incident_shine"
-		texturefile = "gfx/interface/goals/JAP_feburary_incident.dds"
+		texturefile = "gfx/interface/goals/JAP_feburary_incident.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/JAP_feburary_incident.dds"
+			animationmaskfile = "gfx/interface/goals/JAP_feburary_incident.tga"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -11608,7 +11512,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/JAP_feburary_incident.dds"
+			animationmaskfile = "gfx/interface/goals/JAP_feburary_incident.tga"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -11688,10 +11592,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_goal_JAP_mil_parl_shine"
-		texturefile = "gfx/interface/goals/goal_JAP_mil_parl.dds"
+		texturefile = "gfx/interface/goals/goal_JAP_mil_parl.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_JAP_mil_parl.dds"
+			animationmaskfile = "gfx/interface/goals/goal_JAP_mil_parl.tga"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -11704,7 +11608,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_JAP_mil_parl.dds"
+			animationmaskfile = "gfx/interface/goals/goal_JAP_mil_parl.tga"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -12057,38 +11961,6 @@ spriteTypes = {
 
 		animation = {
 			animationmaskfile = "gfx/interface/goals/goal_JAP_IRAA.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-
-	SpriteType = {
-		name = "GFX_goal_JAP_Korea_Question_shine"
-		texturefile = "gfx/interface/goals/goal_JAP_Korea_Question.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_JAP_Korea_Question.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-
-		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_JAP_Korea_Question.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
