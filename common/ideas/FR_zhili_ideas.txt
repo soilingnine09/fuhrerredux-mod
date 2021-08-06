@@ -121,14 +121,14 @@ ideas = {
 		}
 		ZHI_jap_corps = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_jap_corps"}
-		picture = ZHI_japanese_corps
+		picture = warrior_traditions_idea
 			modifier = {
 				political_power_gain = -0.1
 			}
 		}
 		ZHI_jaden_jewel = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ZHI_jaden_jewel"}
-		picture = ZHI_jaden_jewel
+		picture = chi_chinese_support
 			modifier = {
 				political_power_gain = 0.1
 				stability_factor = 0.1

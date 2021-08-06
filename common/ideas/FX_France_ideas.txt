@@ -315,7 +315,7 @@ ideas = {
 			}
 		}
 		FRA_air_recon = {
-		on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_royal_smart"}
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_royal_smart"}
 			picture = air_support_focus
 			modifier = {
 				recon_factor = 0.1
@@ -407,7 +407,7 @@ ideas = {
 		}
 		FRA_bunker_build = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_bunker_build"}
-			picture = generic_wall_line
+			picture = FRA_fortification_focus
 			modifier = {
 				production_speed_bunker_factor = 0.1
 			}

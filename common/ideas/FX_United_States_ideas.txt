@@ -3,377 +3,372 @@
 #######################
 
 ideas = {
-    country = {
-		USA_rifles_and_trucks = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_rifles_and_trucks"}
-            picture = generic_acquire_tanks
-            allowed = { always = no }
-            equipment_bonus = {
-                infantry_equipment = {
-                build_cost_ic = -0.05 instant = yes
-                }
-            	motorized_equipment = {
-                build_cost_ic = -0.1 instant = yes
-           		}
-           	}
-        }
-		USA_defensive_warfare = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_defensive_warfare"}
-            picture = generic_wall_line
+    hidden_ideas = {
+        USA_emergency_government_idea = {
+            allowed = { original_tag = USA }
+            picture = ENG_the_war_to_end_all_wars
             modifier = {
-                army_org_factor = 0.05
-                production_speed_coastal_bunker_factor = 0.1
-				production_speed_bunker_factor = 0.1
+                offensive_war_stability_factor = 0.15
+                defensive_war_stability_factor = 0.15
             }
         }
-		USA_federal_draft_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_federal_draft_idea"}
+    }
+    country = {
+		USA_the_greater_depression = {
+            allowed = { original_tag = USA }
+            picture = generic_economic_turmoil
+            modifier = {
+                consumer_goods_factor = 0.5
+                production_factory_max_efficiency_factor = -0.25
+                industrial_capacity_factory = -0.35
+                industrial_capacity_dockyard = -0.35
+            }
+        }
+        USA_the_greater_depression_1 = {
+            allowed = { original_tag = USA }
+            picture = generic_economic_turmoil
+            modifier = {
+                consumer_goods_factor = 0.45
+                production_factory_max_efficiency_factor = -0.25
+                industrial_capacity_factory = -0.35
+                industrial_capacity_dockyard = -0.35
+            }
+        }
+        USA_the_greater_depression_2 = {
+            allowed = { original_tag = USA }
+            picture = generic_economic_turmoil
+            modifier = {
+                consumer_goods_factor = 0.45
+                production_factory_max_efficiency_factor = -0.2
+                industrial_capacity_factory = -0.35
+                industrial_capacity_dockyard = -0.35
+            }
+        }
+        USA_the_greater_depression_3 = {
+            allowed = { original_tag = USA }
+            picture = generic_economic_turmoil
+            modifier = {
+                consumer_goods_factor = 0.4
+                production_factory_max_efficiency_factor = -0.2
+                industrial_capacity_factory = -0.35
+                industrial_capacity_dockyard = -0.35
+            }
+        }
+        USA_the_greater_depression_4 = {
+            allowed = { original_tag = USA }
+            picture = generic_economic_turmoil
+            modifier = {
+                consumer_goods_factor = 0.4
+                production_factory_max_efficiency_factor = -0.2
+                industrial_capacity_factory = -0.3
+                industrial_capacity_dockyard = -0.3
+            }
+        }
+        USA_the_greater_depression_5 = {
+            allowed = { original_tag = USA }
+            picture = generic_economic_turmoil
+            modifier = {
+                consumer_goods_factor = 0.35
+                production_factory_max_efficiency_factor = -0.2
+                industrial_capacity_factory = -0.3
+                industrial_capacity_dockyard = -0.3
+            }
+        }
+        USA_the_greater_depression_5 = {
+            allowed = { original_tag = USA }
+            picture = generic_economic_turmoil
+            modifier = {
+                consumer_goods_factor = 0.35
+                production_factory_max_efficiency_factor = -0.2
+                industrial_capacity_factory = -0.25
+                industrial_capacity_dockyard = -0.25
+            }
+        }
+        USA_the_greater_depression_6 = {
+            allowed = { original_tag = USA }
+            picture = generic_economic_turmoil
+            modifier = {
+                consumer_goods_factor = 0.3
+                production_factory_max_efficiency_factor = -0.2
+                industrial_capacity_factory = -0.25
+                industrial_capacity_dockyard = -0.25
+            }
+        }
+        USA_the_greater_depression_7 = {
+            allowed = { original_tag = USA }
+            picture = generic_economic_turmoil
+            modifier = {
+                consumer_goods_factor = 0.3
+                production_factory_max_efficiency_factor = -0.15
+                industrial_capacity_factory = -0.25
+                industrial_capacity_dockyard = -0.25
+            }
+        }
+        USA_the_greater_depression_7 = {
+            allowed = { original_tag = USA }
+            picture = generic_economic_turmoil
+            modifier = {
+                consumer_goods_factor = 0.3
+                production_factory_max_efficiency_factor = -0.15
+                industrial_capacity_factory = -0.2
+                industrial_capacity_dockyard = -0.2
+            }
+        }
+        USA_the_greater_depression_8 = {
+            allowed = { original_tag = USA }
+            picture = generic_economic_turmoil
+            modifier = {
+                consumer_goods_factor = 0.25
+                production_factory_max_efficiency_factor = -0.15
+                industrial_capacity_factory = -0.2
+                industrial_capacity_dockyard = -0.2
+            }
+        }
+        USA_the_greater_depression_9 = {
+            allowed = { original_tag = USA }
+            picture = generic_economic_turmoil
+            modifier = {
+                consumer_goods_factor = 0.25
+                production_factory_max_efficiency_factor = -0.15
+                industrial_capacity_factory = -0.15
+                industrial_capacity_dockyard = -0.15
+            }
+        }
+        USA_the_greater_depression_10 = {
+            allowed = { original_tag = USA }
+            picture = generic_economic_turmoil
+            modifier = {
+                consumer_goods_factor = 0.2
+                production_factory_max_efficiency_factor = -0.15
+                industrial_capacity_factory = -0.15
+                industrial_capacity_dockyard = -0.15
+            }
+        }
+        USA_recovering_from_the_depression = {
+            allowed = { original_tag = USA }
+            picture = generic_economic_turmoil
+            modifier = {
+                consumer_goods_factor = 0.2
+                production_factory_max_efficiency_factor = -0.1
+                industrial_capacity_factory = -0.15
+                industrial_capacity_dockyard = -0.15
+            }
+        }
+        USA_malnourished_populace = {
+            allowed = { original_tag = USA }
+            picture = raj_risk_of_famine
+            modifier = {
+                conscription_factor = -0.35
+                production_speed_buildings_factor = -0.25
+                supply_consumption_factor = 0.40
+            }
+        }
+        USA_malnourished_populace_1 = {
+            allowed = { original_tag = USA }
+            picture = raj_risk_of_famine
+            modifier = {
+                conscription_factor = -0.35
+                production_speed_buildings_factor = -0.25
+                supply_consumption_factor = 0.25
+            }
+        }
+        USA_malnourished_populace_2 = {
+            allowed = { original_tag = USA }
+            picture = raj_risk_of_famine
+            modifier = {
+                conscription_factor = -0.25
+                production_speed_buildings_factor = -0.25
+                supply_consumption_factor = 0.25
+            }
+        }
+        USA_malnourished_populace_3 = {
+            allowed = { original_tag = USA }
+            picture = raj_risk_of_famine
+            modifier = {
+                conscription_factor = -0.25
+                production_speed_buildings_factor = -0.15
+                supply_consumption_factor = 0.25
+            }
+        }
+        USA_malnourished_populace_4 = {
+            allowed = { original_tag = USA }
+            picture = raj_risk_of_famine
+            modifier = {
+                conscription_factor = -0.15
+                production_speed_buildings_factor = -0.15
+                supply_consumption_factor = 0.15
+            }
+        }
+        USA_failed_offensive = {
+            allowed = { original_tag = USA }
+            picture = ENG_the_war_to_end_all_wars
+            modifier = {
+                army_attack_factor = -0.15
+                army_morale_factor = -0.05
+                army_org_factor = -0.05
+                planning_speed  = -0.05
+            }
+        }
+        USA_tank_production = {
+            allowed = { original_tag = USA }
+            picture = generic_acquire_tanks
+            equipment_bonus = {
+                armor = { build_cost_ic = -0.15 instant = yes }
+            }
+        }
+        USA_weapons_manufacturing = {
+            allowed = { original_tag = USA }
+            picture = generic_artillery_regiments
+            equipment_bonus = {
+                infantry_weapons = { build_cost_ic = -0.15 instant = yes }
+                artillery = { build_cost_ic = -0.15 instant = yes }
+            }
+        }
+        USA_army_training = {
+            allowed = { original_tag = USA }
             picture = generic_manpower_bonus
             modifier = {
-                conscription = 0.025
+                training_time_factor = -0.15
             }
         }
-		USA_grand_strategy = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_grand_strategy"}
-            picture = generic_infantry_bonus
+        USA_efficient_command_structure = {
+            allowed = { original_tag = USA }
+            picture = advisors_USA
             modifier = {
-                max_planning = 0.2
-                planning_speed = 0.10
-            }
-        }
-		USA_tactical_superiority = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_tactical_superiority"}
-            picture = generic_infantry_bonus
-            modifier = {
-                planning_speed = 0.05
                 army_org_factor = 0.05
+                planning_speed = 0.15
+                max_planning = 0.15
             }
         }
-		USA_1928_program = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_1928_program"}
+        USA_the_waves_idea = {
+            allowed = { original_tag = USA }
+            picture = generic_maritime_industry
             modifier = {
-                consumer_goods_factor = 0.1
+                repair_speed_factor = 0.15
             }
-            equipment_bonus = {
-                capital_ship = {
-                    instant = yes
-                    build_cost_ic = -0.2
-                }
-                screen_ship = {
-                   instant = yes
-                   build_cost_ic = -0.2
-                }
-            }
-            picture = generic_navy_bonus
         }
-		USA_bombers_en_masse = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_bombers_en_masse"}
-            equipment_bonus = {
-                tac_bomber_equipment = {
-                    instant = yes
-                    build_cost_ic = -0.15
-                }
-                strat_bomber_equipment = {
-                    instant = yes
-                    build_cost_ic = -0.15
-                }
-            }
-            picture = generic_air_research
-        }
-		USA_unit_destruction = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_unit_destruction"}
+        USA_advisors = {
+            picture = advisors_USA
             modifier = {
-                army_bonus_air_superiority_factor = 0.1
-                air_cas_efficiency = 0.1
-                air_superiority_detect_factor = 0.05
-            }
-            picture = generic_air_research
-        }
-		USA_endless_offensives = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_endless_offensives"}
-            picture = generic_infantry_bonus
-            modifier = {
-                army_morale_factor = 0.1
-                offence = 0.10
-                defence = -0.10
+                army_org_factor = 0.05
+                planning_speed = 0.05
             }
         }
-		USA_reorganized_logi = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_reorganized_logi"}
-            picture = generic_infantry_bonus
+        USA_workers_rights = {
+            allowed = { original_tag = USA }
+            picture = generic_production_bonus
             modifier = {
-                supply_consumption_factor = -0.1
-                out_of_supply_factor = -0.25
+                production_factory_efficiency_gain_factor = 0.15
             }
         }
-		USA_diverse_training = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_diverse_training"}
-            picture = generic_infantry_bonus
+        USA_worker_agreements = {
+            allowed = { original_tag = USA }
+            picture = generic_production_bonus
             modifier = {
-               attrition = -0.1
+                production_factory_max_efficiency_factor = 0.15
             }
         }
-		USA_failed_offensive = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_failed_offensive"}
-
-            picture = generic_war_preparation
-
+        USA_public_works = {
+            allowed = { original_tag = USA }
+            picture = ast_all_in
             modifier = {
-                army_attack_factor = -0.05
-                army_morale_factor = -0.05
+                production_speed_buildings_factor = 0.05
             }
         }
-		USA_malnourished_populace = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_malnourished_populace"}
-			picture = generic_production_bonus
-			modifier = {
-				stability_factor = -0.05
-				conscription_factor = -0.1
-				training_time_factor = 0.1
-
-			}
-		}
-		USA_sick_man_america = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_sick_man_america"}
-            picture = generic_wall_line
+        USA_limited_union_activities = {
+            allowed = { original_tag = USA }
+            picture = generic_oppression
             modifier = {
-                political_power_gain = -0.1
-                production_factory_max_efficiency_factor = -0.05
-                production_speed_buildings_factor = -0.05
-                consumer_goods_factor = 0.05
+                industrial_capacity_factory = 0.05
+                industrial_capacity_dockyard = 0.05
             }
         }
-		USA_national_recovery_act = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_national_recovery_act"}
-            allowed = { always = no }
-            allowed_civil_war = { always = yes }
+        USA_construction_subsidies = {
+            allowed = { original_tag = USA }
+            picture = ast_all_in
             modifier = {
-                political_power_gain = 0.1
-                consumer_goods_factor = -0.05
-            }
-            picture = generic_goods_red_bonus
-            removal_cost = -1
-        }
-		USA_public_sector_idea_1 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_public_sector_idea_1"}
-            allowed = { always = no }
-            allowed_civil_war = { always = yes }
-            modifier = {
-                production_speed_buildings_factor= 0.1
-            }
-            picture = generic_goods_red_bonus
-            removal_cost = -1
-        }
-		USA_public_sector_idea_2 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_public_sector_idea_2"}
-            allowed = { always = no }
-            allowed_civil_war = { always = yes }
-            modifier = {
-                political_power_gain = 0.1
-                production_speed_buildings_factor= 0.1
-				research_speed_factor = 0.05
-            }
-            picture = generic_goods_red_bonus
-            removal_cost = -1
-        }
-		USA_public_sector_idea_3 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_public_sector_idea_3"}
-            allowed = { always = no }
-            allowed_civil_war = { always = yes }
-            modifier = {
-                political_power_gain = 0.1
-                production_speed_buildings_factor= 0.15
-				research_speed_factor = 0.05
-            }
-            picture = generic_goods_red_bonus
-            removal_cost = -1
-        }
-		USA_private_sector_idea_1 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_private_sector_idea_1"}
-            allowed = { always = no }
-            allowed_civil_war = { always = yes }
-            modifier = {
-                consumer_goods_factor = -0.05
-            }
-            picture = generic_goods_red_bonus
-            removal_cost = -1
-        }
-		USA_private_sector_idea_2 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_private_sector_idea_2"}
-            allowed = { always = no }
-            allowed_civil_war = { always = yes }
-            modifier = {
-                political_power_gain = 0.1
-                production_factory_max_efficiency_factor = 0.05
-                consumer_goods_factor = -0.05
-            }
-            picture = generic_goods_red_bonus
-            removal_cost = -1
-        }
-		USA_private_sector_idea_3 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_private_sector_idea_3"}
-            allowed = { always = no }
-            allowed_civil_war = { always = yes }
-            modifier = {
-                political_power_gain = 0.1
-                production_factory_max_efficiency_factor = 0.05
-                consumer_goods_factor = -0.05
-                production_speed_buildings_factor= 0.05
-            }
-            picture = generic_goods_red_bonus
-            removal_cost = -1
-        }
-		USA_defend_the_interior = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_defend_the_interior"}
-            picture = generic_wall_line
-            modifier = {
-                production_speed_coastal_bunker_factor = 0.2
-                production_speed_bunker_factor = 0.2
+                production_speed_buildings_factor = 0.05
             }
         }
-		USA_we_will_be_waiting = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_we_will_be_waiting"}
-            picture = generic_acquire_tanks
+        USA_anarchy_and_chaos = {
+            allowed = { original_tag = USA }
+            picture = chi_war_of_resistance2
             modifier = {
-                army_speed_factor = 0.1
+                stability_factor = -0.35
+                war_support_factor = -0.35
             }
         }
-		USA_it_will_never_happen_here = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_it_will_never_happen_here"}
-            picture = generic_acquire_tanks
+        USA_apathetic_citizens = {
+            allowed = { original_tag = USA }
+            picture = chi_wargaming_division
             modifier = {
-                army_core_defence_factor = 0.05
-                army_core_attack_factor = 0.05
+                political_power_gain = -0.15
+                conscription_factor = -0.15
             }
         }
-		USA_great_depression = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_great_depression"}
-			picture = great_depression #generic_disjointed_gov
-			modifier = {
-				stability_factor = -0.2
-				consumer_goods_factor = 0.3
-                production_speed_buildings_factor = -0.40
-				production_factory_max_efficiency_factor = -0.2
-				political_power_gain = -0.2
-                conscription_factor = -0.5
-				research_speed_factor = -0.1
-			}
-		}
-		USA_depression_long_1 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_depression_long_1"}
-            picture = great_depression
+        USA_economic_shock = {
+            allowed = { original_tag = USA }
+            picture = FRA_matignon_agreements
             modifier = {
-                stability_factor = -0.15
-                consumer_goods_factor = 0.3
-                production_speed_buildings_factor = -0.40
-                production_factory_max_efficiency_factor = -0.19
-                political_power_gain = -0.2
-                conscription_factor = -0.5
-				research_speed_factor = -0.1
+                industrial_capacity_factory = -0.15
+                industrial_capacity_dockyard = -0.15
             }
         }
-		USA_depression_long_2 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_depression_long_2"}
-            picture = great_depression
+        USA_crumbling_army = {
+            allowed = { original_tag = USA }
+            picture = generic_army_problems
             modifier = {
-                stability_factor = -0.15
-                consumer_goods_factor = 0.3
-                production_speed_buildings_factor = -0.40
-                production_factory_max_efficiency_factor = -0.09
-                political_power_gain = -0.2
-                conscription_factor = -0.5
-				research_speed_factor = -0.1
+                army_morale_factor = -0.15
+                army_org_factor = -0.15
             }
         }
-		USA_depression_fdr_1 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_depression_fdr_1"}
-            picture = great_depression
+        USA_unification_spirit = {
+            allowed = { original_tag = USA }
+            picture = USA_fighting_for_america
             modifier = {
-                stability_factor = -0.15
-                consumer_goods_factor = 0.3
-                production_speed_buildings_factor = -0.39
-                production_factory_max_efficiency_factor = -0.2
-                political_power_gain = -0.2
-                conscription_factor = -0.5
-				research_speed_factor = -0.1
+                conscription_factor = 0.15
+                army_speed_factor = 0.15
+                army_morale_factor = 0.15
+                army_org_regain = 0.05
             }
         }
-		USA_depression_fdr_2 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_depression_fdr_2"}
-            picture = great_depression
+        USA_american_gis = {
+            allowed = { original_tag = USA }
+            picture = country_focus_army
             modifier = {
-                stability_factor = -0.15
-                consumer_goods_factor = 0.3
-                production_speed_buildings_factor = -0.19
-                production_factory_max_efficiency_factor = -0.2
-                political_power_gain = -0.2
-                conscription_factor = -0.5
-				research_speed_factor = -0.1
+                supply_consumption_factor = -0.15
+                army_org_factor = 0.05
+                army_attack_factor = 0.05
+                army_defence_factor = 0.05
             }
         }
-		USA_depression_landon_1 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_depression_landon_1"}
-            picture = great_depression
+        USA_strikes = {
+            allowed = { original_tag = USA }
+            picture = NOR_labour_conflicts
             modifier = {
-                stability_factor = -0.15
-                consumer_goods_factor = 0.29
-                production_speed_buildings_factor = -0.40
-                production_factory_max_efficiency_factor = -0.2
-                political_power_gain = -0.2
-                conscription_factor = -0.5
-				research_speed_factor = -0.1
+                industrial_capacity_factory = -0.15
+                industrial_capacity_dockyard = -0.15
             }
         }
-		USA_depression_landon_2 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_depression_landon_2"}
-            picture = great_depression
+        USA_emergency_funds_idea = {
+            allowed = { original_tag = USA }
+            picture = generic_foreign_capital
             modifier = {
-                stability_factor = -0.15
-                consumer_goods_factor = 0.19
-                production_speed_buildings_factor = -0.40
-                production_factory_max_efficiency_factor = -0.2
-                political_power_gain = -0.2
-                conscription_factor = -0.5
-				research_speed_factor = -0.1
-            }
-        }
-		USA_depression_garner_1 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_depression_garner_1"}
-            picture = great_depression
-            modifier = {
-                stability_factor = -0.15
-                consumer_goods_factor = 0.3
-                production_speed_buildings_factor = -0.40
-                production_factory_max_efficiency_factor = -0.2
-                political_power_gain = -0.2
-                conscription_factor = -0.49
-				research_speed_factor = -0.1
-            }
-        }
-		USA_depression_garner_2 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_depression_garner_2"}
-            picture = great_depression
-            modifier = {
-                stability_factor = -0.15
-                consumer_goods_factor = 0.3
-                production_speed_buildings_factor = -0.40
-                production_factory_max_efficiency_factor = -0.2
-                political_power_gain = -0.2
-                conscription_factor = -0.29
-				research_speed_factor = -0.1
+                consumer_goods_factor = -0.15
+                production_speed_buildings_factor = 0.25
             }
         }
     }
     ### Ministers
     # Head of Government
     head_of_government = {
-        USA_Jack_Reed_hog_col = {
+        USA_Jack_Reed_hog_lib = {
             allowed = { original_tag = USA }
             available = { can_replace_hog = no }
             cancel_if_invalid = no
             traits = {
                 head_of_government
-                collectivist
+                libertarian_socialist
                 hog_red_chairmen
             }
         }
@@ -448,16 +443,6 @@ ideas = {
                 hog_accomplished_diplomat
             }
         }
-        USA_Harold_Stassen_hog_sli = {
-            allowed = { original_tag = USA }
-            available = { can_replace_hog = no }
-            cancel_if_invalid = no
-            traits = {
-                head_of_government
-                social_liberal
-                hog_charismatic_charmer
-            }
-        }
         USA_Herbert_Hoover_hog_sli = {
             allowed = { original_tag = USA }
             available = { can_replace_hog = no }
@@ -508,6 +493,16 @@ ideas = {
                 hog_silent_workhorse
             }
         }
+        USA_Harold_Stassen_hog_mli = {
+            allowed = { original_tag = USA }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                market_liberal
+                hog_charismatic_charmer
+            }
+        }
         USA_Alf_Landon_hog_mli = {
             allowed = { original_tag = USA }
             available = { can_replace_hog = no }
@@ -526,6 +521,16 @@ ideas = {
                 head_of_government
                 market_liberal
                 hog_old_compromiser
+            }
+        }
+        USA_Charles_Curtis_hog_mli = {
+            allowed = { original_tag = USA }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                market_liberal
+                hog_silent_workhorse
             }
         }
         USA_Alben_W_Barkley_hog_mli = {
@@ -668,16 +673,44 @@ ideas = {
                 hog_corporate_suit
             }
         }
+        USA_Douglas_MacArthur_hog_pau = {
+            allowed = { original_tag = USA }
+            available = { can_replace_hog = no }
+            visible = { 
+                USA_union_has_collapsed = yes
+                NOT = { has_country_flag = USA_macarthur_retired }
+            }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                paternal_autocrat
+                hog_old_general
+            }
+        }
+        USA_Dwight_Eisenhower_hog_pau = {
+            allowed = { original_tag = USA }
+            available = { can_replace_hog = no }
+            visible = {
+                USA_union_collapsed = yes
+                has_country_flag = USA_macarthur_retired
+            }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                paternal_autocrat
+                hog_old_general
+            }
+        }
     }
     ### Foreign Minister
     foreign_minister = {
-        USA_Eugene_Dennis_for_col = {
+        USA_Eugene_Dennis_for_lib = {
             allowed = { original_tag = USA }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
                 foreign_minister
-                collectivist
+                libertarian_socialist
                 for_radical_among_moderates
             }
         }
@@ -801,27 +834,27 @@ ideas = {
                 for_iron_fisted_brute
             }
         }
-        USA_John_William_Davis_for_npo = {
+        USA_John_William_Davis_for_pau = {
             allowed = { original_tag = USA }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
                 foreign_minister
-                national_populist
+                paternal_autocrat
                 for_the_cloak_n_dagger_schemer
             }
         }
     }
     ### Economy Minister
     economy_minister = {
-        USA_Paul_Mattick_eco_col = {
+        USA_Paul_Mattick_eco_lib = {
             allowed = { original_tag = USA }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
                 economy_minister
-                collectivist
-                eco_planned_economy_proponent
+                libertarian_socialist
+                eco_imbedded_unioneer
             }
         }
         USA_Hjalmar_Petersen_eco_sde = {
@@ -884,16 +917,6 @@ ideas = {
                 eco_bank_president
             }
         }
-        USA_Henry_Ford_eco_pau = {
-            allowed = { original_tag = USA }
-            available = { can_replace_minister = no }
-            cancel_if_invalid = no
-            traits = {
-                economy_minister
-                paternal_autocrat
-                eco_military_entrepreneur
-            }
-        }
         USA_Robert_Abercrombie_Lovett_eco_pau = {
             allowed = { original_tag = USA }
             available = { can_replace_minister = no }
@@ -917,14 +940,14 @@ ideas = {
     }
     ### Security Minister
     security_minister = {
-        USA_John_Abt_sec_col = {
+        USA_John_Abt_sec_lib = {
             allowed = { original_tag = USA }
             available = { can_replace_minister = no }
             cancel_if_invalid = no
             traits = {
                 security_minister
-                collectivist
-                sec_prince_of_terror
+                libertarian_socialist
+                sec_health_and_safety
             }
         }
         USA_Elmer_Austin_Benson_sec_sde = {
@@ -1032,16 +1055,10 @@ ideas = {
     chief_of_staff = {
         USA_Douglas_MacArthur_cos = {
             allowed = { original_tag = USA }
+            visible = { NOT = { has_country_flag = USA_macarthur_retired } }
             traits = {
                 chief_of_staff
                 cos_school_of_fire_support
-            }
-        }
-        USA_Joseph_Lawton_Collins_cos = {
-            allowed = { original_tag = USA }
-            traits = {
-                chief_of_staff
-                cos_school_of_psychology
             }
         }
         USA_Malin_Craig_cos = {
@@ -1132,13 +1149,6 @@ ideas = {
             traits = {
                 chief_of_navy
                 cnav_decisive_battle_doctrine
-            }
-        }
-        USA_Thomas_C_Kinkaid_cnav = {
-            allowed = { original_tag = USA }
-            traits = {
-                chief_of_navy
-                cnav_power_projection_doctrine
             }
         }
         USA_Thomas_Charles_Hart_cnav = {
@@ -1233,7 +1243,7 @@ ideas = {
                 cat_superior_firepower = 0.1
             }
         }
-        USA_Omar_Nelson_Bradley_cos = {
+        USA_Omar_Nelson_Bradley_theo = {
             allowed = { original_tag = USA }
             traits = {
                 cat_mobile_warfare = 0.1

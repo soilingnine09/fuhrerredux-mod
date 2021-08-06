@@ -34,48 +34,47 @@ ideas = {
             modifier = {
                 production_factory_max_efficiency_factor = 0.1
                 global_building_slots_factor = 0.20
-                #consumer_goods_factor = -0.05
             }
             picture = generic_production_bonus
             removal_cost = -1
         }
 		MEX_authority_of_the_people = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_authority_of_the_people"}
-    		picture = focus_generic_military_mission
+    		picture = generic_intel_bonus
     		modifier = {
-    				stability_factor = 0.05
-    				army_morale_factor = 0.1
+				stability_factor = 0.05
+				army_morale_factor = 0.1
     		}
     	}
 		MEX_the_new_authority = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_the_new_authority"}
-    		picture = focus_generic_military_mission
+    		picture = generic_intel_bonus
     		modifier = {
-    				stability_factor = 0.10
-    				army_morale_factor = 0.15
+				stability_factor = 0.10
+				army_morale_factor = 0.15
     		}
     	}
 		MEX_meritocratic_army = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_meritocratic_army"}
-    		picture = goal_skull_fortification
+    		picture = vittoria_mutilata
     		modifier = {
-    				army_attack_factor = 0.05
-    				army_defence_factor = 0.1
-    				army_org_factor = 0.1
+				army_attack_factor = 0.05
+				army_defence_factor = 0.1
+				army_org_factor = 0.1
     		}
     	}
 		MEX_army_of_reclamation = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_army_of_reclamation"}
-    		picture = goal_offensive_army
+    		picture = MEX_reclaim
     		modifier = {
-    				army_attack_factor = 0.1
-    				army_defence_factor = 0.05
-    				supply_consumption_factor = -0.10
+				army_attack_factor = 0.1
+				army_defence_factor = 0.05
+				supply_consumption_factor = -0.10
     		}
     	}
 		MEX_the_quetzacoatl_rises = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_the_quetzacoatl_rises"}
-    		picture = goal_offensive_army
+    		picture = MEX_reclaim
     		modifier = {
     			attrition = -0.10
     			army_attack_factor = 0.05
@@ -84,7 +83,7 @@ ideas = {
     	}
 		MEX_for_the_king_and_country = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_for_the_king_and_country"}
-    		picture = GFX_goal_ideology_paternal_autocrat
+    		picture = ast_abandon_the_westminster_system
     		modifier = {
     			army_core_attack_factor = 0.1
     			army_core_defence_factor = 0.1
@@ -94,7 +93,7 @@ ideas = {
     	}
 		MEX_army_of_the_greenshirts = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_army_of_the_greenshirts"}
-    		picture = Mask_of_Valkisim
+    		picture = ast_abandon_the_westminster_system_fascism
     		modifier = {
     			army_attack_factor = 0.1
     			army_morale_factor = 0.1
@@ -103,7 +102,7 @@ ideas = {
 		}
 		MEX_la_gran_revancha = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_la_gran_revancha"}
-    		picture = Mask_of_Valkisim
+    		picture = ast_abandon_the_westminster_system_fascism
     		modifier = {
     			training_time_army_factor = -0.10
     			conscription = 0.025
@@ -111,14 +110,14 @@ ideas = {
     	}
 		MEX_nationalist_strife = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_nationalist_strife"}
-            picture = generic_spy_political
+            picture = generic_disjointed_gov
             modifier = {
              	political_power_factor = -0.15
             }
         }
 		MEX_revanchism = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_revanchism"}
-            picture = generic_morale_bonus
+            picture = FRA_national_mobilization_focus
             modifier = {
 				conscription = 0.02
 				army_core_attack_factor = 0.1
@@ -127,21 +126,21 @@ ideas = {
         }
 		MEX_pequena_venganza = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_pequena_venganza"}
-            picture = generic_morale_bonus
+            picture = country_focus_army
             modifier = {
                 conscription = 0.01
             }
         }
 		MEX_we_will_reach_new_york = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_we_will_reach_new_york"}
-            picture = generic_morale_bonus
+            picture = generic_air_bonus
             modifier = {
                 air_superiority_efficiency = 0.2
             }
         }
 		MEX_militarism = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_militarism"}
-            picture = generic_manpower_bonus
+            picture = chi_army_corruption3
             modifier = {
 				conscription = 0.005
 				resistance_damage_to_garrison = -0.2
@@ -155,7 +154,7 @@ ideas = {
             modifier = {
                 production_speed_buildings_factor = 0.1
             }
-            picture = generic_industrial_concern_1
+            picture = ast_all_in
             removal_cost = -1
         }
 		MEX_proyecto_esperanza = {
@@ -165,7 +164,7 @@ ideas = {
             modifier = {
                 production_factory_max_efficiency_factor = 0.1
             }
-            picture = generic_industrial_concern_1
+            picture = generic_production_bonus
             removal_cost = -1
         }
 		MEX_lower_monetary_rates = {
@@ -175,7 +174,7 @@ ideas = {
             modifier = {
                 production_factory_max_efficiency_factor = 0.2
             }
-            picture = generic_goods_red_bonus
+            picture = ROM_king_carol_emptied_accounts
             removal_cost = -1
         }
 		MEX_rampant_industrialization = {
@@ -189,7 +188,7 @@ ideas = {
                 production_factory_max_efficiency_factor = 0.05
                 industrial_capacity_factory = 0.05
             }
-            picture = generic_goods_red_bonus
+            picture = ROM_king_carol_ii_hedonist
             removal_cost = -1
         }
 		MEX_not_so_rampant_industrialization = {
@@ -213,11 +212,11 @@ ideas = {
                 mobilization_speed = 0.25
                 army_morale_factor = 0.1
             }
-            picture = generic_morale_bonus
+            picture = ENG_the_war_to_end_all_wars
         }
 		MEX_military_corruption = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_military_corruption"}
-            picture = tfv_can_conscription_crisis #generic_goods_red_bonus
+            picture = MEX_callistas
             modifier = {
             	army_morale_factor = -0.05
              	consumer_goods_factor = 0.05
@@ -242,7 +241,7 @@ ideas = {
         }
 		MEX_militias = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_militias"}
-            picture = generic_morale_bonus
+            picture = MEX_politicised_army
             modifier = {
              	conscription_factor = 0.05
 				army_org_factor = -0.025
@@ -250,7 +249,7 @@ ideas = {
         }
 		MEX_colegio_militar = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_colegio_militar"}
-            picture = generic_morale_bonus
+            picture = generic_army_war_college
             modifier = {
              	army_org_factor = 0.05
              	army_leader_start_level = 1
@@ -285,7 +284,7 @@ ideas = {
 		}
 		MEX_synarchism_revoked = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_synarchism_revoked"}
-			picture = generic_reserve_divisions
+			picture = ast_classify_aliens
 			modifier = {
 				production_speed_buildings_factor = 0.10
 				industry_repair_factor = 0.10
@@ -293,7 +292,7 @@ ideas = {
 		}
 		MEX_basta = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_basta"}
-            picture = generic_manpower_bonus
+            picture = vittoria_mutilata
             modifier = {
 				conscription_factor = 0.05
 				army_morale_factor = 0.05
@@ -304,7 +303,7 @@ ideas = {
         }
 		MEX_basta2 = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_basta2"}
-			picture = generic_manpower_bonus
+			picture = vittoria_mutilata
 			modifier = {
 				conscription_factor = 0.05
 				army_morale_factor = 0.05
@@ -315,7 +314,7 @@ ideas = {
         }
 		MEX_basta3 = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_basta3"}
-			picture = generic_manpower_bonus
+			picture = vittoria_mutilata
 			modifier = {
 				conscription_factor = 0.05
 				army_morale_factor = 0.075
@@ -326,7 +325,7 @@ ideas = {
         }
 		MEX_basta4 = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_basta4"}
-			picture = generic_manpower_bonus
+			picture = vittoria_mutilata
 			modifier = {
 				conscription_factor = 0.05
 				army_morale_factor = 0.1
@@ -337,7 +336,7 @@ ideas = {
         }
 		MEX_basta5 = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_basta5"}
-			picture = generic_manpower_bonus
+			picture = vittoria_mutilata
 			modifier = {
 				conscription_factor = 0.1
 				army_morale_factor = 0.1
@@ -348,7 +347,7 @@ ideas = {
         }
 		MEX_basta6 = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_basta6"}
-			picture = generic_manpower_bonus
+			picture = vittoria_mutilata
 			modifier = {
 				conscription_factor = 0.1
 				army_morale_factor = 0.1
@@ -359,7 +358,7 @@ ideas = {
         }
 		MEX_basta7 = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_basta7"}
-			picture = generic_manpower_bonus
+			picture = vittoria_mutilata
 			modifier = {
 				conscription_factor = 0.1
 				army_morale_factor = 0.1

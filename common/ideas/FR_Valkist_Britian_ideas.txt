@@ -6,14 +6,14 @@ ideas = {
 		
 		ENG_government_in_exile = {#added when France escapes to Algiers in GW2
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ENG_government_in_exile"}
-			picture = tfv_can_conscription_crisis
+			picture = eng_guided_by_britain
 			modifier = {
 				conscription_factor = -0.50
 			}
 		}
 		VBR_illegitimate_government = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea VBR_illegitimate_government"}
-			picture = generic_fascism_drift_bonus
+			picture = generic_oppression
 			modifier = {
 				conscription_factor = -0.65
 				political_power_gain = -0.50
@@ -21,7 +21,7 @@ ideas = {
 		}
 		VSC_illegitimate_government = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea VSC_illegitimate_government"}
-			picture = generic_fascism_drift_bonus
+			picture = generic_oppression
 			modifier = {
 				conscription_factor = -0.65
 				political_power_gain = -0.50
@@ -29,7 +29,7 @@ ideas = {
 		}
 		VIR_illegitimate_government = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea VIR_illegitimate_government"}
-			picture = generic_fascism_drift_bonus
+			picture = generic_oppression
 			modifier = {
 				conscription_factor = -0.65
 				political_power_gain = -0.50
