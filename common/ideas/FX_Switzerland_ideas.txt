@@ -76,7 +76,7 @@ ideas = {
 
 		SWI_treaty_of_annecy = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWI_treaty_of_annecy"}
-			picture = HUN_treaty_of_triannon
+			picture = generic_french_swiss_treaty
 			modifier = {
 				consumer_goods_factor = -0.05
 			}
@@ -89,7 +89,7 @@ ideas = {
 
 		SWI_lightened_treaty_of_annecy = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWI_lightened_treaty_of_annecy"}
-			picture = HUN_treaty_of_triannon
+			picture = generic_french_swiss_treaty
 			modifier = {
 				consumer_goods_factor = -0.05
 			}
@@ -102,7 +102,7 @@ ideas = {
 
 		SWI_treaty_of_munich = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWI_treaty_of_munich"}
-			picture = HUN_treaty_of_triannon
+			picture = generic_german_swiss_treaty
 			modifier = {
 				consumer_goods_factor = -0.05
 			}
@@ -115,7 +115,7 @@ ideas = {
 
 		SWI_lightened_treaty_of_munich = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWI_lightened_treaty_of_munich"}
-			picture = HUN_treaty_of_triannon
+			picture = generic_german_swiss_treaty
 			modifier = {
 				consumer_goods_factor = -0.05
 			}
@@ -317,7 +317,7 @@ ideas = {
 
 		SDPS_banking_reforms = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SDPS_banking_reforms"}
-      picture = HUN_treaty_of_triannon
+      picture = SWI_bank_reform
       modifier = {
         stability_factor = 0.05
         political_power_gain = -0.05
@@ -326,7 +326,7 @@ ideas = {
 
 		SUP_banking_reforms = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SUP_banking_reforms"}
-      picture = HUN_treaty_of_triannon
+      picture = SWI_bank_reform
       modifier = {
         stability_factor = 0.05
         consumer_goods_factor = 0.05
@@ -504,7 +504,7 @@ ideas = {
 
 		SWI_german_swiss_mediation = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWI_german_swiss_mediation"}
-      picture = SWI_new_order
+      picture = generic_disjointed_gov
       modifier = {
         stability_factor = -0.01
         political_power_factor = -0.02
@@ -513,7 +513,7 @@ ideas = {
 
 		SWI_swiss_mediation = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWI_swiss_mediation"}
-      picture = SWI_new_order
+      picture = generic_disjointed_gov
       modifier = {
         stability_factor = 0.01
         political_power_factor = 0.02
@@ -531,7 +531,7 @@ ideas = {
 
 		SWI_paying_for_guns = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWI_paying_for_guns"}
-      picture = KTG_Gold_Trade
+      picture = generic_neutrality_drift_bonus
       modifier = {
         consumer_goods_factor = 0.10
         }
@@ -539,7 +539,7 @@ ideas = {
 
 		SWI_paying_for_our_guns = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWI_paying_for_our_guns"}
-      picture = KTG_Gold_Trade
+      picture = generic_neutrality_drift_bonus
       modifier = {
         consumer_goods_factor = 0.20
         line_change_production_efficiency_factor = -0.05
@@ -548,7 +548,7 @@ ideas = {
 
 		SWI_paid_off_guns = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWI_paid_off_guns"}
-      picture = SWI_new_order
+      picture = capital_outflow
       modifier = {
         consumer_goods_factor = -0.10
         line_change_production_efficiency_factor = 0.05
