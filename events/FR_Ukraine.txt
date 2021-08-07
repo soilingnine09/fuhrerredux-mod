@@ -556,6 +556,24 @@ country_event = { #martial law
 
 	option = { #oshit
 		name = ukraine.11.a
+	hidden_effect = {
+	set_politics = {
+			ruling_party = paternal_autocrat
+		}
+		add_popularity = {
+    		ideology = paternal_autocrat
+    		popularity = 0.7
+		}
+		remove_every_minister = yes
+		add_ideas = {
+			UKR_Pavlo_Skoropadsky_hog_pau
+			UKR_Konstantin_Prisovsky_for_pau
+			UKR_Mikola_Stsiborsky_eco_pau
+			UKR_Sergei_Kubiyovich_sec_pau
+		}
+			complete_national_focus = ukr_rada_junta
+			}
+		}
 	}
 }
 
