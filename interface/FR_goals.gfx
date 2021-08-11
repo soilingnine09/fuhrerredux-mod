@@ -614,8 +614,8 @@ spriteTypes = {
 		texturefile= "gfx/interface/goals/goal_rev_militia.dds"
 	}
 	SpriteType = {
-		name = "GFX_goal_hospital"
-		texturefile= "gfx/interface/goals/goal_hospital.dds"
+		name = "GFX_goal_medical"
+		texturefile= "gfx/interface/goals/goal_medical.dds"
 	}
 	SpriteType = {
 		name = "GFX_goal_engineers"
@@ -682,7 +682,7 @@ spriteTypes = {
 		texturefile= "gfx/interface/goals/goal_uruguay_war.dds"
 	}
 	SpriteType = {
-		name = "GFX_goal_chile_war"
+		name = "GFX_goal_generic_attack_chile"
 		texturefile= "gfx/interface/goals/goal_chile_war.dds"
 	}
 	SpriteType = {
@@ -698,7 +698,7 @@ spriteTypes = {
 		texturefile= "gfx/interface/goals/goal_flag_brazil_collie.dds"
 	}
 	SpriteType = {
-		name = "GFX_goal_flag_bolivia_war"
+		name = "GFX_goal_generic_attack_bolivia"
 		texturefile= "gfx/interface/goals/goal_flag_bolivia_war.dds"
 	}
 	SpriteType = {
@@ -722,7 +722,7 @@ spriteTypes = {
 		texturefile= "gfx/interface/goals/goal_bra_collie_pact.dds"
 	}
 	SpriteType = {
-		name = "GFX_goal_argie_wargoal"
+		name = "GFX_goal_generic_attack_argentina"
 		texturefile= "gfx/interface/goals/goal_argie_wargoal.dds"
 	}
 	SpriteType = {
@@ -738,7 +738,7 @@ spriteTypes = {
 		texturefile= "gfx/interface/goals/goal_flag_peru_collie.dds"
 	}
 	SpriteType = {
-		name = "GFX_goal_flag_peru_wargoal"
+		name = "GFX_goal_generic_attack_peru"
 		texturefile= "gfx/interface/goals/goal_flag_peru_wargoal.dds"
 	}
 	SpriteType = {
@@ -784,18 +784,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_chile_alliance"
 		texturefile= "gfx/interface/goals/goal_chile_alliance.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_uruguay_alliance"
-		texturefile= "gfx/interface/goals/goal_uruguay_alliance.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_peru_alliance"
-		texturefile= "gfx/interface/goals/goal_peru_alliance.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_paraguay_alliance"
-		texturefile= "gfx/interface/goals/goal_paraguay_alliance.dds"
 	}
 	SpriteType = {
 		name = "GFX_goal_collectivist_menace"
@@ -1480,7 +1468,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_traitor_clique"
-		texturefile= "gfx/interface/goals/ZHI_traitor_clique.dds"
+		texturefile= "gfx/interface/goals/ZHI_traitor_clique.tga"
 	}
 	SpriteType = {
 		name = "GFX_goal_dragon_king"
@@ -1516,7 +1504,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_JAP_feburary_incident"
-		texturefile= "gfx/interface/goals/JAP_feburary_incident.dds"
+		texturefile= "gfx/interface/goals/JAP_feburary_incident.tga"
 	}
 	SpriteType = {
 		name = "GFX_goal_jap_left"
@@ -1528,7 +1516,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 	name = "GFX_goal_JAP_mil_parl"
-	texturefile = "gfx/interface/goals/goal_JAP_mil_parl.dds"
+	texturefile = "gfx/interface/goals/goal_JAP_mil_parl.tga"
 	}
 	SpriteType = {
 	name = "GFX_goal_JAP_cut_off_british_supplies"
@@ -1573,10 +1561,6 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_goal_JAP_IRAA"
 	texturefile= "gfx/interface/goals/goal_JAP_IRAA.dds"
-	}
-	SpriteType = {
-	name = "GFX_goal_JAP_Korea_Question"
-	texturefile= "gfx/interface/goals/goal_JAP_Korea_Question.dds"
 	}
 	SpriteType = {
 	name = "GFX_goal_JAP_Imperial_Army"

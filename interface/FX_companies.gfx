@@ -1,8 +1,14 @@
 spriteTypes = {
 
+	################################################
+    # PHI
+	spriteType = {
+		name = "GFX_idea_san_miguel_corporation"
+		texturefile = "gfx/interface/ideas/PHI/companies/san_miguel_corporation.tga"
+	}
+
     ################################################
     # SWI
-
     spriteType = {
 		name = "GFX_idea_brown_boveri"
 		texturefile = "gfx/interface/ideas/SWI/companies/brown_boveri.tga"
