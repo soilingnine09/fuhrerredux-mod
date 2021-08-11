@@ -11,7 +11,9 @@ focus_tree = {
 	}
 	default = no
 	shared_focus = JAP_end_of_civil_war
-	
+	shared_focus = JAP_ultraroyalist_question
+	shared_focus = JAP_admiralty_question
+	shared_focus = JAP_ultranat_question
 }
 shared_focus = {
 	id = JAP_end_of_civil_war
@@ -19,10 +21,10 @@ shared_focus = {
 	cost = 1
 	x = 13
 	y = 0
-	allow_branch = { has_country_flag = JAP_Shogun_Win }
+	allow_branch  = { has_country_flag = JAP_Shogun_Win }
 	available = {
 		custom_trigger_tooltip = {
-			tooltip = "Second Northern Alliance Becomes Legitimacy Government of Japan"
+			tooltip = "Second Northern Alliance Becomes Legitimate Government of Japan"
 			has_country_flag = JAP_Shogun_Win
 		}
 	}
@@ -30,5 +32,106 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus JAP_end_of_civil_war"
 		add_stability = 0.1
 		add_political_power = 50
+	}
+}
+shared_focus = {
+	id = JAP_great_council_of_state
+	icon = GFX_
+	cost = 5
+	relative_position_id = JAP_end_of_civil_war
+	x = 0
+	y = 1
+	prerequisite = { focus = JAP_end_of_civil_war }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_great_council_of_state"
+		custom_effect_tooltip = "Henchforth, the cabinet will no longer be leading by Prime Minister"
+		remove_ideas_with_trait = head_of_government
+		add_country_leader_trait = chancellor_of_great_council_of_state
+	}
+}
+shared_focus = {
+	id = JAP_empower_shogun_authority
+	icon = GFX_
+	cost = 5
+	relative_position_id = JAP_great_council_of_state
+	x = 0
+	y = 1
+	prerequisite = { focus = JAP_great_council_of_state }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_empower_shogun_authority"
+		add_stability = 0.1
+		add_popularity = { ideology = paternal_autocrat popularity = 0.05 }
+	}
+}
+shared_focus = {
+	id = JAP_tribunal_court_of_nagasaki
+	icon = GFX_
+	cost = 5
+	relative_position_id = JAP_empower_shogun_authority
+	x = 0
+	y = 1
+	prerequisite = { focus = JAP_empower_shogun_authority }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_tribunal_court_of_nagasaki"
+		custom_effect_tooltip = "Unlock the Tribunal Court of Nagasaki's Subpath"
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+shared_focus = {
+	id = JAP_ultraroyalist_question
+	icon = GFX_
+	cost = 7
+	relative_position_id = JAP_tribunal_court_of_nagasaki
+	x = -3
+	y = 1
+	allow_branch = { has_completed_focus = JAP_tribunal_court_of_nagasaki }
+	prerequisite = { focus = JAP_tribunal_court_of_nagasaki }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_ultraroyalist_question"
+		
+	}
+}
+shared_focus = {
+	id = JAP_admiralty_question
+	icon = GFX_
+	cost = 7
+	relative_position_id = JAP_tribunal_court_of_nagasaki
+	x = 0
+	y = 1
+	allow_branch = { has_completed_focus = JAP_tribunal_court_of_nagasaki }
+	prerequisite = { focus = JAP_tribunal_court_of_nagasaki }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_admiralty_question"
+		
+	}
+}
+shared_focus = {
+	id = JAP_ultranat_question
+	icon = GFX_
+	cost = 7
+	relative_position_id = JAP_tribunal_court_of_nagasaki
+	x = 3
+	y = 1
+	allow_branch = { has_completed_focus = JAP_tribunal_court_of_nagasaki }
+	prerequisite = { focus = JAP_tribunal_court_of_nagasaki }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_ultranat_question"
+		
+	}
+}
+shared_focus = {
+	id = JAP_shogun_answer
+	icon = GFX_ 
+	cost = 5
+	relative_position_id = JAP_tribunal_court_of_nagasaki
+	x = 0
+	y = 3
+	allow_branch = { has_completed_focus = JAP_tribunal_court_of_nagasaki }
+	prerequisite = { focus = JAP_ultranat_question }
+	prerequisite = { focus = JAP_admiralty_question }
+	prerequisite = { focus = JAP_ultraroyalist_question }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_shogun_answer"
+		
 	}
 }

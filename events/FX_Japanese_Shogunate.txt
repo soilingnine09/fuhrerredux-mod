@@ -174,7 +174,7 @@ country_event = {
 		log = "[GetDateText]: [Root.GetName]: Event jap_shogun.5.a"
 		add_stability = -0.1
 		add_political_power = -200 
-		custom_effect_tooltip = "The Continent is no longer our rule, she will be rised again" 
+		custom_effect_tooltip = "The Continent is no longer our rule, they will be rised again" 
 		every_state = {
 			limit = { 
 				OR = {
@@ -208,6 +208,7 @@ country_event = {
 		trigger = {
 			JAP = { has_completed_focus = jap_the_army_coup }
 		}
+		set_country_flag = JAP_Shogun_Win
 		load_focus_tree = FR_JAP_Shogun
 		mark_focus_tree_layout_dirty = yes
 		add_popularity = { ideology = paternal_autocrat popularity = JAP.highest_party_popularity@exclude_ruling_party }
@@ -428,6 +429,7 @@ country_event = {
 		}
 		add_popularity = { ideology = authoritarian_democrat popularity = JAP.highest_party_popularity@exclude_ruling_party }
 		add_popularity = { ideology = paternal_autocrat popularity = 0.15 }
+		set_country_flag = JAP_Shogun_Win
 		load_focus_tree = FR_JAP_Shogun
 		mark_focus_tree_layout_dirty = yes
 		SP_NS_clear_coalition_effect = yes
@@ -691,7 +693,7 @@ country_event = { ##For AI Test
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: Event jap_shogun.7"
 		hidden_effect = {
-			remove_ideas = JPR_surrender_to_tokyo
+			remove_idea = JAP_surrender_to_tokyo
 		}
 	}
 	is_triggered_only = yes 
@@ -727,5 +729,21 @@ country_event = { ##For AI Test
 		event_target:JPR_Revolt_General = { set_nationality = JAP }
 		event_target:JPR_Revolt_Admiral = { set_nationality = JAP }
 		##Add Admiral Minister 
+	}
+}
+##Second Northern Alliance Victory##
+country_event = { 
+	id = jap_shogun.8
+	title = "End of Imperial Admiralty"
+	desc = jap_shogun.8.d ##Shogun declare state of emergency
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: Event jap_shogun.8"
+	}
+	is_triggered_only = yes 
+	option = {
+		name = jap_shogun.8.a 
+		log = "[GetDateText]: [Root.GetName]: Event jap_shogun.8.a"
+		##add_ideas = JAP_admiral_purge
+		mark_focus_tree_layout_dirty = yes 
 	}
 }

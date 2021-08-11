@@ -75,6 +75,8 @@ JAP_Shogunate_paternal_autocrat_party_long:0 "Hokubu Dōmei"
 JPR:0 "Imperial Japanese Admiralty"
 JPR_DEF:0 "Imperial Japanese Naval Administration"
 JPR_ADJ:0 "Japanese Rebels"
+###Leader Traits 
+chancellor_of_great_council_of_state:0 "Daijō-daijin"
 #### Bookmark Description ####
 
 JAP_FUHRERREDUX_DESC:0 "Japan is rising. In less than a century it has pulled itself from an isolated, feudal society to Asia's most industrialised and modern state. Emperor Hirohito rules over an young empire that simultaneously holds dominion over Korean and Taiwan, yet upholds a democracy based on American ideals. Lacking natural resources, Japan must advance even further if it's to thrive in this uncertain world. Tennōheika Banzai!"
