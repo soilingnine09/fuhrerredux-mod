@@ -169,6 +169,7 @@ on_actions = {
 					JAP = {
 						has_government = paternal_autocrat 
 						has_country_flag = JAP_Shogunate_flag
+						NOT = { has_global_flag = JAP_MEX_Shogunate_formed }
 					}
 				}
 				JAP = { set_cosmetic_tag = JAP_Shogunate_paternal_autocrat }
@@ -178,6 +179,7 @@ on_actions = {
 					JAP = {
 						has_government = authoritarian_democrat 
 						has_country_flag = JAP_Shogunate_flag
+						NOT = { has_global_flag = JAP_MEX_Shogunate_formed }
 					}
 				}
 				JAP = { set_cosmetic_tag = JAP_Shogunate_authoritarian_democrat }
@@ -187,6 +189,7 @@ on_actions = {
 					JAP = {
 						has_government = national_populist 
 						has_country_flag = JAP_Shogunate_flag
+						NOT = { has_global_flag = JAP_MEX_Shogunate_formed }
 					}
 				}
 				JAP = { set_cosmetic_tag = JAP_Shogunate_national_populist }

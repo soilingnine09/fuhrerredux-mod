@@ -4,6 +4,12 @@ leader_traits = {
 		stability_factor = 0.1
 		political_power_gain = 0.07
 	}
+	shikken_of_mexico = {
+		random = no 
+		stability_factor = 0.05
+		political_power_gain = 0.05
+		autonomy_gain = -0.05
+	}
 	eternal_unified_regent = {
 		random = no 
 		war_support_factor = 0.5

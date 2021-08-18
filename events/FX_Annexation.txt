@@ -4544,9 +4544,31 @@ country_event = {
 		}
 		MEX = {
 			set_cosmetic_tag = JAP_MEX_Shogunate
+			hidden_effect = {
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Tokugawa Bakufu - DGM"
+					long_name = "Directorate-General of Mexico (Mekishiko Sōkyoku)" 
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Kingo Nonaka"
+					desc = ""
+					picture = "Portrait_Mexico_Kingo_Nonaka.tga"
+					expire = "1965.1.1"
+					ideology = paternal_autocrat_subtype
+					traits = {
+						shikken_of_mexico
+					}
+				}
+			}
 		}
 		JAP = {
 			set_cosmetic_tag = JAP_MEX_Shogunate
+			set_global_flag = JAP_MEX_Shogunate_formed
 		}
     }
     option = {
