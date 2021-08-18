@@ -4519,6 +4519,36 @@ country_event = {
         }
         puppet = MEX
     }
+	option = { # Partial Annex - Japan
+        name = annexation.88.b
+        trigger = {
+			JAP = {
+				is_ai = no 
+			}
+		}
+        every_owned_state = {
+            limit = {
+                is_core_of = MEX
+                is_fully_controlled_by = ROOT
+                NOT = { is_core_of = ROOT }
+                NOT = { is_claimed_by = ROOT }
+            }
+            MEX = {
+                transfer_state = PREV
+            }
+        }
+        puppet = MEX
+		set_autonomy = {
+			target = MEX 
+			autonomy_state = autonomy_integrated_puppet
+		}
+		MEX = {
+			set_cosmetic_tag = JAP_MEX_Shogunate
+		}
+		JAP = {
+			set_cosmetic_tag = JAP_MEX_Shogunate
+		}
+    }
     option = {
         name = annexation.occupation
         ai_chance = { factor = 5 }

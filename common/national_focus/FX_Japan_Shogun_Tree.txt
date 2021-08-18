@@ -73,7 +73,7 @@ shared_focus = {
 	prerequisite = { focus = JAP_empower_shogun_authority }
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus JAP_tribunal_court_of_nagasaki"
-		custom_effect_tooltip = "Unlock the Tribunal Court of Nagasaki's Subpath"
+		custom_effect_tooltip = "Unlock the Special Court of Nagasaki"
 		mark_focus_tree_layout_dirty = yes
 	}
 }

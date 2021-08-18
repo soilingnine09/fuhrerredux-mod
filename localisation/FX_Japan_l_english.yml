@@ -41,6 +41,14 @@ JAP_Shogunate_paternal_autocrat:0 "Tokugawa Shogunate"
 JAP_Shogunate_paternal_autocrat_DEF:0 "Restored Tokugawa Shogunate"
 JAP_Shogunate_national_populist:0 "Nippon Bakufu"
 JAP_Shogunate_national_populist_DEF:0 "Military Government of Japan"
+#### Mexican Shogunate 
+##Names 
+JAP_MEX_Shogunate_authoritarian_democrat:0 "Japanese-Mexican Shogunate"
+JAP_MEX_Shogunate_authoritarian_democrat_DEF:0 "Japanese-Mexican Shogunate"
+JAP_MEX_Shogunate_paternal_autocrat:0 "Japanese-Mexican Shogunate"
+JAP_MEX_Shogunate_paternal_autocrat_DEF:0 "Japanese-Mexican Shogunate"
+JAP_MEX_Shogunate_national_populist:0 "Nippon-Mekishiko Bakufu"
+JAP_MEX_Shogunate_national_populist_DEF:0 "Military Administration of Japan-Mexico"
 #### Political Parties ####
 
 JAP_vanguardist_party:0 "Rōdōnōmintō"
@@ -67,9 +75,9 @@ JAP_valkist_party:0 "Ketsumeidan"
 JAP_valkist_party_long:0 "League of Blood (Ketsumeidan)"
 
 JAP_Shogunate_national_populist_party:0 "Tōhōkai"
-JAP_Shogunate_national_populist_party_long:0 "Tōhōkai"
+JAP_Shogunate_national_populist_party_long:0 "Eastern Society (Tōhōkai)"
 JAP_Shogunate_paternal_autocrat_party:0 "Hokubu Dōmei"
-JAP_Shogunate_paternal_autocrat_party_long:0 "Hokubu Dōmei"
+JAP_Shogunate_paternal_autocrat_party_long:0 "Northern Alliance (Hokubu Dōmei)"
 
 ###Japanese Revolt
 JPR:0 "Imperial Japanese Admiralty"

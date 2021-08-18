@@ -1,5 +1,18 @@
 JAP_Washington_naval_treaty = {
-
+	####Addition Test####
+	build_the_empire_test = {
+		visible = {
+			tag = JAP 
+			always = yes
+		}
+		available = {
+			always = yes 
+		}
+		cost = 50
+		complete_effect = {
+			JAP = { create_faction = "Greater East Asian Co-Prosperity Sphere" }
+		}
+	}
 	####Renounce the Treaty cos fuck US####
 	
 	JAP_renounce_wnt = {
