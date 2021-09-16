@@ -137,9 +137,9 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-	name = "Hirohito"
-	desc = "POLITICS_HIROHITO_DESC"
-	picture = "Portrait_JAP_Hirohito.tga"
+	name = "Inoue Nisshō"
+	desc = ""
+	picture = "Portrait_JAP_Inoue_Nissho.tga"
 	expire = "1989.1.1"
 	ideology = valkist_subtype
 	traits = {

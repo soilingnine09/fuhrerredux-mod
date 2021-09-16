@@ -34,7 +34,7 @@ JAP_national_populist_DEF:0 "Dai Nippon Teikoku"
 JAP_valkist:0 "Nippon Seikoku"
 JAP_valkist_ADJ:0 "Japanese"
 JAP_valkist_DEF:0 "Sacred Realm of Japan"
-
+####Tokugawa 
 JAP_Shogunate_authoritarian_democrat:0 "Tokugawa Shogunate"
 JAP_Shogunate_authoritarian_democrat_DEF:0 "Restored Tokugawa Shogunate"
 JAP_Shogunate_paternal_autocrat:0 "Tokugawa Shogunate"
@@ -50,7 +50,6 @@ JAP_MEX_Shogunate_paternal_autocrat_DEF:0 "Japanese-Mexican Shogunate"
 JAP_MEX_Shogunate_national_populist:0 "Nippon-Mekishiko Bakufu"
 JAP_MEX_Shogunate_national_populist_DEF:0 "Military Administration of Japan-Mexico"
 #### Political Parties ####
-
 JAP_vanguardist_party:0 "Rōdōnōmintō"
 JAP_vanguardist_party_long:0 "Labour-Farmer Party (Rōdōnōmintō)"
 JAP_collectivist_party:0 "Kyōsan-tō"

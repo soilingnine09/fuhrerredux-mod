@@ -4520,7 +4520,7 @@ country_event = {
         puppet = MEX
     }
 	option = { # Partial Annex - Japan
-        name = annexation.88.b
+        name = "How about double Shogunates?" #annexation.88.b
         trigger = {
 			JAP = {
 				is_ai = no 
