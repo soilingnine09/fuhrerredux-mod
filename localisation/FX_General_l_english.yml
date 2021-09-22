@@ -7,8 +7,8 @@ FUHRERREDUX_DESC:0 "The end of the Great War saw the empires of the old—the Ot
 OTHER_FUHRERREDUX_DESC:0 "It is 1936, and the world is on a brink of a new, inevitable, war. But the world is made up of more than a few monolithic empires. The smallest stones can bring about tidal waves, and these lesser states can bring about much change. Will you side with the valkists? Will you carry on the torch of the revolution? Or maybe you will grant your people true freedom, the likes of which they have never seen? The world will soon derail from its peaceful existance, plummeting into the hells of war. And it will not wait for your decisions."
 
 ### Intro Screen
-FX_SPLASH_TITLE:0 "Welcome to Fuhrerredux"
-FX_SPLASH_CREDITS:0 "§YBrought to you by the FX Team:§!\ndax, Todd Howard, Captain Kaiczer, Dej, alden102, AmCath, Lextzo, BobRossHD, AmCath, JoeBidenWhatAreYouHiding, David Lu, NeitHof, Aureum, Murphy, Log, and El Raymondo.\n\n\n§CCredits and a big thank you to the FR and KR Teams."
+FX_SPLASH_TITLE:0 "Welcome to Führerredux"
+FX_SPLASH_CREDITS:0 "§YBrought to you by the FX Team:§!\ndax, Todd Howard, Captain Kaiczer, Dej, alden102, AmCath, Lextzo, BobRossHD, AmCath, JoeBidenWhatAreYouHiding, David Lu, Aureum, Murphy, Log, and El Raymondo.\n\n\n§CCredits and a big thank you to the FR and KR Teams."
 
 ### Intro Event
 intro.1.t:0 "Führerredux Build 0.1.0"
@@ -137,6 +137,8 @@ FX_is_democratic_tt:0 "Has a democratic government."
 FX_is_democratic_tt_NOT:0 "Does §Rnot§! have a democratic government."
 FX_is_authoritarian_tt:0 "Has an authoritarian and reactionary government."
 FX_is_authoritarian_tt_NOT:0 "Does §Rnot§! have an authoritarian and reactionary government."
+FX_is_dictatorship_tt:0 "Has a totalitarian government"
+FX_is_dictatorship_tt_NOT:0 "Does §Rnot§! have a totalitarian government."
 
 unlocked_later:0 "Your path remains closed until an opportunity presents itself."
 
@@ -147,7 +149,7 @@ imperial_protection_alliance:0 "Imperial Protection Alliance"
 continental_entente:0 "Continental Entente"
 Stahlpakt:0 "Stahlpakt"
 3rd_international:0 "Third International"
-free_bloc:0 "Free Bloc"
+washington_accord:0 "Washington Accord"
 commonwealth:0 "Commonwealth of Nations"
 
 ### Interface

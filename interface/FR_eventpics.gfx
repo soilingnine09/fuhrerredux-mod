@@ -375,13 +375,6 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/Caucasia/Georgia/baazov.dds"	
 	}
 	#Japan
-	spriteType = {
-		name = "GFX_news_event_JAP_arrest"
-		texturefile = "gfx/event_pictures/News Events/East Asia/news_event_JAP_arrest.tga"	
-	}
-    ### FRANCE
-    spriteType = {
-		name = "GFX_news_event_FRA_colonial_exhibition"
-		texturefile = "gfx/event_pictures/News Events/Europe/FRA_paris_colonial_exhibition_news_event.tga"	
-    }
+	
+
 }

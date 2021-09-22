@@ -1,0 +1,30 @@
+PHR_communal_industrialization_decisions = {
+    PHR_develop_state = {
+        target_trigger = {
+            FROM = {
+                OR = {
+                    state = 327
+                    state = 623
+                    state = 624
+                    state = 625
+                    state = 626
+                    state = 627
+                    state = 628
+                }
+            }
+        }
+
+        cost = 50
+        icon = GFX_decision_generic_construction
+        days_remove = 120
+        visible = {
+            FROM = { has_state_flag = PHR_developed_state }
+        }
+        remove_effect = {
+            FROM = { 
+                set_state_flag = PHR_developed_state
+                add_extra_state_shared_building_slots = 1
+            }
+        }
+    }
+}

@@ -1,29 +1,11 @@
-#
-# List of options showing in the Game Rules screen
-#
-# format is:
-# rule_token = {
-#	name = "TEXT_KEY_FOR_NAME"
-#	#required_dlc = "Name of the Required DLC"
-#	desc = "TEXT_KEY_FOR_LONG_DESC"
-#	group = "TEXT_KEY_FOR_GROUP"					# Used for filtering. A single rule can be in multiple groups 
-#	icon = gfx_option_token							# Optional icon
-#	option = {										# Unless other specified, the first option is the default option
-#		name = option_token
-#		text = "TEXT_KEY_FOR_OPTION_NAME"
-#		allow_achievements = no						# Achievements cannot be earned if one or more game rules are set to an option that has this property set to no.
-#													# If not specified, this is set to yes for default options and no for all other options.
-#	}
-#	default = {										# Specify an option with the "default" token to override the behavior of treating the first option as the default.
-#		name = option_token
-#		text = "TEXT_KEY_FOR_OPTION_NAME"
-#		...
-#	}
-# }
+### Fuhrerredux Game Rules
 
+###########################################################
+# FUHRERREDUX
+###########################################################
 unit_limit_options = {
 	name = "RULE_UNIT_LIMIT_OPTIONS"
-	group = "RULE_GROUP_KAISERREICH_RULES"
+	group = "RULE_GROUP_FUHRERREDUX_RULES"
 	icon = "GFX_release_nations"
 	default = {
 		name = "STANDARD"
@@ -45,6 +27,9 @@ unit_limit_options = {
 	}
 }
 
+###########################################################
+# FOREIGN POLICY
+###########################################################
 allow_wargoals = {
 	name = "RULE_ALLOW_WARGOALS"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
@@ -115,7 +100,6 @@ allow_access = {
 		allow_achievements = yes
 	}
 }
-
 allow_release_nations = {
 	name = "RULE_ALLOW_RELEASE_NATIONS"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
@@ -139,7 +123,6 @@ allow_release_nations = {
 		allow_achievements = yes
 	}
 }
-
 allow_licensing = {
 	name = "RULE_ALLOW_LICENSING"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
@@ -170,7 +153,6 @@ allow_licensing = {
 		allow_achievements = yes
 	}
 }
-
 allow_lend_lease = {
 	name = "RULE_ALLOW_LEND_LEASE"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
@@ -206,7 +188,6 @@ allow_lend_lease = {
 		allow_achievements = yes
 	}
 }
-
 allow_volunteers = {
 	name = "RULE_ALLOW_VOLUNTEERS"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
@@ -236,7 +217,6 @@ allow_volunteers = {
 		allow_achievements = yes
 	}
 }
-
 allow_guarantees = {
 	name = "RULE_ALLOW_GUARANTEES"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
@@ -266,7 +246,6 @@ allow_guarantees = {
 		allow_achievements = yes
 	}
 }
-
 allow_revoke_guarantees = {
 	name = "RULE_ALLOW_REVOKE_GUARANTEES"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
@@ -284,7 +263,6 @@ allow_revoke_guarantees = {
 		allow_achievements = yes
 	}
 }
-
 allow_leave_faction = {
 	name = "RULE_ALLOW_LEAVE_FACTION"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
@@ -302,7 +280,6 @@ allow_leave_faction = {
 		allow_achievements = yes
 	}
 }
-
 allow_kick_faction = {
 	name = "RULE_ALLOW_KICK_FACTION"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
@@ -320,7 +297,6 @@ allow_kick_faction = {
 		allow_achievements = yes
 	}
 }
-
 allow_take_over_faction = {
 	name = "RULE_ALLOW_TAKE_OVER_FACTION"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
@@ -339,7 +315,6 @@ allow_take_over_faction = {
 		allow_achievements = yes
 	}
 }
-
 allow_join_faction = {
 	name = "RULE_ALLOW_JOIN_FACTION"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
@@ -358,7 +333,6 @@ allow_join_faction = {
 		allow_achievements = yes
 	}
 }
-
 allow_create_faction = {
 	name = "RULE_CREATE_FACTION"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
@@ -377,15 +351,12 @@ allow_create_faction = {
 	}
 }
 
- ##   ##  #   # ### ###  ###      ##   ##  ### ###  ##  #  #  ## 
-#  # #  # #   # #   #  #  #      #  # #  #  #   #  #  # ## # #   
-#    #  #  # #  ##  ###   #      #### #     #   #  #  # # ##  #  
-#  # #  #  # #  #   #  #  #      #  # #  #  #   #  #  # #  #   # 
- ##   ##    #   ### #  #  #      #  #  ##   #  ###  ##  #  # ##  
-
+###########################################################
+# GAMEPLAY
+###########################################################
 allow_coups = {
 	name = "RULE_ALLOW_COUPS"
-	group = "RULE_GROUP_COVERT_ACTIONS"
+	group = "RULE_GROUP_GAMEPLAY"
 	icon = "GFX_coups"
 	option = {
 		name = FREE
@@ -406,10 +377,9 @@ allow_coups = {
 		allow_achievements = yes
 	}
 }
-
 allow_party_boosting = {
 	name = "RULE_ALLOW_PARTY_BOOSTING"
-	group = "RULE_GROUP_COVERT_ACTIONS"
+	group = "RULE_GROUP_GAMEPLAY"
 	icon = "GFX_boosting_party_popularity"
 	option = {
 		name = FREE
@@ -436,14 +406,6 @@ allow_party_boosting = {
 		allow_achievements = yes
 	}
 }
-
-###  ### #   # ###  ## ###  ##  #  #     ### ### #   # ###  #    ##  ### ###  ## 
-#  #  #  #   #  #  #    #  #  # ## #      #  #   ## ## #  # #   #  #  #  #   #   
-#  #  #   # #   #   #   #  #  # # ##      #  ##  # # # ###  #   ####  #  ##   #  
-#  #  #   # #   #    #  #  #  # #  #      #  #   #   # #    #   #  #  #  #     # 
-###  ###   #   ### ##  ###  ##  #  #      #  ### #   # #    ### #  #  #  ### ##  
-
-
 allow_paratroopers = {
 	name = "RULE_ALLOW_PARATROOPERS"
 	group = "RULE_GROUP_GAMEPLAY"
@@ -461,13 +423,6 @@ allow_paratroopers = {
 		allow_achievements = yes
 	}
 }
-
- ##   ##  #  #  ## ### ###  #  #  ##  ### ###  ##  #  # 
-#  # #  # ## # #    #  #  # #  # #  #  #   #  #  # ## # 
-#    #  # # ##  #   #  ###  #  # #     #   #  #  # # ## 
-#  # #  # #  #   #  #  #  # #  # #  #  #   #  #  # #  # 
- ##   ##  #  # ##   #  #  #  ##   ##   #  ###  ##  #  # 
-
 maximum_fort_level = {
 	name = "RULE_MAXIMUM_FORT_LEVEL"
 	group = "RULE_GROUP_GAMEPLAY"
@@ -533,584 +488,3 @@ maximum_fort_level = {
 		allow_achievements = yes
 	}
 }
-
- ##   ##  #   # ###      ## ### ### #  # ###  
-#    #  # ## ## #       #   #    #  #  # #  # 
-# ## #### # # # ##       #  ##   #  #  # ###  
-#  # #  # #   # #         # #    #  #  # #    
- ##  #  # #   # ###     ##  ###  #   ##  #    
-
-americas_colonization_status = {
-	name = "AMERICAS_COLONIZATION_STATUS"
-	#required_dlc = "Man the Guns"
-	group = "RULE_GROUP_GAME_SETUP"
-	default = {
-		name = DEFAULT
-		text = "RULE_OPTION_DEFAULT"
-		desc = "RULE_OPTION_DEFAULT_COLONIZATION_DESC"
-		
-	}
-	option = {
-		name = AMERICAS_DECOLONIZED
-		text = "RULE_OPTION_AMERICAS_DECOLONIZED"
-		desc = "RULE_OPTION_AMERICAS_DECOLONIZED_DESC"
-	}
-	option = {
-		name = AMERICAS_COLONIZED
-		text = "RULE_OPTION_AMERICAS_COLONIZED"
-		desc = "RULE_OPTION_AMERICAS_COLONIZED_DESC"
-	}
-}
-africa_colonization_status = {
-	name = "AFRICA_COLONIZATION_STATUS"
-	#required_dlc = "Man the Guns"
-	group = "RULE_GROUP_GAME_SETUP"
-	default = {
-		name = DEFAULT
-		text = "RULE_OPTION_DEFAULT"
-		desc = "RULE_OPTION_DEFAULT_COLONIZATION_DESC"
-	}
-	option = {
-		name = AFRICA_DECOLONIZED
-		text = "RULE_OPTION_AFRICA_DECOLONIZED"
-		desc = "RULE_OPTION_AFRICA_DECOLONIZED_DESC"
-	}
-	option = {
-		name = AFRICA_COLONIZED
-		text = "RULE_OPTION_AFRICA_COLONIZED"
-		desc = "RULE_OPTION_AFRICA_COLONIZED_DESC"
-	}
-}
-asia_colonization_status = {
-	name = "ASIA_COLONIZATION_STATUS"
-	#required_dlc = "Man the Guns"
-	group = "RULE_GROUP_GAME_SETUP"
-	default = {
-		name = DEFAULT
-		text = "RULE_OPTION_DEFAULT"
-		desc = "RULE_OPTION_DEFAULT_COLONIZATION_DESC"
-	}
-	option = {
-		name = ASIA_DECOLONIZED
-		text = "RULE_OPTION_ASIA_DECOLONIZED"
-		desc = "RULE_OPTION_ASIA_DECOLONIZED_DESC"
-	}
-	option = {
-		name = ASIA_COLONIZED
-		text = "RULE_OPTION_ASIA_COLONIZED"
-		desc = "RULE_OPTION_ASIA_COLONIZED_DESC"
-	}
-}
-eng_fragmentation_status = {
-	name = "ENG_FRAGMENTATION_STATUS"
-	#required_dlc = "Man the Guns"
-	group = "RULE_GROUP_GAME_SETUP"
-	default = {
-		name = DEFAULT
-		text = "RULE_OPTION_DEFAULT"
-		desc = "RULE_OPTION_DEFAULT_FRAGMENTATION_DESC"
-	}
-	option = {
-		name = ENG_FRAGMENTED
-		text = "RULE_OPTION_ENG_FRAGMENTED"
-		desc = "RULE_OPTION_ENG_FRAGMENTED_DESC"
-	}
-	option = {
-		name = ENG_PUPPETS
-		text = "RULE_OPTION_ENG_PUPPETS"
-		desc = "RULE_OPTION_ENG_PUPPETS_DESC"
-	}
-}
-fra_fragmentation_status = {
-	name = "FRA_FRAGMENTATION_STATUS"
-	##required_dlc = "Man the Guns"
-	group = "RULE_GROUP_GAME_SETUP"
-	default = {
-		name = DEFAULT
-		text = "RULE_OPTION_DEFAULT"
-		desc = "RULE_OPTION_DEFAULT_FRAGMENTATION_DESC"
-	}
-	option = {
-		name = FRA_FRAGMENTED
-		text = "RULE_OPTION_FRA_FRAGMENTED"
-		desc = "RULE_OPTION_FRA_FRAGMENTED_DESC"
-	}
-	option = {
-		name = FRA_PUPPETS
-		text = "RULE_OPTION_FRA_PUPPETS"
-		desc = "RULE_OPTION_FRA_PUPPETS_DESC"
-	}
-}
-ita_fragmentation_status = {
-	name = "ITA_FRAGMENTATION_STATUS"
-	##required_dlc = "Man the Guns"
-	group = "RULE_GROUP_GAME_SETUP"
-	default = {
-		name = DEFAULT
-		text = "RULE_OPTION_DEFAULT"
-		desc = "RULE_OPTION_DEFAULT_FRAGMENTATION_DESC"
-	}
-	option = {
-		name = ITA_FRAGMENTED
-		text = "RULE_OPTION_ITA_FRAGMENTED"
-		desc = "RULE_OPTION_ITA_FRAGMENTED_DESC"
-	}
-	option = {
-		name = ITA_PUPPETS
-		text = "RULE_OPTION_ITA_PUPPETS"
-		desc = "RULE_OPTION_ITA_PUPPETS_DESC"
-	}
-}
-ger_fragmentation_status = {
-	name = "GER_FRAGMENTATION_STATUS"
-	##required_dlc = "Man the Guns"
-	group = "RULE_GROUP_GAME_SETUP"
-	default = {
-		name = DEFAULT
-		text = "RULE_OPTION_DEFAULT"
-		desc = "RULE_OPTION_DEFAULT_FRAGMENTATION_DESC"
-	}
-	option = {
-		name = GER_FRAGMENTED
-		text = "RULE_OPTION_GER_FRAGMENTED"
-		desc = "RULE_OPTION_GER_FRAGMENTED_DESC"
-	}
-	option = {
-		name = GER_PUPPETS
-		text = "RULE_OPTION_GER_PUPPETS"
-		desc = "RULE_OPTION_GER_PUPPETS_DESC"
-	}
-}
-yug_fragmentation_status = {
-	name = "YUG_FRAGMENTATION_STATUS"
-	##required_dlc = "Man the Guns"
-	group = "RULE_GROUP_GAME_SETUP"
-	default = {
-		name = DEFAULT
-		text = "RULE_OPTION_DEFAULT"
-		desc = "RULE_OPTION_DEFAULT_FRAGMENTATION_DESC"
-	}
-	option = {
-		name = YUG_FRAGMENTED
-		text = "RULE_OPTION_YUG_FRAGMENTED"
-		desc = "RULE_OPTION_YUG_FRAGMENTED_DESC"
-	}
-	option = {
-		name = YUG_ANNEXED
-		text = "RULE_OPTION_YUG_ANNEXED"
-		desc = "RULE_OPTION_YUG_ANNEXED_DESC"
-	}
-}
-sov_fragmentation_status = {
-	name = "SOV_FRAGMENTATION_STATUS"
-	##required_dlc = "Man the Guns"
-	group = "RULE_GROUP_GAME_SETUP"
-	default = {
-		name = DEFAULT
-		text = "RULE_OPTION_DEFAULT"
-		desc = "RULE_OPTION_DEFAULT_FRAGMENTATION_DESC"
-	}
-	option = {
-		name = SOV_FRAGMENTED
-		text = "RULE_OPTION_SOV_FRAGMENTED"
-		desc = "RULE_OPTION_SOV_FRAGMENTED_DESC"
-	}
-}
-jap_fragmentation_status = {
-	name = "JAP_FRAGMENTATION_STATUS"
-	##required_dlc = "Man the Guns"
-	group = "RULE_GROUP_GAME_SETUP"
-	default = {
-		name = DEFAULT
-		text = "RULE_OPTION_DEFAULT"
-		desc = "RULE_OPTION_DEFAULT_FRAGMENTATION_DESC"
-	}
-	option = {
-		name = JAP_WWI_BORDERS
-		text = "RULE_OPTION_JAP_WWI_BORDERS"
-		desc = "RULE_OPTION_JAP_WWI_BORDERS_DESC"
-	}
-	option = {
-		name = JAP_KOREA
-		text = "RULE_OPTION_JAP_KOREA"
-		desc = "RULE_OPTION_JAP_KOREA_DESC"
-	}
-	option = {
-		name = JAP_HOME_ISLANDS
-		text = "RULE_OPTION_JAP_HOME_ISLANDS"
-		desc = "RULE_OPTION_JAP_HOME_ISLANDS_DESC"
-	}
-}
-rhi_political_status = {
-	name = "RHI_POLITICAL_STATUS"
-	##required_dlc = "Man the Guns"
-	group = "RULE_GROUP_GAME_SETUP"
-	default = {
-		name = DEFAULT
-		text = "RULE_OPTION_DEFAULT"
-		desc = "RULE_OPTION_DEFAULT_FRAGMENTATION_DESC"
-	}
-	option = {
-		name = FRA_RHINE
-		text = "RULE_OPTION_FRA_RHINE"
-		desc = "RULE_OPTION_FRA_RHINE_DESC"
-	}
-	option = {
-		name = GER_RHINE
-		text = "RULE_OPTION_GER_RHINE"
-		desc = "RULE_OPTION_GER_RHINE_DESC"
-	}
-	option = {
-		name = DIVIDED_RHINE
-		text = "RULE_OPTION_DIVIDED_RHINE"
-		desc = "RULE_OPTION_DIVIDED_RHINE_DESC"
-	}
-}
-
-#sho_political_status = {
-#	name = "SHO_POLITICAL_STATUS"
-#	##required_dlc = "Man the Guns"
-#	group = "RULE_GROUP_GAME_SETUP"
-#	default = {
-#		name = DEFAULT
-#		text = "RULE_OPTION_DEFAULT"
-#		desc = "RULE_OPTION_DEFAULT_FRAGMENTATION_DESC"
-#	}
-#	option = {
-#		name = SHO_DEN_ANNEXED
-#		text = "RULE_OPTION_SHO_DEN_ANNEXED"
-#		desc = "RULE_OPTION_SHO_DEN_ANNEXED_DESC"
-#	}
-#	option = {
-#		name = SHO_GER_ANNEXED
-#		text = "RULE_OPTION_SHO_GER_ANNEXED"
-#		desc = "RULE_OPTION_SHO_GER_ANNEXED_DESC"
-#	}
-#}
-
-hol_political_status = {
-	name = "HOL_POLITICAL_STATUS"
-	##required_dlc = "Man the Guns"
-	group = "RULE_GROUP_GAME_SETUP"
-	default = {
-		name = DEFAULT
-		text = "RULE_OPTION_DEFAULT"
-		desc = "RULE_OPTION_DEFAULT_FRAGMENTATION_DESC"
-	}
-	option = {
-		name = HOL_ANNEX_KNE
-		text = "RULE_OPTION_HOL_ANNEX_KNE"
-		desc = "RULE_OPTION_HOL_ANNEX_KNE_DESC"
-	}
-	option = {
-		name = KNE_ANNEX_HOL
-		text = "RULE_OPTION_KNE_ANNEX_HOL"
-		desc = "RULE_OPTION_KNE_ANNEX_HOL_DESC"
-	}
-	option = {
-		name = HOL_ANNEX_INS
-		text = "RULE_OPTION_HOL_ANNEX_INS"
-		desc = "RULE_OPTION_HOL_ANNEX_INS_DESC"
-	}
-	option = {
-		name = KNE_ANNEX_INS
-		text = "RULE_OPTION_KNE_ANNEX_INS"
-		desc = "RULE_OPTION_KNE_ANNEX_INS_DESC"
-	}
-	option = {
-		name = HOL_ANNEX_BOTH
-		text = "RULE_OPTION_HOL_ANNEX_BOTH"
-		desc = "RULE_OPTION_HOL_ANNEX_BOTH_DESC"
-	}
-	option = {
-		name = KNE_ANNEX_BOTH
-		text = "RULE_OPTION_KNE_ANNEX_BOTH"
-		desc = "RULE_OPTION_KNE_ANNEX_BOTH_DESC"
-	}
-}
-
-spr_political_status = {
-	name = "SPR_POLITICAL_STATUS"
-	##required_dlc = "Man the Guns"
-	group = "RULE_GROUP_GAME_SETUP"
-	default = {
-		name = DEFAULT
-		text = "RULE_OPTION_DEFAULT"
-		desc = "RULE_OPTION_DEFAULT_FRAGMENTATION_DESC"
-	}
-	option = {
-		name = SPF_VICTORY
-		text = "RULE_OPTION_SPF_VICTORY"
-		desc = "RULE_OPTION_SPF_VICTORY_DESC"
-	}
-	option = {
-		name = SPR_VICTORY
-		text = "RULE_OPTION_SPR_VICTORY"
-		desc = "RULE_OPTION_SPR_VICTORY_DESC"
-	}
-	option = {
-		name = SPA_VICTORY
-		text = "RULE_OPTION_SPA_VICTORY"
-		desc = "RULE_OPTION_SPA_VICTORY_DESC"
-	}
-	option = {
-		name = SPM_VICTORY
-		text = "RULE_OPTION_SPM_VICTORY"
-		desc = "RULE_OPTION_SPM_VICTORY_DESC"
-	}
-}
-
-por_political_status = {
-	name = "POR_POLITICAL_STATUS"
-	##required_dlc = "Man the Guns"
-	group = "RULE_GROUP_GAME_SETUP"
-	default = {
-		name = DEFAULT
-		text = "RULE_OPTION_DEFAULT"
-		desc = "RULE_OPTION_DEFAULT_FRAGMENTATION_DESC"
-	}
-	option = {
-		name = POR_VICTORY
-		text = "RULE_OPTION_POR_VICTORY"
-		desc = "RULE_OPTION_POR_VICTORY_DESC"
-	}
-	option = {
-		name = PRR_VICTORY
-		text = "RULE_OPTION_PRR_VICTORY"
-		desc = "RULE_OPTION_PRR_VICTORY_DESC"
-	}
-}
-
-#raj_political_status = {
-#	name = "RAJ_POLITICAL_STATUS"
-#	##required_dlc = "Man the Guns"
-#	group = "RULE_GROUP_GAME_SETUP"
-#	default = {
-#		name = DEFAULT
-#		text = "RULE_OPTION_DEFAULT"
-#		desc = "RULE_OPTION_DEFAULT_FRAGMENTATION_DESC"
-#	}
-#	option = {
-#		name = RAJ_VICTORY
-#		text = "RULE_OPTION_RAJ_VICTORY"
-#		desc = "RULE_OPTION_RAJ_VICTORY_DESC"
-#	}
-#	option = {
-#		name = IND_VICTORY
-#		text = "RULE_OPTION_IND_VICTORY"
-#		desc = "RULE_OPTION_IND_VICTORY_DESC"
-#	}
-#}
-
-sov_political_status = {
-	name = "SOV_POLITICAL_STATUS"
-	##required_dlc = "Man the Guns"
-	group = "RULE_GROUP_GAME_SETUP"
-	default = {
-		name = DEFAULT
-		text = "RULE_OPTION_DEFAULT"
-		desc = "RULE_OPTION_DEFAULT_FRAGMENTATION_DESC"
-	}
-	option = {
-		name = SOV_VICTORY
-		text = "RULE_OPTION_SOV_VICTORY"
-		desc = "RULE_OPTION_SOV_VICTORY_DESC"
-	}
-	option = {
-		name = RUS_VICTORY
-		text = "RULE_OPTION_RUS_VICTORY"
-		desc = "RULE_OPTION_RUS_VICTORY_DESC"
-	}
-}
-
-# ger_leader_status = {
-	# name = "GER_LEADER_STATUS"
-	# #required_dlc = "Man the Guns"
-	# group = "RULE_GROUP_GAME_SETUP"
-	# default = {
-		# name = GER_DRESSLER
-		# text = "RULE_OPTION_GER_DRESSLER"
-		# desc = "RULE_OPTION_GER_DRESSLER_DESC"
-	# }
-	# option = {
-		# name = GER_DRESSLER
-		# text = "RULE_OPTION_GER_DRESSLER"
-		# desc = "RULE_OPTION_GER_DRESSLER_DESC"
-	# }
-	# option = {
-		# name = GER_DRESSLER
-		# text = "RULE_OPTION_GER_DRESSLER"
-		# desc = "RULE_OPTION_GER_DRESSLER_DESC"
-	# }
-	# option = {
-		# name = GER_DRESSLER
-		# text = "RULE_OPTION_GER_DRESSLER"
-		# desc = "RULE_OPTION_GER_DRESSLER_DESC"
-	# }
-	# option = {
-		# name = GER_DRESSLER
-		# text = "RULE_OPTION_GER_DRESSLER"
-		# desc = "RULE_OPTION_GER_DRESSLER_DESC"
-	# }
-	# # option = {
-		# # name = GER_HITLER
-		# # text = "RULE_OPTION_GER_HITLER"
-		# # desc = "RULE_OPTION_GER_HITLER_DESC"
-	# # }
-	# # option = {
-		# # name = GER_STRASSER
-		# # text = "RULE_OPTION_GER_STRASSER"
-		# # desc = "RULE_OPTION_GER_STRASSER_DESC"
-	# # }	
-	# # option = {
-		# # name = GER_GOERING
-		# # text = "RULE_OPTION_GER_GOERING"
-		# # desc = "RULE_OPTION_GER_GOERING_DESC"
-	# # }
-	# # option = {
-		# # name = GER_WILlIAM
-		# # text = "RULE_OPTION_GER_WILLIAM"
-		# # desc = "RULE_OPTION_GER_WILLIAM_DESC"
-	# # }
-# }
-
-gen_random_ideologies = {
-	name = "GEN_RANDOM_IDEOLOGIES"
-	##required_dlc = "Man the Guns"
-	group = "RULE_GROUP_RANDOMIZER"
-	default = {
-		name = DEFAULT
-		text = "RULE_OPTION_DEFAULT"
-		desc = "RULE_OPTION_DEFAULT_RANDOMIZER_DESC"
-	}
-	option = {
-		name = IDEOLOGIES_MINORS
-		text = "RULE_OPTION_IDEOLOGIES_MINORS"
-		desc = "RULE_OPTION_IDEOLOGIES_MINORS_DESC"
-	}
-	option = {
-		name = IDEOLOGIES_MAJORS
-		text = "RULE_OPTION_IDEOLOGIES_MAJORS"
-		desc = "RULE_OPTION_IDEOLOGIES_MAJORS_DESC"
-	}
-	option = {
-		name = IDEOLOGIES_EVERYONE
-		text = "RULE_OPTION_IDEOLOGIES_EVERYONE"
-		desc = "RULE_OPTION_IDEOLOGIES_EVERYONE_DESC"
-	}
-}
-
-gen_generic_focus = {
-	name = "GEN_GENERIC_FOCUS"
-	##required_dlc = "Man the Guns"
-	group = "RULE_GROUP_RANDOMIZER"
-	default = {
-		name = DEFAULT
-		text = "RULE_OPTION_DEFAULT"
-		desc = "RULE_OPTION_DEFAULT_RANDOMIZER_DESC"
-	}
-	option = {
-		name = GENERIC_FOCUS_MINORS
-		text = "RULE_OPTION_GENERIC_FOCUS_MINORS"
-		desc = "RULE_OPTION_GENERIC_FOCUS_MINORS_DESC"
-	}
-	option = {
-		name = GENERIC_FOCUS_MAJORS
-		text = "RULE_OPTION_GENERIC_FOCUS_MAJORS"
-		desc = "RULE_OPTION_GENERIC_FOCUS_MAJORS_DESC"
-	}
-	option = {
-		name = GENERIC_FOCUS_EVERYONE
-		text = "RULE_OPTION_GENERIC_FOCUS_EVERYONE"
-		desc = "RULE_OPTION_GENERIC_FOCUS_EVERYONE_DESC"
-	}
-}
-
-gen_faction_rules = {
-	name = "GEN_FACTION_RULES"
-	##required_dlc = "Man the Guns"
-	group = "RULE_GROUP_RANDOMIZER"
-	default = {
-		name = DEFAULT
-		text = "RULE_OPTION_DEFAULT"
-		desc = "RULE_OPTION_DEFAULT_RANDOMIZER_DESC"
-	}
-	option = {
-		name = GENERIC_NO_FACTIONS
-		text = "RULE_OPTION_GENERIC_NO_FACTIONS"
-		desc = "RULE_OPTION_GENERIC_NO_FACTIONS_DESC"
-	}
-	option = {
-		name = GENERIC_NO_PUPPETS
-		text = "RULE_OPTION_GENERIC_NO_PUPPETS"
-		desc = "RULE_OPTION_GENERIC_NO_PUPPETS_DESC"
-	}
-	option = {
-		name = GENERIC_MINOR_FACTIONS
-		text = "RULE_OPTION_GENERIC_MINOR_FACTIONS"
-		desc = "RULE_OPTION_GENERIC_MINOR_FACTIONS_DESC"
-	}
-	option = {
-		name = GENERIC_MAJOR_FACTIONS
-		text = "RULE_OPTION_GENERIC_MAJOR_FACTIONS"
-		desc = "RULE_OPTION_GENERIC_MAJOR_FACTIONS_DESC"
-	}
-	option = {
-		name = GENERIC_EXPAND_FACTIONS
-		text = "RULE_OPTION_GENERIC_EXPAND_FACTIONS"
-		desc = "RULE_OPTION_GENERIC_EXPAND_FACTIONS_DESC"
-	}
-}
-
-gen_random_power = {
-	name = "GEN_RANDOM_POWER"
-	##required_dlc = "Man the Guns"
-	group = "RULE_GROUP_RANDOMIZER"
-	default = {
-		name = DEFAULT
-		text = "RULE_OPTION_DEFAULT"
-		desc = "RULE_OPTION_DEFAULT_RANDOMIZER_DESC"
-	}
-	option = {
-		name = GEN_RANDOM_POWER_YES
-		text = "RULE_OPTION_GENERIC_GEN_RANDOM_POWER_YES"
-		desc = "RULE_OPTION_GENERIC_GEN_RANDOM_POWER_YES_DESC"
-	}
-	option = {
-		name = GEN_RANDOM_POWER_ALIEN
-		text = "RULE_OPTION_GENERIC_GEN_RANDOM_POWER_ALIEN"
-		desc = "RULE_OPTION_GENERIC_GEN_RANDOM_POWER_ALIEN_DESC"
-	}
-}
-
-#gen_random_resource = { 
-#	name = "GEN_RANDOM_RESOURCE"
-#	group = "RULE_GROUP_RANDOMIZER"
-#	default = {
-#		name = DEFAULT
-#		text = "RULE_OPTION_DEFAULT"
-#		desc = "RULE_OPTION_DEFAULT_RANDOMIZER_DESC"
-#	}
-#	option = {
-#		name = GEN_RANDOM_RESOURCE_YES
-#		text = "RULE_OPTION_GENERIC_GEN_RANDOM_RESOURCE_YES"
-#		desc = "RULE_OPTION_GENERIC_GEN_RANDOM_RESOURCE_YES_DESC"
-#	}
-#}
-
-# GEN_TIDES_OF_REVOLUTION = { # WILL FINISH LATER
-	# name = "GEN_TIDES_OF_REVOLUTION"
-	# group = "RULE_GROUP_RANDOMIZER"
-	# default = {
-		# name = DEFAULT
-		# text = "RULE_OPTION_DEFAULT"
-		# desc = "RULE_OPTION_DEFAULT_RANDOMIZER_DESC"
-	# }
-	# option = {
-		# name = GEN_TOR_YES
-		# text = "RULE_OPTION_GENERIC_GEN_TOR_YES"
-		# desc = "RULE_OPTION_GENERIC_GEN_TOR_YES_DESC"
-	# }
-# }
-
-#HMMMMM

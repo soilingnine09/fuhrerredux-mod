@@ -140,7 +140,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_universial_healthcare
-		icon = GFX_goal_hospital
+		icon = GFX_goal_medical
 		cost = 8.00
 		prerequisite = {
 			focus = SWE_social_corporatism

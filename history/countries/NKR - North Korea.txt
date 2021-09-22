@@ -43,55 +43,58 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Kim Chwa-chin"
+	name = "Sin Chaeho"
+	desc = "POLITICS_KIM_CHWA_CHIN_DESC"
 	picture = "gfx/leaders/KOR/Kim Chwa-Chin.tga"
 	expire = "1938.1.1"
 	ideology = libertarian_socialist_subtype
-	traits = {
-		
-	}
+	traits = {}
 }
-
 create_country_leader = {
-	name = "Syngman Rhee"
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	name = "Kim Won-bong"
+	desc = "POLITICS_KIM_WON_BONG_DESC"
+	picture = "gfx/leaders/KOR/Portrait_KOR_Kim Won_Bong.tga"
+	expire = "1938.1.1"
+	ideology = collectivist_subtype
+	traits = {}
+}
+create_country_leader = {
+	name = "Kim Koo"
+	desc = "POLITICS_SYNGMAN_RHEE_DESC"
+	picture = "gfx/leaders/KOR/Portrait_KOR_Kim_Gu.dds"
 	expire = "1965.1.1"
 	ideology = social_conservative_subtype
-	traits = {
-		#
-	}
+	traits = {}
 }
-
 create_country_leader = {
-	name = "Yi Kang"
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	name = "Yi Un"
+	desc = "POLITICS_YI_UN_DESC"
+	picture = "Portrait_KOR_Yi_Un.tga"
 	expire = "1965.1.1"
 	ideology = authoritarian_democrat_subtype
-	traits = {
-		#
-	}
+	traits = {}
 }
-
+create_country_leader = {
+	name = "Yi Un"
+	desc = "POLITICS_YI_UN_DESC"
+	picture = "Portrait_KOR_Yi_Un.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {}
+}
 create_country_leader = {
 	name = "Kim Il-sung"
-	desc = ""
+	desc = "POLITICS_KIM_IL_SUNG_DESC"
 	picture = "gfx/leaders/KOR/Kim Il-Sung WIP.tga"
 	expire = "1965.1.1"
 	ideology = vanguardist_subtype
-	traits = {
-		#
-	}
+	traits = {}
 }
-
 create_country_leader = {
 	name = "Yi Un"
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	desc = "POLITICS_YI_UN_DESC"
+	picture = "Portrait_KOR_Yi_Un.tga"
 	expire = "1965.1.1"
 	ideology = national_populist_subtype
-	traits = {
-		#
-	}
+	traits = {}
 }

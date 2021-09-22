@@ -1,0 +1,259 @@
+# Fuhrerredux Minister Sprites
+# Caucasus Region
+
+spriteTypes = {
+
+    ####################################################
+    # GEO
+    ### Head of Government
+    spriteType = {
+        name = "GFX_idea_GEO_Ioseb_Jugashvili_hog_van"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Ioseb_Jugashvili.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Aleksi_Gegechokori_vog_van"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Aleksi_Gegechkori.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Mamia_Orakhelashvili_hog_col"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Mamia_Orakhelashvili.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Irkali_Tsereteli_hog_lib"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Irkali_Tsereteli.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Akaki_Chkhenkeli_hog_sde"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Akaki_Chkhenkeli.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Ioseb_Baratashvili_hog_sli"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Ioseb_Baratashvili.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Aleqsandre_Asantiani_hog_mli"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Aleqsandre_Asatiani.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Revaz_Gabashvili_hog_sco"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Revaz_Gabashvili.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Raphiel_Ingilo-Ivanitski_sco"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Raphiel_Ingilo.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Mikheil_Tsereteli_hog_ade"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Mikheil_Tsereteli.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Georges_Vasili_Matchabelli_hog_pat"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Georges_Matchabelli.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Salva_Karumidze_hog_npo"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Shalva_Karumidze.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Grigol_Robakidze_hog_val"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Grigol_Robakidze.tga"
+    }
+    ### Foreign Minister
+    spriteType = {
+        name = "GFX_idea_GEO_Levan_Gogoberidze_for_van"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Levan_Gogoberidze.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Mikheil_Kakhiani_for_van"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Mikheil_Kakhiani.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Grigol_Uratadze_for_col"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Grigol_Uratadze.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Zurab_Avalishvili_for_sde"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Zurab_Avalishvili.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Simon_Mdivani_for_sli"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Simon_Mdivani.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Akaki_Khoshtaria_for_mli"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Akaki_Khoshtaria.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Haidar_Bammat_for_sco"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Haidar_Bammat.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Konstantine_Gamsakhurdia_for_sco"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Konstantine_Gamsakhurdia.tga"
+    }
+    ### Economy Minister
+    spriteType = {
+        name = "GFX_idea_GEO_Alexander_Svanidze_eco_van"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Alexander_Svanidze.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Ilya_Tsivtsivadze_eco_van"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Ilya_Tsivtsivadze.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Beso_Lominadze_eco_col"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Beso_Lominadze.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Giorgi_Tsintsadze_eco_lib"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Giorgi_Tsintsadze.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Teimuraz_Chelidze_eco_lib"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Teimuraz_Chelidze.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Victor_Tevzaia_eco_sde"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Victor_Tevzaia.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Mammad_Yusif_Jafarov_eco_sli"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Mammad_Jafarov.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Grigol_Natadze_eco_sli"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Grigol_Natadze.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Aleqsandre_Asatiani_eco_mli"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Aleksandre_Andronikashvili.tga"
+    }
+    ### Security Minister
+    spriteType = {
+        name = "GFX_idea_GEO_Georgi_Atarbekov_sec_van"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Georgi_Atarbekov.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Mikhail_Givishiani_sec_van"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Mikhail_Givishiani.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Vlasa_Mgeladze_sec_lib"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Vlasa_Mgeladze.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Ruben_Ter_Minasian_sec_sde"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Ruben_Minasian.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Aslan_Beg_Abashidze_sec_sde"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Aslan_Abashidze.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Ioseb_Gedevanishvili_sec_sli"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Ioseb_Gedevanishvili.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Leo_Kereselidze_sec_sco"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Leo_Kereselidze.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Shalva_Maglakelidze_sec_ade"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Shalva_Karumidze.tga"
+    }
+    ### Chief of Staff
+    spriteType = {
+        name = "GFX_idea_GEO_Simon_Arshaki_Ter-Petrosian_cos"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Simon_Petrosian.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Andria_Chiabrishvili_cos"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Andria_Chiabrishvili.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Artem_Jijikhia_cos"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Artem_Jijikhia.tga"
+    }
+    ### Chief of Army
+    spriteType = {
+        name = "GFX_idea_GEO_Ivane_Kazbegi_carm"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Ivane_Kazbegi.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Aleksandre_Andronikashvili_carm"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Aleksandre_Andronikashvili.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Konstantin_Leselidze_carm"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Konstantin_Leselidze.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Aleksi_Inauri_carm"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Aleksi_Inauri.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Varden_Tsuluksidze_carm"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Varden_Tsulukidze.tga"
+    }
+    ### Chief of Navy
+    spriteType = {
+        name = "GFX_idea_GEO_Viktor_Lomidze_cnav"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Viktor_Lomidze.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Yaroslav_Iosseliani_cnav"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Yaroslav_Iosseliani.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Giorgi_Tumanishvili_cnav"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Giorgi_Tumanishvili.tga"
+    }
+    ### Chief of Air Force
+    spriteType = {
+        name = "GFX_idea_GEO_Vakhtang_Makashvili_cair"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Vakhtang_Makashvili.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Evstafii_Tatanashvili_cair"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Evstafii_Tatanashvili.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Chichiko_Bendeliani_cair"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Chichiko_Bendeliani.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Nikoloz_Abramishvili_cair"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Nikoloz_Abramishvili.tga"
+    }
+    ### Theorist
+    spriteType = {
+        name = "GFX_idea_GEO_Giorgi_Mazniashvili_theo"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Giorgi_Mazniashvili.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Giorgi_Kvintardze_theo"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Giorgi_Kvinitadze.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Valiko_Jugheli_theo"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Valiko_Jugheli.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Alexander_Karteveli_theo"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Alexander_Kartveli.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Mikheil_Grigorashvili_theo"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Mikheil_Grigorashvili.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Galaktion_Alpaidze_theo"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Galaktion_Alpaidze.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GEO_Nikoloz_Muskhelishvili_theo"
+        texturefile = "gfx/interface/ideas/GEO/ministers/GEO_Nikoloz_Muskhelishvili.tga"
+    }
+    
+
+}

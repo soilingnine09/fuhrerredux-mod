@@ -6,7 +6,7 @@ ideas = {
 	
 		VFR_illegitimate_government = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea VFR_illegitimate_government"}
-			picture = generic_fascism_drift_bonus
+			picture = generic_oppression
 			modifier = {
 				conscription_factor = -0.65
 				political_power_gain = -0.50

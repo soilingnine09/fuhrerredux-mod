@@ -36,4 +36,15 @@ ideas = {
                 production_speed_buildings_factor = -0.15		
 			}
 		}
+		BRA_american_advisors = {
+			allowed = { original_tag = BRA }
+			picture = advisors_USA
+			modifier = {
+				training_time_factor = -0.15
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_org_factor = 0.05
+			}
+		}
+	}
 }

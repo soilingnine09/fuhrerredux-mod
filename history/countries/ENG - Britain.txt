@@ -1,16 +1,14 @@
 ﻿capital = 126
 
-oob = "ENG_1936"
+oob = "ENG"
 
-# - Naval OOBs
-
-IF = {
+if = {
     limit = {
 		has_dlc = "Man the Guns"
 	}
-		set_naval_oob = "ENG_1936_naval_mtg"
-    ELSE = {
-        set_naval_oob = "ENG_1936_naval_legacy"
+		set_naval_oob = "ENG_naval_mtg"
+    else = {
+        set_naval_oob = "ENG_naval_legacy"
     }
 }
 
@@ -108,7 +106,7 @@ add_ideas = {
 	ENG_col_unrest
 	ENG_irb
 	ENG_war_fatigue
-	ENG_Anthony_Eden_hog_sco
+	ENG_Samuel_Hoare_hog_sco
 	ENG_Adrian_Carton_de_Wiart_for_sco
 	ENG_George_Lane_Fox_eco_sco
 	ENG_Edward_Cavendish_sec_sco

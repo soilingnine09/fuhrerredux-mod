@@ -1,12 +1,12 @@
 ﻿capital = 327
 
-oob = "PHI_1936"
+oob = "PHI"
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "PHI_1936_naval_mtg"
+		set_naval_oob = "PHI_naval_mtg"
 	else = { 
-		set_naval_oob = "PHI_1936_naval_legacy"
+		set_naval_oob = "PHI_naval_legacy"
 	}
 }
 
@@ -85,19 +85,20 @@ set_popularities = {
 	national_populist = 4
 	valkist = 4
 }
-create_country_leader = {
-	name = "Luis Taruc"
-	desc = "POLITICS_LUIS_TARUC_DESC"
-	picture = "Portrait_Philippines_Luis_Taruc.tga"
-	expire = "1943.6.2"
-	ideology = vanguardist_subtype
-	traits = { }
-}
+
 create_country_leader = {
 	name = "Pedro Abad Santos"
 	desc = "POLITICS_PEDRO_ABAD_SANTOS_DESC"
 	picture = "Portrait_Philippines_Pedro_Abad_Santos.tga"
 	expire = "1950.3.10"
+	ideology = vanguardist_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Luis Taruc"
+	desc = "POLITICS_LUIS_TARUC_DESC"
+	picture = "Portrait_Philippines_Luis_Taruc.tga"
+	expire = "1943.6.2"
 	ideology = collectivist_subtype
 	traits = { }
 }
@@ -279,7 +280,16 @@ create_corps_commander = {
 	planning_skill = 1
 	logistics_skill = 1
 }
-
+create_corps_commander = {
+	name = "Leopoldo Salcedo"
+	picture = "Portrait_Philippines_Leopoldo_Salcedo.tga"
+	traits = { artillery_expert }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
 
 create_navy_leader = {
 	name = "Santiago Nuval"

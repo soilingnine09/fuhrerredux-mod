@@ -1,15 +1,14 @@
-﻿
-capital = 335
+﻿capital = 335
 
 oob = "BEA"
 
-IF = {
+if = {
     limit = { 
 		has_dlc = "Man the Guns" 
 	}
-		set_naval_oob = "BEA_1936_naval_mtg"
-    ELSE = {
-        set_naval_oob = "BEA_1936_naval_legacy"
+	set_naval_oob = "BEA_naval_mtg"
+    else = {
+        set_naval_oob = "BEA_naval_legacy"
     }
 }
 

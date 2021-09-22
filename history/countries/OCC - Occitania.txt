@@ -1,6 +1,6 @@
 ﻿capital = 21
 
-oob = "INF"
+oob = "00_default_template"
 
 set_research_slots = 3
 

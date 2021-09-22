@@ -1543,7 +1543,7 @@ focus_tree = {
 	}
 		focus = {
 		id = ARG_medical_troops
-		icon = GFX_goal_hospital
+		icon = GFX_goal_generic_medical
  		ai_will_do = { factor = 10 } 
  		prerequisite = { focus = ARG_update_infantry focus = ARG_motorize_our_forces }
  		x =27
@@ -2316,7 +2316,7 @@ focus_tree = {
 	}
 		focus = {
 		id = ARG_domecq_plan
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_goal_generic_navy_battleship3alt
  		ai_will_do = { factor = 5 } 
  		x =33
  		y =8
@@ -2465,7 +2465,7 @@ focus_tree = {
 	}
 		focus = {
 		id = ARG_carriers
-		icon = GFX_goal_generic_navy_carrier
+		icon = GFX_goal_generic_sea_focused_navy2
  		ai_will_do = { factor = 10 } 
  		x =35
  		y =10
@@ -2923,7 +2923,7 @@ focus_tree = {
 
 	focus = {
 		id = ARG_socialism_across_the_andes
-		icon = GFX_goal_flag_chile_collie
+		icon = GFX_goal_generic_revolution_chile
  		ai_will_do = { factor = 15 } 
  		available = {
 			NOT = {
@@ -2948,7 +2948,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ARG_liberate_chilean_workers
-		icon = GFX_goal_chile_war
+		icon = GFX_goal_generic_attack_chile
  		ai_will_do = { factor = 15 } 
  		available = {
  			ARG = {
@@ -2975,7 +2975,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ARG_bolivian_friendship
-		icon = GFX_goal_bol_collie
+		icon = GFX_goal_bolivia
  		ai_will_do = { factor = 15 } 
  		available = {
  			BOL = {
@@ -3008,7 +3008,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ARG_invite_bolivia
-		icon = GFX_goal_bol_collie_pact
+		icon = GFX_goal_ARG_bolivia_deal
  		ai_will_do = { factor = 15 } 
  		available = {
 			NOT = {
@@ -3045,7 +3045,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ARG_invite_prusoc
-		icon = GFX_goal_peru_alliance
+		icon = GFX_goal_peru
  		ai_will_do = { factor = 15 } 
  		available = {
 			NOT = {
@@ -3083,7 +3083,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ARG_support_bolivian_socialists
-		icon = GFX_goal_flag_bolivia_collie
+		icon = GFX_goal_generic_revolution_bolivia
  		ai_will_do = { factor = 15 } 
  		available = {
 			NOT = {
@@ -3109,7 +3109,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ARG_liberate_bolivian_workers
-		icon = GFX_goal_flag_bolivia_war
+		icon = GFX_goal_generic_attack_bolivia
  		ai_will_do = { factor = 15 } 
  		available = {
  			ARG = {
@@ -3139,7 +3139,7 @@ focus_tree = {
 
 	focus = {
 		id = ARG_bolster_eastern_socialism
-		icon = GFX_goal_flag_uruguay_collie
+		icon = GFX_goal_generic_revolution_uruguay
  		ai_will_do = { factor = 15 } 
  		x =8
  		y =17
@@ -3161,7 +3161,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ARG_bring_the_revolution_to_uruguay
-		icon = GFX_goal_uruguay_war
+		icon = GFX_goal_generic_attack_uruguay
  		ai_will_do = { factor = 15 } 
  		x =8
  		y =18
@@ -3190,7 +3190,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ARG_dissidents_in_paraguay
-		icon = GFX_goal_flag_paraguay_collie
+		icon = GFX_goal_generic_revolution_paraguay
  		ai_will_do = { factor = 15 } 
  		x =11
  		y =17
@@ -3212,7 +3212,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ARG_liberate_paraguay
-		icon = GFX_goal_paraguay_war
+		icon = GFX_goal_generic_attack_paraguay
  		ai_will_do = { factor = 15 } 
  		available = {
  			ARG = {
@@ -3271,7 +3271,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ARG_intervene_in_the_civil_war
-		icon = GFX_goal_bus_war
+		icon = GFX_goal_generic_attack_reactionary_brazil
  		ai_will_do = { factor = 15 } 
  		x =14
  		y =18
@@ -3606,7 +3606,7 @@ focus_tree = {
 
 		focus = {
 		id = ARG_invite_uruguay
-		icon = GFX_goal_uruguay_alliance
+		icon = GFX_goal_ARG_uruguay_deal
  		ai_will_do = { factor = 10 } 
  		prerequisite = { focus = ARG_alianza_del_sur }
  		x =20
@@ -3634,7 +3634,7 @@ focus_tree = {
 
 		focus = {
 		id = ARG_invite_chile
-		icon = GFX_goal_chile_alliance
+		icon = GFX_goal_ARG_chile_deal
  		ai_will_do = { factor = 10 } 
  		prerequisite = { focus = ARG_alianza_del_sur }
  		available = {
@@ -3662,7 +3662,7 @@ focus_tree = {
 	}
 		focus = {
 		id = ARG_invite_paraguay
-		icon = GFX_goal_paraguay_alliance
+		icon = GFX_goal_ARG_paraguay_deal
  		ai_will_do = { factor = 10 } 
  		prerequisite = { focus = ARG_alianza_del_sur }
  		available = {
@@ -3711,7 +3711,7 @@ focus_tree = {
 	}
 		focus = {
 		id = ARG_invite_peru
-		icon = GFX_goal_peru_alliance
+		icon = GFX_goal_ARG_peru_deal
  		ai_will_do = { factor = 10 } 
  		prerequisite = { focus = ARG_alianza_del_sur }
 		available = {
@@ -3779,7 +3779,7 @@ focus_tree = {
 
 		focus = {
 		id = ARG_contain_bolivia
-		icon = GFX_goal_bol_contain
+		icon = GFX_goal_generic_attack_bolivia
  		ai_will_do = { factor = 10 } 
  		prerequisite = { focus = ARG_the_collectivist_menace }
  		bypass = { has_completed_focus = ARG_invade_bolivia }
@@ -3802,7 +3802,7 @@ focus_tree = {
 
 		focus = {
 		id = ARG_the_enemy_in_brazil
-		icon = GFX_goal_bra_collie_kill
+		icon = GFX_goal_generic_attack_socialist_brazil
  		ai_will_do = { factor = 10 } 
  		prerequisite = { focus = ARG_the_collectivist_menace }
  		mutually_exclusive = { focus = ARG_break_the_state }
@@ -3921,7 +3921,7 @@ focus_tree = {
 	}
 		focus = {
 		id = ARG_the_brazilian_war
-		icon = GFX_goal_bus_war
+		icon = GFX_goal_generic_attack_reactionary_brazil
  		ai_will_do = { factor = 10 }
  		prerequisite = { focus = ARG_break_the_state }
  		x =31
@@ -3945,7 +3945,7 @@ focus_tree = {
 	}
 		focus = {
 		id = ARG_support_the_state
-		icon = GFX_goal_bus
+		icon = GFX_goal_ARG_support_the_brazillian_state
  		ai_will_do = { factor = 10 }
  		prerequisite = { focus = ARG_pact_of_la_plata }
  		mutually_exclusive = { focus = ARG_break_the_state }
@@ -3965,7 +3965,7 @@ focus_tree = {
 	}
 		focus = {
 		id = ARG_make_uruguay_bend
-		icon = GFX_goal_uruguay_war
+		icon = GFX_goal_generic_attack_uruguay
  		ai_will_do = { factor = 10 }
  		prerequisite = { focus = ARG_pact_of_la_plata }
  		x =35
@@ -3987,7 +3987,7 @@ focus_tree = {
 
 		focus = {
 		id = ARG_make_paraguay_submit
-		icon = GFX_goal_paraguay_war
+		icon = GFX_goal_generic_attack_paraguay
  		ai_will_do = { factor = 10 }
  		prerequisite = { focus = ARG_pact_of_la_plata }
  		x =35
@@ -4014,7 +4014,7 @@ focus_tree = {
 	}
 		focus = {
 		id = ARG_invade_bolivia
-		icon = GFX_goal_flag_bolivia_war
+		icon = GFX_goal_generic_attack_bolivia
  		ai_will_do = { factor = 10 }
  		prerequisite = { focus = ARG_pact_of_la_plata }
  		bypass = { has_completed_focus = ARG_contain_bolivia }
@@ -4042,7 +4042,7 @@ focus_tree = {
 	}
 		focus = {
 		id = ARG_cross_the_andes
-		icon = GFX_goal_chile_war
+		icon = GFX_goal_generic_attack_chile
  		ai_will_do = { factor = 10 }
  		prerequisite = { focus = ARG_pact_of_la_plata }
  		x =37
@@ -4084,7 +4084,7 @@ focus_tree = {
 	}
 		focus = {
 		id = ARG_pact_with_peru
-		icon = GFX_goal_peru_alliance
+		icon = GFX_goal_peru
  		ai_will_do = { factor = 10 }
  		prerequisite = { focus = ARG_pact_of_la_plata }
  		mutually_exclusive = { focus = ARG_pact_with_colombia }
@@ -4691,7 +4691,7 @@ focus_tree = {
 
 		focus = {
 		id = ARG_crush_the_leagues
-		icon = GFX_HOL_crackdown_natpop
+		icon = GFX_goal_generic_ban_right_wing
  		ai_will_do = { factor = 10 }
  		x =27
  		y =25

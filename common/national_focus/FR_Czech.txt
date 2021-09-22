@@ -1370,7 +1370,7 @@ focus_tree = {
 	}
 		focus = { 
 		id = CZE_medical_support
-		icon = GFX_goal_hospital
+		icon = GFX_goal_medical
 
  		ai_will_do = { factor = 50 } 
 

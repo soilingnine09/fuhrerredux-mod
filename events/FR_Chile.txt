@@ -51,16 +51,13 @@ country_event = { #critical point
 		}
 		set_cosmetic_tag = CHL_valkism
 		set_global_flag = CHILEAN_VALKISM
-			hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-			}
-		add_ideas = CHL_Jorge_Gonzales_von_Marees_hog_val
-		add_ideas = CHL_Fernando_Guarello_for_val
-		add_ideas = CHL_Carlos_Keller_eco_val
-		add_ideas = CHL_Francisco_Diaz_sec_val
+		remove_every_minister = yes
+		add_ideas = {
+			CHL_Francisco_Javier_Diaz_Valderrama_hog_val
+			CHL_Fernando_Guarello_Fitz_Henry_for_npo
+			CHL_Evaldo_Klein_Doener_eco_npo
+			CHL_Francisco_Javier_Diaz_Valderrama_sec_npo
+		}
 		add_popularity = {
 			ideology = valkist
 			popularity = 0.2
@@ -106,10 +103,10 @@ country_event = { #military steps in
 		set_global_flag = CARLOS_COUP
 		remove_every_minister = yes
 		add_ideas = {
-			CHL_Carlos_Ibanez_hog_pau
-			CHL_Alberto_Edwards_Vives_for_pau
-			CHL_Adolfo_Ibanez_eco_ade
-			CHL_Carlos_Frodden_sec_pau
+			CHL_Carlos_Ibanez_del_Campo_hog_pau
+			CHL_Luis_Altamirano_Talavera_for_pau
+			CHL_Ramon_Callis_eco_pau
+			CHL_Carlos_Keller_Rueff_sec_pau
 			military_junta
 		}
 		add_popularity = {
@@ -139,10 +136,10 @@ country_event = { #40 elections
 		name = chl.3.a
 		remove_every_minister = yes
 		add_ideas = {
-			CHL_Eduardo_Cruz_Coke_hog_sco
-			CHL_Rafael_Gumucio_Vergara_for_sco
-			CHL_Ramon_Subercaseaux_Perez_eco_sco
-			CHL_Eduardo_Frei_Montalva_sec_sco
+			CHL_Javier_Angel_Figueroa_for_sco
+			CHL_Gustavo_Ross_Santa_Maria_eco_sco
+			CHL_Manuel_Rivas_Vicuna_sec_sco
+			CHL_Luis_Vidal_Vargas_cos_sco
 		}
 		set_politics = {
 			ruling_party = social_conservative
@@ -159,10 +156,10 @@ country_event = { #40 elections
 		name = chl.3.b
 		remove_every_minister = yes
 		add_ideas = {
-			CHL_Gustavo_Ross_hog_mli
-			CHL_Manuel_Rivas_Vicuna_for_mli
-			CHL_Jorge_Silva_Somarriva_eco_mli
-			CHL_Enrique_Zanartu_Prieto_sec_mli
+			CHL_Emiliano_Figueroa_Larrain_hog_mli
+			CHL_Miguel_Cruchaga_Tocornal_for_mli
+			CHL_Cristobal_Saenz_Cerda_eco_mli
+			CHL_Manuel_Rivas_Vicuna_sec_sco
 		}
 		set_politics = {
 			ruling_party = market_liberal
@@ -179,10 +176,10 @@ country_event = { #40 elections
 		name = chl.3.c
 		remove_every_minister = yes
 		add_ideas = {
-			CHL_Marmaduque_Grove_hog_sde
-			CHL_Salvador_Allende_for_sde
-			CHL_Bernardo_Ibanez_Aguila_eco_lso
-			CHL_Arturo_Bianchi_sec_sde
+			CHL_Marmaduke_Grove_hog_sde
+			CHL_J_Fernandez_y_Fernandez_for_sde
+			CHL_Carlos_Garcia_Palacios_eco_sde
+			CHL_Eduardo_Nicanor_Frei_Montalva_sec_sde
 		}
 		set_politics = {
 			ruling_party = social_democrat
@@ -204,6 +201,13 @@ country_event = { #40 elections
 		}
 		add_popularity = {
 			ideology = social_liberal popularity = 0.1
+		}
+		remove_every_minister = yes
+		add_ideas = {
+			CHL_Arturo_Alessandri_Palma_hog_sli
+			CHL_JRGuiterrez_Allende_for_sli
+			CHL_Arturo_Maschke_eco_sli
+			CHL_Carlos_Valdovinos_Valdovinos_sec_sli
 		}
 		hidden_effect = {
 			set_global_flag = JARWON
@@ -274,7 +278,7 @@ country_event = { #Blanche takes over
 		hidden_effect = {
 			remove_ideas_with_trait = head_of_government
 		}
-		add_ideas = CHL_Bartolome_Blanche_hog_ade
+		add_ideas = CHL_Ariosto_Herrera_Ramirez_hog_ade
 		hidden_effect = {
 			set_country_flag = BLANCHEDEM
 			clr_global_flag = CARLOS_COUP
@@ -295,7 +299,7 @@ country_event = { #Blanche takes over
 		hidden_effect = {
 			remove_ideas_with_trait = head_of_government
 		}
-		add_ideas = CHL_Bartolome_Blanche_hog_pau
+		add_ideas = CHL_Ariosto_Herrera_Ramirez_hog_ade
 		hidden_effect = {
 			set_country_flag = BLANCHEPATER
 			set_politics = { ruling_party = paternal_autocrat }
@@ -363,10 +367,10 @@ country_event = { #blanche open elections
 		name = chl.15.a
 		remove_every_minister = yes
 		add_ideas = {
-			CHL_Eduardo_Cruz_Coke_hog_sco
-			CHL_Rafael_Gumucio_Vergara_for_sco
-			CHL_Ramon_Subercaseaux_Perez_eco_sco
-			CHL_Eduardo_Frei_Montalva_sec_sco
+			CHL_Guillermo_Izquierdo_hog_sco
+			CHL_Javier_Angel_Figueroa_for_sco
+			CHL_Julio_Perez_Canto_eco_sco
+			CHL_Manuel_Rivas_Vicuna_sec_sco
 			presidential_republic
 		}
 		set_politics = {
@@ -384,10 +388,10 @@ country_event = { #blanche open elections
 		name = chl.15.b
 		remove_every_minister = yes
 		add_ideas = {
-			CHL_Gustavo_Ross_hog_mli
-			CHL_Manuel_Rivas_Vicuna_for_mli
-			CHL_Jorge_Silva_Somarriva_eco_mli
-			CHL_Enrique_Zanartu_Prieto_sec_mli
+			CHL_Emiliano_Figueroa_Larrain_hog_mli
+			CHL_Miguel_Cruchaga_Tocornal_for_mli
+			CHL_Cristobal_Saenz_Cerda_eco_mli
+			CHL_Manuel_Rivas_Vicuna_sec_sco
 			presidential_republic
 		}
 		set_politics = {
@@ -405,10 +409,10 @@ country_event = { #blanche open elections
 		name = chl.15.c
 		remove_every_minister = yes
 		add_ideas = {
-			CHL_Marmaduque_Grove_hog_sde
-			CHL_Salvador_Allende_for_sde
-			CHL_Bernardo_Ibanez_Aguila_eco_lso
-			CHL_Arturo_Bianchi_sec_sde
+			CHL_Marmaduke_Grove_hog_sde
+			CHL_J_Fernandez_y_Fernandez_for_sde
+			CHL_Carlos_Garcia_Palacios_eco_sde
+			CHL_Eduardo_Nicanor_Frei_Montalva_sec_sde
 			presidential_republic
 		}
 		set_politics = {
@@ -428,7 +432,7 @@ country_event = { #blanche open elections
 			remove_ideas_with_trait = head_of_government
 		}
 		add_ideas = {
-			CHL_Juan_Antonio_Rios_hog_sli
+			CHL_Arturo_Alessandri_Palma_hog_sli
 			presidential_republic
 		}
 		set_politics = {
@@ -462,10 +466,10 @@ country_event = { #blanche no left elections
 		name = chl.16.a
 		remove_every_minister = yes
 		add_ideas = {
-			CHL_Eduardo_Cruz_Coke_hog_sco
-			CHL_Rafael_Gumucio_Vergara_for_sco
-			CHL_Ramon_Subercaseaux_Perez_eco_sco
-			CHL_Eduardo_Frei_Montalva_sec_sco
+			CHL_Guillermo_Izquierdo_hog_sco
+			CHL_Javier_Angel_Figueroa_for_sco
+			CHL_Gustavo_Ross_Santa_Maria_eco_sco
+			CHL_Manuel_Rivas_Vicuna_sec_sco
 			presidential_republic
 		}
 		set_politics = {
@@ -483,10 +487,10 @@ country_event = { #blanche no left elections
 		name = chl.16.b
 		remove_every_minister = yes
 		add_ideas = {
-			CHL_Gustavo_Ross_hog_mli
-			CHL_Manuel_Rivas_Vicuna_for_mli
-			CHL_Jorge_Silva_Somarriva_eco_mli
-			CHL_Enrique_Zanartu_Prieto_sec_mli
+			CHL_Emiliano_Figueroa_Larrain_hog_mli
+			CHL_Miguel_Cruchaga_Tocornal_for_mli
+			CHL_Cristobal_Saenz_Cerda_eco_mli
+			CHL_Carlos_Valdovinos_Valdovinos_sec_sli
 			presidential_republic
 		}
 		set_politics = {
@@ -506,7 +510,7 @@ country_event = { #blanche no left elections
 			remove_ideas_with_trait = head_of_government
 		}
 		add_ideas = {
-			CHL_Juan_Antonio_Rios_hog_sli
+			CHL_Arturo_Alessandri_Palma_hog_sli
 			presidential_republic
 		}
 		set_politics = {

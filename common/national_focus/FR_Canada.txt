@@ -1083,7 +1083,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_spearhead_of_the_empire
-		icon = GFX_imperial_army
+		icon = GFX_goal_CAN_army
 		prerequisite = { focus = CAN_fund_oil_exploitation }
 		x = 24
 		y = 1
@@ -1446,7 +1446,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_improve_maritime_dockyards
-		icon = GFX_imperial_navy
+		icon = GFX_goal_CAN_navy
 		prerequisite = { focus = CAN_fund_oil_exploitation }
 		x = 33
 		y = 1
@@ -1703,7 +1703,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_rcaf_reorganization
-		icon = GFX_imperial_airforce
+		icon = GFX_goal_CAN_airforce
 		prerequisite = { focus = CAN_fund_oil_exploitation }
 		x = 39
 		y = 1
@@ -2893,7 +2893,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_ccf_universal_healthcare
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_generic_medical
 		prerequisite = { focus = CAN_ccf_universal_pensions }
 		x = 29
 		y = 9

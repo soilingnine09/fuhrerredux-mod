@@ -1,6 +1,22 @@
 spriteTypes = {
 
     spriteType = {
+        name = "GFX_idea_advisors_USA"
+        texturefile = "gfx/interface/ideas/ideas/idea_advisors_USA.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_generic_union_suppression"
+        texturefile = "gfx/interface/ideas/ideas/generic_union_suppression.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_generic_labour_agreement"
+        texturefile = "gfx/interface/ideas/ideas/generic_labour_agreement.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_generic_maritime_industry"
+        texturefile = "gfx/interface/ideas/ideas/generic_maritime_industry.tga"
+    }
+    spriteType = {
         name = "GFX_idea_generic_research_increase"
         texturefile = "gfx/interface/ideas/ideas/generic_research_increase.dds"
     }
@@ -8,30 +24,100 @@ spriteTypes = {
         name = "GFX_idea_generic_research_reduction"
         texturefile = "gfx/interface/ideas/ideas/generic_research_reduction.tga"
     }
-
+    spriteType = {
+        name = "GFX_idea_generic_socialist_research"
+        texturefile = "gfx/interface/ideas/ideas/generic_socialist_research.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_generic_french_swiss_treaty"
+        texturefile = "gfx/interface/ideas/ideas/generic_french_swiss_treaty.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_generic_german_swiss_treaty"
+        texturefile = "gfx/interface/ideas/ideas/generic_german_swiss_treaty.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_generic_economic_turmoil"
+        texturefile = "gfx/interface/ideas/ideas/generic_economic_turmoil.tga"
+    }
     spriteType = {
         name = "GFX_idea_IRE_flag"
         texturefile = "gfx/interface/ideas/ideas/IRE_flag.tga"
     }
-    
+    spriteType = {
+        name = "GFX_idea_MAN_warlord_loyalty"
+        texturefile = "gfx/interface/ideas/ideas/MAN_warlord_loyalty.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_MEX_reclaim"
+        texturefile = "gfx/interface/ideas/ideas/MEX_reclaim.tga"
+    }
     spriteType = {
         name = "GFX_idea_PHI_guided_by_the_philippines"
-        texturefile = "gfx/interface/ideas/PHI/ideas/PHI_guided_by_philippines.tga"
+        texturefile = "gfx/interface/ideas/ideas/PHI_guided_by_philippines.tga"
     }
     spriteType = {
         name = "GFX_idea_PHI_aeda_economic_aid"
-        texturefile = "gfx/interface/ideas/PHI/ideas/PHI_aeda_economic_aid.tga"
+        texturefile = "gfx/interface/ideas/ideas/PHI_aeda_economic_aid.tga"
     }
     spriteType = {
         name = "GFX_idea_PHI_aeda_construction_subsidies"
-        texturefile = "gfx/interface/ideas/PHI/ideas/PHI_aeda_construction_subsidies.tga"
+        texturefile = "gfx/interface/ideas/ideas/PHI_aeda_construction_subsidies.tga"
     }
     spriteType = {
         name = "GFX_idea_PHI_aeda_resource_exploration"
-        texturefile = "gfx/interface/ideas/PHI/ideas/PHI_aeda_resource_exploration.tga"
+        texturefile = "gfx/interface/ideas/ideas/PHI_aeda_resource_exploration.tga"
     }
     spriteType = {
         name = "GFX_idea_PHI_promises_of_elections"
-        texturefile = "gfx/interface/ideas/PHI/ideas/PHI_promises_of_election.tga"
+        texturefile = "gfx/interface/ideas/ideas/PHI_promises_of_election.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_general_staff"
+        texturefile = "gfx/interface/ideas/ideas/PHI_general_staff.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_nationalism"
+        texturefile = "gfx/interface/ideas/ideas/PHI_nationalism.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_german_refugees"
+        texturefile = "gfx/interface/ideas/ideas/PHI_german_refugees.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_public_works"
+        texturefile = "gfx/interface/ideas/ideas/PHI_public_works.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_PHI_morale"
+        texturefile = "gfx/interface/ideas/ideas/PHI_morale.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_bremen_accord"
+        texturefile = "gfx/interface/ideas/ideas/GER_bremen_accord.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_purge_officers"
+        texturefile = "gfx/interface/ideas/ideas/GER_purge_officers.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_SWI_swiss_banks"
+        texturefile = "gfx/interface/ideas/ideas/SWI_swiss_banks.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_SWI_bank_reform"
+        texturefile = "gfx/interface/ideas/ideas/SWI_bank_reform.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_SRA_uprising"
+        texturefile = "gfx/interface/ideas/ideas/SRA_uprising.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_SRA_morale"
+        texturefile = "gfx/interface/ideas/ideas/SRA_morale.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_CLB_surounded"
+        texturefile = "gfx/interface/ideas/ideas/CLB_surounded.tga"
     }
 }

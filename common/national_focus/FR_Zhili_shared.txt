@@ -206,7 +206,7 @@ shared_focus = {
 #Ask for funds from the Japanese
 shared_focus = {
 		id = ZHI_MAIN_jap_funds
-		icon = GFX_focus_jap_pacific_guardian
+		icon = GFX_goal_ZHI_request_japanese_funding
 		cost = 8
 		prerequisite = {
 			focus = ZHI_MAIN_industry

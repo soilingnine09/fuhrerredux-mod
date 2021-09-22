@@ -224,6 +224,97 @@ country_event = { # Steal Stockpiled Equipment - Failed
     }
 }
 
+country_event = { # Stealing Chiapas
+    id = cruzoob.12
+    title = cruzoob.12.t
+    desc = cruzoob.12.d
+    picture = GFX_report_event_czech_soldiers_02
+    fire_only_once = yes
+
+    trigger = {
+        tag = CRU
+        MEX = { 
+            has_war_with = USA
+            owns_state = 475
+            NOT = { has_war_with = CRU }
+        }
+    }
+
+    option = {
+        name = cruzoob.12.a
+        hidden_effect = {
+            country_event = { id = cruzoob.13 days = 2 }
+        }
+    }
+    option = {
+        name = cruzoob.12.b
+        decrease_ruling_party_popularity_by_5 = yes
+    }
+}
+
+country_event = { # Chiapas Captured
+    id = cruzoob.13
+    title = cruzoob.13.t
+    desc = cruzoob.13.d
+    picture = GFX_report_event_british_artillery
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            MEX = { country_event = { id = cruzoob.15 hours = 12 } }
+        }
+    }
+
+    option = {
+        name = cruzoob.13.a
+        transfer_state = 475
+        add_manpower = -500
+        increase_ruling_party_popularity_by_5 = yes
+    }
+}
+
+country_event = { # Mexico: Cruzoob Snatched Chiapas!
+    id = cruzoob.14
+    title = cruzoob.14.t
+    desc = cruzoob.14.d
+    picture = GFX_report_event_british_artillery
+    is_triggered_only = yes
+
+    option = {
+        name = cruzoob.14.a
+        ai_chance = {
+            factor = 60
+        }
+        create_wargoal = {
+            target = FROM
+            type = annex_everything
+        }
+    }
+    option = {
+        name = cruzoob.14.b
+        ai_chance = {
+            factor = 40
+        }
+        decrease_ruling_party_popularity_by_5 = yes
+    }
+}
+
+country_event = { # Mexican Declaration of War
+    id = cruzoob.15
+    title = cruzoob.15.t
+    desc = cruzoob.15.d
+    picture = GFX_report_event_french_resistance_01
+    is_triggered_only = yes
+
+    option = {
+        name = cruzoob.15.a
+        custom_effect_tooltip = CRU_defence_tt
+        hidden_effect = {
+            load_oob = "CRU_defence"
+        }
+    }
+}
+
 country_event = { # Ask for German Advisors
     id = cruzoob.100
     title = cruzoob.100.t

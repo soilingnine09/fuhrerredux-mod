@@ -603,7 +603,7 @@ focus_tree = {
     # Trade Opportunities in Asia
     focus = {
         id = CRU_trade_opportunities_in_asia
-        icon = GFX_SIA_maritmesilkroad
+        icon = GFX_goal_generic_shipyard
         x = 0
         y = 2
         cost = 6
@@ -656,7 +656,7 @@ focus_tree = {
     # Drift to the North
     focus = {
         id = CRU_drift_to_the_north
-        icon = GFX_goal_usa
+        icon = GFX_goal_generic_attack_usa
         x = -1
         y = 1
         cost = 6
@@ -678,7 +678,7 @@ focus_tree = {
     # Continue South
     focus = {
         id = CRU_continue_south
-        icon = GFX_goal_panama
+        icon = GFX_goal_USA_protection_for_central_america
         x = 1
         y = 1
         cost = 6
@@ -873,7 +873,7 @@ focus_tree = {
     # Logistics Support
     focus = {
         id = CRU_logistics_support
-        icon = GFX_goal_generic_more_territorial_claims
+        icon = GFX_goal_generic_support_equipment
         x = 1
         y = 1
         cost = 6
@@ -1147,7 +1147,7 @@ focus_tree = {
     # Purchase Foreign Ships
     focus = {
         id = CRU_purchase_foreign_ships
-        icon = GFX_goal_generic_navy_cruiser
+        icon = GFX_goal_generic_buy_ships
         x = 0
         y = 1
         cost = 6
@@ -1169,7 +1169,7 @@ focus_tree = {
     # Naval Bases
     focus = {
         id = CRU_naval_bases
-        icon = GFX_goal_generic_construct_naval_dockyard
+        icon = GFX_goal_generic_naval_industry
         x = 0
         y = 1
         cost = 6

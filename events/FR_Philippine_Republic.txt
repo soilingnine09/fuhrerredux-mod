@@ -225,7 +225,9 @@ country_event = { # Trip to Congress
                 PHI_Jose_Yulo_sec_sco
             }
             country_event = { id = phi.7 days = 14 }
-            news_event = news.1
+            random_other_country = {
+                news_event = { id = news.1 hours = 12 }
+            }
         }
     }
 }
@@ -286,7 +288,9 @@ country_event = { # Presidential Elections
             country_event = { id = phi.24 days = 1364 }
             country_event = { id = phi.25 days = 1374 }
             country_event = { id = phi.26 days = 1384 }
-            news_event = news.2
+            random_other_country = {
+                news_event = { id = news.2 hours = 12 }
+            }
         }
     }
     option = { # Liberal
@@ -326,7 +330,9 @@ country_event = { # Presidential Elections
             country_event = { id = phi.24 days = 1364 }
             country_event = { id = phi.25 days = 1374 }
             country_event = { id = phi.26 days = 1384 }
-            news_event = news.3
+            random_other_country = {
+                news_event = { id = news.3 hours = 12 }
+            }
         }
     }
     option = { # Sakdalista
@@ -363,7 +369,9 @@ country_event = { # Presidential Elections
         hidden_effect = {
             set_country_flag = PHI_had_1936_elections
             set_country_flag = PHI_sakdalista_victory_tt
-            news_event = news.4
+            random_other_country = {
+                news_event = { id = news.4 hours = 12 }
+            }
         }
     }
 }
@@ -401,17 +409,23 @@ country_event = { # Aftermath of the Assassination
             }
         }
         add_stability = -0.15
-        set_politics = {
-            ruling_party = authoritarian_democrat
-            elections_allowed = no
-        }
         hidden_effect = {
+            set_politics = {
+                ruling_party = authoritarian_democrat
+                elections_allowed = no
+            }
             country_event = { id = phi.8 days = 7 }
         }
     }
     option = { # Continue
         name = phi.7.b
         add_political_power = -100
+        hidden_effect = {
+            set_politics = {
+                ruling_party = authoritarian_democrat
+                elections_allowed = yes
+            }
+        }
     }
 }
 
@@ -601,6 +615,9 @@ country_event = { # Negotiations in the Provinces
             remove_idea = PHI_worker_strikes2
             add_idea = PHI_worker_strikes1
         }
+        hidden_effect = {
+            country_event = { id = phi.15 days = 12 }
+        }
     }
 }
 
@@ -690,7 +707,9 @@ country_event = { # March on Manila
         }
         hidden_effect = {
             set_country_flag = PHI_aguinaldo_coup_tt
-            news_event = news.5
+            random_other_country = {
+                news_event = { id = news.5 hours = 12 }
+            }
         }
     }
 }
@@ -819,7 +838,9 @@ country_event = { # Army Coup
         }
         hidden_effect = {
             set_country_flag = PHI_military_junta_tt
-            news_event = news.6
+            random_other_country = {
+                news_event = { id = news.6 hours = 12 }
+            }
         }
     }
 }
@@ -848,7 +869,9 @@ country_event = { # Civil War!
 
     immediate = {
         hidden_effect = {
-            news_event = news.7
+            random_other_country = {
+                news_event = { id = news.7 hours = 12 }
+            }
             PHI = {
                 if = {
                     limit = { has_idea = PHI_worker_strikes3 }
@@ -878,9 +901,17 @@ country_event = { # Civil War!
             PHR = {
                 transfer_state = 327
                 transfer_state = 624
+                if = {
+                    limit = { 
+                        PHI = { has_country_flag = PHI_socialist_behavior }
+                    }
+                    transfer_state = 625
+                    transfer_state = 628
+                }
 
                 load_oob = PHR_civil_war
                 add_ideas = PHI_the_filipino_civil_war
+                add_ideas = PHR_the_second_revolution
             }
             PHI = {
                 set_province_controller = 1288
@@ -903,59 +934,6 @@ country_event = { # Civil War!
             is_ai = no
         }
         PHR = { change_tag_from = ROOT }
-    }
-}
-
-country_event = { # Revolutionary Congress
-    id = phi.23
-    title = phi.23.t
-    desc = phi.23.d
-    picture = GFX_report_event_journalists_speech
-    is_triggered_only = yes
-
-    option = { # LibSoc
-        name = phi.23.a
-        set_politics = {
-            ruling_party = libertarian_socialist
-            elections_allowed = no
-        }
-        add_popularity = {
-            ideology = libertarian_socialist
-            popularity = 0.15
-        }
-        remove_every_minister = yes
-        add_ideas = {
-            PHI_Crisanto_Evangelista_hog_lib
-            PHI_Casto_Alejandrino_for_col
-            PHI_Herminegildo_Cruz_eco_col
-            PHI_Guillermo_Capadocia_sec_col
-        }
-        hidden_effect = {
-            set_country_flag = PHI_had_revolutionary_congress
-            set_country_flag = PHI_lib_soc_majority_tt
-        }
-    }
-    option = { # Vanguardist
-        name = phi.23.b
-        set_politics = {
-            ruling_party = vanguardist
-            elections_allowed = no
-        }
-        add_popularity = {
-            ideology = vanguardist
-            popularity = 0.15
-        }
-        remove_every_minister = yes
-        add_ideas = {
-            PHI_Luis_Taruc_hog_van
-            PHI_Casto_Alejandrino_for_col
-            PHI_Herminegildo_Cruz_eco_col
-            PHI_Guillermo_Capadocia_sec_col
-        }
-        hidden_effect = {
-            set_country_flag = PHI_had_revolutionary_congress
-            set_country_flag = PHI_vanguardist_majority_tt
-        }
     }
 }
 

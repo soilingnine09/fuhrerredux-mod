@@ -1,5 +1,8 @@
 opinion_modifiers = {
 
+    # United States
+    USA_reconciliation = { value = 25 }
+
     # Philippines
     PHI_economic_investment = { value = 100 }
     PHI_trade_treaty_accepted = { value = 50 }

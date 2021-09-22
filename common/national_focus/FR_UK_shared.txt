@@ -2693,7 +2693,7 @@
 	
 	shared_focus = {
 		id = ENG_recon_army
-		icon = GFX_focus_generic_commonwealth_build_infantry
+		icon = GFX_GBR_royal_army
 		available = {
 		}
 		
@@ -3365,7 +3365,7 @@
 	
 	shared_focus = {
 		id = ENG_theraf
-		icon = GFX_goal_generic_air_doctrine
+		icon = GFX_GBR_royal_air_force
 		available = {
 		}
 		
@@ -3919,7 +3919,7 @@
 	
 	shared_focus = {
 		id = ENG_thern
-		icon = GFX_goal_generic_amphibious_assault
+		icon = GFX_GBR_royal_navy
 		available = {
 		}
 		
@@ -7038,7 +7038,7 @@
 	
 	shared_focus = {
 		id = ENG_dip_siam
-		icon = GFX_goal_continuous_suppression
+		icon = GFX_goal_generic_attack_siam
 		available = {
 			SIA = { 
 				exists = yes 

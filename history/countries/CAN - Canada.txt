@@ -3,13 +3,17 @@
 oob = "CAN"
 if = {
 	limit = { has_dlc = "Man the Guns" }
-	set_naval_oob = "CAN_1936_naval_mtg"
+	set_naval_oob = "CAN_naval_mtg"
 	else = {
-		set_naval_oob = "CAN_1936_naval_legacy"
+		set_naval_oob = "CAN_naval_legacy"
 	}
 }
 
 set_research_slots = 3
+set_convoys = 100
+set_stability = 0.6
+set_war_support = 0.40
+
 set_country_flag = monroe_doctrine
 set_country_flag = NO_GENERIC_STABILITY_DECISIONS
 set_country_flag = NO_GENERIC_RESOURCE_DECISIONS
@@ -52,13 +56,13 @@ if = {
 	set_technology = {
 		basic_naval_mines = 1
 		early_ship_hull_light = 1
-			basic_ship_hull_light = 1
-			sonar = 1
-			smoke_generator = 1
-			basic_depth_charges = 1
+		basic_ship_hull_light = 1
+		sonar = 1
+		smoke_generator = 1
+		basic_depth_charges = 1
 		early_ship_hull_cruiser = 1
-			basic_ship_hull_cruiser = 1
-			basic_cruiser_armor_scheme = 1
+		basic_ship_hull_cruiser = 1
+		basic_cruiser_armor_scheme = 1
 		early_ship_hull_heavy = 1
 		early_ship_hull_carrier = 1
 		basic_battery = 1
@@ -70,9 +74,6 @@ if = {
 }
 
 add_political_power = -52
-set_convoys = 100
-set_stability = 0.6
-set_war_support = 0.40
 
 add_ideas = {
 	party_pop_0_60
@@ -81,10 +82,10 @@ add_ideas = {
 	CAN_anglo_french_tension
 	CAN_east_west_divide
 	ENG_statute_autonomy
-	CAN_rb_bennett_hog
-	CAN_lester_b_pearson_for
-	CAN_edgar_nelson_rhodes_eco
-	CAN_hugh_guthrie_sec
+	CAN_RB_Bennett_hog_sco
+	CAN_Sidney_Earle_Smith_for_sco
+	CAN_Stephen_Leacock_eco_sco
+	CAN_John_Diefenbaker_sec_sco
 	constitutional_monarchy
 }
 

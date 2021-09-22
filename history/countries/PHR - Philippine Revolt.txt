@@ -18,7 +18,7 @@ set_technology = {
 
 add_ideas = {
 	PHI_agriculture_economy
-	PHI_marxist_professors
+	PHR_socialist_professors
 	
 	PHI_Crisanto_Evangelista_hog_lib
 	PHI_Casto_Alejandrino_for_col
@@ -47,18 +47,18 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Luis Taruc"
-	desc = "POLITICS_LUIS_TARUC_DESC"
-	picture = "gfx/leaders/PHI/Portrait_Philippines_Luis_Taruc.tga"
-	expire = "1943.6.2"
-	ideology = vanguardist_subtype
-	traits = { }
-}
-create_country_leader = {
 	name = "Pedro Abad Santos"
 	desc = "POLITICS_PEDRO_ABAD_SANTOS_DESC"
 	picture = "gfx/leaders/PHI/Portrait_Philippines_Pedro_Abad_Santos.tga"
 	expire = "1950.3.10"
+	ideology = vanguardist_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Luis Taruc"
+	desc = "POLITICS_LUIS_TARUC_DESC"
+	picture = "gfx/leaders/PHI/Portrait_Philippines_Luis_Taruc.tga"
+	expire = "1943.6.2"
 	ideology = collectivist_subtype
 	traits = { }
 }
@@ -71,7 +71,7 @@ create_country_leader = {
 	traits = { }
 }
 
-create_corps_commander = {
+create_field_marshal = {
 	name = "Luis Taruc"
 	portrait_path = "gfx/leaders/PHI/Portrait_Philippines_Luis_Taruc.tga"
 	traits = { commando }

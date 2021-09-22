@@ -77,6 +77,14 @@ leader_traits = {		###PUTTING THIS HERE PLS NO UPSET####
 			factor = 1
 		}
 	}
+	CLB_american_dressler = {
+		random = no
+		army_armor_attack_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	SOV_the_theorist = {
 		random = no
 				research_speed_factor = 0.03

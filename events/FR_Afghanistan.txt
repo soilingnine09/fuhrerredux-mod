@@ -393,7 +393,7 @@ country_event = {
 			create_country_leader = {
 				name = "Transitional Government"
 				desc = "POLITICS_AFG_TRANSITIONAL_GOV_DESC"
-				picture = "Portrait_Afghanistan_Transitional_Government.tga"
+				picture = "Portrait_AFG_Transitional_Government.tga"
 				expire = "1965.1.1"
 				ideology = authoritarian_democrat_subtype
 				traits = {
@@ -403,7 +403,7 @@ country_event = {
 			create_country_leader = {
 				name = "Transitional Government"
 				desc = "POLITICS_AFG_TRANSITIONAL_GOV_DESC"
-				picture = "Portrait_Afghanistan_Transitional_Government.tga"
+				picture = "Portrait_AFG_Transitional_Government.tga"
 				expire = "1965.1.1"
 				ideology = paternal_autocrat_subtype
 				traits = {
@@ -554,7 +554,7 @@ country_event = {
 			create_country_leader = {
 				name = "Mohammed Zahir Khan"
 				desc = "POLITICS_AFG_MOHAMMED_ZAHIR_KHAN_DESC"
-				picture = "Portrait_Afghanistan_Mohammed_Zahir_Khan.tga"
+				picture = "Portrait_AFG_Mohammed_Zahir_Khan.tga"
 				expire = "1965.1.1"
 				ideology = authoritarian_democrat_subtype
 				traits = {
@@ -564,7 +564,7 @@ country_event = {
 			create_country_leader = {
 				name = "Mohammed Zahir Khan"
 				desc = "POLITICS_AFG_MOHAMMED_ZAHIR_KHAN_DESC"
-				picture = "Portrait_Afghanistan_Mohammed_Zahir_Khan.tga"
+				picture = "Portrait_AFG_Mohammed_Zahir_Khan.tga"
 				expire = "1965.1.1"
 				ideology = paternal_autocrat_subtype
 				traits = {
@@ -647,7 +647,7 @@ country_event = {
 			create_country_leader = {
 				name = "Transitional Government"
 				desc = "POLITICS_AFG_TRANSITIONAL_GOV_DESC"
-				picture = "Portrait_Afghanistan_Transitional_Government.tga"
+				picture = "Portrait_AFG_Transitional_Government.tga"
 				expire = "1965.1.1"
 				ideology = authoritarian_democrat_subtype
 				traits = {
@@ -657,7 +657,7 @@ country_event = {
 			create_country_leader = {
 				name = "Transitional Government"
 				desc = "POLITICS_AFG_TRANSITIONAL_GOV_DESC"
-				picture = "Portrait_Afghanistan_Transitional_Government.tga"
+				picture = "Portrait_AFG_Transitional_Government.tga"
 				expire = "1965.1.1"
 				ideology = paternal_autocrat_subtype
 				traits = {
@@ -703,10 +703,10 @@ country_event = {
 		add_popularity = { ideology = libertarian_socialist popularity = 0.02 }
 		add_popularity = { ideology = social_democrat popularity = 0.02 }
 		add_ideas = {
-			AFG_Khan_Abdul_Ghaffar_Khan_hog_rso
-			AFG_Mir_Gul_Khan_Nasir_for_rso
-			AFG_Nur_Muhammad_Taraki_eco_tot
-			AFG_Dada_Amir_Haider_Khan_sec_syn
+			AFG_Khan_Abdul_Ghaffar_Khan_hog_lib
+			AFG_Mir_Gul_Khan_Nasir_for_lib
+			AFG_Nur_Muhammad_Taraki_eco_van
+			AFG_Dada_Amir_Haider_Khan_sec_col
 		}
 		swap_ideas = {
 			remove_idea = AFG_king_is_dead_idea
@@ -781,7 +781,7 @@ country_event = {
 			create_country_leader = {
 				name = "Amanullah Khan"
 				desc = "POLITICS_AMANULLAH_KHAN_DESC"
-				picture = "Portrait_Afghanistan_Amanullah_Khan.tga"
+				picture = "Portrait_AFG_Amanullah_Khan.tga"
 				expire = "1965.1.1"
 				ideology = authoritarian_democrat_subtype
 				traits = {
@@ -791,7 +791,7 @@ country_event = {
 			create_country_leader = {
 				name = "Amanullah Khan"
 				desc = "POLITICS_AMANULLAH_KHAN_DESC"
-				picture = "Portrait_Afghanistan_Amanullah_Khan.tga"
+				picture = "Portrait_AFG_Amanullah_Khan.tga"
 				expire = "1965.1.1"
 				ideology = paternal_autocrat_subtype
 				traits = {
@@ -976,7 +976,7 @@ country_event = {
 			create_country_leader = {
 				name = "Amanullah Khan"
 				desc = "POLITICS_AMANULLAH_KHAN_DESC"
-				picture = "Portrait_Afghanistan_Amanullah_Khan.tga"
+				picture = "Portrait_AFG_Amanullah_Khan.tga"
 				expire = "1965.1.1"
 				ideology = authoritarian_democrat_subtype
 				traits = {
@@ -986,7 +986,7 @@ country_event = {
 			create_country_leader = {
 				name = "Amanullah Khan"
 				desc = "POLITICS_AMANULLAH_KHAN_DESC"
-				picture = "Portrait_Afghanistan_Amanullah_Khan.tga"
+				picture = "Portrait_AFG_Amanullah_Khan.tga"
 				expire = "1965.1.1"
 				ideology = paternal_autocrat_subtype
 				traits = {
@@ -1034,7 +1034,7 @@ country_event = {
 			create_country_leader = {
 				name = "Habibullāh Kalakāni"
 				desc = "POLITICS_HABIBULLAH_KALAKANI_DESC"
-				picture = "Portrait_Afghanistan_Habibullah_Kalakani.tga"
+				picture = "Portrait_AFG_Habibullah_Kalakani.tga"
 				expire = "1965.1.1"
 				ideology = paternal_autocrat_subtype
 				traits = {
@@ -1325,10 +1325,10 @@ country_event = {
 			add_idea = AFG_opposition_revolution_idea
 		}
 		add_ideas = {
-			AFG_Khan_Abdul_Ghaffar_Khan_hog_rso
-			AFG_Mir_Gul_Khan_Nasir_for_rso
-			AFG_Nur_Muhammad_Taraki_eco_tot
-			AFG_Dada_Amir_Haider_Khan_sec_syn
+			AFG_Khan_Abdul_Ghaffar_Khan_hog_lib
+			AFG_Mir_Gul_Khan_Nasir_for_lib
+			AFG_Nur_Muhammad_Taraki_eco_van
+			AFG_Dada_Amir_Haider_Khan_sec_col
 		}		
 		hidden_effect = {
 			add_popularity = { ideology = authoritarian_democrat popularity = -0.15 }

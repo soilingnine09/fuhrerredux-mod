@@ -1,5 +1,5 @@
 focus_tree = {
-	id = FR_Socialist_Spain_Ibarruri
+	id = FR_Socialist_Spain_CivilWar
 	country = {
 		factor = 0
 		modifier = {
@@ -775,7 +775,7 @@ focus_tree = {
 			has_political_power > 0
 			SPR = { exists = no }
 			SPM = { exists = no }
-			SPA = { exists = no }
+			SPF = { exists = no }
 		}
 		
 		ai_will_do = {

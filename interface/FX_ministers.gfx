@@ -1,0 +1,187 @@
+spriteTypes = {
+
+    # Generic
+    ### Head of Government
+    spriteType = { 
+        name = "GFX_idea_GEN_hog_van"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_hog_col"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_hog_lib"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_hog_sde"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_hog_sli"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_hog_mli"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_hog_sco"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_hog_ade"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_hog_pau"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_hog_npo"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_hog_val"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+
+    ### Foreign Minister
+    spriteType = { 
+        name = "GFX_idea_GEN_for_van"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_for_col"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_for_lib"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_FOR_Sde"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_for_sli"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_for_mli"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_for_sco"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_for_ade"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_for_pau"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_for_npo"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_for_val"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+
+    ### Economic Minister
+    spriteType = { 
+        name = "GFX_idea_GEN_eco_van"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_eco_col"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_eco_lib"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_eco_sde"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_eco_sli"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_eco_mli"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_eco_sco"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_eco_ade"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_eco_pau"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_eco_npo"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_eco_val"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+
+    ### Security Minister
+    spriteType = { 
+        name = "GFX_idea_GEN_sec_van"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_sec_col"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_sec_lib"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_sec_sde"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_sec_sli"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_sec_mli"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_sec_sco"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_sec_ade"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_sec_pau"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_sec_npo"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+    spriteType = { 
+        name = "GFX_idea_GEN_sec_val"
+        texturefile = "gfx/interface/ideas/GEN/ministers/GEN_minister_unknown.tga"
+    }
+}

@@ -1,6 +1,6 @@
 ﻿capital = 608 #Beijing
 
-oob = "MAN_1936"
+oob = "MAN"
 
 set_research_slots = 3
 
@@ -48,10 +48,11 @@ add_ideas = {
 	MAN_warlord_ubiquity
     backwards_economy
     iliterate_population
-	MAN_Zhang_Council_hog
-	MAN_Huang_Fu_for
-	MAN_Pan_Fu_eco
-	MAN_Yang_Yuting_sec
+
+	MAN_Zhang_Zuolin_hog_pau
+	MAN_Wu_Jinglian_for_ade
+	MAN_Pan_Fu_eco_ade
+	MAN_Ma_Zhanshan_sec_pau
 	military_junta
 }
 

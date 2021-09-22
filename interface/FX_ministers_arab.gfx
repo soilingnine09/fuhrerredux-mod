@@ -3,6 +3,169 @@
 
 spriteTypes = {
 
+	####################################################
+    # AFG
+	### Head of Government
+	spriteType = {
+		name = "GFX_idea_AFG_Khan_Abdul_Ghaffar_Khan_hog_lib"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Khan_Abdul_Ghaffar_Khan.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Abdul_Majid_Zabuli_hog_sli"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Abdul_Majid_Zabuli.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Mohammed_Nadir_Shah_hog_sco"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Mohammed_Nadir_Shah.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Abdul_Hadi_Dawai_hog_ade"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Abdul_Hadi_Dawai.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Muhammed_Ghobar_hog_ade"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Muhammed_Ghobar.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Muhammed_Hashim_hog_ade"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Muhammed_Hashim.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Shah_Wali_Khan_hog_ade"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Shah_Wali_Khan.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Inayatullah_Khan_Seraj_hog_pau"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Inayatullah_Khan_Seraj.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Malik_Habibullah_Kalakani_hog_npo"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Malik_Habibullah_Kalakani.tga"
+	}
+	### Foreign Minister
+	spriteType = {
+		name = "GFX_idea_AFG_Mir_Gul_Khan_Nasir_for_lib"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Mir_Gul_Khan_Nasir.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Ghulam_Mohammad_Farhad_for_sde"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Ghulam_Mohammad_Farhad.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Ali_Muhammed_Khan_for_sco"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Ali_Muhammed_Khan.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Abdul_Hadi_Dawai_for_ade"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Abdul_Hadi_Dawai.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Haji_Faiz_Muhammed_Zikeria_for_pau"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Haji_Faiz_Muhammed_Zikeria.tga"
+	}
+	### Economy Minister
+	spriteType = {
+		name = "GFX_idea_AFG_Nur_Muhammad_Taraki_eco_van"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Nur_Muhammad_Taraki.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Mohammed_Hashim_Maiwandwal_eco_sde"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Mohammed_Hashim_Maiwandwal.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Nasirullah_Husain_eco_sco"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Nasirullah_Husain.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Ahmad_Ali_Khan_Solaiman_eco_ade"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Ahmad_Ali_Khan_Solaiman.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Mohammed_Daoud_eco_pau"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Mohammed_Daoud.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Mirza_Ali_Khan_eco_npo"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Mirza_Ali_Khan.tga"
+	}
+	### Security Minister
+	spriteType = {
+		name = "GFX_idea_AFG_Dada_Amir_Haider_Khan_sec_col"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Dada_Amir_Haider_Khan.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Abdul_Majid_Zabuli_sec_sli"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Abdul_Majid_Zabuli.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Asadullah_Seraj_Khan_sec_sco"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Asadullah_Seraj_Khan.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Muhammed_Ghobar_sec_ade"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Muhammed_Ghobar.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Muhammed_Zahir_sec_ade"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Muhammed_Zahir.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Ghulam_Faruq_Usman_sec_pau"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Ghulam_Faruq_Usman.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Khalilullah_Khalili_sec_npo"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Khalilullah_Khalili.tga"
+	}
+	### Chief of Staff
+	spriteType = {
+		name = "GFX_idea_AFG_Nasirullah_Husain_cos"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Nasirullah_Husain.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Shah_Mahmud_Khan_cos"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Shah_Mahmud_Khan.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Shah_Mahmud_Ghazi_cos"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Shah_Mahmud_Ghazi.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Malik_Habibullah_Kalakani_cos"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Malik_Habibullah_Kalakani.tga"
+	}
+	### Chief of Army
+	spriteType = {
+		name = "GFX_idea_AFG_Gholam_Wali_carm"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Gholam_Wali.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Ghulam_Nabi_Charkhi_carm"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Ghulam_Nabi_Charkhi.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Mohammed_Daoud_carm"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Mohammed_Daoud.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Mirza_Ali_Khan_carm"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Mirza_Ali_Khan.tga"
+	}
+	### Chief of Navy
+	spriteType = {
+		name = "GFX_idea_AFG_Muhammed_Zahir_cnav"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Muhammed_Zahir.tga"
+	}
+	### Chief of Air Force
+	spriteType = {
+		name = "GFX_idea_AFG_Muhammed_Zahir_cair"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Muhammed_Zahir.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Mohammed_Daoud_cair"
+		texturefile = "gfx/interface/ideas/AFG/ministers/AFG_Mohammed_Daoud.tga"
+	}
+
     ####################################################
     # TUR
     ### Head of Government

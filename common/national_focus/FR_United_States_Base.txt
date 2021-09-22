@@ -1,0 +1,27 @@
+# United States Focus Tree
+# created by: dax0102
+
+focus_tree = {
+    id = usa_focus
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = USA
+        }
+    }
+
+    initial_show_position = {
+        focus = USA_last_minute_reforms
+    }
+
+	continuous_focus_position = { x = 3000 y = 1000 }
+
+    shared_focus = USA_last_minute_reforms
+    shared_focus = USA_review_the_army
+    shared_focus = USA_air_force_debate
+    shared_focus = USA_elections_of_1936
+    shared_focus = USA_address_the_navy
+    shared_focus = USA_america_on_the_world_stage
+    
+}

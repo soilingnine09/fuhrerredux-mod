@@ -321,7 +321,7 @@ focus_tree = {
     # Investigation of the Capitalists
     focus = {
         id = fra_invest_ic
-		icon = GFX_goal_production
+		icon = GFX_goal_generic_investigate_corruption
 		x = 1
 		y = 1
         cost = 3
@@ -589,7 +589,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = unlocked_later
-				has_country_flag = fra_1936_election
+				has_country_flag = fra_1936_elections
 			}
 		}
 		ai_will_do = {
@@ -4491,7 +4491,7 @@ focus_tree = {
 	# Impractically Large Ships
 	focus = {
 		id = fra_super_heavy
-		icon = GFX_goal_generic_navy_battleship
+		icon = GFX_goal_generic_navy_battleship2alt
 		x = 0
 		y = 1
 		cost = 10
@@ -4516,7 +4516,7 @@ focus_tree = {
 	# Mobile Airstrips
 	focus = {
 		id = fra_mobile_airports
-		icon = GFX_goal_generic_navy_carrier
+		icon = GFX_goal_generic_sea_focused_navy2
 		x = -4
 		y = 1
 		cost = 5
@@ -4911,6 +4911,7 @@ focus_tree = {
 		icon = GFX_goal_VIN_Rights_of_Corporation
 		x = -2
 		y = 1
+		cost = 5
 		available = {
 			has_capitulated = no
 			has_government = authoritarian_democrat
@@ -4929,6 +4930,7 @@ focus_tree = {
 		icon = GFX_focus_chi_reach_out_to_france
 		x = 0
 		y = 1
+		cost = 5
 		available = {
 			has_capitulated = no
 			has_government = authoritarian_democrat
@@ -4947,6 +4949,7 @@ focus_tree = {
 		icon = GFX_focus_ger_oppose_hitler
 		x = 2
 		y = 1
+		cost = 5
 		available = {
 			has_capitulated = no
 			has_government = authoritarian_democrat
@@ -4965,6 +4968,7 @@ focus_tree = {
 		icon = GFX_goal_COS_Ferrer_Coup
 		x = 0
 		y = 1
+		cost = 5
 		prerequisite = {
 			focus = fra_anti_german_propaganda
 		}
@@ -5004,6 +5008,7 @@ focus_tree = {
 		icon = GFX_focus_generic_strike_at_democracy1
 		x = -1
 		y = 1
+		
 		prerequisite = {
 			focus = fra_ban_radicals
 		}
@@ -5025,6 +5030,7 @@ focus_tree = {
 		icon = GFX_focus_generic_diplomatic_treaty
 		x = 1
 		y = 1
+		cost = 5
 		prerequisite = {
 			focus = fra_ban_radicals
 		}
@@ -5046,7 +5052,7 @@ focus_tree = {
 	# Strengthen the Petain Government
 	focus = {
 		id = fra_strong_petain
-		icon = GFX_focus_generic_strike_at_democracy2
+		icon = GFX_goal_NFA_Petain
 		x = 32
 		y = 8
 		cost = 5
@@ -5176,7 +5182,7 @@ focus_tree = {
 	# Education Reform
 	focus = {
 		id = fra_education_reform
-		icon = GFX_goal_liberty
+		icon = GFX_goal_KTG_Bookstack
 		x = 1
 		y = 1
 		cost = 5
@@ -5335,7 +5341,7 @@ focus_tree = {
 	# Restoration of the Monarchy
 	focus = {
 		id = fra_restore_chin
-		icon = GFX_goal_NFA_French_Kingdom
+		icon = GFX_goal_NFA_restauration
 		x = 0
 		y = 1
 		cost = 10
@@ -5368,7 +5374,7 @@ focus_tree = {
 	# Revoke the Legality of Strikes
 	focus = {
 		id = fra_illegal_strikes
-		icon = GFX_goal_anti_comintern_pact
+		icon = GFX_goal_generic_crush_unions
 		x = -4
 		y = 1
 		cost = 5
@@ -5587,7 +5593,7 @@ focus_tree = {
 	# Put Down the German Dog
 	focus = {
 		id = fra_german_war
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_goal_generic_attack_german_reich
 		x = 0
 		y = 1
 		cost = 5
@@ -5636,10 +5642,10 @@ focus_tree = {
 			add_political_power = 100
 		}
 	}
-	# Proclaim the Empire
+	# The Kingdom Restored!
 	focus = {
-		id = fra_empire
-		icon = GFX_goal_NFA_French_Empire
+		id = fra_kingdom_restored
+		icon = GFX_goal_NFA_French_Kingdom
 		x = 1
 		y = 1
 		cost = 10

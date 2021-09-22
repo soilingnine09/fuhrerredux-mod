@@ -1,0 +1,205 @@
+on_actions = {
+	on_capitulation = { ###Right Wing Capitulate the Republican
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = SPR
+						OR = {
+							has_war_with = SPF 
+							has_war_with = SPM 
+						}
+					}
+					FROM = {
+						OR = {
+							original_tag = SPF
+							original_tag = SPM 
+						}
+						has_war_with = SPR
+					}
+				}
+				FROM = {
+					white_peace = ROOT 
+				}
+				random_state = {
+					limit = { 
+						state = 170
+						FROM = {
+							has_full_control_of_state = PREV 
+						}
+					}
+					FROM = {
+						transfer_state = PREV 
+					}
+				}
+				random_state = {
+					limit = { 
+						state = 41
+						FROM = {
+							has_full_control_of_state = PREV 
+						}
+					}
+					FROM = {
+						transfer_state = PREV 
+					}
+				}
+				random_state = {
+					limit = { 
+						state = 166
+						FROM = {
+							has_full_control_of_state = PREV 
+						}
+					}
+					FROM = {
+						transfer_state = PREV 
+					}
+				}
+				random_state = {
+					limit = { 
+						state = 168
+						FROM = {
+							has_full_control_of_state = PREV 
+						}
+					}
+					FROM = {
+						transfer_state = PREV 
+					}
+				}
+				random_state = {
+					limit = { 
+						state = 175
+						FROM = {
+							has_full_control_of_state = PREV 
+						}
+					}
+					FROM = {
+						transfer_state = PREV 
+					}
+				}
+				MOR = {
+					transfer_state = 290
+					transfer_state = 897
+				}
+				FRA = {
+					transfer_state = 178
+				}
+			}
+			if = { ### Right Wing Capitulate Anarchist
+				limit = {
+					ROOT = {
+						original_tag = SPA
+						OR = {
+							has_war_with = SPF 
+							has_war_with = SPM 
+						}
+					}
+					FROM = {
+						OR = {
+							original_tag = SPF
+							original_tag = SPM 
+						}
+						has_war_with = SPA
+					}
+				}
+				FROM = {
+					white_peace = ROOT 
+				}
+				random_state = {
+					limit = { 
+						state = 1005
+						FROM = {
+							has_full_control_of_state = PREV 
+						}
+					}
+					FROM = {
+						transfer_state = PREV 
+					}
+				}
+				random_state = {
+					limit = { 
+						state = 854
+						FROM = {
+							has_full_control_of_state = PREV 
+						}
+					}
+					FROM = {
+						transfer_state = PREV 
+					}
+				}
+				random_state = {
+					limit = { 
+						state = 165
+						FROM = {
+							has_full_control_of_state = PREV 
+						}
+					}
+					FROM = {
+						transfer_state = PREV 
+					}
+				}
+				random_state = {
+					limit = { 
+						state = 167
+						FROM = {
+							has_full_control_of_state = PREV 
+						}
+					}
+					FROM = {
+						transfer_state = PREV 
+					}
+				}
+				random_state = {
+					limit = { 
+						state = 168
+						FROM = {
+							has_full_control_of_state = PREV 
+						}
+					}
+					FROM = {
+						transfer_state = PREV 
+					}
+				}
+				random_state = {
+					limit = { 
+						state = 173
+						FROM = {
+							has_full_control_of_state = PREV 
+						}
+					}
+					FROM = {
+						transfer_state = PREV 
+					}
+				}
+				###Balearic Island
+				random_state = {
+					limit = {
+						state = 177
+						FROM = {
+							any_of = {
+								array = SPA.core_states
+								PREV = { num_owned_states > 3 }
+							}
+						}
+					}
+					FROM = {
+						transfer_state = PREV 
+					}
+				}
+				if = {
+					limit = {
+						country_exists = SPA 
+						SPA = {
+							num_owned_states < 1
+						}
+					}
+					FROM = {
+						annex_country = {
+							target = SPA 
+							transfer_troops = no 
+						}
+					}
+				}
+			}
+		}
+	}
+}

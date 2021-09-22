@@ -928,10 +928,6 @@ spriteTypes = {
 		name = "GFX_goal_USA_national_guard"
 		texturefile = "gfx/interface/goals/america_goal_national_guard.tga"
 	}
-	SpriteType = {# US Navy
-		name = "GFX_goal_USA_navy"
-		texturefile = "gfx/interface/goals/america_goal_navy.tga"
-	}
 	SpriteType = {# National Recovery Administration
 		name = "GFX_goal_USA_nra"
 		texturefile = "gfx/interface/goals/america_goal_nra.tga"
@@ -939,14 +935,6 @@ spriteTypes = {
 	SpriteType = {# Screaming Eagles / 101st Airborne
 		name = "GFX_goal_USA_screaming_eagles"
 		texturefile = "gfx/interface/goals/america_goal_screaming_eagles.tga"
-	}
-	SpriteType = {# US Army Air Force
-		name = "GFX_goal_USA_usaaf"
-		texturefile = "gfx/interface/goals/america_goal_usaaf.tga"
-	}
-	SpriteType = {# US Marine Corps
-		name = "GFX_goal_USA_usmc"
-		texturefile = "gfx/interface/goals/america_goal_usmc.tga"
 	}
 
 

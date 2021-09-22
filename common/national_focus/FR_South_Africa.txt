@@ -3819,12 +3819,7 @@ focus_tree = {
 			custom_effect_tooltip  = SAF_Independence_tooltip 
 			hidden_effect = {
 				set_cosmetic_tag = ZAF
-				every_country = {
-					limit = {
-						exists = yes
-					}
-					news_event = { id = worldnews.142 days = 1 }
-				}
+				news_event = { id = worldnews.142 days = 1 }
 			}
 		}
 	}
