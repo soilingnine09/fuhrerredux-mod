@@ -377,7 +377,12 @@ regional_middle_east_news = {
 is_american_tag = {
 	OR = {
 		tag = USA
-		tag = CSA
+		tag = CLB
+		tag = NEE
+		tag = SRA
+		tag = SNE
+		tag = ORE
+		tag = NAR
 	}
 }
 is_arab_tag = {

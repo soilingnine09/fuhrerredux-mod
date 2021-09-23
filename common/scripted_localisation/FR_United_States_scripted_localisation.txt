@@ -27,3 +27,68 @@ defined_text = {
         localization_key = VICTORY_POINTS_7552
     }
 }
+
+defined_text = {
+	name = fx_auto_ordnance_company_text
+	text = {
+		trigger = { tag = SRA }
+		localization_key = "Cooperative"
+	}
+	text = {
+		localization_key = "Company"
+	}
+}
+
+defined_text = {
+	name = fx_colt_text
+	text = {
+		trigger = { tag = SRA }
+		localization_key = "Arms Syndicate"
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = fx_fedlabs_text
+	text = {
+		trigger = { tag = SRA }
+		localization_key = "John Brown Arms Cooperative"
+	}
+	text = {
+		localization_key = "Federal Laboratories"
+	}
+}
+
+defined_text = {
+	name = fx_western_cartridge_company_text
+	text = {
+		trigger = { tag = SRA }
+		localization_key = "Alton Workers' Defence"
+	}
+	text = {
+		localization_key = "Western Cartridge Company"
+	}
+}
+
+defined_text = {
+	name = fx_ingalls_shipbuilding_text
+	text = {
+		trigger = { tag = SRA }
+		localization_key = "Pascagoula"
+	}
+	text = {
+		localization_key = "Ingalls"
+	}
+}
+
+defined_text = {
+	name = fx_northrop_corporation_text
+	text = {
+		trigger = { tag = SRA }
+		localization_key = "Cooperative"
+	}
+	text = {
+		localization_key = "Corporation"
+	}

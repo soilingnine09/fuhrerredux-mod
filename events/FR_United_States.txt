@@ -1992,7 +1992,7 @@ country_event = { # Emergency Congress Session
         }
         add_popularity = {
             ideology = paternal_autocrat
-            popularity = 0.15
+            popularity = 0.35
         }
         remove_every_minister = yes
         if = {
