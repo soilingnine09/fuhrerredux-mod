@@ -17,6 +17,7 @@ set_technology = {
 }
 
 add_ideas = {
+	party_pop_0_20
 	PHI_agriculture_economy
 	PHR_socialist_professors
 	

@@ -52,6 +52,7 @@ if = {
 }
 
 add_ideas = {
+	party_pop_0_20
 	PHI_promise_of_elections
 	PHI_agriculture_economy
 	PHI_marxist_professors

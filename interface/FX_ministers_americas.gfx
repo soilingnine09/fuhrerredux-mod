@@ -2689,7 +2689,7 @@ spriteTypes = {
         texturefile = "gfx/interface/ideas/USA/ministers/USA_Huey_Long.tga"
     }
     spriteType = {
-        name = "GFX_idea_USA_Alf_Landon_hog_sli"
+        name = "GFX_idea_USA_Alf_Landon_hog_mli"
         texturefile = "gfx/interface/ideas/USA/ministers/USA_Alf_Landon.tga"
     }
     spriteType = {
