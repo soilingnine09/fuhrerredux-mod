@@ -11,74 +11,85 @@ set_convoys = 20
 set_stability = 0.50
 set_war_support = 0.50
 
+
+ENG = {
+	if = {
+		limit = { has_dlc = "Together for Victory" }
+		set_autonomy = {
+			target = PREV
+			autonomous_state = autonomy_protectorate
+			freedom_level = 0.5
+		}
+	}
+	else = {
+		puppet = PREV
+	}
+}
+set_cosmetic_tag = ENG_EGY
+
+set_popularities = {
+    vanguardist = 2
+    collectivist = 8
+    libertarian_socialist = 5
+    social_democrat = 13
+    social_liberal = 3
+    market_liberal = 22
+    social_conservative = 18
+    authoritarian_democrat = 17
+    paternal_autocrat = 7
+    national_populist = 5
+    valkist = 0
+}
 set_politics = {	
-	ruling_party = paternal_autocrat
+	ruling_party = authoritarian_democrat
 	last_election = "1935.9.8"
 	election_frequency = 48
 	elections_allowed = no
 }
 
-set_popularities = {
-    vanguardist = 2
-    collectivist = 0
-    libertarian_socialist = 0
-    social_democrat = 0
-    social_liberal = 3
-    market_liberal = 22
-    social_conservative = 18
-    authoritarian_democrat = 12
-    paternal_autocrat = 43
-    national_populist = 0
-    valkist = 0
-}
-
 add_ideas = {
 	party_pop_0_40
-	GEN_hog_pau
-	GEN_for_pau
-	GEN_eco_pau
-	GEN_sec_pau
+	EGY_Sayyid_Qutb_hog_ade
+	EGY_Hassan_al_Hudaybi_for_ade
+	EGY_Mohamed_Tawfik_Naseem_eco_ade
+	EGY_Hassan_al_Banna_sec_ade
 	constitutional_monarchy
 }
 
 create_country_leader = {
-	name = "Muhammad Naguib"
-	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_democratic1.dds"
+	name = "Farouk I"
+	picture = "Portrait_Egypt_Farouk.tga"
+	expire = "1965.1.1"
+	ideology = social_democrat_subtype
+}
+create_country_leader = {
+	name = "Farouk I"
+	picture = "Portrait_Egypt_Farouk.tga"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+}
+create_country_leader = {
+	name = "Farouk I"
+	picture = "Portrait_Egypt_Farouk.tga"
+	expire = "1965.1.1"
 	ideology = market_liberal_subtype
-	traits = {
-		#
-	}
 }
-
 create_country_leader = {
-	name = "Ahmed Husayn"
-	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_1.dds"
-	ideology = national_populist_subtype
-	traits = {
-		#
-	}
+	name = "Farouk I"
+	picture = "Portrait_Egypt_Farouk.tga"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
 }
-
 create_country_leader = {
-	name = "Farouk Muhammad Ali"
-	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_1.dds"
+	name = "Farouk I"
+	picture = "Portrait_Egypt_Farouk.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+}
+create_country_leader = {
+	name = "Farouk I"
+	picture = "Portrait_Egypt_Farouk.tga"
+	expire = "1965.1.1"
 	ideology = paternal_autocrat_subtype
-	traits = {
-		#
-	}
 }
-
-create_country_leader = {
-	name = "Hosni al-Arabi"
-	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
-	ideology = collectivist_subtype
-	traits = {
-		#
-	}
-}
-
 

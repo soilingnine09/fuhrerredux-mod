@@ -37,6 +37,7 @@ autonomy_state = {
 			tag = ISR
 			tag = IRQ
 			tag = PHN
+			tag = EGY
 		}
 	}
 	

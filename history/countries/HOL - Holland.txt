@@ -68,6 +68,10 @@ if = {
 add_ideas = {
 	party_pop_0_60
 	extensive_conscription
+	HOL_revaunchist_state
+	HOL_dutch_german_economic_cooperation
+	HOL_unrecognized_government
+
 	HOL_Cornelis_van_Geelkerken_hog_npo
 	HOL_Willem_Bernard_Engelbrecht_for_npo
 	HOL_Gerrit_van_Burink_eco_npo

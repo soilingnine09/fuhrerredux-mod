@@ -4,6 +4,261 @@
 spriteTypes = {
 
 	####################################################
+	# EGY
+	### Head of Government
+	spriteType = {
+		name = "GFX_idea_EGY_Gamal_Abdel_Nasser_hog_sde"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Gamal_Abdel_Nasser.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Ahmad_Mahir_hog_sli"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Ahmad_Mahir.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Ibrahim_Abdel_Hady_hog_sli"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Ibrahim_Abdel_Hady.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Mohammed_Naguib_hog_sli"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Mohammed_Naguib.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Fouad_Serageddin_hog_mli"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Fouad_Serageddin.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Makram_Ebeid_hog_mli"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Makram_Ebeid.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Mohamed_Mahmoud_hog_mli"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Mohamed_Mahmoud.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Mostafa_El_Nahas_hog_mli"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Mostafa_El_Nahas.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Abbas_Mahmud_al_Aqqad_hog_sco"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Abbas_Mahmud_al_Aqqad.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Ahmed_Naguib_el_Hilaly_hog_sco"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Ahmed_Naguib_el_Hilaly.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Aly_Maher_hog_sco"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Aly_Maher.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Hassan_al_Hudaybi_hog_sco"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Hassan_al_Hudaybi.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Hussein_Serry_hog_sco"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Hussein_Serry.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Hassan_al_Banna_hog_ade"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Hassan_al_Banna.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Mohamed_Tawfik_Naseem_hog_ade"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Mohamed_Tawfik_Naseem.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Sayyid_Qutb_hog_ade"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Sayyid_Qutb.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Aziz_Ezzat_hog_pau"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Aziz_Ezzat.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Sherif_Sabri_hog_pau"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Sherif_Sabri.tga"
+	}
+	### Foreign Minister
+	spriteType = {
+		name = "GFX_idea_EGY_Salah_Salem_for_sde"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Salah_Salem.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Kamil_Abdul_Rahim_for_sli"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Kamil_Abdul_Rahim.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Abdul_Khalek_Hassouna_for_sli"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Abdul_Khalek_Hassouna.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Hassan_Sabry_for_mli"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Hassan_Sabry.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Ali_Shamsi_for_mli"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Ali_Shamsi.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Abdelfattah_Amr_for_sco"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Abdelfattah_Amr.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Hussein_Serry_for_sco"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Hussein_Serry.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Sayyid_Qutb_for_ade"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Sayyid_Qutb.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Hassan_al_Hudaybi_for_ade"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Hassan_al_Hudaybi.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Ahmed_Hassanein_for_pau"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Ahmed_Hassanein.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Mohammed_Ali_Tewfik_for_pau"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Mohammed_Ali_Tewfik.tga"
+	}
+	### Economy Minister
+	spriteType = {
+		name = "GFX_idea_EGY_Abdel_Latif_Boghdadi_eco_sde"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Abdel_Latif_Boghdadi.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Kamil_Abdul_Rahim_eco_sli"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Kamil_Abdul_Rahim.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Saba_Habachy_eco_sli"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Saba_Habachy.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Makram_Ebeid_eco_mli"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Makram_Ebeid.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Talaat_Harb_eco_mli"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Talaat_Harb.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Hassan_Allam_eco_sco"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Hassan_Allam.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Mohamed_Ahmed_Farghaly_eco_sco"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Mohamed_Ahmed_Farghaly.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Mohamed_Tawfik_Naseem_eco_ade"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Mohamed_Tawfik_Naseem.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Hassan_al_Hudaybi_eco_ade"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Hassan_al_Hudaybi.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Youssef_Zulficar_eco_pau"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Youssef_Zulficar.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Aziz_Ezzat_eco_pau"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Aziz_Ezzat.tga"
+	}
+	### Security Minister
+	spriteType = {
+		name = "GFX_idea_EGY_Muhammad_Anwar_el_Sadat_sec_sde"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Muhammad_Anwar_el_Sadat.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Taha_Hussein_sec_sli"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Taha_Hussein.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Muhammad_Husayn_Haykal_sec_sli"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Muhammad_Husayn_Haykal.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Abbas_al_Aqqad_sec_mli"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Abbas_al_Aqqad.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Abdel_Hamid_Badawi_sec_mli"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Abdel_Hamid_Badawi.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Sheikh_Mahmud_Shaltut_sec_sco"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Sheikh_Mahmud_Shaltut.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Abdelfattah_Amr_sec_sco"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Abdelfattah_Amr.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Sayyid_Qutb_sec_ade"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Sayyid_Qutb.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Hassan_al_Banna_sec_ade"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Hassan_al_Banna.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Youssef_Zulficar_sec_pau"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Youssef_Zulficar.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Ahmed_Hassanein_sec_pau"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Ahmed_Hassanein.tga"
+	}
+	### Chief of Staff
+	spriteType = {
+		name = "GFX_idea_EGY_Mohammed_Naguib_cos_sco"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Mohammed_Naguib.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Hussein_Refki_cos_sco"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Hussein_Refki.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Aziz_Ezzat_cos_sco"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Aziz_Ezzat.tga"
+	}
+	### Chief of Army
+	spriteType = {
+		name = "GFX_idea_EGY_Mohammed_Naguib_carm_sco"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Mohammed_Naguib.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Mohamed_Haidar_carm_sco"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Mohamed_Haidar.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Ahmed_Abdel_Aziz_carm_sco"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Ahmed_Abdel_Aziz.tga"
+	}
+	### Chief of Navy
+	spriteType = {
+		name = "GFX_idea_EGY_Suleiman_Ezzat_cnav_sco"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Suleiman_Ezzat.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Mahmoud_Hamza_cnav_sco"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Mahmoud_Hamza.tga"
+	}
+	### Chief of Air Force
+	spriteType = {
+		name = "GFX_idea_EGY_Mohammed_Sidqi_cair_sco"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Mohammed_Sidqi.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Victor_Hubert_Tait_cair_sco"
+		texturefile = "gfx/interface/ideas/EGY/ministers/EGY_Victor_Hubert_Tait.tga"
+	}
+
+	####################################################
     # AFG
 	### Head of Government
 	spriteType = {

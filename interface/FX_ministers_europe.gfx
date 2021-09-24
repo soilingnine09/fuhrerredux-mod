@@ -65,6 +65,42 @@ spriteTypes = {
 		name = "GFX_idea_HOL_Gerhardus_Dieters_sec_npo"
 		texturefile = "gfx/interface/ideas/HOL/ministers/HOL_Gerhardus_Dieters.tga"
 	}
+	### Chief of Staff
+	spriteType = {
+		name = "GFX_idea_HOL_Hendrik_Seyffardt_cos_pau"
+		texturefile = "gfx/interface/ideas/HOL/ministers/HOL_Hendrik_Seyffardt.tga"
+	}
+	### Chief of Army
+	spriteType = {
+		name = "GFX_idea_HOL_Godfried_van_Voorst_tot_Voorst_carm_pau"
+		texturefile = "gfx/interface/ideas/HOL/ministers/HOL_Godfried_van_Voorst_tot_Voorst.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_HOL_Hendrik_Seyffardt_carm_pau"
+		texturefile = "gfx/interface/ideas/HOL/ministers/HOL_Hendrik_Seyffardt.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_HOL_Herman_van_Voorst_tot_Voorst_carm_pau"
+		texturefile = "gfx/interface/ideas/HOL/ministers/HOL_Herman_van_Voorst_tot_Voorst.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_HOL_Adrianus_Zondervan_carm_npo"
+		texturefile = "gfx/interface/ideas/HOL/ministers/HOL_Adrianus_Zondervan.tga"
+	}
+	### Chief of Navy
+	spriteType = {
+		name = "GFX_idea_HOL_Johan_Furstner_cnav_pau"
+		texturefile = "gfx/interface/ideas/HOL/ministers/HOL_Johan_Furstner.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_HOL_Pieter_Koenraad_cnav_pau"
+		texturefile = "gfx/interface/ideas/HOL/ministers/HOL_Pieter_Koenraad.tga"
+	}
+	### Chief of Air Force
+	spriteType = {
+		name = "GFX_idea_HOL_Julius_Zegers_cair_ade"
+		texturefile = "gfx/interface/ideas/HOL/ministers/HOL_Julius_Zegers.tga"
+	}
 
 	####################################################
     # ITA

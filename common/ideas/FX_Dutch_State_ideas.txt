@@ -1,4 +1,34 @@
 ideas = {
+    country = {
+        HOL_revaunchist_state = {
+            allowed = { original_tag = HOL }
+            picture = vittoria_mutilata
+            modifier = {
+                conscription_factor = 0.25
+                army_core_attack_factor = 0.075
+                army_core_defence_factor = 0.075
+                mobilization_speed = 0.05
+            }
+        }
+        HOL_dutch_german_economic_cooperation = {
+            allowed = { original_tag = HOL }
+            picture = ger_rebuild_the_nation
+            modifier = {
+                production_speed_buildings_factor = 0.15
+                line_change_production_efficiency_factor = 0.35
+                industrial_capacity_factory = 0.15
+                industrial_capacity_dockyard = 0.15
+            }
+        }
+        HOL_unrecognized_government = {
+            allowed = { original_tag = HOL }
+            picture = generic_neutrality_drift_bonus
+            modifier = {
+                trade_opinion_factor = -0.25
+                political_power_cost = 0.15
+            }
+        }
+    }
     ### Head of Government
     head_of_government = {
         HOL_Izaak_Reynders_hog_ade = {
@@ -148,6 +178,79 @@ ideas = {
                 security_minister
                 national_populist
                 sec_man_of_the_people
+            }
+        }
+    }
+    ### Chief of Staff
+    chief_of_staff = {
+        HOL_Hendrik_Seyffardt_cos_pau = {
+            allowed = { original_tag = HOL }
+            traits = {
+                chief_of_staff
+                paternal_autocrat
+                cos_school_of_psychology
+            }
+        }
+    }
+    ### Chief of Army
+    chief_of_army = {
+        HOL_Godfried_van_Voorst_tot_Voorst_carm_pau = {
+            allowed = { original_tag = HOL }
+            traits = {
+                chief_of_army
+                paternal_autocrat
+                carm_commando_doctrine
+            }
+        }
+        HOL_Hendrik_Seyffardt_carm_pau = {
+            allowed = { original_tag = HOL }
+            traits = {
+                chief_of_army
+                paternal_autocrat
+                carm_guns_and_butter_doctrine
+            }
+        }
+        HOL_Herman_van_Voorst_tot_Voorst_carm_pau = {
+            allowed = { original_tag = HOL }
+            traits = {
+                chief_of_army
+                paternal_autocrat
+                carm_decisive_battle_doctrine
+            }
+        }
+        HOL_Adrianus_Zondervan_carm_npo = {
+            allowed = { original_tag = HOL }
+            traits = {
+                chief_of_army
+                national_populist
+                carm_elastic_defence_doctrine
+            }
+        }
+    }
+    ### Chief of Navy
+    chief_of_navy = {
+        HOL_Johan_Furstner_cnav_pau = {
+            allowed = { original_tag = HOL }
+            traits = {
+                chief_of_navy
+                cnav_indirect_approach_doctrine
+            }
+        }
+        HOL_Pieter_Koenraad_cnav_pau = {
+            allowed = { original_tag = HOL }
+            traits = {
+                chief_of_navy
+                cnav_power_projection_doctrine
+            }
+        }
+    }
+    ### Chief of Air Force
+    chief_of_air_force = {
+        HOL_Julius_Zegers_cair_ade = {
+            allowed = { original_tag = HOL }
+            traits = {
+                chief_of_air_force
+                cair_battlefield_support_doctrine
             }
         }
     }

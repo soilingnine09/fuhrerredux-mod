@@ -1,0 +1,616 @@
+ideas = {
+    ### Head of Government
+    head_of_government = {
+        EGY_Gamal_Abdel_Nasser_hog_sde = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                social_democrat
+                hog_happy_amateur
+            }
+        }
+        EGY_Ahmad_Mahir_hog_sli = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                social_liberal
+                hog_naive_optimist
+            }
+        }
+        EGY_Ibrahim_Abdel_Hady_hog_sli = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                social_liberal
+                hog_pragmatic_statesman
+            }
+        }
+        EGY_Mohammed_Naguib_hog_sli = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                social_liberal
+                hog_reformist_soldier
+            }
+        }
+        EGY_Fouad_Serageddin_hog_mli = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                market_liberal
+                hog_silent_workhorse
+            }
+        }
+        EGY_Makram_Ebeid_hog_mli = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                market_liberal
+                hog_smiling_oilman
+            }
+        }
+        EGY_Mohamed_Mahmoud_hog_mli = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                market_liberal
+                hog_corporate_suit
+            }
+        }
+        EGY_Mostafa_El_Nahas_hog_mli = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                market_liberal
+                hog_charismatic_charmer
+            }
+        }
+        EGY_Abbas_Mahmud_al_Aqqad_hog_sco = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                social_conservative
+                hog_corporate_suit
+            }
+        }
+        EGY_Ahmed_Naguib_el_Hilaly_hog_sco = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                social_conservative
+                hog_accomplished_diplomat
+            }
+        }
+        EGY_Aly_Maher_hog_sco = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                social_conservative
+                hog_naive_optimist
+            }
+        }
+        EGY_Hassan_al_Hudaybi_hog_sco = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                social_conservative
+                hog_happy_amateur
+            }
+        }
+        EGY_Hussein_Serry_hog_sco = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                social_conservative
+                hog_political_protege
+            }
+        }
+        EGY_Hassan_al_Banna_hog_ade = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                authoritarian_democrat
+                hog_smiling_oilman
+            }
+        }
+        EGY_Mohamed_Tawfik_Naseem_hog_ade = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                authoritarian_democrat
+                hog_political_protege
+            }
+        }
+        EGY_Sayyid_Qutb_hog_ade = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                authoritarian_democrat
+                hog_democratic_tyrant
+            }
+        }
+        EGY_Aziz_Ezzat_hog_pau = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                paternal_autocrat
+                hog_accomplished_diplomat
+            }
+        }
+        EGY_Sherif_Sabri_hog_pau = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                paternal_autocrat
+                hog_flamboyant_tough_guy
+            }
+        }
+    }
+    ### Foreign Minister
+    foreign_minister = {
+        EGY_Salah_Salem_for_sde = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                social_democrat
+                for_moderate_among_radicals
+            }
+        }
+        EGY_Kamil_Abdul_Rahim_for_sli = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                social_liberal
+                for_relations_expert
+            }
+        }
+        EGY_Abdul_Khalek_Hassouna_for_sli = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                social_liberal
+                for_general_staffer
+            }
+        }
+        EGY_Hassan_Sabry_for_mli = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                market_liberal
+                for_biased_intellectual
+            }
+        }
+        EGY_Ali_Shamsi_for_mli = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                market_liberal
+                for_world_patrician
+            }
+        }
+        EGY_Abdelfattah_Amr_for_sco = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                social_conservative
+                for_the_cloak_n_dagger_schemer
+            }
+        }
+        EGY_Hussein_Serry_for_sco = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                social_conservative
+                for_apologetic_clerk
+            }
+        }
+        EGY_Sayyid_Qutb_for_ade = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                authoritarian_democrat
+                for_general_staffer
+            }
+        }
+        EGY_Hassan_al_Hudaybi_for_ade = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                authoritarian_democrat
+                for_hawkish_intervener
+            }
+        }
+        EGY_Ahmed_Hassanein_for_pau = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                paternal_autocrat
+                for_radical_among_moderates
+            }
+        }
+        EGY_Mohammed_Ali_Tewfik_for_pau = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                paternal_autocrat
+                for_iron_fisted_brute
+            }
+        }
+    }
+    ### Economy Minister
+    economy_minister = {
+        EGY_Abdel_Latif_Boghdadi_eco_sde = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                social_democrat
+                eco_administrative_genius
+            }
+        }
+        EGY_Kamil_Abdul_Rahim_eco_sli = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                social_liberal
+                eco_balanced_budget_economy
+            }
+        }
+        EGY_Saba_Habachy_eco_sli = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                social_liberal
+                eco_construction_magnate
+            }
+        }
+        EGY_Makram_Ebeid_eco_mli = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                market_liberal
+                eco_infantry_proponent
+            }
+        }
+        EGY_Talaat_Harb_eco_mli = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                market_liberal
+                eco_national_liberal
+            }
+        }
+        EGY_Hassan_Allam_eco_sco = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                social_liberal
+                eco_military_entrepreneur
+            }
+        }
+        EGY_Mohamed_Ahmed_Farghaly_eco_sco = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                social_conservative
+                eco_railway_magnate
+            }
+        }
+        EGY_Mohamed_Tawfik_Naseem_eco_ade = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                authoritarian_democrat
+                eco_reformer
+            }
+        }
+        EGY_Hassan_al_Hudaybi_eco_ade = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                authoritarian_democrat
+                eco_trade_proponent
+            }
+        }
+        EGY_Youssef_Zulficar_eco_pau = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                paternal_autocrat
+                eco_mixed_economy
+            }
+        }
+        EGY_Aziz_Ezzat_eco_pau = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                paternal_autocrat
+                eco_laissez_faire_capitalist
+            }
+        }
+    }
+    ### Security Minister
+    security_minister = {
+        EGY_Muhammad_Anwar_el_Sadat_sec_sde = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                social_democrat
+                sec_compassionate_gentleman
+            }
+        }
+        EGY_Taha_Hussein_sec_sli = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                social_liberal
+                sec_man_of_the_people
+            }
+        }
+        EGY_Muhammad_Husayn_Haykal_sec_sli = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                social_liberal
+                sec_media_magnate
+            }
+        }
+        EGY_Abbas_al_Aqqad_sec_mli = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                market_liberal
+                sec_health_and_safety
+            }
+        }
+        EGY_Abdel_Hamid_Badawi_sec_mli = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                market_liberal
+                sec_back_stabber
+            }
+        }
+        EGY_Sheikh_Mahmud_Shaltut_sec_sco = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                social_conservative
+                sec_crooked_kleptocrat
+            }
+        }
+        EGY_Abdelfattah_Amr_sec_sco = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                social_conservative
+                sec_man_of_the_people
+            }
+        }
+        EGY_Sayyid_Qutb_sec_ade = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                authoritarian_democrat
+                sec_compassionate_gentleman
+            }
+        }
+        EGY_Hassan_al_Banna_sec_ade = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                authoritarian_democrat
+                sec_prince_of_terror
+            }
+        }
+        EGY_Youssef_Zulficar_sec_pau = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                paternal_autocrat
+                sec_crime_fighter
+            }
+        }
+        EGY_Ahmed_Hassanein_sec_pau = {
+            allowed = { original_tag = EGY }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                paternal_autocrat
+                sec_efficient_sociopath
+            }
+        }
+    }
+    ### Chief of Staff
+    chief_of_staff = {
+        EGY_Mohammed_Naguib_cos_sco = {
+            allowed = { original_tag = EGY }
+            traits = {
+                chief_of_staff
+                social_conservative
+                cos_school_of_psychology
+            }
+        }
+        EGY_Hussein_Refki_cos_sco = {
+            allowed = { original_tag = EGY }
+            traits = {
+                chief_of_staff
+                social_conservative
+                cos_school_of_fire_support
+            }
+        }
+        EGY_Aziz_Ezzat_cos_sco = {
+            allowed = { original_tag = EGY }
+            traits = {
+                chief_of_staff
+                social_conservative
+                cos_school_of_commando_operations
+            }
+        }
+    }
+    ### Chief of Army
+    chief_of_army = {
+        EGY_Mohammed_Naguib_carm_sco = {
+            allowed = { original_tag = EGY }
+            traits = {
+                chief_of_army
+                social_conservative
+                carm_guns_and_butter_doctrine
+            }
+        }
+        EGY_Mohamed_Haidar_carm_sco = {
+            allowed = { original_tag = EGY }
+            traits = {
+                chief_of_army
+                social_conservative
+                carm_decisive_battle_doctrine
+            }
+        }
+        EGY_Ahmed_Abdel_Aziz_carm_sco = {
+            allowed = { original_tag = EGY }
+            traits = {
+                chief_of_army
+                social_conservative
+                carm_elastic_defence_doctrine
+            }
+        }
+    }
+    ### Chief of Navy
+    chief_of_navy = {
+        EGY_Suleiman_Ezzat_cnav_sco = {
+            allowed = { original_tag = EGY }
+            traits = {
+                chief_of_navy
+                social_conservative
+                cnav_indirect_approach_doctrine
+            }
+        }
+        EGY_Mahmoud_Hamza_cnav_sco = {
+            allowed = { original_tag = EGY }
+            traits = {
+                chief_of_navy
+                social_conservative
+                cnav_power_projection_doctrine
+            }
+        }
+    }
+    ### Chief of Air Force
+    chief_of_air_force = {
+        EGY_Mohammed_Sidqi_cair_sco = {
+            allowed = { original_tag = EGY }
+            traits = {
+                chief_of_air_force
+                social_conservative
+                cair_air_superiority_doctrine
+            }
+        }
+        EGY_Victor_Hubert_Tait_cair_sco = {
+            allowed = { original_tag = EGY }
+            traits = {
+                chief_of_air_force
+                social_conservative
+                cair_battlefield_support_doctrine
+            }
+        }
+    }
+}
