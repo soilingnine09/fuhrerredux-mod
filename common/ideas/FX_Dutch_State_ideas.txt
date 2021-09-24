@@ -151,4 +151,155 @@ ideas = {
             }
         }
     }
+
+    ### Industrial
+    industrial_concern = {
+
+		koninklijke_hoogovens = {
+			allowed = { original_tag = HOL }
+			traits = { industrial_manufacturer }
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+			research_bonus = {
+				industry = 0.1
+			}
+		}
+		philips = {
+			allowed = {original_tag = HOL }
+			traits = {electronics_manufacturer }
+			research_bonus = {
+				electronics = 0.15
+				industry = 0.1
+			}
+		}
+		hazemeyer = {
+			allowed = {original_tag = HOL }
+			traits = {electronics_manufacturer }
+			modifier = {
+				production_speed_radar_station_factor = 0.15
+			}
+			research_bonus = {
+				electronics = 0.1
+			}
+		}
+		shell = {
+			allowed = {original_tag = HOL }
+			traits = {chemical_producer}
+			research_bonus = {
+				synth_resources = 0.15
+				industry = 0.1
+			}
+		}
+	}
+
+    ### Weapons Manufacturer
+    weapons_manufacturer = {
+        designer = yes
+
+		artillerie_inrichtingen_company = {
+			allowed = { original_tag = HOL }
+			traits = { infantry_equipment_producer_offense_1 }
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
+        }
+		hih_siderius = {
+			allowed = { original_tag = HOL }
+			traits = { artillery_producer_defense_1 }
+			research_bonus = {
+				artillery = 0.1
+			}
+		}
+		daf = {
+			allowed = { original_tag = HOL }
+			traits = { motorised_equipment_producer_offense_1 }
+			research_bonus = {
+				motorized_equipment = 0.1
+			}
+		}
+		spyker = {
+			allowed = { original_tag = HOL }
+			traits = { motorised_equipment_producer_defense_1 }
+			research_bonus = {
+				motorized_equipment = 0.1
+			}
+		}
+		den_oudsten = {
+			allowed = { original_tag = HOL }
+			traits = { motorised_equipment_producer_mass_1 }
+			research_bonus = {
+				motorized_equipment = 0.1
+			}
+		}
+    }
+    ### Tank Manufacturer
+    tank_manufacturer = {
+		designer = yes
+
+		werkspoor = {
+			allowed = { original_tag = HOL }
+			traits = { small_tank_producer_defense_1 }
+			research_bonus = {
+				armor = 0.1
+			}
+		}
+	}
+
+    ### Naval and Air Manufacturer
+    air_naval_manufacturer = {
+		designer = yes
+
+		koninklijke_maatschappij = {
+			allowed = { original_tag = HOL }
+			traits = { capital_ship_producer_defense_0 }
+			research_bonus = {
+				naval_equipment = 0.1
+			}
+		}
+		wilton_fijenoord = {
+			allowed = { original_tag = HOL }
+			traits = { cruiser_producer_mass_0 }
+			research_bonus = {
+				naval_equipment = 0.1
+			}
+		}
+		rotterdamsche_maatschappij = {
+			allowed = { original_tag = HOL }
+			traits = { small_ship_producer_offense_2 }
+			research_bonus = {
+				ss_tech = 0.10
+			}
+		}
+		fokker = {
+			allowed = { original_tag = HOL }
+			traits = { fighter_producer_offense_2 }
+			research_bonus = {
+				air_equipment = 0.1
+			}
+		}
+		koolhoven = {
+			allowed = { original_tag = HOL }
+			traits = { fighter_producer_defense_1 }
+			research_bonus = {
+				air_equipment = 0.1
+			}
+		}
+		pander = {
+			allowed = { original_tag = HOL }
+			traits = { bomber_producer_mass_1 }
+			research_bonus = {
+				air_equipment = 0.1
+			}
+		}
+		aviolanda = {
+			allowed = { original_tag = HOL }
+			traits = { nav_cas_producer_offense_1 }
+			research_bonus = {
+				air_equipment = 0.1
+			}
+		}
+
+	}
 }

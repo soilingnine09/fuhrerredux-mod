@@ -1,6 +1,77 @@
 spriteTypes = {
 
 	################################################
+	# HOL
+	spriteType = {
+		name = "GFX_idea_koninklijke_hoogovens"
+		texturefile = "gfx/interface/ideas/HOL/companies/koninklijke_hoogovens.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_philips"
+		texturefile = "gfx/interface/ideas/HOL/companies/philips.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_hazemeyer"
+		texturefile = "gfx/interface/ideas/HOL/companies/hazemeyer.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_shell"
+		texturefile = "gfx/interface/ideas/HOL/companies/shell.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_artillerie_inrichtingen_company"
+		texturefile = "gfx/interface/ideas/HOL/companies/artillerie_inrichtingen.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_hih_siderius"
+		texturefile = "gfx/interface/ideas/HOL/companies/hih_siderius.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_daf"
+		texturefile = "gfx/interface/ideas/HOL/companies/daf.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_den_oudsten"
+		texturefile = "gfx/interface/ideas/HOL/companies/den_oudsten.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_werkspoor"
+		texturefile = "gfx/interface/ideas/HOL/companies/werkspoor.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_fokker"
+		texturefile = "gfx/interface/ideas/HOL/companies/fokker.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_koolhoven"
+		texturefile = "gfx/interface/ideas/HOL/companies/koolhoven.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_pander"
+		texturefile = "gfx/interface/ideas/HOL/companies/pander.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_aviolanda"
+		texturefile = "gfx/interface/ideas/HOL/companies/aviolanda.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_koninklijke_maatschappij"
+		texturefile = "gfx/interface/ideas/HOL/companies/koninklijke_maatschappij.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_wilton_fijenoord"
+		texturefile = "gfx/interface/ideas/HOL/companies/wilton_fijenoord.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_rotterdamsche_maatschappij"
+		texturefile = "gfx/interface/ideas/HOL/companies/rotterdamsche_maatschappij.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_spyker"
+		texturefile = "gfx/interface/ideas/HOL/companies/spyker.tga"
+	}
+
+	################################################
     # PHI
 	spriteType = {
 		name = "GFX_idea_san_miguel_corporation"
