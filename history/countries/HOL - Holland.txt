@@ -96,7 +96,8 @@ set_popularities = {
     national_populist = 61
     valkist = 0
 }
-
+set_country_flag = coalition_authoritarian_democrat
+set_country_flag = coalition_paternal_autocrat
 
 
 create_country_leader = {
