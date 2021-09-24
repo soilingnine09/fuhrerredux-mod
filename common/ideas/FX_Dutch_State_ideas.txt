@@ -1,0 +1,154 @@
+ideas = {
+    ### Head of Government
+    head_of_government = {
+        HOL_Izaak_Reynders_hog_ade = {
+            allowed = { original_tag = HOL }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                authoritarian_democrat
+                hog_naive_optimist
+            }
+        }
+        HOL_Henri_Nicolas_Alfred_Swart_hog_pau = {
+            allowed = { original_tag = HOL }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                paternal_autocrat
+                hog_flamboyant_tough_guy
+            }
+        }
+        HOL_Cornelis_van_Geelkerken_hog_npo = {
+            allowed = { original_tag = HOL }
+            available = { can_replace_hog = no }
+            cancel_if_invalid = no
+            traits = {
+                head_of_government
+                national_populist
+                hog_local_tyrant
+            }
+        }
+    }
+    ### Foreign Minister
+    foreign_minister = {
+        HOL_Jan_Baars_for_pau = {
+            allowed = { original_tag = HOL  }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                paternal_autocrat
+                for_biased_intellectual
+            }
+        }
+        HOL_Willem_Bernard_Engelbrecht_for_npo = {
+            allowed = { original_tag = HOL  }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                foreign_minister
+                national_populist
+                for_general_staffer
+            }
+        }
+    }
+    ### Economy Minister
+    economy_minister = {
+        HOL_Henri_Johannes_ter_Hal_eco_pau = {
+            allowed = { original_tag = HOL  }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                paternal_autocrat
+                eco_industrialiser
+            }
+        }
+        HOL_Jan_Baars_eco_pau = {
+            allowed = { original_tag = HOL  }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                paternal_autocrat
+                eco_infantry_proponent
+            }
+        }
+        HOL_Alfred_Haighton_eco_npo = {
+            allowed = { original_tag = HOL  }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                national_populist
+                eco_military_entrepreneur
+            }
+        }
+        HOL_Gerrit_van_Burink_eco_npo = {
+            allowed = { original_tag = HOL  }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                economy_minister
+                national_populist
+                eco_construction_magnate
+            }
+        }
+    }
+    ### Security Minister
+    security_minister = {
+        HOL_Frederik_Carel_Gerretson_sec_pau = {
+            allowed = { original_tag = HOL  }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                paternal_autocrat
+                sec_back_stabber
+            }
+        }
+        HOL_Johannes_Linthorst_Homan_sec_pau = {
+            allowed = { original_tag = HOL  }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                national_populist
+                sec_driven_recruiter
+            }
+        }
+        HOL_AJ_van_der_Hoeven_sec_npo = {
+            allowed = { original_tag = HOL  }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                national_populist
+                sec_efficient_sociopath
+            }
+        }
+        HOL_Cornelis_van_Geelkerken_sec_npo = {
+            allowed = { original_tag = HOL  }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                national_populist
+                sec_compassionate_gentleman
+            }
+        }
+        HOL_Gerhardus_Dieters_sec_npo = {
+            allowed = { original_tag = HOL  }
+            available = { can_replace_minister = no }
+            cancel_if_invalid = no
+            traits = {
+                security_minister
+                national_populist
+                sec_man_of_the_people
+            }
+        }
+    }
+}

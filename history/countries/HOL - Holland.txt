@@ -68,10 +68,10 @@ if = {
 add_ideas = {
 	party_pop_0_60
 	extensive_conscription
-	GEN_hog_npo
-	GEN_for_npo
-	GEN_eco_npo
-	GEN_sec_npo
+	HOL_Cornelis_van_Geelkerken_hog_npo
+	HOL_Willem_Bernard_Engelbrecht_for_npo
+	HOL_Gerrit_van_Burink_eco_npo
+	HOL_Gerhardus_Dieters_sec_npo
 	one_party_dictatorship
 }
 

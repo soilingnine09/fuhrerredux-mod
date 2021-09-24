@@ -1,0 +1,13 @@
+add_namespace = dutchstate
+
+country_event = {
+    id = dutchstate.0
+    title = dutchstate.0.t
+    desc = dutchstate.0.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.0.a
+    }
+}

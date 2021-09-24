@@ -4,6 +4,69 @@
 spriteTypes = {
 
 	####################################################
+    # HOL
+	### Head of Government
+	spriteType = {
+		name = "GFX_idea_HOL_Izaak_Reynders_hog_ade"
+		texturefile = "gfx/interface/ideas/HOL/ministers/HOL_Izaak_Reynders.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_HOL_Henri_Nicolas_Alfred_Swart_hog_pau"
+		texturefile = "gfx/interface/ideas/HOL/ministers/HOL_Henri_Nicolas_Alfred_Swart.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_HOL_Cornelis_van_Geelkerken_hog_npo"
+		texturefile = "gfx/interface/ideas/HOL/ministers/HOL_Cornelis_van_Geelkerken.tga"
+	}
+	### Foreign Minister
+	spriteType = {
+		name = "GFX_idea_HOL_Jan_Baars_for_pau"
+		texturefile = "gfx/interface/ideas/HOL/ministers/HOL_Jan_Baars.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_HOL_Willem_Bernard_Engelbrecht_for_npo"
+		texturefile = "gfx/interface/ideas/HOL/ministers/HOL_Willem_Bernard_Engelbrecht.tga"
+	}
+	### Economy Minister
+	spriteType = {
+		name = "GFX_idea_HOL_Henri_Johannes_ter_Hal_eco_pau"
+		texturefile = "gfx/interface/ideas/HOL/ministers/HOL_Henri_Johannes_ter_Hal.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_HOL_Jan_Baars_eco_pau"
+		texturefile = "gfx/interface/ideas/HOL/ministers/HOL_Jan_Baars.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_HOL_Alfred_Haighton_eco_npo"
+		texturefile = "gfx/interface/ideas/HOL/ministers/HOL_Alfred_Haighton.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_HOL_Gerrit_van_Burink_eco_npo"
+		texturefile = "gfx/interface/ideas/HOL/ministers/HOL_Gerrit_van_Burink.tga"
+	}
+	### Security Minister
+	spriteType = {
+		name = "GFX_idea_HOL_Frederik_Carel_Gerretson_sec_pau"
+		texturefile = "gfx/interface/ideas/HOL/ministers/HOL_Frederik_Carel_Gerretson.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_HOL_Johannes_Linthorst_Homan_sec_pau"
+		texturefile = "gfx/interface/ideas/HOL/ministers/HOL_Johannes_Linthorst_Homan.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_HOL_AJ_van_der_Hoeven_sec_npo"
+		texturefile = "gfx/interface/ideas/HOL/ministers/HOL_AJ_van_der_Hoeven.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_HOL_Cornelis_van_Geelkerken_sec_npo"
+		texturefile = "gfx/interface/ideas/HOL/ministers/HOL_Cornelis_van_Geelkerken.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_HOL_Gerhardus_Dieters_sec_npo"
+		texturefile = "gfx/interface/ideas/HOL/ministers/HOL_Gerhardus_Dieters.tga"
+	}
+
+	####################################################
     # ITA
 	### Head of Government
 	spriteType = {

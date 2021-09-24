@@ -1,0 +1,10 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            random_country = {
+                limit = { tag = HOL }
+                country_event = { id = dutchstate.0 days = 2 }
+            }
+        }
+    }
+}

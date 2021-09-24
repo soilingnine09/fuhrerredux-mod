@@ -50,16 +50,36 @@ HOL_market_liberal_party:0 "LSP"
 HOL_market_liberal_party_long:0 "Liberale Staatspartij"
 HOL_social_conservative_party:0 "CV"
 HOL_social_conservative_party_long:0 "Conservatief Verbond"
-HOL_authoritarian_democrat_party:0 "NNB"
+HOL_authoritarian_democrat_party:0 "NNB (Reformist)"
 HOL_authoritarian_democrat_party_long:0 "Nieuwe Nederlandse Beweging"
-HOL_paternal_autocrat_party:0 "NNB"
+HOL_paternal_autocrat_party:0 "NNB (Moderate)"
 HOL_paternal_autocrat_party_long:0 "Nieuwe Nederlandse Beweging"
-HOL_national_populist_party:0 "NNB"
+HOL_national_populist_party:0 "NNB (Hardliners)"
 HOL_national_populist_party_long:0 "Nieuwe Nederlandse Beweging"
 HOL_valkist_party:0 "PVV"
 HOL_valkist_party_long:0 "Partij Voor 't Vaoderland"
 
-#####Events#####
-hol.1.t:0 "The United Provinces in 1936"
-hol.1.d:0 ""
-hol.1.a:0 "Long live the prince!"
+### Ministers
+# Head of Government
+HOL_Izaak_Reynders_hog_ade:0 "Izaak Reynders"
+HOL_Henri_Nicolas_Alfred_Swart_hog_pau:0 "Henri Nicolas Alfred Swart"
+HOL_Cornelis_van_Geelkerken_hog_npo:0 "Cornelis van Geelkerken"
+# Foreign Minister
+HOL_Jan_Baars_for_pau:0 "Jan Baars"
+HOL_Willem_Bernard_Engelbrecht_for_npo:0 "Willem Bernard Engelbrecht"
+# Economy Minister
+HOL_Henri_Johannes_ter_Hal_eco_pau:0 "Henri Johannes ter Hal"
+HOL_Jan_Baars_eco_pau:0 "Jan Baars"
+HOL_Alfred_Haighton_eco_npo:0 "Alfred Haighton"
+HOL_Gerrit_van_Burink_eco_npo:0 "Gerrit van Burink"
+# Security Minister
+HOL_Frederik_Carel_Gerretson_sec_pau:0 "Frederik Carel Gerretson"
+HOL_Johannes_Linthorst_Homan_sec_pau:0 "Johannes Linthorst Homan"
+HOL_AJ_van_der_Hoeven_sec_npo:0 "A.J. van der Hoeven"
+HOL_Cornelis_van_Geelkerken_sec_npo:0 "Cornelis van Geelkerken"
+HOL_Gerhardus_Dieters_sec_npo:0 "Gerhardus Dieters"
+
+### Events
+dutchstate.0.t:0 "The State of the United Provinces"
+dutchstate.0.d:0 "Declaring itself a neutral country during the Great War; the Netherlands found itself its neutrality violated by both the Entente and Central Powers in the later years of the war. However, an offensive launched by the Entente have pushed German forces back to Belgium; effectively encircling them in Flanders. The German Government however, pressured the Dutch Government into allowing its troops to flee to Germany through the Netherlands. This have made the Entente powers seize the Dutch provinces of Limburg and Zeeuws-Vlaanderen and incorporate it into Belgium as a punishment.\n\nThe annexation of Limburg and Zeeuws-Vlaanderen have enraged the Dutch public, resulting in increased nationalism and help the far right parties grow its public support and its influence onto the Dutch Government. In 1934, Prince Bernhard; son-in-law of the Queen Wilhelmina; launched a military coup in overthrowing the current government. The coup was largely inspired by the rise of Adam Dressler in Germany, and also itself backed with German support. The Queen's government was forced into exile into Dutch Suriname.\n\nThe newly established Dutch State have aligned itself with Valkist Germany, creating an alliance named the Stahlpakt. The Prince desires not only the reclamation of the former Dutch provinces from Belgium; but the unification of Netherlands and Belgium itself severely hurting the relationship of the Dutch State and the Continental Entente."
+dutchstate.0.a:0 "Long Live the Prince!"
