@@ -591,7 +591,7 @@ ideas = {
 
     # Head of Government
     head_of_government = {
-        PHI_Luis_Taruc_hog_van = {
+        PHI_Luis_Taruc_hog_col = {
             allowed = { is_a_filipino_tag = yes }
             available = { can_replace_hog = no }
             cancel_if_invalid = no
@@ -601,7 +601,7 @@ ideas = {
                 hog_red_chairmen
             }
         }
-        PHI_Pedro_Abad_Santos_hog_col = {
+        PHI_Pedro_Abad_Santos_hog_van = {
             allowed = { is_a_filipino_tag = yes }
             available = { can_replace_hog = no }
             cancel_if_invalid = no

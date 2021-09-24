@@ -1,6 +1,9 @@
 CRU_mexican_infiltration = {
     allowed = { original_tag = CRU }
-    visible = { has_completed_focus = CRU_watch_the_mexicans }
+    visible = { 
+        has_completed_focus = CRU_watch_the_mexicans
+        country_exists = MEX
+    }
     icon = GFX_decision_category_infiltration
     priority = 100
 }
