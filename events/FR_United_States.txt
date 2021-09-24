@@ -1962,7 +1962,7 @@ country_event = { # Emergency Congress Session
                     picture = "Portrait_USA_Douglas_MacArthur_fx.tga"
                     expire = "1965.1.1"
                     ideology = paternal_autocrat_subtype
-                    traits = { }
+                    traits = { grand_marshal }
                 }
             }
             else = {
@@ -1972,7 +1972,7 @@ country_event = { # Emergency Congress Session
                     picture = "Portrait_USA_Dwight_Eisenhower_fx.tga"
                     expire = "1965.1.1"
                     ideology = paternal_autocrat_subtype
-                    traits = { }
+                    traits = { popular_figurehead }
                 }
             }
             
@@ -1995,23 +1995,24 @@ country_event = { # Emergency Congress Session
             popularity = 0.35
         }
         remove_every_minister = yes
+
         if = {
             limit = {
                 NOT = { has_country_flag = USA_macarthur_retired }
+            }
+            add_ideas = {
+                USA_Douglas_MacArthur_hog_pau
+                USA_John_William_Davis_for_pau
+                USA_William_Harrison_Standley_eco_pau
+                USA_Joel_Bennett_Clark_sec_pau
+            }
+            else = {
                 add_ideas = {
-                    USA_Douglas_MacArthur_hog_pau
+                    USA_Dwight_Eisenhower_hog_pau
                     USA_John_William_Davis_for_pau
                     USA_William_Harrison_Standley_eco_pau
                     USA_Joel_Bennett_Clark_sec_pau
                 }
-            }
-        }
-        else = {
-            add_ideas = {
-                USA_Dwight_Eisenhower_hog_pau
-                USA_John_William_Davis_for_pau
-                USA_William_Harrison_Standley_eco_pau
-                USA_Joel_Bennett_Clark_sec_pau
             }
         }
     }

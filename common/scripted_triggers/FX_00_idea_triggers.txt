@@ -92,6 +92,9 @@ has_no_unique_companies = {
             original_tag = SWI
             original_tag = CRU
             original_tag = MEX
+            original_tag = NAR
+            original_tag = NEE
+            original_tag = CLB
         }
     }
 }
