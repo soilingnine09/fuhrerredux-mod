@@ -1,15 +1,12 @@
 ideas = {
 	country = {
-		
-	### Starting ideas ###
-
+		### Starting ideas ###
 		KNE_military_refugees = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KNE_military_refugees"}
 			picture = generic_manpower_bonus
 			modifier = {
 				conscription = 0.05
+				monthly_population = 0.15
 			}
 		}
-		
-		}
 	}
+}
