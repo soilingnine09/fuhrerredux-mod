@@ -14,6 +14,16 @@ ideas = {
             allowed = { original_tag = HOL }
             picture = ger_rebuild_the_nation
             modifier = {
+                production_speed_buildings_factor = 0.10
+                line_change_production_efficiency_factor = 0.15
+                industrial_capacity_factory = 0.05
+                industrial_capacity_dockyard = 0.05
+            }
+        }
+        HOL_dutch_german_economic_cooperation_1 = {
+            allowed = { original_tag = HOL }
+            picture = ger_rebuild_the_nation
+            modifier = {
                 production_speed_buildings_factor = 0.15
                 line_change_production_efficiency_factor = 0.35
                 industrial_capacity_factory = 0.15
@@ -26,6 +36,59 @@ ideas = {
             modifier = {
                 trade_opinion_factor = -0.25
                 political_power_cost = 0.15
+            }
+        }
+        HOL_unrecognized_government_1 = {
+            allowed = { original_tag = HOL }
+            picture = generic_neutrality_drift_bonus
+            modifier = {
+                political_power_cost = 0.15
+            }
+        }
+        HOL_defensive_preparations = {
+            allowed = { original_tag = HOL }
+            picture = generic_fortify_the_borders
+            modifier = {
+                production_speed_bunker_factor = 0.15
+                production_speed_coastal_bunker_factor = 0.15
+                production_speed_anti_air_building_factor = 0.15
+            }
+        }
+        HOL_welfare_programs = {
+            allowed = { original_tag = HOL }
+            picture = ROM_king_carol_ii_hedonist
+            modifier = {
+                production_factory_max_efficiency_factor = 0.05
+            }
+        }
+        HOL_welfare_programs_1 = {
+            allowed = { original_tag = HOL }
+            picture = ROM_king_carol_ii_hedonist
+            modifier = {
+                production_factory_max_efficiency_factor = 0.15
+            }
+        }
+        HOL_industrial_budget = {
+            allowed = { original_tag = HOL }
+            picture = generic_central_management
+            modifier = {
+                consumer_goods_factor = -0.15
+            }
+        }
+        HOL_food_sufficiency = {
+            allowed = { original_tag = HOL }
+            picture = generic_agrarian_reform
+            modifier = {
+                consumer_goods_factor = -0.025
+                supply_consumption_factor = -0.05
+            }
+        }
+        HOL_food_sufficiency_1 = {
+            allowed = { original_tag = HOL }
+            picture = generic_agrarian_reform
+            modifier = {
+                consumer_goods_factor = -0.05
+                supply_consumption_factor = -0.15
             }
         }
     }

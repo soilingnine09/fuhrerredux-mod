@@ -1,0 +1,910 @@
+focus_tree = {
+    id = dutch_state_focus
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = HOL
+        }
+    }
+
+    continuous_focus_position = { x = 100 y = 1200 }
+
+    # Calibrate our Economy
+    focus = {
+        id = HOL_calibrate_our_economy
+        icon = GFX_goal_generic_neutrality_focus
+        x = 5
+        y = 0
+        cost = 6
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 0.75
+                uses = 2
+                category = industry
+            }
+        }
+    }
+
+    # Improving our Defenses
+    focus = {
+        id = HOL_improving_our_defenses
+        icon = GFX_goal_generic_defence
+        x = -3
+        y = 1
+        cost = 6 
+        prerequisite = { focus = HOL_calibrate_our_economy }
+        relative_position_id = HOL_calibrate_our_economy
+        completion_reward = {
+            add_timed_idea = {
+                idea = HOL_defensive_preparations
+                days = 480
+            }
+        }
+    }
+
+    # Southern Bunkers
+    focus = {
+        id = HOL_southern_bunkers
+        icon = GFX_goal_generic_fortify_city
+        x = -1
+        y = 1
+        cost = 6
+        available = {
+            controls_state = 35
+            controls_state = 938
+        }
+        prerequisite = { focus = HOL_improving_our_defenses }
+        relative_position_id = HOL_improving_our_defenses
+        completion_reward = {
+            35 = {
+                add_building_construction = {
+                    type = bunker
+                    province = {
+                        all_provinces = yes
+                        limit_to_naval_base = yes
+                    }
+                    level = 3
+                    instant_build = yes
+                }
+            }
+            938 = {
+                add_building_construction = {
+                    type = bunker
+                    province = {
+                        all_provinces = yes
+                        limit_to_naval_base = yes
+                    }
+                    level = 3
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    # Coastal Bunkers
+    focus = {
+        id = HOL_coastal_bunkers
+        icon = GFX_focus_generic_coastal_fort
+        x = 1
+        y = 1
+        cost = 6
+        available = {
+            controls_state = 7
+            controls_state = 36
+        }
+        prerequisite = { focus = HOL_improving_our_defenses }
+        relative_position_id = HOL_improving_our_defenses
+        completion_reward = {
+            7 = {
+                add_building_construction = {
+                    type = coastal_bunker
+                    province = {
+                        all_provinces = yes
+                        limit_to_naval_base = yes
+                    }
+                    level = 3
+                    instant_build = yes
+                }
+                add_building_construction = {
+                    type = coastal_bunker
+                    province = {
+                        all_provinces = yes
+                        limit_to_coastal = yes
+                    }
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            36 = {
+                add_building_construction = {
+                    type = coastal_bunker
+                    province = {
+                        all_provinces = yes
+                        limit_to_naval_base = yes
+                    }
+                    level = 3
+                    instant_build = yes
+                }
+                add_building_construction = {
+                    type = coastal_bunker
+                    province = {
+                        all_provinces = yes
+                        limit_to_coastal = yes
+                    }
+                    level = 2
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    # Air Defenses
+    focus = {
+        id = HOL_air_defenses
+        icon = GFX_focus_generic_air_defense
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_southern_bunkers }
+        prerequisite = { focus = HOL_coastal_bunkers }
+        relative_position_id = HOL_southern_bunkers
+        completion_reward = {
+            random_owned_controlled_state = {
+                if = {
+                    limit = {
+                        free_building_slots = {
+                            building = anti_air_building
+                            size > 3
+                        }
+                    }
+                    add_building_construction = {
+                        type = anti_air_building
+                        level = 3
+                        instant_build = yes
+                    }
+                }
+            }
+            random_owned_controlled_state = {
+                if = {
+                    limit = {
+                        free_building_slots = {
+                            building = anti_air_building
+                            size > 3
+                        }
+                    }
+                    add_building_construction = {
+                        type = anti_air_building
+                        level = 3
+                        instant_build = yes
+                    }
+                }
+            }
+        }
+    }
+
+    # Embargo France
+    focus = {
+        id = HOL_embargo_france
+        icon = GFX_focus_attack_france
+        x = -1
+        y = 1
+        cost = 6
+        mutually_exclusive = { focus = HOL_embargo_britain }
+        prerequisite = { focus = HOL_calibrate_our_economy }
+        relative_position_id = HOL_calibrate_our_economy
+        ai_will_do = {
+            factor = 200
+        }
+        completion_reward = {
+            custom_effect_tooltip = HOL_embargo_france_tt
+            hidden_effect = {
+                set_variable = {
+                    tag_to_embargo = FRA.id
+                }
+                GER = { 
+                    set_variable = {
+                        tag_to_embargo = FRA.id
+                    }
+                    country_event = { id = dutchstate.2 hours = 8 } 
+                }
+            }
+        }
+    }
+
+    # Embargo Britain
+    focus = {
+        id = HOL_embargo_britain
+        icon = GFX_focus_attack_britain
+        x = 1
+        y = 1
+        cost = 6
+        mutually_exclusive = { focus = HOL_embargo_france }
+        prerequisite = { focus = HOL_calibrate_our_economy }
+        relative_position_id = HOL_calibrate_our_economy
+        completion_reward = {
+            custom_effect_tooltip = HOL_embargo_britain_tt
+            hidden_effect = {
+                set_variable = {
+                    tag_to_embargo = ENG.id
+                }
+                GER = { 
+                    set_variable = {
+                        tag_to_embargo = ENG.id
+                    }
+                    country_event = { id = dutchstate.2 hours = 8 } 
+                }
+            }
+        }
+    }
+
+    # Expand German Economic Cooperation
+    focus = {
+        id = HOL_expand_german_economic_cooperation
+        icon = GFX_goal_germany
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = {
+            focus = HOL_embargo_france
+            focus = HOL_embargo_britain
+        }
+        relative_position_id = HOL_embargo_france
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = HOL_dutch_german_economic_cooperation
+                add_idea = HOL_dutch_german_economic_cooperation_1
+            }
+        }
+    }
+
+    # New Dutch Industries
+    focus = {
+        id = HOL_new_dutch_industries
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_expand_german_economic_cooperation }
+        relative_position_id = HOL_expand_german_economic_cooperation
+        completion_reward = {
+            random_owned_controlled_state = {
+                if = {
+                    limit = {
+                        free_building_slots = {
+                            building = industrial_complex
+                            size > 0
+                            include_locked = yes
+                        }
+
+                    }
+
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 2
+                        instant_build = yes
+                    }
+                }
+            }
+        }
+    }
+
+    # The Arms Industries
+    focus = {
+        id = HOL_the_arms_industries
+        icon = GFX_goal_generic_construct_mil_factory
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_expand_german_economic_cooperation }
+        relative_position_id = HOL_expand_german_economic_cooperation
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = {
+                    free_building_slots = {
+                        building = arms_factory
+                        size > 0
+                        include_locked = yes
+                    }
+                }
+
+                add_extra_state_shared_building_slots = 3
+                add_building_construction = {
+                    type = arms_factory
+                    level = 3
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    # Densed Industrial Zones
+    focus = {
+        id = HOL_densed_industrial_zones
+        icon = GFX_goal_generic_position_armies
+        x = -1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_new_dutch_industries }
+        relative_position_id = HOL_new_dutch_industries
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = {
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 0
+                        include_locked = yes
+                    }
+                }
+
+                add_extra_state_shared_building_slots = 2
+            }
+            random_owned_controlled_state = {
+                limit = {
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 0
+                        include_locked = yes
+                    }
+                }
+
+                add_extra_state_shared_building_slots = 2
+            }
+        }
+    }
+
+    # Welfare Subsidies
+    focus = {
+        id = HOL_welfare_subsidies
+        icon = GFX_goal_famine
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_new_dutch_industries }
+        prerequisite = { focus = HOL_the_arms_industries }
+        relative_position_id = HOL_new_dutch_industries
+        completion_reward = {
+            add_ideas = HOL_welfare_programs
+        }
+    }
+
+    # Joint Dutch-German Research Projects
+    focus = {
+        id = HOL_joint_dutch_german_research_projects
+        icon = GFX_goal_great_science
+        x = -1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_densed_industrial_zones }
+        relative_position_id = HOL_densed_industrial_zones
+        completion_reward = {
+            add_research_slot = 1
+        }
+    }
+
+    # Harnessing Atomic Power
+    focus = {
+        id = HOL_harnessing_atomic_power
+        icon = GFX_focus_wonderweapons
+        x = 0
+        y = 2
+        cost = 6
+        prerequisite = { focus = HOL_joint_dutch_german_research_projects }
+        relative_position_id = HOL_joint_dutch_german_research_projects
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 2.0
+                uses = 1
+                category = nuclear
+            }
+        }
+    }
+
+    # The Labour Laws
+    focus = {
+        id = HOL_the_labour_laws
+        icon = GFX_goal_munitions_factories
+        x = 0
+        y = 2
+        cost = 6
+        prerequisite = { focus = HOL_densed_industrial_zones }
+        prerequisite = { focus = HOL_welfare_subsidies }
+        relative_position_id = HOL_densed_industrial_zones
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = HOL_welfare_programs
+                add_idea = HOL_welfare_programs_1
+            }
+        }
+    }
+
+    # Nationalize Foreign Arms Industries
+    focus = {
+        id = HOL_nationalize_foreign_arms_industries
+        icon = GFX_goal_generic_seize_investments
+        x = -1
+        y = 1
+        cost = 6
+        mutually_exclusive = { focus = HOL_subsidize_domestic_arms_industries }
+        prerequisite = { focus = HOL_welfare_subsidies }
+        prerequisite = { focus = HOL_densed_industrial_zones }
+        relative_position_id = HOL_welfare_subsidies
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = {
+                    free_building_slots = {
+                        building = arms_factory
+                        size > 0
+                        include_locked = yes
+                    }
+                }
+
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = arms_factory
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            add_tech_bonus = {
+                category = infantry_weapons
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Subsidize Domestic Arms Industries
+    focus = {
+        id = HOL_subsidize_domestic_arms_industries
+        icon = GFX_DAH_Topke
+        x = 1
+        y = 1
+        cost = 6
+        mutually_exclusive = { focus = HOL_nationalize_foreign_arms_industries }
+        prerequisite = { focus = HOL_welfare_subsidies }
+        prerequisite = { focus = HOL_densed_industrial_zones }
+        relative_position_id = HOL_welfare_subsidies
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = {
+                    free_building_slots = {
+                        building = arms_factory
+                        size > 0
+                        include_locked = yes
+                    }
+                }
+
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                limit = {
+                    free_building_slots = {
+                        building = arms_factory
+                        size > 0
+                        include_locked = yes
+                    }
+                }
+
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                limit = {
+                    free_building_slots = {
+                        building = arms_factory
+                        size > 0
+                        include_locked = yes
+                    }
+                }
+
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    # Railway Reform
+    focus = {
+        id = HOL_railway_reform
+        icon = GFX_goal_generic_railway_construction
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = {
+            focus = HOL_nationalize_foreign_arms_industries
+            focus = HOL_subsidize_domestic_arms_industries
+        }
+        relative_position_id = HOL_nationalize_foreign_arms_industries
+        completion_reward = {
+            random_owned_controlled_state = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    # Electronic Advancements
+    focus = {
+        id = HOL_electronic_advancements
+        icon = GFX_goal_machine
+        x = -1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_railway_reform }
+        relative_position_id = HOL_railway_reform
+        completion_reward = {
+            add_tech_bonus = {
+                category = electronics
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Industrial Expansion Budget Allocation
+    focus = {
+        id = HOL_industrial_expansion_budget_allocation
+        icon = GFX_goal_bag_of_money
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_railway_reform }
+        relative_position_id = HOL_railway_reform
+        completion_reward = {
+            add_timed_idea = {
+                idea = HOL_industrial_budget
+                days = 480
+            }
+        }
+    }
+
+    # Infrastructure Expansion
+    focus = {
+        id = HOL_infrastructure_expansion
+        icon = GFX_goal_generic_construction
+        x = 2
+        y = 2
+        cost = 6
+        prerequisite = { focus = HOL_the_arms_industries }
+        relative_position_id = HOL_the_arms_industries
+        completion_reward = {
+            random_owned_controlled_state = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    # Agricultural Expansion
+    focus = {
+        id = HOL_agricultural_expansion
+        icon = GFX_focus_AUS_agriculture
+        x = -1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_infrastructure_expansion }
+        relative_position_id = HOL_infrastructure_expansion
+        completion_reward = {
+            if = {
+                limit = { has_idea = HOL_food_sufficiency }
+                swap_ideas = {
+                    remove_idea = HOL_food_sufficiency
+                    add_idea = HOL_food_sufficiency_1
+                }
+                else = {
+                    add_ideas = HOL_food_sufficiency
+                }
+            }
+        }
+    }
+
+    # Fisheries Expansion
+    focus = {
+        id = HOL_fisheries_expansion
+        icon = GFX_focus_generic_cruiser2
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_infrastructure_expansion }
+        relative_position_id = HOL_infrastructure_expansion
+        completion_reward = {
+            if = {
+                limit = { has_idea = HOL_food_sufficiency }
+                swap_ideas = {
+                    remove_idea = HOL_food_sufficiency
+                    add_idea = HOL_food_sufficiency_1
+                }
+                else = {
+                    add_ideas = HOL_food_sufficiency
+                }
+            }
+        }
+    }
+
+    # Trade Expansion
+    focus = {
+        id = HOL_trade_expansion
+        icon = GFX_goal_generic_trade
+        x = 3
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_calibrate_our_economy }
+        relative_position_id = HOL_calibrate_our_economy
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = HOL_unrecognized_government
+                add_idea = HOL_unrecognized_government_1
+            }
+        }
+    }
+
+    # Rotterdam Shipyards
+    focus = {
+        id = HOL_rotterdam_shipyards
+        icon = GFX_goal_generic_construct_naval_dockyard
+        x = -1
+        y = 1
+        cost = 6
+        available = { controls_state = 7 }
+        prerequisite = { focus = HOL_trade_expansion }
+        relative_position_id = HOL_trade_expansion
+        completion_reward = {
+            7 = {
+                limit = {
+                    free_building_slots = {
+                        building = dockyard
+                        size > 0
+                        include_locked = yes
+                    }
+                }
+
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = dockyard
+                    level = 2
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    # Port Expansion
+    focus = {
+        id = HOL_port_expansion
+        icon = GFX_SIA_maritmesilkroad
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_trade_expansion }
+        relative_position_id = HOL_trade_expansion
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = {
+                    is_coastal = yes
+                }
+                add_building_construction = {
+                    type = naval_base
+                    province = {
+                        limit_to_naval_base = yes
+                    }
+                    level = 3
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    # Shipping Expansion
+    focus = {
+        id = HOL_shipping_expansion
+        icon = GFX_goal_generic_coastal_navy2
+        x = 0
+        y = 2
+        cost = 6
+        prerequisite = { focus = HOL_port_expansion }
+        relative_position_id = HOL_port_expansion
+        completion_reward = {
+            add_equipment_to_stockpile = {
+                type = convoy
+                amount = 50
+                producer = HOL
+            }
+        }
+    }
+
+    # European Trade Opportunities
+    focus = {
+        id = HOL_european_trade_opportunities
+        icon = GFX_goal_collaborate_local_elites
+        x = 3
+        y = 1
+        cost = 2
+        prerequisite = { focus = HOL_trade_expansion }
+        relative_position_id = HOL_trade_expansion
+        completion_reward = {
+            add_political_power = 25
+        }
+    }
+
+    # Swedish Iron Imports
+    focus = {
+        id = HOL_swedish_iron_imports
+        icon = GFX_goal_steel
+        x = -1
+        y = 1
+        cost = 6
+        available = {
+            SWE = {
+                exists = yes
+                has_capitulated = no
+                has_socialist_government = no
+                NOT = { has_war_with = ROOT }
+            }
+        }
+        prerequisite = { focus = HOL_european_trade_opportunities }
+        relative_position_id = HOL_european_trade_opportunities
+        completion_reward = {
+            SWE = { country_event = { id = dutchstate.5 hours = 12 } }
+        }
+    }
+
+    # Turkish Chromium Imports
+    focus = {
+        id = HOL_turkish_chromium_imports
+        icon = GFX_goal_ottoman
+        x = 1
+        y = 1
+        cost = 6
+        available = {
+            TUR = {
+                exists = yes
+                has_capitulated = no
+                has_socialist_government = no
+                NOT = { has_war_with = ROOT }
+            }
+        }
+        prerequisite = { focus = HOL_european_trade_opportunities }
+        relative_position_id = HOL_european_trade_opportunities
+        completion_reward = {
+            TUR = { country_event = { id = dutchstate.5 hours = 12 } }
+        }
+    }
+
+    # Trade in the New World
+    focus = {
+        id = HOL_trade_in_the_new_world
+        icon = GFX_focus_generic_the_giant_wakes
+        x = 0
+        y = 2
+        cost = 2
+        prerequisite = { focus = HOL_european_trade_opportunities }
+        relative_position_id = HOL_european_trade_opportunities
+        completion_reward = {
+            add_political_power = 25
+        }
+    }
+
+    # Mexican Oil
+    focus = {
+        id = HOL_mexican_oil
+        icon = GFX_goal_mexico
+        x = 1
+        y = 1
+        cost = 6
+        available = {
+            MEX = {
+                exists = yes
+                has_capitulated = no
+                has_socialist_government = no
+                NOT = { has_war_with = ROOT }
+            }
+        }
+        prerequisite = { focus = HOL_trade_in_the_new_world }
+        relative_position_id = HOL_trade_in_the_new_world
+        completion_reward = {
+            MEX = { country_event = { id = dutchstate.5 hours = 12 } }
+        }
+    }
+
+    # Colombian Coffee
+    focus = {
+        id = HOL_colombian_coffee
+        icon = GFX_goal_grancolombia
+        x = -1
+        y = 1
+        cost = 6
+        available = {
+            COL = {
+                exists = yes
+                has_capitulated = no
+                has_socialist_government = no
+                NOT = { has_war_with = ROOT }
+            }
+        }
+        prerequisite = { focus = HOL_trade_in_the_new_world }
+        relative_position_id = HOL_trade_in_the_new_world
+        completion_reward = {
+            COL = { country_event = { id = dutchstate.5 hours = 12 } }
+        }
+    }
+
+    # The Asian Market
+    focus = {
+        id = HOL_the_asian_market
+        icon = GFX_goal_HOL_progressive_tax
+        x = 0
+        y = 2
+        cost = 2
+        prerequisite = { focus = HOL_trade_in_the_new_world }
+        relative_position_id = HOL_trade_in_the_new_world
+        completion_reward = {
+            add_political_power = 25
+        }
+    }
+
+    # Insulindian Rubber
+    focus = {
+        id = HOL_insulindian_rubber
+        icon = GFX_goal_generic_oil_refinery
+        x = -1
+        y = 1
+        cost = 6
+        available = {
+            INS = {
+                exists = yes
+                has_capitulated = no
+                has_socialist_government = no
+                NOT = { has_war_with = ROOT }
+            }
+        }
+        prerequisite = { focus = HOL_the_asian_market }
+        relative_position_id = HOL_the_asian_market
+        completion_reward = {
+            INS = { country_event = { id = dutchstate.5 hours = 12 } }
+        }
+    }
+
+    # Filipino Rubber
+    focus = {
+        id = HOL_filipino_rubber
+        icon = GFX_goal_flag_phillipines
+        x = 1
+        y = 1
+        cost = 6
+        available = {
+            PHI = {
+                exists = yes
+                has_capitulated = no
+                has_socialist_government = no
+                NOT = { has_war_with = ROOT }
+            }
+        }
+        prerequisite = { focus = HOL_the_asian_market }
+        relative_position_id = HOL_the_asian_market
+        completion_reward = {
+            PHI = { country_event = { id = dutchstate.5 hours = 12 } }
+        }
+    }
+
+}

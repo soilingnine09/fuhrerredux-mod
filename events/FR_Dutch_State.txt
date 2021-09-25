@@ -1,6 +1,6 @@
 add_namespace = dutchstate
 
-country_event = {
+country_event = { # Intro Event
     id = dutchstate.0
     title = dutchstate.0.t
     desc = dutchstate.0.d
@@ -9,5 +9,199 @@ country_event = {
 
     option = {
         name = dutchstate.0.a
+    }
+}
+
+country_event = { # GER - Request to Embargo 
+    id = dutchstate.1
+    title = dutchstate.1.t
+    desc = dutchstate.1.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.1.a
+        add_political_power = 100
+        ai_chance = {
+            factor = 90
+        }
+        hidden_effect = {
+            var:tag_to_embargo = {
+                embargo_PREV = yes
+            }
+            FROM = { country_event = dutchstate.2 }
+        }
+    }
+    option = {
+        name = dutchstate.1.b
+        decrease_ruling_party_popularity_by_15 = yes
+        add_stability = -0.15
+        hidden_effect = {
+            FROM = { country_event = dutchstate.3 }
+        }
+    }
+}
+
+country_event = { # Dutch Embargo
+    id = dutchstate.2
+    title = dutchstate.2.t
+    desc = dutchstate.2.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.2.a
+        ai_chance = {
+            factor = 10
+        }
+        add_political_power = 100
+        hidden_effect = {
+            var:tag_to_embargo = {
+                country_event = dutchstate.3
+                embargo_PREV = yes
+            }
+            clear_variable = tag_to_embargo
+            GER = { clear_variable = tag_to_embargo }
+        }
+    }
+}
+
+country_event = { # No Embargo
+    id = dutchstate.3
+    title = dutchstate.3.t
+    desc = dutchstate.3.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.3.a
+        hidden_effect = {
+            clear_variable = tag_to_embargo
+            GER = { clear_variable = tag_to_embargo }
+        }
+    }
+}
+
+country_event = {
+    id = dutchstate.4
+    title = dutchstate.4.t
+    desc = dutchstate.4.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.4.a
+        add_political_power = -10
+    }
+}
+
+country_event = {
+    id = dutchstate.5
+    title = dutchstate.5.t
+    desc = dutchstate.5.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.5.a
+        add_offsite_building = {
+            type = industrial_complex
+            level = 2
+        }
+        FROM = {
+            country_event = { id = dutchstate.6 hours = 8 }
+        }
+    }
+    option = {
+        name = dutchstate.5.b
+        add_political_power = -10
+        FROM = {
+            country_event = { id = dutchstate.7 hours = 8 }
+        }
+    }
+}
+
+country_event = {
+    id = dutchstate.6
+    title = dutchstate.6.t
+    desc = dutchstate.6.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.6.a
+        if = {
+            limit = {
+                FROM = { tag = SWE }
+            }
+            add_resource = {
+                type = steel
+                amount = 20
+                state = 7
+            }
+        }
+        else_if = {
+            limit = {
+                FROM = { tag = TUR }
+            }
+            add_resource = {
+                type = chromium
+                amount = 20
+                state = 7
+            }
+        }
+        else_if = {
+            limit = {
+                FROM = { tag = MEX }
+            }
+            add_resource = {
+                type = oil
+                amount = 20
+                state = 7
+            }
+        }
+        else_if = {
+            limit = {
+                FROM = { tag = COL }
+            }
+            add_resource = {
+                type = oil
+                amount = 20
+                state = 7
+            }
+        }
+        else_if = {
+            limit = {
+                FROM = { tag = INS }
+            }
+            add_resource = {
+                type = rubber
+                amount = 20
+                state = 7
+            }
+        }
+        else_if = {
+            limit = {
+                FROM = { tag = PHI }
+            }
+            add_resource = {
+                type = rubber
+                amount = 20
+                state = 7
+            }
+        }
+    }
+}
+
+country_event = {
+    id = dutchstate.7
+    title = dutchstate.7.t
+    desc = dutchstate.7.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.7.a
+        add_political_power = -5
     }
 }
