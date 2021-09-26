@@ -214,7 +214,7 @@ focus_tree = {
     # Align Nationalist Industrialists
     focus = {
         id = HOL_align_nationalist_industrialists
-        icon = GFX_focus_usa_reestablish_the_gold_standard
+        icon = GFX_goal_factory_complex
         x = 1
         y = 1
         cost = 6
@@ -1724,7 +1724,7 @@ focus_tree = {
     # Defending Holland
     focus = {
         id = HOL_defending_holland
-        icon = GFX_focus_hol_oranje_boven
+        icon = GFX_goal_HOL_dutch_state
         x = 0
         y = 2
         cost = 6

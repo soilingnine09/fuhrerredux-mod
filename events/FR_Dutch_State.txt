@@ -402,3 +402,49 @@ country_event = { # HOL: Resistance Suppressed
         add_political_power = 10
     }
 }
+
+country_event = {
+    id = dutchstate.17
+    title = dutchstate.17.t
+    desc = dutchstate.17.d
+    picture = GFX_report_event_hol_prins_bernhard
+    
+    trigger = {
+        tag = HOL
+        BEL = {
+            owns_state = 866
+            owns_state = 867
+        }
+    }
+
+    mean_time_to_happen = {
+        days = 30
+        modifier = {
+            factor = 0.25
+            BEL = { has_idea = HOL_dutch_resistance }
+        }
+        modifier = {
+            factor = 0.50
+            OR = {
+                BEL = { has_socialist_government = yes }
+                FRA = {
+                    controls_state = 866
+                    controls_state = 867
+                }
+            }
+        }
+        modifier = {
+            factor = 1.00
+            OR = {
+                BEL = { has_democratic_government = yes }
+                FRA = { is_in_faction_with = BEL }
+                ENG = { is_in_faction_with = BEL }
+            }
+        }
+    }
+
+    option = {
+        name = dutchstate.17.a
+        add_manpower = 1000
+    }
+}
