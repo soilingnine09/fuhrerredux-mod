@@ -1381,4 +1381,211 @@ focus_tree = {
             }
         }
     }
+
+    #######################################################
+
+    # Address the Navy
+    focus = {
+        id = HOL_address_the_navy
+        icon = GFX_goal_generic_build_navy
+        x = 15
+        y = 8
+        cost = 6
+        completion_reward = {
+            navy_experience = 25
+        }
+    }
+
+    # Begin Naval Funding
+    focus = {
+        id = HOL_begin_naval_funding
+        icon = GFX_DAH_Topke
+        x = -3
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_address_the_navy }
+        relative_position_id = HOL_address_the_navy
+        completion_reward = {
+            add_ideas = HOL_kickstart_naval_production
+        }
+    }
+
+    # Carrier Research
+    focus = {
+        id = HOL_carrier_research
+        icon = GFX_goal_generic_navy_carrier
+        x = -1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_begin_naval_funding }
+        relative_position_id = HOL_begin_naval_funding
+        completion_reward = {
+            add_tech_bonus = {
+                category = cv_tech
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Battleship Research
+    focus = {
+        id = HOL_battleship_research
+        icon = GFX_goal_generic_navy_battleship3
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_begin_naval_funding }
+        relative_position_id = HOL_begin_naval_funding
+        completion_reward = {
+            add_tech_bonus = {
+                category = bb_tech
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Borrow German Naval Designs
+    focus = {
+        id = HOL_borrow_german_naval_designs
+        icon = GFX_goal_navy_decision
+        x = -1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_address_the_navy }
+        relative_position_id = HOL_address_the_navy
+        completion_reward = {
+            add_ideas = HOL_german_naval_designs
+        }
+    }
+
+    # Recall the Admirals
+    focus = {
+        id = HOL_recall_the_admirals
+        icon = GFX_goal_navy_hat_ships
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_address_the_navy }
+        relative_position_id = HOL_address_the_navy
+        completion_reward = {
+            create_navy_leader = {
+                name = "Alfred de Booy"
+                portrait_path = "gfx/leaders/HOL/Portrait_Netherlands_Alfred_de_Booy.tga"
+                traits = { fly_swatter }
+                skill = 2
+                attack_skill = 1
+                defense_skill = 2
+                maneuvering_skill = 2
+                coordination_skill = 2
+            }
+            create_navy_leader = {
+                name = "Karel Doorman"
+                portrait_path = "gfx/leaders/HOL/Portrait_Netherlands_Karel_Doorman.tga"
+                traits = { superior_tactician }
+                skill = 3
+                attack_skill = 2
+                defense_skill = 3
+                maneuvering_skill = 2
+                coordination_skill = 3
+            }
+        }
+    }
+
+    # Decide on a Doctrine
+    focus = {
+        id = HOL_decide_on_a_doctrine
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 1
+        y = 1
+        cost = 1
+        prerequisite = { focus = HOL_borrow_german_naval_designs }
+        prerequisite = { focus = HOL_recall_the_admirals }
+        relative_position_id = HOL_borrow_german_naval_designs
+        completion_reward = {
+            add_tech_bonus = {
+                category = naval_doctrine
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Submarine Modernization
+    focus = {
+        id = HOL_submarine_modernization
+        icon = GFX_goal_generic_navy_submarine
+        x = 2
+        y = 2
+        cost = 6
+        prerequisite = { focus = HOL_address_the_navy }
+        relative_position_id = HOL_address_the_navy
+        completion_reward = {
+            add_tech_bonus = {
+                category = ss_tech
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Destroyer Modernization
+    focus = {
+        id = HOL_destroyer_modernization
+        icon = GFX_goal_generic_navy_battleship3alt
+        x = 0
+        y = 2
+        cost = 6
+        prerequisite = { focus = HOL_recall_the_admirals }
+        prerequisite = { focus = HOL_submarine_modernization }
+        relative_position_id = HOL_recall_the_admirals
+        completion_reward = {
+            add_tech_bonus = {
+                category = dd_tech
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Cruiser Modernization
+    focus = {
+        id = HOL_cruiser_modernization
+        icon = GFX_goal_generic_navy_battleship
+        x = 0
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_carrier_research }
+        prerequisite = { focus = HOL_battleship_research }
+        prerequisite = { focus = HOL_decide_on_a_doctrine }
+        relative_position_id = HOL_battleship_research
+        completion_reward = {
+            add_tech_bonus = {
+                category = ca_tech
+                category = cl_tech
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Improve our Naval Strategies
+    focus = {
+        id = HOL_improve_our_naval_strategies
+        icon = GFX_goal_generic_sea_focused_navy2
+        x = 0
+        y = 2
+        cost = 6
+        prerequisite = { focus = HOL_cruiser_modernization }
+        prerequisite = { focus = HOL_destroyer_modernization }
+        relative_position_id = HOL_decide_on_a_doctrine
+        completion_reward = {
+            add_tech_bonus = {
+                category = naval_doctrine
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
 }

@@ -148,6 +148,16 @@ create_field_marshal = {
 	planning_skill = 4
 	logistics_skill = 3
 }
+create_field_marshal = {
+	name = "Izaäk Reijnders"
+	picture = "Portrait_Netherlands_Reynders.tga"
+	traits = { trait_reckless }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
 create_corps_commander = {
 	name = "Kees van Eendenburg"
 	picture = "Portrait_Netherlands_Kees_van_Eendenburg.tga"
@@ -168,7 +178,60 @@ create_corps_commander = {
 	planning_skill = 1
 	logistics_skill = 1
 }
+create_corps_commander = {
+	name = "H. van Voorst tot Voorst"
+	picture = "Portrait_Netherlands_van_Voorst_tot_Voorst_H_.tga"
+	traits = { trait_engineer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "G. van Voorst tot Voorst"
+	picture = "Portrait_Netherlands_van_Voorst_tot_Voorst_J_.tga"
+	traits = { trickster }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Hendrik Seyffardt"
+	picture = "Portrait_Netherlands_Seyffardt.tga"
+	traits = {
+		old_guard
+		politically_connected
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
 
+create_navy_leader = {
+	name = "Conrad Helfrich"
+	picture = "Portrait_Netherlands_Conrad_Helfrich.tga"
+	traits = { seawolf }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+create_navy_leader = {
+	name = "Johannes Fürstner"
+	picture = "Portrait_Netherlands_Johannes_Furstner.tga"
+	traits = { ironside }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
 
 ### VARIANTS ###
 # 1936 Start #
