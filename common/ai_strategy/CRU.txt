@@ -96,3 +96,86 @@ CRU_unit_production = {
 		value = 0
 	}
 }
+
+CRU_prepare_for_mexico = {
+    allowed = { original_tag = CRU }
+    enable = {
+        MEX = {
+            exists = yes
+            is_subject = no
+            has_war_with = ROOT
+        }
+        has_war = no
+    }
+    abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = prepare_for_war
+        id = "MEX"
+        value = 200
+    }
+}
+
+CRU_take_offensive = {
+    allowed = { original_tag = CRU }
+    enable = {
+        MEX = {
+            has_war_with = USA
+            has_war_with = PHI
+        }
+    }
+    abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = conquer
+        value = 200
+        id = "MEX"
+    }
+}
+
+CRU_find_allies = {
+    allowed = { original_tag = USA }
+    enable = {
+        MEX = {
+            has_war_with = USA
+            has_war_with = CRU
+        }
+    }
+    abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = befriend
+        value = 200
+        id = "CRU"
+    }
+}
+
+CRU_germany_send_volunteers = {
+    allowed = { original_tag = GER }
+    enable = {
+        GER = {
+            has_war = no
+        }
+        MEX = {
+            has_war_with = CRU
+            NOT = { has_government = valkist }
+        }
+    }
+    abort_when_not_enabled = yes
+
+    ai_strategy = {
+		type = befriend
+		id = "CRU"
+		value = 100
+	}
+	ai_strategy = {
+		type = protect
+		id = "CRU"
+		value = 100
+	}
+    ai_strategy = {
+        type = send_volunteers_desire
+        id = "CRU"
+        value = 200
+    }
+}

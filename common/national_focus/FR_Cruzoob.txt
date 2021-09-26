@@ -39,7 +39,7 @@ focus_tree = {
             add_tech_bonus = {
                 category = industry
                 bonus = 1.0
-                uses = 2
+                uses = 3
             }
         }
     }
@@ -63,10 +63,10 @@ focus_tree = {
                     }
                 }
 
-                add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 3
                 add_building_construction = {
                     type = industrial_complex
-                    level = 2
+                    level = 3
                     instant_build = yes
                 }
             }
@@ -92,10 +92,10 @@ focus_tree = {
                     }
                 }
 
-                add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 3
                 add_building_construction = {
-                    type = arms_factory
-                    level = 2
+                    type = arms_factor
+                    level = 3
                     instant_build = yes
                 }
             }
@@ -116,7 +116,7 @@ focus_tree = {
             random_owned_controlled_state = {
                 add_building_construction = {
                     type = infrastructure
-                    level = 2
+                    level = 4
                     instant_build = yes
                 }
             }
@@ -150,7 +150,7 @@ focus_tree = {
         completion_reward = {
             add_resource = {
                 type = steel
-                amount = 8
+                amount = 16
                 state = 474
             }
             add_resource = {
@@ -235,6 +235,10 @@ focus_tree = {
             }
             add_offsite_building = {
                 type = industrial_complex
+                level = 3
+            }
+            add_offsite_building = {
+                type = arms_factory
                 level = 3
             }
         }
