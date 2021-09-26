@@ -866,7 +866,7 @@ focus_tree = {
     # Insulindian Rubber
     focus = {
         id = HOL_insulindian_rubber
-        icon = GFX_goal_generic_oil_refinery
+        icon = GFX_goal_DEI_focus_moar_rubber
         x = -1
         y = 1
         cost = 6
@@ -907,4 +907,478 @@ focus_tree = {
         }
     }
 
+    #######################################################
+
+    # Reform the Army
+    focus = {
+        id = HOL_reform_the_army
+        icon = GFX_goal_generic_axis_build_infantry
+        x = 19
+        y = 0
+        cost = 6
+        completion_reward = {
+            army_experience = 25
+        }
+    }
+
+    # Speed Emphasis
+    focus = {
+        id = HOL_speed_emphasis
+        icon = GFX_goal_generic_army_tanks2
+        x = -4
+        y = 1
+        cost = 6
+        mutually_exclusive = {
+            focus = HOL_planning_emphasis
+            focus = HOL_firepower_emphasis
+        }
+        prerequisite = { focus = HOL_reform_the_army }
+        relative_position_id = HOL_reform_the_army
+        completion_reward = {
+            add_tech_bonus = {
+                category = cat_mobile_warfare
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Planning Emphasis
+    focus = {
+        id = HOL_planning_emphasis
+        icon = GFX_goal_generic_position_armies
+        x = 0
+        y = 1
+        cost = 6
+        mutually_exclusive = {
+            focus = HOL_speed_emphasis
+            focus = HOL_firepower_emphasis
+        }
+        prerequisite = { focus = HOL_reform_the_army }
+        relative_position_id = HOL_reform_the_army
+        completion_reward = {
+            add_tech_bonus = {
+                category = cat_grand_battle_plan
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Firepower Emphasis
+    focus = {
+        id = HOL_firepower_emphasis
+        icon = GFX_goal_artillery
+        x = 4
+        y = 1
+        cost = 6
+        mutually_exclusive = {
+            focus = HOL_planning_emphasis
+            focus = HOL_speed_emphasis
+        }
+        prerequisite = { focus = HOL_reform_the_army }
+        relative_position_id = HOL_reform_the_army
+        completion_reward = {
+            add_tech_bonus = {
+                category = cat_superior_firepower
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Motorized Divisions
+    focus = {
+        id = HOL_motorized_divisions
+        icon = GFX_goal_generic_army_motorized
+        x = 0
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_speed_emphasis }
+        relative_position_id = HOL_speed_emphasis
+        completion_reward = {
+            add_tech_bonus = {
+                category = motorized_equipment
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Experimental Armoured Divisions
+    focus = {
+        id = HOL_experimental_armoured_divisions
+        icon = GFX_goal_generic_cavalry
+        x = -1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_motorized_divisions }
+        relative_position_id = HOL_motorized_divisions
+        completion_reward = {
+            custom_effect_tooltip = HOL_experimental_armoured_divisions_tt
+            hidden_effect = {
+                load_oob = HOL_armor
+            }
+        }
+    }
+
+    # Tank Improvements
+    focus = {
+        id = HOL_tank_improvements
+        icon = GFX_goal_generic_army_tanks3
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_motorized_divisions }
+        relative_position_id = HOL_motorized_divisions
+        completion_reward = {
+            add_tech_bonus = {
+                category = armor
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Signal Companies
+    focus = {
+        id = HOL_signal_companies
+        icon = GFX_goal_electronics
+        x = 2
+        y = 1
+        cost = 6
+        prerequisite = {
+            focus = HOL_speed_emphasis
+            focus = HOL_planning_emphasis
+        }
+        relative_position_id = HOL_speed_emphasis
+        completion_reward = {
+            add_tech_bonus = {
+                category = signal_company_tech
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Mechanized Divisions
+    focus = {
+        id = HOL_mechanized_divisions
+        icon = GFX_goal_national_mobilization
+        x = 0
+        y = 2
+        cost = 6
+        prerequisite = { focus = HOL_signal_companies }
+        relative_position_id = HOL_signal_companies
+        completion_reward = {
+            add_tech_bonus = {
+                category = cat_mechanized_equipment
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Experimental Armoured Cars
+    focus = {
+        id = HOL_experimental_armoured_cars
+        icon = GFX_focus_generic_tank_production
+        x = 0
+        y = 2
+        cost = 6
+        prerequisite = { focus = HOL_tank_improvements }
+        prerequisite = { focus = HOL_mechanized_divisions }
+        relative_position_id = HOL_tank_improvements
+        completion_reward = {
+            add_tech_bonus = {
+                category = armor
+                category = motorized_equipment
+                bonus = 1.0
+                uses = 2
+            }
+        }
+    }
+
+    # Enhanced Training Programs
+    focus = {
+        id = HOL_enhanced_training_programs
+        icon = GFX_focus_generic_military_academy
+        x = 0
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_planning_emphasis }
+        relative_position_id = HOL_planning_emphasis
+        completion_reward = {
+            add_ideas = HOL_enhanced_training
+        }
+    }
+
+    # Adopt New Tactics
+    focus = {
+        id = HOL_adopt_new_tactics
+        icon = GFX_goal_generic_army_doctrines
+        x = -1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_enhanced_training_programs }
+        relative_position_id = HOL_enhanced_training_programs
+        completion_reward = {
+            add_tech_bonus = {
+                category = land_doctrine
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Recruiment Drive
+    focus = {
+        id = HOL_recruiment_drive
+        icon = GFX_goal_conspiracy
+        x = 0
+        y = 2
+        cost = 6
+        prerequisite = { focus = HOL_adopt_new_tactics }
+        relative_position_id = HOL_adopt_new_tactics
+        completion_reward = {
+            add_manpower = 25000
+        }
+    }
+
+    # Engineering Corps
+    focus = {
+        id = HOL_engineering_corps
+        icon = GFX_goal_generic_construction2
+        x = 2
+        y = 1
+        cost = 6
+        prerequisite = {
+            focus = HOL_planning_emphasis
+            focus = HOL_firepower_emphasis
+        }
+        relative_position_id = HOL_planning_emphasis
+        completion_reward = {
+            add_tech_bonus = {
+                category = engineers_tech
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Reconnaissance Companies
+    focus = {
+        id = HOL_reconnaissance_companies
+        icon = GFX_goal_radio
+        x = -1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_engineering_corps }
+        relative_position_id = HOL_engineering_corps
+        completion_reward = {
+            add_tech_bonus = {
+                category = recon_tech
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # The General Staff
+    focus = {
+        id = HOL_the_general_staff
+        icon = GFX_goal_ideology_paternal_autocrat
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_engineering_corps }
+        relative_position_id = HOL_engineering_corps
+        completion_reward = {
+            add_ideas = HOL_general_staff
+        }
+    }
+
+    # Weapons Production Expertise
+    focus = {
+        id = HOL_weapons_production_expertise
+        icon = GFX_goal_munitions_factories
+        x = 0
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_the_general_staff }
+        relative_position_id = HOL_the_general_staff
+        completion_reward = {
+            add_ideas = HOL_weapons_production_expertise_idea
+        }
+    }
+
+    # Logistics Improvements
+    focus = {
+        id = HOL_logistics_improvements
+        icon = GFX_goal_generic_more_territorial_claims
+        x = -1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_reconnaissance_companies }
+        relative_position_id = HOL_reconnaissance_companies
+        completion_reward = {
+            add_tech_bonus = {
+                category = logistics_tech
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Marine Divisions
+    focus = {
+        id = HOL_marine_divisions
+        icon = GFX_goal_generic_amphibious_assault
+        x = 0
+        y = 2
+        cost = 6
+        prerequisite = { focus = HOL_reconnaissance_companies }
+        relative_position_id = HOL_reconnaissance_companies
+        completion_reward = {
+            add_tech_bonus = {
+                category = marine_tech
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Artillery Modernization
+    focus = {
+        id = HOL_artillery_modernization
+        icon = GFX_goal_generic_army_artillery2
+        x = 0
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_firepower_emphasis }
+        relative_position_id = HOL_firepower_emphasis
+        completion_reward = {
+            add_tech_bonus = {
+                category = artillery
+                bonus = 1
+                uses = 1
+            }
+        }
+    }
+
+    # New Factories
+    focus = {
+        id = HOL_new_factories
+        icon = GFX_goal_generic_construct_mil_factory
+        x = 2
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_firepower_emphasis }
+        relative_position_id = HOL_firepower_emphasis
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = {
+                    free_building_slots = {
+                        building = arms_factory
+                        size > 0
+                        include_locked = yes
+                    }
+                }
+
+                add_extra_state_shared_building_slots = 3
+                add_building_construction = {
+                    type = arms_factory
+                    level = 3
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    # Research Boost
+    focus = {
+        id = HOL_research_boost
+        icon = GFX_focus_research
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_artillery_modernization }
+        prerequisite = { focus = HOL_new_factories }
+        relative_position_id = HOL_artillery_modernization
+        completion_reward = {
+            add_timed_idea = {
+                idea = HOL_research_boost_idea
+                days = 360
+            }
+        }
+    }
+
+    # Tweaking our Doctrines
+    focus = {
+        id = HOL_tweaking_our_doctrines
+        icon = GFX_goal_graveyard
+        x = 1
+        y = 2
+        cost = 6
+        prerequisite = { focus = HOL_research_boost }
+        relative_position_id = HOL_research_boost
+        completion_reward = {
+            add_tech_bonus = {
+                category = land_doctrine
+                bonus = 1.0
+                uses = 1
+            }
+        }
+    }
+
+    # Production Quotas
+    focus = {
+        id = HOL_production_quotas
+        icon = GFX_goal_production
+        x = 0
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_research_boost }
+        relative_position_id = HOL_research_boost
+        completion_reward = {
+            add_ideas = HOL_production_quotas_idea
+        }
+    }
+
+    # New Propaganda
+    focus = {
+        id = HOL_new_propaganda
+        icon = GFX_goal_generic_propaganda
+        x = -1
+        y = 2
+        cost = 6
+        prerequisite = { focus = HOL_research_boost }
+        relative_position_id = HOL_research_boost
+        completion_reward = {
+            add_manpower = 10000
+            add_war_support = 0.15
+        }
+    }
+
+    # Defending Holland
+    focus = {
+        id = HOL_defending_holland
+        icon = GFX_focus_hol_oranje_boven
+        x = 0
+        y = 2
+        cost = 6
+        prerequisite = {
+            focus = HOL_experimental_armoured_cars
+            focus = HOL_recruiment_drive
+            focus = HOL_marine_divisions
+            focus = HOL_new_propaganda
+        }
+        relative_position_id = HOL_logistics_improvements
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = HOL_revaunchist_state
+                add_idea = HOL_revaunchist_state_1
+            }
+        }
+    }
 }

@@ -7,7 +7,16 @@ ideas = {
                 conscription_factor = 0.25
                 army_core_attack_factor = 0.075
                 army_core_defence_factor = 0.075
-                mobilization_speed = 0.05
+            }
+        }
+        HOL_revaunchist_state_1 = {
+            allowed = { original_tag = HOL }
+            picture = vittoria_mutilata
+            modifier = {
+                surrender_limit = 0.15
+                conscription_factor = 0.25
+                army_core_attack_factor = 0.15
+                army_core_defence_factor = 0.15
             }
         }
         HOL_dutch_german_economic_cooperation = {
@@ -89,6 +98,57 @@ ideas = {
             modifier = {
                 consumer_goods_factor = -0.05
                 supply_consumption_factor = -0.15
+            }
+        }
+        HOL_enhanced_training = {
+            allowed = { original_tag = HOL }
+            picture = chi_army_corruption3
+            modifier = {
+                army_org_factor = 0.1
+                army_attack_factor = 0.15
+                army_defence_factor = 0.15
+            }
+        }
+        HOL_general_staff = {
+            allowed = { original_tag = HOL }
+            picture = general_staff
+            modifier = {
+                max_planning = 15
+                planning_speed = 0.15
+            }
+        }
+        HOL_weapons_production_expertise_idea = {
+            allowed = { original_tag = HOL }
+            picture = generic_license_production
+            equipment_bonus = {
+               infantry_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+				motorized = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+                artillery_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+            }
+        }
+        HOL_production_quotas_idea = {
+            allowed = { original_tag = HOL }
+            picture = generic_production_bonus
+            modifier = {
+                political_power_cost = 0.075
+                industrial_capacity_factory = 0.15
+                industrial_capacity_dockyard = 0.15
+            }
+        }
+        HOL_research_boost_idea = {
+            allowed = { original_tag = HOL }
+            picture = jap_supremacy_of_technology
+            modifier = {
+                research_speed_factor = 0.15
             }
         }
     }
@@ -466,6 +526,5 @@ ideas = {
 				air_equipment = 0.1
 			}
 		}
-
-	}
+    }
 }
