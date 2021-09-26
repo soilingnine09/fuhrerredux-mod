@@ -1,6 +1,10 @@
 spriteTypes = {
 
 	spriteType = {
+		name = "GFX_goal_generic_war_in_the_plate"
+		texturefile = "gfx/interface/goals/goal_generic_war_in_the_plate.tga"
+	}
+	spriteType = {
 		name = "GFX_goal_generic_army_training"
 		texturefile = "gfx/interface/goals/generic_army_training.tga"
 	}

@@ -1,0 +1,21 @@
+foreign_politics = {
+    HOL_operation_fakkel_decision = {
+        allowed = { original_tag = HOL }
+        visible = { has_completed_focus = HOL_operation_fakkel }
+        available = {
+            NOT = { has_war_with = BEL }
+        }
+        cost = 25
+        fire_only_once = yes
+        complete_effect = {
+            custom_effect_tooltip = HOL_operation_fakkel_decision_tt
+            hidden_effect = {
+                BEL = {
+                    country_event = { id = dutchstate.11 days = 3 }
+                }
+                866 = { add_resistance = 25 }
+                867 = { add_resistance = 25 }
+            }
+        }
+    }
+}

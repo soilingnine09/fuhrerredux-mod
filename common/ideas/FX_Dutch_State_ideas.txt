@@ -173,6 +173,48 @@ ideas = {
                 }
             }
         }
+        HOL_intelligence_exchange = {
+            allowed = {
+                OR = {
+                    tag = HOL
+                    tag = GER
+                }
+            }
+            picture = generic_spy_intel
+            modifier = {
+                encryption_factor = 0.15
+                decryption_factor = 0.15
+            }
+        }
+        HOL_state_unions = {
+            allowed = { original_tag = HOL }
+            picture = ROM_king_carol_ii_hedonist
+            modifier = {
+                production_factory_max_efficiency_factor = 0.15
+            }
+        }
+        HOL_minimum_wage = {
+            allowed = { original_tag = HOL }
+            picture = ROM_king_carol_ii_hedonist
+            modifier = {
+                production_factory_max_efficiency_factor = 0.15
+                industrial_capacity_factory = 0.05
+            }
+        }
+        HOL_dutch_resistance = {
+            allowed = { original_tag = HOL }
+            picture = chi_war_of_resistance2
+            available = {
+                866 = {
+                    is_owned_by = BEL
+                    has_dynamic_modifier = { modifier = HOL_dutch_resistance_in_belgium }
+                }
+                867 = {
+                    is_owned_by = BEL
+                    has_dynamic_modifier = { modifier = HOL_dutch_resistance_in_belgium }
+                }
+            }
+        }
     }
     ### Head of Government
     head_of_government = {

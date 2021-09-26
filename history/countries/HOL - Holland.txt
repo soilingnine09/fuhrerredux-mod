@@ -95,9 +95,9 @@ set_popularities = {
     social_liberal = 0
     market_liberal = 3
     social_conservative = 9
-    authoritarian_democrat = 9
-    paternal_autocrat = 7
-    national_populist = 61
+    authoritarian_democrat = 17
+    paternal_autocrat = 15
+    national_populist = 45
     valkist = 0
 }
 set_country_flag = coalition_authoritarian_democrat

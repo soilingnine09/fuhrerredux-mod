@@ -95,14 +95,14 @@ country_event = {
     }
 }
 
-country_event = {
+country_event = { # Request Trade
     id = dutchstate.5
     title = dutchstate.5.t
     desc = dutchstate.5.d
     picture = GFX_report_event_hol_prins_bernhard
     is_triggered_only = yes
 
-    option = {
+    option = { # Yes
         name = dutchstate.5.a
         add_offsite_building = {
             type = industrial_complex
@@ -112,7 +112,7 @@ country_event = {
             country_event = { id = dutchstate.6 hours = 8 }
         }
     }
-    option = {
+    option = { # No
         name = dutchstate.5.b
         add_political_power = -10
         FROM = {
@@ -121,7 +121,7 @@ country_event = {
     }
 }
 
-country_event = {
+country_event = { # Accepted Trade
     id = dutchstate.6
     title = dutchstate.6.t
     desc = dutchstate.6.d
@@ -193,7 +193,7 @@ country_event = {
     }
 }
 
-country_event = {
+country_event = { # Refused Trade
     id = dutchstate.7
     title = dutchstate.7.t
     desc = dutchstate.7.d
@@ -203,5 +203,202 @@ country_event = {
     option = {
         name = dutchstate.7.a
         add_political_power = -5
+    }
+}
+
+country_event = { # Intel Exchange
+    id = dutchstate.8
+    title = dutchstate.8.t
+    desc = dutchstate.8.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.8.a
+        add_ideas = HOL_intelligence_exchange
+        FROM = {
+            country_event = { id = dutchstate.9 days = 2 }
+        }
+    }
+    option = {
+        name = dutchstate.8.b
+        FROM = {
+            country_event = { id = dutchstate.10 days = 2 }
+        }
+    }
+}
+
+country_event = { # GER accepts
+    id = dutchstate.9
+    title = dutchstate.9.t
+    desc = dutchstate.9.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.9.a
+        add_ideas = HOL_intelligence_exchange
+    }
+
+}
+
+country_event = { # GER no accept
+    id = dutchstate.10
+    title = dutchstate.10.t
+    desc = dutchstate.10.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.10.a
+    }
+}
+
+country_event = { # BEL - Resistance in Dutch Provinces
+    id = dutchstate.11
+    title = dutchstate.11.t
+    desc = dutchstate.11.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            HOL = { country_event = dutchstate.13 }
+        }
+    }
+
+    option = {
+        name = dutchstate.11.a
+        hidden_effect = {
+            country_event = { id = dutchstate.12 days = 7 }
+        }
+        add_ideas = HOL_dutch_resistance
+        every_owned_state = {
+            limit = {
+                is_controlled_by = BEL
+                OR = {
+                    state = 866
+                    state = 867
+                }
+            }
+            add_dynamic_modifier = {
+                modifier = HOL_dutch_resistance_in_belgium
+            }
+        }
+    }
+}
+
+country_event = { # 
+    id = dutchstate.12
+    title = dutchstate.12.t
+    desc = dutchstate.12.d
+    picture = GFX_report_event_hol_prins_bernhard
+    
+    trigger = {
+        tag = BEL
+        has_idea = HOL_dutch_resistance
+    }
+
+    mean_time_to_happen = {
+        days = 14
+    }
+
+    option = {
+        name = dutchstate.12.a
+        add_political_power = -20
+        random_list = {
+            70 = { country_event = { id = dutchstate.15 days = 2 } }
+            30 = { country_event = { id = dutchstate.14 days = 2 } }
+        }
+    }
+    option = {
+        name = dutchstate.12.b
+        add_political_power = -50
+        random_list = {
+            50 = { country_event = { id = dutchstate.15 days = 2 } }
+            50 = { country_event = { id = dutchstate.14 days = 2 } }
+        }
+    }
+}
+
+country_event = { # Resistance in Belgium
+    id = dutchstate.13
+    title = dutchstate.13.t
+    desc = dutchstate.13.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.13.a
+        add_political_power = 100
+    }
+}
+
+country_event = { # Resistance Suppressed
+    id = dutchstate.14
+    title = dutchstate.14.t
+    desc = dutchstate.14.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            HOL = {
+                country_event = { id = dutchstate.16 hours = 2 }
+            }
+        }
+    }
+
+    option = {
+        name = dutchstate.14.a
+        remove_ideas = HOL_dutch_resistance
+        every_owned_state = {
+            limit = {
+                is_controlled_by = BEL
+                OR = {
+                    state = 866
+                    state = 867
+                }
+            }
+            remove_dynamic_modifier = { modifier = HOL_dutch_resistance_in_belgium } 
+        }
+    }
+}
+
+country_event = { # Resistance Violent
+    id = dutchstate.15
+    title = dutchstate.15.t
+    desc = dutchstate.15.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.15.a
+        every_owned_state = {
+            limit = {
+                is_controlled_by = BEL
+                OR = {
+                    state = 866
+                    state = 867
+                }
+            }
+            damage_building = {
+                type = industrial_complex
+                damage = 1
+            }
+        }
+    }
+}
+
+country_event = { # HOL: Resistance Suppressed
+    id = dutchstate.16
+    title = dutchstate.16.t
+    desc = dutchstate.16.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.16.a
+        add_political_power = 10
     }
 }
