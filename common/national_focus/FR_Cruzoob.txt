@@ -498,8 +498,10 @@ focus_tree = {
         x = -1
         y = 1
         cost = 6
-        prerequisite = { focus = CRU_friends_in_europe }
-        prerequisite = { focus = CRU_friends_in_the_south }
+        prerequisite = { 
+            focus = CRU_friends_in_europe 
+            focus = CRU_friends_in_the_south
+        }
         relative_position_id = CRU_friends_in_the_south
         completion_reward = {
             if = {
@@ -541,7 +543,6 @@ focus_tree = {
                 is_faction_leader = yes
                 NOT = { has_war_with = ROOT }
             }
-            has_country_flag = CRU_has_army_exercises_with_ger
         }
         mutually_exclusive = { focus = CRU_a_native_alliance }
         prerequisite = { focus = CRU_friends_in_europe }
@@ -565,7 +566,6 @@ focus_tree = {
                 NOT = { has_war_with = ROOT }
                 has_government = valkist
             }
-            has_country_flag = CRU_has_army_exercises_with_bol
         }
         mutually_exclusive = { focus = CRU_join_the_stahlpakt }
         prerequisite = { focus = CRU_joint_army_exercises }
@@ -586,7 +586,6 @@ focus_tree = {
             PHI = {
                 exists = yes
                 has_capitulated = no
-                has_government = valkist
             }
         }
         prerequisite = { 
@@ -633,6 +632,17 @@ focus_tree = {
         relative_position_id = CRU_a_native_alliance
         completion_reward = {
             set_cosmetic_tag = CRU_empire
+            hidden_effect = {
+                kill_ideology_leader = valkist
+                create_country_leader = { # Literally Pech in his regal name
+                    name = "Tabscoob II"
+                    desc = "POLITICS_TABSCOOB_II_DESC"
+                    picture = "Portrait_Cruzoob_Tabscoob_II.tga"
+                    expire = "1965.1.1"
+                    ideology = valkist_subtype
+                    traits = { }
+                }
+            }
         }
     }
 

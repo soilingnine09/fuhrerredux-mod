@@ -102,8 +102,6 @@ CRU_BOL_accord:0 "Pact of Indigenous Rejuvenation"
 
 ### Tooltips
 CRU_can_integrate_states:0 "§GWe can now integrate states from occupied territories§!"
-CRU_has_army_exercises_with_ger:0 "We have army exercises with @GER §YGermany§!"
-CRU_has_army_exercises_with_bol:0 "We have army exercises with @BOL §YBolivia§!"
 CRU_infiltrating_mexico:0 "Currently conducting operations in @MEX §YMexico§!"
 
 ### Decisions
@@ -333,7 +331,7 @@ CRU_yucatan_arsenal:0 "Yucatan Arsenal"
 
 ### Events
 cruzoob.0.t:0 "The Risen Phoenix"
-cruzoob.0.d:0 "The State of Cruzoob was a breakaway state in the Yucatan Peninsula; it declared independence shortly after the chaos in [MEX.GetName], allowing more radical parties to come into power. Our founder, [Root.GetLeader] have established this new state in his vision of mixing the ideas of Christianism and the Indigenous Traditions of the Mayans.\n\nWhile we have risen again and continue to live as an independent nation, we are still threatened other countries seeking to integrate them again into their nation. We must remain vigilant as there will be a storm coming."
+cruzoob.0.d:0 "The State of Cruzoob was a breakaway state in the Yucatan Peninsula; proclaimed independence after the crushing defeat of the Mexicans after the Great War. Our leader, [Root.GetLeader] founded our nation with the aim of preserving our Christian faith with the traditional Mayan culture that once roam around these lands before the Spanish arrived. However, the [MEX.GetAdjective]s claims that our state is nothing more of an rebellious state; trying to stay afloat using the Monroe Doctrine by the United States; and with that we must be cautious as the influence of the United States dwindle; and the [MEX.GetAdjective]s prepare for another conflict against us and Columbia, because if they succeed, we may never rise again."
 cruzoob.0.a:0 "For God and Country!"
 cruzoob.1.t:0 "The Role of the Catholic Church"
 cruzoob.1.d:0 "For centuries, since the middle ages in Europe and the colonial period here in the New World, the Catholic Church have not afraid to voice our their concerns over the affairs over the government. Their influence have stretched out from the ordinary bureaucrats to the important positions in the government itself. However, there are no official policies that can limit or expand these influence of the Church as our state was fairly new. Because of this, some in the government are proposing to formalize on what the Church's role must be in our new state."
