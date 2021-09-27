@@ -53,6 +53,8 @@ set_popularities = {
     valkist = 58
 }
 
+country_event = { id = cruzoob.0 days = 2 }
+
 create_country_leader = {
 	name = "Felipe Carrillo Puerto"
 	desc = "POLTIICS_FELIPE_CARRILLO_PUERTO_DESC"

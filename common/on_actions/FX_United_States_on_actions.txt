@@ -1,12 +1,4 @@
 on_actions = {
-    on_startup = {
-        effect = {
-            random_country = {
-                limit = { tag = USA }
-                country_event = { id = usa.0 days = 2 }
-            }
-        }
-    }
     on_new_term_election = {
         effect = {
             if = {

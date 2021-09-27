@@ -34,13 +34,13 @@ foreign_politics = {
             FROM = { tag = KNE }
         }
         available = {
-            FROM = { is_in_faction_with = ROOT }
-        }
-        days_remove = 14
-        visible = {
             any_country = {
                 num_of_civilian_factories > 50
             }
+        }
+        days_remove = 14
+        visible = {
+            FROM = { is_in_faction_with = ROOT }
         }
         ai_will_do = { factor = 200 }
         remove_effect = {

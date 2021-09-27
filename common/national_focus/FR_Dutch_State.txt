@@ -1311,6 +1311,7 @@ focus_tree = {
         x = 0
         y = 1
         cost = 6
+        ai_will_do = { factor = 200 }
         mutually_exclusive = {
             focus = HOL_speed_emphasis
             focus = HOL_firepower_emphasis

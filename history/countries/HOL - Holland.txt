@@ -103,6 +103,12 @@ set_popularities = {
 set_country_flag = coalition_authoritarian_democrat
 set_country_flag = coalition_paternal_autocrat
 
+country_event = { id = dutchstate.0 days = 2 }
+country_event = { id = dutchstate.18 days = 167 }
+country_event = { id = dutchstate.20 days = 242 }
+country_event = { id = dutchstate.21 days = 367 }
+country_event = { id = dutchstate.22 days = 1025 }
+country_event = { id = dutchstate.19 days = 1204 }
 
 create_country_leader = {
 	name = "Willem Drees"
