@@ -1,0 +1,20 @@
+focus_tree = {
+    id = FR_Dutch_State
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = HOL
+        }
+    }
+
+    continuous_focus_position = { x = 300 y = 1100 }
+
+    #######################################################
+
+    shared_focus = HOL_calibrate_our_economy
+    shared_focus = HOL_reform_the_army
+    shared_focus = HOL_address_the_navy
+    shared_focus = HOL_focus_on_the_air_force
+
+}

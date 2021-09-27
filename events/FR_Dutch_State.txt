@@ -544,3 +544,19 @@ country_event = {
         name = dutchstate.22.a
     }
 }
+
+country_event = {
+    id = dutchstate.23
+    title = dutchstate.23.t
+    desc = dutchstate.23.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.23.a
+        hidden_effect = {
+            load_focus_tree = FR_Dutch_State_Bernhard
+            set_country_flag = politcal_branch_ready
+        }
+    }
+}

@@ -1,0 +1,367 @@
+focus_tree = {
+    id = FR_Dutch_State_Bernhard
+
+    continuous_focus_position = { x = 500 y = 1100 }
+
+    #######################################################
+
+    shared_focus = HOL_calibrate_our_economy
+    shared_focus = HOL_reform_the_army
+    shared_focus = HOL_address_the_navy
+    shared_focus = HOL_focus_on_the_air_force
+
+    # The Prince's Guiding Hand
+    focus = {
+        id = HOL_the_princes_guiding_hand
+        icon = GFX_goal_ideology_national_populist
+        x = 3
+        y = 0
+        cost = 6
+        completion_reward = {
+            add_political_power = 150
+        }
+    }
+
+    # State Visit to Berlin
+    focus = {
+        id = HOL_state_visit_to_berlin
+        icon = GFX_focus_ger_reichskommisariats
+        x = -2
+        y = 1
+        cost = 6
+        available = {
+            is_in_faction_with = GER
+            GER = {
+                exists = yes
+                has_capitulated = no
+            }
+        }
+        prerequisite = { focus = HOL_the_princes_guiding_hand }
+        relative_position_id = HOL_the_princes_guiding_hand
+        completion_reward = {
+            add_political_power = 150
+        }
+    }
+
+    # Ensure Military Loyalty
+    focus = {
+        id = HOL_ensure_military_loyalty
+        icon = GFX_goal_army_guy_2
+        x = 0
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_the_princes_guiding_hand }
+        relative_position_id = HOL_the_princes_guiding_hand
+        completion_reward = {
+            army_experience = 15
+            navy_experience = 15
+            air_experience = 15
+        }
+    }
+
+    # Puppet the States General
+    focus = {
+        id = HOL_puppet_the_states_general
+        icon = GFX_goal_DEI_focus_disband_volksraad
+        x = 2
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_the_princes_guiding_hand }
+        relative_position_id = HOL_the_princes_guiding_hand
+        completion_reward = {
+            increase_ruling_party_popularity_by_5 = yes
+            add_stability = 0.05
+            add_war_support = 0.05
+        }
+    }
+
+    # German Intelligence Exchange
+    focus = {
+        id = HOL_german_intelligence_exchange
+        icon = GFX_focus_generic_military_mission
+        x = -1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_state_visit_to_berlin }
+        relative_position_id = HOL_state_visit_to_berlin
+        completion_reward = {
+            GER = {
+                country_event = { id = dutchstate.8 days = 1 }
+            }
+        }
+    }
+
+    # Contain Liberal Thought
+    focus = {
+        id = HOL_contain_liberal_thought
+        icon = GFX_goal_volunteer_alliance
+        x = -1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_ensure_military_loyalty }
+        relative_position_id = HOL_ensure_military_loyalty
+        completion_reward = {
+            add_popularity = {
+                ideology = social_democrat
+                popularity = -0.05
+            }
+            add_popularity = {
+                ideology = social_liberal
+                popularity = -0.05
+            }
+            add_popularity = {
+                ideology = market_liberal
+                popularity = -0.05
+            }
+            add_popularity = {
+                ideology = social_conservative
+                popularity = -0.05
+            }
+        }
+    }
+
+    # Crush Radical Unions
+    focus = {
+        id = HOL_crush_radical_unions
+        icon = GFX_goal_backstab
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_ensure_military_loyalty }
+        relative_position_id = HOL_ensure_military_loyalty
+        completion_reward = {
+            set_country_flag = HOL_crushed_radical_unions
+            add_popularity = {
+                ideology = vanguardist
+                popularity = -0.05
+            }
+            add_popularity = {
+                ideology = collectivist
+                popularity = -0.05
+            }
+            add_popularity = {
+                ideology = libertarian_socialist
+                popularity = -0.05
+            }
+        }
+    }
+
+    # Prepare the Economy for War
+    focus = {
+        id = HOL_prepare_the_economy_for_war
+        icon = GFX_focus_empty_coffers
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_puppet_the_states_general }
+        relative_position_id = HOL_puppet_the_states_general
+        completion_reward = {
+            increase_mobilization = yes
+        }
+    }
+
+    # Cult of Personality
+    focus = {
+        id = HOL_cult_of_personality
+        icon = GFX_focus_rom_royal_dictatorship
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_contain_liberal_thought }
+        prerequisite = { focus = HOL_crush_radical_unions }
+        relative_position_id = HOL_contain_liberal_thought
+        completion_reward = {
+            add_stability = 0.05
+            add_war_support = 0.05
+            add_political_power = 150
+        }
+    }
+
+    # State Unions
+    focus = {
+        id = HOL_state_unions
+        icon = GFX_goal_production
+        x = -1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_prepare_the_economy_for_war }
+        relative_position_id = HOL_prepare_the_economy_for_war
+        completion_reward = {
+            clr_country_flag = HOL_crushed_radical_unions
+            add_ideas = HOL_state_unions
+        }
+    }
+
+    # Investments from Siemens
+    focus = {
+        id = HOL_investments_from_siemens
+        icon = GFX_DAH_Topke
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_german_intelligence_exchange }
+        relative_position_id = HOL_german_intelligence_exchange
+        completion_reward = {
+            add_offsite_building = {
+                type = industrial_complex
+                level = 2
+            }
+        }
+    }
+
+    # Align Nationalist Industrialists
+    focus = {
+        id = HOL_align_nationalist_industrialists
+        icon = GFX_goal_factory_complex
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_cult_of_personality }
+        prerequisite = { focus = HOL_state_unions }
+        relative_position_id = HOL_cult_of_personality
+        completion_reward = {
+            add_offsite_building = {
+                type = arms_factory
+                level = 2
+            }
+        }
+    }
+
+    # Grant Minimum Wage
+    focus = {
+        id = HOL_grant_minimum_wage
+        icon = GFX_goal_generic_foreign_investments
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_state_unions }
+        relative_position_id = HOL_state_unions
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = HOL_state_unions
+                add_idea = HOL_minimum_wage
+            }
+        }
+    }
+
+    # Operation "Fakkel"
+    focus = {
+        id = HOL_operation_fakkel
+        icon = GFX_goal_generic_war_in_the_plate
+        x = -1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_cult_of_personality }
+        prerequisite = { focus = HOL_investments_from_siemens }
+        relative_position_id = HOL_cult_of_personality
+        completion_reward = {
+            unlock_decision_tooltip = HOL_operation_fakkel_decision
+        }
+    }
+
+    # New Research Centres
+    focus = {
+        id = HOL_new_research_centres
+        icon = GFX_focus_research2
+        x = -1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_investments_from_siemens }
+        relative_position_id = HOL_investments_from_siemens
+        completion_reward = {
+            add_research_slot = 1
+        }
+    }
+
+    # Military Spirit
+    focus = {
+        id = HOL_military_spirit
+        icon = GFX_goal_conscription
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_new_research_centres }
+        prerequisite = { focus = HOL_operation_fakkel }
+        relative_position_id = HOL_new_research_centres
+        completion_reward = {
+            custom_effect_tooltip = HOL_military_spirit_tt
+            hidden_effect = {
+                load_oob = HOL_elite
+            }
+        }
+    }
+
+    # Legitimize Our Government
+    focus = {
+        id = HOL_legimitize_our_government
+        icon = GFX_goal_government_icon
+        x = 1
+        y = 1
+        cost = 6
+        available = { has_idea = HOL_unrecognized_government_1 }
+        prerequisite = { focus = HOL_operation_fakkel }
+        prerequisite = { focus = HOL_align_nationalist_industrialists }
+        relative_position_id = HOL_operation_fakkel
+        completion_reward = {
+            remove_ideas = HOL_unrecognized_government_1
+        }
+    }
+
+    # Synthetic Resources
+    focus = {
+        id = HOL_synthetic_resources
+        icon = GFX_goal_further_oil
+        x = 1
+        y = 1
+        cost = 6
+        prerequisite = { focus = HOL_align_nationalist_industrialists }
+        prerequisite = { focus = HOL_grant_minimum_wage }
+        relative_position_id = HOL_align_nationalist_industrialists
+        completion_reward = {
+            add_tech_bonus = {
+                category = synth_resources
+                bonus = 1.0
+                uses = 2
+            }
+        }
+    }
+
+    # Unification Through Force
+    focus = {
+        id = HOL_unification_through_force
+        icon = GFX_goal_generic_attack_belgium
+        x = 0
+        y = 1
+        cost = 6
+        available = {
+            date > 1939.3.10
+            BEL = {
+                exists = yes
+                NOT = { is_in_faction_with = ROOT }
+                NOT = { is_subject_of = ROOT }
+            }
+        }
+        bypass = {
+            any_owned_state = {
+                is_core_of = BEL
+            }
+            BEL = {
+                OR = {
+                    is_subject_of = ROOT
+                    is_in_faction_with = ROOT
+                }
+            }
+        }
+        will_lead_to_war_with = BEL
+        prerequisite = { focus = HOL_military_spirit }
+        prerequisite = { focus = HOL_legimitize_our_government }
+        prerequisite = { focus = HOL_synthetic_resources }
+        relative_position_id = HOL_legimitize_our_government
+        completion_reward = {
+            create_wargoal = {
+                type = annex_everything
+                target = BEL
+            }
+        }
+    }
+}
