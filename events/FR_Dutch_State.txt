@@ -26,11 +26,11 @@ country_event = { # GER - Request to Embargo
             factor = 90
         }
         hidden_effect = {
-            var:tag_to_embargo = {
-                embargo_PREV = yes
-            }
-            HOL = { 
-                country_event = { id = dutchstate.2 hours = 8 } 
+            HOL = {
+                var:tag_to_embargo = {
+                    embargo_ROOT = yes
+                }
+                country_event = { id = dutchstate.2 days = 1 } 
             }
         }
     }
@@ -40,7 +40,7 @@ country_event = { # GER - Request to Embargo
         add_stability = -0.15
         hidden_effect = {
             HOL = { 
-                country_event = { id = dutchstate.3 hours = 8 }
+                country_event = { id = dutchstate.3 days = 1 }
             }
         }
     }
@@ -61,8 +61,7 @@ country_event = { # Dutch Embargo
         add_political_power = 100
         hidden_effect = {
             var:tag_to_embargo = {
-                country_event = dutchstate.3
-                embargo_PREV = yes
+                embargo_ROOT = yes
             }
             clear_variable = tag_to_embargo
             GER = { clear_variable = tag_to_embargo }
@@ -80,8 +79,7 @@ country_event = { # No Embargo
     option = {
         name = dutchstate.3.a
         hidden_effect = {
-            clear_variable = tag_to_embargo
-            GER = { clear_variable = tag_to_embargo }
+            HOL = { clear_variable = tag_to_embargo }
         }
     }
 }
@@ -108,6 +106,9 @@ country_event = { # Request Trade
 
     option = { # Yes
         name = dutchstate.5.a
+        ai_chance = {
+            factor = 80
+        }
         add_offsite_building = {
             type = industrial_complex
             level = 2
@@ -118,6 +119,9 @@ country_event = { # Request Trade
     }
     option = { # No
         name = dutchstate.5.b
+        ai_chance = {
+            factor = 20
+        }
         add_political_power = -10
         FROM = {
             country_event = { id = dutchstate.7 hours = 8 }

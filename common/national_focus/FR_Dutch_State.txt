@@ -339,7 +339,7 @@ focus_tree = {
             date > 1939.3.10
             BEL = {
                 exists = yes
-                NOT = { in_in_faction_with = ROOT }
+                NOT = { is_in_faction_with = ROOT }
                 NOT = { is_subject_of = ROOT }
             }
         }
@@ -560,13 +560,10 @@ focus_tree = {
             custom_effect_tooltip = HOL_embargo_france_tt
             hidden_effect = {
                 set_variable = {
-                    tag_to_embargo = FRA.id
+                    tag_to_embargo = FRA
                 }
-                GER = { 
-                    set_variable = {
-                        tag_to_embargo = FRA.id
-                    }
-                    country_event = { id = dutchstate.2 hours = 8 } 
+                GER = {
+                    country_event = { id = dutchstate.2 days = 1 } 
                 }
             }
         }
@@ -586,13 +583,10 @@ focus_tree = {
             custom_effect_tooltip = HOL_embargo_britain_tt
             hidden_effect = {
                 set_variable = {
-                    tag_to_embargo = ENG.id
+                    tag_to_embargo = ENG
                 }
-                GER = { 
-                    set_variable = {
-                        tag_to_embargo = ENG.id
-                    }
-                    country_event = { id = dutchstate.2 hours = 8 } 
+                GER = {
+                    country_event = { id = dutchstate.2 days = 1 } 
                 }
             }
         }
@@ -1032,14 +1026,6 @@ focus_tree = {
         relative_position_id = HOL_trade_expansion
         completion_reward = {
             7 = {
-                limit = {
-                    free_building_slots = {
-                        building = dockyard
-                        size > 0
-                        include_locked = yes
-                    }
-                }
-
                 add_extra_state_shared_building_slots = 2
                 add_building_construction = {
                     type = dockyard

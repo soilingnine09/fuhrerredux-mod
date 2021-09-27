@@ -70,7 +70,7 @@ KNE_invest_in_the_exiles:0 "Invest in [From.GetName]"
 
 ### Events
 dutchexiles.100.t:0 "[From.GetName] Wants to Entry to the [Root.GetFactionName]"
-dutchexiles.100.d.0 "The Exiled Government of the [KNE.GetNameDef] has requested our government to enter to our military alliance. It seems that they are determined to return to their home country; and return [KNE.GetLeader] to her rightful place."
+dutchexiles.100.d:0 "The Exiled Government of the [KNE.GetNameDef] has requested our government to enter to our military alliance. It seems that they are determined to return to their home country; and return [KNE.GetLeader] to her rightful place."
 dutchexiles.100.a:0 "They are most welcome..."
 dutchexiles.100.b:0 "They cannot be trusted."
 dutchexiles.101.t:0 "[From.GetName] Rejects our Entry"
