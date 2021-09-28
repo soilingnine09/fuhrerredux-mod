@@ -245,6 +245,14 @@ shared_focus = {
             remove_idea = HOL_dutch_german_economic_cooperation
             add_idea = HOL_dutch_german_economic_cooperation_1
         }
+        hidden_effect = {
+            GER = {
+                swap_ideas = {
+                    remove_idea = HOL_dutch_german_economic_cooperation
+                    add_idea = HOL_dutch_german_economic_cooperation_1
+                }
+            }
+        }
     }
 }
 

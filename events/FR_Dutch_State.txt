@@ -172,11 +172,7 @@ country_event = { # Accepted Trade
             limit = {
                 FROM = { tag = COL }
             }
-            add_resource = {
-                type = oil
-                amount = 20
-                state = 7
-            }
+            add_ideas = HOL_coffee_imports
         }
         else_if = {
             limit = {

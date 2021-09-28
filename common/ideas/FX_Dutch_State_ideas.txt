@@ -20,7 +20,12 @@ ideas = {
             }
         }
         HOL_dutch_german_economic_cooperation = {
-            allowed = { original_tag = HOL }
+            allowed = { 
+                OR = {
+                    tag = HOL
+                    tag = GER
+                }
+            }
             picture = ger_rebuild_the_nation
             modifier = {
                 production_speed_buildings_factor = 0.10
@@ -30,7 +35,12 @@ ideas = {
             }
         }
         HOL_dutch_german_economic_cooperation_1 = {
-            allowed = { original_tag = HOL }
+            allowed = { 
+                OR = {
+                    tag = HOL
+                    tag = GER
+                }
+            }
             picture = ger_rebuild_the_nation
             modifier = {
                 production_speed_buildings_factor = 0.15
@@ -213,6 +223,13 @@ ideas = {
                     is_owned_by = BEL
                     has_dynamic_modifier = { modifier = HOL_dutch_resistance_in_belgium }
                 }
+            }
+        }
+        HOL_coffee_imports = {
+            allowed = { original_tag = HOL }
+            picture = generic_agrarian_society
+            modifier = {
+                army_speed_factor = 0.15
             }
         }
     }
