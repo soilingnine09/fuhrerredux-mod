@@ -1,10 +1,6 @@
 ﻿capital = 305
 
-oob = "ECU"
-
-set_convoys = 5
-set_stability = 0.66
-set_war_support = 0.83
+oob = "ECU_1936"
 
 # Starting tech
 set_technology = {
@@ -13,6 +9,19 @@ set_technology = {
 	gwtank = 1
 	tech_mountaineers = 1
 	fuel_silos = 1
+}
+
+set_convoys = 5
+set_stability = 0.66
+set_war_support = 0.83
+
+add_ideas = {
+	party_pop_0_30
+	GEN_hog_npo
+	GEN_for_npo
+	GEN_eco_npo
+	GEN_sec_npo
+	presidential_republic
 }
 
 set_politics = {	
@@ -30,15 +39,6 @@ set_popularities = {
     social_liberal = 10
     paternal_autocrat = 20
     national_populist = 30
-}
-
-add_ideas = {
-	party_pop_0_30
-	GEN_hog_npo
-	GEN_for_npo
-	GEN_eco_npo
-	GEN_sec_npo
-	presidential_republic
 }
 
 create_country_leader = {

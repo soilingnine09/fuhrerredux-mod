@@ -577,9 +577,8 @@ POLITICS_AFG_TRANSITIONAL_GOV_DESC:0 "While a new king has to take his place on 
 
 AFG_india_rebellion_warning_tooltip:0 "§RThe seizing of Indian lands can provoke the British Raj or the United Kingdom to declare war on Afghanistan§!"
 
-### Minister
-# Head of Government
-AFG_Khan_Abdul_Ghaffar_Khan_hog_lib:0 "Khan Abdul Ghaffar Khan"
+### Head of Government ###
+AFG_Khan_Abdul_Ghaffar_Khan_hog_rso:0 "Khan Abdul Ghaffar Khan"
 AFG_Abdul_Majid_Zabuli_hog_sli:0 "Abdul Majid Zabuli"
 AFG_Mohammed_Nadir_Shah_hog_sco:0 "Mohammed Nadir Shah"
 AFG_Abdul_Hadi_Dawai_hog_ade:0 "Abdul Hadi Dawai"
@@ -588,39 +587,45 @@ AFG_Muhammed_Hashim_hog_ade:0 "Muhammed Hashim"
 AFG_Shah_Wali_Khan_hog_ade:0 "Shah Wali Khan"
 AFG_Inayatullah_Khan_Seraj_hog_pau:0 "Inayatullah Khan Seraj"
 AFG_Malik_Habibullah_Kalakani_hog_npo:0 "Malik Habibullah Kalakani"
-# Foreign Minister
-AFG_Mir_Gul_Khan_Nasir_for_lib:0 "Mir Gul Khan Nasir"
+
+### Person of Influence ###
+## Foreign Minister
+AFG_Mir_Gul_Khan_Nasir_for_rso:0 "Mir Gul Khan Nasir"
 AFG_Ghulam_Mohammad_Farhad_for_sde:0 "Ghulam Mohammad Farhad"
 AFG_Ali_Muhammed_Khan_for_sco:0 "Ali Muhammed Khan"
 AFG_Abdul_Hadi_Dawai_for_ade:0 "Abdul Hadi Dawai"
 AFG_Haji_Faiz_Muhammed_Zikeria_for_pau:0 "Haji Faiz Muhammed Zikeria"
-# Economy Minister
-AFG_Nur_Muhammad_Taraki_eco_van:0 "Nur Muhammad Taraki"
+## Economy Minister
+AFG_Nur_Muhammad_Taraki_eco_tot:0 "Nur Muhammad Taraki"
 AFG_Mohammed_Hashim_Maiwandwal_eco_sde:0 "Mohammed Hashim Maiwandwal"
 AFG_Nasirullah_Husain_eco_sco:0 "Nasirullah Husain"
 AFG_Ahmad_Ali_Khan_Solaiman_eco_ade:0 "Ahmad Ali Khan Solaiman"
 AFG_Mohammed_Daoud_eco_pau:0 "Mohammed Daoud"
 AFG_Mirza_Ali_Khan_eco_npo:0 "Mirza Ali Khan"
-# Security Minister
-AFG_Dada_Amir_Haider_Khan_sec_col:0 "Dada Amir Haider Khan"
+## Security Minister
+AFG_Dada_Amir_Haider_Khan_sec_syn:0 "Dada Amir Haider Khan"
 AFG_Abdul_Majid_Zabuli_sec_sli:0 "Abdul Majid Zabuli"
 AFG_Asadullah_Seraj_Khan_sec_sco:0 "Asadullah Seraj Khan"
 AFG_Muhammed_Ghobar_sec_ade:0 "Muhammed Ghobar"
 AFG_Muhammed_Zahir_sec_ade:0 "Muhammed Zahir"
 AFG_Ghulam_Faruq_Usman_sec_pau:0 "Ghulam Faruq Usman"
 AFG_Khalilullah_Khalili_sec_npo:0 "Khalilullah Khalili"
-# Chief of Staff
-AFG_Nasirullah_Husain_cos:0 "Nasirullah Husain"
-AFG_Shah_Mahmud_Khan_cos:0 "Shah Mahmud Khan"
-AFG_Shah_Mahmud_Ghazi_cos:0 "Shah Mahmud Ghazi"
-AFG_Malik_Habibullah_Kalakani_cos:0 "Malik Habibullah Kalakani"
-# Chief of Army
-AFG_Gholam_Wali_carm:0 "Gholam Wali"
-AFG_Ghulam_Nabi_Charkhi_carm:0 "Ghulam Nabi Charkhi"
-AFG_Mohammed_Daoud_carm:0 "Mohammed Daoud"
-AFG_Mirza_Ali_Khan_carm:0 "Mirza Ali Khan"
-# Chief of Navy
-AFG_Muhammed_Zahir_cnav:0 "Muhammed Zahir"
-# Chief of Air Force
-AFG_Muhammed_Zahir_cair:0 "Muhammed Zahir"
-AFG_Mohammed_Daoud_cair:0 "Mohammed Daoud"
+
+### Chief of Staff ###
+AFG_Nasirullah_Husain_cos_sco:0 "Nasirullah Husain"
+AFG_Shah_Mahmud_Khan_cos_ade:0 "Shah Mahmud Khan"
+AFG_Shah_Mahmud_Ghazi_cos_pau:0 "Shah Mahmud Ghazi"
+AFG_Malik_Habibullah_Kalakani_cos_npo:0 "Malik Habibullah Kalakani"
+
+### Chief of Army ###
+AFG_Gholam_Wali_carm_sco:0 "Gholam Wali"
+AFG_Ghulam_Nabi_Charkhi_carm_ade:0 "Ghulam Nabi Charkhi"
+AFG_Mohammed_Daoud_carm_pau:0 "Mohammed Daoud"
+AFG_Mirza_Ali_Khan_carm_npo:0 "Mirza Ali Khan"
+
+### Chief of Navy ###
+AFG_Muhammed_Zahir_cnav_ade:0 "Muhammed Zahir"
+
+### Chief of Air Force ###
+AFG_Muhammed_Zahir_cair_ade:0 "Muhammed Zahir"
+AFG_Mohammed_Daoud_cair_pau:0 "Mohammed Daoud"

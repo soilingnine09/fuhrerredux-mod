@@ -1,6 +1,6 @@
 ﻿capital = 75
 
-oob = "00_default_template"
+oob = "INF"
 
 set_technology = {
 	infantry_weapons = 1

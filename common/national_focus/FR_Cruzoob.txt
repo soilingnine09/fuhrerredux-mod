@@ -39,7 +39,7 @@ focus_tree = {
             add_tech_bonus = {
                 category = industry
                 bonus = 1.0
-                uses = 3
+                uses = 2
             }
         }
     }
@@ -63,10 +63,10 @@ focus_tree = {
                     }
                 }
 
-                add_extra_state_shared_building_slots = 3
+                add_extra_state_shared_building_slots = 2
                 add_building_construction = {
                     type = industrial_complex
-                    level = 3
+                    level = 2
                     instant_build = yes
                 }
             }
@@ -92,10 +92,10 @@ focus_tree = {
                     }
                 }
 
-                add_extra_state_shared_building_slots = 3
+                add_extra_state_shared_building_slots = 2
                 add_building_construction = {
-                    type = arms_factor
-                    level = 3
+                    type = arms_factory
+                    level = 2
                     instant_build = yes
                 }
             }
@@ -116,7 +116,7 @@ focus_tree = {
             random_owned_controlled_state = {
                 add_building_construction = {
                     type = infrastructure
-                    level = 4
+                    level = 2
                     instant_build = yes
                 }
             }
@@ -150,7 +150,7 @@ focus_tree = {
         completion_reward = {
             add_resource = {
                 type = steel
-                amount = 16
+                amount = 8
                 state = 474
             }
             add_resource = {
@@ -235,10 +235,6 @@ focus_tree = {
             }
             add_offsite_building = {
                 type = industrial_complex
-                level = 3
-            }
-            add_offsite_building = {
-                type = arms_factory
                 level = 3
             }
         }
@@ -498,10 +494,8 @@ focus_tree = {
         x = -1
         y = 1
         cost = 6
-        prerequisite = { 
-            focus = CRU_friends_in_europe 
-            focus = CRU_friends_in_the_south
-        }
+        prerequisite = { focus = CRU_friends_in_europe }
+        prerequisite = { focus = CRU_friends_in_the_south }
         relative_position_id = CRU_friends_in_the_south
         completion_reward = {
             if = {
@@ -543,6 +537,7 @@ focus_tree = {
                 is_faction_leader = yes
                 NOT = { has_war_with = ROOT }
             }
+            has_country_flag = CRU_has_army_exercises_with_ger
         }
         mutually_exclusive = { focus = CRU_a_native_alliance }
         prerequisite = { focus = CRU_friends_in_europe }
@@ -566,6 +561,7 @@ focus_tree = {
                 NOT = { has_war_with = ROOT }
                 has_government = valkist
             }
+            has_country_flag = CRU_has_army_exercises_with_bol
         }
         mutually_exclusive = { focus = CRU_join_the_stahlpakt }
         prerequisite = { focus = CRU_joint_army_exercises }
@@ -586,6 +582,7 @@ focus_tree = {
             PHI = {
                 exists = yes
                 has_capitulated = no
+                has_government = valkist
             }
         }
         prerequisite = { 
@@ -606,7 +603,7 @@ focus_tree = {
     # Trade Opportunities in Asia
     focus = {
         id = CRU_trade_opportunities_in_asia
-        icon = GFX_goal_generic_shipyard
+        icon = GFX_SIA_maritmesilkroad
         x = 0
         y = 2
         cost = 6
@@ -632,17 +629,6 @@ focus_tree = {
         relative_position_id = CRU_a_native_alliance
         completion_reward = {
             set_cosmetic_tag = CRU_empire
-            hidden_effect = {
-                kill_ideology_leader = valkist
-                create_country_leader = { # Literally Pech in his regal name
-                    name = "Tabscoob II"
-                    desc = "POLITICS_TABSCOOB_II_DESC"
-                    picture = "Portrait_Cruzoob_Tabscoob_II.tga"
-                    expire = "1965.1.1"
-                    ideology = valkist_subtype
-                    traits = { }
-                }
-            }
         }
     }
 
@@ -670,7 +656,7 @@ focus_tree = {
     # Drift to the North
     focus = {
         id = CRU_drift_to_the_north
-        icon = GFX_goal_generic_attack_usa
+        icon = GFX_goal_usa
         x = -1
         y = 1
         cost = 6
@@ -692,7 +678,7 @@ focus_tree = {
     # Continue South
     focus = {
         id = CRU_continue_south
-        icon = GFX_goal_USA_protection_for_central_america
+        icon = GFX_goal_panama
         x = 1
         y = 1
         cost = 6
@@ -887,7 +873,7 @@ focus_tree = {
     # Logistics Support
     focus = {
         id = CRU_logistics_support
-        icon = GFX_goal_generic_support_equipment
+        icon = GFX_goal_generic_more_territorial_claims
         x = 1
         y = 1
         cost = 6
@@ -1161,7 +1147,7 @@ focus_tree = {
     # Purchase Foreign Ships
     focus = {
         id = CRU_purchase_foreign_ships
-        icon = GFX_goal_generic_buy_ships
+        icon = GFX_goal_generic_navy_cruiser
         x = 0
         y = 1
         cost = 6
@@ -1183,7 +1169,7 @@ focus_tree = {
     # Naval Bases
     focus = {
         id = CRU_naval_bases
-        icon = GFX_goal_generic_naval_industry
+        icon = GFX_goal_generic_construct_naval_dockyard
         x = 0
         y = 1
         cost = 6

@@ -72,13 +72,16 @@ country_event = { #coup succeeds
 		hidden_effect = {
 			set_politics = { ruling_party = collectivist }
 		}
-		remove_every_minister = yes
-		add_ideas = {
-			BOL_Orlando_Capriles_hog_col
-			BOL_Carlos_Salinas_Aramayo_for_sde
-			BOL_Edwin_Moeller_eco_col
-			BOL_Mariano_Basptista_sec_lib
-		}
+		hidden_effect = {
+			remove_ideas_with_trait = head_of_government
+			remove_ideas_with_trait = foreign_minister
+			remove_ideas_with_trait = economy_minister
+			remove_ideas_with_trait = security_minister
+			}
+		add_ideas = BOL_Juan_Lechin_Oquendo_hog_bol
+		add_ideas = BOL_Alberto_Diez_de_Medina_for_lso
+		add_ideas = BOL_Werner_Guttenberg_eco_int
+		add_ideas = BOL_Gunnar_Mendoza_Loza_sec_lso
 	}
 }
 
@@ -173,13 +176,16 @@ country_event = { #coup fails
 		}
 		add_ideas = one_party_dictatorship
 		set_politics = { ruling_party = valkist elections_allowed = no }
-		remove_every_minister = yes
-		add_ideas = {
-			BOL_Gualberto_Villarroel_Lopez_hog_val
-			BOL_Gonzalo_Romero_Alvarez_Garcia_for_npo
-			BOL_Juan_Sanjines_eco_npo
-			BOL_Julian_V_Montellano_Carrasco_sec_npo
-		}
+		hidden_effect = {
+			remove_ideas_with_trait = head_of_government
+			remove_ideas_with_trait = foreign_minister
+			remove_ideas_with_trait = economy_minister
+			remove_ideas_with_trait = security_minister
+			}
+		add_ideas = BOL_Mariano_Ramos_hog_val
+		add_ideas = BOL_Manuel_Quispe_for_val
+		add_ideas = BOL_Fernando_Ramos_eco_val
+		add_ideas = BOL_Pedro_Rojas_sec_val
 	}
 }
 
@@ -447,13 +453,16 @@ country_event = { #workers congress 40 part 2
 			set_country_flag = BOL_intbois
 			set_politics = { ruling_party = vanguardist }
 		}
-		remove_every_minister = yes
-		add_ideas = {
-			BOL_Guillermo_Lora_hog_van
-			BOL_Carlos_Salinas_Aramayo_for_sde
-			BOL_Edwin_Moeller_eco_col
-			BOL_Mariano_Basptista_sec_lib
-		}
+		hidden_effect = {
+			remove_ideas_with_trait = head_of_government
+			remove_ideas_with_trait = foreign_minister
+			remove_ideas_with_trait = economy_minister
+			remove_ideas_with_trait = security_minister
+			}
+		add_ideas = BOL_Gustavo_Navarro_Marof_hog_int
+		add_ideas = BOL_Guillermo_Lora_for_int
+		add_ideas = BOL_Werner_Guttenberg_eco_int
+		add_ideas = BOL_Juan_Lechin_Oquendo_sec_bol
 	}
 
 	option = {
@@ -472,13 +481,16 @@ country_event = { #workers congress 40 part 2
 				limit = { NOT = { TAG = BOL } }
 			}
 		}
-		remove_every_minister = yes
-		add_ideas = {
-			BOL_Orlando_Capriles_hog_col
-			BOL_Carlos_Salinas_Aramayo_for_sde
-			BOL_Edwin_Moeller_eco_col
-			BOL_Mariano_Basptista_sec_lib
+		hidden_effect = {
+			remove_ideas_with_trait = head_of_government
+			remove_ideas_with_trait = foreign_minister
+			remove_ideas_with_trait = economy_minister
+			remove_ideas_with_trait = security_minister
 		}
+		add_ideas = BOL_Jose_Antonio_Arze_y_Arze_hog_bol
+		add_ideas = BOL_Guillermo_Lora_for_int
+		add_ideas = BOL_Werner_Guttenberg_eco_int
+		add_ideas = BOL_Juan_Lechin_Oquendo_sec_bol
 	}
 
 	option = {
@@ -497,13 +509,16 @@ country_event = { #workers congress 40 part 2
 				limit = { NOT = { TAG = BOL } }
 			}
 		}
-		remove_every_minister = yes
-		add_ideas = {
-			BOL_Gustavo_Adolfo_Navarro_hog_lib
-			BOL_Carlos_Salinas_Aramayo_for_sde
-			BOL_Edwin_Moeller_eco_col
-			BOL_Mariano_Basptista_sec_lib
+		hidden_effect = {
+			remove_ideas_with_trait = head_of_government
+			remove_ideas_with_trait = foreign_minister
+			remove_ideas_with_trait = economy_minister
+			remove_ideas_with_trait = security_minister
 		}
+		add_ideas = BOL_Carlos_Salazar_Mostajo_hog_lso
+		add_ideas = BOL_Enrique_Hertzog_Garaizabal_for_lso
+		add_ideas = BOL_Werner_Guttenberg_eco_int
+		add_ideas = BOL_Gunnar_Mendoza_Loza_sec_lso
 	}
 }
 

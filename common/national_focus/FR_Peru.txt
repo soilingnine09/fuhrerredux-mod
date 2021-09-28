@@ -18,7 +18,7 @@ focus_tree = {
 
 		focus = { 
 		id = PRU_peru_in_1936
-		icon = GFX_goal_peru
+		icon = GFX_goal_peru_coa
 
  		ai_will_do = { factor = 10 } 
 
@@ -1388,7 +1388,7 @@ focus_tree = {
 
 		focus = { 
 		id = PRU_reinforce_our_men
-		icon = GFX_goal_generic_support_equipment
+		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = PRU_mechanized_masses focus = PRU_bring_in_the_tanks }
  		ai_will_do = { factor = 10 } 
  		x =16
@@ -1939,7 +1939,7 @@ focus = {
 
 focus = {
 		id = PRU_stop_the_extremists
-		icon = GFX_goal_generic_attack_colombia
+		icon = GFX_goal_colombia_shackle
 		x = 45
 		y = 4
 		cost = 10
@@ -1982,7 +1982,7 @@ focus = {
 
 focus = {
 		id = PRU_push_the_claims
-		icon = GFX_goal_generic_attack_ecuador
+		icon = GFX_goal_flag_ecuador_war
 		x = 47
 		y = 3
 		cost = 10
@@ -2024,7 +2024,7 @@ focus = {
 
 focus = {
 		id = PRU_go_for_ecuador
-		icon = GFX_goal_generic_attack_ecuador
+		icon = GFX_goal_flag_ecuador_war
 		x = 51
 		y = 2
 		cost = 10
@@ -2070,7 +2070,7 @@ focus = {
 
 focus = {
 		id = PRU_push_for_arica
-		icon = GFX_goal_generic_attack_chile
+		icon = GFX_goal_chile_war
 		x = 53
 		y = 3
 		cost = 10
@@ -2092,7 +2092,7 @@ focus = {
 
 focus = {
 		id = PRU_renew_friendship_treaty
-		icon = GFX_goal_PRU_chile_deal
+		icon = GFX_goal_chile_alliance
 		x = 55
 		y = 2
 		cost = 10
@@ -2110,7 +2110,7 @@ focus = {
 
 focus = {
 		id = PRU_strike_for_arica
-		icon = GFX_goal_generic_attack_chile
+		icon = GFX_goal_chile_war
 		x = 57
 		y = 2
 		cost = 10
@@ -2162,7 +2162,7 @@ focus = {
 
 focus = {
 		id = PRU_save_the_bolivians
-		icon = GFX_goal_generic_attack_bolivia
+		icon = GFX_goal_flag_bolivia_war
 		x = 59
 		y = 3
 		cost = 10

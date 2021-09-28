@@ -1,19 +1,8 @@
 ﻿capital = 16
 
-oob = "FRA"
+oob = "FRA_1936"
 
-if = {
-    limit = { has_dlc = "Man the Guns" }
-        set_naval_oob = "FRA_naval_mtg"
-    else = {
-        set_naval_oob = "FRA_naval_legacy"
-    }
-}
-
-set_stability = 0.80
-set_war_support = 0.05
 set_research_slots = 4
-set_convoys = 533
 
 # Starting tech
 set_technology = {
@@ -79,7 +68,9 @@ if = {
 		mtg_transport = 1
 	}
 }
-
+set_convoys = 533
+set_stability = 0.80
+set_war_support = 0.05
 
 set_country_flag = coalition_social_liberal
 
@@ -231,6 +222,14 @@ if = {
 		puppet = FIC
 		puppet = TUN
 	}
+}
+
+if = {
+    limit = { has_dlc = "Man the Guns" }
+        set_naval_oob = "FRA_1936_naval_mtg"
+    else = {
+        set_naval_oob = "FRA_1936_naval_legacy"
+    }
 }
 
 add_ideas = {

@@ -14,9 +14,9 @@ focus_tree = {
     continuous_focus_position = { x = 1600 y = 1200 }
 
     shared_focus = PHI_industrialization_plan
-    shared_focus = PHI_army_expansion_program
-    shared_focus = PHI_start_naval_buildup
-    shared_focus = PHI_fund_an_air_force
+    shared_focus = PHI_expand_the_army
+    shared_focus = PHI_expand_the_navy
+    shared_focus = PHI_expand_the_air_force
     shared_focus = PHI_department_of_foreign_affairs
 
     ######################################################
@@ -27,7 +27,7 @@ focus_tree = {
 
     # The New Republic Proclaimed
     focus = {
-        id = PHR_the_new_republic_proclaimed
+        id = PHI_the_new_republic_proclaimed
         icon = GFX_goal_red_star_green_wreath
         x = 4
         y = 0
@@ -43,374 +43,491 @@ focus_tree = {
 
     # Trade Union Congress
     focus = {
-        id = PHR_unified_party_congress
-        icon = GFX_focus_HOL_deal_with_left
+        id = PHI_trade_union_congress
+        icon = GFX_goal_red_star_gold_wreath
         x = 0
         y = 1
         cost = 6
         available = {
             has_socialist_government = yes
         }
-        bypass = {
-            has_country_flag = PHR_had_revolutionary_congress
-        }
-        prerequisite = { focus = PHR_the_new_republic_proclaimed }
-        relative_position_id = PHR_the_new_republic_proclaimed
+        prerequisite = { focus = PHI_the_new_republic_proclaimed }
+        relative_position_id = PHI_the_new_republic_proclaimed
+        completion_reward = { country_event = phi.23 }
     }   
 
-    # Pangkat Laborista
+    # Socialism with Filipino Characteristics
     focus = {
-        id = PHR_pangkat_laborista
-        icon = GFX_goal_ideology_libertarian_socialism
+        id = PHI_socialism_with_filipino_characteristics
+        icon = GFX_goal_ideology_libsoc
         x = -2
         y = 1
-        cost = 0
-        bypass = {
-            has_country_flag = PHR_had_revolutionary_congress
-            has_country_flag = PHR_laborista_victory
+        cost = 3
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = unlocked_later
+                has_country_flag = PHI_lib_soc_majority_tt
+            }
         }
-        mutually_exclusive = {
-            focus = PHR_pangkat_kumonista
-            focus = PHR_pangkat_soyalista
+        prerequisite = { focus = PHI_trade_union_congress }
+        mutually_exclusive = { focus = PHI_seize_the_means_of_production }
+        relative_position_id = PHI_trade_union_congress
+        completion_reward = {
+            add_political_power = 100
+            add_popularity = {
+                ideology = libertarian_socialist
+                popularity = 0.05
+            }
         }
-        prerequisite = { focus = PHR_unified_party_congress }
-        relative_position_id = PHR_unified_party_congress
     }
 
-    # Pangkat Soyalista
+    # Employment Subsidies
     focus = {
-        id = PHR_pangkat_soyalista
-        icon = GFX_goal_ideology_collectivist
+        id = PHI_employment_subsidies
+        icon = GFX_IRE_heavy_industry
+        x = -2
+        y = 1
+        cost = 6
+        available = { has_government = valkist }
+        prerequisite = { focus = PHI_socialism_with_filipino_characteristics }
+        relative_position_id = PHI_socialism_with_filipino_characteristics
+        completion_reward = {
+            623 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+ 			}
+            624 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+ 			}
+        }
+    }
+
+    # Housing Programs
+    focus = {
+        id = PHI_housing_programs
+        icon = GFX_goal_factory_complex
         x = 0
         y = 1
         cost = 6
-        bypass = {
-            has_country_flag = PHR_had_revolutionary_congress
-            has_country_flag = PHR_soyalista_victory
+        available = { has_government = libertarian_socialist }
+        prerequisite = { focus = PHI_employment_subsidies }
+        relative_position_id = PHI_employment_subsidies
+        completion_reward = {
+            add_ideas = PHI_government_housing
         }
-        mutually_exclusive = {
-            focus = PHR_pangkat_laborista
-            focus = PHR_pangkat_kumonista
-        }
-        prerequisite = { focus = PHR_unified_party_congress }
-        relative_position_id = PHR_unified_party_congress
     }
 
-    # Pangkat Kumonista
+    # Punish the Corrupt
     focus = {
-        id = PHR_pangkat_kumonista
+        id = PHI_punish_the_corrupt
+        icon = GFX_goal_purge_opposition
+        x = 0
+        y = 1
+        cost = 6
+        available = { has_government = libertarian_socialist }
+        prerequisite = { focus = PHI_housing_programs }
+        relative_position_id = PHI_housing_programs
+        completion_reward = {
+            add_ideas = PHI_weakened_oligarchy
+        }
+    }
+
+    # Religious Tolerance
+    focus = {
+        id = PHI_religious_tolerance
+        icon = GFX_goal_faith_and_state
+        x = 0
+        y = 1
+        cost = 6
+        available = { has_government = libertarian_socialist }
+        prerequisite = { focus = PHI_socialism_with_filipino_characteristics }
+        relative_position_id = PHI_socialism_with_filipino_characteristics
+        completion_reward = {
+            add_ideas = PHI_secular_state
+        }
+    }
+
+    # Socialist Education
+    focus = {
+        id = PHI_socialist_education
+        icon = GFX_focus_research2
+        x = 0
+        y = 1
+        cost = 6
+        available = { has_government = libertarian_socialist }
+        prerequisite = { focus = PHI_religious_tolerance }
+        relative_position_id = PHI_religious_tolerance
+        completion_reward = {
+            add_research_slot = 1
+            swap_ideas = {
+                remove_idea = PHI_marxist_professors
+                add_idea = PHI_marxist_professors1
+            }
+        }
+    }
+
+    # For the Motherland
+    focus = {
+        id = PHI_for_the_motherland
+        icon = GFX_goal_LEC_police3
+        x = 0
+        y = 1
+        cost = 6
+        prerequisite = { focus = PHI_socialist_education }
+        relative_position_id = PHI_socialist_education
+        completion_reward = {
+            add_ideas = PHI_for_the_country
+        }
+    }
+
+    # Government Owned and Controlled Corporations
+    focus = {
+        id = PHI_government_owned_and_controlled_corporations
+        icon = GFX_goal_generic_soviet_construction
+        x = 0
+        y = 2
+        cost = 6
+        available = { 
+            OR = {
+                has_government = libertarian_socialist
+                has_government = collectivist
+                has_government = vanguardist
+            }
+        }
+        prerequisite = {
+            focus = PHI_socialism_with_filipino_characteristics
+            focus = PHI_seize_the_means_of_production
+        }
+        relative_position_id = PHI_trade_union_congress
+        completion_reward = {
+            add_ideas = PHI_government_corporations
+        }
+    }
+
+    # Redistribute the Haciendas
+    focus = {
+        id = PHI_redistribute_the_haciendas
+        icon = GFX_focus_prc_agrarian_socialism
+        x = 0
+        y = 1
+        cost = 6
+        available = { 
+            OR = {
+                has_government = libertarian_socialist
+                has_government = collectivist
+                has_government = vanguardist
+            }
+        }
+        prerequisite = { focus = PHI_government_owned_and_controlled_corporations }
+        relative_position_id = PHI_government_owned_and_controlled_corporations
+        completion_reward = {
+            327 = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+                    add_extra_state_shared_building_slots = 1
+                }
+            }
+            623 = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+                    add_extra_state_shared_building_slots = 1
+                }
+            }
+            624 = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+                    add_extra_state_shared_building_slots = 1
+                }
+            }
+            625 = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+                    add_extra_state_shared_building_slots = 1
+                }
+            }
+            626 = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+                    add_extra_state_shared_building_slots = 1
+                }
+            }
+            627 = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+                    add_extra_state_shared_building_slots = 1
+                }
+            }
+            628 = {
+                if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+
+					}
+                    add_extra_state_shared_building_slots = 1
+                }
+            }
+        }
+    }
+
+    # Seize the Lands of the Elites
+    focus = {
+        id = PHI_seize_the_wealth
+        icon = GFX_focus_empty_coffers
+        x = 0
+        y = 1
+        cost = 6
+        available = { 
+            OR = {
+                has_government = libertarian_socialist
+                has_government = collectivist
+                has_government = vanguardist
+            }
+        }
+        prerequisite = { focus = PHI_redistribute_the_haciendas }
+        relative_position_id = PHI_redistribute_the_haciendas
+        completion_reward = {
+            add_ideas = PHI_seized_wealth
+        }
+    }
+
+    # Seize the Means of Production
+    focus = {
+        id = PHI_seize_the_means_of_production
         icon = GFX_goal_ideology_vanguardist
         x = 2
         y = 1
-        cost = 6
-        bypass = {
-            has_country_flag = PHR_had_revolutionary_congress
-            has_country_flag = PHR_kumonista_victory
+        cost = 3
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = unlocked_later
+                has_country_flag = PHI_vanguardist_majority_tt
+            }
         }
-        mutually_exclusive = {
-            focus = PHR_pangkat_laborista
-            focus = PHR_pangkat_soyalista
+        prerequisite = { focus = PHI_trade_union_congress }
+        mutually_exclusive = { focus = PHI_socialism_with_filipino_characteristics }
+        relative_position_id = PHI_trade_union_congress
+        completion_reward = {
+            add_political_power = 100
+            add_popularity = {
+                ideology = vanguardist
+                popularity = 0.05
+            }
+            hidden_effect = {
+                set_politics = {
+                    ruling_party = vanguardist
+                    elections_allowed = no
+                }
+            }
         }
-        prerequisite = { focus = PHR_unified_party_congress }
-        relative_position_id = PHR_unified_party_congress
     }
 
-    # Better Conditions, Better Wages
+    # Spy on our Own Citizens
     focus = {
-        id = PHR_better_conditions_better_wages
-        icon = GFX_goal_munitions_factories
-        x = -1
+        id = PHI_spy_on_our_own_citizens
+        icon = GFX_goal_NOR_secret_police
+        x = 2
         y = 1
         cost = 6
-        prerequisite = { focus = PHR_pangkat_laborista }
-        relative_position_id = PHR_pangkat_laborista
+        available = { has_government = vanguardist }
+        prerequisite = { focus = PHI_seize_the_means_of_production }
+        relative_position_id = PHI_seize_the_means_of_production
         completion_reward = {
-            increase_ruling_party_popularity_by_15 = yes
-            add_ideas = PHR_better_worker_status
+            add_ideas = PHI_pcps
         }
     }
 
-    # Improve Union Management
+    # Public Reeducation
     focus = {
-        id = PHR_improve_union_management
-        icon = GFX_focus_generic_self_management
+        id = PHI_public_reeducation
+        icon = GFX_focus_generic_socialist_science
         x = 0
-        y = 2
+        y = 1
         cost = 6
-        prerequisite = { focus = PHR_better_conditions_better_wages }
-        relative_position_id = PHR_better_conditions_better_wages 
+        available = { has_government = vanguardist }
+        prerequisite = { focus = PHI_spy_on_our_own_citizens }
+        relative_position_id = PHI_spy_on_our_own_citizens
         completion_reward = {
+            add_research_slot = 1
             swap_ideas = {
-                remove_idea = PHR_better_worker_status
-                add_idea = PHR_better_worker_status_1
+                remove_idea = PHI_marxist_professors
+                add_idea = PHI_marxist_professors1
             }
         }
     }
 
-    # Market Socialism
+    # Forced Conscription
     focus = {
-        id = PHR_market_socialism
-        icon = GFX_goal_generic_neutrality_focus
+        id = PHI_forced_conscription
+        icon = GFX_PRF_integrate_BHC
         x = 0
-        y = 2
-        cost = 6
-        prerequisite = { focus = PHR_pangkat_laborista }
-        relative_position_id = PHR_pangkat_laborista
-        completion_reward = {
-            add_offsite_building = {
-                type = industrial_complex
-                level = 2
-            }
-            add_offsite_building = {
-                type = arms_factory
-                level = 2
-            }
-        }
-    }
-
-    # Beginnings of a New Democracy
-    focus = {
-        id = PHR_beginnings_of_a_new_democracy
-        icon = GFX_goal_liberty
-        x = 0
-        y = 2
-        cost = 6
-        prerequisite = { focus = PHR_market_socialism }
-        prerequisite = { focus = PHR_improve_union_management }
-        prerequisite = { focus = PHR_protect_the_revolution }
-        relative_position_id = PHR_market_socialism
-        completion_reward = {
-            add_ideas = PHR_a_new_philippines
-        }
-    }
-
-    # Modern Farms
-    focus = {
-        id = PHR_modern_farms
-        icon = GFX_focus_AUS_agriculture
-        x = -1
         y = 1
         cost = 6
-        prerequisite = { 
-            focus = PHR_pangkat_laborista
-            focus = PHR_pangkat_soyalista
-        }
-        relative_position_id = PHR_pangkat_soyalista
+        available = { has_government = vanguardist }
+        prerequisite = { focus = PHI_public_reeducation }
+        relative_position_id = PHI_public_reeducation
         completion_reward = {
-            add_tech_bonus = {
-                category = electronics
-                bonus = 0.75
-                uses = 2
-            }
-            random_owned_controlled_state = {
-                if = {
-                    limit = {
-                        free_building_slots = {
-                            building = industrial_complex
-                            size > 0
-                            include_locked = yes
-                        }
+            add_ideas = PHI_forced_conscription
+        }
+    }
 
-                    }
-                    add_extra_state_shared_building_slots = 1
-                }
-            }
-            random_owned_controlled_state = {
-                if = {
-                    limit = {
-                        free_building_slots = {
-                            building = industrial_complex
-                            size > 0
-                            include_locked = yes
-                        }
-
-                    }
-                    add_extra_state_shared_building_slots = 1
-                }
+    # State Atheism
+    focus = {
+        id = PHI_state_atheism
+        icon = GFX_goal_MAF_Kulturkampf
+        x = 0
+        y = 1
+        cost = 6
+        available = { has_government = vanguardist }
+        prerequisite = { focus = PHI_seize_the_means_of_production }
+        relative_position_id = PHI_seize_the_means_of_production
+        completion_reward = {
+            add_ideas = PHI_state_atheism
+            hidden_effect = {
+                set_country_flag = PHI_ATHEIST_STATE
             }
         }
     }
 
-    # Protect the Revolution
+    # Propaganda Campaigns
     focus = {
-        id = PHR_protect_the_revolution
+        id = PHI_propaganda_campaigns
+        icon = GFX_goal_generic_propaganda
+        x = 0
+        y = 1
+        cost = 6
+        available = { has_government = vanguardist }
+        prerequisite = { focus = PHI_state_atheism }
+        relative_position_id = PHI_state_atheism
+        completion_reward = {
+            add_stability = 0.1
+            add_war_support = 0.1
+            add_popularity = {
+                ideology = vanguardist
+                popularity = 0.15
+            }
+        }
+    }
+
+    # Establish Quotas
+    focus = {
+        id = PHI_establish_quotas
         icon = GFX_goal_revolution_tools
-        x = 0 
-        y = 2
-        cost = 6
-        prerequisite = { focus = PHR_modern_farms }
-        relative_position_id = PHR_modern_farms
-        completion_reward = {
-            add_ideas = PHR_department_of_revolutionary_ideals
-        }
-    }
-
-    # Decentralized Planning
-    focus = {
-        id = PHR_decentralized_planning
-        icon = GFX_goal_economic_control
         x = 0
-        y = 2
+        y = 1
         cost = 6
-        prerequisite = { focus = PHR_pangkat_soyalista }
-        relative_position_id = PHR_pangkat_soyalista
+        available = { has_government = vanguardist }
+        prerequisite = { focus = PHI_propaganda_campaigns }
+        relative_position_id = PHI_propaganda_campaigns
         completion_reward = {
-            add_timed_idea = {
-                idea = PHR_socialist_economic_plan
-                days = 730
-            }
+            add_ideas = PHI_new_quotas
         }
     }
 
-    # Breaking the Chains
+    # Lone Red Star
     focus = {
-        id = PHR_breaking_the_chains
-        icon = GFX_goal_offensive_army
+        id = PHI_the_lone_red_star
+        icon = GFX_focus_ger_great_red_menace
         x = 0
-        y = 2
-        cost = 6
-        prerequisite = { focus = PHR_decentralized_planning }
-        prerequisite = { focus = PHR_protect_the_revolution }
-        prerequisite = { focus = PHR_purge_reactionaries }
-        relative_position_id = PHR_decentralized_planning
-        completion_reward = {
-            add_ideas = PHR_a_new_red_dawn
-        }
-    }
-
-    # Communal Industrialization
-    focus = {
-        id = PHR_communal_industrialization
-        icon = GFX_goal_state_economy
-        x = 1
         y = 1
         cost = 6
         prerequisite = {
-            focus = PHR_pangkat_soyalista
-            focus = PHR_pangkat_kumonista
+            focus = PHI_for_the_motherland
+            focus = PHI_forced_conscription
         }
-        relative_position_id = PHR_pangkat_soyalista
+        relative_position_id = PHI_seize_the_wealth
         completion_reward = {
-            unlock_decision_category_tooltip = PHR_communal_industrialization_decisions
+            add_ideas = PHI_the_lone_red_star_idea
         }
     }
 
-    # Purge Reactionaries
+    # Unity and Equality
     focus = {
-        id = PHR_purge_reactionaries
-        icon = GFX_goal_backstab
+        id = PHI_unity_and_equality_focus
+        icon = GFX_goal_commune_politics
         x = 0
-        y = 2
-        cost = 6
-        prerequisite = { focus = PHR_communal_industrialization }
-        relative_position_id = PHR_communal_industrialization
-        completion_reward = {
-            increase_ruling_party_popularity_by_5 = yes
-            add_stability = 0.05
-            add_manpower = -1500
-        }
-    }
-
-    # Resource Nationalization
-    focus = {
-        id = PHR_resource_nationalization
-        icon = GFX_goal_generic_oil_refinery
-        x = 0
-        y = 2
-        cost = 6
-        prerequisite = { focus = PHR_pangkat_kumonista }
-        relative_position_id = PHR_pangkat_kumonista
-        completion_reward = {
-            random_owned_controlled_state = {
-                add_resource = {
-                    type = oil
-                    amount = 10
-                }
-            }
-            random_owned_controlled_state = {
-                add_resource = {
-                    type = aluminum
-                    amount = 10
-                }
-            }
-            random_owned_controlled_state = {
-                add_resource = {
-                    type = chromium
-                    amount = 10
-                }
-            }
-        }
-    }
-
-    # Centralized Syndicalism
-    focus = {
-        id = PHR_centralized_syndicalism
-        icon = GFX_goal_syndicalist_lenin
-        x = 0
-        y = 2
-        cost = 6
-        prerequisite = { focus = PHR_resource_nationalization }
-        prerequisite = { focus = PHR_purge_reactionaries }
-        prerequisite = { focus = PHR_state_quotas }
-        relative_position_id = PHR_resource_nationalization
-        completion_reward = {
-            add_ideas = PHR_socialist_haven
-        }
-    }
-
-    # Forceful Land Redistribution
-    focus = {
-        id = PHR_forceful_land_redistribution
-        icon = GFX_focus_prc_agrarian_socialism
-        x = 1
         y = 1
         cost = 6
-        prerequisite = { focus = PHR_pangkat_kumonista }
-        relative_position_id = PHR_pangkat_kumonista
+        prerequisite = { focus = PHI_the_lone_red_star }
+        relative_position_id = PHI_the_lone_red_star
         completion_reward = {
-            add_stability = 0.015
-            add_political_power = -150
-            increase_ruling_party_popularity_by_5 = yes
-            random_owned_controlled_state = {
-                if = {
-                    limit = {
-                        free_building_slots = {
-                            building = industrial_complex
-                            size > 0
-                            include_locked = yes
-                        }
-
-                    }
-                    add_extra_state_shared_building_slots = 1
-                }
-            }
-            random_owned_controlled_state = {
-                if = {
-                    limit = {
-                        free_building_slots = {
-                            building = industrial_complex
-                            size > 0
-                            include_locked = yes
-                        }
-
-                    }
-                    add_extra_state_shared_building_slots = 1
-                }
-            }
-        }
-    }
-
-    # State Quotas
-    focus = {
-        id = PHR_state_quotas
-        icon = GFX_goal_Centralised_Government
-        x = 0
-        y = 2
-        cost = 6
-        prerequisite = { focus = PHR_forceful_land_redistribution }
-        relative_position_id = PHR_forceful_land_redistribution
-        completion_reward = {
-            add_ideas = PHR_state_quotas_idea
+            add_ideas = PHI_unity_and_equality
         }
     }
 }

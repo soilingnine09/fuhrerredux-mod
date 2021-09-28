@@ -34,7 +34,6 @@ guiTypes = {
 			font = "hoi_20bs"
 			text = "FX_SPLASH_CREDITS"
 			maxWidth = 670
-			scrollbarType = standardtext_slider
 		}
 
 		buttonType = {

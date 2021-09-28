@@ -295,7 +295,6 @@ country_event = {
 
     MAN = { country_event = { id = man.8 days = 7 } }
 
-	kill_ideology_leader = authoritarian_democrat
     create_country_leader = {
      name = "Zhang Council"
      desc = "POLITICS_ZHANG_COUNCIL_DESC"
@@ -303,8 +302,6 @@ country_event = {
      expire = "1965.1.1"
      ideology = authoritarian_democrat_subtype
    }
-   remove_ideas_with_trait = head_of_government
-   add_ideas = MAN_Jin_Yunpeng_hog_ade
 
   }
 	}
@@ -383,8 +380,6 @@ country_event = {
      expire = "1965.1.1"
      ideology = authoritarian_democrat_subtype
    }
-   remove_ideas_with_trait = head_of_government
-   add_ideas = MAN_Zhang_Xueliang_hog_pau
 
     MAN = { country_event = { id = man.11 days = 7 } }
 
@@ -446,13 +441,24 @@ country_event = {
   option = {
 		name = "Can I still keep my palace?"
 
-	remove_every_minister = yes
-	add_ideas = {
-		MAN_Wang_Yitang_hog_ade
-		MAN_Sun_Qichang_for_pau
-		MAN_Tang_Yulin_eco_pau
-		MAN_Yuan_Jinkai_sec_pau
-	}
+
+
+	 swap_ideas = {
+			remove_idea = MAN_Zhang_Council_hog
+			add_idea = MAN_Zhang_Zongchang_hog
+	 		}
+			swap_ideas = {
+				remove_idea = MAN_Huang_Fu_for
+				add_idea = MAN_Wu_Jinglian_for
+			}
+			swap_ideas = {
+				remove_idea = MAN_Pan_Fu_eco
+				add_idea = MAN_Tang_Yulin_eco
+			}
+			swap_ideas = {
+				remove_idea = MAN_Yang_Yuting_sec
+				add_idea = MAN_Tang_Yulin_sec
+			}
 
    add_popularity = { ideology = paternal_autocrat popularity = 0.20 }
 
@@ -1005,8 +1011,14 @@ country_event = {
      expire = "1965.1.1"
      ideology = paternal_autocrat_subtype
    }
-   
-   remove_every_minister = yes
+
+	 swap_ideas = {
+			remove_idea = MAN_Zhang_Council_hog
+			add_idea = MAN_Local_Warlords_hog
+	 		}
+				remove_ideas = MAN_Huang_Fu_for
+				remove_ideas = MAN_Pan_Fu_eco
+				remove_ideas = MAN_Yang_Yuting_sec
 
 	 set_party_name = {
  			ideology = paternal_autocrat
@@ -1200,13 +1212,13 @@ country_event = {
      ideology = authoritarian_democrat_subtype
    }
 
-	remove_every_minister = yes
-	add_ideas = {
-		MAN_Huang_Fu_hog_ade
-		MAN_Wu_Jinglian_for_ade
-		MAN_Jin_Yunpeng_eco_ade
-		MAN_Jin_Yunpeng_sec_ade
-	}
+	 swap_ideas = {
+			remove_idea = MAN_Local_Warlords_hog
+			add_idea = MAN_Interim_Government_hog
+	 		}
+			add_ideas = MAN_Sun_Qichang_for
+			add_ideas = MAN_Y_C_James_Yen_eco
+			add_ideas = MAN_Ding_Jianxiu_sec
 
 		set_global_flag = MAN_interests
 
@@ -1449,14 +1461,6 @@ country_event = {
 		add_popularity = { ideology = valkist popularity = 0.05 }
 
 	add_ideas = military_junta
-
-	remove_every_minister = yes
-	add_ideas = {
-		MAN_Cao_Rulin_hog_npo
-		MAN_Wang_Yintai_for_pau
-		MAN_Yuan_Jinkai_eco_pau
-		MAN_Tang_Yulin_sec_pau
-	}
 
 	 set_politics = {
 			 ruling_party = national_populist
@@ -2811,13 +2815,18 @@ country_event = {
 		set_global_flag = MAN_concordia_rules_fengtian
 		add_political_power = -50
 
-	 remove_every_minister = yes
-	 add_ideas = {
-		MAN_Cao_Rulin_hog_npo
-		MAN_Wang_Yintai_for_pau
-		MAN_Yuan_Jinkai_eco_pau
-		MAN_Tang_Yulin_sec_pau
-	 }
+	 swap_ideas = {
+			remove_idea = MAN_Interim_Government_hog
+			add_idea = MAN_Cao_Rulin_hog
+	 		}
+			swap_ideas = {
+				remove_idea = MAN_Wu_Jinglian_for
+				add_idea = MAN_Yu_Zhishan_for
+			}
+			swap_ideas = {
+				remove_idea = MAN_Y_C_James_Yen_eco
+				add_idea = MAN_Yu_Zhishan_eco
+			}
 
 	 set_global_flag = MAN_elections_were_held
 
@@ -2854,13 +2863,18 @@ country_event = {
 		set_global_flag = MAN_concordia_rules_fengtian
 		add_political_power = -100
 
-	remove_every_minister = yes
-	add_ideas = {
-		MAN_Cao_Rulin_hog_npo
-		MAN_Sun_Qichang_for_pau
-		MAN_Wang_Yitang_eco_ade
-		MAN_Tang_Yulin_sec_pau
-	}
+	 swap_ideas = {
+			remove_idea = MAN_Interim_Government_hog
+			add_idea = MAN_Cao_Rulin_hog
+	 		}
+			swap_ideas = {
+				remove_idea = MAN_Wu_Jinglian_for
+				add_idea = MAN_Yu_Zhishan_for
+			}
+			swap_ideas = {
+				remove_idea = MAN_Y_C_James_Yen_eco
+				add_idea = MAN_Yu_Zhishan_eco
+			}
 
 	 hidden_effect = {
 		add_ideas = parliamentary_republic
@@ -2892,13 +2906,22 @@ country_event = {
 
 			set_global_flag = MAN_communications_rules_fengtian
 			add_political_power = -50
-			remove_every_minister = yes
-			add_ideas = {
-				MAN_Liang_Shiyi_hog_sco
-				MAN_Huang_Fu_for_ade
-				MAN_Lu_Ronghuan_eco_sco
-				MAN_Li_Shaogeng_sec_sco
-			}
+				swap_ideas = {
+		 			remove_idea = MAN_Interim_Government_hog
+		 			add_idea = MAN_Tang_Shaoyi_hog
+		 	 		}
+		 			swap_ideas = {
+		 				remove_idea = MAN_Wu_Jinglian_for
+		 				add_idea = MAN_Chang_Chun_for
+		 			}
+		 			swap_ideas = {
+		 				remove_idea = MAN_Y_C_James_Yen_eco
+		 				add_idea = MAN_Sun_Qichang_eco
+		 			}
+		 			swap_ideas = {
+		 				remove_idea = MAN_Ding_Jianxiu_sec
+		 				add_idea = MAN_Li_Shaogeng_sec
+		 			}
 
 				hidden_effect = {
 					add_ideas = parliamentary_republic
@@ -2927,14 +2950,22 @@ country_event = {
 					add_popularity = { ideology = social_conservative popularity = 0.15 }
 					set_global_flag = MAN_communications_rules_fengtian
 					add_political_power = -100
-
-					remove_every_minister = yes
-			add_ideas = {
-				MAN_Liang_Shiyi_hog_sco
-				MAN_Huang_Fu_for_ade
-				MAN_Lu_Ronghuan_eco_sco
-				MAN_Li_Shaogeng_sec_sco
-			}
+				 swap_ideas = {
+					 remove_idea = MAN_Interim_Government_hog
+					 add_idea = MAN_Tang_Shaoyi_hog
+					 }
+					 swap_ideas = {
+						 remove_idea = MAN_Wu_Jinglian_for
+						 add_idea = MAN_Chang_Chun_for
+					 }
+					 swap_ideas = {
+						 remove_idea = MAN_Y_C_James_Yen_eco
+						 add_idea = MAN_Sun_Qichang_eco
+					 }
+					 swap_ideas = {
+						 remove_idea = MAN_Ding_Jianxiu_sec
+						 add_idea = MAN_Li_Shaogeng_sec
+					 }
 
 						hidden_effect = {
 							add_ideas = parliamentary_republic
@@ -3137,13 +3168,6 @@ country_event = {
 					custom_effect_tooltip = 13_MAN_tt
 
 					add_ideas = parliamentary_republic
-					remove_every_minister = yes
-					add_ideas = {
-						MAN_Yang_Yuting_hog_mli
-						MAN_Yu_Zhishan_for_mli
-						MAN_Yu_Zhishan_eco_mli
-						MAN_Yang_Yuting_sec_mli
-					}
 				 set_politics = {
 			       ruling_party = social_liberal
 			       elections_allowed = no
@@ -3197,13 +3221,6 @@ country_event = {
 				}
 
 				custom_effect_tooltip = 12_MAN_tt
-				remove_every_minister = yes
-				add_ideas = {
-					MAN_Ruan_Zhenduo_hog_sde
-					MAN_Yu_Zhishan_for_mli
-					MAN_Li_Shaogeng_eco_sco
-					MAN_Ding_Jianxiu_sec_sde
-				}
 
 					name = "Can we finally have peace in our politics?"
 					add_ideas = parliamentary_republic
@@ -3232,13 +3249,6 @@ country_event = {
 			 	set_politics = {
 					 ruling_party = national_populist
 					 elections_allowed = no
-				 }
-				 remove_every_minister = yes
-				 add_ideas = {
-					 MAN_Cao_Rulin_hog_npo
-					 MAN_Wang_Yintai_for_pau
-					 MAN_Sun_Qichang_eco_pau
-					 MAN_Yuan_Jinkai_sec_pau
 				 }
 				hidden_effect = {
 				complete_national_focus = MAN_concordia_association_controls_the_senate
@@ -3316,13 +3326,6 @@ country_event = {
 			        ruling_party = market_liberal
 			        elections_allowed = no
 			      }
-				  remove_every_minister = yes
-				  add_ideas = {
-					  MAN_Yang_Yuting_hog_mli
-					  MAN_Yu_Zhishan_for_mli
-					  MAN_Li_Shaogeng_eco_sco
-					  MAN_Yang_Yuting_sec_mli
-				  }
 		}
 
 }

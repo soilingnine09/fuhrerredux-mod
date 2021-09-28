@@ -1049,7 +1049,7 @@ focus_tree = {
     # Modern Logistics
     focus = {
         id = CHI_modern_logistics
-        icon = GFX_goal_generic_support_equipment
+        icon = GFX_goal_RUS_Markov_plan
         x = 22
         y = 2
         cost = 10

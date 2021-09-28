@@ -1,6 +1,6 @@
 ﻿capital = 439
 
-oob = "00_default_template"
+oob = "INF"
 
 # Starting tech
 set_technology = {

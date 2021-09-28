@@ -1,12 +1,24 @@
 ﻿capital = 282
 
-oob = "JAP"
+oob = "JAP_1936"
 
 set_convoys = 400
 set_stability = 0.45
 set_war_support = 0.45
 set_research_slots = 4
 set_fuel_ratio = 1.0
+
+add_ideas = {
+	JAP_gunbatsu
+	JAP_interservice_rivalry_balanced
+	jap_wnt
+	JAP_duplicate_research_efforts
+	JAP_Inukai_Tsuyoshi_hog_sco
+	JAP_Yoshizawa_Kenkichi_for_sco
+	JAP_Tsushima_Juichi_eco_sco
+	JAP_Suzuki_Kisaburo_sec_sco
+	constitutional_monarchy
+}
 
 set_technology = {
 	infantry_weapons = 1
@@ -62,7 +74,7 @@ if = {
 		basic_heavy_armor_scheme = 1
 		basic_fire_control_system = 1
 	}
-	set_naval_oob = "JAP_naval_mtg"
+	set_naval_oob = "JAP_1936_naval"
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -100,18 +112,6 @@ set_popularities = {
     paternal_autocrat = 9
     national_populist = 7
     valkist = 3
-}
-
-add_ideas = {
-	JAP_gunbatsu
-	JAP_interservice_rivalry_balanced
-	jap_wnt
-	JAP_duplicate_research_efforts
-	JAP_Inukai_Tsuyoshi_hog_sco
-	JAP_Yoshizawa_Kenkichi_for_sco
-	JAP_Tsushima_Juichi_eco_sco
-	JAP_Suzuki_Kisaburo_sec_sco
-	constitutional_monarchy
 }
 
 give_guarantee = RUS

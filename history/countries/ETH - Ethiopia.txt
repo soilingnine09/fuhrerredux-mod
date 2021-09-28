@@ -1,10 +1,6 @@
 ﻿capital = 271
 
-oob = "ETH"
-
-set_convoys = 5
-set_stability = 0.50
-set_war_support = 0.50
+oob = "ETH_1936"
 
 # Starting tech
 set_technology = {
@@ -12,6 +8,18 @@ set_technology = {
 	tech_mountaineers = 1
 }
 
+add_ideas = {
+	party_pop_0_90
+	GEN_hog_ade
+	GEN_eco_ade
+	GEN_sec_ade
+	GEN_for_ade
+	absolute_monarchy
+}
+
+set_convoys = 5
+set_stability = 0.50
+set_war_support = 0.50
 set_politics = {	
 	ruling_party = authoritarian_democrat
 	last_election = "1936.1.1"
@@ -24,15 +32,6 @@ set_popularities = {
     national_populist = 0
     collectivist = 0
     authoritarian_democrat = 100
-}
-
-add_ideas = {
-	party_pop_0_90
-	GEN_hog_ade
-	GEN_eco_ade
-	GEN_sec_ade
-	GEN_for_ade
-	absolute_monarchy
 }
 
 create_country_leader = {

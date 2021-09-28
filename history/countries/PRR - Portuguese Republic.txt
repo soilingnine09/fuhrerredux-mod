@@ -9,9 +9,9 @@ set_convoys = 100
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "PRR_naval_mtg"
+		set_naval_oob = "PRR_1936_naval_mtg"
 	else = {
-		set_naval_oob = "PRR_naval_legacy"
+		set_naval_oob = "PRR_1936_naval_legacy"
 	}
 }
 

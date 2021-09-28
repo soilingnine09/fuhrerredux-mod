@@ -1,6 +1,6 @@
 ﻿capital = 474
 
-oob = "CRU"
+oob = "CRU_1936"
 
 # Starting tech
 set_technology = {

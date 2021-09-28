@@ -4,18 +4,13 @@ oob = "FIN"
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "FIN_naval_mtg"
+		set_naval_oob = "FIN_1936_naval_mtg"
 	else = {
-		set_naval_oob = "FIN_naval_legacy"
+		set_naval_oob = "FIN_1936_naval_legacy"
 	}
 }
 
-set_stability = 0.75
-set_war_support = 0.40
 set_research_slots = 3
-set_convoys = 25
-
-add_manpower = 50000
 
 country_event = { id = finland.0 days = 2 } # Intro event
 country_event = { id = finland.3 days = 254 } # London crash event
@@ -51,7 +46,10 @@ if = {
 	}
 }
 
-
+add_manpower = 50000
+set_convoys = 25
+set_stability = 0.75
+set_war_support = 0.40
 
 
 add_ideas = {

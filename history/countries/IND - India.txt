@@ -8,7 +8,7 @@
 #set_province_controller = 12886
 #set_province_controller = 12763
 
-#oob = "IND"
+#oob = "IND_1936"
 
 # Starting tech
 set_technology = {

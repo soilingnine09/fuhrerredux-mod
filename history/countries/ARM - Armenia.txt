@@ -1,31 +1,6 @@
 ﻿capital = 230 #Yerevan, Armenia
 
-oob = "ARM"
-
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	set_technology = {
-		early_submarine = 1
-		early_destroyer = 1
-		transport = 1
-	}
-	set_naval_oob = "ARM_naval_legacy"
-}	
-else_if = {
-	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
-		early_ship_hull_light = 1
-		early_ship_hull_submarine = 1
-		basic_battery = 1
-		basic_secondary_battery = 1
-		basic_torpedo = 1
-		coastal_defense_ships = 1
-		mtg_transport = 1
-	}
-	set_naval_oob = "ARM_naval_mtg"
-}
+oob = "ARM_1936"
 
 set_research_slots = 3
 set_stability = 0.50
@@ -55,8 +30,30 @@ set_technology = {
 	CAS1 = 1
 	fuel_silos = 1
 }
-
-
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		transport = 1
+	}
+	set_naval_oob = "ARM_1936_naval_legacy"
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_battery = 1
+		basic_secondary_battery = 1
+		basic_torpedo = 1
+		coastal_defense_ships = 1
+		mtg_transport = 1
+	}
+	set_naval_oob = "ARM_1936_naval"
+}
 
 add_ideas = {
 	party_pop_0_40

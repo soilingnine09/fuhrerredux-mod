@@ -625,95 +625,268 @@ CAN_tories:0 "Tories"
 CAN_mil_junta_long:0 "Military Junta"
 CAN_mil_junta_short:0 "Military Junta"
 
-### Ministers ###
-# Head of Government
-CAN_Tim_Buck_hog_van:0 "Tim Buck"
-CAN_Richard_Parmater_Pettipiece_hog_col:0 "Richard Parmater Pettipiece"
-CAN_Claude_Jodoin_hog_lib:0 "Claude Jodoin"
-CAN_Humphrey_Mitchell_hog_lib:0 "Humphrey Mitchell"
-CAN_JS_Woodsworth_hog_sde:0 "J.S. Woodsworth"
-CAN_Major_James_Coldwell_hog_sde:0 "Major James Coldwell"
-CAN_Louis_St_Laurent_hog_sli:0 "Louis St. Laurent"
-CAN_Charles_Gavan_Power_hog_mli:0 "Charles Gavan Power"
-CAN_William_Lyon_Mackenzie_King_hog_mli:0 "William Lyon Mackenzie King"
-CAN_John_Bracken_hog_sco:0 "John Bracken"
-CAN_RB_Bennett_hog_sco:0 "R.B. Bennett"
-CAN_Robert_Manion_hog_sco:0 "Robert Manion"
-CAN_Arthur_Meighen_hog_ade:0 "Arthur Meighen"
-CAN_JH_Blackmore_hog_ade:0 "J.H. Blackmore"
-CAN_Henry_Crerar_hog_pau:0 "Henry Crerar"
-CAN_Henry_Herbert_Stevens_hog_npo:0 "Henry Herbert Stevens"
-CAN_John_Diefenbaker_hog_npo:0 "John Diefenbaker"
-# Foreign Minister
-CAN_Alexander_Albert_MacLeod_for_van:0 "Alexander Albert MacLeod"
-CAN_Joe_Zuken_for_col:0 "Joe Zuken"
-CAN_Humphrey_Mitchell_for_lib:0 "Humphrey Mitchell"
-CAN_Romeo_Mathieu_for_lib:0 "Romeo Mathieu"
-CAN_David_Lewis_for_sde:0 "David Lewis"
-CAN_Thomas_C_Douglas_for_sde:0 "Thomas C. Douglas"
-CAN_Louis_St_Laurent_for_sli:0 "Louis St. Laurent"
-CAN_Mitchell_Hepburn_for_sli:0 "Mitchell Hepburn"
-CAN_George_W_Stephens_for_mli:0 "George W. Stephens"
-CAN_Vincent_Massey_for_mli:0 "Vincent Massey"
-CAN_Robert_Manion_for_sco:0 "Robert Manion"
-CAN_Sidney_Earle_Smith_for_sco:0 "Sidney Earle Smith"
-CAN_Ernest_Manning_for_ade:0 "Ernest Manning"
-CAN_George_A_Drew_for_ade:0 "George A. Drew"
-CAN_Howard_Charles_Green_for_pau:0 "Howard Charles Green"
-CAN_Adrien_Arcand_for_npo:0 "Adrien Arcand"
-CAN_George_A_Drew_for_npo:0 "George A. Drew"
-# Economy Minister
-CAN_James_Litterick_eco_van:0 "James Litterick"
-CAN_William_Kashtan_eco_col:0 "William Kashtan"
-CAN_William_Charles_Good_eco_lib:0 "William Charles Good"
-CAN_Hazen_Argue_eco_sde:0 "Hazen Argue"
-CAN_Alphonse_Fournier_eco_sli:0 "Alphonse Fournier"
-CAN_Gerry_McGeer_eco_sli:0 "Gerry McGeer"
-CAN_CD_Howe_eco_mli:0 "C.D. Howe"
-CAN_John_Bracken_eco_sco:0 "John Bracken"
-CAN_Stephen_Leacock_eco_sco:0 "Stephen Leacock"
-CAN_Andrew_Carnell_eco_ade:0 "Andrew Carnell"
-CAN_Victor_Quelch_eco_ade:0 "Victor Quelch"
-CAN_Lloyd_Samuel_Breadner_eco_pau:0 "Lloyd Samuel Breadner"
-CAN_John_Ross_Taylor_eco_npo:0 "John Ross Taylor"
-CAN_Murdoch_Alexander_MacPherson_eco_npo:0 "Murdoch Alexander MacPherson"
-# Security Minister
-CAN_Tom_McEwan_sec_van:0 "Tom McEwan"
-CAN_Norman_Bethune_sec_col:0 "Norman Bethune"
-CAN_Joseph_Andrew_Clarke_sec_lib:0 "Joseph Andrew Clarke"
-CAN_Clarence_Gillis_sec_sde:0 "Clarence Gillis"
-CAN_Stanley_Knowles_sec_sde:0 "Stanley Knowles"
-CAN_Stuart_Garson_sec_sli:0 "Stuart Garson"
-CAN_Douglas_Abbott_sec_mli:0 "Douglas Abbott"
-CAN_Ernest_Lapointe_sec_mli:0 "Ernest Lapointe"
-CAN_James_Garfield_Gardiner_sec_mli:0 "James Garfield Gardiner"
-CAN_Gordon_Graydon_sec_sco:0 "Gordon Graydon"
-CAN_John_Diefenbaker_sec_sco:0 "John Diefenbaker"
-CAN_Solon_Earl_Low_sec_ade:0 "Solon Earl Low"
-CAN_WAC_Bennett_sec_ade:0 "W.A.C. Bennett"
-CAN_Andrew_McNaughton_sec_pau:0 "Andrew McNaughton"
-CAN_Chuck_Crate_sec_npo:0 "Chuck Crate"
-# Chief of Staff
+#### Ministers ####
+
+#HEAD OF GOVERNMENT
+
+CAN_rb_bennett_hog:0 "R.B Bennett"
+rb_bennett_dead:0 "is incapable of holding any posts"
+rb_bennett_hog_fired:0 "is incapable of holding this post"
+
+CAN_john_diefenbaker_hog:0 "John Diefenbaker"
+john_diefenbaker_dead:0 "is incapable of holding any posts"
+john_diefenbaker_hog_fired:0 "is incapable of holding this post"
+
+CAN_wl_mackenzie_king_hog:0 "W.L Mackenzie King"
+wl_mackenzie_king_dead:0 "is incapable of holding any posts"
+wl_mackenzie_king_hog_fired:0 "is incapable of holding this post"
+
+CAN_tommy_douglas_hog:0 "Thomas Clement Douglas"
+tommy_douglas_dead:0 "is incapable of holding any posts"
+tommy_douglas_hog_fired:0 "is incapable of holding this post"
+
+CAN_john_buchan_hog:0 "Lord Tweedsmuir"
+john_buchan_dead:0 "is incapable of holding any posts"
+john_buchan_hog_fired:0 "is incapable of holding this post"
+
+CAN_jh_blackmore_hog:0 "J.H Blackmore"
+jh_blackmore_dead:0 "is incapable of holding any posts"
+jh_blackmore_hog_fired:0 "is incapable of holding this post"
+
+CAN_joseph_maurice_scott_hog:0 "Joseph Maurice Scott"
+joseph_maurice_scott_dead:0 "is incapable of holding any posts"
+joseph_maurice_scott_hog_fired:0 "is incapable of holding this post"
+
+CAN_arthur_evans_hog:0 "Arthur Evans"
+arthur_evans_dead:0 "is incapable of holding any posts"
+arthur_evans_hog_fired:0 "is incapable of holding this post"
+
+CAN_fred_rose_hog:0 "Fred Rose"
+fred_rose_dead:0 "is incapable of holding any posts"
+fred_rose_hog_fired:0 "is incapable of holding this post"
+
+CAN_william_kashtan_hog:0 "William Kashtan"
+william_kashtan_dead:0 "is incapable of holding any posts"
+william_kashtan_hog_fired:0 "is incapable of holding this post"
+
+CAN_maurice_spector_hog:0 "Maurice Spector"
+maurice_spector_dead:0 "is incapable of holding any posts"
+maurice_spector_hog_fired:0 "is incapable of holding this post"
+
+#FOREIGN MINISTER
+
+CAN_donald_matheson_sutherland_for:0 "Donald Matheson Sutherland"
+donald_matheson_sutherland_dead:0 "is incapable of holding any posts"
+donald_matheson_sutherland_for_fired:0 "is incapable of holding this post"
+
+CAN_lester_b_pearson_for:0 "Lester B. Pearson" #See the one under
+CAN_lib_lester_b_pearson_for:0 "Lester B. Pearson" #See the one under
+lester_b_pearson_dead:0 "is incapable of holding any posts" #Same guy as above two
+lester_b_pearson_for_fired:0 "is incapable of holding this post" #Guess what?
+
+CAN_leo_richer_lafleche_for:0 "Leo Richer Lafleche"
+leo_richer_lafleche_dead:0 "is incapable of holding any posts"
+leo_richer_lafleche_for_fired:0 "is incapable of holding this post"
+
+CAN_humphrey_mitchell_for:0 "Humphrey Mitchell"
+humphrey_mitchell_dead:0 "is incapable of holding any posts"
+humphrey_mitchell_for_fired:0 "is incapable of holding this post"
+
+CAN_edward_joseph_garland_for:0 "Edward Joseph Garland"
+edward_joseph_garland_dead:0 "is incapable of holding any posts"
+edward_joseph_garland_for_fired:0 "is incapable of holding this post"
+
+CAN_tom_mcinnes_for:0 "Tom McInnes"
+tom_mcinnes_dead:0 "is incapable of holding any posts"
+tom_mcinnes_for_fired:0 "is incapable of holding this post"
+
+CAN_robert_b_russle_for:0 "Robert B. Russle"
+robert_b_russle_dead:0 "is incapable of holding any posts"
+robert_b_russle_for_fired:0 "is incapable of holding this post"
+
+CAN_arthur_evans_for:0 "Arthur Evans"
+arthur_evans_dead:0 "is incapable of holding any posts"
+arthur_evans_for_fired:0 "is incapable of holding this post"
+
+CAN_william_kashtan_for:0 "William Kashtan"
+CAN_william_kashtan_v_for:0 "William Kashtan"
+william_kashtan_dead:0 "is incapable of holding any posts"
+william_kashtan_for_fired:0 "is incapable of holding this post"
+
+CAN_sam_carr_for:0 "Sam Carr"
+sam_carr_dead:0 "is incapable of holding any posts"
+sam_carr_for_fired:0 "is incapable of holding this post"
+
+CAN_norman_bethune_for:0 "Norman Bethune"
+CAN_norman_bethune_v_for:0 "Norman Bethune"
+norman_bethune_dead:0 "is incapable of holding any posts"
+norman_bethune_for_fired:0 "is incapable of holding this post"
+
+#ECONOMIC MINISTER
+
+CAN_charles_cahan_eco:0 "Charles Cahan"
+charles_cahan_dead:0 "is incapable of holding any posts"
+charles_cahan_eco_fired:0 "is incapable of holding this post"
+
+CAN_edgar_nelson_rhodes_eco:0 "Edgar Nelson Rhodes"
+edgar_nelson_rhodes_dead:0 "is incapable of holding any posts"
+edgar_nelson_rhodes_eco_fired:0 "is incapable of holding this post"
+
+CAN_cd_howe_eco:0 "C.D Howe"
+cd_howe_dead:0 "is incapable of holding any posts"
+cd_howe_eco_fired:0 "is incapable of holding this post"
+
+CAN_humphrey_mitchell_eco:0 "Humphrey Mitchell"
+humphrey_mitchell_eco_fired:0 "is incapable of holding this post"
+
+CAN_william_thomas_lucas_eco:0 "William Thomas Lucas"
+william_thomas_lucas_dead:0 "is incapable of holding any posts"
+william_thomas_lucas_eco_fired:0 "is incapable of holding this post"
+
+CAN_solon_earl_low_eco:0 "Solon Earl Low"
+solon_earl_low_dead:0 "is incapable of holding any posts"
+solon_earl_low_eco_fired:0 "is incapable of holding this post"
+
+CAN_william_aberhart_eco:0 "William Aberhart"
+william_aberhart_dead:0 "is incapable of holding any posts"
+william_aberhart_eco_fired:0 "is incapable of holding this post"
+
+CAN_gabriel_lambert_eco:0 "Gabriel Lambert"
+gabriel_lambert_dead:0 "is incapable of holding any posts"
+gabriel_lambert_eco_fired:0 "is incapable of holding this post"
+
+CAN_tom_uphill_eco:0 "Tom Uphill"
+tom_uphill_dead:0 "is incapable of holding any posts"
+tom_uphill_eco_fired:0 "is incapable of holding this post"
+
+CAN_matthew_popovich_eco:0 "Matthew Popovich"
+matthew_popovich_dead:0 "is incapable of holding any posts"
+matthew_popovich_eco_fired:0 "is incapable of holding this post"
+
+CAN_annie_buller_eco:0 "Annie Buller"
+annie_buller_dead:0 "is incapable of holding any posts"
+annie_buller_eco_fired:0 "is incapable of holding this post"
+
+CAN_maurice_spector_eco:0 "Maurice Spector"
+maurice_spector_dead:0 "is incapable of holding any posts"
+maurice_spector_eco_fired:0 "is incapable of holding this post"
+
+#SECURITY MINISTER
+
+CAN_hugh_guthrie_sec:0 "Hugh Guthrie"
+hugh_guthrie_dead:0 "is incapable of holding any posts"
+hugh_guthrie_sec_fired:0 "is incapable of holding any posts"
+
+CAN_arthur_meighen_sec:0 "Arthur Meighen"
+arthur_meighen_dead:0 "is incapable of holding any posts"
+arthur_meighen_sec_fired:0 "is incapable of holding any posts"
+
+CAN_ernest_lapointe_sec:0 "Ernest Lapointe"
+ernest_lapointe_dead:0 "is incapable of holding any posts"
+ernest_lapointe_sec_fired:0 "is incapable of holding any posts"
+
+CAN_robert_james_manion_sec:0 "Robert James Manion"
+robert_james_manion_dead:0 "is incapable of holding any posts"
+robert_james_manion_sec_fired:0 "is incapable of holding this post"
+
+CAN_major_james_coldwell_sec:0 "Major James Coldwell"
+major_james_coldwell_dead:0 "is incapable of holding any posts"
+major_james_coldwell_sec_fired:0 "is incapable of holding this post"
+
+CAN_js_woodsworth_sec:0 "J.S Woodsworth"
+js_woodsworth_dead:0 "is incapable of holding any posts"
+js_woodsworth_sec_fired:0 "is incapable of holding this post"
+
+CAN_robert_gardiner_sec:0 "Robert Gardiner"
+robert_gardiner_dead:0 "is incapable of holding any posts"
+robert_gardiner_sec_fired:0 "is incapable of holding this post"
+
+CAN_tommy_douglas_sec:0 "Thomas Clement Douglas"
+CAN_tommy_douglas_sec_fired:0 "is incapable of holding this post"
+
+CAN_wallace_warren_cross_sec:0 "Wallace Warren Cross"
+wallace_warren_cross_sec_fired:0 "is incapable of holding this post"
+
+CAN_adrien_arcand_sec:0 "Adrien Arcand"
+adrien_arcand_dead:0 "is fucking dead"
+adrien_arcand_sec_fired:0 "is incapable of holding this post"
+
+CAN_charles_edgar_edgett_sec:0 "Charles Edgar Edgett"
+charles_edgar_edgett_dead:0 "is incapable of holding any posts"
+charles_edgar_edgett_sec_fired:0 "is incapable of holding this post"
+
+CAN_joseph_farr_sec:0 "Joseph Farr"
+joseph_farr_dead:0 "is incapable of holding any posts"
+joseph_farr_sec_fired:0 "is incapable of holding this post"
+
+CAN_william_witaker_sec:0 "William Witaker"
+william_witaker_dead:0 "is incapable of holding any posts"
+william_witaker_sec_fired:0 "is incapable of holding this post"
+
+CAN_albert_edward_smith_sec:0 "Albert Edward Smith"
+CAN_albert_edward_smith_collie_sec:0 "Albert Edward Smith"
+albert_edward_smith_dead:0 "is incapable of holding any posts"
+albert_edward_smith_sec_fired:0 "is incapable of holding this post"
+
+CAN_honore_jackson_sec:0 "Honoré Jackson"
+honore_jackson_dead:0 "is incapable of holding any posts"
+honore_jackson_sec_fired:0 "is incapable of holding this post"
+
+CAN_william_kashtan_sec:0 "William Kashtan"
+CAN_william_kashtan_vang_sec:0 "William Kashtan"
+william_kashtan_dead:0 "is incapable of holding any posts"
+william_kashtan_sec_fired:0 "is incapable of holding this post"
+
+
+#INTELLIGENCE MINISTER
+CAN_ernest_lapointe_int:0 "Ernest Lapoint"
+ernest_lapointe_dead:0 "is incapable of holding any posts"
+ernest_lapointe_int_fired:0 "is incapable of holding this posts"
+
+CAN_arthur_sauve_int:0 "Arthur Sauve"
+arthur_sauve_dead:0 "is incapable of holding any posts"
+arthur_sauve_int_fired:0 "is incapable of holding this post"
+
+CAN_telesphore_arsenault_int:0 "Télésphore Arsenault"
+telesphore_arsenault_dead:0 "is incapable of holding any posts"
+
+CAN_js_woodsworth_int:0 "J.S Woodsworth"
+js_woodsworth_int_fired:0 "is incapable of holding this post"
+
+CAN_wallace_warren_cross_int:0 "Wallace Warren Cross"
+wallace_warren_cross_dead:0 "is incapable of holding this post"
+wallace_warren_cross_int_fired:0 "is incapable of holding this post"
+
+CAN_charles_edgar_edgett_int:0 "Charles Edgar Edgett"
+charles_edgar_edgett_dead:0 "is incapable of holding any posts"
+charles_edgar_edgett_int_fired:0 "is incapable of holding this post"
+
+CAN_agatha_chapman_int:0 "Agatha Chapman"
+agatha_chapman_dead:0 "is incapable of holding any posts"
+agatha_chapman_int_fired:0 "is incapable of holding this post"
+
+CAN_fred_rose_int:0 "Fred Rose"
+fred_rose_dead:0 "is incapable of holding any posts"
+fred_rose_int_fired:0 "is incapable of holding this post"
+
+CAN_sam_carr_int:0 "Sam Carr"
+sam_carr_dead:0 "is incapable of holding any posts"
+sam_carr_int_fired:0 "is incapable of holding this post"
+
+CAN_edward_cecil_smith_int:0 "Edward Cecil-Smith"
+edward_cecil_smith_dead:0 "is incapable of holding any posts"
+edward_cecil_smith_int_fired:0 "is incapable of holding this post"
+
+#CHIEFS OF STAFF
 CAN_Ernest_Ashton_cos_mli:0 "Ernest Ashton"
-CAN_Henry_Crerar_cos_mli:0 "Henry Crerar"
+CAN_Henry_Crerar_cos_mli:0 "Harry Crerar"
+CAN_Kenneth_Stuart_cos_mli:0 "Kenneth Stuart"
 CAN_Thomas_Victor_Anderson_cos_mli:0 "Thomas Victor Anderson"
-# Chief of Army ###
-CAN_Christopher_Vokes_carm_mli:0 "Christopher Vokes"
-CAN_Henry_Crerar_carm_mli:0 "Henry Crerar"
-CAN_Thomas_Victor_Anderson_carm_mli:0 "Thomas Victor Anderson"
-CAN_Charles_Foulkes_carm_sco:0 "Charles Foulkes"
-CAN_Georges_Vanier_carm_sco:0 "Georges Vanier"
-# Chief of Navy
-CAN_Harold_Taylor_Wood_Grant_cnav_mli:0 "Harold Taylor Wood Grant"
-CAN_Percy_Nelles_cnav_mli:0 "Percy Nelles"
-CAN_Leonard_W_Murray_cnav_sco:0 "Leonard W. Murray"
-# Chief of Air Force
-CAN_Clifford_McEwan_cair:0 "Clifford McEwan"
-CAN_George_Croil_cair:0 "George Croil"
-CAN_Harold_Edwards_cair:0 "Harold Edwards"
-CAN_George_Owen_Johnson_cair:0 "George Owen Johnson"
-CAN_William_Avery_Bishop_cair:0 "William Avery Bishop"
-CAN_Lloyd_Samuel_Breadner_cair:0 "Lloyd Samuel Breadner"
+CAN_Arthur_Currie_cos_sco:0 "Arthur Currie"
+CAN_Charles_Foulkes_cos_sco:0 "Charles Foulkes"
+CAN_John_Murchie_cos_sco:0 "John Murchie"
+CAN_Frederick_MW_Harvey_cos_ade:0 "Frederick M.W. Harvey"
+CAN_Georges_Vanier_cos_ade:0 "Georges Vanier"
 
 #General Bandwagon
 CAN_Gen_Currie_DESC:0 "§GMilitary Dossier\n§GBorn:§W 5 December 1875, Napperton, Canada\n§GMilitary Career:§W Joined as a part-time soldier in the Canadian Militia in 1897. Quickly rose through various positions even before the Great War. Became an Officer in 1900, Captian by 1901, Major in 1906, Artillery Regimental Commander in 1909. Appointed as Commander of the 2nd Canadian Brigade on the outbreak of the Great War. Paricipated in the Second Battle of Ypres, held back the German advance when Poison Gas was first used en masse. Promoted to Lieutenant-General after the battle of Vimy Ridge and then assumed Command of the Canadian Corps.\n-Awarded the Knight Grand Cross of the Order of St. Michael and St. George.\n-Awarded the Knight Commander of the Order of the Bath.\n-Awarded the Knight of the order of the Crown (Belgium).\n-Awarded the Croix de Guerre (France & Belgium).\n-Awarded the Chevalier of the Legion of Honour (France).\n-Awarded the Distinguished Service Medal (USA).\n§GNotes:§W\n-Embezzled $10,000 from the Military in the Great War to pay off debts.\n-Expert at minimalizing casualties.\n-Very uncharismatic.\n-Adept with Administrative duties.\n-Brilliant tactician."

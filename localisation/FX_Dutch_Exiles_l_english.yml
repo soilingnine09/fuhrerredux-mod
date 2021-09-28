@@ -62,20 +62,3 @@ KNE_valkist_party_long:0 "Partij Voor 't Vaoderland"
 ### Ideas
 KNE_military_refugees:0 "Military Refugees"
 KNE_military_refugees_desc:0 "A large part of the military fled the Netherlands to come to Suriname in refuge. Because of this we have a lot of capable soldiers who are willing to retake the homeland."
-
-### Decisions
-KNE_join_entente:0 "Join the [From.GetFactionName]"
-KNE_join_entente_desc:0 "In order to return to our home, we must align ourselves with France and defeat the illegitimate government in Amsterdam that is allied to Germany."
-KNE_invest_in_the_exiles:0 "Invest in [From.GetName]"
-
-### Events
-dutchexiles.100.t:0 "[From.GetName] Wants to Entry to the [Root.GetFactionName]"
-dutchexiles.100.d.0 "The Exiled Government of the [KNE.GetNameDef] has requested our government to enter to our military alliance. It seems that they are determined to return to their home country; and return [KNE.GetLeader] to her rightful place."
-dutchexiles.100.a:0 "They are most welcome..."
-dutchexiles.100.b:0 "They cannot be trusted."
-dutchexiles.101.t:0 "[From.GetName] Rejects our Entry"
-dutchexiles.101.d:0 "It seems our chance in recovering the home country from the nationalist rebels that took over it has blown off. The [From.GetAdjective] Government have refused our entry into their faction; effectively cuting us from the peace deals that may occur after the war."
-dutchexiles.101.a:0 "All is not lost..."
-dutchexiles.102.t:0 "Investments from [From.GetName]"
-dutchexiles.102.d:0 "To bolster our war effort; the government of the [From.GetName] have provided investments in our economy. Giving us the necessary resources to increase production for the war effort."
-dutchexiles.102.a:0 "Their help is most appreciated."

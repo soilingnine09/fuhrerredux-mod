@@ -859,7 +859,7 @@ focus_tree = {
 
 	focus = {
 		id = jap_superior_battlefleet
-		icon = GFX_goal_generic_navy_battleship3
+		icon = GFX_goal_JAP_superior_battlefleet
 
 		x = -1
 		y = 1
@@ -988,7 +988,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_the_yamato
-		icon = GFX_goal_generic_navy_battleship3alt
+		icon = GFX_goal_JAP_the_yamato
 
 		x = -2
 		y = 2
@@ -1254,7 +1254,7 @@ focus_tree = {
 
 	focus = {
 		id = jap_third_gen_cv
-		icon = GFX_goal_generic_sea_focused_navy2
+		icon = GFX_goal_third_gen_cv
 
 		x = 0
 		y = 1
@@ -1301,7 +1301,7 @@ focus_tree = {
 
 	focus = {
 		id = jap_fifth_fleet_expansion
-		icon = GFX_goal_generic_coastal_navy2
+		icon = GFX_goal_zuiho_class
 
 		x = 0
 		y = 1
@@ -2055,7 +2055,7 @@ focus_tree = {
 
 	focus = {
 		id = jap_armor_training_program
-		icon = GFX_goal_generic_army_tanks2
+		icon = GFX_goal_continuous_armor_production
 
 		x = 0
 		y = 1
@@ -2510,7 +2510,7 @@ focus_tree = {
 #GER DIPLOMACY
 	focus = {
 		id = jap_friends_with_ger
-		icon = GFX_goal_germany
+		icon = GFX_goal_generic_major_alliance
 		cost = 3
 
 		x = 18
@@ -4077,7 +4077,7 @@ focus_tree = {
 
 	focus = {
 		id = jap_suppress_worker_rebellion
-		icon = GFX_goal_generic_crush_unions
+		icon = GFX_goal_continuous_suppression
 		cost = 3
 
 		x = 0
@@ -4243,7 +4243,7 @@ focus_tree = {
 
 	focus = {
 		id = jap_arrest_the_traitor
-		icon = GFX_goal_generic_investigate_corruption
+		icon = GFX_goal_generic_forceful_treaty
 		cost = 5
 
 		x = 1
@@ -4636,7 +4636,7 @@ focus_tree = {
 	}
 	focus = {
 		id = jap_demand_beiyang_submit
-		icon = GFX_goal_generic_attack_fengtian
+		icon = GFX_goal_beiyang_star
 		will_lead_to_war_with = MAN
 		cost = 5					
 
@@ -4716,7 +4716,7 @@ focus_tree = {
 
 	focus = {
 		id = jap_demand_zhili_submit
-		icon = GFX_goal_generic_attack_zhili
+		icon = GFX_goal_dragon_of_the_east
 		will_lead_to_war_with = ZHI
 		cost = 5
 
@@ -5842,7 +5842,7 @@ focus_tree = {
 }
 	focus = {
 		id = jap_topple_commies
-		icon = GFX_focus_attack_soviet
+		icon = GFX_Cutdown_the_Soviet_Union
 		cost = 5
 		will_lead_to_war_with = SOV		
 
@@ -6124,7 +6124,7 @@ focus_tree = {
 	}
 	focus = {
 		id = jap_korean_project
-		icon = GFX_goal_Korea_Colony
+		icon = GFX_goal_JAP_Korea_Question
 		cost = 5
 
 		x = -2

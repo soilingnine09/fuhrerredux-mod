@@ -1,6 +1,6 @@
 ﻿capital = 323
 
-oob = "NEP"
+oob = "NEP_1936"
 
 # Starting tech
 set_technology = {

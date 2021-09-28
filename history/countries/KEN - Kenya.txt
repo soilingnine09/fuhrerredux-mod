@@ -1,6 +1,6 @@
 ﻿capital = 547
 
-oob = "KEN"
+oob = "KEN_1936"
 
 # Starting tech
 set_technology = {

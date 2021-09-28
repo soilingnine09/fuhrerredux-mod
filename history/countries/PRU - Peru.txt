@@ -2,13 +2,13 @@
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "PRU_naval_mtg"
+		set_naval_oob = "PRU_1936_naval_mtg"
 	else = {
-		set_naval_oob = "PRU_naval_legacy"
+		set_naval_oob = "PRU_1936_naval_legacy"
 	}
 }
 
-oob = "PRU"
+oob = "PRU_1936"
 set_research_slots = 3
 add_ideas = {
 	civilian_economy
@@ -18,10 +18,10 @@ add_ideas = {
 	PRU_damaged_democracy
 	PRU_proud_and_victorious
 	COL_reparations_from_colombia
-	PRU_Alberto_Zenon_Aguero_hog_ade
+	PRU_Manuel_Esteban_Rodriguez_hog_ade
 	PRU_Alberto_Ulloa_Sotomayor_for_ade
-	PRU_Nicolas_Lindley_Lopez_eco_pau
-	PRU_Ernesto_Montagne_Markholz_sec_pau
+	PRU_Ernesto_Scroth_eco_ade
+	PRU_Rocas_Sanchez_Mapas_sec_ade
 	presidential_republic
 }
 

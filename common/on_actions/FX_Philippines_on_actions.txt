@@ -5,6 +5,48 @@ on_actions = {
                 limit = { tag = PHI }
                 country_event = { id = phi.0 days = 2 }
             }
+            PHI = {
+                if = {
+                    limit = {
+                        has_game_rule = {
+                            rule = PHI_AI_BEHAVIOR
+                            option = PHI_DEFAULT
+                        }
+                    }
+                    set_country_flag = PHI_ai_chosen
+                    set_country_flag = PHI_democratic_behavior
+                }
+                else_if = {
+                    limit = {
+                        has_game_rule = {
+                            rule = PHI_AI_BEHAVIOR
+                            option = PHI_PRUSSIA_OF_THE_EAST
+                        }
+                    }
+                    set_country_flag = PHI_ai_chosen
+                    set_country_flag = PHI_pataut_behavior
+                }
+                else_if = {
+                    limit = {
+                        has_game_rule = {
+                            rule = PHI_AI_BEHAVIOR
+                            option = PHI_TESTING_IMPERIALISM
+                        }
+                    }
+                    set_country_flag = PHI_ai_chosen
+                    set_country_flag = PHI_natpop_behavior
+                }
+                else_if = {
+                    limit = {
+                        has_game_rule = {
+                            rule = PHI_AI_BEHAVIOR
+                            option = PHI_BACK_TO_THE_PAST
+                        }
+                    }
+                    set_country_flag = PHI_ai_chosen
+                    set_country_flag = PHI_valkist_behavior
+                }
+            }
         }
     }
     on_new_term_election = {

@@ -15590,7 +15590,7 @@ country_event = {
 			ai_chance = {
 				base = 0
 				modifier = {
-					add = 25
+					add = +25
 					HUN = { has_army_size = { size < 5 } }
 				}
 			}

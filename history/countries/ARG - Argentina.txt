@@ -1,33 +1,26 @@
 ﻿capital = 278
 
-oob = "ARG"
+oob = "ARG_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "ARG_naval_mtg"
+		set_naval_oob = "ARG_1936_naval_mtg"
 	else = {
-		set_naval_oob = "ARG_naval_legacy"
+		set_naval_oob = "ARG_1936_naval_legacy"
 	}
 }
-
-set_stability = 0.45
-set_war_support = 0.45
 set_research_slots = 3
-set_convoys = 120
-
 add_ideas = {
 	party_pop_0_10
 	civilian_economy
 	export_focus
 	volunteer_only
-
 	ARG_british_companies
 	ARG_memories_of_the_chaco_war
 	ARG_labour_strikes
-
-	ARG_Marcelo_T_de_Alvear_hog_sli
-	ARG_Miguel_Angel_Zabala_Ortiz_for_sli
-	ARG_Guillermo_Rothe_eco_sli
-	ARG_Arturo_Frondizi_sec_sli
+	ARG_Crisologo_Larralde_hog_sli
+	ARG_Miguel_Zavala_Ortiz_for_sli
+	ARG_Elpidio_Gonzalez_eco_sli
+	ARG_Leopoldo_Melo_sec_sli
 	presidential_republic
 }
 
@@ -73,6 +66,9 @@ if = {
 	}
 }
 
+set_stability = 0.45
+set_war_support = 0.45
+set_convoys = 120
 set_politics = {
 	ruling_party = social_liberal
 	last_election = "1931.11.8"

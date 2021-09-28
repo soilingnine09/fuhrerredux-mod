@@ -1,6 +1,6 @@
 ﻿capital = 231 #Tbilisi
 
-oob = "GEO"
+oob = "GEO_1936"
 
 set_convoys = 50
 set_stability = 0.53
@@ -22,7 +22,7 @@ add_ideas = {
 }
 
 set_country_flag = coalition_libertarian_socialist
-
+set_research_slots = 3
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -49,7 +49,7 @@ if = {
 	    transport = 1
 	    early_submarine = 1
 	}
-	set_naval_oob = "GEO_naval_legacy"
+	set_naval_oob = "GEO_1936_naval_legacy"
 }
 if = {
 	limit = {
@@ -66,7 +66,7 @@ if = {
 		basic_secondary_battery = 1
 		mtg_transport = 1
 	}
-	set_naval_oob = "GEO_naval_mtg"
+	set_naval_oob = "GEO_1936_naval"
 }
 
 set_politics = {	
@@ -88,26 +88,6 @@ set_popularities = {
     paternal_autocrat = 1
     national_populist = 2
     valkist = 0
-}
-
-add_ideas = {
-	party_pop_0_60
-	limited_conscription
-	limited_exports
-	parliamentary_republic
-
-	GEO_junker_school
-	GEO_menshevik_schism
-	GEO_separatism
-	
-	GEO_akaki_chkhenkeli_hog
-	GEO_grigol_uratadze_for
-	GEO_victor_tevzaia_eco
-	GEO_vlasa_mgeladze_sec
-	GEO_artem_jijikhia_cos
-	GEO_aleksandre_andronikashvili_carm
-	GEO_viktor_lomidze_cnav
-	GEO_vakhtang_makashvili_cair
 }
 
 create_country_leader = {

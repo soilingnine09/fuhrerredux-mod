@@ -15,7 +15,6 @@ foreign_politics = {
     }
     PHI_propose_whitepeace = {
         icon = GFX_decision_hol_war_on_pacifism
-        allowed = { original_tag = PHI }
         target_trigger = {
             FROM = {
                 OR = {

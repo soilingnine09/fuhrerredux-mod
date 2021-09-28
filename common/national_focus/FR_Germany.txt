@@ -21,7 +21,7 @@ focus_tree = {
 ## Forming a government
 	focus = {
 		id = GER_form_govt
-		icon = GFX_goal_GER_government
+		icon = GFX_goal_valkist_star
 		x = 6
 		y = 0
 		cost = 2
@@ -1648,7 +1648,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_demand_tyrol
-		icon = GFX_goal_generic_attack_italy
+		icon = GFX_ITA
 		x = -13
 		y = 18
 		cost = 5
@@ -1820,7 +1820,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_rhineland_referendum
-		icon = GFX_goal_RHI_referendum
+		icon = GFX_RHI_Interallied_Gov
 		will_lead_to_war_with = RHI
 		will_lead_to_war_with = FRA
 		x = -15
@@ -1958,7 +1958,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_demand_alsace
-		icon = GFX_focus_attack_france
+		icon = GFX_Target_France
 		will_lead_to_war_with = FRA
 		will_lead_to_war_with = RHI
 		x = -15
@@ -2183,7 +2183,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_invade_switzerland
-		icon = GFX_goal_generic_attack_switzerland
+		icon = GFX_Target_Switzerland
 		will_lead_to_war_with = SWI
 		x = -13
 		y = 20
@@ -2329,7 +2329,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_invade_benelux
-		icon = GFX_goal_generic_attack_belgium
+		icon = GFX_BEL_Belgium_Flag
 		will_lead_to_war_with = BEL
 		will_lead_to_war_with = LUX
 		x = -15
@@ -2589,7 +2589,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_slovakia_alliance
-		icon = GFX_goal_GER_alliance_with_slovakia
+		icon = GFX_goal_generic_major_alliance
 		x = 0
 		y = 15
 		cost = 5
@@ -2921,7 +2921,7 @@ focus_tree = {
 	focus = {
 		id = GER_war_bohemia
 		will_lead_to_war_with = CZE
-		icon = GFX_goal_generic_attack_bohemia
+		icon = GFX_goal_skull_treaty
 		x = -2
 		y = 16
 		cost = 5
@@ -3103,7 +3103,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_austrian_coup
-		icon = GFX_goal_generic_attack_austria
+		icon = GFX_Mask_of_Valkisim
 		x = -4
 		y = 15
 		cost = 5
@@ -3968,7 +3968,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_baltic_front
-		icon = GFX_goal_GER_pressure_baltic
+		icon = GFX_goal_POL_lithuanian_king
 		x = 7
 		y = 16
 		cost = 5
@@ -4228,7 +4228,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_polish_war
-		icon = GFX_goal_generic_attack_poland
+		icon = GFX_Conquer_Poland
 		x = 9
 		y = 16
 		cost = 5
@@ -5514,7 +5514,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_soviet_war
-		icon = GFX_focus_attack_soviet
+		icon = GFX_Cutdown_the_Soviet_Union
 		will_lead_to_war_with = SOV
 		x = 9
 		y = 19

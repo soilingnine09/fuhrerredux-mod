@@ -111,65 +111,50 @@ has_same_government_as_ROOT = {
 
 # checks for these three government types for the country in scope
 has_socialist_government = {
-	custom_trigger_tooltip = {
-		tooltip = FX_is_socialist_tt
-		OR = {
-			has_government = vanguardist
-			has_government = collectivist
-			has_government = libertarian_socialist
-		}
+	OR = {
+		has_government = vanguardist
+		has_government = collectivist
+		has_government = libertarian_socialist
 	}
 }
 
 # checks for these four government types for the country in scope
 has_elected_government = {
-	custom_trigger_tooltip = {
-		tooltip = FX_is_elected_tt
-		OR = {
-			has_government = social_democrat
-			has_government = social_liberal
-			has_government = market_liberal
-			has_government = social_conservative
-		}
+	OR = {
+		has_government = social_democrat
+		has_government = social_liberal
+		has_government = market_liberal
+		has_government = social_conservative
 	}
 }
 
 # checks for these five government types for the country in scope
 has_democratic_government = {
-	custom_trigger_tooltip = {
-		tooltip = FX_is_democratic_tt
-		OR = {
-			has_government = social_democrat
-			has_government = social_liberal
-			has_government = market_liberal
-			has_government = social_conservative
-			has_government = authoritarian_democrat
-		}
+	OR = {
+		has_government = social_democrat
+		has_government = social_liberal
+		has_government = market_liberal
+		has_government = social_conservative
+		has_government = authoritarian_democrat
 	}
 }
 
 # checks for these two government types for the country in scope
 has_authoritarian_government = {
-	custom_trigger_tooltip = {
-		tooltip = FX_is_authoritarian_tt
-		OR = {
-			has_government = authoritarian_democrat
-			has_government = paternal_autocrat
-			has_government = national_populist
-			has_government = valkist
-		}
+	OR = {
+		has_government = authoritarian_democrat
+		has_government = paternal_autocrat
+		has_government = national_populist
+		has_government = valkist
 	}
 }
 
 # checks for these three government types for the country in scope
 has_dictatorship_government = {
-	custom_trigger_tooltip = {
-		tooltip = FX_is_dictatorship_tt
-		OR = {
-			has_government = paternal_autocrat
-			has_government = national_populist
-			has_government = valkist
-		}
+	OR = {
+		has_government = paternal_autocrat
+		has_government = national_populist
+		has_government = valkist
 	}
 }
 
@@ -377,12 +362,7 @@ regional_middle_east_news = {
 is_american_tag = {
 	OR = {
 		tag = USA
-		tag = CLB
-		tag = NEE
-		tag = SRA
-		tag = SNE
-		tag = ORE
-		tag = NAR
+		tag = CSA
 	}
 }
 is_arab_tag = {

@@ -427,8 +427,6 @@
  MODIFIER_TECH_AIR_DAMAGE_FACTOR_DESC:0 "Having a technological advantage increases the efficiency of our static anti-air defenses."
  MODIFIER_INDUSTRY_REPAIR_FACTOR:0 "Factory Repair Speed"
  MODIFIER_INDUSTRY_REPAIR_FACTOR_DESC:1 "Modifies §HCivilian Factory§! output for all repairs."
- MODIFIER_DOCKYARD_REPAIR_FACTOR:0 "Dockyard Repair Speed"
- MODIFIER_DOCKYARD_REPAIR_FACTOR_DESC:1 "Modifies §HNaval Dockyard§! output for all repairs."
  MODIFIER_PRODUCTION_OIL_FACTOR:0 "Synthetic Oil"
  MODIFIER_MAX_TRAINING_XP_FACTOR:0 "Max training"
  MODIFIER_MIN_EXPORT_FACTOR:0 "Resources to Market"

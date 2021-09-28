@@ -1,6 +1,6 @@
 ﻿capital = 352
 
-oob = "KUR"
+oob = "KUR_1936"
 
 set_research_slots = 3
 set_stability = 0.66

@@ -2680,7 +2680,7 @@ focus_tree = {
 	
 	focus = {
 		id = TUR_conquer_arabia
-		icon = GFX_goal_generic_attack_arabia
+		icon = GFX_goal_generic_major_war
 		available = {
 			ARB = { exists = yes }
 			has_army_manpower = { size > 299999 }
@@ -2742,7 +2742,7 @@ focus_tree = {
 
 	focus = {
 		id = TUR_put_down_the_mashriqis
-		icon = GFX_goal_generic_attack_iraq
+		icon = GFX_goal_generic_major_war
 		available = {
 			IRQ = { exists = yes }
 			has_army_manpower = { size > 299999 }

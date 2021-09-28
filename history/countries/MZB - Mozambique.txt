@@ -1,6 +1,6 @@
 ﻿capital = 544
 
-oob = "MZB"
+oob = "MZB_1936"
 
 # Starting tech
 set_technology = {
