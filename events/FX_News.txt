@@ -336,3 +336,29 @@ news_event = { # SRA Victorious!
         name = news.18.a
     }
 }
+
+news_event = { # United Kingdom of the Netherlands Proclaimed
+    id = news.19
+    title = news.19.t
+    desc = news.19.d
+    picture = GFX_news_event_herman_goring
+    major = yes
+    is_triggered_only = yes
+
+    show_major = {
+        NOT = { tag = HOL }
+    }
+
+    option = {
+        name = news.19.a
+        trigger = {
+            NOT = { tag = KNE }
+        }
+    }
+    option = {
+        name = news.19.b
+        trigger = {
+            tag = KNE
+        }
+    }
+}

@@ -7,6 +7,7 @@ foreign_politics = {
         }
         cost = 25
         fire_only_once = yes
+        icon = GFX_decision_eng_blackshirt_march
         complete_effect = {
             custom_effect_tooltip = HOL_operation_fakkel_decision_tt
             hidden_effect = {
@@ -15,6 +16,62 @@ foreign_politics = {
                 }
                 866 = { add_resistance = 25 }
                 867 = { add_resistance = 25 }
+            }
+        }
+    }
+}
+
+political_actions = {
+    HOL_proclaim_the_unification = {
+        allowed = { original_tag = HOL }
+        icon = GFX_decision_eng_support_imperialist_coup
+        visible = {
+            6 = { is_core_of = ROOT }
+            34 = { is_core_of = ROOT }
+            802 = { is_core_of = ROOT }
+            806 = { is_core_of = ROOT }
+            866 = { is_core_of = ROOT }
+            867 = { is_core_of = ROOT }
+        }
+        available = {
+            6 = { is_owned_by = ROOT }
+            34 = { is_owned_by = ROOT }
+            802 = { is_owned_by = ROOT }
+            806 = { is_owned_by = ROOT }
+            866 = { is_owned_by = ROOT }
+            867 = { is_owned_by = ROOT }
+        }
+        complete_effect = {
+            set_cosmetic_tag = HOL_unified
+            hidden_effect = {
+                random_other_country = {
+                    news_event = { id = news.19 hours = 12 }
+                }
+            }
+        }
+    }
+}
+
+HOL_state_integration = {
+    HOL_integrate_lost_lands = {
+        icon = GFX_decision_oppression
+        cost = 20
+        days_remove = 30
+        state_target = yes
+        on_map_mode = map_and_decisions_view
+        targets = {
+            6 34 802 806 866 867
+        }
+        target_trigger = { owns_state = FROM }
+        
+        visible = {
+            FROM = {
+                NOT = { is_core_of = HOL }
+            }
+        }
+        remove_effect = {
+            FROM = {
+                add_core_of = ROOT
             }
         }
     }
