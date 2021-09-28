@@ -18,9 +18,9 @@ focus_tree = {
     }
 
     shared_focus = PHI_industrialization_plan
-    shared_focus = PHI_expand_the_army
-    shared_focus = PHI_expand_the_navy
-    shared_focus = PHI_expand_the_air_force
+    shared_focus = PHI_army_expansion_program
+    shared_focus = PHI_start_naval_buildup
+    shared_focus = PHI_fund_an_air_force
     shared_focus = PHI_department_of_foreign_affairs
 
     ######################################################
@@ -588,7 +588,7 @@ focus_tree = {
     # Ban Trade Unions
     focus = {
         id = PHI_ban_trade_unions
-        icon = GFX_goal_generic_attack_allies
+        icon = GFX_goal_generic_crush_unions
         x = 0
         y = 1
         cost = 6

@@ -2217,7 +2217,7 @@ focus = {
 }
 focus = {
 	id = ukr_attack_poland
-	icon = GFX_goal_generic_major_war
+	icon = GFX_goal_generic_attack_poland
 	cost = 5
 	x = 34
 	y = 9
@@ -2298,7 +2298,7 @@ focus = {
 }
 focus = {
 	id = ukr_demand_bessarabia
-	icon = GFX_goal_generic_occupy_states_ongoing_war
+	icon = GFX_goal_generic_attack_romania
 	cost = 5
 	x = 32
 	y = 12

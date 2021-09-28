@@ -97,16 +97,13 @@ country_event = { #Further Democratization (new parlamentary elections)#
 
 	option = {
 		name = pru.3.a
-		hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-			}
-		add_ideas = PRU_Manuel_Prado_y_Ugarteche_hog_sco
-		add_ideas = PRU_Carlos_Concha_for_sco
-		add_ideas = PRU_David_Dasso_eco_sco
-		add_ideas = PRU_Carlos_Berninzon_sec_sco
+		remove_every_minister = yes
+		add_ideas = {
+			PRU_David_S_Ocampo_hog_sco
+			PRU_Adolfo_Solf_y_Muro_for_sco
+			PRU_Oscar_Trelles_Montes_eco_sco
+			PRU_Benigno_Ballon_Farfan_sec_sco
+		}
 		set_politics = {
 			ruling_party = social_conservative
 		}
@@ -135,16 +132,13 @@ country_event = { #Further Democratization (new parlamentary elections)#
 
 	option = {
 		name = pru.3.b
-		hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-			}
-		add_ideas = PRU_Manuel_Bustamante_de_la_Fuente_hog_sli
-		add_ideas = PRU_Javier_Correa_Elias_for_mli
-		add_ideas = PRU_Alberto_Roque_Saldias_eco_mli
-		add_ideas = PRU_Guillermo_Landa_Arisueno_sec_mli
+		remove_every_minister = yes
+		add_ideas = {
+			PRU_Rafael_Belaunde_Diez_hog_mli
+			PRU_Javier_Correa_Elias_for_mli
+			PRU_Romulo_Ferrero_eco_mli
+			PRU_Manuel_Gallagher_sec_sli
+		}
 			add_popularity = {
 				ideology = social_liberal popularity = 0.35
 		}
@@ -211,7 +205,7 @@ country_event = { #suspending democracy
 			remove_ideas_with_trait = head_of_government
 			remove_ideas_with_trait = foreign_minister
 			}
-		add_ideas = PRU_Jose_de_la_Riva_Aguero_hog_pau
+		add_ideas = PRU_Ernesto_Montagne_Sanchez_hog_pau
 		add_ideas = PRU_Felipe_Tudela_for_pau
 		add_ideas = one_party_dictatorship
 		add_popularity = {
@@ -1015,11 +1009,14 @@ country_event = { #vangwar
 				add_popularity = {
 					ideology = vanguardist popularity = 0.15
 			}
+			remove_every_minister = yes
+			add_ideas = {
+				PRU_Gamaliel_Churata_hog_van
+				PRU_Cesar_Atahualpa_for_van
+				PRU_Manuel_Gonzalez_Prada_eco_van
+				PRU_Alejandro_Peralta_sec_van
+			}
 			hidden_effect = {
-				remove_ideas_with_trait = head_of_government
-				remove_ideas_with_trait = foreign_minister
-				remove_ideas_with_trait = economy_minister
-				remove_ideas_with_trait = security_minister
 				remove_ideas = PRU_black_wednesday
 				remove_ideas = PRU_black_wednesday1
 				remove_ideas = PRU_weak_constitution
@@ -1044,10 +1041,6 @@ country_event = { #vangwar
 				add_research_slot = -1
 				}
 			}
-			add_ideas = PRU_Victor_Raul_Haya_hog_int
-			add_ideas = PRU_Hugo_Pesce_Pescetto_for_bol
-			add_ideas = PRU_Constantino_Carvallo_eco_sde
-			add_ideas = PRU_Antonio_Rodriguez_Ramirez_sec_sde
 			hidden_effect = {
 				load_focus_tree = prusr_focus
 			}
@@ -1089,10 +1082,13 @@ country_event = { #vangwar
 		name = pru.1338.a
 			set_country_flag = PRU_collieside
 			set_cosmetic_tag = PRU_revolutionary
-			add_ideas = PRU_Victor_Raul_Haya_hog_int
-			add_ideas = PRU_Hugo_Pesce_Pescetto_for_bol
-			add_ideas = PRU_Constantino_Carvallo_eco_sde
-			add_ideas = PRU_Antonio_Rodriguez_Ramirez_sec_sde
+			remove_every_minister = yes
+			add_ideas = {
+				PRU_Gamaliel_Churata_hog_van
+				PRU_Cesar_Atahualpa_for_van
+				PRU_Manuel_Gonzalez_Prada_eco_van
+				PRU_Alejandro_Peralta_sec_van
+			}
 			load_focus_tree = prusr_focus
 	}
 }

@@ -102,8 +102,6 @@ CRU_BOL_accord:0 "Pact of Indigenous Rejuvenation"
 
 ### Tooltips
 CRU_can_integrate_states:0 "§GWe can now integrate states from occupied territories§!"
-CRU_has_army_exercises_with_ger:0 "We have army exercises with @GER §YGermany§!"
-CRU_has_army_exercises_with_bol:0 "We have army exercises with @BOL §YBolivia§!"
 CRU_infiltrating_mexico:0 "Currently conducting operations in @MEX §YMexico§!"
 
 ### Decisions
@@ -333,7 +331,7 @@ CRU_yucatan_arsenal:0 "Yucatan Arsenal"
 
 ### Events
 cruzoob.0.t:0 "The Risen Phoenix"
-cruzoob.0.d:0 "The State of Cruzoob was a breakaway state in the Yucatan Peninsula; it declared independence shortly after the chaos in [MEX.GetName], allowing more radical parties to come into power. Our founder, [Root.GetLeader] have established this new state in his vision of mixing the ideas of Christianism and the Indigenous Traditions of the Mayans.\n\nWhile we have risen again and continue to live as an independent nation, we are still threatened other countries seeking to integrate them again into their nation. We must remain vigilant as there will be a storm coming."
+cruzoob.0.d:0 "The State of Cruzoob was a breakaway state in the Yucatan Peninsula; proclaimed independence after the crushing defeat of the Mexicans after the Great War. Our leader, [Root.GetLeader] founded our nation with the aim of preserving our Christian faith with the traditional Mayan culture that once roam around these lands before the Spanish arrived. However, the [MEX.GetAdjective]s claims that our state is nothing more of an rebellious state; trying to stay afloat using the Monroe Doctrine by the United States; and with that we must be cautious as the influence of the United States dwindle; and the [MEX.GetAdjective]s prepare for another conflict against us and Columbia, because if they succeed, we may never rise again."
 cruzoob.0.a:0 "For God and Country!"
 cruzoob.1.t:0 "The Role of the Catholic Church"
 cruzoob.1.d:0 "For centuries, since the middle ages in Europe and the colonial period here in the New World, the Catholic Church have not afraid to voice our their concerns over the affairs over the government. Their influence have stretched out from the ordinary bureaucrats to the important positions in the government itself. However, there are no official policies that can limit or expand these influence of the Church as our state was fairly new. Because of this, some in the government are proposing to formalize on what the Church's role must be in our new state."
@@ -370,9 +368,26 @@ cruzoob.10.a:0 "We might need this for later"
 cruzoob.11.t:0 "No equipment will arrive"
 cruzoob.11.d:0 "Our little plot in stealing [MEX.GetAdjective] equipment from their own stockpiles have failed, the guards have apprehended our mercenaries and now currently being interrogated."
 cruzoob.11.a:0 "That's unfortunate..."
+<<<<<<< HEAD
 cruzoob.12.t:0 "The Great Patriotic War"
 cruzoob.12.d:0 "This morning, the foreign office received a not so shocking announcement from the northern bastards. They have formalized war between our our nations and such [MEX.GetAdjective] forces between crossing the border. However, this did nothing to weaken our people's spirit and as such only made it stronger."
 cruzoob.12.a:0 "God is with us."
+=======
+cruzoob.12.t:0 "Snatching Chiapas?"
+cruzoob.12.d:0 "With the [MEX.GetAdjective]s and the [USA.GetAdjective]s are tearing each others' throats out, we have now the opportunity to snatch our old claim territory of Chiapas; of course, a war with the [MEX.GetAdjective] is possible, but its up to the [MEX.GetAdjective] to open up another front."
+cruzoob.12.a:0 "That's not even a question..."
+cruzoob.12.b:0 "We can wait a little bit longer"
+cruzoob.13.t:0 "Chiapas Captured"
+cruzoob.13.d:0 "Our troops have succesfully marched in Chiapas, and are now dealing in stablizing our control in the region. However, with the fierce resistance of the local citizens, we might need a couple more manpower to effectively deal with the local resistance."
+cruzoob.13.a:0 "And we wait for the Mexican response..."
+cruzoob.14.t:0 "[CRU.GetName] snatched Chiapas!"
+cruzoob.14.d:0 "Our war with the Yankees have made Cruzoob the opportunity to grab the defended territory of Chiapas. Our local garrisons have been overpowered by their divisions and are now dealing with local resistance. Some in the government are arguing to deal with this crisis now, but some wants to deal with Cruzoob after we deal with the Yanks."
+cruzoob.14.a:0 "Punish them for this..."
+cruzoob.14.b:0 "They can wait after we deal with the Yankees"
+cruzoob.15.t:0 "The Great Patriotic War"
+cruzoob.15.d:0 "This morning, the foreign office received a not so shocking announcement from the northern bastards. They have formalized war between our our nations and such [MEX.GetAdjective] forces between crossing the border. However, this did nothing to weaken our people's spirit and as such only made it stronger."
+cruzoob.15.a:0 "God is with us."
+>>>>>>> 28027cb15ba1599f55214433bdaf9352bb864bcc
 
 cruzoob.100.t:0 "Invitation from [CRU.GetName]"
 cruzoob.100.d:0 "A telegram was received in the Foreign Ministry, from a quite peculiar country or state of Cruzoob. They have requested that we send military advisors to aid and train their army for defensive purposes. What shall we respond?"

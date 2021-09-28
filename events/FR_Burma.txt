@@ -23,9 +23,6 @@ country_event = {
 				add_state_core = 805
 				add_state_core = 812
 				add_state_core = 1007
-				add_state_core = 1020
-				add_state_core = 1021
-				add_state_core = 1022
 			}
 		} 
 	}

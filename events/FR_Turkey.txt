@@ -93,7 +93,9 @@ country_event = {
 					} 
 				}
 				hidden_effect = { 
-					news_event = { id = worldnews.1 days = 4 } 
+					random_other_country = {
+						news_event = { id = news.16 hours = 12 }
+					} 
 				}
 			}
 		}

@@ -1,10 +1,22 @@
 ﻿l_english:
+
+### Groups
+RULE_GROUP_FUHRERREDUX_RULES:0 "Führerredux Rules"
+RULE_GROUP_FOREIGN_POLICY:0 "Foreign Policy"
+
+RULE_CREATE_FACTION:0 "Create Faction"
+RULE_CREATE_FACTION_ALLOWED_DESC:0 "Nations are allowed to create factions if they meet the standard requirements."
+RULE_CREATE_FACTION_BLOCKED_DESC:0 "Nations can only create factions through events, focuses, decisions, etc."
+
+### Paths
 ENG_AI_BEHAVIOR:0 "@ENG United Kingdom"
 SPR_AI_BEHAVIOR:0 "@SPR Republican Spain"
 SPM_AI_BEHAVIOR:0 "@SPM Monarchist Spain"
 SPA_AI_BEHAVIOR:0 "@SPA Socialist Spain"
 SPF_AI_BEHAVIOR:0 "@SPF Nationalist Spain"
+PHI_AI_BEHAVIOR:0 "@PHI Philippines"
 
+# British Paths
 RULE_OPTION_ENG_RANDOM:0 "Randomised"
 RULE_OPTION_ENG_RANDOM_DESC:0 "In 1936 the British Empire carries on, though great struggles and challenges lie ahead of her. What path she will take in these coming years is undisclosed, and the effects unknown."
 RULE_OPTION_CAPE_SINGAPORE:0 "Fourth Wave Imperialism"
@@ -19,172 +31,17 @@ RULE_OPTION_ENTENTE_CORDIALE:0 "Brothers in Arms"
 RULE_OPTION_ENTENTE_CORDIALE_DESC:0 "Despite the centuries of mistrust and rivalry between our two nations, Britain and France acted together against the threat of the German Empire during the Great War. Though relations between our two nations have soured in recent years, with a bit of effort the Entente Cordiale can be reborn.\n\n§GIdeology:§! Social Democrat\n§GObjective:§! Reform the Entente Cordiale\n§GGW2 Involvement:§! Will enter GW2 on the side of France\n§GImperial Politics:§! Decentralisation"
 RULE_OPTION_RULE_THE_WAVES:0 "Rule the Waves"
 RULE_OPTION_RULE_THE_WAVES_DESC:0 ""
-
-RULE_OPTION_YUG_ANNEXED:0 "Yugoslavia Divided By Neighbors"
-RULE_OPTION_YUG_ANNEXED_DESC:0 "Hungary, Bulgaria, Albania, Austria and Italy take disputed territory from Yugoslavia"
-
-FRA_FRAGMENTATION_STATUS:0 "France Fragmentation Status"
-RULE_OPTION_FRA_FRAGMENTED:0 "France Fragmented"
-RULE_OPTION_FRA_FRAGMENTED_DESC:0 "All releasable constituent nations comprising France are released as free and independent nations upon game-start."
-RULE_OPTION_FRA_PUPPETS:0 "France Decentralized"
-RULE_OPTION_FRA_PUPPETS_DESC:0 "All releasable constituent nations comprising France are released as puppets of France upon game-start."
-
-ITA_FRAGMENTATION_STATUS:0 "Italy Fragmentation Status"
-RULE_OPTION_ITA_FRAGMENTED:0 "Italy Fragmented"
-RULE_OPTION_ITA_FRAGMENTED_DESC:0 "All releasable constituent nations comprising Italy are released as free and independent nations upon game-start."
-RULE_OPTION_ITA_PUPPETS:0 "Italy Decentralized"
-RULE_OPTION_ITA_PUPPETS_DESC:0 "All releasable constituent nations comprising Italy are released as puppets of Italy upon game-start."
-
-GER_FRAGMENTATION_STATUS:0 "Germany Fragmentation Status"
-RULE_OPTION_GER_FRAGMENTED:0 "Germany Fragmented"
-RULE_OPTION_GER_FRAGMENTED_DESC:0 "All releasable constituent nations comprising Germany are released as free and independent nations upon game-start."
-RULE_OPTION_GER_PUPPETS:0 "Germany Decentralized"
-RULE_OPTION_GER_PUPPETS_DESC:0 "All releasable constituent nations comprising Germany are released as puppets of Germany upon game-start."
-
-RHI_POLITICAL_STATUS:0 "Rhineland Political Status"
-RULE_OPTION_FRA_RHINE:0 "Annexed by France"
-RULE_OPTION_FRA_RHINE_DESC:0 "Rhineland will be a territorial holding of France on game-start."
-RULE_OPTION_GER_RHINE:0 "Annexed by Germany"
-RULE_OPTION_GER_RHINE_DESC:0 "Rhineland will be a core state of Germany on game-start."
-RULE_OPTION_DIVIDED_RHINE:0 "Divided Rhineland"
-RULE_OPTION_DIVIDED_RHINE_DESC:0 "Rhineland will be divided between France, Belgium, Luxembourg and Germany on game-start."
-
-JAP_FRAGMENTATION_STATUS:0 "Japanese Empire Status"
-RULE_OPTION_JAP_WWI_BORDERS:0 "1914 Imperial Borders"
-RULE_OPTION_JAP_WWI_BORDERS_DESC:0 "Japan will lose all territories gained since 1914 which includes Japanese Pacific Islands, Japanese East Indies, Tsingtao and North Sakhalin."
-RULE_OPTION_JAP_KOREA:0 "Korea Only"
-RULE_OPTION_JAP_KOREA_DESC:0 "Japan will lose all colonial territories besides Korea at game-start."
-RULE_OPTION_JAP_HOME_ISLANDS:0 "Home Islands Only"
-RULE_OPTION_JAP_HOME_ISLANDS_DESC:0 "Japan will lose all colonial territories at game-start."
-
-RULE_OPTION_ENG_PUPPETS:0 "United Kingdom Decentralized"
-RULE_OPTION_ENG_PUPPETS_DESC:0 "All releasable constituent nations comprising The United Kingdom are released as puppets of The United Kingdom upon game-start."
-
-RULE_OPTION_AMERICAS_COLONIZED:0 "Americas Directly Administered"
-RULE_OPTION_AMERICAS_COLONIZED_DESC:0 "All puppets in the Americas will be annexed by their respective masters on game-start."
-
-RULE_OPTION_AFRICA_COLONIZED:0 "Africa Directly Administered"
-RULE_OPTION_AFRICA_COLONIZED_DESC:0 "All puppets in Africa will be annexed by their respective masters on game-start."
-
-RULE_OPTION_ASIA_COLONIZED:0 "Asia Directly Administered"
-RULE_OPTION_ASIA_COLONIZED_DESC:0 "All puppets in Asia will be annexed by their respective masters on game-start."
-
-SHO_POLITICAL_STATUS:0 "Kiel Zone Political Status"
-RULE_OPTION_SHO_DEN_ANNEXED:0 "Annexed By Denmark"
-RULE_OPTION_SHO_DEN_ANNEXED_DESC:0 "The Kiel Zone will be annexed by Denmark on game-start."
-RULE_OPTION_SHO_GER_ANNEXED:0 "Annexed By Germany"
-RULE_OPTION_SHO_GER_ANNEXED_DESC:0 "The Kiel Zone will be annexed by Germany on game-start."
-
-SPR_POLITICAL_STATUS:0 "Spanish Civil War Status"
-RULE_OPTION_SPF_VICTORY:0 "Falangist Spain Victory"
-RULE_OPTION_SPF_VICTORY_DESC:0 "Falangist Spain will automatically annex the other Spanish factions on game-start."
-RULE_OPTION_SPR_VICTORY:0 "Republican Spain Victory"
-RULE_OPTION_SPR_VICTORY_DESC:0 "Republican Spain will automatically annex the other Spanish factions on game-start."
-RULE_OPTION_SPA_VICTORY:0 "Spanish Popular Front Victory"
-RULE_OPTION_SPA_VICTORY_DESC:0 "The Spanish Popular Front will automatically annex the other Spanish factions on game-start."
-RULE_OPTION_SPM_VICTORY:0 "Monarchist Spain Victory"
-RULE_OPTION_SPM_VICTORY_DESC:0 "Monarchist Spain will automatically annex the other Spanish factions on game-start."
-
-POR_POLITICAL_STATUS:0 "Portuguese Civil War Status"
-RULE_OPTION_POR_VICTORY:0 "Kingdom of Portugal Victory"
-RULE_OPTION_POR_VICTORY_DESC:0 "Kingdom of Portugal will automatically annex the Portuguese Republic on game-start."
-RULE_OPTION_PRR_VICTORY:0 "Portuguese Republic Victory"
-RULE_OPTION_PRR_VICTORY_DESC:0 "The Portuguese Republic will automatically annex the Kingdom of Portugal on game-start"
-
-RAJ_POLITICAL_STATUS:0 "Indian Civil War Status"
-RULE_OPTION_RAJ_VICTORY:0 "British Raj Victory"
-RULE_OPTION_RAJ_VICTORY_DESC:0 "The British Raj will automatically annex the Indian Revolt on game-start."
-RULE_OPTION_IND_VICTORY:0 "Indian Revolt Victory"
-RULE_OPTION_IND_VICTORY_DESC:0 "The Indian Revolt will automatically annex the British Raj on game-start."
-
-RULE_GROUP_RANDOMIZER:0 "Fuhrerreich Randomizer (Radically alters FR)"
-GEN_RANDOM_IDEOLOGIES:0 "Ideology Randomizer"
-RULE_OPTION_DEFAULT_RANDOMIZER_DESC:0 "No changes will be made"
-RULE_OPTION_IDEOLOGIES_MINORS:0 "Minors Only"
-RULE_OPTION_IDEOLOGIES_MINORS_DESC:0 "Only Minor nations will be given a random Ideology on game-start. Would recommend combining this with generic focus trees."
-RULE_OPTION_IDEOLOGIES_MAJORS:0 "Majors Only"
-RULE_OPTION_IDEOLOGIES_MAJORS_DESC:0 "Only Major nations will be given a random Ideology on game-start. Would recommend combining this with generic focus trees."
-RULE_OPTION_IDEOLOGIES_EVERYONE:0 "Everyone"
-RULE_OPTION_IDEOLOGIES_EVERYONE_DESC:0 "Every nation will be given a random Ideology on game-start. Would recommend combining this with generic focus trees."
-
-GEN_GENERIC_FOCUS:0 "Generic Focus Trees"
-RULE_OPTION_GENERIC_FOCUS_MINORS:0 "Minors Only"
-RULE_OPTION_GENERIC_FOCUS_MINORS_DESC:0 "Only Minor nations will be given the generic focus tree on game-start. Would recommend combining this with Always Free Wargoals."
-RULE_OPTION_GENERIC_FOCUS_MAJORS:0 "Majors Only"
-RULE_OPTION_GENERIC_FOCUS_MAJORS_DESC:0 "Only Major nations will be given the generic focus tree on game-start. Would recommend combining this with Always Free Wargoals."
-RULE_OPTION_GENERIC_FOCUS_EVERYONE:0 "Everyone"
-RULE_OPTION_GENERIC_FOCUS_EVERYONE_DESC:0 "Every Nation will be given the generic focus tree on game-start. Would recommend combining this with Always Free Wargoals."
-
-GEN_FACTION_RULES:0 "Randomize Factions"
-RULE_OPTION_GENERIC_NO_FACTIONS:0 "No Factions"
-RULE_OPTION_GENERIC_NO_FACTIONS_DESC:0 "All Factions will be dismantled on game-start but nations will keep their existing puppets. Would recommend allowing all factions rules while using this option."
-RULE_OPTION_GENERIC_NO_PUPPETS:0 "No Factions and No Puppets"
-RULE_OPTION_GENERIC_NO_PUPPETS_DESC:0 "All Factions will be dismantled and all puppets will be set free on game-start. Would recommend allowing all factions rules while using this option."
-RULE_OPTION_GENERIC_MINOR_FACTIONS:0 "Minor Nations Randomly Assigned"
-RULE_OPTION_GENERIC_MINOR_FACTIONS_DESC:0 "Minor Nations will be randomly assigned to an existing faction on game-start."
-RULE_OPTION_GENERIC_MAJOR_FACTIONS:0 "All Nations Randomly Assigned"
-RULE_OPTION_GENERIC_MAJOR_FACTIONS_DESC:0 "All Nations will be randomly assigned to an existing faction on game-start."
-RULE_OPTION_GENERIC_EXPAND_FACTIONS:0 "Expand Factions Only"
-RULE_OPTION_GENERIC_EXPAND_FACTIONS_DESC:0 "All factions will keep their default members but unaligned nations will be randomly assigned to an existing faction on game-start."
-
 RULE_ALLOW_JOIN_FACTION:0 "Joining Factions"
 RULE_ALLOW_JOIN_FACTION_ALLOWED_DESC:0 "Nations can now automatically join factions if they meet the standard requirements."
 RULE_ALLOW_JOIN_FACTION_BLOCKED_DESC:0 "Nations can only join factions through events, focuses, decisions, etc."
 
-RULE_CREATE_FACTION:0 "Create Faction"
-RULE_CREATE_FACTION_ALLOWED_DESC:0 "Nations are allowed to create factions if they meet the standard requirements."
-RULE_CREATE_FACTION_BLOCKED_DESC:0 "Nations can only create factions through events, focuses, decisions, etc."
-
-GEN_RANDOM_POWER:0 "Random Super Power"
-RULE_OPTION_GENERIC_GEN_RANDOM_POWER_YES:0 "Activated"
-RULE_OPTION_GENERIC_GEN_RANDOM_POWER_YES_DESC:0 "A random nation will be giving the status of 'Super Power' awarding them powerful modifiers on game-start."
-RULE_OPTION_GENERIC_GEN_RANDOM_POWER_ALIEN:0 "Alien Invasion"
-RULE_OPTION_GENERIC_GEN_RANDOM_POWER_ALIEN_DESC:0 "A random nation will become the host of an Alien Invasion of Earth. This Alien nation will declare war on all the major powers and will be given the status of 'Super Power' awarding them powerful modifiers on game-start."
-GEN_super_power:0 "Global Super Power"
-
-GEN_RANDOM_RESOURCE:0 "Random Additional Resources"
-RULE_OPTION_GENERIC_GEN_RANDOM_RESOURCE_YES:0 "Completely Random"
-RULE_OPTION_GENERIC_GEN_RANDOM_RESOURCE_YES_DESC:0 "Additional resources will be randomly distributed across the globe on game-start."
-RULE_OPTION_GENERIC_GEN_RANDOM_RESOURCE_REALISTIC:0 "Realistic Distribution"
-RULE_OPTION_GENERIC_GEN_RANDOM_RESOURCE_REALISTIC_DESC:0 "Additional resources will be distributed in a semi-realistic manner on game-start. So no massive reserves of oil or rubber in Europe for example."
-
-HOL_POLITICAL_STATUS:0 "Dutch Political Status"
-RULE_OPTION_HOL_ANNEX_KNE:0 "Dutch State Annexes Kingdom of Netherlands"
-RULE_OPTION_HOL_ANNEX_KNE_DESC:0 "The Dutch State will annex the Kingdom of Netherlands on game-start."
-RULE_OPTION_KNE_ANNEX_HOL:0 "Kingdom of Netherlands Annexes Dutch State"
-RULE_OPTION_KNE_ANNEX_HOL_DESC:0 "The Kingdom of Netherlands will annex the Dutch State on game-start."
-RULE_OPTION_HOL_ANNEX_INS:0 "Dutch State Regains East Indies"
-RULE_OPTION_HOL_ANNEX_INS_DESC:0 "The Dutch State will regain the Dutch East Indies on game-start."
-RULE_OPTION_KNE_ANNEX_INS:0 "Kingdom of Netherlands Regains East Indies"
-RULE_OPTION_KNE_ANNEX_INS_DESC:0 "The Kingdom of The Netherlands will regain the Dutch East Indies on game-start."
-RULE_OPTION_HOL_ANNEX_BOTH:0 "Dutch State Annexes Both"
-RULE_OPTION_HOL_ANNEX_BOTH_DESC:0 "The Dutch State Will annex both the Kingdom of Netherlands and the Dutch East Indies on game-start."
-RULE_OPTION_KNE_ANNEX_BOTH:0 "Kingdom of Netherlands Annexes Both"
-RULE_OPTION_KNE_ANNEX_BOTH_DESC:0 "The Kingdom of The Netherlands will annex both the Dutch State and the Dutch East Indies on game-start."
-
-SOV_POLITICAL_STATUS:0 "Russian Civil War Status"
-RULE_OPTION_SOV_VICTORY:0 "Soviet Union Victory"
-RULE_OPTION_SOV_VICTORY_DESC:0 "The Soviet Union will automatically annex the Russian Republic on game-start."
-RULE_OPTION_RUS_VICTORY:0 "Russian Republic Victory"
-RULE_OPTION_RUS_VICTORY_DESC:0 "The Russian Republic will automatically annex the Soviet Union on game-start."
-
-GER_LEADER_STATUS:0 "Pick The Fuhrer"
-RULE_OPTION_GER_DRESSLER:0 "Adam Dressler"
-RULE_OPTION_GER_DRESSLER_DESC:0 ""
-RULE_OPTION_GER_HITLER:0 "Adolf Hitler"
-RULE_OPTION_GER_HITLER_DESC:0 "This is a meme"
-RULE_OPTION_GER_STRASSER:0 "Otto Strasser"
-RULE_OPTION_GER_STRASSER_DESC:0 "This is a meme"
-RULE_OPTION_GER_GOERING:0 "Hermann Goring"
-RULE_OPTION_GER_GOERING_DESC:0 "This is a meme"
-RULE_OPTION_GER_WILLIAM:0 "William III"
-RULE_OPTION_GER_WILLIAM_DESC:0 "This is a meme"
-
+# German Paths
 RULE_OPTION_GER_WEST_FIRST:0 "Focus on France"
 RULE_OPTION_GER_WEST_FIRST_DESC:0 "1919 saw the German Empire defeated by France and the Entente powers. In the aftermath of this devastating loss Kaiser Wilhelm II was forced to abdicate leading to the creation of the Weimar Republic whom soon found herself the victim of French Revanchism. The Treaty of Versailles was drafted to the French to keep Germany permanently weak. Adam Dressler came into power promising a complete reversal of the Treaty of Versailles and as such will commit all of Germany's energy in defeating the French.\n\n§GIdeology:§! Valkist\n§GObjective:§! Defeat France and The Entente"
 RULE_OPTION_GER_EAST_FIRST:0 "Focus on the Soviet Union"
 RULE_OPTION_GER_EAST_FIRST_DESC:0 "The defeat of the Russian Empire in the Great War allowed for the creation of the world's first Socialist state, The Soviet Union. Adam Dressler sees socialism not only as a threat to the stability of Germany but an existential threat to the very survival of Europe herself. Dressler shall commit all of Germany's energy into dismantling the Soviet Union and crushing socialism wherever it may arise.\n\n§GIdeology:§! Valkist\n§GObjective:§! Defeat The Soviet Union and The Third International"
 
+# Soviet Paths
 RULE_OPTION_SOV_TRIUMVIRATE:0 "Form the Triumvirate"
 RULE_OPTION_SOV_TRIUMVIRATE_DESC:0 "The Soviet Union will form the Triumvirate of Bukharin, Molotov and Zinoviev."
 RULE_OPTION_SOV_TUKHACHEVSKY:0 "Allow Tukhachevsky's takeover"
@@ -192,6 +49,7 @@ RULE_OPTION_SOV_TUKHACHEVSKY_DESC:0 "Marshal Tukhachevsky will takeover the Sovi
 RULE_OPTION_SOV_KIROV:0 "Elect Kirov"
 RULE_OPTION_SOV_KIROV_DESC:0 "Kirov will assume his role as Lenin's successor"
 
+# Italian Paths
 RULE_OPTION_ITA_COMMIE:0 "Elect the Communists"
 RULE_OPTION_ITA_COMMIE_DESC:0 "Italy will elect the Communist faction in the 1936 election."
 RULE_OPTION_ITA_DEMOCRATIC:0 "Stay Democratic"
@@ -199,11 +57,13 @@ RULE_OPTION_ITA_DEMOCRATIC_DESC:0 "Italy will stay democratic and allied to Fran
 RULE_OPTION_ITA_VALKIST:0 "Elect the Nationalists"
 RULE_OPTION_ITA_VALKIST_DESC:0 "Italy will elect the Nationalist faction in the 1936 election."
 
+# Japanese Paths
 RULE_OPTION_JAP_JEWEL:0 "Stabilze Japan's Democracy"
 RULE_OPTION_JAP_JEWEL_desc:0 "Japan will stabilze her democracy and attempt to work with either England or the USA."
 RULE_OPTION_JAP_DOMINANCE:0 "Allow The Military To Take Over"
 RULE_OPTION_JAP_DOMINANCE_desc:0 "Japan will allow her military to take over the nation and will attempt to work with Germany."
 
+# Wakanda Paths
 RULE_OPTION_SAF_ANC:0 "Elect the Liberals"
 RULE_OPTION_SAF_ANC_DESC:0 "South Africa will elect the ANC coalition in the 1937 snap election."
 RULE_OPTION_SAF_UNITED:0 "Maintain United rule"
@@ -211,22 +71,13 @@ RULE_OPTION_SAF_UNITED_DESC:0 "South Africa will elect the United Party in the 1
 RULE_OPTION_SAF_PNP:0 "Elect the Nationalists"
 RULE_OPTION_SAF_PNP_DESC:0 "South Africa will elect the PNP coalition in the 1937 snap election."
 
-GER_FLEEING_STATUS:0 "GW2 Fleeing Events"
-GER_FLEEING_STATUS_DESC:0 "France, Britain, Italy and the USSR will receive events to flee overseas when at the brink of defeat at the hands of Germany."
-RULE_OPTION_GER_AI_FLEEING:0 "AI Only"
-RULE_OPTION_GER_AI_FLEEING_DESC:0 "If France, Britain, Italy or the USSR are controlled by the AI they will receive the option to flee but human players controlling one of those nations will not. Most useful in multiplayer."
-RULE_OPTION_GER_PLAYER_FLEEING:0 "Humans Only"
-RULE_OPTION_GER_PLAYER_FLEEING_DESC:0 "If France, Britain, Italy or the USSR are controlled by a human player they will receive the option to flee but the AI controlling one of those nations will not. Most useful in multiplayer."
-RULE_OPTION_GER_NO_FLEEING:0 "Fleeing Events Blocked"
-RULE_OPTION_GER_NO_FLEEING_DESC:0 "France, Britain, Italy and the USSR will not receive the event to flee and will capitulate in the same fashion as in vanilla. Useful if you seek a shorter game."
-
-RULE_GROUP_GAME_SETUP:0 "GAME SETUP (Creates unintended consequences)"
-
+# Republican Spain Paths
 RULE_OPTION_SPR_AZANA:0 "Manuel Azaña Becomes President of Spain"
 RULE_OPTION_SPR_AZANA_DESC:0 "Manuel Azaña will become the next President of Spain after the civil war, in the event of a Republican victory."
 RULE_OPTION_SPR_LERROUX:0 "Alejandro Lerroux Becomes President of Spain"
 RULE_OPTION_SPR_LERROUX_DESC:0 "Alejandro Lerroux will become the next President of Spain after the civil war, in the event of a Republican victory."
 
+# Monarchist Spain Paths
 RULE_OPTION_SPM_RE:0 "Renovación Española Rules the Kingdom of Spain"
 RULE_OPTION_SPM_RE_DESC:0 "A Renovación Española government will be picked by the monarch after the Spanish civil war, in the event of a Monarchist victory."
 RULE_OPTION_SPM_CEDA:0 "CEDA Rules the Kingdom of Spain"
@@ -236,6 +87,7 @@ RULE_OPTION_SPM_LRC_DESC:0 "A Lliga Regionalista de Española government will be
 RULE_OPTION_SPM_LRC_LIBERAL:0 "Liberal Monarchists Rules the Kingdom of Spain"
 RULE_OPTION_SPM_LRC_LIBERAL_DESC:0 "Either Partido Liberal or Partido Liberal-Conservador will end up ruling Spain after the civil war, in the event of a Monarchist victory."
 
+# Socialist Spain Paths
 RULE_OPTION_SPA_CNT_FAI_ANARCHIST:0 "An Anarchist CNT-FAI Rules Spain"
 RULE_OPTION_SPA_CNT_FAI_ANARCHIST_DESC:0 "The Anarchist section of Confederación Nacional del Trabajo - Federación Anarquista Ibérica will come to power in Spain after the civil war, in the event of a Socialist victory."
 RULE_OPTION_SPA_CNT_FAI_SYNDICALIST:0 "A Syndicalist CNT-FAI Rules Spain"
@@ -255,6 +107,7 @@ RULE_OPTION_SPA_PCE_MAURIN_DESC:0 "Partido Comunista de España under Joaquín M
 RULE_OPTION_SPA_PCE_NIN_PEREZ:0 "Nin Pérez and the PCE Rules Spain"
 RULE_OPTION_SPA_PCE_NIN_PEREZ_DESC:0 "Partido Comunista de España under Andrés Nin Pérez will come to power in Spain after the civil war, in the event of a Socialist victory."
 
+# Falangist Spain Paths
 RULE_OPTION_SPF_JCAH:0 "JACH Takes Power in Spain"
 RULE_OPTION_SPF_JCAH_DESC:0 "Juntas Castellanas de Actuación Hispánica will come to power in Spain after the civil war, in the event of a Nationalist victory."
 RULE_OPTION_SPF_FALANGE:0 "The Falange Takes Power in Spain"
@@ -263,3 +116,17 @@ RULE_OPTION_SPF_PNE_CARLIST:0 "PNE With a Carlist King Rules Spain"
 RULE_OPTION_SPF_PNE_CARLIST_DESC:0 "Partido Nacionalista Español with a Carlist king will come to power in Spain after the civil war, in the event of a Nationalist victory."
 RULE_OPTION_SPF_PNE_ALFONSIST:0 "PNE With an Alfonsist King Rules Spain"
 RULE_OPTION_SPF_PNE_ALFONSIST_DESC:0 "Partido Nacionalista Español with an Alfonsist king will come to power in Spain after the civil war, in the event of a Nationalist victory."
+
+# Philippine Paths
+RULE_OPTION_PHI_RANDOM:0 "Randomised"
+RULE_OPTION_PHI_RANDOM_DESC:0 "The Philippine Republic will take on its own path."
+RULE_OPTION_PHI_DEMOCRACY:0 "Democracy of the East"
+RULE_OPTION_PHI_DEMOCRACY_DESC:0 "New elections will be called and either the Partido Nacionalista or Partido Liberal will win the elections.\n\n§GGovernment:§! Social Conservative or Market Liberal\n§GForeign Policy:§! Side with the USA"
+RULE_OPTION_PHI_PRUSSIA_OF_THE_EAST:0 "Prussia of the East"
+RULE_OPTION_PHI_PRUSSIA_OF_THE_EAST_DESC:0 "The Armed Forces of the Philippines will take control of the Governemnt and establish a militarized state challenging Japanese Hegemony.\n\n§GGovernment:§! Paternal Autocrat\n§GForeign Policy:§! Side with the United Kingdom"
+RULE_OPTION_PHI_TESTING_IMPERIALISM:0 "Testing Imperialism"
+RULE_OPTION_PHI_TESTING_IMPERIALISM_DESC:0 "Emilio Aguinaldo will establish a New Government trying to establish imperialist ambisions with Japan.\n\n§GGovernemnt:§! National Populist\n§GForeign Policy:§! Side with Japan"
+RULE_OPTION_PHI_BACK_TO_THE_PAST:0 "Back to the Past"
+RULE_OPTION_PHI_BACK_TO_THE_PAST_DESC:0 "The Sakdalistas will be allowed to operate and will win the 1936 elections. They will join the German side when the Second Great War brokes out.\n\n§GGovernemnt:§! Valkist\n§GForeign Policy:§! Side with Germany"
+RULE_OPTION_PHI_RED_DAWN:0 "Red Dawn"
+RULE_OPTION_PHI_RED_DAWN_DESC:0 "A civil war between the capitalist Government and the Socialist revolutionaries will erupt and will result in a Socialist victory.\n\n§GGovernemnt:§! Libertarian Socialist\n§GForeign Policy:§! Try to Found AEDA"

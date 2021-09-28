@@ -516,6 +516,9 @@ MEX_Luis_Farell_cair:0 "Luis Farell"
 ##   TOOLTIPS   ##
 ##################
 
+MEX_mobile_warfare_tt:0 "We have opted to adopt the Mobile Warface doctrine."
+MEX_superior_firepower_tt:0 "We have opted to adopt the Superior Firepower doctrine."
+MEX_grand_battleplan_tt:0 "We have opted to adopt the Grand Battleplan doctrine."
 MEX_pataut_tt:0 "The Realistas will put their people into office. Most of them will share their leader's position."
 MEX_natpop_tt:0 "The Synarchists will continue to hold their grip on power, perhaps for the forseeable future. No government positions will change as a result of these election results."
 MEX_valkist_tt:0 "The Quetzalcoatls, also known as the Valkistas, will create a new government molded to their party decrees. Most of those ministers and cabinet members will share their leader's position."

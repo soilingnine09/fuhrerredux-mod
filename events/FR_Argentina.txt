@@ -164,16 +164,13 @@ country_event = { #collies take over
 				ideology = collectivist 
 				popularity = 0.15
 		}
-			hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-			}
-		add_ideas = ARG_Jose_Penelon_hog_bol
-		add_ideas = ARG_Florindo_Moretti_for_bol
-		add_ideas = ARG_Orestes_Ghioldi_eco_bol
-		add_ideas = ARG_Pedro_Chiarante_sec_bol
+		remove_every_minister = yes
+		add_ideas = {
+			ARG_Lopez_Arango_hog_col
+			ARG_Angel_Borlenghi_for_col
+			ARG_Diego_Abad_de_Santillan_eco_col
+			ARG_Candido_Testa_sec_col
+		}
 	}
 }
 
@@ -198,16 +195,13 @@ country_event = { #collies take over or dems
 				ideology = collectivist 
 				popularity = 0.15
 		}
-			hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-			}
-		add_ideas = ARG_Jose_Penelon_hog_bol
-		add_ideas = ARG_Florindo_Moretti_for_bol
-		add_ideas = ARG_Orestes_Ghioldi_eco_bol
-		add_ideas = ARG_Pedro_Chiarante_sec_bol
+		remove_every_minister = yes
+		add_ideas = {
+			ARG_Lopez_Arango_hog_col
+			ARG_Angel_Borlenghi_for_col
+			ARG_Diego_Abad_de_Santillan_eco_col
+			ARG_Candido_Testa_sec_col
+		}
 	}
 	option = {#democracy survives as rads
 		name = arg.51.b
@@ -247,12 +241,12 @@ country_event = { #lpa
 			ideology = social_liberal
 			popularity = 0.05
 		}
-			hidden_effect = {
+		hidden_effect = {
 			remove_ideas_with_trait = foreign_minister
 			remove_ideas_with_trait = security_minister
-			}
-		add_ideas = ARG_Julio_A_Roca_for_npo
-		add_ideas = ARG_Manuel_Domecq_sec_npo
+		}
+		add_ideas = ARG_Estanislao_Zeballos_for_npo
+		add_ideas = ARG_Elbio_Anaya_sec_npo
 	}
 	option = {#collies
 		name = arg.53.b
@@ -268,16 +262,13 @@ country_event = { #lpa
 				ideology = collectivist 
 				popularity = 0.15
 		}
-			hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-			}
-		add_ideas = ARG_Jose_Penelon_hog_bol
-		add_ideas = ARG_Florindo_Moretti_for_bol
-		add_ideas = ARG_Orestes_Ghioldi_eco_bol
-		add_ideas = ARG_Pedro_Chiarante_sec_bol
+		remove_every_minister = yes
+		add_ideas = {
+			ARG_Lopez_Arango_hog_col
+			ARG_Angel_Borlenghi_for_col
+			ARG_Diego_Abad_de_Santillan_eco_col
+			ARG_Candido_Testa_sec_col
+		}
 	}
 }
 
@@ -301,12 +292,12 @@ country_event = { #lpa
 			ideology = social_liberal
 			popularity = 0.05
 		}
-			hidden_effect = {
+		hidden_effect = {
 			remove_ideas_with_trait = foreign_minister
 			remove_ideas_with_trait = security_minister
-			}
-		add_ideas = ARG_Julio_A_Roca_for_npo
-		add_ideas = ARG_Manuel_Domecq_sec_npo
+		}
+		add_ideas = ARG_Estanislao_Zeballos_for_npo
+		add_ideas = ARG_Elbio_Anaya_sec_npo
 	}
 }
 
@@ -631,12 +622,12 @@ country_event = { #standforthefederation
 			ideology = social_liberal
 			popularity = 0.05
 		}
-			hidden_effect = {
+		hidden_effect = {
 			remove_ideas_with_trait = foreign_minister
 			remove_ideas_with_trait = security_minister
-			}
-		add_ideas = ARG_Julio_A_Roca_for_npo
-		add_ideas = ARG_Manuel_Domecq_sec_npo
+		}
+		add_ideas = ARG_Estanislao_Zeballos_for_npo
+		add_ideas = ARG_Elbio_Anaya_sec_npo
 	}
 }
 country_event = { #subsidized
@@ -2066,12 +2057,12 @@ country_event = { #infamous day
 			set_global_flag = ARG_LPA_coup
 			set_global_flag = ARG_infamous_d
 		}
-			hidden_effect = {
+		hidden_effect = {
 			remove_ideas_with_trait = head_of_government
 			remove_ideas_with_trait = economy_minister
-			}
+		}
 		add_ideas = ARG_Manuel_Carles_hog_npo
-		add_ideas = ARG_Ezequiel_Pedro_Paz_eco_npo
+		add_ideas = ARG_Diego_Isidro_Mason_eco_npo
 	}
 
 	option = { #Military takes over
@@ -2086,19 +2077,16 @@ country_event = { #infamous day
 		hidden_effect = {
 			set_global_flag = ARG_military_takeover
 			set_global_flag = ARG_infamous_d
-			}
-			hidden_effect = {
-			remove_ideas_with_trait = head_of_government
-			remove_ideas_with_trait = foreign_minister
-			remove_ideas_with_trait = economy_minister
-			remove_ideas_with_trait = security_minister
-			}
-		add_ideas = ARG_Arturo_Rawson_hog_ade
-		add_ideas = ARG_Alfonso_Ruiz_Guinazu_for_ade
-		add_ideas = ARG_Bartolomeo_de_la_Colina_eco_ade
-		add_ideas = ARG_Alberto_Gilbert_sec_ade
+		}
+		remove_every_minister = yes
+		add_ideas = {
+			ARG_Pedro_Pablo_Ramirez_hog_ade
+			ARG_Cesar_Armeghino_for_ade
+			ARG_Enrique_Mosconi_eco_ade
+			ARG_Alberto_Teisaire_sec_ade
 		}
 	}
+}
 country_event = { #reactionary against anarchists
 	id = arg.300
 	immediate = {log = "[GetDateText]: [Root.GetName]: event arg.300"}
@@ -2163,7 +2151,7 @@ country_event = { #murder
 		hidden_effect = {
 			remove_ideas_with_trait = head_of_government
 		}
-		add_ideas = ARG_Rodolfo_Ghioldi_hog_bol
+		add_ideas = ARG_Rodolfo_Ghioldi_hog_col
 		set_country_flag = Jose_Penelon_dead
 	}
 }

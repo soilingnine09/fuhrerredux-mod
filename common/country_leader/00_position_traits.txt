@@ -33,9 +33,6 @@ leader_traits = {
 # Political ideologies
 #####################
 
-	totalist = {}
-	radical_socialist = {}
-	syndicalist = {}
 	vanguardist = {}
 	libertarian_socialist = {}
 	collectivist = {}

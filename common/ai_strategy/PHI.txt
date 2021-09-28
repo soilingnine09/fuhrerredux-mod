@@ -96,3 +96,130 @@ PHI_unit_production = {
 		value = 20
 	}
 }
+
+PHI_invade_indochina = {
+    allowed = { tag = PHI }
+    enable = {
+        PHI = {
+            any_owned_state = {
+                limit = { is_core_of = ROOT }
+                has_full_control_of_state = PREV
+            }
+        }
+        FIC = {
+            exists = yes
+            has_war_with = ROOT
+        }
+    }
+    abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = conquer
+        id = "FIC"
+        value = 200
+    }
+    ai_strategy = {
+        type = contain
+        id = "FIC"
+        value = 200
+    }
+}
+
+PHI_invade_east_indies = {
+    allowed = { tag = PHI }
+    enable = {
+        PHI = {
+            any_owned_state = {
+                limit = { is_core_of = ROOT }
+                has_full_control_of_state = PREV
+            }
+        }
+        BEA = {
+            exists = yes
+            has_war_with = ROOT
+        }
+    }
+    abort_when_not_enabled = yes
+    
+    ai_strategy = {
+        type = conquer
+        id = "BEA"
+        value = 200
+    }
+    ai_strategy = {
+        type = contain
+        id = "BEA"
+        value = 200
+    }
+}
+
+PHI_help_civil_war = {
+    allowed = { 
+        OR = {
+            tag = USA
+            tag = ENG
+            tag = JAP
+        } 
+    }
+    enable = {
+        ROOT = {
+            has_war = no
+            NOT = { set_country_flag = USA_union_collapsed }
+            has_socialist_government = no
+        }
+        PHI = {
+            exists = yes
+            has_war_with = PHR
+        }
+    }
+    abort_when_not_enabled = yes
+
+    ai_strategy = {
+		type = befriend
+		id = "PHI"
+		value = 100
+	}
+	ai_strategy = {
+		type = protect
+		id = "PHI"
+		value = 100
+	}
+    ai_strategy = {
+        type = send_volunteers_desire
+        id = "PHI"
+        value = 200
+    }
+}
+
+PHI_help_civil_war_socialist = {
+    allowed = {
+        tag = SOV
+    }
+    enable = {
+        SOV = {
+            has_war = no
+            has_socialist_government = yes
+        }
+        PHR = {
+            exists = yes
+            has_war_with = PHI
+        }
+    }
+    abort_when_not_enabled = yes
+
+    ai_strategy = {
+		type = befriend
+		id = "PHR"
+		value = 100
+	}
+	ai_strategy = {
+		type = protect
+		id = "PHR"
+		value = 100
+	}
+    ai_strategy = {
+        type = send_volunteers_desire
+        id = "PHR"
+        value = 200
+    }
+}

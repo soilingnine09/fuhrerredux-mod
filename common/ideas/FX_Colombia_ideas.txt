@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 ideas = {
 ##############
@@ -891,4 +892,899 @@ ideas = {
 			}
 		}
 	}
+=======
+
+ideas = {
+##############
+# Country ideas
+##############
+	country = {
+		COL_patria_revancha = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COL_patria_revancha"}
+			allowed = {
+			original_tag = "COL"
+			}
+
+			picture = generic_colombia_revanchism
+			modifier = {
+				army_core_attack_factor = 0.05
+				training_time_army_factor = -0.05
+				justify_war_goal_time = -0.10
+			}
+		}
+		COL_revanchist = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COL_revanchist"}
+			allowed = {
+			original_tag = "COL"
+			}
+
+			picture = vittoria_mutilata
+			modifier = {
+				conscription = 0.04
+				war_support_factor = 0.15
+			}
+		}
+		COL_reparations_to_peru = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COL_reparations_to_peru"}
+			allowed = {
+			original_tag = "COL"
+			}
+
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+		COL_reparations_from_colombia = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COL_reparations_from_colombia"}
+			allowed = {
+			original_tag = "PRU"
+			}
+
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		COL_reparations_to_peru1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COL_reparations_to_peru1"}
+			allowed = {
+			original_tag = "COL"
+			}
+
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+		COL_reparations_from_colombia1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COL_reparations_from_colombia1"}
+			allowed = {
+			original_tag = "PRU"
+			}
+
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}	
+		COL_internal_trade_boom = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COL_internal_trade_boom"}
+			allowed = {
+			original_tag = "PRU"
+			}
+
+			picture = generic_goods_red_bonus
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}	
+		COL_populist_regime = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COL_populist_regime"}
+			allowed = {
+			original_tag = "COL"
+			}
+
+			picture = generic_victors_of_ww1
+			modifier = {
+				paternal_autocrat_drift = 0.02
+			}
+		}
+		COL_nationalist_regime = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COL_nationalist_regime"}
+			allowed = {
+			original_tag = "COL"
+			}
+
+			picture = generic_fascism_drift_2
+			modifier = {
+				national_populist_drift = 0.02
+			}
+		}
+		COL_colon_platform = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COL_colon_platform"}
+			allowed = {
+			original_tag = "COL"
+			}
+
+			picture = generic_central_management
+			modifier = {
+				consumer_goods_factor = -0.03
+			}
+		}
+		COL_colon_platform1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COL_colon_platform1"}
+			allowed = {
+			original_tag = "COL"
+			}
+
+			picture = generic_central_management
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		COL_colon_platform2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COL_colon_platform2"}
+			allowed = {
+			original_tag = "COL"
+			}
+
+			picture = generic_central_management
+			modifier = {
+				consumer_goods_factor = -0.07
+			}
+		}
+		COL_agrarian_reform = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COL_agrarian_reform"}
+			allowed = {
+			original_tag = "COL"
+			}
+
+			picture = generic_agrarian_reform
+			modifier = {
+				min_export = -0.04 
+				production_factory_start_efficiency_factor = 0.06
+			}
+		}
+		COL_expanded_central_bank = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COL_expanded_central_bank"}
+			allowed = {
+			original_tag = "COL"
+			}
+
+			picture = generic_central_management
+			modifier = {
+				industrial_capacity_factory = 0.05
+				subversive_activites_upkeep = -0.05 
+			}
+		}
+		COL_development_boost = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COL_development_boost"}
+			allowed = {
+			original_tag = "COL"
+			}
+
+			picture = generic_central_management
+			modifier = {
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		COL_credit_boost = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COL_credit_boost"}
+			allowed = {
+			original_tag = "COL"
+			}
+
+			picture = generic_central_management
+			modifier = {
+				consumer_goods_factor = 0.05 
+			}
+		}
+		COL_saving_boost = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COL_saving_boost"}
+			allowed = {
+			original_tag = "COL"
+			}
+
+			picture = generic_central_management
+			modifier = {
+				industrial_capacity_factory = 0.15
+			}
+		}
+		COL_nationalism_incarnate = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COL_nationalism_incarnate"}
+			allowed = {
+			original_tag = "COL"
+			}
+
+			picture = generic_fascism_drift_2
+			modifier = {
+				national_populist_drift = 0.02
+				conscription = 0.02
+			}
+		}
+		COL_greatness_desired = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COL_greatness_desired"}
+			allowed = {
+			original_tag = "COL"
+			}
+
+			picture = generic_morale_boost
+			modifier = {
+				army_morale_factor = 0.05
+				planning_speed = 0.05
+			}
+		}
+		COL_corporatism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COL_corporatism"}
+			allowed = {
+			original_tag = "COL"
+			}
+
+			picture = state_economy
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+	}
+	### Head of Government
+	head_of_government = {
+		COL_Gilberto_Vieira_hog_van = {
+			allowed = { original_tag = COL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				vanguardist
+				hog_ambitious_union_boss
+			}
+		}
+		COL_Diego_Mendoza_Perez_hog_col = {
+			allowed = { original_tag = COL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				collectivist
+				hog_naive_optimist
+			}
+		}
+		COL_Pedro_Nel_Gomez_Agudelo_hog_col = {
+			allowed = { original_tag = COL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				collectivist
+				hog_ambitious_union_boss
+			}
+		}
+		COL_Leon_de_Greiff_hog_lib = {
+			allowed = { original_tag = COL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				libertarian_socialist
+				hog_red_chairmen
+			}
+		}
+		COL_Eduardo_Santos_Montejo_hog_sde = {
+			allowed = { original_tag = COL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_democrat
+				hog_naive_optimist
+			}
+		}
+		COL_Ismael_Perdomo_Borrero_hog_sde = {
+			allowed = { original_tag = COL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_democrat
+				hog_old_compromiser
+			}
+		}
+		COL_Carlos_Arango_Velez_hog_sli = {
+			allowed = { original_tag = COL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_liberal
+				hog_pragmatic_statesman
+			}
+		}
+		COL_Carlos_Lozano_y_Lozano_hog_sli = {
+			allowed = { original_tag = COL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_liberal
+				hog_silent_workhorse
+			}
+		}
+		COL_Nemesio_Camacho_Macias_hog_mli = {
+			allowed = { original_tag = COL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				market_liberal
+				hog_happy_amateur
+			}
+		}
+		COL_Gabriel_Suarez_Orrantia_hog_sco = {
+			allowed = { original_tag = COL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_conservative
+				hog_accomplished_diplomat
+			}
+		}
+		COL_Marco_Fidel_Suarez_hog_sco = {
+			allowed = { original_tag = COL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_conservative
+				hog_charismatic_charmer
+			}
+		}
+		COL_Roberto_Urdaneta_Arbelaez_hog_sco = {
+			allowed = { original_tag = COL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_conservative
+				hog_backroom_backstabber
+			}
+		}
+		COL_Antonio_Jose_Uribe_Gaviria_hog_ade = {
+			allowed = { original_tag = COL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_corporate_suit
+			}
+		}
+		COL_Ruben_Piedrahita_Arango_hog_pau = {
+			allowed = { original_tag = COL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_political_protege
+			}
+		}
+		COL_Laureano_Eleuterio_Gomez_Castro_hog_npo = {
+			allowed = { original_tag = COL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				national_populist
+				hog_naive_optimist
+			}
+		}
+	}
+	### Foreign Minister
+	foreign_minister = {
+		COL_Pedro_Maria_Carreno_for_van = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				vanguardist
+				for_apologetic_clerk
+			}
+		}
+		COL_Pedro_Aquilino_Lopez_Medina_for_col = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				collectivist
+				for_biased_intellectual
+			}
+		}
+		COL_Laureano_Garcia_Ortiz_for_lib = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				libertarian_socialist
+				for_radical_among_moderates
+			}
+		}
+		COL_Alfonso_Lopez_Michelsen_for_sde = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_democrat
+				for_relations_expert
+			}
+		}
+		COL_Alejandro_Galvis_Galvis_for_sli = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_liberal
+				for_iron_fisted_brute
+			}
+		}
+		COL_Francisco_Cardona_Santa_for_sli = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_liberal
+				for_moderate_among_radicals
+			}
+		}
+		COL_Francisco_Jose_Urrutia_Olano_for_mli = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				market_liberal
+				for_biased_intellectual
+			}
+		}
+		COL_Luis_Lopez_de_Mesa_Gomez_for_mli = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				market_liberal
+				for_great_compromiser
+			}
+		}
+		COL_Fernando_Londono_y_Londono_for_sco = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_conservative
+				for_biased_intellectual
+			}
+		}
+		COL_Juan_Jose_Antonio_Montalvo_Berbeo_for_sco = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_conservative
+				for_great_compromiser
+			}
+		}
+		COL_Miguel_Abadia_Mendez_for_ade = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				authoritarian_democrat
+				for_relations_expert
+			}
+		}
+		COL_Julio_Cesar_Turbay_Ayala_for_pau = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_apologetic_clerk
+			}
+		}
+		COL_Carlos_Eugenio_Restrepo_Restrepo_for_npo = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				national_populist
+				for_foreign_sympathizer
+			}
+		}
+	}
+	### Economy Minister
+	economy_minister = {
+		COL_Esteban_Jaramillo_eco_col = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				collectivist
+				eco_imbedded_unioneer
+			}
+		}
+		COL_Clemente_Escalona_Labarces_eco_lib = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				libertarian_socialist
+				eco_planned_economy_proponent
+			}
+		}
+		COL_Francisco_Antonio_Barberi_Zamorano_eco_sde = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_democrat
+				eco_reformer
+			}
+		}
+		COL_Antonio_Jose_Restrepo_Trujillo_eco_sli = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_liberal
+				eco_mixed_economy
+			}
+		}
+		COL_Carlos_Alberto_Lleras_Restrepo_eco_sli = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_liberal
+				eco_national_liberal
+			}
+		}
+		COL_Santander_Araujo_eco_sli = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_liberal
+				eco_reformer
+			}
+		}
+		COL_Benito_Hernandez_Bustos_eco_mli = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				market_liberal
+				eco_bank_president
+			}
+		}
+		COL_Julian_Bucheli_Ayerbe_eco_sco = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_conservative
+				eco_balanced_budget_economy
+			}
+		}
+		COL_Gregorio_Obregon_eco_sco = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_conservative
+				eco_construction_magnate
+			}
+		}
+		COL_Pedro_Nel_Ospina_Vazquez_eco_sco = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_conservative
+				eco_corrupt_kleptocrat
+			}
+		}
+		COL_Luis_Acevedo_eco_ade = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				authoritarian_democrat
+				eco_laissez_faire_capitalist
+			}
+		}
+		COL_Gabriel_Paris_Gordillo_eco_pau = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_mixed_economy
+			}
+		}
+		COL_Carlos_Cortes_Vargas_eco_npo = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				national_populist
+				eco_military_entrepreneur
+			}
+		}
+	}
+	### Security Minister
+	security_minister = {
+		COL_Baldomero_Sanin_Cano_sec_van = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				vanguardist
+				sec_back_stabber
+			}
+		}
+		COL_Santiago_Martinez_Delgado_sec_col = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				collectivist
+				sec_health_and_safety
+			}
+		}
+		COL_Eduardo_Zalamea_Borda_sec_lib = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				libertarian_socialist
+				sec_man_of_the_people
+			}
+		}
+		COL_Felix_Restrepo_Mejia_S_J_sec_sde = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_democrat
+				sec_great_soul
+			}
+		}
+		COL_Dario_Echandia_Olaya_sec_sli = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_liberal
+				sec_media_magnate
+			}
+		}
+		COL_Tomas_Oziel_Eastman_Lemus_sec_sli = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_liberal
+				sec_secret_police_chief
+			}
+		}
+		COL_Tulio_Enrique_Tascon_Quintero_sec_sli = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_liberal
+				sec_compassionate_gentleman
+			}
+		}
+		COL_Humberto_Chica_Pinzon_sec_mli = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				market_liberal
+				sec_driven_recruiter
+			}
+		}
+		COL_Benjamin_Herrera_Cortes_sec_sco = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_conservative
+				sec_man_of_the_people
+			}
+		}
+		COL_Enrique_Gomez_Hurtado_sec_sco = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_conservative
+				sec_health_and_safety
+			}
+		}
+		COL_Jose_Vicente_Concha_Ferreira_sec_sco = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_conservative
+				sec_man_of_the_people
+			}
+		}
+		COL_Guillermo_Padilla_Manrique_sec_ade = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_silent_lawyer
+			}
+		}
+		COL_Alfredo_Vazquez_Carrizosa_sec_pau = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_compassionate_gentleman
+			}
+		}
+		COL_Alberto_Narino_Cheyne_sec_npo = {
+			allowed = { original_tag = COL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				national_populist
+				sec_crime_fighter
+			}
+		}
+	}
+	### Chief of Staff
+	chief_of_staff = {
+		COL_Francisco_Cardona_Santa_cos = {
+			allowed = { original_tag = COL }
+			traits = {
+				chief_of_staff
+				cos_school_of_commando_operations
+			}
+		}
+		COL_Miguel_Abadia_Mendez_cos = {
+			allowed = { original_tag = COL }
+			traits = {
+				chief_of_staff
+				cos_school_of_psychology
+			}
+		}
+		COL_Ruben_Piedrahita_Arango_cos = {
+			allowed = { original_tag = COL }
+			traits = {
+				chief_of_staff
+				cos_school_of_fire_support
+			}
+		}
+		COL_Santander_Araujo_cos = {
+			allowed = { original_tag = COL }
+			traits = {
+				chief_of_staff
+				cos_school_of_manoeuvre
+			}
+		}
+	}
+	### Chief of Army
+	chief_of_army = {
+		COL_Luis_Acevedo_carm = {
+			allowed = { original_tag = COL }
+			traits = {
+				chief_of_army
+				carm_guns_and_butter_doctrine
+			}
+		}
+		COL_Clemente_Escalona_Labarces_carm = {
+			allowed = { original_tag = COL }
+			traits = {
+				chief_of_army
+				carm_doctrine_of_autonomy
+			}
+		}
+		COL_Guillermo_Padilla_Manrique_carm = {
+			allowed = { original_tag = COL }
+			traits = {
+				chief_of_army
+				carm_commando_doctrine
+			}
+		}
+		COL_Gabriel_Paris_Gordillo_carm = {
+			allowed = { original_tag = COL }
+			traits = {
+				chief_of_army
+				carm_armoured_spearhead_doctrine
+			}
+		}
+	}
+	### Chief of Navy
+	chief_of_navy = {
+		COL_Baldomero_Sanin_Cano_cnav = {
+			allowed = { original_tag = COL }
+			traits = {
+				chief_of_navy
+				cnav_indirect_approach_doctrine
+			}
+		}
+		COL_Ruben_Piedrahita_Arango_cnav = {
+			allowed = { original_tag = COL }
+			traits = {
+				chief_of_navy
+				cnav_open_seas_doctrine
+			}
+		}
+	}
+	### Chief of Air Force
+	chief_of_air_force = {
+		COL_Arturo_Lema_Posada_cair = {
+			allowed = { original_tag = COL }
+			traits = {
+				chief_of_air_force
+				cair_air_superiority_doctrine
+			}
+		}
+		COL_Camilo_Daza_Alvarez_cair = {
+			allowed = { original_tag = COL }
+			traits = {
+				chief_of_air_force
+				cair_battlefield_support_doctrine
+			}
+		}
+	}
+>>>>>>> 28027cb15ba1599f55214433bdaf9352bb864bcc
 }

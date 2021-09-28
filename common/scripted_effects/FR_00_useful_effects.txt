@@ -434,4 +434,74 @@ force_recalculate_factories = {
 	}
 }
 
-give_THIS_
+embargo_ROOT = {
+	add_opinion_modifier = {
+		modifier = embargo
+		target = ROOT
+	}
+	reverse_add_opinion_modifier = {
+		modifier = embargo
+		target = ROOT
+	}
+}
+
+clear_embargo_ROOT = {
+	remove_opinion_modifier = {
+		modifier = embargo
+		target = ROOT
+	}
+	ROOT = {
+		remove_opinion_modifier = {
+			modifier = embargo
+			target = PREV
+		}
+	}
+}
+
+embargo_PREV = {
+	add_opinion_modifier = {
+		modifier = embargo
+		target = PREV
+	}
+	reverse_add_opinion_modifier = {
+		modifier = embargo
+		target = PREV
+	}
+}
+
+clear_embargo_PREV = {
+	remove_opinion_modifier = {
+		modifier = embargo
+		target = PREV
+	}
+	PREV = {
+		remove_opinion_modifier = {
+			modifier = embargo
+			target = PREV
+		}
+	}
+}
+
+embargo_FROM = {
+	add_opinion_modifier = {
+		modifier = embargo
+		target = FROM
+	}
+	reverse_add_opinion_modifier = {
+		modifier = embargo
+		target = FROM
+	}
+}
+
+clear_embargo_FROM = {
+	remove_opinion_modifier = {
+		modifier = embargo
+		target = FROM
+	}
+	FROM = {
+		remove_opinion_modifier = {
+			modifier = embargo
+			target = PREV
+		}
+	}
+}

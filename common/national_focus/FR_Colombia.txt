@@ -240,7 +240,7 @@ focus_tree = {
 
 		focus = { 
 		id = COL_revancha_en_peru
-		icon = GFX_goal_flag_peru_wargoal
+		icon = GFX_goal_generic_attack_peru
 
  		ai_will_do = { factor = 100 } 
  		prerequisite = { focus = COL_preparing_for_liberation }
@@ -314,7 +314,7 @@ focus_tree = {
 
 		focus = { 
 		id = COL_brazilian_intervention
-		icon = GFX_goal_bra_collie_kill
+		icon = GFX_goal_generic_attack_socialist_brazil
 
  		ai_will_do = { factor = 10 } 
  		prerequisite = { focus = COL_the_marxist_enemy }
@@ -1084,7 +1084,7 @@ focus_tree = {
 	}
 		focus = { 
 		id = COL_sustaining_our_soldiers
-		icon = GFX_goal_hospital
+		icon = GFX_goal_medical
 		prerequisite = { focus = COL_cortes_massive_warfare }
  		ai_will_do = { factor = 10 } 
  		x =39
@@ -1252,7 +1252,7 @@ focus_tree = {
 	}
 		focus = { 
 		id = COL_medical_assistance
-		icon = GFX_goal_hospital
+		icon = GFX_goal_medical
 		prerequisite = { focus = COL_mechanizated_improvements }
 		prerequisite = { focus = COL_artillery_focus }
  		ai_will_do = { factor = 10 } 

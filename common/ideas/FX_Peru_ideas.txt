@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ideas = {
 ##############
 # Country ideas (Peru) 
@@ -939,4 +940,947 @@ ideas = {
 			}
 		}
 	}
+=======
+ideas = {
+##############
+# Country ideas (Peru) 
+##############
+	country = {
+
+		PRU_black_wednesday = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRU_black_wednesday"}
+			allowed = {
+			original_tag = "PRU"
+			}
+
+			picture = great_depression
+			modifier = {
+                production_factory_max_efficiency_factor = -0.15
+                industrial_capacity_factory = -0.15
+                production_speed_buildings_factor = -0.15		
+			}
+		}
+		PRU_black_wednesday1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRU_black_wednesday1"}
+			allowed = {
+			original_tag = "PRU"
+			}
+
+			picture = great_depression
+			modifier = {
+                production_factory_max_efficiency_factor = -0.05
+                industrial_capacity_factory = -0.05
+                production_speed_buildings_factor = -0.05		
+			}
+		}
+
+		PRU_weak_constitution = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRU_weak_constitution"}
+			allowed = {
+			original_tag = "PRU"
+			}
+
+			picture = generic_disjointed_gov
+			modifier = {
+				political_power_gain = -0.25
+			}
+		}
+
+		PRU_damaged_democracy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRU_damaged_democracy"}
+			allowed = {
+			original_tag = "PRU"
+			}
+
+			picture = generic_democratic_drift_bonus
+			modifier = {
+				stability_factor = -0.15
+			}
+		}
+
+		PRU_proud_and_victorious = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRU_proud_and_victorious"}
+			allowed = {
+			original_tag = "PRU"
+			}
+
+			picture = generic_war_preparation
+			modifier = {
+				army_morale_factor = 0.05
+			}
+		}
+
+		PRU_security_committee = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRU_security_committee"}
+			allowed = {
+			original_tag = "PRU"
+			}
+
+			picture = general_staff
+			modifier = {
+				political_power_gain = 0.1
+				army_org_factor = 0.05
+			}
+		}
+
+		PRU_peruvian_enterprising = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRU_peruvian_enterprising"}
+			allowed = {
+			original_tag = "PRU"
+			}
+
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.05	
+	
+			}
+		}
+
+		PRU_new_constitution = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRU_new_constitution"}
+			allowed = {
+			original_tag = "PRU"
+			}
+
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.05	
+	
+			}
+		}
+
+		PRU_trust = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRU_trust"}
+			allowed = {
+			original_tag = "CHL"
+			}
+
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				stability_factor = 0.05	
+	
+			}
+		}
+
+		PRU_benevolent_state = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRU_benevolent_state"}
+			allowed = {
+			original_tag = "PRU"
+			}
+
+			picture = idea_generic_agrarian_reform
+			modifier = {
+				global_building_slots_factor = 0.10  	
+				conversion_cost_civ_to_mil_factor = -0.1
+	
+			}
+		}
+
+		PRU_reformed_democracy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRU_reformed_democracy"}
+			allowed = {
+			original_tag = "PRU"
+			}
+
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				conscription = 0.01
+				supply_consumption_factor = -0.05	
+			}
+		}
+		
+		PRU_military_influence = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRU_military_influence"}
+			allowed = {
+			original_tag = "PRU"
+			}
+
+			picture = generic_manpower_bonus
+			modifier = {
+				conscription = 0.01
+				max_planning = 0.1	
+			}
+		}
+
+		PRU_strong_government = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRU_strong_government"}
+			allowed = {
+			original_tag = "PRU"
+			}
+
+			picture = generic_pp_unity_bonus
+			modifier = {
+				stability_factor = 0.05
+				supply_consumption_factor = -0.05	
+			}
+		}
+
+		PRU_in_times_of_need = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRU_in_times_of_need"}
+			allowed = {
+			original_tag = "PRU"
+			}
+
+			picture = generic_manpower_bonus
+			modifier = {
+				conscription = 0.04
+			}
+		}
+
+		PRU_workerstrike = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRU_workerstrike"}
+			allowed = {
+			original_tag = "PRU"
+			}
+
+			picture = generic_industrial_concern_1
+			modifier = {
+				production_speed_industrial_complex_factor = -0.25
+				production_speed_arms_factory_factor = -0.25	
+			}
+		}
+		PRU_rising_revolution = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRU_rising_revolution"}
+			allowed = {
+				OR = {
+					original_tag = "PRU"
+					original_tag = "D01"
+					original_tag = "D02"
+					original_tag = "D03"
+					original_tag = "D04"
+					original_tag = "D05"
+				}
+			}
+			picture = generic_collectivism_rising
+			modifier = {
+				war_support_factor = 0.05
+				conscription = 0.02			
+			}
+		}
+		PRU_revolutionary_spirit = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRU_revolutionary_spirit"}
+			allowed = {
+				OR = {
+					original_tag = "PRU"
+					original_tag = "D01"
+					original_tag = "D02"
+					original_tag = "D03"
+					original_tag = "D04"
+					original_tag = "D05"
+				}
+			}
+			picture = generic_collectivism_rising
+			modifier = {
+				war_support_factor = 0.05
+				conscription = 0.025
+				vanguardist_drift = 0.03			
+			}
+		}
+		PRU_agrarian_reform = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRU_agrarian_reform"}
+			allowed = {
+			original_tag = "PRU"
+			}
+
+			picture = idea_generic_agrarian_reform
+			modifier = {
+				global_building_slots_factor = 0.10  	
+				conversion_cost_civ_to_mil_factor = -0.1
+	
+			}
+		}
+		PRU_social_reform = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRU_social_reform"}
+			allowed = {
+			original_tag = "PRU"
+			}
+
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				stability_factor = 0.05
+	
+			}
+		}
+		PRU_gritty_revolt = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRU_gritty_revolt"}
+			allowed = {
+				OR = {
+					original_tag = "PRU"
+					original_tag = "D01"
+					original_tag = "D02"
+					original_tag = "D03"
+					original_tag = "D04"
+					original_tag = "D05"
+				}
+			}
+			picture = generic_morale_boost
+			modifier = {
+				army_morale_factor = 0.05		
+			}
+		}
+		PRU_intelligence_council = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRU_intelligence_council"}
+			allowed = {
+				OR = {
+					original_tag = "PRU"
+					original_tag = "D01"
+					original_tag = "D02"
+					original_tag = "D03"
+					original_tag = "D04"
+					original_tag = "D05"
+				}
+			}
+			picture = SOV_scientist_defect
+			modifier = {
+				decryption_factor = 0.05
+				recon_factor = 0.05  	
+			}
+		}
+		PRU_defense_socialist = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRU_defense_socialist"}
+			allowed = {
+				OR = {
+					original_tag = "PRU"
+					original_tag = "D01"
+					original_tag = "D02"
+					original_tag = "D03"
+					original_tag = "D04"
+					original_tag = "D05"
+				}
+			}
+			picture = UoB_militia_idea
+			modifier = {
+				land_reinforce_rate = 0.1
+				army_core_attack_factor = 0.05	
+			}
+		}
+	}
+	### Head of Government
+	head_of_government = {
+		PRU_Gamaliel_Churata_hog_van = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				vanguardist
+				hog_backroom_backstabber
+			}
+		}
+		PRU_Victor_Raul_Haya_de_la_Torre_hog_col = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				collectivist
+				hog_naive_optimist
+			}
+		}
+		PRU_Jose_Galvez_Barrenechea_hog_sde = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_democrat
+				hog_silent_workhorse
+			}
+		}
+		PRU_Luis_Antonio_Eguiguren_hog_sde = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_democrat
+				hog_smiling_oilman
+			}
+		}
+		PRU_Jose_Alcamora_hog_sli = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_liberal
+				hog_old_compromiser
+			}
+		}
+		PRU_Manuel_Cisneros_Sanchez_hog_mli = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				market_liberal
+				hog_happy_amateur
+			}
+		}
+		PRU_Rafael_Belaunde_Diez_hog_mli = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				market_liberal
+				hog_corporate_suit
+			}
+		}
+		PRU_Adolfo_Solf_y_Muro_hog_sco = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_conservative
+				hog_charismatic_charmer
+			}
+		}
+		PRU_Alberto_Rey_de_Castro_hog_sco = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_conservative
+				hog_accomplished_diplomat
+			}
+		}
+		PRU_Alberto_Roque_Saldias_hog_sco = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_conservative
+				hog_naive_optimist
+			}
+		}
+		PRU_David_S_Ocampo_hog_sco = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_conservative
+				hog_political_protege
+			}
+		}
+		PRU_Alberto_Zenon_Aguero_hog_ade = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_silent_workhorse
+			}
+		}
+		PRU_Ernesto_Montagne_Sanchez_hog_pau = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_pragmatic_statesman
+			}
+		}
+		PRU_Manuel_Odria_hog_pau = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_local_tyrant
+			}
+		}
+		PRU_Carlos_Miro_Quesada_hog_npo = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				national_populist
+				hog_determined_populist
+			}
+		}
+		PRU_Eloy_G_Ureta_hog_npo = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				national_populist
+				hog_naive_optimist
+			}
+		}
+		PRU_Jose_de_la_Riva_Aguero_hog_npo = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				national_populist
+				hog_democratic_tyrant
+			}
+		}
+		PRU_Luis_A_Flores_hog_npo = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				national_populist
+				hog_silent_workhorse
+			}
+		}
+	}
+	### Foreign Minister
+	foreign_minister = {
+		PRU_Cesar_Atahualpa_for_van = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				vanguardist
+				for_ideological_crusader
+			}
+		}
+		PRU_Jose_Carlos_Mariategui_for_van = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				vanguardist
+				for_iron_fisted_brute
+			}
+		}
+		PRU_Cesar_Vallejo_for_col = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				collectivist
+				for_apologetic_clerk
+			}
+		}
+		PRU_Oscar_Miro_Quesada_for_sde = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_democrat
+				for_biased_intellectual
+			}
+		}
+		PRU_Javier_Correa_Elias_for_mli = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				market_liberal
+				for_apologetic_clerk
+			}
+		}
+		PRU_Manuel_Prado_y_Ugarteche_for_mli = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				market_liberal
+				for_hawkish_intervener
+			}
+		}
+		PRU_Adolfo_Solf_y_Muro_for_sco = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_conservative
+				for_great_compromiser
+			}
+		}
+		PRU_Enrique_Goytisola_Bolognesi_for_sco = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_conservative
+				for_foreign_sympathizer
+			}
+		}
+		PRU_Alberto_Ulloa_Sotomayor_for_ade = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				authoritarian_democrat
+				for_relations_expert
+			}
+		}
+		PRU_Felipe_Tudela_for_pau = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_great_compromiser
+			}
+		}
+		PRU_Raul_Ferrero_Rebagliati_for_npo = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				national_populist
+				for_ideological_crusader
+			}
+		}
+	}
+	### Economy Minister
+	economy_minister = {
+		PRU_Manuel_Gonzalez_Prada_eco_van = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				vanguardist
+				eco_planned_economy_proponent
+			}
+		}
+		PRU_Antenor_Orrego_eco_col = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				collectivist
+				eco_reformer
+			}
+		}
+		PRU_Antonio_Rodriguez_Ramirez_eco_sde = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_democrat
+				eco_imbedded_unioneer
+			}
+		}
+		PRU_Manuel_Vasquez_Diaz_eco_sde = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_democrat
+				eco_industrialiser
+			}
+		}
+		PRU_Guillermo_Almenara_Irigoyen_eco_mli = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				market_liberal
+				eco_bank_president
+			}
+		}
+		PRU_Romulo_Ferrero_eco_mli = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				market_liberal
+				eco_balanced_budget_economy
+			}
+		}
+		PRU_Armando_Revoredo_Iglesias_eco_sco = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_conservative
+				eco_construction_magnate
+			}
+		}
+		PRU_David_S_Ocampo_eco_sco = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_conservative
+				eco_devoted_monopoly_buster
+			}
+		}
+		PRU_Eduardo_Rebagliati_Martins_eco_sco = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_conservative
+				eco_mixed_economy
+			}
+		}
+		PRU_Oscar_Trelles_Montes_eco_sco = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_conservative
+				eco_trade_proponent
+			}
+		}
+		PRU_Nicolas_Lindley_Lopez_eco_pau = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_the_minister_for_everything
+			}
+		}
+		PRU_Luis_A_Flores_eco_npo = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				national_populist
+				eco_administrative_genius
+			}
+		}
+	}
+	### Security Minister
+	security_minister = {
+		PRU_Alejandro_Peralta_sec_van = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				vanguardist
+				sec_back_stabber
+			}
+		}
+		PRU_Carlos_Manuel_Cox_Roose_sec_col = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				collectivist
+				sec_man_of_the_people
+			}
+		}
+		PRU_Ciro_Alegria_sec_col = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				collectivist
+				sec_regionalist
+			}
+		}
+		PRU_Ildefonso_Ballon_Beltran_sec_sde = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_democrat
+				sec_silent_lawyer
+			}
+		}
+		PRU_Victor_N_Benavente_sec_sde = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_democrat
+				sec_media_magnate
+			}
+		}
+		PRU_Manuel_Gallagher_sec_sli = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_liberal
+				sec_man_of_the_people
+			}
+		}
+		PRU_Benigno_Ballon_Farfan_sec_sco = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_conservative
+				sec_health_and_safety
+			}
+		}
+		PRU_Ernesto_Montagne_Markholz_sec_pau = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_efficient_sociopath
+			}
+		}
+		PRU_Carlos_Miro_Quesada_sec_npo = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				national_populist
+				sec_driven_recruiter
+			}
+		}
+		PRU_Felipe_Sassone_sec_npo = {
+			allowed = { original_tag = PRU }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				national_populist
+				sec_compassionate_gentleman
+			}
+		}
+	}
+	### Chief of Staff
+	chief_of_staff = {
+		PRU_Fortunato_Quesada_Larrea_cos = {
+			allowed = { original_tag = PRU }
+			traits = {
+				chief_of_staff
+				cos_school_of_commando_operations
+			}
+		}
+		PRU_Alberto_Zenon_Aguero_cos = {
+			allowed = { original_tag = PRU }
+			traits = {
+				chief_of_staff
+				cos_school_of_psychology
+			}
+		}
+		PRU_Gustavo_Jimenez_cos = {
+			allowed = { original_tag = PRU }
+			traits = {
+				chief_of_staff
+				cos_school_of_fire_support
+			}
+		}
+		PRU_Nicolas_Lindley_Lopez_cos = {
+			allowed = { original_tag = PRU }
+			traits = {
+				chief_of_staff
+				cos_school_of_manoeuvre
+			}
+		}
+	}
+	### Chief of Army
+	chief_of_army = {
+		PRU_Eduardo_Montero_Rojas_carm = {
+			allowed = { original_tag = PRU }
+			traits = {
+				chief_of_army
+				carm_commando_doctrine
+			}
+		}
+		PRU_Vladimiro_Lopez_Trigoso_carm = {
+			allowed = { original_tag = PRU }
+			traits = {
+				chief_of_army
+				carm_guns_and_butter_doctrine
+			}
+		}
+		PRU_Eloy_G_Ureta_carm = {
+			allowed = { original_tag = PRU }
+			traits = {
+				chief_of_army
+				carm_static_defence_doctrine
+			}
+		}
+		PRU_Oscar_Benavides_Larrea_carm = {
+			allowed = { original_tag = PRU }
+			traits = {
+				chief_of_army
+				carm_armoured_spearhead_doctrine
+			}
+		}
+		PRU_Riccardo_Perez_Godoy_carm = {
+			allowed = { original_tag = PRU }
+			traits = {
+				chief_of_army
+				carm_doctrine_of_autonomy
+			}
+		}
+		PRU_Manuel_Odria_Amoretti_carm = {
+			allowed = { original_tag = PRU }
+			traits = {
+				chief_of_army
+				carm_decisive_battle_doctrine
+			}
+		}
+	}
+	### Chief of Navy
+	chief_of_navy = {
+		PRU_Alberto_Roque_Saldias_cnav = {
+			allowed = { original_tag = PRU }
+			traits = {
+				chief_of_navy
+				cnav_base_control_doctrine
+			}
+		}
+		PRU_Nicolas_Lindley_Lopez_cnav = {
+			allowed = { original_tag = PRU }
+			traits = {
+				chief_of_navy
+				cnav_indirect_approach_doctrine
+			}
+		}
+	}
+	### Chief of Air Force
+	chief_of_air_force = {
+		PRU_Manuel_Montero_y_Tirada_cair = {
+			allowed = { original_tag = PRU }
+			traits = {
+				chief_of_air_force
+				cair_air_superiority_doctrine
+			}
+		}
+	}
+>>>>>>> 28027cb15ba1599f55214433bdaf9352bb864bcc
 }

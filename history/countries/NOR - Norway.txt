@@ -1,15 +1,18 @@
 ﻿capital = 110
 
-oob = "NOR_1936"
+oob = "NOR"
 
 set_research_slots = 3
-
+set_convoys = 125		# biggest merchant marine in the world
+set_stability = 0.57
+set_war_support = 0.52
+add_manpower = 45000
 
 if = {
     limit = { has_dlc = "Man the Guns" }
-        set_naval_oob = "NOR_1936_naval_mtg"
+        set_naval_oob = "NOR_naval_mtg"
     else = {
-        set_naval_oob = "NOR_1936_naval_legacy"
+        set_naval_oob = "NOR_naval_legacy"
     }
 }
 
@@ -49,10 +52,7 @@ if = {
 	}
 }
 
-set_convoys = 125		# biggest merchant marine in the world
-set_stability = 0.57
-set_war_support = 0.52
-add_manpower = 45000
+
 
 set_country_flag = coalition_collectivist
 

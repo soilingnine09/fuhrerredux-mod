@@ -295,27 +295,39 @@ PHI_ai_behavior = {
 	name = "PHI_AI_BEHAVIOR"
 	group = "RULE_GROUP_AI_BEHAVIOR"
 	default = {
-		name = PHI_DEFAULT
-		text = PHI_RULE_DEFAULT
-		desc = PHI_RULE_DEFAULT_DESC
+		name = PHI_RANDOM
+		text = "RULE_OPTION_PHI_RANDOM"
+		desc = "RULE_OPTION_PHI_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = PHI_DEMOCRACY
+		text = "RULE_OPTION_PHI_DEMOCRACY"
+		desc = "RULE_OPTION_PHI_DEMOCRACY_DESC"
 		allow_achievements = yes
 	}
 	option = {
 		name = PHI_PRUSSIA_OF_THE_EAST
-		text = PHI_RULE_PRUSSIA_OF_THE_EAST
-		desc = PHI_RULE_PRUSSIA_OF_THE_EAST_DESC
+		text = "RULE_OPTION_PHI_PRUSSIA_OF_THE_EAST"
+		desc = "RULE_OPTION_PHI_PRUSSIA_OF_THE_EAST_DESC"
 		allow_achievements = yes
 	}
 	option = {
 		name = PHI_TESTING_IMPERIALISM
-		text = PHI_RULE_TESTING_IMPERIALISM
-		desc = PHI_RULE_TESTING_IMPERIALISM_DESC
+		text = "RULE_OPTION_PHI_TESTING_IMPERIALISM"
+		desc = "RULE_OPTION_PHI_TESTING_IMPERIALISM_DESC"
 		allow_achievements = yes
 	}
 	option = {
 		name = PHI_BACK_TO_THE_PAST
-		text = PHI_RULE_BACK_TO_THE_PAST
-		desc = PHI_RULE_BACK_TO_THE_PAST_DESC
+		text = "RULE_OPTION_PHI_BACK_TO_THE_PAST"
+		desc = "RULE_OPTION_PHI_BACK_TO_THE_PAST_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = PHI_RED_DAWN
+		text = "RULE_OPTION_PHI_RED_DAWN"
+		desc = "RULE_OPTION_PHI_RED_DAWN_DESC"
 		allow_achievements = yes
 	}
 }

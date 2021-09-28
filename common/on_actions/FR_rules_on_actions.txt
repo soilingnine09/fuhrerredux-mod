@@ -2,16 +2,9 @@ on_actions = {
 	#Not run on a specific country.
 	on_startup = {
 		effect = {
+			### Britain
 			ENG = {
-#				IF = { 
-#					limit = {
-#						has_game_rule = {
-#							rule = ENG_ai_behavior
-#							option = RANDOM
-#						}
-#					}
-#				}
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = ENG_ai_behavior
@@ -21,7 +14,7 @@ on_actions = {
 					set_country_flag = ENG_AI_CHOSEN
 					set_country_flag = capesingapore
 				}
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = ENG_ai_behavior
@@ -31,7 +24,7 @@ on_actions = {
 					set_country_flag = ENG_AI_CHOSEN
 					set_country_flag = avenging1776
 				}
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = ENG_ai_behavior
@@ -41,7 +34,7 @@ on_actions = {
 					set_country_flag = ENG_AI_CHOSEN
 					set_country_flag = isoimpfed
 				}
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = ENG_ai_behavior
@@ -51,7 +44,7 @@ on_actions = {
 					set_country_flag = ENG_AI_CHOSEN
 					set_country_flag = reformentente
 				}
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = ENG_ai_behavior
@@ -63,9 +56,9 @@ on_actions = {
 				}
 				
 			}
-
+			### Deustches Reich
 			GER = {
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = GER_ai_behavior
@@ -74,7 +67,7 @@ on_actions = {
 					}
 					set_country_flag = GER_west_is_first
 				}
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = GER_ai_behavior
@@ -84,9 +77,9 @@ on_actions = {
 					set_country_flag = GER_east_is_first
 				}
 			}
-			
+			### Soviet Union
 			SOV = {
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = SOV_ai_behavior
@@ -95,7 +88,7 @@ on_actions = {
 					}
 					set_country_flag = SOV_rule_picked_triumvirate
 				}
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = SOV_ai_behavior
@@ -104,7 +97,7 @@ on_actions = {
 					}
 					set_country_flag = SOV_rule_picked_tukha
 				}
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = SOV_ai_behavior
@@ -114,9 +107,9 @@ on_actions = {
 					set_country_flag = SOV_rule_picked_kirov
 				}
 			}
-			
+			### Empire of Japan
 			JAP = {
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = JAP_ai_behavior
@@ -125,7 +118,7 @@ on_actions = {
 					}
 					set_country_flag = JAP_picked_jewel
 				}
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = JAP_ai_behavior
@@ -135,9 +128,9 @@ on_actions = {
 					set_country_flag = JAP_picked_dominance
 				}
 			}			
-			
+			### Kingdom of Italy
 			ITA = {
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = ITA_ai_behavior
@@ -146,7 +139,7 @@ on_actions = {
 					}
 					set_country_flag = ITA_rule_picked_commie
 				}
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = ITA_ai_behavior
@@ -155,7 +148,7 @@ on_actions = {
 					}
 					set_country_flag = ITA_rule_picked_democratic
 				}
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = ITA_ai_behavior
@@ -165,9 +158,9 @@ on_actions = {
 					set_country_flag = ITA_rule_picked_valkist
 				}
 			}
-
+			### Wakanda
 			SAF = {
-				IF = {
+				if = {
 					limit = {
 						has_game_rule = {
 							rule = SAF_ai_behavior
@@ -176,7 +169,7 @@ on_actions = {
 					}
 					set_country_flag = SAF_rule_picked_anc
 				}
-				IF = {
+				if = {
 					limit = {
 						has_game_rule = {
 							rule = SAF_ai_behavior
@@ -185,7 +178,7 @@ on_actions = {
 					}
 					set_country_flag = SAF_rule_picked_united
 				}
-				IF = {
+				if = {
 					limit = {
 						has_game_rule = {
 							rule = SAF_ai_behavior
@@ -195,9 +188,9 @@ on_actions = {
 					set_country_flag = SAF_rule_picked_pnp
 				}
 			}
-			
+			### Republican Spain
 			SPR = {
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = SPR_ai_behavior
@@ -206,7 +199,7 @@ on_actions = {
 					}
 					set_country_flag = SPR_azana
 				}
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = SPR_ai_behavior
@@ -216,9 +209,9 @@ on_actions = {
 					set_country_flag = SPR_lerroux
 				}
 			}
-			
+			### Monarchist Spain
 			SPM = {
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = SPM_ai_behavior
@@ -227,7 +220,7 @@ on_actions = {
 					}
 					set_country_flag = SPM_re
 				}
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = SPM_ai_behavior
@@ -236,7 +229,7 @@ on_actions = {
 					}
 					set_country_flag = SPM_ceda
 				}
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = SPM_ai_behavior
@@ -245,7 +238,7 @@ on_actions = {
 					}
 					set_country_flag = SPM_lrc
 				}
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = SPM_ai_behavior
@@ -255,9 +248,9 @@ on_actions = {
 					set_country_flag = SPM_lrc_liberal
 				}
 			}
-			
+			### Anarchist Spain
 			SPA = {
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = SPA_ai_behavior
@@ -267,7 +260,7 @@ on_actions = {
 					set_country_flag = SPA_cnt_fai_anarchist
 					set_country_flag = SPA_cnt_fai
 				}
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = SPA_ai_behavior
@@ -277,7 +270,7 @@ on_actions = {
 					set_country_flag = SPA_cnt_fai_syndicalist
 					set_country_flag = SPA_cnt_fai
 				}
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = SPA_ai_behavior
@@ -287,7 +280,7 @@ on_actions = {
 					set_country_flag = SPA_psoe_democratic
 					set_country_flag = SPA_psoe
 				}
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = SPA_ai_behavior
@@ -297,7 +290,7 @@ on_actions = {
 					set_country_flag = SPA_psoe_marxist
 					set_country_flag = SPA_psoe
 				}
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = SPA_ai_behavior
@@ -307,7 +300,7 @@ on_actions = {
 					set_country_flag = SPA_pce_ramos
 					set_country_flag = SPA_pce
 				}
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = SPA_ai_behavior
@@ -317,7 +310,7 @@ on_actions = {
 					set_country_flag = SPA_pce_ibarruri
 					set_country_flag = SPA_pce
 				}
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = SPA_ai_behavior
@@ -327,7 +320,7 @@ on_actions = {
 					set_country_flag = SPA_pce_maure
 					set_country_flag = SPA_pce
 				}
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = SPA_ai_behavior
@@ -337,7 +330,7 @@ on_actions = {
 					set_country_flag = SPA_pce_maurin
 					set_country_flag = SPA_pce
 				}
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = SPA_ai_behavior
@@ -348,9 +341,9 @@ on_actions = {
 					set_country_flag = SPA_pce
 				}
 			}
-			
+			### Falangist Spain
 			SPF = {
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = SPF_ai_behavior
@@ -359,7 +352,7 @@ on_actions = {
 					}
 					set_country_flag = SPF_jcah
 				}
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = SPF_ai_behavior
@@ -368,7 +361,7 @@ on_actions = {
 					}
 					set_country_flag = SPF_falange
 				}
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = SPF_ai_behavior
@@ -378,7 +371,7 @@ on_actions = {
 					set_country_flag = SPF_pne_carlist
 					set_country_flag = SPF_pne
 				}
-				IF = { 
+				if = { 
 					limit = {
 						has_game_rule = {
 							rule = SPF_ai_behavior
@@ -389,6 +382,74 @@ on_actions = {
 					set_country_flag = SPF_pne
 				}
 			}
+			### Philippine Republic
+			PHI = {
+                if = {
+                    limit = {
+                        has_game_rule = {
+                            rule = PHI_AI_BEHAVIOR
+                            option = PHI_RANDOM
+                        }
+                    }
+                    set_country_flag = PHI_ai_chosen
+                    random_list = {
+                        25 = { set_country_flag = PHI_democratic_behavior }
+                        25 = { set_country_flag = PHI_pataut_behavior }
+                        25 = { set_country_flag = PHI_natpop_behavior }
+                        25 = { set_country_flag = PHI_valkist_behavior }
+                    }
+                }
+                else_if = {
+                    limit = {
+                        has_game_rule = {
+                            rule = PHI_AI_BEHAVIOR
+                            option = PHI_DEMOCRACY
+                        }
+                    }
+                    set_country_flag = PHI_ai_chosen
+                    set_country_flag = PHI_democratic_behavior
+                }
+                else_if = {
+                    limit = {
+                        has_game_rule = {
+                            rule = PHI_AI_BEHAVIOR
+                            option = PHI_PRUSSIA_OF_THE_EAST
+                        }
+                    }
+                    set_country_flag = PHI_ai_chosen
+                    set_country_flag = PHI_pataut_behavior
+                }
+                else_if = {
+                    limit = {
+                        has_game_rule = {
+                            rule = PHI_AI_BEHAVIOR
+                            option = PHI_TESTING_IMPERIALISM
+                        }
+                    }
+                    set_country_flag = PHI_ai_chosen
+                    set_country_flag = PHI_natpop_behavior
+                }
+                else_if = {
+                    limit = {
+                        has_game_rule = {
+                            rule = PHI_AI_BEHAVIOR
+                            option = PHI_BACK_TO_THE_PAST
+                        }
+                    }
+                    set_country_flag = PHI_ai_chosen
+                    set_country_flag = PHI_valkist_behavior
+                }
+				else_if = {
+					limit = {
+						has_game_rule = {
+							rule = PHI_AI_BEHAVIOR
+							option = RULE_OPTION_PHI_RED_DAWN
+						}
+					}
+					set_country_flag = PHI_ai_chosen
+					set_country_flag = PHI_socialist_behavior
+				}
+            }
 		}
 	}
 }

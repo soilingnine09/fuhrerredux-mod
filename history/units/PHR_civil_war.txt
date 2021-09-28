@@ -47,6 +47,18 @@ units = {
 		start_experience_factor = 0.1
 	}
 	division = {
+		name = "4th Revolutionary Division"
+		location = 10265
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "5th Revolutionary Division"
+		location = 10265
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.1
+	}
+	division = {
 		name = "1st Revolutionary Militia"
 		location = 4288
 		division_template = "Revolutionary Militia"		
@@ -66,6 +78,24 @@ units = {
 	}
 	division = {
 		name = "4th Revolutionary Militia"
+		location = 7323
+		division_template = "Revolutionary Militia"		
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "5th Revolutionary Militia"
+		location = 7323
+		division_template = "Revolutionary Militia"		
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "6th Revolutionary Militia"
+		location = 7323
+		division_template = "Revolutionary Militia"		
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "7th Revolutionary Militia"
 		location = 7323
 		division_template = "Revolutionary Militia"		
 		start_experience_factor = 0.1

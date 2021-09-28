@@ -7,7 +7,7 @@ country_event = {
     id = phr.1
     title = phr.1.t
     desc = phr.1.d
-    picture = GFX_report_event_PHI_rizal_park
+    picture = GFX_report_event_PHI_manila_uprising2
 
     is_triggered_only = yes
 
@@ -20,5 +20,236 @@ country_event = {
         }
         set_country_flag = PHI_worker_victory_tt
         remove_ideas = PHI_the_filipino_civil_war
+        hidden_effect = {
+			country_event = { id = phr.3 days = 7 }
+        	country_event = { id = phr.2 days = 14 }
+        }
+    }
+}
+
+country_event = {
+	id = phr.2
+	title = phr.2.t
+	desc = phr.2.d
+	picture = GFX_report_event_PHI_manila_uprising 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = phr.2.a
+		create_field_marshal = {
+			name = "Vicente P. Lim"
+			portrait_path = "gfx/leaders/PHI/Portrait_Philippines_Vicente_P_Lim.tga"
+			traits = { career_officer brilliant_strategist infantry_officer trickster }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		} 
+		create_field_marshal = {
+			name = "Basilio J. Valdez"
+			portrait_path = "gfx/leaders/PHI/Portrait_Philippines_Basilio_J_Valdez.tga"
+			traits = { career_officer media_personality organisational_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+
+
+		# Corps Commander
+		create_corps_commander = {
+			name = "Alfredo M. Santos"
+			portrait_path = "gfx/leaders/PHI/Portrait_Philippines_Alfredo_M_Santos.tga"
+			traits = { trickster trait_engineer hill_fighter skilled_staffer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+		create_corps_commander = {
+			name = "Paulino Santos"
+			portrait_path = "gfx/leaders/PHI/Portrait_Philippines_Paulino_Santos.tga"
+			traits = { brilliant_strategist infantry_leader jungle_rat skilled_staffer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+		create_corps_commander = { 
+			name = "Mateo Capinpin"
+			portrait_path = "gfx/leaders/PHI/Portrait_Philippines_Mateo_Capinpin.tga"
+			traits = { trait_engineer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 4
+		}
+		create_corps_commander = {
+			name = "Rafael Jalandoni"
+			portrait_path = "gfx/leaders/PHI/Portrait_Philippines_Rafael_Jalandoni.tga"
+			traits = { war_hero career_officer trait_mountaineer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+		create_corps_commander = {
+			name = "Manuel F. Cabal"
+			portrait_path = "gfx/leaders/PHI/Portrait_Philippines_Manuel_F_Cabal.tga"
+			traits = { brilliant_strategist trickster }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 5
+			logistics_skill = 2
+		}
+		create_corps_commander = {
+			name = "Carlos P. Romulo"
+			portrait_path = "gfx/leaders/PHI/Portrait_Philippines_Carlos_P_Romulo.tga"
+			traits = { media_personality infantry_officer war_hero skilled_staffer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		create_corps_commander = {
+			name = "Salipada Pendatun"
+			portrait_path = "gfx/leaders/PHI/Portrait_Philippines_Salipada_Pendatun.tga"
+			traits = { armor_officer commando }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+		create_corps_commander = {
+			name = "Ruperto Kangleon"
+			portrait_path = "gfx/leaders/PHI/Portrait_Philippines_Ruperto_Kangleon.tga"
+			traits = { infantry_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		
+		create_navy_leader = {
+			name = "Santiago Nuval"
+			portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_navy_1.dds"
+			traits = { bold aviation_enthusiast spotter }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			maneuvering_skill = 2
+			coordination_skill = 3
+		}
+		create_navy_leader = {
+			name = "Eustacio Orobia"
+			portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_navy_3.dds"
+			traits = { blue_water_expert }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			maneuvering_skill = 2
+			coordination_skill = 3
+		}
+		create_navy_leader = {
+			name = "Jose V. Andrada"
+			portrait_path = "gfx/leaders/JAP/Portrait_Japan_Generic_navy_3.dds"
+			traits = { superior_tactician navy_career_officer gunnery_expert }
+			skill = 2
+			attack_skill = 4
+			defense_skill = 3
+			maneuvering_skill = 5
+			coordination_skill = 3
+		}
+	}
+	option = {
+		name = phr.2.b
+		increase_ruling_party_popularity_by_10 = yes
+	}
+}
+
+country_event = {
+	id = phr.3
+	title = phr.3.t
+	desc = phr.3.d
+	picture = GFX_report_event_generic_conference1 
+	
+	is_triggered_only = yes
+	
+	option = { # LibSoc
+        name = phr.3.a
+        set_politics = {
+            ruling_party = libertarian_socialist
+            elections_allowed = no
+        }
+        add_popularity = {
+            ideology = libertarian_socialist
+            popularity = 0.15
+        }
+        remove_every_minister = yes
+        add_ideas = {
+            PHI_Crisanto_Evangelista_hog_lib
+            PHI_Casto_Alejandrino_for_col
+            PHI_Herminegildo_Cruz_eco_col
+            PHI_Guillermo_Capadocia_sec_col
+        }
+        hidden_effect = {
+            set_country_flag = PHR_had_revolutionary_congress
+            set_country_flag = PHR_laborista_victory
+        }
+    }
+	option = { # Socialist
+        name = phr.3.b
+        set_politics = {
+            ruling_party = collectivist
+            elections_allowed = no
+        }
+        add_popularity = {
+            ideology = collectivist
+            popularity = 0.15
+        }
+        remove_every_minister = yes
+        add_ideas = {
+            PHI_Luis_Taruc_hog_col
+            PHI_Casto_Alejandrino_for_col
+            PHI_Herminegildo_Cruz_eco_col
+            PHI_Guillermo_Capadocia_sec_col
+        }
+        hidden_effect = {
+            set_country_flag = PHR_had_revolutionary_congress
+            set_country_flag = PHR_soyalista_victory
+        }
+    }
+    option = { # Vanguardist
+        name = phr.3.c
+        set_politics = {
+            ruling_party = vanguardist
+            elections_allowed = no
+        }
+        add_popularity = {
+            ideology = vanguardist
+            popularity = 0.15
+        }
+        remove_every_minister = yes
+        add_ideas = {
+            PHI_Pedro_Abad_Santos_hog_van
+            PHI_Casto_Alejandrino_for_col
+            PHI_Herminegildo_Cruz_eco_col
+            PHI_Guillermo_Capadocia_sec_col
+        }
+        hidden_effect = {
+            set_country_flag = PHR_had_revolutionary_congress
+            set_country_flag = PHR_kumonista_victory
+        }
     }
 }

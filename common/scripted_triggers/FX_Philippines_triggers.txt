@@ -1,8 +1,17 @@
-
 is_a_filipino_tag = {
     OR = {
         original_tag = PHI
         original_tag = PHR
+    }
+}
+
+PHI_is_socialist = {
+    custom_trigger_tooltip = {
+        tooltip = FX_is_socialist_tt
+        OR = {
+            has_socialist_government = yes
+            country_exists = PHR
+        }
     }
 }
 

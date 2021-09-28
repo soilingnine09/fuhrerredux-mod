@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ideas = {
 ##############
 # Country ideas (Chile) 
@@ -1427,4 +1428,1435 @@ ideas = {
 			}
 		}
 	}
+=======
+ideas = {
+##############
+# Country ideas (Chile) 
+##############
+	country = {
+
+		CHL_crumbling_government = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_crumbling_government"}
+			allowed = {
+			original_tag = "CHL"
+			}
+
+			picture = generic_disjointed_gov
+			modifier = {
+				political_power_factor = -0.5	
+			}
+		}
+
+		CHL_political_polarization = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_political_polarization"}
+			allowed = {
+			original_tag = "CHL"
+			}
+
+			picture = generic_volunteer_expedition_bonus
+			modifier = {
+				stability_factor = -0.3					
+			}
+		}
+
+		CHL_collapsed_economy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_collapsed_economy"}
+			allowed = {
+			original_tag = "CHL"
+			}
+
+			picture = generic_industrial_concern_1
+			modifier = {
+				consumer_goods_factor = 0.10
+				industrial_capacity_factory = -0.25
+			}	
+		}
+
+		CHL_reforming_government = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_reforming_government"}
+			allowed = {
+			original_tag = "CHL"
+			}
+
+			picture = generic_disjointed_gov
+			modifier = {
+				political_power_factor = -0.2				
+			}
+		}
+
+		CHL_political_instability = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_political_instability"}
+			allowed = {
+			original_tag = "CHL"
+			}
+
+			picture = generic_volunteer_expedition_bonus
+			modifier = {
+				political_power_factor = -0.15				
+			}
+		}
+
+		CHL_readjusted_plan = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_readjusted_plan"}
+			allowed = {
+			original_tag = "CHL"
+			}
+
+			picture = generic_goods_red_bonus
+			modifier = {
+				industrial_capacity_factory = 0.0125
+			}
+		}
+
+		CHL_solidary_labour = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_solidary_labour"}
+			allowed = {
+			original_tag = "CHL"
+			}
+
+			picture = generic_production_bonus
+			modifier = {
+				consumer_goods_factor = -0.01
+			}
+		}
+
+		CHL_paternal_state = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_paternal_state"}
+			allowed = {
+			original_tag = "CHL"
+			}
+
+			picture = general_staff
+			modifier = {
+				political_power_gain = 0.05	
+				stability_factor = 0.05	
+			}
+		}
+
+		CHL_paternal_regime = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_paternal_regime"}
+			allowed = {
+			original_tag = "CHL"
+			}
+
+			picture = general_staff
+			modifier = {
+				political_power_gain = 0.08
+				stability_factor = 0.1	
+			}
+		}
+
+		CHL_president_ibanez = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_president_ibanez"}
+			allowed = {
+			original_tag = "CHL"
+			}
+
+			picture = general_staff
+			modifier = {
+				political_power_gain = 0.25	
+				stability_factor = 0.1	
+				conscription = 0.02
+							}
+			research_bonus = {
+				land_doctrine = 0.05
+			}
+		}
+
+		CHL_guided_men = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_guided_men"}
+			allowed = {
+			original_tag = "CHL"
+			}
+
+			picture = generic_manpower_bonus
+			modifier = {
+				conscription = 0.01
+							}
+			research_bonus = {
+				land_doctrine = 0.05
+			}
+		}
+
+		CHL_content_elite = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_content_elite"}
+			allowed = {
+			original_tag = "CHL"
+			}
+
+			picture = ROM_king_carol_ii_hedonist
+			modifier = {
+				army_org_factor = 0.08
+			}
+		}
+
+		CHL_economic_reestructuring = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_economic_reestructuring"}
+			allowed = {
+			original_tag = "CHL"
+			}
+
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				industrial_capacity_factory = -0.1				
+			}
+		}
+
+		CHL_economic_reforming = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_economic_reforming"}
+			allowed = {
+			original_tag = "CHL"
+			}
+
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				consumer_goods_factor = -0.02
+				industrial_capacity_factory = -0.1				
+			}
+		}
+
+		CHL_peoples_economy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_peoples_economy"}
+			allowed = {
+			original_tag = "CHL"
+			}
+
+			picture = generic_production_bonus
+			modifier = {
+				industrial_capacity_factory = 0.05				
+			}
+		}
+
+		CHL_popular_economy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_popular_economy"}
+			allowed = {
+			original_tag = "CHL"
+			}
+
+			picture = generic_production_bonus
+			modifier = {
+				industrial_capacity_factory = 0.08
+				consumer_goods_factor = -0.08				
+			}
+		}
+
+		CHL_chilean_valkism_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_chilean_valkism_idea"}
+			allowed = {
+			original_tag = "CHL"
+			}
+
+			picture = generic_valkist_support
+
+
+			modifier = {
+				political_power_gain = 0.1	
+				war_support_factor = 0.08	
+			}
+		}
+
+		CHL_classes_united = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_classes_united"}
+			allowed = {
+			original_tag = "CHL"
+			}
+
+			picture = FRA_national_mobilization_focus
+			modifier = {
+				industrial_capacity_factory = 0.12
+				consumer_goods_factor = -0.1				
+			}
+		}
+
+		CHL_chilean_race = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_chilean_race"}
+			allowed = {
+			original_tag = "CHL"
+			}
+
+			picture = generic_manpower_bonus
+			modifier = {
+				conscription = 0.03
+			}
+		}
+
+		CHL_warrior_legacy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_warrior_legacy"}
+			allowed = {
+			original_tag = "CHL"
+			}
+
+			picture = triumphant_will
+			modifier = {
+				land_reinforce_rate = 0.1
+				training_time_army = -0.05
+				army_morale_factor = 0.12
+			}
+		}
+
+		CHL_roto_valkism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_roto_valkism"}
+			allowed = {
+			original_tag = "CHL"
+			}
+
+			picture = generic_valkist_support
+			modifier = {
+				political_power_gain = 0.1	
+				war_support_factor = 0.15	
+				army_core_attack_factor = 0.1
+			}
+		}
+
+		CHL_chilean_nation = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_chilean_nation"}
+			allowed = {
+			original_tag = "CHL"
+			}
+
+			picture = triumphant_will
+			modifier = {
+				conscription = 0.06
+				land_reinforce_rate = 0.12
+				training_time_army = -0.075
+				army_morale_factor = 0.15			
+			}
+		}
+
+		CHL_the_new_model = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_the_new_model"}
+			allowed = {
+			original_tag = "CHL"
+			}
+
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05	
+			}
+		}
+
+		CHL_radical_welfare = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_radical_welfare"}
+			allowed = {
+			original_tag = "CHL"
+			}
+
+			picture = generic_agrarian_society
+			modifier = {
+				monthly_population = 0.05
+				supply_consumption_factor = -0.05	
+			}
+		}
+
+		CHL_moderate_reforms = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_moderate_reforms"}
+			allowed = {
+			original_tag = "CHL"
+			}
+
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.1	
+	
+			}
+		}
+
+		CHL_balanced_budget = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_balanced_budget"}
+			allowed = {
+			original_tag = "CHL"
+			}
+
+			picture = generic_goods_red_bonus
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.04
+				industry_repair_factor = 0.04	
+			}
+		}
+
+		CHL_liberalized_economy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_liberalized_economy"}
+			allowed = {
+			original_tag = "CHL"
+			}
+
+			picture = idea_generic_flexible_foreign_policy2
+			modifier = {
+				consumer_goods_factor = -0.025
+				trade_opinion_factor = 0.3	
+			}
+		}
+		CHL_foreign_investors = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_foreign_investors"}
+			picture = generic_production_bonus
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		CHL_socialized_society = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_socialized_society"}
+			allowed = {
+			original_tag = "CHL"
+			}
+
+			picture = socialist_science_focus
+			modifier = {
+				consumer_goods_factor = -0.05
+				supply_consumption_factor = -0.05	
+			}
+		}
+
+		CHL_agrarian_reform = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_agrarian_reform"}
+			allowed = {
+			original_tag = "CHL"
+			}
+
+			picture = idea_generic_agrarian_reform
+			modifier = {
+				global_building_slots_factor = 0.10  	
+				conversion_cost_civ_to_mil_factor = -0.1
+			}
+		}
+
+		CHL_new_republic = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_new_republic"}
+			allowed = {
+			original_tag = "CHL"
+			}
+
+			picture = generic_pp_unity_bonus
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				consumer_goods_factor = -0.04
+				research_speed_factor = 0.0355	
+			}
+		}
+	}
+	### Head of Government
+	head_of_government = {
+		CHL_Carlos_Diaz_Loyola_hog_van = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				vanguardist
+				hog_red_chairmen
+			}
+		}
+		CHL_Carlos_Labarca_hog_van = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				vanguardist
+				hog_naive_optimist
+			}
+		}
+		CHL_Clotario_Blest_Riffo_hog_col = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				collectivist
+				hog_ambitious_union_boss
+			}
+		}
+		CHL_Luis_Alberto_Corvalan_Lepe_hog_col = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				collectivist
+				hog_corporate_suit
+			}
+		}
+		CHL_Luis_Emilio_Recabarren_hog_col = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				collectivist
+				hog_local_tyrant
+			}
+		}
+		CHL_Oscar_Schnake_hog_lib = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				libertarian_socialist
+				hog_naive_optimist
+			}
+		}
+		CHL_Salvador_Allende_hog_lib = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				libertarian_socialist
+				hog_happy_amateur
+			}
+		}
+		CHL_Marmaduke_Grove_hog_sde = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_democrat
+				hog_pragmatic_statesman
+			}
+		}
+		CHL_Jeronimo_Mendez_Arancibia_hog_sde = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_democrat
+				hog_silent_workhorse
+			}
+		}
+		CHL_Juan_Antonio_Rios_hog_sde = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_democrat
+				hog_accomplished_diplomat
+			}
+		}
+		CHL_Juan_Esteban_Montero_hog_sli = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_liberal
+				hog_ambitious_union_boss
+			}
+		}
+		CHL_Arturo_Alessandri_Palma_hog_sli = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_liberal
+				hog_naive_optimist
+			}
+		}
+		CHL_Emiliano_Figueroa_Larrain_hog_mli = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				market_liberal
+				hog_political_protege
+			}
+		}
+		CHL_Guillermo_Izquierdo_hog_sco = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				social_conservative
+				hog_democratic_tyrant
+			}
+		}
+		CHL_Ariosto_Herrera_Ramirez_hog_pau = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_accomplished_diplomat
+			}
+		}
+		CHL_Carlos_Ibanez_del_Campo_hog_pau = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_charismatic_charmer
+			}
+		}
+		CHL_Adolfo_Matthei_Schwarzenberg_hog_npo = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				national_populist
+				hog_determined_populist
+			}
+		}
+		CHL_Francisco_Javier_Diaz_Valderrama_hog_val = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_hog = no }
+			cancel_if_invalid = no
+			traits = {
+				head_of_government
+				valkist
+				hog_local_tyrant
+			}
+		}
+	}
+	### Foreign Minister
+	foreign_minister = {
+		CHL_Carlos_Diaz_Loyola_for_van = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				vanguardist
+				for_radical_among_moderates
+			}
+		}
+		CHL_Jose_Santos_Salas_Morales_for_van = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				vanguardist
+				for_apologetic_clerk
+			}
+		}
+		CHL_Bernardo_Ibanez_Aguila_for_col = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				collectivist
+				for_great_compromiser
+			}
+		}
+		CHL_Luis_Arteaga_Garcia_for_col = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				collectivist
+				for_relations_expert
+			}
+		}
+		CHL_Fernando_Brown_Morales_for_lib = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				libertarian_socialist
+				for_biased_intellectual
+			}
+		}
+		CHL_Gabriela_Mandujano_for_lib = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				libertarian_socialist
+				for_ideological_crusader
+			}
+		}
+		CHL_Enrique_Victor_Aquiles_Balmaceda_Toro_for_sde = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_democrat
+				for_foreign_sympathizer
+			}
+		}
+		CHL_J_Fernandez_y_Fernandez_for_sde = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_democrat
+				for_general_staffer
+			}
+		}
+		CHL_Luis_Alamos_Barros_for_sde = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				for_ideological_crusader
+			}
+		}
+		CHL_Manuel_Mora_Miranda_for_sde = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_democrat
+				for_apologetic_clerk
+			}
+		}
+		CHL_JRGuiterrez_Allende_for_sli = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_liberal
+				for_relations_expert
+			}
+		}
+		CHL_Miguel_Cruchaga_Tocornal_for_mli = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				market_liberal
+				for_world_patrician
+			}
+		}
+		CHL_Francisco_O'Ryan_Orrego_for_sco = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_conservative
+				for_moderate_among_radicals
+			}
+		}
+		CHL_Javier_Angel_Figueroa_for_sco = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				social_conservative
+				for_the_cloak_n_dagger_schemer
+			}
+		}
+		CHL_Emilio_Bello_Codesido_for_ade = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				authoritarian_democrat
+				for_iron_fisted_brute
+			}
+		}
+		CHL_Luis_Altamirano_Talavera_for_pau = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_great_compromiser
+			}
+		}
+		CHL_Fernando_Guarello_Fitz_Henry_for_npo = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				foreign_minister
+				national_populist
+				for_ideological_crusader
+			}
+		}
+	}
+	### Economy Minister
+	economy_minister = {
+		CHL_Victor_Contreras_Tapia_eco_van = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				vanguardist
+				eco_administrative_genius
+			}
+		}
+		CHL_Augustin_Edwards_eco_col = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				collectivist
+				eco_imbedded_unioneer
+			}
+		}
+		CHL_Clotario_Blest_Riffo_eco_col = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				collectivist
+				eco_industrialiser
+			}
+		}
+		CHL_Eulogia_Roman_eco_col = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				collectivist
+				eco_planned_economy_proponent
+			}
+		}
+		CHL_Aurelio_Celedon_Palma_eco_lib = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				libertarian_socialist
+				eco_reformer
+			}
+		}
+		CHL_Carlos_Garcia_Palacios_eco_sde = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_democrat
+				eco_trade_proponent
+			}
+		}
+		CHL_Juan_Rios_Morales_eco_sde = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_democrat
+				eco_construction_magnate
+			}
+		}
+		CHL_Manuel_C_Pereira_eco_sde = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_democrat
+				eco_balanced_budget_economy
+			}
+		}
+		CHL_Arturo_Maschke_eco_sli = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_liberal
+				eco_mixed_economy
+			}
+		}
+		CHL_Cristobal_Saenz_Cerda_eco_mli = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				market_liberal
+				eco_national_liberal
+			}
+		}
+		CHL_Francisco_O'Ryan_Orrego_eco_sco = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_conservative
+				eco_devoted_monopoly_buster
+			}
+		}
+		CHL_Gustavo_Ross_Santa_Maria_eco_sco = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_conservative
+				eco_industrialiser
+			}
+		}
+		CHL_Julio_Perez_Canto_eco_sco = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				social_conservative
+				eco_reformer
+			}
+		}
+		CHL_Pedro_Pablo_Dartnell_Encina_eco_ade = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				authoritarian_democrat
+				eco_resource_industrialist
+			}
+		}
+		CHL_Ramon_Callis_eco_pau = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_laissez_faire_capitalist
+			}
+		}
+		CHL_Evaldo_Klein_Doener_eco_npo = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				economy_minister
+				national_populist
+				eco_military_entrepreneur
+			}
+		}
+	}
+	### Security Minister
+	security_minister = {
+		CHL_Carlos_Labarca_sec_van = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				vanguardist
+				sec_health_and_safety
+			}
+		}
+		CHL_Carlos_Gregorio_Davila_Espinoza_sec_col = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				collectivist
+				sec_prince_of_terror
+			}
+		}
+		CHL_Alberto_Cabero_Diaz_sec_lib = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				libertarian_socialist
+				sec_efficient_sociopath
+			}
+		}
+		CHL_Max_Westenhoefer_sec_lib = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				libertarian_socialist
+				sec_driven_recruiter
+			}
+		}
+		CHL_Eduardo_Nicanor_Frei_Montalva_sec_sde = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_democrat
+				sec_compassionate_gentleman
+			}
+		}
+		CHL_Manuel_Salinas_sec_sde = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_democrat
+				sec_efficient_sociopath
+			}
+		}
+		CHL_Carlos_Valdovinos_Valdovinos_sec_sli = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_liberal
+				sec_silent_lawyer
+			}
+		}
+		CHL_Manuel_Rivas_Vicuna_sec_sco = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				social_conservative
+				sec_secret_police_chief
+			}
+		}
+		CHL_Carlos_Vergara_Montero_sec_ade = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_prince_of_terror
+			}
+		}
+		CHL_Carlos_Keller_Rueff_sec_pau = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_media_magnate
+			}
+		}
+		CHL_Francisco_Javier_Diaz_Valderrama_sec_npo = {
+			allowed = { original_tag = CHL }
+			available = { can_replace_minister = no }
+			cancel_if_invalid = no
+			traits = {
+				security_minister
+				national_populist
+				sec_regionalist
+			}
+		}
+	}
+	### Chief of Staff
+	chief_of_staff = {
+		CHL_Gustavo_Silva_cos_col = {
+			allowed = { original_tag = CHL }
+			available = { has_socialist_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_staff
+				collectivist
+				cos_school_of_psychology
+			}
+		}
+		CHL_Ernesto_M_Orlando_cos_sde = {
+			allowed = { original_tag = CHL }
+			available = { has_elected_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_staff
+				social_democrat
+				cos_school_of_psychology
+			}
+		}
+		CHL_CJ_de_la_Motte_cos_sli = {
+			allowed = { original_tag = CHL }
+			available = { has_elected_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_staff
+				social_liberal
+				cos_school_of_mass_combat
+			}
+		}
+		CHL_Carlos_Puga_Monsalve_cos_sli = {
+			allowed = { original_tag = CHL }
+			available = { has_elected_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_staff
+				social_liberal
+				cos_school_of_manoeuvre
+			}
+		}
+		CHL_Arturo_Espinoza_Mujica_cos_sco = {
+			allowed = { original_tag = CHL }
+			available = { has_elected_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_staff
+				social_conservative
+				cos_school_of_fire_support
+			}
+		}
+		CHL_Dario_Cellejas_Rojas_cos_sco = {
+			allowed = { original_tag = CHL }
+			available = { has_elected_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_staff
+				social_conservative
+				cos_school_of_defence
+			}
+		}
+		CHL_Luis_Vidal_Vargas_cos_sco = {
+			allowed = { original_tag = CHL }
+			available = { has_elected_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_staff
+				social_conservative
+				cos_school_of_commando_operations
+			}
+		}
+		CHL_Raul_Array_Stiglich_cos_sco = {
+			allowed = { original_tag = CHL }
+			available = { has_elected_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_staff
+				social_conservative
+				cos_school_of_fire_support
+			}
+		}
+		CHL_Arturo_Puga_Osorio_cos_ade = {
+			allowed = { original_tag = CHL }
+			available = { has_authoritarian_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_staff
+				authoritarian_democrat
+				cos_school_of_psychology
+			}
+		}
+		CHL_E_Novoa_Fuentes_cos_ade = {
+			allowed = { original_tag = CHL }
+			available = { has_authoritarian_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_staff
+				authoritarian_democrat
+				cos_school_of_fire_support
+			}
+		}
+		CHL_Francisco_Javier_Diaz_Valderrama_cos_npo = {
+			allowed = { original_tag = CHL }
+			available = { has_authoritarian_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_staff
+				national_populist
+				cos_school_of_defence
+			}
+		}
+	}
+	### Chief of Army
+	chief_of_army = {
+		CHL_Julio_Allard_Pinto_carm_col = {
+			allowed = { original_tag = CHL }
+			available = { has_socialist_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_staff
+				collectivist
+				carm_doctrine_of_autonomy
+			}
+		}
+		CHL_Salvador_Arron_Galvez_carm_sde = {
+			allowed = { original_tag = CHL }
+			available = { has_elected_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_staff
+				social_democrat
+				carm_guns_and_butter_doctrine
+			}
+		}
+		CHL_Carlos_Fuentes_Rabe_carm_sli = {
+			allowed = { original_tag = CHL }
+			available = { has_elected_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_staff
+				social_liberal
+				carm_commando_doctrine
+			}
+		}
+		CHL_E_Novoa_Fuentes_carm_sli = {
+			allowed = { original_tag = CHL }
+			available = { has_elected_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_staff
+				social_liberal
+				carm_decisive_battle_doctrine
+			}
+		}
+		CHL_Arturo_Espinoza_Mujica_carm_sco = {
+			allowed = { original_tag = CHL }
+			available = { has_elected_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_staff
+				social_conservative
+				carm_armoured_spearhead_doctrine
+			}
+		}
+		CHL_Oscar_Izurieta_Molina_carm_sco = {
+			allowed = { original_tag = CHL }
+			available = { has_elected_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_staff
+				social_conservative
+				carm_doctrine_of_autonomy
+			}
+		}
+		CHL_Juan_Pablo_Bennett_Argandona_carm_ade = {
+			allowed = { original_tag = CHL }
+			available = { has_authoritarian_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_staff
+				authoritarian_democrat
+				carm_guns_and_butter_doctrine
+			}
+		}
+		CHL_Rafael_Fernandez_Reyes_carm_ade = {
+			allowed = { original_tag = CHL }
+			available = { has_authoritarian_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_staff
+				authoritarian_democrat
+				carm_commando_doctrine
+			}
+		}
+		CHL_Luis_Otero_Mujica_carm_pau = {
+			allowed = { original_tag = CHL }
+			available = { has_authoritarian_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_staff
+				paternal_autocrat
+				carm_doctrine_of_autonomy
+			}
+		}
+		CHL_Francisco_Javier_Diaz_Valderrama_carm_npo = {
+			allowed = { original_tag = CHL }
+			available = { has_authoritarian_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_staff
+				national_populist
+				carm_elastic_defence_doctrine
+			}
+		}
+	}
+	### Chief of Navy
+	chief_of_navy = {
+		CHL_Gustavo_Silva_cnav_col = {
+			allowed = { original_tag = CHL }
+			available = { has_socialist_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_navy
+				collectivist
+				cnav_indirect_approach_doctrine
+			}
+		}
+		CHL_Juan_Rodriguez_cnav_sde = {
+			allowed = { original_tag = CHL }
+			available = { has_elected_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_navy
+				social_democrat
+				cnav_open_seas_doctrine
+			}
+		}
+		CHL_Julio_Gerken_Mahn_cnav_sde = {
+			allowed = { original_tag = CHL }
+			available = { has_elected_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_navy
+				social_democrat
+				cnav_base_control_doctrine
+			}
+		}
+		CHL_Luis_Barros_Borgono_cnav_sde = {
+			allowed = { original_tag = CHL }
+			available = { has_elected_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_navy
+				social_democrat
+				cnav_indirect_approach_doctrine
+			}
+		}
+		CHL_CJ_de_la_Motte_cnav_sli = {
+			allowed = { original_tag = CHL }
+			available = { has_elected_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_navy
+				social_liberal
+				cnav_power_projection_doctrine
+			}
+		}
+		CHL_Francisco_O'Ryan_Orrego_cnav_sco = {
+			allowed = { original_tag = CHL }
+			available = { has_elected_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_navy
+				social_conservative
+				cnav_base_control_doctrine
+			}
+		}
+		CHL_Gaston_Kulzcewski_Garcia_cnav_sco = {
+			allowed = { original_tag = CHL }
+			available = { has_elected_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_navy
+				social_conservative
+				cnav_base_control_doctrine
+			}
+		}
+		CHL_Carlos_Froedden_Lorenzen_cnav_ade = {
+			allowed = { original_tag = CHL }
+			available = { has_authoritarian_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_navy
+				authoritarian_democrat
+				cnav_power_projection_doctrine
+			}
+		}
+		CHL_Francisco_Nef_Jara_cnav_ade = {
+			allowed = { original_tag = CHL }
+			available = { has_authoritarian_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_navy
+				authoritarian_democrat
+				cnav_indirect_approach_doctrine
+			}
+		}
+		CHL_Vicente_Merino_Bielich_cnav_ade = {
+			allowed = { original_tag = CHL }
+			available = { has_authoritarian_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_navy
+				authoritarian_democrat
+				cnav_decisive_battle_doctrine
+			}
+		}
+		CHL_Hernan_Sarratea_cnav_pau = {
+			allowed = { original_tag = CHL }
+			available = { has_authoritarian_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_navy
+				paternal_autocrat
+				cnav_open_seas_doctrine
+			}
+		}
+	}
+	### Chief of Air Force
+	chief_of_air_force = {
+		CHL_Diego_Aracena_cair_sde = {
+			allowed = { original_tag = CHL }
+			traits = {
+				chief_of_air_force
+				social_democrat
+				cair_air_superiority_doctrine
+			}
+		}
+		CHL_Dario_Mujica_Gamboa_cair_sli = {
+			allowed = { original_tag = CHL }
+			traits = {
+				chief_of_air_force
+				social_liberal
+				cair_battlefield_support_doctrine
+			}
+		}
+		CHL_Jose_Luis_Sanchez_Besa_cair_sli = {
+			allowed = { original_tag = CHL }
+			traits = {
+				chief_of_air_force
+				social_liberal
+				cair_carpet_bombing_doctrine
+			}
+		}
+		CHL_Raul_Gonzalez_Nolle_cair_sli = {
+			allowed = { original_tag = CHL }
+			traits = {
+				chief_of_air_force
+				social_liberal
+				cair_naval_aviation_doctrine
+			}
+		}
+		CHL_Ismael_Sarazua_Teran_cair_sco = {
+			allowed = { original_tag = CHL }
+			traits = {
+				chief_of_air_force
+				social_conservative
+				cair_the_red_baron
+			}
+		}
+		CHL_Manuel_Tovarias_cair_sco = {
+			allowed = { original_tag = CHL }
+			traits = {
+				chief_of_air_force
+				social_conservative
+				cair_vertical_envelopment_doctrine
+			}
+		}
+		CHL_Ariosto_Herrera_Ramirez_cair_pau = {
+			allowed = { original_tag = CHL }
+			available = { has_authoritarian_government = yes }
+			cancel_if_invalid = yes
+			traits = {
+				chief_of_air_force
+				paternal_autocrat
+				cair_air_superiority_doctrine
+			}
+		}
+	}
+>>>>>>> 28027cb15ba1599f55214433bdaf9352bb864bcc
 }

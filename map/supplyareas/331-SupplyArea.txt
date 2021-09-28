@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 supply_area={
 	id=331
@@ -7,3 +8,14 @@ supply_area={
 		287 619 975 1030 
 	}
 }
+=======
+
+supply_area={
+	id=331
+	name="SUPPLYAREA_331"
+	value=1
+	states={
+		287 619 975 
+	}
+}
+>>>>>>> 28027cb15ba1599f55214433bdaf9352bb864bcc
