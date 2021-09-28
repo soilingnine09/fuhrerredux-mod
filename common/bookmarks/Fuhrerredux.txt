@@ -110,6 +110,22 @@ bookmarks = {
             history = "OTHER_FUHRERREDUX_DESC"
         }
 
+        "HOL" = {
+            history = "HOL_FUHRERREDUX_DESC"
+            ideology = national_populist
+            minor = yes
+            ideas = {
+                HOL_revaunchist_state
+                HOL_dutch_german_economic_cooperation
+                HOL_unrecognized_government
+            }
+            focuses = {
+                HOL_improving_our_defenses
+                HOL_defending_holland
+                HOL_the_princes_guiding_hand
+            }
+        }
+
         ### Minors
 		"CRU" = {
             history = "CRU_FUHRERREDUX_DESC"

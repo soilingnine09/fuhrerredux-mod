@@ -1,5 +1,9 @@
 focus_tree = {
     id = FR_Dutch_State_Bernhard
+    country = {
+        factor = 0
+    }
+    default = no
 
     continuous_focus_position = { x = 500 y = 1100 }
 

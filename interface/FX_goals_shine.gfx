@@ -34,10 +34,10 @@ spriteTypes = {
 
     spriteType = {
         name = "GFX_goal_generic_war_in_the_plate_shine"
-        texturefile = "gfx/interface/goals/generic_war_in_the_plate.tga"
+        texturefile = "gfx/interface/goals/goal_generic_war_in_the_plate.tga"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/generic_war_in_the_plate.tga"
+            animationmaskfile = "gfx/interface/goals/goal_generic_war_in_the_plate.tga"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = -90.0
             animationlooping = no
@@ -50,7 +50,7 @@ spriteTypes = {
         }
 
         animation = {
-            animationmaskfile = "gfx/interface/goals/generic_war_in_the_plate.tga"
+            animationmaskfile = "gfx/interface/goals/goal_generic_war_in_the_plate.tga"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = 90.0
             animationlooping = no

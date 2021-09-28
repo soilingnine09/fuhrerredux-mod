@@ -7,6 +7,7 @@ focus_tree = {
             tag = HOL
         }
     }
+    default = no
 
     continuous_focus_position = { x = 300 y = 1100 }
 
