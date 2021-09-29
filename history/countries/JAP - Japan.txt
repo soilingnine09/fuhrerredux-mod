@@ -114,8 +114,6 @@ set_popularities = {
     valkist = 3
 }
 
-load_focus_tree = FR_JAP
-mark_focus_tree_layout_dirty = yes
 give_guarantee = RUS
 
 create_country_leader = {

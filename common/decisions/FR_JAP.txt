@@ -1,6 +1,6 @@
 JAP_Washington_naval_treaty = {
 	####Addition Test####
-	build_the_empire_test = {
+	load_focus_tree_test = {
 		visible = {
 			tag = JAP 
 			always = yes
@@ -8,9 +8,10 @@ JAP_Washington_naval_treaty = {
 		available = {
 			always = yes 
 		}
-		cost = 50
+		cost = 0
 		complete_effect = {
-			JAP = { create_faction = "Greater East Asian Co-Prosperity Sphere" }
+			JAP = { load_focus_tree = FR_JAP_Shogun }
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 	####Renounce the Treaty cos fuck US####
