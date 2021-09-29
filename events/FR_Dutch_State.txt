@@ -556,3 +556,222 @@ country_event = {
         }
     }
 }
+
+country_event = { # Belgian Civil War
+    id = dutchstate.24
+    title = dutchstate.24
+    desc = dutchstate.24
+    picture = GFX_report_event_french_resistance_02
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.24.a
+        ai_chance = {
+            factor = 80
+        }
+        hidden_effect = {
+            country_event = { id = dutchstate.25 days = 7 }
+        }
+    }
+    option = {
+        name = dutchstate.24.b
+        ai_chance = {
+            factor = 2
+        }
+        34 = {
+            OWNER = {
+                HOL = {
+                    declare_war_on = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            }
+        }
+        6 = {
+            OWNER = {
+                HOL = {
+                    declare_war_on = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            }
+        }
+        FRA = { 
+            country_event = { id = dutchstate.27 days = 1 }
+        }
+    }
+    option = {
+        name = dutchstate.24.c
+        ai_chance = {
+            factor = 20
+        }
+        add_political_power = -20
+    }
+}
+
+country_event = { # March to Zeuwss-Vlaanderen and Limburg
+    id = dutchstate.25
+    title = dutchstate.25.t
+    desc = dutchstate.25.d
+    picture = GFX_report_event_french_resistance_02
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            34 = {
+                OWNER = {
+                    country_event = { id = dutchstate.26 days = 1 }
+                }
+            }
+            6 = {
+                OWNER = {
+                    country_event = { id = dutchstate.26 days = 1 }
+                }
+            }
+            ROOT = {
+                transfer_state = 866
+                transfer_state = 867
+            }
+        }
+    }
+
+    option = {
+        name = dutchstate.25.a
+        increase_ruling_party_popularity_by_10 = yes
+    }
+}
+
+country_event = { # BE: Dutch marches to Zeuwss-Vlaanderen and Limburg
+    id = dutchstate.26
+    title = dutchstate.26.t
+    desc = dutchstate.26.d
+    picture = GFX_report_event_french_resistance_02
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.26.a
+        add_political_power = -10
+    }
+}
+
+country_event = { # French Intervention of the Dutch Declaration of War
+    id = dutchstate.27
+    title = dutchstate.27.t
+    desc = dutchstate.27.d
+    picture = GFX_report_event_french_resistance_02
+    is_triggered_only = yes
+
+    trigger = {
+        tag = FRA
+        NOT = {
+            has_war_with = HOL
+            has_war_with = GER
+        }
+    }
+
+    option = {
+        name = dutchstate.27.a
+        ai_chance = {
+            factor = 80
+        }
+        declare_war_on = {
+            tag = HOL
+            type = annex_everything
+        }
+    }
+    option = {
+        name = dutchstate.27.b
+        ai_chance = {
+            factor = 20
+            modifier = {
+                factor = 0.8
+                has_war_with = ENG
+            }
+            modifier = {
+                factor = 0.8
+                has_war_with = ITA
+            }
+            modifier = {
+                factor = 0.8
+                has_war_with = USA
+            }
+        }
+        add_political_power = -50
+    }
+}
+
+country_event = {
+    id = dutchstate.28
+    title = dutchstate.28.t
+    desc = dutchstate.28.d
+    picture = GFX_report_event_hol_prins_bernhard
+    fire_only_once = yes
+
+    trigger = {
+        tag = GER
+        date > 1937.6.10
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = dutchstate.28.a
+        hidden_effect = {
+            HOL = { country_event = { id = dutchstate.29 days = 7 } }
+        }
+    }
+}
+
+country_event = {
+    id = dutchstate.29
+    title = dutchstate.29.t
+    desc = dutchstate.29.d
+    picture = GFX_report_event_germany_politician_handshake
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.29.a
+        random_unit_leader = {
+            limit = { id = 3 }
+            set_nationality = HOL
+        }
+        hidden_effect = {
+            country_event = { id = dutchstate.30 days = 900 }
+        }
+    }
+}
+
+country_event = {
+    id = dutchstate.30
+    title = dutchstate.30.t
+    desc = dutchstate.30.d
+    picture = GFX_report_event_germany_politician_handshake
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.39.a
+        army_experience = 30
+        GER = { country_event = { id = dutchstate.31 days = 1 } }
+    }
+}
+
+country_event = {
+    id = dutchstate.31
+    title = dutchstate.31.t
+    desc = dutchstate.31.d
+    picture = GFX_report_event_germany_politician_handshake
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.31.a
+        army_experience = 30
+        random_unit_leader = {
+            limit = { id = 3 }
+            set_nationality = GER
+        }
+    }
+}
