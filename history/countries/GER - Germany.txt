@@ -96,6 +96,7 @@ add_ideas = {
 	party_pop_0_40
 	GER_divided_govt
 	GER_naval_treaty
+	HOL_dutch_german_economic_cooperation
 	#GER_army_treaty
 	#GER_versialles_no_good
 	low_economic_mobilisation 

@@ -1,0 +1,777 @@
+add_namespace = dutchstate
+
+country_event = { # Intro Event
+    id = dutchstate.0
+    title = dutchstate.0.t
+    desc = dutchstate.0.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.0.a
+    }
+}
+
+country_event = { # GER - Request to Embargo 
+    id = dutchstate.1
+    title = dutchstate.1.t
+    desc = dutchstate.1.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.1.a
+        add_political_power = 100
+        ai_chance = {
+            factor = 90
+        }
+        hidden_effect = {
+            HOL = {
+                var:tag_to_embargo = {
+                    embargo_ROOT = yes
+                }
+                country_event = { id = dutchstate.2 days = 1 } 
+            }
+        }
+    }
+    option = {
+        name = dutchstate.1.b
+        decrease_ruling_party_popularity_by_15 = yes
+        add_stability = -0.15
+        hidden_effect = {
+            HOL = { 
+                country_event = { id = dutchstate.3 days = 1 }
+            }
+        }
+    }
+}
+
+country_event = { # Dutch Embargo
+    id = dutchstate.2
+    title = dutchstate.2.t
+    desc = dutchstate.2.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.2.a
+        ai_chance = {
+            factor = 10
+        }
+        add_political_power = 100
+        hidden_effect = {
+            var:tag_to_embargo = {
+                embargo_ROOT = yes
+            }
+            clear_variable = tag_to_embargo
+            GER = { clear_variable = tag_to_embargo }
+        }
+    }
+}
+
+country_event = { # No Embargo
+    id = dutchstate.3
+    title = dutchstate.3.t
+    desc = dutchstate.3.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.3.a
+        hidden_effect = {
+            HOL = { clear_variable = tag_to_embargo }
+        }
+    }
+}
+
+country_event = {
+    id = dutchstate.4
+    title = dutchstate.4.t
+    desc = dutchstate.4.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.4.a
+        add_political_power = -10
+    }
+}
+
+country_event = { # Request Trade
+    id = dutchstate.5
+    title = dutchstate.5.t
+    desc = dutchstate.5.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    option = { # Yes
+        name = dutchstate.5.a
+        ai_chance = {
+            factor = 80
+        }
+        add_offsite_building = {
+            type = industrial_complex
+            level = 2
+        }
+        FROM = {
+            country_event = { id = dutchstate.6 hours = 8 }
+        }
+    }
+    option = { # No
+        name = dutchstate.5.b
+        ai_chance = {
+            factor = 20
+        }
+        add_political_power = -10
+        FROM = {
+            country_event = { id = dutchstate.7 hours = 8 }
+        }
+    }
+}
+
+country_event = { # Accepted Trade
+    id = dutchstate.6
+    title = dutchstate.6.t
+    desc = dutchstate.6.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.6.a
+        if = {
+            limit = {
+                FROM = { tag = SWE }
+            }
+            add_resource = {
+                type = steel
+                amount = 20
+                state = 7
+            }
+        }
+        else_if = {
+            limit = {
+                FROM = { tag = TUR }
+            }
+            add_resource = {
+                type = chromium
+                amount = 20
+                state = 7
+            }
+        }
+        else_if = {
+            limit = {
+                FROM = { tag = MEX }
+            }
+            add_resource = {
+                type = oil
+                amount = 20
+                state = 7
+            }
+        }
+        else_if = {
+            limit = {
+                FROM = { tag = COL }
+            }
+            add_ideas = HOL_coffee_imports
+        }
+        else_if = {
+            limit = {
+                FROM = { tag = INS }
+            }
+            add_resource = {
+                type = rubber
+                amount = 20
+                state = 7
+            }
+        }
+        else_if = {
+            limit = {
+                FROM = { tag = PHI }
+            }
+            add_resource = {
+                type = rubber
+                amount = 20
+                state = 7
+            }
+        }
+    }
+}
+
+country_event = { # Refused Trade
+    id = dutchstate.7
+    title = dutchstate.7.t
+    desc = dutchstate.7.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.7.a
+        add_political_power = -5
+    }
+}
+
+country_event = { # Intel Exchange
+    id = dutchstate.8
+    title = dutchstate.8.t
+    desc = dutchstate.8.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.8.a
+        add_ideas = HOL_intelligence_exchange
+        FROM = {
+            country_event = { id = dutchstate.9 days = 2 }
+        }
+    }
+    option = {
+        name = dutchstate.8.b
+        FROM = {
+            country_event = { id = dutchstate.10 days = 2 }
+        }
+    }
+}
+
+country_event = { # GER accepts
+    id = dutchstate.9
+    title = dutchstate.9.t
+    desc = dutchstate.9.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.9.a
+        add_ideas = HOL_intelligence_exchange
+    }
+
+}
+
+country_event = { # GER no accept
+    id = dutchstate.10
+    title = dutchstate.10.t
+    desc = dutchstate.10.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.10.a
+    }
+}
+
+country_event = { # BEL - Resistance in Dutch Provinces
+    id = dutchstate.11
+    title = dutchstate.11.t
+    desc = dutchstate.11.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            HOL = { country_event = dutchstate.13 }
+        }
+    }
+
+    option = {
+        name = dutchstate.11.a
+        hidden_effect = {
+            country_event = { id = dutchstate.12 days = 7 }
+        }
+        add_ideas = HOL_dutch_resistance
+        every_owned_state = {
+            limit = {
+                is_controlled_by = BEL
+                OR = {
+                    state = 866
+                    state = 867
+                }
+            }
+            add_dynamic_modifier = {
+                modifier = HOL_dutch_resistance_in_belgium
+            }
+        }
+    }
+}
+
+country_event = { # 
+    id = dutchstate.12
+    title = dutchstate.12.t
+    desc = dutchstate.12.d
+    picture = GFX_report_event_hol_prins_bernhard
+    
+    trigger = {
+        tag = BEL
+        has_idea = HOL_dutch_resistance
+    }
+
+    mean_time_to_happen = {
+        days = 14
+    }
+
+    option = {
+        name = dutchstate.12.a
+        add_political_power = -20
+        random_list = {
+            70 = { country_event = { id = dutchstate.15 days = 2 } }
+            30 = { country_event = { id = dutchstate.14 days = 2 } }
+        }
+    }
+    option = {
+        name = dutchstate.12.b
+        add_political_power = -50
+        random_list = {
+            50 = { country_event = { id = dutchstate.15 days = 2 } }
+            50 = { country_event = { id = dutchstate.14 days = 2 } }
+        }
+    }
+}
+
+country_event = { # Resistance in Belgium
+    id = dutchstate.13
+    title = dutchstate.13.t
+    desc = dutchstate.13.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.13.a
+        add_political_power = 100
+    }
+}
+
+country_event = { # Resistance Suppressed
+    id = dutchstate.14
+    title = dutchstate.14.t
+    desc = dutchstate.14.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            HOL = {
+                country_event = { id = dutchstate.16 hours = 2 }
+            }
+        }
+    }
+
+    option = {
+        name = dutchstate.14.a
+        remove_ideas = HOL_dutch_resistance
+        every_owned_state = {
+            limit = {
+                is_controlled_by = BEL
+                OR = {
+                    state = 866
+                    state = 867
+                }
+            }
+            remove_dynamic_modifier = { modifier = HOL_dutch_resistance_in_belgium } 
+        }
+    }
+}
+
+country_event = { # Resistance Violent
+    id = dutchstate.15
+    title = dutchstate.15.t
+    desc = dutchstate.15.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.15.a
+        every_owned_state = {
+            limit = {
+                is_controlled_by = BEL
+                OR = {
+                    state = 866
+                    state = 867
+                }
+            }
+            damage_building = {
+                type = industrial_complex
+                damage = 1
+            }
+        }
+    }
+}
+
+country_event = { # HOL: Resistance Suppressed
+    id = dutchstate.16
+    title = dutchstate.16.t
+    desc = dutchstate.16.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.16.a
+        add_political_power = 10
+    }
+}
+
+country_event = {
+    id = dutchstate.17
+    title = dutchstate.17.t
+    desc = dutchstate.17.d
+    picture = GFX_report_event_hol_prins_bernhard
+    
+    trigger = {
+        tag = HOL
+        BEL = {
+            owns_state = 866
+            owns_state = 867
+        }
+    }
+
+    mean_time_to_happen = {
+        days = 30
+        modifier = {
+            factor = 0.25
+            BEL = { has_idea = HOL_dutch_resistance }
+        }
+        modifier = {
+            factor = 0.50
+            OR = {
+                BEL = { has_socialist_government = yes }
+                FRA = {
+                    controls_state = 866
+                    controls_state = 867
+                }
+            }
+        }
+        modifier = {
+            factor = 1.00
+            OR = {
+                BEL = { has_democratic_government = yes }
+                FRA = { is_in_faction_with = BEL }
+                ENG = { is_in_faction_with = BEL }
+            }
+        }
+    }
+
+    option = {
+        name = dutchstate.17.a
+        add_manpower = 1000
+    }
+}
+
+country_event = {
+    id = dutchstate.18
+    title = dutchstate.18.t
+    desc = dutchstate.18.d
+    picture = GFX_report_event_french_resistance_02
+    
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.18.a
+    }
+}
+
+country_event = {
+    id = dutchstate.19
+    title = dutchstate.19.t
+    desc = dutchstate.19.d
+    picture = GFX_report_event_physics_lab_01
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.19.a
+    }
+}
+
+country_event = {
+    id = dutchstate.20
+    title = dutchstate.20.t
+    desc = dutchstate.20.d
+    picture = GFX_report_event_second_vienna_award_pact
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.20.a
+        ai_chance = {
+            factor = 20
+        }
+        add_political_power = -15
+    }
+    option = {
+        name = dutchstate.20.b
+        ai_chance = {
+            factor = 80
+        }
+        add_popularity = {
+            ideology = vanguardist
+            popularity = -0.05
+        }
+        add_popularity = {
+            ideology = collectivist
+            popularity = -0.05
+        }
+        add_popularity = {
+            ideology = libertarian_socialist
+            popularity = -0.05
+        }
+    }
+}
+
+country_event = {
+    id = dutchstate.21
+    title = dutchstate.21.t
+    desc = dutchstate.21.d
+    picture = GFX_report_event_journalists_speech
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.21.a
+        add_political_power = 10
+    }
+    option = {
+        name = dutchstate.21.b
+        add_political_power = 20
+    }
+}
+
+country_event = {
+    id = dutchstate.22
+    title = dutchstate.22.t
+    desc = dutchstate.22.d
+    picture = GFX_report_event_journalists_speech
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.22.a
+    }
+}
+
+country_event = {
+    id = dutchstate.23
+    title = dutchstate.23.t
+    desc = dutchstate.23.d
+    picture = GFX_report_event_hol_prins_bernhard
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.23.a
+        hidden_effect = {
+            load_focus_tree = FR_Dutch_State_Bernhard
+            set_country_flag = politcal_branch_ready
+        }
+    }
+}
+
+country_event = { # Belgian Civil War
+    id = dutchstate.24
+    title = dutchstate.24
+    desc = dutchstate.24
+    picture = GFX_report_event_french_resistance_02
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.24.a
+        ai_chance = {
+            factor = 80
+        }
+        hidden_effect = {
+            country_event = { id = dutchstate.25 days = 7 }
+        }
+    }
+    option = {
+        name = dutchstate.24.b
+        ai_chance = {
+            factor = 2
+        }
+        34 = {
+            OWNER = {
+                HOL = {
+                    declare_war_on = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            }
+        }
+        6 = {
+            OWNER = {
+                HOL = {
+                    declare_war_on = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            }
+        }
+        FRA = { 
+            country_event = { id = dutchstate.27 days = 1 }
+        }
+    }
+    option = {
+        name = dutchstate.24.c
+        ai_chance = {
+            factor = 20
+        }
+        add_political_power = -20
+    }
+}
+
+country_event = { # March to Zeuwss-Vlaanderen and Limburg
+    id = dutchstate.25
+    title = dutchstate.25.t
+    desc = dutchstate.25.d
+    picture = GFX_report_event_french_resistance_02
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            34 = {
+                OWNER = {
+                    country_event = { id = dutchstate.26 days = 1 }
+                }
+            }
+            6 = {
+                OWNER = {
+                    country_event = { id = dutchstate.26 days = 1 }
+                }
+            }
+            ROOT = {
+                transfer_state = 866
+                transfer_state = 867
+            }
+        }
+    }
+
+    option = {
+        name = dutchstate.25.a
+        increase_ruling_party_popularity_by_10 = yes
+    }
+}
+
+country_event = { # BE: Dutch marches to Zeuwss-Vlaanderen and Limburg
+    id = dutchstate.26
+    title = dutchstate.26.t
+    desc = dutchstate.26.d
+    picture = GFX_report_event_french_resistance_02
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.26.a
+        add_political_power = -10
+    }
+}
+
+country_event = { # French Intervention of the Dutch Declaration of War
+    id = dutchstate.27
+    title = dutchstate.27.t
+    desc = dutchstate.27.d
+    picture = GFX_report_event_french_resistance_02
+    is_triggered_only = yes
+
+    trigger = {
+        tag = FRA
+        NOT = {
+            has_war_with = HOL
+            has_war_with = GER
+        }
+    }
+
+    option = {
+        name = dutchstate.27.a
+        ai_chance = {
+            factor = 80
+        }
+        declare_war_on = {
+            tag = HOL
+            type = annex_everything
+        }
+    }
+    option = {
+        name = dutchstate.27.b
+        ai_chance = {
+            factor = 20
+            modifier = {
+                factor = 0.8
+                has_war_with = ENG
+            }
+            modifier = {
+                factor = 0.8
+                has_war_with = ITA
+            }
+            modifier = {
+                factor = 0.8
+                has_war_with = USA
+            }
+        }
+        add_political_power = -50
+    }
+}
+
+country_event = {
+    id = dutchstate.28
+    title = dutchstate.28.t
+    desc = dutchstate.28.d
+    picture = GFX_report_event_hol_prins_bernhard
+    fire_only_once = yes
+
+    trigger = {
+        tag = GER
+        date > 1937.6.10
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = dutchstate.28.a
+        hidden_effect = {
+            HOL = { country_event = { id = dutchstate.29 days = 7 } }
+        }
+    }
+}
+
+country_event = {
+    id = dutchstate.29
+    title = dutchstate.29.t
+    desc = dutchstate.29.d
+    picture = GFX_report_event_germany_politician_handshake
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.29.a
+        random_unit_leader = {
+            limit = { id = 3 }
+            set_nationality = HOL
+        }
+        hidden_effect = {
+            country_event = { id = dutchstate.30 days = 900 }
+        }
+    }
+}
+
+country_event = {
+    id = dutchstate.30
+    title = dutchstate.30.t
+    desc = dutchstate.30.d
+    picture = GFX_report_event_germany_politician_handshake
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.39.a
+        army_experience = 30
+        GER = { country_event = { id = dutchstate.31 days = 1 } }
+    }
+}
+
+country_event = {
+    id = dutchstate.31
+    title = dutchstate.31.t
+    desc = dutchstate.31.d
+    picture = GFX_report_event_germany_politician_handshake
+    is_triggered_only = yes
+
+    option = {
+        name = dutchstate.31.a
+        army_experience = 30
+        random_unit_leader = {
+            limit = { id = 3 }
+            set_nationality = GER
+        }
+    }
+}

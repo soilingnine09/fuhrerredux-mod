@@ -1,0 +1,5 @@
+HOL_state_integration = {
+    allowed = { original_tag = HOL }
+    icon = GFX_decision_category_military_operation
+    priority = 50
+}

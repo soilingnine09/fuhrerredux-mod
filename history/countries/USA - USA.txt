@@ -130,6 +130,8 @@ set_autonomy = {
 	autonomous_state = autonomy_puppet
 }
 
+country_event = { id = usa.0 days = 2 }
+
 create_country_leader = {
 	name = "Earl Browder"
 	desc = "POLITICS_EARL_BROWDER_DESC"

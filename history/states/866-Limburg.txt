@@ -10,8 +10,8 @@ state={
 		}
 		
 		add_core_of = BEL
-		add_core_of = HOL
-		add_core_of = KNE
+		add_claim_of = HOL
+		add_claim_of = KNE
 	}
 
 	provinces={

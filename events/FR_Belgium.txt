@@ -233,6 +233,9 @@ country_event = { #Communist uprising
 			FRA = {
 				country_event = { days = 1 id = FRA.council.21}
 			}
+			HOL = {
+				country_event = { id = dutchstate.24 days = 1 }
+			}
 			complete_national_focus = BEL_goal_royal_coup
 		}
 		add_stability = -0.25
@@ -266,6 +269,9 @@ country_event = { #Communist uprising
 			}
 			FRA = {
 				country_event = { days = 1 id = FRA.council.21}
+			}
+			HOL = {
+				country_event = { id = dutchstate.24 days = 1 }
 			}
 			complete_national_focus = BEL_goal_KPB
 		}
