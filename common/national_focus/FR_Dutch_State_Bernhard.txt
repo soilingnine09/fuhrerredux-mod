@@ -302,7 +302,7 @@ focus_tree = {
         x = 1
         y = 1
         cost = 6
-        available = { has_idea = HOL_unrecognized_government_1 }
+        available = { has_completed_focus = HOL_trade_expansion }
         prerequisite = { focus = HOL_operation_fakkel }
         prerequisite = { focus = HOL_align_nationalist_industrialists }
         relative_position_id = HOL_operation_fakkel
