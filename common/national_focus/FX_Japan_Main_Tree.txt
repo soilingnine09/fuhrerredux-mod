@@ -1,6 +1,7 @@
 # Japan focus tree
 
-# made by Su1phur and Teuty!
+# made by Su1phur and Teuty! (FR)
+# Contributed by Kaiczer (FX)
 
 focus_tree = {
 
@@ -60,6 +61,7 @@ focus_tree = {
 		x = -4
 		y = 1 
 		prerequisite = { focus = JAP_great_council_of_state }
+		mutually_exclusive = { focus = JAP_shinjidai_doctrine }
 	}
 	focus = {
 		id = JAP_restore_han_system
@@ -96,6 +98,7 @@ focus_tree = {
 		x = 4
 		y = 1 
 		prerequisite = { focus = JAP_great_council_of_state }
+		mutually_exclusive = { focus = JAP_kyujidai_doctrine }
 	}
 	focus = {
 		id = JAP_modernized_kazoku_system
@@ -130,7 +133,7 @@ focus_tree = {
 		cost = 5
 		relative_position_id = JAP_great_council_of_state
 		x = 0
-		y = 1
+		y = 2
 		prerequisite = { focus = JAP_great_council_of_state }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_empower_shogun_authority"
@@ -159,7 +162,7 @@ focus_tree = {
 		relative_position_id = JAP_tribunal_court_of_nagasaki
 		x = -3
 		y = 1
-		#allow_branch = { has_completed_focus = JAP_tribunal_court_of_nagasaki }
+		allow_branch = { has_completed_focus = JAP_tribunal_court_of_nagasaki }
 		prerequisite = { focus = JAP_tribunal_court_of_nagasaki }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_ultraroyalist_question"
@@ -173,7 +176,7 @@ focus_tree = {
 		relative_position_id = JAP_tribunal_court_of_nagasaki
 		x = 0
 		y = 1
-		#allow_branch = { has_completed_focus = JAP_tribunal_court_of_nagasaki }
+		allow_branch = { has_completed_focus = JAP_tribunal_court_of_nagasaki }
 		prerequisite = { focus = JAP_tribunal_court_of_nagasaki }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_admiralty_question"
@@ -187,7 +190,7 @@ focus_tree = {
 		relative_position_id = JAP_tribunal_court_of_nagasaki
 		x = 3
 		y = 1
-		#allow_branch = { has_completed_focus = JAP_tribunal_court_of_nagasaki }
+		allow_branch = { has_completed_focus = JAP_tribunal_court_of_nagasaki }
 		prerequisite = { focus = JAP_tribunal_court_of_nagasaki }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_ultranat_question"
@@ -201,7 +204,7 @@ focus_tree = {
 		relative_position_id = JAP_tribunal_court_of_nagasaki
 		x = 0
 		y = 3
-		#allow_branch = { has_completed_focus = JAP_tribunal_court_of_nagasaki }
+		allow_branch = { has_completed_focus = JAP_tribunal_court_of_nagasaki }
 		prerequisite = { focus = JAP_ultranat_question }
 		prerequisite = { focus = JAP_admiralty_question }
 		prerequisite = { focus = JAP_ultraroyalist_question }
@@ -224,6 +227,84 @@ focus_tree = {
 		available = {
 			has_completed_focus = JAP_shogun_answer
 		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus JAP_sun_of_the_east"
+			create_faction = "Grand Asian Cooperative Congress"
+		}
+	}
+	focus = {
+		id = JAP_council_of_planning
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_sun_of_the_east
+		x = 0
+		y = 1 
+		prerequisite = { focus = JAP_sun_of_the_east }
+	}
+	focus = {
+		id = JAP_diplomatic_mission_south_east_asia
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_council_of_planning
+		x = -2
+		y = 1
+		prerequisite = { focus = JAP_council_of_planning }
+	}
+	focus = {
+		id = JAP_gateway_to_indochina
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_diplomatic_mission_south_east_asia
+		x = 0
+		y = 1
+		prerequisite = { focus = JAP_diplomatic_mission_south_east_asia }
+	}
+	focus = {
+		id = JAP_indochinese_economic_bureau
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_diplomatic_mission_south_east_asia
+		x = -2
+		y = 1
+		prerequisite = { focus = JAP_diplomatic_mission_south_east_asia }
+	}
+	focus = {
+		id = JAP_diplomatic_mission_vladivostok
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_council_of_planning
+		x = 2
+		y = 1
+		prerequisite = { focus = JAP_council_of_planning }
+	}
+	focus = {
+		id = JAP_talk_with_white_russia
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_diplomatic_mission_vladivostok
+		x = 0
+		y = 1
+		prerequisite = { focus = JAP_diplomatic_mission_vladivostok }
+	}
+	focus = {
+		id = JAP_siberian_economic_bureau
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_diplomatic_mission_vladivostok
+		x = 2
+		y = 1
+		prerequisite = { focus = JAP_diplomatic_mission_vladivostok }
+	}
+	focus = {
+		id = JAP_national_act_of_full_mobilization
+		icon = GFX_ 
+		cost = 8
+		relative_position_id = JAP_sun_of_the_east
+		x = 0
+		y = 4
+		prerequisite = { focus = JAP_gateway_to_indochina }
+		prerequisite = { focus = JAP_talk_with_white_russia }
+		
 	}
 }
 # NAVY BRANCH #

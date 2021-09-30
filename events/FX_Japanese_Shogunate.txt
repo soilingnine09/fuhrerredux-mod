@@ -209,7 +209,7 @@ country_event = {
 			JAP = { has_completed_focus = jap_the_army_coup }
 		}
 		set_country_flag = JAP_Shogun_Win
-		load_focus_tree = FR_JAP_Shogun
+		#load_focus_tree = FR_JAP_Shogun
 		mark_focus_tree_layout_dirty = yes
 		add_popularity = { ideology = paternal_autocrat popularity = JAP.highest_party_popularity@exclude_ruling_party }
 		set_cosmetic_tag = JAP_Shogunate 
@@ -430,7 +430,7 @@ country_event = {
 		add_popularity = { ideology = authoritarian_democrat popularity = JAP.highest_party_popularity@exclude_ruling_party }
 		add_popularity = { ideology = paternal_autocrat popularity = 0.15 }
 		set_country_flag = JAP_Shogun_Win
-		load_focus_tree = FR_JAP_Shogun
+		#load_focus_tree = FR_JAP_Shogun
 		mark_focus_tree_layout_dirty = yes
 		SP_NS_clear_coalition_effect = yes
 		set_cosmetic_tag = JAP_Shogunate 
@@ -457,7 +457,7 @@ country_event = {
 	option = {
 		name = jap_shogun.6.c ## We made it, so we deserve it  
 		log = "[GetDateText]: [Root.GetName]: Event jap_shogun.6.c"
-		load_focus_tree = FR_JAP_Shogun
+		#load_focus_tree = FR_JAP_Shogun
 		mark_focus_tree_layout_dirty = yes
 		add_popularity = { ideology = paternal_autocrat popularity = JAP.highest_party_popularity@exclude_ruling_party }
 		set_cosmetic_tag = JAP_Shogunate 
