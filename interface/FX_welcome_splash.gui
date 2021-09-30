@@ -7,6 +7,7 @@ guiTypes = {
 		moveable = yes
 		orientation = CENTER
 		origo = center
+		clipping = no
 
 		background = {
 			name = "FX_logo"
@@ -39,7 +40,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "mod_options_button"
-			position = { x = 255 y = 589 }
+			position = { x = 255 y = 645 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "Continue"
 			buttonFont = "hoi_24header"
