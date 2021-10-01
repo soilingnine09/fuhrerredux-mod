@@ -102,7 +102,6 @@ ideas = {
 
 		RAJ_anti_british = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RAJ_anti_british"}
-			picture = chi_wargaming_division
 
 			removal_cost = -1
 
