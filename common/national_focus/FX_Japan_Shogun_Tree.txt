@@ -1,0 +1,803 @@
+	##########################
+	## Japanese Shogun Tree ##
+	##########################
+	##    Made by Kaiczer   ##
+	##########################
+focus_tree = {
+	id = FR_JAP_Shogun
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = JAP
+		}
+	}
+	default = no
+	shared_focus = jap_modernise_the_navy
+	shared_focus = jap_expand_the_army
+	focus = {
+		id = JAP_end_of_civil_war
+		icon = GFX_
+		cost = 1
+		x = 13
+		y = 0
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "Second Northern Alliance Becomes Legitimate Government of Japan"
+				has_country_flag = JAP_Shogun_Win
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus JAP_end_of_civil_war"
+			add_stability = 0.1
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = JAP_great_council_of_state
+		icon = GFX_
+		cost = 5
+		relative_position_id = JAP_end_of_civil_war
+		x = 0
+		y = 1
+		prerequisite = { focus = JAP_end_of_civil_war }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus JAP_great_council_of_state"
+			custom_effect_tooltip = "Henchforth, the cabinet will no longer be leading by Prime Minister"
+			remove_ideas_with_trait = head_of_government
+			add_country_leader_trait = chancellor_of_great_council_of_state
+		}
+	}
+	focus = {
+		id = JAP_kyujidai_doctrine 
+		icon = GFX_
+		cost = 5
+		relative_position_id = JAP_great_council_of_state
+		x = -4
+		y = 1 
+		prerequisite = { focus = JAP_great_council_of_state }
+		mutually_exclusive = { focus = JAP_shinjidai_doctrine }
+	}
+	focus = {
+		id = JAP_restore_han_system
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_kyujidai_doctrine
+		x = 0
+		y = 1
+		prerequisite = { focus = JAP_kyujidai_doctrine }
+	}
+	focus = {
+		id = JAP_feudalistic_monarchy
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_restore_han_system
+		x = -2
+		y = 1
+		prerequisite = { focus = JAP_restore_han_system }
+	}
+	focus = {
+		id = JAP_yoshinobu_guilty
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_feudalistic_monarchy
+		x = 2
+		y = 2
+		prerequisite = { focus = JAP_feudalistic_monarchy }
+	}
+	focus = {
+		id = JAP_shinjidai_doctrine 
+		icon = GFX_
+		cost = 5
+		relative_position_id = JAP_great_council_of_state
+		x = 4
+		y = 1 
+		prerequisite = { focus = JAP_great_council_of_state }
+		mutually_exclusive = { focus = JAP_kyujidai_doctrine }
+	}
+	focus = {
+		id = JAP_modernized_kazoku_system
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_shinjidai_doctrine
+		x = 0
+		y = 1
+		prerequisite = { focus = JAP_shinjidai_doctrine }
+	}
+	focus = {
+		id = JAP_autocratic_democracy
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_modernized_kazoku_system
+		x = 2
+		y = 1
+		prerequisite = { focus = JAP_modernized_kazoku_system }
+	}
+	focus = {
+		id = JAP_tokugawa_new_legacy
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_autocratic_democracy
+		x = -2
+		y = 2
+		prerequisite = { focus = JAP_autocratic_democracy }
+	}
+	focus = {
+		id = JAP_empower_shogun_authority
+		icon = GFX_
+		cost = 5
+		relative_position_id = JAP_great_council_of_state
+		x = 0
+		y = 2
+		prerequisite = { focus = JAP_great_council_of_state }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus JAP_empower_shogun_authority"
+			add_stability = 0.1
+			add_popularity = { ideology = paternal_autocrat popularity = 0.05 }
+		}
+	}
+	focus = {
+		id = JAP_tribunal_court_of_nagasaki
+		icon = GFX_
+		cost = 5
+		relative_position_id = JAP_empower_shogun_authority
+		x = 0
+		y = 1
+		prerequisite = { focus = JAP_empower_shogun_authority }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus JAP_tribunal_court_of_nagasaki"
+			custom_effect_tooltip = "Unlock the Special Court of Nagasaki"
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	focus = {
+		id = JAP_ultraroyalist_question
+		icon = GFX_
+		cost = 7
+		relative_position_id = JAP_tribunal_court_of_nagasaki
+		x = -3
+		y = 1
+		allow_branch = { has_completed_focus = JAP_tribunal_court_of_nagasaki }
+		prerequisite = { focus = JAP_tribunal_court_of_nagasaki }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus JAP_ultraroyalist_question"
+			
+		}
+	}
+	focus = {
+		id = JAP_admiralty_question
+		icon = GFX_
+		cost = 7
+		relative_position_id = JAP_tribunal_court_of_nagasaki
+		x = 0
+		y = 1
+		allow_branch = { has_completed_focus = JAP_tribunal_court_of_nagasaki }
+		prerequisite = { focus = JAP_tribunal_court_of_nagasaki }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus JAP_admiralty_question"
+			
+		}
+	}
+	focus = {
+		id = JAP_ultranat_question
+		icon = GFX_
+		cost = 7
+		relative_position_id = JAP_tribunal_court_of_nagasaki
+		x = 3
+		y = 1
+		allow_branch = { has_completed_focus = JAP_tribunal_court_of_nagasaki }
+		prerequisite = { focus = JAP_tribunal_court_of_nagasaki }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus JAP_ultranat_question"
+			
+		}
+	}
+	focus = {
+		id = JAP_shogun_answer
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_tribunal_court_of_nagasaki
+		x = 0
+		y = 3
+		allow_branch = { has_completed_focus = JAP_tribunal_court_of_nagasaki }
+		prerequisite = { focus = JAP_ultranat_question }
+		prerequisite = { focus = JAP_admiralty_question }
+		prerequisite = { focus = JAP_ultraroyalist_question }
+		prerequisite = { 
+			focus = JAP_yoshinobu_guilty 
+			focus = JAP_tokugawa_new_legacy
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus JAP_shogun_answer"
+			
+		}
+	}
+	#### Expansion Campaign ####
+	focus = {
+		id = JAP_sun_of_the_east
+		icon = GFX_ 
+		cost = 10
+		relative_position_id = JAP_end_of_civil_war
+		x = 16 
+		y = 7
+		available = {
+			has_completed_focus = JAP_shogun_answer
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus JAP_sun_of_the_east"
+			create_faction = "Grand Asian Cooperative Congress"
+		}
+	}
+	focus = {
+		id = JAP_nagoya_conference
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_sun_of_the_east
+		x = 0
+		y = 1 
+		prerequisite = { focus = JAP_sun_of_the_east }
+	}
+	focus = {
+		id = JAP_diplomatic_mission_south_east_asia
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_nagoya_conference
+		x = -2
+		y = 1
+		prerequisite = { focus = JAP_nagoya_conference }
+	}
+	focus = {
+		id = JAP_gateway_to_indochina
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_diplomatic_mission_south_east_asia
+		x = 0
+		y = 1
+		prerequisite = { focus = JAP_diplomatic_mission_south_east_asia }
+	}
+	focus = {
+		id = JAP_indochinese_economic_bureau
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_diplomatic_mission_south_east_asia
+		x = -2
+		y = 1
+		prerequisite = { focus = JAP_diplomatic_mission_south_east_asia }
+	}
+	focus = {
+		id = JAP_diplomatic_mission_vladivostok
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_nagoya_conference
+		x = 2
+		y = 1
+		prerequisite = { focus = JAP_nagoya_conference }
+	}
+	focus = {
+		id = JAP_talk_with_white_russia
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_diplomatic_mission_vladivostok
+		x = 0
+		y = 1
+		prerequisite = { focus = JAP_diplomatic_mission_vladivostok }
+	}
+	focus = {
+		id = JAP_siberian_economic_bureau
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_diplomatic_mission_vladivostok
+		x = 2
+		y = 1
+		prerequisite = { focus = JAP_diplomatic_mission_vladivostok }
+	}
+	focus = {
+		id = JAP_national_act_of_full_mobilization
+		icon = GFX_ 
+		cost = 8
+		relative_position_id = JAP_sun_of_the_east
+		x = 0
+		y = 4
+		prerequisite = { focus = JAP_gateway_to_indochina }
+		prerequisite = { focus = JAP_talk_with_white_russia }
+	}
+	#### Nanshin-ron ###
+	focus = {
+		id = JAP_nanshin_ron
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_national_act_of_full_mobilization
+		x = -10
+		y = 1
+		prerequisite = { focus = JAP_national_act_of_full_mobilization }
+		mutually_exclusive = { focus = JAP_seishin_ron }
+	}
+	focus = {
+		id = JAP_march_to_qingdao
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_nanshin_ron
+		x = 0
+		y = 1
+		prerequisite = { focus = JAP_nanshin_ron }
+	}
+	### KMT Affairs ###
+	focus = {
+		id = JAP_nanjing_affair
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_march_to_qingdao
+		x = -4
+		y = 1
+		prerequisite = { focus = JAP_march_to_qingdao }
+	}
+	focus = {
+		id = JAP_warlord_disintegration
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_nanjing_affair
+		x = 0
+		y = 1
+		prerequisite = { focus = JAP_nanjing_affair }
+	}
+	focus = {
+		id = JAP_forced_subordination 
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_nanjing_affair 
+		x = -2
+		y = 2
+		prerequisite = { focus = JAP_warlord_disintegration }
+	}
+	focus = {
+		id = JAP_japanese_settlement_project
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_nanjing_affair
+		x = 2
+		y = 2
+		prerequisite = { focus = JAP_warlord_disintegration }
+	}
+	focus = {
+		id = JAP_mekong_congress
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_nanjing_affair
+		x = 0
+		y = 3
+		prerequisite = { focus = JAP_japanese_settlement_project }
+		prerequisite = { focus = JAP_forced_subordination }
+	}
+	focus = {
+		id = JAP_denounce_frence_settlement
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_mekong_congress
+		x = -2
+		y = 1
+		prerequisite = { focus = JAP_mekong_congress }
+	}
+	focus = {
+		id = JAP_berlin_nagoya_conference
+		icon = GFX_
+		cost = 5
+		relative_position_id = JAP_mekong_congress
+		x = 2
+		y = 1
+		prerequisite = { focus = JAP_mekong_congress }
+	}
+	focus = {
+		id = JAP_war_with_france
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_mekong_congress
+		x = 0
+		y = 2
+		prerequisite = { 
+			focus = JAP_denounce_frence_settlement
+			focus = JAP_berlin_nagoya_conference
+		}
+	}
+	focus = {
+		id = JAP_indochinese_disunited_brothers
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_war_with_france
+		x = 3
+		y = 1
+		prerequisite = { 
+			focus = JAP_berlin_nagoya_conference 
+			focus = JAP_denounce_frence_settlement
+		}
+		prerequisite = {
+			focus = JAP_war_with_france 
+		}
+	}
+	focus = {
+		id = JAP_secure_the_insulindia
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_war_with_france
+		x = 0
+		y = 1
+		prerequisite = { focus = JAP_war_with_france }
+	}
+	focus = {
+		id = JAP_free_the_subcontinent
+		icon = GFX_ 
+		cost = 9
+		relative_position_id = JAP_secure_the_insulindia
+		x = -2
+		y = 1
+		prerequisite = { focus = JAP_secure_the_insulindia }
+		mutually_exclusive = { focus = JAP_war_with_raj }
+	}
+	focus = {
+		id = JAP_war_with_raj
+		icon = GFX_ 
+		cost = 9
+		relative_position_id = JAP_secure_the_insulindia
+		x = 2
+		y = 1
+		prerequisite = { focus = JAP_secure_the_insulindia }
+		mutually_exclusive = { focus = JAP_free_the_subcontinent }
+	}
+	### Beiyang Affairs ###
+	focus = {
+		id = JAP_shenyang_affair
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_march_to_qingdao
+		x = 4
+		y = 1
+		prerequisite = { focus = JAP_march_to_qingdao }
+	}
+	focus = {
+		id = JAP_manchurian_disintegration
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_shenyang_affair
+		x = 0
+		y = 1
+		prerequisite = { focus = JAP_shenyang_affair }
+	}
+	focus = {
+		id = JAP_integrate_kanto
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_manchurian_disintegration
+		x = -2
+		y = 1
+		prerequisite = { focus = JAP_manchurian_disintegration }
+	}
+	focus = {
+		id = JAP_shenyang_directorate
+		icon = GFX_
+		cost = 5
+		relative_position_id = JAP_manchurian_disintegration
+		x = 2
+		y = 1
+		prerequisite = { focus = JAP_manchurian_disintegration }
+	}
+	focus = {
+		id = JAP_korean_question
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_manchurian_disintegration
+		x = 0
+		y = 2
+		prerequisite = { focus = JAP_manchurian_disintegration }
+		prerequisite = {
+			focus = JAP_shenyang_directorate
+			focus = JAP_integrate_kanto
+		}
+	}
+	#### Seishin-ron ####
+	focus = {
+		id = JAP_seishin_ron
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_national_act_of_full_mobilization
+		x = 10
+		y = 1
+		prerequisite = { focus = JAP_national_act_of_full_mobilization }
+		mutually_exclusive = { focus = JAP_nanshin_ron }
+	}
+	focus = {
+		id = JAP_operation_amur
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_seishin_ron
+		x = -6
+		y = 1
+		prerequisite = { focus = JAP_seishin_ron }
+	}
+	focus = {
+		id = JAP_vladivostok_conference
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_operation_amur
+		x = 0
+		y = 1
+		prerequisite = { focus = JAP_operation_amur }
+	}
+	focus = {
+		id = JAP_question_of_legitimacy
+		icon = GFX_ 
+		cost = 2
+		relative_position_id = JAP_operation_amur
+		x = 0
+		y = 2
+		prerequisite = { focus = JAP_vladivostok_conference }
+	}
+	focus = {
+		id = JAP_prepare_the_western_advancement
+		icon = GFX_ 
+		cost = 4
+		relative_position_id = JAP_question_of_legitimacy
+		x = -2
+		y = 1
+		prerequisite = { focus = JAP_question_of_legitimacy }
+	}
+	focus = {
+		id = JAP_contact_cossack_collaborator
+		icon = GFX_ 
+		cost = 4
+		relative_position_id = JAP_question_of_legitimacy
+		x = 2
+		y = 1
+		prerequisite = { focus = JAP_question_of_legitimacy } 
+	}
+	focus = {
+		id = JAP_eliminate_the_red_russia
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_question_of_legitimacy
+		x = 0
+		y = 2
+		prerequisite = { focus = JAP_contact_cossack_collaborator }
+		prerequisite = { focus = JAP_prepare_the_western_advancement }
+	}
+	focus = {
+		id = JAP_demand_far_east_territory
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_eliminate_the_red_russia
+		x = -3
+		y = 1
+		prerequisite = { focus = JAP_eliminate_the_red_russia }
+	}
+	focus = {
+		id = JAP_proclaim_puppet_tsar
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_eliminate_the_red_russia
+		x = 0
+		y = 1
+		prerequisite = { focus = JAP_eliminate_the_red_russia }
+		available = { has_completed_focus = JAP_demand_far_east_territory }
+	}
+	focus = {
+		id = JAP_tsardom_of_siberia
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_eliminate_the_red_russia
+		x = 3
+		y = 1
+		prerequisite = { focus = JAP_eliminate_the_red_russia }
+		available = { has_completed_focus = JAP_proclaim_puppet_tsar }
+	}
+	focus = {
+		id = JAP_partition_of_russia
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_eliminate_the_red_russia
+		x = 0
+		y = 2
+		prerequisite = { focus = JAP_demand_far_east_territory }
+		prerequisite = { focus = JAP_proclaim_puppet_tsar }
+		prerequisite = { focus = JAP_tsardom_of_siberia }
+	}
+	focus = {
+		id = JAP_operation_yangtze
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_seishin_ron
+		x = 6
+		y = 1
+		prerequisite = { focus = JAP_seishin_ron }
+	}
+	focus = {
+		id = JAP_restore_japanese_korea
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_operation_yangtze
+		x = 0
+		y = 1
+		prerequisite = { focus = JAP_operation_yangtze }
+	}
+	focus = {
+		id = JAP_qingdao_incident
+		icon = GFX_
+		cost = 5
+		relative_position_id = JAP_restore_japanese_korea
+		x = -4
+		y = 1
+		prerequisite = { focus = JAP_restore_japanese_korea }
+	}
+	focus = {
+		id = JAP_eliminate_old_clique
+		icon = GFX_ 
+		cost = 5 
+		relative_position_id = JAP_qingdao_incident
+		x = 0
+		y = 1
+		prerequisite = { focus = JAP_qingdao_incident }
+	}
+	focus = {
+		id = JAP_directorate_of_shandong
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_qingdao_incident
+		x = 0
+		y = 2
+		prerequisite = { focus = JAP_eliminate_old_clique }
+	}
+	focus = {
+		id = JAP_deal_with_lord_sichuan
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_qingdao_incident
+		x = -1
+		y = 4
+		prerequisite = { focus = JAP_directorate_of_shandong }
+		prerequisite = { focus = JAP_war_with_kmt }
+		mutually_exclusive = { focus = JAP_destroy_sichuan }
+	}
+	focus = {
+		id = JAP_destroy_sichuan
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_qingdao_incident
+		x = 1
+		y = 4
+		prerequisite = { focus = JAP_directorate_of_shandong }
+		prerequisite = { focus = JAP_war_with_kmt }
+		mutually_exclusive = { focus = JAP_deal_with_lord_sichuan }
+	}
+	focus = {
+		id = JAP_mukden_incident
+		icon = GFX_
+		cost = 5
+		relative_position_id = JAP_restore_japanese_korea
+		x = 4
+		y = 1
+		prerequisite = { focus = JAP_restore_japanese_korea }
+	}
+	focus = {
+		id = JAP_prepare_to_cross_yalu_river
+		icon = GFX_
+		cost = 5
+		relative_position_id = JAP_mukden_incident
+		x = 0
+		y = 1
+		prerequisite = { focus = JAP_mukden_incident }
+	}
+	focus = {
+		id = JAP_war_with_fengtian
+		icon = GFX_
+		cost = 5
+		relative_position_id = JAP_mukden_incident
+		x = 0
+		y = 2
+		prerequisite = { focus = JAP_prepare_to_cross_yalu_river }
+	}
+	focus = {
+		id = JAP_fengtian_puppet_warlord
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_mukden_incident
+		x = 0
+		y = 3
+		prerequisite = { focus = JAP_war_with_fengtian }
+	}
+	focus = {
+		id = JAP_continue_mantetsu_project
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_mukden_incident
+		x = 0
+		y = 4
+		prerequisite = { focus = JAP_fengtian_puppet_warlord }
+	}
+	focus = {
+		id = JAP_beijing_central_railroad
+		icon = GFX_
+		cost = 5
+		relative_position_id = JAP_mukden_incident
+		x = 0
+		y = 5
+		prerequisite = { focus = JAP_continue_mantetsu_project }
+	}
+	focus = {
+		id = JAP_prepare_to_strike_the_south
+		icon = GFX_
+		cost = 5
+		relative_position_id = JAP_restore_japanese_korea
+		x = 0
+		y = 2
+		prerequisite = { 
+			focus = JAP_qingdao_incident 
+			focus = JAP_mukden_incident
+		}
+	}
+	focus = {
+		id = JAP_infiltrate_kuomintang
+		icon = GFX_
+		cost = 5
+		relative_position_id = JAP_prepare_to_strike_the_south
+		x = 0
+		y = 1
+		prerequisite = { focus = JAP_prepare_to_strike_the_south }
+	}
+	focus = {
+		id = JAP_war_with_kmt
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_prepare_to_strike_the_south
+		x = 0
+		y = 2
+		prerequisite = { focus = JAP_infiltrate_kuomintang }
+	}
+	focus = {
+		id = JAP_suppress_kmt_warlords
+		icon = GFX_
+		cost = 5
+		relative_position_id = JAP_prepare_to_strike_the_south
+		x = 0
+		y = 3
+		prerequisite = { focus = JAP_war_with_kmt }
+	}
+	focus = {
+		id = JAP_divide_and_conquer
+		icon = GFX_
+		cost = 5
+		relative_position_id = JAP_prepare_to_strike_the_south
+		x = 0
+		y = 5
+		prerequisite = {
+			focus = JAP_destroy_sichuan
+			focus = JAP_deal_with_lord_sichuan
+		}
+		prerequisite = { focus = JAP_suppress_kmt_warlords }
+		prerequisite = { focus = JAP_beijing_central_railroad }
+	}
+	focus = {
+		id = JAP_plant_the_loyalty
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_divide_and_conquer
+		x = 0
+		y = 1
+		prerequisite = { focus = JAP_divide_and_conquer }
+	}
+	focus = {
+		id = JAP_war_with_buddhist_states
+		icon = GFX_ 
+		cost = 5
+		relative_position_id = JAP_divide_and_conquer
+		x = 0
+		y = 2
+		prerequisite = { focus = JAP_plant_the_loyalty }
+	}
+	focus = {
+		id = JAP_end_of_eastern_ocean_hegemony
+		icon = GFX_
+		cost = 5
+		relative_position_id = JAP_seishin_ron
+		x = 0
+		y = 12
+		prerequisite = { focus = JAP_war_with_buddhist_states }
+		prerequisite = { focus = JAP_partition_of_russia }
+	}
+}

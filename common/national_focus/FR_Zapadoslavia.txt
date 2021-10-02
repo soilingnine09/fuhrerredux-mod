@@ -2338,6 +2338,7 @@ focus = {
 		}
 	
 	}
+}
 #focus = {
 #	
 #		id = CEN_liberate_czech_women
@@ -2379,8 +2380,3 @@ focus = {
 #		}
 #	
 #}
-	
-	
-	
-	
-
