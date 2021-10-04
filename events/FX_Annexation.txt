@@ -3386,6 +3386,8 @@ country_event = {
     trigger = {
         NOT = {
             tag = INS
+            tag = BEA
+            tag = DEI
             has_country_flag = INS_OCCUPIED
             country_exists = INS
         }
